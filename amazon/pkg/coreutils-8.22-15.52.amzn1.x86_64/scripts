@@ -1,0 +1,22 @@
+preinstall scriptlet (using /bin/sh):
+# We must deinstall these info files since they're merged in
+# coreutils.info. else their postun'll be run too late
+# and install-info will fail badly because of duplicates
+for file in sh-utils textutils fileutils; do
+  if [ -f /usr/share/info/$file.info.gz ]; then
+    /sbin/install-info --delete /usr/share/info/$file.info.gz --dir=/usr/share/info/dir &> /dev/null || :
+  fi
+done
+postinstall scriptlet (using /bin/sh):
+/bin/grep -v '(sh-utils)\|(fileutils)\|(textutils)' /usr/share/info/dir > \
+  /usr/share/info/dir.rpmmodify || exit 0
+    /bin/mv -f /usr/share/info/dir.rpmmodify /usr/share/info/dir
+if [ -f /usr/share/info/coreutils.info.gz ]; then
+  /sbin/install-info /usr/share/info/coreutils.info.gz /usr/share/info/dir || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+  if [ -f /usr/share/info/coreutils.info.gz ]; then
+    /sbin/install-info --delete /usr/share/info/coreutils.info.gz /usr/share/info/dir || :
+  fi
+fi

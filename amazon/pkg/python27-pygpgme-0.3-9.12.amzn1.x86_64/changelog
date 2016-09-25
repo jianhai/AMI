@@ -1,0 +1,134 @@
+* 二 2月 03 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/pygpgme-0.3-9.el7
+
+* 四 2月 13 2014 Miloslav Trmač <mitr@redhat.com> - 0.3-9
+- Drop %check to avoid a hang in pinentry-curses >= 0.8.1-12
+  Resolves: #1064349
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 0.3-8
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 0.3-7
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/pygpgme-0.3-6.el7
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 三 11月 28 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Fix a bug triggered when using gpg-signed repodata in yum
+
+* 三 11月 28 2012 Miloslav Trmač <mitr@redhat.com> - 0.3-5
+- Disable -fstrict-aliasing (see http://www.python.org/dev/peps/pep-3123/ for
+  rationale)
+- Don't ship .pyc files from the test suite in %doc, to avoid multilib
+  conflicts
+
+* 五 11月 23 2012 Miloslav Trmač <mitr@redhat.com> - 0.3-4
+- Don't build the python3 package on RHEL
+
+* 五 8月 03 2012 David Malcolm <dmalcolm@redhat.com> - 0.3-3
+- rebuild for https://fedoraproject.org/wiki/Features/Python_3.3
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 二 5月 15 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.3-1
+- New upstream release
+- Build a python3 subpackage
+- Run the test suite even though we ignore the output
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 8月 17 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.2-1
+- Update for new upstream release.  Doesn't add any new code, just switches
+  from a snapshot to a release and bumps version
+
+* 五 2月 11 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 22.20101027bzr69
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 10月 27 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 21.20101027bzr69
+- New snapshot to fix BZ#647059: pygpgme error creating context on F14.
+
+* 三 7月 21 2010 David Malcolm <dmalcolm@redhat.com> - 0.1-20.20090824bzr68
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 一 7月 12 2010 Nathan Blackham <blackham@amazon.com>
+- rebuilding on python26
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pygpgme-0.1-18.20090824bzr68.el6
+- import source package RHEL6/pygpgme-0.1-17.20090824bzr68.el6
+- setup complete for package pygpgme
+
+* 四 3月 04 2010 Miloslav Trmač <mitr@redhat.com> - 0.1-19.20090824bzr68
+- Filter out bogus Provides: _gpgme.so
+- Drop no longer required references to BuildRoot:
+- s/%define/%global/g
+
+* 三 2月 03 2010 Miloslav Trmač <mitr@redhat.com> - 0.1-18.20090824bzr68
+- Classify pygpgme-examples.patch as Source, not a Patch, to silence rpmlint
+
+* 三 10月 28 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-17.20090824bzr68
+- Include tests and examples as documentation.
+
+* 一 8月 24 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-16.20090824bzr68
+- Rebase to new upstream snapshot
+- Patches merged upstream
+- Fixes deprecation warnings on py2.6/py3.0
+- Remove py2.3 patch -- only needed for EPEL-4
+
+* 二 7月 28 2009 Jesse Keating <jkeating@redhat.com> - 0.1-15.20090121bzr54
+- Add a second patch from mitr for symmetric_encryption_support
+
+* 二 7月 28 2009 Jesse Keating <jkeating@redhat.com> - 0.1-14.20090121bzr54
+- Patch from mitr for gpgme_ctx_set_engine_info
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-13.20090121bzr54
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-12.20090121bzr54
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 22 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-11.20090121bzr54
+- Add patch to cvs.
+
+* 三 1月 21 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-10.20090121bzr54
+- Update to upstream snapshot.
+
+* 五 11月 28 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.1-9
+- Rebuild for Python 2.6
+
+* 五 2月 08 2008 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-8
+- Rebuild for new gcc.
+
+* 四 1月 03 2008 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-7
+- Include egg-info files.
+
+* 五 5月 18 2007 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-6
+- Rebuild to pick up enhancements from gcc on F-8.
+- Update licensing to conform to new guidelines.
+
+* 五 5月 18 2007 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-5
+- Rebuild because of a bug in linking to an early version of the python-2.5
+  package,
+
+* 一 10月 23 2006 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-4
+- Bump and rebuild for python 2.5 on devel.
+
+* 一 10月 23 2006 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-3
+- Add a patch to work under Python 2.3.
+- Stop shipping the tests as they are useless to the end user.
+
+* 五 10月 13 2006 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-2
+- Change URL to cheeseshop
+
+* 日 10月 08 2006 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-1
+- Initial build for Fedora Extras.
+

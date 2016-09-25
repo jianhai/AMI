@@ -1,0 +1,14 @@
+/usr/bin/python2.7
+config(yum) = 3.4.3-137.67.amzn1
+python(abi) = 2.7
+python27(dist-packages)
+python27-iniparse
+python27-pygpgme
+python27-pyliblzma
+python27-pyxattr
+python27-urlgrabber >= 3.9.0-8
+rpm >= 0:4.4.2
+rpm-python27 > 4.11.2-2.63.amzn1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+yum-metadata-parser(python27) >= 1.1.0

@@ -1,0 +1,12 @@
+* 五 7月 09 2010 22:45:42 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/setserial-2.17-25.el6
+
+* 五 7月 09 2010 22:45:41 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/setserial-2.17-24.1.el6
+
+* 五 5月 07 2010 02:48:24 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/setserial-2.17-19.2.2
+
+* 五 5月 07 2010 00:16:57 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package setserial
+

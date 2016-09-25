@@ -1,0 +1,10 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+/sbin/chkconfig --add iptables
+/sbin/chkconfig --add ip6tables
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+if [ $1 -eq 0 ]; then
+   /sbin/chkconfig --del iptables
+   /sbin/chkconfig --del ip6tables
+fi

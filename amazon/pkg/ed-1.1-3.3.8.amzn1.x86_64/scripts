@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/install-info /usr/share/info/ed.info.gz /usr/share/info/dir --entry="* ed: (ed).                  The GNU Line Editor." || :
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ] ; then
+  /sbin/install-info --delete /usr/share/info/ed.info.gz /usr/share/info/dir --entry="* ed: (ed).                  The GNU Line Editor." || :
+fi

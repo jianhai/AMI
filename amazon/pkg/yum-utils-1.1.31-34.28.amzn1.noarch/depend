@@ -1,0 +1,9 @@
+/usr/bin/python2.7
+libxml2-python27
+python(abi) = 2.7
+python27(dist-packages)
+python27-kitchen
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+yum(python27) >= 3.4.3-120

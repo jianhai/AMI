@@ -1,0 +1,318 @@
+* 二 9月 09 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/cpio-2.10-12.el6_5
+
+* 四 5月 22 2014 Pavel Raiskup <praiskup@redhat.com> - 2.10-12
+- better check for read() error
+
+* 二 10月 30 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/cpio-2.10-11.el6_3
+
+* 四 10月 18 2012 Pavel Raiskup <praiskup@redhat.com> 2:10-11
+- fix for bad file name splitting while creating ustar archive (#866467)
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/cpio-2.10-10.el6
+
+* 一 1月 09 2012 Ondrej Vasik <ovasik@redhat.com> 2.10-10
+- update cpio.1 manpage (#746209)
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/cpio-2.10-9.el6
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/cpio-2.10-8.el6
+- import source package RHEL6/cpio-2.10-4.el6
+
+* 一 5月 31 2010 Ondrej Vasik <ovasik@redhat.com> 2.10-9
+- built with fno-strict-aliasing(#596153)
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/cpio-2.6-23.el5_4.1
+- import source package RHEL5/cpio-2.6-23.el5
+- import source package RHEL5/cpio-2.6-20
+- added submodule prep for package cpio
+
+* 四 3月 11 2010 Ondrej Vasik <ovasik@redhat.com> 2.10-8
+- clear patches a bit, run testsuite
+
+* 四 3月 11 2010 Ondrej Vasik <ovasik@redhat.com> 2.10-7
+- CVE-2010-0624 fix heap-based buffer overflow by expanding
+  a specially-crafted archive(#571843)
+- comment patches
+
+* 二 2月 23 2010 Ondrej Vasik <ovasik@redhat.com> 2.10-6
+- fix segfault with nonexisting file with patternnames
+  (#567655)
+
+* 二 2月 23 2010 Ondrej Vasik <ovasik@redhat.com> 2.10-5
+- remove redundant setLocale patch
+
+* 三 1月 06 2010 Ondrej Vasik <ovasik@redhat.com> 2.10-4
+- do not fail with new POSIX 2008 utimens() glibc call
+  (#552320)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.10-3.1
+- Rebuilt for RHEL 6
+
+* 四 8月 06 2009 Ondrej Vasik <ovasik@redhat.com> 2.10-3
+- do process install-info only without --excludedocs(#515924)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 22 2009 Ondrej Vasik <ovasik@redhat.com> 2.10-1
+- new upstream release 2.10
+
+* 一 3月 09 2009 Ondrej Vasik <ovasik@redhat.com> 2.9.90-5
+- define default remote shell as /usr/bin/ssh(#452904)
+- use /etc/rmt as default rmt command
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.9.90-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 11 2009 Ondrej Vasik <ovasik@redhat.com> 2.9.90-3
+- make -d honor system umask(#484997)
+
+* 五 7月 18 2008 Kamil Dudka <kdudka@redhat.com> 2.9.90-2
+- Support major/minor device numbers over 127 (bz#450109)
+
+* 一 6月 02 2008 Ondrej Vasik <ovasik@redhat.com> 2.9.90-1
+- new upstream alpha version 2.9.90 + removed applied patches
+
+* 一 3月 03 2008 Radek Brich <rbrich@redhat.com> 2.9-7
+- fix -dir_perm patch to restore permissions correctly even
+  in passthrough mode -- revert affected code to cpio 2.8 state
+  (bz#430835)
+
+* 四 2月 14 2008 Radek Brich <rbrich@redhat.com> 2.9-6
+- when extracting archive created with 'find -depth',
+  restore the permissions of directories properly (bz#430835)
+- fix for GCC 4.3
+
+* 四 11月 01 2007 Radek Brich <rbrich@redhat.com> 2.9-5
+- upstream patch for CVE-2007-4476 (stack crashing in safer_name_suffix)
+
+* 二 9月 04 2007 Radek Brich <rbrich@redhat.com> 2.9-4
+- Updated license tag
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 2.9-3
+- Rebuild for selinux ppc32 issue.
+
+* 四 7月 19 2007 Radek Brich <rbrich@redhat.com> 2.9-1.1
+- fix spec, rebuild
+
+* 四 7月 19 2007 Radek Brich <rbrich@redhat.com> 2.9-1
+- update to 2.9, GPLv3
+
+* 二 2月 20 2007 Peter Vrabec <pvrabec@redhat.com> 2.6-27
+- fix typo in changelog
+
+* 四 2月 08 2007 Ruben Kerkhof <ruben@rubenkerkhof.com> 2.6-26
+- Preserve timestamps when installing files
+
+* 四 2月 08 2007 Peter Vrabec <pvrabec@redhat.com> 2.6-25
+- set cpio bindir properly
+
+* 三 2月 07 2007 Peter Vrabec <pvrabec@redhat.com> 2.6-24
+- fix spec file to meet Fedora standards (#225656)
+
+* 一 1月 22 2007 Peter Vrabec <pvrabec@redhat.com> 2.6-23
+- fix non-failsafe install-info use in scriptlets (#223682)
+
+* 日 12月 10 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-22
+- fix rpmlint issue in spec file
+
+* 二 12月 05 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-21
+- fix setlocale (#200478)
+
+* 六 11月 25 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-20
+- cpio man page provided by RedHat
+
+* 二 7月 18 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-19
+- fix cpio --help output (#197597)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.6-18.1
+- rebuild
+
+* 六 6月 10 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-18
+- autoconf was added to BuildRequires, because autoheader is 
+  used in prep phase (#194737)
+
+* 二 3月 28 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-17
+- rebuild
+
+* 六 3月 25 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-15
+- fix (#186339) on ppc and s390
+
+* 四 3月 23 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-14
+- init struct  file_hdr (#186339)
+
+* 三 3月 15 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-13
+- merge toAsciiError.patch with writeOutHeaderBufferOverflow.patch
+- merge largeFileGrew.patch with lfs.patch
+- fix large file support, cpio is able to store files<8GB 
+  in 'old ascii' format (-H odc option)
+- adjust warnings.patch
+
+* 二 3月 14 2006 Peter Vrabec <pvrabec@redhat.com> 2.6-12
+- fix warn_if_file_changed() and set exit code to #1 when 
+  cpio fails to store file > 4GB (#183224)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.6-11.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.6-11.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 23 2005 Peter Vrabec <pvrabec@redhat.com> 2.6-11
+- fix previous patch(writeOutHeaderBufferOverflow)
+
+* 三 11月 23 2005 Peter Vrabec <pvrabec@redhat.com> 2.6-10
+- write_out_header rewritten to fix buffer overflow(#172669)
+
+* 一 10月 31 2005 Peter Vrabec <pvrabec@redhat.com> 2.6-9
+- fix checksum error on 64-bit machines (#171649)
+
+* 五 7月 01 2005 Peter Vrabec <pvrabec@redhat.com> 2.6-8
+- fix large file support, archive >4GiB, archive members <4GiB (#160056)
+- fix race condition holes, use mode 0700 for dir creation
+
+* 二 5月 17 2005 Peter Vrabec <pvrabec@redhat.com> 2.6-7
+- fix #156314 (CAN-2005-1229) cpio directory traversal issue
+- fix some gcc warnings
+
+* 一 4月 25 2005 Peter Vrabec <pvrabec@redhat.com> 2.6-6
+- fix race condition (#155749)
+- use find_lang macro
+
+* 四 3月 17 2005 Peter Vrabec <pvrabec@redhat.com>
+- rebuild 2.6-5
+
+* 一 1月 24 2005 Peter Vrabec <pvrabec@redhat.com>
+- insecure file creation (#145721)
+
+* 一 1月 17 2005 Peter Vrabec <pvrabec@redhat.com>
+- fix symlinks pack (#145225)
+
+* 五 1月 14 2005 Peter Vrabec <pvrabec@redhat.com>
+- new fixed version of lfs patch (#144688)
+
+* 四 1月 13 2005 Peter Vrabec <pvrabec@redhat.com>
+- upgrade to cpio-2.6
+
+* 二 11月 09 2004 Peter Vrabec <pvrabec@redhat.com>
+- fixed "cpio -oH ustar (or tar) saves bad mtime date after Jan 10 2004" (#114580)
+
+* 一 11月 01 2004 Peter Vrabec <pvrabec@redhat.com>
+- support large files > 2GB (#105617)
+
+* 四 10月 21 2004 Peter Vrabec <pvrabec@redhat.com>
+- fix dependencies in spec
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 9月 23 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- do not link against -lnsl
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 14 2003 Jeff Johnson <jbj@redhat.com> 2.5-3
+- setlocale for i18n compliance (#79136).
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 11月 18 2002 Jeff Johnson <jbj@redhat.com> 2.5-1
+- update 2.5, restack and consolidate patches.
+- don't apply (but include for now) freebsd and #56346 patches.
+- add url (#54598).
+
+* 四 11月 07 2002 Jeff Johnson <jbj@redhat.com> 2.4.2-30
+- rebuild from CVS.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 11月 22 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.4.2-25
+- Fix up extraction of multiply linked files when the first link is
+  excluded (Bug #56346)
+
+* 一 10月 01 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.4.2-24
+- Merge and adapt patches from FreeBSD, this should fix FIFO handling
+
+* 二 6月 26 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add and adapt Debian patch (pl36), fixes #45285 and a couple of other issues
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 二 8月 08 2000 Jeff Johnson <jbj@redhat.com>
+- update man page with decription of -c behavior (#10581).
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 四 6月 29 2000 Preston Brown <pbrown@redhat.com>
+- patch from HJ Lu for better error codes upon exit
+
+* 一 6月 05 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 三 2月 09 2000 Jeff Johnson <jbj@redhat.com>
+- missing defattr.
+
+* 一 2月 07 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed manpages
+
+* 五 12月 17 1999 Jeff Johnson <jbj@redhat.com>
+- revert the stdout patch (#3358), restoring original GNU cpio behavior
+  (#6376, #7538), the patch was dumb.
+
+* 二 8月 31 1999 Jeff Johnson <jbj@redhat.com>
+- fix infinite loop unpacking empty files with hard links (#4208).
+- stdout should contain progress information (#3358).
+
+* 日 3月 21 1999 Crstian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 12)
+
+* 六 12月 05 1998 Jeff Johnson <jbj@redhat.com>
+- longlong dev wrong with "-o -H odc" headers (formerly "-oc").
+
+* 四 12月 03 1998 Cristian Gafton <gafton@redhat.com>
+- patch to compile on glibc 2.1, where strdup is a macro
+
+* 二 7月 14 1998 Jeff Johnson <jbj@redhat.com>
+- Fiddle bindir/libexecdir to get RH install correct.
+- Don't include /sbin/rmt -- use the rmt from dump package.
+- Don't include /bin/mt -- use the mt from mt-st package.
+- Add prereq's
+
+* 二 6月 30 1998 Jeff Johnson <jbj@redhat.com>
+- fix '-c' to duplicate svr4 behavior (problem #438)
+- install support programs & info pages
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 10月 17 1997 Donnie Barnes <djb@redhat.com>
+- added BuildRoot
+- removed "(used by RPM)" comment in Summary
+
+* 四 6月 19 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+- no longer statically linked as RPM doesn't use cpio for unpacking packages
+

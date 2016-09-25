@@ -1,0 +1,13 @@
+postinstall scriptlet (using /bin/sh):
+if [ $1 -eq 1 ]; then
+   /sbin/chkconfig --add rngd
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+   /sbin/service rngd stop > /dev/null 2>&1
+   /sbin/chkconfig --del rngd
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ $1 -ge 1 ]; then
+   /sbin/service rngd condrestart > /dev/null 2>&1
+fi

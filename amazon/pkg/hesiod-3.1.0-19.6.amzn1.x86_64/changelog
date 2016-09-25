@@ -1,0 +1,15 @@
+* 四 7月 22 2010 18:18:50 UTC Cristian Gafton <gafton@amazon.com>
+- move changelog at the end of file
+
+* 五 7月 09 2010 22:02:59 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hesiod-3.1.0-19.el6
+
+* 五 7月 09 2010 22:02:55 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hesiod-3.1.0-18.el6
+
+* 五 5月 07 2010 01:23:35 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/hesiod-3.1.0-8
+
+* 五 5月 07 2010 00:13:26 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package hesiod
+

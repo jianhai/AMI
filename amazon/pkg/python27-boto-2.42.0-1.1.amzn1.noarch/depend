@@ -1,0 +1,19 @@
+/bin/sh
+/bin/sh
+/usr/bin/python2.7
+alternatives(addslave)
+alternatives(force)
+alternatives(removeslave)
+alternatives(removeslave)
+python(abi) = 2.7
+python27(alternatives)
+python27(alternatives)
+python27(dist-packages)
+python27-paramiko >= 1.7.5
+python27-requests >= 1.2.3
+python27-requests <= 2.0.1
+python27-rsa >= 3.1.1
+python27-simplejson >= 3.6.5
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

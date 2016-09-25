@@ -1,0 +1,4 @@
+postinstall scriptlet (using /bin/sh):
+if [ -e /var/run/dmeventd.pid ]; then
+	/sbin/dmeventd -R || echo "Failed to restart dmeventd daemon. Please, try manual restart."
+fi

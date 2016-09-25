@@ -1,0 +1,13 @@
+/usr/bin/shasum
+/usr/lib64/perl5/vendor_perl/Digest
+/usr/lib64/perl5/vendor_perl/Digest/SHA.pm
+/usr/lib64/perl5/vendor_perl/auto/Digest
+/usr/lib64/perl5/vendor_perl/auto/Digest/SHA
+/usr/lib64/perl5/vendor_perl/auto/Digest/SHA/SHA.so
+/usr/share/doc/perl-Digest-SHA-5.85
+/usr/share/doc/perl-Digest-SHA-5.85/Changes
+/usr/share/doc/perl-Digest-SHA-5.85/README
+/usr/share/doc/perl-Digest-SHA-5.85/examples
+/usr/share/doc/perl-Digest-SHA-5.85/examples/dups
+/usr/share/man/man1/shasum.1.gz
+/usr/share/man/man3/Digest::SHA.3pm.gz

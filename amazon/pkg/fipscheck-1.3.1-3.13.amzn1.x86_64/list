@@ -1,0 +1,10 @@
+/usr/bin/fipscheck
+/usr/bin/fipshmac
+/usr/lib64/fipscheck/fipscheck.hmac
+/usr/share/doc/fipscheck-1.3.1
+/usr/share/doc/fipscheck-1.3.1/AUTHORS
+/usr/share/doc/fipscheck-1.3.1/COPYING
+/usr/share/doc/fipscheck-1.3.1/ChangeLog
+/usr/share/doc/fipscheck-1.3.1/README
+/usr/share/man/man8/fipscheck.8.gz
+/usr/share/man/man8/fipshmac.8.gz

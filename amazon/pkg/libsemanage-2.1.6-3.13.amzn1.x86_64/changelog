@@ -1,0 +1,1020 @@
+* 三 3月 04 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Install libsemanage python module on dist-packages
+
+* 四 2月 19 2015 Ben Cressey <bcressey@amazon.com>
+- conflict with dependent packages built for an older python
+
+* 四 2月 12 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 一 3月 18 2013 Cristian Gafton <gafton@amazon.com>
+- import source package F17/libsemanage-2.1.6-3.fc17
+
+* 二 3月 06 2012 Cristian Gafton <gafton@amazon.com>
+- import source package F16/libsemanage-2.1.2-1.fc16
+
+* 三 2月 15 2012 Dan Walsh <dwalsh@redhat.com> - 2.1.6-3
+- Check in correct patch.
+
+* 一 1月 23 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Fix release number so it is incremental
+
+* 五 1月 06 2012 Dan Walsh <dwalsh@redhat.com> - 2.1.6-2
+- Add patch form Xin Ouyang to make library use private semanage.conf
+
+* 三 12月 21 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.6-1
+-Update to upstream
+	* add ignoredirs config for genhomedircon
+	* Fallback_user_level can be NULL if you are not using MLS
+
+* 四 12月 15 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.5-4
+- Rebuild with latest libsepol
+
+* 四 12月 15 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.5-3
+- Rebuild with latest libsepol
+
+* 四 12月 15 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.5-2
+- Add support for ignoredirs param in /etc/selinux/semanage.conf
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libsemanage-2.0.43-4.1.el6
+
+* 五 11月 04 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.5-1
+- Upgrade to upstream
+	* regenerate .pc on VERSION change
+	* maintain mode even if umask is tighter
+	* semanage.conf man page
+	* create man5dir if not exist
+
+* 三 10月 19 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.4-2
+-    Fix handling of umask, so files get created with the correct label.
+
+* 一 9月 19 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.4-2
+-    Add Guido Trentalancia semanage.conf man page
+
+* 一 9月 19 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.4-1
+-Update to upstream
+	* Create a new preserve_tunables flag
+	* tree: default make target to all not
+	* fix semanage_store_access_check calling arguments
+
+* 三 9月 14 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.3-2
+- Add support for preserving tunables
+
+* 二 8月 30 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.3-1
+-Update to upstream
+	* python wrapper makefile changes
+
+* 四 8月 18 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.2-1
+-Update to upstream
+2.1.2 2011-08-17
+	* print error debug info for buggy fc
+	* introduce semanage_set_root and friends
+	* throw exceptions in python rather than return
+	* python3 support.
+	* patch for MCS/MLS in user files
+
+2.1.1 2011-08-01
+	* Remove generated files, expand .gitignore
+	* Use -Werror and change a few prototypes to support it
+
+* 四 7月 28 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.0-1
+- Update to upstream
+	* Release, minor version bump
+
+* 三 6月 08 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.46-6
+- More fixes for disabled modules
+
+* 二 6月 07 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.46-5
+- Change libsemanage mechanism for handling disabled modules. Now it will only create a flag for a module 
+indicating the module is disabled.  MODULE.pp.disabled, it will no longer rename the module.  This way we can
+ship active modules in rpm.
+
+* 三 6月 01 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.46-4
+- Add semanage_set_selinux_path, to allow semodule to work on alternate selinux pools
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.46-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 30 2010 David Malcolm <dmalcolm@redhat.com> - 2.0.46-2
+- big reworking of the support-multiple-python-builds patch to deal with
+PEP 3149: the latest Python 3.2 onwards uses include paths and library names
+that don't fit prior naming patterns, and so we must query python3-config for
+this information.  To complicate things further, python 2's python-config
+doesn't understand all of the options needed ("--extension-suffix").  I've
+thus added new Makefile variables as needed, to be supplied by the specfile by
+invoking the appropriate config tool (or by hardcoding the old value for
+"--extension-suffix" i.e. ".so")
+- rework python3 manifest for PEP 3149, and rebuild for newer python3
+
+* 二 12月 21 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.46-1
+- Update to upstream
+  * Fix compliation under GCC 4.6 by Justin Mattock
+
+* 三 8月 25 2010 Thomas Spura <tomspur@fedoraproject.org> - 2.0.45-6
+- rebuild with python3.2
+  http://lists.fedoraproject.org/pipermail/devel/2010-August/141368.html
+
+* 三 7月 21 2010 David Malcolm <dmalcolm@redhat.com> - 2.0.45-5
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libsemanage-2.0.43-4.el6
+- import source package RHEL6/libsemanage-2.0.39-1.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/libsemanage-1.9.1-4.4.el5
+- import source package RHEL5/libsemanage-1.9.1-3.el5
+- added submodule prep for package libsemanage
+
+* 二 4月 27 2010 David Malcolm <dmalcolm@redhat.com> - 2.0.45-4
+- add python3 subpackage
+
+* 三 4月 07 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.45-3
+- Fix -devel package to point at the correct shared library
+
+* 五 3月 26 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.45-2
+- Move shared library to /usr/lib
+
+* 一 3月 08 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.45-1
+- Update to upstream
+	* Add enable/disable patch support from Dan Walsh.
+	* Add usepasswd flag to semanage.conf to disable genhomedircon using
+	  passwd from Dan Walsh.
+	* regenerate swig wrappers
+
+* 四 2月 25 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.44-2
+- Allow disable of usepasswd
+
+* 三 2月 17 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.44-1
+- Update to upstream
+	* Replace usage of fmemopen() with sepol_policy_file_set_mem() since
+	  glibc < 2.9 does not support binary mode ('b') for fmemopen'd
+	  streams.
+
+* 四 1月 28 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.43-4
+- Cleanup spec file
+
+* 一 1月 18 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.43-3
+- Splect libsemanage.a into a static subpackage to keep fedora packaging guidelines happy
+
+* 三 12月 16 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.43-2
+- Rebuild all c programs with -fPIC
+
+* 二 12月 01 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.43-1
+- Update to upstream
+  * Move libsemanage.so to /usr/lib
+  * Add NAME lines to man pages from Manoj Srivastava<srivasta@debian.org>
+
+* 三 11月 18 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.42-1
+- Update to upstream
+  * Move load_policy from /usr/sbin to /sbin from Dan Walsh.
+
+* 一 11月 02 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.41-1
+- Update to upstream
+  * Add pkgconfig file from Eamon Walsh.
+  * Add semanage_set_check_contexts() function to disable calling
+  setfiles
+
+* 一 9月 28 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.39-1
+- Update to upstream
+  * make swigify
+
+* 日 9月 20 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.38-2
+- Dont relabel /root with genhomedircon
+
+* 四 9月 17 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.38-1
+- Update to upstream
+  * Change semodule upgrade behavior to install even if the module
+    is not present from Dan Walsh.
+  * Make genhomedircon trim excess '/' from homedirs from Dan Walsh.
+
+* 三 9月 09 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.37-1
+- Update to upstream
+  * Fix persistent dontaudit support to rebuild policy if the 
+        dontaudit state is changed from Chad Sellers.
+- Move load_policy to /sbin
+
+* 五 8月 28 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.36-2
+- Add enable/disable modules
+
+* 三 8月 26 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.36-1
+- Update to upstream
+  * Changed bzip-blocksize=0 handling to support existing compressed
+  modules in the store.
+
+* 三 8月 26 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.35-2
+- Make sure /root is not used in genhomedircon
+
+* 三 8月 05 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.35-1
+* Revert hard linking of files between tmp/active/previous.
+  * Enable configuration of bzip behavior from Stephen Smalley.
+    bzip-blocksize=0 to disable compression and decompression support.
+    bzip-blocksize=1..9 to set the blocksize for compression.
+    bzip-small=true to reduce memory usage for decompression.
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.33-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 10 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.33-2
+- Put check for /root back into genhomedircon
+
+* 二 7月 07 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.33-1
+- Update to upstream
+
+* 一 6月 08 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.32-1
+- Update to upstream
+  * Ruby bindings from David Quigley.
+
+* 四 4月 09 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.31-5
+- Return error on invalid file
+
+* 三 3月 11 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.31-4
+- Fix typo
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.31-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 15 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.31-2
+- Fix link to only link on sandbox
+
+* 一 1月 12 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.31-1
+- Update to upstream
+  * Policy module compression (bzip) support from Dan Walsh.
+  * Hard link files between tmp/active/previous from Dan Walsh.
+
+* 一 1月 12 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.30-3
+- Fix up patch to get it upstreamed
+
+* 四 12月 04 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.0.30-2
+- Rebuild for Python 2.6
+
+* 四 12月 04 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.30-1
+* Add semanage_mls_enabled() interface from Stephen Smalley.
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.0.29-2
+- Rebuild for Python 2.6
+
+* 一 9月 15 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.28-1
+- Update to upstream
+  * Add USER to lines to homedir_template context file from Chris PeBenito.
+
+* 一 9月 15 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.28-2
+- Add compression support
+
+* 一 9月 15 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.28-1
+- Update to upstream
+  * allow fcontext and seuser changes without rebuilding the policy from Dan Walsh
+
+* 三 9月 10 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.27-3
+- Additional fixes for Don't rebuild on fcontext or seuser modifications
+
+* 二 9月 02 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.27-2
+- Don't rebuild on fcontext or seuser modifications
+
+* 二 8月 05 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.27-1
+- Update to upstream
+  * Modify genhomedircon to skip groupname entries.
+  Ultimately we need to expand them to the list of users to support per-role homedir labeling when using the groupname syntax.
+
+* 二 7月 29 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.26-1
+- Update to upstream
+  * Fix bug in genhomedircon fcontext matches logic from Dan Walsh.
+  Strip any trailing slash before appending /*$.
+
+* 二 6月 17 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.25-3
+- Another fix for genhomedircon
+
+* 三 5月 28 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 2.0.25-2
+- fix license tag
+
+* 二 2月 05 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.25-1
+- Update to upstream
+  * Do not call genhomedircon if the policy was not rebuilt from Stephen Smalley.
+    Fixes semanage boolean -D seg fault (bug 441379).
+
+* 二 2月 05 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.24-1
+- Update to upstream
+  * make swigify
+
+* 二 2月 05 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.23-1
+- Update to upstream
+  * Use vfork rather than fork for libsemanage helpers to reduce memory overhead as suggested by Todd Miller.
+
+* 一 2月 04 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.22-1
+- Update to upstream
+  * Free policydb before fork from Joshua Brindle.
+  * Drop the base module immediately after expanding to permit memory re-use from Stephen Smalley.
+
+* 六 2月 02 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.20-1
+- Update to upstream
+  * Use sepol_set_expand_consume_base to reduce peak memory usage when
+  using semodule
+
+* 五 2月 01 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.19-1
+- Update to upstream
+  * Fix genhomedircon to not override a file context with a homedir context from Todd Miller.
+
+* 二 1月 29 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.18-1
+- Update to upstream
+  * Fix spurious out of memory error reports.
+  * Merged second version of fix for genhomedircon handling from Caleb Case.
+
+* 二 1月 22 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.16-1
+- Update to upstream
+  * Merged fix for genhomedircon handling of missing HOME_DIR or HOME_ROOT templates from Caleb Case.
+
+* 二 1月 22 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.15-2
+- Stop differentiating on user for homedir labeling
+
+* 四 12月 06 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.15-1
+- Update to upstream
+  * Fix genhomedircon handling of shells and missing user context template from Dan Walsh.
+  * Copy the store path in semanage_select_store from Dan Walsh.
+- Add expand-check=0 to semanage.conf
+
+* 一 12月 03 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.14-5
+- Fix handling of /etc/shells so genhomedircon will work
+
+* 四 11月 29 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.14-3
+- Allow semanage_genhomedircon to work with out a USER int homedir.template
+
+* 六 11月 10 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.14-2
+- Fix semanage_select_store to allocate memory, fixes crash on invalid store
+
+* 二 11月 06 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.14-1
+- Upgrade to latest from NSA
+  * Call rmdir() rather than remove() on directory removal so that errno isn't polluted from Stephen Smalley.
+  * Allow handle_unknown in base to be overridden by semanage.conf from Stephen Smalley.
+
+* 五 10月 05 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.12-1
+- Upgrade to latest from NSA
+  * ustr cleanups from James Antill.
+  * Ensure that /root gets labeled even if using the default context from Dan Walsh.
+
+* 五 9月 28 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.11-1
+- Upgrade to latest from NSA
+  * Fix ordering of file_contexts.homedirs from Todd Miller and Dan Walsh.
+
+* 五 9月 28 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.10-2
+- Fix sort order on generated homedir context
+
+* 五 9月 28 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.10-1
+- Upgrade to latest from NSA
+  * Fix error checking on getpw*_r functions from Todd Miller.
+  * Make genhomedircon skip invalid homedir contexts from Todd Miller.
+  * Set default user and prefix from seusers from Dan Walsh.
+  * Add swigify Makefile target from Dan Walsh.
+
+* 三 9月 26 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.9-1
+- Upgrade to latest from NSA
+  * Pass CFLAGS to CC even on link command, per Dennis Gilmore.
+  * Clear errno on non-fatal errors to avoid reporting them upon a
+    later error that does not set errno.
+  * Improve reporting of system errors, e.g. full filesystem or read-only filesystem from Stephen Smalley.
+
+- Fix segfault in genhomedircon when using bad user names
+
+* 三 9月 26 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.6-2
+- Fix genhomedircon code to only generate valid context
+- Fixes autorelabel problem
+
+* 四 9月 13 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.6-1
+- Upgrade to latest from NSA
+  * Change to use getpw* function calls to the _r versions from Todd Miller.
+
+* 四 8月 23 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.5-1
+- Upgrade to latest from NSA
+
+* 一 8月 20 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.4-1
+- Upgrade to latest from NSA
+  * Allow dontaudits to be turned off via semanage interface when
+    updating policy
+
+* 六 8月 11 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.3-5
+- Add ability to load a policy without dontaudit rules
+-
+
+* 二 6月 26 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.3-4
+- Rebuild to fix segfault on x86 platforms, swigify on each build
+
+* 五 6月 01 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.3-3
+- Rebuild for rawhide
+
+* 四 5月 03 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.3-2
+- Apply patch to fix dependencies in spec file from Robert Scheck
+
+* 三 4月 25 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.3-1
+- Upgrade to latest from NSA
+  * Fix to libsemanage man patches so whatis will work better from Dan Walsh
+
+* 三 4月 25 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.2-1
+- Upgrade to latest from NSA
+  * Merged optimizations from Stephen Smalley.
+    - do not set all booleans upon commit, only those whose values have changed
+    - only install the sandbox upon commit if something was rebuilt
+
+* 六 3月 17 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.1-2
+- Add SELinux to Man page Names so man -k will work
+
+* 一 3月 12 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.1-1
+* Merged dbase_file_flush patch from Dan Walsh.
+    This removes any mention of specific tools (e.g. semanage)
+    from the comment header of the auto-generated files,
+    since there are multiple front-end tools.
+
+* 二 2月 20 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.0-1
+- Upgrade to latest from NSA
+  * Merged Makefile test target patch from Caleb Case.
+  * Merged get_commit_number function rename patch from Caleb Case.
+  * Merged strnlen -> strlen patch from Todd Miller.
+
+* 三 2月 07 2007 Dan Walsh <dwalsh@redhat.com> - 1.10.1-1
+- Upgrade to latest from NSA
+  * Merged python binding fix from Dan Walsh.
+  * Updated version for stable branch.
+
+* 五 12月 22 2006 Dan Walsh <dwalsh@redhat.com> - 1.9.2-1
+- Upgrade to latest from NSA
+  * Merged patch to optionally reduce disk usage by removing 
+    the backup module store and linked policy from Karl MacMillan
+  * Merged patch to correctly propagate return values in libsemanage
+
+* 五 12月 22 2006 Dan Walsh <dwalsh@redhat.com> - 1.9.1-3
+- Apply Karl MacMillan patch to get proper error codes.
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.9.1-2
+- rebuild against python 2.5
+
+* 二 11月 28 2006 Dan Walsh <dwalsh@redhat.com> - 1.9.1-1
+- Upgrade to latest from NSA
+  * Merged patch to compile wit -fPIC instead of -fpic from
+    Manoj Srivastava to prevent hitting the global offest table
+    limit. Patch changed to include libselinux and libsemanage in
+    addition to libsepol.
+
+* 二 10月 17 2006 Dan Walsh <dwalsh@redhat.com> - 1.8-1
+- Upgrade to latest from NSA
+  * Updated version for release.
+
+* 四 8月 31 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.17-1
+- Upgrade to latest from NSA
+  * Merged patch to skip reload if no active store exists and
+    the store path doesn't match the active store path from Dan Walsh.
+  * Merged patch to not destroy sepol handle on error path of
+    connect from James Athey.
+  * Merged patch to add genhomedircon path to semanage.conf from
+    James Athey.
+
+* 四 8月 31 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.16-3
+- Fix semanage to not load if is not the correct policy type and it is installing
+
+* 四 8月 31 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.16-2
+- Fix requires lines
+
+* 三 8月 23 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.16-1
+- Upgrade to latest from NSA
+  * Make most copy errors fatal, but allow exceptions for
+    file_contexts.local, seusers, and netfilter_contexts if
+    the source file does not exist in the store.
+
+* 六 8月 12 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.15-1
+- Upgrade to latest from NSA
+  * Merged separate local file contexts patch from Chris PeBenito.
+  * Merged patch to make most copy errors non-fatal from Dan Walsh.
+
+* 四 8月 10 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.13-3
+- Change other updates to be non-fatal
+
+* 三 8月 09 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.13-2
+- Change netfilter stuff to be non-fatal so update can proceed.
+
+* 四 8月 03 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.13-1
+- Upgrade to latest from NSA
+  * Merged netfilter contexts support from Chris PeBenito.
+
+* 一 7月 17 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.12-2
+- Rebuild for new gcc
+
+* 二 7月 11 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.12-1
+- Upgrade to latest from NSA
+  * Merged support for read operations on read-only fs from 
+    Caleb Case (Tresys Technology).
+
+* 二 7月 04 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.11-1
+- Upgrade to latest from NSA
+  * Lindent.
+  * Merged setfiles location check patch from Dan Walsh.
+
+* 五 6月 16 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.9-1
+- Upgrade to latest from NSA
+  * Merged several fixes from Serge Hallyn:
+       dbase_file_cache:  deref of uninit data on error path.
+       dbase_policydb_cache:  clear fp to avoid double fclose
+       semanage_fc_sort:  destroy temp on error paths
+
+* 五 6月 16 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.8-2
+- Handle setfiles being in /sbin or /usr/sbin
+
+* 一 5月 15 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.8-1
+- Upgrade to latest from NSA
+  * Updated default location for setfiles to /sbin to
+    match policycoreutils.  This can also be adjusted via 
+    semanage.conf using the syntax:
+    [setfiles]
+    path = /path/to/setfiles
+    args = -q -c $@ $<
+    [end]
+
+* 一 5月 15 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.7-3
+- Spec file cleanup from n0dalus+redhat@gmail.com
+
+* 一 5月 15 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.7-2
+- Add /usr/include/semanage to spec file
+
+* 一 5月 08 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.7-1
+- Upgrade to latest from NSA
+  * Merged fix warnings patch from Karl MacMillan.
+
+* 五 4月 14 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.6-1
+- Upgrade to latest from NSA
+  * Merged updated file context sorting patch from Christopher
+    Ashworth, with bug fix for escaped character flag.
+  * Merged file context sorting code from Christopher Ashworth 
+    (Tresys Technology), based on fc_sort.c code in refpolicy.
+  * Merged python binding t_output_helper removal patch from Dan Walsh.
+  * Regenerated swig files.
+
+* 三 3月 29 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.3-1
+- Fix to work with new version of swig
+- Upgrade to latest from NSA
+  * Merged corrected fix for descriptor leak from Dan Walsh.
+
+* 三 3月 29 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.2-2
+- Fix leaky descriptor
+
+* 二 3月 21 2006 Dan Walsh <dwalsh@redhat.com> - 1.6.2-1
+- Upgrade to latest from NSA
+  * Merged Makefile PYLIBVER definition patch from Dan Walsh.
+  * Merged man page reorganization from Ivan Gyurdiev.
+
+* 五 3月 17 2006 Dan Walsh <dwalsh@redhat.com> - 1.6-1
+- Make work on RHEL4
+- Upgrade to latest from NSA
+  * Merged abort early on merge errors patch from Ivan Gyurdiev.
+  * Cleaned up error handling in semanage_split_fc based on a patch
+    by Serge Hallyn (IBM) and suggestions by Ivan Gyurdiev.
+  * Merged MLS handling fixes from Ivan Gyurdiev.
+
+* 五 2月 17 2006 Dan Walsh <dwalsh@redhat.com> - 1.5.28-1
+- Upgrade to latest from NSA
+  * Merged bug fix for fcontext validate handler from Ivan Gyurdiev.
+  * Merged base_merge_components changes from Ivan Gyurdiev.
+
+* 四 2月 16 2006 Dan Walsh <dwalsh@redhat.com> - 1.5.26-1
+- Upgrade to latest from NSA
+  * Merged paths array patch from Ivan Gyurdiev.
+  * Merged bug fix patch from Ivan Gyurdiev.
+  * Merged improve bindings patch from Ivan Gyurdiev.
+  * Merged use PyList patch from Ivan Gyurdiev.  
+  * Merged memory leak fix patch from Ivan Gyurdiev.
+  * Merged nodecon support patch from Ivan Gyurdiev.
+  * Merged cleanups patch from Ivan Gyurdiev.
+  * Merged split swig patch from Ivan Gyurdiev.
+
+* 一 2月 13 2006 Dan Walsh <dwalsh@redhat.com> - 1.5.23-1
+- Upgrade to latest from NSA
+  * Merged optionals in base patch from Joshua Brindle.
+  * Merged treat seusers/users_extra as optional sections patch from
+    Ivan Gyurdiev.
+  * Merged parse_optional fixes from Ivan Gyurdiev.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.5.21-2.1
+- bump again for double-long bug on ppc(64)
+
+* 五 2月 10 2006 Dan Walsh <dwalsh@redhat.com> - 1.5.21-2
+- Fix handling of seusers and users_map file
+
+* 二 2月 07 2006 Dan Walsh <dwalsh@redhat.com> - 1.5.21-1
+- Upgrade to latest from NSA
+  * Merged seuser/user_extra support patch from Joshua Brindle.
+  * Merged remote system dbase patch from Ivan Gyurdiev.
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.5.20-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Dan Walsh <dwalsh@redhat.com> 1.5.20-1
+- Upgrade to latest from NSA
+  * Merged clone record on set_con patch from Ivan Gyurdiev.
+
+* 一 1月 30 2006 Dan Walsh <dwalsh@redhat.com> 1.5.19-1
+- Upgrade to latest from NSA
+  * Merged fname parameter patch from Ivan Gyurdiev.
+  * Merged more size_t -> unsigned int fixes from Ivan Gyurdiev.
+  * Merged seusers.system patch from Ivan Gyurdiev.
+  * Merged improve port/fcontext API patch from Ivan Gyurdiev.
+
+* 五 1月 27 2006 Dan Walsh <dwalsh@redhat.com> 1.5.18-1
+- Upgrade to latest from NSA
+  * Merged seuser -> seuser_local rename patch from Ivan Gyurdiev.
+  * Merged set_create_store, access_check, and is_connected interfaces
+    from Joshua Brindle.
+
+* 五 1月 13 2006 Dan Walsh <dwalsh@redhat.com> 1.5.16-1
+- Upgrade to latest from NSA
+  * Regenerate python wrappers.
+
+* 五 1月 13 2006 Dan Walsh <dwalsh@redhat.com> 1.5.15-1
+- Upgrade to latest from NSA
+  * Merged pywrap Makefile diff from Dan Walsh.
+  * Merged cache management patch from Ivan Gyurdiev.
+  * Merged bugfix for dbase_llist_clear from Ivan Gyurdiev.
+  * Merged remove apply_local function patch from Ivan Gyurdiev.
+  * Merged only do read locking in direct case patch from Ivan Gyurdiev.
+  * Merged cache error path memory leak fix from Ivan Gyurdiev.
+  * Merged auto-generated file header patch from Ivan Gyurdiev.
+  * Merged pywrap test update from Ivan Gyurdiev.
+  * Merged hidden defs update from Ivan Gyurdiev.
+
+* 五 1月 13 2006 Dan Walsh <dwalsh@redhat.com> 1.5.14-2
+- Break out python out of regular Makefile
+
+* 五 1月 13 2006 Dan Walsh <dwalsh@redhat.com> 1.5.14-1
+- Upgrade to latest from NSA
+  * Merged disallow port overlap patch from Ivan Gyurdiev.
+  * Merged join prereq and implementation patches from Ivan Gyurdiev.
+  * Merged join user extra data part 2 patch from Ivan Gyurdiev.
+  * Merged bugfix patch from Ivan Gyurdiev.
+  * Merged remove add_local/set_local patch from Ivan Gyurdiev.
+  * Merged user extra data part 1 patch from Ivan Gyurdiev.
+  * Merged size_t -> unsigned int patch from Ivan Gyurdiev.
+  * Merged calloc check in semanage_store patch from Ivan Gyurdiev,
+    bug noticed by Steve Grubb.
+  * Merged cleanups after add/set removal patch from Ivan Gyurdiev.
+
+* 六 1月 07 2006 Dan Walsh <dwalsh@redhat.com> 1.5.9-1
+- Upgrade to latest from NSA
+  * Merged const in APIs patch from Ivan Gyurdiev.
+  * Merged validation of local file contexts patch from Ivan Gyurdiev.
+  * Merged compare2 function patch from Ivan Gyurdiev.
+  * Merged hidden def/proto update patch from Ivan Gyurdiev.
+
+* 五 1月 06 2006 Dan Walsh <dwalsh@redhat.com> 1.5.8-1
+- Upgrade to latest from NSA
+  * Re-applied string and file optimization patch from Russell Coker,
+    with bug fix.
+  * Reverted string and file optimization patch from Russell Coker.
+  * Clarified error messages from parse_module_headers and 
+    parse_base_headers for base/module mismatches.
+
+* 五 1月 06 2006 Dan Walsh <dwalsh@redhat.com> 1.5.6-1
+- Upgrade to latest from NSA
+  * Clarified error messages from parse_module_headers and 
+    parse_base_headers for base/module mismatches.
+  * Merged string and file optimization patch from Russell Coker.
+  * Merged swig header reordering patch from Ivan Gyurdiev.
+  * Merged toggle modify on add patch from Ivan Gyurdiev.
+  * Merged ports parser bugfix patch from Ivan Gyurdiev.
+  * Merged fcontext swig patch from Ivan Gyurdiev.
+  * Merged remove add/modify/delete for active booleans patch from Ivan Gyurdiev.
+  * Merged man pages for dbase functions patch from Ivan Gyurdiev.
+  * Merged pywrap tests patch from Ivan Gyurdiev.
+
+* 四 1月 05 2006 Dan Walsh <dwalsh@redhat.com> 1.5.4-2
+- Patch to fix add
+
+* 四 1月 05 2006 Dan Walsh <dwalsh@redhat.com> 1.5.4-1
+- Upgrade to latest from NSA
+  * Merged patch series from Ivan Gyurdiev.
+    This includes patches to:
+    - separate file rw code from linked list
+    - annotate objects
+    - fold together internal headers
+    - support ordering of records in compare function
+    - add active dbase backend, active booleans
+    - return commit numbers for ro database calls
+    - use modified flags to skip rebuild whenever possible
+    - enable port interfaces
+    - update swig interfaces and typemaps
+    - add an API for file_contexts.local and file_contexts
+    - flip the traversal order in iterate/list
+    - reorganize sandbox_expand
+    - add seusers MLS validation
+    - improve dbase spec/documentation
+    - clone record on set/add/modify
+
+* 二 12月 27 2005 Dan Walsh <dwalsh@redhat.com> 1.5.3-3
+- Add Ivans patch to turn on ports
+
+* 三 12月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.5.3-2
+- Remove patch since upstream does the right thing
+
+* 三 12月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.5.3-1
+- Upgrade to latest from NSA
+  * Merged further header cleanups from Ivan Gyurdiev.
+  * Merged toggle modified flag in policydb_modify, fix memory leak
+    in clear_obsolete, polymorphism vs headers fix, and include guards
+    for internal headers patches from Ivan Gyurdiev.
+
+* 二 12月 13 2005 Dan Walsh <dwalsh@redhat.com> 1.5.1-2
+- Upgrade to latest from NSA
+  * Merged toggle modified flag in policydb_modify, fix memory leak
+    in clear_obsolete, polymorphism vs headers fix, and include guards
+    for internal headers patches from Ivan Gyurdiev.
+
+* 一 12月 12 2005 Dan Walsh <dwalsh@redhat.com> 1.5.1-1
+- Upgrade to latest from NSA
+  * Added file-mode= setting to semanage.conf, default to 0644.
+    Changed semanage_copy_file and callers to use this mode when
+    installing policy files to runtime locations.
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 12月 07 2005 Dan Walsh <dwalsh@redhat.com> 1.4-1
+- Fix mode of output seusers file
+
+* 二 12月 06 2005 Dan Walsh <dwalsh@redhat.com> 1.3.64-1
+- Upgrade to latest from NSA
+  * Changed semanage_handle_create() to set do_reload based on
+    is_selinux_enabled().  This prevents improper attempts to
+    load policy on a non-SELinux system.
+
+* 一 12月 05 2005 Dan Walsh <dwalsh@redhat.com> 1.3.63-1
+- Upgrade to latest from NSA
+  * Dropped handle from user_del_role interface.
+  * Removed defrole interfaces.
+
+* 二 11月 29 2005 Dan Walsh <dwalsh@redhat.com> 1.3.61-1
+- Upgrade to latest from NSA
+  * Merged Makefile python definitions patch from Dan Walsh.
+  * Removed is_selinux_mls_enabled() conditionals in seusers and users
+    file parsers.
+
+* 三 11月 23 2005 Dan Walsh <dwalsh@redhat.com> 1.3.59-1
+- Add additional swig objects
+  * Merged wrap char*** for user_get_roles patch from Joshua Brindle.
+  * Merged remove defrole from sepol patch from Ivan Gyurdiev.
+  * Merged swig wrappers for modifying users and seusers from Joshua Brindle.
+
+* 三 11月 23 2005 Dan Walsh <dwalsh@redhat.com> 1.3.56-2
+- Add additional swig objects
+
+* 三 11月 16 2005 Dan Walsh <dwalsh@redhat.com> 1.3.56-1
+- Upgrade to latest from NSA
+  * Fixed free->key_free bug.
+  * Merged clear obsolete patch from Ivan Gyurdiev.
+  * Merged modified swigify patch from Dan Walsh 
+    (original patch from Joshua Brindle).
+  * Merged move genhomedircon call patch from Chad Sellers.
+
+* 一 11月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.3.53-3
+- Add genhomedircon patch from Joshua Brindle
+
+* 五 11月 11 2005 Dan Walsh <dwalsh@redhat.com> 1.3.53-2
+- Add swigify patch from Joshua Brindle
+
+* 五 11月 11 2005 Dan Walsh <dwalsh@redhat.com> 1.3.53-1
+- Upgrade to latest from NSA
+  * Merged move seuser validation patch from Ivan Gyurdiev.
+  * Merged hidden declaration fixes from Ivan Gyurdiev,
+    with minor corrections.
+
+* 三 11月 09 2005 Dan Walsh <dwalsh@redhat.com> 1.3.52-1
+- Upgrade to latest from NSA
+  * Merged cleanup patch from Ivan Gyurdiev.
+    This renames semanage_module_conn to semanage_direct_handle,
+    and moves sepol handle create/destroy into semanage handle
+    create/destroy to allow use even when disconnected (for the
+    record interfaces).
+
+* 二 11月 08 2005 Dan Walsh <dwalsh@redhat.com> 1.3.51-1
+- Upgrade to latest from NSA
+  * Clear modules modified flag upon disconnect and commit.
+        * Added tracking of module modifications and use it to
+    determine whether expand-time checks should be applied
+    on commit.
+  * Reverted semanage_set_reload_bools() interface.
+
+* 二 11月 08 2005 Dan Walsh <dwalsh@redhat.com> 1.3.48-1
+- Upgrade to latest from NSA
+  * Disabled calls to port dbase for merge and commit and stubbed
+    out calls to sepol_port interfaces since they are not exported.
+  * Merged rename instead of copy patch from Joshua Brindle (Tresys).
+  * Added hidden_def/hidden_proto for exported symbols used within 
+    libsemanage to eliminate relocations.  Wrapped type definitions
+    in exported headers as needed to avoid conflicts.  Added
+    src/context_internal.h and src/iface_internal.h.
+  * Added semanage_is_managed() interface to allow detection of whether
+    the policy is managed via libsemanage.  This enables proper handling
+    in setsebool for non-managed systems.
+  * Merged semanage_set_reload_bools() interface from Ivan Gyurdiev,
+    to enable runtime control over preserving active boolean values
+    versus reloading their saved settings upon commit.
+
+* 一 11月 07 2005 Dan Walsh <dwalsh@redhat.com> 1.3.43-1
+- Upgrade to latest from NSA
+  * Merged seuser parser resync, dbase tracking and cleanup, strtol
+    bug, copyright, and assert space patches from Ivan Gyurdiev.
+  * Added src/*_internal.h in preparation for other changes.
+   * Added hidden/hidden_proto/hidden_def to src/debug.[hc] and
+          src/seusers.[hc].
+
+* 四 11月 03 2005 Dan Walsh <dwalsh@redhat.com> 1.3.41-1
+- Upgrade to latest from NSA
+  * Merged interface parse/print, context_to_string interface change,
+    move assert_noeof, and order preserving patches from Ivan Gyurdiev.
+        * Added src/dso.h in preparation for other changes.
+  * Merged install seusers, handle/error messages, MLS parsing,
+    and seusers validation patches from Ivan Gyurdiev.
+
+* 一 10月 31 2005 Dan Walsh <dwalsh@redhat.com> 1.3.39-1
+- Upgrade to latest from NSA
+  * Merged record interface, dbase flush, common database code,
+    and record bugfix patches from Ivan Gyurdiev.
+
+* 五 10月 28 2005 Dan Walsh <dwalsh@redhat.com> 1.3.38-1
+- Upgrade to latest from NSA
+  * Merged dbase policydb list and count change from Ivan Gyurdiev.
+  * Merged enable dbase and set relay patches from Ivan Gyurdiev.
+
+* 四 10月 27 2005 Dan Walsh <dwalsh@redhat.com> 1.3.36-1
+- Update from NSA
+  * Merged query APIs and dbase_file_set patches from Ivan Gyurdiev.
+
+* 三 10月 26 2005 Dan Walsh <dwalsh@redhat.com> 1.3.35-1
+- Update from NSA
+  * Merged sepol handle passing, seusers support, and policydb cache
+    patches from Ivan Gyurdiev.
+
+* 二 10月 25 2005 Dan Walsh <dwalsh@redhat.com> 1.3.34-1
+- Update from NSA
+  * Merged resync to sepol changes and booleans fixes/improvements 
+    patches from Ivan Gyurdiev.
+  * Merged support for genhomedircon/homedir template, store selection,
+    explicit policy reload, and semanage.conf relocation from Joshua
+    Brindle.
+
+* 一 10月 24 2005 Dan Walsh <dwalsh@redhat.com> 1.3.32-1
+- Update from NSA
+  * Merged resync to sepol changes and transaction fix patches from
+    Ivan Gyurdiev.
+  * Merged reorganize users patch from Ivan Gyurdiev.
+  * Merged remove unused relay functions patch from Ivan Gyurdiev.
+
+* 五 10月 21 2005 Dan Walsh <dwalsh@redhat.com> 1.3.30-1
+- Update from NSA
+  * Fixed policy file leaks in semanage_load_module and
+    semanage_write_module.
+  * Merged further database work from Ivan Gyurdiev.
+  * Fixed bug in semanage_direct_disconnect.
+
+* 四 10月 20 2005 Dan Walsh <dwalsh@redhat.com> 1.3.28-1
+- Update from NSA
+  * Merged interface renaming patch from Ivan Gyurdiev.
+  * Merged policy component patch from Ivan Gyurdiev.
+  * Renamed 'check=' configuration value to 'expand-check=' for 
+    clarity.
+  * Changed semanage_commit_sandbox to check for and report errors 
+    on rename(2) calls performed during rollback.
+  * Added optional check= configuration value to semanage.conf 
+    and updated call to sepol_expand_module to pass its value
+    to control assertion and hierarchy checking on module expansion.
+  * Merged fixes for make DESTDIR= builds from Joshua Brindle.
+
+* 二 10月 18 2005 Dan Walsh <dwalsh@redhat.com> 1.3.24-1
+- Update from NSA
+  * Merged default database from Ivan Gyurdiev.
+  * Merged removal of connect requirement in policydb backend from
+    Ivan Gyurdiev.
+  * Merged commit locking fix and lock rename from Joshua Brindle.
+  * Merged transaction rollback in lock patch from Joshua Brindle.
+  * Changed default args for load_policy to be null, as it no longer
+    takes a pathname argument and we want to preserve booleans.
+  * Merged move local dbase initialization patch from Ivan Gyurdiev.
+  * Merged acquire/release read lock in databases patch from Ivan Gyurdiev.
+  * Merged rename direct -> policydb as appropriate patch from Ivan Gyurdiev.
+  * Added calls to sepol_policy_file_set_handle interface prior
+    to invoking sepol operations on policy files.
+  * Updated call to sepol_policydb_from_image to pass the handle.
+
+* 二 10月 18 2005 Dan Walsh <dwalsh@redhat.com> 1.3.20-1
+- Update from NSA
+  * Changed default args for load_policy to be null, as it no longer
+    takes a pathname argument and we want to preserve booleans.
+  * Merged move local dbase initialization patch from Ivan Gyurdiev.
+  * Merged acquire/release read lock in databases patch from Ivan Gyurdiev.
+  * Merged rename direct -> policydb as appropriate patch from Ivan Gyurdiev.
+  * Added calls to sepol_policy_file_set_handle interface prior
+    to invoking sepol operations on policy files.
+  * Updated call to sepol_policydb_from_image to pass the handle.
+  * Merged user and port APIs - policy database patch from Ivan
+  Gyurdiev.
+  * Converted calls to sepol link_packages and expand_module interfaces
+  from using buffers to using sepol handles for error reporting, and 
+  changed direct_connect/disconnect to create/destroy sepol handles.
+
+* 六 10月 15 2005 Dan Walsh <dwalsh@redhat.com> 1.3.18-1
+- Update from NSA
+  * Merged bugfix patch from Ivan Gyurdiev.
+  * Merged seuser database patch from Ivan Gyurdiev.
+  Merged direct user/port databases to the handle from Ivan Gyurdiev.
+  * Removed obsolete include/semanage/commit_api.h (leftover).
+  Merged seuser record patch from Ivan Gyurdiev.
+  * Merged boolean and interface databases from Ivan Gyurdiev.
+
+* 五 10月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.3.14-1
+- Update from NSA
+  * Updated to use get interfaces for hidden sepol_module_package type.
+  * Changed semanage_expand_sandbox and semanage_install_active
+  to generate/install the latest policy version supported  by libsepol
+  by default (unless overridden by semanage.conf), since libselinux
+  will now downgrade automatically for load_policy.
+  * Merged new callback-based error reporting system and ongoing
+  database work from Ivan Gyurdiev.
+
+* 三 10月 12 2005 Dan Walsh <dwalsh@redhat.com> 1.3.11-1
+- Update from NSA
+  * Fixed semanage_install_active() to use the same logic for
+  selecting a policy version as semanage_expand_sandbox().  Dropped
+  dead code from semanage_install_sandbox().
+
+* 一 10月 10 2005 Dan Walsh <dwalsh@redhat.com> 1.3.10-1
+- Update from NSA
+  * Updated for changes to libsepol, and to only use types and interfaces
+  provided by the shared libsepol.
+
+* 五 10月 07 2005 Dan Walsh <dwalsh@redhat.com> 1.3.9-1
+- Update from NSA
+  * Merged further database work from Ivan Gyurdiev.
+
+* 二 10月 04 2005 Dan Walsh <dwalsh@redhat.com> 1.3.8-1
+- Update from NSA
+  * Merged iterate, redistribute, and dbase split patches from
+  Ivan Gyurdiev.
+
+* 一 10月 03 2005 Dan Walsh <dwalsh@redhat.com> 1.3.7-1
+- Update from NSA
+  * Merged patch series from Ivan Gyurdiev.
+    (pointer typedef elimination, file renames, dbase work, backend
+     separation)
+  * Split interfaces from semanage.[hc] into handle.[hc], modules.[hc].
+  * Separated handle create from connect interface.
+  * Added a constructor for initialization.
+  * Moved up src/include/*.h to src.
+  * Created a symbol map file; dropped dso.h and hidden markings.
+
+* 三 9月 28 2005 Dan Walsh <dwalsh@redhat.com> 1.3.5-1
+- Update from NSA
+  * Split interfaces from semanage.[hc] into handle.[hc], modules.[hc].
+  * Separated handle create from connect interface.
+  * Added a constructor for initialization.
+  * Moved up src/include/*.h to src.
+  * Created a symbol map file; dropped dso.h and hidden markings.
+
+* 五 9月 23 2005 Dan Walsh <dwalsh@redhat.com> 1.3.4-1
+- Update from NSA
+  * Merged dbase redesign patch from Ivan Gyurdiev.
+
+* 三 9月 21 2005 Dan Walsh <dwalsh@redhat.com> 1.3.3-1
+- Update from NSA
+  * Merged boolean record, stub record handler, and status codes 
+    patches from Ivan Gyurdiev.
+
+* 二 9月 20 2005 Dan Walsh <dwalsh@redhat.com> 1.3.2-1
+- Update from NSA
+  * Merged stub iterator functionality from Ivan Gyurdiev.
+  * Merged interface record patch from Ivan Gyurdiev.
+
+* 三 9月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.3.1-1
+- Update from NSA
+  * Merged stub functionality for managing user and port records,
+  and record table code from Ivan Gyurdiev.
+  * Updated version for release.
+
+* 四 9月 01 2005 Dan Walsh <dwalsh@redhat.com> 1.1.6-1
+- Update from NSA
+  * Merged semod.conf template patch from Dan Walsh (Red Hat),
+  but restored location to /usr/share/semod/semod.conf.
+  * Fixed several bugs found by valgrind.
+  * Fixed bug in prior patch for the semod_build_module_list leak.
+  * Merged errno fix from Joshua Brindle (Tresys).
+  * Merged fix for semod_build_modules_list leak on error path
+    from Serge Hallyn (IBM).  Bug found by Coverity.
+
+* 四 8月 25 2005 Dan Walsh <dwalsh@redhat.com> 1.1.3-1
+- Update from NSA
+  * Merged errno fix from Joshua Brindle (Tresys).
+  * Merged fix for semod_build_modules_list leak on error path
+    from Serge Hallyn (IBM).  Bug found by Coverity.
+  * Merged several fixes from Serge Hallyn (IBM).  Bugs found by
+    Coverity.
+  * Fixed several other bugs and warnings.
+  * Merged patch to move module read/write code from libsemanage
+    to libsepol from Jason Tang (Tresys).  
+  * Merged relay records patch from Ivan Gyurdiev.
+  * Merged key extract patch from Ivan Gyurdiev.
+
+- Initial version
+- Created by Stephen Smalley <sds@epoch.ncsc.mil>
+

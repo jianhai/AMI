@@ -1,0 +1,20 @@
+Name        : zlib
+Version     : 1.2.8
+Release     : 7.18.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分34秒
+Group       : System Environment/Libraries
+Size        : 186771
+License     : zlib and Boost
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时18分00秒, Key ID bcb4a85b21c0f39f
+Source RPM  : zlib-1.2.8-7.18.amzn1.src.rpm
+Build Date  : 2015年02月26日 星期四 05时14分55秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.zlib.net/
+Summary     : The compression and decompression library
+Description :
+Zlib is a general-purpose, patent-free, lossless data compression
+library which is used by many different programs.

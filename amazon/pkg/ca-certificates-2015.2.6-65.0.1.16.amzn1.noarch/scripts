@@ -1,0 +1,114 @@
+postinstall scriptlet (using /bin/sh):
+if test -e /usr/bin/ca-legacy ; then
+    /usr/bin/ca-legacy install
+fi
+if test -e /usr/bin/update-ca-trust ; then
+	/usr/bin/update-ca-trust
+fi
+postuninstall scriptlet (using /bin/sh):
+# While the following is strictly discouraged, we cannot prevent it from happening:
+# An admin could potentially use "update-ca-trust enable", thereby installing
+# symbolic links for the legacy filename, and afterwards, the admin could 
+# downgrade the ca-certificates package to an older version, which doesn't
+# provide the new system of extracted files.
+# If that happened, the symbolic links will become dangling links,
+# and the old bundle files will get installed as .rpmnew files.
+# That's a broken configuration.
+# 
+# Let's attempt to prevent admins from shooting themselves in the foot,
+# by handling that scenario in a sane way.
+#
+if [ $1 -gt 0 ] ; then
+	# This isn't a complete removal of the package.
+	# There is still a ca-certificates package installed.
+	# Because we are noarch, this cannot be a multilib situation.
+	# Therefore it's clear the package that belongs to this script 
+	# has been replaced by a newer or an older package.
+	#
+	# Detect if the legacy filenames are symbolic links.
+	# If they aren't symbolic links, we're good, the legacy support was disabled,
+	#     we assume the upgrade or downgrade has succeeded,
+	#     and we don't take any action.
+	# If they are symbolic links, then we must check if the link resolves to a file.
+	# If it resolves, we're good. It was an upgrade or a downgrade to package version
+	#     that provides the target files. No action necessary.
+	# However, if we detect broken (dangling) links, then the new package version
+	#     doesn't provide the new target files. We assume it's a downgrade
+	#     and we must repair the dangling links. We'll replace them with ordinary
+	#     files, either taking the files from our backup, or if no backup is
+	#     available (unexpectedly) we'll use the .rpmnew file that just got installed.
+    #
+    # The above logic will restore the backup files that got saved at the time
+    # the "enable" command had been executed.
+    # If one of the backed up files was a file that had been modified by the admin
+    # (prior to the backup), then that modified file will be restored
+    # (because rpm kept the config(noreplace) file.
+    # However, if the admin didn't change the files, then rpm has installed
+    # more recent versions of the bundle files, and that more recent file will
+    # be backed up.
+    # In the latter scenario, as a result, our recovery logic will recover
+    # using the more recent bundle file from the more recent package,
+    # despite an older package being installed.
+    # This side effect, which keeps slightly more recent unmodified bundles 
+    # despite a package downgrade, should be an acceptable side effect, because
+    # restoring the manually modified bundle files is much more important.
+    
+    backuppath=/etc/pki/backup-traditional-recent-config/
+    already_warned=0
+    for legacy in "cacerts" "ca-bundle.crt" "ca-bundle.trust.crt"; do
+		lpath=
+		if [ $legacy = "cacerts" ]; then
+			lpath="/etc/pki/java/"
+		fi
+		if [ $legacy = "ca-bundle.crt" ]; then
+			lpath="/etc/pki/tls/certs/"
+		fi
+		if [ $legacy = "ca-bundle.trust.crt" ]; then
+			lpath="/etc/pki/tls/certs/"
+		fi
+		
+		if ! test -z "$lpath"; then
+			# sanity check succeded, lpath not empty
+			if test -L ${lpath}${legacy}; then
+				# is link
+				if test -e ${lpath}${legacy}; then
+					echo "Please ignore warnings about %{lpath}${legacy}.rpmnew, they are expected as the new consolidated configuration feature is enabled" >&2
+				else
+					# link target doesnt exist
+					
+					if [ $already_warned -eq 0 ] ; then 
+						echo "Detected a downgrade of ca-certificates.rpm to an older package," >&2
+						echo "  which doesn't support the new consolidated configuration feature." >&2
+						echo "However, at the time of dowgrading, the new consolidated feature was enabled." >&2
+						echo "This was an unsupported action, but this script will try its best to recover." >&2
+						already_warned=1
+					fi
+					
+					rm -f ${lpath}${legacy}
+					echo "Removing symbolic link ${lpath}${legacy}" >&2
+					echo "  because the new configuration feature has been removed" >&2
+					
+					if test -e ${backuppath}${legacy}; then
+						# backup file exists
+						echo "Backup file found at ${backuppath}${legacy}," >&2
+						echo "    restoring it as ${lpath}${legacy}" >&2
+						cp --dereference --preserve --force \
+							${backuppath}${legacy} ${lpath}${legacy}
+					else
+						echo "No backup file found."
+						if test -e ${lpath}${legacy}.rpmnew; then
+							# .rpmnew file found
+							echo "Using file ${lpath}${legacy}.rpmnew " >&2
+							echo "  and installing it at ${lpath}${legacy}" >&2
+							cp --dereference --preserve --force \
+								${lpath}${legacy}.rpmnew ${lpath}${legacy}
+						# else
+							# there's nothing we can do
+							echo "Sorry, no files found to provide ${lpath}${legacy}" >&2
+						fi
+					fi
+				fi
+			fi
+		fi
+	done
+fi

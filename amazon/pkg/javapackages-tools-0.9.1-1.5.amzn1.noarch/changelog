@@ -1,0 +1,88 @@
+* 六 1月 24 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 二 3月 12 2013 Lee Trager <ltrager@amazon.com>
+- Conditionalize maven support
+- import source package F18/javapackages-tools-0.9.1-1.fc18
+- setup complete for package javapackages-tools
+
+* 一 12月 10 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.9.1-1
+- Update to upstream version 0.9.1
+- Resolves: rhbz#885636
+
+* 四 12月 06 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.9.0-1
+- Update to latest upstream version
+- Enable maven requires generator for xmvn packages
+- Enable requires generator for javadoc packages
+
+* 三 12月 05 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.8.3-1
+- Update to upstream version 0.8.3
+- Fix maven provides generator for new XML valid fragments
+
+* 五 11月 30 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.8.2-1
+- Update to upstream version 0.8.2
+
+* 五 11月 30 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.8.1-1
+- Update to upstream version 0.8.1
+
+* 三 11月 28 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.8.0-1
+- Update to upstream version 0.8.0
+- Add xmvn macros
+
+* 二 11月 27 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.7.5-3
+- Add BR: jpackage-utils
+
+* 二 11月 27 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.7.5-2
+- Add maven-local subpackage
+
+* 四 11月 08 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.7.5-1
+- Fix versioned pom installation by quoting _jpath
+
+* 三 10月 31 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.7.4-1
+- Shorten maven filelist filenames
+
+* 三 10月 31 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.7.3-1
+- Update to upstream version 0.7.3
+
+* 三 10月 31 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.7.2-1
+- Make sure add_maven_depmap fails when python tracebacks
+
+* 三 10月 31 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.7.1-1
+- Fix problem with exception in default add_maven_depmap invocation
+
+* 二 10月 30 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.7.0-1
+- Update to latest upstream
+- Full support for compat depmap generation
+- Generate maven-files-%{name} with a list of files to package
+- Add support for maven repo generation (alpha version)
+
+* 一 7月 30 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.6.0-1
+- Update to upstream version 0.6.0
+- Make maven provides versioned
+- Add additional pom_ macros to simplify additional pom editing
+
+* 三 7月 25 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.5.0-1
+- Update to upstream version 0.5.0 - add support for add_maven_depmap -v
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 一 7月 09 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.4.1-1
+- Update to upstream version 0.4.1
+- Fixes #837203
+
+* 三 6月 27 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.4.0-1
+- Update to upstream version 0.4.0
+
+* 二 3月 06 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.3.1-1
+- Create maven provides from fragments instead of poms
+
+* 四 2月 16 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.3.0-3
+- Fix maven_depmap installation
+
+* 三 2月 15 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.3.0-2
+- Add conflicts with older jpackage-utils
+
+* 三 2月 15 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0.3.0-1
+- Initial version split from jpackage-utils
+

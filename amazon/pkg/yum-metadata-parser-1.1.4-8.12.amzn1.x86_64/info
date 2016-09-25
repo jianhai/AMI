@@ -1,0 +1,19 @@
+Name        : yum-metadata-parser
+Version     : 1.1.4
+Release     : 8.12.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分52秒
+Group       : Development/Libraries
+Size        : 53981
+License     : GPLv2
+Signature   : RSA/SHA256, 2015年03月25日 星期三 06时39分48秒, Key ID bcb4a85b21c0f39f
+Source RPM  : yum-metadata-parser-1.1.4-8.12.amzn1.src.rpm
+Build Date  : 2015年03月25日 星期三 03时15分57秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://linux.duke.edu/projects/yum/
+Summary     : A fast metadata parser for yum
+Description :
+Fast metadata parser for yum implemented in C.

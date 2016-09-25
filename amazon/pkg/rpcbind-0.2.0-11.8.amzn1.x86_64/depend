@@ -1,0 +1,30 @@
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/sbin/chkconfig
+/usr/sbin/groupadd
+/usr/sbin/groupdel
+/usr/sbin/useradd
+/usr/sbin/userdel
+config(rpcbind) = 0.2.0-11.8.amzn1
+coreutils
+glibc-common
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.15)(64bit)
+libc.so.6(GLIBC_2.16)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libgssglue
+libpthread.so.0()(64bit)
+libpthread.so.0(GLIBC_2.2.5)(64bit)
+libtirpc.so.1()(64bit)
+libwrap.so.0()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+setup

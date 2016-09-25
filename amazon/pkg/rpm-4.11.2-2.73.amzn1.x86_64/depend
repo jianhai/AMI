@@ -1,0 +1,32 @@
+/bin/bash
+/bin/sh
+/bin/sh
+/usr/bin/db_stat
+config(rpm) = 4.11.2-2.73.amzn1
+coreutils
+curl
+libacl.so.1()(64bit)
+libbz2.so.1()(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libcap.so.2()(64bit)
+libdb-4.7.so()(64bit)
+libdl.so.2()(64bit)
+libelf.so.1()(64bit)
+liblua-5.1.so()(64bit)
+liblzma.so.5()(64bit)
+libm.so.6()(64bit)
+libnss3.so()(64bit)
+libpopt.so.0()(64bit)
+libpopt.so.0(LIBPOPT_0)(64bit)
+libpthread.so.0()(64bit)
+libpthread.so.0(GLIBC_2.2.5)(64bit)
+librpm.so.3()(64bit)
+librpmio.so.3()(64bit)
+libselinux.so.1()(64bit)
+libz.so.1()(64bit)
+popt(x86-64) >= 1.10.2.1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

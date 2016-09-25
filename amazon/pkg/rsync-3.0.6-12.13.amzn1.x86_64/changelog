@@ -1,0 +1,422 @@
+* 三 4月 30 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsync-3.0.6-12.el6
+
+* 五 3月 28 2014 Pavel Šimerda <psimerda@redhat.com> - 3.0.6-12
+- Resolves: #1011219 - Typo in manpage
+
+* 三 3月 26 2014 Pavel Šimerda <psimerda@redhat.com> - 3.0.6-11
+- Resolves: #981797 - rsync -X is ineffective when setting owner/group
+
+* 四 10月 31 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsync-3.0.6-9.el6_4.1
+
+* 二 10月 22 2013 Petr Stodulka <pstodulk@redhat.com> - 3.0.6-10
+- Fix segfault when perform iconv (#1004749)
+
+* 三 4月 11 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsync-3.0.6-9.el6
+
+* 一 4月 02 2012 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 3.0.6-9
+- Revert portreserve, as portrelease functionality needs to be
+  implemented first in the rsync binary (#786076)
+
+* 五 3月 30 2012 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 3.0.6-8
+- Prevent hang during the transfer when inflate (token) returned -5 (#804916)
+
+* 一 2月 13 2012 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 3.0.6-7
+- Use portreserve to protect rsync/tcp port (#786076)
+- Truncate a copied sparse file at the end of transaction
+  (-S, --sparse option) (#737539)
+
+* 二 3月 29 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsync-3.0.6-5.el6_0.1
+
+* 二 3月 15 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 3.0.6-6
+- Add upstream patch to fix CVE-2011-1097 - Incremental file-list
+  corruption due to temporary file_extra_cnt increments (#684933)
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsync-3.0.6-5.el6
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsync-3.0.6-4.el6
+
+* 二 6月 22 2010 Jan Zeleny <jzeleny@redhat.com> - 3.0.6-5
+- added -fno-strict-aliasing to CFLAGS
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/rsync-2.6.8-3.1
+- added submodule prep for package rsync
+
+* 一 12月 07 2009 Jan Zeleny <jzeleny@redhat.com> - 3.0.6-4
+- applied patch to avoid retouching dir permissions (#542679)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.6-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 01 2009 Simo Sorce <ssorce@redhat.com> 3.0.6-2
+- Final 3.0.6 release
+
+* 四 5月 21 2009 Ján ONDREJ (SAL) <ondrejj(at)salstar.sk> - 3.0.6-1pre1
+- Enabled patches/copy-devices.diff patch (bz#494313)
+
+* 三 4月 15 2009 Simo Sorce <ssorce@redhat.com> 3.0.6-0pre1
+- First 3.0.6 pre release
+- Also change the spec to simplify releasing pre-releases
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.5-1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 01 2009 Simo Sorce <ssorce@redhat.com> 3.0.5-0.fc11
+- New upstream bugfix release
+
+* 一 9月 08 2008 Simo Sorce <ssorce@redhat.com> 3.0.4-0.fc10
+- New upstream bugfix release
+
+* 一 6月 30 2008 Simo Sorce <ssorce@redhat.com> 3.0.3-0.fc10
+- New upstream release
+
+* 二 4月 08 2008 Simo Sorce <ssorce@redhat.com> 3.0.2-0.fc9
+- Security release: http://rsync.samba.org/security.html#s3_0_2
+
+* 五 4月 04 2008 Simo Sorce <ssorce@redhat.com> 3.0.1-2.fc9
+- Make sure support scripts are not executable so that no bad perl dependecies
+  are created
+
+* 五 4月 04 2008 Simo Sorce <ssorce@redhat.com> 3.0.1-1.fc9
+- Add NEWS and support/ scripts in the docs section
+- 3.0.1 final
+
+* 一 3月 31 2008 Simo Sorce <ssorce@redhat.com> 3.0.1-0.3.pre3.fc9
+- 3.0.1 pre release #3
+- Fixes some annoying minor bugs (see release notes)
+
+* 四 3月 27 2008 Simo Sorce <ssorce@redhat.com> 3.0.1-0.2.pre2.fc9
+- 3.0.1 pre release #2
+- Fixes #439074
+
+* 二 3月 25 2008 Simo Sorce <ssorce@redhat.com> 3.0.1-0.1.pre1.fc9
+- 3.0.1 pre release #1
+- Fixes #438694
+
+* 日 3月 02 2008 Simo Sorce <ssorce@redhat.com> 3.0.0-1.fc9
+- Final 3.0.0 release
+
+* 六 2月 23 2008 Simo Sorce <ssorce@redhat.com> 3.0.0-0.pre10.fc9
+- Tenth preprelease of the 3.0.0 series
+
+* 六 2月 16 2008 Simo Sorce <ssorce@redhat.com> 3.0.0-0.pre9.fc9
+- Ninth preprelease of the 3.0.0 series
+
+* 六 2月 02 2008 Simo Sorce <ssorce@redhat.com> 3.0.0-0.pre8.fc9
+- Eight prerelease
+- Add second source, now patches are in a separate file
+- Add temporary fix to the xattrs.diff patch line as, in this version
+  the patch contains one extra humk already contained in acls.diff
+
+* 六 10月 27 2007 Simo Sorce <ssorce@redhat.com> 3.0.0-0.pre4.fc9
+- Fourth prerelease
+
+* 一 10月 15 2007 Simo Sorce <ssorce@redhat.com> 3.0.0-0.pre2.1.fc9
+- Add support for IPv6 by default with xinetd
+
+* 五 10月 12 2007 Simo Sorce <ssorce@redhat.com> 3.0.0-0.pre2.fc9
+- Second prerelease
+
+* 三 10月 10 2007 Simo Sorce <ssorce@redhat.com> 3.0.0-0.pre1.fc9
+- New Major version prerelease
+
+* 三 9月 05 2007 Simo Sorce <ssorce@redhat.com> 2.6.9-3.fc8
+- Add patch to fix crash bug with hardlinks and ACLs patches
+
+* 一 2月 19 2007 Adam Jackson <ajax@redhat.com> 2.6.9-2
+- Add dist tag to Release to fix upgrades from FC5 or FC6.
+
+* 一 2月 19 2007 Simo Sorce <ssorce@redhat.com> - 2.6.9-2
+- fix acl/xattr bug with --delete: (bz#229145)
+
+* 三 11月 22 2006 Florian La Roche <laroche@redhat.com> - 2.6.9-1
+- update to 2.6.9
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.6.8-3.1
+- rebuild
+
+* 五 6月 09 2006 Jay Fenlason <fenlason@redhat.com> 2.6.8-3
+- Add my xattrs_bug patch to fix a bug where xattrs don't get sent correctly.
+- Add BuildRequires to make sure libattr-devel and libacl-devel are avaliable
+- replace --with... with --enable... so they actually work
+- Add make, autoconf and gcc to BuildRequires
+
+* 一 5月 08 2006 Jay Fenlason <fenlason@redhat.com> 2.6.8-2
+- New upstream release
+- Use the upstream xattr patch instead of mine.  This closes
+  bz#190208 CVE-2006-2083 rsync buffer overflow issue
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.6.6-2.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.6.6-2.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 7月 28 2005 Jay Fenlason <fenlason@redhat.com> 2.6.6-2
+- New upstream release.  See the NEWS file for details.
+
+* 四 6月 02 2005 Jay Fenlason <fenlason@redhat.com> 2.6.5-2
+- New upstream release
+
+* 二 5月 17 2005 Jay Fenlason <fenlason@redhat.com> 2.6.5-0.pre1.0
+- new upstream pre-release
+
+* 二 5月 17 2005 Jay Fenlason <fenlason@redhat.com> 2.6.4-3
+- Include the -address patch from upstream, to close
+  bz#154752 Unable to use --address in client mode
+
+* 四 3月 31 2005 Jay Fenlason <fenlason@redhat.com> 2.6.4-2
+- New upstream version
+
+* 三 3月 02 2005 Jay Fenlason <fenlason@redhat.com> 2.6.3-3
+- bump release, rebuild with gcc4
+- pass RPM_OPT_FLAGS to make
+
+* 四 2月 10 2005 Jay Fenlason <fenlason@redhat.com> 2.6.3-2
+- Added my -xattr patch, which is based on the -acl patch.
+
+* 四 9月 30 2004 Jay Fenlason <fenlason@redhat.com> 2.6.3-1
+- New upstream release.
+
+* 二 9月 21 2004 Jay Fenlason <fenlason@redhat.com> 2.6.3-0.pre2
+- new upstream version.
+
+* 二 8月 17 2004 Jay Fenlason <fenlason@redhat.com> 2.6.3-0.pre1
+- New upstream version with security fix for CAN-2004-0792
+- This obsoletes the -lastdir-corruption patch.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 25 2004 Mark McLoughlin <markmc@redhat.com> - 2.6.2-1
+- Backport fix for crasher when passing multiple directories of the same
+  length (bug #123708)
+
+* 五 4月 30 2004 Jay Fenlason <fenlason@redhat.com> 2.6.2-0
+- New upstream version to correct the problems with 2.6.1.
+  This obsoletes all the patches to 2.6.1
+
+* 四 4月 29 2004 Jay Fenlason <fenlason@redhat.com> 2.6.1-1
+- Rsync 2.6.1 final.
+- Add a patch from Wayne Davison <wayned@samba.org> that fixes a
+  use of uninitilized memory in the map_uid and map_gid functions.
+- Add another patch from Wayne Davidson that fixes the -R option.
+- Add a patch (extracted from a patch by Sami Farin
+  <safari-rsync@safari.iki.fi>) to not ignore the return value
+  of close().
+
+* 四 3月 25 2004 Jay Fenlason <fenlason@redhat.com> 2.6.1-0.pre1
+- New upstream version
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 1月 05 2004 Jay Fenlason <fenlason@redhat.com> 2.6.0-0
+- New upstream version, obsoletes the rsync-2.5.6-signal.patch
+
+* 三 12月 03 2003 Bill Nottingham <notting@redhat.com> 2.5.7-2
+- rebuild
+
+* 三 12月 03 2003 Bill Nottingham <notting@redhat.com> 2.5.7-1
+- update to 2.5.7
+
+* 二 8月 05 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-20
+- rebuild in new build env
+
+* 二 8月 05 2003 Lon Hohberger <lhh@redhat.com> 2.5.6-19
+- spec file fix
+
+* 二 8月 05 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-18
+- rebuild in new build env
+
+* 二 8月 05 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-17
+- fixed spec - added patch0 to prep.
+
+* 二 8月 05 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-16
+- rebuild in new build env
+
+* 一 8月 04 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-15
+- add rsync-2.5.6-signal.patch to fix kernel warnings that
+  appear because socket.c sets SIGCHLD to SIG_IGN and then
+  calls wait.  This is in response to bug#98740.  This patch
+  *has* been committed to CVS upstream and will be in
+  upstream rsync-2.5.7.
+
+* 五 6月 13 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-14
+- build scratch - for compile warnings
+
+* 五 6月 13 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-13
+- build scratch - for compile warnings
+
+* 四 6月 12 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-12
+- rebuild in new build env
+
+* 四 6月 12 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-11
+- removed rsync-2.5.6-sign.patch.  Upstream code
+  incorporates signed vs unsigned changes.
+
+* 三 6月 11 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-10_CVSHEAD_signpatch
+- build scratch - added rsync-2.5.6-sign.patch.
+
+* 三 6月 11 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-9_CVSHEAD_nopatches
+- build scratch.
+
+* 三 6月 11 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-8
+- build scratch - deleted rsync-2.5.6-sign.patch.
+
+* 一 6月 09 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-7
+- rebuild in new build env
+
+* 四 6月 05 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-6
+- removed patch rsync-2.5.4-maxdel.patch
+- removed patch rsync-2.4.6-segv.patch
+   - current 2.5.6 properly handles (no segfault) the situation
+     (rsync '[a]') that caused a need for this patch.
+- added patch rsync-2.5.6-sign.patch, which is a working
+  subset of patches (that still apply) included in the original
+  rsync-2.5.4-moresignage.patch
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 11 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-4
+- rebuild in new build env
+
+* 二 3月 11 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-3
+- fixed changelog comments
+
+* 一 3月 10 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-2
+- rebuild in new build env
+
+* 一 3月 10 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.6-1
+- update to 2.5.6 from upstream
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 1月 17 2003 Hardy Merrill <hmerrill@redhat.com> 2.5.5-3
+- fix spelling mistake in rsync.xinetd.  #66036 & dup #75006
+
+* 三 12月 11 2002 Tim Powers <timp@redhat.com> 2.5.5-2
+- rebuild on all arches
+
+* 一 6月 24 2002 Bill Nottingham <notting@redhat.com> 2.5.5-1
+- update to 2.5.5
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 4月 10 2002 Bill Nottingham <notting@redhat.com> 2.5.4-2
+- upstream patches: fix accidental use of --whole-file, fix
+  minor memory leak, and bad worst-case child kill behavior
+- make passing -e to rsync:// URLs not cause an error exit (#62489)
+
+* 三 3月 13 2002 Bill Nottingham <notting@redhat.com> 2.5.4-1
+- update to 2.5.4, do assorted patchmerging
+
+* 三 2月 20 2002 Bill Nottingham <notting@redhat.com>
+- fix --address (#60127)
+- call setgroups before dropping privs (<mkp@samba.org>)
+
+* 一 1月 28 2002 Bill Nottingham <notting@redhat.com>
+- fix some errors in the unsigned patch
+
+* 日 1月 27 2002 Bill Nottingham <notting@redhat.com>
+- rebuild to get proper LFS_CFLAGS
+
+* 三 1月 23 2002 Bill Nottingham <notting@redhat.com>
+- fix some signed/unsigned issues (<krahmer@suse.de>)
+- tweak ipv6 patch (#55337, <john.l.villalovos@intel.com>)
+- make xinetd file %config(noreplace)
+
+* 五 8月 17 2001 Bill Nottingham <notting@redhat.com>
+- fix segfault on weird arguments (#51801)
+
+* 二 7月 24 2001 Bill Nottingham <notting@redhat.com>
+- IPv6 patch (<pekkas@netcore.fi>) (#47780)
+
+* 二 6月 19 2001 Bill Nottingham <notting@redhat.com>
+- add patch to fix hangs at end of sync, and other odd behaviors (#42111)
+
+* 六 9月 30 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- add xinetd configuration
+
+* 二 9月 26 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.4.6
+
+* 一 7月 31 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.4.4 - fixes yet another problem with rsh transport
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 六 6月 10 2000 Bill Nottingham <notting@redhat.com>
+- rebuild in new build env.
+
+* 一 4月 10 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.4.3
+
+* 二 4月 04 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.4.2
+
+* 二 3月 07 2000 Bill Nottingham <notting@redhat.com>
+- fix maxdelete behavior so it isn't sent to older servers.
+
+* 一 1月 31 2000 Jeff Johnson <jbj@redhat.com>
+- update to 2.4.1.
+
+* 五 12月 17 1999 Bill Nottingham <notting@redhat.com>
+- update to 2.3.2
+
+* 六 6月 12 1999 Jeff Johnson <jbj@redhat.com>
+- add "max. delete" patch to limit damage when server is hosed.
+
+* 三 4月 07 1999 Bill Nottingham <notting@redhat.com>
+- update to 2.3.1.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 2)
+
+* 二 3月 16 1999 Jeff Johnson <jbj@redhat.com>
+- update to 2.3.0.
+
+* 六 3月 13 1999 Jeff Johnson <jbj@redhat.com>
+- update to 2.3.0 beta.
+
+* 五 12月 18 1998 Bill Nottingham <notting@redhat.com>
+- update to 2.2.1
+
+* 四 9月 10 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 2.1.1
+
+* 一 8月 17 1998 Erik Troan <ewt@redhat.com>
+- updated to 2.1.0
+
+* 四 8月 06 1998 Erik Troan <ewt@redhat.com>
+- buildrooted and attr-rophied
+- removed tech-report.ps; the .tex should be good enough
+
+* 一 8月 25 1997 John A. Martin <jam@jamux.com>
+- Built 1.6.3-2 after finding no rsync-1.6.3-1.src.rpm although there
+  was an ftp://ftp.redhat.com/pub/contrib/alpha/rsync-1.6.3-1.alpha.rpm
+  showing no packager nor signature but giving 
+  "Source RPM: rsync-1.6.3-1.src.rpm".
+- Changes from 1.6.2-1 packaging: added '$RPM_OPT_FLAGS' to make, strip
+  to '%build', removed '%prefix'.
+
+* 四 4月 10 1997 Michael De La Rue <miked@ed.ac.uk>
+- rsync-1.6.2-1 packaged.  (This entry by jam to credit Michael for the
+  previous package(s).)
+

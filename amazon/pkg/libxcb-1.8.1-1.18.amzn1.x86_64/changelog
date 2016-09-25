@@ -1,0 +1,125 @@
+* 六 1月 24 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 三 9月 10 2014 Jamie Anderson <jamieand@amazon.com>
+- Add patches to resolve CVE-2013-2064 and a multithreading deadlock condition
+
+* 三 2月 27 2013 Cristian Gafton <gafton@amazon.com>
+- update xpyb python bindings to version 1.3.1
+
+* 一 2月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libxcb-1.8.1-1.el6
+
+* 一 9月 24 2012 Dave Airlie <airlied@redhat.com> 1.8.1-1
+- libxcb 1.8.1 - needed for mesa 9.0
+
+* 四 7月 26 2012 Adam Jackson <ajax@redhat.com> 1.8-1
+- libxcb 1.8
+
+* 五 7月 23 2010 Cristian Gafton <gafton@amazon.com>
+- remove Xau workaround
+- update to fix Xau dependency errors
+
+* 四 7月 22 2010 Cristian Gafton <gafton@amazon.com>
+- refresh with new versions
+
+* 三 7月 21 2010 Cristian Gafton <gafton@amazon.com>
+- un-bootstrap
+- disable noop reqs on pthread-stubs
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libxcb-1.5-1.el6
+- setup complete for package libxcb
+
+* 三 1月 13 2010 Dave Airlie <airlied@redhat.com> 1.5-1
+- libxcb 1.5
+
+* 三 12月 02 2009 Adam Jackson <ajax@redhat.com> 1.4-2
+- libxcb-1.4-keepalive.patch: setsockopt(SO_KEEPALIVE) for TCP (#476415)
+
+* 四 8月 27 2009 Adam Jackson <ajax@redhat.com> 1.4-1
+- libxcb 1.4 (#518597)
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 14 2009 Adam Jackson <ajax@redhat.com> 1.3-1
+- libxcb 1.3
+- List DSO versions explicitly.
+- Don't package any xprint bits.  Seriously, no.
+
+* 一 7月 13 2009 Adam Jackson <ajax@redhat.com> 1.2-8
+- Really fix xpyb build.
+
+* 一 7月 06 2009 Adam Jackson <ajax@redhat.com> 1.2-7
+- Fix xpyb build
+
+* 一 6月 29 2009 Adam Jackson <ajax@redhat.com> 1.2-6
+- BuildRequires: xcb-proto >= 1.5
+
+* 三 6月 24 2009 Adam Jackson <ajax@redhat.com> 1.2-5
+- libxcb-1.2-no-nagle.patch: Disable Nagle's algorithm on TCP. (#442158)
+
+* 二 5月 19 2009 Adam Jackson <ajax@redhat.com> 1.2-4
+- Add libxcb-python subpackage
+
+* 二 4月 07 2009 Adam Jackson <ajax@redhat.com> 1.2-3
+- libxcb-1.2-to-git-6e2e87d.patch: Various updates from git, XID generation
+  being the most important.
+
+* 二 2月 24 2009 Matthias Clasen <mclasen@redhat.com> 1.2-2
+- Make -doc noarch
+
+* 三 2月 18 2009 Adam Jackson <ajax@redhat.com> 1.2-1
+- libxcb 1.2
+
+* 二 2月 10 2009 Adam Jackson <ajax@redhat.com> 1.1.93-4
+- Fix selinux module build. (#474249)
+
+* 日 2月 08 2009 Adam Jackson <ajax@redhat.com> 1.1.93-3
+- Remove aforementioned egregious hack.  Now I can sleep easier.
+
+* 四 12月 18 2008 Adam Jackson <ajax@redhat.com> 1.1.93-2
+- Egregious hack to make the next libX11 build work.  Hands... won't come
+  clean...
+
+* 三 12月 17 2008 Adam Jackson <ajax@redhat.com> 1.1.93-1
+- libxcb 1.1.93
+
+* 日 10月 19 2008 Adam Jackson <ajax@redhat.com> 1.1.91-5
+- Add pthread-stubs.pc
+
+* 一 10月 13 2008 Adam Jackson <ajax@redhat.com> 1.1.91-4
+- libxcb-1.1-abstract-socket.patch: Drop.
+- libxcb-1.1.91-git.patch: Update to git master.
+
+* 三 9月 17 2008 Adam Jackson <ajax@redhat.com> 1.1.91-3
+- libxcb-1.1-xreply-leak.patch: Plug a memory leak in _XReply when the
+  caller has a non-fatal error handler. (mclasen, fdo #17616)
+
+* 四 9月 11 2008 Adam Jackson <ajax@redhat.com> 1.1.91-2
+- Enable x-selinux bindings.
+
+* 三 9月 10 2008 Adam Jackson <ajax@redhat.com> 1.1.91-1
+- libxcb 1.1.91
+
+* 二 4月 22 2008 Adam Jackson <ajax@redhat.com> 1.1-4
+- libxcb-1.1-sloppy-lock.patch: Turn sloppy locking on all the time.  I'm
+  tired of fighting it. (#390261)
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.1-2
+- Autorebuild for GCC 4.3
+
+* 一 11月 12 2007 Adam Jackson <ajax@redhat.com> 1.1-1
+- libxcb 1.1
+
+* 五 8月 24 2007 Adam Jackson <ajax@redhat.com> 1.0-3
+- libxcb-1.0-abstract-socket.patch: When connecting to the X server, prefer
+  abstract-namespace unix sockets to filesystem-bound sockets.
+
+* 三 8月 22 2007 Adam Jackson <ajax@redhat.com> - 1.0-2
+- Rebuild for PPC toolchain bug
+
+* 五 6月 29 2007 Adam Jackson <ajax@redhat.com> 1.0-1
+- Initial revision.
+

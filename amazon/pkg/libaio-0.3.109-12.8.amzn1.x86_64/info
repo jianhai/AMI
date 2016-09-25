@@ -1,0 +1,23 @@
+Name        : libaio
+Version     : 0.3.109
+Release     : 12.8.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时41分10秒
+Group       : System Environment/Libraries
+Size        : 34766
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2015年08月29日 星期六 23时51分43秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libaio-0.3.109-12.8.amzn1.src.rpm
+Build Date  : 2015年08月27日 星期四 22时43分59秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+Summary     : Linux-native asynchronous I/O access library
+Description :
+The Linux-native asynchronous I/O facility ("async I/O", or "aio") has a
+richer API and capability set than the simple POSIX async I/O facility.
+This library, libaio, provides the Linux-native API for async I/O.
+The POSIX async I/O facility requires this library in order to provide
+kernel-accelerated async I/O capabilities, as do applications which
+require the Linux-native async I/O API.

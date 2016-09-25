@@ -1,0 +1,568 @@
+* 四 1月 14 2016 Tom Kirchner <tjk@amazon.com>
+- Add upstream patch for CVE-2015-1345
+
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/grep-2.20-2.el7
+
+* 五 9月 25 2015 Andrew Jorgensen <ajorgens@amazon.com>
+- Conflict with older initscripts which are broken by newer grep
+
+* 三 4月 29 2015 Jaroslav Škarvada <jskarvad@redhat.com> - 2.20-2
+- Fixed invalid UTF-8 byte sequence error in PCRE mode
+  (by pcre-backported-fixes patch)
+  Resolves: rhbz#1217080
+- Fixed buffer overrun for grep -F
+  Resolves: CVE-2015-1345
+- Fixed \w and \W behaviour in multibyte locales
+  Resolves: rhbz#1159012
+- Documented --fixed-regexp option
+  Resolves: rhbz#1103259
+- Updated pcre buildrequires to require pcre-devel >= 7.8-7
+  Related: rhbz#1217080
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/grep-2.20-1.el7
+
+* 五 9月 05 2014 Jaroslav Škarvada <jskarvad@redhat.com> - 2.20-1
+- New version
+  Resolves: rhbz#1123005
+
+* 三 6月 04 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grep-2.6.3-6.el6
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/grep-2.16-1.el7
+
+* 一 3月 24 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grep-2.6.3-4.el6_5.1
+
+* 二 2月 04 2014 Jan Grulich <jgrulich@redhat.com> - 2.16-1
+- Update to 2.16
+- Resolves: rhbz#1050916
+- Resolves: rhbz#1050919
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 2.14-6
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 2.14-5
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/grep-2.14-4.el7
+
+* 二 7月 09 2013 Jaroslav Škarvada <jskarvad@redhat.com> - 2.14-4
+- Added group-separator, no-group-separator options decription
+- Aligned output of built-in help
+- Defuzzified gnulib-tests-rm-f patch
+
+* 三 6月 26 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grep-2.6.3-4.el6
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.14-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 三 10月 03 2012 Jaroslav Škarvada <jskarvad@redhat.com> - 2.14-2
+- Fixed -R option placement
+  Resolves: rhbz#861937
+
+* 一 8月 20 2012 Jaroslav Škarvada <jskarvad@redhat.com> - 2.14-1
+- New version
+  Resolves: rhbz#849594
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.13-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 二 7月 10 2012 Jaroslav Škarvada <jskarvad@redhat.com> - 2.13-1
+- New version
+  Resolves: rhbz#837749
+- Fixed -i option
+  Resolves: rhbz#828844
+- Added virtual provide and FPC ticket link for bundled gnulib
+  Resolves: rhbz#821759
+
+* 二 4月 24 2012 Jaroslav Škarvada <jskarvad@redhat.com> - 2.12-1
+- New version
+  Resolves: rhbz#815705
+
+* 四 3月 08 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grep-2.6.3-3.el6
+
+* 五 3月 02 2012 Jaroslav Škarvada <jskarvad@redhat.com> - 2.11-1
+- New version
+
+* 五 2月 10 2012 Petr Pisar <ppisar@redhat.com> - 2.10-3
+- Rebuild against PCRE 8.30
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 11月 16 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.10-1
+- New version
+
+* 一 7月 11 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.9-3
+- Use rm -f in gnulib-tests (gnulib-tests-rm-f patch)
+  Resolves: rhbz#716330
+
+* 一 7月 04 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.9-2
+- Fixed build failure on ppc - long double forced to double on ppc
+
+* 三 6月 22 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.9-1
+- New version: grep-2.9
+- Removed dfa-buffer-overrun-fix patch
+
+* 一 6月 20 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.8-4
+- dfa: don't overrun a malloc'd buffer for certain regexps
+  (patch dfa-buffer-overrun-fix)
+  Resolves: rhbz#713328
+
+* 一 5月 16 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.8-3
+- Added coloring aliases to csh script as well
+
+* 一 5月 16 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.8-2
+- Added coloring to egrep and fgrep
+  Resolves: rhbz#697895
+
+* 一 5月 16 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.8-1
+- New version: grep-2.8
+  Resolves: rhbz#704710
+- Removed const-range-exp patch (upstreamed)
+
+* 一 4月 04 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2.7-5
+- colorgrep scripts no longer overwrites COLORS envvar (#693058),
+  thanks to Ville Skyttä
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.7-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 10月 01 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.7-3
+- Fixed inconsistency with range expressions, const-range-exp patch (#583011)
+
+* 三 9月 29 2010 jkeating - 2.7-2
+- Rebuilt for gcc bug 634757
+
+* 二 9月 21 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.7-1
+- New version: grep-2.7
+- Removed patches (already in upstream): dfa-optimize-period,
+  glibc-matcher-fallback, mmap-option-fix, dfa-convert-to-wide-char,
+  dfa-speedup-digit-xdigit
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grep-2.6.3-2.el6
+- import source package RHEL6/grep-2.5.3-6.1.el6
+
+* 五 6月 11 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.6.3-4
+- Colors can be globally disabled via /etc/GREP_COLORS (#602867)
+- Fixed indentation in spec
+- Fixed defattr in spec
+
+* 一 6月 07 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.6.3-3
+- Added auto-color profile.d scripts (thanks to Ville Skyttä #600832)
+- Removed description macro from changelog
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/grep-2.5.1-55.el5
+- import source package RHEL5/grep-2.5.1-54.2.el5
+- added submodule prep for package grep
+
+* 四 5月 06 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.6.3-2
+- Added dfa-optimize-period patch (speedup for . patterns in UTF-8)
+- Added glibc-matcher-fallback patch (speedup for [a-z] patterns in UTF-8)
+- Added mmap-option-fix patch
+- Added dfa-convert-to-wide-char patch (speedup for -m and remove quadratic
+  complexity when going to glibc)
+- Added dfa-speedup-digit-xdigit patch (speedup for [[:digit:]] [:xdigit:]])
+
+* 日 4月 04 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.6.3-1
+- New version: grep-2.6.3
+- make check is not silent now
+
+* 五 3月 26 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.6.1-1
+- New version: grep-2.6.1
+- Dropped sigsegv patch (integrated upstream)
+
+* 二 3月 23 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.6-1
+- New version: grep-2.6
+- Added sigsegv patch (after release patch from upstream)
+- Dropped obsoleted patches: fedora-tests, pcrewrap, case, egf-speedup,
+  bz460641, utf8, dfa-optional, w
+
+* 五 3月 05 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.5.4-2
+- Added w patch to fix -w switch behaviour broken by dfa-optional patch
+
+* 三 2月 10 2010 Jaroslav Škarvada <jskarvad@redhat.com> - 2.5.4-1
+- New version: grep-2.5.4
+- Fixed typos in description
+- Updated utf-8 patch
+- Added dfa-optional patch (#538423)
+
+* 二 8月 11 2009 Lubomir Rintel <lkundrak@v3.sk> 2.5.3-6
+- Silence possible scriptlets errors
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5.3-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 1月 27 2009 Stepan Kasal <skasal@redhat.com> 2.5.3-3
+- remove grep-mem-exhausted.patch (#481765, #198165)
+
+* 四 1月 08 2009 Stepan Kasal <skasal@redhat.com> 2.5.3-2
+- fix bug #460641 (a.k.a. 479152)
+
+* 四 11月 20 2008 Lubomir Rintel <lkundrak@v3.sk> 2.5.3-1
+- Update to latest upstream version
+- Drop upstreamed patches
+- Add a couple of regression tests
+- Temporarily disable tests
+- Minor cleanup
+
+* 三 10月 01 2008 Lubomir Rintel <lkundrak@v3.sk> 2.5.1a-61
+- Fix pcre-mode (-P) line wrapping (bug #324781)
+- Match the version with upstream
+- Recode AUTHORS to utf8
+
+* 五 7月 25 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 2.5.1-60
+- fix license tag
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.5.1-59
+- Autorebuild for GCC 4.3
+
+* 五 4月 20 2007 Stepan Kasal <skasal@redhat.com> - 2.5.1-58
+- Adhere to packaging guidelines.
+- Resolves: #225857
+- Use CPPFLAGS= argument to configure to add an -I option.
+- Do not set LDFLAGS=-s for "make install".
+
+* 一 1月 22 2007 Tim Waugh <twaugh@redhat.com> 2.5.1-57
+- Make preun scriptlet unconditionally succeed (bug #223697).
+
+* 三 11月 22 2006 Tim Waugh <twaugh@redhat.com> 2.5.1-56
+- Fixed count of patterns when the last is an empty string (bug #204255).
+
+* 三 11月 22 2006 Tim Waugh <twaugh@redhat.com> 2.5.1-55
+- Fix 'memory exhausted' errors by limiting in-memory buffer (bug #198165).
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.5.1-54.1
+- rebuild
+
+* 三 5月 31 2006 Tim Waugh <twaugh@redhat.com> 2.5.1-54
+- Applied upstream patch to fix '-D skip' (bug #189580).
+
+* 一 2月 20 2006 Tim Waugh <twaugh@redhat.com> 2.5.1-53
+- Applied Tim Robbins' patch for 'grep -w' (bug #179698).
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.5.1-52.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.5.1-52.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 2月 03 2006 Tim Waugh <twaugh@redhat.com> 2.5.1-52
+- Prevent 'grep -P' from segfaulting (bug #171379).
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 9月 29 2005 Tim Waugh <twaugh@redhat.com> 2.5.1-51
+- Prevent 'grep -Fw ""' from busy-looping (bug #169524).
+
+* 二 6月 28 2005 Tim Waugh <twaugh@redhat.com> 2.5.1-50
+- Further fixing for bug #161700.
+
+* 一 6月 27 2005 Tim Waugh <twaugh@redhat.com> 2.5.1-49
+- Fix 'grep -Fw' for encodings other than UTF-8 (bug #161700).
+
+* 三 4月 13 2005 Tim Waugh <twaugh@redhat.com>
+- Build requires recent pcre-devel (bug #154626).
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 2.5.1-48
+- Rebuild for new GCC.
+
+* 五 1月 07 2005 Tim Waugh <twaugh@redhat.com> 2.5.1-47
+- Run 'make check'.
+- Fixed -w handling for EGexecute.  Now 'make check' passes.
+- Cache MB_CUR_MAX value in egf-speedup patch.
+- Fixed variable shadowing in egf-speedup patch.
+- Removed redundant (and incorrect) code in prline.
+
+* 五 1月 07 2005 Tim Waugh <twaugh@redhat.com> 2.5.1-46
+- More -w tests from Jakub Jelinek.
+- Rebased on 2.5.1a.
+
+* 五 12月 31 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-45
+- More tests (Jakub Jelinek).
+- Jakub Jelinek's much improved -Fi algorithm.
+- Removed bogus part of grep-2.5.1-fgrep patch.
+
+* 二 12月 21 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-44
+- Fixed -Fi for multibyte input (bug #143079).
+
+* 四 12月 16 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-43
+- Bypass kwset matching when ignoring case and processing multibyte input
+  (bug #143079).
+
+* 二 12月 14 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-42
+- Further UTF-8 processing avoided since a '\n' byte is always an
+  end-of-line character in that encoding.
+
+* 五 12月 03 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-41
+- Fixed a busy loop in the egf-speedup patch (bug #140781).
+
+* 四 11月 18 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-40
+- Fixed a bug in the fgrep patch, exposed by the dfa-optional patch
+  (bug #138558).
+
+* 二 11月 16 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-39
+- Fixed last patch.
+
+* 二 11月 16 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-38
+- Applied patch from Karsten Hopp to fix background colour problems with
+  --color output (bug #138913).
+
+* 三 11月 10 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-37
+- Prevent false matches when DFA is disabled (bug #138558).
+
+* 一 11月 08 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-36
+- Automatically disable DFA when processing multibyte input.  GREP_USE_DFA
+  environment variable overrides.
+
+* 五 11月 05 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-35
+- Fixes to egf-speedup patch: now it does not change any functionality,
+  as intended.
+- GREP_NO_DFA now turns off the DFA engine, for performance testing.
+
+* 四 11月 04 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-34
+- More improvements to egf-speedup patch (bug #138076).
+
+* 四 11月 04 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-33
+- Small improvements to egf-speedup patch.
+
+* 三 11月 03 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-32
+- Remove mb-caching hack.
+- Better multibyte handling in EGexecute() and Fexecute().
+- Don't need regex.c changes in grep-2.5-i18n.patch.
+
+* 三 10月 13 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-31
+- Make 'grep -F' avoid UTF-8 processing if the pattern contains no
+  multibyte characters (bug #133932).
+
+* 一 10月 11 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-30
+- Applied patch from Robert Scheck to tidy spec file and add a URL
+  tag (bug #135185).
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 6月 04 2004 Tim Waugh <twaugh@redhat.com>
+- More build requirements (bug #125323).
+
+* 二 5月 18 2004 Jeremy Katz <katzj@redhat.com> 2.5.1-28
+- rebuild
+
+* 二 5月 18 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-27
+- Fix dfa multibyte character class matching when -i is used (bug #123363).
+- Use bracket patch before i18n patch to make it clear that the bug exists
+  upstream.
+
+* 四 2月 26 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-26
+- Fix fgrep (bug #116909).
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 1月 05 2004 Tim Waugh <twaugh@redhat.com> 2.5.1-24
+- Work around glibc bug #112869 (segfault in re_compile_pattern).
+- Avoid patching Makefile.am, to avoid automake/autoconf weirdness.
+
+* 三 12月 10 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-23
+- Another multibyte efficiency bug-fix (bug #111800).
+
+* 一 12月 08 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-22
+- Fixed [:alpha:]-type character classes (bug #108484).
+- Fixed -o -i properly (bug #111489).
+
+* 六 12月 06 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-21
+- Fixed 'fgrep -i' (bug #111614).
+
+* 五 11月 21 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-20
+- Another two multibyte efficiency bug-fixes (bug #110524).
+
+* 四 11月 06 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-19
+- Fixed a multibyte efficiency bug.
+
+* 四 11月 06 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-18
+- Turn on multibyte efficiency patch again to shake out bugs.
+
+* 三 10月 08 2003 Tim Waugh <twaugh@redhat.com>
+- Fixed man page bug (bug #106267).
+
+* 四 9月 18 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-17
+- Use symlinks for egrep/fgrep, rather than shell script wrappers.
+
+* 五 6月 27 2003 Tim Waugh <twaugh@redhat.com>
+- Fix debuginfo package.
+
+* 五 6月 27 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-16.1
+- Rebuilt.
+
+* 五 6月 27 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-16
+- Finally give up on making grep go fast. :-(
+
+* 四 6月 26 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-15.1
+- Rebuilt.
+
+* 四 6月 26 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-15
+- Fixed grep -i bug introduced by cache.
+
+* 一 6月 23 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-14.1
+- Rebuilt.
+
+* 一 6月 23 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-14
+- Redo the gofast patch (bug #97785).
+
+* 四 6月 12 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-13.1
+- Rebuilt.
+
+* 四 6月 12 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-13
+- Fixed a bug in the gofast patch (bug #97266).
+
+* 二 6月 10 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-12.1
+- Rebuilt.
+
+* 二 6月 10 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-12
+- Go faster (bug #69900).
+- Fix man page.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 29 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-10.1
+- Rebuilt.
+
+* 四 5月 29 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-10
+- Use system regex again.
+
+* 四 5月 29 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-9
+- Fixed bug in go-fast patch.
+
+* 三 5月 28 2003 Tim Waugh <twaugh@redhat.com> 2.5.1-8
+- Go fast (bug #69900).
+- Run test suite.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 2.5.1-7
+- rebuilt
+
+* 二 11月 19 2002 Tim Waugh <twaugh@redhat.com> 2.5.1-6
+- i18n patch.
+
+* 一 10月 21 2002 Tim Waugh <twaugh@redhat.com> 2.5.1-5
+- Don't install /usr/share/info/dir.
+- Fix -o -i (bug #72641).
+
+* 六 7月 20 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- install all info files #69204
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 3月 26 2002 Bernhard Rosenkraenzer <bero@redhat.com> 2.5.1-1
+- 2.5.1
+
+* 三 3月 13 2002 Bernhard Rosenkraenzer <bero@redhat.com> 2.5-1
+- 2.5 final
+
+* 三 1月 23 2002 Bernhard Rosenkraenzer <bero@redhat.com> 2.5-0.g.1
+- 2.5g
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 11月 19 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.5-0.f.4
+- Update CVS to reduce bloat
+
+* 四 11月 08 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.5-0.f.3
+- Don't fail %post with --excludedocs
+
+* 三 9月 26 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.5-0.f.2
+- Fix up echo A |grep '[A-Z0-9]' in locales other than C
+
+* 二 9月 25 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.5-0.f.1
+- 2.5f, fixes #53603
+
+* 三 7月 18 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.4.2-7
+- Fix up the i18n patch - it used to break "grep '[]a]'" (#49003)
+- revert to 2.4.2 (latest official release) for now
+
+* 一 5月 28 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.5e-4
+- Fix "echo Linux forever |grep -D skip Linux"
+
+* 一 5月 21 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.5e-3
+- Add new -D, --devices option
+- Fix a bug with "directories" being uninitialized
+
+* 日 5月 13 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.5e-2
+- Fix up the --color option to behave like the one from ls (--color=auto)
+  Sooner or later, some people will alias grep="grep --color" and wonder why
+  their scripts break.
+- Update docs accordingly
+- Get rid of the annoying blinking in grep --color
+
+* 日 5月 13 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.5e-1
+- 2.5e
+
+* 二 2月 27 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- use %{_tmppath}
+- langify
+
+* 日 8月 20 2000 Jakub Jelinek <jakub@redhat.com>
+- i18n character ranges patch from Ulrich Drepper
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 19 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- FHSify
+
+* 二 3月 21 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- update to 2.4.2
+- fix download URL
+
+* 四 2月 03 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- gzip info pages (Bug #9035)
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description
+
+* 三 12月 22 1999 Jeff Johnson <jbj@redhat.com>
+- update to 2.4.
+
+* 三 10月 20 1999 Bill Nottingham <notting@redhat.com>
+- prereq install-info
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 2)
+
+* 一 3月 08 1999 Preston Brown <pbrown@redhat.com>
+- upgraded to grep 2.3, added install-info %post/%preun for info
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 六 5月 09 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 5月 01 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 2.2
+
+* 四 10月 16 1997 Donnie Barnes <djb@redhat.com>
+- updated from 2.0 to 2.1
+- spec file cleanups
+- added BuildRoot
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

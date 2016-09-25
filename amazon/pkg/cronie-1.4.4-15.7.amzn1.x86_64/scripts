@@ -1,0 +1,13 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add crond
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ]; then
+    service crond stop >/dev/null 2>&1 ||:
+    /sbin/chkconfig --del crond
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+    service crond condrestart > /dev/null 2>&1 ||:
+fi
+
+# empty /etc/crontab in case there are only old regular jobs

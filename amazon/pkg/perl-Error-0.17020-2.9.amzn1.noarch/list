@@ -1,0 +1,17 @@
+/usr/share/doc/perl-Error-0.17020
+/usr/share/doc/perl-Error-0.17020/ChangeLog
+/usr/share/doc/perl-Error-0.17020/README
+/usr/share/doc/perl-Error-0.17020/examples
+/usr/share/doc/perl-Error-0.17020/examples/example.pl
+/usr/share/doc/perl-Error-0.17020/examples/next-in-loop
+/usr/share/doc/perl-Error-0.17020/examples/next-in-loop/Error.pm-eval.pl
+/usr/share/doc/perl-Error-0.17020/examples/next-in-loop/Error.pm-next-label.pl
+/usr/share/doc/perl-Error-0.17020/examples/next-in-loop/Error.pm-next-out-of-catch.pl
+/usr/share/doc/perl-Error-0.17020/examples/next-in-loop/Error.pm-next.pl
+/usr/share/doc/perl-Error-0.17020/examples/next-in-loop/README
+/usr/share/doc/perl-Error-0.17020/examples/warndie.pl
+/usr/share/man/man3/Error.3pm.gz
+/usr/share/man/man3/Error::Simple.3pm.gz
+/usr/share/perl5/vendor_perl/Error
+/usr/share/perl5/vendor_perl/Error.pm
+/usr/share/perl5/vendor_perl/Error/Simple.pm

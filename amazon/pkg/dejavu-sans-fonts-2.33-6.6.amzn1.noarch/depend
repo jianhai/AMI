@@ -1,0 +1,6 @@
+/bin/sh
+/bin/sh
+config(dejavu-sans-fonts) = 2.33-6.6.amzn1
+dejavu-fonts-common = 2.33-6.6.amzn1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

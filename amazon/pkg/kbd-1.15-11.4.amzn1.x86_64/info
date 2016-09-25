@@ -1,0 +1,21 @@
+Name        : kbd
+Version     : 1.15
+Release     : 11.4.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分59秒
+Group       : System Environment/Base
+Size        : 991760
+License     : GPLv2+
+Signature   : RSA/SHA256, 2011年02月20日 星期日 01时39分31秒, Key ID bcb4a85b21c0f39f
+Source RPM  : kbd-1.15-11.4.amzn1.src.rpm
+Build Date  : 2011年02月19日 星期六 01时50分41秒
+Build Host  : build-31002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://ftp.altlinux.org/pub/people/legion/kbd
+Summary     : Tools for configuring the console (keyboard, virtual terminals, etc.)
+Description :
+The kbd package contains tools for managing a Linux
+system's console's behavior, including the keyboard, the screen
+fonts, the virtual terminals and font files.

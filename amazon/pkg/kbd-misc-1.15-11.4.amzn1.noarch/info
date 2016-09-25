@@ -1,0 +1,20 @@
+Name        : kbd-misc
+Version     : 1.15
+Release     : 11.4.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时40分28秒
+Group       : System Environment/Base
+Size        : 1443451
+License     : GPLv2+
+Signature   : RSA/SHA256, 2011年02月20日 星期日 01时39分31秒, Key ID bcb4a85b21c0f39f
+Source RPM  : kbd-1.15-11.4.amzn1.src.rpm
+Build Date  : 2011年02月19日 星期六 01时50分41秒
+Build Host  : build-31002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://ftp.altlinux.org/pub/people/legion/kbd
+Summary     : Data for kbd package
+Description :
+The kbd-misc package contains data for kbd package - console fonts,
+keymaps etc. Please note that kbd-misc is not helpful without kbd.

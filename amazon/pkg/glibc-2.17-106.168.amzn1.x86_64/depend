@@ -1,0 +1,39 @@
+/sbin/ldconfig
+/usr/sbin/glibc_post_upgrade.x86_64
+basesystem
+config(glibc) = 2.17-106.168.amzn1
+glibc-common = 2.17-106.168.amzn1
+ld-linux-x86-64.so.2()(64bit)
+ld-linux-x86-64.so.2(GLIBC_2.2.5)(64bit)
+ld-linux-x86-64.so.2(GLIBC_2.3)(64bit)
+libCNS.so()(64bit)
+libGB.so()(64bit)
+libISOIR165.so()(64bit)
+libJIS.so()(64bit)
+libJISX0213.so()(64bit)
+libKSC.so()(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.2)(64bit)
+libc.so.6(GLIBC_2.3.3)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libdl.so.2()(64bit)
+libdl.so.2(GLIBC_2.2.5)(64bit)
+libfreebl3.so()(64bit)
+libfreebl3.so(NSSRAWHASH_3.12.3)(64bit)
+libgcc(x86-64)
+libnsl.so.1()(64bit)
+libnsl.so.1(GLIBC_2.2.5)(64bit)
+libnss_files.so.2()(64bit)
+libpthread.so.0()(64bit)
+libpthread.so.0(GLIBC_2.2.5)(64bit)
+libresolv.so.2()(64bit)
+libresolv.so.2(GLIBC_2.2.5)(64bit)
+libresolv.so.2(GLIBC_2.9)(64bit)
+nss-softokn-freebl(x86-64) >= 3.16.2.3
+rpmlib(BuiltinLuaScripts) <= 4.2.2-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

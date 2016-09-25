@@ -1,0 +1,7 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add quota_nld
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ] ; then
+    /sbin/service quota_nld stop >/dev/null 2>&1
+    /sbin/chkconfig --del quota_nld
+fi

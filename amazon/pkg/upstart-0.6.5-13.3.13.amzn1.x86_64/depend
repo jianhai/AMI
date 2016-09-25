@@ -1,0 +1,20 @@
+config(upstart) = 0.6.5-13.3.13.amzn1
+libaudit.so.1()(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libdbus-1.so.3()(64bit)
+libgcc_s.so.1()(64bit)
+libgcc_s.so.1(GCC_3.0)(64bit)
+libgcc_s.so.1(GCC_3.3.1)(64bit)
+libnih-dbus.so.1()(64bit)
+libnih-dbus.so.1(LIBNIH_DBUS_1_0)(64bit)
+libnih.so.1()(64bit)
+libnih.so.1(LIBNIH_1_0)(64bit)
+librt.so.1()(64bit)
+librt.so.1(GLIBC_2.2.5)(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

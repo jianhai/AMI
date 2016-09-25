@@ -1,0 +1,160 @@
+* 二 8月 26 2014 Ben Cressey <bcressey@amazon.com>
+- fix warnings when removing the obsolete man
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/man-db-2.6.3-9.el7
+
+* 一 3月 17 2014 Peter Schiffer <pschiffe@redhat.com> - 2.6.3-9
+- resolves: #1067085
+  fixed crash when running man with -M parameter
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 2.6.3-8
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 2.6.3-7
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/man-db-2.6.3-6.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package man-db
+
+* 一 4月 08 2013 Peter Schiffer <pschiffe@redhat.com> - 2.6.3-6
+- resolves: #948695
+  fixed double free
+- fixed certain man pages to match options with --help and --usage
+
+* 四 3月 21 2013 Peter Schiffer <pschiffe@redhat.com> - 2.6.3-5
+- temporarily disabled one unstable unit test
+
+* 四 3月 21 2013 Peter Schiffer <pschiffe@redhat.com> - 2.6.3-4
+- fixed some compiler warnings and memory leaks
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.3-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 10月 30 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.3-2
+- resolves: #870680
+  use less as the default pager
+
+* 三 10月 24 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.3-1
+- resolves: #858577
+  updated to 2.6.3
+- cleaned .spec file
+- resolves: #855632
+  fixed SIGABRT crash
+- adds support for man-pages-overrides
+
+* 二 7月 31 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.2-5
+- resolves: #841431
+  ignore cached man pages if they don't exist anymore
+
+* 五 7月 20 2012 Dan Horák <dan[at]danny.cz> - 2.6.2-4
+- fully patch the autotools files, fixes FTBFS due updated automake
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 7月 12 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.2-2
+- resolves: #829553
+  clear the old man cache on install or update
+
+* 二 7月 10 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.2-1
+- resolves: #833312
+  update to 2.6.2
+- resolves: #657409
+  fixed warning when invoking col by the mandb program in cron
+- resolves: #829935
+  enabled support for man pages compressed with lzip
+- resolves: #821778
+  added virtual provides for bundled gnulib library
+- resolves: #824825
+  apropos returns correct exit code for invalid man page
+
+* 二 4月 24 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.1-4
+- related: #693458
+  updated patch for .so links because previous one wasn't working very well
+
+* 二 4月 24 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.1-3
+- added autoconf, automake, libtool and gettext-devel to the build requires
+
+* 二 4月 24 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.1-2
+- resolves: #677669
+  added support for wildcards in path
+- resolves: #693458
+  fixed error with .so links
+
+* 四 4月 05 2012 Peter Schiffer <pschiffe@redhat.com> - 2.6.1-1
+- resolves: #790771
+  update to 2.6.1
+- resolves: #806086
+  removed hard-dependency on cron, update man db after install or update
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.0.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 10月 05 2011 Peter Schiffer <pschiffe@redhat.com> - 2.6.0.2-3
+- resolves: #702904
+  fixed double free or corruption issue
+- resolves: #739207
+  require groff-base instead of groff
+- rebuilt for gdbm-1.9.1-1
+
+* 日 5月 29 2011 Ville Skyttä <ville.skytta@iki.fi> - 2.6.0.2-2
+- Own the %{_libdir}/man-db dir.
+
+* 四 4月 21 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 2.6.0.2-1
+- update to 2.6.0.2
+- remove obsolete patches
+- add libpipe dependency
+
+* 三 3月 23 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.9-6
+- Build with zlib support.
+- Use elinks as default HTML browser.
+   thanks Ville Skyttä
+
+* 三 3月 23 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.9-5
+* Resolves: #684977
+  backport upstream patch
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5.9-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 1月 27 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.9-3
+- Resolves: #659292
+  use ionice in man cron job
+
+* 三 11月 24 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.9-2
+- Resolves: #655385 - use old format of nroff output
+
+* 一 11月 22 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.9-1
+- update to 2.5.9
+
+* 五 10月 01 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.7-8
+- add less buildrequire
+
+* 三 9月 29 2010 jkeating - 2.5.7-7
+- Rebuilt for gcc bug 634757
+
+* 五 9月 24 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.7-6
+- Resolves: #630506 (change the description)
+- minor spec file changes
+
+* 一 8月 30 2010 Dennis Gilmore <dennis@ausil.us> - 2.5.7-5
+- Provide Versioned man
+
+* 一 8月 16 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.7-4
+- remove obsolete conflict flag
+
+* 一 8月 16 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.7-3
+- provides man tag
+- resolves: #621688
+  remove problematic man-pages (now in man-pages-de package)
+
+* 五 4月 16 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.7-2
+- add conflicts tag
+
+* 三 2月 17 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 2.5.7-1
+- initial build
+

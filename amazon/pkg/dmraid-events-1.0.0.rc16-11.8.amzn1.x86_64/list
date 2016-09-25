@@ -1,0 +1,4 @@
+/sbin/dm_dso_reg_tool
+/sbin/dmevent_tool
+/usr/share/man/man8/dm_dso_reg_tool.8.gz
+/usr/share/man/man8/dmevent_tool.8.gz

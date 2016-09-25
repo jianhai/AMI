@@ -1,0 +1,21 @@
+Name        : p11-kit
+Version     : 0.18.5
+Release     : 2.3.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分37秒
+Group       : Unspecified
+Size        : 259476
+License     : BSD
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分47秒, Key ID bcb4a85b21c0f39f
+Source RPM  : p11-kit-0.18.5-2.3.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 03时17分14秒
+Build Host  : build-64001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://p11-glue.freedesktop.org/p11-kit.html
+Summary     : Library for loading and sharing PKCS#11 modules
+Description :
+p11-kit provides a way to load and enumerate PKCS#11 modules, as well
+as a standard configuration setup for installing PKCS#11 modules in
+such a way that they're discoverable.

@@ -1,0 +1,21 @@
+Name        : libedit
+Version     : 2.11
+Release     : 4.20080712cvs.1.6.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分37秒
+Group       : System Environment/Libraries
+Size        : 185648
+License     : BSD
+Signature   : RSA/SHA256, 2011年01月25日 星期二 21时38分24秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libedit-2.11-4.20080712cvs.1.6.amzn1.src.rpm
+Build Date  : 2011年01月16日 星期日 08时02分19秒
+Build Host  : build-31003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.thrysoee.dk/editline/
+Summary     : The NetBSD Editline library
+Description :
+Libedit is an autotool- and libtoolized port of the NetBSD Editline library.
+It provides generic line editing, history, and tokenization functions, similar
+to those found in GNU Readline.

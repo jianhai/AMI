@@ -1,0 +1,15 @@
+postinstall scriptlet (using /bin/sh):
+# On multilib systems packages of different p11-kit-trust can be installed
+# independently from each other. After installing a p11-kit-trust.rpm package
+# we'll check if the paired multilib package is currently enabled, and enable
+# this one if so.
+/usr/lib64/p11-kit/p11-kit-redhat-setup-trust status | grep -q "for other arch"
+if test $? -eq 0; then
+	/usr/lib64/p11-kit/p11-kit-redhat-setup-trust enable
+fi
+postuninstall scriptlet (using /bin/sh):
+# We cannot rely on the $1 parameter, because it's a summary of all packages
+# in a multilib scenario. So double check if our package is installed.
+if ! test -e /usr/lib64/pkcs11/p11-kit-trust.so; then
+	/usr/sbin/update-alternatives --remove libnssckbi.so.x86_64 /usr/lib64/pkcs11/p11-kit-trust.so
+fi

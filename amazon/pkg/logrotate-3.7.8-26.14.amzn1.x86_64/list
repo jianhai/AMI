@@ -1,0 +1,10 @@
+/etc/cron.daily/logrotate
+/etc/logrotate.conf
+/etc/logrotate.d
+/usr/sbin/logrotate
+/usr/share/doc/logrotate-3.7.8
+/usr/share/doc/logrotate-3.7.8/CHANGES
+/usr/share/doc/logrotate-3.7.8/COPYING
+/usr/share/man/man5/logrotate.conf.5.gz
+/usr/share/man/man8/logrotate.8.gz
+/var/lib/logrotate.status

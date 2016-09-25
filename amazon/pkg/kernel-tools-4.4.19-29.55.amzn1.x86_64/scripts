@@ -1,0 +1,25 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+
+#
+# This macro defines a %post script for a kernel*-devel package.
+#	%kernel_devel_post [<subpackage>]
+#
+
+# This macro defines a %posttrans script for a kernel package.
+#	%kernel_variant_posttrans [<subpackage>]
+# More text can follow to go at the end of this variant's %post.
+#
+
+#
+# This macro defines a %post script for a kernel package and its devel package.
+#	%kernel_variant_post [-v <subpackage>] [-r <replace>]
+# More text can follow to go at the end of this variant's %post.
+#
+
+#
+# This macro defines a %preun script for a kernel package.
+#	%kernel_variant_preun <subpackage>
+#

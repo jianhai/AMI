@@ -1,0 +1,28 @@
+Name        : python27-ecdsa
+Version     : 0.11
+Release     : 3.3.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时40分51秒
+Group       : System Environment/Libraries
+Size        : 297422
+License     : MIT
+Signature   : RSA/SHA256, 2015年03月17日 星期二 23时48分18秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-ecdsa-0.11-3.3.amzn1.src.rpm
+Build Date  : 2015年03月17日 星期二 23时11分18秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://pypi.python.org/pypi/ecdsa
+Summary     : ECDSA cryptographic signature library
+Description :
+This is an easy-to-use implementation of ECDSA cryptography (Elliptic Curve
+Digital Signature Algorithm), implemented purely in Python, released under
+the MIT license. With this library, you can quickly create keypairs (signing
+key and verifying key), sign messages, and verify the signatures. The keys
+and signatures are very short, making them easy to handle and incorporate
+into other protocols.
+
+NOTE: The prime192v1 and secp224r1 curves are currently disabled.
+
+This package is meant to be used with Python 2.7.

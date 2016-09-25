@@ -1,0 +1,18 @@
+* 三 2月 04 2015 Jason Green <jasg@amazon.com>
+- Build for multiple pythons
+
+* 四 7月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-lockfile-0.8-3.el6
+
+* 二 7月 19 2011 Cristian Gafton <gafton@amazon.com>
+- setup complete for package python-lockfile
+
+* 六 7月 10 2010 Silas Sewell <silas@sewell.ch> - 0.8-3
+- Add egg back for EPEL 6
+
+* 三 11月 18 2009 Silas Sewell <silas@sewell.ch> - 0.8-2
+- Remove egg for EPEL
+
+* 四 7月 23 2009 Silas Sewell <silas@sewell.ch> - 0.8-1
+- Initial build
+

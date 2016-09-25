@@ -1,0 +1,4 @@
+config(setup) = 2.8.14-20.12.amzn1
+rpmlib(BuiltinLuaScripts) <= 4.2.2-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

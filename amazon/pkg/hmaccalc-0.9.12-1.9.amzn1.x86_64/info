@@ -1,0 +1,21 @@
+Name        : hmaccalc
+Version     : 0.9.12
+Release     : 1.9.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时41分07秒
+Group       : System Environment/Base
+Size        : 85717
+License     : MIT
+Signature   : RSA/SHA256, 2011年01月25日 星期二 18时44分36秒, Key ID bcb4a85b21c0f39f
+Source RPM  : hmaccalc-0.9.12-1.9.amzn1.src.rpm
+Build Date  : 2011年01月17日 星期一 13时38分04秒
+Build Host  : build-31003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/hmaccalc/
+Summary     : Tools for computing and checking HMAC values for files
+Description :
+The hmaccalc package contains tools which can calculate HMAC (hash-based
+message authentication code) values for files.  The names and interfaces are
+meant to mimic the sha*sum tools provided by the coreutils package.

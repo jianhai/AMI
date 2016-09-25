@@ -1,0 +1,16 @@
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+perl(:MODULE_COMPAT_5.16.3)
+perl(Carp)
+perl(Config)
+perl(Exporter)
+perl(Fcntl)
+perl(IO::File)
+perl(XSLoader)
+perl(vars)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

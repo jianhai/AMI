@@ -1,0 +1,20 @@
+/bin/sh
+/bin/sh
+/usr/bin/python2.7
+/usr/sbin/update-alternatives
+/usr/sbin/update-alternatives
+/usr/sbin/update-alternatives
+alternatives(force)
+alternatives(force)
+config(python27) = 2.7.12-2.120.amzn1
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libdl.so.2()(64bit)
+libm.so.6()(64bit)
+libpthread.so.0()(64bit)
+libpython2.7.so.1.0()(64bit)
+libutil.so.1()(64bit)
+python27-libs(x86-64) = 2.7.12-2.120.amzn1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

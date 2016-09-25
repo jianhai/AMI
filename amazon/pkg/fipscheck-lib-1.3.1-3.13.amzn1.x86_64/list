@@ -1,0 +1,5 @@
+/usr/lib64/fipscheck
+/usr/lib64/fipscheck/libfipscheck.so.1.1.0.hmac
+/usr/lib64/fipscheck/libfipscheck.so.1.hmac
+/usr/lib64/libfipscheck.so.1
+/usr/lib64/libfipscheck.so.1.1.0

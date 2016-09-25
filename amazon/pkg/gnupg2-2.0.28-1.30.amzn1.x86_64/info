@@ -1,0 +1,32 @@
+Name        : gnupg2
+Version     : 2.0.28
+Release     : 1.30.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分58秒
+Group       : Applications/System
+Size        : 6813718
+License     : GPLv3+
+Signature   : RSA/SHA256, 2015年07月28日 星期二 00时26分16秒, Key ID bcb4a85b21c0f39f
+Source RPM  : gnupg2-2.0.28-1.30.amzn1.src.rpm
+Build Date  : 2015年07月27日 星期一 20时08分42秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnupg.org/
+Summary     : Utility for secure communication and data storage
+Description :
+GnuPG is GNU's tool for secure communication and data storage.  It can
+be used to encrypt data and to create digital signatures.  It includes
+an advanced key management facility and is compliant with the proposed
+OpenPGP Internet standard as described in RFC2440 and the S/MIME
+standard as described by several RFCs.
+
+GnuPG 2.0 is a newer version of GnuPG with additional support for
+S/MIME.  It has a different design philosophy that splits
+functionality up into several modules.  Both versions may be installed
+simultaneously without any conflict (gpg is called gpg2 in GnuPG 2).
+In fact, the gpg version from GnuPG 1.x is able to make use of the
+gpg-agent as included in GnuPG 2 and allows for seamless passphrase
+caching.  The advantage of GnupG 1.x is its smaller size and no
+dependency on other modules at run and build time.

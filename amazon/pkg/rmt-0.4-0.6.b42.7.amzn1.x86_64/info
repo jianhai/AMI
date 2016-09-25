@@ -1,0 +1,22 @@
+Name        : rmt
+Epoch       : 1
+Version     : 0.4
+Release     : 0.6.b42.7.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分39秒
+Group       : Applications/Archiving
+Size        : 15910
+License     : BSD
+Signature   : RSA/SHA256, 2012年02月17日 星期五 18时17分43秒, Key ID bcb4a85b21c0f39f
+Source RPM  : dump-0.4-0.6.b42.7.amzn1.src.rpm
+Build Date  : 2012年01月05日 星期四 21时50分20秒
+Build Host  : build-31005.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://dump.sourceforge.net/
+Summary     : Provides certain programs with access to remote tape devices
+Description :
+The rmt utility provides remote access to tape devices for programs
+like dump (a filesystem backup program), restore (a program for
+restoring files from a backup), and tar (an archiving program).

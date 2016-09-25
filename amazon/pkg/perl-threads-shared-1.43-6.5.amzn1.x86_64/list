@@ -1,0 +1,9 @@
+/usr/lib64/perl5/vendor_perl/auto/threads
+/usr/lib64/perl5/vendor_perl/auto/threads/shared
+/usr/lib64/perl5/vendor_perl/auto/threads/shared/shared.so
+/usr/lib64/perl5/vendor_perl/threads
+/usr/lib64/perl5/vendor_perl/threads/shared.pm
+/usr/share/doc/perl-threads-shared-1.43
+/usr/share/doc/perl-threads-shared-1.43/Changes
+/usr/share/doc/perl-threads-shared-1.43/README
+/usr/share/man/man3/threads::shared.3pm.gz

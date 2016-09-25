@@ -1,0 +1,19 @@
+* 四 2月 26 2015 Ben Cressey <bcressey@amazon.com>
+- bump release
+
+* 二 2月 10 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 二 8月 12 2014 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL7/python-jsonpointer-1.0-2.el7
+
+* 五 1月 24 2014 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-jsonpointer-1.0-3.el6
+- setup complete for package python-jsonpointer
+
+* 四 9月 05 2013 Alan Pevec <apevec@gmail.com> - 1.0-2
+- add AUTHORS to docs
+
+* 一 7月 01 2013 Alan Pevec <apevec@gmail.com> - 1.0-1
+- Initial package.
+

@@ -1,0 +1,13 @@
+/sbin/ldconfig
+/sbin/ldconfig
+libICE.so.6()(64bit)
+libSM.so.6()(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libuuid.so.1()(64bit)
+libuuid.so.1(UUID_1.0)(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

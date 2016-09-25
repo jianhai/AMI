@@ -1,0 +1,24 @@
+Name        : freetype
+Version     : 2.3.11
+Release     : 15.14.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分34秒
+Group       : System Environment/Libraries
+Size        : 832051
+License     : FTL or GPLv2+
+Signature   : RSA/SHA256, 2015年04月01日 星期三 20时56分52秒, Key ID bcb4a85b21c0f39f
+Source RPM  : freetype-2.3.11-15.14.amzn1.src.rpm
+Build Date  : 2015年03月27日 星期五 22时54分36秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.freetype.org
+Summary     : A free and portable font rendering engine
+Description :
+The FreeType engine is a free and portable font rendering
+engine, developed to provide advanced font support for a variety of
+platforms and environments. FreeType is a library which can open and
+manages font files as well as efficiently load, hint and render
+individual glyphs. FreeType is not a font server or a complete
+text-rendering library.

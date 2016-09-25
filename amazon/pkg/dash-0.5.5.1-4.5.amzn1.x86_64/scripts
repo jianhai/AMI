@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+grep -q '^/bin/dash$' /etc/shells || echo '/bin/dash' >> /etc/shells
+postuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+    sed -i '/^\/bin\/dash$/d' /etc/shells
+fi

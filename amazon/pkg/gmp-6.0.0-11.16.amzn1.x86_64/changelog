@@ -1,0 +1,464 @@
+* 二 9月 15 2015 Rodrigo Novo <rodarvus@amazon.com>
+- Add isa bits for -devel and -static Requires:
+
+* 二 7月 28 2015 Rodrigo Novo <rodarvus@amazon.com>
+- Make sure -devel and -static packages require non-epoch gmp
+- Epoch not required on Amazon Linux AMI
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/gmp-6.0.0-11.el7
+
+* 二 9月 09 2014 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:6.0.0-11
+- rebase to 6.0.0 (fixed)
+- resolves:#1110689
+
+* 二 9月 09 2014 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:6.0.0-10
+- rebase to 6.0.0 (fixed)
+- resolves:#1110689
+
+* 一 9月 08 2014 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:6.0.0-9
+- rebase to 6.0.0
+- resolves:#1110689
+
+* 二 9月 02 2014 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:5.1.1-9
+- added hmac checksums needed for fips
+- resolves:#1117188
+
+* 一 8月 25 2014 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:5.1.1-8
+- ppc64le
+- resolves:#1125516
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/gmp-5.1.1-5.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 1:5.1.1-5
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1:5.1.1-4
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/gmp-5.1.1-3.el7
+
+* 二 11月 05 2013 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:5.1.1-3
+- resolves: #1023791
+- support for aarch64
+
+* 四 2月 14 2013 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:5.1.1-2
+- rebase to 5.1.1
+- deleted unapplicable part of gmp-4.0.1-s390.patch
+
+* 五 1月 25 2013 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:5.1.0-1
+- rebase to 5.1.0, de-ansi patch no longer applicable
+- upstream dropped libmp.so (bsdmp-like interface)
+- silenced bogus date in changelog
+
+* 二 1月 22 2013 Peter Robinson <pbrobinson@fedoraproject.org> 1:5.0.5-6
+- Rebuild against new binutils to fix FTBFS on ARM
+
+* 五 11月 23 2012 Frantisek Kluknavsky <fkluknav@redhat.com> - 1:5.0.5-5
+- minor spec cleanup
+
+* 五 7月 20 2012 Peter Schiffer <pschiffe@redhat.com> 1:5.0.5-3
+- fixed FTBFS
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:5.0.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 一 6月 25 2012 Peter Schiffer <pschiffe@redhat.com> 1:5.0.5-1
+- resolves: #820897
+  update to 5.0.5
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/gmp-4.3.1-7.el6_2.2
+
+* 四 4月 19 2012 Peter Schiffer <pschiffe@redhat.com> 1:5.0.4-1
+- resolves: #785116
+  update to 5.0.4
+
+* 二 2月 28 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:5.0.2-6
+- Rebuilt for c++ ABI breakage
+
+* 六 2月 04 2012 Cristian Gafton <gafton@amazon.com>
+- update to version 4.3.2
+
+* 四 1月 19 2012 Peter Schiffer <pschiffe@redhat.com> 1:5.0.2-5
+- fixed FTBFS with gcc 4.7 on 32bit arch
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:5.0.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 五 10月 14 2011 Peter Schiffer <pschiffe@redhat.com> 1:5.0.2-3
+- removed old compatibility library
+
+* 一 9月 26 2011 Peter Schiffer <pschiffe@redhat.com> 1:5.0.2-2
+- temporary build wild old compatibility library version
+
+* 二 9月 20 2011 Peter Schiffer <pschiffe@redhat.com> 1:5.0.2-1
+- resolves: #702919
+  update to 5.0.2
+- resolves: #738091
+  removed unused direct shlib dependency on libm
+  updated license in gmp.h and gmp-mparam.h files
+
+* 一 6月 13 2011 Ivana Hutarova Varekova <varekova@redhat.com> 1:4.3.2-4
+- Resolves: #706374
+  fix sse2/libgmp.so.3.5.2 debuginfo data
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:4.3.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 11月 24 2010 Ivana Hutarova Varekova <varekova@redhat.com> 1:4.3.2-2
+- fix Requires tag
+
+* 三 11月 24 2010 Ivana Hutarova Varekova <varekova@redhat.com> 1:4.3.2-1
+- downgrade from 5.0.1 to 4.3.2
+
+* 一 9月 13 2010 Cristian Gafton <gafton@amazon.com>
+- bind gmp-devel to gmp with version and release
+- update automake requires
+- mpfr lives in a separate package now, untangle builtin version from gmp
+
+* 四 7月 22 2010 Matt Wilson <msw@amazon.com>
+- add gmp-devel to BuildRequires. work needed to make this package self host
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/gmp-4.3.1-7.el6
+- import source package RHEL6/gmp-4.3.1-6.1.el6
+
+* 一 5月 24 2010 Ivana Hutarova Varekova <varekova@redhat.com> 5.0.1-1
+- update to 5.0.1
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/gmp-4.1.4-10.el5
+- added submodule prep for package gmp
+
+* 二 3月 02 2010 Ivana Hutarova Varekova <varekova@redhat.com> 4.3.1-7
+- fix the license tag
+
+* 五 11月 27 2009 Ivana Hutarova Varekova <varekova@redhat.com> 4.3.1-6
+- remove unnecessary dependences
+  remove duplicated documentation
+
+* 一 8月 10 2009 Ivana Varekova <varekova@redhat.com> 4.3.1-5
+- fix installation with --excludedocs option (#515947)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.3.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 17 2009 Ivana Varekova <varekova@redhat.com> 4.3.1-3
+- rebuild
+
+* 一 6月 15 2009 Ivana Varekova <varekova@redhat.com> 4.3.1-2
+- Resolves: #505592
+  add RPM_OPT_FLAGS
+
+* 四 5月 28 2009 Ivana Varekova <varekova@redhat.com> 4.3.1-1
+- update to 4.3.1
+- remove configure macro (built problem)
+
+* 四 4月 09 2009 Dennis Gilmore <dennis@ausil.us> - 4.2.4-6
+- no check that --host and --target are the same when building i586  or sparcv9 they are not
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.2.4-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 12月 23 2008 Ivana Varekova <varekova@redhat.com> 4.2.4-4
+- fix spec file
+
+* 一 12月 08 2008 Ivana Varekova <varekova@redhat.com> 4.2.4-3
+- remove useless option (#475073)
+
+* 三 12月 03 2008 Stepan Kasal <skasal@redhat.com> 4.2.4-2
+- Run full autoreconf, add automake to BuildRequires.
+
+* 一 11月 10 2008 Ivana Varekova <varekova@redhat.com> 4.2.4-1
+- update to 4.2.4
+
+* 五 11月 07 2008 Ivana Varekova <varekova@redhat.com> 4.2.2-9
+- remove useless patch (#470200)
+
+* 四 4月 24 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4.2.2-8
+- add sparc/sparc64 support
+
+* 三 3月 19 2008 Ivana Varekova <varekova@redhat.com> 4.2.2-7
+- add superH support (#437688)
+
+* 三 2月 13 2008 Ivana varekova <varekova@redhat.com> 4.2.2-6
+- fix gcc-4.3 problem - add <cstdio> (#432336)
+
+* 五 2月 08 2008 Ivana Varekova <varekova@redhat.com> 4.2.2-5
+- split the devel subpackage to devel and static parts
+
+* 四 2月 07 2008 Ivana Varekova <varekova@redhat.com> 4.2.2-4
+- change license tag
+
+* 一 9月 24 2007 Ivana Varekova <varekova@redhat.com> 4.2.2-3
+- fix libgmpxx.so link
+
+* 四 9月 20 2007 Ivana Varekova <varekova@redhat.com> 4.2.2-2
+- fix check tag
+
+* 三 9月 19 2007 Ivana Varekova <varekova@redhat.com> 4.2.2-1
+- update to 4.2.2
+
+* 一 8月 20 2007 Ivana Varekova <varekova@redhat.com> 4.2.1-3
+- spec file cleanup (#253439)
+
+* 二 8月 07 2007 Ivana Varekova <varekova@redhat.com> 4.2.1-2
+- add arm support (#245456)
+  thanks to Lennert Buytenhek
+
+* 一 8月 06 2007 Ivana Varekova <varekova@redhat.com> 4.2.1-1
+- update to 4.2.1
+- do some spec cleanups
+- fix 238794 - gmp-devel depends on {version} but not on 
+  {version}-{release}
+- remove mpfr (moved to separate package)
+
+* 四 7月 05 2007 Florian La Roche <laroche@redhat.com> 4.1.4-13
+- don't fail scripts to e.g. allow excludedocs installs
+
+* 二 4月 24 2007 Karsten Hopp <karsten@redhat.com> 4.1.4-12.3
+- fix library permissions
+
+* 三 3月 14 2007 Karsten Hopp <karsten@redhat.com> 4.1.4-12.2
+- fix typo
+
+* 三 3月 14 2007 Thomas Woerner <twoerner@redhat.com> 4.1.4-12.1
+- added alpha support for gmp.h and gmp-mparam.h wrappers
+
+* 五 2月 23 2007 Karsten Hopp <karsten@redhat.com> 4.1.4-12
+- remove trailing dot from summary
+- fix buildroot
+- fix post/postun/... requirements
+- use make install DESTDIR=...
+- replace tabs with spaces
+- convert changelog to utf-8
+
+* 三 1月 17 2007 Jakub Jelinek <jakub@redhat.com> 4.1.4-11
+- make sure libmpfr.a doesn't contain SSE2 instructions on i?86 (#222371)
+- rebase to mpfr 2.2.1 from 2.2.0 + cumulative fixes
+
+* 四 11月 02 2006 Thomas Woerner <twoerner@redhat.com> 4.1.4-10
+- fixed arch order in gmp.h and gmp-mparam.h wrapper for all architectures
+
+* 四 11月 02 2006 Joe Orton <jorton@redhat.com> 4.1.4-10
+- include ppc64 header on ppc64 not ppc header
+
+* 五 10月 27 2006 Thomas Woerner <twoerner@redhat.com> - 4.1.4-9
+- fixed multilib devel conflicts for gmp (#212286)
+
+* 四 10月 26 2006 Jakub Jelinek <jakub@redhat.com> - 4.1.4-8
+- upgrade mpfr to 2.2.0 (#211971)
+- apply mpfr 2.2.0 cumulative patch
+
+* 五 7月 14 2006 Thomas Woerner <twoerner@redhat.com> - 4.1.4-7
+- release bump
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 4.1.4-6.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 4.1.4-6.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 4月 18 2005 Thomas Woerner <twoerner@redhat.com> 4.1.4-6
+- fixed __setfpucw call in mpfr-test.h
+
+* 三 3月 02 2005 Karsten Hopp <karsten@redhat.de> 4.1.4-5
+- build with gcc-4
+
+* 三 2月 09 2005 Karsten Hopp <karsten@redhat.de> 4.1.4-4
+- rebuilt
+
+* 日 9月 26 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- 4.1.4
+- disable ppc64 patch, now fixed upstream
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 5月 24 2004 Thomas Woerner <twoerner@redhat.com> 4.1.3-1
+- new version 4.1.3
+
+* 三 3月 31 2004 Thomas Woerner <twoerner@redhat.com> 4.1.2-14
+- dropped RPATH (#118506)
+
+* 六 3月 06 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- also build SSE2 DSOs, patch from Ulrich Drepper
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 1月 29 2004 Thomas Woerner <twoerner@redhat.com> 4.1.2-11
+- BuildRequires for automake16
+
+* 一 12月 01 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- fix symlink to libgmpxx.so.3  #111135
+- add patch to factorize.c from gmp homepage
+
+* 四 10月 23 2003 Joe Orton <jorton@redhat.com> 4.1.2-9
+- build with -Wa,--noexecstack
+
+* 四 10月 23 2003 Joe Orton <jorton@redhat.com> 4.1.2-8
+- build assembly code with -Wa,--execstack
+- use parallel make
+- run tests, and fix C++ therein
+
+* 四 10月 02 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- enable mpfr  #104395
+- enable cxx  #80195
+- add COPYING.LIB
+- add fixes from gmp web-site
+- remove some cruft patches for older libtool releases
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 03 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- make configure.in work with newer autoconf
+
+* 日 6月 01 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- do not set extra_functions for s390x  #92001
+
+* 四 2月 13 2003 Elliot Lee <sopwith@redhat.com> 4.1.2-3
+- Add ppc64 patch, accompanied by running auto*
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 1月 01 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 4.1.2
+
+* 二 12月 03 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 4.1.1
+- remove un-necessary patches
+- adjust s390/x86_64 patch
+
+* 日 10月 06 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- add s390x patch
+- disable current x86-64 support in longlong.h
+
+* 一 7月 08 2002 Trond Eivind Glomsrød <teg@redhat.com> 4.1-4
+- Add 4 patches, among them one for #67918
+- Update URL
+- s/Copyright/License/
+
+* 一 7月 08 2002 Trond Eivind Glomsrød <teg@redhat.com> 4.1-3
+- Redefine the configure macro, the included configure 
+  script isn't happy about the rpm default one (#68190). Also, make
+  sure the included libtool isn't replaced,
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 六 5月 25 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to version 4.1
+- patch s390 gmp-mparam.h to match other archs.
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 3月 11 2002 Trond Eivind Glomsrød <teg@redhat.com> 4.0.1-3
+- Use standard %configure macro and edit %{_tmppath}
+
+* 二 2月 26 2002 Trond Eivind Glomsrød <teg@redhat.com> 4.0.1-2
+- Rebuild
+
+* 二 1月 22 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 4.0.1
+- bzip2 src
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 一 2月 05 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed bugzilla bug #25515 where GMP wouldn't work on IA64 as IA64 is not
+correctly identified as a 64 bit platform.
+
+* 一 12月 18 2000 Preston Brown <pbrown@redhat.com>
+- include bsd mp library
+
+* 二 10月 17 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 3.1.1
+
+* 日 9月 03 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- update to 3.1
+
+* 六 8月 19 2000 Preston Brown <pbrown@redhat.com>
+- devel subpackage depends on main package so that .so symlink is OK.
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 六 6月 03 2000 Nalin Dahyabhai <nalin@redhat.com>
+- switch to the configure and makeinstall macros
+- FHS-compliance fixing
+- move docs to non-devel package
+
+* 五 4月 28 2000 Bill Nottingham <notting@redhat.com>
+- libtoolize for ia64
+
+* 五 4月 28 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- update to 3.0.1
+
+* 四 4月 27 2000 Jakub Jelinek <jakub@redhat.com>
+- sparc64 fixes for 3.0
+
+* 三 4月 26 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- update to 3.0
+
+* 一 2月 14 2000 Matt Wilson <msw@redhat.com>
+- #include <string.h> in files that use string functions
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description and summary
+
+* 一 12月 06 1999 Michael K. Johnson <johnsonm@redhat.com>
+- s/GPL/LGPL/
+- build as non-root (#7604)
+
+* 一 9月 06 1999 Jakub Jelinek <jj@ultra.linux.cz>
+- merge in some debian gmp fixes
+- Ulrich Drepper's __gmp_scale2 fix
+- my mpf_set_q fix
+- sparc64 fixes
+
+* 三 4月 28 1999 Cristian Gafton <gafton@redhat.com>
+- add sparc patch for PIC handling
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 8)
+
+* 四 2月 11 1999 Michael Johnson <johnsonm@redhat.com>
+- include the private header file gmp-mparam.h because several
+  apps seem to assume that they are building against the gmp
+  source tree and require it.  Sigh.
+
+* 二 1月 12 1999 Michael K. Johnson <johnsonm@redhat.com>
+- libtoolize to work on arm
+
+* 四 9月 10 1998 Cristian Gafton <gafton@redhat.com>
+- yet another touch of the spec file
+
+* 三 9月 02 1998 Michael Fulbright <msf@redhat.com>
+- looked over before inclusion in RH 5.2
+
+* 日 5月 24 1998 Dick Porter <dick@cymru.net>
+- Patch Makefile.in, not Makefile
+- Don't specify i586, let configure decide the arch
+
+* 六 1月 24 1998 Marc Ewing <marc@redhat.com>
+- started with package from Toshio Kuratomi <toshiok@cats.ucsc.edu>
+- cleaned up file list
+- fixed up install-info support
+

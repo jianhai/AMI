@@ -1,0 +1,87 @@
+* 三 2月 04 2015 Jason Green <jasg@amazon.com>
+- Build for multiple pythons
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-kitchen-1.1.1-5.el7
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.1.1-5
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-kitchen-1.1.1-4.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package python-kitchen
+
+* 三 8月 21 2013 Lee Trager <ltrager@amazon.com>
+- Add python26-test as a build dep
+- Build docs on AL as well
+- import source package F19/python-kitchen-1.1.1-4.fc19
+- setup complete for package python-kitchen
+
+* 二 6月 25 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 1.1.1-4
+- Move the api documentation into its own subpackage
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 二 2月 14 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 1.1.1-1
+- Bugfix for using easy_gettext_setup or get_translation_object with the
+  default localedirs
+
+* 四 1月 12 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 1.1.0-1
+- Update to 1.1.0 final
+
+* 四 4月 14 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 1.0.0-1
+- Upstream update to 1.0 final
+
+* 日 2月 20 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.2.4-1
+- Upstream update 0.2.4
+  - Changes i18n.easy_gettext_setup() to return lgettext functions when
+    byte strings are requested.
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.3-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 1月 05 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.2.3-2
+- Upstream respin of the tarball
+
+* 三 1月 05 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.2.3-1
+- Upstream update to 0.2.3
+- Fixes https://bugzilla.redhat.com/show_bug.cgi?id=667433
+
+* 一 1月 03 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.2.2-1
+- Upstream update 0.2.2
+  - Adds exception to message functions
+- Build html docs
+
+* 四 9月 02 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.2.1-0.1.a1
+- Update to upstream 0.2.1a1 release.
+- Fixes build on python-2.7, adds iterutils module, optimizes some functions,
+  increases documentation
+
+* 四 7月 29 2010 Dennis Gilmore <dennis@ausil.us> - 0.2-0.1.a2
+- propoerlly version accrding to pre-release guidelines
+- run tests
+- update to 0.2a2
+- include COPYING.LESSER and docs dir
+
+* 四 7月 29 2010 Dennis Gilmore <dennis@ausil.us> - 0.2a1-2
+- rename to python-kitchen
+
+* 四 7月 29 2010 Dennis Gilmore <dennis@ausil.us> - 0.2a1-1
+- update to 0.2a1
+
+* 四 7月 15 2010 Dennis Gilmore <dennis@ausil.us> - 0.1a3-3
+- fix spelling mistake in description
+
+* 四 7月 15 2010 Dennis Gilmore <dennis@ausil.us> - 0.1a3-2
+- add documentaion
+- fix description
+
+* 四 7月 15 2010 Dennis Gilmore <dennis@ausil.us> - 0.1a3-1
+- initial package
+

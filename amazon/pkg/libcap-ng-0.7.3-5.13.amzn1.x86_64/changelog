@@ -1,0 +1,111 @@
+* 三 6月 03 2015 Munehisa Kamata <kamatam@amazon.com>
+- backport a fix for CVE-2014-3215 from SVN repository
+
+* 六 1月 24 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libcap-ng-0.7.3-5.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 0.7.3-5
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 0.7.3-4
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libcap-ng-0.7.3-3.el7
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.7.3-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 三 12月 19 2012 Steve Grubb <sgrubb@redhat.com> 0.7.3-2
+- Remove useless code in pscap causing EBADFD
+
+* 五 11月 09 2012 Steve Grubb <sgrubb@redhat.com> 0.7.3-1
+- New upstream release
+
+* 三 10月 24 2012 Steve Grubb <sgrubb@redhat.com> 0.7.1-1
+- New upstream release
+
+* 二 7月 24 2012 Steve Grubb <sgrubb@redhat.com> 0.7-1
+- New upstream release
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.6-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 五 6月 24 2011 Steve Grubb <sgrubb@redhat.com> 0.6.6-1
+- New upstream release
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libcap-ng-0.6.4-3.el6_0.1
+- import source package RHEL6/libcap-ng-0.6.4-3.el6
+
+* 三 11月 03 2010 Steve Grubb <sgrubb@redhat.com> 0.6.5-1
+- New upstream release fixing 2.6.36 kernel header issue
+
+* 三 7月 21 2010 David Malcolm <dmalcolm@redhat.com> - 0.6.4-4
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 二 7月 13 2010 Cristian Gafton <gafton@amazon.com>
+- use the system python macros && rebuild
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libcap-ng-0.6.4-2.el6
+- import source package RHEL6/libcap-ng-0.6.2-3.el6
+- setup complete for package libcap-ng
+
+* 四 6月 17 2010 Steve Grubb <sgrubb@redhat.com> 0.6.4-3
+- Only open regular files in filecap
+
+* 一 5月 24 2010 Steve Grubb <sgrubb@redhat.com> 0.6.4-2
+- In utils subpackage added a requires statement.
+
+* 四 5月 06 2010 Steve Grubb <sgrubb@redhat.com> 0.6.4-1
+- New upstream release fixing multi-threading issue
+
+* 三 4月 28 2010 Steve Grubb <sgrubb@redhat.com> 0.6.3-2
+- filecap shows full capabilities if a file has any
+
+* 四 3月 11 2010 Steve Grubb <sgrubb@redhat.com> 0.6.3-1
+- New upstream release
+
+* 二 2月 16 2010 Steve Grubb <sgrubb@redhat.com> 0.6.2-4
+- Use global macro and require pkgconfig for devel subpackage
+
+* 五 10月 09 2009 Steve Grubb <sgrubb@redhat.com> 0.6.2-3
+- Apply patch to retain setpcap only if clearing bounding set
+
+* 六 10月 03 2009 Steve Grubb <sgrubb@redhat.com> 0.6.2-2
+- Apply patch correcting pscap and netcap acct detection
+
+* 一 9月 28 2009 Steve Grubb <sgrubb@redhat.com> 0.6.2-1
+- New upstream release
+
+* 日 7月 26 2009 Steve Grubb <sgrubb@redhat.com> 0.6.1-1
+- New upstream release
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 29 2009 Steve Grubb <sgrubb@redhat.com> 0.6-1
+- New upstream release
+
+* 日 6月 21 2009 Steve Grubb <sgrubb@redhat.com> 0.5.1-1
+- New upstream release
+
+* 五 6月 19 2009 Steve Grubb <sgrubb@redhat.com> 0.5-1
+- New upstream release
+
+* 五 6月 12 2009 Steve Grubb <sgrubb@redhat.com> 0.4.2-1
+- New upstream release
+
+* 五 6月 12 2009 Steve Grubb <sgrubb@redhat.com> 0.4.1-1
+- Initial build.
+

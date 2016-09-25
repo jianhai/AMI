@@ -1,0 +1,21 @@
+Name        : groff-base
+Version     : 1.22.2
+Release     : 8.11.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分35秒
+Group       : Applications/Publishing
+Size        : 3336738
+License     : GPLv3+ and GFDL and BSD and MIT
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时34分59秒, Key ID bcb4a85b21c0f39f
+Source RPM  : groff-1.22.2-8.11.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 19时33分47秒
+Build Host  : build-60002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/groff/
+Summary     : Parts of the groff formatting system required to display manual pages
+Description :
+The groff-base package contains only necessary parts of groff formatting
+system which are required to display manual pages, and the groff's default
+display device (PostScript).

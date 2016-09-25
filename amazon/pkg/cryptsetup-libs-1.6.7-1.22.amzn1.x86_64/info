@@ -1,0 +1,19 @@
+Name        : cryptsetup-libs
+Version     : 1.6.7
+Release     : 1.22.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分57秒
+Group       : System Environment/Libraries
+Size        : 717447
+License     : GPLv2+ and LGPLv2+
+Signature   : RSA/SHA256, 2016年08月19日 星期五 01时33分31秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cryptsetup-1.6.7-1.22.amzn1.src.rpm
+Build Date  : 2016年08月16日 星期二 21时28分33秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://cryptsetup.googlecode.com/
+Summary     : Cryptsetup shared library
+Description :
+This package contains the cryptsetup shared library, libcryptsetup.

@@ -1,0 +1,13 @@
+/lib/udev/rules.d/10-dm.rules
+/lib/udev/rules.d/13-dm-disk.rules
+/lib/udev/rules.d/95-dm-notify.rules
+/sbin/dmsetup
+/usr/share/doc/device-mapper-1.02.93
+/usr/share/doc/device-mapper-1.02.93/12-dm-permissions.rules
+/usr/share/doc/device-mapper-1.02.93/COPYING
+/usr/share/doc/device-mapper-1.02.93/COPYING.LIB
+/usr/share/doc/device-mapper-1.02.93/INSTALL
+/usr/share/doc/device-mapper-1.02.93/README
+/usr/share/doc/device-mapper-1.02.93/VERSION_DM
+/usr/share/doc/device-mapper-1.02.93/WHATS_NEW_DM
+/usr/share/man/man8/dmsetup.8.gz

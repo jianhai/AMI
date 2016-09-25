@@ -1,0 +1,12 @@
+/sbin/ldconfig
+/sbin/ldconfig
+libattr.so.1()(64bit)
+libattr.so.1(ATTR_1.0)(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.3)(64bit)
+libcap.so.2()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

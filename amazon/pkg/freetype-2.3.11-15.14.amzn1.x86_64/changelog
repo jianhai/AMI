@@ -1,0 +1,645 @@
+* 二 3月 17 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/freetype-2.3.11-15.el6_6.1
+
+* 三 3月 04 2015 Marek Kasik <mkasik@redhat.com> - 2.3.11-15.el6_6.1
+- Fixes CVE-2014-9657
+   - Check minimum size of `record_size'.
+- Fixes CVE-2014-9658
+   - Use correct value for minimum table length test.
+- Fixes CVE-2014-9675
+   - New macro that checks one character more than `strncmp'.
+- Fixes CVE-2014-9660
+   - Check `_BDF_GLYPH_BITS'.
+- Fixes CVE-2014-9661
+   - Initialize `face->ttf_size'.
+   - Always set `face->ttf_size' directly.
+   - Exclusively use the `truetype' font driver for loading
+     the font contained in the `sfnts' array.
+- Fixes CVE-2014-9663
+   - Fix order of validity tests.
+- Fixes CVE-2014-9664
+   - Add another boundary testing.
+   - Fix boundary testing.
+- Fixes CVE-2014-9667
+   - Protect against addition overflow.
+- Fixes CVE-2014-9669
+   - Protect against overflow in additions and multiplications.
+- Fixes CVE-2014-9670
+   - Add sanity checks for row and column values.
+- Fixes CVE-2014-9671
+   - Check `size' and `offset' values.
+- Fixes CVE-2014-9673
+   - Fix integer overflow by a broken POST table in resource-fork.
+- Fixes CVE-2014-9674
+   - Additional overflow check in the summation of POST fragment lengths.
+- Work around behaviour of X11's `pcfWriteFont' and `pcfReadFont' functions
+- Resolves: #1197737
+
+* 五 2月 01 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/freetype-2.3.11-14.el6_3.1
+
+* 四 1月 24 2013 Marek Kasik <mkasik@redhat.com> 2.3.11-15
+- Fix CVE-2012-5669
+    (Use correct array size for checking `glyph_enc')
+- Resolves: #903543
+
+* 四 7月 19 2012 Marek Kasik <mkasik@redhat.com> 2.3.11-14
+- A little change in configure part
+- Related: #723468
+
+* 三 4月 11 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/freetype-2.3.11-6.el6_2.9
+
+* 二 4月 03 2012 Marek Kasik <mkasik@redhat.com> 2.3.11-13
+- Fix CVE-2012-{1126, 1127, 1130, 1131, 1132, 1134, 1136,
+  1137, 1139, 1140, 1141, 1142, 1143, 1144}
+- Properly initialize array "result" in
+  FT_Outline_Get_Orientation()
+- Check bytes per row for overflow in _bdf_parse_glyphs()
+- Resolves: #806269
+
+* 四 11月 17 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/freetype-2.3.11-6.el6_1.8
+
+* 二 11月 15 2011 Marek Kasik <mkasik@redhat.com> 2.3.11-12
+- Add freetype-2.3.11-CVE-2011-3439.patch
+    (Various loading fixes.)
+- Resolves: #754012
+
+* 三 10月 26 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/freetype-2.3.11-6.el6_1.7
+
+* 五 10月 21 2011 Marek Kasik <mkasik@redhat.com> 2.3.11-11
+- Add freetype-2.3.11-CVE-2011-3256.patch
+    (Handle some border cases.)
+- Resolves: #747084
+
+* 五 7月 22 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/freetype-2.3.11-6.el6_1.6
+
+* 三 7月 20 2011 Marek Kasik <mkasik@redhat.com> 2.3.11-10
+- Use -fno-strict-aliasing instead of __attribute__((__may_alias__))
+- Resolves: #723468
+
+* 三 7月 20 2011 Marek Kasik <mkasik@redhat.com> 2.3.11-9
+- Allow FT_Glyph to alias (to pass Rpmdiff)
+- Resolves: #723468
+
+* 三 7月 20 2011 Marek Kasik <mkasik@redhat.com> 2.3.11-8
+- Add freetype-2.3.11-CVE-2011-0226.patch
+    (Add better argument check for `callothersubr'.)
+    - based on patches by Werner Lemberg,
+      Alexei Podtelezhnikov and Matthias Drochner
+- Resolves: #723468
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/freetype-2.3.11-6.el6_0.2
+- import source package RHEL6/freetype-2.3.11-6.el6_0.1
+- import source package RHEL6/freetype-2.3.11-5.el6
+
+* 三 11月 10 2010 Marek Kasik <mkasik@redhat.com> 2.3.11-7
+- Add freetype-2.3.11-CVE-2010-3855.patch
+    (Protect against invalid `runcnt' values.)
+- Resolves: #651762
+
+* 四 9月 30 2010 Marek Kasik <mkasik@redhat.com> 2.3.11-6
+- Add freetype-2.3.11-CVE-2010-2805.patch
+    (Fix comparison.)
+- Add freetype-2.3.11-CVE-2010-2806.patch
+    (Protect against negative string_size. Fix comparison.)
+- Add freetype-2.3.11-CVE-2010-2808.patch
+    (Check the total length of collected POST segments.)
+- Add freetype-2.3.11-CVE-2010-3311.patch
+    (Don't seek behind end of stream.)
+- Resolves: #638839
+
+* 三 8月 11 2010 Marek Kasik <mkasik@redhat.com> 2.3.11-5
+- Add freetype-2.3.11-CVE-2010-1797.patch
+    (Check stack after execution of operations too.
+     Skip the evaluations of the values in decoder, if
+     cff_decoder_parse_charstrings() returns any error.)
+- Resolves: #621624
+
+* 四 7月 22 2010 Marek Kasik <mkasik@redhat.com> 2.3.11-4
+- Add freetype-2.3.11-CVE-2010-2498.patch
+    (Assure that `end_point' is not larger than `glyph->num_points')
+- Add freetype-2.3.11-CVE-2010-2499.patch
+    (Check the buffer size during gathering PFB fragments)
+- Add freetype-2.3.11-CVE-2010-2500.patch
+    (Use smaller threshold values for `width' and `height')
+- Add freetype-2.3.11-CVE-2010-2519.patch
+    (Check `rlen' the length of fragment declared in the POST fragment header)
+- Add freetype-2.3.11-CVE-2010-2520.patch
+    (Fix bounds check)
+- Add freetype-2.3.11-CVE-2010-2527.patch
+    (Use precision for `%s' where appropriate to avoid buffer overflows)
+- Add freetype-2.3.11-axis-name-overflow.patch
+    (Avoid overflow when dealing with names of axes)
+- Resolves: #613298
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/freetype-2.3.11-3.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/freetype-2.2.1-21.el5_3
+- import source package RHEL5/freetype-2.2.1-20.el5_2
+- import source package RHEL5/freetype-2.2.1-19.el5
+- import source package RHEL5/freetype-2.2.1-17.el5
+- import source package RHEL5/freetype-2.2.1-16.el5
+- added submodule prep for package freetype
+
+* 四 12月 03 2009 Behdad Esfahbod <behdad@redhat.com> 2.3.11-3
+- Add freetype-2.3.11-more-demos.patch
+- New demo programs ftmemchk, ftpatchk, and fttimer
+
+* 四 12月 03 2009 Behdad Esfahbod <behdad@redhat.com> 2.3.11-2
+- Second try.  Drop upstreamed patches.
+
+* 四 12月 03 2009 Behdad Esfahbod <behdad@redhat.com> 2.3.11-1
+- 2.3.11
+
+* 四 7月 30 2009 Behdad Esfahbod <behdad@redhat.com> 2.3.9-6
+- Add freetype-2.3.9-aliasing.patch
+- Resolves: 513582
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.9-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 5月 07 2009 Matthias Clasen <mclasen@redhat.com> 2.3.9-4
+- Don't own /usr/lib/pkgconfig
+
+* 五 3月 27 2009 Behdad Esfahbod <besfahbo@redhat.com> 2.3.9-3
+- Disable subpixel hinting by default.  Was turned on unintentionally.
+
+* 三 3月 25 2009 Behdad Esfahbod <besfahbo@redhat.com> 2.3.9-2
+- Add Provides: freetype-bytecode and freetype-subpixel if built
+  with those options.
+- Resolves: #155210
+
+* 五 3月 13 2009 Behdad Esfahbod <besfahbo@redhat.com> 2.3.9-1
+- Update to 2.3.9.
+- Resolves #489928
+
+* 一 3月 09 2009 Behdad Esfahbod <besfahbo@redhat.com> 2.3.8-2.1
+- Preserve timestamp of FTL.TXT when converting to UTF-8.
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 15 2009 Behdad Esfahbod <besfahbo@redhat.com> 2.3.8-1
+- Update to 2.3.8
+- Remove freetype-autohinter-ligature.patch
+
+* 二 12月 09 2008 Behdad Esfahbod <besfahbo@redhat.com> 2.3.7-3
+- Add full source URL to Source lines.
+- Add docs to main and devel package.
+- rpmlint is happy now.
+- Resolves: #225770
+
+* 五 12月 05 2008 Behdad Esfahbod <besfahbo@redhat.com> 2.3.7-2
+- Add freetype-autohinter-ligature.patch
+- Resolves: #368561
+
+* 四 8月 14 2008 Behdad Esfahbod <besfahbo@redhat.com> 2.3.7-1
+- Update to 2.3.7
+
+* 二 6月 10 2008 Behdad Esfahbod <besfahbo@redhat.com> 2.3.6-1
+- Update to 2.3.6
+
+* 三 5月 21 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 2.3.5-5
+- fix license tag
+- add sparc64 to list of 64bit arches
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.3.5-4
+- Autorebuild for GCC 4.3
+
+* 四 8月 23 2007 Adam Jackson <ajax@redhat.com> - 2.3.5-3
+- Rebuild for build ID
+
+* 二 7月 31 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.5-2
+- Change spec file to permit enabling bytecode-interpreter and
+  subpixel-rendering without editing spec file.
+- Resolves: 249986
+
+* 三 7月 25 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.5-1
+- Update to 2.3.5.
+- Drop freetype-2.3.4-ttf-overflow.patch
+
+* 五 6月 29 2007 Adam Jackson <ajax@redhat.com> 2.3.4-4
+- Fix builds/unix/libtool to not emit rpath into binaries. (#225770)
+
+* 四 5月 31 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.4-3
+- Add freetype-2.3.4-ttf-overflow.patch
+
+* 四 4月 12 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.4-2
+- Add alpha to 64-bit archs (#236166)
+
+* 四 4月 05 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.3-2
+- Include new demos ftgrid and ftdiff in freetype-demos. (#235478)
+
+* 四 4月 05 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.3-1
+- Update to 2.3.3.
+
+* 四 4月 05 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.4-1
+- Update to 2.3.4.
+
+* 五 3月 09 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.2-1
+- Update to 2.3.2.
+
+* 五 2月 02 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.1-1
+- Update to 2.3.1.
+
+* 三 1月 17 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.0-2
+- Add without_subpixel_rendering.
+- Drop X11_PATH=/usr.  Not needed anymore.
+
+* 三 1月 17 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.3.0-1
+- Update to 2.3.0.
+- Drop upstream patches.
+- Drop -fno-strict-aliasing, it should just work.
+- Fix typo in ftconfig.h generation.
+
+* 二 1月 09 2007 Behdad Esfahbod <besfahbo@redhat.com> 2.2.1-16
+- Backport binary-search fixes from HEAD
+- Add freetype-2.2.1-ttcmap.patch
+- Resolves: #208734
+
+- Fix rendering issue with some Asian fonts.
+- Add freetype-2.2.1-fix-get-orientation.patch
+- Resolves: #207261
+- Copy non-X demos even if not compiling with_xfree86.
+- Add freetype-2.2.1-zero-item-size.patch, to fix crasher.
+- Resolves #214048
+- Add X11_PATH=/usr to "make"s, to find modern X.
+- Resolves #212199
+
+* 一 9月 11 2006 Behdad Esfahbod <besfahbo@redhat.com> 2.2.1-10
+- Fix crasher https://bugs.freedesktop.org/show_bug.cgi?id=6841
+- Add freetype-2.2.1-memcpy-fix.patch
+
+* 四 9月 07 2006 Behdad Esfahbod <besfahbo@redhat.com> 2.2.1-9
+- Add BuildRequires: libX11-devel (#205355)
+
+* 二 8月 29 2006 Behdad Esfahbod <besfahbo@redhat.com> 2.2.1-8
+- Add freetype-composite.patch and freetype-more-composite.patch
+  from upstream. (#131851)
+
+* 一 8月 28 2006 Matthias Clasen <mclasen@redhat.com> - 2.2.1-7
+- Require pkgconfig in the -devel package
+
+* 五 8月 18 2006 Jesse Keating <jkeating@redhat.com> - 2.2.1-6
+- pass --disable-static to %configure. (#172628)
+
+* 四 8月 17 2006 Jesse Keating <jkeating@redhat.com> - 2.2.1-5
+- don't package static libs
+
+* 日 8月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.2.1-4.fc6
+- fix a problem with the multilib patch (#202366)
+
+* 四 7月 27 2006 Matthias Clasen  <mclasen@redhat.com> - 2.2.1-3
+- fix multilib issues
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.2.1-2.1
+- rebuild
+
+* 五 7月 07 2006 Behdad Esfahbod <besfahbo@redhat.com> 2.2.1-2
+- Remove unused BuildRequires
+
+* 五 7月 07 2006 Behdad Esfahbod <besfahbo@redhat.com> 2.2.1-1
+- Update to 2.2.1
+- Remove FreeType 1, to move to extras
+- Install new demos ftbench, ftchkwd, ftgamma, and ftvalid
+- Enable modules gxvalid and otvalid
+
+* 三 5月 17 2006 Karsten Hopp <karsten@redhat.de> 2.1.10-6
+- add buildrequires libICE-devel, libSM-devel
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.1.10-5.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.1.10-5.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 11月 18 2005 Bill Nottingham  <notting@redhat.com> 2.1.10-5
+- Remove references to obsolete /usr/X11R6 paths
+
+* 二 11月 01 2005 Matthias Clasen  <mclasen@redhat.com> 2.1.10-4
+- Switch requires to modular X
+
+* 五 10月 21 2005 Matthias Clasen  <mclasen@redhat.com> 2.1.10-3
+- BuildRequire gettext
+
+* 三 10月 12 2005 Jason Vas Dias <jvdias@redhat.com> 2.1.10-2
+- fix 'without_bytecode_interpreter 0' build: freetype-2.1.10-enable-ft2-bci.patch
+
+* 五 10月 07 2005 Matthias Clasen  <mclasen@redhat.com> 2.1.10-1
+- Update to 2.1.10
+- Add necessary fixes
+
+* 二 8月 16 2005 Kristian Høgsberg <krh@redhat.com> 2.1.9-4
+- Fix freetype-config on 64 bit platforms.
+
+* 四 7月 07 2005 Karsten Hopp <karsten@redhat.de> 2.1.9-3
+- BuildRequires xorg-x11-devel
+
+* 五 3月 04 2005 David Zeuthen <davidz@redhat.com> - 2.1.9-2
+- Rebuild
+
+* 三 8月 04 2004 Owen Taylor <otaylor@redhat.com> - 2.1.9-1
+- Upgrade to 2.1.9
+- Since we are just using automake for aclocal, use it unversioned,
+  instead of specifying 1.4.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 4月 19 2004 Owen Taylor <otaylor@redhat.com> 2.1.7-4
+- Add patch from freetype CVS to fix problem with eexec (#117743)
+- Add freetype-devel to buildrequires and -devel requires
+  (Maxim Dzumanenko, #111108)
+
+* 三 3月 10 2004 Mike A. Harris <mharris@redhat.com> 2.1.7-3
+- Added -fno-strict-aliasing to CFLAGS and CXXFLAGS to try to fix SEGV and
+  SIGILL crashes in mkfontscale which have been traced into freetype and seem
+  to be caused by aliasing issues in freetype macros (#118021)
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com> 2.1.7-2.1
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> 2.1.7-2
+- rebuilt
+
+* 五 1月 23 2004 Owen Taylor <otaylor@redhat.com> 2.1.7-1
+- Upgrade to 2.1.7
+
+* 二 9月 23 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- allow compiling without the demos as that requires XFree86
+  (this allows bootstrapping XFree86 on new archs)
+
+* 五 8月 08 2003 Elliot Lee <sopwith@redhat.com> 2.1.4-4.1
+- Rebuilt
+
+* 二 7月 08 2003 Owen Taylor <otaylor@redhat.com> 2.1.4-4.0
+- Bump for rebuild
+
+* 三 6月 25 2003 Owen Taylor <otaylor@redhat.com> 2.1.4-3
+- Fix crash with non-format-0 hdmx tables (found by David Woodhouse)
+
+* 一 6月 09 2003 Owen Taylor <otaylor@redhat.com> 2.1.4-1
+- Version 2.1.4
+- Relibtoolize to get deplibs right for x86_64
+- Use autoconf-2.5x for freetype-1.4 to fix libtool-1.5 compat problem (#91781)
+- Relativize absolute symlinks to fix the -debuginfo package 
+  (#83521, Mike Harris)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 22 2003 Jeremy Katz <katzj@redhat.com> 2.1.3-9
+- fix build with gcc 3.3
+
+* 二 2月 25 2003 Owen Taylor <otaylor@redhat.com>
+- Add a memleak fix for the gzip backend from Federic Crozat
+
+* 四 2月 13 2003 Elliot Lee <sopwith@redhat.com> 2.1.3-7
+- Run libtoolize/aclocal/autoconf so that libtool knows to generate shared libraries 
+  on ppc64.
+- Use _smp_mflags (for freetype 2.x only)
+
+* 二 2月 04 2003 Owen Taylor <otaylor@redhat.com>
+- Switch to using %configure (should fix #82330)
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 1月 06 2003 Owen Taylor <otaylor@redhat.com> 2.1.3-4
+- Make FreeType robust against corrupt fonts with recursive composite 
+  glyphs (#74782, James Antill)
+
+* 四 1月 02 2003 Owen Taylor <otaylor@redhat.com> 2.1.3-3
+- Add a patch to implement FT_LOAD_TARGET_LIGHT
+- Fix up freetype-1.4-libtool.patch
+
+* 四 12月 12 2002 Mike A. Harris <mharris@redhat.com> 2.1.3-2
+- Update to freetype 2.1.3
+- Removed ttmkfdir sources and patches, as they have been moved from the
+  freetype packaging to XFree86 packaging, and now to the ttmkfdir package
+- Removed patches that are now included in 2.1.3:
+  freetype-2.1.1-primaryhints.patch, freetype-2.1.2-slighthint.patch,
+  freetype-2.1.2-bluefuzz.patch, freetype-2.1.2-stdw.patch,
+  freetype-2.1.2-transform.patch, freetype-2.1.2-autohint.patch,
+  freetype-2.1.2-leftright.patch
+- Conditionalized inclusion of freetype 1.4 library.
+
+* 三 12月 04 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- disable perl, it is not used at all
+
+* 二 12月 03 2002 Elliot Lee <sopwith@redhat.com> 2.1.2-11
+- Instead of removing unpackaged file, include it in the package.
+
+* 六 11月 30 2002 Mike A. Harris <mharris@redhat.com> 2.1.2-10
+- Attempted to fix lib64 issue in freetype-demos build with X11_LINKLIBS
+- Cleaned up various _foodir macros throughtout specfile
+- Removed with_ttmkfdir build option as it is way obsolete
+
+* 五 11月 29 2002 Tim Powers <timp@redhat.com> 2.1.2-8
+- remove unpackaged files from the buildroot
+
+* 三 8月 28 2002 Owen Taylor <otaylor@redhat.com>
+- Fix a bug with PCF metrics
+
+* 五 8月 09 2002 Owen Taylor <otaylor@redhat.com>
+- Backport autohinter improvements from CVS
+
+* 二 7月 23 2002 Owen Taylor <otaylor@redhat.com>
+- Fix from CVS for transformations (#68964)
+
+* 二 7月 09 2002 Owen Taylor <otaylor@redhat.com>
+- Add another bugfix for the postscript hinter
+
+* 一 7月 08 2002 Owen Taylor <otaylor@redhat.com>
+- Add support for BlueFuzz private dict value, fixing rendering 
+  glitch for Luxi Mono.
+
+* 三 7月 03 2002 Owen Taylor <otaylor@redhat.com>
+- Add an experimental FT_Set_Hint_Flags() call
+
+* 一 7月 01 2002 Owen Taylor <otaylor@redhat.com>
+- Update to 2.1.2
+- Add a patch fixing freetype PS hinter bug
+
+* 五 6月 21 2002 Mike A. Harris <mharris@redhat.com> 2.1.1-2
+- Added ft rpm build time conditionalizations upon user requests
+
+* 二 6月 11 2002 Owen Taylor <otaylor@redhat.com> 2.1.1-1
+- Version 2.1.1
+
+* 一 6月 10 2002 Owen Taylor <otaylor@redhat.com>
+- Add a fix for PCF character maps
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 5月 17 2002 Mike A. Harris <mharris@redhat.com> 2.1.0-2
+- Updated freetype to version 2.1.0
+- Added libtool fix for freetype 1.4 (#64631)
+
+* 三 3月 27 2002 Nalin Dahyabhai <nalin@redhat.com> 2.0.9-2
+- use "libtool install" instead of "install" to install some binaries (#62005)
+
+* 一 3月 11 2002 Mike A. Harris <mharris@redhat.com> 2.0.9-1
+- Updated to freetype 2.0.9
+
+* 日 2月 24 2002 Mike A. Harris <mharris@redhat.com> 2.0.8-4
+- Added proper docs+demos source for 2.0.8.
+
+* 六 2月 23 2002 Mike A. Harris <mharris@redhat.com> 2.0.8-3
+- Added compat patch so 2.x works more like 1.x
+- Rebuilt with new build toolchain
+
+* 五 2月 22 2002 Mike A. Harris <mharris@redhat.com> 2.0.8-2
+- Updated to freetype 2.0.8, however docs and demos are stuck at 2.0.7
+  on the freetype website.  Munged specfile to deal with the problem by using
+  {oldversion} instead of version where appropriate.  <sigh>
+
+* 六 2月 02 2002 Tim Powers <timp@redhat.com> 2.0.6-3
+- bumping release so that we don't collide with another build of
+  freetype, make sure to change the release requirement in the XFree86
+  package
+
+* 五 2月 01 2002 Mike A. Harris <mharris@redhat.com> 2.0.6-2
+- Made ttmkfdir inclusion conditional, and set up a define to include
+  ttmkfdir in RHL 7.x builds, since ttmkfdir is now moving to the new
+  XFree86-font-utils package.
+
+* 三 1月 16 2002 Mike A. Harris <mharris@redhat.com> 2.0.6-1
+- Updated freetype to version 2.0.6
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com> 2.0.5-4
+- automated rebuild
+
+* 五 11月 30 2001 Elliot Lee <sopwith@redhat.com> 2.0.5-3
+- Fix bug #56901 (ttmkfdir needed to list Unicode encoding when generating
+  font list). (ttmkfdir-iso10646.patch)
+- Use _smp_mflags macro everywhere relevant. (freetype-pre1.4-make.patch)
+- Undo fix for #24253, assume compiler was fixed.
+
+* 一 11月 12 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.0.5-2
+- Fix build with gcc 3.1 (#56079)
+
+* 日 11月 11 2001 Mike A. Harris <mharris@redhat.com> 2.0.5-1
+- Updated freetype to version 2.0.5
+
+* 六 9月 22 2001 Mike A. Harris <mharris@redhat.com> 2.0.4-2
+- Added new subpackage freetype-demos, added demos to build
+- Disabled ftdump, ftlint in utils package favoring the newer utils in
+  demos package.
+
+* 二 9月 11 2001 Mike A. Harris <mharris@redhat.com> 2.0.4-1
+- Updated source to 2.0.4
+- Added freetype demo's back into src.rpm, but not building yet.
+
+* 三 8月 15 2001 Mike A. Harris <mharris@redhat.com> 2.0.3-7
+- Changed package to use {findlang} macro to fix bug (#50676)
+
+* 日 7月 15 2001 Mike A. Harris <mharris@redhat.com> 2.0.3-6
+- Changed freetype-devel to group Development/Libraries (#47625)
+
+* 一 7月 09 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.0.3-5
+- Fix up FT1 headers to please Qt 3.0.0 beta 2
+
+* 日 6月 24 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.0.3-4
+- Add ft2build.h to -devel package, since it's included by all other
+  freetype headers, the package is useless without it
+
+* 四 6月 21 2001 Nalin Dahyabhai <nalin@redhat.com> 2.0.3-3
+- Change "Requires: freetype = name/ver" to "freetype = version/release",
+  and move the requirements to the subpackages.
+
+* 一 6月 18 2001 Mike A. Harris <mharris@redhat.com> 2.0.3-2
+- Added "Requires: freetype = name/ver"
+
+* 二 6月 12 2001 Mike A. Harris <mharris@redhat.com> 2.0.3-1
+- Updated to Freetype 2.0.3, minor specfile tweaks.
+- Freetype2 docs are is in a separate tarball now. Integrated it.
+- Built in new environment.
+
+* 五 4月 27 2001 Bill Nottingham <notting@redhat.com>
+- rebuild for C++ exception handling on ia64
+
+* 六 1月 20 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Build ttmkfdir with -O0, workaround for Bug #24253
+
+* 五 1月 19 2001 Nalin Dahyabhai <nalin@redhat.com>
+- libtool is used to build libttf, so use libtool to link ttmkfdir with it
+- fixup a paths for a couple of missing docs
+
+* 四 1月 11 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Update ttmkfdir
+
+* 三 12月 27 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Update to 2.0.1 and 1.4
+- Mark locale files as such
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 12 2000 Preston Brown <pbrown@redhat.com>
+- move .la file to devel pkg
+- FHS paths
+
+* 四 2月 17 2000 Preston Brown <pbrown@redhat.com>
+- revert spaces patch, fix up some foundry names to match X ones
+
+* 一 2月 07 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add defattr, ftmetric, ftsbit, ftstrtto per bug #9174
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description and summary
+
+* 三 1月 12 2000 Preston Brown <pbrown@redhat.com>
+- make ttmkfdir replace spaces in family names with underscores (#7613)
+
+* 二 1月 11 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.3.1
+- handle RPM_OPT_FLAGS
+
+* 三 11月 10 1999 Preston Brown <pbrown@redhat.com>
+- fix a path for ttmkfdir Makefile
+
+* 四 8月 19 1999 Preston Brown <pbrown@redhat.com>
+- newer ttmkfdir that works better, moved ttmkfdir to /usr/bin from /usr/sbin
+- freetype utilities moved to subpkg, X dependency removed from main pkg
+- libttf.so symlink moved to devel pkg
+
+* 一 3月 22 1999 Preston Brown <pbrown@redhat.com>
+- strip binaries
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 5)
+
+* 四 3月 18 1999 Cristian Gafton <gafton@redhat.com>
+- fixed the doc file list
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 一 2月 15 1999 Preston Brown <pbrown@redhat.com>
+- added ttmkfdir
+
+* 二 2月 02 1999 Preston Brown <pbrown@redhat.com>
+- update to 1.2
+
+* 四 1月 07 1999 Cristian Gafton <gafton@redhat.com>
+- call libtoolize to sanitize config.sub and get ARM support
+- dispoze of the patch (not necessary anymore)
+
+* 三 10月 21 1998 Preston Brown <pbrown@redhat.com>
+- post/postun sections for ldconfig action.
+
+* 二 10月 20 1998 Preston Brown <pbrown@redhat.com>
+- initial RPM, includes normal and development packages.
+

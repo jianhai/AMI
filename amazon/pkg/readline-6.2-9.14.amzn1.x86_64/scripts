@@ -1,0 +1,12 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+/sbin/install-info /usr/share/info/history.info.gz /usr/share/info/dir &> /dev/null
+/sbin/install-info /usr/share/info/rluserman.info.gz /usr/share/info/dir &> /dev/null
+:
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+   /sbin/install-info --delete /usr/share/info/history.info.gz /usr/share/info/dir &> /dev/null
+   /sbin/install-info --delete /usr/share/info/rluserman.info.gz /usr/share/info/dir &> /dev/null
+fi
+:
+postuninstall program: /sbin/ldconfig

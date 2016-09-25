@@ -1,0 +1,102 @@
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/rng-tools-5-7.el7
+
+* 一 6月 08 2015 Neil Horman <nhorman@redhat.com> - 5.7
+- Added entropy limit option (bz 1211406)
+
+* 四 5月 28 2015 Neil Horman <nhorman@redhat.com> - 5.6
+- Updating spec file (bz 1225175)
+
+* 四 5月 28 2015 Neil Horman <nhorman@redhat.com> - 5.5
+- Update rngtest man page (bz 1225175)
+
+* 三 4月 08 2015 Neil Horman <nhorman@redhat.com> - 5.4
+- Use real rdrand instructions
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/rng-tools-5-2.el7
+
+* 二 3月 10 2015 Neil Horman <nhorman@redhat.com> - 5.3
+- Fixed man page (bz 1178871)
+
+* 五 8月 22 2014 Neil Horman <nhorman@redhat.com> - 5.2
+- Uploaded new sources from new upstream repo (bz1087590)
+
+* 四 8月 21 2014 Neil Horman <nhorman@redhat.com> - 5.1
+- Update to rng tools version 5 (bz1087590)
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/rng-tools-4-5.el7
+
+* 五 2月 28 2014 Ben Cressey <bcressey@amazon.com>
+- conditionalize systemd support
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 4-5
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 4-4
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/rng-tools-4-3.3.el7
+
+* 一 11月 04 2013 Jay Fenlason <fenlason@redhat.com> 4-3.3
+- Forward port the -ignorefail patch from RHEL-6
+  Resolves: rhbz1020635
+
+* 一 9月 30 2013 Jay Fenlason <fenlason@redhat.com> - 4-3.1
+- Do not override sbindir, because it breaks selinux labelling on rngd
+  Resolves: rhbz1000308
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 9月 25 2012 Jaromir Capik <jcapik@redhat.com> - 4-2
+- Migration to new systemd macros
+
+* 一 8月 06 2012 Jeff Garzik <jgarzik@redhat.com> - 4-1
+- Update to release version 4.
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 1月 12 2012 Jiri Popelka <jpopelka@redhat.com> - 3-4
+- 2 patches from RHEL-6
+- systemd service
+- man page fixes
+- modernize spec file
+
+* 五 12月 09 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rng-tools-2-13.el6_2
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rng-tools-2-10.el6
+
+* 一 11月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rng-tools-2-8.el6_1.1
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rng-tools-2-8.el6
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rng-tools-2-7.el6
+- setup complete for package rng-tools
+
+* 六 7月 03 2010 Jeff Garzik <jgarzik@redhat.com> - 3-2
+- comply with renaming guidelines, by Providing rng-utils = 1:2.0-4.2
+
+* 六 7月 03 2010 Jeff Garzik <jgarzik@redhat.com> - 3-1
+- Update to release version 3.
+
+* 五 3月 26 2010 Jeff Garzik <jgarzik@redhat.com> - 2-3
+- more minor updates for package review
+
+* 四 3月 25 2010 Jeff Garzik <jgarzik@redhat.com> - 2-2
+- several minor updates for package review
+
+* 三 3月 24 2010 Jeff Garzik <jgarzik@redhat.com> - 2-1
+- initial revision (as rng-tools)
+

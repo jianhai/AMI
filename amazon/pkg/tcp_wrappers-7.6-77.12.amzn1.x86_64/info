@@ -1,0 +1,26 @@
+Name        : tcp_wrappers
+Version     : 7.6
+Release     : 77.12.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分39秒
+Group       : System Environment/Daemons
+Size        : 197144
+License     : BSD
+Signature   : RSA/SHA256, 2016年08月19日 星期五 01时34分40秒, Key ID bcb4a85b21c0f39f
+Source RPM  : tcp_wrappers-7.6-77.12.amzn1.src.rpm
+Build Date  : 2016年08月18日 星期四 23时54分25秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : ftp://ftp.porcupine.org/pub/security/index.html
+Summary     : A security tool which acts as a wrapper for TCP daemons
+Description :
+The tcp_wrappers package provides small daemon programs which can
+monitor and filter incoming requests for systat, finger, FTP, telnet,
+rlogin, rsh, exec, tftp, talk and other network services.
+
+Install the tcp_wrappers program if you need a security tool for
+filtering incoming network services requests.
+
+This version also supports IPv6.

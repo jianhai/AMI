@@ -1,0 +1,16 @@
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+  /usr/sbin/update-alternatives \
+    --update python /usr/bin/python2.7 \
+    --removeslave rst2html \
+    --removeslave rst2latex \
+    --removeslave rst2man \
+    --removeslave rst2odt \
+    --removeslave rst2odt_prepstyles \
+    --removeslave rst2pseudoxml \
+    --removeslave rst2s5 \
+    --removeslave rst2xetex \
+    --removeslave rst2xml \
+    --removeslave rstpep2html \
+ || :
+fi

@@ -1,0 +1,57 @@
+preinstall scriptlet (using /bin/sh):
+getent group mailnull >/dev/null || \
+  /usr/sbin/groupadd -g 47 -r mailnull >/dev/null 2>&1
+getent passwd mailnull >/dev/null || \
+  /usr/sbin/useradd -u 47 -g mailnull -d /var/spool/mqueue -r \
+  -s /sbin/nologin mailnull >/dev/null 2>&1
+getent group smmsp >/dev/null || \
+  /usr/sbin/groupadd -g 51 -r smmsp >/dev/null 2>&1
+getent passwd smmsp >/dev/null || \
+  /usr/sbin/useradd -u 51 -g smmsp -d /var/spool/mqueue -r \
+  -s /sbin/nologin smmsp >/dev/null 2>&1
+exit 0
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add sendmail
+# Set up the alternatives files for MTAs.
+/usr/sbin/alternatives --install /usr/sbin/sendmail mta /usr/sbin/sendmail.sendmail 90 \
+	--slave /usr/bin/mailq mta-mailq /usr/bin/mailq.sendmail \
+	--slave /usr/bin/newaliases mta-newaliases /usr/bin/newaliases.sendmail \
+	--slave /usr/bin/rmail mta-rmail /usr/bin/rmail.sendmail \
+	--slave /usr/lib/sendmail mta-sendmail /usr/lib/sendmail.sendmail \
+	--slave /etc/pam.d/smtp mta-pam /etc/pam.d/smtp.sendmail \
+	--slave /usr/share/man/man8/sendmail.8.gz mta-sendmailman /usr/share/man/man8/sendmail.sendmail.8.gz \
+	--slave /usr/share/man/man1/mailq.1.gz mta-mailqman /usr/share/man/man1/mailq.sendmail.1.gz \
+	--slave /usr/share/man/man1/newaliases.1.gz mta-newaliasesman /usr/share/man/man1/newaliases.sendmail.1.gz \
+	--slave /usr/share/man/man5/aliases.5.gz mta-aliasesman /usr/share/man/man5/aliases.sendmail.5.gz \
+	--initscript sendmail
+
+# Rebuild maps
+{
+	chown root /etc/aliases.db /etc/mail/access.db \
+		/etc/mail/mailertable.db /etc/mail/domaintable.db \
+		/etc/mail/virtusertable.db
+	SM_FORCE_DBREBUILD=1 /etc/mail/make
+	SM_FORCE_DBREBUILD=1 /etc/mail/make aliases
+} > /dev/null 2>&1
+
+# Move existing SASL2 config to new location.
+[ -f /usr/lib64/sasl2/Sendmail.conf ] && touch -r /etc/sasl2/Sendmail.conf \
+  /usr/lib64/sasl2/Sendmail.conf ] && mv -f /usr/lib64/sasl2/Sendmail.conf \
+  /etc/sasl2 2>/dev/null || :
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+	/etc/rc.d/init.d/sendmail stop >/dev/null 2>&1
+	/sbin/chkconfig --del sendmail
+	/usr/sbin/alternatives --remove mta /usr/sbin/sendmail.sendmail
+fi
+exit 0
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+	/etc/rc.d/init.d/sendmail condrestart >/dev/null 2>&1
+	mta=`readlink /etc/alternatives/mta`
+	if [ "$mta" == "/usr/sbin/sendmail.sendmail" ]; then
+		/usr/sbin/alternatives --set mta /usr/sbin/sendmail.sendmail
+	fi
+fi
+exit 0

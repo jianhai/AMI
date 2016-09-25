@@ -1,0 +1,145 @@
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/perl-Error-0.17020-2.el7
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1:0.17020-2
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/perl-Error-0.17020-1.el7
+
+* 日 5月 05 2013 Paul Howarth <paul@city-fan.org> - 1:0.17020-1
+- Update to 0.17020
+  - Change to Shlomi Fish's new E-mail and web address
+  - Clarify the licence of lib/Error/Simple.pm (CPAN RT#81277)
+  - Correct typos (CPAN RT#85023)
+- Don't use macros for commands
+- Don't need to remove empty directories from the buildroot
+- Make %files list more explicit
+- Drop %defattr, redundant since rpm 4.4
+- Avoid provides/requires from examples
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.17018-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 一 11月 19 2012 Marcela Mašláňová <mmaslano@redhat.com> - 1:0.17018-5
+- Add MIT license
+
+* 五 7月 20 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.17018-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 二 7月 10 2012 Petr Pisar <ppisar@redhat.com> - 1:0.17018-3
+- Perl 5.16 re-rebuild of bootstrapped packages
+
+* 四 6月 07 2012 Petr Pisar <ppisar@redhat.com> - 1:0.17018-2
+- Perl 5.16 rebuild
+
+* 四 6月 07 2012 Petr Pisar <ppisar@redhat.com> - 1:0.17018-1
+- 0.17018 bump
+- Specify all dependencies
+- Skip POD tests on bootstrap
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.17016-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 一 6月 20 2011 Marcela Mašláňová <mmaslano@redhat.com> - 1:0.17016-6
+- Perl mass rebuild
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.17016-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 16 2010 Marcela Maslanova <mmaslano@redhat.com> - 1:0.17016-4
+- Rebuild to fix problems with vendorarch/lib (#661697)
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/perl-Error-0.17015-4.el6
+- setup complete for package perl-Error
+
+* 六 5月 01 2010 Marcela Maslanova <mmaslano@redhat.com> - 1:0.17016-3
+- Mass rebuild with perl-5.12.0
+
+* 五 4月 30 2010 Marcela Maslanova <mmaslano@redhat.com> - 1:0.17016-2
+- Mass rebuild with perl-5.12.0
+
+* 一 1月 18 2010 Marcela Mašláňová <mmaslano@redhat.com> - 1:0.1716-1
+- update
+
+* 一 12月 07 2009 Stepan Kasal <skasal@redhat.com> - 1:0.17015-4
+- rebuild against perl 5.10.1
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.17015-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.17015-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 8月 02 2008 Steven Pritchard <steve@kspei.com> 1:0.17015-1
+- Update to 0.17015.
+
+* 六 5月 31 2008 Steven Pritchard <steve@kspei.com> 1:0.17014-1
+- Update to 0.17014.
+
+* 二 2月 05 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1:0.17012-2
+- rebuild for new perl
+
+* 一 1月 28 2008 Steven Pritchard <steve@kspei.com> 1:0.17012-1
+- Update to 0.17012.
+
+* 一 1月 07 2008 Steven Pritchard <steve@kspei.com> 1:0.17011-1
+- Update to 0.17011.
+- Canonicalize Source0 URL.
+- Fix find option order.
+- Use fixperms macro instead of our own chmod incantation.
+- Improve Summary.
+- Reformat to match cpanspec output.
+- Build with Module::Build.
+
+* 二 12月 04 2007 Ralf Corsépius <rc040203@freenet.de> - 1:0.17010-1
+- Upstream update.
+- Update license tag.
+
+* 六 10月 28 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.17008-1
+- Update to 0.17008.
+
+* 三 10月 18 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.17007-1
+- Update to 0.17007.
+
+* 六 10月 07 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.17006-1
+- Update to 0.17006.
+- New build requirements: Test::Pod and Test::Pod::Coverage.
+
+* 三 10月 04 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.17005-1
+- Update to 0.17005.
+
+* 一 9月 04 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.17004-1
+- Update to 0.17004.
+
+* 一 8月 28 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.17003-1
+- Update to 0.17003.
+
+* 三 8月 09 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.17001-1
+- Update to 0.17001.
+
+* 五 7月 14 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.17-1
+- Update to 0.17.
+
+* 二 7月 11 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1:0.16-1
+- Update to 0.16.
+
+* 五 4月 28 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 0.15009-1
+- Update to 0.15009.
+
+* 三 4月 19 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 0.15008-1
+- Update to 0.15008.
+
+* 五 2月 17 2006 Jose Pedro Oliveira <jpo at di.uminho.pt> - 0.15-4
+- Rebuild for FC5 (perl 5.8.8).
+
+* 四 12月 29 2005 Jose Pedro Oliveira <jpo at di.uminho.pt> - 0.15-3
+- Dist tag.
+
+* 三 4月 06 2005 Michael Schwendt <mschwendt[AT]users.sf.net> - 0.15-2
+- rebuilt
+
+* 五 6月 11 2004 Steven Pritchard <steve@kspei.com> 0:0.15-1
+- Specfile autogenerated.
+

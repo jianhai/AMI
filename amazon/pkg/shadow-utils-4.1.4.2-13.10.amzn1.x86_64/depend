@@ -1,0 +1,18 @@
+audit-libs >= 1.6.5
+config(shadow-utils) = 2:4.1.4.2-13.10.amzn1
+libacl.so.1()(64bit)
+libacl.so.1(ACL_1.1)(64bit)
+libaudit.so.1()(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libcrypt.so.1()(64bit)
+libcrypt.so.1(GLIBC_2.2.5)(64bit)
+libselinux >= 1.25.2-1
+libselinux.so.1()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+setup

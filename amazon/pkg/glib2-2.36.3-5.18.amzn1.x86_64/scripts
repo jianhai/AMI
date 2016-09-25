@@ -1,0 +1,6 @@
+postinstall program: /sbin/ldconfig
+postuninstall program: /sbin/ldconfig
+posttrans scriptlet (using /bin/sh):
+# Rebuild the module cache on install or upgrade. The resulting giomodule.cache
+# is marked as a ghost, so it will be cleaned up on uninstall.
+gio-querymodules-64 /usr/lib64/gio/modules

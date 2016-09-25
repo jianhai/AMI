@@ -1,0 +1,6 @@
+/usr/bin/ruby2.0
+/usr/bin/ruby2.0
+ca-certificates
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rubygem20(rdoc) >= 4.0.0

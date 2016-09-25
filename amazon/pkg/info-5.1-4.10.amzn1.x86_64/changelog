@@ -1,0 +1,462 @@
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/texinfo-5.1-4.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 5.1-4
+- Mass rebuild 2014-01-24
+
+* 一 1月 20 2014 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.1-3
+- Fix info segfaults on non existing info page when used with -o
+  Resolves: #1053129
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 5.1-2
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/texinfo-5.1-1.el7
+
+* 一 3月 18 2013 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.1-1
+- Update to texinfo-5.1
+
+* 二 3月 05 2013 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.0-3
+- Fix bug in parser
+  Resolves: #917974
+
+* 三 2月 20 2013 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.0-2
+- Fix configure arguments, remove ChangeLog conversion,
+  move texi2any/pod2texi to main package
+
+* 二 2月 19 2013 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.0-1
+- Update to texinfo-5.0
+
+* 五 2月 15 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.13a-20
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 11月 13 2012 Jindrich Novy <jnovy@redhat.com> - 4.13a-19
+- require epsf.tex (#868011)
+
+* 一 9月 10 2012 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-18
+- Fix issues found by fedora-review utility in the spec file
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.13a-17
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.13a-16
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.13a-15
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 二 1月 11 2011 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-14
+- Fix missing Texinfo manual in the Directory node
+  Resolves: #662382
+
+* 三 11月 10 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-13
+- Fix get_sectioning_number function problem
+  Resolves: #651314
+
+* 二 11月 09 2010 Jindrich Novy <jnovy@redhat.com> - 4.13a-12
+- require tex(tex) instead of tetex in texinfo-tex
+
+* 一 10月 11 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-11
+- Fix incopatible regexp with the lates version of egrep in texi2dvi script
+  Resolves: #641534
+
+* 二 8月 31 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-10
+- Fix info crash when using index in help window
+  Resolves: #579263
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/texinfo-4.13a-8.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/texinfo-4.8-14.el5
+- added submodule prep for package texinfo
+
+* 一 1月 11 2010 Jan Gorig <jgorig@redhat.com> - 4.13a-9
+- Fix PowerPC return code bug #531349
+
+* 一 12月 14 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-8
+- Fix memory allocation bug when using old-style --section "Foo" arguments
+
+* 三 9月 02 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-7
+- Fix errors installing texinfo/info with --excludedocs
+  Resolves: #515909
+  Resolves: #515938
+
+* 三 8月 12 2009 Ville Skyttä <ville.skytta@iki.fi> - 4.13a-6
+- Use lzma compressed upstream tarball.
+
+* 三 8月 05 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-5
+- Fix changelog entry and rebuild
+
+* 二 8月 04 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13a-4
+- Fix data types (fix by Ralf Corsepius)
+  Resolves: #515402
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.13a-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.13a-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 11月 20 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.13-1
+- Update to texinfo-4.13a
+  Resolves: #471194
+  Resolves: #208511
+
+* 三 6月 04 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.12-4
+- Remove sed Requires (dependency loop)
+  Resolves: #449705
+
+* 一 6月 02 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.12-3
+- Fix install-info crashes on some info files
+  Resolves: #449292
+
+* 四 5月 29 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.12-2
+- Fix Requires and info post script
+
+* 三 5月 14 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.12-1
+- Update to texinfo-4.12
+- Remove description ("This is...") from /usr/share/info/dir in info
+  post install section
+  Resolves: #433535
+
+* 一 2月 04 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.11-5
+- Merge Review
+  Resolves: #226488
+
+* 一 12月 10 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.11-4
+- Don't insert description ("This is...") into the direntry section
+  of some generated files
+  Resolves: #394191
+
+* 二 11月 13 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.11-3
+- Fix info crashes when resizing window
+  Resolves: #243971
+
+* 三 11月 07 2007 Stepan Kasal <skasal@redhat.com> - 4.11-2
+- fix a typo in texinfo-tex summary
+  Resolves: #239216
+
+* 三 9月 19 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.11-1
+- Rebase to upstream texinfo-4.11 (update zlib.patch, drop
+  texindex.patch and 0xA0.patch -- both included in upstream)
+  Resolves: #295441
+
+* 二 8月 28 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.9-2
+- Fix license
+- Rebuild
+
+* 二 7月 31 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 4.9-1
+- Rebase to upstream texinfo-4.9, fix typo in summary
+  Resolves: #250119, #248883
+
+* 一 12月 04 2006 Miloslav Trmac <mitr@redhat.com> - 4.8-15
+- Don't replace 0xA0 by a space in makeinfo
+  Related: #208511
+- Fix some rpmlint warnings
+
+* 日 11月 05 2006 Miloslav Trmac <mitr@redhat.com> - 4.8-14
+- Remove off-line sorting from texindex (fixes CVE 2006-4810)
+
+* 一 10月 09 2006 Miloslav Trmac <mitr@redhat.com> - 4.8-13
+- Don't use mode 0666 for the texindex temporary files
+
+* 一 10月 09 2006 Miloslav Trmac <mitr@redhat.com> - 4.8-12
+- Don't leave around temporary files used by texindex
+- Add missing error handling to texinfo-CAN-2005-3011.patch
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 4.8-11.1
+- rebuild
+
+* 六 3月 25 2006 Miloslav Trmac <mitr@redhat.com> - 4.8-11
+- Split texinfo-tex from the texinfo package (#178406)
+- Ship COPYING, don't ship INSTALL
+
+* 日 3月 19 2006 Miloslav Trmac <mitr@redhat.com> - 4.8-10
+- Remove incorrect Prefix:
+- Drop info/README
+- Convert change log to UTF-8
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 4.8-9.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 4.8-9.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 16 2006 Miloslav Trmac <mitr@redhat.com> - 4.8-9
+- Fix handling of bzip2'ed files (#128637)
+
+* 一 1月 16 2006 Miloslav Trmac <mitr@redhat.com> - 4.8-8
+- Ignore scriptlet failures with --excludedocs (#166958)
+- Don't link texindex to zlib, don't pretend to link to zlib statically
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 10月 14 2005 Tim Waugh <twaugh@redhat.com> 4.8-7
+- Apply patch to fix CAN-2005-3011 (bug #169585).
+
+* 四 6月 09 2005 Tim Waugh <twaugh@redhat.com> 4.8-6
+- Ship texi2pdf man page, taken from tetex-2.0.2 RPM.
+
+* 二 6月 07 2005 Tim Waugh <twaugh@redhat.com> 4.8-5
+- Ship texi2pdf (bug #147271).
+
+* 一 3月 14 2005 Tim Waugh <twaugh@redhat.com> 4.8-4
+- Requires tetex (bug #151075).
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 4.8-3
+- Rebuild for new GCC.
+
+* 一 2月 07 2005 Tim Waugh <twaugh@redhat.com> 4.8-2
+- Don't ship texi2pdf (bug #147271).
+
+* 四 2月 03 2005 Tim Waugh <twaugh@redhat.com> 4.8-1
+- 4.8.
+
+* 四 12月 30 2004 Tim Waugh <twaugh@redhat.com> 4.7-6
+- Fixed URL (bug #143729).
+
+* 四 8月 12 2004 Tim Waugh <twaugh@redhat.com> 4.7-5
+- Rebuilt.
+
+* 三 7月 07 2004 Tim Waugh <twaugh@redhat.com> 4.7-4
+- Build for FC2.
+
+* 二 6月 29 2004 Tim Waugh <twaugh@redhat.com> 4.7-3
+- Fix grouping in user-defined macros.
+
+* 一 6月 28 2004 Tim Waugh <twaugh@redhat.com> 4.7-2
+- Build requires ncurses-devel (bug #126600).
+
+* 五 6月 25 2004 Tim Waugh <twaugh@redhat.com> 4.7-1
+- 4.7.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Tim Waugh <twaugh@redhat.com>
+- Fixed compiler warning (bug #117097).
+
+* 六 2月 21 2004 Tim Waugh <twaugh@redhat.com> 4.6-3
+- Build requires zlib-devel (bug #116436).
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 12月 02 2003 Tim Waugh <twaugh@redhat.com> 4.6-1
+- Fixed compiler warning (bug #111279).
+- 4.6.
+
+* 二 6月 17 2003 Tim Waugh <twaugh@redhat.com> 4.5-3
+- Rebuilt.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 06 2003 Tim Waugh <twaugh@redhat.com>
+- No longer need 3.12h-fix patch.
+
+* 二 4月 29 2003 Tim Waugh <twaugh@redhat.com> 4.5-1
+- 4.5 (bug #88428).  Update zlib patch.
+- Add URL tag (bug #54613).
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 4.3-5
+- rebuilt
+
+* 二 1月 07 2003 Tim Waugh <twaugh@redhat.com> 4.3-4
+- Fix up spec_install_post to strip debug info out to separate package
+  (bug #81226).
+
+* 四 12月 26 2002 Florian La Roche <Florian.LaRoche@redhat.de> 4.3-3
+- Make /usr/share/info/dir a real file and remove /etc/info-dir, that
+  file should be unused for a long time.
+
+* 四 11月 21 2002 Elliot Lee <sopwith@redhat.com> 4.3-2
+- Don't strip files here (rpm takes care of it)
+- Use pushd/popd instead of enclosing things in (), to make
+  error detection easier
+- Use _smp_mflags
+
+* 二 11月 19 2002 Tim Waugh <twaugh@redhat.com> 4.3-1
+- 4.3.
+- No longer need fileextension or malloccheck patches.
+- Update zlib patch.
+
+* 三 10月 23 2002 Tim Waugh <twaugh@redhat.com> 4.2-6
+- Don't install files not packaged.
+- Fix file list (bug #55816).
+
+* 一 9月 02 2002 Bernhard Rosenkraenzer <bero@redhat.com> 4.2-5
+- Fix crash w/ MALLOC_CHECK_ == 2 (#72831)
+
+* 二 7月 02 2002 Bernhard Rosenkraenzer <bero@redhat.com> 4.2-4
+- Add infokey (#67728)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 4月 23 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- 4.2
+
+* 二 3月 05 2002 Bernhard Rosenkraenzer <bero@redhat.com> 4.1-1
+- 4.1 (#60714)
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 8月 07 2001 Bernhard Rosenkraenzer <bero@redhat.com> 4.0b-3
+- Don't create the desktop file - we don't install it anyway.
+
+* 六 7月 21 2001 Tim Powers <timp@redhat.com>
+- remove the info viewer from the menus, it's cluttering things
+
+* 三 5月 09 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- 4.0b
+
+* 二 4月 24 2001 Bernhard Rosenkraenzer <bero@redhat.com> 4.0a-1
+- Update to 4.0a, the patch looks sane
+
+* 五 2月 23 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- langify
+- don't create desktop file in spec file
+
+* 二 1月 23 2001 Preston Brown <pbrown@redhat.com>
+- danish translation added
+
+* 二 12月 12 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Rebuild to get rid of 0777 dirs
+
+* 三 11月 08 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix recognition of .?o extensions in texi2dvi, Bug #20498
+
+* 四 9月 07 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging (64bit systems need to use %_libdir not /usr/lib).
+
+* 六 8月 19 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- really do it - #16120
+
+* 一 8月 14 2000 Helge Deller <hdeller@redhat.com>
+- gzip man-pages, #16120
+
+* 一 8月 07 2000 Tim Waugh <twaugh@redhat.com>
+- List man-pages in %files.
+
+* 五 8月 04 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add Swedish and German translations to desktop file, Bug #15366
+
+* 四 8月 03 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- mark /etc/info-dir %verify(not md5 size mime), Bug #14826
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 三 6月 28 2000 Bill Nottingham <notting@redhat.com>
+- fix build wackiness with info page compressing
+
+* 五 6月 16 2000 Bill Nottingham <notting@redhat.com>
+- fix info-dir symlink
+
+* 四 5月 18 2000 Preston Brown <pbrown@redhat.com>
+- use FHS paths for info.
+
+* 五 3月 24 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- rebuild with current ncurses
+
+* 三 2月 09 2000 Preston Brown <pbrown@redhat.com>
+- wmconfig -> desktop
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix descriptions
+
+* 三 1月 26 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- move info-stnd.info* to the info package, /sbin/install-info it
+  in %post (Bug #6632)
+
+* 四 1月 13 2000 Jeff Johnson <jbj@redhat.com>
+- recompile to eliminate ncurses foul-up.
+
+* 二 11月 09 1999 Bernhard Rosenkränzer <bero@redhat.com>
+- 4.0
+- handle RPM_OPT_FLAGS
+
+* 二 9月 07 1999 Cristian Gafton <gafton@redhat.com>
+- import version 3.12h into 6.1 tree from HJLu
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 三 3月 17 1999 Erik Troan <ewt@redhat.com>
+- hacked to use zlib to get rid of the requirement on gzip
+
+* 三 3月 17 1999 Matt Wilson <msw@redhat.com>
+- install-info prerequires gzip
+
+* 四 3月 11 1999 Cristian Gafton <gafton@redhat.com>
+- version 3.12f
+- make /usr/info/dir to be a %config(noreplace)
+
+* 三 11月 25 1998 Jeff Johnson <jbj@redhat.com>
+- rebuild to fix docdir perms.
+
+* 四 9月 24 1998 Cristian Gafton <gafton@redhat.com>
+- fix allocation problems in install-info
+
+* 三 9月 23 1998 Jeff Johnson <jbj@redhat.com>
+- /sbin/install-info should not depend on /usr/lib/libz.so.1 -- statically
+  link with /usr/lib/libz.a.
+
+* 五 8月 07 1998 Erik Troan <ewt@redhat.com>
+- added a prereq of bash to the info package -- see the comment for a
+  description of why that was done
+
+* 二 6月 09 1998 Prospector System <bugs@redhat.com>
+- translations modified for de
+
+* 二 6月 09 1998 Jeff Johnson <jbj@redhat.com>
+- add %attr to permit non-root build.
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 日 4月 12 1998 Cristian Gafton <gafton@redhat.com>
+- added %clean
+- manhattan build
+
+* 三 3月 04 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded to version 3.12
+- added buildroot
+
+* 日 11月 09 1997 Donnie Barnes <djb@redhat.com>
+- moved /usr/info/dir to /etc/info-dir and made /usr/info/dir a
+  symlink to /etc/info-dir.
+
+* 三 10月 29 1997 Donnie Barnes <djb@redhat.com>
+- added wmconfig entry for info
+
+* 三 10月 01 1997 Donnie Barnes <djb@redhat.com>
+- stripped /sbin/install-info
+
+* 一 9月 22 1997 Erik Troan <ewt@redhat.com>
+- added info-dir to filelist
+
+* 日 9月 14 1997 Erik Troan <ewt@redhat.com>
+- added patch from sopwith to let install-info understand gzip'ed info files
+- use skeletal dir file from texinfo tarball (w/ bash entry to reduce
+  dependency chain) instead (and install-info command everywhere else)
+- patches install-info to handle .gz names correctly
+
+* 二 6月 03 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 二 2月 25 1997 Erik Troan <ewt@redhat.com>
+- patched install-info.c for glibc.
+- added /usr/bin/install-info to the filelist
+
+* 二 2月 18 1997 Michael Fulbright <msf@redhat.com>
+- upgraded to version 3.9.
+

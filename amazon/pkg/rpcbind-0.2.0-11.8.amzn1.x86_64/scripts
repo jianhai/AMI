@@ -1,0 +1,31 @@
+preinstall scriptlet (using /bin/sh):
+
+# Check the validity of the rpc uid and gid.
+# If they don't exist, create them
+# If they exist but are the wrong value, remove them 
+#   and recreate them with the correct value
+# If they exist and are the correct value do nothing
+rpcid=`getent passwd rpc | cut -d: -f 3`
+if [ -n "$rpcid" -a "$rpcid" != "32" ]; then
+	/usr/sbin/userdel  rpc 2> /dev/null || :
+	/usr/sbin/groupdel rpc 2> /dev/null || : 
+fi
+if [ -z "$rpcid" -o "$rpcid" != "32" ]; then
+	/usr/sbin/groupadd -o -g 32 rpc > /dev/null 2>&1
+	/usr/sbin/useradd -o -l -c "Rpcbind Daemon" -d /var/cache/rpcbind -g 32 \
+    	-M -s /sbin/nologin -u 32 rpc > /dev/null 2>&1
+fi
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add rpcbind
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+    service rpcbind stop > /dev/null 2>&1
+    /sbin/chkconfig --del rpcbind
+	/usr/sbin/userdel  rpc 2>/dev/null || :
+	/usr/sbin/groupdel rpc 2>/dev/null || :
+	rm -rf /var/cache/rpcbind
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+    service rpcbind condrestart > /dev/null 2>&1
+fi

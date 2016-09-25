@@ -1,0 +1,16 @@
+postinstall scriptlet (using /bin/sh):
+{
+  FONTDIR=/usr/share/X11/fonts/Type1
+  mkfontscale $FONTDIR
+  mkfontdir $FONTDIR
+  fc-cache $FONTDIR
+}
+postuninstall scriptlet (using /bin/sh):
+{
+  FONTDIR=/usr/share/X11/fonts/Type1
+  if [ "$1" = "0" -a -d $FONTDIR ]; then
+    mkfontscale $FONTDIR
+    mkfontdir $FONTDIR
+    fc-cache $FONTDIR
+  fi
+}

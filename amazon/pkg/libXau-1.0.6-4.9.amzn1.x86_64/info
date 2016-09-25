@@ -1,0 +1,23 @@
+Name        : libXau
+Version     : 1.0.6
+Release     : 4.9.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分42秒
+Group       : System Environment/Libraries
+Size        : 40009
+License     : MIT
+Signature   : RSA/SHA256, 2013年02月28日 星期四 14时00分44秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libXau-1.0.6-4.9.amzn1.src.rpm
+Build Date  : 2013年02月27日 星期三 19时21分42秒
+Build Host  : build-31005.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.x.org
+Summary     : Sample Authorization Protocol for X
+Description :
+This is a very simple mechanism for providing individual access to an X Window
+System display.It uses existing core protocol and library hooks for specifying
+authorization data in the connection setup block to restrict use of the display
+to only those clients that show that they know a server-specific key
+called a "magic cookie".

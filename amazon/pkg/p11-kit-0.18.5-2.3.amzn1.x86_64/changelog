@@ -1,0 +1,145 @@
+* 二 1月 28 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/p11-kit-0.18.5-2.el6_5.2
+
+* 四 1月 16 2014 Stef Walter <stefw@redhat.com> - 0.18.5-2.2
+- Fix path for grep (#1039930)
+
+* 二 1月 07 2014 Stef Walter <stefw@redhat.com> - 0.18.5-2.1
+- Add missing dependency on grep (#1039930)
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/p11-kit-0.18.5-2.el6
+- setup complete for package p11-kit
+
+* 四 7月 18 2013 Stef Walter <stefw@redhat.com> - 0.18.5-2
+- Fix problem with multilib conflicts (generated docbook ids)
+
+* 四 7月 18 2013 Stef Walter <stefw@redhat.com> - 0.18.5-1
+- Update to new upstream point release
+- Use freebl for hash algorithms (#983384)
+- Don't load configs in home dir when setuid or setgid (#985816)
+- Use $TMPDIR instead of $TEMP while testing (#985017)
+- Use $XDG_DATA_HOME for user pkcs11 module configuration
+- Open files and fds with O_CLOEXEC (#984986)
+- Abort initialization if critical module fails to load (#985023)
+- Don't use thread-unsafe: strerror, getpwuid (#985481)
+- Fix p11_kit_space_strlen() result when empty string (#985416)
+
+* 二 7月 02 2013 Stef Walter <stefw@redhat.com> - 0.18.4-2
+- Fix inconsistency issues when multilib packages are installed
+- Add 'p11-kit redhat-setup-trust status' command
+
+* 二 6月 25 2013 Stef Walter <stefw@redhat.com> - 0.18.4-1
+- Remove alternative on package removal
+- Update to 0.18.4 with minor p11-kit command fixes
+- Fix arguments to extract-trust p11-kit command
+
+* 五 6月 14 2013 Stef Walter <stefw@redhat.com> - 0.18.3-3
+- Don't depend on wrong bash location
+- Install script to enable alternative libnssckbi.so
+
+* 三 6月 12 2013 Stef Walter <stefw@redhat.com> - 0.18.3-2
+- Don't install libnssckbi.so alternatives in the package.
+  On RHEL 6 this is done by the update-ca-trust script.
+
+* 三 6月 05 2013 Stef Walter <stefw@redhat.com> - 0.18.3-1
+- Update to new upstream stable release
+- Fix intermittent firefox cert validation issues (#960230)
+- Include the manual pages in the package
+
+* 二 5月 14 2013 Stef Walter <stefw@redhat.com> - 0.18.2-1
+- Update to new upstream stable release
+- Reduce the libtasn1 dependency minimum version
+
+* 四 5月 02 2013 Stef Walter <stefw@redhat.com> - 0.18.1-1
+- Update to new upstream stable release
+- 'p11-kit extract-trust' lives in libdir
+
+* 四 4月 04 2013 Stef Walter <stefw@redhat.com> - 0.18.0-1
+- Update to new upstream stable release
+- Various logging tweaks (#928914, #928750)
+- Make the 'p11-kit extract-trust' explicitly reject
+  additional arguments
+
+* 五 3月 29 2013 Stef Walter <stefw@redhat.com> - 0.17.5-2
+- Fix problem with empathy connecting to Google Talk (#928913)
+
+* 四 3月 28 2013 Stef Walter <stefw@redhat.com> - 0.17.5-1
+- Make 'p11-kit extract-trust' call update-ca-trust
+- Work around 32-bit oveflow of certificate dates
+- Build fixes
+
+* 二 3月 26 2013 Stef Walter <stefw@redhat.com> - 0.17.4-2
+- Pull in patch from upstream to fix build on ppc (#927394)
+
+* 三 3月 20 2013 Stef Walter <stefw@redhat.com> - 0.17.4-1
+- Update to upstream version 0.17.4
+
+* 一 3月 18 2013 Stef Walter <stefw@redhat.com> - 0.17.3-1
+- Update to upstream version 0.17.3
+- Put the trust input paths in the right order
+
+* 二 3月 12 2013 Stef Walter <stefw@redhat.com> - 0.16.4-1
+- Update to upstream version 0.16.4
+
+* 五 3月 08 2013 Stef Walter <stefw@redhat.com> - 0.16.3-1
+- Update to upstream version 0.16.3
+- Split out system trust module into its own package.
+- p11-kit-trust provides an alternative to an nss module
+
+* 二 3月 05 2013 Stef Walter <stefw@redhat.com> - 0.16.1-1
+- Update to upstream version 0.16.1
+- Setup source directories as appropriate for Shared System Certificates feature
+
+* 二 3月 05 2013 Stef Walter <stefw@redhat.com> - 0.16.0-1
+- Update to upstream version 0.16.0
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.14-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 一 9月 17 2012 Kalev Lember <kalevlember@gmail.com> - 0.14-1
+- Update to 0.14
+
+* 五 7月 20 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.13-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 一 7月 16 2012 Kalev Lember <kalevlember@gmail.com> - 0.13-1
+- Update to 0.13
+
+* 二 3月 27 2012 Kalev Lember <kalevlember@gmail.com> - 0.12-1
+- Update to 0.12
+- Run self tests in %check
+
+* 六 2月 11 2012 Kalev Lember <kalevlember@gmail.com> - 0.11-1
+- Update to 0.11
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 二 12月 20 2011 Matthias Clasen <mclasen@redhat.com> - 0.9-1
+- Update to 0.9
+
+* 三 10月 26 2011 Kalev Lember <kalevlember@gmail.com> - 0.8-1
+- Update to 0.8
+
+* 一 9月 19 2011 Matthias Clasen <mclasen@redhat.com> - 0.6-1
+- Update to 0.6
+
+* 日 9月 04 2011 Kalev Lember <kalevlember@gmail.com> - 0.5-1
+- Update to 0.5
+
+* 日 8月 21 2011 Kalev Lember <kalevlember@gmail.com> - 0.4-1
+- Update to 0.4
+- Install the example config file to documentation directory
+
+* 三 8月 17 2011 Kalev Lember <kalevlember@gmail.com> - 0.3-2
+- Tighten -devel subpackage deps (#725905)
+
+* 五 7月 29 2011 Kalev Lember <kalevlember@gmail.com> - 0.3-1
+- Update to 0.3
+- Upstream rewrote the ASL 2.0 bits, which makes the whole package
+  BSD-licensed
+
+* 二 7月 12 2011 Kalev Lember <kalevlember@gmail.com> - 0.2-1
+- Initial RPM release
+

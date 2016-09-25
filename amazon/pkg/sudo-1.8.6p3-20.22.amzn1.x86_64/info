@@ -1,0 +1,27 @@
+Name        : sudo
+Version     : 1.8.6p3
+Release     : 20.22.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时41分07秒
+Group       : Applications/System
+Size        : 2474015
+License     : ISC
+Signature   : RSA/SHA256, 2016年05月18日 星期三 00时31分35秒, Key ID bcb4a85b21c0f39f
+Source RPM  : sudo-1.8.6p3-20.22.amzn1.src.rpm
+Build Date  : 2016年05月13日 星期五 22时53分50秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.courtesan.com/sudo/
+Summary     : Allows restricted root access for specified users
+Description :
+Sudo (superuser do) allows a system administrator to give certain
+users (or groups of users) the ability to run some (or all) commands
+as root while logging all commands and arguments. Sudo operates on a
+per-command basis.  It is not a replacement for the shell.  Features
+include: the ability to restrict what commands a user may run on a
+per-host basis, copious logging of each command (providing a clear
+audit trail of who did what), a configurable timeout of the sudo
+command, and the ability to use the same configuration file (sudoers)
+on many different machines.

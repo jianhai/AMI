@@ -1,0 +1,13 @@
+/etc/prelink.conf.d
+/etc/prelink.conf.d/nss-softokn-prelink.conf
+/lib64/libfreebl3.chk
+/lib64/libfreebl3.so
+/lib64/libfreeblpriv3.chk
+/lib64/libfreeblpriv3.so
+/usr/lib/dracut/dracut.conf.d/50-nss-softokn.conf
+/usr/lib/dracut/modules.d/05nss-softokn
+/usr/lib/dracut/modules.d/05nss-softokn/module-setup.sh
+/usr/lib64/libfreebl3.chk
+/usr/lib64/libfreebl3.so
+/usr/lib64/libfreeblpriv3.chk
+/usr/lib64/libfreeblpriv3.so

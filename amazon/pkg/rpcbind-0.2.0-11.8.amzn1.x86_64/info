@@ -1,0 +1,21 @@
+Name        : rpcbind
+Version     : 0.2.0
+Release     : 11.8.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分58秒
+Group       : System Environment/Daemons
+Size        : 95311
+License     : GPL
+Signature   : RSA/SHA256, 2016年03月09日 星期三 06时27分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : rpcbind-0.2.0-11.8.amzn1.src.rpm
+Build Date  : 2016年03月03日 星期四 23时44分23秒
+Build Host  : build-64010.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://nfsv4.bullopensource.org
+Summary     : Universal Addresses to RPC Program Number Mapper
+Description :
+The rpcbind utility is a server that converts RPC program numbers into
+universal addresses.  It must be running on the host to be able to make
+RPC calls on a server on that machine.

@@ -1,0 +1,21 @@
+/bin/sh
+/bin/sh
+/usr/bin/ruby2.0
+/usr/sbin/update-alternatives
+/usr/sbin/update-alternatives
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libcrypt.so.1()(64bit)
+libdl.so.2()(64bit)
+libm.so.6()(64bit)
+libpthread.so.0()(64bit)
+librt.so.1()(64bit)
+libruby.so.2.0()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+ruby20(rubygems) >= 2.0.14.1
+ruby20-libs(x86-64) = 2.0.0.648-1.29.amzn1
+rubygem20(bigdecimal) >= 1.2.0
+rubygem20(json) >= 1.7.7
+rubygem20(psych) >= 2.0.0

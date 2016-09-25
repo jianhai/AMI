@@ -1,0 +1,18 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+
+umask 0022
+
+mkdir -p /var/cache/fontconfig
+# Remove stale caches
+rm -f /var/cache/fontconfig/????????????????????????????????.cache-2
+rm -f /var/cache/fontconfig/stamp
+
+# Force regeneration of all fontconfig cache files
+# The check for existance is needed on dual-arch installs (the second
+#  copy of fontconfig might install the binary instead of the first)
+# The HOME setting is to avoid problems if HOME hasn't been reset
+if [ -x /usr/bin/fc-cache ] && /usr/bin/fc-cache --version 2>&1 | grep -q 2.8.0 ; then
+  HOME=/root /usr/bin/fc-cache -f
+fi
+postuninstall program: /sbin/ldconfig

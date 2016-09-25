@@ -1,0 +1,28 @@
+/sbin/ldconfig
+/sbin/ldconfig
+device-mapper >= 1.02.02-2
+dmraid-events
+kpartx
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.7)(64bit)
+libdevmapper-event.so.1.02()(64bit)
+libdevmapper-event.so.1.02(Base)(64bit)
+libdevmapper.so.1.02()(64bit)
+libdevmapper.so.1.02(Base)(64bit)
+libdl.so.2()(64bit)
+libdmraid-events-isw.so.1()(64bit)
+libdmraid.so.1()(64bit)
+libdmraid.so.1(Base)(64bit)
+libpthread.so.0()(64bit)
+libpthread.so.0(GLIBC_2.2.5)(64bit)
+libselinux.so.1()(64bit)
+libsepol.so.1()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)

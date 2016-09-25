@@ -1,0 +1,25 @@
+Name        : crontabs
+Version     : 1.10
+Release     : 33.9.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时41分00秒
+Group       : System Environment/Base
+Size        : 2495
+License     : Public Domain and GPLv2
+Signature   : RSA/SHA256, 2012年02月17日 星期五 18时12分22秒, Key ID bcb4a85b21c0f39f
+Source RPM  : crontabs-1.10-33.9.amzn1.src.rpm
+Build Date  : 2012年01月06日 星期五 10时32分44秒
+Build Host  : build-31002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+Summary     : Root crontab files used to schedule the execution of programs
+Description :
+The crontabs package contains root crontab files and directories.
+You will need to install cron daemon to run the jobs from the crontabs.
+The cron daemon such as cronie or fcron checks the crontab files to
+see when particular commands are scheduled to be executed.  If commands
+are scheduled, it executes them.
+
+Crontabs handles a basic system function, so it should be installed on
+your system.

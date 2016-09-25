@@ -1,0 +1,20 @@
+postinstall scriptlet (using /bin/sh):
+# Only run this on initial install
+if [ "$1" = "1" ]; then
+    # Backup the current MOTD
+    if [ -e /etc/motd ] && [ "$(readlink /etc/motd)" != "/var/lib/update-motd/motd" ]; then
+        mv /etc/motd /etc/motd.rpmsave
+        # And let it be the MOTD until update-motd gets run
+        cp -L /etc/motd.rpmsave /var/lib/update-motd/motd
+    fi
+    ln -snf /var/lib/update-motd/motd /etc/motd
+elif [ "$1" = "2" ]; then
+    if [ -e /etc/motd ] && [ "$(readlink /etc/motd)" = "/var/run/motd" ]; then
+        # Copy the current motd
+        cp -L /etc/motd /var/lib/update-motd/motd
+        ln -snf /var/lib/update-motd/motd /etc/motd
+    fi
+fi
+# We don't run update-motd on install because the various update-motd.d scripts
+# are not installed yet (since their packages will depend on this one).
+# This could also be the case in an upgrade situation, so we leave it to cron.

@@ -1,0 +1,19 @@
+db4
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libdb-4.7.so()(64bit)
+libdl.so.2()(64bit)
+libgcrypt.so.11()(64bit)
+libgcrypt.so.11(GCRYPT_1.2)(64bit)
+libgpg-error.so.0()(64bit)
+libpam.so.0()(64bit)
+libpam.so.0(LIBPAM_1.0)(64bit)
+libpam_misc.so.0()(64bit)
+pam
+pam_ccreds.so()(64bit)
+pam_ccreds.so(EXPORTED)(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

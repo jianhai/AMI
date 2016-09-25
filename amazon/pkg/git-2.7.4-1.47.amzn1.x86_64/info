@@ -1,0 +1,25 @@
+Name        : git
+Version     : 2.7.4
+Release     : 1.47.amzn1
+Architecture: x86_64
+Install Date: 2016年09月25日 星期日 14时11分42秒
+Group       : Development/Tools
+Size        : 29354963
+License     : GPLv2
+Signature   : RSA/SHA256, 2016年03月22日 星期二 23时05分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : git-2.7.4-1.47.amzn1.src.rpm
+Build Date  : 2016年03月22日 星期二 20时32分03秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://git-scm.com/
+Summary     : Fast Version Control System
+Description :
+Git is a fast, scalable, distributed revision control system with an
+unusually rich command set that provides both high-level operations
+and full access to internals.
+
+The git rpm installs the core tools with minimal dependencies. To
+install all git packages, including tools for integrating with other
+SCMs, install the git-all meta-package.

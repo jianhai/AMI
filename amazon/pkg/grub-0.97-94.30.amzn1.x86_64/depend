@@ -1,0 +1,10 @@
+/bin/sh
+/bin/sh
+/bin/sh
+/sbin/install-info
+/sbin/install-info
+/usr/bin/python2.7
+mktemp
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+system-logos

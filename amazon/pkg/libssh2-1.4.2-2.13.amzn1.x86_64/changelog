@@ -1,0 +1,127 @@
+* 四 3月 10 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/libssh2-1.4.2-2.el6_7.1
+
+* 五 2月 19 2016 Kamil Dudka <kdudka@redhat.com> - 1.4.2-2.el6_7.1
+- use secrects of the appropriate length in Diffie-Hellman (CVE-2016-0787)
+
+* 三 1月 28 2015 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libssh2-1.4.2-1.el6_6.1
+
+* 五 5月 31 2013 Kamil Dudka <kdudka@redhat.com> - 1.4.2-2
+- fix basic functionality of libssh2 in FIPS mode (#968575)
+
+* 一 2月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libssh2-1.4.2-1.el6
+
+* 五 7月 20 2012 Kamil Dudka <kdudka@redhat.com> - 1.4.2-1
+- rebase to libssh2-1.4.2 (#745420, #749873, #804150, #806862)
+
+* 六 6月 30 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libssh2-1.2.2-11.el6_3
+
+* 三 6月 20 2012 Kamil Dudka <kdudka@redhat.com> - 1.2.2-11
+- do not return LIBSSH2_ERROR_EAGAIN in blocking mode (#826511)
+
+* 日 4月 01 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libssh2-1.2.2-7.el6_2.3
+
+* 一 3月 19 2012 Kamil Dudka <kdudka@redhat.com> - 1.2.2-10
+- transport_send: finish in-progress key exchange before sending data (#804145)
+
+* 三 3月 14 2012 Kamil Dudka <kdudka@redhat.com> - 1.2.2-9
+- avoid a crash of curl when downloading large files using SFTP (#801428)
+
+* 三 10月 19 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libssh2-1.2.2-7.el6_1.1
+
+* 二 10月 04 2011 Kamil Dudka <kdudka@redhat.com> - 1.2.2-8
+- fix memory safety errors and memory leakage (#741919)
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libssh2-1.2.2-7.el6
+
+* 三 7月 21 2010 Ondrej Vasik <ovasik@redhat.com> - 1.2.2-7
+- two other SELinux issues still caused build failure in mock
+  in the enforcing mode(#558911)
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libssh2-1.2.2-5.el6
+- setup complete for package libssh2
+
+* 一 6月 21 2010 Kamil Dudka <kdudka@redhat.com> - 1.2.2-6
+- avoid multilib conflict on libssh2-docs (#605082)
+
+* 二 1月 26 2010 Kamil Dudka <kdudka@redhat.com> - 1.2.2-5
+- avoid build failure in mock with SELinux in the enforcing mode (#558911)
+
+* 日 12月 06 2009 Kamil Dudka <kdudka@redhat.com> - 1.2.2-4
+- fix padding in ssh-dss signature blob encoding (#539444)
+- fix gcc warnings
+
+* 三 12月 02 2009 Kamil Dudka <kdudka@redhat.com> - 1.2.2-3
+- boost test suite coverage by having a ssh server available
+
+* 三 12月 02 2009 Kamil Dudka <kdudka@redhat.com> - 1.2.2-2
+- reenable test suite
+
+* 二 12月 01 2009 Kamil Dudka <kdudka@redhat.com> - 1.2.2-1
+- new upstream release
+
+* 一 11月 23 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.2-2.1
+- Rebuilt for RHEL 6
+
+* 一 9月 21 2009 Chris Weyl <cweyl@alumni.drew.edu> 1.2-2
+- patch based on 683aa0f6b52fb1014873c961709102b5006372fc
+- disable tests (*sigh*)
+
+* 二 8月 25 2009 Chris Weyl <cweyl@alumni.drew.edu> 1.2-1
+- update to 1.2
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1.0-4
+- rebuilt with new openssl
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 16 2009 Chris Weyl <cweyl@alumni.drew.edu> 1.0-1
+- update to 1.0
+
+* 六 1月 17 2009 Tomas Mraz <tmraz@redhat.com> - 0.18-8
+- rebuild with new openssl
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.18-7
+- Autorebuild for GCC 4.3
+
+* 三 12月 05 2007 Chris Weyl <cweyl@alumni.drew.edu> 0.18-6
+- rebuild for new openssl...
+
+* 二 11月 27 2007 Chris Weyl <cweyl@alumni.drew.edu> 0.18-5
+- bump
+
+* 二 11月 27 2007 Chris Weyl <cweyl@alumni.drew.edu> 0.18-4
+- add INSTALL arg to make install vs env. var
+
+* 一 11月 26 2007 Chris Weyl <cweyl@alumni.drew.edu> 0.18-3
+- run tests; don't package test
+
+* 日 11月 18 2007 Chris Weyl <cweyl@alumni.drew.edu> 0.18-2
+- split docs into -docs (they seemed... large.)
+
+* 二 11月 13 2007 Chris Weyl <cweyl@alumni.drew.edu> 0.18-1
+- update to 0.18
+
+* 日 10月 14 2007 Chris Weyl <cweyl@alumni.drew.edu> 0.17-1
+- update to 0.17
+- many spec file changes
+
+* 三 5月 23 2007 Sindre Pedersen Bjørdal <foolish[AT]guezz.net> - 0.15-0.2.20070506
+- Fix release tag
+- Move manpages to -devel package
+- Add Examples dir to -devel package
+
+* 日 5月 06 2007 Sindre Pedersen Bjørdal <foolish[AT]guezz.net> - 0.15-0.20070506.1
+- Initial build
+

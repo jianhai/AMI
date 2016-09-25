@@ -1,0 +1,13 @@
+/usr/bin/xmlcatalog
+/usr/bin/xmllint
+/usr/lib64/libxml2.so.2
+/usr/lib64/libxml2.so.2.9.1
+/usr/share/doc/libxml2-2.9.1
+/usr/share/doc/libxml2-2.9.1/AUTHORS
+/usr/share/doc/libxml2-2.9.1/Copyright
+/usr/share/doc/libxml2-2.9.1/NEWS
+/usr/share/doc/libxml2-2.9.1/README
+/usr/share/doc/libxml2-2.9.1/TODO
+/usr/share/man/man1/xmlcatalog.1.gz
+/usr/share/man/man1/xmllint.1.gz
+/usr/share/man/man3/libxml.3.gz

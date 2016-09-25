@@ -1,0 +1,9 @@
+/etc/ntp
+/etc/ntp/keys
+/etc/ntp/step-tickers
+/etc/rc.d/init.d/ntpdate
+/etc/sysconfig/ntpdate
+/usr/sbin/ntpdate
+/usr/share/doc/ntpdate-4.2.6p5
+/usr/share/doc/ntpdate-4.2.6p5/COPYRIGHT
+/usr/share/man/man8/ntpdate.8.gz

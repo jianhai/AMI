@@ -1,0 +1,6 @@
+/etc/profile.d/aws-apitools-common.sh
+/opt/aws
+/opt/aws/amitools
+/opt/aws/apitools
+/opt/aws/bin
+/opt/aws/credential-file-path.template

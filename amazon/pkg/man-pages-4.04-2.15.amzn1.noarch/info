@@ -1,0 +1,19 @@
+Name        : man-pages
+Version     : 4.04
+Release     : 2.15.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时41分10秒
+Group       : Documentation
+Size        : 5492360
+License     : GPL+ and GPLv2+ and BSD and MIT and Copyright only and IEEE
+Signature   : RSA/SHA256, 2016年03月09日 星期三 06时34分44秒, Key ID bcb4a85b21c0f39f
+Source RPM  : man-pages-4.04-2.15.amzn1.src.rpm
+Build Date  : 2016年03月08日 星期二 21时49分28秒
+Build Host  : build-64011.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.kernel.org/doc/man-pages/
+Summary     : Linux kernel and C library user-space interface documentation
+Description :
+A large collection of manual pages from the Linux Documentation Project (LDP).

@@ -1,0 +1,15 @@
+* 四 12月 02 2010 01:42:49 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/gdbm-1.8.0-36.el6
+
+* 五 7月 09 2010 21:54:54 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/gdbm-1.8.0-35.el6
+
+* 五 7月 09 2010 21:54:50 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/gdbm-1.8.0-33.1.el6
+
+* 三 5月 19 2010 19:32:55 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/gdbm-1.8.0-26.2.1
+
+* 三 5月 19 2010 19:31:20 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package gdbm
+

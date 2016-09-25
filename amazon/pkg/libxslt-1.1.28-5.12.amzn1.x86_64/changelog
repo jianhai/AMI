@@ -1,0 +1,155 @@
+* 三 3月 04 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Install python modules on dist-packages
+
+* 三 2月 18 2015 Ben Cressey <bcressey@amazon.com>
+- build legacy python 2.6 module
+
+* 日 1月 25 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libxslt-1.1.28-5.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 1.1.28-5
+- Mass rebuild 2014-01-24
+
+* 三 1月 15 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libxslt-1.1.28-3.el7
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.1.28-4
+- Mass rebuild 2013-12-27
+
+* 五 6月 21 2013 Matthias Clasen <mclasen@redhat.com> - 1.1.28-3
+- Don't ship api docs twice (they were included in both
+  the main and the devel package, by accident (need to save
+  space on the f19 live images)
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.28-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 三 11月 21 2012 Daniel Veillard <veillard@redhat.com> - 1.1.28-1
+- upstream release of libxslt-1.1.28
+- a few bug fixes and cleanups
+
+* 二 10月 09 2012 Daniel Veillard <veillard@redhat.com> - 1.1.27-2
+- fix a regression in default namespace handling
+
+* 五 9月 14 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libxslt-1.1.26-2.el6_3.1
+
+* 三 9月 12 2012 Daniel Veillard <veillard@redhat.com> - 1.1.27-1
+- upstream release of libxslt-1.1.27
+- a lot of bug fixes and improvements
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.26-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.26-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 日 3月 20 2011 Michel Salim <salimma@fedoraproject.org> - 1.1.26-8
+- ChangeLog: fix character encoding
+- Restore timestamps for patched documentation files
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.26-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 12月 17 2010 Dan Horák <dan[at]danny.cz> - 1.1.26-6
+- libexslt needs libgcrypt-devel via its pkgconfig file
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libxslt-1.1.26-2.el6
+
+* 一 10月 25 2010 Parag Nemade <paragn AT fedoraproject.org> - 1.1.26-5
+- Patch from Paul Howarth for converting files to utf8 (#226088)
+
+* 二 10月 05 2010 Parag Nemade <paragn AT fedoraproject.org> - 1.1.26-4
+- Merge-review cleanup (#226088)
+
+* 三 7月 21 2010 David Malcolm <dmalcolm@redhat.com> - 1.1.26-3
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libxslt-1.1.26-1.el6.1
+
+* 一 5月 24 2010 Tom "spot" Callaway <tcallawa@redhat.com> 1.1.26-2
+- disable static libs
+
+* 四 5月 20 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/libxslt-1.1.17-2.el5_2.2
+- import source package RHEL5/libxslt-1.1.17-2.el5_1.1
+- import source package RHEL5/libxslt-1.1.17-2
+- added submodule prep for package libxslt
+
+* 四 9月 24 2009 Daniel Veillard <veillard@redhat.com> 1.1.26-1
+- couple of bug fixes
+- export a symbol needed by lxml
+
+* 一 9月 21 2009 Daniel Veillard <veillard@redhat.com> 1.1.25-2
+- fix a locking bug in 1.1.25
+
+* 四 9月 17 2009 Daniel Veillard <veillard@redhat.com> 1.1.25-1
+- release of 1.1.25
+- Add API versioning  for libxslt shared library
+- xsl:sort lang support using the locale
+- many bug fixes
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.24-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.24-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> 1.1.24-3
+- Rebuild for Python 2.6
+
+* 三 10月 08 2008 Daniel Veillard <veillard@redhat.com> 1.1.24-2.fc10
+- CVE-2008-2935 fix
+
+* 二 5月 13 2008 Daniel Veillard <veillard@redhat.com> 1.1.24-1.fc10
+- release of 1.1.24
+- fixes a few bugs including the key initialization problem
+- tentative fix for multiarch devel problems
+
+* 一 4月 28 2008 Daniel Veillard <veillard@redhat.com> 1.1.23-3.fc10
+- and the previous patch was incomplte breaking the python bindings
+  see 444317 and 444455
+
+* 二 4月 22 2008 Daniel Veillard <veillard@redhat.com> 1.1.23-2.fc10
+- revert a key initialization patch from 1.1.23 which seems broken
+  see rhbz#442097
+
+* 二 4月 08 2008 Daniel Veillard <veillard@redhat.com> 1.1.23-1.fc9
+- upstream release 1.1.23
+- bugfixes
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.1.22-2
+- Autorebuild for GCC 4.3
+
+* 四 8月 23 2007 Daniel Veillard <veillard@redhat.com> 1.1.22-1
+- upstream release 1.1.22 see http://xmlsoft.org/XSLT/news.html
+
+* 二 6月 12 2007 Daniel Veillard <veillard@redhat.com> 1.1.21-1
+- upstream release 1.1.21 see http://xmlsoft.org/XSLT/news.html
+
+* 四 2月 15 2007 Adam Jackson <ajax@redhat.com>
+- Add dist tag to Release to fix 6->7 upgrades.
+
+* 三 1月 17 2007 Daniel Veillard <veillard@redhat.com>
+- upstream release 1.1.20 see http://xmlsoft.org/XSLT/news.html
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.1.19-2
+- rebuild against python 2.5
+
+* 三 11月 29 2006 Daniel Veillard <veillard@redhat.com>
+- upstream release 1.1.19 see http://xmlsoft.org/XSLT/news.html
+
+* 四 10月 26 2006 Daniel Veillard <veillard@redhat.com>
+- upstream release 1.1.18 see http://xmlsoft.org/XSLT/news.html
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.1.17-1.1
+- rebuild
+
+* 二 6月 06 2006 Daniel Veillard <veillard@redhat.com>
+- upstream release 1.1.17 see http://xmlsoft.org/XSLT/news.html
+

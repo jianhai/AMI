@@ -1,0 +1,8 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/install-info --quiet --info-dir=/usr/share/info /usr/share/info/which.info.gz
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+   /sbin/install-info --quiet --info-dir=/usr/share/info --delete /usr/share/info/which.info.gz
+fi
+exit 0

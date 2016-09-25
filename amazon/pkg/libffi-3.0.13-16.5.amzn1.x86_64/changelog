@@ -1,0 +1,144 @@
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/libffi-3.0.13-16.el7
+
+* 二 9月 02 2014 Dan Horák <dhorak@redhat.com> - 3.0.13-16
+- Drop ppc64le from the multilib list
+- Use additional BR: only in ppc64le build
+- Resolves: RHBZ1116945
+
+* 二 8月 26 2014 Andrew Haley <aph@redhat.com> - 3.0.13-15
+- Add requires for libtool and texinfo
+- Resolves: RHBZ1116945
+
+* 二 8月 26 2014 Andrew Haley <aph@redhat.com> - 3.0.13-14
+- Add requires for automake
+- Resolves: RHBZ1116945
+
+* 二 8月 26 2014 Andrew Haley <aph@redhat.com> - 3.0.13-13
+- Add requires for autoconf
+- Resolves: RHBZ1116945
+
+* 二 8月 26 2014 Andrew Haley <aph@redhat.com> - 3.0.13-12
+- Merge from private-rhel-7.0-ppc64le branch
+- Resolves: RHBZ1116945
+
+* 五 8月 01 2014 Ben Cressey <bcressey@amazon.com>
+- update license to include GPLv2+
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libffi-3.0.13-11.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 3.0.13-11
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 3.0.13-10
+- Mass rebuild 2013-12-27
+
+* 三 12月 18 2013 Deepak Bhole <dbhole@redhat.com> - 3.0.13-9
+- Added -fno-strict-aliasing (pointed out by rpmdiff)
+- Fixes RHBZ 1006261
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libffi-3.0.13-7.el7
+
+* 五 11月 15 2013 Jon VanAlten <jon.vanalten@redhat.com> - 3.0.13-8
+- Patch test suite to fix errors on ppc64
+- Fixes RHBZ 1006261
+
+* 四 8月 22 2013 Deepak Bhole <dbhole@redhat.com> - 3.0.13-7
+- Removed temporarily introduced compat package for OpenJDk6 bootstrap
+
+* 三 8月 21 2013 Deepak Bhole <dbhole@redhat.com> - 3.0.13-6
+- Temporarily build with a .so.5 compat package to allow OpenJDK6 bootstrap
+
+* 一 7月 15 2013 Jon VanAlten <jon.vanalten@redhat.com> - 3.0.13-5
+- Correct spec license
+
+* 二 5月 28 2013 Tom Callaway <spot@fedoraproject.org> - 3.0.13-4
+- fix typos in wrapper headers
+
+* 一 5月 27 2013 Tom Callaway <spot@fedoraproject.org> - 3.0.13-3
+- make header files multilib safe
+
+* 六 5月 25 2013 Tom Callaway <spot@fedoraproject.org> - 3.0.13-2
+- fix incorrect header pathing (and .pc file)
+
+* 三 3月 20 2013 Anthony Green <green@redhat.com> - 3.0.13-1
+- update to 3.0.13
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.11-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 一 1月 14 2013 Dennis Gilmore <dennis@ausil.us> - 3.0.11-1
+- update to 3.0.11
+
+* 五 11月 02 2012 Deepak Bhole <dbhole@redhat.com> - 3.0.10-4
+- Fixed source location
+
+* 五 8月 10 2012 Dennis Gilmore <dennis@ausil.us> - 3.0.10-3
+- drop back to 3.0.10, 3.0.11 was never pushed anywhere as the soname bump broke buildroots
+- as 3.0.11 never went out no epoch needed.
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.11-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 五 4月 13 2012 Anthony Green <green@redhat.com> - 3.0.11-1
+- Upgrade to 3.0.11.
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 二 8月 23 2011 Anthony Green <green@redhat.com> - 3.0.10-1
+- Upgrade to 3.0.10.
+
+* 五 3月 18 2011 Dan Horák <dan[at]danny.cz> - 3.0.9-3
+- added patch for being careful when defining relatively generic symbols
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.9-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libffi-3.0.5-3.2.el6
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libffi-3.0.5-3.1.el6
+- setup complete for package libffi
+
+* 二 12月 29 2009 Anthony Green <green@redhat.com> - 3.0.9-1
+- Upgrade
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.5-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 7月 08 2008 Anthony Green <green@redhat.com> 3.0.5-1
+- Upgrade to 3.0.5
+
+* 五 2月 15 2008 Anthony Green <green@redhat.com> 3.0.1-1
+- Upgrade to 3.0.1
+
+* 五 2月 15 2008 Anthony Green <green@redhat.com> 2.99.9-1
+- Upgrade to 2.99.9
+- Require pkgconfig for the devel package.
+- Update summary.
+
+* 五 2月 15 2008 Anthony Green <green@redhat.com> 2.99.8-1
+- Upgrade to 2.99.8
+
+* 四 2月 14 2008 Anthony Green <green@redhat.com> 2.99.7-1
+- Upgrade to 2.99.7
+
+* 四 2月 14 2008 Anthony Green <green@redhat.com> 2.99.6-1
+- Upgrade to 2.99.6
+
+* 四 2月 14 2008 Anthony Green <green@redhat.com> 2.99.4-1
+- Upgrade to 2.99.4
+
+* 四 2月 14 2008 Anthony Green <green@redhat.com> 2.99.3-1
+- Upgrade to 2.99.3
+
+* 四 2月 14 2008 Anthony Green <green@redhat.com> 2.99.2-1
+- Created.
+

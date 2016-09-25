@@ -1,0 +1,10 @@
+/bin/sh
+/bin/sh
+fontconfig
+fontconfig
+mkfontdir
+mkfontdir
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+ttmkfdir
+ttmkfdir

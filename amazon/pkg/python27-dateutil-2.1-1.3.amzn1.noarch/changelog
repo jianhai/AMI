@@ -1,0 +1,76 @@
+* 三 2月 04 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 二 2月 26 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.1 from upstream
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-dateutil-1.4.1-6.el6
+
+* 五 7月 23 2010 Cristian Gafton <gafton@amazon.com>
+- use system python macros
+
+* 二 7月 13 2010 David Malcolm <dmalcolm@redhat.com> - 1.4.1-6
+- remove embedded copy of timezone data, and redirect the dateutil.zoneinfo
+API accordingly
+Resolves: rhbz#559309
+- add a %check, running the upstream selftest suite
+
+* 二 7月 13 2010 David Malcolm <dmalcolm@redhat.com> - 1.4.1-5
+- add requirement on tzdata
+Resolves: rhbz#559309
+- fix encoding of the NEWS file
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-dateutil-1.4.1-4.1.el6
+- setup complete for package python-dateutil
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.4.1-4.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 20 2009 Jef Spaleta <jspaleta AT fedoraproject DOT org> - 1.4.1-2
+- small specfile fix
+- New upstream version
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 1.4-3
+- Rebuild for Python 2.6
+
+* 五 8月 29 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.4-2
+- fix license tag
+
+* 二 7月 01 2008 Jef Spaleta <jspaleta AT fedoraproject DOT org> 1.4-1
+- Latest upstream release
+
+* 五 1月 04 2008 Jef Spaleta <jspaleta@fedoraproject.org> 1.2-2
+- Fix for egg-info file creation
+
+* 四 6月 28 2007 Orion Poplawski <orion@cora.nwra.com> 1.2-1
+- Update to 1.2
+
+* 一 12月 11 2006 Jef Spaleta <jspaleta@gmail.com> 1.1-5
+- Fix python-devel BR, as per discussion in maintainers-list
+
+* 一 12月 11 2006 Jef Spaleta <jspaleta@gmail.com> 1.1-4
+- Release bump for rebuild against python 2.5 in devel tree
+
+* 三 7月 26 2006 Orion Poplawski <orion@cora.nwra.com> 1.1-3
+- Add patch to fix building on x86_64
+
+* 三 2月 15 2006 Orion Poplawski <orion@cora.nwra.com> 1.1-2
+- Rebuild for gcc/glibc changes
+
+* 四 12月 22 2005 Orion Poplawski <orion@cora.nwra.com> 1.1-1
+- Update to 1.1
+
+* 四 7月 28 2005 Orion Poplawski <orion@cora.nwra.com> 1.0-1
+- Update to 1.0
+
+* 二 7月 05 2005 Orion Poplawski <orion@cora.nwra.com> 0.9-1
+- Initial Fedora Extras package
+

@@ -1,0 +1,27 @@
+* 五 10月 31 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Fix cron job per cronie requirements
+
+* 三 8月 06 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Move cron job from cron.daily to cron.d and add a random delay
+
+* 五 3月 08 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Use --tmpdir when creating temporary files with mktemp
+
+* 四 3月 15 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Use --quiet when calling start update-motd
+
+* 三 9月 21 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Copy the current motd on upgrade
+- Add an upgrade case to %post
+- Use /var/lib/update-motd instead of /var/run
+
+* 五 9月 16 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Add a yum plugin to call update-motd after an rpm transaction, and support for disabling updates
+
+* 三 7月 27 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Various improvements
+
+* 四 7月 21 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Initial version
+- setup complete for package update-motd
+

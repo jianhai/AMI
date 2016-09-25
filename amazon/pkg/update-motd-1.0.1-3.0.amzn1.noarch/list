@@ -1,0 +1,10 @@
+/etc/cron.d/update-motd
+/etc/init/update-motd.conf
+/etc/update-motd.d
+/etc/yum/pluginconf.d/update-motd.conf
+/usr/lib/yum-plugins/update-motd.py
+/usr/lib/yum-plugins/update-motd.pyc
+/usr/lib/yum-plugins/update-motd.pyo
+/usr/sbin/update-motd
+/var/lib/update-motd
+/var/lib/update-motd/motd

@@ -1,0 +1,366 @@
+* 二 4月 26 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/nss-util-3.21.0-2.2.el7_2
+
+* 三 3月 30 2016 Kai Engert <kaie@redhat.com> - 3.21.0-2.2
+- Rebase to nss-util from nss 3.21
+- Add aliases for naming compatibility with prior release
+
+* 三 3月 09 2016 Heath Petty <hpetty@amazon.com>
+- Merge branch 'master' of ssh://kaos-source.amazon.com/git/el7/nss-util into el7
+
+* 三 3月 09 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/nss-util-3.19.1-9.el7_2
+
+* 四 3月 03 2016 Kai Engert <kaie@redhat.com> - 3.19.1-9
+- Actually apply the fix for CVE-2016-1950 from NSS 3.19.2.3 ...
+
+* 四 2月 25 2016 Kai Engert <kaie@redhat.com> - 3.19.1-8
+- Fix a spec file syntax error
+
+* 四 2月 25 2016 Kai Engert <kaie@redhat.com> - 3.19.1-7
+- Rebuild to ensure use of correct NSPR.
+
+* 三 2月 24 2016 Kai Engert <kaie@redhat.com> - 3.19.1-6
+- Include the fix for CVE-2016-1950 from NSS 3.19.2.3
+
+* 五 11月 20 2015 Elio Maldonado <emaldona@redhat.com> - 3.19.1-5
+- Merge security fix from the RHEL-7.1 branch
+- Resolves: Bug 1269358 - CVE-2015-7182 CVE-2015-7181
+
+* 三 11月 04 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/nss-util-3.19.1-4.el7_1
+
+* 四 8月 06 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/nss-util-3.19.1-3.el7_1
+
+* 四 7月 16 2015 Elio Maldonado <emaldona@redhat.com> - 3.19.1-4
+- Add links to filed upstream bugs to better track patches in spec file
+
+* 五 6月 26 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/nss-util-3.19.1-1.el7_1
+
+* 四 6月 18 2015 Elio Maldonado <emaldona@redhat.com> - 3.19.1-3
+- Remove unused patch
+
+* 四 6月 18 2015 Elio Maldonado <emaldona@redhat.com> - 3.19.1-2
+- Add support for TLS 1.2 SHA384 per PKCS #11 v2.40
+
+* 五 6月 05 2015 Elio Maldonado <emaldona@redhat.com> - 3.19.1-1
+- Resolves: Bug 1228913: Rebase to nss-3.19.1 for CVE-2015-4000 [RHEL-7.1]
+
+* 二 5月 19 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/nss-util-3.18.0-1.el7_1
+
+* 一 3月 30 2015 Elio Maldonado <emaldona@redhat.com> - 3.18.0-1
+- Resolves: Bug 1200931 - [RHEL7.1] nss-util 3.18 rebase required for firefox 38 ESR
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/nss-util-3.16.2.3-2.el7
+- import source package EL7/nss-util-3.16.2.3-1.el7_0
+- import source package EL7/nss-util-3.16.2-2.el7_0
+- import source package EL7/nss-util-3.16.2-1.el7_0
+
+* 五 2月 13 2015 Cristian Gafton <gafton@amazon.com>
+- import source package CENTOS7/nss-util-3.16.2.3-1.el7_0
+- import source package CENTOS7/nss-util-3.16.2-2.el7_0
+- import source package CENTOS7/nss-util-3.16.2-1.el7_0
+
+* 四 1月 22 2015 Elio Maldonado <emaldona@redhat.com> - 3.16.2.3-2
+- Bump the release number to be higher than the one for rhel-7.0
+- Resolves: Bug 1158161 - Upgrade to NSS 3.16.2.3 for Firefox 31.3
+
+* 四 11月 13 2014 Elio Maldonado <emaldona@redhat.com> - 3.16.2.3-1
+- Resolves: Bug 1158161 - Upgrade to NSS 3.16.2.3 for Firefox 31.3
+
+* 五 9月 26 2014 Rodrigo Novo <rodarvus@amazon.com>
+- import source package GOBI/nss-util-3.16.2-2.el7_0
+
+* 四 9月 25 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Added back Conflicts: with old nss-softokn to avoid file conflicts
+- import source package GOBI/nss-util-3.16.2-1.el7_0
+- import source package GOBI/nss-util-3.15.4-2.el7
+
+* 二 9月 23 2014 Elio Maldonado <emaldona@redhat.com> - 3.16.2-3
+- Resolves: bug 1145434 - CVE-2014-1568
+
+* 二 8月 05 2014 Peter Robinson <pbrobinson@redhat.com> 3.16.2-2
+- Generic 32/64 bit platform detection (fix ppc64le build)
+- Resolves: Bug 1126244 - Ensure nss-util is built for 64 bit on ppc64le
+- Fix contributed by Peter Robinson <pbrobinson@redhat.com>
+
+* 二 7月 08 2014 Elio Maldonado <emaldona@redhat.com> - 3.16.2-1
+- Update to nss-3.16.2
+- Resolves: Bug 1103251
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/nss-util-3.15.4-2.el7
+
+* 二 4月 15 2014 Rodrigo Novo <rodarvus@amazon.com>
+- import source package F19/nss-util-3.16.0-1.fc19
+
+* 一 3月 24 2014 Ben Cressey <bcressey@amazon.com>
+- conflict with older versions of nss-softokn over hasht.h
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 3.15.4-2
+- Mass rebuild 2014-01-24
+
+* 日 1月 19 2014 Elio Maldonado <emaldona@redhat.com> - 3.15.3-4
+- Update to nss-3.15.4
+- Modified the nss-split-util script to use the nss upstream pristine sources
+- Resolves: Bug 1054457 - CVE-2013-1740 nss: false start PR_Recv information disclosure security issue [rhel-7.0]
+
+* 四 1月 09 2014 Elio Maldonado <emaldona@redhat.com> - 3.15.3-3
+- Add the nss-util portion of a fix for a bug in nss and nss-util
+- Resolves: Bug 752980 - Support ECDSA via pluggable ECC in the nss package
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 3.15.3-2
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.15.3-1.el6_5
+- import source package RHEL7/nss-util-3.15.2-1.el7
+
+* 一 11月 25 2013 Elio Maldonado <emaldona@redhat.com> - 3.15.3-1
+- Update to NSS_3_15_3_RTM
+- Resolves: Bug 1031463 - CVE-2013-5605 CVE-2013-5606 CVE-2013-1741
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.15.1-3.el6
+
+* 三 8月 07 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.14.3-3.el6_4
+
+* 二 8月 06 2013 Elio Maldonado <emaldona@redhat.com> - 3.15.1-2
+- Remove an obsolete script and adjust sources numbering accordingly.
+
+* 五 7月 26 2013 Elio Maldonado <emaldona@redhat.com> - 3.15.1-1
+- Update to NSS_3_15_1_RTM
+
+* 二 7月 02 2013 Elio Maldonado <emaldona@redhat.com> - 3.15-2
+- Produce source tar ball from the unstripped nss source tar ball
+
+* 三 5月 29 2013 Elio Maldonado <emaldona@redhat.com> - 3.15-1
+- Update to NSS_3_15_RTM
+
+* 五 4月 19 2013 Elio Maldonado <emaldona@redhat.com> - 3.15-0.1.beta1.2
+- Don't include prtypes.h from hasht.t
+- Resolves: rhbz#953277 - rawhide build of glibc fails due to fatal error from nss3/hasht.h
+
+* 五 4月 05 2013 Elio Maldonado <emaldona@redhat.com> - 3.15.beta1-0.1.beta.1
+- Update to NSS_3_15_BETA1
+- Update spec file, patches, and helper scripts on account of a shallower source tree
+
+* 二 2月 26 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.14.0.0-2.el6
+
+* 五 2月 15 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-1
+- Update to NSS_3_14_3_RTM
+- Resolves: rhbz#909782 - specfile support for AArch64
+
+* 六 2月 02 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.2-2
+- Retagging to prevent nvr update problems with f18
+
+* 五 2月 01 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.13.6-1.el6_3
+
+* 五 2月 01 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.2-1
+- Update to NSS_3_14_2_RTM
+
+* 四 12月 27 2012 Elio Maldonado <emaldona@redhat.com> - 3.14.1-2
+- Install templates.c in /usr/includes/nss3/templates
+- Fix bogus date warnings
+
+* 一 12月 17 2012 Elio Maldonado <emaldona@redhat.com> - 3.14.1-1
+- Update to NSS_3_14_1_RTM
+
+* 六 10月 27 2012 Elio Maldonado <emaldona@redhat.com> - 3.14-2
+- Update the license to MPLv2.0
+
+* 一 10月 22 2012 Elio Maldonado <emaldona@redhat.com> - 3.14-1
+- Update to NSS_3_14_RTM
+
+* 五 10月 19 2012 Elio Maldonado <emaldona@redhat.com> - 3.14-0.1.rc1.1
+- Update to NSS_3_14_RC1
+- The hasht.h from now on is provided by nss-util-devel
+
+* 五 7月 20 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.13.5-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 三 7月 18 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.13.5-1.el6_3
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.13.3-2.el6
+
+* 三 6月 20 2012 Elio Maldonado <emaldona@redhat.com> - 3.13.5-3
+- Resolves: rhbz#833529 - revert unwanted change to nss-util.pc.in
+
+* 二 6月 19 2012 Elio Maldonado <emaldona@redhat.com> - 3.13.5-2
+- Resolves: rhbz#833529 - Remove space from Libs: line in nss-util.pc.in
+
+* 六 6月 16 2012 Elio Maldonado <emaldona@redhat.com> - 3.13.5-1
+- Update to NSS_3_13_5_RTM
+
+* 日 4月 08 2012 Elio Maldonado <emaldona@redhat.com> - 3.13.4-2
+- Resolves: Bug 805716 - Library needs partial RELRO support added
+- Patch coreconf/Linux.mk as done on RHEL 6.2
+
+* 五 4月 06 2012 Elio Maldonado <emaldona@redhat.com> - 3.13.4-1
+- Update to NSS_3_13_4
+
+* 日 4月 01 2012 Elio Maldonado <emaldona@redhat.com> - 3.13.4-0.1.beta.1
+- Update to NSS_3_13_4_BETA1
+- Improve steps to splitting off util from the nss
+- Add executable attribute to the splitting script
+
+* 二 3月 27 2012 Elio Maldonado <emaldona@redhat.com> - 3.13.3-4
+- Resolves: Bug 805716 - Library needs partial RELRO support added
+
+* 五 3月 16 2012 Elio Maldonado Batiz <emaldona@redhat.com> - 3.13.3-3
+- Update the release tag to be higher than in f16
+
+* 五 3月 09 2012 Elio Maldonado Batiz <emaldona@redhat.com> - 3.13.3-2
+- Require nspr 4.9
+
+* 四 3月 01 2012 Elio Maldonado Batiz <emaldona@redhat.com> - 3.13.1-4
+- Update to NSS_3_13_3_RTM
+
+* 一 2月 27 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.13.1-3.el6_2
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.13.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.12.10-2.el6
+
+* 一 11月 28 2011 Elio Maldonado <emaldona@redhat.com> - 3.13.1-2
+- Fix a gnuc def typo
+
+* 五 11月 11 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.12.10-1.el6_1
+
+* 四 11月 03 2011 Elio Maldonado <emaldona@redhat.com> - 3.13.1-1
+- Update to NSS_3_13_1_RTM
+
+* 六 10月 15 2011 Elio Maldonado <emaldona@redhat.com> - 3.13-1
+- Update to NSS_3_13_RTM
+
+* 五 10月 07 2011 Elio Maldonado <emaldona@redhat.com> - 3.13-0.1.rc0.1
+- Update to NSS_3_13_RC0
+
+* 四 9月 08 2011 Ville Skyttä <ville.skytta@iki.fi> - 3.12.11-2
+- Avoid %post/un shell invocations and dependencies.
+
+* 二 8月 09 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.11-1
+- Update to NSS_3_12_11_RTM
+
+* 日 5月 22 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.12.9-1.el6
+
+* 五 5月 06 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.10-1
+- Update to NSS_3_12_10_RTM
+
+* 一 4月 25 2011 Elio Maldonado Batiz <emaldona@redhat.com> - 3.12.10-0.1.beta1
+- Update to NSS_3_12_10_BETA1
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.12.9-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 1月 12 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-1
+- Update to 3.12.9
+
+* 一 12月 27 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.9-0.1beta2
+- Rebuilt according to fedora pre-release package naming guidelines
+
+* 五 12月 10 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.8.99.2-1
+- Update to NSS_3_12_9_BETA2
+
+* 三 12月 08 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.8.99.1-1
+- Update to NSS_3_12_9_BETA1
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.12.8-1.el6_0
+- import source package RHEL6/nss-util-3.12.7-1.el6
+
+* 三 9月 29 2010 jkeating - 3.12.8-2
+- Rebuilt for gcc bug 634757
+
+* 四 9月 23 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.8-1
+- Update to 3.12.8
+
+* 六 9月 18 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.7.99.4-1
+- NSS 3.12.8 RC0
+
+* 六 9月 04 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.7.99.3-1
+- NSS 3.12.8 Beta 3
+
+* 日 8月 29 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.7-2
+- Define NSS_USE_SYSTEM_SQLITE and remove nolocalsql patch
+
+* 一 8月 16 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.7-1
+- Update to 3.12.7
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nss-util-3.12.6-1.el6
+- setup complete for package nss-util
+
+* 五 3月 05 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.6-1
+- Update to 3.12.6
+
+* 一 1月 18 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.5-2
+- Fix in nss-util-config.in
+
+* 四 12月 03 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.5-1
+- Update to 3.12.5
+
+* 四 9月 10 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.4-8
+- Retagging for a chained build with nss-softokn and nss
+
+* 四 9月 10 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.4-5
+- Restoring -rpath-link to nss-util-config
+
+* 二 9月 08 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.4-4
+- Installing shared libraries to %{_libdir}
+
+* 六 9月 05 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.4-3
+- Remove symbolic links to shared libraries from devel - 521155
+- Apply nss-nolocalsql patch subset for nss-util
+- No rpath-link in nss-util-config
+
+* 五 9月 04 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.4-2
+- Retagging for a chained build
+
+* 四 9月 03 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.4-1
+- Update to 3.12.4
+- Don't require sqlite
+
+* 四 8月 27 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.3.99.3-15
+- Bump the release number for a chained build of nss-util, nss-softokn and nss
+
+* 四 8月 27 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.3.99.3-14
+- Cleanup nss-util-config.in
+
+* 四 8月 27 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.3.99.3-13
+- nss-util-devel doesn't require nss-devel
+
+* 三 8月 26 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.3.99.3-12
+- bump to unique nvr
+
+* 三 8月 26 2009 Elio Maldonado<emaldona@redhat.com> - 3.12.3.99.3-11
+- Remove spurious executable permissions from nss-util-config
+- Shorten some descriptions to keep rpmlint happy
+
+* 一 8月 24 2009 Dennis Gilmore <dennis@ausil.us> 3.12.3.99.3-10
+- dont include the headers in nss-util only in the -devel package
+- nss-util-devel Requires nss-devel since its only providing a subset of the headers.
+
+* 四 8月 20 2009 Dennis Gilmore <dennis@ausil.us> 3.12.3.99.3-9
+- Provide nss-devel since we obsolete it
+
+* 三 8月 19 2009 Elio Maldonado <emaldona@redhat.com> 3.12.3.99.3-8.1
+- nss-util-devel obsoletes nss-devel < 3.12.3.99.3-8
+
+* 三 8月 19 2009 Elio Maldonado <emaldona@redhat.com> 3.12.3.99.3-8
+- Initial build
+

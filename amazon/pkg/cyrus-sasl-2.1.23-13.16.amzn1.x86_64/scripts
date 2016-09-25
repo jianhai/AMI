@@ -1,0 +1,20 @@
+preinstall scriptlet (using /bin/sh):
+getent group saslauth >/dev/null || groupadd -g 76 -r saslauth
+getent passwd saslauth >/dev/null || \
+useradd -r -g saslauth -d /var/empty/saslauth -s /sbin/nologin \
+-c \""Saslauthd user"\" saslauth
+exit 0
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add saslauthd
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ] ; then
+        /sbin/service saslauthd stop 2>&1 > /dev/null
+        /sbin/chkconfig --del saslauthd
+fi
+exit 0
+postuninstall scriptlet (using /bin/sh):
+if [ $1 -ne 0 ] ; then
+        /sbin/service saslauthd condrestart 2>&1 > /dev/null
+fi
+exit 0

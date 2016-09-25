@@ -1,0 +1,86 @@
+* 四 10月 08 2015 Ian Weller <iweller@amazon.com>
+- libnfsidmap-devel Obsoletes nfs-utils-lib-devel
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/libnfsidmap-0.25-11.el7
+
+* 二 10月 21 2014 Steve Dickson <steved@redhat.com> 0.25-11
+- Accept full qualified usernames a a user (bz 1114053)
+- Removed a number of warnings (bz 1152658)
+
+* 三 9月 17 2014 Steve Dickson <steved@redhat.com> 0.25-10
+- id_as_chars() fails zero value ids (bz 1093093)
+- respect Nobody-User/Nobody-Group (bz 1129790)
+
+* 二 7月 29 2014 Lee Trager <ltrager@amazon.com>
+- Spec file cleanup
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libnfsidmap-0.25-9.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 0.25-9
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 0.25-8
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libnfsidmap-0.25-7.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package libnfsidmap
+
+* 一 8月 19 2013 Ville Skyttä <ville.skytta@iki.fi> - 0.25-7
+- Updated to latest rc release: libnfsidmap-0-26-rc3
+
+* 五 7月 26 2013 Ville Skyttä <ville.skytta@iki.fi> - 0.25-6
+- Drop unnecessary doc dir references from specfile.
+- Fix bogus dates in %changelog.
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.25-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.25-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 二 6月 19 2012 Steve Dickson <steved@redhat.com>  0.20-3
+- Updated to latest rc release: libnfsidmap-0-26-rc1
+
+* 一 3月 19 2012 Steve Dickson <steved@redhat.com>  0.20-2
+- Fixed Local-Realms debugging (bz 804152)
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.25-1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 二 12月 06 2011 Steve Dickson <steved@redhat.com>  0.20-0
+- Updated to latest release: libnfsidmap-0.25
+
+* 一 11月 14 2011 Steve Dickson <steved@redhat.com>  0.24-7
+- Updated to latest rc release: libnfsidmap-0-25-rc3 (bz 753930)
+
+* 一 3月 07 2011 Steve Dickson <steved@redhat.com>  0.24-6
+- Updated to latest rc release: libnfsidmap-0-25-rc2
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.24-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 1月 14 2011 Steve Dickson <steved@redhat.com>  0.24-4
+- Updated to latest rc release: libnfsidmap-0-25-rc1
+
+* 三 12月 22 2010 Steve Dickson <steved@redhat.com>  0.24-3
+- Used the newly added --with-pluginpath config flag to 
+  redefine where the plugins live (bz 664641).
+
+* 五 12月 10 2010 Steve Dickson <steved@redhat.com>  0.24-2
+- Removed the versions from the Provides: and Obsoletes: lines
+
+* 三 12月 08 2010 Steve Dickson <steved@redhat.com>  0.24-1
+- Updated to latest upstream release: 0.24
+- Obsoleted nfs-utils-lib
+
+* 二 12月 07 2010 Steve Dickson <steved@redhat.com>  0.23-3
+- Maded corrections in spec per review comments.
+
+* 五 12月 03 2010 Steve Dickson <steved@redhat.com>  0.23-2
+- Initial commit
+

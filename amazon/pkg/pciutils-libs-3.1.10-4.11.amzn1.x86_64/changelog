@@ -1,0 +1,420 @@
+* 二 8月 19 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pciutils-3.1.10-4.el6
+
+* 二 5月 06 2014 Michal Hlavinka <mhlavink@redhat.com> - 3.1.10-4
+- close directory after processing pci.ids.d directory (#684000)
+- sysfs: do not warn on incomplete slot addresses (#1032827)
+
+* 一 5月 05 2014 Michal Hlavinka <mhlavink@redhat.com> - 3.1.10-3
+- fix PCI IDs update url (#998626)
+
+* 一 2月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pciutils-3.1.10-2.el6
+
+* 四 9月 27 2012 Michal Hlavinka <mhlavink@redhat.com> - 3.1.10-2
+- fix changes in arm support patch
+
+* 二 9月 25 2012 Michal Hlavinka <mhlavink@redhat.com> - 3.1.10-1
+- pciutils updated to 3.1.10 (#826112)
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pciutils-3.1.4-11.el6
+
+* 五 10月 14 2011 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-11
+- add support for PCIe 3.0 capabilities (#742223)
+
+* 五 9月 23 2011 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-10
+- fix freeing of data structures in pci_free_cap (#740630)
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pciutils-3.1.4-9.el6
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pciutils-3.1.4-8.el6
+- import source package RHEL6/pciutils-3.1.4-6.el6
+
+* 四 5月 27 2010 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-9
+- fix requires for sub-packages
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/pciutils-2.2.3-8.el5
+- import source package RHEL5/pciutils-2.2.3-7.el5
+- import source package RHEL5/pciutils-2.2.3-5
+- import source package RHEL5/pciutils-2.2.3-4
+- added submodule prep for package pciutils
+
+* 四 2月 04 2010 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-8
+- update-pciids moved
+
+* 四 2月 04 2010 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-7
+- libpci moved to /lib
+
+* 一 11月 02 2009 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-6
+- spec cleanup
+
+* 一 10月 26 2009 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-5
+- fix build to enable -F option (#531020)
+
+* 一 10月 26 2009 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-4
+- enable direct hardware access method for 64bit architectures
+
+* 一 10月 12 2009 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-3
+- don't ship static library in -devel sub-package
+
+* 二 9月 01 2009 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-2
+- add COPYING to docs
+
+* 二 9月 01 2009 Michal Hlavinka <mhlavink@redhat.com> - 3.1.4-1
+- updated to 3.1.4
+
+* 三 7月 29 2009 Michal Hlavinka <mhlavink@redhat.com> - 3.1.3-1
+- updated to 3.1.3
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.1.2-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 4月 29 2009 Michal Hlavinka <mhlavink@redhat.com> - 3.1.2-5
+- add support for ARM
+
+* 五 2月 27 2009 Michal Hlavinka <mhlaivnk@redhat.com> - 3.1.2-4
+- fix typo & rebuild
+
+* 五 2月 27 2009 Michal Hlavinka <mhlaivnk@redhat.com> - 3.1.2-3
+- fix: lspci segfaults when pci.ids cannot be found (#487516)
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.1.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Michal Hlavinka <mhlavink@redhat.com> 3.1.2-1
+- version 3.1.2
+- fix for the syntax error checks in setpci argument parser
+
+* 三 2月 04 2009 Michal Hlavinka <mhlavink@redhat.com> 3.1.1-1
+- version 3.1.1
+
+* 二 1月 27 2009 Michal Hlavinka <mhlavink@redhat.com> 3.1.0-2
+- fix typo in multilib patch - for s390x building
+
+* 一 1月 19 2009 Michal Hlavinka <mhlavink@redhat.com> 3.1.0-1
+- version 3.1.0
+
+* 二 12月 09 2008 Michal Hlavinka <mhlavink@redhat.com> 3.0.3-1
+- version 3.0.3
+
+* 一 9月 22 2008 Michal Hlavinka <mhlavink@redhat.com> 3.0.2-1
+- version 3.0.2
+
+* 五 9月 19 2008 Michal Hlavinka <mhlavink@redhat.com> 3.0.1-1
+- version 3.0.1
+- add support for Super-H (sh3,sh4) (#446600)
+- fix: broken -L in libpci.pc (#456469)
+
+* 一 9月 01 2008 Harald Hoyer <harald@redhat.com> 3.0.0-2
+- rebuild to eliminate fuzz patches
+
+* 一 6月 02 2008 Harald Hoyer <harald@redhat.com> 3.0.0-1
+- version 3.0.0
+
+* 一 5月 26 2008 Tom "spot" Callaway <tcallawa@redhat.com> 2.2.10-2
+- add sparc support
+
+* 三 2月 20 2008 Harald Hoyer <harald@redhat.com> 2.2.10-1
+- version 2.2.10
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.2.9-6
+- Autorebuild for GCC 4.3
+
+* 二 1月 22 2008 Bill Nottingham <notting@redhat.com> 2.2.9-5
+- put library back
+
+* 一 1月 21 2008 Harald Hoyer <harald@redhat.com> 2.2.9-4
+- fixed segfault, if subdir does not exists
+
+* 五 1月 18 2008 Harald Hoyer <harald@redhat.com> 2.2.9-3
+- removed static library, preserve timestamps on install (rhbz#226236)
+- added modified patch from Michael E. Brown @ Dell, to also
+  read all /usr/share/hwdata/pci.ids.d/*.ids files (rhbz#195327)
+
+* 四 1月 10 2008 Harald Hoyer <harald@redhat.com> 2.2.9-2
+- added more requirements for pciutils-devel
+
+* 二 11月 20 2007 Harald Hoyer <harald@redhat.com> - 2.2.9-1
+- version 2.2.9
+- added package config file (rhbz#389451)
+
+* 三 8月 22 2007 Harald Hoyer <harald@redhat.com> - 2.2.6-3
+- changed license tag
+
+* 四 7月 12 2007 Harald Hoyer <harald@redhat.com> - 2.2.6-2
+- fixed update-pciids.sh
+
+* 三 6月 27 2007 Harald Hoyer <harald@redhat.com> - 2.2.6-1
+- version 2.2.6
+- fixed URL in update-pciids.sh
+
+* 四 5月 31 2007 Harald Hoyer <harald@redhat.com> - 2.2.5-1
+- version 2.2.5
+
+* 四 4月 05 2007 Peter Jones <pjones@redhat.com> - 2.2.4-3
+- buildreq zlib-devel, so we know configure will find it consistently.
+
+* 一 4月 02 2007 Harald Hoyer <harald@redhat.com> - 2.2.4-2
+- added alpha to multilib patch (#231790)
+- specfile cleanup
+- Resolves: rhbz#231790
+
+* 五 1月 26 2007 Harald Hoyer <harald@redhat.com> - 2.2.4-1
+- version 2.2.4
+- truncate long device names (#205948)
+- Resolves: rhbz#205948
+
+* 三 8月 09 2006 Peter Jones <pjones@redhat.com> - 2.2.3-4
+- Add definitions for more pci storage classes
+
+* 一 7月 17 2006 Jesse Keating <jkeating@redhat.com> - 2.2.3-3
+- rebuild
+
+* 五 6月 02 2006 Harald Hoyer <harald@redhat.com> 2.2.3-2
+- corrected multilib patch
+
+* 二 5月 23 2006 Harald Hoyer <harald@redhat.com> 2.2.3-1
+- version 2.2.3
+- multilib patch (bug #192743)
+
+* 四 2月 23 2006 Harald Hoyer <harald@redhat.com> 2.2.1-2
+- added update-pciids shell script and manpage (bz #178582)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.2.1-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.2.1-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 12月 13 2005 Bill Nottingham <notting@redhat.com> - 2.2.1-1
+- update to 2.2.1, adjust patches
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 5月 19 2005 Bill Nottingham <notting@redhat.com> - 2.1.99.test8-10
+- allow 64-bit addresses on x86_64 (#158217, <Matt_Domsch@dell.com>)
+
+* 二 5月 10 2005 Bill Nottingham <notting@redhat.com> - 2.1.99.test8-9
+- fix debuginfo generation
+
+* 一 3月 14 2005 Bill Nottingham <notting@redhat.com> - 2.1.99.test8-8
+- add patch for glibc macros (#151032, <redhat-bugzilla@linuxnetz.de>)
+
+* 三 3月 02 2005 Bill Nottingham <notting@redhat.com> - 2.1.99.test8-7
+- FC4. GCC 4. fore!
+
+* 二 1月 25 2005 Bill Nottingham <notting@redhat.com> - 2.1.99.test8-6
+- remove explicit kernel dep (#146153)
+
+* 五 1月 21 2005 Bill Nottingham <notting@redhat.com> - 2.1.99.test8-5
+- fix domain bug (#138722, #144383)
+
+* 一 11月 22 2004 Jeremy Katz <katzj@redhat.com> - 2.1.99.test8-4
+- don't use dietlibc on x86 anymore
+
+* 四 9月 02 2004 Bill Nottingham <notting@redhat.com> 2.1.99.test8-3
+- change sysfs access for detecting devices who get fixed up in the
+  kernel (#115522, #123802)
+
+* 二 8月 31 2004 Bill Nottingham <notting@redhat.com> 2.1.99.test8-2
+- update to test8
+- fix headers
+
+* 五 7月 09 2004 Bill Nottingham <notting@redhat.com> 2.1.99.test7-1
+- update to test7
+- fix segfault on some x86-64 boxen
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 12月 08 2003 Bill Nottingham <notting@redhat.com> 2.1.11-4
+- fix paths for pci.ids, etc. (#111665)
+
+* 二 11月 25 2003 Bill Nottingham <notting@redhat.com> 2.1.11-3
+- remove a few calls to ->error() in the sysfs code
+
+* 五 11月 21 2003 Jeremy Katz <katzj@redhat.com> 2.1.11-2
+- build a diet libpci_loader.a on i386
+- always assume pread exists, it does with diet and all vaguely recent glibc
+
+* 五 11月 21 2003 Bill Nottingham <notting@redhat.com> 2.1.11-1
+- update to 2.1.11
+- add patch for sysfs & pci domains support (<willy@debian.org>)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 12 2003 Bill Nottingham <notting@redhat.com>
+- don't segfault when there's no pci bus (#84146)
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 05 2002 Elliot Lee <sopwith@redhat.com> 2.1.10-5
+- Add patch4 for ppc64. The basic rule seems to be that on any platform
+where it is possible to be running a 64-bit kernel, we need to always 
+print out 64-bit addresses.
+
+* 一 11月 04 2002 Bill Nottingham <notting@redhat.com> 2.1.10-4
+- fix dir perms on /usr/include/pci
+
+* 二 10月 15 2002 Bill Nottingham <notting@redhat.com> 2.1.10-3
+- use %{_libdir}
+- own /usr/include/pci
+- build library with -fPIC
+
+* 一 7月 08 2002 Bill Nottingham <notting@redhat.com> 2.1.10-2
+- don't build with -fomit-frame-pointer
+
+* 一 6月 24 2002 Bill Nottingham <notting@redhat.com> 2.1.10-1
+- update to 2.1.10
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 6月 17 2002 Bill Nottingham <notting@redhat.com> 2.1.9-4
+- don't forcibly strip binaries
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 2月 22 2002 Bill Nottingham <notting@redhat.com>
+- rebuild
+
+* 三 1月 30 2002 Bill Nottingham <notting@redhat.com>
+- require hwdata now that pci.ids is there
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 12月 30 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- man page is now owned by root
+
+* 三 10月 17 2001 Bill Nottingham <notting@redhat.com>
+- dump all the patches, ship pci.ids direct out of sourceforge CVS
+
+* 三 9月 26 2001 Bill Nottingham <notting@redhat.com>
+- broadcom bcm5820 id (#53592)
+
+* 五 8月 10 2001 Bill Nottingham <notting@redhat.com>
+- more ids
+
+* 二 7月 17 2001 Bill Nottingham <notting@redhat.com>
+- add newline in printf in PCI-X patch (#49277)
+
+* 一 7月 09 2001 Bill Nottingham <notting@redhat.com>
+- update broadcom patch
+- add new ids from 2.4.6
+
+* 一 5月 28 2001 Bill Nottingham <notting@redhat.com>
+- add a couple of e1000 ids
+
+* 四 3月 22 2001 Bill Nottingham <notting@redhat.com>
+- another megaraid id
+
+* 三 3月 21 2001 Bill Nottingham <notting@redhat.com>
+- another megaraid id
+
+* 三 3月 14 2001 Preston Brown <pbrown@redhat.com>
+- LSI SCSI PCI id
+
+* 三 2月 21 2001 Nalin Dahyabhai <nalin@redhat.com>
+- fix formatting problems
+
+* 三 2月 21 2001 Preston Brown <pbrown@redhat.com>
+- add IBM ServeRAID entries
+
+* 二 2月 20 2001 Preston Brown <pbrown@redhat.com>
+- i860 entries.
+
+* 一 2月 19 2001 Helge Deller <hdeller@redhat.de>
+- added various pci ids
+
+* 五 2月 02 2001 Bill Nottingham <notting@redhat.com>
+- fix mishap in fixing mishap
+
+* 四 2月 01 2001 Bill Nottingham <notting@redhat.com>
+- fix apparent mishap in pci.ids update from kernel (#25520)
+
+* 二 1月 23 2001 Bill Nottingham <notting@redhat.com>
+- pci.ids updates
+
+* 二 12月 12 2000 Bill Nottingham <notting@redhat.com>
+- big pile of pci.ids updates
+
+* 二 7月 25 2000 Nalin Dahyabhai <nalin@redhat.com>
+- clean up patches to not generate badly-formatted files
+
+* 二 7月 25 2000 Preston Brown <pbrown@redhat.com>
+- Vortex fixes laroche originally applied on kudzu moved here.
+
+* 五 7月 14 2000 Preston Brown <pbrown@redhat.com>
+- pci ids for i815, new ati hardware
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 7月 11 2000 Bill Nottingham <notting@redhat.com>
+- yet more IDs
+- PCI-X support from Matt Domsch
+
+* 五 7月 07 2000 Bill Nottingham <notting@redhat.com>
+- some more QLogic ids
+
+* 一 6月 26 2000 Bill Nottingham <notting@redhat.com>
+- more IDs from Dell
+
+* 六 6月 10 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.1.8
+
+* 五 4月 21 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.1.7
+
+* 一 4月 17 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.1.6
+
+* 五 3月 03 2000 Bill Nottingham <notting@redhat.com>
+- add a couple of ids
+
+* 一 2月 14 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.1.5
+
+* 四 2月 03 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed man pages
+
+* 一 1月 24 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.1.4
+
+* 四 1月 20 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.1.3
+
+* 五 12月 24 1999 Bill Nottingham <notting@redhat.com>
+- update to 2.1.2
+
+* 二 6月 29 1999 Bill Nottingham <notting@redhat.com>
+- add -devel package
+
+* 四 5月 20 1999 Bill Nottingham <notting@redhat.com>
+- update to 2.0
+
+* 一 4月 19 1999 Jakub Jelinek <jj@ultra.linux.cz>
+- update to 1.99.5
+- fix sparc64 operation
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 2)
+
+* 四 2月 04 1999 Bill Nottingham <notting@redhat.com>
+- initial build
+

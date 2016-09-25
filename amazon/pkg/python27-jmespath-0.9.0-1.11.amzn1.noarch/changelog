@@ -1,0 +1,21 @@
+* 六 5月 21 2016 Ian Weller <iweller@amazon.com>
+- Update to 0.9.0
+
+* 二 6月 23 2015 hpetty <hpetty@amazon.com>
+- Add a versioned symlink for the jp binary
+
+* 二 5月 12 2015 hpetty <hpetty@amazon.com>
+- Update to jmespath 0.7.1
+
+* 三 4月 22 2015 Jason Green <jasg@amazon.com>
+- Update to jmespath 0.6.2
+
+* 四 3月 12 2015 Tom Kirchner <tjk@amazon.com>
+- Update to jmespath 0.6.1
+
+* 五 2月 27 2015 Ben Cressey <bcressey@amazon.com>
+- add alternatives for jp
+
+* 三 2月 04 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+

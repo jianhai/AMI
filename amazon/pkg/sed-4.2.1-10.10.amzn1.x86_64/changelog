@@ -1,0 +1,237 @@
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/sed-4.2.1-10.el6
+
+* 三 5月 02 2012 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 4.2.1-10
+- Fix minor FILE resource leaks found by CoverityScan (#812316)
+
+* 二 3月 06 2012 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 4.2.1-9
+- Fix testsuite LANG/LC_ALL utf8 locales (#724962)
+
+* 二 3月 06 2012 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 4.2.1-8
+- fix `--copy' option behaviour to unlink sedXXX temp files,
+  clean-up the copy-option patch and merge it with the
+  `-i/--in-place' docs/manpage patch (#709956)
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/sed-4.2.1-7.el6
+
+* 四 7月 28 2011 Ondrej Vasik <ovasik@redhat.com> - 4.2.1-7
+- improve man/usage documentation of the -i/--in-place option
+  in the case of symlinks/hardlinks(#679921)
+
+* 二 7月 12 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 4.2.1-6
+- Fix wrong condition on is_selinux_enabled error
+  Resolves: #721349
+
+* 日 1月 16 2011 Cristian Gafton <gafton@amazon.com>
+- conditionalize building against selinux
+
+* 日 1月 16 2011 Cristian Gafton <gafton@amazon.com> - 4.2.1-5
+- conditionalize building against selinux
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/sed-4.2.1-5.el6
+- import source package RHEL6/sed-4.2.1-4.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/sed-4.1.5-5.fc6
+- added submodule prep for package sed
+
+* 一 2月 22 2010 Jiri Moskovcak <jmoskovc@redhat.com> 4.2.1-5
+- added back -c/--copy
+- resolves: #566457
+
+* 五 10月 16 2009 Jiri Moskovcak <jmoskovc@redhat.com> 4.2.1-4
+- added libselinux-devel to buildrequires rhbz#514182
+- fixed problem with --excludedocs rhbz#515913
+
+* 二 8月 11 2009 Ville Skyttä <ville.skytta@iki.fi> - 4.2.1-3
+- Use bzipped upstream tarball.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.2.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 29 2009 Jiri Moskovcak <jmoskovc@redhat.com> - 4.2.1-1
+- new version
+- obsoletes previous patches
+- added patch to maintain backwards compatibility for scripts using -c/--copy
+- Resolves: #502934
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.1.5-12
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 11月 13 2008 Jiri Moskovcak <jmoskovc@redhat.com> 4.1.5-11
+- improved follow.patch (thanks to Arkadiusz Miskiewicz for initial patch)
+- Resolves: #470912
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 4.1.5-10
+- Autorebuild for GCC 4.3
+
+* 四 10月 04 2007 Petr Machata <pmachata@redhat.com> - 4.1.5-9
+- Fix licensing tag.
+- Clean up per merge review comments.
+- Resolves: #226404
+
+* 三 2月 07 2007 Petr Machata <pmachata@redhat.com> - 4.1.5-8
+- tidy up the specfile per rpmlint comments
+- use utf-8 and fix national characters in contributor's names
+
+* 四 1月 25 2007 Petr Machata <pmachata@redhat.com> - 4.1.5-7
+- Ville Skyttä: patch for non-failing %post, %preun
+- Resolves: #223716
+
+* 五 12月 08 2006 Petr Machata <pmachata@redhat.com> - 4.1.5-6
+- Split confused patches "copy+symlink" and "relsymlink" into discrete
+  "copy" and "symlink".
+
+* 一 9月 04 2006 Petr Machata <pmachata@redhat.com> - 4.1.5-5
+- Fix handling of relative symlinks (#205122)
+
+* 四 8月 03 2006 Petr Machata <pmachata@redhat.com> - 4.1.5-4
+- remove superfluous multibyte processing in str_append for UTF-8
+  encoding (thanks Paolo Bonzini, #177246)
+
+* 一 7月 17 2006 Petr Machata <pmachata@redhat.com> - 4.1.5-3
+- use dist tag
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 4.1.5-2.2.1
+- rebuild
+
+* 四 6月 29 2006 Petr Machata <pmachata@redhat.com> - 4.1.5-2.2
+- typo in patch name
+
+* 四 6月 29 2006 Petr Machata <pmachata@redhat.com> - 4.1.5-2.1
+- rebuild
+
+* 四 6月 29 2006 Petr Machata <pmachata@redhat.com> - 4.1.5-2
+- #185374:
+  - Follow symlinks before rename (avoid symlink overwrite)
+  - Add -c flag for copy instead of rename (avoid ownership change)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 4.1.5-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 4.1.5-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 2月 06 2006 Florian La Roche <laroche@redhat.com>
+- 4.1.5
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 3月 17 2005 Jakub Jelinek <jakub@redhat.com> 4.1.4-1
+- update to 4.1.4
+
+* 六 3月 05 2005 Jakub Jelinek <jakub@redhat.com> 4.1.2-5
+- rebuilt with GCC 4
+
+* 五 10月 08 2004 Jakub Jelinek <jakub@redhat.com> 4.1.2-4
+- fix up make check to run sed --version with LC_ALL=C
+  in the environment (#129014)
+
+* 六 10月 02 2004 Jakub Jelinek <jakub@redhat.com> 4.1.2-3
+- add sedfaq.txt to %{_docdir} (#16202)
+
+* 一 8月 23 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 4.1.2
+
+* 四 7月 08 2004 Jakub Jelinek <jakub@redhat.com> 4.1.1-1
+- update to 4.1.1
+
+* 一 6月 21 2004 Jakub Jelinek <jakub@redhat.com> 4.1-1
+- update to 4.1
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 25 2004 Jakub Jelinek <jakub@redhat.com> 4.0.9-1
+- update to 4.0.9
+- BuildRequire recent glibc and glibc-devel (#123043)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 07 2004 Jakub Jelinek <jakub@redhat.com> 4.0.8-3
+- if not -n, print current buffer after N command on the last line
+  unless POSIXLY_CORRECT (#112952)
+- adjust XFAIL_TESTS for the improved glibc regex implementation
+  (#112642)
+
+* 五 11月 14 2003 Jakub Jelinek <jakub@redhat.com> 4.0.8-2
+- enable --without-included-regex again
+- use fastmap for regex searching
+
+* 六 10月 25 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 4.0.8
+- simplify specfile
+- disable --without-included-regex to pass the testsuite
+
+* 四 6月 26 2003 Jakub Jelinek <jakub@redhat.com> 4.0.7-3
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 4月 12 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 4.0.7
+- use "--without-included-regex"
+- do not gzip info pages in spec file, "TODO" is not present anymore
+
+* 四 1月 23 2003 Jakub Jelinek <jakub@redhat.com> 4.0.5-1
+- update to 4.0.5
+
+* 二 10月 22 2002 Jakub Jelinek <jakub@redhat.com>
+- rebuilt to fix x86-64 miscompilation
+- run make check in %build
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 4月 05 2002 Jakub Jelinek <jakub@redhat.com>
+- Remove stale URLs from documentation (#62519)
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 一 12月 18 2000 Yukihiro Nakai <ynakai@redhat.com>
+- Update to 2000.11.28 patch
+- Rebuild for 7.1 tree
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 05 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 一 2月 07 2000 Jeff Johnson <jbj@redhat.com>
+- compress man pages.
+
+* 二 1月 18 2000 Jakub Jelinek <jakub@redhat.com>
+- rebuild with glibc 2.1.3 to fix an mmap64 bug in sys/mman.h
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 二 8月 18 1998 Jeff Johnson <jbj@redhat.com>
+- update to 3.02
+
+* 日 7月 26 1998 Jeff Johnson <jbj@redhat.com>
+- update to 3.01
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 10月 23 1997 Donnie Barnes <djb@redhat.com>
+- removed references to the -g option from the man page that we add
+
+* 五 10月 17 1997 Donnie Barnes <djb@redhat.com>
+- spec file cleanups
+- added BuildRoot
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

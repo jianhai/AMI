@@ -1,0 +1,7 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+
+### Move blkid cache to /etc/blkid
+[ -e /etc/blkid.tab ] && mv /etc/blkid.tab /etc/blkid/blkid.tab || :
+[ -e /etc/blkid.tab.old ] && mv /etc/blkid.tab.old /etc/blkid/blkid.tab.old || :
+postuninstall program: /sbin/ldconfig

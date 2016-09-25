@@ -1,0 +1,10 @@
+ca-certificates
+python(abi) = 2.7
+python27 >= 2.7.9
+python27(dist-packages)
+python27-dateutil >= 2.1
+python27-docutils >= 0.10
+python27-jmespath = 0.9.0
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

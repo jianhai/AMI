@@ -1,0 +1,44 @@
+/bin/sh
+/bin/sh
+/sbin/ldconfig
+/sbin/ldconfig
+audit-libs >= 1.0.8
+config(pam) = 1.1.8-12.33.amzn1
+coreutils
+cracklib-dicts >= 2.8
+glibc >= 2.3.90-37
+libaudit.so.1()(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.15)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.7)(64bit)
+libc.so.6(GLIBC_2.8)(64bit)
+libc.so.6(GLIBC_2.9)(64bit)
+libcrack.so.2()(64bit)
+libcrypt.so.1()(64bit)
+libcrypt.so.1(GLIBC_2.2.5)(64bit)
+libdb-4.7.so()(64bit)
+libdl.so.2()(64bit)
+libdl.so.2(GLIBC_2.2.5)(64bit)
+libnsl.so.1()(64bit)
+libnsl.so.1(GLIBC_2.2.5)(64bit)
+libpam.so.0()(64bit)
+libpam.so.0(LIBPAM_1.0)(64bit)
+libpam.so.0(LIBPAM_EXTENSION_1.0)(64bit)
+libpam.so.0(LIBPAM_EXTENSION_1.1)(64bit)
+libpam.so.0(LIBPAM_EXTENSION_1.1.1)(64bit)
+libpam.so.0(LIBPAM_MODUTIL_1.0)(64bit)
+libpam.so.0(LIBPAM_MODUTIL_1.1)(64bit)
+libpam.so.0(LIBPAM_MODUTIL_1.1.3)(64bit)
+libpwquality >= 0.9.9
+libselinux >= 2.0.90
+libselinux.so.1()(64bit)
+libutil.so.1()(64bit)
+libutil.so.1(GLIBC_2.2.5)(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

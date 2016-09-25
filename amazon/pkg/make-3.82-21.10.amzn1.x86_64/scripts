@@ -1,0 +1,10 @@
+postinstall scriptlet (using /bin/sh):
+if [ -f /usr/share/info/make.info.gz ]; then # for --excludedocs
+   /sbin/install-info /usr/share/info/make.info.gz /usr/share/info/dir --entry="* Make: (make).                 The GNU make utility." || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+   if [ -f /usr/share/info/make.info.gz ]; then # for --excludedocs
+      /sbin/install-info --delete /usr/share/info/make.info.gz /usr/share/info/dir --entry="* Make: (make).                 The GNU make utility." || :
+   fi
+fi

@@ -1,0 +1,9 @@
+* 五 7月 09 2010 22:50:58 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/ttmkfdir-3.0.9-32.1.el6
+
+* 五 5月 07 2010 03:11:54 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/ttmkfdir-3.0.9-23.el5
+
+* 五 5月 07 2010 00:17:31 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package ttmkfdir
+

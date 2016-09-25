@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/install-info --quiet --info-dir=/usr/share/info /usr/share/info/grep.info.gz || :
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+	/sbin/install-info --quiet --info-dir=/usr/share/info --delete /usr/share/info/grep.info.gz || :
+fi

@@ -1,0 +1,3 @@
+postinstall scriptlet (using /bin/sh):
+# Should not fail, as it would mean a problem in the mime database
+/usr/bin/update-mime-database /usr/share/mime &> /dev/null

@@ -1,0 +1,10 @@
+/sbin/ethtool
+/usr/sbin/ethtool
+/usr/share/doc/ethtool-3.15
+/usr/share/doc/ethtool-3.15/AUTHORS
+/usr/share/doc/ethtool-3.15/COPYING
+/usr/share/doc/ethtool-3.15/ChangeLog
+/usr/share/doc/ethtool-3.15/LICENSE
+/usr/share/doc/ethtool-3.15/NEWS
+/usr/share/doc/ethtool-3.15/README
+/usr/share/man/man8/ethtool.8.gz

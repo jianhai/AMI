@@ -1,0 +1,11 @@
+preinstall scriptlet (using /bin/sh):
+/usr/sbin/groupadd -g 84 -r -f screen
+:
+postinstall scriptlet (using /bin/sh):
+/sbin/install-info /usr/share/info/screen.info.gz /usr/share/info/dir --entry="* screen: (screen).				Terminal multiplexer." &> /dev/null
+:
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+	/sbin/install-info --delete /usr/share/info/screen.info.gz /usr/share/info/dir --entry="* screen: (screen).				Terminal multiplexer." &> /dev/null
+fi
+:

@@ -1,0 +1,7 @@
+/lib64/security/pam_ccreds.so
+/usr/sbin/cc_dump
+/usr/sbin/cc_test
+/usr/sbin/ccreds_chkpwd
+/usr/share/doc/pam_ccreds-10
+/usr/share/doc/pam_ccreds-10/AUTHORS
+/usr/share/doc/pam_ccreds-10/README

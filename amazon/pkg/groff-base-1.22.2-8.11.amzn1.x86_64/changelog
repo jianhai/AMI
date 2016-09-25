@@ -1,0 +1,527 @@
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/groff-1.22.2-8.el7
+
+* 三 3月 05 2014 Tom Kirchner <tjk@amazon.com>
+- groff-base has files conflicting with older groff
+
+* 三 1月 29 2014 Cristian Gafton <gafton@amazon.com>
+- clean up file manifest when not compiling X11 binaries
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 1.22.2-8
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.22.2-7
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/groff-1.22.2-6.el7
+
+* 二 7月 23 2013 Peter Schiffer <pschiffe@redhat.com> 1.22.2-6
+- don't use /usr/bin/env in shebang
+
+* 一 7月 22 2013 Peter Schiffer <pschiffe@redhat.com> 1.22.2-5
+- removed BSD and MIT license files - the text is already included
+  in the upstream tarball
+
+* 三 7月 17 2013 Petr Pisar <ppisar@redhat.com> - 1.22.2-4
+- Perl 5.18 rebuild
+
+* 二 7月 09 2013 Peter Schiffer <pschiffe@redhat.com> 1.22.2-3
+- added BSD and MIT license files
+
+* 一 3月 11 2013 Peter Schiffer <pschiffe@redhat.com> 1.22.2-2
+- resolves: #915682
+  moved html device to the groff-base subpackage
+
+* 二 2月 12 2013 Peter Schiffer <pschiffe@redhat.com> 1.22.2-1
+- resolves: #909154
+  updated to 1.22.2
+- cleaned .spec file
+
+* 二 1月 01 2013 Jan Vcelak <jvcelak@redhat.com> 1.22.1-1
+- new upstream release (#890973)
+  + various fixes in manual pages
+  + various fixes and improvements in macros
+  + new gropdf driver for generating PDF files
+- fix: backslash-period escape does not work (#682857)
+- fix: groff ftbfs - patch does not apply (#885225)
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.21-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 二 5月 29 2012 Jan Vcelak <jvcelak@redhat.com> 1.21-9
+- older security fixes (#709415, #720060):
+  + CVE-2009-5044: insecure temporary file handling in pdfroff
+  + CVE-2009-5080: improper handling of failed attempts to create temporary directories in eqn2graph/pic2graph/grap2graph
+  + CVE-2009-5081: roff2.pl and groffer.pl use easy-to-guess temporary file names
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.21-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 10月 12 2011 Jan Vcelak <jvcelak@redhat.com> 1.21-7
+- update: move local configuration from /usr/share/groff/site-* to /etc/groff/*
+  (change the paths in the app instead of symlinking to avoid RPM issues)
+- fix groff package: add install-info to %post and %preun
+
+* 二 10月 11 2011 Jan Vcelak <jvcelak@redhat.com> 1.21-6
+- fix build warnings: File listed twice
+
+* 二 9月 20 2011 Jan Vcelak <jvcelak@redhat.com> 1.21-5
+- fix #739318: fix upgrade from previous versions (workaround for RPM bug)
+
+* 五 9月 16 2011 Jan Vcelak <jvcelak@redhat.com> 1.21-4
+- new subpackage: groff-base (minimal for manual page rendering)
+- move shared data used by gxditview to groff-x11 subpackage
+- move groff reference manual to groff-doc subpackage
+- make groff-doc an architecture independent package
+- move local configuration from /usr/share/groff/site-* to /etc/groff/*
+
+* 五 6月 17 2011 Jan Vcelak <jvcelak@redhat.com> 1.21-3
+- fix #678572: groffer libdir is incorrect
+- fix #709474: unowned groff doc dir
+- fix #712904: Japanese bold/underline text not displayed correctly (Daiki Ueno <dueno@redhat.com>)
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.21-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 1月 21 2011 Jan Vcelak <jvcelak@redhat.com> 1.21-1
+- package rebase to 1.21
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/groff-1.18.1.4-21.el6
+
+* 五 11月 26 2010 Jan Vcelak <jvcelak@redhat.com> 1.20.1-3
+- experimental support of Japanese (charclass and wcwidth patches)
+  thanks to Daiki Ueno (dueno@redhat.com)
+
+* 五 7月 30 2010 Jan Vcelak <jvcelak@redhat.com> 1.20.1-2
+- Resolves: #477394 - Please convert to new font packaging guidelines
+
+* 四 7月 15 2010 Cristian Gafton <gafton@amazon.com>
+- use X11 cnditional
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/groff-1.18.1.4-19.el6
+- import source package RHEL6/groff-1.18.1.4-18.1.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/groff-1.18.1.1-11.1
+- added submodule prep for package groff
+
+* 五 3月 19 2010 Jan Vcelak <jvcelak@redhat.com> - 1.20.1-1
+- Resolves: #530788
+
+* 五 3月 12 2010 Jan Vcelak <jvcelak@redhat.com> - 1.20.1-0
+- Package rebase to upstream 1.20.1
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.18.1.4-18
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.18.1.4-17
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 10月 19 2008 Robert Scheck <robert@fedoraproject.org> - 1.18.1.14-16
+- Fixed wrong symlinking of man pages into %{_bindir} after simplifying
+
+* 一 9月 29 2008 Stepan Kasal <skasal@redhat.com> - 1.18.1.14-15
+- Replace groff-1.18-nohtml.patch by a code in spec file
+- fix groff-1.18-gzip.patch to apply cleanly
+- simplify the code for symlinking in %install
+
+* 三 3月 26 2008 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-14
+- 175459 warning goes on stderr
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.18.1.4-13
+- Autorebuild for GCC 4.3
+
+* 三 1月 23 2008 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-12
+- rewrite nroff for using -Tencoding with main support of utf8
+- Resolves: rhbz#251064
+
+* 四 1月 03 2008 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-11
+- fix for gcc4.3.0
+
+* 一 10月 08 2007 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-10
+- path for groffer wasn't set correctly #89210
+
+* 一 9月 17 2007 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-9
+- fix license
+
+* 二 9月 11 2007 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-8
+- another change in spec for review
+
+* 四 8月 16 2007 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-7
+- rebuild
+- another encoding are print correct with nroff
+- Resolves: rhbz#251064
+
+* 一 7月 02 2007 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-5
+- Resolves: rhbz#245934
+
+* 二 2月 27 2007 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-4
+- merge review
+- rhbz#225859 review
+
+* 一 1月 22 2007 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-2
+- changes in spec, remove patches groff-1.18.1.1-bigendian.patch, groff-xlibs.patch
+
+* 一 10月 23 2006 Marcela Maslanova <mmaslano@redhat.com> - 1.18.1.4-1
+- new version from upstream - update groffer
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.18.1.1-11.1
+- rebuild
+
+* 三 4月 26 2006 Adam Jackson <ajackson@redhat.com> - 1.18.1.1-11
+- Rebuild for updated imake build rules.
+
+* 四 2月 16 2006 Miroslav Lichvar <mlichvar@redhat.com> - 1.18.1.1-10
+- use mktemp for temporary files in pic2graph and eqn2graph scripts
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.18.1.1-9.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.18.1.1-9.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Miroslav Lichvar <mlichvar@redhat.com> - 1.18.1.1-9
+- remove gxditview from groff package (#179684)
+- remove obsolete "--enable-japanese" configure option
+
+* 四 1月 12 2006 Miroslav Lichvar <mlichvar@redhat.com> - 1.18.1.1-8
+- fix segfault in grotty on 64-bit big endian machines (#176904)
+- fix assertion failure on abort message (#141912)
+- attempt to fix a space problem with several european languages (#137728)
+
+* 五 1月 06 2006 Jindrich Novy <jnovy@redhat.com> - 1.18.1.1-7
+- require X dependencies only for gxditview (#177118)
+- work if bash's noclobber is on (#127492)
+
+* 四 1月 05 2006 Jindrich Novy <jnovy@redhat.com> - 1.18.1.1-6
+- add BuildRequires imake and update dependencies for modular X
+- spec cleanup
+- fix compilation with gcc-4.1.0
+
+* 三 11月 24 2004 Miloslav Trmac <mitr@redhat.com> - 1.18.1.1-5
+- Convert also mmroff.1 to UTF-8
+
+* 六 11月 20 2004 Miloslav Trmac <mitr@redhat.com> - 1.18.1.1-4
+- Convert man pages to UTF-8
+
+* 二 10月 19 2004 Thomas Woerner <twoerner@redhat.com> 1.18.1.1-3
+- fixed groffer scripte security problem (#136314)
+
+* 四 9月 16 2004 Thomas Woerner <twoerner@redhat.com> 1.18.1.1-2
+- fixed DoCharacter calls in xditview (#110812)
+- fixed fclose called once too often (#132690): thanks to Ulrich Drepper for
+  the bug hunting
+
+* 二 6月 29 2004 Thomas Woerner <twoerner@redhat.com> 1.18.1.1-1
+- new version 1.18.1.1 (fixed groffer script)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 6月 07 2004 Thomas Woerner <twoerner@redhat.com> 1.18.1-35
+- fixed build prereq and requires
+
+* 一 3月 08 2004 Thomas Woerner <twoerner@redhat.com> 1.18.1-34
+- new debian groff patch: groff_1.18.1-15.diff
+- new fix for debian patch: groff-1.18.1-fix15.patch
+- fixed width in devutf8 font M: groff-1.18.1-devutf8.patch
+- removed iconv patch
+
+* 一 3月 01 2004 Thomas Woerner <twoerner@redhat.com> 1.18.1-33
+- fixed nroff script: convert output to locale charmap
+
+* 三 2月 25 2004 Thomas Woerner <twoerner@redhat.com> 1.18.1-32
+- fixed nroff script input (#116596)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 09 2004 Adrian Havill <havill@redhat.com>
+- provide I18N version of nroff that accepts --legacy parameter
+  (used by man-1.5m2-2)
+
+* 四 12月 18 2003 Thomas Woerner <twoerner@redhat.com>
+- fixed missing BuildRequires (#110574)
+
+* 二 9月 23 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- allow compiling this without XFree86
+
+* 三 8月 06 2003 Thomas Woerner <twoerner@redhat.com> 1.18.1-28.2
+- new devutf8 font description
+- use -Tutf8 for ru_*.UTF-8 in nroff.sh
+- fixes #88618 (ru_RU man pages in cambridge are using UTF-8, now)
+
+* 五 6月 13 2003 Thomas Woerner <twoerner@redhat.com> 1.18.1-28
+- rebuild (debian-9)
+
+* 二 6月 10 2003 Thomas Woerner <twoerner@redhat.com> 1.18.1-27
+- going back to 1.18.1-4 from debian (the newer versions did not work properly)
+- fixed nroff.sh for ru_RU.(!UTF-8)
+
+* 一 5月 19 2003 Thomas Woerner <twoerner@redhat.com> 1.18.1-26
+- fix input and output handler for 1.18.1-9 to be compatible with 1.18.1-4
+
+* 二 4月 29 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- 1.18.1-9 from debian
+
+* 二 4月 15 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- 1.18.1-8 from debian: use latin1 instead of C locale
+
+* 日 3月 09 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to debian patch 1.18.1-7 located at
+  ftp://ftp.debian.org/debian/pool/main/g/groff/
+
+* 四 2月 13 2003 Elliot Lee <sopwith@redhat.com> 1.18.1-21
+- groff-xlibs.patch to fix ppc64 builds
+
+* 三 2月 12 2003 Tim Waugh <twaugh@redhat.com> 1.18.1-20
+- Make the iconv patch a little less broken (bug #84132).
+
+* 二 2月 11 2003 Thomas Woerner <twoerner@redhat.com> 1.18.1-19
+- added new iconv patch
+
+* 二 2月 11 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- disable the iconv patch, this will go into a wrapper within the man rpm
+
+* 一 2月 10 2003 Thomas Woerner <twoerner@redhat.com> 1.18.1-17
+- fixed source of gzipped files
+
+* 一 2月 10 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- add Korean support from ynakai@redhat.com, #83933
+
+* 日 2月 09 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- remove automatic conversion for ru_* and cz_*
+- add 8bit patch
+- update to 1.18.1-4 debian patch
+- disable Patch8: groff-1.18.1-multichar.patch for now
+- add ugly patch within the iconv patch to partly fix display of russian
+  man-pages with "-Tnippon"
+
+* 四 2月 06 2003 Tim Waugh <twaugh@redhat.com> 1.18.1-11
+- Unbreak EUC-JP (bug #83608).
+
+* 一 2月 03 2003 Thomas Woerner <twoerner@redhat.com> 1.18.1-10
+- fixed missing minus
+- added iconv conversion script
+
+* 五 1月 31 2003 Tim Waugh <twaugh@redhat.com> 1.18.1-9
+- Fix UTF-8.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 1月 15 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- also add hyphen changes to man.local in addition to mdoc.local
+
+* 二 1月 14 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- really include mdoc.local changes from debian
+
+* 六 1月 11 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- fix #81401, maybe also #57410
+
+* 五 1月 03 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- add more documentation #80729
+
+* 三 1月 01 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- hot fix for devascii8 breakage
+
+* 日 12月 29 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to debian patch 1.18.1-2 located at
+  ftp://ftp.debian.org/debian/pool/main/g/groff/
+
+* 一 11月 18 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.18.1
+- use newest debian patch on top of it
+
+* 一 11月 04 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- add gzip decompression patch
+
+* 六 11月 02 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.18.1
+- apply groff_1.18-7 from debian
+- remove some not-packaged files
+- rm old printfilters completely
+
+* 五 10月 04 2002 Elliot Lee <sopwith@redhat.com> 1.18-7
+- Patch7 - move pfbtops to CCPROGDIRS (it needs to link to C++ stuff)
+
+* 六 8月 31 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- add patch for #72924
+
+* 一 8月 26 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- remove README.A4  #65920
+
+* 日 8月 11 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- use info files as installed by groff package
+- completely disable older printconf stuff
+
+* 四 8月 08 2002 Yukihiro Nakai <ynakai@redhat.com>
+- link docj.tmac to doc.tmac #57560
+
+* 四 8月 01 2002 Harald Hoyer <harald@redhat.de>
+- update to 1.18
+- mmroff(7) is now mmroff(1)
+
+* 二 7月 23 2002 Tim Powers <timp@redhat.com>
+- build using gcc-3.2-0.1
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 6月 12 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- prereq install-info and add post/preun for info files
+
+* 三 5月 29 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- add info files #64667
+
+* 五 2月 22 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- rebuild in new environment
+
+* 日 2月 17 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to newest debian patch 1.17.2-16
+- patch4 is already included in that
+
+* 四 1月 31 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- disable printconf support, but do not yet delete it from the source rpm
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 1月 07 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- check string input
+
+* 六 1月 05 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- add URL tag
+- update to newest debian patch 1.17.2-13
+
+* 四 12月 06 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to newest debian patch 1.17.2-12
+
+* 三 8月 15 2001 Mike A. Harris <mharris@redhat.com> 1.17.2-3
+- Added symlink from soelim to zsoelim, fixing bug (#51037)
+
+* 二 8月 14 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- fixes security bug #50494
+
+* 日 8月 12 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.17.2
+- strerror patch is not needed anymore
+- apply newest debian patch
+
+* 五 4月 27 2001 Bill Nottingham <notting@redhat.com>
+- rebuild for C++ exception handling on ia64
+
+* 二 4月 03 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- do not change groff to use /etc/papersize. Deleted the changes
+  in the debian patch.
+
+* 五 3月 30 2001 Trond Eivind GlomsrĹd <teg@redhat.com>
+- Add hyphen.cs - file generated as described in Czech how-to, 6.7
+
+* 三 3月 28 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- updated to newest debian patch to get nippon/ascii8 support
+  better working
+
+* 五 2月 09 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- switch to printconf filtration rules
+
+* 二 1月 09 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- change app-defaults to /usr/X11R6/lib/X11/app-defaults/
+  and do not mark it as config file
+
+* 四 12月 14 2000 Yukihiro Nakai <ynakai@redhat.com>
+- Add Japanese patch from RHL7J
+
+* 五 8月 04 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to bug-fix release 1.16.1
+
+* 五 7月 28 2000 Tim Waugh <twaugh@redhat.com>
+- Install troff-to-ps.fpi in /usr/lib/rhs-printfilters (#13634).
+
+* 三 7月 19 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild with gcc-2.96-41.
+
+* 一 7月 17 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild to fix miscompilation manifesting in alpha build of tcltk.
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 7月 04 2000 Jakub Jelinek <jakub@redhat.com>
+- Rebuild with new C++
+
+* 五 6月 09 2000 Bill Nottingham <notting@redhat.com>
+- move mmroff to -perl
+
+* 三 6月 07 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix build
+- FHS
+- 1.16
+
+* 日 5月 14 2000 Jeff Johnson <jbj@redhat.com>
+- install tmac.mse (FWIW tmac.se looks broken) to fix dangling symlink (#10757).
+- add README.A4, how to set up for A4 paper (#8276).
+- add other documents to package.
+
+* 四 3月 02 2000 Jeff Johnson <jbj@redhat.com>
+- permit sourcing on regular files within cwd tree (unless -U specified).
+
+* 三 2月 09 2000 Jeff Johnson <jbj@redhat.com>
+- fix incorrectly installed tmac.m file (#8362).
+
+* 一 2月 07 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- check if build system is sane again
+
+* 四 2月 03 2000 Cristian Gafton <gafton@redhat.com>
+- fix description and summary
+- man pages are compressed. This is ugly.
+
+* 一 1月 31 2000 Bill Nottingham <notting@redhat.com>
+- put the binaries actually in the package *oops*
+
+* 五 1月 28 2000 Bill Nottingham <notting@redhat.com>
+- split perl components into separate subpackage
+
+* 三 12月 29 1999 Bill Nottingham <notting@redhat.com>
+- update to 1.15
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 9)
+
+* 二 2月 16 1999 Cristian Gafton <gafton@redhat.com>
+- glibc 2.1 patch for xditview (#992)
+
+* 四 10月 22 1998 Bill Nottingham <notting@redhat.com>
+- build for Raw Hide
+
+* 四 9月 10 1998 Cristian Gafton <gafton@redhat.com>
+- fix makefiles to work with bash2
+
+* 五 5月 08 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 4月 30 1998 Cristian Gafton <gafton@redhat.com>
+- use g++ for C++ code
+
+* 三 4月 08 1998 Cristian Gafton <gafton@redhat.com>
+- manhattan and buildroot
+
+* 一 11月 03 1997 Michael Fulbright <msf@redhat.com>
+- made xdefaults file a config file
+
+* 四 10月 23 1997 Erik Troan <ewt@redhat.com>
+- split perl components into separate subpackage
+
+* 二 10月 21 1997 Michael Fulbright <msf@redhat.com>
+- updated to 1.11a
+- added safe troff-to-ps.fpi
+
+* 二 10月 14 1997 Michael Fulbright <msf@redhat.com>
+- removed troff-to-ps.fpi for security reasons.
+
+* 五 6月 13 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

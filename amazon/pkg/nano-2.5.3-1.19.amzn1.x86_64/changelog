@@ -1,0 +1,273 @@
+* 四 3月 31 2016 Tom Kirchner <tjk@amazon.com>
+- Add check section in case tests are added
+- Remove remaining html file
+- import source package F24/nano-2.5.3-1.fc24
+- import source package F24/nano-2.5.2-2.fc24
+- import source package F24/nano-2.5.1-2.fc24
+- import source package F24/nano-2.5.1-1.fc24
+- import source package F23/nano-2.4.2-3.fc23
+- import source package F23/nano-2.4.2-2.fc23
+- import source package F23/nano-2.4.2-1.fc23
+- import source package F22/nano-2.3.6-7.fc22
+- import source package F22/nano-2.3.6-6.fc22
+- import source package F21/nano-2.3.4-6.fc21
+- import source package F21/nano-2.3.4-3.fc21
+- import source package F20/nano-2.3.2-5.fc20
+- import source package F20/nano-2.3.2-4.fc20
+
+* 五 2月 26 2016 Kamil Dudka <kdudka@redhat.com> - 2.5.3-1
+- new upstream release
+
+* 五 2月 12 2016 Kamil Dudka <kdudka@redhat.com> - 2.5.2-2
+- new upstream release
+
+* 四 2月 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 2.5.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
+* 一 1月 11 2016 Kamil Dudka <kdudka@redhat.com> - 2.5.1-1
+- new upstream release
+
+* 日 12月 06 2015 Kamil Dudka <kdudka@redhat.com> - 2.5.0-1
+- new upstream release
+
+* 三 11月 18 2015 Kamil Dudka <kdudka@redhat.com> - 2.4.3-1
+- new upstream release
+
+* 一 10月 12 2015 Kamil Dudka <kdudka@redhat.com> - 2.4.2-2
+- enable syntax highlighting by default (#1270712)
+- remove installed HTML documentation (to prevent a build failure in rawhide)
+
+* 二 7月 07 2015 Kamil Dudka <kdudka@redhat.com> - 2.4.2-1
+- new upstream release
+
+* 三 6月 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
+
+* 二 4月 14 2015 Kamil Dudka <kdudka@redhat.com> - 2.4.1-1
+- new upstream release
+
+* 一 3月 23 2015 Kamil Dudka <kdudka@redhat.com> - 2.4.0-1
+- new upstream release
+
+* 二 2月 24 2015 Rupert Shuttleworth <ruperts@amazon.com>
+- Conditionalise usrmerge and use more specific filenames
+
+* 六 2月 21 2015 Till Maas <opensource@till.name> - 2.3.6-7
+- Rebuilt for Fedora 23 Change
+  https://fedoraproject.org/wiki/Changes/Harden_all_packages_with_position-independent_code
+
+* 二 1月 27 2015 Kamil Dudka <kdudka@redhat.com> - 2.3.6-6
+- additional fixes to the file locking feature of nano (#1186384)
+
+* 一 1月 26 2015 Kamil Dudka <kdudka@redhat.com> - 2.3.6-5
+- fix the file locking feature of nano (#1183320)
+
+* 一 1月 05 2015 Kamil Dudka <kdudka@redhat.com> - 2.3.6-4
+- drop BR for autoconf, which is no longer needed
+
+* 一 1月 05 2015 Kamil Dudka <kdudka@redhat.com> - 2.3.6-3
+- do not use closed file descriptor when setting backup's timestamp (#1177155)
+
+* 日 8月 17 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
+* 四 7月 17 2014 Kamil Dudka <kdudka@redhat.com> - 2.3.6-1
+- new upstream release
+
+* 三 7月 16 2014 Kamil Dudka <kdudka@redhat.com> - 2.3.5-1
+- new upstream release
+
+* 六 6月 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* 二 6月 03 2014 Kamil Dudka <kdudka@redhat.com> - 2.3.4-1
+- new upstream release
+
+* 四 5月 29 2014 Kamil Dudka <kdudka@redhat.com> - 2.3.3-1
+- new upstream release
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/nano-2.3.1-10.el7
+
+* 三 1月 15 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/nano-2.3.1-8.el7
+
+* 五 8月 09 2013 Kamil Dudka <kdudka@redhat.com> - 2.3.2-4
+- document the --poslog (-P) option in nano.1 man page
+
+* 六 8月 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 三 3月 27 2013 Kamil Dudka <kdudka@redhat.com> - 2.3.2-2
+- add "BuildRequires: file-devel" to build libmagic support (#927994)
+
+* 二 3月 26 2013 Kamil Dudka <kdudka@redhat.com> - 2.3.2-1
+- new upstream release
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.1-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 8月 28 2012 Kamil Dudka <kdudka@redhat.com> - 2.3.1-5
+- fix specfile issues reported by the fedora-review script
+
+* 五 7月 20 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 三 1月 25 2012 Harald Hoyer <harald@redhat.com> 2.3.1-3
+- install everything in /usr
+  https://fedoraproject.org/wiki/Features/UsrMove
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 5月 11 2011 Kamil Dudka <kdudka@redhat.com> - 2.3.1-1
+- new upstream release
+
+* 四 3月 03 2011 Kamil Dudka <kdudka@redhat.com> - 2.3.0-1
+- new upstream release (#680736)
+- use hunspell as default spell-checker (#681000)
+- fix for http://thread.gmane.org/gmane.editors.nano.devel/2911
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2.6-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nano-2.0.9-7.el6
+
+* 日 11月 28 2010 Kamil Dudka <kdudka@redhat.com> - 2.2.6-2
+- fix bugs introduced by patches added in 2.2.6-1 (#657875)
+
+* 一 11月 22 2010 Kamil Dudka <kdudka@redhat.com> - 2.2.6-1
+- new upstream release (#655978)
+- increase code robustness (patches related to CVE-2010-1160, CVE-2010-1161)
+
+* 六 8月 07 2010 Kamil Dudka <kdudka@redhat.com> - 2.2.5-1
+- new upstream release (#621857)
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/nano-2.0.9-6.el6
+- import source package RHEL6/nano-2.0.9-5.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/nano-1.3.12-1.1
+- added submodule prep for package nano
+
+* 四 4月 15 2010 Kamil Dudka <kdudka@redhat.com> - 2.2.4-1
+- new upstream release
+- CVE-2010-1160, CVE-2010-1161 (#582739)
+
+* 三 3月 03 2010 Kamil Dudka <kdudka@redhat.com> - 2.2.3-1
+- new upstream release
+
+* 五 1月 29 2010 Kamil Dudka <kdudka@redhat.com> - 2.2.2-1
+- new upstream release
+
+* 日 12月 27 2009 Kamil Dudka <kdudka@redhat.com> - 2.2.1-1
+- new upstream release
+
+* 二 12月 01 2009 Kamil Dudka <kdudka@redhat.com> - 2.2.0-1
+- new upstream release
+
+* 三 11月 25 2009 Kamil Dudka <kdudka@redhat.com> - 2.0.9-7
+- sanitize specfile according to Fedora Packaging Guidelines
+
+* 四 10月 15 2009 Kamil Dudka <kdudka@redhat.com> - 2.0.9-6
+- use nanorc.sample as base of /etc/nanorc
+
+* 二 10月 13 2009 Kamil Dudka <kdudka@redhat.com> - 2.0.9-5
+- fix build failure of the last build
+
+* 二 10月 13 2009 Kamil Dudka <kdudka@redhat.com> - 2.0.9-4
+- ship a system-wide configuration file along with the nano package
+- disable line wrapping by default (#528359)
+
+* 一 9月 21 2009 Kamil Dudka <kdudka@redhat.com> - 2.0.9-3
+- suppress warnings for __attribute__((warn_unused_result)) (#523951)
+
+* 五 9月 18 2009 Kamil Dudka <kdudka@redhat.com> - 2.0.9-2
+- install binaries to /bin (#168340)
+
+* 五 9月 18 2009 Kamil Dudka <kdudka@redhat.com> - 2.0.9-1
+- new upstream release
+- dropped patch no longer needed (possible change in behavior though negligible)
+- fixed broken HTML doc in FR locales (#523951)
+
+* 四 9月 17 2009 Kamil Dudka <kdudka@redhat.com> - 2.0.6-8
+- do process install-info only without --excludedocs(#515943)
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.6-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.6-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 4月 04 2008 Ville Skyttä <ville.skytta at iki.fi> - 2.0.6-5
+- Mark localized man pages with %lang, fix French nanorc(5) (#322271).
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.0.6-4
+- Autorebuild for GCC 4.3
+
+* 五 12月 07 2007 Jason L Tibbitts III <tibbs@math.uh.edu> - 2.0.6-3
+- Pass rnano.1 through iconv to silence the final rpmlint complaint
+  and finish up the merge review.
+
+* 三 8月 22 2007 David Woodhouse <dwmw2@infradead.org> - 2.0.6-2
+- Update licence
+- Fix open(O_CREAT) calls without mode
+
+* 日 6月 03 2007 Florian La Roche <laroche@redhat.com> - 2.0.6-1
+- update to 2.0.6
+
+* 一 2月 05 2007 Florian La Roche <laroche@redhat.com> - 2.0.3-1
+- update to 2.0.3
+- update spec file syntax, fix scripts rh#220527
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.3.12-1.1
+- rebuild
+
+* 一 7月 10 2006 David Woodhouse <dwmw2@redhat.com> - 1.3.12-1
+- Update to 1.3.12
+
+* 二 5月 16 2006 David Woodhouse <dwmw2@redhat.com> - 1.3.11-1
+- Update to 1.3.11
+- BuildRequires: groff (#191946)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.3.8-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.3.8-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 9月 05 2005 David Woodhouse <dwmw2@redhat.com> 1.3.8-1
+- 1.3.8
+
+* 三 3月 02 2005 David Woodhouse <dwmw2@redhat.com> 1.3.5-0.20050302
+- Update to post-1.3.5 CVS tree to get UTF-8 support.
+
+* 三 8月 04 2004 David Woodhouse <dwmw2@redhat.com> 1.2.4-1
+- 1.2.4
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 4月 02 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- 1.2.3
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 8月 11 2003 Bill Nottingham <notting@redhat.com> 1.2.1-4
+- build in different environment
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 06 2003 Bill Nottingham <notting@redhat.com> 1.2.1-2
+- description tweaks
+
+* 一 5月 05 2003 Bill Nottingham <notting@redhat.com> 1.2.1-1
+- initial build, tweak upstream spec file
+

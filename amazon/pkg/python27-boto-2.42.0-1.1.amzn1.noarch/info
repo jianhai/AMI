@@ -1,0 +1,24 @@
+Name        : python27-boto
+Version     : 2.42.0
+Release     : 1.1.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时41分08秒
+Group       : Development/Languages
+Size        : 9859309
+License     : MIT
+Signature   : RSA/SHA256, 2016年08月16日 星期二 22时32分26秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-boto-2.42.0-1.1.amzn1.src.rpm
+Build Date  : 2016年08月16日 星期二 01时04分55秒
+Build Host  : build-64011.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://aws.amazon.com/sdkforpython/
+Summary     : Python interface to Amazon Web Services
+Description :
+Boto is a Python library that provides an easy to use interface to Amazon Web
+Services(AWS). It supports interfacing with all AWS services. This package also
+includes a number of command line tools which can be used to perform typical
+tasks with AWS as well as provide examples on how to use Boto.
+
+This package is meant to be used with Python 2.7.

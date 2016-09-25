@@ -1,0 +1,5 @@
+/bin/bash
+/etc/cron.d
+config(crontabs) = 1.10-33.9.amzn1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

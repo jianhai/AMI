@@ -1,0 +1,81 @@
+* 二 2月 03 2015 Matt Nierzwicki <nierzwic@amazon.com>
+- Build for multiple pythons
+
+* 五 6月 08 2012 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/PyYAML-3.10-3.el6
+
+* 五 4月 27 2012 John Eckersberg <jeckersb@redhat.com> - 3.10-3
+- Add Provides for python-yaml (BZ#740390)
+
+* 四 1月 12 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 8月 04 2011 Cristian Gafton <gafton@amazon.com>
+- provide a versioned provide of the old package name python-yaml
+
+* 三 7月 27 2011 Nathan Blackham <blackham@amazon.com>
+- Adding a provides for python-yaml for backward compatibility
+
+* 四 7月 21 2011 Cristian Gafton <gafton@amazon.com>
+- obsoletes: python-yaml
+
+* 二 7月 19 2011 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/PyYAML-3.09-5.el6
+- setup complete for package PyYAML
+
+* 四 6月 23 2011 John Eckersberg <jeckersb@redhat.com> - 3.10-1
+- New upstream release 3.10
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.09-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 2月 02 2011 John Eckersberg <jeckersb@redhat.com> - 3.09-7
+- Add support to build for python 3
+
+* 六 1月 22 2011 Cristian Gafton <gafton@amazon.com>
+- import source package GOBI/PyYAML-3.09-5.el6
+- setup complete for package PyYAML
+
+* 二 7月 27 2010 Mamoru Tasaka <mtasaka@ioa.s.u-tokyo.ac.jp> - 3.09-6
+- Bump release number for upgrade path
+
+* 三 7月 21 2010 David Malcolm <dmalcolm@redhat.com> - 3.09-3
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 五 10月 02 2009 John Eckersberg <jeckersb@redhat.com> - 3.09-1
+- New upstream release 3.09
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.08-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 - John Eckersberg <jeckersb@redhat.com> - 3.08-5
+- Minor tweaks to spec file aligning with latest Fedora packaging guidelines
+- Enforce inclusion of libyaml in build with --with-libyaml option to setup.py
+- Deliver to %{python_sitearch} instead of %{python_sitelib} due to _yaml.so
+- Thanks to Gareth Armstrong <gareth.armstrong@hp.com>
+
+* 二 3月 03 2009 John Eckersberg <jeckersb@redhat.com> - 3.08-4
+- Correction, change libyaml to libyaml-devel in BuildRequires
+
+* 一 3月 02 2009 John Eckersberg <jeckersb@redhat.com> - 3.08-3
+- Add libyaml to BuildRequires
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.08-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 18 2009 John Eckersberg <jeckersb@redhat.com> - 3.08-1
+- New upstream release
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 3.06-2
+- Rebuild for Python 2.6
+
+* 五 10月 24 2008 John Eckersberg <jeckersb@redhat.com> - 3.06-1
+- New upstream release
+
+* 三 1月 02 2008 John Eckersberg <jeckersb@redhat.com> - 3.05-2
+- Remove explicit dependency on python >= 2.3
+- Remove executable on example script in docs
+
+* 一 12月 17 2007 John Eckersberg <jeckersb@redhat.com> - 3.05-1
+- Initial packaging for Fedora
+

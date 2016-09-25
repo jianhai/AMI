@@ -1,0 +1,31 @@
+Name        : e2fsprogs
+Version     : 1.42.12
+Release     : 4.40.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分46秒
+Group       : System Environment/Base
+Size        : 2938520
+License     : GPLv2
+Signature   : RSA/SHA256, 2015年08月22日 星期六 02时06分34秒, Key ID bcb4a85b21c0f39f
+Source RPM  : e2fsprogs-1.42.12-4.40.amzn1.src.rpm
+Build Date  : 2015年08月21日 星期五 00时00分03秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://e2fsprogs.sourceforge.net/
+Summary     : Utilities for managing ext2, ext3, and ext4 filesystems
+Description :
+The e2fsprogs package contains a number of utilities for creating,
+checking, modifying, and correcting any inconsistencies in second,
+third and fourth extended (ext2/ext3/ext4) filesystems. E2fsprogs
+contains e2fsck (used to repair filesystem inconsistencies after an
+unclean shutdown), mke2fs (used to initialize a partition to contain
+an empty ext2 filesystem), debugfs (used to examine the internal
+structure of a filesystem, to manually repair a corrupted
+filesystem, or to create test cases for e2fsck), tune2fs (used to
+modify filesystem parameters), and most of the other core ext2fs
+filesystem utilities.
+
+You should install the e2fsprogs package if you need to manage the
+performance of an ext2, ext3, or ext4 filesystem.

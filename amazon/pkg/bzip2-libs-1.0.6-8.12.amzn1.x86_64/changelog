@@ -1,0 +1,30 @@
+* 六 1月 15 2011 12:34:14 UTC Cristian Gafton <gafton@amazon.com>
+- remove extraneous references to bad version merges
+
+* 四 12月 30 2010 17:50:38 UTC Ben Howard <behoward@amazon.com>
+- Merge patch was applied in source, commented out patch
+
+* 四 12月 30 2010 17:40:47 UTC Ben Howard <behoward@amazon.com>
+- Versioning error prevented build, fixed
+
+* 四 12月 30 2010 17:37:17 UTC Ben Howard <behoward@amazon.com>
+- Update to RHEL6 version
+
+* 四 12月 02 2010 00:57:24 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bzip2-1.0.5-7.el6_0
+
+* 二 9月 21 2010 20:32:46 UTC Cristian Gafton <gafton@amazon.com>
+- update to 1.0.6, which removes a potential security vulnerability: CVE-2010-0405.
+
+* 五 7月 09 2010 21:38:57 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bzip2-1.0.5-6.1.el6
+
+* 五 5月 07 2010 00:41:02 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/bzip2-1.0.3-4.el5_2
+
+* 五 5月 07 2010 00:41:01 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/bzip2-1.0.3-3
+
+* 五 5月 07 2010 00:11:48 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package bzip2
+

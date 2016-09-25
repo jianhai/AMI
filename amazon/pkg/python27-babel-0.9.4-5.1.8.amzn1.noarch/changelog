@@ -1,0 +1,53 @@
+* 一 3月 02 2015 Ben Cressey <bcressey@amazon.com>
+- add alternatives for babel
+
+* 二 2月 03 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/babel-0.9.4-5.1.el6
+- setup complete for package babel
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.9.4-5.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.4-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 3月 28 2009 Robert Scheck <robert@fedoraproject.org> - 0.9.4-4
+- Added missing requires to python-setuptools for pkg_resources
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.9.4-2
+- Rebuild for Python 2.6
+
+* 一 8月 25 2008 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.9.4-1
+- Update to 0.9.4
+
+* 四 7月 10 2008 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.9.3-1
+- Update to 0.9.3
+
+* 日 12月 16 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.9.1-1
+- Update to 0.9.1
+
+* 二 8月 28 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.9-2
+- BR python-setuptools-devel
+
+* 一 8月 27 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.9-1
+- Update to 0.9
+
+* 一 7月 02 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.8.1-1
+- Update to 0.8.1
+- Remove upstreamed patch.
+
+* 五 6月 29 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.8-3
+- Replace patch with one that actually applies.
+
+* 五 6月 29 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.8-2
+- Apply upstream patch to rename command line script to "pybabel" - BZ#246208
+
+* 四 6月 21 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 0.8-1
+- First version for Fedora
+

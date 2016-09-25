@@ -1,0 +1,5 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+[ -x /sbin/telinit ] && [ -p /dev/initctl ]  && /sbin/telinit U
+exit 0
+postuninstall program: /sbin/ldconfig

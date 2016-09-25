@@ -1,0 +1,145 @@
+* 三 1月 06 2016 Ian Weller <iweller@amazon.com>
+- Ensure lib64_dir is always set in path_locations
+
+* 四 8月 27 2015 Ethan Faust <efaust@amazon.com>
+- Fix bugs with virtualenv's handling of paths and lib64 on the Amazon Linux AMI
+
+* 四 3月 12 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Update to 12.0.7; add python34 subpackage
+
+* 一 3月 09 2015 Ben Cressey <bcressey@amazon.com>
+- bump release to fix package conflict
+
+* 三 2月 11 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 三 9月 04 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-virtualenv-1.10.1-1.el6
+
+* 四 8月 15 2013 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.10.1-1
+- Upstream upgraded pip to v1.4.1
+- Upstream upgraded setuptools to v0.9.8 (fixes CVE-2013-1633)
+
+* 日 8月 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.9.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 三 5月 29 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-virtualenv-1.9.1-1.el6
+
+* 二 5月 14 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 1.9.1-1
+- Update to upstream 1.9.1 because of security issues with the bundled
+  python-pip in older releases.  This is just a quick fix until a
+  python-virtualenv maintainer can unbundle the python-pip package
+  see: https://bugzilla.redhat.com/show_bug.cgi?id=749378
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 8月 14 2012 Steve Milner <me@stevemilner.org> - 1.7.2-1
+- Update for upstream bug fixes.
+- Added path for versioned binary.
+- Patch no longer required.
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7.1.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 三 3月 14 2012 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.7.1.2-1
+- Update for upstream bug fixes.
+- Added patch for sphinx building
+
+* 一 3月 05 2012 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-virtualenv-1.7-1.el6
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 二 12月 20 2011 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.7-1
+- Update for https://bugzilla.redhat.com/show_bug.cgi?id=769067
+
+* 四 7月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-virtualenv-1.5.1-1.el6
+- import source package EPEL6/python-virtualenv-1.4.8-3.el6
+
+* 二 7月 19 2011 Cristian Gafton <gafton@amazon.com>
+- setup complete for package python-virtualenv
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 六 10月 16 2010 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.5.1-1
+- Added _weakrefset requirement for Python 2.7.1.
+- Add support for PyPy.
+- Uses a proper temporary dir when installing environment requirements.
+- Add --prompt option to be able to override the default prompt prefix.
+- Add fish and csh activate scripts.
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 1.4.8-4
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 三 7月 07 2010 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.4.8-3
+- Fixed EPEL installation issue from BZ#611536
+
+* 二 6月 08 2010 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.4.8-2
+- Only replace the python shebang on the first line (Robert Buchholz)
+
+* 三 4月 28 2010 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.4.8-1
+- update pip to 0.7
+- move regen-docs into bin/
+- Fix #31, make activate_this.py work on Windows (use Lib/site-packages)
+unset PYTHONHOME envioronment variable -- first step towards fixing the PYTHONHOME issue; see e.g. https://bugs.launchpad.net/virtualenv/+bug/290844
+- unset PYTHONHOME in the (Unix) activate script (and reset it in deactivate())
+- use the activate.sh in virtualenv.py via running bin/rebuild-script.py
+- add warning message if PYTHONHOME is set
+
+* 五 4月 02 2010 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.4.6-1
+- allow script creation without setuptools
+- fix problem with --relocate when bin/ has subdirs (fixes #12)
+- Allow more flexible .pth file fixup
+- make nt a required module, along with posix. it may not be a builtin module on jython
+- don't mess with PEP 302-supplied __file__, from CPython, and merge in a small startup optimization for Jython, from Jython
+
+* 二 12月 22 2009 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.4.3-1
+- Updated for upstream release.
+
+* 四 11月 12 2009 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.4.2-1
+- Updated for upstream release.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 4月 28 2009 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.3.3-1
+- Updated for upstream release.
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 12月 25 2008 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.3.2-1
+- Updated for upstream release.
+
+* 四 12月 04 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 1.3.1-4
+- Rebuild for Python 2.6
+
+* 一 12月 01 2008 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.3.1-3
+- Added missing dependencies.
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 1.3.1-2
+- Rebuild for Python 2.6
+
+* 五 11月 28 2008 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.3.1-1
+- Updated for upstream release
+
+* 日 9月 28 2008 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.3-1
+- Updated for upstream release
+
+* 六 8月 30 2008 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.2-1
+- Updated for upstream release
+
+* 五 8月 29 2008 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.1-3
+- Updated from review notes
+
+* 四 8月 28 2008 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.1-2
+- Updated from review notes
+
+* 二 8月 26 2008 Steve 'Ashcrow' Milner <me@stevemilner.org> - 1.1-1
+- Initial Version
+

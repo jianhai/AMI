@@ -1,0 +1,21 @@
+Name        : dmraid
+Version     : 1.0.0.rc16
+Release     : 11.8.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时41分03秒
+Group       : System Environment/Base
+Size        : 338535
+License     : GPLv2+
+Signature   : RSA/SHA256, 2012年08月14日 星期二 00时15分03秒, Key ID bcb4a85b21c0f39f
+Source RPM  : dmraid-1.0.0.rc16-11.8.amzn1.src.rpm
+Build Date  : 2012年07月07日 星期六 07时30分56秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://people.redhat.com/heinzm/sw/dmraid
+Summary     : dmraid (Device-mapper RAID tool and library)
+Description :
+DMRAID supports RAID device discovery, RAID set activation, creation,
+removal, rebuild and display of properties for ATARAID/DDF1 metadata on
+Linux >= 2.4 using device-mapper.

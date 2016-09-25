@@ -1,0 +1,9 @@
+* 一 3月 17 2014 Tom Kirchner <tjk@amazon.com>
+- Bump Epoch to 1 so metapackage takes priority
+
+* 四 3月 13 2014 Tom Kirchner <tjk@amazon.com>
+- Initial ruby metapackage spec
+
+* 二 3月 11 2014 Thomas Kirchner <tjk@amazon.com> - 2.0
+- Create ruby metapackage.
+

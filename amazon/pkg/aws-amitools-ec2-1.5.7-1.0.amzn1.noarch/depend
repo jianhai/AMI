@@ -1,0 +1,15 @@
+/bin/bash
+/bin/sh
+/bin/sh
+/bin/sh
+/sbin/blkid
+coreutils
+curl
+e2fsprogs
+gzip
+openssl
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rsync
+ruby >= 1.8.2
+tar

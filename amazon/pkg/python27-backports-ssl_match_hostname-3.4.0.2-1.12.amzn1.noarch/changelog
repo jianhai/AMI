@@ -1,0 +1,45 @@
+* 三 9月 17 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Move version-specific BuildRequires: into version-specific subpackages
+- add clean target for python 2.7 as well
+
+* 二 9月 16 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Cleaned-up spec file Re: multiple descriptions
+
+* 一 9月 15 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Split package into Python 2.6 / Python 2.7 subpackages
+
+* 三 11月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-backports-ssl_match_hostname-3.4.0.2-1.el6
+
+* 日 10月 27 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 3.4.0.2-1
+- Update to upstream 3.4.0.2 for a security fix
+- http://bugs.python.org/issue17997
+
+* 三 9月 18 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-backports-ssl_match_hostname-3.2-0.5.a3.el6
+
+* 一 9月 02 2013 Ian Weller <iweller@redhat.com> - 3.4.0.1-1
+- Update to upstream 3.4.0.1
+
+* 一 8月 19 2013 Ian Weller <iweller@redhat.com> - 3.2-0.5.a3
+- Use python-backports instead of providing backports/__init__.py
+
+* 日 8月 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.2-0.4.a3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 日 6月 09 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-backports-ssl_match_hostname-3.2-0.3.a3.el6
+
+* 一 5月 20 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 3.2-0.3.a3
+- Add patch for CVE 2013-2099 https://bugzilla.redhat.com/show_bug.cgi?id=963260
+
+* 二 4月 02 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-backports-ssl_match_hostname-3.2-0.2.a3.el6
+- setup complete for package python-backports-ssl_match_hostname
+
+* 二 2月 05 2013 Ian Weller <iweller@redhat.com> - 3.2-0.2.a3
+- Fix Python issue 12000
+
+* 五 12月 07 2012 Ian Weller <iweller@redhat.com> - 3.2-0.1.a3
+- Initial package build
+

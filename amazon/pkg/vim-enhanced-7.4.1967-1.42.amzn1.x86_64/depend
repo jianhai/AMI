@@ -1,0 +1,29 @@
+/bin/sh
+config(vim-enhanced) = 2:7.4.1967-1.42.amzn1
+libacl.so.1()(64bit)
+libacl.so.1(ACL_1.0)(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.11)(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.15)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libdl.so.2()(64bit)
+libdl.so.2(GLIBC_2.2.5)(64bit)
+libgpm.so.2()(64bit)
+libm.so.6()(64bit)
+libm.so.6(GLIBC_2.2.5)(64bit)
+libperl.so()(64bit)
+libpthread.so.0()(64bit)
+libpthread.so.0(GLIBC_2.2.5)(64bit)
+libpython2.7.so.1.0()(64bit)
+libruby.so.2.0()(64bit)
+libtinfo.so.5()(64bit)
+perl(:MODULE_COMPAT_5.16.3)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+vim-common = 2:7.4.1967-1.42.amzn1
+which

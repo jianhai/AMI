@@ -1,0 +1,22 @@
+* 四 2月 05 2015 Tom Kirchner <tjk@amazon.com>
+- Update for new python naming conventions
+
+* 二 9月 16 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Cleaned-up spec file Re: multiple %{description} fields
+
+* 一 9月 15 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Split package into Python 2.6 / Python 2.7 subpackages
+
+* 三 9月 18 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-backports-1.0-3.el6
+- setup complete for package python-backports
+
+* 一 8月 19 2013 Ian Weller <iweller@redhat.com> - 1.0-3
+- Install to both python_sitelib and python_sitearch
+
+* 一 8月 19 2013 Ian Weller <iweller@redhat.com> - 1.0-2
+- Install to the correct location
+
+* 五 8月 16 2013 Ian Weller <iweller@redhat.com> - 1.0-1
+- Initial package build
+

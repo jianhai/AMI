@@ -1,0 +1,19 @@
+Name        : libnfsidmap
+Version     : 0.25
+Release     : 11.10.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分57秒
+Group       : System Environment/Libraries
+Size        : 94480
+License     : BSD
+Signature   : RSA/SHA256, 2015年10月09日 星期五 23时26分36秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libnfsidmap-0.25-11.10.amzn1.src.rpm
+Build Date  : 2015年10月09日 星期五 00时39分09秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.citi.umich.edu/projects/nfsv4/linux/
+Summary     : NFSv4 User and Group ID Mapping Library
+Description :
+Library that handles mapping between names and ids for NFSv4.

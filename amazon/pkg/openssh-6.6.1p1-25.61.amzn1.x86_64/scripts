@@ -1,0 +1,2 @@
+preinstall scriptlet (using /bin/sh):
+getent group ssh_keys >/dev/null || groupadd -r ssh_keys || :

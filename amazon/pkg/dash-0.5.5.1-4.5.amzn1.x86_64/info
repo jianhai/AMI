@@ -1,0 +1,21 @@
+Name        : dash
+Version     : 0.5.5.1
+Release     : 4.5.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分41秒
+Group       : System Environment/Shells
+Size        : 127421
+License     : BSD
+Signature   : RSA/SHA256, 2013年02月28日 星期四 14时00分24秒, Key ID bcb4a85b21c0f39f
+Source RPM  : dash-0.5.5.1-4.5.amzn1.src.rpm
+Build Date  : 2013年02月28日 星期四 06时06分51秒
+Build Host  : build-31005.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://gondor.apana.org.au/~herbert/dash/
+Summary     : Small and fast POSIX-compliant shell
+Description :
+DASH is a POSIX-compliant implementation of /bin/sh that aims to be as small as
+possible. It does this without sacrificing speed where possible. In fact, it is
+significantly faster than bash (the GNU Bourne-Again SHell) for most tasks.

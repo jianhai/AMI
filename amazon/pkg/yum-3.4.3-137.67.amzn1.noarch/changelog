@@ -1,0 +1,1165 @@
+* 一 9月 12 2016 Andrew Jorgensen <ajorgens@amazon.com>
+- Add patch yum-cron: don't fail on empty transaction. BZ 1004853
+
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/yum-3.4.3-132.el7
+
+* 二 10月 13 2015 Heath Petty <hpetty@amazon.com>
+- fix bug in check section
+
+* 三 9月 09 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-132
+- Don't fail on empty lines in group files.
+- Resolves: bug#1259837
+
+* 三 8月 12 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-131
+- Update not enough space messages for fssnapshot.
+- Related: bug#1047793
+
+* 四 7月 30 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-130
+- Fix fssnap_automatic_devices and fssnap_automatic_percentage in yum.conf manpage.
+- Resolves: bug#1244119
+
+* 一 7月 13 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-129
+- Fix UnboundLocalError in deselect().
+- Related: bug#1168385
+- Update the URL of kcs article.
+- Related: bug#1200338
+
+* 四 7月 09 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-128
+- Stop caching fssnapshot postfixes and add microseconds.
+- Related: bug#1047793
+
+* 三 7月 01 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-127
+- Fix lvm API calls. Patch by Marek Marusic.
+- Resolves: bug#1233152
+
+* 四 5月 21 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-126
+- Fix update-minimal traceback and ignoring updates.
+- Resolves: bug#1192239
+- Expect KB as well as MB in disk requirements message from rpm.
+- Resolves: bug#1212514
+- Make sure epoch is a string while checking for running kernel.
+- Resolves: bug#1212506
+- Fix tsInfo.conditionals in deselect() when the package is not yet in the transaction.
+- Resolves: bug#1168385
+- Replace 'upgrade-minimal' with documented 'update-minimal' in yum-cron.conf files.
+- Resolves: bug#1182096
+- Add query_install_excludes conf./docs and use it for list/info/search/provides.
+- Resolves: bug#1212519
+- Don't traceback on xml parsing.
+- Resolves: bug#1063177
+- Fix casing of 'yum grouplist' headers.
+- Resolves: bug#1211384
+- Show advisory even if package arch changed.
+- Resolves: bug#1193871
+- Add fssnap_abort_on_errors config option and improve detecting if lvm is installed.
+- Resolves: bug#1047793
+- Fix default for fssnap_automatic_keep in the man page and dad logging for automatic fssnap events.
+- Resolves: bug#1145485
+- yum manpage: move 'history info' description to its proper place.
+- Resolves: bug#1168120
+- Add missing documentation from yum-security manpage.
+- Resolves: bug#1182075
+- Add links to knowledge base articles for http errors 404 and 403 and curl error 60.
+- Resolves: bug#1199976
+- Resolves: bug#1200312
+- Resolves: bug#1200338
+- API v2.7: missing_requires, pretty_output_update, promptYN fix, confList.
+- Resolves: bug#1188960
+
+* 三 3月 25 2015 Ben Cressey <bcressey@amazon.com>
+- fix upgrade path to include yum's python 2.6 module
+- build yum module for legacy python 2.6
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/yum-3.4.3-125.el7
+
+* 三 3月 04 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Install yum modules using amzn_system Python install layout
+
+* 四 2月 19 2015 Ben Cressey <bcressey@amazon.com>
+- conflict with dependent packages built for an older python
+
+* 二 2月 03 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 一 1月 12 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-125
+- Roll back the broken lvm patch.
+- Related: bug#1047793
+
+* 四 11月 13 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-124
+- normpath() file URIs.
+- Resolves: bug#1095146
+
+* 一 11月 10 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-123
+- Fix debuginfo-install doLock() traceback.
+- Resolves: bug#1147992
+
+* 一 9月 29 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-122
+- Don't look for upgrades for install only packages.
+- Resolves: bug#1063181
+
+* 三 9月 24 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-121
+- Fix variable substitution.
+- Resolves: bug#1102585
+- Fix history searching for [abc] character lists failures.
+- Resolves: bug#1096147
+- Fix update-minimal command in the man page.
+- Resolves: bug#1087911
+
+* 四 9月 04 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-120
+- Fix and refactor utils.get_process_info().
+- Resolves: bug#1138205
+
+* 四 9月 04 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-119
+- Don't create lockdir directories.
+- Resolves: rhbz#1130939
+- Mask st_mode to fix verifying permissions for ghost files.
+- Resolves: rhbz#1113395
+- Check /usr for writability before running a transaction.
+- Resolves: rhbz#1097383
+- Make --setopt handle spaces properly.
+- Resolves: rhbz#1095161
+- Fix traceback when the history dir is empty.
+- Resolves: rhbz#1095157
+- Test for lvm binary before using.
+- Resolves: rhbz#1047793
+
+* 一 6月 30 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/yum-3.4.3-118.el7
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/yum-3.4.3-117.el7
+
+* 二 4月 15 2014 James Antill <james.antill@redhat.com> - 3.4.3-118
+- Remove CHUNK argument from open() for weird anaconda C NULL exception.
+- Resolves: rhbz#1058297
+
+* 二 4月 08 2014 James Antill <james.antill@redhat.com> - 3.4.3-117
+- Remove del for weird anaconda C NULL exception.
+- Resolves: rhbz#1058297
+
+* 二 3月 25 2014 James Antill <james.antill@redhat.com> - 3.4.3-116
+- Fix traceback on removing doc dirs.
+- Resolves: rhbz#1062959
+- Tweak docs for groups info, showing yum remove results.
+- Resolves: rhbz#833087
+
+* 三 3月 12 2014 Ben Cressey <bcressey@amazon.com>
+- add upstream fix for mash error
+
+* 二 3月 11 2014 Ben Cressey <bcressey@amazon.com>
+- refresh releasever patch for latest sources
+
+* 二 3月 11 2014 James Antill <james.antill@redhat.com> - 3.4.3-115
+- Change docs for groups to make group_command=objects clearer.
+- Resolves: rhbz#833087
+
+* 二 3月 04 2014 Lee Trager <ltrager@amazon.com>
+- import source package F19/yum-3.4.3-137.fc19
+- import source package F19/yum-3.4.3-132.fc19
+
+* 日 2月 23 2014 James Antill <james.antill@redhat.com> - 3.4.3-114
+- Fix /etc/yum.conf saving in fs filter.
+- Resolves: rhbz#1062959
+
+* 五 2月 21 2014 James Antill <james.antill@redhat.com> - 3.4.3-113
+- Add fs sub-command and container creation fixes/optimizations.
+- Resolves: rhbz#1062959
+
+* 四 1月 23 2014 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-112
+- Improve yum-cron messages and error handling.
+- Resolves: rhbz#1040619
+- Enable yum_cron_systemd
+- Resolves: rhbz#1040620
+- Update "yum check" description.
+- Resolves: rhbz#1015000
+
+* 一 1月 20 2014 James Antill <james.antill@redhat.com> - 3.4.3-111
+- A few simple perf, UI, bug, and docs. fixes.
+- Resolves: rhbz#1053289
+- A few group related bug fixes from pre-f20 testing.
+- Resolves: rhbz#1052436
+
+* 三 1月 15 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-110
+- yum-cron: fail when sigCheckPkg() returns 2
+- Resolves: bug#1052994
+- depsolve_loop_limit=<forever> should try forever
+
+* 五 1月 10 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-109
+- Fix quotes in the manpage
+- Resolves: bug#1050902
+
+* 三 1月 08 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 3.4.3-108
+- Replace optparse._ with ugettext
+- Related: bug#1033416
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 3.4.3-107
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/yum-3.4.3-106.2.el7
+
+* 四 11月 21 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-106.2
+- _getsysver(): compat behavior when both pkg name and provide match.
+- Related: bug#1002977
+
+* 三 11月 20 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-106.1
+- _getsysver(): use the version of the provide.
+- Related: bug#1002977
+
+* 二 11月 05 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-106
+- More reliable po.localpath file:// URL test. BZ 1004089
+- Disable drpms for local repositories. BZ 1007097
+- docs: fix formatting of "yum swap" examples. BZ 1009154
+- docs: update "yum check" extra args description. BZ 1014993
+- Implement pkg.remote_url for YumLocalPackage. BZ 1016148
+- Give same non-exist msg. for install @foo as group install foo. BZ 1018833.
+- UpdateNotice.xml(): sanitize pkg['epoch']. BZ 1020540
+- yum-cron: support download/install with update_messages==False. BZ 1018068
+- Fix some bugs in setopt for repo config. entries. BZ 1023595.
+- Add loop limit for depsolving. BZ 1017840.
+- Small change how distroverpkg config. works. BZ 1002977.
+- _readRawRepoFile: return only valid (ini, section_id). BZ 1018795
+
+* 五 10月 25 2013 James Antill <james.antill@redhat.com> - 3.4.3-105
+- Always call group commands when in non-groups as objects mode.
+- Resolves: bug#1002439
+
+* 五 10月 25 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-104
+- Same-mirror retry on refused connections. Helps BZ 853432
+
+* 五 10月 11 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Demote updateinfo messages to debug
+
+* 一 10月 07 2013 Lee Trager <ltrager@amazon.com>
+- Provide yum-security virtual
+- import source package F19/yum-3.4.3-111.fc19
+
+* 四 9月 26 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- reintroduce mirrorlist list patch
+
+* 二 9月 24 2013 Cyle Riggs <cyler@amazon.com>
+- apply patch to add __contains__ to BaseEntry from yum/mdparser.py
+
+* 二 9月 24 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Prefer amazon config paths
+
+* 一 9月 23 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Fix bash-completion macro and files listing
+
+* 四 9月 12 2013 Lee Trager <ltrager@amazon.com>
+- Evaluated all patches against latest upstream yum
+
+* 三 9月 11 2013 Lee Trager <ltrager@amazon.com>
+- import source package F19/yum-3.4.3-108.fc19
+
+* 一 9月 09 2013 James Antill <james.antill@redhat.com> - 3.4.3-103
+- Add cache check to repolist, using "!". Document repoinfo.
+- Add epoch to updateinfo xml output.
+- Add missing translation hooks for ignored -c option message.
+- Try to smooth out the edge cases for cacheReq not ever updating data.
+- update /etc/yum-cron-hourly.conf. BZ 1002623
+- Tweak y-c-t and history redo msg. BZ 974576.
+- docs: $arch does not map 1:1 to uname(2) arch. BZ 1003554
+- checkMD: re-check when xattr matches but size==0. BZ 1002494
+- Use new comps. mock objects to re-integrate group removal. BZ 996866.
+- Add "weak" comps. groups, for installed groups.
+- Add msg. to help users deal with RepoError failures. BZ 867389.
+- Give msgs about install/trans. obsoletes a higher priority. BZ 991080.
+
+* 二 8月 27 2013 Ethan Faust <efaust@amazon.com>
+- Add report_instanceid
+
+* 三 8月 14 2013 Lee Trager <ltrager@amazon.com>
+- Update report_to_aws patch for yum 3.4.3
+- Disable Amazon patches for the time being
+- import source package F19/yum-3.4.3-106.fc19
+
+* 二 8月 13 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-102
+- smtp-compliant email_from default. BZ 982696
+- Fix the .reason handling and update/depupdated split. BZ 961938.
+- Override users umask for groups files, so users can read it. BZ 982361.
+- Also check groups dirname(), for better user messages. BZ 982361.
+- Add "--disableincludes" option to yum. BZ 911422
+- yum-cron: override the default stdout codec.  BZ 992797
+- fix file:// repository && downloadonly. BZ 903294, BZ 993567
+- deltarpm: _wait(block=True) should not wait for all running jobs. BZ 991694
+- make mdpolicy=group:small default, add group and pkgtags. BZ 989231
+- yum-cron: use the [base] section to override yum.conf. BZ 968529
+- Don't unlink .drpm files from file:// repos. BZ 999591
+- waitForLock() raises YumBaseError. BZ 1001154
+- checkMD: re-check when xattr matches but size==0. BZ 1002494
+- Add per-repository "keepcache" option to yum. BZ 1001072
+
+* 二 7月 30 2013 Zdenek Pavlas <zpavlas at redhat.com> - 3.4.3-101
+- Pass arch of package to applydeltarpm. BZ 981314.
+- Clean up new files when reverting to old repomd.xml
+- Get correct rpmdb path from rpm configuration
+- repoMDObject.dump_xml() "distro" tag fix
+- Fix parsing of power7+ platform string. BZ 980275
+- updatesObsoletesList: add repoid arg. BZ 984297
+- findRepos: handle re.compile() errors. BZ 984356
+- Preload from root cache when --cacheonly. BZ 830523, 903631
+- Add debuglevel option to yum-cron.conf BZ 873428, 982088
+- RepoMD: support loading/dumping of <delta>s.
+- yum-cron: use [base] section
+- yum-cron: fix the download but don't appy updates case. BZ 983076
+- group install/update: handle "No Groups Available" exception. BZ 983010
+- misc.decompress(): handle OSError, too. BZ 989948
+- yum-distro-configs: update installonly_limit default in yum.conf.5
+- Remove "kernel-modules" from installonly list. BZ 801067
+
+* 三 6月 26 2013 Zdenek Pavlas <zpavlas at redhat.com> - 3.4.3-100
+- Move the import statement up. BZ 902357
+
+* 一 6月 24 2013 James Antill <james at fedoraproject.org> - 3.4.3-99
+- Update to latest HEAD.
+- Fix igroups not being reset in "ts reset" and anaconda. BZ 924162.
+- Check for bad checksum types at runtime. BZ 902357.
+- fix --cacheonly edge case. BZ 975619.
+
+* 三 6月 19 2013 James Antill <james at fedoraproject.org> - 3.4.3-98
+- Update to latest HEAD.
+- Add simple way to specify a group of pkgs. for version. BZ 913461.
+- Change group install => group upgrade for installed groups. BZ 833087.
+- Give more text when telling user about y-c-t, mention history. BZ 974576.
+- Fix the tolerant yum.conf text.
+- Skip installonly limit, if something has set check_future_rpmdbv. BZ 962757.
+
+* 一 6月 17 2013 James Antill <james at fedoraproject.org> - 3.4.3-97
+- Update to latest HEAD.
+- Minor updates to fssnapshot command.
+- metalink: Don't assume maxconnections is always set. BZ 974826.
+- DeltaPackage: provide returnIdSum(). BZ 974394.
+
+* 五 6月 14 2013 James Antill <james at fedoraproject.org> - 3.4.3-96
+- Update to latest HEAD.
+- Add real logging to updateinfo parsing.
+- Merge fssnap command.
+- Extend repos.findRepos() API so it can handle repolist input.
+- Add a prelistenabledrepos plugin point.
+- Auto. enable disabled repos. in repo-pkgs.
+- Do cacheRequirement() tests before doCheck().
+
+* 五 6月 14 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-95
+- DeltaPackage compat fix. BZ 974394
+
+* 三 6月 12 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-94
+- Update to latest HEAD.
+- downloadonly: prefetch also pkg checksums. BZ 973380
+- Fix superfluous dots after "via" in man pages. BZ 972764
+- support "proxy = libproxy" syntax to enable libproxy. BZ 857263
+- checkEnabledRepo: run prereposetup if necessary. BZ 826096
+
+* 一 6月 03 2013 James Antill <james at fedoraproject.org> - 3.4.3-93
+- update to latest HEAD.
+- Workaround anaconda passing None as group name. BZ 959710.
+- Fix second part of igrp as grp problems. BZ 955236.
+- Add a fuzzy matcher for numbers in format_missing_requires. BZ 718245.
+- Hide the "downloadonly" option when nothing to download.
+- Add the "minrate" option. BZ 964298
+
+* 二 5月 21 2013 James Antill <james at fedoraproject.org> - 3.4.3-92
+- update to latest HEAD.
+- returnPackagesByDep() API fix (really old break).
+- Try to make groups conversion better.
+- progress.start: supply the default filename & url.  BZ 963023
+- drpm retry: add RPM sizes to total size.  BZ 959786
+- YumBaseError: safe str(e).  BZ 963698
+
+* 一 5月 13 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-91
+- same-mirror retry also on timeout.  BZ 853432
+
+* 三 5月 08 2013 James Antill <james at fedoraproject.org> - 3.4.3-90
+- Massive hack for Fedora/updateinfo stable vs. testing statuses. BZ 960642.
+- Don't load updateinfo when we don't have to.
+- Tell which repo. we are skipping the updateinfo notice from.
+- Compat. code so we can treat groups/igroups the same. BZ 955236.
+- Don't highlight the empty space, Eg. --showdups list.
+
+* 四 5月 02 2013 Bill Nottingham <notting@redhat.com> - 3.4.3-89
+- Fix defaults-for-environment optional groups change. BZ 958531
+
+* 二 4月 30 2013 James Antill <james at fedoraproject.org> - 3.4.3-88
+- update to latest HEAD.
+- Allow default on Environment optional groups.
+- Tweak load-ts output.
+
+* 五 4月 26 2013 James Antill <james at fedoraproject.org> - 3.4.3-87
+- update to latest HEAD.
+- Make --downloadonly skip userconfirm prompt.
+- Turn metadata_expire off for yum-cron.
+- Skip var_arch storage in yumdb.
+
+* 二 4月 23 2013 James Antill <james at fedoraproject.org> - 3.4.3-86
+- update to latest HEAD.
+- A fix for environments and not installed groups. BZ 928859.
+- Add downloadonly option to download prompt.
+
+* 五 4月 19 2013 James Antill <james at fedoraproject.org> - 3.4.3-85
+- update to latest HEAD.
+- A couple of fixes for yum-cron using security.
+- Add documentation for updateinfo merge.
+
+* 四 4月 18 2013 James Antill <james at fedoraproject.org> - 3.4.3-84
+- update to latest HEAD.
+- Move yum-security into core.
+- A bunch of minor fixes for yum-cron.
+- Update yum-cron to add security/minimal/etc. updates.
+- Add socks support to proxy config.
+
+* 二 4月 16 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-83
+- update to latest HEAD.
+- Update yum-cron to make it worthwhile on Fedora.
+- Fix the installed/depinstalled split.  BZ 952162
+- rebuilding deltarpms: fix the callback==None case. BZ 952357
+- Reuse mirrors when max_retries > len(mirrors).  BZ 765598
+
+* 四 4月 04 2013 James Antill <james at fedoraproject.org> - 3.4.3-82
+- update to latest HEAD.
+- Keep installedFileRequires in sync. BZ 920758.
+- Add repo-pkgs upgrade-to.
+- Document autoremove commands.
+
+* 四 3月 28 2013 James Antill <james at fedoraproject.org> - 3.4.3-81
+- update to latest HEAD.
+- Fix optional packages getting installed by default. BZ 923547.
+- cacheReq() added to groups command.
+- Finally fix the installed obsoletes problem.
+- Sync specfiles.
+- Turn checking on, and fix check-po script.
+
+* 三 3月 27 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-80
+- package also /etc/bash_completion.d's parent
+- set correct dir when bytecompiling /usr/share/yum-cli
+- add fast package name completion (disabled by default)
+
+* 三 3月 20 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-79
+- add BuildRequires: bash-completion
+
+* 三 3月 20 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-78
+- update to latest HEAD.
+- add bash-completion aliases, use pkg-config.
+- spelling fixes
+
+* 二 3月 19 2013 Zdenek Pavlas <zpavlas@redhat.com> - 3.4.3-77
+- move bash-completion scripts to /usr/share/  BZ 922992
+
+* 二 3月 12 2013 James Antill <james at fedoraproject.org> - 3.4.3-76
+- Change groups_command default to objects.
+- update to latest HEAD.
+- Add timestamp to transaction object for plugins etc.
+
+* 一 3月 11 2013 James Antill <james at fedoraproject.org> - 3.4.3-75
+- update to latest HEAD.
+- Fix deltarpm=0.
+- Fix double unlink. BZ 919657.
+
+* 五 3月 08 2013 James Antill <james at fedoraproject.org> - 3.4.3-74
+- update to latest HEAD.
+- Fix obsoletes in "yum check".
+- Drop drpm rebuild defaults back to 2 workers.
+
+* 四 3月 07 2013 James Antill <james at fedoraproject.org> - 3.4.3-73
+- update to latest HEAD.
+- Queue for drpm rebuilding.
+- Sort drpms.
+
+* 三 3月 06 2013 James Antill <james at fedoraproject.org> - 3.4.3-72
+- update to latest HEAD.
+- Translation updates.
+- Smarter selection of drpm candidates.
+- "makecache fast".
+- Minor updates.
+
+* 五 3月 01 2013 James Antill <james at fedoraproject.org> - 3.4.3-70
+- update to latest HEAD.
+- Reimport the size calculation fix.
+
+* 四 2月 28 2013 James Antill <james at fedoraproject.org> - 3.4.3-69
+- drpm: Fix getDiscNum() sorting bug. BZ 916675.
+- Move to just dumping upstream HEAD again.
+
+* 四 2月 28 2013 Zdeněk Pavlas <zpavlas@redhat.com> - 3.4.3-67
+- drpm: fixed the yum._up==None case.
+- drpm: repo_gen_decompress() to handle all comp types.
+
+* 三 2月 27 2013 Zdeněk Pavlas <zpavlas@redhat.com> - 3.4.3-66
+- fixed getDiscNum bug
+- fixed rpmsize calculation
+- obsoleted yum-presto plugin
+
+* 二 2月 26 2013 Zdeněk Pavlas <zpavlas@redhat.com> - 3.4.3-65
+- start downloading drpms before rpms
+- deactivate presto if deltarpm package is not installed
+- rename "presto" option to "deltarpm".
+- new DeltaPO class instead of in-place rpm=>drpm patching.
+
+* 一 2月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-3.2.29-40.el6
+
+* 五 2月 22 2013 Zdeněk Pavlas <zpavlas@redhat.com> - 3.4.3-64
+- use multiple applydeltarpm workers (4 by default)
+
+* 四 2月 21 2013 Zdeněk Pavlas <zpavlas@redhat.com> - 3.4.3-63
+- Added native drpm support.
+
+* 二 2月 19 2013 James Antill <james at fedoraproject.org> - 3.4.3-62
+- update to latest HEAD.
+- Add cache-reqs.
+- Fixup specfile for Fedora <= 18 usage.
+
+* 一 2月 18 2013 James Antill <james at fedoraproject.org> - 3.4.3-60
+- update to latest HEAD.
+- Auto expire caches on repo errors.
+- Use xattrs for cache checksum speedup.
+
+* 五 2月 15 2013 James Antill <james at fedoraproject.org> - 3.4.3-59
+- update to latest HEAD.
+- Add load-ts helper.
+- Update downloadonly plugin version obs.
+
+* 五 2月 08 2013 James Antill <james at fedoraproject.org> - 3.4.3-58
+- update to latest HEAD.
+- Add pyxattr require for origin_urls for everyone.
+- Fix yum-cron service file and scriptlets.
+- Fix instant broken mirrors problem.
+
+* 四 1月 31 2013 James Antill <james at fedoraproject.org> - 3.4.3-57
+- update to latest HEAD.
+- Fix autoremove foo.
+- Speedup/fix repo-pkgs <foo> update with obsoletes.
+
+* 三 1月 30 2013 James Antill <james at fedoraproject.org> - 3.4.3-56
+- update to latest HEAD.
+- Add yumvar dumping into yumdb.
+- Add ui_repoid_vars configuration.
+- Update translations.
+
+* 二 1月 22 2013 James Antill <james at fedoraproject.org> - 3.4.3-55
+- update to latest HEAD.
+- Add repo-pkgs update/list and tweak remove-or-sync.
+
+* 一 1月 21 2013 James Antill <james at fedoraproject.org> - 3.4.3-54
+- update to latest HEAD.
+- Add repo-pkgs docs. add erase/etc. aliases.
+- Fix for 895854.
+
+* 三 1月 16 2013 James Antill <james at fedoraproject.org> - 3.4.3-53
+- update to latest HEAD.
+- Add repo-pkgs.
+- Add swap.
+- Add remove_leaf_only and repopkgremove_leaf_only.
+- Add metadata_expire_filter.
+
+* 二 1月 15 2013 Zdeněk Pavlas <zpavlas@redhat.com> - 3.4.3-52
+- update to latest HEAD
+- _lock(): yet another exception2msg fix.  BZ 895060
+- use yum-cron.service.  BZ 893593
+- YumRepo.populate(): always decompresses new database
+
+* 三 1月 09 2013 Zdeněk Pavlas <zpavlas@redhat.com> - 3.4.3-51
+- update to latest HEAD
+- Include langpacks when reading and writing comps. BZ 879030
+- selectGroup(): Fix a typo. BZ 885139
+- move the basename checking into _repos.doSetup(). BZ 885159
+- bash completion: offer nvra for multi-install packages
+- fixes extra '</pkglist>' tags on multi-collection errata. BZ 887407
+- Include the update date in updateinfo xml. BZ 887935
+- Complete provides/whatprovides with filenames. BZ 891561
+- New locking code.  BZ 865601
+
+* 四 12月 06 2012 Zdeněk Pavlas <zpavlas@redhat.com> - 3.4.3-50
+- update to latest HEAD.
+- Check for possible inf. recursion and workaround in skip-broken. BZ 874065
+- Don't error in history list, when we have no history. BZ 802462
+- Avoid converting to unicode and back in dump_xml_*.  BZ 716235
+- po.xml_dump_{primary,filelists,other}_metadata() cleanup
+
+* 三 11月 28 2012 Zdenek Pavlas  <zpavlas@redhat.com> - 3.4.3-49
+- update to latest HEAD.
+- Fix ugly paths in po.xml_dump_*(). BZ 835565.
+- Fix yum-cron requires.
+
+* 一 11月 19 2012 Zdenek Pavlas  <zpavlas@redhat.com> - 3.4.3-48
+- update to latest HEAD.
+- add skip-broken option to yum-cron.
+- get rid of bogus "Downloaded package .. but it was invalid."
+- clean up misc.to_xml(), make it faster.  BZ 716235.
+- checksum not available implies checksum does not match.  BZ 825272.
+- avoid checksumming existing .sqlite.bz2 files.
+- fix circular obsoletes in transaction members check. BZ 868840.
+
+* 四 10月 25 2012 Zdenek Pavlas  <zpavlas@redhat.com> - 3.4.3-47
+- replaced yum-cron.sh with the new yum-cron.py (very alpha)
+
+* 四 10月 25 2012 Nils Philippsen <nils@redhat.com> - 3.4.3-46
+- bump release to ensure upgrade path and satisfy PackageKit deps
+
+* 一 10月 22 2012 Cristian Gafton <gafton@amazon.com>
+- backport fix: Initialize RPMDBAdditionalData object even when makedirs /var/lib/yum/yumdb fails.
+
+* 三 10月 17 2012 James Antill <james at fedoraproject.org> - 3.4.3-44
+- update to latest HEAD.
+- Add downloadonly into core, and enable background downloads.
+- Lots of minor fixes.
+
+* 一 9月 10 2012 Cristian Gafton <gafton@amazon.com>
+- fix parsing to allow for space-separated xml values
+
+* 五 9月 07 2012 James Antill <james at fedoraproject.org> - 3.4.3-43
+- update to latest HEAD.
+- Use .ui_id explicitly for backcompat. on strings, *sigh*.
+
+* 六 9月 01 2012 James Antill <james at fedoraproject.org> - 3.4.3-42
+- update to latest HEAD.
+- Fix missing self. on last patch.
+
+* 五 8月 31 2012 James Antill <james at fedoraproject.org> - 3.4.3-41
+- update to latest HEAD.
+- Don't statvfs when we aren't going to copy, and using relative.
+
+* 四 8月 30 2012 James Antill <james at fedoraproject.org> - 3.4.3-40
+- update to latest HEAD.
+- Fix rel-eng problems when repo.repofile is None.
+- Don't statvfs when we aren't going to copy.
+
+* 二 8月 28 2012 James Antill <james at fedoraproject.org> - 3.4.3-36
+- update to latest HEAD.
+- Fix environment groups write.
+- Allow merging of updateinfo.
+- Add releasever/arch to repoids on output, if used in urls.
+- Merge mirror errors fix.
+
+* 四 8月 23 2012 Zdenek Pavlas <zpavlas at redhat.com> - 3.4.3-34
+- Some users skip setupProgressCallbacks(). BZ 850913.
+
+* 三 8月 22 2012 Zdenek Pavlas <zpavlas at redhat.com> - 3.4.3-33
+- update to latest HEAD.
+- Set multi_progress_obj option
+- Show full URLs and mirror errors when _getFile() fails.
+
+* 四 8月 16 2012 James Antill <james at fedoraproject.org> - 3.4.3-32
+- update to latest HEAD.
+- Some fixes for new environment groups.
+- Fix "yum upgrade" download verification. BZ 848811.
+
+* 五 8月 10 2012 James Antill <james at fedoraproject.org> - 3.4.3-31
+- update to latest HEAD.
+- Big update, mostly for "environment groups".
+
+* 日 7月 22 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.4.3-30
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-3.2.29-30.el6
+
+* 三 6月 20 2012 Zdenek Pavlas <zpavlas at redhat.com> - 3.4.3-29
+- update to latest HEAD.
+- quote uids to keep cachedir ascii-clean.  BZ 832195
+- show_lock_owner: report errors if we fail.  BZ 745281
+
+* 四 6月 14 2012 Zdenek Pavlas <zpavlas at redhat.com> - 3.4.3-28
+- update to latest HEAD.
+- No async downloading when --cacheonly.  BZ 830523
+- misc.decompress(): compare mtime without sub second precision. BZ 831918
+- preload_from_sys to user dir with --cacheonly, BZ 830523
+
+* 五 6月 08 2012 James Antill <james at fedoraproject.org> - 3.4.3-27
+- update to latest HEAD.
+- Fix for ppc64p7 detection.
+
+* 三 5月 16 2012 Zdenek Pavlas <zpavlas at redhat.com> - 3.4.3-26
+- update to latest master HEAD
+- Fix using available packages as installed, due to strong_requires.
+- Remove tracebacks on MD downloads. BZ 822009.
+
+* 一 5月 14 2012 Zdenek Pavlas <zpavlas at redhat.com> - 3.4.3-25
+- update to latest HEAD.
+- merged multi-downloader code
+- rebased yum-ppc64-preferred.patch
+- dropped arm-arch-detection.patch (moved to HEAD)
+- renamed yum-update.cron to 0yum-update.cron
+
+* 五 4月 27 2012 James Antill <james at fedoraproject.org> - 3.4.3-24
+- Add code for arm detection.
+
+* 五 3月 16 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-3.2.29-22.el6_2.2
+
+* 五 3月 16 2012 James Antill <james at fedoraproject.org> - 3.4.3-23
+- update to latest HEAD.
+- Also fix "yum check" for strong requires. bug 795907.
+- Fix for "Only update available" on downgrade. bug 803346.
+
+* 五 3月 09 2012 James Antill <james at fedoraproject.org> - 3.4.3-22
+- update to latest HEAD.
+- Fail on bad reinstall/downgrade arguments. bug 800285.
+- Fix weird multiple obsoletion bug. BZ 800016
+- Check for a compat. arch. as well, when hand testing for upgradability.
+- Allow changing the exit code on non-fatal errors.
+
+* 四 3月 01 2012 James Antill <james at fedoraproject.org> - 3.4.3-21
+- update to latest HEAD.
+- Translation update.
+
+* 三 2月 29 2012 James Antill <james at fedoraproject.org> - 3.4.3-20
+- update to latest HEAD.
+- Lazy setup pkgSack, for localinstall/etc.
+- add support for 64 bit arm hardware.
+- Hack for "info install blah" to never look at repos.
+- Fixup resolvedep command for mock users.
+
+* 一 2月 20 2012 James Antill <james at fedoraproject.org> - 3.4.3-19
+- update to latest HEAD.
+- Add a yum group convert command, so people can use groups as objects easily.
+- Document the new group stuff.
+- Generic provide markers for installonlypkgs (for kernel/vms).
+- Minor updates/fixes merge some older branches.
+
+* 五 1月 20 2012 James Antill <james at fedoraproject.org> - 3.4.3-18
+- update to latest HEAD
+- Added group_command, but didn't change to groups as objects by default.
+- Minor updates.
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.4.3-17
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 二 12月 13 2011 James Antill <james at fedoraproject.org> - 3.4.3-16
+- update to latest HEAD
+- Have users always use their own dirs.
+- Minor updates.
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-3.2.29-22.el6
+
+* 五 12月 02 2011 James Antill <james at fedoraproject.org> - 3.4.3-15
+- update to latest HEAD
+- Init "found" variable for distro-sync full. BZ 752407.
+- Fix _conv_pkg_state when calling with history as checksum. BZ 757736.
+- When a repo. fails in repolist, manually populate the ones after it.A
+- Fix a corner case in exception2msg(). BZ 749239.
+- Transifex sync.
+- Hand fix the plural forms gettext stuff.
+
+* 三 11月 30 2011 Dennis Gilmore <dennis@ausil.us> - 3.4.3-13
+- add patch from upstream for arm hardware floating point support
+
+* 四 10月 27 2011 ltrager <ltrager@amazon.com>
+- Modify yum error message to tell users to report yum issues to the AWS forums.
+
+* 三 10月 26 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-3.2.29-17.el6_1.1
+- fix infinite loop in yum-security plugin
+
+* 一 10月 17 2011 James Antill <james at fedoraproject.org> - 3.4.3-12
+- update to latest HEAD
+- Basically just an update for transifex sync.
+
+* 五 10月 14 2011 James Antill <james at fedoraproject.org> - 3.4.3-11
+- update to latest HEAD
+- Some edge case depsolver bug fixes.
+- Output the GPG fingerprint when showing the GPG key.
+- Update bugtracker URL back to redhat.
+- Allow reinstall and remove arguments to history redo command.
+- Let resolvedep look for installed packages.
+
+* 三 9月 21 2011 James Antill <james at fedoraproject.org> - 3.4.3-10
+- update to latest HEAD
+- Fix for history sync, and saving on install.
+- Lots of minor bug fixes.
+- Speedups for upgrade_requirements_on_install=true.
+- Fix generated data using bad caches.
+- Changes for yum-cron.
+
+* 二 8月 23 2011 James Antill <james at fedoraproject.org> - 3.4.3-9
+- update to latest HEAD
+- Update translations.
+- Minor UI tweaks for transaction output.
+- Minor tweak for update_reqs_on_install.
+
+* 一 8月 22 2011 James Antill <james at fedoraproject.org> - 3.4.3-8
+- update to latest HEAD
+- Fix upgrade_requirements_on_install breaking upgrade typos.
+
+* 五 8月 19 2011 James Antill <james at fedoraproject.org> - 3.4.3-7
+- update to latest HEAD
+- Fix syncing of yum DB data in history.
+- Add upgrade_requirements_on_install config. option.
+- Don't look for releasever if it's set directly (anaconda).
+- Expose ip_resolve urlgrabber option.
+
+* 日 8月 07 2011 Matt Wilson <msw@amazon.com>
+- add a patch that allows a config file override of the releasever and multiple mirror list URLS
+
+* 五 8月 05 2011 James Antill <james at fedoraproject.org> - 3.4.3-6
+- update to latest HEAD
+- Add new yum DB data.
+- Add hack to workaround broken python readline in yum shell.
+- Make "yum -q history addon-info last saved_tx" valid input for load-ts.
+- Add "history packages-info/stats/sync" sub-commnands.
+
+* 五 7月 29 2011 James Antill <james at fedoraproject.org> - 3.4.3-5
+- update to latest HEAD
+- Lots of really minor changes. Docs. and yum-cron mainly.
+- Output yum_saved_tx file.
+
+* 四 7月 28 2011 Cristian Gafton <gafton@amazon.com>
+- fix build dep on python-abi
+
+* 五 7月 15 2011 James Antill <james at fedoraproject.org> - 3.4.3-4
+- update to latest HEAD
+- Weird old bugs fixed for new createrepo code.
+- Add --assumeno and an easter egg! Also allow remove to use alwaysprompt.
+- Fix \r appearing on serial console etc. BZ 720088.
+- Fix umask on mkdir() as well as open. BZ 719467.
+- Fix traceback when enabling/disabling repos. in GUI.
+
+* 四 6月 30 2011 James Antill <james at fedoraproject.org> - 3.4.3-3
+- Fix the skip broken tuples => dict. bug. BZ 717973.
+
+* 三 6月 29 2011 James Antill <james at fedoraproject.org> - 3.4.3-2
+- Add ppc64 arch. change for BZ 713791.
+
+* 二 6月 28 2011 James Antill <james at fedoraproject.org> - 3.4.3-1
+- update to 3.4.3
+- Real upstream workaround for rpm chroot and history insanity.
+- Minor bugfixes.
+
+* 三 6月 22 2011 James Antill <james at fedoraproject.org> - 3.4.2-2
+- Workaround rpm chroot insanity.
+
+* 三 6月 22 2011 James Antill <james at fedoraproject.org> - 3.4.2-1
+- update to 3.4.2
+- Lots of smallish bug fixes/tweaks.
+- Lookup erase transaction members, by their name, if we can.
+- Added pluralized translation messages.
+
+* 二 6月 14 2011 James Antill <james at fedoraproject.org> - 3.4.1-5
+- update to latest HEAD
+- Lots of smallish bug fixes.
+- New groups command.
+
+* 四 6月 02 2011 James Antill <james at fedoraproject.org> - 3.4.1-4
+- update to latest HEAD
+- Fix RepoStorage problem for pulp.
+- Add list of not found packages.
+- Minor bug fixes.
+
+* 二 5月 24 2011 James Antill <james at fedoraproject.org> - 3.4.1-3
+- update to latest HEAD
+- Tweak "yum provides"
+- Don't access the repos. for saved_tx, if doing a removal.
+- Fix a couple of old minor bugs:
+- Remove usage of INFO_* from yumcommands, as -q supresses that. BZ 689241.
+- Don't show depsolve failure messages for non-depsolving problems. BZ 597336.
+
+* 日 5月 22 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-3.2.29-17.el6
+
+* 三 5月 04 2011 James Antill <james at fedoraproject.org> - 3.4.1-2
+- update to latest HEAD
+- Fix consolidate_libc.
+- Update translations.
+- Add history rollback.
+
+* 三 4月 20 2011 James Antill <james at fedoraproject.org> - 3.4.1-1
+- Fix umask override.
+- Remove double baseurl display, BZ 697885.
+
+* 五 4月 15 2011 James Antill <james at fedoraproject.org> - 3.4.0-1
+- update to 3.4.0.
+
+* 五 4月 08 2011 James Antill <james at fedoraproject.org> - 3.2.29-10
+- update to latest HEAD 
+- Likely last HEAD before 3.2.30.
+
+* 五 3月 25 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.29-9
+- update to latest HEAD
+
+* 一 2月 28 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.29-8
+- take out the hack-patch from 2 weeks ago.
+
+* 一 2月 28 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.29-7
+- latest head including all of Panu's rpmutils/callback patches
+
+* 四 2月 17 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.29-6
+- add rpmutils-recursive-import.patch to work around recursive import problems
+
+* 三 2月 16 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.29-5
+- lots of hopefully NOT exciting changes to rpmutils/rpmsack from head.
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.2.29-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 二 1月 25 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.29-3
+- latest from head - fixing a number of minor bugs
+
+* 四 1月 13 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.29-2
+- grumble broken skip-broken test :(
+
+* 四 1月 13 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.29-1
+- 3.2.29
+- add yum-cron subpkg
+
+* 四 1月 06 2011 James Antill <james at fedoraproject.org> - 3.2.28-17
+- Allow kernel installs with multilib protection ... oops!
+- Don't conflict with fixed versions of Zif.
+- Add locks for non-root.
+
+* 二 1月 04 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.28-16
+- fix skip-broken conflict - thanks dgilmore for the catch
+
+* 二 1月 04 2011 Seth Vidal <skvidal at fedoraproject.org> - 3.2.28-15
+- latest head
+- conflicts zif
+
+* 五 12月 17 2010 Cristian Gafton <gafton@amazon.com>
+- make it build for multiple python releases
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-3.2.27-14.el6_0.1
+- import source package RHEL6/yum-3.2.27-14.el6
+
+* 四 11月 11 2010 James Antill <james at fedoraproject.org> - 3.2.28-14
+- latest head
+- Perf. fixes/improvements.
+
+* 二 11月 09 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.28-13
+- once again with head
+
+* 五 11月 05 2010 James Antill <james at fedoraproject.org> - 3.2.28-12
+- latest head
+- Add load-ts command.
+- Fix verifying symlinks.
+
+* 三 10月 20 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.28-11
+- latest head
+- depsolve enhancements on update/obsoletes
+- show recent pkgs in history package-list instead of a specific pkg
+- bz: 644432, 644265
+- make sure urlgrabber is using the right config settings for fetching gpg keys
+
+* 五 10月 15 2010 James Antill <james at fedoraproject.org> - 3.2.28-10
+- latest head 
+- Fix major breakage from the "list updates" speedup :).
+- Close curl/urlgrabber after downloading packages.
+- Allow remove+update in "yum shell".
+- Fix output of distro tags.
+
+* 四 10月 07 2010 James Antill <james at fedoraproject.org> - 3.2.28-9
+- latest head 
+- Add localpkg_gpgcheck option.
+- Speedup "list updates"
+- Doc fixes.
+
+* 六 9月 25 2010 James Antill <james at fedoraproject.org> - 3.2.28-8
+- latest head 
+- Speedup install/remove/etc a lot.
+- Add merged history.
+- Fix unique comps/pkgtags leftovers.
+
+* 二 9月 14 2010 James Antill <james at fedoraproject.org> - 3.2.28-7
+- latest head 
+- Fix PK/auto-close GPG import bug.
+- Fix patch for installonly_limit and enable it again.
+- Fix rpmlint warnings.
+- Remove color=never config.
+
+* 五 9月 10 2010 Seth Vidal <skvidal at fedoraproject.org>
+- latest head
+
+* 五 8月 27 2010 Seth Vidal <skvidal at fedoraproject.org>
+- obsoleted yum-plugin-download-order
+
+* 四 8月 12 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.28-3
+- latest head
+- fix gpg key import
+- more unicode fixes
+- output slightly more clear depsovling error msgs
+
+* 一 8月 09 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.28-2
+- latest head
+- unicide fixes
+- sqlite history db conversion fixes
+
+* 五 7月 30 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.28-1
+- 3.2.28
+
+* 三 7月 28 2010 Mamoru Tasaka <mtasaka@ioa.s.u-tokyo.ac.jp> - 3.2.27-21
+- Again rebuild against python 2.7
+
+* 一 7月 26 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.27-20
+- latest head
+- minor fixes and doc updates
+- hardlink yumdb files to conserve spacde
+- cache yumdb results
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 3.2.27-19
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 五 7月 16 2010 James Antill <james@fedoraproject.org> - 3.2.27-18
+- Latest head.
+- Add history addon-info.
+- Add new callbacks, verify and compare_providers.
+- Fix rpm transaction fail API break, probably only for anaconda.
+- Bug fixes.
+
+* 二 7月 13 2010 Cristian Gafton <gafton@amazon.com>
+- use standard python macros for rebuild
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-3.2.27-9.el6
+- import source package RHEL6/yum-3.2.25-12.el6
+
+* 五 6月 25 2010 James Antill <james@fedoraproject.org> - 3.2.27-17
+- Latest head.
+- Allow reinstalls of kernel, etc.
+- Tweaks to some user output.
+- Allow Fedora GPG keys to be removed.
+- Add history extra data API, and history plugin hooks.
+- Bunch of minor bug fixes.
+
+* 二 6月 15 2010 James Antill <james@fedoraproject.org> - 3.2.27-16
+- Latest head.
+- Fix install being recorded as reinstall.
+- Make localinstall not install obsoleted only by installed.
+- Fix info -v, on available packages.
+- Fix man page stuff.
+- Deal with unicide on rpmdb problems.
+- Allow ipkg.repo.name to work.
+- Add ville's epoch None vs. 0 code, in compareEVR.
+
+* 五 6月 11 2010 James Antill <james@fedoraproject.org> - 3.2.27-15
+- Latest head.
+- Add filtering requires code for createrepo.
+- Add installed_by/changed_by yumdb values.
+- Tweak output for install/reinstall/downgrade callbacks.
+- Add plugin hooks for pre/post verifytrans.
+- Deal with local pkgs. which only obsolete.
+- No chain removals on downgrade.
+- Bunch of speedups for "list installed blah", and "remove blah".
+
+* 三 6月 02 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.27-14
+- merge in latest yum head:
+- change decompressors to support lzma, if python module is available
+- finnish translation fixes
+- pyint vs pylong fix for formatRequire() so we stop spitting back the wrong requires strings to mock on newish rpm
+- add exit_on_lock option
+- Deal with RHEL-5 loginuid damage
+- Fix pkgs. that are excluded after being put in yb.up ... BZ#597853
+- Opt. for rpmdb.returnPackages(patterns=...). Drops about 30% from remove time.
+- Fix "remove name-version", really minor API bug before last patch
+
+* 三 5月 26 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.27-13
+- minor cleanups for yum-utils with --setopt
+- translation updates
+
+* 四 5月 13 2010 James Antill <james@fedoraproject.org> - 3.2.27-12
+- Latest head.
+- History db version 2
+- Some bug fixes
+- More paranoid/leanient with rpmdb cache problems.
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/yum-3.2.22-26.el5
+- import source package RHEL5/yum-3.2.22-20.el5
+- import source package RHEL5/yum-3.2.19-18.el5_3.1
+- import source package RHEL5/yum-3.2.19-18.el5
+- import source package RHEL5/yum-3.2.8-9.el5_2.1
+- import source package RHEL5/yum-3.2.8-9.el5
+- import source package RHEL5/yum-3.0.1-5.el5
+- added submodule prep for package yum
+
+* 三 5月 05 2010 James Antill <james@fedoraproject.org> - 3.2.27-11
+- Fix from head for mock, mtime=>ctime due to caches and fixed installroot
+- Fix for typo in new problems code, bug 589008
+
+* 一 5月 03 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.27-10
+- latest head
+- fixes yum chroot path duplication
+- yum.log perms
+
+* 四 4月 29 2010 James Antill <james@fedoraproject.org> - 3.2.27-9
+- Latest yum-3_2_X head.
+- Added protect packages.
+- Bug fixes from the yum bug day.
+- Added removed size output.
+- Added glob: to all list config. options.
+- Fix fsvars.
+
+* 四 4月 22 2010 James Antill <james@fedoraproject.org> - 3.2.27-8
+- Latest yum-3_2_X head.
+- Add deselections.
+- Add simple depsolve into compare_providers
+- Speedup distro-sync blah.
+
+* 五 4月 16 2010 James Antill <james@fedoraproject.org> - 3.2.27-7
+- Latest yum-3_2_X head.
+- Add the "big update" speedup patch.
+- Add nocontexts ts flag.
+- Add provides and obsoleted to "yum check".
+- Add new dump_xml stuff for createrepo/modifyrepo.
+- Move /var/lib/yum/vars to /etc/yum/vars
+
+* 一 4月 12 2010 James Antill <james@fedoraproject.org> - 3.2.27-6
+- Latest yum-3_2_X head.
+- Fix the caching changes.
+
+* 六 4月 10 2010 James Antill <james@fedoraproject.org> - 3.2.27-5
+- Latest yum-3_2_X head.
+- Remove the broken assert in sqlitesack
+
+* 四 4月 08 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.27-4
+- more latest headness
+
+* 五 3月 26 2010 James Antill <james@fedoraproject.org> - 3.2.27-3
+- Latest yum-3_2_X head.
+
+* 二 3月 23 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.27-2
+- broke searching in PK, this patch fixes it.
+
+* 四 3月 18 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.27-1
+- 3.2.27 from upstream (more or less the same as 3.2.26-6 but with a new number
+
+* 四 3月 11 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-6
+- should be the final HEAD update before 3.2.27
+
+* 三 2月 24 2010 James Antill <james@fedoraproject.org> - 3.2.26-5
+- new HEAD, minor features and speed.
+
+* 三 2月 17 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-4
+- new HEAD to fix the fix to the fix
+
+* 二 2月 16 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-3
+- latest head - including fixes to searchPrcos
+
+* 三 2月 10 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-2
+- grumble.
+
+* 二 2月 09 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-1
+- final 3.2.26
+
+* 一 2月 08 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-14
+- $uuid, pkgtags searching, latest HEAD patch - pre 3.2.26
+
+* 四 1月 28 2010 James Antill <james at fedoraproject.org> - 3.2.25-13
+- A couple of bugfixes, most notably:
+-  you can now install gpg keys again!
+-  bad installed file requires don't get cached.
+
+* 五 1月 22 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-12
+- someone forgot to push their changes
+
+* 五 1月 22 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-11
+- more fixes, more fun
+
+* 五 1月 15 2010 James Antill <james at fedoraproject.org> - 3.2.25-10
+- latest head
+- Fixes for pungi, rpmdb caching and kernel-PAE-devel duplicates finding
+- among others.
+
+* 一 1月 04 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-8
+- latest head
+

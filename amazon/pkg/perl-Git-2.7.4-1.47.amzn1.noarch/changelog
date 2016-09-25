@@ -1,0 +1,1092 @@
+* 一 3月 21 2016 Ian Weller <iweller@amazon.com>
+- Update to 2.7.4 (for CVE-2016-2315, CVE-2016-2324)
+
+* 三 3月 16 2016 Ian Weller <iweller@amazon.com>
+- import source package F24/git-2.7.3-1.fc24
+- import source package F24/git-2.7.2-1.fc24
+- import source package F24/git-2.7.1-1.fc24
+- import source package F24/git-2.7.0-3.fc24
+- import source package F24/git-2.7.0-1.fc24
+- import source package F24/git-2.6.4-1.fc24
+- import source package F24/git-2.6.3-2.fc24
+- import source package F24/git-2.6.3-1.fc24
+- import source package F24/git-2.6.2-2.fc24
+- import source package F24/git-2.6.2-1.fc24
+- import source package F24/git-2.6.1-1.fc24
+- import source package F24/git-2.6.0-1.fc24
+- import source package F24/git-2.5.3-1.fc24
+- import source package F24/git-2.5.2-1.fc24
+- import source package F24/git-2.5.1-1.fc24
+- import source package F23/git-2.5.0-1.fc23
+- import source package F23/git-2.4.6-1.fc23
+- import source package F23/git-2.4.5-2.fc23
+- import source package F23/git-2.4.5-1.fc23
+- import source package F23/git-2.4.4-2.fc23
+- import source package F23/git-2.4.3-2.fc23
+
+* 一 3月 14 2016 Jon Ciesla <limburgher@gmail.com> - 2.7.3-1
+- Update to 2.7.3.
+
+* 二 2月 23 2016 Jon Ciesla <limburgher@gmail.com> - 2.7.2-1
+- Update to 2.7.2.
+
+* 六 2月 06 2016 Jon Ciesla <limburgher@gmail.com> - 2.7.1-1
+- Update to 2.7.1.
+
+* 四 2月 04 2016 Petr Stodulka <pstodulk@redhat.com> - 2.7.0-3
+- remove all '.gitignore' files from packages
+
+* 三 2月 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 2.7.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
+* 二 1月 05 2016 Jon Ciesla <limburgher@gmail.com> - 2.7.0-1
+- Update to 2.7.0.
+- Infinite loop patch appears obsolete.
+
+* 三 12月 09 2015 Jon Ciesla <limburgher@gmail.com> - 2.6.4-1
+- Update to 2.6.4.
+
+* 二 12月 08 2015 Ben Cressey <bcressey@amazon.com>
+- add test routines for checking protocol disabling
+- import source package F22/git-2.4.3-7.fc22
+
+* 五 11月 27 2015 Petr Stodulka <pstodulk@redhat.com> - 2.6.3-2
+- found 2 perl scripts in git-core, move them to git package
+  (#1284688)
+
+* 五 11月 06 2015 Jon Ciesla <limburgher@gmail.com> - 2.6.3-1
+- Update to 2.6.3.
+
+* 二 11月 03 2015 Petr Stodulka <pstodulk@gmail.com> - 2.6.2-2
+- provides failback for the macro _pkgdocdir (#1277550)
+
+* 六 10月 17 2015 Jon Ciesla <limburgher@gmail.com> - 2.6.2-1
+- Update to 2.6.2.
+
+* 二 10月 06 2015 Jon Ciesla <limburgher@gmail.com> - 2.6.1-1
+- Update to 2.6.1.
+
+* 二 9月 29 2015 Jon Ciesla <limburgher@gmail.com> - 2.6.0-1
+- Update to 2.6.0.
+
+* 五 9月 18 2015 Jon Ciesla <limburgher@gmail.com> - 2.5.3-1
+- Update to 2.5.3.
+
+* 五 9月 11 2015 Jon Ciesla <limburgher@gmail.com> - 2.5.2-1
+- Update to 2.5.2.
+
+* 六 8月 29 2015 Petr Stodulka <pstodulk@redhat.com> - 2.5.1-1
+- Update to 2.5.1
+
+* 五 8月 28 2015 Ethan Faust <efaust@amazon.com>
+- import source package F22/git-2.4.3-6.fc22
+- import source package F22/git-2.4.3-3.fc22
+- import source package F22/git-2.4.3-1.fc22
+- import source package F22/git-2.4.0-1.fc22
+- import source package F22/git-2.2.2-2.fc22
+- import source package F22/git-2.2.2-1.fc22
+
+* 二 7月 28 2015 Jon Ciesla <limburgher@gmail.com> - 2.5.0-1
+- Update to 2.5.0.
+
+* 四 7月 16 2015 Petr Stodulka <pstodulk@redhat.com> - 2.4.6-1
+- New upstream release 2.4.6
+
+* 二 7月 07 2015 Jonathan Underwood <jonathan.underwood@gmail.com> - 2.4.5-2
+- Comply with modern Emacs packaging guidelines on recent Fedora
+  No longer split out emacs-git and emacs-git-el sub-packages on recent Fedora
+  Require emacs-filesystem on recent Fedora (#1234552)
+
+* 五 6月 26 2015 Jon Ciesla <limburgher@gmail.com> - 2.4.5-1
+- Update to 2.4.5.
+
+* 一 6月 22 2015 Petr Stodulka <pstodulk@gmail.com> - 2.4.4-2
+- git-svn - added requires for perl-Digest-MD5 (#1218176)
+- solve troubles with infinite loop due to broken symlink (probably
+  shouldn't be problem here, but it's reproducible manually)
+  (#1204193)
+
+* 二 6月 16 2015 Jon Ciesla <limburgher@gmail.com> - 2.4.4-1
+- Update to 2.4.4.
+
+* 三 6月 10 2015 Jitka Plesnikova <jplesnik@redhat.com> - 2.4.3-4
+- Perl 5.22 re-rebuild of bootstrapped packages
+
+* 二 6月 09 2015 Jitka Plesnikova <jplesnik@redhat.com> - 2.4.3-3
+- Perl 5.22 rebuild
+
+* 一 6月 08 2015 Petr Stodulka <pstodulk@redhat.com> - 2.4.3-2
+- separate documentation files from git-core package to git-core-doc
+  including core man pages
+
+* 六 6月 06 2015 Jon Ciesla <limburgher@gmail.com> - 2.4.3-1
+- Update to 2.4.3.
+
+* 五 6月 05 2015 Jitka Plesnikova <jplesnik@redhat.com>
+- Perl 5.22 rebuild
+
+* 三 6月 03 2015 Petr Stodulka <pstodulk@redhat.com> - 2.4.2-2
+- split create subpackage git-core (perl-less) from git package
+- git package requires git-core and it has same tool set as
+  before
+- relevant docs are part of git-core package too
+- removed proved and obsoletes in git for git-core
+
+* 二 5月 26 2015 Jon Ciesla <limburgher@gmail.com> - 2.4.2-1
+- Update to 2.4.2.
+
+* 四 5月 14 2015 Jon Ciesla <limburgher@gmail.com> - 2.4.1-1
+- Update to 2.4.1.
+
+* 五 5月 01 2015 Jon Ciesla <limburgher@gmail.com> - 2.4.0-1
+- Update to 2.4.0.
+
+* 二 4月 28 2015 Jon Ciesla <limburgher@gmail.com> - 2.3.7-1
+- Update to 2.3.7.
+
+* 三 4月 22 2015 Jon Ciesla <limburgher@gmail.com> - 2.3.6-1
+- Update to 2.3.6.
+
+* 一 4月 06 2015 Jon Ciesla <limburgher@gmail.com> - 2.3.5-1
+- Update to 2.3.5.
+
+* 二 3月 24 2015 Petr Stodulka <pstodulk@redhat.com> - 2.3.4-1
+- Update to 2.3.4.
+
+* 一 3月 16 2015 Jon Ciesla <limburgher@gmail.com> - 2.3.3-1
+- Update to 2.3.3.
+
+* 四 3月 12 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Fix for expat 2.1.0
+
+* 一 3月 09 2015 Jon Ciesla <limburgher@gmail.com> - 2.3.2-1
+- Update to 2.3.2.
+
+* 五 2月 27 2015 Jon Ciesla <limburgher@gmail.com> - 2.3.1-1
+- Update to 2.3.1.
+
+* 六 2月 21 2015 Till Maas <opensource@till.name> - 2.3.0-2
+- Rebuilt for Fedora 23 Change
+  https://fedoraproject.org/wiki/Changes/Harden_all_packages_with_position-independent_code
+
+* 五 2月 06 2015 Jon Ciesla <limburgher@gmail.com> - 2.3.0-1
+- Update to 2.3.0.
+
+* 二 1月 27 2015 Ville Skyttä <ville.skytta@iki.fi> - 2.2.2-2
+- Install bash completion to %{_datadir}/bash-completion/completions
+
+* 五 1月 23 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 五 1月 23 2015 Jon Ciesla <limburgher@gmail.com> - 2.2.2-1
+- Update to 2.2.2.
+
+* 四 1月 08 2015 Jon Ciesla <limburgher@gmail.com> - 2.2.1-1
+- Update to 2.2.1.
+
+* 四 12月 11 2014 Petr Stodulka <pstodulk@redhat.com> - 2.2.0-3
+- removed subpackage git-hg which is replaced by git-remote-hg from
+  separated package
+
+* 五 11月 28 2014 Petr Stodulka <pstodulk@redhat.com> - 2.2.0-2
+- removed subpackage git-bzr which is replaced by git-remote-bzr from
+  separated package
+
+* 五 11月 28 2014 Petr Stodulka <pstodulk@redhat.com> - 2.2.0-1
+- 2.2.0
+
+* 五 10月 24 2014 Pierre-Yves Chibon <pingou@pingoured.fr> - 2.1.0-5
+- Rename the git.service into git@.service fixing
+  https://bugzilla.redhat.com/980574
+
+* 一 9月 08 2014 Jitka Plesnikova <jplesnik@redhat.com> - 2.1.0-4
+- Perl 5.20 re-rebuild of bootstrapped packages
+
+* 四 8月 28 2014 Jitka Plesnikova <jplesnik@redhat.com> - 2.1.0-3
+- Perl 5.20 rebuild
+
+* 二 8月 26 2014 Lee Trager <ltrager@amazon.com>
+- Remove unused obsoletes
+
+* 二 8月 26 2014 Jitka Plesnikova <jplesnik@redhat.com> - 2.1.0-2
+- Disable requires perl(Term::ReadKey) when perl bootstraping
+
+* 一 8月 18 2014 Lee Trager <ltrager@amazon.com>
+- import source package F21/git-2.1.0-1.fc21
+
+* 一 8月 18 2014 Ondrej Oprala <ooprala@redhat.com - 2.1.0-1
+- 2.1.0
+
+* 六 8月 16 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
+* 五 8月 08 2014 Lee Trager <ltrager@amazon.com>
+- Add check section
+- import source package F21/git-2.0.4-1.fc21
+- import source package F21/git-2.0.3-1.fc21
+- import source package F21/git-2.0.1-1.fc21
+- import source package F21/git-2.0.0-2.fc21
+- import source package F20/git-1.9.3-1.fc20
+- import source package F20/git-1.9.0-1.fc20
+- import source package F20/git-1.8.5.3-2.fc20
+
+* 四 7月 31 2014 Ondrej Oprala <ooprala@redhat.com - 2.0.4-1
+- 2.0.4
+
+* 一 7月 28 2014 Ondrej Oprala <ooprala@redhat.com - 2.0.3-1
+- 2.0.3
+
+* 五 7月 11 2014 Ondrej Oprala <ooprala@redhat.com - 2.0.1-1
+- 2.0.1
+
+* 二 6月 10 2014 Ondrej Oprala <ooprala@redhat.com> - 2.0.0-4
+- Change source URLs, as googlecode doesn't have up-to-date tarballs
+
+* 二 6月 10 2014 Ondrej Oprala <ooprala@redhat.com> - 2.0.0-3
+- Conditionalize an ancient obsolete
+
+* 六 6月 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* 四 5月 29 2014 Ondrej Oprala <ooprala@redhat.com> - 2.0.0-1
+- Update to 2.0.0
+
+* 一 5月 19 2014 Jon Ciesla <limburgher@gmail.com> - 1.9.3-1
+- Update to 1.9.3
+
+* 一 2月 17 2014 Ondrej Oprala <ooprala@redhat.com> - 1.9.0-1
+- Update to 1.9.0
+
+* 二 2月 04 2014 Cristian Gafton <gafton@amazon.com>
+- don't ship perl scripts when bootstrapping perl
+
+* 四 1月 30 2014 Cristian Gafton <gafton@amazon.com>
+- conditionalize packaging of perl scripts
+
+* 四 1月 16 2014 Todd Zullinger <tmz@pobox.com> - 1.8.5.3-2
+- Drop unused python DESTIR patch
+- Consolidate settings for Fedora 19+ and EL 7+
+- Use new rpm filtering on Fedora 19+ and EL 7+
+- Rebuild with file-5.14-14 (#1026760)
+
+* 四 1月 16 2014 Ondrej Oprala <ooprala@redhat.com> - 1.8.5.3-1
+* Update to 1.8.5.3
+
+* 三 12月 18 2013 Ondrej Oprala <ooprala@redhat.com> - 1.8.5.2-1
+* Update to 1.8.5.2
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/git-1.8.3.1-2.el7
+
+* 三 11月 13 2013 Ville Skyttä <ville.skytta@iki.fi> - 1.8.4.2-2
+- Fix htmldir when doc dir is unversioned (#993779).
+
+* 二 10月 29 2013 Todd Zullinger <tmz@pobox.com> - 1.8.4.2-1
+- Update to 1.8.4.2 (#1024497)
+
+* 六 10月 05 2013 Todd Zullinger <tmz@pobox.com>
+- Add mercurial version requirement to git-hg, for those rebuilding on EL
+
+* 三 9月 04 2013 Lee Trager <ltrager@amazon.com>
+- import source package F19/git-1.8.3.1-1.fc19
+
+* 六 8月 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.8.3.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 一 7月 15 2013 Petr Pisar <ppisar@redhat.com> - 1.8.3.1-2
+- Perl 5.18 rebuild
+
+* 五 6月 14 2013 Todd Zullinger <tmz@pobox.com> - 1.8.3.1-1
+- Update to 1.8.3.1
+- Add bzr and hg subpackages, thanks to Michael Scherer (#974800)
+
+* 一 5月 13 2013 Jon Ciesla <limburgher@gmail.com> - 1.8.2.1-4
+- Fix typo introduced in 1.8.2-3, fixed desktop tag.
+
+* 三 5月 01 2013 Tom Callaway <spot@fedoraproject.org> - 1.8.2.1-3
+- conditionalize systemd vs xinetd
+- cleanup systemd handling (it was not quite right in -2)
+
+* 二 4月 30 2013 Tom Callaway <spot@fedoraproject.org> - 1.8.2.1-2
+- switch to systemd instead of xinetd (bz 737183)
+
+* 日 4月 14 2013 Todd Zullinger <tmz@pobox.com> - 1.8.2.1-1
+- Update to 1.8.2.1
+- Exclude optional perl(YAML::Any) dependency on EL-5
+
+* 三 4月 10 2013 Jon Ciesla <limburgher@gmail.com> - 1.8.2-3
+- Drop desktop vendor tag for >= f19.
+
+* 三 3月 27 2013 Todd Zullinger <tmz@pobox.com> - 1.8.2-2
+- Require perl(Term::ReadKey) for git add --interactive (#928328)
+- Drop DESTDIR from python instlibdir
+- Fix bogus changelog dates
+
+* 二 3月 19 2013 Adam Tkac <atkac redhat com> - 1.8.2-1
+- update to 1.8.2
+- 0001-DESTDIR-support-in-contrib-subtree-Makefile.patch has been merged
+
+* 四 3月 14 2013 Lee Trager <ltrager@amazon.com>
+- import source package F18/git-1.8.1.4-1.fc18
+
+* 二 3月 05 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/git-1.7.1-3.el6_4.1
+
+* 二 2月 26 2013 Todd Zullinger <tmz@pobox.com> - 1.8.1.4-2
+- Update asciidoc requirements, drop unsupported ASCIIDOC7
+- Define GNU_ROFF to force ASCII apostrophes in manpages (so copy/paste works)
+- Install tcsh completion (requires manual setup by users)
+- Clean up dist conditionals, don't pretend to support EL-4 builds
+- Use prebuilt documentation on EL-5, where asciidoc is too old
+- Respect gitexecdir variable in git-subtree install
+
+* 三 2月 20 2013 Adam Tkac <atkac redhat com> - 1.8.1.4-1
+- update to 1.8.1.4
+
+* 三 1月 30 2013 Lee Trager <ltrager@amazon.com>
+- import source package F18/git-1.8.1.2-1.fc18
+
+* 三 1月 30 2013 Adam Tkac <atkac redhat com> - 1.8.1.2-1
+- update to 1.8.1.2
+- own directories which should be owned (#902517)
+
+* 四 1月 03 2013 Lee Trager <ltrager@amazon.com>
+- import source package F18/git-1.8.1-1.fc18
+
+* 四 1月 03 2013 Adam Tkac <atkac redhat com> - 1.8.1-1
+- update to 1.8.1
+- build git-svn as arch subpkg due to new git-remote-testsvn binary
+
+* 二 12月 11 2012 Adam Tkac <atkac redhat com> - 1.8.0.2-1
+- update to 1.8.0.2
+
+* 四 12月 06 2012 Adam Tkac <atkac redhat com> - 1.8.0.1-2
+- don't install some unneeded credential-gnome-keyring stuff
+
+* 一 12月 03 2012 Lee Trager <ltrager@amazon.com>
+- import source package F18/git-1.8.0.1-1.fc18
+
+* 四 11月 29 2012 Adam Tkac <atkac redhat com> - 1.8.0.1-1
+- update to 1.8.0.1
+- include git-subtree in git rpm (#864651)
+
+* 二 11月 27 2012 Lee Trager <ltrager@amazon.com>
+- import source package F18/git-1.8.0-1.fc18
+
+* 一 10月 29 2012 Adam Tkac <atkac redhat com> - 1.8.0-1
+- update to 1.8.0
+- include git-credential-gnome-keyring helper in git pkg
+- 0001-cvsimport-strip-all-inappropriate-tag-strings.patch was merged
+
+* 四 10月 25 2012 Adam Tkac <atkac redhat com> - 1.7.12.1-2
+- move git-prompt.sh into usr/share/git-core/contrib/completion (#854061)
+
+* 四 9月 27 2012 Adam Tkac <atkac redhat com> - 1.7.12.1-1
+- update to 1.7.12.1
+- cvsimport should skip more characters (#850640)
+
+* 四 8月 23 2012 Todd Zullinger <tmz@pobox.com> - 1.7.12-2
+- Install git-prompt.sh which provides __git_ps1()
+
+* 三 8月 22 2012 Adam Tkac <atkac redhat com> - 1.7.12-1
+- update to 1.7.12
+
+* 三 8月 15 2012 Todd Zullinger <tmz@pobox.com> - 1.7.11.5-1
+- Update to 1.7.11.5
+- Add git-p4 subpackage (#844008)
+
+* 二 8月 07 2012 Adam Tkac <atkac redhat com> - 1.7.11.4-1
+- update to 1.7.11.4
+
+* 五 7月 27 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7.11.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 三 7月 25 2012 Todd Zullinger <tmz@pobox.com> - 1.7.11.2-2
+- Split perl(Git::SVN) into its own package (#843182)
+
+* 一 7月 16 2012 Adam Tkac <atkac redhat com> - 1.7.11.2-1
+- update to 1.7.11.2
+
+* 四 6月 28 2012 Petr Pisar <ppisar@redhat.com> - 1.7.10.4-2
+- Perl 5.16 rebuild
+
+* 五 6月 15 2012 Adam Tkac <atkac redhat com> - 1.7.10.4-1
+- update to 1.7.10.4
+
+* 四 6月 07 2012 Petr Pisar <ppisar@redhat.com> - 1.7.10.2-2
+- Perl 5.16 rebuild
+
+* 一 5月 14 2012 Adam Tkac <atkac redhat com> - 1.7.10.2-1
+- update to 1.7.10.2
+
+* 四 5月 03 2012 Adam Tkac <atkac redhat com> - 1.7.10.1-1
+- update to 1.7.10.1
+
+* 二 4月 10 2012 Adam Tkac <atkac redhat com> - 1.7.10-1
+- update to 1.7.10
+
+* 五 3月 30 2012 Adam Tkac <atkac redhat com> - 1.7.9.5-1
+- update to 1.7.9.5
+
+* 四 3月 08 2012 Adam Tkac <atkac redhat com> - 1.7.9.3-1
+- update to 1.7.9.3
+
+* 三 2月 15 2012 Todd Zullinger <tmz@pobox.com> - 1.7.9.1-1
+- Update to 1.7.9.1
+- Fix EPEL builds (rpm doesn't accept mutiple -f options in %files)
+
+* 五 2月 10 2012 Petr Pisar <ppisar@redhat.com> - 1.7.9-2
+- Rebuild against PCRE 8.30
+
+* 一 1月 30 2012 Adam Tkac <atkac redhat com> - 1.7.9-1
+- update to 1.7.9
+
+* 四 1月 19 2012 Adam Tkac <atkac redhat com> - 1.7.8.4-1
+- update to 1.7.8.4
+
+* 四 1月 12 2012 Adam Tkac <atkac redhat com> - 1.7.8.3-1
+- update to 1.7.8.3
+
+* 一 1月 02 2012 Adam Tkac <atkac redhat com> - 1.7.8.2-1
+- update to 1.7.8.2
+
+* 五 12月 23 2011 Adam Tkac <atkac redhat com> - 1.7.8.1-1
+- update to 1.7.8.1
+
+* 三 12月 07 2011 Adam Tkac <atkac redhat com> - 1.7.8-1
+- update to 1.7.8
+
+* 二 11月 29 2011 Adam Tkac <atkac redhat com> - 1.7.7.4-1
+- update to 1.7.7.4
+
+* 四 11月 10 2011 Adam Tkac <atkac redhat com> - 1.7.7.3-1
+- update to 1.7.7.3
+
+* 一 11月 07 2011 Adam Tkac <atkac redhat com> - 1.7.7.2-1
+- update to 1.7.7.2
+
+* 二 11月 01 2011 Adam Tkac <atkac redhat com> - 1.7.7.1-1
+- update to 1.7.7.1
+
+* 三 10月 26 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7.7-2
+- Rebuilt for glibc bug#747377
+
+* 四 10月 20 2011 Adam Tkac <atkac redhat com> - 1.7.7-1
+- update to 1.7.7
+  - git-1.6-update-contrib-hooks-path.patch is no longer needed
+
+* 一 9月 26 2011 Adam Tkac <atkac redhat com> - 1.7.6.4-1
+- update to 1.7.6.4
+
+* 三 9月 07 2011 Todd Zullinger <tmz@pobox.com> - 1.7.6.2-1
+- Update to 1.7.6.2
+- Fixes incompatibility caused by git push --quiet fix
+  http://thread.gmane.org/gmane.comp.version-control.git/180652
+
+* 一 8月 29 2011 Todd Zullinger <tmz@pobox.com> - 1.7.6.1-2
+- Build with PCRE support (#734269)
+
+* 五 8月 26 2011 Todd Zullinger <tmz@pobox.com> - 1.7.6.1-1
+- Update to 1.7.6.1
+- Include gpg signature for tarball in SRPM
+
+* 五 8月 05 2011 Todd Zullinger <tmz@pobox.com> - 1.7.6-5
+- Fix git push --quiet, thanks to Clemens Buchacher (#725593)
+- Obsolete git-arch as needed
+
+* 二 7月 26 2011 Todd Zullinger <tmz@pobox.com> - 1.7.6-4
+- Drop git-arch on fedora >= 16, the tla package has been retired
+- Rework most spec file dist conditionals to make future changes easier
+
+* 四 7月 21 2011 Petr Sabata <contyk@redhat.com> - 1.7.6-3
+- Perl mass rebuild
+
+* 三 7月 20 2011 Petr Sabata <contyk@redhat.com> - 1.7.6-2
+- Perl mass rebuild
+
+* 三 6月 29 2011 Adam Tkac <atkac redhat com> - 1.7.6-1
+- update to 1.7.6
+
+* 三 6月 22 2011 Cristian Gafton <gafton@amazon.com>
+- typo fix for macro defines
+- updated to 1.7.4.5
+- git amzn macro usage in spec file build
+
+* 一 6月 20 2011 Marcela Mašláňová <mmaslano@redhat.com> - 1.7.5.4-2
+- Perl mass rebuild
+
+* 四 6月 09 2011 Adam Tkac <atkac redhat com> - 1.7.5.4-1
+- update to 1.7.5.4
+
+* 二 5月 24 2011 Adam Tkac <atkac redhat com> - 1.7.5.2-1
+- update to 1.7.5.2
+
+* 四 5月 05 2011 Adam Tkac <atkac redhat com> - 1.7.5.1-1
+- update to 1.7.5.1
+
+* 三 4月 27 2011 Adam Tkac <atkac redhat com> - 1.7.5-1
+- update to 1.7.5
+
+* 一 4月 11 2011 Adam Tkac <atkac redhat com> - 1.7.4.4-1
+- update to 1.7.4.4
+
+* 一 3月 28 2011 Adam Tkac <atkac redhat com> - 1.7.4.2-1
+- update to 1.7.4.2
+- move man3/Git.3pm file to perl-Git subpkg (#664889)
+- add perl-DBD-SQLite dependency to git-cvs (#602410)
+
+* 四 3月 24 2011 Cristian Gafton <gafton@amazon.com>
+- update to version 1.7.4.1
+
+* 日 2月 13 2011 Todd Zullinger <tmz@pobox.com> - 1.7.4.1-1
+- Update to 1.7.4.1
+- Clean up documentation settings (the defaults changed in 1.7.4)
+- Improve EL-5 compatibility, thanks to Kevin Fenzi for emacs testing
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 1月 31 2011 Adam Tkac <atkac redhat com> - 1.7.4-1
+- update to 1.7.4
+
+* 三 1月 19 2011 Adam Tkac <atkac redhat com> - 1.7.3.5-1
+- update to 1.7.3.5
+
+* 六 1月 08 2011 Cristian Gafton <gafton@amazon.com>
+- Update to 1.7.2.5
+- import source package RHEL6/git-1.7.1-2.el6_0.1
+
+* 四 12月 16 2010 Adam Tkac <atkac redhat com> - 1.7.3.4-1
+- update to 1.7.3.4
+
+* 一 12月 06 2010 Adam Tkac <atkac redhat com> - 1.7.3.3-1
+- update to 1.7.3.3
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/git-1.7.1-2.el6
+
+* 五 10月 22 2010 Adam Tkac <atkac redhat com> - 1.7.3.2-1
+- update to 1.7.3.2
+
+* 四 9月 30 2010 Adam Tkac <atkac redhat com> - 1.7.3.1-1
+- update to 1.7.3.1
+
+* 三 9月 29 2010 jkeating - 1.7.3-3
+- Rebuilt for gcc bug 634757
+
+* 一 9月 20 2010 Todd Zullinger <tmz@pobox.com> - 1.7.3-2
+- Ensure the release notes are included in %doc
+
+* 日 9月 19 2010 Todd Zullinger <tmz@pobox.com> - 1.7.3-1
+- Update to 1.7.3
+
+* 二 9月 07 2010 Adam Tkac <atkac redhat com> - 1.7.2.3-1
+- update to 1.7.2.3
+
+* 五 8月 20 2010 Cristian Gafton <gafton@amazon.com>
+- fix gitweb generation
+- update to 1.7.2.2
+
+* 五 8月 20 2010 Adam Tkac <atkac redhat com> - 1.7.2.2-1
+- update to 1.7.2.2
+
+* 五 7月 30 2010 Thomas Spura <tomspur@fedoraproject.org> - 1.7.2.1-2
+- cherry-pick: "Do not unquote + into ' ' in URLs"
+
+* 四 7月 29 2010 Todd Zullinger <tmz@pobox.com> - 1.7.2.1-1
+- Update to git-1.7.2.1
+
+* 四 7月 22 2010 Adam Tkac <atkac redhat com> - 1.7.2-1
+- update to 1.7.2
+
+* 三 7月 14 2010 Cristian Gafton <gafton@amazon.com>
+- do not download stuff off the net whrn building docs
+- undo make -s builds
+
+* 二 7月 13 2010 Cristian Gafton <gafton@amazon.com>
+- rebuild
+
+* 一 7月 12 2010 Nathan Blackham <blackham@amazon.com>
+- rebuild against new curl
+
+* 一 7月 12 2010 Matt Wilson <msw@amazon.com>
+- remove BuildArch: noarch lines - they are not supported by our current rpm
+
+* 六 7月 10 2010 Cristian Gafton <gafton@amazon.com>
+- wip: update/simpplyfy spec file
+- upgrade to version 1.7.1.1
+- import source package GOBI/git-1.7.1.1-1
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/git-1.6.5.2-1.2.el6
+- setup complete for package git
+
+* 五 7月 02 2010 Adam Tkac <atkac redhat com> - 1.7.1.1-1
+- update to 1.7.1.1
+
+* 五 6月 25 2010 Adam Tkac <atkac redhat com> - 1.7.1-2
+- rebuild against new perl
+
+* 二 5月 04 2010 Todd Zullinger <tmz@pobox.com> - 1.7.1-1
+- git-1.7.1
+- Fix conditionals for EL-6
+- Comply with Emacs add-on packaging guidelines (#573423), Jonathan Underwood
+  - Place elisp source files in separate emacs-git-el package
+  - Place git support files in own directory under site-lisp
+  - Use Emacs packaging macros
+
+* 四 4月 29 2010 Marcela Maslanova <mmaslano@redhat.com> - 1.7.0.1-2
+- Mass rebuild with perl-5.12.0
+
+* 一 3月 01 2010 Todd Zullinger <tmz@pobox.com> - 1.7.0.1-1
+- git-1.7.0.1
+
+* 六 2月 13 2010 Todd Zullinger <tmz@pobox.com> - 1.7.0-1
+- git-1.7.0
+- Link imap-send with libcrypto (#565147)
+- Disable building of unused python remote helper libs
+
+* 二 1月 26 2010 Todd Zullinger <tmz@pobox.com> - 1.6.6.1-1
+- git-1.6.6.1
+- Use %{gitcoredir}/git-daemon as xinetd server option, for SELinux (#529682)
+- Make %{_var}/lib/git the default gitweb projectroot (#556299)
+- Include gitweb/INSTALL file as documentation, the gitweb README refers to it
+- Ship a short example gitweb config file (%{_sysconfdir}/gitweb.conf)
+- Remove long fixed xinetd IPv6 workaround on Fedora (#557528)
+- Install missing gitweb.js (#558740)
+
+* 三 12月 23 2009 Todd Zullinger <tmz@pobox.com> - 1.6.6-1
+- git-1.6.6
+
+* 五 12月 11 2009 Todd Zullinger <tmz@pobox.com> - 1.6.5.6-1
+- git-1.6.5.6
+
+* 日 12月 06 2009 Todd Zullinger <tmz@pobox.com> - 1.6.5.5-1
+- git-1.6.5.5
+
+* 五 12月 04 2009 Stepan Kasal <skasal@redhat.com> - 1.6.5.3-2
+- rebuild against perl 5.10.1
+
+* 六 11月 21 2009 Todd Zullinger <tmz@pobox.com> - 1.6.5.3-1
+- git-1.6.5.3
+- Only BR perl(Error) on Fedora and RHEL >= 5
+- Use config.mak to set build options
+- Improve compatibility with EPEL
+- Replace $RPM_BUILD_ROOT with %{buildroot}
+- Fix Obsoletes for those rebuilding on EL-4
+
+* 五 11月 13 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.6.5.2-1.1
+- Fix conditional for RHEL
+
+* 一 10月 26 2009 Todd Zullinger <tmz@pobox.com> - 1.6.5.2-1
+- git-1.6.5.2
+- Drop asciidoc --unsafe option, it should not be needed anymore
+- Don't use install -t/-T, they're not compatible with older coreutils
+- Don't use -perm /a+x with find, it's incompatible with older findutils
+
+* 六 10月 17 2009 Todd Zullinger <tmz@pobox.com> - 1.6.5.1-1
+- git-1.6.5.1
+
+* 日 10月 11 2009 Todd Zullinger <tmz@pobox.com> - 1.6.5-1
+- git-1.6.5
+
+* 一 9月 28 2009 Todd Zullinger <tmz@pobox.com> - 1.6.5-0.2.rc2
+- git-1.6.5.rc2
+- Enable Linus' block-sha1 implementation
+
+* 三 9月 16 2009 Todd Zullinger <tmz@pobox.com> - 1.6.4.4-1
+- git-1.6.4.4
+
+* 日 9月 13 2009 Todd Zullinger <tmz@pobox.com> - 1.6.4.3-1
+- git-1.6.4.3
+
+* 日 8月 30 2009 Todd Zullinger <tmz@pobox.com> - 1.6.4.2-1
+- git-1.6.4.2
+
+* 六 8月 22 2009 Todd Zullinger <tmz@pobox.com> - 1.6.4.1-1
+- git-1.6.4.1
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1.6.4-2
+- rebuilt with new openssl
+
+* 三 7月 29 2009 Todd Zullinger <tmz@pobox.com> - 1.6.4-1
+- git-1.6.4
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6.3.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 日 6月 28 2009 Todd Zullinger <tmz@pobox.com> - 1.6.3.3-1
+- git-1.6.3.3
+- Move contributed hooks to %{_datadir}/git-core/contrib/hooks (bug 500137)
+- Fix rpmlint warnings about Summary and git-mergetool--lib missing shebang
+
+* 五 6月 19 2009 Todd Zullinger <tmz@pobox.com> - 1.6.3.2-3
+- Temporarily disable asciidoc's safe mode until bug 506953 is fixed
+
+* 五 6月 19 2009 Todd Zullinger <tmz@pobox.com> - 1.6.3.2-2
+- Fix git-daemon hang on invalid input (CVE-2009-2108, bug 505761)
+
+* 五 6月 05 2009 Todd Zullinger <tmz@pobox.com> - 1.6.3.2-1
+- git-1.6.3.2
+- Require emacs >= 22.2 for emacs support (bug 495312)
+- Add a .desktop file for git-gui (bug 498801)
+- Set ASCIIDOC8 and ASCIIDOC_NO_ROFF to correct documentation issues,
+  the sed hack to fix bug 485161 should no longer be needed
+- Escape newline in git-daemon xinetd description (bug 502393)
+- Add xinetd to git-daemon Requires (bug 504105)
+- Organize BuildRequires/Requires, drop redundant expat Requires
+- Only build noarch subpackages on Fedora >= 10
+- Only build emacs and arch subpackages on Fedora
+- Handle curl/libcurl naming for EPEL and Fedora
+
+* 五 4月 03 2009 Todd Zullinger <tmz@pobox.com> - 1.6.2.2-1
+- git-1.6.2.2
+- Include contrib/ dir in %doc (bug 492490)
+- Don't set DOCBOOK_XSL_172, fix the '\&.ft' with sed (bug 485161)
+- Ignore Branches output from cvsps-2.2b1 (bug 490602)
+- Remove shebang from bash-completion script
+- Include README in gitweb subpackage
+
+* 一 3月 09 2009 Todd Zullinger <tmz@pobox.com> - 1.6.2-1
+- git-1.6.2
+- Include contrib/emacs/README in emacs subpackage
+- Drop upstreamed git-web--browse patch
+
+* 二 2月 24 2009 Todd Zullinger <tmz@pobox.com> - 1.6.1.3-2
+- Require perl(Authen::SASL) in git-email (bug 483062)
+- Build many of the subpackages as noarch
+- Update URL field
+
+* 一 2月 09 2009 Todd Zullinger <tmz@pobox.com> 1.6.1.3-1
+- git-1.6.1.3
+- Set htmldir so "git help -w <command>" works
+- Patch git-web--browse to not use "/sbin/start" to browse
+- Include git-daemon documentation in the git-daemon package
+
+* 四 1月 29 2009 Josh Boyer <jwboyer@gmail.com> 1.6.1.2-1
+- git-1.6.1.2
+
+* 一 1月 26 2009 Todd Zullinger <tmz@pobox.com> 1.6.1.1-1
+- git-1.6.1.1
+- Make compile more verbose
+
+* 五 1月 16 2009 Tomas Mraz <tmraz@redhat.com> 1.6.1-2
+- rebuild with new openssl
+
+* 六 1月 03 2009 Todd Zullinger <tmz@pobox.com> 1.6.1-1
+- Install git-* commands in %{_libexecdir}/git-core, the upstream default
+- Remove libcurl from Requires, rpm will pick this up automatically
+- Consolidate build/install options in %make_git (Roland McGrath)
+- Include DirectoryIndex in gitweb httpd-config (bug 471692)
+- Define DOCBOOK_XSL_172 to fix minor manpage issues
+- Rename %{_var}/lib/git-daemon to %{_var}/lib/git
+- Preserve timestamps on installed files
+- Quiet some rpmlint complaints
+- Use macros more consistently
+
+* 六 12月 20 2008 Todd Zullinger <tmz@pobox.com> 1.6.0.6-1
+- git-1.6.0.6
+- Fixes a local privilege escalation bug in gitweb
+  (http://article.gmane.org/gmane.comp.version-control.git/103624)
+- Add gitk Requires to git-gui (bug 476308)
+
+* 四 12月 11 2008 Josh Boyer <jboyer@gmail.com> 1.6.0.5-1
+- git-1.6.0.5
+
+* 一 11月 17 2008 Seth Vidal <skvidal at fedoraproject.org>
+- switch from /srv/git to /var/lib/git-daemon for packaging rules compliance
+
+* 五 11月 14 2008 Josh Boyer <jwboyer@gmail.com> 1.6.0.4-1
+- git-1.6.0.4
+
+* 三 10月 22 2008 Josh Boyer <jwboyer@gmail.com> 1.6.0.3-1
+- git-1.6.0.3
+- Drop curl requirement in favor of libcurl (bug 449388)
+- Add requires for SMTP-SSL perl module to make git-send-email work (bug 443615)
+
+* 四 8月 28 2008 James Bowes <jbowes@redhat.com> 1.6.0.1-1
+- git-1.6.0.1
+
+* 四 7月 24 2008 James Bowes <jbowes@redhat.com> 1.5.6-4
+- git-1.5.6.4
+
+* 四 6月 19 2008 James Bowes <jbowes@redhat.com> 1.5.6-1
+- git-1.5.6
+
+* 二 6月 03 2008 Stepan Kasal <skasal@redhat.com> 1.5.5.3-2
+- use tar.bz2 instead of tar.gz
+
+* 三 5月 28 2008 James Bowes <jbowes@redhat.com> 1.5.5.3-1
+- git-1.5.5.3
+
+* 一 5月 26 2008 James Bowes <jbowes@redhat.com> 1.5.5.2-1
+- git-1.5.5.2
+
+* 一 4月 21 2008 James Bowes <jbowes@redhat.com> 1.5.5.1-1
+- git-1.5.5.1
+
+* 三 4月 09 2008 James Bowes <jbowes@redhat.com> 1.5.5-1
+- git-1.5.5
+
+* 五 4月 04 2008 James Bowes <jbowes@redhat.com> 1.5.4.5-3
+- Remove the last two requires on git-core.
+
+* 三 4月 02 2008 James Bowes <jbowes@redhat.com> 1.5.4.5-2
+- Remove a patch that's already upstream.
+
+* 五 3月 28 2008 James Bowes <jbowes@redhat.com> 1.5.4.5-1
+- git-1.5.4.5
+
+* 三 3月 26 2008 James Bowes <jbowes@redhat.com> 1.5.4.4-4
+- Own /etc/bash_completion.d in case bash-completion isn't installed.
+
+* 二 3月 25 2008 James Bowes <jbowes@redhat.com> 1.5.4.4-3
+- Include the sample hooks from contrib/hooks as docs (bug 321151).
+- Install the bash completion script from contrib (bug 433255).
+- Include the html docs in the 'core' package again (bug 434271).
+
+* 三 3月 19 2008 James Bowes 1.5.4.4-2
+- Obsolete git <= 1.5.4.3, to catch going from F8 to rawhide/F9
+
+* 四 3月 13 2008 James Bowes <jbowes@redhat.com> 1.5.4.4-1
+- git-1.5.4.4
+
+* 一 3月 03 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.5.4.3-3
+- rebuild for new perl (again)
+
+* 日 2月 24 2008 Bernardo Innocenti <bernie@codewiz.org> 1.5.4.3-2
+- Do not silently overwrite /etc/httpd/conf.d/git.conf
+
+* 六 2月 23 2008 James Bowes <jbowes@redhat.com> 1.5.4.3-1
+- git-1.5.4.3
+- Include Kristian Høgsberg's changes to rename git-core to
+  git and git to git-all.
+
+* 日 2月 17 2008 James Bowes <jbowes@redhat.com> 1.5.4.2-1
+- git-1.5.4.2
+
+* 一 2月 11 2008 Jeremy Katz <katzj@redhat.com> - 1.5.4.1-2
+- Add upstream patch (e62a641de17b172ffc4d3a803085c8afbfbec3d1) to have 
+  gitweb rss feeds point be commitdiffs instead of commit
+
+* 日 2月 10 2008 James Bowes <jbowes@redhat.com> 1.5.4.1-1
+- git-1.5.4.1
+
+* 二 2月 05 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.5.4-3
+- rebuild for new perl
+
+* 日 2月 03 2008 James Bowes <jbowes@redhat.com> 1.5.4-1
+- Add BuidRequires on gettext.
+
+* 六 2月 02 2008 James Bowes <jbowes@redhat.com> 1.5.4-1
+- git-1.5.4
+
+* 二 1月 08 2008 James Bowes <jbowes@redhat.com> 1.5.3.8-1
+- git-1.5.3.8
+
+* 五 12月 21 2007 James Bowes <jbowes@redhat.com> 1.5.3.7-2
+- Have git metapackage require explicit versions (bug 247214)
+
+* 一 12月 03 2007 Josh Boyer <jwboyer@gmail.com> 1.5.3.7-1
+- git-1.5.3.7
+
+* 二 11月 27 2007 Josh Boyer <jwboyer@gmail.com> 1.5.3.6-1
+- git-1.5.3.6
+- git-core requires perl(Error) (bug 367861)
+- git-svn requires perl(Term:ReadKey) (bug 261361)
+- git-email requires perl-Git (bug 333061)
+
+* 三 10月 24 2007 Lubomir Kundrak <lkundrak@redhat.com> 1.5.3.4-2
+- git-Perl requires Error package
+
+* 二 10月 09 2007 James Bowes <jbowes@redhat.com> 1.5.3.4-1
+- git-1.5.3.4
+
+* 日 9月 30 2007 James Bowes <jbowes@redhat.com> 1.5.3.3-1
+- git-1.5.3.3
+
+* 三 9月 26 2007 James Bowes <jbowes@redhat.com> 1.5.3.2-1
+- git-1.5.3.2
+
+* 四 9月 06 2007 Josh Boyer <jwboyer@jdub.homelinux.org> 1.5.3.1-2
+- Include git-gui and git-citool docs
+
+* 四 9月 06 2007 Josh Boyer <jwboyer@jdub.homelinux.org> 1.5.3.1-1
+- git-1.5.3.1-1
+
+* 四 8月 23 2007 James Bowes <jbowes@redhat.com> 1.5.2.5-1
+- git-1.5.2.5-1
+
+* 五 8月 03 2007 Josh Boyer <jwboyer@jdub.homelinux.org> 1.5.2.4-1
+- git-1.5.2.4-1
+
+* 二 7月 03 2007 Josh Boyer <jwboyer@jdub.homelinux.org> 1.5.2.2-3
+- Add git-daemon and gitweb packages
+
+* 四 6月 21 2007 Josh Boyer <jwboyer@jdub.homelinux.org> 1.5.2.2-2
+- Add emacs-git package (#235431)
+
+* 一 6月 18 2007 James Bowes <jbowes@redhat.com> 1.5.2.2-1
+- git-1.5.2.2
+
+* 五 6月 08 2007 James Bowes <jbowes@redhat.com> 1.5.2.1-1
+- git-1.5.2.1
+
+* 日 5月 13 2007 Quy Tonthat <qtonthat@gmail.com>
+- Added lib files for git-gui
+- Added Documentation/technical (As needed by Git Users Manual)
+
+* 二 5月 08 2007 Quy Tonthat <qtonthat@gmail.com>
+- Added howto files
+
+* 五 3月 30 2007 Chris Wright <chrisw@redhat.com> 1.5.0.6-1
+- git-1.5.0.6
+
+* 一 3月 19 2007 Chris Wright <chrisw@redhat.com> 1.5.0.5-1
+- git-1.5.0.5
+
+* 二 3月 13 2007 Chris Wright <chrisw@redhat.com> 1.5.0.3-1
+- git-1.5.0.3
+
+* 五 3月 02 2007 Chris Wright <chrisw@redhat.com> 1.5.0.2-2
+- BuildRequires perl-devel as of perl-5.8.8-14 (bz 230680)
+
+* 一 2月 26 2007 Chris Wright <chrisw@redhat.com> 1.5.0.2-1
+- git-1.5.0.2
+
+* 二 2月 13 2007 Nicolas Pitre <nico@cam.org>
+- Update core package description (Git isn't as stupid as it used to be)
+
+* 一 2月 12 2007 Junio C Hamano <junkio@cox.net>
+- Add git-gui and git-citool.
+
+* 日 12月 10 2006 Chris Wright <chrisw@redhat.com> 1.4.4.2-2
+- no need to install manpages executable (bz 216790)
+- use bytes for git-cvsserver
+
+* 日 12月 10 2006 Chris Wright <chrisw@redhat.com> 1.4.4.2-1
+- git-1.4.4.2
+
+* 一 11月 06 2006 Jindrich Novy <jnovy@redhat.com> 1.4.2.4-2
+- rebuild against the new curl
+
+* 二 10月 17 2006 Chris Wright <chrisw@redhat.com> 1.4.2.4-1
+- git-1.4.2.4
+
+* 三 10月 04 2006 Chris Wright <chrisw@redhat.com> 1.4.2.3-1
+- git-1.4.2.3
+
+* 五 9月 22 2006 Chris Wright <chrisw@redhat.com> 1.4.2.1-1
+- git-1.4.2.1
+
+* 一 9月 11 2006 Chris Wright <chrisw@redhat.com> 1.4.2-1
+- git-1.4.2
+
+* 四 7月 06 2006 Chris Wright <chrisw@redhat.com> 1.4.1-1
+- git-1.4.1
+
+* 二 6月 13 2006 Chris Wright <chrisw@redhat.com> 1.4.0-1
+- git-1.4.0
+
+* 四 5月 04 2006 Chris Wright <chrisw@redhat.com> 1.3.3-1
+- git-1.3.3
+- enable git-email building, prereqs have been relaxed
+
+* 四 5月 04 2006 Chris Wright <chrisw@redhat.com> 1.3.2-1
+- git-1.3.2
+
+* 五 4月 28 2006 Chris Wright <chrisw@redhat.com> 1.3.1-1
+- git-1.3.1
+
+* 三 4月 19 2006 Chris Wright <chrisw@redhat.com> 1.3.0-1
+- git-1.3.0
+
+* 一 4月 10 2006 Chris Wright <chrisw@redhat.com> 1.2.6-1
+- git-1.2.6
+
+* 三 4月 05 2006 Chris Wright <chrisw@redhat.com> 1.2.5-1
+- git-1.2.5
+
+* 三 3月 01 2006 Chris Wright <chrisw@redhat.com> 1.2.4-1
+- git-1.2.4
+
+* 三 2月 22 2006 Chris Wright <chrisw@redhat.com> 1.2.3-1
+- git-1.2.3
+
+* 二 2月 21 2006 Chris Wright <chrisw@redhat.com> 1.2.2-1
+- git-1.2.2
+
+* 四 2月 16 2006 Chris Wright <chrisw@redhat.com> 1.2.1-1
+- git-1.2.1
+
+* 一 2月 13 2006 Chris Wright <chrisw@redhat.com> 1.2.0-1
+- git-1.2.0
+
+* 三 2月 01 2006 Chris Wright <chrisw@redhat.com> 1.1.6-1
+- git-1.1.6
+
+* 二 1月 24 2006 Chris Wright <chrisw@redhat.com> 1.1.4-1
+- git-1.1.4
+
+* 日 1月 15 2006 Chris Wright <chrisw@redhat.com> 1.1.2-1
+- git-1.1.2
+
+* 二 1月 10 2006 Chris Wright <chrisw@redhat.com> 1.1.1-1
+- git-1.1.1
+
+* 二 1月 10 2006 Chris Wright <chrisw@redhat.com> 1.1.0-1
+- Update to latest git-1.1.0 (drop git-email for now)
+- Now creates multiple packages:
+-        git-core, git-svn, git-cvs, git-arch, gitk
+
+* 一 11月 14 2005 H. Peter Anvin <hpa@zytor.com> 0.99.9j-1
+- Change subpackage names to git-<name> instead of git-core-<name>
+- Create empty root package which brings in all subpackages
+- Rename git-tk -> gitk
+
+* 四 11月 10 2005 Chris Wright <chrisw@osdl.org> 0.99.9g-1
+- zlib dependency fix
+- Minor cleanups from split
+- Move arch import to separate package as well
+
+* 二 9月 27 2005 Jim Radford <radford@blackbean.org>
+- Move programs with non-standard dependencies (svn, cvs, email)
+  into separate packages
+
+* 二 9月 27 2005 H. Peter Anvin <hpa@zytor.com>
+- parallelize build
+- COPTS -> CFLAGS
+
+* 五 9月 16 2005 Chris Wright <chrisw@osdl.org> 0.99.6-1
+- update to 0.99.6
+
+* 五 9月 16 2005 Horst H. von Brand <vonbrand@inf.utfsm.cl>
+- Linus noticed that less is required, added to the dependencies
+
+* 日 9月 11 2005 Horst H. von Brand <vonbrand@inf.utfsm.cl>
+- Updated dependencies
+- Don't assume manpages are gzipped
+
+* 四 8月 18 2005 Chris Wright <chrisw@osdl.org> 0.99.4-4
+- drop sh_utils, sh-utils, diffutils, mktemp, and openssl Requires
+- use RPM_OPT_FLAGS in spec file, drop patch0
+
+* 三 8月 17 2005 Tom "spot" Callaway <tcallawa@redhat.com> 0.99.4-3
+- use dist tag to differentiate between branches
+- use rpm optflags by default (patch0)
+- own %{_datadir}/git-core/
+
+* 一 8月 15 2005 Chris Wright <chrisw@osdl.org>
+- update spec file to fix Buildroot, Requires, and drop Vendor
+
+* 日 8月 07 2005 Horst H. von Brand <vonbrand@inf.utfsm.cl>
+- Redid the description
+- Cut overlong make line, loosened changelog a bit
+- I think Junio (or perhaps OSDL?) should be vendor...
+
+* 四 7月 14 2005 Eric Biederman <ebiederm@xmission.com>
+- Add the man pages, and the --without docs build option
+
+* 四 7月 07 2005 Chris Wright <chris@osdl.org>
+- initial git spec file
+

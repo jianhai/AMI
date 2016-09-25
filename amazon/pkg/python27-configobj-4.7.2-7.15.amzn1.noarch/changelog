@@ -1,0 +1,109 @@
+* 一 3月 23 2015 Ben Cressey <bcressey@amazon.com>
+- add obsoletes for legacy python-configobj
+
+* 二 2月 03 2015 Ben Cressey <bcressey@amazon.com>
+- build with multiple pythons
+
+* 五 9月 12 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Explicitly describe file list on %files section; clean-up obsolete %if sections
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-configobj-4.7.2-7.el7
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 4.7.2-7
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-configobj-4.7.2-6.el7
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.7.2-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.7.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.7.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.7.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-configobj-4.6.0-3.el6
+
+* 五 8月 20 2010 Cristian Gafton <gafton@amazon.com>
+- egg-info is generated only on recent releases
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 4.7.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 四 7月 15 2010 Cristian Gafton <gafton@amazon.com>
+- use system python macros
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-configobj-4.6.0-2.1.el6
+- setup complete for package python-configobj
+
+* 四 6月 17 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 4.7.2-1
+- Fix traceback when doing from validate import *
+- Upstream bugfix release
+
+* 三 1月 20 2010 Luke Macken <lmacken@redhat.com> - 4.7.0-2
+- Merge a bunch of changes from Gareth Armstrong <gareth.armstrong@hp.com>
+    - The src zip file should come either from http://www.voidspace.org.uk/
+      downloads/ or http://code.google.com/p/configobj/ as the PyPI tarball is
+      not complete.  No docs and no test code.
+    - Added docs
+    - Remove BR on python-setuptools-devel
+
+* 日 1月 10 2010 Luke Macken <lmacken@redhat.com> - 4.7.0-1
+- Update to 4.7.0
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.6.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 5月 07 2009 Yaakov M. Nemoy <ynemoy@fedoraproject.org> - 4.6.0-1
+- updated to latest upstream
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.5.3-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 09 2009 Luke Macken <lmacken@redhat.com> - 4.5.3-4
+- Conditionally include the egg-info, when available (#478417)
+
+* 一 12月 01 2008 Toshio Kuratomi <toshio@fedoraproject.org> - 4.5.3-3
+- Upload Source file so this actually builds.
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 4.5.3-2
+- Rebuild for Python 2.6
+
+* 六 6月 28 2008 Luke Macken <lmacken@redhat.com> - 4.5.3-1
+- Update to 4.5.3
+
+* 四 2月 28 2008 Luke Macken <lmacken@redhat.com> - 4.5.2-1
+- Update to 4.5.2
+
+* 日 9月 02 2007 Luke Macken <lmacken@redhat.com> - 4.4.0-2
+- Update for python-setuptools changes in rawhide
+
+* 六 3月 03 2007 Luke Macken <lmacken@redhat.com> - 4.4.0-1
+- 4.4.0
+
+* 六 12月 09 2006 Luke Macken <lmacken@redhat.com> - 4.3.2-6
+- Rebuild for python 2.5
+
+* 日 9月 03 2006 Luke Macken <lmacken@redhat.com> - 4.3.2-5
+- Fix dist tag
+
+* 日 9月 03 2006 Luke Macken <lmacken@redhat.com> - 4.3.2-4
+- Rebuild for FC6
+
+* 一 8月 14 2006 Luke Macken <lmacken@redhat.com> - 4.3.2-3
+- Include pyo files
+
+* 二 7月 18 2006 Luke Macken <lmacken@redhat.com> - 4.3.2-2
+- Fix typo in the url
+
+* 一 7月 10 2006 Luke Macken <lmacken@redhat.com> - 4.3.2-1
+- Initial package
+

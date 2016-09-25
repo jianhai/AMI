@@ -1,0 +1,26 @@
+Name        : perl-Text-ParseWords
+Version     : 3.29
+Release     : 4.5.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时40分37秒
+Group       : Development/Libraries
+Size        : 16431
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时36分00秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-Text-ParseWords-3.29-4.5.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 20时29分52秒
+Build Host  : build-64001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/Text-ParseWords/
+Summary     : Parse text into an array of tokens or array of arrays
+Description :
+The nested_quotewords() and quotewords() functions accept a delimiter (which
+can be a regular expression) and a list of lines and then breaks those lines
+up into a list of words ignoring delimiters that appear inside quotes.
+quotewords() returns all of the tokens in a single long list, while
+nested_quotewords() returns a list of token lists corresponding to the
+elements of @lines. parse_line() does tokenizing on a single string. The
+quotewords() functions simply call &parse_line(), so if you're only splitting
+one line you can call parse_line() directly and save a function call.

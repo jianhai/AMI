@@ -1,0 +1,14 @@
+postinstall scriptlet (using /bin/sh):
+if [ -e /usr/share/info/bc.info.gz -a -e /usr/share/info/dc.info.gz ]; then
+  /sbin/install-info /usr/share/info/bc.info.gz /usr/share/info/dir \
+  --entry="* bc: (bc).                      The GNU calculator language." || :
+  /sbin/install-info /usr/share/info/dc.info.gz /usr/share/info/dir \
+  --entry="* dc: (dc).                      The GNU RPN calculator." || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 -a -e /usr/share/info/bc.info.gz -a -e /usr/share/info/dc.info.gz ]; then
+  /sbin/install-info --delete /usr/share/info/bc.info.gz /usr/share/info/dir \
+  --entry="* bc: (bc).                      The GNU calculator language." || :
+  /sbin/install-info --delete /usr/share/info/dc.info.gz /usr/share/info/dir \
+  --entry="* dc: (dc).                      The GNU RPN calculator." || :
+fi

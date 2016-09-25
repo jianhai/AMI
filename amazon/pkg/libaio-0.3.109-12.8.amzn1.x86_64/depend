@@ -1,0 +1,5 @@
+/sbin/ldconfig
+/sbin/ldconfig
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

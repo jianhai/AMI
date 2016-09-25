@@ -1,0 +1,41 @@
+/bin/bash
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/sbin/nologin
+/sbin/service
+/usr/sbin/groupadd
+/usr/sbin/groupdel
+/usr/sbin/useradd
+/usr/sbin/userdel
+chkconfig
+config(cyrus-sasl) = 2.1.23-13.16.amzn1
+cyrus-sasl-lib = 2.1.23-13.16.amzn1
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libcom_err.so.2()(64bit)
+libcrypt.so.1()(64bit)
+libcrypt.so.1(GLIBC_2.2.5)(64bit)
+libcrypto.so.10()(64bit)
+libcrypto.so.10(libcrypto.so.10)(64bit)
+libdb-4.7.so()(64bit)
+libdl.so.2()(64bit)
+libgssapi_krb5.so.2()(64bit)
+libk5crypto.so.3()(64bit)
+libkrb5.so.3()(64bit)
+libkrb5.so.3(krb5_3_MIT)(64bit)
+libkrb5support.so.0()(64bit)
+liblber-2.4.so.2()(64bit)
+libldap-2.4.so.2()(64bit)
+libpam.so.0()(64bit)
+libpam.so.0(LIBPAM_1.0)(64bit)
+libresolv.so.2()(64bit)
+libsasl2.so.2()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

@@ -1,0 +1,9 @@
+/etc/cron.daily/tmpwatch
+/usr/bin/tmpwatch
+/usr/sbin/tmpwatch
+/usr/share/doc/tmpwatch-2.9.16
+/usr/share/doc/tmpwatch-2.9.16/COPYING
+/usr/share/doc/tmpwatch-2.9.16/ChangeLog
+/usr/share/doc/tmpwatch-2.9.16/NEWS
+/usr/share/doc/tmpwatch-2.9.16/README
+/usr/share/man/man8/tmpwatch.8.gz

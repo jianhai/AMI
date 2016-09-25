@@ -1,0 +1,68 @@
+* 四 12月 20 2012 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/epel-release-6-8
+
+* 日 11月 04 2012 <stahnma@fedoraproject.org> - 6-8
+- Fix URL bz #870686
+
+* 五 6月 08 2012 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/epel-release-6-7
+
+* 五 5月 11 2012 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/epel-release-6-6
+
+* 三 5月 09 2012 Jens Petersen <petersen@redhat.com> - 6-7
+- add ppc64 to ghc_arches
+
+* 二 1月 10 2012 Jens Petersen <petersen@redhat.com> - 6-6
+- add /etc/rpm/macros.ghc-srpm from fedora redhat-rpm-macros
+
+* 三 7月 20 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Add dist to the Release tag
+- import source package GOBI/epel-release-6-5
+- setup complete for package epel-release
+
+* 三 7月 20 2011 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/epel-release-6-5
+- import source package EPEL6/epel-release-6-4
+- import source package EPEL6/epel-release-6-3
+
+* 二 7月 19 2011 Cristian Gafton <gafton@amazon.com>
+- setup complete for package epel-release
+
+* 二 10月 12 2010 Michael Stahnke <stahnma@fedoraproject.org> - 6-5
+- Fix bug #627611
+
+* 三 8月 11 2010 Seth Vidal <skvidal at fedoraproject.org> - 6-4
+- conflict fedora-release
+
+* 五 7月 09 2010 Dennis Gilmore <dennis@ausil.us> - 6-3
+- use metalink urls not mirrorlist ones
+
+* 二 4月 27 2010 Dennis Gilmore <dennis@ausil.us> - 6-1
+- setup for EL-6
+- new key
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 7月 17 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 6.1
+- fix license tag
+
+* 日 3月 25 2007 Michael Stahnke <mastahnke@gmail.com> - 6-0
+- Bumped in devel to RHEL 6. (We can dream).
+
+* 日 3月 25 2007 Michael Stahnke <mastahnke@gmail.com> - 4-4
+- Changed description again
+
+* 日 3月 25 2007 Michael Stahnke <mastahnke@gmail.com> - 4-3
+- Removed cp in postun
+- Removed the file epel-release - provides no value
+- Removed dist tag as per review bug #233236
+- Changed description
+
+* 三 3月 14 2007 Michael Stahnke <mastahnke@gmail.com> - 4-2
+- Fixed up2date issues.
+
+* 一 3月 12 2007 Michael Stahnke <mastahnke@gmail.com> - 4-1
+- Initial Package
+

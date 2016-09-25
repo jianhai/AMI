@@ -1,0 +1,27 @@
+Name        : bzip2
+Version     : 1.0.6
+Release     : 8.12.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分40秒
+Group       : Applications/File
+Size        : 79335
+License     : BSD
+Signature   : RSA/SHA256, 2011年01月25日 星期二 18时33分10秒, Key ID bcb4a85b21c0f39f
+Source RPM  : bzip2-1.0.6-8.12.amzn1.src.rpm
+Build Date  : 2011年01月15日 星期六 12时39分25秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.bzip.org/
+Summary     : A file compression utility
+Description :
+Bzip2 is a freely available, patent-free, high quality data compressor.
+Bzip2 compresses files to within 10 to 15 percent of the capabilities
+of the best techniques available.  However, bzip2 has the added benefit
+of being approximately two times faster at compression and six times
+faster at decompression than those techniques.  Bzip2 is not the
+fastest compression utility, but it does strike a balance between speed
+and compression capability.
+
+Install bzip2 if you need a compression utility.

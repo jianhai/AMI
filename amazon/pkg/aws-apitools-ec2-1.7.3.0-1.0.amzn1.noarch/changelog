@@ -1,0 +1,170 @@
+* 五 1月 09 2015 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.3.0 from upstream
+
+* 一 12月 29 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.2.4 from upstream
+
+* 二 11月 25 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.2.3 from upstream
+
+* 五 11月 21 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.2.2 from upstream
+
+* 五 11月 14 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.2.0 from upstream
+
+* 二 11月 04 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.1.3 from upstream
+
+* 二 10月 28 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.1.2 from upstream
+
+* 五 9月 12 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.1.1 from upstream
+
+* 三 7月 02 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.7.1.0 from upstream
+
+* 四 6月 05 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Use the full source URL
+- Update to 1.7.0.2 from upstream
+- Update to 1.7.0.1 from upstream
+
+* 二 6月 03 2014 hpetty <hpetty@amazon.com>
+- Update to 1.7.0.0 from upstream
+
+* 五 5月 30 2014 hpetty <hpetty@amazon.com>
+- Update to 1.6.14.1 from upstream
+
+* 二 4月 08 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.13.0 from upstream
+
+* 一 1月 27 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.12.2 from upstream
+
+* 四 11月 14 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.12.0 from upstream
+
+* 三 10月 16 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.11.0 from upstream
+
+* 四 9月 26 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.10.1 from upstream
+
+* 五 9月 13 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.10.0 from upstream
+
+* 二 9月 10 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.9.0 from upstream
+
+* 一 8月 12 2013 Lee Trager <ltrager@amazon.com>
+- Upgrade to 1.6.8.1 from upstream
+
+* 三 7月 10 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.8.0 from upstream
+
+* 二 5月 07 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.7.3 from upstream
+
+* 三 4月 10 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.7.2 from upstream
+
+* 六 3月 23 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.7.1 from upstream
+
+* 二 3月 12 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.7 from upstream
+
+* 二 2月 12 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.6.4
+
+* 一 1月 14 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.6.0 from upstream
+
+* 一 11月 05 2012 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.5.1 from upstream
+
+* 一 9月 17 2012 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.3.0 from upstream
+
+* 五 9月 07 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Update to 1.6.1.4 from upstream
+
+* 三 8月 22 2012 Ben Cressey <bcressey@amazon.com>
+- Update to 1.6.1.4 from upstream
+
+* 四 8月 09 2012 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.1.2 from upstream
+
+* 一 7月 30 2012 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.1.0 from upstream
+
+* 三 7月 25 2012 Lee Trager <ltrager@amazon.com>
+- Update to 1.6.0.0 from upstream.
+
+* 四 7月 12 2012 Lee Trager <ltrager@amazon.com>
+- Upgrade to 1.5.6.0 from upstream
+
+* 一 6月 11 2012 Lee Trager <ltrager@amazon.com>
+- Include missing license file
+- Update to 1.5.5.0 from upstream
+
+* 二 6月 05 2012 Lee Trager <ltrager@amazon.com>
+- Set the description, add aws-apitools-common as a dep, and set the package group to Amazon/Tools
+
+* 六 6月 02 2012 Lee Trager <ltrager@amazon.com>
+- Cleanup the spec file and ship with the symlinks instead of creating them in the post install script
+- Update to 1.5.4.0 from upstream
+
+* 一 4月 23 2012 Lee Trager <ltrager@amazon.com>
+- Update to the latest version from upstream
+
+* 三 3月 14 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Update to 1.5.2.5
+
+* 二 1月 03 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Update to 1.5.2.2
+
+* 四 12月 22 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Date removed from version string again
+- Update to 1.5.1.0
+
+* 五 12月 09 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Update to 1.5.0.1
+
+* 一 9月 19 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Update to 1.4.4.2 and use upstream .zip
+
+* 三 6月 01 2011 Nathan Blackham <blackham@amazon.com>
+- fix typo in version number
+
+* 三 5月 18 2011 Nathan Blackham <blackham@amazon.com>
+- New version 1.4.2.4
+
+* 四 3月 24 2011 Nathan Blackham <blackham@amazon.com>
+- update to 1.4.1.2
+
+* 一 2月 07 2011 Nathan Blackham <blackham@amazon.com>
+- updating jre requires to >= 1.6.0
+
+* 二 12月 21 2010 Nathan Blackham <blackham@amazon.com>
+- upgrading to 1.3.62308
+
+* 三 9月 22 2010 Nathan Blackham <blackham@amazon.com>
+- fix typo
+- upgrading to 1.3-57419
+
+* 三 7月 21 2010 Nathan Blackham <blackham@amazon.com>
+- add dist tag
+
+* 四 7月 01 2010 Cristian Gafton <gafton@amazon.com>
+- import source package tools/aws-apitools-ec2-1.3.46266-2
+- setup complete for package aws-apitools-ec2
+
+* 二 4月 13 2010 KaOS <kaos@amazon.com>
+- Requires: jre
+
+* 四 2月 25 2010 KaOS <kaos@amazon.com>
+- 1.3.46266
+- Initial packaging
+

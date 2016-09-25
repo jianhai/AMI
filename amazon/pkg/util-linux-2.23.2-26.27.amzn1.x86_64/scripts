@@ -1,0 +1,20 @@
+postinstall scriptlet (using /bin/sh):
+# only for minimal buildroots without /var/log
+[ -d /var/log ] || mkdir -p /var/log
+touch /var/log/lastlog
+chown root:root /var/log/lastlog
+chmod 0644 /var/log/lastlog
+# Fix the file context, do not use restorecon
+if [ -x /usr/sbin/selinuxenabled ] && /usr/sbin/selinuxenabled; then
+	SECXT=$( /usr/sbin/matchpathcon -n /var/log/lastlog 2> /dev/null )
+	if [ -n "$SECXT" ]; then
+		# Selinux enabled, but without policy? It's true for buildroots
+		# without selinux stuff on host machine with enabled selinux.
+		# We don't want to use any RPM dependence on selinux policy for
+		# matchpathcon(2). SELinux policy should be optional.
+		/usr/bin/chcon "$SECXT"  /var/log/lastlog >/dev/null 2>&1 || :
+	fi
+fi
+if [ ! -L /etc/mtab ]; then
+	ln -fs /proc/mounts /etc/mtab
+fi

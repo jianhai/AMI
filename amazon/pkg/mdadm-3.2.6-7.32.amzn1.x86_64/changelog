@@ -1,0 +1,904 @@
+* 四 9月 18 2014 Ben Cressey <bcressey@amazon.com>
+- add conflict with older udev
+
+* 一 5月 12 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.6-7.el6_5.2
+
+* 一 4月 07 2014 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-7.2
+- Gracefully exit if mdmon received SIGTERM to avoid data corruption
+- Resolves bz1084676
+
+* 一 3月 17 2014 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-7.1
+- Fix problem where mdadm would crash if trying to create an IMSM array with
+  missing drives.
+- Resolves bz1077131
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.6-7.el6
+
+* 一 10月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.5-4.el6_4.3
+
+* 三 10月 09 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-7
+- Check for DM_UDEV_DISABLE_OTHER_RULES_FLAG instead of
+  DM_UDEV_DISABLE_DISK_RULES_FLAG in 65-md-incremental.rules 
+- Resolves bz1015514
+
+* 一 9月 30 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-6
+- Fix problem with failed disks in failed RAID volume not being removed
+- Resolves bz1010859
+
+* 四 9月 26 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-5
+- Fix problem with rebuild not restarting on stopped RAID1/10 IMSM arrays
+- Resolves bz1001627
+
+* 三 9月 11 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.5-4.el6_4.2
+
+* 五 8月 23 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-4
+- Fix problem with RAID10 resync failing to restart if it has been
+  stopped after 50% completion.
+- Resolves bz995105
+
+* 四 7月 18 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-3
+- Fix problem where first stop command doesn't stop container during
+  IMSM volume's reshape
+- Fix annoying build noise caused by latest rpmbuild
+- Resolves bz956016
+
+* 二 5月 28 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.5-4.el6_4.1
+
+* 五 5月 03 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-2
+- Enhance raid-check to allow the admin to specify the max number of
+  concurrent arrays to be checked at any given time.
+- Resolves bz819943
+
+* 四 5月 02 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.6-1
+- Update mdadm to upstream release v3.2.6
+  This includes all current patches, except for
+  mdadm-3.2.5-imsm-Forbid-spanning-between-multiple-controllers.patch and
+  mdadm-3.2.5-Create.c-check-if-freesize-is-equal-0.patch
+- Fix problem with arrays marked <ignored> in mdadm.conf still being
+  auto-assembled
+- Fix problem with it not being possible to use <ignore> more than
+  once in mdadm.conf
+- Resolves bz922971
+- Resolves bz902142
+- Resolves bz902137
+
+* 四 5月 02 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-6
+- Fix problem with IMSM metadata where resync progress would be lost
+  if an array was stopped during ongoing expansion of a RAID1/5 volume.
+- Resolves bz903212
+
+* 一 4月 29 2013 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-5
+- Fix problem with IMSM RAID5 not rebuilding after reboot
+- Resolves bz955972
+
+* 三 3月 13 2013 Lee Trager <ltrager@amazon.com>
+- Clean up spec file, allow clean switch to and from systemd
+
+* 一 2月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.5-4.el6
+
+* 四 12月 06 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-4
+- Fix typo in error message in fix for 880208. No code functional change
+- Resolves bz880208
+
+* 三 11月 28 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-3
+- Avoid corruption by prohibiting an IMSM array from spanning multiple
+  controllers (bz878810)
+- Prevent creation of a second IMSM array of size 0 (bz880208)
+- Avoid segfault when running mdadm --detail on an IMSM raid1 array
+  where two drives have been disabled (bz880225)
+- Resolves bz878810, bz880208, bz880225
+
+* 一 10月 15 2012 Cristian Gafton <gafton@amazon.com>
+- update/fix systemd conditional requires
+- import source package F16/mdadm-3.2.5-4.fc16
+- import source package F16/mdadm-3.2.5-3.fc16
+- import source package F16/mdadm-3.2.5-1.fc16
+- import source package F16/mdadm-3.2.3-7.fc16
+
+* 四 10月 04 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-2
+- Resolve issue with ambiguous licenses
+- Resolves bz862565
+
+* 五 8月 10 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-1
+- Update mdadm to upstream release v3.2.5
+  This includes all current patches, except for
+  mdadm-3.2.3-imsm-fix-correct-checking-volume-s-degradation.patch
+- Resolved bz812358
+
+* 一 7月 16 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-4
+- Move /etc/tmpfiles.d/mdadm.conf to /lib/tmpfiles.d/ to comply with
+  Fedora tmpfile rules
+- Resolves bz840187
+
+* 一 6月 25 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-3
+- Fix problem where reshape of RAID volume is broken after trying to
+  stop all MD devices.
+- Enhance raid-check to allow the adming to specify the max number of
+  concurrent arrays to be checked at any given time.
+- Resolves bz830177, bz820124
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.3-9.el6
+
+* 三 6月 13 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-2
+- Fix uninstall script to remove dangling symlink to
+  mdmonitor-takeover.service, if the mdadm package is uninstalled from
+  the system.
+- Resolves bz828354
+
+* 四 5月 31 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-11
+- Fix case where reshape of IMSM RAID fails because we don't check the
+  return value when trying to read the word 'degraded' from sysfs,
+  resulting in the use of random stack data.
+- Resolves bz824815
+
+* 一 5月 21 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.5-1
+- Upgrade to mdadm-3.2.5
+- Resolves bz822850
+
+* 二 5月 15 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.4-3
+- Fix mdadm-3.2.4 introduced bug where --add fails in common cases
+- Resolves bz821717 (f17) bz821718 (f16) bz821719 (f15)
+
+* 四 5月 10 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-10
+- Fix man-page to state the correct location for the device-map file
+- Resolves bz820643
+
+* 四 5月 10 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.4-2
+- Fix mdadm.conf to use 'd' for /var/run/mdadm creation, to avoid the
+  map file getting deleted during boot.
+
+* 四 5月 10 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.4-1
+- Upgrade to mdadm-3.2.4
+- Resolves bz820534 (rawhide) bz820527 (f17) bz820531 (f16) bz820532 (f15)
+
+* 一 4月 30 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-9
+- Fix Monitor mode sometimes crashes when a resync completes
+- Fix missing symlink for mdadm container device when incremental creates
+  the array
+- Make sure when creating a second array in a container that the second
+  array uses all available space since leaving space for a third array
+  is invalid
+- Validate the number of imsm volumes per controller
+- Fix issues with imsm arrays and disks larger than 2TB
+- Add support for expanding imsm arrays/containers
+- The support for expanding imsm arrays/containers was accepted upstream,
+  update to the official patches from there
+- Fix for the issue of --add not being very smart
+- Fix an issue causing rebuilds to fail to restart on reboot (data
+  corrupter level problem)
+- Reset the bad flag on map file updates
+- Correctly fix failure when trying to add internal bitmap to 1.0 arrays
+- Resolves: bz817023 (f17) bz817024 (f17) bz817026 (f17) bz817028 (f17)
+- Resolves: bz817029 (f17) bz817032 (f17) bz817038 (f17) bz808774 (f17)
+- Resolves: bz817039 (f17) bz817042 (f17)
+
+* 一 4月 30 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-8
+- Fix bug where IMSM arrays stay inactive in case a reboot is
+- performed during the reshape process.
+- Resolves: bz817522 (f17) bz817535 (f16) bz817537 (f15)
+
+* 四 4月 26 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-9
+- Correctly fix failure when trying to add internal bitmap to 1.0 arrays
+- Resolves bz811282
+
+* 一 4月 23 2012 Doug Ledford <dledford@redhat.com> - 3.2.3-8
+- The support for expanding imsm arrays/containers was accepted upstream,
+  update to the official patches from there
+- Fix for the issue of --add not being very smart
+- Fix an issue causing rebuilds to fail to restart on reboot (data
+  corrupter level problem)
+- Reset the bad flag on map file updates
+- bitmap_offset is signed, treat it as such
+- Related: bz808475
+- Resolves: bz808776, bz812001, bz814743, bz811282
+
+* 六 4月 07 2012 Doug Ledford <dledford@redhat.com> - 3.2.3-7
+- Fix Monitor mode sometimes crashes when a resync completes
+- Fix missing symlink for mdadm container device when incremental creates
+  the array
+- Make sure when creating a second array in a container that the second
+  array uses all available space since leaving space for a third array
+  is invalid
+- Validate the number of imsm volumes per controller
+- Fix issues with imsm arrays and disks larger than 2TB
+- Add support for expanding imsm arrays/containers
+- Resolves: bz808424, bz808519, bz808492, bz808438, bz808507,
+	    bz808475
+
+* 三 3月 28 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-7
+- Fix issue when re-adding drive to a raid1 array with bitmap
+- Resolves: bz807743 (f17) bz769323 (f16) bz791159 (f15)
+
+* 五 3月 16 2012 ltrager <ltrager@amazon.com>
+- import source package F16/mdadm-3.2.3-6.fc16
+
+* 二 2月 28 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-6
+- Fix segfault if trying to write superblock to non existing device
+- Resolves: bz795751
+
+* 四 2月 23 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-6
+- Fix double free on buggy old kernel sysfs read
+- Fix segfault if trying to write superblock to non existing device
+- Resolves: bz795707 (f17) bz795747 (f16) bz795748 (f15)
+- Resolves: bz795461 (f17) bz795749 (f16) bz795750 (f15)
+
+* 二 2月 21 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-5
+- Fix issue with devices failing to be added to a raid using bitmaps,
+  due to trying to write the bitmap with mis-aligned buffers using
+  O_DIRECT 
+- Resolves: bz790394
+
+* 一 2月 20 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-4
+- Fix bug where IMSM arrays stay inactive in case a reboot is
+- performed during the reshape process.
+- Resolves: bz730052
+
+* 四 2月 16 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-5
+- Fix issue with devices failing to be added to a raid using bitmaps,
+  due to trying to write the bitmap with mis-aligned buffers using
+  O_DIRECT 
+- Resolves: bz789898 (f16) bz791189 (f15)
+
+* 四 2月 09 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-3
+- Really enable fix for problem where a device fails to remove from
+- an IMSM container
+- Resolves: bz771332
+
+* 四 2月 02 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-2
+- Fix problem where a device fails to remove from an IMSM container
+- Resolves: bz771332
+
+* 一 1月 30 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-4
+- Add support for --offroot to mdadm/mdmon
+- Resolves: bz785739 (rawhide) bz785737 (f16) bz771405 (f15)
+
+* 三 1月 18 2012 ltrager <ltrager@amazon.com>
+- import source package F16/mdadm-3.2.3-3.fc16
+
+* 四 1月 12 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-3
+- Fix case where we have to retry in case a remove fails due to an array
+  being busy
+- Resolves: bz773337 (rawhide) bz773340 (f16) bz773341 (f15)
+
+* 四 1月 05 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-1
+- Update to latest upstream mdadm-3.2.3
+- Resolves: bz745802
+
+* 四 1月 05 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-2
+- Workaround for gcc-4.7 strict aliasing breaking the build
+
+* 三 1月 04 2012 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.3-1
+- Update to upstream 3.2.3
+- Resolves: bz770110 (rawhide) bz771413 (f16) bz759014 (rawhide)
+- Resolves: bz759015 (f16) bz759035 (rawhide) bz759036 (f16)
+- Resolves: bz771608 (f15) bz759016 (f15) bz759039 (f15)
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.2-9.el6
+
+* 一 11月 21 2011 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.2-15
+- Backport upstream fix for memory leak that can prevent migration to
+  RAID5 from completing.
+- Backport upstream fix preventing mounting a device while it is in
+  process of reshaping
+- Resolves: bz755005 bz755009
+
+* 三 11月 09 2011 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.2-14
+- Backport upstream fixes to prevent growing v0.90 metadata raid out
+  of supported size.
+- Add missing 'disable' argument to systemctl in preun script
+- Resolves: bz735306 (Fedora 15) bz748731 (Fedora 16) bz748732 (rawhide),
+  Resolves: bz751716
+
+* 五 11月 04 2011 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.2-9
+- Fix problem where an IMSM RAID is rejected because of unexpected
+  attribute settings. Additional fix being extra cautious from -8.
+- Resolves: bz733153
+
+* 三 10月 26 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.2.2-13
+- Rebuilt for glibc bug#747377
+
+* 六 10月 22 2011 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.2-12
+- Backport upstream version of fix for IMSM RAID assembly problem,
+  which resolves issues when booting off sysvinit based system.
+- Resolves: bz736387 (Fedora 15) bz744217 (Fedora 16)
+
+* 三 10月 19 2011 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.2-11
+- Fix systemd dependency problem
+- Resolves: bz741115 (F16) bz744226 (rawhide)
+
+* 三 10月 19 2011 Jes Sorensen <Jes.Sorensen@redhat.com> - 3.2.2-10
+- Fix problem where a dirty IMSM RAID isn't assembled correctly during
+  boot, preventing booting from this RAID device.
+- Resolves: bz736387 (Fedora 15) bz744217 (Fedora 16)
+- Fix race between udev and mdadm when assembling md device using
+  mdadm -I, where udev would spawn an additional mdadm command to
+  perform the assembly in parallel.
+
+* 三 8月 31 2011 Doug Ledford <dledford@redhat.com> - 3.2.2-9
+- Fix boot with older imsm arrays that have an unused attribute set
+- Resolves: bz729205
+
+* 四 8月 25 2011 Doug Ledford <dledford@redhat.com> - 3.2.2-8
+- Rework the 65-md-incremental.rules file to add the following support:
+  Nested md raid arrays should now work
+  MD on top of LUKS or other lvm based devices should now work
+  We should no longer grab multipath paths before multipath can
+
+* 二 8月 09 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.2-1.el6_1.2
+
+* 三 7月 27 2011 Doug Ledford <dledford@redhat.com> - 3.2.2-7
+- Fix a bug with readding a device
+- Fix a bug with writemostly flag handling
+
+* 一 7月 18 2011 Doug Ledford <dledford@redhat.com> - 3.2.2-6
+- Bump and rebuild again
+
+* 五 7月 15 2011 Doug Ledford <dledford@redhat.com> - 3.2.2-5
+- Bump and rebuild to keep version ahead of f15 version
+
+* 四 7月 14 2011 Doug Ledford <dledford@redhat.com> - 3.2.2-4
+- Fix minor issue in man page
+- Resolves: bz717795
+
+* 四 7月 07 2011 Milan Broz <mbroz@redhat.com> - 3.2.2-3
+- Use unit files with systemd. (johannbg)
+- Add sub-package sysvinit for SysV init script.
+- Resolves: bz713573
+
+* 三 7月 06 2011 Milan Broz <mbroz@redhat.com> - 3.2.2-2
+- Fix build on PPC.
+- Resolves: bz719380
+
+* 二 6月 28 2011 Milan Broz <mbroz@redhat.com> - 3.2.2-1
+- Update to latest upstream version
+- Resolves: bz714083
+
+* 二 6月 14 2011 Doug Ledford <dledford@redhat.com> - 3.2.1-5
+- Fix for bz710646
+
+* 六 5月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.2.1-1.el6
+
+* 四 3月 31 2011 Doug Ledford <dledford@redhat.com> - 3.2.1-4
+- Somehow the 64-md-raid.rules file went missing.  Put it back.
+- Resolves: bz692248
+
+* 四 3月 31 2011 Doug Ledford <dledford@redhat.com> - 3.2.1-3
+- Fix mdmonitor init script setup of SELinux on PIDPATH
+- Resolves: bz692559
+
+* 一 3月 28 2011 Doug Ledford <dledford@redhat.com> - 3.2.1-2
+- Restore build command to sane command instead of test command
+
+* 一 3月 28 2011 Doug Ledford <dledford@redhat.com> - 3.2.1-1
+- Update to latest upstream version
+- Resolves: 691353
+
+* 五 3月 25 2011 Doug Ledford <dledford@redhat.com> - 3.1.5-1
+- Update to latest upstream stable release
+- Update mdadm.rules file to honor noiswmd and nodmraid command line options
+- Ghost the directory in /var/run, create /var/run/mdadm in mdmonitor init
+  script
+- Don't report mismatch counts on either raid1 or raid10
+- Check both active and idle arrays during raid check runs
+- Move the raid-check script from cron.weekly to /usr/sbin, add a crontab
+  file to /etc/cron.d and mark it config(noreplace).  This way users can
+  select their own raid-check frequency and have it honored through
+  upgrades.
+- Allow the raid-check script to set the process and io priority of the
+  thread performing the check in order to preserve responsiveness of the
+  machine during the check.
+- Resolves: 633229, 656620. 679843, 671076, 659933
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.1.3-0.git20100804.2.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 1月 17 2011 Cristian Gafton <gafton@amazon.com>
+- fix patches so they're in the correct diff format
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.1.3-1.el6
+
+* 三 8月 04 2010 Doug Ledford <dledford@redhat.com> - 3.1.3-0.git20100804.2
+- Add udev patch to not have incremental assembly in two rules files
+
+* 三 8月 04 2010 Doug Ledford <dledford@redhat.com> - 3.1.3-0.git20100804.1
+- Update to latest upstream release (resolves an issue with stale lock
+  files on the md device map file)
+
+* 四 7月 22 2010 Doug Ledford <dledford@redhat.com> - 3.1.3-0.git20100722.2
+- Remove the glibc-static buildreq and don't build the static mdadm since
+  we don't install it anyway
+- Remove the udev file since adding it was supposed to be a rawhide only change
+
+* 四 7月 22 2010 Doug Ledford <dledford@redhat.com> - 3.1.3-0.git20100722.1
+- Change git date format to the correct format (YYYYMMDD)
+- Update to latest upstream push (fixes bz604023)
+
+* 二 7月 20 2010 Doug Ledford <dledford@redhat.com> - 3.1.3-0.git07202010.2
+- Fix racy locking of mapfile (bz616596)
+
+* 二 7月 20 2010 Doug Ledford <dledford@redhat.com> - 3.1.3-0.git07202010.1
+- Update to latest git repo (3.1.2 plus pending changes, fixes bz602457)
+- Add in 64-md-raid.rules to compensate for it no longer being in udev
+  (bz581905)
+- Remove mdadm.static as its no longer used in initrd creation
+
+* 四 7月 15 2010 Nathan Blackham <blackham@amazon.com>
+- add build requires on glibc-static
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/mdadm-3.1.2-11.el6
+- import source package RHEL6/mdadm-3.1.1-0.gcd9a8b5.5.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/mdadm-2.6.9-3.el5
+- import source package RHEL5/mdadm-2.6.9-2.el5
+- import source package RHEL5/mdadm-2.6.4-1.el5
+- import source package RHEL5/mdadm-2.5.4-3.el5
+- added submodule prep for package mdadm
+
+* 二 4月 13 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-10
+- Minor update to mdadm.rules to make anaconda happy
+
+* 四 4月 08 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-9
+- Slight fix on container patch
+
+* 四 4月 08 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-8
+- Updated container patch that also enables mdadm -IRs for imsm devices
+
+* 二 4月 06 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-7
+- Fix up directory in mdmonitor init script so that we restart mdmon like we
+  are supposed to
+- Add a rule to run incremental assembly on containers in case there are
+  multiple volumes in a container and we only started some of them in the
+  initramfs
+- Make -If work with imsm arrays.  We had too restrictive of a test in
+  sysfs_unique_holder.
+- Make incremental assembly of containers act like incremental assembly of
+  regular devices (aka, --run is needed to start a degraded array)
+
+* 二 4月 06 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-6
+- Typo in new rules file
+
+* 二 4月 06 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-5
+- Enable incremental support for imsm devices
+
+* 二 4月 06 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-4
+- One line fix for ppc64 compiles
+
+* 二 4月 06 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-3
+- Clean up directory mess once and for all
+- Add incremental remove support
+
+* 三 3月 17 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-2
+- Add a little more paranoia checking to the RebuildMap code to avoid ever
+  having the same infinite loop as in bz569019 again even if we change file
+  locations to somewhere where we can't create a mapfile
+
+* 二 3月 16 2010 Doug Ledford <dledford@redhat.com> - 3.1.2-1
+- Grab latest upstream release instead of git repo snapshot (bz552344, bz572561)
+- The lack of /dev/md is causing problems, so add code to mapfile.c to cause
+  us to create /dev/md if it doesn't exist (bz569019)
+
+* 二 2月 23 2010 Doug Ledford <dledford@redhat.com> - 3.1.1-0.gcd9a8b5.6
+- Newer version of imsm patch that leaves warning, but only when there
+  actually are too many devices on the command line (bz554974)
+
+* 日 2月 21 2010 Doug Ledford <dledford@redhat.com> - 3.1.1-0.gcd9a8b5.5
+- The uuid patch cause a different problem during assembly, so use a gross
+  hack to work around the uuid issue that won't break assembly until fixed
+  properly upstream (bz567132)
+
+* 日 2月 21 2010 Doug Ledford <dledford@redhat.com> - 3.1.1-0.gcd9a8b5.4
+- Fix problem with booting multiple imsm containers when they aren't listed
+  "just so" in the mdadm.conf file (bz554974)
+
+* 五 2月 19 2010 Doug Ledford <dledford@redhat.com> - 3.1.1-0.gcd9a8b5.3
+- Don't run the raid-check script if the kernel doesn't support
+  md devices (bz557053)
+- Don't report any mismatch_cnt issues on raid1 devices as there are
+  legitimate reasons why the count may not be 0 and we are getting enough
+  false positives that it renders the check useless (bz554217, bz547128)
+
+* 四 2月 18 2010 Doug Ledford <dledford@redhat.com> - 3.1.1-0.gcd9a8b5.2
+- Fix s390/ppc64 UUID byte swap issue
+
+* 三 2月 17 2010 Doug Ledford <dledford@redhat.com> - 3.1.1-0.gcd9a8b5.1
+- Update to head of upstream git repo, which contains a significant number
+  of bug fixes we need (bz543746)
+
+* 五 1月 15 2010 Doug Ledford <dledford@redhat.com> - 3.0.3-3
+- Fix crash when AUTO keyword is in mdadm.conf (bz552342)
+
+* 二 12月 01 2009 Doug Ledford <dledford@redhat.com> - 3.0.3-2
+- Minor tweak to init script for LSB compliance (bz527957)
+
+* 三 11月 04 2009 Doug Ledford <dledford@redhat.com> - 3.0.3-1
+- New upstream release 3.0.3 (bz523320, bz527281)
+- Update a couple internal patches
+- Drop a patch in that was in Neil's tree for 3.0.3 that we had pulled for
+  immediate use to resolve a bug
+- Drop the endian patch because it no longer applied cleanly and all attempts
+  to reproduce the original problem as reported in bz510605 failed, even up
+  to and including downloading the specific package that was reported as
+  failing in that bug and trying to reproduce with it on both ppc and ppc64
+  hardware and with both ppc and ppc64 versions on the 64bit hardware.
+  Without a reproducer, it is impossible to determine if a rehashed patch
+  to apply to this code would actually solve the problem, so remove the patch
+  entirely since the original problem, as reported, was an easy to detect DOA
+  issue where installing to a raid array was bound to fail on reboot and so
+  we should be able to quickly and definitively tell if the problem resurfaces.
+- Update the mdmonitor init script for LSB compliance (bz527957)
+- Link from mdadm.static man page to mdadm man page (bz529314)
+- Fix a problem in the raid-check script (bz523000)
+- Fix the intel superblock handler so we can test on non-scsi block devices
+
+* 五 10月 02 2009 Hans de Goede <hdegoede@redhat.com> - 3.0.2-1
+- New upstream release 3.0.2
+- Add a patch fixing mdadm --detail -export segfaults (bz526761, bz523862)
+- Add a patch making mdmon store its state under /dev/.mdadm for initrd
+  mdmon, rootfs mdmon handover
+- Restart mdmon from initscript (when running) for rootfs mdmon handover
+
+* 四 9月 17 2009 Doug Ledford <dledford@redhat.com> - 3.0-4
+- Stop some mdmon segfaults (bz523860)
+
+* 二 9月 15 2009 Doug Ledford <dledford@redhat.com> - 3.0-3
+- Update to current head of upstream git repo for various imsm related fixes
+  (fixes bz523262)
+- Fix display of metadata version in output of Detail mode
+- Add UUID output to --detail --export (bz523314)
+
+* 五 7月 24 2009 Doug Ledford <dledford@redhat.com> - 3.0-2
+- Improved raid-check script as well as the ability to configure what devices
+  get checked
+- Endian patch for uuid generation
+
+* 一 6月 29 2009 Doug Ledford <dledford@redhat.com> - 3.0-1
+- Remove stale patches already accepted by upstream
+- Fix the raid-check script to only try and check a device if it is
+  checkable
+- Update to official mdadm-3.0 version
+- Resolves: bz505587, bz505552
+
+* 二 5月 19 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel3.7
+- Move the mdadm.map file from /dev/md/ to /dev/ so the installer doesn't
+  need to precreate the /dev/md/ directory in order for incremental
+  assembly to work
+
+* 二 5月 19 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel3.6
+- Only check raid devices automatically, do not attempt to repair them
+  during the weekly data scrubbing
+
+* 五 3月 20 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel3.5
+- Fix a few issues with the new code to determine when a device gets to
+  keep its name and when it doesn't
+
+* 五 3月 20 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel3.4
+- Change the perms on the udev rules file, it doesn't need to be +x
+
+* 五 3月 20 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel3.3
+- Slightly tweak the udev rules to make sure we don't start arrays
+  while running in rc.sysinit...leave array starting to it instead
+- Modify mdadm to put its mapfile in /dev/md instead of /var/run/mdadm
+  since at startup /var/run/mdadm is read-only by default and this
+  breaks incremental assembly
+- Change how mdadm decides to assemble incremental devices using their 
+  preferred name or a random name to avoid possible conflicts when plugging
+  a foreign array into a host
+
+* 三 3月 18 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel3.2
+- Change around the mdadm udev rules we ship to avoid a udev file conflict
+
+* 二 3月 17 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel3.1
+- Update to latest devel release
+- Remove the no longer necessary udev patch
+- Remove the no longer necessary warn patch
+- Remove the no longer necessary alias patch
+- Update the mdadm.rules file to only pay attention to device adds, not
+  changes and to enable incremental assembly
+- Add a cron job to run a weekly repair of the array to correct bad sectors
+- Resolves: bz474436, bz490972
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0-0.devel2.2.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 19 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel2.2
+- Readd our old mdadm rules file that does incremental assembly
+- Remove the new mdadm rules file from upstream as we already have this in
+  our udev package (and the one in the udev package already has a bug fixed)
+
+* 四 2月 12 2009 Doug Ledford <dledford@redhat.com> - 3.0-0.devel2.1
+- Update to latest upstream devel release
+- Use the udev rules file included with mdadm instead of our own
+- Drop all the no longer relevant patches
+- Fix a build error in mdopen.c
+- Fix the udev rules path in Makefile
+- Fix a compile issue with the __le32_to_cpu() macro usage (bad juju to
+  to operations on the target of the macro as it could get executed
+  multiple times, and gcc now throws an error on that)
+- Add some casts to some print statements to keep gcc from complaining
+
+* 五 10月 24 2008 Doug Ledford <dledford@redhat.com> - 2.6.7.1-1
+- Updated to latest upstream stable release (#466803)
+- Change udev rule to not assemble degraded arrays (#453314)
+- Fix metadata matching in config file (#466078)
+- Fix assembly of raid10 devices (#444237)
+- Fix incremental assembly of partitioned raid devices (#447818)
+
+* 四 6月 26 2008 Doug Ledford <dledford@redhat.com> - 2.6.7-1
+- Update to latest upstream version (should resolve #444237)
+- Drop incremental patch as it's now part of upstream
+- Clean up all the open() calls in the code (#437145)
+- Fix the build process to actually generate mdassemble (#446988)
+- Update the udev rules to get additional info about arrays being assembled
+  from the /etc/mdadm.conf file (--scan option) (#447818)
+- Update the udev rules to run degraded arrays (--run option) (#452459)
+
+* 四 4月 17 2008 Bill Nottingham <notting@redhat.com> - 2.6.4-4
+- make /dev/md if necessary in incremental mode (#429604)
+- open RAID devices with O_EXCL to avoid racing against other --incremental processes (#433932)
+
+* 五 2月 01 2008 Bill Nottingham <notting@redhat.com> - 2.6.4-3
+- add a udev rules file for device assembly (#429604)
+
+* 五 1月 18 2008 Doug Ledford <dledford@redhat.com> - 2.6.4-2
+- Bump version and rebuild
+
+* 五 10月 19 2007 Doug Ledford <dledford@redhat.com> - 2.6.4-1
+- Update to latest upstream and remove patches upstream has taken
+
+* 二 8月 28 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 2.6.2-5
+- Rebuild for selinux ppc32 issue.
+
+* 一 7月 09 2007 Doug Ledford <dledford@redhat.com> - 2.6.2-4
+- Oops, if we call -C -e1, minor_version is no longer properly set, fix that
+  up
+- Related: bz230207
+
+* 五 7月 06 2007 Doug Ledford <dledford@redhat.com> - 2.6.2-3
+- Oops, had to update the file leak patch, missed one thing
+- Minor tweak to return codes in init script and add LSB header
+- Resolves: bz244582, bz246980
+
+* 一 7月 02 2007 Doug Ledford <dledford@redhat.com> - 2.6.2-2
+- Fix a file leak issue when mdadm is in monitor mode
+- Update mdadm init script so that status will always run and so
+  return codes are standards compliant
+- Fix assembly of version 1 superblock devices
+- Make the attempt to create an already running device have a clearer
+  error message
+- Allow the creation of a degraded raid4 array like we allow for raid5
+- Make mdadm actually pay attention to raid4 devices when in monitor mode
+- Make the mdmonitor script use daemon() correctly
+- Fix a bug where manage mode would not add disks correctly under certain
+  conditions
+- Resolves: bz244582, bz242688, bz230207, bz169516, bz171862, bz171938
+- Resolves: bz174642, bz224272, bz186524
+
+* 一 7月 02 2007 Doug Ledford <dledford@redhat.com> - 2.6.2-1
+- Update to latest upstream
+- Remove requirement for /usr/sbin/sendmail - it's optional and not on by
+  default, and sendmail isn't *required* for mdadm itself to work, and isn't
+  even required for the monitoring capability to work, just if you want to
+  have the monitoring capability do the automatic email thing instead of
+  run your own program (and if you use the program option of the monitor
+  capability, your program could email you in a different manner entirely)
+
+* 一 4月 16 2007 Doug Ledford <dledford@redhat.com> - 2.6.1-4
+- More cleanups for merge review process
+- Related: bz226134
+
+* 三 4月 11 2007 Doug Ledford <dledford@redhat.com> - 2.6.1-3
+- Various cleanups as part of merge review process
+- Related: bz226134
+
+* 六 3月 31 2007 Doug Ledford <dledford@redhat.com> - 2.6.1-2
+- Oops, missing a dependency in the Makefile
+
+* 六 3月 31 2007 Doug Ledford <dledford@redhat.com> - 2.6.1-1
+- Update to latest upstream version
+- Resolves: bz233422
+
+* 五 1月 26 2007 Doug Ledford <dledford@redhat.com> - 2.6-1
+- Update to latest upstream version
+- Remove the mdmpd daemon entirely.  Now that multipath tools from the lvm/dm
+  packages handles multipath devices well, this is no longer needed.
+- Various cleanups in the spec file
+
+* 四 11月 09 2006 Doug Ledford <dledford@redhat.com> - 2.5.4-3
+- Add a fix for the broken printout of array GUID when using the -E --brief
+  flags
+
+* 五 10月 13 2006 Doug Ledford <dledford@redhat.com> - 2.5.4-2
+- tag present on another branch and can't be forcibly moved
+  required number bump
+
+* 五 10月 13 2006 Doug Ledford <dledford@redhat.com> - 2.5.4-1
+- Update to 2.5.4 (listed as a bugfix update by upstream)
+- Remove previous bitmap patch that's now part of 2.5.4
+
+* 日 10月 08 2006 Doug Ledford <dledford@redhat.com> - 2.5.3-2
+- Fix a big-endian machine error in the bitmap code (Paul Clements)
+
+* 一 8月 07 2006 Doug Ledford <dledford@redhat.com> - 2.5.3-1
+- Update to 2.5.3 which upstream calls a "bug fix" release
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.5.2-1.1
+- rebuild
+
+* 五 7月 07 2006 Doug Ledford <dledford@redhat.com> - 2.5.2-1
+- Update to 2.5.2
+- Remove auto default patch as upstream now has a preferred default auto method
+
+* 三 3月 08 2006 Peter Jones <pjones@redhat.com> - 2.3.1-3
+- fix build on ppc64
+
+* 三 3月 08 2006 Jeremy Katz <katzj@redhat.com> - 2.3.1-2
+- fix build on ppc
+
+* 三 3月 08 2006 Jeremy Katz <katzj@redhat.com> - 2.3.1-1
+- update to 2.3.1 to fix raid5 (#184284)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.2-1.fc5.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.2-1.fc5.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 12月 05 2005 Warren Togami <wtogami@redhat.com> 2.2-1
+- 2.2 upgrade (#167897)
+- disable diet because we don't ship it anymore
+  and we don't actually use mdassemble now
+
+* 一 5月 16 2005 Doug Ledford <dledford@redhat.com> 1.11.0-4.fc4
+- Make the mdmonitor init script use the pid-file option, major cleanup
+  of the script now possible (#134459)
+
+* 一 5月 16 2005 Doug Ledford <dledford@redhat.com> 1.11.0-3.fc4
+- Put back the obsoletes: raidtools that was present in 1.11.0-1.fc4
+
+* 一 5月 16 2005 Doug Ledford <dledford@redhat.com> 1.11.0-2.fc4
+- Change the default auto= mode so it need not be on the command line to
+  work with udev, however it is still supported on the command line (#132706)
+- Add a man page (from Luca Berra) for mdassemble
+
+* 三 5月 11 2005 Doug Ledford <dledford@redhat.com> - 1.11.0-1.fc4
+- Upgrade to 1.11.0
+
+* 三 4月 27 2005 Jeremy Katz <katzj@redhat.com> - 1.9.0-3.fc4
+- fix mdmonitor initscript (#144717)
+
+* 一 3月 21 2005 Doug Ledford <dledford@redhat.com> 1.9.0-2
+- Build mdadm.static and mdassemble (static as well) to be used in initrd
+  images
+
+* 三 3月 09 2005 Doug Ledford <dledford@redhat.com> 1.9.0-1
+- Initial upgrade to 1.9.0 and update of doc files
+- Fix an s390 build error
+
+* 一 10月 04 2004 Doug Ledford <dledford@redhat.com> 1.6.0-2
+- Remove /etc/mdadm.conf from the file list.  Anaconda will write one out
+  if it's needed.
+
+* 五 10月 01 2004 Doug Ledford <dledford@redhat.com> 1.6.0-1
+- Update to newer upstream version
+- Make mdmpd work on kernels that don't have the event interface patch
+
+* 五 7月 30 2004 Dan Walsh <dwalsh@redhat.com> 1.5.0-11
+- Create a directory /var/run/mdadm to contain mdadm.pid
+- This cleans up SELinux problem
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 5月 22 2004 Doug Ledford <dledford@redhat.com> - 1.5.0-9
+- Fix Makefile and build method to satisfy bz #123769
+- Add mdmpd man page, update mdmpd version to 0.3 - bz #117160
+- Make sure mdadm --monitor closes all md device files so that md devices
+  can be stopped while mdadm is still running - bz #119532
+
+* 四 5月 20 2004 Jeremy Katz <katzj@redhat.com> - 1.5.0-8
+- remove unneeded patch, can use --run instead
+
+* 三 5月 19 2004 Jeremy Katz <katzj@redhat.com> - 1.5.0-7
+- add patch with reallyforce mode on creation to be used by anaconda
+
+* 三 5月 12 2004 Doug Ledford <dledford@redhat.com> 2.5.0-6
+- Fix a bug in the postun scriptlet related to downgrading to a version
+  of mdadm that doesn't include the mdmpd daemon.
+
+* 五 5月 07 2004 Doug Ledford <dledford@redhat.com> 1.5.0-5
+- Disable service mdmpd by default to avoid [Failed] messages on
+  current 2.6 kernels.  Possibly re-enable it by default once the
+  2.6 kernels have the md event interface.
+
+* 四 4月 22 2004 Doug Ledford <dledford@redhat.com> 1.5.0-4
+- Update mdmonitor script to start daemon more cleanly
+- Repackage mdmpd tarball to include gcc-3.4 changes and to make
+  mdmpd properly daemonize at startup instead of forking and leaving
+  the child attached to the terminal.
+
+* 四 3月 04 2004 Bill Nottingham <notting@redhat.com> 1.5.0-3
+- ship /var/run/mpmpd (#117497)
+
+* 四 2月 26 2004 Doug Ledford <dledford@redhat.com> 1.5.0-2
+- Add a default MAILADDR line to the mdadm.conf file installed by default
+  (Bugzilla #92447)
+- Make it build with gcc-3.4
+
+* 一 2月 23 2004 Doug Ledford <dledford@redhat.com> 1.5.0-1
+- Update to 1.5.0 (from Matthew J. Galgoci <mgalgoci@redhat.com>)
+
+* 日 11月 16 2003 Doug Ledford <dledford@redhat.com> 1.4.0-1
+- fix problem with recovery thread sleeping in mdmpd
+
+* 五 11月 14 2003 Doug Ledford <dledford@redhat.com>
+- sync upstream
+- add mdmpd package into mdadm package
+
+* 三 9月 10 2003 Michael K. Johnson <johnsonm@redhat.com> 1.3.0-1
+- sync upstream
+
+* 二 3月 11 2003 Michael K. Johnson <johnsonm@redhat.com> 1.1.0-1
+- sync upstream
+
+* 二 1月 28 2003 Michael K. Johnson <johnsonm@redhat.com> 1.0.1-1
+- update for rebuild
+
+* 三 12月 25 2002 Tim Powers <timp@redhat.com> 1.0.0-8
+- fix references to %install in the changelog so that it will build
+
+* 五 12月 13 2002 Elliot Lee <sopwith@redhat.com> 1.0.0-7
+- Rebuild
+
+* 五 7月 12 2002 Michael K. Johnson <johnsonm@redhat.com>
+- Changed RPM Group to System Environment/Base
+
+* 三 5月 15 2002 Michael K. Johnson <johnsonm@redhat.com>
+- minor cleanups to the text, conditionalize rm -rf
+- added mdmonitor init script
+
+* 五 5月 10 2002 <neilb@cse.unsw.edu.au>
+- update to 1.0.0
+- Set CXFLAGS instead of CFLAGS
+
+* 六 4月 06 2002 <neilb@cse.unsw.edu.au>
+- change %install to use "make install"
+
+* 五 3月 15 2002 <gleblanc@localhost.localdomain>
+- beautification
+- made mdadm.conf non-replaceable config
+- renamed Copyright to License in the header
+- added missing license file
+- used macros for file paths
+
+* 五 3月 15 2002 Luca Berra <bluca@comedia.it>
+- Added Obsoletes: mdctl
+- missingok for configfile
+
+* 二 3月 12 2002 NeilBrown <neilb@cse.unsw.edu.au>
+- Add md.4 and mdadm.conf.5 man pages
+
+* 五 3月 08 2002 Chris Siebenmann <cks@cquest.utoronto.ca>
+- builds properly as non-root.
+
+* 五 3月 08 2002 Derek Vadala <derek@cynicism.com>
+- updated for 0.7, fixed /usr/share/doc and added manpage
+
+* 二 8月 07 2001 Danilo Godec <danci@agenda.si>
+- initial RPM build
+

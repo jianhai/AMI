@@ -1,0 +1,24 @@
+* 五 7月 09 2010 21:35:40 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/acpid-1.0.10-2.1.el6
+
+* 五 5月 07 2010 00:37:52 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/acpid-1.0.4-9.el5_4.2
+
+* 五 5月 07 2010 00:37:52 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/acpid-1.0.4-9.el5_4.1
+
+* 五 5月 07 2010 00:37:51 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/acpid-1.0.4-9.el5
+
+* 五 5月 07 2010 00:37:51 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/acpid-1.0.4-7.el5_3.1
+
+* 五 5月 07 2010 00:37:50 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/acpid-1.0.4-7.el5
+
+* 五 5月 07 2010 00:37:49 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/acpid-1.0.4-5
+
+* 五 5月 07 2010 00:11:15 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package acpid
+

@@ -1,0 +1,19 @@
+/bin/bash
+/bin/cpio
+/usr/bin/gzip
+/usr/bin/nm
+/usr/bin/xz
+kmod-libs(x86-64) = 14-10.10.amzn1
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.8)(64bit)
+libkmod.so.2()(64bit)
+libkmod.so.2(LIBKMOD_5)(64bit)
+libkmod.so.2(LIBKMOD_6)(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

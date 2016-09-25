@@ -1,0 +1,116 @@
+* 四 2月 05 2015 Tom Kirchner <tjk@amazon.com>
+- Build for multiple python versions
+
+* 四 8月 29 2013 Lee Trager <ltrager@amazon.com>
+- import source package F19/python-requests-1.2.3-5.fc19
+
+* 一 8月 26 2013 Rex Dieter <rdieter@fedoraproject.org> 1.2.3-5
+- fix versioned dep on python-urllib3
+
+* 一 8月 26 2013 Ralph Bean <rbean@redhat.com> - 1.2.3-4
+- Explicitly versioned the requirements on python-urllib3.
+
+* 四 8月 22 2013 Ralph Bean <rbean@redhat.com> - 1.2.3-3
+- Release bump for a coupled update with python-urllib3.
+
+* 日 8月 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 一 7月 01 2013 Ralph Bean <rbean@redhat.com> - 1.2.3-1
+- Latest upstream.
+- Fixed bogus date in changelog.
+
+* 二 6月 11 2013 Ralph Bean <rbean@redhat.com> - 1.1.0-4
+- Correct a rhel conditional on python-ordereddict
+
+* 一 5月 06 2013 Lee Trager <ltrager@amazon.com>
+- import source package EPEL6/python-requests-1.1.0-3.el6
+
+* 四 2月 28 2013 Ralph Bean <rbean@redhat.com> - 1.1.0-3
+- Unbundled python-urllib3.  Using system python-urllib3 now.
+- Conditionally include python-ordereddict for el6.
+
+* 三 2月 27 2013 Ralph Bean <rbean@redhat.com> - 1.1.0-2
+- Unbundled python-charade/chardet.  Using system python-chardet now.
+- Removed deprecated comments and actions against oauthlib unbundling.
+  Those are no longer necessary in 1.1.0.
+- Added links to bz tickets over Patch declarations.
+
+* 二 2月 26 2013 Lee Trager <ltrager@amazon.com>
+- Disable self tests since they require web access
+- Update to 1.1.0 from upstream
+
+* 二 2月 26 2013 Ralph Bean <rbean@redhat.com> - 1.1.0-1
+- Latest upstream.
+- Relicense to ASL 2.0 with upstream.
+- Removed cookie handling patch (fixed in upstream tarball).
+- Updated cert unbundling patch to match upstream.
+- Added check section, but left it commented out for koji.
+
+* 五 2月 08 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 0.14.1-4
+- Let brp_python_bytecompile run again, take care of the non-python{2,3} modules
+  by removing them from the python{,3}-requests package that they did not belong
+  in.
+- Use the certificates in the ca-certificates package instead of the bundled one
+  + https://bugzilla.redhat.com/show_bug.cgi?id=904614
+- Fix a problem with cookie handling
+  + https://bugzilla.redhat.com/show_bug.cgi?id=906924
+
+* 一 10月 22 2012 Arun S A G <sagarun@gmail.com>  0.14.1-1
+- Updated to latest upstream release
+
+* 日 6月 10 2012 Arun S A G <sagarun@gmail.com> 0.13.1-1
+- Updated to latest upstream release 0.13.1
+- Use system provided ca-certificates
+- No more async requests use grrequests https://github.com/kennethreitz/grequests
+- Remove gevent as it is no longer required by requests
+
+* 二 5月 08 2012 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-requests-0.11.1-2.el6
+- setup complete for package python-requests
+
+* 日 4月 01 2012 Arun S A G <sagarun@gmail.com> 0.11.1-1
+- Updated to upstream release 0.11.1
+
+* 四 3月 29 2012 Arun S A G <sagarun@gmail.com> 0.10.6-3
+- Support building package for EL6
+
+* 二 3月 27 2012 Rex Dieter <rdieter@fedoraproject.org> 0.10.6-2
+- +python3-requests pkg
+
+* 六 3月 03 2012 Arun SAG <sagarun@gmail.com> - 0.10.6-1
+- Updated to new upstream version
+
+* 六 1月 21 2012 Arun SAG <sagarun@gmail.com> - 0.9.3-1
+- Updated to new upstream version 0.9.3
+- Include python-gevent as a dependency for requests.async
+- Clean up shebangs in requests/setup.py,test_requests.py and test_requests_ext.py
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.8.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 日 11月 27 2011 Arun SAG <sagarun@gmail.com> - 0.8.2-1
+- New upstream version
+- keep alive support
+- complete removal of cookiejar and urllib2
+
+* 四 11月 10 2011 Arun SAG <sagarun@gmail.com> - 0.7.6-1
+- Updated to new upstream release 0.7.6
+
+* 四 10月 20 2011 Arun SAG <sagarun@gmail.com> - 0.6.6-1
+- Updated to version 0.6.6
+
+* 五 8月 26 2011 Arun SAG <sagarun@gmail.com> - 0.6.1-1
+- Updated to version 0.6.1
+
+* 六 8月 20 2011 Arun SAG <sagarun@gmail.com> - 0.6.0-1
+- Updated to latest version 0.6.0
+
+* 一 8月 15 2011 Arun SAG <sagarun@gmail.com> - 0.5.1-2
+- Remove OPT_FLAGS from build section since it is a noarch package
+- Fix use of mixed tabs and space
+- Remove extra space around the word cumbersome in description
+
+* 日 8月 14 2011 Arun SAG <sagarun@gmail.com> - 0.5.1-1
+- Initial package
+

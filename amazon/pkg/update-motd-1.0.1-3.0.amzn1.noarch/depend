@@ -1,0 +1,9 @@
+/bin/bash
+/bin/sh
+bash
+config(update-motd) = 1.0.1-3.0.amzn1
+coreutils
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+upstart

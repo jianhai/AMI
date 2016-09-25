@@ -1,0 +1,15 @@
+/bin/sh
+/bin/sh
+/usr/bin/python2.7
+alternatives(addslave)
+alternatives(force)
+alternatives(removeslave)
+alternatives(removeslave)
+python(abi) = 2.7
+python27(alternatives)
+python27(alternatives)
+python27(dist-packages)
+python27-imaging
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

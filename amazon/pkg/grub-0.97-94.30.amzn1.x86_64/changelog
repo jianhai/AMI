@@ -1,0 +1,714 @@
+* 二 3月 22 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/grub-0.97-94.el6_7.1
+
+* 三 2月 24 2016 David Kaspar [Dee'Kej] <dkaspar@redhat.com> - 1:0.97-94.el6_7.1
+- Fix the ineffectiveness when loading fragmented initramfs from Ext4 filesystem
+  Resolves: #1311474
+
+* 二 8月 25 2015 Jason Green <jasg@amazon.com>
+- grub-install: support xen disk drives
+
+* 三 7月 22 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/grub-0.97-94.el6
+
+* 二 4月 07 2015 Jan Grulich <jgrulich@redhat.com> - 1:0.97-94
+- Properly expand IPv6 address
+  Resolves: bz#1177321
+- Support various types of DHCP IPv6 packet for MAC address extraction
+  Resolves: bz#1206542
+
+* 六 1月 24 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 二 10月 14 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-93.el6
+
+* 四 9月 11 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Force grub compilation with automake 1.9
+
+* 五 8月 29 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-93
+- Fix booting wihout VGA
+  Resolves: rhbz#1131205
+
+* 三 8月 27 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-92
+- Avoid using uefi-supplied device paths on CD devices
+  Resolves: rhbz#1129466
+
+* 四 8月 14 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-91
+- Suppress failure message on EFI systems when loading splashscreen
+  Resolves: rhbz#1129436
+- Return proper disk operation status
+  Resolves: rhbz#1130209
+- Stick with default GOP mode unless resolution is absurdly small
+  Resolves: rhbz#1130313
+
+* 二 8月 12 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-90
+- Fix graphics initialization for non EFI systems
+  Resolves: rhbz#1128137
+
+* 四 8月 07 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-89
+- Another round of fixes for rhbz#1002809
+
+* 三 7月 30 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-88
+- Fix previous patch which didn't work as expected
+  Resolves: rhbz#1002809
+
+* 五 7月 25 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-84.el6_5
+
+* 五 7月 25 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-87
+- Enable and fix previous patch for handling upper/lowercase commands
+  Resolves: rhbz#1002809
+
+* 三 7月 23 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-86
+- grub-install: add regex for partition and multipath when
+  use_friendly_names is off
+  Resolves: rhbz#1121321
+- Disable previous patch as it doesn't work properly
+
+* 二 6月 10 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-85
+- Handle upper/lowercase commands
+  Resolves: rhbz#1002809
+
+* 四 5月 08 2014 Jan Grulich <jgrulich@redhat.com> - 1:0.97-84
+- Proper graphics initialization
+  Resolves: rhbz#1048681
+  Resolves: rhbz#1074914
+  Resolves: rhbz#1094978
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-83.el6
+
+* 二 10月 15 2013 Václav Pavlín <vpavlin@redhat.com> - 1:0.97-83
+- Allocate size of struct instead of size of pointer
+  Resolves: rhbz#1008305
+- Add support for NVMe to grub-install
+  Resolves: rhbz#1017296
+
+* 二 7月 23 2013 Václav Pavlín <vpavlin@redhat.com> - 1:0.97-82
+- Disable the watchdog timer on EFI platforms
+  Resolves: rhbz#911715
+- Add MACAPPEND command
+  Resolves: rhbz#848628
+- Retry getting memory map and exit boot services on fail
+  Resolves: rhbz#918824
+- Fixed regexps for matching devices in device.map and resolve symlinks
+  when getting stats for block device
+  Resolves: rhbz#928938
+- Remove grub.info when make clean is called to be sure that it is
+  recreated with all changes.
+  Resolves: rhbz#854652
+- Replace glibc-static with /usr/lib/libc.a in BuildRequires
+  Resolves: rhbz#922705
+- If the title is too long, print remaining seconds to the new line
+  Resolves: rhbz#851706
+- Recognize virtio-blk devices when running on OVMF
+  Resolves: rhbz#916016
+
+* 六 4月 20 2013 Eden Adogla <edena@amazon.com>
+- grub: Changes to grub to support more than 16 devices
+
+* 五 3月 01 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Test for corrupted stages and fix compilation against gcc-4.6
+
+* 五 2月 22 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-81.el6
+
+* 四 12月 06 2012 Václav Pavlín <vpavlin@redhat.com> - 1:0.97-81
+- Check if pxe->Mode is not NULL
+  Resolves: rhbz#876519
+
+* 三 11月 21 2012 Václav Pavlín <vpavlin@redhat.com> - 1:0.97-80
+- Do not resolve symlinks if the file is in /dev/mapper
+  Resolves: rhbz#870420
+
+* 二 10月 09 2012 Václav Pavlín <vpavlin@redhat.com> - 1:0.97-79
+- Scan for virtio disks
+  Resolves: rhbz#814014
+- Let user specify efi boot disk as root
+  Resolves: rhbz#737732
+- Pass hig order bits to EFI system map and memory map
+  Resolves: rhbz#825054
+
+* 五 8月 24 2012 Neil Horman <nhorman@redhat.com> - 0.97-78
+- Add support for UEFI pxe boot over ipv6 (bz 642396)
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-77.el6
+
+* 三 2月 29 2012 Peter Jones <pjones@redhat.com> - 0.97-77
+- Fix error handling problem from -76.
+  Related: rhbz#670266
+
+* 二 2月 14 2012 Peter Jones <pjones@redhat.com> - 0.97-76
+- [UEFI] Iterate PXE objects and try to find an active one instead
+  of letting the firmware pick for us.
+  Resolves: rhbz#670266
+- [UEFI] Handle tftp implementations that give invalid error codes
+  from TFTP_GET_FILE_SIZE.
+  Related: rhbz#670266
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-75.el6
+
+* 一 11月 28 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-70.el6_1.1
+
+* 二 10月 18 2011 Peter Jones <pjones@redhat.com> - 0.97-75
+- Treat "vendor specific" storage devices as hard disks.
+  Resolves: rhbz#746106
+
+* 三 9月 28 2011 Peter Jones <pjones@redhat.com> - 0.97-74
+- Fix error on invocation of "grub-install /dev/cciss/c0d0" (patch from jnevill)
+  Resolves: rhbz#736833
+
+* 二 8月 16 2011 Peter Jones <pjones@redhat.com> - 0.97-73
+- Properly align the stack when calling UEFI functions.
+  Resolves: rhbz#677468
+
+* 日 8月 14 2011 Peter Jones <pjones@redhat.com> - 0.97-72
+- Roll back -71 for now
+- Allow booting from higher drive numbers
+  Resolves: rhbz#671355
+
+* 六 5月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-70.el6
+
+* 三 2月 23 2011 Peter Jones <pjones@redhat.com> - 0.97-71
+- Fix UEFI Call wrapper alignment problems (Patch from Stuart Hayes)
+  Resolves: rhbz#677468
+
+* 五 1月 21 2011 Peter Jones <pjones@redhat.com> - 0.97-70
+- Boot from disks with 4kB sectors on UEFI.
+  Resolves: rhbz#654869
+
+* 五 1月 14 2011 Peter Jones <pjones@redhat.com> - 0.97-69
+- Add sha2 support for passwords (patch from mitr)
+  Resolves: rhbz#553741
+
+* 二 12月 07 2010 Nathan Blackham <blackham@amazon.com>
+- remove the -Werror compile flag for efi builds
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-68.el6
+
+* 一 8月 30 2010 Peter Jones <pjones@redhat.com> - 0.97-68
+- Fix for a parsing error in devpath feature
+  Resolves: rhbz#626447
+
+* 四 8月 19 2010 Peter Jones <pjones@redhat.com> - 0.97-67
+- When the EFI memory map is too large, copy the parts we can to e820
+  Resolves: rhbz#624806
+
+* 三 8月 04 2010 Peter Jones <pjones@redhat.com> - 0.97-66
+- Allow drive remaping in UEFI mode so ordering changes don't cause failure
+  Resolves: rhbz#598572
+
+* 一 7月 12 2010 Peter Jones <pjones@redhat.com> - 0.97-65
+- Draw the inverted line correctly in the menu
+  Resolves: rhbz#613153
+- Don't fail to boot on UEFI when the memory map changes (shayes)
+  Resolves: rhbz#607213
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/grub-0.97-62.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/grub-0.97-13.5
+- import source package RHEL5/grub-0.97-13.2
+- import source package RHEL5/grub-0.97-13
+- added submodule prep for package grub
+
+* 二 1月 05 2010 Peter Jones <pjones@redhat.com> - 0.97-64
+- Propogate the fix for the version number mishap in the F-12 tree to here...
+
+* 二 1月 05 2010 Peter Jones <pjones@redhat.com> - 0.97-63
+- Clear the screen when the timeout finishes, not just if verbose is set.
+  Patch from Eelko Berkenpies.
+
+* 一 11月 16 2009 Peter Jones <pjones@redhat.com> - 0.97-62
+- Fix release number mishap.
+
+* 五 11月 13 2009 Peter Jones <pjones@redhat.com> - 0.97-622
+- Update relocatable kernel support for UEFI/x86_64 .
+  Related: rhbz #476230
+- grub-0.97-gate-a20.patch: Patch from Suse. Make really, really sure that
+  A20 is behaving itself. (mjg)
+- add "silent" option (mjg)
+- Rework EFI Graphics Output Protocol mode selection.
+
+* 五 11月 13 2009 Peter Jones <pjones@redhat.com> - 0.97-61
+- This was a mistake in CVS.
+
+* 三 9月 16 2009 Peter Jones <pjones@redhat.com> - 0.97-60
+- Fix a typo introduced in grub-fedora-9.patch that may effect UEFI
+  Graphics Output Protocol.
+
+* 四 8月 20 2009 Peter Jones <pjones@redhat.com> - 0.97-59
+- Correctly link against gnuefi.
+
+* 二 8月 11 2009 Peter Jones <pjones@redhat.com> - 0.97-58
+- Dynamically choose load address for bzimage on 64-bit UEFI.
+
+* 一 7月 27 2009 Hans de Goede <hdegoede@redhat.com> - 0.97-57
+- Fix building with new rpm (with auto buildroot cleaning)
+- Update Exclusive arch for F-12 i586 -> i686 change
+
+* 一 7月 27 2009 Hans de Goede <hdegoede@redhat.com> - 0.97-56
+- Actually apply support for partitionable md devices patch (#503698)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.97-55
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 10 2009 Peter Jones <pjones@redhat.com> - 0.97-54
+- Add support for partitionable md devices.
+
+* 二 6月 30 2009 Peter Jones <pjones@redhat.com> - 0.97-53
+- Don't assume that gcc provides us with writable strings in the xfs driver
+
+* 一 6月 29 2009 Peter Jones <pjones@redhat.com> - 0.97-52
+- Add ext4 support (#486284)
+
+* 四 6月 04 2009 Peter Jones <pjones@redhat.com> - 0.97-51
+- Fix memory corruptor in "setup" command. (#496093)
+
+* 三 4月 29 2009 Peter Jones <pjones@redhat.com> - 0.97-50
+- Handle virtio_blk disks and their crazy new device name in grub-install
+  (rhbz#479760)
+
+* 四 4月 16 2009 Peter Jones <pjones@redhat.com> - 0.97-49
+- Fix efi booting on machines with continguous memory regions across
+  the 1G boundary.
+
+* 四 4月 09 2009 Peter Jones <pjones@redhat.com> - 0.97-48
+- remove test message Re: using network drive or not.
+
+* 二 4月 07 2009 Peter Jones <pjones@redhat.com> - 0.97-47
+- Add more filenames to the tftp config file search list
+- Tweak FAT filename comparison...
+- Vomit.
+
+* 一 4月 06 2009 Peter Jones <pjones@redhat.com> - 0.97-46
+- Update gnu-efi buildreq.
+- Fix up pxe code for i386
+
+* 五 4月 03 2009 Peter Jones <pjones@redhat.com> - 0.97-45
+- Add very basic PXE support for EFI.
+
+* 一 3月 30 2009 Matthew Garrett <mjg@redhat.com> - 0.97-44
+- Recognise the 0xef partition type
+
+* 三 3月 11 2009 Peter Jones <pjones@redhat.com> - 0.97-43
+- Use blt operations instead of memmove() on Efi Graphics Protocol systems.
+
+* 二 3月 03 2009 Peter Jones <pjones@redhat.com> - 0.97-42
+- Switch from i386 to i586.
+- BuildReq on glibc-static.
+
+* 一 3月 02 2009 Peter Jones <pjones@redhat.com> - 0.97-41
+- Fix CD Booting on EFI.
+- Fix XFS build on x86_64.
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.97-40
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 13 2009 Peter Jones <pjones@redhat.com> - 0.97-39
+- Remove chainloader timeout patch; fixing it in booty instead in order to
+  address rhbz#468526 .
+- Fix up some style weirdness in the .spec 
+- Require newer gnu-efi so it'll build with newer binutils.
+
+* 日 1月 11 2009 Lubomir Rintel <lkundrak@v3.sk> - 0.97-37
+- Get rid of /usr/bin/cmp dependency (Ville Skyttä, #431351)
+- Support multiple initrds (Jeff Layton, #179127)
+- Obey 2.06 boot protocol's cmdline_size (Lubomir Rintel, #327541)
+
+* 三 10月 22 2008 Peter Jones <pjones@redhat.com> - 0.97-36
+- Add force-chainloader patch from rstrode (rhbz #458576)
+
+* 二 10月 07 2008 Peter Jones <pjones@redhat.com> - 0.97-35
+- Add dep on newer gnu-efi.
+
+* 三 6月 25 2008 Peter Jones <pjones@redhat.com> - 0.97-34
+- Add keystatus patch from krh.
+
+* 一 4月 07 2008 Peter Jones <pjones@redhat.com> - 0.97-33
+- Rewrite ia32 efi call wrapper to make the makefile simpler.
+
+* 二 4月 01 2008 Peter Jones <pjones@redhat.com> - 0.97-32
+- Add graphics debug mode
+- Fix screen geometry variable passing
+- Fix broken efi call wrapper on x86_64 so UGA works there.
+
+* 四 3月 20 2008 Peter Jones <pjones@redhat.com> - 0.97-31
+- Fix efifb setup.
+
+* 三 3月 19 2008 Peter Jones <pjones@redhat.com> - 0.97-30
+- Fix the bootloader for ANOTHER random kernel ABI change on EFI+x86_64.
+
+* 二 3月 18 2008 Peter Jones <pjones@redhat.com> - 0.97-29
+- Remove all the prot_mode_mem code from EFI loader on x86_64.
+
+* 四 3月 06 2008 Peter Jones <pjones@redhat.com> - 0.97-28
+- Fix FAT/VFAT directory searching.
+- Don't artificially limit the kernel's location to lowmem.
+
+* 三 3月 05 2008 Peter Jones <pjones@redhat.com> - 0.97-27
+- Fix permissions on grub.efi so cpio doesn't error when it's on vfat.
+
+* 二 3月 04 2008 Peter Jones <pjones@redhat.com> - 0.97-26
+- Move grub.efi to a more useful location.
+
+* 三 2月 27 2008 Peter Jones <pjones@redhat.com> - 0.97-25
+- Fix memory allocation bug in EFI on i386 and x86_64.
+
+* 三 2月 27 2008 Peter Jones <pjones@redhat.com> - 0.97-24
+- Fix build of xfs code on amd64.
+
+* 三 2月 27 2008 Peter Jones <pjones@redhat.com> - 0.97-23
+- Enable EFI on i386, update to newest git head.
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.97-22
+- Autorebuild for GCC 4.3
+
+* 五 1月 25 2008 Jesse Keating <jkeating@redhat.com> - 0.97-21
+- Add a patch from esandeen to support booting from 256byte inodes.
+
+* 一 11月 05 2007 Peter Jones <pjones@redhat.com> - 0.97-20
+- Add EFI support from Intel on x86_64
+
+* 四 9月 20 2007 Peter Jones <pjones@redhat.com> - 0.97-19
+- Fix dmraid detection on Intel (isw) controllers in grub-install .
+
+* 三 8月 22 2007 Peter Jones <pjones@redhat.com> - 0.97-18
+- Fix license tag.
+
+* 一 8月 20 2007 Peter Jones <pjones@redhat.com> - 0.97-17
+- Use --build-id=none instead of stripping out the build-id notes in the
+  first and second stage loaders.
+
+* 二 8月 07 2007 Peter Jones <pjones@redhat.com> - 0.97-16
+- Add ext[23] large inode support (patch from Eric Sandeen)
+- Fix auto* breakage that happened when we switched from autoreconf to autoconf
+- Move to original tarball + patch generated from git
+
+* 一 7月 16 2007 Peter Jones <pjones@redhat.com> - 0.97-15
+- Support booting from GPT
+
+* 五 2月 23 2007 Bill Nottingham <notting@redhat.com> - 0.97-14
+- fix scriplet errors when installed with --nodocs
+- coax grub into building (-ltinfo, autoconf instead of autoreconf)
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 0.97-13
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 四 9月 21 2006 Peter Jones <pjones@redhat.com> - 0.97-12
+- Reenable patch 505, which fixes #116311
+
+* 二 8月 15 2006 Peter Jones <pjones@redhat.com> - 0.97-11
+- Disable patch 505 (#164497)
+
+* 三 8月 02 2006 Peter Jones <pjones@redhat.com> - 0.97-10
+- Fix grub-install for multipath
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.97-9.1
+- rebuild
+
+* 五 7月 07 2006 Peter Jones <pjones@redhat.com> - 0.97-9
+- fix broken error reporting from helper functions
+
+* 一 6月 12 2006 Peter Jones <pjones@redhat.com> - 0.97-8
+- Fix BIOS keyboard handler to use extended keyboard interrupts, so the
+  Mac Mini works.
+
+* 一 6月 05 2006 Jesse Keating <jkeating@redhat.com> - 0.97-7
+- Added BuildRequires on a 32bit library
+
+* 六 5月 27 2006 Peter Jones <pjones@redhat.com> - 0.97-6
+- Fix mactel keyboard problems, patch from Juergen Keil, forwarded by Linus.
+
+* 一 3月 13 2006 Peter Jones <pjones@redhat.com> - 0.97-5
+- Fix merge error for "bootonce" patch (broken in 0.95->0.97 update)
+- Get rid of the 0.97 "default" stuff, since it conflicts with our working
+  method.
+
+* 四 3月 09 2006 Peter Jones <pjones@redhat.com> - 0.97-4
+- Fix running "install" multiple times on the same fs in the same invocation
+  of grub.  (bz #158426 , patch from lxo@redhat.com)
+
+* 一 2月 13 2006 Peter Jones <pjones@redhat.com> - 0.97-3
+- fix partition names on dmraid
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.97-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 13 2006 Peter Jones <pjones@redhat.com> - 0.97-2
+- add dmraid support
+
+* 三 12月 14 2005 Peter Jones <pjones@redhat.com> - 0.97-1
+- update to grub 0.97
+
+* 一 12月 05 2005 Peter Jones <pjones@redhat.com> - 0.95-17
+- fix configure conftest.c bugs
+- add -Wno-unused to defeat gcc41 "unused" checking when there are aliases.
+
+* 一 8月 01 2005 Peter Jones <pjones@redhat.com> - 0.95-16
+- minor fix to the --recheck fix.
+
+* 一 7月 25 2005 Peter Jones <pjones@redhat.com> 0.95-15
+- Make "grub-install --recheck" warn the user about how bad it is,
+  and keep a backup file, which it reverts to upon detecting some errors.
+
+* 三 7月 06 2005 Peter Jones <pjones@redhat.com> 0.95-14
+- Fix changelog to be UTF-8
+
+* 四 5月 19 2005 Peter Jones <pjones@redhat.com> 0.95-13
+- Make the spec work with gcc3 and gcc4, so people can test on existing
+  installations.
+- don't treat i2o like a cciss device, since its partition names aren't done
+  that way. (#158158)
+
+* 三 3月 16 2005 Peter Jones <pjones@redhat.com> 0.95-12
+- Make installing on a partition work again when not using raid
+
+* 四 3月 03 2005 Peter Jones <pjones@redhat.com> 0.95-11
+- Make it build with gcc4
+
+* 日 2月 20 2005 Peter Jones <pjones@redhat.com> 0.95-10
+- Always install in MBR for raid1 /boot/
+
+* 日 2月 20 2005 Peter Jones <pjones@redhat.com> 0.95-9
+- Always use full path for mdadm in grub-install
+
+* 二 2月 08 2005 Peter Jones <pjones@redhat.com> 0.95-8
+- Mark the simulation stack executable
+- Eliminate the use of inline functions in stage2/builtins.c
+
+* 二 1月 11 2005 Peter Jones <pjones@redhat.com> 0.95-7
+- Make grub ignore everything before the XPM header in the splash image,
+  fixing #143879
+- If the boot splash image is missing, use console mode instead 
+  of graphics mode.
+- Don't print out errors using the graphics terminal code if we're not
+  actually in graphics mode.
+
+* 一 1月 03 2005 Peter Jones <pjones@redhat.com> 0.95-6
+- reworked much of how the RAID1 support in grub-install works.  This version
+  does not require all the devices in the raid to be listed in device.map,
+  as long as you specify a physical device or partition rather than an md
+  device.  It should also work with a windows dual-boot on the first partition.
+
+* 五 12月 17 2004 Peter Jones <pjones@redhat.com> 0.95-5
+- added support for RAID1 devices to grub-install, partly based on a
+  patch from David Knierim. (#114690)
+
+* 二 11月 30 2004 Jeremy Katz <katzj@redhat.com> 0.95-4
+- add patch from upstream CVS to handle sparse files on ext[23]
+- make geometry detection a little bit more robust/correct
+- use O_DIRECT when reading/writing from devices.  use aligned buffers as 
+  needed for read/write (#125808)
+- actually apply the i2o patch
+- detect cciss/cpqarray devices better (#123249)
+
+* 四 9月 30 2004 Jeremy Katz <katzj@redhat.com> - 0.95-3
+- don't act on the keypress for the menu (#134029)
+
+* 一 6月 28 2004 Jeremy Katz <katzj@redhat.com> - 0.95-2
+- add patch from Nicholas Miell to make hiddenmenu work more 
+  nicely with splashimage mode (#126764)
+
+* 五 6月 18 2004 Jeremy Katz <katzj@redhat.com> - 0.95-1
+- update to 0.95
+- drop emd patch, E-MD isn't making forward progress upstream
+- fix static build for x86_64 (#121095)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 09 2004 Jeremy Katz <katzj@redhat.com>
+- require system-logos (#120837)
+
+* 五 6月 04 2004 Jeremy Katz <katzj@redhat.com>
+- buildrequire automake (#125326)
+
+* 四 5月 06 2004 Warren Togami <wtogami@redhat.com> - 0.94-5
+- i2o patch from Markus Lidel
+
+* 三 4月 14 2004 Jeremy Katz <katzj@redhat.com> - 0.94-4
+- read geometry off of the disk since HDIO_GETGEO doesn't actually 
+  return correct data with a 2.6 kernel
+
+* 五 3月 12 2004 Jeremy Katz <katzj@redhat.com>
+- add texinfo buildrequires (#118146)
+
+* 三 2月 25 2004 Jeremy Katz <katzj@redhat.com> 0.94-3
+- don't use initrd_max_address
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> 0.94-2
+- rebuilt
+
+* 四 2月 12 2004 Jeremy Katz <katzj@redhat.com> 0.94-1
+- update to 0.94, patch merging and updating as necessary
+
+* 六 1月 03 2004 Jeremy Katz <katzj@redhat.com> 0.93-8
+- new bootonce patch from Padraig Brady so that you don't lose 
+  the old default (#112775)
+
+* 一 11月 24 2003 Jeremy Katz <katzj@redhat.com>
+- add ncurses-devel as a buildrequires (#110732)
+
+* 二 10月 14 2003 Jeremy Katz <katzj@redhat.com> 0.93-7
+- rebuild
+
+* 三 7月 02 2003 Jeremy Katz <katzj@redhat.com> 
+- Requires: /usr/bin/cmp (#98325)
+
+* 四 5月 22 2003 Jeremy Katz <katzj@redhat.com> 0.93-6
+- add patch from upstream to fix build with gcc 3.3
+
+* 三 4月 02 2003 Jeremy Katz <katzj@redhat.com> 0.93-5
+- add patch to fix support for serial terminfo (#85595)
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 1月 17 2003 Jeremy Katz <katzj@redhat.com> 0.93-3
+- add patch from HJ Lu to support large disks (#80980, #63848)
+- add patch to make message when ending edit clearer (#53846)
+
+* 日 12月 29 2002 Jeremy Katz <katzj@redhat.com> 0.93-2
+- add a patch to reset the terminal type to console before doing 'boot' from
+  the command line (#61069)
+
+* 六 12月 28 2002 Jeremy Katz <katzj@redhat.com> 0.93-1
+- update to 0.93
+- update configfile patch
+- graphics patch rework to fit in as a terminal type as present in 0.93
+- use CFLAGS="-Os -g"
+- patch configure.in to allow building if host_cpu=x86_64, include -m32 in
+  CFLAGS if building on x86_64
+- link glibc static on x86_64 to not require glibc32
+- include multiboot info pages
+- drop obsolete patches, reorder remaining patches into some semblance of order
+
+* 四 9月 05 2002 Jeremy Katz <katzj@redhat.com> 0.92-7
+- splashscreen is in redhat-logos now
+
+* 二 9月 03 2002 Jeremy Katz <katzj@redhat.com> 0.92-6
+- update splashscreen again
+
+* 一 9月 02 2002 Jeremy Katz <katzj@redhat.com> 0.92-5
+- update splashscreen
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 0.92-4
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com> 0.92-3
+- automated rebuild
+
+* 五 5月 03 2002 Jeremy Katz <katzj@redhat.com> 0.92-2
+- add patch from Grant Edwards to make vga16 + serial happier (#63491)
+
+* 三 5月 01 2002 Jeremy Katz <katzj@redhat.com> 0.92-1
+- update to 0.92
+- back to autoreconf
+- make it work with automake 1.6/autoconf 2.53
+- use "-falign-jumps=1 -falign-loops=1 -falign-functions=1" instead of
+  "-malign-jumps=1 -malign-loops=1 -malign-functions=1"	to not use 
+  deprecated gcc options
+
+* 二 4月 09 2002 Jeremy Katz <katzj@redhat.com> 0.91-4
+- new splash screen
+
+* 五 3月 08 2002 Jeremy Katz <katzj@redhat.com> 0.91-3
+- include patch from Denis Kitzmen to fix typo causing several options to 
+  never be defined (in upstream CVS)
+- include patch from upstream CVS to make displaymem always use hex for 
+  consistency
+- add patch from GRUB mailing list from Keir Fraser to add a --once flag to
+  savedefault function so that you can have the equivalent of lilo -R 
+  functionality (use 'savedefault --default=N --once' from the grub shell)
+- back to autoconf
+
+* 日 1月 27 2002 Jeremy Katz <katzj@redhat.com> 
+- change to use $grubdir instead of /boot/grub in the symlink patch (#58771)
+
+* 五 1月 25 2002 Jeremy Katz <katzj@redhat.com> 0.91-2
+- don't ifdef out the auto memory passing, use the configure flag instead
+- add a patch so that grub respects mem= from the kernel command line when 
+  deciding where to place the initrd (#52558)
+
+* 一 1月 21 2002 Jeremy Katz <katzj@redhat.com> 0.91-1
+- update to 0.91 final
+- add documentation on splashimage param (#51609)
+
+* 三 1月 02 2002 Jeremy Katz <katzj@redhat.com> 0.91-0.20020102cvs
+- update to current CVS snapshot to fix some of the hangs on boot related
+  to LBA probing (#57503, #55868, and others)
+
+* 五 12月 21 2001 Erik Troan <ewt@redhat.com> 0.90-14
+- fixed append patch to not require arguments to begin with
+- changed to autoreconf from autoconf
+
+* 三 10月 31 2001 Jeremy Katz <katzj@redhat.com> 0.90-13
+- include additional patch from Erich to add sync calls in grub-install to 
+  work around updated images not being synced to disk
+- fix segfault in grub shell if 'password --md5' is used without specifying
+  a password (#55008)
+
+* 五 10月 26 2001 Jeremy Katz <katzj@redhat.com> 0.90-12
+- Include Erich Boleyn <erich@uruk.org>'s patch to disconnect from the 
+  BIOS after APM operations.  Should fix #54375
+
+* 三 9月 12 2001 Erik Troan <ewt@redhat.com>
+- added patch for 'a' option in grub boot menu
+
+* 三 9月 05 2001 Jeremy Katz <katzj@redhat.com> 0.90-11
+- grub-install: if /boot/grub/grub.conf doesn't exist but /boot/grub/menu.lst 
+  does, create a symlink
+
+* 五 8月 24 2001 Jeremy Katz <katzj@redhat.com>
+- pull in patch from upstream CVS to fix md5crypt in grub shell (#52220)
+- use mktemp in grub-install to avoid tmp races
+
+* 五 8月 03 2001 Jeremy Katz <katzj@redhat.com>
+- link curses statically (#49519)
+
+* 四 8月 02 2001 Jeremy Katz <katzj@redhat.com>
+- fix segfault with using the serial device before initialization (#50219)
+
+* 四 7月 19 2001 Jeremy Katz <katzj@redhat.com>
+- add --copy-only flag to grub-install
+- copy files in grub-install prior to device probe
+- original images don't go in /boot and then grub-install does the right
+  thing
+- fix the previous patch
+- put the password prompt in the proper location
+- reset the screen when the countdown is cancelled so text will disappear 
+  in vga16 mode
+
+* 一 7月 16 2001 Jeremy Katz <katzj@redhat.com>
+- change configfile defaults to grub.conf
+
+* 日 7月 15 2001 Jeremy Katz <katzj@redhat.com>
+- updated to grub 0.90 final
+
+* 五 7月 06 2001 Matt Wilson <msw@redhat.com>
+- modifed splash screen to a nice shade of blue
+
+* 二 7月 03 2001 Matt Wilson <msw@redhat.com>
+- added a first cut at a splash screen
+
+* 日 7月 01 2001 Nalin Dahyabhai <nalin@redhat.com>
+- fix datadir mismatch between build and install phases
+
+* 一 6月 25 2001 Jeremy Katz <katzj@redhat.com>
+- update to current CVS 
+- forward port VGA16 patch from Paulo César Pereira de 
+  Andrade <pcpa@conectiva.com.br>
+- add patch for cciss, ida, and rd raid controllers
+- don't pass mem= to the kernel
+
+* 三 5月 23 2001 Erik Troan <ewt@redhat.com>
+- initial build for Red Hat
+

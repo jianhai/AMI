@@ -1,0 +1,72 @@
+* 四 3月 12 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Fix for expat 2.1.0
+
+* 二 10月 14 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/device-mapper-persistent-data-0.3.2-1.el6
+
+* 三 9月 10 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Added back cache-tools
+
+* 一 5月 05 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/device-mapper-persistent-data-0.2.8-4.el6_5
+
+* 四 4月 03 2014 Heinz Mauelshagen <heinzm@redhat.com> - 0.3.2-1
+- New upstream version 0.3.2 introducing era_{check,dump,invalidate}
+  Resolves: #1035990 #1084081
+
+* 四 1月 30 2014 Heinz Mauelshagen <heinzm@redhat.com> - 0.2.8-3
+Resolves: #1035990
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/device-mapper-persistent-data-0.2.8-2.el6
+
+* 一 10月 21 2013 Heinz Mauelshagen <heinzm@redhat.com> - 0.2.8-2
+- New upstream version 0.2.8 introducing cache_{check,dump,repair,restore}; missing patch
+  Resolves: #1019217
+
+* 五 10月 18 2013 Heinz Mauelshagen <heinzm@redhat.com> - 0.2.8-1
+- New upstream version 0.2.8 introducing cache_{check,dump,repair,restore}
+  Resolves: #1019217
+
+* 一 9月 17 2012 Heinz Mauelshagen <heinzm@redhat.com> - 0.2.7-1
+- New upstream version 0.2.7
+  Resolves: #1006059
+
+* 日 8月 12 2012 Heinz Mauelshagen <heinzm@redhat.com> - 0.2.6-1
+- compile errors on RHEL-6.4 fixed
+  Resolves: #814790
+
+* 三 8月 08 2012 Heinz Mauelshagen <heinzm@redhat.com> - 0.2.6-1
+- New upstream version 0.2.6; working around build system providing
+  old boost-devel-1.41.0-17.el6_4 with constraints
+  Resolves: #814790
+
+* 三 8月 08 2012 Heinz Mauelshagen <heinzm@redhat.com> - 0.2.5-2
+- New upstream version 0.2.5
+- specfile fix
+  Resolves: #814790
+
+* 三 8月 08 2012 Heinz Mauelshagen <heinzm@redhat.com> - 0.2.5-1
+- New upstream version 0.2.5
+  Resolves: #814790
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/device-mapper-persistent-data-0.1.4-1.el6
+- setup complete for package device-mapper-persistent-data
+
+* 四 3月 15 2012 Milan Broz <mbroz@redhat.com> - 0.1.4-1
+- Fix thin_check man page (add -q option).
+- Install utilities in /usr/sbin.
+  Resolves: #803204 #803144
+
+* 二 3月 13 2012 Milan Broz <mbroz@redhat.com> - 0.1.2-1
+- New upstream version.
+  Resolves: #802242 #802244
+
+* 五 3月 02 2012 Milan Broz <mbroz@redhat.com> - 0.1.0-1
+- New upstream version.
+  Resolves: #796114 #760614
+
+* 三 12月 21 2011 Milan Broz <mbroz@redhat.com> - 0.0.1-1
+- Initial version
+

@@ -1,0 +1,4 @@
+config(hwdata) = 0.233-14.1.18.amzn1
+module-init-tools >= 3.2
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

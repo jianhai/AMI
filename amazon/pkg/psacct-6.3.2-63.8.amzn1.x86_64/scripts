@@ -1,0 +1,17 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add psacct
+# we need this hack to get rid of an old, incorrect accounting info entry.
+if [ $1 = 0 ]; then
+  test -f /etc/info-dir && {
+    grep -v '* accounting: (psacct)' < /etc/info-dir > /etc/info-dir.new
+    mv -f /etc/info-dir.new /etc/info-dir
+  }
+  /sbin/install-info /usr/share/info/accounting.info.gz /usr/share/info/dir --entry="* accounting: (accounting).            The GNU Process Accounting Suite."
+fi
+touch /var/account/pacct
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+  /sbin/install-info --delete /usr/share/info/accounting.info.gz /usr/share/info/dir --entry="* accounting: (accounting).            The GNU Process Accounting Suite." 2>/dev/null
+  /sbin/service psacct stop > /dev/null 2>&1
+  /sbin/chkconfig --del psacct
+fi

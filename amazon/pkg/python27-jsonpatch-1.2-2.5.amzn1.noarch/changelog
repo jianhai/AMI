@@ -1,0 +1,19 @@
+* 二 2月 10 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 五 1月 24 2014 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-jsonpatch-1.2-2.el6
+- setup complete for package python-jsonpatch
+
+* 二 10月 15 2013 Alan Pevec <apevec@gmail.com> - 1.2-2
+- add runtime dep on jsonpointer
+
+* 五 10月 11 2013 Alan Pevec <apevec@gmail.com> - 1.2-1
+- Update to 1.2
+
+* 五 9月 13 2013 Alan Pevec <apevec@gmail.com> - 1.1-2
+- review feedback: move %check section, add missing build requirements
+
+* 一 7月 01 2013 Alan Pevec <apevec@gmail.com> - 1.1-1
+- Initial package.
+

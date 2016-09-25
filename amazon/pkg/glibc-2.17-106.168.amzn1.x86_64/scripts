@@ -1,0 +1,2 @@
+postinstall program: /usr/sbin/glibc_post_upgrade.x86_64
+postuninstall program: /sbin/ldconfig

@@ -1,0 +1,14 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add rdisc
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+	service rdisc stop >/dev/null 2>&1
+	/sbin/chkconfig --del rdisc
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+	service rdisc status 2>&1 > /dev/null
+	if [ $? -eq 0 ]; then
+		service rdisc restart >/dev/null 2>&1 || :
+	fi
+fi

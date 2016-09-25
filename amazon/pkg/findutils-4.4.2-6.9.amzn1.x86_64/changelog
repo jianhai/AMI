@@ -1,0 +1,18 @@
+* 四 12月 02 2010 01:34:42 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/findutils-4.4.2-6.el6
+
+* 五 7月 09 2010 21:51:32 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/findutils-4.4.2-5.el6
+
+* 五 5月 07 2010 00:52:25 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/findutils-4.2.27-6.el5
+
+* 五 5月 07 2010 00:52:13 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/findutils-4.2.27-5.el5
+
+* 五 5月 07 2010 00:51:59 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/findutils-4.2.27-4.1
+
+* 五 5月 07 2010 00:12:36 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package findutils
+

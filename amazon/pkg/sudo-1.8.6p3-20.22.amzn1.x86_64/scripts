@@ -1,0 +1,2 @@
+postinstall scriptlet (using /bin/sh):
+/bin/chmod 0440 /etc/sudoers || :

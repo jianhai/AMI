@@ -1,0 +1,12 @@
+/etc/rc.d/init.d/rngd
+/etc/sysconfig/rngd
+/usr/bin/rngtest
+/usr/sbin/rngd
+/usr/share/doc/rng-tools-5
+/usr/share/doc/rng-tools-5/AUTHORS
+/usr/share/doc/rng-tools-5/COPYING
+/usr/share/doc/rng-tools-5/ChangeLog
+/usr/share/doc/rng-tools-5/NEWS
+/usr/share/doc/rng-tools-5/README
+/usr/share/man/man1/rngtest.1.gz
+/usr/share/man/man8/rngd.8.gz

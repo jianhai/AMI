@@ -1,0 +1,72 @@
+* 五 1月 23 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libpwquality-1.2.3-4.el7
+
+* 四 4月 03 2014 Lee Trager <ltrager@amazon.com>
+- Conditionalize usr merge
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 1.2.3-4
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.3-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libpwquality-1.2.3-1.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package libpwquality
+
+* 五 11月 29 2013 Tomáš Mráz <tmraz@redhat.com> 1.2.3-2
+- translation updates
+
+* 四 9月 12 2013 Tomáš Mráz <tmraz@redhat.com> 1.2.3-1
+- fix problem with parsing the pam_pwquality options
+  patch by Vladimir Sorokin.
+- updated translations from Transifex
+- treat empty user or password as NULL
+- move the library to /usr
+
+* 三 6月 19 2013 Tomas Mraz <tmraz@redhat.com> 1.2.2-1
+- manual page fixes
+- make it possible to set the maxsequence configuration value
+- updated translations from Transifex
+
+* 四 12月 20 2012 Tomas Mraz <tmraz@redhat.com> 1.2.1-1
+- properly free pwquality settings
+- add extern "C" to public header
+- updated translations from Transifex
+
+* 四 8月 16 2012 Tomas Mraz <tmraz@redhat.com> 1.2.0-1
+- add maxsequence check for too long monotonic character sequence.
+- clarified alternative licensing to GPLv2+.
+- add local_users_only option to skip the pwquality checks for
+  non-locals. (thanks to Stef Walter)
+
+* 三 6月 13 2012 Tomas Mraz <tmraz@redhat.com> 1.1.1-1
+- use rpm built-in filtering of provides (rhbz#830153)
+- remove strain debug fprintf() (rhbz#831567)
+
+* 四 5月 24 2012 Tomas Mraz <tmraz@redhat.com> 1.1.0-1
+- fix leak when throwing PWQError exception
+- added pkgconfig file
+- call the simplicity checks before the cracklib check
+- add enforce_for_root option to the PAM module
+- updated translations from Transifex
+
+* 四 12月 08 2011 Tomas Mraz <tmraz@redhat.com> 1.0.0-1
+- added a few additional password quality checks
+- bugfix in configuration file parsing
+
+* 五 11月 11 2011 Tomas Mraz <tmraz@redhat.com> 0.9.9-1
+- added python bindings and documentation
+
+* 一 10月 10 2011 Tomas Mraz <tmraz@redhat.com> 0.9-2
+- fixes for problems found in review (missing BR on pam-devel,
+  License field, Source URL, Require pam, other cleanups)
+
+* 一 10月 03 2011 Tomas Mraz <tmraz@redhat.com> 0.9-1
+- first spec file for libpwquality
+

@@ -1,0 +1,27 @@
+Name        : gdbm
+Version     : 1.8.0
+Release     : 36.6.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分35秒
+Group       : System Environment/Libraries
+Size        : 48586
+License     : GPLv2+
+Signature   : RSA/SHA256, 2011年01月25日 星期二 18时44分03秒, Key ID bcb4a85b21c0f39f
+Source RPM  : gdbm-1.8.0-36.6.amzn1.src.rpm
+Build Date  : 2011年01月15日 星期六 21时04分29秒
+Build Host  : build-31005.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/gdbm/
+Summary     : A GNU set of database routines which use extensible hashing
+Description :
+Gdbm is a GNU database indexing library, including routines which use
+extensible hashing.  Gdbm works in a similar way to standard UNIX dbm
+routines.  Gdbm is useful for developers who write C applications and
+need access to a simple and efficient database or who are building C
+applications which will use such a database.
+
+If you're a C developer and your programs need access to simple
+database routines, you should install gdbm.  You'll also need to
+install gdbm-devel.

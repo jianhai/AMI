@@ -1,0 +1,138 @@
+* 三 2月 04 2015 Ben Cressey <bcressey@amazon.com>
+- rebuild with additional documentation
+- build for multiple pythons
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-jinja2-2.7.2-2.el7
+
+* 二 1月 28 2014 Bohuslav Kabrda <bkabrda@redhat.com> - 2.7.2-2
+- Fix CVE-2014-0012.
+Resolves: rhbz#1051427
+
+* 三 1月 15 2014 Bohuslav Kabrda <bkabrda@redhat.com> - 2.7.2-1
+- Reverted flawed patch for #1051427 (this reintroduces #1052102).
+- Spec cleanup (removed rhel < 7 specific stuff).
+- Update to 2.7.2.
+Resolves: rhbz#1052777
+
+* 二 1月 14 2014 Tomas Radej <tradej@redhat.com> - 2.6-8
+- Using secure tmp dir
+- Replaced tabs with spaces
+Resolves: rhbz#1051427
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 2.6-7
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-jinja2-2.6-6.el7
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 六 8月 04 2012 David Malcolm <dmalcolm@redhat.com> - 2.6-5
+- rebuild for https://fedoraproject.org/wiki/Features/Python_3.3
+
+* 五 8月 03 2012 David Malcolm <dmalcolm@redhat.com> - 2.6-4
+- remove rhel logic from with_python3 conditional
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 一 7月 25 2011 Thomas Moschny <thomas.moschny@gmx.de> - 2.6-1
+- Update to 2.6.
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5.5-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 二 1月 18 2011 Thomas Moschny <thomas.moschny@gmx.de> - 2.5.5-3
+- Re-enable html doc generation.
+- Remove conditional for F-12 and below.
+- Do not silently fail the testsuite for with py3k.
+
+* 一 11月 01 2010 Michel Salim <salimma@fedoraproject.org> - 2.5.5-2
+- Move python3 runtime requirements to python3 subpackage
+
+* 三 10月 27 2010 Thomas Moschny <thomas.moschny@gmx.de> - 2.5.5-1
+- Update to 2.5.5.
+
+* 三 8月 25 2010 Thomas Moschny <thomas.moschny@gmx.de> - 2.5.2-4
+- Revert to previous behavior: fail the build on failed test.
+- Rebuild for Python 3.2.
+
+* 三 8月 25 2010 Dan Horák <dan[at]danny.cz> - 2.5.2-3
+- %ifnarch doesn't work on noarch package so don't fail the build on failed tests
+
+* 三 8月 25 2010 Dan Horák <dan[at]danny.cz> - 2.5.2-2
+- disable the testsuite on s390(x)
+
+* 四 8月 19 2010 Thomas Moschny <thomas.moschny@gmx.de> - 2.5.2-1
+- Update to upstream version 2.5.2.
+- Package depends on python-markupsafe and is noarch now.
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 2.5-4
+- add explicit build-requirement on python-setuptools
+- fix doc disablement for python3 subpackage
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 2.5-3
+- support disabling documentation in the build to break a circular build-time
+dependency with python-sphinx; disable docs for now
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 2.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 二 7月 13 2010 Thomas Moschny <thomas.moschny@gmx.de> - 2.5-1
+- Update to upstream version 2.5.
+- Create python3 subpackage.
+- Minor specfile fixes.
+- Add examples directory.
+- Thanks to Gareth Armstrong for additional hints.
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-jinja2-2.2.1-1.el6
+- setup complete for package python-jinja2
+
+* 三 4月 21 2010 Thomas Moschny <thomas.moschny@gmx.de> - 2.4.1-1
+- Update to 2.4.1.
+
+* 二 4月 13 2010 Thomas Moschny <thomas.moschny@gmx.de> - 2.4-1
+- Update to 2.4.
+
+* 二 2月 23 2010 Thomas Moschny <thomas.moschny@gmx.de> - 2.3.1-1
+- Update to 2.3.1.
+- Docs are built using Sphinx now.
+- Run the testsuite.
+
+* 六 9月 19 2009 Thomas Moschny <thomas.moschny@gmx.de> - 2.2.1-1
+- Update to 2.2.1, mainly a bugfix release.
+- Remove patch no longer needed.
+- Remove conditional for FC-8.
+- Compilation of speedup module has to be explicitly requested now.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 1月 10 2009 Thomas Moschny <thomas.moschny@gmx.de> - 2.1.1-1
+- Update to 2.1.1 (bugfix release).
+
+* 四 12月 18 2008 Thomas Moschny <thomas.moschny@gmx.de> - 2.1-1
+- Update to 2.1, which fixes a number of bugs.
+  See http://jinja.pocoo.org/2/documentation/changelog#version-2-1.
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.0-3
+- Rebuild for Python 2.6
+
+* 二 7月 22 2008 Thomas Moschny <thomas.moschny@gmx.de> - 2.0-2
+- Use rpm buildroot macro instead of RPM_BUILD_ROOT.
+
+* 日 7月 20 2008 Thomas Moschny <thomas.moschny@gmx.de> - 2.0-1
+- Upstream released 2.0.
+
+* 日 6月 29 2008 Thomas Moschny <thomas.moschny@gmx.de> - 2.0-0.1.rc1
+- Modified specfile from the existing python-jinja package.
+

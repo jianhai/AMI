@@ -1,0 +1,65 @@
+* 二 2月 03 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 四 7月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/pyxattr-0.5.0-1.el6
+
+* 二 7月 19 2011 Cristian Gafton <gafton@amazon.com>
+- setup complete for package pyxattr
+
+* 日 12月 27 2009 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.5.0-1
+- updated to 0.5.0
+- added support for unicode filenames (bug 479417)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 12月 06 2008 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.4.0-2
+- added python-setuptools in BuildRequires which is needed in build process
+since version 0.4.0 (thanks to Kevin Fenzi)
+
+* 五 12月 05 2008 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.4.0-1
+- updated to 0.4.0
+- License Tag adjusted to current licensing LGPLv2+
+- modified Python Eggs support due to its usage in source distribution
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.2.2-4
+- Rebuild for Python 2.6
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.2.2-3
+- Autorebuild for GCC 4.3
+
+* 二 1月 15 2008 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.2.2-2
+- added compatibility with Python Eggs forced in F9
+
+* 一 8月 27 2007 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.2.2-1
+- upgraded to 0.2.2
+
+* 日 8月 26 2007 Kevin Fenzi <kevin@tummy.com> - 0.2.1-5
+- Updated License tag
+
+* 三 4月 25 2007 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.2.1-4
+- added Provides/Obsoletes tags
+
+* 六 4月 21 2007 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.2.1-3
+- removed redundant after name change "exclude" tag
+ - comments cleanup
+
+* 三 4月 18 2007 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.2.1-2
+- applied suggestions from Kevin Fenzi
+ - name changed from python-xattr to pyxattr
+ - corrected path to the source file
+
+* 四 4月 05 2007 Marcin Zajaczkowski <mszpak ATT wp DOTT pl> - 0.2.1-1
+- updated to 0.2.1
+ - added python-devel in BuildRequires
+ - added more doc files
+ - added Provides section
+ - modified to Fedora Extras requirements
+
+* 日 9月 11 2005 Dag Wieers <dag@wieers.com> - 0.2-1 - +/
+- Initial package. (using DAR)
+

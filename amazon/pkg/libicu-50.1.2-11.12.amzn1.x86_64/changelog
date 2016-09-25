@@ -1,0 +1,471 @@
+* 二 6月 10 2014 Ben Cressey <bcressey@amazon.com>
+- add upstream patch for failing TestTwoDigitYear test
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/icu-50.1.2-11.el7
+
+* 二 3月 11 2014 Eike Rathke <erack@redhat.com> - 50.1.2-11
+- Resolves: rhbz#1074549 Layout Engine LookupProcessor insufficient input checks
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 50.1.2-10
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 50.1.2-9
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/icu-50.1.2-8.el7
+
+* 三 10月 16 2013 Eike Rathke <erack@redhat.com> - 50.1.2-8
+- Resolves: rhbz#1015593 CVE-2013-2924 use-after-free
+
+* 一 7月 22 2013 Eike Rathke <erack@redhat.com> - 50.1.2-7
+- Resolves: rhbz#986814 install icu-config.sh from source2
+
+* 三 7月 17 2013 Eike Rathke <erack@redhat.com> - 50.1.2-6
+- Resolves: rhbz#966141 various flaws in Layout Engine font processing
+- Resolves: rhbz#966077 aarch64 support for icu-config.sh wrapper
+
+* 一 2月 25 2013 Eike Rathke <erack@redhat.com> - 50.1.2-5
+- added manpages for gennorm2 and icuinfo, rhbz#884035 related
+
+* 二 2月 19 2013 Caolán McNamara <caolanm@redhat.com> - 50.1.2-4
+- Resolves: fdo#52519 crash on typing some Malayalam
+
+* 二 1月 29 2013 Eike Rathke <erack@redhat.com> - 50.1.2-3
+- Resolves: rhbz#856594 roll back and build without --disable-renaming again
+
+* 一 1月 28 2013 Eike Rathke <erack@redhat.com> - 50.1.2-2
+- Resolves: rhbz#856594 include content of icu/source/uconfig.h.prepend
+
+* 五 1月 25 2013 Eike Rathke <erack@redhat.com> - 50.1.2-1
+- Update to 50.1.2
+- Resolves: rhbz#856594 to-do add --disable-renaming on next soname bump
+- removed upstream applied icu.9283.regexcmp.crash.patch
+
+* 三 9月 12 2012 Caolán McNamara <caolanm@redhat.com> - 49.1.1-7
+- Related: rhbz#856594 reenable icu symbol renaming
+
+* 三 9月 12 2012 Caolán McNamara <caolanm@redhat.com> - 49.1.1-6
+- Resolves: rhbz#856594 disable icu symbol renaming
+
+* 五 8月 31 2012 Tom Callaway <spot@fedoraproject.org> - 49.1.1-5
+- apply upstream fix (bug 9283) for regexcmp crash causing Chromium segfaults
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 49.1.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 五 6月 15 2012 Caolán McNamara <caolanm@redhat.com> - 49.1.1-3
+- probably parallel-build safe by now. Add a check for original breakage
+
+* 五 6月 15 2012 Caolán McNamara <caolanm@redhat.com> - 49.1.1-2
+- Resolves: rhbz#804313 multi-lib pain
+
+* 四 4月 19 2012 Eike Rathke <erack@redhat.com> - 49.1.1-1
+- Update to 49.1.1
+
+* 四 4月 19 2012 Eike Rathke <erack@redhat.com> - 4.8.1.1-3
+- Resolves: rhbz#813484 doxygen 1.8.0 does not provide installdox, omit from install
+
+* 一 1月 30 2012 Jon Masters <jcm@jonmasters.org> - 4.8.1.1-2
+- Correct reference to BZ681941, add temporary fix for ARM FTBFS side effect
+
+* 五 1月 20 2012 Peter Robinson <pbrobinson@fedoraproject.org> -4.8.1.1-1
+- Update to 4.8.1.1
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.8.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 12月 15 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/icu-4.2.1-9.1.el6_2
+
+* 二 12月 13 2011 Eike Rathke <erack@redhat.com> - 4.8.1-3
+- Resolves: rhbz#766542 CVE-2011-4599 Stack-based buffer overflow
+- add icu.8984.CVE-2011-4599.patch
+
+* 一 10月 24 2011 Caolán McNamara <caolanm@redhat.com> - 4.8.1-2
+- Resolves: rhbz#747193 try and enable ccmp for Indic fonts
+
+* 三 9月 07 2011 Caolán McNamara <caolanm@redhat.com> - 4.8.1-1
+- Resolves: rhbz#681941 don't link unneccessary -lm, etc.
+- add icu.8800.freeserif.crash.patch
+
+* 二 3月 08 2011 Caolán McNamara <caolanm@redhat.com> - 4.6-2
+- Resolves: rhbz#681941 don't link unneccessary -lm, etc.
+
+* 一 3月 07 2011 Caolán McNamara <caolanm@redhat.com> - 4.6-1
+- latest version
+- upgrade includes a .pc now of its own, drop ours
+- drop integrated icu.6995.kannada.patch
+- drop integrated icu.7971.buildfix.patch
+- drop integrated icu.7972.buildfix.patch
+- drop integrated icu.7932.doublecompare.patch
+- drop integrated icu.8011.buildfix.patch
+
+* 五 2月 11 2011 Caolán McNamara <caolanm@redhat.com> - 4.4.2-8
+- Resolves: rhbz#674328 yet more ways that freeserif crashes libicu
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.4.2-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 2月 03 2011 Caolán McNamara <caolanm@redhat.com> - 4.4.2-6
+- Resolves: rhbz#674328 more ways that freeserif crashes libicu
+
+* 三 2月 02 2011 Caolán McNamara <caolanm@redhat.com> - 4.4.2-5
+- Resolves: rhbz#674328 freeserif crashes libicu
+
+* 四 1月 13 2011 Caolán McNamara <caolanm@redhat.com> - 4.4.2-4
+- Resolves: rhbz#669237 strip libicudata
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/icu-4.2.1-9.el6
+
+* 一 11月 29 2010 Caolán McNamara <caolanm@redhat.com> - 4.4.2-3
+- Resolves: rhbz#657964 icu-config bindir returns sbindir
+
+* 四 11月 25 2010 Caolán McNamara <caolanm@redhat.com> - 4.4.2-2
+- Resolves: rhbz#654200 revert icu#5431
+
+* 一 10月 04 2010 Caolán McNamara <caolanm@redhat.com> - 4.4.2-1
+- latest version
+
+* 三 9月 29 2010 jkeating - 4.4.1-6
+- Rebuilt for gcc bug 634757
+
+* 三 9月 22 2010 Caolán McNamara <caolanm@redhat.com> - 4.4.1-5
+- upstream patches
+
+* 四 9月 09 2010 Caolán McNamara <caolanm@redhat.com> - 4.4.1-4
+- Resolves: rhbz#631403 doxygen no longer generates gifs
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/icu-4.2.1-8.el6
+- import source package RHEL6/icu-4.2.1-7.el6
+
+* 四 7月 08 2010 Caolán McNamara <caolanm@redhat.com> - 4.4.1-3
+- move licences into libicu, and add them into the -doc subpackage
+  as well
+
+* 三 5月 26 2010 Caolán McNamara <caolanm@redhat.com> - 4.4.1-2
+- Resolves: rhbz#596171 drop icu.icu6284.strictalias.patch and use
+  -fno-strict-aliasig as upstream has added a pile more and doesn't look
+  interested in proposed patchs
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/icu-3.6-5.11.4
+- import source package RHEL5/icu-3.6-5.11.2
+- import source package RHEL5/icu-3.6-5.11.1
+- import source package RHEL5/icu-3.6-5.11
+- import source package RHEL5/icu-3.6-5.9
+- added submodule prep for package icu
+
+* 四 4月 29 2010 Caolán McNamara <caolanm@redhat.com> - 4.4.1-1
+- latest version
+- drop integrated icu.icu7567.libctest.patch
+
+* 五 4月 02 2010 Caolán McNamara <caolanm@redhat.com> - 4.4-1
+- latest version
+- drop integrated icu.6969.pkgdata.patch
+- drop integrated icu.icu7039.badextract.patch
+- drop integrated icu.XXXX.buildfix.patch
+
+* 三 12月 02 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.1-8
+- Resolves: rhbz#543386 update icu-config
+
+* 四 11月 19 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.1-7
+- Fix FTBFS with yet another autoconf version that changes
+  behaviour
+
+* 一 8月 31 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.1-6
+- Resolves: rhbz#520468 fix s390x and other secondary archs
+
+* 二 7月 28 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.1-5
+- icu#7039 fix broken use of extract to get tests working
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.2.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.1-3
+- make documentation noarch
+
+* 二 7月 14 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.1-2
+- rpmlint warnings
+
+* 五 7月 03 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.1-1
+- 4.2.1 release
+
+* 五 6月 26 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.0.1-3
+- Resolves: rhbz#508288 multilib conflict
+
+* 四 6月 11 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.0.1-2
+- Resolves: rhbz#505252 add icu.6995.kannada.patch
+
+* 一 6月 08 2009 Caolán McNamara <caolanm@redhat.com> - 4.2.0.1-1
+- 4.2.0.1 release
+
+* 六 5月 09 2009 Caolán McNamara <caolanm@redhat.com> - 4.2-1
+- 4.2 release
+
+* 日 5月 03 2009 Caolán McNamara <caolanm@redhat.com> - 4.2-0.1.d03
+- 4.2 release candidate
+- drop resolved icu.icu6008.arm.padding.patch
+- drop resolved icu.icu6439.bare.elif.patch
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.0.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 03 2009 Caolán McNamara <caolanm@redhat.com> - 4.0.1-2
+- fix bare elif for gcc-4.4
+
+* 五 1月 16 2009 Caolán McNamara <caolanm@redhat.com> - 4.0.1-1
+- 4.0.1 release
+
+* 一 12月 29 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-6
+- Resolves rhbz#225896 clean up low hanging rpmlint warnings
+
+* 二 12月 16 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-5
+- drop integrated icu.icu5557.safety.patch
+
+* 四 11月 20 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-4
+- annoyingly upstream tarball was repacked apparently to remove 
+  some unused/cached dirs
+
+* 六 9月 06 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-3
+- Resolves: rhbz#461348 wrong icu-config
+
+* 二 8月 26 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-2
+- Resolves: rhbz#459698 drop Malayalam patches. Note test with Rachana/Meera
+  instead of Lohit Malayalam before filing bugs against icu wrt.
+  Malayalam rendering
+
+* 六 7月 05 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-1
+- final release
+
+* 一 6月 30 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-0.3.d03
+- 4.0 release candidate
+
+* 三 6月 04 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-0.2.d02
+- drop icu.icu5498.openoffice.org.patch
+
+* 六 5月 31 2008 Caolán McNamara <caolanm@redhat.com> - 4.0-0.1.d02
+- 4.0 release candidate
+- drop integrated icu.regexp.patch
+
+* 一 5月 19 2008 Caolán McNamara <caolanm@redhat.com> - 3.8.1-8
+- add icu.icu6284.strictalias.patch and build with 
+  strict-aliasing
+
+* 二 3月 18 2008 Caolán McNamara <caolanm@redhat.com> - 3.8.1-7
+- Resolves: rhbz#437761 modify to icu.icu6213.worstcase.patch for
+  other worst case expansions
+
+* 一 3月 17 2008 Caolán McNamara <caolanm@redhat.com> - 3.8.1-6
+- Resolves: rhbz#437761 add icu.icu6213.bengali.worstcase.patch
+
+* 一 2月 04 2008 Caolán McNamara <caolanm@redhat.com> - 3.8.1-5
+- Resolves: rhbz#431401 split syllables on 1st 0d4d of a 0d4d + 
+  (>= 0d15 && <= 0d39) + 0d4d + 0d30 sequence
+
+* 四 1月 31 2008 Caolán McNamara <caolanm@redhat.com> - 3.8.1-4
+- Resolves: rhbz#431029, rhbz#424661 Remove workaround for 0D31 characters
+
+* 五 1月 25 2008 Caolán McNamara <caolanm@redhat.com> - 3.8.1-3
+- CVE-2007-4770 CVE-2007-4771 add icu.regexp.patch
+- Resolves: rhbz#423211 fix malalayam stuff in light of syllable
+  changes
+
+* 五 1月 11 2008 Caolán McNamara <caolanm@redhat.com> - 3.8.1-2
+- remove icu.icu5365.dependantvowels.patch and cleanup
+  icu.icu5506.multiplevowels.patch as they patch and unpatch 
+  eachother (thanks George Rhoten for pointing out that madness)
+
+* 五 1月 11 2008 Caolán McNamara <caolanm@redhat.com> - 3.8.1-1
+- latest version
+- drop fixed icu.icu6084.zwnj.notdef.patch
+
+* 四 12月 13 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-6
+- Resolves: rhbz#423211 experimental hack for 0d15+0d4d+0d30
+
+* 二 12月 11 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-5
+- Resolves: rhbz#415541 icu.icu6084.zwnj.notdef.patch
+
+* 三 11月 28 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-4
+- Resolves: ooo#83991 Malayalam "Kartika" font fix
+
+* 二 11月 13 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-3
+- add icu.openoffice.org.patch
+
+* 六 10月 27 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-2
+- add icu.icu6008.arm.padding.patch to fix an arm problem
+
+* 二 10月 02 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-1
+- latest version
+
+* 一 9月 03 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-0.2.d02
+- next release candidate
+
+* 三 8月 29 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-0.2.d01
+- rebuild
+
+* 二 8月 07 2007 Caolán McNamara <caolanm@redhat.com> - 3.8-0.1.d01
+- 3.8 release candidate
+- drop integrated icu.icu5433.oriya.patch
+- drop integrated icu.icu5488.assamese.patch
+- drop integrated icu.icu5500.devicetablecrash.patch
+- drop integrated icu.icu5501.sinhala.biggerexpand.patch
+- drop integrated icu.icu5594.gujarati.patch
+- drop integrated icu.icu5465.telegu.patch
+
+* 三 6月 13 2007 Caolán McNamara <caolanm@redhat.com> - 3.6-20
+- Resolves: rhbz#243984 change the icu group as it is libicu 
+  which is "System Environment/Libraries" not icu
+
+* 一 4月 30 2007 Caolán McNamara <caolanm@redhat.com> - 3.6-19
+- Resolves: rhbz#220867 Malayalam rendering
+
+* 二 2月 13 2007 Caolán McNamara <caolanm@redhat.com> - 3.6-18
+- Resolves: rhbz#228457 icu.icu5594.gujarati.patch
+
+* 五 2月 09 2007 Caolán McNamara <caolanm@redhat.com> - 3.6-17
+- spec cleanups
+
+* 一 2月 05 2007 Caolán McNamara <caolanm@redhat.com> - 3.6-16
+- Resolves: rhbz#226949 layout telegu like pango
+
+* 五 1月 19 2007 Caolán McNamara <caolanm@redhat.com> - 3.6-15
+- Resolves: rhbz#214948 icu.icu5506.multiplevowels.patch
+
+* 二 1月 09 2007 Caolán McNamara <caolanm@redhat.com> - 3.6-14
+- Related: rhbz#216089 add icu.icu5557.safety.patch
+
+* 四 12月 21 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-13
+- Resolves: rhbz#220433 modify icu.icu5431.malayam.patch
+
+* 五 11月 10 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-12
+- Resolves: rhbz#214948 icu.icu5506.multiplevowels.patch
+
+* 三 11月 08 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-11
+- Resolves: rhbz#214555 icu.icu5501.sinhala.biggerexpand.patch
+
+* 三 11月 08 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-10
+- Resolves: rhbz#214555 icu.icu5500.devicetablecrash.patch
+
+* 三 10月 18 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-9
+- Resolves: rhbz#213648 extend prev/next to handle ZWJ
+
+* 三 10月 18 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-8
+- Resolves: rhbz213375 (icu.icu5488.assamese.patch)
+
+* 三 10月 18 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-7
+- Resolves: rhbz#211258 (icu.icu5465.telegu.patch)
+
+* 四 10月 05 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-6
+- rh#209391# add icu.icuXXXX.virama.prevnext.patch
+
+* 一 10月 02 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-5
+- rh#208705# add pkg-config Require for -devel package
+- add icu.icu5431.malayam.patch for rh#208551#/rh#209084#
+- add icu.icu5433.oriya.patch for rh#208559#/rh#209083#
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 3.6-4
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 一 9月 25 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-3
+- rh#206615# render malayam like pango
+
+* 三 9月 06 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-2
+- fix rh#205252#/icu#5365 (gnome#121882#/#icu#4026#) to make icu 
+  like pango for multiple dependant vowels
+
+* 日 9月 03 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-1
+- final release
+
+* 一 8月 14 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-0.1.d02
+- bump
+
+* 二 8月 08 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-0.2.d01
+- c++ code not alias correct
+
+* 一 7月 31 2006 Caolán McNamara <caolanm@redhat.com> - 3.6-0.1.d01
+- rh#200728# update to prelease 3.6d01 to pick up on sinhala fixes
+- drop integrated rh190879.patch
+- drop integrated icu-3.4-sinhala1.patch
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.4-10.1.1
+- rebuild
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.4-10.1
+- rebuild
+
+* 六 6月 10 2006 Caolán McNamara <caolanm@redhat.com> - 3.4-10
+- rh#194686# BuildRequires
+
+* 二 5月 09 2006 Caolán McNamara <caolanm@redhat.com> - 3.4-9
+- rh#190879# backport fix
+
+* 三 5月 03 2006 Caolán McNamara <caolanm@redhat.com> - 3.4-8
+- add Harshula's icu-3.4-sinhala1.patch for some Sinhala support
+
+* 二 5月 02 2006 Caolán McNamara <caolanm@redhat.com> - 3.4-7
+- add a pkgconfig.pc, make icu-config use it
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.4-6.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.4-6.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 03 2006 Caolán McNamara <caolanm@redhat.com> - 3.4-6
+- add icu-gcc41.patch
+
+* 二 10月 11 2005 Caolán McNamara <caolanm@redhat.com> - 3.4-5
+- clear execstack requirement for libicudata
+
+* 一 9月 12 2005 Caolán McNamara <caolanm@redhat.com> - 3.4-4
+- import extra icu.spec into fedora core for openoffice.org
+- build with gcc 4
+
+* 三 8月 31 2005 Thorsten Leemhuis <fedora at leemhuis.info> - 3.4-3
+- Use dist
+- gcc32 does not understand -fstack-protector and 
+  --param=ssp-buffer-size=4
+
+* 二 8月 02 2005 Ville Skyttä <ville.skytta at iki.fi> - 3.4-2
+- 3.4.
+
+* 日 7月 31 2005 Ville Skyttä <ville.skytta at iki.fi> - 3.4-0.2.d02
+- 3.4-d02.
+- Don't ship static libraries.
+
+* 三 4月 27 2005 Ville Skyttä <ville.skytta at iki.fi> - 3.2-3
+- Apply upstream case mapping mutex lock removal patch.
+- Build with gcc 3.2 as a temporary workaround for #152495.
+
+* 四 4月 07 2005 Michael Schwendt <mschwendt[AT]users.sf.net> - 3.2-2
+- rebuilt
+
+* 六 1月 01 2005 Ville Skyttä <ville.skytta at iki.fi> - 3.2-1
+- Don't use %{_smp_mflags} (b.f.u #2357).
+- Remove unnecessary Epochs.
+
+* 六 12月 04 2004 Ville Skyttä <ville.skytta at iki.fi> - 0:3.2-0.fdr.1
+- Update to 3.2.
+
+* 日 7月 18 2004 Ville Skyttä <ville.skytta at iki.fi> - 0:3.0-0.fdr.1
+- Update to 3.0, datadirs patch no longer needed.
+- Package data in shared libs, drop -locales subpackage.
+- Rename -docs subpackage to libicu-doc, and generate graphs with graphviz.
+
+* 六 12月 13 2003 Ville Skyttä <ville.skytta at iki.fi> - 0:2.6.1-0.fdr.3
+- Partial fix for bad datadirs returned by icu-config (works as long as
+  data packaging mode is not "common" or "dll").
+
+* 日 11月 23 2003 Ville Skyttä <ville.skytta at iki.fi> - 0:2.6.1-0.fdr.2
+- First complete version.
+
+* 日 9月 28 2003 Ville Skyttä <ville.skytta at iki.fi> - 0:2.6.1-0.fdr.1
+- Update to 2.6.1.
+
+* 三 8月 27 2003 Ville Skyttä <ville.skytta at iki.fi> - 0:2.6-0.fdr.1
+- First build, based on upstream and SuSE 8.2 packages.
+

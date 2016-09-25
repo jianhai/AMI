@@ -1,0 +1,11 @@
+postinstall scriptlet (using /bin/sh):
+/usr/sbin/update-alternatives \
+  --force \
+  --install /usr/bin/python             python       /usr/bin/python2.7 27000 \
+    --slave /usr/bin/pydoc              pydoc        /usr/bin/pydoc2.7 \
+    --slave /usr/share/man/man1/python.1.gz   python.1.gz  /usr/share/man/man1/python2.7.1.gz \
+  || :
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+  /usr/sbin/update-alternatives --remove python /usr/bin/python2.7 || :
+fi

@@ -1,0 +1,1351 @@
+* 三 3月 19 2014 Cristian Gafton <gafton@amazon.com>
+- use a more conservative default for udev.children_max
+
+* 五 9月 27 2013 Heath Petty <hpetty@amazon.com>
+- fixed a version and the chkconfig statements
+
+* 四 9月 26 2013 Heath Petty <hpetty@amazon.com>
+- Fixed some small errors in the spec file
+- removed systemd command from non-systemd block in pre script
+- Make sure the udev-post service is configured to start after upgrade
+
+* 四 9月 06 2012 Cristian Gafton <gafton@amazon.com>
+- reset release counter
+- wire a debug build option properly
+- conditionalize introspection build
+- import source package F16/udev-173-3.fc16
+- import source package F15/udev-167-6.fc15
+- import source package F15/udev-167-4.fc15
+- import source package F14/udev-161-10.fc14
+- import source package F14/udev-161-8.fc14
+- import source package F14/udev-161-7.fc14
+- import source package F14/udev-161-6.fc14
+- import source package F14/udev-161-4.fc14
+- import source package F14/udev-161-2.fc14
+- import source package F14/udev-160-8.fc14
+- import source package F14/udev-153-5.fc13
+- import source package F14/udev-153-4.fc13
+- import source package F14/udev-153-3.fc13
+- import source package F14/udev-151-10.fc13
+- import source package F14/udev-151-9.fc13
+- import source package F14/udev-151-8.fc13
+- import source package F14/udev-151-7.fc13
+- import source package F14/udev-151-3.fc13
+
+* 二 3月 27 2012 Cristian Gafton <gafton@amazon.com>
+- stop warning about the lack of a /run tree until we're supposed to have a /run tree
+
+* 二 3月 20 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Add a few more Obsoletes
+
+* 三 3月 07 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- conditionalize systemd support
+
+* 一 3月 05 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- re-add udevsettle wrapper
+
+* 一 8月 29 2011 Kay Sievers <kay@redhat.com> 173-2
+- fix bluetooth input device handling (brc#733862)
+
+* 一 8月 29 2011 Daniel Drake <dsd@laptop.org> 173-2
+- Update OLPC XO keymap
+
+* 一 8月 01 2011 Harald Hoyer <harald@redhat.com> 173-1
+- version 173
+- udev-acl functionality is in systemd
+
+* 三 7月 20 2011 Harald Hoyer <harald@redhat.com> 172-2
+- removed loop devices (should be compiled in the kernel)
+- removed deprecated directories
+- removed scsi_id symlink
+- cleanup of requirements
+
+* 一 7月 11 2011 Harald Hoyer <harald@redhat.com> 172-1
+- version 172
+
+* 一 6月 20 2011 Harald Hoyer <harald@redhat.com> 171-2
+- build without introspection
+- removed unused dirs
+- added ConsoleKit dirs
+
+* 五 5月 27 2011 Harald Hoyer <harald@redhat.com> 171-1
+- version 171
+
+* 五 5月 20 2011 Harald Hoyer <harald@redhat.com> 170-1
+- version 170
+- removed /sbin/start_udev
+
+* 一 4月 11 2011 Harald Hoyer <harald@redhat.com> 167-4
+- more selinux fixes
+
+* 四 4月 07 2011 Adam Williamson <awilliam@redhat.com> - 167-3
+- selinux_label.patch: from upstream, don't label files outside of /dev
+
+* 四 3月 31 2011 Harald Hoyer <harald@redhat.com> 167-2
+- fixed udev-trigger.service
+
+* 三 3月 30 2011 Harald Hoyer <harald@redhat.com> 167-1
+- version 167
+
+* 三 3月 23 2011 Harald Hoyer <harald@redhat.com> 166-2
+- add ACLs for harmony remote controls
+Resolves: rhbz#559412
+- fixed CDROM profile handling
+
+* 三 2月 16 2011 Harald Hoyer <harald@redhat.com> 166-1
+- renamed udev-post initscript to udev-retry to match 
+  upstream systemd service name
+- version 166
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 164-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 2月 02 2011 Harald Hoyer <harald@redhat.com> 164-8
+- fixed: network device renaming 2-step exceeds IFNAMSIZ
+Resolves: rhbz#673675
+- removed v4l version 1
+
+* 五 1月 21 2011 Harald Hoyer <harald@redhat.com> 164-7
+- removed unnecessary devices from /lib/udev/devices
+
+* 一 12月 06 2010 Harald Hoyer <harald@redhat.com> 164-6
+- removed MAKEDEV symlink
+Resolves: rhbz#660091
+- fixed kill loop
+Resolves: rhbz#657651
+
+* 四 11月 25 2010 Bastien Nocera <bnocera@redhat.com> 164-5
+- Add patches to fix touchpad toggle key handling
+
+* 五 11月 12 2010 Harald Hoyer <harald@redhat.com> 164-4
+- add ACLs for PDA devices
+Resolves: rhbz#642435
+
+* 五 11月 12 2010 Harald Hoyer <harald@redhat.com> 164-3
+- enlarged the import buffer to fix the ressize bugs
+Resolves: rhbz#652318
+
+* 五 11月 12 2010 Harald Hoyer <harald@redhat.com> 164-2
+- do not create mount point dirs in /dev
+
+* 五 10月 29 2010 Harald Hoyer <harald@redhat.com> 164-1
+- version 164
+- skip start_udev with systemd
+
+* 三 9月 29 2010 jkeating - 161-4
+- Rebuilt for gcc bug 634757
+
+* 二 9月 21 2010 Matthias Clasen <mclasen@rdhat.com> 161-3
+- Rebuild against newer gobject-introspection
+
+* 三 9月 01 2010 Harald Hoyer <harald@redhat.com> 161-2
+- bugfixes for systemd service files
+- bugfix for selinux labeling
+- bugfixes for cdrom_id
+
+* 二 8月 17 2010 Harald Hoyer <harald@redhat.com> 161-1
+- udev-161 with an upstream quirk for the qemu cdrom and
+  more cdrom handling bugfixes
+Resolves: rhbz#609049 rhbz#624286
+- added floppy group
+Resolves: rhbz#620814
+
+* 五 8月 06 2010 Harald Hoyer <harald@redhat.com> 160-9
+- added quirk to cdrom_id, to boot from qemu
+Resolves: rhbz#609049
+- fix console switching and ACLs
+Resolves: rhbz#608712
+- minor bugfixes
+
+* 二 7月 20 2010 Harald Hoyer <harald@redhat.com> 160-8
+- make loop block device again
+
+* 二 7月 20 2010 Harald Hoyer <harald@redhat.com> 160-7
+- turn off hotplug in /sys/kernel/uevent_helper or /proc/sys/kernel/hotplug
+
+* 四 7月 15 2010 Harald Hoyer <harald@redhat.com> 160-6
+- add versioned requires for libudev to udev
+
+* 三 7月 14 2010 Dan Horák <dan[at]danny.cz> 160-5
+- update paths to arch-specific rules
+
+* 二 7月 13 2010 Lennart Poettering <lennart@poettering.net> - 160-4
+- Comment systemd-install for now as long as sysinit is not split into pieces
+
+* 二 7月 13 2010 Lennart Poettering <lpoetter@redhat.com> - 160-3
+- Update systemd-install lines to use --realize instead of --start (which got renamed in systemd)
+
+* 二 7月 13 2010 Lennart Poettering <lpoetter@redhat.com> - 160-2
+- Don't require systemd .pc file, to break build dependency cycle
+
+* 二 7月 13 2010 Harald Hoyer <harald@redhat.com> 160-1
+- version 160
+- add systemd service files
+- fixed COPYRIGHT files
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/udev-147-2.6.el6
+
+* 五 6月 25 2010 Harald Hoyer <harald@redhat.com> 158-2
+- moved udev pkgconfig to base file on authors request
+- specfile cleanups
+
+* 四 6月 24 2010 Harald Hoyer <harald@redhat.com> 158-1
+- version 158
+
+* 四 5月 27 2010 Harald Hoyer <harald@redhat.com> 156-2
+- cleaned up start_udev and udev-post initscript
+- removed redhat specific rules
+- removed all the makedev.d stuff, udevd now natively supports
+  /lib/udev/devices
+- added basic devices in /lib/udev/devices
+
+* 二 5月 25 2010 Harald Hoyer <harald@redhat.com> 156-1
+- version 156
+
+* 二 5月 25 2010 Harald Hoyer <harald@redhat.com> 155-1
+- version 155
+
+* 三 5月 12 2010 Harald Hoyer <harald@redhat.com> 154-1
+- version 154
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/udev-095-14.21.el5
+- import source package RHEL5/udev-095-14.20.el5_3
+- import source package RHEL5/udev-095-14.19.el5
+- import source package RHEL5/udev-095-14.16.el5
+- import source package RHEL5/udev-095-14.9.el5
+- import source package RHEL5/udev-095-14.5.el5
+- added submodule prep for package udev
+
+* 二 4月 27 2010 Harald Hoyer <harald@redhat.com> 153-1.20100427git
+- version 153
+
+* 二 4月 13 2010 Harald Hoyer <harald@redhat.com> 152-0.1.20100413git
+- pre release of version 152
+
+* 一 3月 22 2010 Harald Hoyer <harald@redhat.com> 151-8
+- only correct the timestamp, if UTC=="no"
+
+* 一 3月 22 2010 Harald Hoyer <harald@redhat.com> 151-7
+- touch with "--no-create", will not use open() 
+  and trigger devs/watchdogs (bug #575417)
+
+* 一 3月 22 2010 Harald Hoyer <harald@redhat.com> 151-6
+- fixed return code of touching the device nodes [FAIL] -> [OK]
+
+* 五 3月 19 2010 Harald Hoyer <harald@redhat.com> 151-5
+- add "-D" to gperf call
+
+* 五 3月 19 2010 Harald Hoyer <harald@redhat.com> 151-4
+- add patch for virtio-ports (#569700)
+- own libgudev dirs (#561319)
+- minor udev startup script improvements (#549518)
+- create /dev/hugepages subdir in start_udev (#541998)
+- remove GPL COPYING file from LGPL subpackages (#536843)
+- removed symlinks to udevadm
+- touch all device nodes after udev settled for the timezone
+  timestamp (#569335)
+- add some upstream bugfixes
+
+* 日 2月 07 2010 Kyle McMartin <kyle@redhat.com> 151-3
+- udev-86a7a2f-fix-missing-firmware.patch: fix hang when loading
+  microcode (since microcode_intel tries to probe firmware which does
+  not exist. *sigh*)
+
+* 五 1月 29 2010 Harald Hoyer <harald@redhat.com> 151-2
+- fixed rules and startup script (#559844)
+
+* 三 1月 27 2010 Harald Hoyer <harald@redhat.com> 151-1
+- version 151
+- fixed udev-post initscript
+- only require s390utils-base, rather than s390utils (#553156)
+
+* 二 11月 24 2009 Harald Hoyer <harald@redhat.com> 147-2
+- require s390utils, because it's essential on s390
+
+* 四 11月 12 2009 Harald Hoyer <harald@redhat.com> 147-1
+- version 147
+- Fix upgrade from Fedora 11 with bluez installed (#533925)
+- obsolete DeviceKit and DeviceKit-devel (#532961)
+- fixed udev-post exit codes (#523976)
+- own directory /lib/udev/keymaps (#521801)
+- no more floppy modaliases (#514329)
+- added one more modems to modem-modeswitch.rules (#515349)
+- add NEWS file to the doc section
+- automatically turn on hotplugged CPUs (rhbz#523127)
+- recognize a devtmpfs on /dev (bug #528488)
+
+* 五 10月 09 2009 Harald Hoyer <harald@redhat.com> 147-0.1.gitdf3e07d
+- pre 147 
+- database format changed
+- lots of potential buffer overflow fixes
+
+* 二 9月 29 2009 Harald Hoyer <harald@redhat.com> 145-10
+- add ConsoleKit patch for ConsoleKit 0.4.1
+
+* 五 9月 25 2009 harald@redhat.com 145-9
+- add patches to fix cdrom_id
+- add patch to fix the inotify bug (bug #524752)
+
+* 三 9月 23 2009 harald@redhat.com 145-8
+- obsolete libgudev and libgudev-devel (bug #523569)
+
+* 一 8月 24 2009 Karsten Hopp <karsten@redhat.com> 145-7
+- drop ifnarch s390x for usbutils, as we now have usbutils for s390x
+
+* 一 8月 24 2009 Harald Hoyer <harald@redhat.com> 145-6
+- ifnarch s390 for usbutils
+
+* 二 8月 04 2009 Harald Hoyer <harald@redhat.com> 145-5
+- do not make extra nodes in parallel
+- restorecon on /dev
+
+* 二 8月 04 2009 Harald Hoyer <harald@redhat.com> 145-4
+- --enable-debug 
+- add patch for timestamps in debugging output
+
+* 三 7月 29 2009 Harald Hoyer <harald@redhat.com> 145-3
+- add patch from upstream git to fix bug #514086
+- add version to usbutils build requirement
+
+* 五 7月 24 2009 Harald Hoyer <harald@redhat.com> 145-2
+- fix file permissions
+- remove rpath
+- chkconfig --add for udev-post
+- fix summaries
+- add "Required-Stop" to udev-post
+
+* 二 7月 14 2009 Harald Hoyer <harald@redhat.com> 145-1
+- version 145
+- add "udevlog" kernel command line option to redirect the
+  output of udevd to /dev/.udev/udev.log
+
+* 五 7月 03 2009 Harald Hoyer <harald@redhat.com> 143-2
+- add acpi floppy modalias
+- add retrigger of failed events in udev-post.init
+- killall pids of udev in %pre
+
+* 五 6月 19 2009 Harald Hoyer <harald@redhat.com> 143-1
+- version 143
+
+* 一 6月 08 2009 Harald Hoyer <harald@redhat.com> 142-4
+- git fix: udevadm: settle - fix timeout
+- git fix: OWNER/GROUP: fix if logic
+- git fix: rule-generator: cd - skip by-path links if we create by-id links
+- git fix: fix possible endless loop for GOTO to non-existent LABEL
+- git fix: cdrom_id: suppress ID_CDROM_MEDIA_STATE=blank for plain non-writable 
+                CDROM media
+
+* 一 6月 08 2009 Harald Hoyer <harald@redhat.com> 142-3
+- delay device-mapper changes
+
+* 五 6月 05 2009 Bastien Nocera <bnocera@redhat.com> 142-2
+- Rebuild in dist-f12
+
+* 五 5月 15 2009 Harald Hoyer <harald@redhat.com> 142-1
+- version 142
+- no more libvolume_id and vol_id
+
+* 五 4月 17 2009 Harald Hoyer <harald@redhat.com> 141-3
+- added /dev/fuse creation to start_udev
+
+* 四 4月 16 2009 Harald Hoyer <harald@redhat.com> 141-2
+- fixed post and pre
+
+* 二 4月 14 2009 Harald Hoyer <harald@redhat.com> 141-1
+- version 141
+
+* 三 4月 01 2009 Harald Hoyer <harald@redhat.com> 139-4
+- double the IMPORT buffer (bug #488554)
+- Resolves: rhbz#488554
+
+* 三 4月 01 2009 Harald Hoyer <harald@redhat.com> 139-3
+- renamed modprobe /etc/modprobe.d/floppy-pnp to
+  /etc/modprobe.d/floppy-pnp.conf (bug #492732 #488768)
+- Resolves: rhbz#492732
+
+* 二 3月 03 2009 Harald Hoyer <harald@redhat.com> 139-2
+- speedup of start_udev by doing make_extra_nodes in parallel to 
+  the daemon start
+
+* 五 2月 27 2009 Harald Hoyer <harald@redhat.com> 139-1
+- version 139
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 137-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 05 2009 Harald Hoyer <harald@redhat.com> 137-4
+- fixed md change/remove event handling
+
+* 四 2月 05 2009 Harald Hoyer <harald@redhat.com> 137-3
+- added 5 second sleep for "modprobedebug" to catch bad modules
+
+* 五 1月 30 2009 Harald Hoyer <harald@redhat.com> 137-2
+- moved groupadd to pre section (bug #483089)
+
+* 四 1月 29 2009 Harald Hoyer <harald@redhat.com> 137-1
+- version 137
+- add vol_id patches from kzak
+- dialout group has gid 18 now
+
+* 二 1月 20 2009 Harald Hoyer <harald@redhat.com> 136-2
+- added some rule fixes, which will be in udev-137
+
+* 二 1月 20 2009 Harald Hoyer <harald@redhat.com> 136-1
+- test for restorecon in start_udev before it is used (bug #480608)
+- added groups video audio cdrom tape dialout in post
+  (might be moved to MAKEDEV)
+- version 136
+
+* 二 12月 16 2008 Harald Hoyer <harald@redhat.com> 135-3
+- added sepol patch
+
+* 二 12月 16 2008 Harald Hoyer <harald@redhat.com> 135-2
+- changed udevsettle -> udevadm settle
+- added doc to libudev-devel
+- added more attr and defattr
+- various rpmlint fixes
+
+* 二 12月 02 2008 Harald Hoyer <harald@redhat.com> 135-1
+- version 135
+
+* 三 11月 19 2008 Harald Hoyer <harald@redhat.com> 133-1
+- version 133
+
+* 一 11月 10 2008 Harald Hoyer <harald@redhat.com> 132-1
+- version 132
+- added memory stick rules (bug #470096)
+
+* 四 10月 16 2008 Harald Hoyer <harald@redhat.com> 127-2
+- added 2 patches for md raid vol_id
+
+* 一 9月 01 2008 Harald Hoyer <harald@redhat.com> 127-1
+- version 127
+
+* 五 8月 08 2008 Harald Hoyer <harald@redhat.com> 126-1
+- version 126
+- fixed udevadm syntax in start_udev (credits B.J.W. Polman)
+- removed some manually created devices from makedev (bug #457125)
+
+* 二 6月 17 2008 Harald Hoyer <harald@redhat.com> 124-1.1
+- readded udevcontrol, udevtrigger symlinks for Fedora 9,
+  which are needed by live-cd-tools
+
+* 四 6月 12 2008 Harald Hoyer <harald@redhat.com> 124-1
+- version 124
+- removed udevcontrol, udevtrigger symlinks (use udevadm now)
+
+* 二 6月 03 2008 Jeremy Katz <katzj@redhat.com> - 121-2.20080516git
+- Add lost F9 change to remove /dev/.udev in start_udev (#442827)
+
+* 五 5月 16 2008 Harald Hoyer <harald@redhat.com> 121-1.20080516git
+- version 121 + latest git fixes
+
+* 三 5月 07 2008 Harald Hoyer <harald@redhat.com> 120-6.20080421git
+- added input/hp_ilo_mouse symlink
+
+* 二 5月 06 2008 Harald Hoyer <harald@redhat.com> 120-5.20080421git
+- remove /dev/.udev in start_udev (bug #442827)
+
+* 一 4月 21 2008 Harald Hoyer <harald@redhat.com> 120-4.20080421git
+- added patches from git:
+- persistent device naming: also read unpartitioned media
+- scsi_id: initialize serial strings
+- logging: add trailing newline to all strings
+- path_id: remove subsystem whitelist
+- allow setting of MODE="0000"
+- selinux: more context settings
+- rules_generator: net rules - always add KERNEL== match to generated rules
+- cdrom_id: replace with version which also exports media properties
+- vol_id: add --offset option
+- udevinfo: do not replace chars when printing ATTR== matches
+- Resolves: rhbz#440568
+
+* 五 4月 11 2008 Harald Hoyer <harald@redhat.com> 120-3
+- fixed pre/preun scriptlets (bug #441941)
+- removed fedora specific patch for selinux symlink handling
+
+* 六 4月 05 2008 Harald Hoyer <harald@redhat.com> 120-2
+- removed warning about deprecated /lib/udev/devices (rhbz#440961)
+- replaced /usr/bin/find with shell find function (rhbz#440961)
+
+* 五 4月 04 2008 Harald Hoyer <harald@redhat.com> 120-1
+- version 120
+
+* 一 3月 17 2008 Harald Hoyer <harald@redhat.com> 118-11
+- removed /var/lib/udev/rules.d again
+
+* 五 3月 14 2008 Harald Hoyer <harald@redhat.com> 118-10
+- turned off MAKEDEV cache, until the generated shell scripts 
+  create new directories
+
+* 四 3月 13 2008 Harald Hoyer <harald@redhat.com> 118-9
+- added more support for the "modprobedebug" kernel command 
+  line option, to debug hanging kernel modules
+
+* 四 3月 13 2008 Harald Hoyer <harald@redhat.com> 118-8
+- added /etc/sysconfig/udev to configure some speedups
+- added "udevnopersist" as a kernel command line, to disable
+  persistent storage symlink generation
+
+* 四 3月 13 2008 Harald Hoyer <harald@redhat.com> 118-7
+- files from /var/lib/udev/rules.d are copied to /dev/.udev/rules.d 
+  at startup and back at shutdown
+- persistent cd and net rules generate the files in 
+  /dev/.udev/rules.d now
+- added post section to symlink 70-persistent-cd.rules 70-persistent-net.rules
+  from /etc/udev/rules.d to /dev/.udev/rules.d
+
+* 四 3月 13 2008 Harald Hoyer <harald@redhat.com> 118-6
+- moved all generated files to /var/lib/udev 
+  (also 70-persistent-cd.rules 70-persistent-net.rules)
+- added a caching mechanism for MAKEDEV (saves some seconds on startup)
+- added trigger for selinux-policy and MAKEDEV to remove the udev cache files
+
+* 三 2月 20 2008 Harald Hoyer <harald@redhat.com> 118-4
+- made symlinks relative (rhbz#432878)
+- removed the backgrounding of node creation (rhbz#381461)
+- do not change sg group ownership to disk for scanners (rhbz#432602)
+- attempt to fix selinux symlink bug (rhbz#345071)
+- fixed URL
+- made rpmlint mostly happy
+- disabled static version (no static selinux lib)
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 118-3
+- Autorebuild for GCC 4.3
+
+* 三 1月 09 2008 Harald Hoyer <harald@redhat.com> 118-2
+- reenabled static version
+
+* 二 1月 08 2008 Harald Hoyer <harald@redhat.com> 118-1
+- version 118
+- removed old USB compat rule (rhbz#424331)
+- disabled static version
+
+* 四 10月 18 2007 Harald Hoyer <harald@redhat.com> 116-3
+- fixed preun chkconfig
+- added /sbin path to chkconfig in post section 
+- patch: do not generate net rules for type > 256
+- fixes glitches appearing in bz#323991
+
+* 二 10月 16 2007 Dennis Gilmore <dennis@ausil.us> 116-2
+- sparc64 requires -fPIE not -fpie
+
+* 一 10月 15 2007 Harald Hoyer <harald@redhat.com> 116-1
+- version 116
+
+* 五 10月 12 2007 Harald Hoyer <harald@redhat.com> 115-5.20071012git
+- added upstream patch for rhbz#328691
+- moved floppy module loading to pnp-alias in /etc/modprobe.d/floppy-pnp
+
+* 三 10月 10 2007 Harald Hoyer <harald@redhat.com> 115-5.20070921git
+- better modprobe options for the kernel command line 'modprobedebug' option
+
+* 五 9月 21 2007 Harald Hoyer <harald@redhat.com> - 115-4
+- more upstream fixes from git
+
+* 四 9月 20 2007 Harald Hoyer <harald@redhat.com> - 115-3
+- some upstream fixes from git
+- removed last_rule for loop rules
+- added "udevinfo udevtrace" kernel command line options for better debugging
+
+* 五 9月 07 2007 Harald Hoyer <harald@redhat.com> - 115-2
+- some upstream fixes from git
+- last_rule for loop rules (speedup for live-cds/qemu with 128 loop devices)
+
+* 五 8月 24 2007 Harald Hoyer <harald@redhat.com> - 113-12
+- removed /dev/tape symlink, because it's now a directory
+  (bug #251755)
+
+* 五 8月 24 2007 Harald Hoyer <harald@redhat.com> - 115-1
+- version 115
+
+* 四 8月 23 2007 Harald Hoyer <harald@redhat.com> - 114-4
+- added patch to prevent persistent net rules for virtual network interfaces,
+  like vmware and vlans
+
+* 四 8月 23 2007 Harald Hoyer <harald@redhat.com> - 114-3
+- changed license tag
+- changed to latest upstream rule ordering
+
+* 四 8月 16 2007 Harald Hoyer <harald@redhat.com> - 113-11
+- readded firmware rule (#252983)
+
+* 三 8月 15 2007 Harald Hoyer <harald@redhat.com> - 113-10
+- do not run vol_id on non-partition block devices (bug #251401)
+- read all multiline pnp modaliases again
+
+* 一 8月 13 2007 Harald Hoyer <harald@redhat.com> - 114-2
+- fixed isapnp rule (bug #251815)
+- fix for nikon cameras (bug #251401)
+
+* 五 8月 10 2007 Harald Hoyer <harald@redhat.com> - 114-1
+- version 114
+- big rule unification and cleanup
+- added persistent names for network and cdrom devices over reboot
+
+* 三 8月 08 2007 Harald Hoyer <harald@redhat.com> - 113-9
+- added lp* to 50-udev.nodes (#251272)
+
+* 一 7月 30 2007 Harald Hoyer <harald@redhat.com> - 113-8
+- removed "noreplace" config tag from rules (#250043)
+
+* 五 7月 27 2007 Harald Hoyer <harald@redhat.com> - 113-7
+- major rule cleanup
+- removed persistent rules from 50 and included upstream rules
+- removed skip_wait from modprobe
+
+* 五 7月 20 2007 Harald Hoyer <harald@redhat.com> - 113-6
+- kernel does not provide usb_device anymore,
+  corrected the rules (#248916)
+
+* 四 7月 19 2007 Harald Hoyer <harald@redhat.com> - 113-5
+- corrected the rule for usb devices (#248916)
+
+* 六 7月 14 2007 Harald Hoyer <harald@redhat.com> - 113-4
+- do not collect modprobes (bug #222542), because firmware
+  loading seems to depend on it.
+
+* 一 7月 09 2007 Harald Hoyer <harald@redhat.com> - 113-3
+- speedup things a little bit
+
+* 三 6月 27 2007 Harald Hoyer <harald@redhat.com> - 113-2
+- added more firewire symlinks (#240770)
+- minor rule patches
+
+* 二 6月 26 2007 Harald Hoyer <harald@redhat.com> - 113-1
+- version 113
+- added rule for SD cards in a TI FlashMedia slot (#217070)
+
+* 二 6月 26 2007 Harald Hoyer <harald@redhat.com> - 106-4.1
+- fixed modprobedebug option
+- removed snd-powermac from the default modules (#200585)
+
+* 三 5月 02 2007 Harald Hoyer <harald@redhat.com> - 106-4
+- do not skip all events on modprobe (#238385)
+- Resolves: rhbz#238385
+
+* 五 4月 27 2007 Harald Hoyer <harald@redhat.com> - 106-3
+- modprobe only on modalias (bug #238140)
+- make startup messages visible again
+- speedup boot process by not executing pam_console_apply while booting
+- Resolves: rhbz#238140
+
+* 三 4月 11 2007 Harald Hoyer <harald@redhat.com> - 106-2
+- create floppy device nodes with the correct selinux context (bug #235953)
+- Resolves: rhbz#235953
+
+* 三 3月 07 2007 Harald Hoyer <harald@redhat.com> - 106-1
+- version 106
+- specfile cleanup
+- removed pilot rule
+- removed dasd_id and dasd_id rule
+- provide static versions in a subpackage
+
+* 三 2月 21 2007 Harald Hoyer <harald@redhat.com> - 105-1
+- version 105
+
+* 二 2月 06 2007 Harald Hoyer <harald@redhat.com> - 104-2
+- moved uinput to input subdirectory (rhbz#213854)
+- added USB floppy symlinks (rhbz#185171)
+- fixed ZIP drive handling (rhbz#223016)
+- Resolves: rhbz#213854,rhbz#185171,rhbz#223016
+
+* 二 1月 23 2007 Harald Hoyer <harald@redhat.com> - 104-1
+- version 104
+- merged changes from RHEL
+
+* 三 12月 06 2006 Harald Hoyer <harald@redhat.com> - 103-3
+- changed DRIVER to DRIVERS 
+- Resolves: rhbz#218160
+
+* 五 11月 10 2006 Harald Hoyer <harald@redhat.com> - 103-2
+- changed SYSFS to new ATTR rules
+- Resolves: rhbz#214898
+
+* 五 11月 10 2006 Harald Hoyer <harald@redhat.com> - 103-1
+- Removed 51-hotplug.rules
+- Resolves: rhbz#214277
+
+* 三 10月 11 2006 Harald Hoyer <harald@redhat.com> - 095-14
+- skip persistent block for gnbd devices (bug #210227)
+
+* 三 10月 04 2006 Harald Hoyer <harald@redhat.com> - 095-13
+- fixed path_id script (bug #207139)
+
+* 二 10月 03 2006 Jeremy Katz <katzj@redhat.com> - 095-12
+- autoload mmc_block (#171687)
+
+* 三 9月 27 2006 Harald Hoyer <harald@redhat.com> - 095-10
+- typo in xpram/slram rule (bug #205563)
+
+* 一 9月 25 2006 Harald Hoyer <harald@redhat.com> - 095-9
+- improved error msg for firmware_helper (bug #206944)
+- added xpram symlink to slram device nodes (bug #205563)
+- removed infiniband rules (bug #206224)
+- use newest path_id script (bug #207139)
+
+* 二 8月 29 2006 Harald Hoyer <harald@redhat.com> - 095-8
+- fixed bug #204157
+
+* 三 8月 16 2006 Harald Hoyer <harald@redhat.com> - 095-7
+- added udevtimeout=<timeout in seconds>
+  kernel command line parameters for start_udev 
+  (default is to wait forever)
+
+* 三 8月 16 2006 Harald Hoyer <harald@redhat.com> - 095-6
+- new speedup patch for selinux (bug #202673)
+
+* 四 8月 10 2006 Harald Hoyer <harald@redhat.com> - 095-5
+- allow long comments (bug #200244)
+
+* 一 8月 07 2006 Harald Hoyer <harald@redhat.com> - 095-4
+- fixed CAPI device nodes (bug #139321)
+- fixed bug #201422
+
+* 三 7月 12 2006 Harald Hoyer <harald@redhat.com> - 095-3
+- more infiniband rules (bug #198501)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 095-2.1
+- rebuild
+
+* 四 7月 06 2006 Harald Hoyer <harald@redhat.com> - 095-2
+- added option to debug udev with kernel cmdline option "udevdebug"
+
+* 三 7月 05 2006 Harald Hoyer <harald@redhat.com> - 095-1
+- version 095
+
+* 三 6月 14 2006 Harald Hoyer <harald@redhat.com> - 094-1
+- version 094
+
+* 日 5月 21 2006 Peter Jones <pjones@redhat.com> - 092-2
+- Fix typo in pam-console rule
+
+* 四 5月 18 2006 Harald Hoyer <harald@redhat.com> - 092-1
+- version 092
+- corrected some rules (bug #192210 #190927)
+
+* 二 5月 09 2006 Harald Hoyer <harald@redhat.com> - 091-3
+- corrected some rules (bug #190927)
+
+* 三 5月 03 2006 Harald Hoyer <harald@redhat.com> - 091-2
+- added subpackages libvolume_id and libvolume_id-devel
+
+* 三 5月 03 2006 Harald Hoyer <harald@redhat.com> - 091-1
+- version 091
+
+* 三 4月 19 2006 Harald Hoyer <harald@redhat.com> - 090-1
+- version 090
+
+* 四 4月 13 2006 Harald Hoyer <harald@redhat.com> - 089-1
+- version 089
+- do not force loading of parport_pc (bug #186850)
+- manually load snd-powermac (bug #176761)
+- added usb floppy symlink (bug #185171)
+- start_udev uses udevtrigger now instead of udevstart
+
+* 三 3月 08 2006 Harald Hoyer <harald@redhat.com> - 084-13
+- fixed pam_console rules (#182600)
+
+* 一 3月 06 2006 Harald Hoyer <harald@redhat.com> - 084-12
+- fixed DRI permissions
+
+* 日 3月 05 2006 Bill Nottingham <notting@redhat.com> - 084-11
+- use $ENV{MODALIAS}, not $modalias (#181494)
+
+* 四 3月 02 2006 Harald Hoyer <harald@redhat.com> - 084-10
+- fixed cdrom rule
+
+* 三 3月 01 2006 Harald Hoyer <harald@redhat.com> - 084-9
+- create non-enum device (cdrom, floppy, scanner, changer)
+  for compatibility (random device wins)
+  e.g. /dev/cdrom -> hdd /dev/cdrom-hdc -> hdc /dev/cdrom-hdd -> hdd
+
+* 三 3月 01 2006 Harald Hoyer <harald@redhat.com> - 084-8
+- fixed ZIP drive thrashing (bz #181041 #182601)
+- fixed enumeration (%e does not work anymore) (bz #183288)
+
+* 五 2月 24 2006 Peter Jones <pjones@redhat.com> - 084-7
+- Don't start udevd in %post unless it's already running
+- Stop udevd before chkconfig --del in %preun
+
+* 五 2月 24 2006 Harald Hoyer <harald@redhat.com> - 084-6
+- put back original WAIT_FOR_SYSFS rule
+
+* 五 2月 24 2006 Harald Hoyer <harald@redhat.com> - 084-5
+- removed WAIT_FOR_SYSFS rule
+
+* 三 2月 22 2006 Harald Hoyer <harald@redhat.com> - 084-4
+- fixed group issue with vol_id (bz #181432)
+- fixed dvb permissions (bz #179993)
+- added support for scsi media changer (bz #181911)
+- fixed pktcdvd device creation (bz #161268)
+
+* 二 2月 21 2006 Florian La Roche <laroche@redhat.com> - 084-3
+- also output the additional space char as part of the startup message
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 084-1.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Harald Hoyer <harald@redhat.com> - 084-1
+- version 084
+
+* 一 2月 06 2006 Harald Hoyer <harald@redhat.com> - 078-9
+- closed fd leak (bug #179980)
+
+* 四 1月 26 2006 Harald Hoyer <harald@redhat.com> - 078-8
+- changed usb device naming
+
+* 二 1月 24 2006 Harald Hoyer <harald@redhat.com> - 078-7
+- put WAIT_FOR_SYSFS rules in 05-udev-early.rules
+
+* 一 1月 23 2006 Harald Hoyer <harald@redhat.com> - 078-6
+- added some WAIT_FOR_SYSFS rules
+- removed warning message, if udev_db is not available
+
+* 日 1月 22 2006 Kristian Høgsberg <krh@redhat.com> 078-5
+- Drop udev dependency (#178621).
+
+* 三 1月 11 2006 Harald Hoyer <harald@redhat.com> - 078-4
+- removed group "video" from the rules
+- fixed specfile
+- load nvram, floppy, parport and lp modules in
+  /etc/sysconfig/modules/udev-stw.modules until there 
+  is a better solution
+- fixed more floppy module loading
+
+* 五 12月 23 2005 Harald Hoyer <harald@redhat.com> - 078-3
+- fixed floppy module loading
+- added monitor socket
+- fixed typo in dvb rule
+
+* 三 12月 21 2005 Bill Nottingham <notting@redhat.com> - 078-2
+- udevstart change: allow greylisting of certain modaliases (usb, firewire)
+
+* 三 12月 21 2005 Harald Hoyer <harald@redhat.com> - 078-1
+- version 078
+- fixed symlink to pam_console.dev
+
+* 四 12月 15 2005 Harald Hoyer <harald@redhat.com> - 077-2
+- switched back to udevstart and use active /dev/.udev/queue waiting 
+  in start_udev
+- removed support for old kernels
+- refined some udev.rules
+
+* 二 12月 13 2005 Harald Hoyer <harald@redhat.com> - 077-1
+- version 077
+- patch to include udevstart2 in udevd and delay daemonize until queue is empty
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 12月 06 2005 Harald Hoyer <harald@redhat.com> - 076-1
+- speedup udevd with selinux by calling matchpathcon_init_prefix()
+- version 076
+
+* 一 11月 21 2005 Harald Hoyer <harald@redhat.com> - 075-4
+- speedup udev event replay with udevstart2
+
+* 五 11月 18 2005 Harald Hoyer <harald@redhat.com> - 075-3
+- refined start_udev for old kernels
+
+* 五 11月 11 2005 Harald Hoyer <harald@redhat.com> - 075-2
+- moved /etc/udev/scripts to /lib/udev
+- moved /etc/udev/devices to /lib/udev/devices
+- added new event replay for kernel >= 2.6.15
+- added usb devices
+- renamed cpu device to cpuid (bug #161538)
+- changed vendor string "Onstream" to "On[sS]tream" (bug #173043)
+- compiled all *_id programs statically
+
+* 五 11月 11 2005 Harald Hoyer <harald@redhat.com> - 075-1
+- version 075
+
+* 二 10月 25 2005 Harald Hoyer <harald@redhat.com> - 071-1
+- version 071
+
+* 一 10月 10 2005 Harald Hoyer <harald@redhat.com> - 069-10
+- removed group usb
+
+* 一 10月 10 2005 Harald Hoyer <harald@redhat.com> - 069-9
+- added libsepol-devel BuildReq
+- refined persistent rules
+
+* 一 10月 10 2005 Harald Hoyer <harald@redhat.com> - 069-8
+- corrected c&p edd_id rule, symlink for js devices
+- added -lsepol
+
+* 四 10月 06 2005 Harald Hoyer <harald@redhat.com> - 069-7
+- added edd_id
+
+* 五 9月 30 2005 Harald Hoyer <harald@redhat.com> - 069-6
+- special handling of IEEE1394 firewire devices (bug #168093)
+
+* 五 9月 23 2005 Harald Hoyer <harald@redhat.com> - 069-5
+- added missing path_id
+
+* 三 9月 21 2005 Harald Hoyer <harald@redhat.com> - 069-4
+- readded volume_id now known as vol_id, bug #168883
+
+* 四 9月 15 2005 Bill Nottingham <notting@redhat.com> - 069-3
+- fix firmware loading
+
+* 三 9月 14 2005 Bill Nottingham <notting@redhat.com> - 069-2
+- own /lib/firmware (#167016)
+
+* 三 9月 14 2005 Harald Hoyer <harald@redhat.com> - 069-1
+- version 069
+
+* 四 8月 04 2005 Harald Hoyer <harald@redhat.com> - 063-6
+- compile with pie .. again... (#158935)
+- fixed typo in echo (#138509)
+
+* 二 8月 02 2005 Harald Hoyer <harald@redhat.com> - 063-5
+- fixed scsi hotplug replay
+
+* 二 8月 02 2005 Bill Nottingham <notting@redhat.com> - 063-5
+- add rule to allow function id matching for pcmcia after loading
+  modules (#164665)
+
+* 二 8月 02 2005 Harald Hoyer <harald@redhat.com> - 063-4
+- fixed typo for tape devices and changed mode to 0660
+
+* 四 7月 28 2005 Harald Hoyer <harald@redhat.com> - 063-3
+- changed "SYMLINK=" to "SYMLINK+="
+
+* 日 7月 24 2005 Bill Nottingham <notting@redhat.com> - 063-2
+- don't set SEQNUM for scsi replay events (#163729)
+
+* 二 7月 19 2005 Bill Nottingham <notting@redhat.com> - 063-1
+- update to 063
+- handle the hotplug events for ieee1394, scsi, firmware
+
+* 五 7月 08 2005 Bill Nottingham <notting@redhat.com> - 062-2
+- update to 062
+- use included ata_id, build usb_id
+- load modules for pci, usb, pcmcia
+- ship RELEASE-NOTES in %doc
+
+* 四 7月 07 2005 Harald Hoyer <harald@redhat.com> - 058-2
+- compile with pie
+
+* 五 5月 20 2005 Bill Nottingham <notting@redhat.com> - 058-1
+- update to 058, fixes conflict with newer kernels (#158371)
+
+* 四 5月 12 2005 Harald Hoyer <harald@redhat.com> - 057-6
+- polished persistent scripts
+
+* 四 5月 05 2005 Bill Nottingham <notting@redhat.com> - 057-5
+- rebuild
+
+* 四 5月 05 2005 Bill Nottingham <notting@redhat.com> - 057-4
+- better check for mounted tmpfs on /dev (#156862)
+
+* 三 4月 27 2005 Peter Jones <pjones@redhat.com> - 057-3
+- use udevstart rather than udev for udevstart.static
+
+* 四 4月 21 2005 Harald Hoyer <harald@redhat.com> - 057-2
+- added Inifiniband devices (bug #147035)
+- fixed pam_console.dev (bug #153250)
+
+* 一 4月 18 2005 Harald Hoyer <harald@redhat.com> - 057-1
+- version 057
+
+* 五 4月 15 2005 Dan Walsh <dwalsh@redhat.com> - 056-2
+- Fix SELinux during creation of Symlinks
+
+* 一 4月 11 2005 Harald Hoyer <harald@redhat.com> - 056-1
+- updated to version 056
+- merged permissions in the rules file
+- added udevpermconv.sh to convert old permission files
+
+* 一 3月 28 2005 Warren Togami <wtogami@redhat.com> - 050-10
+- own default and net dirs (#151368 Hans de Goede)
+
+* 一 3月 07 2005 Warren Togami <wtogami@redhat.com> - 050-9
+- fixed rh#150462 (udev DRI permissions)
+
+* 三 3月 02 2005 Harald Hoyer <harald@redhat.com> - 050-8
+- fixed rh#144598
+
+* 五 2月 18 2005 Harald Hoyer <harald@redhat.com> - 050-6
+- introducing /etc/udev/makedev.d/50-udev.nodes
+- glibcstatic patch modified to let gcc4 compile udev
+
+* 四 2月 10 2005 Harald Hoyer <harald@redhat.com> - 050-5
+- doh, reverted the start_udev devel version, which slipped in
+
+* 四 2月 10 2005 Harald Hoyer <harald@redhat.com> - 050-3
+- fixed forgotten " in udev.rules
+
+* 二 1月 11 2005 Harald Hoyer <harald@redhat.com> - 050-2
+- removed /dev/microcode, /dev/cpu/microcode is now the real node
+- cleaned up start_udev
+
+* 二 1月 11 2005 Harald Hoyer <harald@redhat.com> - 050-1
+- version 050
+- /dev/cpu/0/microcode -> /dev/cpu/microcode
+
+* 二 12月 21 2004 Dan Walsh <dwalsh@redhat.com> - 048-4
+- Call selinux_restore to fix labeling problem in selinux
+- Fixes rh#142817
+
+* 二 12月 21 2004 Harald Hoyer <harald@redhat.com> - 048-3
+- maybe fixed bug rh#143367
+
+* 四 12月 16 2004 Harald Hoyer <harald@redhat.com> - 048-2
+- fixed a case where reading /proc/ide/hd?/media returns EIO
+  (bug rh#142713)
+- changed all device node permissions of group "disk" to 0640 
+  (bug rh#110197)
+- remove $udev_db with -fr in case of a directory (bug rh#142962)
+
+* 一 12月 13 2004 Harald Hoyer <harald@redhat.com> - 048-1
+- version 048
+- major specfile cleanup
+
+* 四 11月 04 2004 Harald Hoyer <harald@redhat.com> - 042-1
+- version 042
+
+* 四 11月 04 2004 Harald Hoyer <harald@redhat.com> - 039-10
+- speed improvement, scripts in rules are now executed only once,
+  instead of four times
+
+* 四 11月 04 2004 Harald Hoyer <harald@redhat.com> - 039-9
+- removed wrong SIG_IGN for SIGCHLD
+- moved ide media check to script to wait for the procfs
+
+* 三 11月 03 2004 Jeremy Katz <katzj@redhat.com> - 039-8.FC3
+- recreate lvm device nodes if needed in the trigger (#137807)
+
+* 三 11月 03 2004 Harald Hoyer <harald@redhat.com> - 039-6.FC3.2
+- replace udev.conf by default
+- LANG=C for fgrep in start_udev; turn grep into fgrep
+
+* 二 11月 02 2004 Harald Hoyer <harald@redhat.com> - 039-6.FC3.1
+- speed up pam_console.dev
+- mount pts and shm, in case of the dev trigger
+- increased timeout for udevstart
+- removed syslog() from signal handler (caused vmware locks)
+- turned off logging, which speeds up the boot process
+
+* 四 10月 21 2004 Harald Hoyer <harald@redhat.com> - 039-6
+- fixed typo
+
+* 四 10月 21 2004 Harald Hoyer <harald@redhat.com> - 039-5
+- added udev-039-norm.patch, which prevents removal of hd* devices,
+  because the kernel sends remove/add events, if an IDE removable device
+  is close(2)ed. mke2fs, e.g. would fail in this case.
+
+* 三 10月 20 2004 Harald Hoyer <harald@redhat.com> - 039-4
+- do not call dev.d scripts, if network interface hasn't changed 
+  the name
+- correct wait for dummy network devices
+- removed NONBLOCK from volume-id
+- do not log in udev.static, which should fix bug 136005
+
+* 一 10月 18 2004 Harald Hoyer <harald@redhat.com> - 039-3
+- refined wait_for_sysfs for udev.static
+
+* 一 10月 18 2004 Harald Hoyer <harald@redhat.com> - 039-2
+- improved wait_for_sysfs for virtual consoles with Kay Siever's patch
+- wait for ppp class
+- wait for LVM dm- devices
+- integrate wait_for_sys in udev.static for the initrd
+
+* 一 10月 18 2004 Harald Hoyer <harald@redhat.com> - 039-1
+- version 039, fixes also manpage bug 135996 
+- fixed glibc issue for static version (getgrnam, getpwnam) (bug 136005)
+- close the syslog in every app
+
+* 五 10月 15 2004 Harald Hoyer <harald@redhat.com> - 038-2
+- par[0-9] is now a symlink to lp
+- MAKEDEV the parport devices
+- now conflicts with older initscripts
+
+* 四 10月 14 2004 Harald Hoyer <harald@redhat.com> - 038-1
+- raw device nodes are now created in directory raw
+- version 038
+
+* 三 10月 13 2004 Harald Hoyer <harald@redhat.com> - 036-1
+- better wait_for_sysfs warning messages
+
+* 三 10月 13 2004 Harald Hoyer <harald@redhat.com> - 035-2
+- fixed double bug in start_udev (bug 135405)
+
+* 二 10月 12 2004 Harald Hoyer <harald@redhat.com> - 035-1
+- version 035, which only improves wait_for_sysfs
+- load ide modules in start_udev, until a hotplug script is available
+  (bug 135260)
+
+* 一 10月 11 2004 Harald Hoyer <harald@redhat.com> - 034-3
+- removed scary error messages from wait_for_sysfs
+- symlink from nst? -> tape?
+- kill udevd on update
+
+* 五 10月 08 2004 Harald Hoyer <harald@redhat.com> - 034-2
+- check for /proc/sys/dev/cdrom/info existence in check-cdrom.sh
+
+* 五 10月 08 2004 Harald Hoyer <harald@redhat.com> - 034-1
+- new version udev-034
+- removed patches, which went upstream
+- pam_console.dev link renamed to 05-pam_console.dev
+- MAKEDEV.dev links renamed to 10-MAKEDEV.dev
+
+* 四 10月 07 2004 Harald Hoyer <harald@redhat.com> - 032-10
+- added floppy madness (bug 134830)
+- replay scsi events in start_udev for the devices on the adapter (bug 130746)
+
+* 三 10月 06 2004 Harald Hoyer <harald@redhat.com> - 032-9
+- obsoleted $UDEV_LOG, use udev_log
+- correct SYMLINK handling in pam_console.dev
+- specfile cleanup
+- added check-cdrom.sh for nice cdrom symlinks
+
+* 一 10月 04 2004 Harald Hoyer <harald@redhat.com> - 032-8
+- added patches from Féliciano Matias for multiple symlinks (bug 134477 and 134478)
+- corrected some permissions with a missing leading 0
+- added z90crypt to the permissions file (bug 134448)
+- corrected requires and conflicts tags
+- removed /dev/log from MAKEDEV creation
+
+* 五 10月 01 2004 Harald Hoyer <harald@redhat.com> - 032-7
+- more device nodes for those without initrd
+
+* 四 9月 30 2004 Harald Hoyer <harald@redhat.com> - 032-6
+- prevent error message from device copying
+- use already translated starting strings
+
+* 三 9月 29 2004 Harald Hoyer <harald@redhat.com> - 032-5
+- add "fi" to start_udev
+- do not create floppy devices manually (bug 133838)
+
+* 二 9月 28 2004 Harald Hoyer <harald@redhat.com> - 032-4
+- made /etc/udev/devices/ for manual device nodes
+- refined SELINUX check, if /dev is not yet mounted in start_dev
+
+* 一 9月 27 2004 Harald Hoyer <harald@redhat.com> - 032-3
+- corrected permissions for /dev/rtc (bug 133636)
+- renamed device-mapper to mapper/control (bug 133688)
+
+* 三 9月 22 2004 Harald Hoyer <harald@redhat.com> - 032-2
+- removed option to turn off udev
+- udevstart.static now symling to udev.static
+
+* 二 9月 21 2004 Harald Hoyer <harald@redhat.com> - 032-1
+- version 032
+
+* 一 9月 20 2004 Harald Hoyer <harald@redhat.com> - 030-27
+- simplified udev.conf
+- refined close_on_exec patch
+- added pam_console supply for symlinks, now gives correct permissions,
+  for e.g. later plugged in cdroms
+- renamed sr? to scd? (see devices.txt; k3b likes that :)
+
+* 一 9月 13 2004 Jeremy Katz <katzj@redhat.com> - 030-26
+- require a 2.6 kernel
+- prereq instead of requires MAKEDEV
+- obsolete and provide dev
+- add a trigger for the removal of /dev so that we set things up
+
+* 五 9月 10 2004 Dan Walsh <dwalsh@redhat.com> - 030-25
+- Use matchmediacon
+
+* 五 9月 10 2004 Harald Hoyer <harald@redhat.com> - 030-24
+- check if SELINUX is not disabled before executing setfiles (bug 132099)
+
+* 三 9月 08 2004 Harald Hoyer <harald@redhat.com> - 030-23
+- mount tmpfs with mode 0755 in start_udev
+
+* 二 9月 07 2004 Harald Hoyer <harald@redhat.com> - 030-22
+- applied rules from David Zeuthen which read /proc directly without 
+  shellscript
+
+* 二 9月 07 2004 Harald Hoyer <harald@redhat.com> - 030-21
+- applied enumeration patch from David Zeuthen for cdrom symlinks (bug 131532)
+- create /dev/ppp in start_udev (bug 131114)
+- removed nvidia devices from start_udev
+- check for restorecon presence in start_udev (bug 131904)
+
+* 五 9月 03 2004 Harald Hoyer <harald@redhat.com> - 030-20
+- due to -x added to MAKEDEV specify the par and lp numbers
+
+* 五 9月 03 2004 Harald Hoyer <harald@redhat.com> - 030-19
+- added udev-030-rhsec.patch (bug 130351)
+
+* 四 9月 02 2004 Jeremy Katz <katzj@redhat.com> - 030-18
+- make the exact device in start_udev (and thus, require new MAKEDEV)
+
+* 四 9月 02 2004 Jeremy Katz <katzj@redhat.com> - 030-17
+- make sure file contexts of everything in the tmpfs /dev are set right 
+  when start_udev runs
+
+* 四 9月 02 2004 Harald Hoyer <harald@redhat.com> - 030-16
+- moved %{_sysconfdir}/hotplug.d/default/udev.hotplug to %{_sysconfdir}/hotplug.d/default/10-udev.hotplug
+
+* 四 9月 02 2004 Harald Hoyer <harald@redhat.com> - 030-15
+- added nvidia devices to start_udev
+- added UDEV_RAMFS for backwards compat to udev.conf
+- changed Group (bug 131488)
+- added libselinux-devel to build requirements
+
+* 三 9月 01 2004 Jeremy Katz <katzj@redhat.com> - 030-14
+- require MAKEDEV
+
+* 三 9月 01 2004 Dan Walsh <dwalsh@redhat.com> - 030-13
+- Change to setfilecon if directory exists.
+
+* 三 9月 01 2004 Harald Hoyer <harald@redhat.com> - 030-12
+- fixed start_udev
+
+* 二 8月 31 2004 Jeremy Katz <katzj@redhat.com> - 030-11
+- use tmpfs instead of ramfs (it has xattr support now)
+- change variables appropriately to TMPFS intead of RAMFS in udev.conf
+- create loopN, not just loop in start_udev
+
+* 五 8月 27 2004 Dan Walsh <dwalsh@redhat.com> - 030-10
+- Fix Patch
+
+* 四 8月 26 2004 Dan Walsh <dwalsh@redhat.com> - 030-9
+- Cleaned up selinux patch
+
+* 二 8月 24 2004 Harald Hoyer <harald@redhat.com> - 030-8
+- changed defaults not to remove device nodes
+- added rule for net/tun
+- extended start_udev to create devices, which can trigger module autoloading
+- refined cloexec patch, to redirect stdin,out,err of /dev.d execed apps to /dev/null
+
+* 一 8月 23 2004 Harald Hoyer <harald@redhat.com> - 030-7
+- removed usage of /usr/bin/seq in start_udev
+- set correct permissions in start_udev
+- extended the cloexec patch
+- removed udev-persistent package (define with_persistent==0)
+- check for /var/run/console/console.lock before calling /sbin/pam_console_setowner
+- linked pam_console_setowner statically against libglib-2.0.a
+
+* 五 8月 20 2004 Harald Hoyer <harald@redhat.com> - 030-5
+- use correct console.lock file now in pam_console_setowner
+
+* 三 8月 18 2004 Harald Hoyer <harald@redhat.com> - 030-4
+- added the selinux patch
+
+* 五 7月 23 2004 Harald Hoyer <harald@redhat.com> - 030-3
+- extended the cloexec patch
+
+* 三 7月 21 2004 Dan Walsh <dwalsh@redhat.com> - 030-2
+- Close Database fd in exec processes using FD_CLOSEXEC
+
+* 三 7月 14 2004 Harald Hoyer <harald@redhat.com> - 030-1
+- version 030
+
+* 三 7月 14 2004 Harald Hoyer <harald@redhat.com> - 029-4
+- added udevstart.static
+
+* 三 7月 14 2004 Harald Hoyer <harald@redhat.com> - 029-3
+- put /etc/sysconfig/udev in /etc/udev/udev.conf and removed it
+- made only udev.static static
+- make our defaults the default values
+- removed /udev
+
+* 二 7月 06 2004 Harald Hoyer <harald@redhat.com> - 029-1
+- version 029, added udev_remove and udev_owner to udev.conf
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 08 2004 Harald Hoyer <harald@redhat.com> - 026-3
+- fixed UDEV_REMOVE=no
+
+* 二 6月 08 2004 Harald Hoyer <harald@redhat.com> - 026-2
+- udev-026
+- preserve ownership of device nodes, which already exist
+- do not remove device nodes if UDEV_REMOVE="no"
+- added volume_id
+- build with klibc
+
+* 三 5月 26 2004 Harald Hoyer <harald@redhat.com> - 025-1
+- udev-025
+- added ata_identify
+- build nearly all with dietlibc
+
+* 一 5月 10 2004 Elliot Lee <sopwith@redhat.com> 024-6
+- Turn off udevd by default for FC2
+
+* 二 4月 20 2004 Harald Hoyer <harald@redhat.com> - 024-5
+- fixed permission for /dev/tty (FC2)
+
+* 四 4月 15 2004 Harald Hoyer <harald@redhat.com> - 024-4
+- moved the 00- files to 50-, to let the use place his files in front
+
+* 四 4月 15 2004 Harald Hoyer <harald@redhat.com> - 024-3
+- set UDEV_SELINUX to yes
+- added UDEV_LOG
+
+* 四 4月 15 2004 Harald Hoyer <harald@redhat.com> - 024-2
+- added /udev to filelist
+
+* 三 4月 14 2004 Harald Hoyer <harald@redhat.com> - 024-1
+- update to 024
+- added /etc/sysconfig/udev
+- added selinux, pam_console, dbus support
+
+* 五 3月 26 2004 Harald Hoyer <harald@redhat.com> - 023-1
+- update to 023
+
+* 三 3月 24 2004 Bill Nottingham <notting@redhat.com> 022-1
+- update to 022
+
+* 日 3月 21 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- really move initscript
+
+* 日 2月 29 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- move chkconv to preun
+- nicer url
+
+* 三 2月 25 2004 Harald Hoyer <harald@redhat.com> - 018-1
+- changes permissions and rules
+
+* 一 2月 23 2004 Dan Walsh <dwalsh@redhat.com>
+- Add selinux support
+
+* 四 2月 19 2004 Greg Kroah-Hartman <greg@kroah.com>
+- add some more files to the documentation directory
+- add ability to build scsi_id and make it the default
+
+* 一 2月 16 2004 Greg Kroah-Hartman <greg@kroah.com>
+- fix up udevd build, as it's no longer needed to be build seperatly
+- add udevtest to list of files
+- more Red Hat sync ups.
+
+* 四 2月 12 2004 Greg Kroah-Hartman <greg@kroah.com>
+- add some changes from the latest Fedora udev release.
+
+* 一 2月 02 2004 Greg Kroah-Hartman <greg@kroah.com>
+- add udevsend, and udevd to the files
+- add ability to build udevd with glibc after the rest is build with klibc
+
+* 一 1月 26 2004 Greg Kroah-Hartman <greg@kroah.com>
+- added udevinfo to rpm
+- added URL to spec file
+- added udevinfo's man page
+
+* 一 1月 05 2004 Rolf Eike Beer <eike-hotplug@sf-tec.de>
+- add defines to choose the init script (Redhat or LSB)
+
+* 二 12月 16 2003 Robert Love <rml@ximian.com>
+- install the initscript and run chkconfig on it
+
+* 日 11月 02 2003 Greg Kroah-Hartman <greg@kroah.com>
+- changes due to config file name changes
+
+* 五 10月 17 2003 Robert Love <rml@tech9.net>
+- Make work without a build root
+- Correctly install the right files
+- Pass the RPM_OPT_FLAGS to gcc so we can build per the build policy
+- Put some prereqs in
+- Install the hotplug symlink to udev
+
+* 一 7月 28 2003 Paul Mundt <lethal@linux-sh.org>
+- Initial spec file for udev-0.2.
+

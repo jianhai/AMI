@@ -1,0 +1,27 @@
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+  /usr/sbin/update-alternatives \
+    --update python /usr/bin/python2.7 \
+    --removeslave asadmin \
+    --removeslave bundle_image \
+    --removeslave cfadmin \
+    --removeslave cq \
+    --removeslave cwutil \
+    --removeslave dynamodb_dump \
+    --removeslave dynamodb_load \
+    --removeslave elbadmin \
+    --removeslave fetch_file \
+    --removeslave glacier \
+    --removeslave instance_events \
+    --removeslave kill_instance \
+    --removeslave launch_instance \
+    --removeslave list_instances \
+    --removeslave lss3 \
+    --removeslave mturk \
+    --removeslave pyami_sendmail \
+    --removeslave route53 \
+    --removeslave s3put \
+    --removeslave sdbadmin \
+    --removeslave taskadmin \
+ || :
+fi

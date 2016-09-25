@@ -1,0 +1,90 @@
+* 四 10月 15 2015 Ian Weller <iweller@amazon.com>
+- Ensure same version/release of main package is installed
+
+* 五 10月 09 2015 Ian Weller <iweller@amazon.com>
+- Don't include pyasn1_modules in main package
+
+* 三 2月 04 2015 Tom Kirchner <tjk@amazon.com>
+- Build for multiple python versions
+
+* 二 9月 10 2013 Lee Trager <ltrager@amazon.com>
+- Fix python macro
+- import source package F20/python-pyasn1-0.1.7-2.fc20
+
+* 日 8月 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 三 7月 24 2013 Rob Crittenden <rcritten@redhat.com> - 0.1.7-1
+- update to upstream release 0.1.7
+- update modules to 0.0.5
+
+* 六 2月 16 2013 Jamie Nguyen <jamielinux@fedoraproject.org> - 0.1.6-1
+- update to upstream release 0.1.6
+- update modules to 0.0.4
+- update description
+- add python3-pyasn1 subpackage
+- add versioned Requires for the module subpackages
+- add %check section
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 1月 15 2013 Lee Trager <ltrager@amazon.com>
+- import source package F17/python-pyasn1-0.1.2-1.fc17
+
+* 二 1月 15 2013 ltrager <ltrager@amazon.com>
+- setup complete for package python-pyasn1
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 一 1月 02 2012 Jeroen van Meeuwen <vanmeeuwen@kolabsys.com> - 0.1.2-1
+- New upstream version
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.12a-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 12月 22 2010 Rob Crittenden <rcritten@redhat.com> - 0.0.12a-1
+- Update to upstream version 0.0.12a
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 0.0.9a-2
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 一 11月 16 2009 Rob Crittenden <rcritten@redhat.com> - 0.0.9a-1
+- Update to upstream version 0.0.9a
+- Include patch that adds parsing for the Any type
+
+* 三 9月 02 2009 Rob Crittenden <rcritten@redhat.com> - 0.0.8a-5
+- Include doc/notes.html in the package
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.8a-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.8a-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.0.8a-2
+- Rebuild for Python 2.6
+
+* 二 9月 09 2008 Paul P. Komkoff Jr <i@stingr.net> - 0.0.8a-1
+- Update to upstream version 0.0.8a
+
+* 三 1月 16 2008 Rob Crittenden <rcritten@redhat.com> - 0.0.7a-4
+- Use setuptools to install the package
+- simplify the files included in the rpm so it includes the .egg-info
+
+* 一 1月 14 2008 Rob Crittenden <rcritten@redhat.com> - 0.0.7a-3
+- Rename to python-pyasn1
+- Spec file cleanups
+
+* 一 11月 19 2007 Karl MacMillan <kmacmill@redhat.com> - 0.0.7a-2
+- Update rpm to be more fedora friendly
+
+* 四 11月 08 2007 Simo Sorce <ssorce@redhat.com> 0.0.7a-1
+- New release
+
+* 一 5月 28 2007 Andreas Hasenack <andreas@mandriva.com> 0.0.6a-1mdv2008.0
++ Revision: 31989
+- fixed (build)requires
+- Import pyasn1
+

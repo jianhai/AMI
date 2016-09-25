@@ -1,0 +1,20 @@
+perl >= 0:5.004
+perl(:MODULE_COMPAT_5.16.3)
+perl(Carp)
+perl(Cwd)
+perl(Errno)
+perl(Exporter)
+perl(Fcntl) >= 1.03
+perl(File::Path) >= 2.06
+perl(File::Spec) >= 0.8
+perl(IO::Handle)
+perl(IO::Seekable)
+perl(POSIX)
+perl(Scalar::Util)
+perl(base)
+perl(constant)
+perl(overload)
+perl(strict)
+perl(vars)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

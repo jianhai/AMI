@@ -1,0 +1,17 @@
+postinstall scriptlet (using /bin/sh):
+if [ $1 -eq 1 ] ; then
+    # Initial installation
+    # Enabled by default per "runs once then goes away" exception
+    for svc in init-local init config final; do
+        chkconfig --add cloud-$svc ||:
+        chkconfig cloud-$svc on ||:
+    done
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ] ; then
+    # Package removal, not upgrade
+    for svc in init-local init config final; do
+        chkconfig --del cloud-$svc
+    done
+    # One-shot services -> no need to stop
+fi

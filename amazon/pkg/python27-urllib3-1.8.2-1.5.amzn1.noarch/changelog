@@ -1,0 +1,66 @@
+* 四 2月 05 2015 Tom Kirchner <tjk@amazon.com>
+- Build for multiple python versions
+
+* 五 9月 12 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Clean-up (i.e., explicitly describe) python3 installation path
+- Fixed Fedora-specific 0- import source package GOBI/python-urllib3-1.8.2-1.fc20
+
+* 一 4月 21 2014 Arun S A G <sagarun@gmail.com> - 1.8.2-1
+- Update to latest upstream version
+
+* 一 10月 28 2013 Ralph Bean <rbean@redhat.com> - 1.7.1-2
+- Update patch to find ca_certs in the correct location.
+
+* 一 10月 28 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- import source package F19/python-urllib3-1.7-4.fc19
+
+* 三 9月 25 2013 Ralph Bean <rbean@redhat.com> - 1.7.1-1
+- Latest upstream with support for a new timeout class and py3.4.
+
+* 五 8月 30 2013 Lee Trager <ltrager@amazon.com>
+- Require ordereddict on AL as well
+- import source package F19/python-urllib3-1.7-3.fc19
+
+* 三 8月 28 2013 Ralph Bean <rbean@redhat.com> - 1.7-3
+- Bump release again, just to push an unpaired update.
+
+* 一 8月 26 2013 Ralph Bean <rbean@redhat.com> - 1.7-2
+- Bump release to pair an update with python-requests.
+
+* 四 8月 22 2013 Ralph Bean <rbean@redhat.com> - 1.7-1
+- Update to latest upstream.
+- Removed the accept-header proxy patch which is included in upstream now.
+- Removed py2.6 compat patch which is included in upstream now.
+
+* 日 8月 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 二 6月 11 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 1.5-6
+- Fix Requires of python-ordereddict to only apply to RHEL
+
+* 二 5月 07 2013 Lee Trager <ltrager@amazon.com>
+- Apply compat patches on AL as well
+
+* 一 3月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-urllib3-1.5-5.el6
+- setup complete for package python-urllib3
+
+* 五 3月 01 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 1.5-5
+- Unbundling finished!
+
+* 五 3月 01 2013 Ralph Bean <rbean@redhat.com> - 1.5-4
+- Upstream patch to fix Accept header when behind a proxy.
+- Reorganize patch numbers to more clearly distinguish them.
+
+* 三 2月 27 2013 Ralph Bean <rbean@redhat.com> - 1.5-3
+- Renamed patches to python-urllib3-*
+- Fixed ssl check patch to use the correct cert path for Fedora.
+- Included dependency on ca-certificates
+- Cosmetic indentation changes to the .spec file.
+
+* 二 2月 05 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 1.5-2
+- python3-tornado BR and run all unittests on python3
+
+* 一 2月 04 2013 Toshio Kuratomi <toshio@fedoraproject.org> 1.5-1
+- Initial fedora build.
+

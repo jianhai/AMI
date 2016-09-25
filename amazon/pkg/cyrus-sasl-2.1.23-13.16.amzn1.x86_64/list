@@ -1,0 +1,14 @@
+/etc/rc.d/init.d/saslauthd
+/etc/sysconfig/saslauthd
+/usr/lib64/sasl2
+/usr/sbin/pluginviewer
+/usr/sbin/saslauthd
+/usr/sbin/testsaslauthd
+/usr/share/doc/cyrus-sasl-2.1.23
+/usr/share/doc/cyrus-sasl-2.1.23/LDAP_SASLAUTHD
+/usr/share/man/man8/pluginviewer.8.gz
+/usr/share/man/man8/saslauthd.8.gz
+/usr/share/man/man8/sasldblistusers2.8.gz
+/usr/share/man/man8/saslpasswd2.8.gz
+/usr/share/man/man8/testsaslauthd.8.gz
+/var/run/saslauthd

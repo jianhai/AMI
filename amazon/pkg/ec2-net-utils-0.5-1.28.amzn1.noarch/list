@@ -1,0 +1,14 @@
+/etc/dhcp/dhclient.d/ec2dhcp.sh
+/etc/init/elastic-network-interfaces.conf
+/etc/modprobe.d/ixgbevf.conf
+/etc/sysconfig/modules/acpiphp.modules
+/etc/sysconfig/network-scripts/ec2net-functions
+/etc/sysconfig/network-scripts/ec2net.hotplug
+/etc/udev/rules.d/53-ec2-network-interfaces.rules
+/etc/udev/rules.d/75-persistent-net-generator.rules
+/sbin/ec2ifdown
+/sbin/ec2ifscan
+/sbin/ec2ifup
+/usr/share/man/man8/ec2ifdown.8.gz
+/usr/share/man/man8/ec2ifscan.8.gz
+/usr/share/man/man8/ec2ifup.8.gz

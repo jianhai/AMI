@@ -1,0 +1,24 @@
+Name        : python27-pycurl
+Version     : 7.19.0
+Release     : 17.12.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分58秒
+Group       : Development/Languages
+Size        : 236405
+License     : LGPLv2+ or MIT
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分29秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-pycurl-7.19.0-17.12.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 23时48分26秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://pycurl.sourceforge.net/
+Summary     : A Python interface to libcurl
+Description :
+PycURL is a Python interface to libcurl. PycURL can be used to fetch
+objects identified by a URL from a Python program, similar to the
+urllib Python module. PycURL is mature, very fast, and supports a lot
+of features.
+
+This package is meant to be used with Python 2.7.

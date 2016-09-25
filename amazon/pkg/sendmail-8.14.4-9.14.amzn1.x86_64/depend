@@ -1,0 +1,47 @@
+/bin/bash
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/usr/sbin/alternatives
+/usr/sbin/alternatives
+/usr/sbin/alternatives
+/usr/sbin/saslauthd
+bash >= 2.0
+chkconfig
+chkconfig
+config(sendmail) = 8.14.4-9.14.amzn1
+coreutils
+coreutils
+initscripts
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.11)(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.15)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libcrypt.so.1()(64bit)
+libcrypto.so.10()(64bit)
+libcrypto.so.10(OPENSSL_1.0.1)(64bit)
+libcrypto.so.10(libcrypto.so.10)(64bit)
+libdb-4.7.so()(64bit)
+libhesiod.so.0()(64bit)
+liblber-2.4.so.2()(64bit)
+libldap-2.4.so.2()(64bit)
+libnsl.so.1()(64bit)
+libnsl.so.1(GLIBC_2.2.5)(64bit)
+libresolv.so.2()(64bit)
+libresolv.so.2(GLIBC_2.2.5)(64bit)
+libsasl2.so.2()(64bit)
+libssl.so.10()(64bit)
+libssl.so.10(libssl.so.10)(64bit)
+libwrap.so.0()(64bit)
+procmail
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+setup >= 2.5.31-1
+shadow-utils

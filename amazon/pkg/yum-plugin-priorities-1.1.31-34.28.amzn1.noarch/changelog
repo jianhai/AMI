@@ -1,0 +1,388 @@
+* 四 12月 17 2015 Andrew Jorgensen <ajorgens@amazon.com>
+- Don't use pkg-config to find the bash-completions path
+
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/yum-utils-1.1.31-34.el7
+
+* 一 10月 12 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-34
+- ovl plugin: run at init_hook stage.
+- Resolves: bug#1269395
+
+* 三 9月 23 2015 Heath Petty <hpetty@amazon.com>
+- Add libxml2-python as a requirement for yum-utils for the repo-rss utility
+
+* 五 9月 04 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-33
+- ovl plugin: remove fs check and add manpage.
+- Related: bug#1213602
+
+* 二 8月 04 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-32
+- ovl plugin: change copy-up strategy, execute when root fs is mounted OverlayFS, add logging.
+- Related: bug#1213602
+
+* 四 7月 02 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-31
+- yum-builddep: respect --tolerant to ignore missing dependencies.
+- Resolves: bug#817046
+
+* 二 5月 26 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-30
+- yum-config-manager: update config file specified using -c option.
+- Resolves: bug#1075708
+- yum-config-manager: require \* syntax to disable all repos.
+- Resolves: bug#1151154
+- Add plugin for overlayfs issue workaround.
+- Resolves: bug#1213602
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/yum-utils-1.1.31-29.el7
+- import source package EL7/yum-utils-1.1.31-25.el7_0
+
+* 三 3月 04 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Use amzn_system install_layout on yum-utils
+
+* 四 2月 19 2015 Ben Cressey <bcressey@amazon.com>
+- require yum, createrepo built with same version of python
+
+* 四 2月 05 2015 Jason Green <jasg@amazon.com>
+- Simplify python RPM macros
+- Build with python 2.7
+
+* 一 11月 10 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-29
+- reposync: fix man page formatting.
+- Related: bug#1121714
+
+* 三 9月 24 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-28
+- needs-restarting: handle RepoError gracefully.
+- Resolves: bug#1107658
+
+* 三 9月 24 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-27
+- reposync: preserve directory structure.
+- Resolves: bug#1139032
+- reposync: check for existing packages when using -u option.
+- Resolves: bug#1140864
+
+* 四 9月 04 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-26
+- yum-post-transaction-actions: allow colons in command part.
+- Resolves: bug#1134989
+- reposync: show urls for all repos when using -u option.
+- Resolves: bug#1133125
+- yum-config-manager: fix --save when --setopt contains wildcards.
+- Resolves: bug#1129590
+- post-transaction-actions: fix filename matching.
+- Resolves: bug#1127782
+- reposync: add missing switches to the manpage.
+- Resolves: bug#1121714
+- yumdownloader: print depsolving errors instead of ignoring them.
+- Resolves: bug#1113391
+- yumdownloader: make --destdir less of a hack.
+- Resolves: bug#1104995
+- needs-restarting: multiple fixes.
+- Resolves: bug#1095150
+
+* 二 8月 05 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-25
+- yumdownloader, yum-builddep: do not ignore source repos.
+- Resolves: bug#1082050
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/yum-utils-1.1.31-24.el7
+
+* 二 3月 04 2014 Lee Trager <ltrager@amazon.com>
+- import source package F19/yum-utils-1.1.31-18.fc19
+
+* 五 2月 14 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-24
+- reposync: fix 'reposync -r nosuchrepo' behaviour.
+- Resolves: bug#1060702
+
+* 一 1月 20 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-23
+- yum-builddep: Use srpms in already enabled repos.
+- Resolves: bug1024070
+
+* 三 1月 15 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-22
+- Fix repo suffix to '-debug-rpms' in debuginfo-install.
+- Resolves: bug#1052871
+
+* 五 1月 10 2014 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-21
+- Fix YumBaseError name error in repoquery
+- Resolves: bug#1050218
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.1.31-20
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/yum-utils-1.1.31-19.el7
+
+* 五 11月 01 2013 James Antill <james.antill@redhat.com> - 1.1.31-19
+- Remove security plugin.
+- Resolves: rhbz#1002491
+
+* 二 9月 24 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Prefer /etc/yum.conf and fix repos.d paths in manpages
+
+* 一 9月 09 2013 James Antill <james.antill@redhat.com> - 1.1.31-18
+- Disable puppetverify plugin for el7. BZ 1002876.
+- reposync: fix a copy-paste error. BZ 994514
+- repo-rss: non-ASCII fix, sorting.
+- Add --nogroups and --noplugins options to verifytree.
+
+* 三 8月 21 2013 Lee Trager <ltrager@amazon.com>
+- Add Amazon patch back in
+
+* 二 8月 20 2013 Lee Trager <ltrager@amazon.com>
+- import source package F19/yum-utils-1.1.31-17.fc19
+
+* 三 7月 31 2013 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-17
+- Use new findRepos() API for yum-config-manager. BZ 971599
+
+* 三 7月 31 2013 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-16
+- Update to latest HEAD
+- Fix pacakge => package typos
+- docs: Add missing man page short descriptions
+- docs: Escape dashes in command-line options
+- docs: Add missing man pages for all yum-utils
+- Add --show-duplicates to repoquery manpage. BZ 975565
+- yum-complete-transaction: unlock yum.pid. BZ 984119
+- sanitize repoquery --repofrompath. BZ 988140
+- yum changelog: implicit since=all. BZ 961782
+- repoquery: retry doLock() BZ 988223
+- repoquery: add --installroot option. BZ 988429
+
+* 一 6月 24 2013 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-15
+- Update to latest HEAD
+- debuginfo-install: handle YumBaseError
+- fs-snapshot: "dmsetup -o" workaround.  BZ 954358, BZ 949569
+- tmprepo: avoid spaces in repoid. BZ 965806
+- repoquery: add cachedir locking. BZ 969776
+- Fix a bug in Modified/Upgraded/Downgraded output. BZ 819502
+
+* 四 4月 18 2013 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-14
+- yum-utils.bash: load yum.bash first
+
+* 三 4月 17 2013 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-13
+- Update to latest HEAD
+- versionlock add: Skip packages already locked.
+- versionlock delete: Match all names, not just envra.
+- Allow --old=/foo urls for repodiff.
+- Don't check timestamps for repofrompath repos. BZ 880944
+- Output couldn't find a pkg. for 'foo'. BZ 838158
+
+* 二 3月 12 2013 James Antill <james@fedoraproject.org> - 1.1.31-12
+- Update to latest HEAD.
+- FS snapshot tweaks for snapper support.
+
+* 一 3月 11 2013 James Antill <james@fedoraproject.org> - 1.1.31-11
+- Update to latest HEAD.
+- FS snapshot fixes, and thin provisioning support.
+- search-quiet for yumdb.
+
+* 三 2月 06 2013 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-10
+- Update to latest HEAD
+- Small fixes in documentation and error handling
+
+* 一 1月 14 2013 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-9
+- Update to latest HEAD.
+- Added pluginhome define to get rid of hardcoded paths
+- Fix yum-NetworkManager-dispatcher description, BZ 894729
+- reposync should lock. BZ 880722
+- Initialize exit_code correctly.  BZ 882536
+
+* 一 1月 14 2013 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-8
+- Update to latest HEAD.
+
+* 三 8月 08 2012 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.31-7
+- Update to latest HEAD.
+- Use package downloader from Yum.
+
+* 日 7月 22 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.31-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-utils-1.1.30-14.el6
+
+* 五 4月 27 2012 James Antill <james@fedoraproject.org> - 1.1.31-5
+- Update to latest HEAD.
+
+* 四 1月 26 2012 James Antill <james@fedoraproject.org> - 1.1.31-4
+- Update to latest HEAD.
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.31-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-utils-1.1.30-10.el6
+
+* 五 10月 07 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Better output from yum --security check-update
+
+* 六 8月 13 2011 Tim Lauridsen <timlau@fedoraproject.org> 
+- fix traceback in auto-update-debuginfo plugin (rhbz #729982)
+
+* 三 8月 10 2011 Tim Lauridsen <timlau@fedoraproject.org> 
+- mark as 1.1.31
+- remove patches
+
+* 四 7月 28 2011 Cristian Gafton <gafton@amazon.com>
+- fix merge typo
+
+* 四 7月 28 2011 James Antill <james@fedoraproject.org>
+- Fix for BuildTrans no return value checking, needed for mock.
+- Resolves: bug#716267
+
+* 日 5月 22 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-utils-1.1.30-6.el6
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.30-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 六 1月 15 2011 Nathan Blackham <blackham@amazon.com>
+- add a config option to the fastestmirrors plugin
+
+* 四 1月 13 2011 Tim Lauridsen <timlau@fedoraproject.org> 
+- mark as 1.1.30
+
+* 一 1月 03 2011 Tim Lauridsen <timlau@fedoraproject.org>
+- Added yumutils python module
+
+* 四 12月 30 2010 Tim Lauridsen <timlau@fedoraproject.org>
+- Added Translation support and need Requires, BuildRequires
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-utils-1.1.26-11.el6
+
+* 日 11月 07 2010 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.29
+
+* 二 8月 03 2010 Seth Vidal <skvidal at fedoraproject.org>
+- add COPYING docs to all the plugins to make fedora(and Tim) happy. :)
+
+* 二 8月 03 2010 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.28
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/yum-utils-1.1.26-9.el6
+- import source package RHEL6/yum-utils-1.1.24-4.el6
+
+* 日 6月 06 2010 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.27
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/yum-utils-1.1.16-13.el5
+- import source package RHEL5/yum-utils-1.1.10-9.el5
+- import source package RHEL5/yum-utils-1.0.4-3.el5
+- added submodule prep for package yum-utils
+
+* 三 2月 10 2010 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.26
+
+* 三 1月 27 2010 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.25
+- add touch /etc/yum.repos.d/_local.repo to install section
+- this need for for the ghost in files section of yum-plugin-local
+
+* 日 11月 08 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- remove basearchonly since all versions of yum for quite some time obsolete it
+- truncate changelog to last 2 years
+
+* 六 11月 07 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.24
+
+* 三 11月 04 2009 Seth Vidal <skvidal at fedoraproject.org>
+- add needs-restarting
+
+* 一 10月 12 2009 Seth Vidal <skvidal at fedoraproject.org>
+- add python compileall to all plugins so we get .pyc/.pyo files in them
+- fixes https://bugzilla.redhat.com/show_bug.cgi?id=493174
+
+* 三 9月 02 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.23
+
+* 二 5月 19 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.22
+
+* 一 5月 18 2009 Seth Vidal <skvidal at fedoraproject.org>
+- add show-leaves plugin from Ville Skyttä
+
+* 三 3月 25 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.21
+
+* 一 3月 02 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- set yum require to 3.2.21 (the 3.2.21 in rawhide is patched to yum head, so it matches the need yum 3.2.22 code)
+- Added versioned Provides: yum-<pluginname> to make rpm/yum happy.
+- yum-updateonboot is not renamed and dont need Obsoletes/Conflicts/Provides
+
+* 日 3月 01 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.20
+- rename plugins from yum-name to yum-plugin-name
+
+* 三 2月 25 2009 Tim Lauridsen <timlau@fedoraproject.org> 
+- Remove yum-kernel-module & yum-fedorakmod plugins (no obsoleting yet)
+- Remove yum-skip-broken plugin leftovers
+
+* 二 2月 03 2009 James Antill <james@fedoraproject.org>
+- add auto-update-debuginfo plugin
+
+* 三 12月 17 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.19
+
+* 三 12月 10 2008 Seth Vidal <skvidal at fedoraproject.org>
+- add find-repos-of-install from James' stash of misc stuff
+
+* 三 10月 29 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.18
+
+* 一 10月 27 2008 Seth Vidal <skvidal at fedoraproject.org>
+- add rpm-warm-cache plugin
+
+* 五 9月 19 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- removed skip-broken plugin
+
+* 三 9月 17 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.17
+
+* 一 9月 08 2008 Seth Vidal <skvidal at fedoraproject.org>
+- add yum-remove-with-leaves plugin
+
+* 三 8月 27 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.16
+
+* 三 8月 20 2008 James Antill <james@fedoraproject.org>
+- add yum-groups-manager
+
+* 四 8月 07 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.15
+
+* 三 5月 21 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- add verifytree
+Make yum-fastestmirror %files handle the fastestmirror-asyncore.py file
+- mark as 1.1.14
+
+* 四 4月 10 2008 James Antill <james@fedoraproject.org>
+- Add keys plugin
+
+* 一 3月 31 2008 James Antill <james@fedoraproject.org>
+- Add yum-aliases man page
+
+* 五 3月 21 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.13
+- mark as 1.1.12
+
+* 二 3月 18 2008 Shawn Starr <shawn.starr@rogers.com>
+- Add yum-utils.1 manual page
+- Rename yum-complete-transaction manual page to 8
+- Move yum-complete-transaction to /usr/sbin
+
+* 六 3月 01 2008 James Antill <james@fedoraproject.org>
+- Add verify plugin
+
+* 三 2月 20 2008 James Antill <james@fedoraproject.org>
+- Add empty versionlock file
+
+* 五 2月 01 2008 James Antill <james@fedoraproject.org>
+- Add filter-data plugin
+
+* 三 1月 30 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.11
+
+* 日 1月 13 2008 Seth Vidal <skvidal at fedoraproject.org>
+- add repodiff
+
+* 四 1月 03 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.10
+

@@ -1,0 +1,46 @@
+/bin/awk
+/bin/bash
+/bin/find
+/bin/grep
+/bin/sed
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/etc/system-release
+/sbin/arping
+/sbin/blkid
+/sbin/chkconfig
+/sbin/chkconfig
+/sbin/fuser
+/sbin/ip
+/sbin/pidof
+/sbin/runuser
+/sbin/sysctl
+/usr/sbin/groupadd
+bash >= 3.0
+config(initscripts) = 9.03.49-1.34.amzn1
+coreutils
+cpio
+ethtool >= 1.8-2
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.8)(64bit)
+libglib-2.0.so.0()(64bit)
+libpopt.so.0()(64bit)
+libpopt.so.0(LIBPOPT_0)(64bit)
+mingetty
+mktemp
+module-init-tools >= 3.9-25
+net-tools
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+sysvinit >= 2.87-6
+udev >= 125-1
+upstart >= 0.6.5-11
+util-linux-ng >= 2.16

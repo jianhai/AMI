@@ -1,0 +1,8 @@
+postinstall scriptlet (using /bin/sh):
+if [ -x /usr/bin/fc-cache ]; then 
+    /usr/bin/fc-cache /usr/share/fonts/dejavu || : 
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 -a -x /usr/bin/fc-cache ] ; then 
+    /usr/bin/fc-cache /usr/share/fonts/dejavu || : 
+fi

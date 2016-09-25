@@ -1,0 +1,9 @@
+postinstall scriptlet (using /bin/sh):
+# Not needed for el6 as sources has been removed
+#echo "# epel repo -- added by epel-release " \
+#    >> /etc/sysconfig/rhn/sources
+#echo "yum epel http://download.fedora.redhat.com/pub/epel/6/\$ARCH" \
+#    >> /etc/sysconfig/rhn/sources
+postuninstall scriptlet (using /bin/sh):
+#sed -i '/^yum\ epel/d' /etc/sysconfig/rhn/sources
+#sed -i '/^\#\ epel\ repo\ /d' /etc/sysconfig/rhn/sources

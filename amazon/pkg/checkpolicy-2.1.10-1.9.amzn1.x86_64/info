@@ -1,0 +1,29 @@
+Name        : checkpolicy
+Version     : 2.1.10
+Release     : 1.9.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分42秒
+Group       : Development/System
+Size        : 968433
+License     : GPLv2
+Signature   : RSA/SHA256, 2013年03月18日 星期一 17时49分36秒, Key ID bcb4a85b21c0f39f
+Source RPM  : checkpolicy-2.1.10-1.9.amzn1.src.rpm
+Build Date  : 2013年03月18日 星期一 16时07分45秒
+Build Host  : build-31003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+Summary     : SELinux policy compiler
+Description :
+Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+This package contains checkpolicy, the SELinux policy compiler.
+Only required for building policies.

@@ -1,0 +1,278 @@
+* 三 5月 27 2015 Andrew Jorgensen <ajorgens@amazon.com>
+- Apply patch for CVE-2014-8964
+
+* 三 9月 04 2013 Lee Trager <ltrager@amazon.com>
+- import source package F17/pcre-8.21-7.fc17
+
+* 一 5月 13 2013 Petr Pisar <ppisar@redhat.com> - 8.21-7
+- Fix bad handling of empty lines in pcregrep tool (bug #961789)
+
+* 一 6月 25 2012 Lee Trager <ltrager@amazon.com>
+- Fix bug with Vbulletin see http://bugs.exim.org/show_bug.cgi?id=1187
+
+* 四 5月 17 2012 Tom Kirchner <tjk@amazon.com>
+- import source package F17/pcre-8.21-5.fc17
+
+* 六 5月 12 2012 Tom Callaway <spot@fedoraproject.org> - 8.21-6
+- disable jit for sparcv9 and sparc64
+
+* 一 4月 23 2012 Petr Pisar <ppisar@redhat.com> - 8.21-5
+- Possessify high ASCII (bug #815217)
+- Fix ovector overflow (bug #815214)
+
+* 五 4月 20 2012 Petr Pisar <ppisar@redhat.com> - 8.21-4
+- Possesify \s*\R (bug #813237)
+
+* 四 4月 05 2012 Petr Pisar <ppisar@redhat.com> - 8.21-3
+- Fix look-behind assertion in UTF-8 JIT mode (bug #810314)
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.21-2.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 一 1月 02 2012 Petr Pisar <ppisar@redhat.com> - 8.21-2
+- Fix unmatched subpattern to not become wildcard (bug #769597)
+- Fix NULL pointer derefernce in pcre_free_study() (upstream bug #1186)
+
+* 一 12月 12 2011 Petr Pisar <ppisar@redhat.com> - 8.21-1
+- 8.21 bump
+
+* 四 12月 08 2011 Karsten Hopp <karsten@redhat.com> 8.21-0.2.RC1
+- ppc needs a larger stack similar to s390
+
+* 二 12月 06 2011 Petr Pisar <ppisar@redhat.com> - 8.21-0.1.RC1
+- 8.21-RC1 bump
+
+* 五 12月 02 2011 Petr Pisar <ppisar@redhat.com> - 8.20-7
+- Fix case-less match if cases differ in encoding length (bug #756675)
+
+* 五 11月 25 2011 Petr Pisar <ppisar@redhat.com> - 8.20-6
+- Fix cache-flush in JIT on PPC
+
+* 二 11月 22 2011 Petr Pisar <ppisar@redhat.com> - 8.20-5
+- Fix repeated forward reference (bug #755969)
+
+* 三 11月 16 2011 Petr Pisar <ppisar@redhat.com> - 8.20-4
+- Fix other look-behind regressions
+
+* 二 11月 15 2011 Petr Pisar <ppisar@redhat.com> - 8.20-3
+- Fix look-behind regression in 8.20
+
+* 二 11月 15 2011 Dan Horák <dan[at]danny.cz> - 8.20-2
+- fix build on s390(x) - disable jit and use larger stack for tests
+
+* 五 10月 21 2011 Petr Pisar <ppisar@redhat.com> - 8.20-1
+- 8.20 bump
+
+* 二 10月 11 2011 Petr Pisar <ppisar@redhat.com> - 8.20-0.1.RC3
+- 8.20-RC3 bump
+
+* 五 9月 23 2011 Petr Pisar <ppisar@redhat.com> - 8.20-0.1.RC2
+- 8.20-RC2 bump
+
+* 一 9月 12 2011 Petr Pisar <ppisar@redhat.com> - 8.20-0.1.RC1
+- 8.20-RC1 bump with JIT
+
+* 二 9月 06 2011 Petr Pisar <ppisar@redhat.com> - 8.13-4
+- Fix infinite matching PRUNE (bug #735720)
+
+* 一 8月 22 2011 Petr Pisar <ppisar@redhat.com> - 8.13-3
+- Fix parsing named class in expression (bug #732368)
+
+* 四 8月 18 2011 Petr Pisar <ppisar@redhat.com> - 8.13-2
+- Separate utilities from libraries
+- Move pcre-config(1) manual to pcre-devel sub-package
+- Remove explicit defattr from spec code
+- Compile pcretest with readline support
+
+* 四 8月 18 2011 Petr Pisar <ppisar@redhat.com> - 8.13-1
+- 8.13 bump: Bug-fix version, Unicode tables updated to 6.0.0, new pcregrep
+  option --buffer-size to adjust to long lines, new feature is passing of
+  *MARK information to callouts.
+- Should fix crash back-tracking over unicode sequence (bug #691319)
+
+* 一 5月 09 2011 Petr Pisar <ppisar@redhat.com> - 8.12-4
+- Fix caseless reference matching in UTF-8 mode when the upper/lower case
+  characters have different lengths (bug #702623)
+
+* 一 5月 09 2011 Petr Pisar <ppisar@redhat.com> - 8.12-3
+- Fix typos in manual pages (bugs #675476, #675477)
+- Clean spec file up
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.12-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 1月 17 2011 Petr Pisar <ppisar@redhat.com> - 8.12-1
+- 8.12 bump
+- Remove accepted pcre-8.11-Fix-typo-in-pcreprecompile-3.patch
+
+* 一 12月 13 2010 Petr Pisar <ppisar@redhat.com> - 8.11-1
+- 8.11 bump
+- See ChangeLog for changes. Namely changes have been made to the way
+  PCRE_PARTIAL_HARD affects the matching of $, \z, \Z, \b, and \B.
+- Fix typo in pcreprecompile(3) manual
+- Document why shared library is not under /usr
+
+* 一 7月 12 2010 Petr Pisar <ppisar@redhat.com> - 8.10-1
+- 8.10 bump (bug #612635)
+- Add LICENCE to static subpackage because COPYING refers to it
+- Remove useless rpath by using new libtool (simple sed does not work anymore
+  because tests need to link against just-compiled library in %check phase)
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pcre-7.8-3.1.el6
+
+* 四 7月 08 2010 Petr Pisar <ppisar@redhat.com> - 7.8-4
+- Add COPYING to static subpackage
+- Remove useless rpath
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/pcre-6.6-2.el5_1.7
+- import source package RHEL5/pcre-6.6-2.el5_1.1
+- import source package RHEL5/pcre-6.6-2.el5_0.1
+- import source package RHEL5/pcre-6.6-1.1
+- added submodule prep for package pcre
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.8-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 10月 01 2008 Lubomir Rintel <lkundrak@v3.sk> - 7.8-1
+- Update to 7.8, drop upstreamed patches
+- Fix destination of documentation (#427763)
+- Use buildroot macro consistently
+- Separate the static library, as per current Guidelines
+- Satisfy rpmlint
+
+* 五 7月 04 2008 Tomas Hoger <thoger@redhat.com> - 7.3-4
+- Apply Tavis Ormandy's patch for CVE-2008-2371.
+
+* 二 2月 12 2008 Tomas Hoger <thoger@redhat.com> - 7.3-3
+- Backport patch from upstream pcre 7.6 to address buffer overflow
+  caused by "a character class containing a very large number of
+  characters with codepoints greater than 255 (in UTF-8 mode)"
+  CVE-2008-0674, #431660
+- Try re-enabling make check again.
+
+* 五 11月 16 2007 Stepan Kasal <skasal@redhat.com> - 7.3-2
+- Remove obsolete ``reqs''
+- add dist tag
+- update BuildRoot
+
+* 一 9月 17 2007 Than Ngo <than@redhat.com> - 7.3-1
+- bz292501, update to 7.3
+
+* 一 1月 22 2007 Than Ngo <than@redhat.com> - 7.0-1
+- 7.0
+
+* 一 11月 27 2006 Than Ngo <than@redhat.com> - 6.7-1
+- update to 6.7
+- fix #217303, enable-unicode-properties
+- sane stack limit
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 6.6-1.1
+- rebuild
+
+* 二 5月 09 2006 Than Ngo <than@redhat.com> 6.6-1
+- update to 6.6
+- fix multilib problem
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 6.3-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 6.3-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 8月 24 2005 Than Ngo <than@redhat.com> 6.3-1
+- update to 6.3
+
+* 五 3月 04 2005 Joe Orton <jorton@redhat.com> 5.0-4
+- rebuild
+
+* 五 2月 11 2005 Joe Orton <jorton@redhat.com> 5.0-3
+- don't print $libdir in 'pcre-config --libs' output
+
+* 四 11月 18 2004 Joe Orton <jorton@redhat.com> 5.0-2
+- include LICENCE, AUTHORS in docdir
+- run make check
+- move %configure to %build
+
+* 四 11月 18 2004 Than Ngo <than@redhat.com> 5.0-1
+- update to 5.0
+- change License: BSD
+- fix header location #64248
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 23 2004 Than Ngo <than@redhat.com> 4.5-2
+- add the correct pcre license, #118781
+
+* 五 3月 12 2004 Than Ngo <than@redhat.com> 4.5-1
+- update to 4.5
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 9月 26 2003 Harald Hoyer <harald@redhat.de> 4.4-1
+- 4.4
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 07 2003 Than Ngo <than@redhat.com> 4.2-1
+- update to 4.2
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 1月 21 2003 Than Ngo <than@redhat.com> 3.9-9
+- build with utf8, bug #81504
+
+* 五 11月 22 2002 Elliot Lee <sopwith@redhat.com> 3.9-8
+- Really remove .la files
+
+* 五 10月 11 2002 Than Ngo <than@redhat.com> 3.9-7
+- remove .la
+
+* 四 10月 10 2002 Than Ngo <than@redhat.com> 3.9-7
+- Typo bug
+
+* 三 10月 09 2002 Than Ngo <than@redhat.com> 3.9-6
+- Added missing so symlink
+
+* 四 9月 19 2002 Than Ngo <than@redhat.com> 3.9-5.1
+- Fixed to build s390/s390x/x86_64
+
+* 四 6月 27 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.9-5
+- Fix #65009
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 3月 04 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.9-2
+- rebuild
+
+* 五 1月 11 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.9-1
+- Update to 3.9
+
+* 三 11月 14 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.7-1
+- Update to 3.7
+
+* 四 5月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.4-2
+- Move libpcre to /lib, grep uses it these days (#41104)
+
+* 三 4月 18 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Move this to a separate package, used to be in kdesupport, but it's
+  generally useful...
+

@@ -1,0 +1,9 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+/sbin/chkconfig --add lvm2-monitor
+/sbin/chkconfig --add blk-availability
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+	/sbin/chkconfig --del lvm2-monitor
+	/sbin/chkconfig --del blk-availability
+fi

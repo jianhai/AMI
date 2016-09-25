@@ -1,0 +1,24 @@
+Name        : lvm2
+Version     : 2.02.115
+Release     : 3.26.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时41分06秒
+Group       : System Environment/Base
+Size        : 1857115
+License     : GPLv2
+Signature   : RSA/SHA256, 2015年08月22日 星期六 02时06分40秒, Key ID bcb4a85b21c0f39f
+Source RPM  : lvm2-2.02.115-3.26.amzn1.src.rpm
+Build Date  : 2015年08月20日 星期四 23时28分08秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://sources.redhat.com/lvm2
+Summary     : Userland logical volume management tools
+Description :
+LVM2 includes all of the support for handling read/write operations on
+physical volumes (hard disks, RAID-Systems, magneto optical, etc.,
+multiple devices (MD), see mdadd(8) or even loop devices, see
+losetup(8)), creating volume groups (kind of virtual disks) from one
+or more physical volumes and creating one or more logical volumes
+(kind of logical partitions) in volume groups.

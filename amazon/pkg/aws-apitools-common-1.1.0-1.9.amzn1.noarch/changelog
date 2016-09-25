@@ -1,0 +1,47 @@
+* 一 3月 30 2015 Ethan Faust <efaust@amazon.com>
+- if third party java is present, don't set JAVA_HOME away from it
+
+* 二 9月 10 2013 Ethan Faust <efaust@amazon.com>
+- suppress warnings after removing aws-amitools-ec2
+
+* 四 3月 15 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- profile.d script should clean up variables it uses
+
+* 二 2月 21 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Remove superfluous execute bits
+- Own /opt/aws/amitools and /opt/aws/apitools
+
+* 二 2月 14 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Cleanup spec file and profile.d script
+
+* 二 3月 29 2011 Nathan Blackham <blackham@amazon.com>
+- bumping version number
+- adding cfn to tools
+
+* 一 2月 07 2011 Nathan Blackham <blackham@amazon.com>
+- updating jre requires to >= 1.6.0
+
+* 二 9月 28 2010 Nathan Blackham <blackham@amazon.com>
+- add iam to tools
+
+* 五 7月 23 2010 Matt Wilson <msw@amazon.com>
+- No longer set the AWS_CREDENTIAL_FILE environment variable by default
+
+* 四 7月 22 2010 KaOS <kaos@amazon.com>
+- No longer setting AWS_CREDENTIAL_FILE by default
+
+* 三 7月 21 2010 Nathan Blackham <blackham@amazon.com>
+- add dist tag
+
+* 四 7月 01 2010 Cristian Gafton <gafton@amazon.com>
+- import source package tools/aws-apitools-common-1.0.0-2
+- setup complete for package aws-apitools-common
+
+* 二 4月 13 2010 KaOS <kaos@amazon.com>
+- Requires: jre
+- Set JAVA_HOME in profile.d
+
+* 一 3月 08 2010 KaOS <kaos@amazon.com>
+- 1.0.0
+- Initial packaging
+

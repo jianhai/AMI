@@ -1,0 +1,161 @@
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/kmod-14-10.el7
+
+* 三 1月 14 2015 David Shea <dshea@redhat.com> - 14-10
+- Allow module paths to start with /usr
+  Resolves: rhbz#1177266
+
+* 五 9月 12 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Fix cpio Requires:
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/kmod-14-9.el7
+
+* 二 4月 01 2014 David Shea <dshea@redhat.com> - 14-9
+- Support initramfs files with early_cpio
+  Resolves: rhbz#1070035
+
+* 三 2月 26 2014 David Shea <dshea@redhat.com> - 14-8
+- Support xz-compressed and uncompressed initramfs files
+  Resolves: rhbz#1070035
+
+* 二 2月 25 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- bcond non-usrmerge symlinks, etc.
+
+* 二 2月 25 2014 David Shea <dshea@redhat.com> - 14-7
+- Require binutils for weak-modules
+  Resolves: rhbz#1069612
+
+* 一 2月 17 2014 David Shea <dshea@redhat.com> - 14-6
+- Added a depmod search order as /etc/depmod.d/dist.conf
+  Resolves: rhbz#1065354
+
+* 二 1月 28 2014 Cristian Gafton <gafton@amazon.com>
+- disable running make check
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 14-5
+- Mass rebuild 2014-01-24
+
+* 一 1月 06 2014 Václav Pavlín <vpavlin@redhat.com> - 14-4
+- Version bump due to build fail
+  Resolves: rhbz#1048868
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 14-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/kmod-14-2.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package kmod
+
+* 三 8月 07 2013 Václav Pavlín <vpavlin@redhat.com> - 14-2
+- Run tests during build
+
+* 五 7月 19 2013 Steven Noonan <snoonan@amazon.com>
+- add support for compilers without _Static_assert (i.e. < C11)
+- importing kmod-14 from Fedora 19
+- setup complete for package kmod
+
+* 五 7月 05 2013 Josh Boyer <jwboyer@redhat.com> - 14-1
+- Update to version 14
+
+* 五 4月 19 2013 Václav Pavlín <vpavlin@redhat.com> - 13-2
+- Main package should require -libs
+
+* 三 4月 10 2013 Josh Boyer <jwboyer@redhat.com> - 13-1
+- Update to version 13
+
+* 三 3月 20 2013 Weiping Pan <wpan@redhat.com> - 12-3
+- Pull in weak-modules for kABI from Jon Masters <jcm@redhat.com>
+
+* 一 3月 18 2013 Josh Boyer <jwboyer@redhat.com>
+- Add patch to make rmmod understand built-in modules (rhbz 922187)
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 12-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 12月 06 2012 Josh Boyer <jwboyer@redhat.com>
+- Update to version 12
+
+* 四 11月 08 2012 Josh Boyer <jwboyer@redhat.com>
+- Update to version 11
+
+* 五 9月 07 2012 Josh Boyer <jwboyer@redaht.com>
+- Update to version 10
+
+* 一 8月 27 2012 Josh Boyer <jwboyer@redhat.com>
+- Update to version 9
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 三 5月 23 2012 Josh Boyer <jwboyer@redhat.com> - 8-2
+- Provide modprobe.conf(5) (rhbz 824552)
+
+* 二 5月 08 2012 Josh Boyer <jwboyer@redhat.com> - 8-1
+- Update to version 8
+
+* 一 3月 19 2012 Kay Sievers <kay@redhat.com> - 7-1
+- update to version 7
+  - fix issue with --show-depends, where built-in
+    modules of the running kernel fail to include
+    loadable modules of the kernel specified
+
+* 日 3月 04 2012 Kay Sievers <kay@redhat.com> - 6-1
+- update to version 6
+- remove all patches, they are included in the release
+
+* 五 2月 24 2012 Kay Sievers <kay@redhat.com> - 5-8
+- try to address brc#771285
+
+* 日 2月 12 2012 Kay Sievers <kay@redhat.com> - 5-7
+- fix infinite loop with softdeps
+
+* 四 2月 09 2012 Harald Hoyer <harald@redhat.com> 5-6
+- add upstream patch to fix "modprobe --ignore-install --show-depends"
+  otherwise dracut misses a lot of modules, which are already loaded
+
+* 三 2月 08 2012 Harald Hoyer <harald@redhat.com> 5-5
+- add "lsmod"
+
+* 二 2月 07 2012 Kay Sievers <kay@redhat.com> - 5-4
+- remove temporarily added fake-provides
+
+* 二 2月 07 2012 Kay Sievers <kay@redhat.com> - 5-3
+- temporarily add fake-provides to be able to bootstrap
+  the new udev which pulls the old udev into the buildroot
+
+* 二 2月 07 2012 Kay Sievers <kay@redhat.com> - 5-1
+- Update to version 5
+- replace the module-init-tools package and provide all tools
+  as compatibility symlinks
+
+* 一 1月 16 2012 Kay Sievers <kay@redhat.com> - 4-1
+- Update to version 4
+- set --with-rootprefix=
+- enable zlib and xz support
+
+* 四 1月 05 2012 Jon Masters <jcm@jonmasters.org> - 3-1
+- Update to latest upstream (adds new depmod replacement utility)
+- For the moment, use the "kmod" utility to test the various functions
+
+* 五 12月 23 2011 Jon Masters <jcm@jonmasters.org> - 2-6
+- Update kmod-2-with-rootlibdir patch with rebuild automake files
+
+* 五 12月 23 2011 Jon Masters <jcm@jonmasters.org> - 2-5
+- Initial build for Fedora following package import
+
+* 四 12月 22 2011 Jon Masters <jcm@jonmasters.org> - 2-4
+- There is no generic macro for non-multilib "/lib", hardcode like others
+
+* 四 12月 22 2011 Jon Masters <jcm@jonmasters.org> - 2-3
+- Update package incorporating fixes from initial review feedback
+- Cleaups to SPEC, rpath, documentation, library and binary locations
+
+* 四 12月 22 2011 Jon Masters <jcm@jonmasters.org> - 2-2
+- Update package for posting to wider test audience (initial review submitted)
+
+* 四 12月 22 2011 Jon Masters <jcm@jonmasters.org> - 2-1
+- Initial Fedora package for module-init-tools replacement (kmod) library
+

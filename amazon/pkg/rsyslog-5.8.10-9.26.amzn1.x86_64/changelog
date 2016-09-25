@@ -1,0 +1,474 @@
+* 一 10月 20 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-5.8.10-9.el6_6
+
+* 五 10月 10 2014 Tomas Heinrich <theinric@redhat.com> 5.8.10-9
+- fix CVE-2014-3634
+  resolves: #1149148
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-5.8.10-8.el6
+
+* 一 9月 09 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-5.8.10-7.el6_4
+
+* 三 8月 14 2013 Tomas Heinrich <theinric@redhat.com> 5.8.10-8
+- drop patch 5 which introduced a regression
+  resolves: #927405
+  reverts: #847568
+- add a patch to prevent 'RepeatedMsgReduction' causing missing hostnames
+  resolves: #893197
+- add a patch to enable specifying UID/GID as a number
+  resolves: #886117
+- add a patch to prevent a segfault in gssapi
+  resolves: #862517
+
+* 二 7月 16 2013 Tomas Heinrich <theinric@redhat.com> 5.8.10-7
+- add a patch to support large groups in the $FileGroup directive
+  resolves: #924754
+- add a patch to fix 'pri-text' property format
+  resolves: #951727
+- add a patch to fix the behavior of the *QueueMaxFileSize directives
+  resolves: #963942
+
+* 一 2月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-5.8.10-6.el6
+
+* 三 1月 09 2013 Tomas Heinrich <theinric@redhat.com> 5.8.10-6
+- the previous patch to enable RFC3339 timestamps revealed a bug
+  in the upstream code - adding another patch
+  Resolves: #886004
+
+* 二 1月 08 2013 Tomas Heinrich <theinric@redhat.com> 5.8.10-5
+- add a patch to permit RFC3339 timestamps in messages comming from
+  the local log socket, patch taken from upstream - commit:
+  bfae69d68b0032a383821a54bc52aeff36a90e52
+  Resolves: #886004
+
+* 日 10月 14 2012 Tomas Heinrich <theinric@redhat.com> 5.8.10-4
+- add patch to correct the order in which selector filters are added
+  Resolves: #847568
+
+* 五 10月 12 2012 Tomas Heinrich <theinric@redhat.com> 5.8.10-3
+- add 'conflicts' on incompatible version of selinux-policy
+  Resolves: #838148
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-5.8.10-2.el6
+
+* 四 5月 17 2012 Tomas Heinrich <theinric@redhat.com> 5.8.10-2
+- add patch to update information on debugging in the man page
+  Resolves: #820311
+- add patch to prevent debug output to stdout after forking
+  Resolves: #820996
+- add patch to support ssl certificates with domain names longer than 128 chars
+  Resolves: #822118
+
+* 三 4月 25 2012 Tomas Heinrich <theinric@redhat.com> 5.8.10-1
+- rebase to rsyslog 5.8.10
+  Resolves: #803550
+  Resolves: #805424
+  Resolves: #813079
+  Resolves: #813084
+- consider lock file in 'status' action
+  Resolves: #807608
+- add impstats and imptcp modules
+- include new license text files
+- specify which versions of sysklogd are obsoleted
+
+* 五 3月 02 2012 Eden Adogla <edena@amazon.com>
+- Reverting patch that enabled restart-type HUP by default
+
+* 二 2月 07 2012 Tomas Heinrich <theinric@redhat.com> 5.8.7-1
+- rebase to rsyslog-5.8.7
+  - change license from 'GPLv3+' to '(GPLv3+ and ASL 2.0)'
+    http://blog.gerhards.net/2012/01/rsyslog-licensing-update.html
+  - remove patches obsoleted by rebase
+  - add patches for better sysklogd compatibility (taken from upstream)
+  - update included files for the new major version
+  Resolves: #672182
+  Resolves: #727380
+  Resolves: #756664
+  Resolves: #767527
+  Resolves: #769025
+- add several directories for storing auxiliary data
+  Resolves: #740420
+- fix source package URL
+
+* 四 1月 12 2012 ltrager <ltrager@amazon.com>
+- Add build dep for MySQL 5.5
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-4.6.2-12.el6
+
+* 四 10月 06 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-4.6.2-3.el6_1.4
+
+* 三 10月 05 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-12
+- fix typo in RSYSLOG_SysklogdFileFormat documentation
+  Resolves: #737096
+
+* 四 9月 29 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-11
+- provide configuration directive for sysklogd message format compatibility
+- provide log format template for sysklogd message format compatibility
+  Resolves: #737096
+
+* 五 9月 02 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-4.6.2-3.el6_1.2
+
+* 三 8月 31 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-10
+- add patch to resolve buffer overflow (CVE-2011-3200)
+  Resolves: #733648
+
+* 一 8月 22 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-9
+- use proper lock file in 'status' action
+  Resolves: #698705
+
+* 一 8月 08 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-8
+- workaround the mysql_conf multilib issue by directly using
+  the arch-specific script
+  Resolves: #694414
+
+* 一 8月 08 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-7
+- add patch to correct the behavior of the ActionExecOnlyOnceEveryInterval
+  configuration directive
+  Resolves: #727208
+
+* 三 8月 03 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-6
+- add patch to prevent tight loop when using TLS
+  Resolves: #661858
+
+* 二 8月 02 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-5
+- provide omsnmp module in rsyslog-snmp subpackage
+  Resolves: #618488
+- modify logrotate configuration to omit boot.log
+  Resolves: #683537
+- use correct lock file name
+  Resolves: #698705
+- provide ommail module
+  Resolves: #702314
+
+* 五 7月 22 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-4.6.2-3.el6_1.1
+
+* 三 6月 08 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-4
+- add patch to resolve short int overflow
+  Resolves: #701782
+
+* 日 5月 22 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-4.6.2-3.el6
+
+* 三 2月 16 2011 Tomas Heinrich <theinric@redhat.com> 4.6.2-3
+- build rsyslog with PIE and RELRO
+  Resolves: #642994
+- add ChangeLog file to documentation
+- add /etc/pki/rsyslog directory
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-4.6.2-2.el6
+
+* 四 7月 22 2010 Cristian Gafton <gafton@amazon.com>
+- force build for i686 on 32 bit
+- conditionalize relp builds
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rsyslog-4.6.2-1.el6
+- import source package RHEL6/rsyslog-4.4.2-3.el6
+
+* 二 6月 08 2010 Tomas Heinrich <theinric@redhat.com> 4.6.2-2
+- Fix a potential segfault upon SIGHUP induced restart
+  Resolves: #598421
+- Add Obsoletes: sysklogd
+  Resolves: #513277
+
+* 三 5月 19 2010 Tomas Heinrich <theinric@redhat.com> 4.6.2-1
+- upgrade to new upstream stable version 4.6.2
+  Resolves: #554998
+- correct the default value of the OMFileFlushOnTXEnd directive
+- add upstream fix for message-induced off-by-one error
+- change the default value of the HUPisRestart directive to enabled
+- remove autoconf, automake, libtool from BuildRequires
+- change exec-prefix to nil
+- redefine _libdir as it doesn't use _exec_prefix
+  Resolves: #591860
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/rsyslog-3.22.1-3.el5
+- import source package RHEL5/rsyslog-2.0.6-1.el5
+- import source package RHEL5/rsyslog-2.0.0-11.el5
+- added submodule prep for package rsyslog
+
+* 三 3月 31 2010 Tomas Heinrich <theinric@redhat.com> - 4.4.2-4
+- change init script error code
+  Resolves: #539065
+
+* 三 2月 03 2010 Tomas Heinrich <theinric@redhat.com> - 4.4.2-3
+- remove '_smp_mflags' make argument as it seems to be
+  producing corrupted builds
+  Resolves: #556522
+
+* 三 1月 27 2010 Tomas Heinrich <theinric@redhat.com> - 4.4.2-2
+- rebuild for #556522
+
+* 四 1月 14 2010 Tomas Heinrich <theinric@redhat.com> - 4.4.2-1
+- upgrade to new upstream stable version 4.4.2
+  Resolves: #554998
+- add support for arbitrary number of open file descriptors
+- run libtoolize to avoid errors due mismatching libtool version
+- change exec-prefix to /
+
+* 一 11月 23 2009 Dennis Gregorovic <dgregor@redhat.com> - 4.4.1-2.1
+- Rebuilt for RHEL 6
+
+* 一 9月 14 2009 Tomas Heinrich <theinric@redhat.com> 4.4.1-2
+- adjust init script according to guidelines (#522071)
+
+* 四 9月 03 2009 Tomas Heinrich <theinric@redhat.com> 4.4.1-1
+- upgrade to new upstream stable version
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 4.2.0-3
+- rebuilt with new openssl
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.2.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 14 2009 Tomas Heinrich <theinric@redhat.com> 4.2.0-1
+- upgrade
+
+* 一 4月 13 2009 Tomas Heinrich <theinric@redhat.com> 3.21.11-1
+- upgrade
+
+* 二 3月 31 2009 Lubomir Rintel <lkundrak@v3.sk> 3.21.10-4
+- Backport HUPisRestart option
+
+* 三 3月 18 2009 Tomas Heinrich <theinric@redhat.com> 3.21.10-3
+- fix variables' type conversion in expression-based filters (#485937)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.21.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 10 2009 Tomas Heinrich <theinric@redhat.com> 3.21.10-1
+- upgrade
+
+* 六 1月 24 2009 Caolán McNamara <caolanm@redhat.com> 3.21.9-3
+- rebuild for dependencies
+
+* 三 1月 07 2009 Tomas Heinrich <theinric@redhat.com> 3.21.9-2
+- fix several legacy options handling
+- fix internal message output (#478612)
+
+* 一 12月 15 2008 Peter Vrabec <pvrabec@redhat.com> 3.21.9-1
+- update is fixing $AllowedSender security issue
+
+* 一 9月 15 2008 Peter Vrabec <pvrabec@redhat.com> 3.21.3-4
+- use RPM_OPT_FLAGS
+- use same pid file and logrotate file as syslog-ng (#441664)
+- mark config files as noreplace (#428155)
+
+* 一 9月 01 2008 Tomas Heinrich <theinric@redhat.com> 3.21.3-3
+- fix a wrong module name in the rsyslog.conf manual page (#455086)
+- expand the rsyslog.conf manual page (#456030)
+
+* 四 8月 28 2008 Tomas Heinrich <theinric@redhat.com> 3.21.3-2
+- fix clock rollback issue (#460230)
+
+* 三 8月 20 2008 Peter Vrabec <pvrabec@redhat.com> 3.21.3-1
+- upgrade to bugfix release
+
+* 三 7月 23 2008 Peter Vrabec <pvrabec@redhat.com> 3.21.0-1
+- upgrade
+
+* 一 7月 14 2008 Peter Vrabec <pvrabec@redhat.com> 3.19.9-2
+- adjust default config file
+
+* 五 7月 11 2008 Lubomir Rintel <lkundrak@v3.sk> 3.19.9-1
+- upgrade
+
+* 三 6月 25 2008 Peter Vrabec <pvrabec@redhat.com> 3.19.7-3
+- rebuild because of new gnutls
+
+* 五 6月 13 2008 Peter Vrabec <pvrabec@redhat.com> 3.19.7-2
+- do not translate Oopses (#450329)
+
+* 五 6月 13 2008 Peter Vrabec <pvrabec@redhat.com> 3.19.7-1
+- upgrade
+
+* 三 5月 28 2008 Peter Vrabec <pvrabec@redhat.com> 3.19.4-1
+- upgrade
+
+* 一 5月 26 2008 Peter Vrabec <pvrabec@redhat.com> 3.19.3-1
+- upgrade to new upstream release
+
+* 三 5月 14 2008 Tomas Heinrich <theinric@redhat.com> 3.16.1-1
+- upgrade
+
+* 二 4月 08 2008 Peter Vrabec <pvrabec@redhat.com> 3.14.1-5
+- prevent undesired error description in legacy 
+  warning messages
+
+* 二 4月 08 2008 Peter Vrabec <pvrabec@redhat.com> 3.14.1-4
+- adjust symbol lookup method to 2.6 kernel
+
+* 二 4月 08 2008 Peter Vrabec <pvrabec@redhat.com> 3.14.1-3
+- fix segfault of expression based filters
+
+* 一 4月 07 2008 Peter Vrabec <pvrabec@redhat.com> 3.14.1-2
+- init script fixes (#441170,#440968)
+
+* 五 4月 04 2008 Peter Vrabec <pvrabec@redhat.com> 3.14.1-1
+- upgrade
+
+* 二 3月 25 2008 Peter Vrabec <pvrabec@redhat.com> 3.12.4-1
+- upgrade
+
+* 三 3月 19 2008 Peter Vrabec <pvrabec@redhat.com> 3.12.3-1
+- upgrade 
+- fix some significant memory leaks
+
+* 二 3月 11 2008 Peter Vrabec <pvrabec@redhat.com> 3.12.1-2
+- init script fixes (#436854)
+- fix config file parsing (#436722)
+
+* 四 3月 06 2008 Peter Vrabec <pvrabec@redhat.com> 3.12.1-1
+- upgrade
+
+* 三 3月 05 2008 Peter Vrabec <pvrabec@redhat.com> 3.12.0-1
+- upgrade
+
+* 一 2月 25 2008 Peter Vrabec <pvrabec@redhat.com> 3.11.5-1
+- upgrade
+
+* 五 2月 01 2008 Peter Vrabec <pvrabec@redhat.com> 3.11.0-1
+- upgrade to the latests development release
+- provide PostgresSQL support
+- provide GSSAPI support
+
+* 一 1月 21 2008 Peter Vrabec <pvrabec@redhat.com> 2.0.0-7
+- change from requires sysklogd to conflicts sysklogd
+
+* 五 1月 18 2008 Peter Vrabec <pvrabec@redhat.com> 2.0.0-6
+- change logrotate file
+- use rsyslog own pid file
+
+* 四 1月 17 2008 Peter Vrabec <pvrabec@redhat.com> 2.0.0-5
+- fixing bad descriptor (#428775)
+
+* 三 1月 16 2008 Peter Vrabec <pvrabec@redhat.com> 2.0.0-4
+- rename logrotate file
+
+* 三 1月 16 2008 Peter Vrabec <pvrabec@redhat.com> 2.0.0-3
+- fix post script and init file
+
+* 三 1月 16 2008 Peter Vrabec <pvrabec@redhat.com> 2.0.0-2
+- change pid filename and use logrotata script from sysklogd
+
+* 二 1月 15 2008 Peter Vrabec <pvrabec@redhat.com> 2.0.0-1
+- upgrade to stable release
+- spec file clean up
+
+* 三 1月 02 2008 Peter Vrabec <pvrabec@redhat.com> 1.21.2-1
+- new upstream release
+
+* 四 12月 06 2007 Release Engineering <rel-eng at fedoraproject dot org> - 1.19.11-2
+- Rebuild for deps
+
+* 四 11月 29 2007 Peter Vrabec <pvrabec@redhat.com> 1.19.11-1
+- new upstream release
+- add conflicts (#400671)
+
+* 一 11月 19 2007 Peter Vrabec <pvrabec@redhat.com> 1.19.10-1
+- new upstream release
+
+* 三 10月 03 2007 Peter Vrabec <pvrabec@redhat.com> 1.19.6-3
+- remove NUL character from recieved messages
+
+* 二 9月 25 2007 Tomas Heinrich <theinric@redhat.com> 1.19.6-2
+- fix message suppression (303341)
+
+* 二 9月 25 2007 Tomas Heinrich <theinric@redhat.com> 1.19.6-1
+- upstream bugfix release
+
+* 二 8月 28 2007 Peter Vrabec <pvrabec@redhat.com> 1.19.2-1
+- upstream bugfix release
+- support for negative app selector, patch from 
+  theinric@redhat.com
+
+* 五 8月 17 2007 Peter Vrabec <pvrabec@redhat.com> 1.19.0-1
+- new upstream release with MySQL support(as plugin)
+
+* 三 8月 08 2007 Peter Vrabec <pvrabec@redhat.com> 1.18.1-1
+- upstream bugfix release
+
+* 一 8月 06 2007 Peter Vrabec <pvrabec@redhat.com> 1.18.0-1
+- new upstream release
+
+* 四 8月 02 2007 Peter Vrabec <pvrabec@redhat.com> 1.17.6-1
+- upstream bugfix release
+
+* 一 7月 30 2007 Peter Vrabec <pvrabec@redhat.com> 1.17.5-1
+- upstream bugfix release
+- fix typo in provides
+
+* 三 7月 25 2007 Jeremy Katz <katzj@redhat.com> - 1.17.2-4
+- rebuild for toolchain bug
+
+* 二 7月 24 2007 Peter Vrabec <pvrabec@redhat.com> 1.17.2-3
+- take care of sysklogd configuration files in %post
+
+* 二 7月 24 2007 Peter Vrabec <pvrabec@redhat.com> 1.17.2-2
+- use EVR in provides/obsoletes sysklogd
+
+* 一 7月 23 2007 Peter Vrabec <pvrabec@redhat.com> 1.17.2-1
+- upstream bug fix release
+
+* 五 7月 20 2007 Peter Vrabec <pvrabec@redhat.com> 1.17.1-1
+- upstream bug fix release
+- include html docs (#248712)
+- make "-r" option compatible with sysklogd config (248982)
+
+* 二 7月 17 2007 Peter Vrabec <pvrabec@redhat.com> 1.17.0-1
+- feature rich upstream release
+
+* 四 7月 12 2007 Peter Vrabec <pvrabec@redhat.com> 1.15.1-2
+- use obsoletes and hadle old config files
+
+* 三 7月 11 2007 Peter Vrabec <pvrabec@redhat.com> 1.15.1-1
+- new upstream bugfix release
+
+* 二 7月 10 2007 Peter Vrabec <pvrabec@redhat.com> 1.15.0-1
+- new upstream release introduce capability to generate output 
+  file names based on templates
+
+* 二 7月 03 2007 Peter Vrabec <pvrabec@redhat.com> 1.14.2-1
+- new upstream bugfix release
+
+* 一 7月 02 2007 Peter Vrabec <pvrabec@redhat.com> 1.14.1-1
+- new upstream release with IPv6 support
+
+* 二 6月 26 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.5-3
+- add BuildRequires for  zlib compression feature
+
+* 一 6月 25 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.5-2
+- some spec file adjustments.
+- fix syslog init script error codes (#245330)
+
+* 五 6月 22 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.5-1
+- new upstream release
+
+* 五 6月 22 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.4-2
+- some spec file adjustments.
+
+* 一 6月 18 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.4-1
+- upgrade to new upstream release
+
+* 三 6月 13 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.2-2
+- DB support off
+
+* 二 6月 12 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.2-1
+- new upstream release based on redhat patch
+
+* 五 6月 08 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.1-2
+- rsyslog package provides its own kernel log. daemon (rklogd)
+
+* 一 6月 04 2007 Peter Vrabec <pvrabec@redhat.com> 1.13.1-1
+- Initial rpm build
+

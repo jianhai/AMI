@@ -1,0 +1,14 @@
+postinstall scriptlet (using /bin/sh):
+if [ -f /usr/share/info/info-stnd.info ]; then # --excludedocs?
+    /sbin/install-info /usr/share/info/info-stnd.info /usr/share/info/dir
+fi
+if [ -x /bin/sed ]; then
+    /bin/sed -i '/^This is.*produced by makeinfo.*from/d' /usr/share/info/dir || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+    if [ -f /usr/share/info/info-stnd.info ]; then # --excludedocs?
+        /sbin/install-info --delete /usr/share/info/info-stnd.info /usr/share/info/dir \
+        || :
+    fi
+fi

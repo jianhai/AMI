@@ -1,0 +1,11 @@
+perl >= 0:5.004
+perl(:MODULE_COMPAT_5.16.3)
+perl(Exporter)
+perl(Pod::Usage) >= 1.14
+perl(Text::ParseWords)
+perl(constant)
+perl(overload)
+perl(strict)
+perl(vars)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

@@ -1,0 +1,719 @@
+* 一 3月 18 2013 Cristian Gafton <gafton@amazon.com>
+- add libselinux-staticto build requires
+- import source package F17/checkpolicy-2.1.10-1.fc17
+- import source package F17/checkpolicy-2.1.9-4.fc17
+- import source package F17/checkpolicy-2.1.8-3.fc17
+
+* 三 7月 04 2012 Dan Walsh <dwalsh@redhat.com> - 2.1.10-1
+- Update to upstream 
+	* sepolgen: We need to support files that have a + in them
+	* Android/MacOS X build support
+
+* 一 4月 23 2012 Dan Walsh <dwalsh@redhat.com> - 2.1.9-4
+- Rebuild to get latest libsepol which fixes the file_name transition problems
+
+* 二 4月 17 2012 Dan Walsh <dwalsh@redhat.com> - 2.1.9-3
+- Recompile with libsepol that has support for ptrace_child
+
+* 二 4月 03 2012 Dan Walsh <dwalsh@redhat.com> - 2.1.9-2
+- Allow checkpolicy to use + in a file name
+
+* 四 3月 29 2012 Dan Walsh <dwalsh@redhat.com> - 2.1.9-1
+- Update to upstream 
+	* implement new default labeling behaviors for usr, role, range
+	* Fix dead links to www.nsa.gov/selinux
+
+* 二 3月 06 2012 Cristian Gafton <gafton@amazon.com>
+- import source package F16/checkpolicy-2.1.6-2.fc16
+- import source package F16/checkpolicy-2.1.3-1.2.fc16
+
+* 一 1月 16 2012 Dan Walsh <dwalsh@redhat.com> - 2.1.8-3
+- Fix man page to link to www.nsa.giv/research/selinux
+
+* 四 1月 12 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 12月 21 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.8-1
+-Update to upstream
+	* add ignoredirs config for genhomedircon
+	* Fallback_user_level can be NULL if you are not using MLS
+
+* 三 12月 21 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.7-3
+- default_rules should be optional
+
+* 四 12月 15 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.7-2
+- Rebuild with latest libsepol
+
+* 二 12月 06 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.7-1
+- Upgrade to upstream
+	* dis* fixed signed vs unsigned errors
+	* dismod: fix unused parameter errors
+	* test: Makefile: include -W and -Werror
+	* allow ~ in filename transition rules
+- Allow policy to specify the source of target for generating the default user,role 
+- or mls label for a new target.
+
+* 一 11月 14 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.6-2
+- Allow ~ in a filename
+
+* 五 11月 04 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.6-1
+- Upgrade to upstream
+	* Revert "checkpolicy: Redo filename/filesystem syntax to support filename trans rules"
+	* drop libsepol dynamic link in checkpolicy
+
+* 二 9月 20 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.5-2
+- Fix checkpolicy to ignore '"' in filename trans rules
+
+* 一 9月 19 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.5-1
+-Update to upstream
+	* Separate tunable from boolean during compile.
+
+* 二 8月 30 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.4-0
+-Update to upstream
+	* checkpolicy: fix spacing in output message
+
+* 四 8月 18 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.3-0
+* add missing ; to attribute_role_def
+	*Redo filename/filesystem syntax to support filename trans
+
+* 三 8月 03 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.2-0
+-Update to upstream
+	* .gitignore changes
+	* dispol output of role trans
+	* man page update: build a module with an older policy version
+
+* 四 7月 28 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.1-0
+-Update to upstream
+	* Minor updates to filename trans rule output in dis{mod,pol}
+
+* 四 7月 28 2011 Dan Walsh <dwalsh@redhat.com> - 2.1.0-1
+-Update to upstream
+
+* 一 5月 23 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.26-1
+-Update to upstream
+	* Wrap file names in filename transitions with quotes by Steve Lawrence.
+	* Allow filesystem names to start with a digit by James Carter.
+	* Add support for using the last path compnent in type transitions by Eric
+
+* 四 4月 21 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.24-2
+* Fixes for new role_transition class field by Eric Paris.
+
+* 五 4月 15 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.24-2
+- Add "-" as a file type
+
+* 二 4月 12 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.24-1
+-Update to upstream
+	* Add new class field in role_transition by Harry Ciao.
+
+* 一 4月 11 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.23-5
+- Fix type_transition to allow all files
+
+* 二 3月 29 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.23-4
+- Patches from Eric Paris 
+We just use random numbers to make menu selections.  Use #defines and
+names that make some sense instead.
+
+This patch adds support for using the last path component as part of the
+information in making labeling decisions for new objects.  A example
+rule looks like so:
+
+type_transition unconfined_t etc_t:file system_conf_t eric;
+
+This rule says if unconfined_t creates a file in a directory labeled
+etc_t and the last path component is "eric" (no globbing, no matching
+magic, just exact strcmp) it should be labeled system_conf_t.
+
+The kernel and policy representation does not have support for such
+rules in conditionals, and thus policy explicitly notes that fact if
+such a rule is added to a conditional.
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.23-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 1月 12 2011 Dan Walsh <dwalsh@redhat.com> - 2.0.23-2
+- Add James Carters Patch
+  *This patch is needed because some filesystem names (such as 9p) start
+  with a digit.
+
+* 二 12月 21 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.23-1
+- Latest update from NSA
+  * Remove unused variables to fix compliation under GCC 4.6 by Justin Mattock
+
+* 三 12月 08 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.22-2
+- Rebuild to make sure it will build in Fedora
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/checkpolicy-2.0.22-1.el6
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/checkpolicy-2.0.21-2.el6
+- import source package RHEL6/checkpolicy-2.0.19-3.1.el6
+
+* 三 6月 16 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.22-1
+- Latest update from NSA
+	* Update checkmodule man page and usage by Daniel Walsh and Steve Lawrence
+- Allow policy version to be one number
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/checkpolicy-1.33.1-6.el5
+- import source package RHEL5/checkpolicy-1.33.1-4.el5
+- import source package RHEL5/checkpolicy-1.33.1-2.el5
+- added submodule prep for package checkpolicy
+
+* 一 5月 03 2010 Dan Walsh <dwalsh@redhat.com> - 2.0.21-2
+- Fix checkmodule man page and usage statements
+
+* 日 11月 01 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.21-1
+- Latest update from NSA
+	* Add support for building Xen policies from Paul Nuzzi.
+	* Add long options to checkpolicy and checkmodule by Guido
+	  Trentalancia <guido@trentalancia.com>
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.19-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.19-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 18 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.19-1
+- Latest update from NSA
+	* Fix alias field in module format, caused by boundary format change
+	  from Caleb Case.
+
+* 五 1月 30 2009 Dan Walsh <dwalsh@redhat.com> - 2.0.18-1
+- Latest update from NSA
+	* Properly escape regex symbols in the lexer from Stephen Smalley.
+	* Add bounds support from KaiGai Kohei.
+
+* 二 10月 28 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.16-4
+* Mon Jul 7 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.16-3
+- Rebuild with new libsepol
+
+* 三 5月 28 2008 Tom "spot" Callaway <tcallawa@redhat.com> 2.0.16-2
+- fix license tag
+
+* 三 5月 28 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.16-1
+- Latest update from NSA
+	* Update checkpolicy for user and role mapping support from Joshua Brindle.
+
+* 五 5月 02 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.15-1
+- Latest update from NSA
+	* Fix for policy module versions that look like IPv4 addresses from Jim Carter.
+	  Resolves bug 444451.
+
+* 五 5月 02 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.14-2
+- Allow modules with 4 sections or more
+
+* 四 3月 27 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.14-1
+- Latest update from NSA
+	* Add permissive domain support from Eric Paris.
+
+* 四 3月 13 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.13-1
+- Latest update from NSA
+	* Split out non-grammar parts of policy_parse.yacc into
+	  policy_define.c and policy_define.h from Todd C. Miller.
+	* Initialize struct policy_file before using it, from Todd C. Miller.
+	* Remove unused define, move variable out of .y file, simplify COND_ERR, from Todd C. Miller.
+
+* 四 2月 28 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.10-1
+- Latest update from NSA
+	* Use yyerror2() where appropriate from Todd C. Miller.
+- Build against latest libsepol
+
+* 五 2月 22 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.9-2
+- Start shipping sedismod and sedispol
+
+* 一 2月 04 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.9-1
+- Latest update from NSA
+	* Update dispol for libsepol avtab changes from Stephen Smalley.
+
+* 五 1月 25 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.8-1
+- Latest update from NSA
+	* Deprecate role dominance in parser.
+
+* 一 1月 21 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.7-2
+- Update to use libsepol-static library
+
+* 五 1月 11 2008 Dan Walsh <dwalsh@redhat.com> - 2.0.7-1
+- Latest update from NSA
+	* Added support for policy capabilities from Todd Miller.
+
+* 四 11月 15 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.6-1
+- Latest update from NSA
+	* Initialize the source file name from the command line argument so that checkpolicy/checkmodule report something more useful than "unknown source".
+	* Merged remove use of REJECT and trailing context in lex rules; make ipv4 address parsing like ipv6 from James Carter.
+
+* 二 9月 18 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.4-1
+* Merged handle unknown policydb flag support from Eric Paris.
+	  Adds new command line options -U {allow, reject, deny} for selecting
+	  the flag when a base module or kernel policy is built.
+
+* 二 8月 28 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 2.0.3-3
+- Rebuild for selinux ppc32 issue.
+
+* 一 6月 18 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.3-2
+- Rebuild with the latest libsepol
+
+* 日 6月 17 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.3-1
+- Latest update from NSA
+	* Merged fix for segfault on duplicate require of sensitivity from Caleb Case.
+	* Merged fix for dead URLs in checkpolicy man pages from Dan Walsh.
+
+* 四 4月 12 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.2-1
+- Latest update from NSA
+	* Merged checkmodule man page fix from Dan Walsh.
+
+* 五 3月 30 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.1-3
+- Rebuild with new libsepol
+
+* 三 3月 28 2007 Dan Walsh <dwalsh@redhat.com> - 2.0.1-2
+- Rebuild with new libsepol
+
+* 一 11月 20 2006 Dan Walsh <dwalsh@redhat.com> - 2.0.1-1
+- Latest update from NSA
+	* Merged patch to allow dots in class identifiers from Caleb Case.
+
+* 二 11月 14 2006 Dan Walsh <dwalsh@redhat.com> - 2.0.0-1
+- Latest update from NSA
+	* Merged patch to use new libsepol error codes by Karl MacMillan.
+	* Updated version for stable branch.
+
+* 二 11月 14 2006 Dan Walsh <dwalsh@redhat.com> - 1.33.1-2
+- Rebuild for new libraries
+
+* 二 11月 14 2006 Dan Walsh <dwalsh@redhat.com> - 1.33.1-1
+- Latest update from NSA
+	* Collapse user identifiers and identifiers together.
+
+* 二 10月 17 2006 Dan Walsh <dwalsh@redhat.com> - 1.32-1
+- Latest update from NSA
+	* Updated version for release.
+
+* 四 9月 28 2006 Dan Walsh <dwalsh@redhat.com> - 1.30.12-1
+- Latest update from NSA
+	* Merged user and range_transition support for modules from 
+	  Darrel Goeddel
+
+* 三 9月 06 2006 Dan Walsh <dwalsh@redhat.com> - 1.30.11-1
+- Latest update from NSA
+	* merged range_transition enhancements and user module format
+	  changes from Darrel Goeddel
+	* Merged symtab datum patch from Karl MacMillan.
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.30.9-1.1
+- rebuild
+
+* 二 7月 04 2006 Dan Walsh <dwalsh@redhat.com> - 1.30.8-1
+- Latest upgrade from NSA
+	* Lindent.
+	* Merged patch to remove TE rule conflict checking from the parser
+	  from Joshua Brindle.  This can only be done properly by the 
+	  expander.
+	* Merged patch to make checkpolicy/checkmodule handling of
+	  duplicate/conflicting TE rules the same as the expander 
+	  from Joshua Brindle.
+	* Merged optionals in base take 2 patch set from Joshua Brindle.
+
+* 二 5月 23 2006 Dan Walsh <dwalsh@redhat.com> - 1.30.5-1
+- Latest upgrade from NSA
+	* Merged compiler cleanup patch from Karl MacMillan.
+	* Merged fix warnings patch from Karl MacMillan.
+
+* 三 4月 05 2006 Dan Walsh <dwalsh@redhat.com> - 1.30.4-1
+- Latest upgrade from NSA
+	* Changed require_class to reject permissions that have not been
+	  declared if building a base module.
+
+* 二 3月 28 2006 Dan Walsh <dwalsh@redhat.com> - 1.30.3-1
+- Latest upgrade from NSA
+	* Fixed checkmodule to call link_modules prior to expand_module
+	  to handle optionals.
+	* Fixed require_class to avoid shadowing permissions already defined
+	  in an inherited common definition.
+
+* 一 3月 27 2006 Dan Walsh <dwalsh@redhat.com> - 1.30.1-2
+- Rebuild with new libsepol
+
+* 四 3月 23 2006 Dan Walsh <dwalsh@redhat.com> - 1.30.1-1
+- Latest upgrade from NSA
+	* Moved processing of role and user require statements to 2nd pass.
+
+* 五 3月 17 2006 Dan Walsh <dwalsh@redhat.com> - 1.30-1
+- Latest upgrade from NSA
+	* Updated version for release.
+	* Fixed bug in role dominance (define_role_dom).
+
+* 五 2月 17 2006 Dan Walsh <dwalsh@redhat.com> - 1.29.4-1
+- Latest upgrade from NSA
+	* Added a check for failure to declare each sensitivity in
+	  a level definition.
+	* Changed to clone level data for aliased sensitivities to
+	  avoid double free upon sens_destroy.  Bug reported by Kevin
+	  Carr of Tresys Technology.
+
+* 一 2月 13 2006 Dan Walsh <dwalsh@redhat.com> - 1.29.2-1
+- Latest upgrade from NSA
+	* Merged optionals in base patch from Joshua Brindle.
+
+* 一 2月 13 2006 Dan Walsh <dwalsh@redhat.com> - 1.29.1-1.2
+- Need to build againi
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.29.1-1.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Dan Walsh <dwalsh@redhat.com> 1.29.1-1
+- Latest upgrade from NSA
+	* Merged sepol_av_to_string patch from Joshua Brindle.
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.28-5.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 13 2006 Dan Walsh <dwalsh@redhat.com> 1.28-5
+- Rebuild to get latest libsepol
+- Rebuild to get latest libsepol
+
+* 四 1月 05 2006 Dan Walsh <dwalsh@redhat.com> 1.28-4
+- Rebuild to get latest libsepol
+
+* 三 1月 04 2006 Dan Walsh <dwalsh@redhat.com> 1.28-3
+- Rebuild to get latest libsepol
+
+* 五 12月 16 2005 Dan Walsh <dwalsh@redhat.com> 1.28-2
+- Rebuild to get latest libsepol
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 09 2005 Dan Walsh <dwalsh@redhat.com> 1.28-1
+- Latest upgrade from NSA
+
+* 日 12月 04 2005 Dan Walsh <dwalsh@redhat.com> 1.27.20-1
+- Latest upgrade from NSA
+	* Merged checkmodule man page from Dan Walsh, and edited it.
+
+* 四 12月 01 2005 Dan Walsh <dwalsh@redhat.com> 1.27.19-1
+- Latest upgrade from NSA
+	* Added error checking of all ebitmap_set_bit calls for out of
+	  memory conditions.
+	* Merged removal of compatibility handling of netlink classes
+	  (requirement that policies with newer versions include the
+	   netlink class definitions, remapping of fine-grained netlink
+	   classes in newer source policies to single netlink class when
+	   generating older policies) from George Coker.
+
+* 二 11月 08 2005 Dan Walsh <dwalsh@redhat.com> 1.27.17-7
+- Rebuild to get latest libsepol
+
+* 二 10月 25 2005 Dan Walsh <dwalsh@redhat.com> 1.27.17-1
+- Latest upgrade from NSA
+	* Merged dismod fix from Joshua Brindle.
+
+* 四 10月 20 2005 Dan Walsh <dwalsh@redhat.com> 1.27.16-1
+- Latest upgrade from NSA
+	* Removed obsolete cond_check_type_rules() function and call and 
+	  cond_optimize_lists() call from checkpolicy.c; these are handled
+	  during parsing and expansion now.
+	* Updated calls to expand_module for interface change.
+	* Changed checkmodule to verify that expand_module succeeds 
+	  when building base modules.
+	* Merged module compiler fixes from Joshua Brindle.
+	* Removed direct calls to hierarchy_check_constraints() and 
+	  check_assertions() from checkpolicy since they are now called 
+	  internally by expand_module().
+
+* 二 10月 18 2005 Dan Walsh <dwalsh@redhat.com> 1.27.11-1
+- Latest upgrade from NSA
+	* Updated for changes to sepol policydb_index_others interface.
+
+* 二 10月 18 2005 Dan Walsh <dwalsh@redhat.com> 1.27.10-1
+- Latest upgrade from NSA
+	* Updated for changes to sepol expand_module and link_modules interfaces.
+
+* 六 10月 15 2005 Dan Walsh <dwalsh@redhat.com> 1.27.9-2
+- Rebuild to get latest libsepol
+
+* 五 10月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.27.9-1
+- Latest upgrade from NSA
+	* Merged support for require blocks inside conditionals from
+	Joshua Brindle (Tresys).
+
+* 三 10月 12 2005 Karsten Hopp <karsten@redhat.de> 1.27.8-2
+- add buildrequirement for libselinux-devel for dispol
+
+* 一 10月 10 2005 Dan Walsh <dwalsh@redhat.com> 1.27.8-1
+- Latest upgrade from NSA
+	* Updated for changes to libsepol.
+
+* 五 10月 07 2005 Dan Walsh <dwalsh@redhat.com> 1.27.7-2
+- Rebuild to get latest libsepol
+
+* 四 10月 06 2005 Dan Walsh <dwalsh@redhat.com> 1.27.7-1
+- Latest upgrade from NSA
+	* Merged several bug fixes from Joshua Brindle (Tresys).
+
+* 二 10月 04 2005 Dan Walsh <dwalsh@redhat.com> 1.27.6-1
+- Latest upgrade from NSA
+	* Merged MLS in modules patch from Joshua Brindle (Tresys).
+
+* 一 10月 03 2005 Dan Walsh <dwalsh@redhat.com> 1.27.5-2
+- Rebuild to get latest libsepol
+
+* 三 9月 28 2005 Dan Walsh <dwalsh@redhat.com> 1.27.5-1
+- Latest upgrade from NSA
+	* Merged error handling improvement in checkmodule from Karl MacMillan (Tresys).
+
+* 二 9月 27 2005 Dan Walsh <dwalsh@redhat.com> 1.27.4-1
+- Latest upgrade from NSA
+	* Merged bugfix for dup role transition error messages from
+	Karl MacMillan (Tresys).
+
+* 五 9月 23 2005 Dan Walsh <dwalsh@redhat.com> 1.27.3-1
+- Latest upgrade from NSA
+	* Merged policyver/modulever patches from Joshua Brindle (Tresys).
+
+* 三 9月 21 2005 Dan Walsh <dwalsh@redhat.com> 1.27.2-2
+- Rebuild to get latest libsepol
+
+* 三 9月 21 2005 Dan Walsh <dwalsh@redhat.com> 1.27.2-1
+- Latest upgrade from NSA
+	* Fixed parse_categories handling of undefined category.
+
+* 二 9月 20 2005 Dan Walsh <dwalsh@redhat.com> 1.27.1-2
+- Rebuild to get latest libsepol
+
+* 六 9月 17 2005 Dan Walsh <dwalsh@redhat.com> 1.27.1-1
+- Latest upgrade from NSA
+	* Merged bug fix for role dominance handling from Darrel Goeddel (TCS).
+
+* 三 9月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.26-2
+- Rebuild to get latest libsepol
+
+* 一 9月 12 2005 Dan Walsh <dwalsh@redhat.com> 1.26-1
+- Latest upgrade from NSA
+	* Updated version for release.
+- Rebuild to get latest libsepol
+
+* 四 9月 01 2005 Dan Walsh <dwalsh@redhat.com> 1.25.12-3
+- Rebuild to get latest libsepol
+
+* 一 8月 29 2005 Dan Walsh <dwalsh@redhat.com> 1.25.12-2
+- Rebuild to get latest libsepol
+
+* 一 8月 22 2005 Dan Walsh <dwalsh@redhat.com> 1.25.12-1
+- Update to NSA Release
+	* Fixed handling of validatetrans constraint expressions.
+	Bug reported by Dan Walsh for checkpolicy -M.
+
+* 一 8月 22 2005 Dan Walsh <dwalsh@redhat.com> 1.25.11-2
+- Fix mls crash
+
+* 五 8月 19 2005 Dan Walsh <dwalsh@redhat.com> 1.25.11-1
+- Update to NSA Release
+	* Merged use-after-free fix from Serge Hallyn (IBM).  
+	  Bug found by Coverity.
+
+* 日 8月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.25.10-1
+- Update to NSA Release
+	* Fixed further memory leaks found by valgrind.
+	* Changed checkpolicy to destroy the policydbs prior to exit
+	  to allow leak detection.
+	* Fixed several memory leaks found by valgrind.
+
+* 日 8月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.25.8-3
+- Rebuild to get latest libsepol changes
+
+* 六 8月 13 2005 Dan Walsh <dwalsh@redhat.com> 1.25.8-2
+- Rebuild to get latest libsepol changes
+
+* 四 8月 11 2005 Dan Walsh <dwalsh@redhat.com> 1.25.8-1
+- Update to NSA Release
+	* Updated checkpolicy and dispol for the new avtab format.
+	  Converted users of ebitmaps to new inline operators.
+  	  Note:  The binary policy format version has been incremented to 
+	  version 20 as a result of these changes.  To build a policy
+	  for a kernel that does not yet include these changes, use
+	  the -c 19 option to checkpolicy.
+	* Merged patch to prohibit use of "self" as a type name from Jason Tang (Tresys).
+	* Merged patch to fix dismod compilation from Joshua Brindle (Tresys).
+
+* 三 8月 10 2005 Dan Walsh <dwalsh@redhat.com> 1.25.5-1
+- Update to NSA Release
+	* Fixed call to hierarchy checking code to pass the right policydb.
+	* Merged patch to update dismod for the relocation of the
+	  module read/write code from libsemanage to libsepol, and
+	  to enable build of test subdirectory from Jason Tang (Tresys).
+
+* 四 7月 28 2005 Dan Walsh <dwalsh@redhat.com> 1.25.3-1
+- Update to NSA Release
+	* Merged hierarchy check fix from Joshua Brindle (Tresys).
+
+* 四 7月 07 2005 Dan Walsh <dwalsh@redhat.com> 1.25.2-1
+- Update to NSA Release
+	* Merged loadable module support from Tresys Technology.
+	* Merged patch to prohibit the use of * and ~ in type sets 
+	  (other than in neverallow statements) and in role sets
+	  from Joshua Brindle (Tresys).
+	* Updated version for release.
+
+* 五 5月 20 2005 Dan Walsh <dwalsh@redhat.com> 1.23-4-1
+- Update to NSA Release
+	* Merged cleanup patch from Dan Walsh.
+
+* 四 5月 19 2005 Dan Walsh <dwalsh@redhat.com> 1.23-3-1
+- Update to NSA Release
+	* Added sepol_ prefix to Flask types to avoid namespace
+	  collision with libselinux.
+
+* 六 5月 07 2005 Dan Walsh <dwalsh@redhat.com> 1.23-2-1
+- Update to NSA Release
+	* Merged identifier fix from Joshua Brindle (Tresys).
+
+* 四 4月 14 2005 Dan Walsh <dwalsh@redhat.com> 1.23,1-1
+* Merged hierarchical type/role patch from Tresys Technology.
+	* Merged MLS fixes from Darrel Goeddel of TCS.
+
+* 四 3月 10 2005 Dan Walsh <dwalsh@redhat.com> 1.22-1
+- Update to NSA Release
+
+* 二 3月 01 2005 Dan Walsh <dwalsh@redhat.com> 1.21.4-2
+- Rebuild for FC4
+
+* 四 2月 17 2005 Dan Walsh <dwalsh@redhat.com> 1.21.4-1
+* Merged define_user() cleanup patch from Darrel Goeddel (TCS).
+	* Moved genpolusers utility to libsepol.
+	* Merged range_transition support from Darrel Goeddel (TCS).
+
+* 四 2月 10 2005 Dan Walsh <dwalsh@redhat.com> 1.21.2-1
+- Latest from NSA
+	* Changed relabel Makefile target to use restorecon.
+
+* 一 2月 07 2005 Dan Walsh <dwalsh@redhat.com> 1.21.1-1
+- Latest from NSA
+	* Merged enhanced MLS support from Darrel Goeddel (TCS).
+
+* 五 1月 07 2005 Dan Walsh <dwalsh@redhat.com> 1.20.1-1
+- Update for version increase at NSA
+
+* 一 12月 20 2004 Dan Walsh <dwalsh@redhat.com> 1.19.2-1
+- Latest from NSA
+	* Merged typeattribute statement patch from Darrel Goeddel of TCS.
+	* Changed genpolusers to handle multiple user config files.
+	* Merged nodecon ordering patch from Chad Hanson of TCS.
+
+* 四 11月 11 2004 Dan Walsh <dwalsh@redhat.com> 1.19.1-1
+- Latest from NSA
+	* Merged nodecon ordering patch from Chad Hanson of TCS.
+
+* 四 11月 04 2004 Dan Walsh <dwalsh@redhat.com> 1.18.1-1
+- Latest from NSA
+	* MLS build fix.
+
+* 六 9月 04 2004 Dan Walsh <dwalsh@redhat.com> 1.17.5-1
+- Latest from NSA
+	* Fixed Makefile dependencies (Chris PeBenito).
+
+* 六 9月 04 2004 Dan Walsh <dwalsh@redhat.com> 1.17.4-1
+- Latest from NSA
+	* Fixed Makefile dependencies (Chris PeBenito).
+
+* 六 9月 04 2004 Dan Walsh <dwalsh@redhat.com> 1.17.3-1
+- Latest from NSA
+	* Merged fix for role dominance ordering issue from Chad Hanson of TCS.
+
+* 一 8月 30 2004 Dan Walsh <dwalsh@redhat.com> 1.17.2-1
+- Latest from NSA
+
+* 四 8月 26 2004 Dan Walsh <dwalsh@redhat.com> 1.16.3-1
+- Fix NSA package to not include y.tab files.
+
+* 二 8月 24 2004 Dan Walsh <dwalsh@redhat.com> 1.16.2-1
+- Latest from NSA
+- Allow port ranges to overlap
+
+* 日 8月 22 2004 Dan Walsh <dwalsh@redhat.com> 1.16.1-1
+- Latest from NSA
+
+* 一 8月 16 2004 Dan Walsh <dwalsh@redhat.com> 1.15.6-1
+- Latest from NSA
+
+* 五 8月 13 2004 Dan Walsh <dwalsh@redhat.com> 1.15.5-1
+- Latest from NSA
+
+* 三 8月 11 2004 Dan Walsh <dwalsh@redhat.com> 1.15.4-1
+- Latest from NSA
+
+* 日 8月 08 2004 Dan Walsh <dwalsh@redhat.com> 1.15.3-1
+- Latest from NSA
+
+* 三 8月 04 2004 Dan Walsh <dwalsh@redhat.com> 1.15.2-1
+- Latest from NSA
+
+* 六 7月 31 2004 Dan Walsh <dwalsh@redhat.com> 1.15.1-1
+- Latest from NSA
+
+* 二 7月 27 2004 Dan Walsh <dwalsh@redhat.com> 1.14.2-1
+- Latest from NSA
+
+* 三 6月 30 2004 Dan Walsh <dwalsh@redhat.com> 1.14.1-1
+- Latest from NSA
+
+* 五 6月 18 2004 Dan Walsh <dwalsh@redhat.com> 1.12.2-1
+- Latest from NSA
+
+* 四 6月 17 2004 Dan Walsh <dwalsh@redhat.com> 1.12.1-1
+- Update to latest from NSA
+
+* 三 6月 16 2004 Dan Walsh <dwalsh@redhat.com> 1.12-1
+- Update to latest from NSA
+
+* 三 6月 16 2004 Dan Walsh <dwalsh@redhat.com> 1.10-5
+- Add nlclass patch
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 6月 04 2004 Dan Walsh <dwalsh@redhat.com> 1.10-3
+- Add BuildRequires flex
+
+* 四 4月 08 2004 Dan Walsh <dwalsh@redhat.com> 1.10-2
+- Add BuildRequires byacc
+
+* 四 4月 08 2004 Dan Walsh <dwalsh@redhat.com> 1.10-1
+- Upgrade to the latest from NSA
+
+* 一 3月 15 2004 Dan Walsh <dwalsh@redhat.com> 1.8-1
+- Upgrade to the latest from NSA
+
+* 二 2月 24 2004 Dan Walsh <dwalsh@redhat.com> 1.6-1
+- Upgrade to the latest from NSA
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 1月 20 2004 Dan Walsh <dwalsh@redhat.com> 1.4-6
+- Add typealias patch
+
+* 二 1月 20 2004 Dan Walsh <dwalsh@redhat.com> 1.4-5
+- Update excludetypes with negset-final patch
+
+* 三 1月 14 2004 Dan Walsh <dwalsh@redhat.com> 1.4-4
+- Add excludetypes patch
+
+* 三 1月 14 2004 Dan Walsh <dwalsh@redhat.com> 1.4-3
+- Add Colin Walter's lineno patch
+
+* 三 1月 07 2004 Dan Walsh <dwalsh@redhat.com> 1.4-2
+- Remove check for roles transition
+
+* 六 12月 06 2003 Dan Walsh <dwalsh@redhat.com> 1.4-1
+- upgrade to 1.4
+
+* 三 10月 01 2003 Dan Walsh <dwalsh@redhat.com> 1.2-1
+- upgrade to 1.2
+
+* 四 8月 28 2003 Dan Walsh <dwalsh@redhat.com> 1.1-2
+- upgrade to 1.1
+
+* 一 6月 02 2003 Dan Walsh <dwalsh@redhat.com> 1.0-1
+- Initial version
+

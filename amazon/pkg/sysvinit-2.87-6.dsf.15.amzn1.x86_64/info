@@ -1,0 +1,23 @@
+Name        : sysvinit
+Version     : 2.87
+Release     : 6.dsf.15.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分51秒
+Group       : System Environment/Base
+Size        : 110657
+License     : GPLv2+
+Signature   : RSA/SHA256, 2016年02月27日 星期六 18时47分29秒, Key ID bcb4a85b21c0f39f
+Source RPM  : sysvinit-2.87-6.dsf.15.amzn1.src.rpm
+Build Date  : 2016年02月18日 星期四 19时16分52秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://alioth.debian.org/projects/pkg-sysvinit/
+Summary     : Programs which control basic system processes
+Description :
+The sysvinit package contains a group of processes that control
+the very basic functions of your system. sysvinit includes the init
+program, the first program started by the Linux kernel when the
+system boots. Init then controls the startup, running, and shutdown
+of all other programs.

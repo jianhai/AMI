@@ -1,0 +1,145 @@
+* 二 3月 17 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libevent-2.0.21-4.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 2.0.21-4
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 2.0.21-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libevent-2.0.21-2.el7
+
+* 三 8月 21 2013 Steve Dickson <steved@redhat.com> 2.0.21-2
+- Removed rpmlint warnings
+
+* 四 5月 02 2013 Orion Poplawski <orion@cora.nwra.com> - 2.0.21-1
+- Update to 2.0.21
+- Add %check
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.18-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 三 8月 01 2012 Lee Trager <ltrager@amazon.com>
+- Obsolete libevent-headers as its been merged into libevent-devel
+- import source package F17/libevent-2.0.18-1.fc17
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.18-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libevent-1.4.13-4.el6
+
+* 三 4月 04 2012 Steve Dickson <steved@redhat.com> 2.0.18-1
+- Updated to latest stable upstream version: 2.0.18-stable
+- Moved documentation into its own rpm (bz 810138)
+
+* 一 3月 12 2012 Steve Dickson <steved@redhat.com> 2.0.17-1
+- Updated to latest stable upstream version: 2.0.17-stable
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.14-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 8月 10 2011 Steve Dickson <steved@redhat.com> 2.0.14-1
+- Updated to latest stable upstream version: 2.0.14-stable (bz 727129)
+- Removed the installion of the outdate man pages and the latex raw docs.
+- Corrected where the other doc are installed.
+
+* 三 8月 10 2011 Steve Dickson <steved@redhat.com> 2.0.13-1
+- Updated to latest stable upstream version: 2.0.13-stable (bz 727129)
+
+* 二 8月 02 2011 Steve Dickson <steved@redhat.com> 2.0.12-1
+- Updated to latest stable upstream version: 2.0.12-stable
+
+* 三 2月 09 2011 Rahul Sundaram <sundaram@fedoraproject.org> - 2.0.10-2
+- Fix build
+- Update spec to match current guidelines
+- drop no longer needed patch
+
+* 二 2月 08 2011 Steve Dickson <steved@redhat.com> 2.0.10-1
+- Updated to latest stable upstream version: 2.0.10-stable
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.14b-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libevent-1.4.13-1.el6
+
+* 二 6月 22 2010 Steve Dickson <steved@redhat.com> 1.4.14b-1
+- Updated to latest stable upstream version: 1.4.14b
+
+* 五 5月 21 2010 Tom "spot" Callaway <tcallawa@redhat.com> 1.4.13-2
+- disable static libs (bz 556067)
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/libevent-1.4.13-1
+- import source package RHEL5/libevent-1.1a-3.2.1
+- added submodule prep for package libevent
+
+* 二 12月 15 2009 Steve Dickson <steved@redhat.com> 1.4.13-1
+- Updated to latest stable upstream version: 1.4.13
+
+* 二 8月 18 2009 Steve Dickson <steved@redhat.com> 1.4.12-1
+- Updated to latest stable upstream version: 1.4.12
+- API documentation is now installed (bz 487977)
+- libevent-devel multilib conflict (bz 477685)
+- epoll backend allocates too much memory (bz 517918)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 4月 20 2009 Steve Dickson <steved@redhat.com> 1.4.10-1
+- Updated to latest stable upstream version: 1.4.10
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 7月 01 2008 Steve Dickson <steved@redhat.com> 1.4.5-1
+- Updated to latest stable upstream version 1.4.5-stable
+
+* 一 6月 02 2008 Steve Dickson <steved@redhat.com> 1.4.4-1
+- Updated to latest stable upstream version 1.4.4-stable
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.3e-2
+- Autorebuild for GCC 4.3
+
+* 二 1月 22 2008 Steve Dickson <steved@redhat.com> 1.3e-1
+- Updated to latest stable upstream version 1.3e
+
+* 五 3月 09 2007 Steve Dickson <steved@redhat.com> 1.3b-1
+- Updated to latest upstream version 1.3b
+- Incorporated Merge Review comments (bz 226002)
+- Increased the polling timeout (bz 204990)
+
+* 二 2月 20 2007 Steve Dickson <steved@redhat.com> 1.2a-1
+- Updated to latest upstream version 1.2a
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> 
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.1a-3.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.1a-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 24 2006 Warren Togami <wtogami@redhat.com> - 1.1a-3
+- rebuild (#177697)
+
+* 一 7月 04 2005 Ralf Ertzinger <ralf@skytale.net> - 1.1a-2
+- Removed unnecessary -r from rm
+
+* 五 6月 17 2005 Ralf Ertzinger <ralf@skytale.net> - 1.1a-1
+- Upstream update
+
+* 三 6月 08 2005 Ralf Ertzinger <ralf@skytale.net> - 1.1-2
+- Added some docs
+- Moved "make verify" into %check
+
+* 一 6月 06 2005 Ralf Ertzinger <ralf@skytale.net> - 1.1-1
+- Initial build for Fedora Extras, based on the package
+  by Dag Wieers
+

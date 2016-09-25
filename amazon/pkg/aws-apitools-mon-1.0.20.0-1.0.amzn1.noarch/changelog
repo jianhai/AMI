@@ -1,0 +1,41 @@
+* 四 2月 27 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.0.20.0 from upstream
+
+* 五 9月 21 2012 Lee Trager <ltrager@amazon.com>
+- Update to 1.0.13.4 from upstream
+
+* 一 6月 25 2012 Lee Trager <ltrager@amazon.com>
+- Search builddir for CRLF files and require dos2unix
+- Convert all text files to Unix format
+
+* 五 6月 15 2012 Lee Trager <ltrager@amazon.com>
+- Fix source directory
+- These tools come as a tarball
+- Clean up spec file
+
+* 二 8月 09 2011 Nathan Blackham <blackham@amazon.com>
+- add compat libs
+
+* 三 5月 18 2011 Nathan Blackham <blackham@amazon.com>
+- update to aws-apitools-mon-1.0.12.1
+
+* 一 2月 07 2011 Nathan Blackham <blackham@amazon.com>
+- updating jre requires to >= 1.6.0
+
+* 二 12月 21 2010 Nathan Blackham <blackham@amazon.com>
+- upgrading to 1.0.9.5
+
+* 三 7月 21 2010 Nathan Blackham <blackham@amazon.com>
+- add dist tag
+
+* 四 7月 01 2010 Cristian Gafton <gafton@amazon.com>
+- import source package tools/aws-apitools-mon-1.0.2.3-2
+- setup complete for package aws-apitools-mon
+
+* 二 4月 13 2010 KaOS <kaos@amazon.com>
+- Requires: jre
+
+* 四 2月 25 2010 KaOS <kaos@amazon.com>
+- 1.0.9.0
+- Initial packaging
+

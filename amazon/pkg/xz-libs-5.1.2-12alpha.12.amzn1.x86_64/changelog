@@ -1,0 +1,141 @@
+* 五 2月 19 2016 Matt Nierzwicki <nierzwic@amazon.com>
+- Merge branch 'el7'
+
+* 三 7月 08 2015 Pavel Raiskup <praiskup@redhat.com> - 5.1.2-12alpha
+- xzgrep: return 0 when at least one file matches (rhbz#1109123)
+
+* 二 6月 17 2014 Pavel Raiskup <praiskup@redhat.com> - 5.1.2-9alpha
+- better check the version of less binary (#1082639)
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/xz-5.1.2-8alpha.el7
+
+* 五 3月 14 2014 Cristian Gafton <gafton@amazon.com>
+- revert the -compat libs version to version shipped in RHEL6
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 5.1.2-8alpha
+- Mass rebuild 2014-01-24
+
+* 五 1月 10 2014 Pavel Raiskup <praiskup@redhat.com> - 5.1.2-7alpha
+- build with -O3 on ppc64 (private #1051078)
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 5.1.2-6alpha
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/xz-5.1.2-5alpha.el7
+
+* 二 4月 09 2013 Pavel Raiskup <praiskup@redhat.com> - 5.1.2-5alpha
+- fix manual page inconsistencies with help output (private #948533)
+- enable/fix the 'xzgrep -h' (private #850898)
+
+* 四 2月 21 2013 Karsten Hopp <karsten@redhat.com> 5.1.2-4alpha
+- add support for ppc64p7 arch (Power7 optimized)
+
+* 五 2月 15 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.1.2-3alpha
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 日 7月 22 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.1.2-2alpha
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 7月 05 2012 Jindrich Novy <jnovy@redhat.com> 5.1.2alpha-1
+- update to 5.1.2alpha
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.1.1-2alpha
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 日 10月 16 2011 Jindrich Novy <jnovy@redhat.com> 5.1.1alpha-1
+- update to 5.1.1alpha
+
+* 一 6月 20 2011 Jindrich Novy <jnovy@redhat.com> 5.0.3-2
+- better to have upstream tarballs in different formats than XZ
+  to allow bootstrapping (#714765)
+
+* 一 5月 23 2011 Jindrich Novy <jnovy@redhat.com> 5.0.3-1
+- update to 5.0.3
+
+* 一 4月 04 2011 Jindrich Novy <jnovy@redhat.com> 5.0.2-1
+- update to 5.0.2
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.0.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 六 1月 29 2011 Jindrich Novy <jnovy@redhat.com> 5.0.1-1
+- update to 5.0.1
+
+* 二 10月 26 2010 Jindrich Novy <jnovy@redhat.com> 5.0.0-4
+- call ldconfig for compat-libs and fix description
+
+* 一 10月 25 2010 Jindrich Novy <jnovy@redhat.com> 5.0.0-3
+- introduce compat-libs subpackage with older soname to
+  resolve problems with soname bump and for packages requiring
+  older xz-4.999.9beta
+
+* 一 10月 25 2010 Jindrich Novy <jnovy@redhat.com> 5.0.0-2
+- rebuild
+
+* 一 10月 25 2010 Jindrich Novy <jnovy@redhat.com> 5.0.0-1
+- update to the new upstream release
+
+* 六 10月 16 2010 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.3.beta.212.gacbc
+- update to latest git snapshot
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/xz-4.999.9-0.3.beta.20091007git.el6
+- import source package RHEL6/xz-4.999.9-0.1.beta.20091007git.1.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/xz-4.999.9-0.3.beta.20091007git.el5
+- added submodule prep for package xz
+
+* 四 4月 01 2010 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.2.20100401.beta
+- sync with upstream (#578925)
+
+* 四 2月 18 2010 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.2.20091007.beta
+- move xz man pages to main package, leave lzma ones where they belong (#566484)
+
+* 三 10月 07 2009 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.1.20091007.beta
+- sync with upstream again
+
+* 五 10月 02 2009 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.1.20091002.beta
+- sync with upstream to generate the same archives on machines with different
+  endianess
+
+* 五 8月 28 2009 Jindrich Novy <jnovy@redhat.com> 4.999.9-0.1.beta
+- update to 4.999.9beta
+
+* 一 8月 17 2009 Jindrich Novy <jnovy@redhat.com> 4.999.8-0.10.beta.20090817git
+- sync with upstream because of #517806
+
+* 二 8月 04 2009 Jindrich Novy <jnovy@redhat.com> 4.999.8-0.9.beta.20090804git
+- update to the latest GIT snapshot
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.999.8-0.8.beta
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 17 2009 Bill Nottingham <notting@redhat.com> 4.999.8-0.7.beta
+- tweak summary
+- add %check section (<tibbs@math.uh.edu>)
+
+* 四 7月 09 2009 Bill Nottingham <notting@redhat.com> 4.999.8-0.6.beta
+- fix release versioning to match guidelines
+- fix up lzma-compat summary/description
+- tweak licensing
+
+* 一 6月 22 2009 Jindrich Novy <jnovy@redhat.com> 4.999.8beta-0.5
+- introduce lzma-compat subpackage
+
+* 五 6月 19 2009 Jindrich Novy <jnovy@redhat.com> 4.999.8beta-0.4
+- try to not to conflict with lzma
+
+* 四 6月 18 2009 Jindrich Novy <jnovy@redhat.com> 4.999.8beta-0.3
+- obsolete but don't provide lzma, they are largely incompatible
+- put beta to Release
+
+* 三 6月 17 2009 Jindrich Novy <jnovy@redhat.com> 4.999.8beta-0.2
+- obsolete old lzma
+- add Requires: pkgconfig
+
+* 二 6月 16 2009 Jindrich Novy <jnovy@redhat.com> 4.999.8beta-0.1
+- package XZ Utils, based on LZMA Utils packaged by Per Patrice Bouchand
+

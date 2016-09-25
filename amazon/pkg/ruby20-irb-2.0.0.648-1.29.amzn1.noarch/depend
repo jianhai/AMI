@@ -1,0 +1,4 @@
+/usr/bin/ruby2.0
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+ruby20 = 2.0.0.648

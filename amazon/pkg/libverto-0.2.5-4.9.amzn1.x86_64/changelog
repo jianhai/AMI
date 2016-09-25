@@ -1,0 +1,59 @@
+* 一 7月 13 2015 Ian Weller <iweller@amazon.com>
+- Add libev bcond, conflicts with earlier krb5, and arch flags to base package provides
+
+* 五 11月 07 2014 Lee Trager <ltrager@amazon.com>
+- Don't build libev on AL
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libverto-0.2.5-4.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 0.2.5-4
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 0.2.5-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libverto-0.2.5-2.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package libverto
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 六 8月 25 2012 Nathaniel McCallum <nathaniel@natemccallum.com> - 0.2.5-1
+- Update to 0.2.5
+- Drop libverto-0.2.4-fix-libev.patch
+
+* 二 8月 07 2012 Nathaniel McCallum <npmccallum@redhat.com> - 0.2.4-4
+- Don't build libev on RHEL
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 一 2月 13 2012 Nathaniel McCallum <npmccallum@redhat.com> - 0.2.4-2
+- Added libverto-0.2.4-fix-libev.patch
+
+* 四 2月 09 2012 Nathaniel McCallum <npmccallum@redhat.com> - 0.2.4-1
+- Update to 0.2.4 release
+
+* 三 2月 08 2012 Nathaniel McCallum <npmccallum@redhat.com> - 0.2.3-1
+- Update to 0.2.3 release
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 五 11月 11 2011 Nathaniel McCallum <npmccallum@redhat.com> - 0.2.2-1
+- Update to 0.2.2 release
+- Add ChangeLog documentation
+
+* 五 11月 11 2011 Nathaniel McCallum <npmccallum@redhat.com> - 0.2.1-2
+- Fix Requires to have proper ISA dependencies
+
+* 四 11月 10 2011 Nathaniel McCallum <npmccallum@redhat.com> - 0.2.1-1
+- Update to 0.2.1
+
+* 一 8月 15 2011 Nathaniel McCallum <npmccallum@redhat.com> - 0.1-1
+- Initial release
+

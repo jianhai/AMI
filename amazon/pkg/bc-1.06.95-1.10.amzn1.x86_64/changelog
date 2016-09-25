@@ -1,0 +1,9 @@
+* 五 7月 09 2010 21:37:37 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bc-1.06.95-1.el6
+
+* 五 5月 07 2010 00:39:27 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/bc-1.06-21
+
+* 五 5月 07 2010 00:11:40 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package bc
+

@@ -1,0 +1,30 @@
+Name        : vim-enhanced
+Epoch       : 2
+Version     : 7.4.1967
+Release     : 1.42.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时41分09秒
+Group       : Applications/Editors
+Size        : 2445312
+License     : Vim and MIT
+Signature   : RSA/SHA256, 2016年07月13日 星期三 18时52分54秒, Key ID bcb4a85b21c0f39f
+Source RPM  : vim-7.4.1967-1.42.amzn1.src.rpm
+Build Date  : 2016年07月06日 星期三 18时26分52秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.vim.org/
+Summary     : A version of the VIM editor which includes recent enhancements
+Description :
+VIM (VIsual editor iMproved) is an updated and improved version of the
+vi editor.  Vi was the first real screen-based editor for UNIX, and is
+still very popular.  VIM improves on vi by adding new features:
+multiple windows, multi-level undo, block highlighting and more.  The
+vim-enhanced package contains a version of VIM with extra, recently
+introduced features like Python and Perl interpreters.
+
+Install the vim-enhanced package if you'd like to use a version of the
+VIM editor which includes recently added enhancements like
+interpreters for the Python and Perl scripting languages.  You'll also
+need to install the vim-common package.

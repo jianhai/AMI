@@ -1,0 +1,128 @@
+* 三 2月 25 2015 Ben Cressey <bcressey@amazon.com>
+- fix glob on egg-info
+
+* 二 2月 03 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 五 9月 12 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Explicitly describe file list on %files
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-pycurl-7.19.0-17.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 7.19.0-17
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 7.19.0-16
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-pycurl-7.19.0-15.1.el7
+
+* 二 4月 09 2013 Kamil Dudka <kdudka@redhat.com> - 7.19.0-15.1
+- add the GLOBAL_ACK_EINTR constant to the list of exported symbols (#920589)
+
+* 三 3月 06 2013 Kamil Dudka <kdudka@redhat.com> - 7.19.0-15
+- allow to return -1 from the write callback (#857875) 
+- remove the patch for curl-config --static-libs no longer needed
+- run the tests against the just built pycurl, not the system one
+
+* 一 2月 25 2013 Kamil Dudka <kdudka@redhat.com> - 7.19.0-14
+- apply bug-fixes committed to upstream CVS since 7.19.0 (fixes #896025)
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.19.0-13
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 三 8月 22 2012 Jan Synáček <jsynacek@redhat.com> - 7.19.0-12
+- Improve spec
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.19.0-11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.19.0-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 日 5月 22 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-pycurl-7.19.0-8.el6
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.19.0-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 12月 20 2010 Dennis Gilmore <dennis@ausil.us> - 7.19.0-8
+- add Missing Requires on keyutils-libs
+
+* 二 8月 17 2010 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.19.0-7
+- Add patch developed by David Malcolm to fix segfaults caused by a missing incref
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 7.19.0-6
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 一 7月 12 2010 Nathan Blackham <blackham@amazon.com>
+- rebuilding on python26
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-pycurl-7.19.0-5.el6
+- import source package RHEL6/python-pycurl-7.19.0-4.1.el6
+- setup complete for package python-pycurl
+
+* 二 3月 02 2010 Karel Klic <kklic@redhat.com> - 7.19.0-5
+- Package COPYING2 file
+- Added MIT as a package license
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.19.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 4月 17 2009 Stepan Kasal <skasal@redhat.com> - 7.19.0-3
+- fix typo in the previous change
+
+* 五 4月 17 2009 Stepan Kasal <skasal@redhat.com> - 7.19.0-2
+- add a require to reflect a dependency on libcurl version (#496308)
+
+* 四 3月 05 2009 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.19.0-1
+- Update to 7.19.0
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.18.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 7.18.2-2
+- Rebuild for Python 2.6
+
+* 四 7月 03 2008 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.18.2-1
+- Update to 7.18.2
+- Thanks to Ville Skyttä re-enable the tests and fix a minor problem
+  with the setup.py. (Bug # 45400)
+
+* 四 6月 05 2008 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.18.1-1
+- Update to 7.18.1
+- Disable tests because it's not testing the built library, it's trying to
+  test an installed library.
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 7.16.4-3
+- Autorebuild for GCC 4.3
+
+* 四 1月 03 2008 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.16.4-2
+- BR openssl-devel
+
+* 三 8月 29 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.16.4-1
+- Update to 7.16.4
+- Update license tag.
+
+* 六 6月 09 2007 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.16.2.1-1
+- Update to released version.
+
+* 四 12月 07 2006 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.16.0-0.1.20061207
+- Update to a CVS snapshot since development has a newer version of curl than is in FC <= 6
+
+* 四 12月 07 2006 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.15.5.1-4
+- Add -DHAVE_CURL_OPENSSL to fix PPC build problem.
+
+* 四 12月 07 2006 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.15.5.1-3
+- Don't forget to Provide: pycurl!!!
+
+* 四 12月 07 2006 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.15.5.1-2
+- Remove INSTALL from the list of documentation
+- Use python_sitearch for all of the files
+
+* 四 12月 07 2006 Jeffrey C. Ollie <jeff@ocjtech.us> - 7.15.5.1-1
+- First version for Fedora Extras
+

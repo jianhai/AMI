@@ -1,0 +1,243 @@
+* 五 7月 12 2013 Lee Trager <ltrager@amazon.com>
+- import source package F19/pkgconfig-0.27.1-2.fc19
+
+* 二 6月 25 2013 Matthias Clasen <mclasen@redhat.com> - 0.27.1-2
+- Fix a few errors in the man page
+
+* 三 3月 27 2013 Christophe Fergeau <cfergeau@redhat.com> 0.27.1-1
+- Update to 0.27.1
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.27-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 7月 31 2012 Kalev Lember <kalevlember@gmail.com> - 1:0.27-1
+- Update to 0.27
+- Drop deps on popt, 0.27 no longer uses it
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.26-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 4月 26 2012 Christophe Fergeau <cfergeau@redhat.com> - 1:0.26-1
+- Update to 0.26 (#802480)
+- Drop upstreamed patches
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.25-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.25-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pkgconfig-0.23-9.1.el6
+
+* 四 7月 08 2010 Matthias Clasen <mclasen@redhat.com> 0.25-2
+- Workaround breakage with autoconf 2.66
+
+* 五 5月 28 2010 Matthias Clasen <mclasen@redhat.com> 0.25-1
+- Update to 0.25
+
+* 四 5月 27 2010 Matthias Clasen <mclasen@redhat.com> 0.24-6
+- Avoid segfaults
+
+* 三 5月 26 2010 Matthias Clasen <mclasen@redhat.com> 0.24-5
+- Expand the popt-compat patch to cover empty Libs: as well
+
+* 三 5月 26 2010 Matthias Clasen <mclasen@redhat.com> 0.24-4
+- Go back to using system popt
+
+* 三 5月 26 2010 Matthias Clasen <mclasen@redhat.com> 0.24-3
+- Revert the escaping change that is causing a lot of problems
+
+* 日 5月 23 2010 Matthias Clasen <mclasen@redhat.com> 0.24-2
+- Go back to using the included popt
+
+* 日 5月 23 2010 Matthias Clasen <mclasen@redhat.com> 0.24-1
+- Update to 0.24
+- Use system glib, popt
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/pkgconfig-0.21-2.el5
+- import source package RHEL5/pkgconfig-0.21-1.fc6
+- added submodule prep for package pkgconfig
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.23-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.23-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 02 2009 Matthias Clasen  <mclasen@redhat.com> - 1:0.23-7
+- Add an explict pkgconfig provides (#476199)
+
+* 一 12月 08 2008 Matthias Clasen  <mclasen@redhat.com> - 1:0.23-6
+- Remove a patch that is no longer necessary and causes more
+  problems than it solves (#224148)
+- Include Requires.private in --print-requires (#426106)
+
+* 五 6月 06 2008 Colin Walters <walters@redhat.com> - 1:0.23-3
+- Add patch pkg-config-lib64-excludes.patch to make my jhbuild happier
+
+* 三 1月 30 2008 Matthias Clasen <mclasen@redhat.com> - 1:0.23-2
+- Readd the requires.private fix that was dropped prematurely
+
+* 三 1月 30 2008 Matthias Clasen <mclasen@redhat.com> - 1:0.23-1
+- Update to 0.23
+
+* 四 11月 15 2007 Matthias Clasen <mclasen@redhat.com> - 1:0.22-4
+- Fix handling of conflicts (#384421)
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1:0.22-3
+- Rebuild for selinux ppc32 issue.
+
+* 二 8月 07 2007 Matthias Clasen <mclasen@redhat.com> - 1:0.22-2
+- Update license field
+
+* 二 7月 10 2007 Matthias Clasen <mclasen@redhat.com> - 1:0.22-1
+- Update to 0.22
+- Drop upstreamed patch
+
+* 四 3月 29 2007 Matthias Clasen <mclasen@redhat.com> - 1:0.21-5
+- Fix --exists to ignore Requires.private
+- Fix Requires.private to operate fully recursive
+
+* 五 2月 02 2007 Matthias Clasen <mclasen@redhat.com> - 1:0.21-4
+- Address some package review complaints
+
+* 一 1月 29 2007 Matthias Clasen <mclasen@redhat.com> - 1:0.21-3
+- Fix a problem where calling glib-config can lead
+  to an infinite loop
+
+* 四 12月 07 2006 Matthias Clasen <mclasen@redhat.com> - 1:0.21-2
+- Small spec file cleanups
+
+* 二 9月 05 2006 Matthias Clasen <mclasen@redhat.com> - 1:0.21-1.fc6
+- Update to 0.21
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:0.20-4.1
+- rebuild
+
+* 一 6月 12 2006 Bill Nottingham <notting@redhat.com> - 1:0.20-4
+- don't call auto*
+
+* 四 6月 01 2006 Matthias Clasen <mclasen@redhat.com> - 1:0.20-3
+- Add missing BuildRequires
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1:0.20-2.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1:0.20-2.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 16 2005 Matthias Clasen <mclasen@redhat.com> 1:0.20-2
+- Rebuild
+
+* 二 10月 25 2005 Matthias Clasen <mclasen@redhat.com> 1:0.20-1
+- Update to 0.20
+- Drop upstreamed patches
+
+* 四 9月 29 2005 Matthias Clasen <mclasen@redhat.com> 1:0.19-1
+- Update to 0.19
+- Take ownership of /usr/share/pkgconfig (#169335)
+
+* 二 8月 09 2005 Matthias Clasen <mclasen@redhat.com> 1:0.18.1-4
+- Fix a segfault which curiously hits only bigendian platforms
+
+* 一 7月 11 2005 Matthias Clasen <mclasen@redhat.com> 1:0.18.1-3
+- Remove unncessary dependencies
+
+* 五 7月 08 2005 Matthias Clasen <mclasen@redhat.com> 1:0.18.1-2
+- Fix the default search path
+
+* 四 7月 07 2005 Matthias Clasen <mclasen@redhat.com> 1:0.18.1-1
+- Update to 0.18.1
+
+* 三 3月 30 2005 Matthias Clasen <mclasen@redhat.com> 1:0.15.0-6
+- add --print-requires and --print-provide options
+
+* 一 3月 07 2005 Matthias Clasen <mclasen@redhat.com> 1:0.15.0-5
+- fix an overflow
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com>
+- rebuild with gcc4
+
+* 三 6月 23 2004 Matthias Clasen <mclasen@redhat.com> 1:0.15.0-3
+- fix underquoted definition in pkg.m4  (#116128)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 Mark McLoughlin <markmc@redhat.com>
+- Update to 0.15.0
+- Fix datadir patch conflict
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 10月 23 2003 Owen Taylor <otaylor@redhat.com> 1:0.14.0-6
+- Make pkgconfig look in /usr/share/pkgconfig as well by default (#98595)
+
+* 四 6月 26 2003 Havoc Pennington <hp@redhat.com> 1:0.14.0-5
+- rebuild
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 10 2003 Nalin Dahyabhai <nalin@redhat.com>
+- suppress /usr/lib64 (instead of /usr/lib) from LIBS by default on multilib
+  arches where the default is to use lib64
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 11月 08 2002 Havoc Pennington <hp@redhat.com>
+- 0.14
+
+* 二 10月 08 2002 Havoc Pennington <hp@redhat.com>
+- use libdir, so we do move .pc files to /usr/lib64
+- use prefix/lib not libdir, so we don't move .pc files to /usr/lib64
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 3月 07 2002 Havoc Pennington <hp@redhat.com>
+- 0.12.0
+
+* 四 2月 07 2002 Havoc Pennington <hp@redhat.com>
+- 0.11.0
+
+* 日 2月 03 2002 Havoc Pennington <hp@redhat.com>
+- backbuild in gnomehide
+- 0.10.0
+- 0.9.0
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 6月 13 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- call libtoolize to make porting to new archs easier
+
+* 四 6月 07 2001 Havoc Pennington <hp@redhat.com>
+- put pkg.m4 in file list
+
+* 三 6月 06 2001 Havoc Pennington <hp@redhat.com>
+- Upgrade to 0.7
+- add man page
+
+* 三 1月 03 2001 Havoc Pennington <hp@redhat.com>
+- Upgrade to 0.5
+
+* 四 12月 14 2000 Bill Nottingham <notting@redhat.com>
+- rebuild because of broken fileutils
+
+* 三 10月 04 2000 Owen Taylor <otaylor@redhat.com>
+- Initial package
+

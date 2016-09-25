@@ -1,0 +1,15 @@
+preinstall scriptlet (using /bin/sh):
+getent group sshd >/dev/null || groupadd -g 74 -r sshd || :
+getent passwd sshd >/dev/null || \
+  useradd -c "Privilege-separated SSH" -u 74 -g sshd \
+  -s /sbin/nologin -r -d /var/empty/sshd sshd 2> /dev/null || :
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add sshd
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]
+then
+	/sbin/service sshd stop > /dev/null 2>&1 || :
+	/sbin/chkconfig --del sshd
+fi
+postuninstall scriptlet (using /bin/sh):
+/sbin/service sshd condrestart > /dev/null 2>&1 || :

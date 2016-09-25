@@ -1,0 +1,22 @@
+* 四 4月 21 2016 Praveen K Paladugu <praween@amazon.com>
+- install grep with growroot module
+
+* 四 2月 05 2015 Jason Green <jasg@amazon.com>
+- Changed to use python 2.7
+
+* 四 3月 06 2014 Ben Cressey <bcressey@amazon.com>
+- merge cloud-utils and cloud-initramfs-tools from upstream
+
+* 五 12月 20 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/cloud-utils-0.27-10.el6
+
+* 五 9月 06 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/cloud-utils-0.27-9.el6
+
+* 二 7月 16 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/cloud-utils-0.27-5.el6
+
+* 一 4月 29 2013 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/cloud-utils-0.27-3.el6
+- setup complete for package cloud-utils
+

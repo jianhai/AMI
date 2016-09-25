@@ -1,0 +1,269 @@
+* 二 10月 14 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libXi-1.7.2-2.2.el6
+
+* 一 7月 14 2014 Benjamin Tissoires <btissoir@redhat.com> 1.7.2-2.2
+- fix disttag
+
+* 三 2月 12 2014 Adam Jackson <ajax@redhat.com> 1.7.2-2.1git}
+- Mass rebuild
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.7.2-2
+- Mass rebuild 2013-12-27
+
+* 三 7月 03 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.7.2-1
+- libXi 1.7.2
+
+* 四 6月 27 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.7.1.901-1
+- libXi 1.7.1.901
+
+* 一 5月 27 2013 Peter Hutterer <peter.hutterer@redhat.com> - 1.7.1-5.20130524git661c45ca1
+- Require libX11 1.6RC2 for _XEatDataWords
+
+* 五 5月 24 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.7.1-4.20130524git661c45ca1
+- Udpate to git snapshot to fix CVEs listed below
+- CVE-2013-1984
+- CVE-2013-1995
+- CVE-2013-1998
+
+* 二 5月 21 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.7.1-3
+- fix sequence number copy - the cookie already had (a potentially
+  different) sequence number copied (#965347)
+
+* 五 5月 17 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.7.1-2
+- copy the sequence number into XI2 events
+
+* 五 4月 05 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.7.1-1
+- libXi 1.7.1
+
+* 四 3月 07 2013 Peter Hutterer <peter.hutterer@redhat.com> 1.7-1
+- libXi 1.7
+
+* 一 2月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libXi-1.6.1-3.el6
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6.99.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 1月 08 2013 Adam Jackson <ajax@redhat.com> 1.6.99.1-1
+- libXi 1.6.99.1
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 5月 03 2012 Peter Hutterer <peter.hutterer@redhat.com> 1.6.1-1
+- libXi 1.6.1
+
+* 四 3月 08 2012 Peter Hutterer <peter.hutterer@redhat.com> 1.6.0-1
+- libXi 1.6
+
+* 三 2月 15 2012 Peter Hutterer <peter.hutterer@redhat.com> 1.5.99.3-1
+- libXi 1.5.99.3
+
+* 一 2月 06 2012 Peter Hutterer <peter.hutterer@redhat.com> 1.5.99.2-4
+- Add requires for libX11 to avoid mismatches when updating
+
+* 五 1月 27 2012 Peter Hutterer <peter.hutterer@redhat.com> 1.5.99.2-3
+- Bump libX11-devel requirement up to what configure actually wants
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.99.2-2.20111222gitae0187c87
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 12月 22 2011 Peter Hutterer <peter.hutterer@redhat.com> 1.5.99.2-1.20111222.gitae0187c87
+- 1.5.99.2 from git
+
+* 三 12月 21 2011 Peter Hutterer <peter.hutterer@redhat.com> 1.5.0-1
+- libXi 1.5.0
+
+* 三 11月 09 2011 Peter Hutterer <peter.hutterer@redhat.com> 1.4.99.1-1
+- Update to 1.4.99.1 (with XI 2.1 support)
+
+* 二 10月 11 2011 Peter Hutterer <peter.hutterer@redhat.com> 1.4.3-3
+- Fix 0001-Handle-unknown-device-classes.patch: missing prototype change for
+  copy_classes in XIQueryDevice caused parameter corruption (#744960)
+
+* 三 8月 17 2011 Peter Hutterer <peter.hutterer@redhat.com> 1.4.3-2
+- 0001-Handle-unknown-device-classes.patch: don't corrupt memory when a
+  server sends unknown device classes.
+
+* 二 6月 07 2011 Peter Hutterer <peter.hutterer@redhat.com> 1.4.3-1
+- libXi 1.4.3
+
+* 一 3月 21 2011 Adam Jackson <ajax@redhat.com> 1.4.2-1
+- libXi 1.4.2
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 1月 26 2011 Peter Hutterer <peter.hutterer@redhat.com> 1.4.1-1
+- libXi 1.4.1
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libXi-1.3-3.el6
+
+* 三 11月 03 2010 Peter Hutterer <peter.hutterer@redhat.com> 1.4.0-1
+- libXi 1.4
+- disable spec building, don't think they're of much of much use to our
+  users.
+
+* 三 8月 04 2010 Peter Hutterer <peter.hutterer@redhat.com> 1.3.2-1
+- libXi 1.3.2
+  libXi 1.3.1 had a bug in the configure script.
+
+* 一 8月 02 2010 Peter Hutterer <peter.hutterer@redhat.com> 1.3.1-1
+- libXi 1.3.1
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libXi-1.3-2.el6
+- import source package RHEL6/libXi-1.3-1.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/libXi-1.0.1-4.el5_4
+- import source package RHEL5/libXi-1.0.1-3.1
+- added submodule prep for package libXi
+
+* 二 2月 02 2010 Peter Hutterer <peter.hutterer@redhat.com> 1.3-2
+- Remove unnecessary libXau-devel BuildRequires.
+
+* 二 10月 06 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.3-1
+- libXi 1.3
+
+* 二 8月 25 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-11.20090825
+- Update to today's git master, requires inputproto 1.9.99.902
+
+* 三 8月 05 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-10.20090805
+- Update to today's git master
+- Re-enable parallel builds, the man page makefile is fixed now.
+
+* 二 8月 04 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-9.20090804
+- Update to today's git master
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.99-8.20090723
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 23 2009 Adam Jackson <ajax@redhat.com> 1.2.99-7.20090723
+- Un-require xorg-x11-filesystem
+
+* 四 7月 23 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-6.20090723
+- Update to today's git master
+
+* 四 7月 16 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-5.20090716
+- Update to today's git master
+
+* 一 7月 13 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-4.20090713
+- Update to today's git master
+- Add commitid file.
+
+* 日 7月 12 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-3.20090712
+- Update to today's git master
+
+* 五 6月 19 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-2.20090619
+- Add missing make-git-snapshot.sh
+
+* 五 6月 19 2009 Peter Hutterer <peter.hutterer@redhat.com> 1.2.99-1.20090619
+- Update to today's git master
+
+* 四 2月 26 2009 Peter Hutterer <peter.hutterer@redhat.com> - 1.2.1-1
+- libXi 1.2.1
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 12月 03 2008 Adam Jackson <ajax@redhat.com> 1.2.0-1
+- libXi 1.2.0
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.1.3-4
+- Autorebuild for GCC 4.3
+
+* 二 1月 15 2008 Brian Pepple <bpepple@fedoraproject.org> - 1.1.3-3
+- Fix pkconfig type on -devel.
+
+* 五 1月 11 2008 parag <paragn@fedoraproject.org> 1.1.3-2
+- Merge-review #226076
+- Removed BR:pkgconfig
+- Removed XFree86-libs, xorg-x11-libs XFree86-devel, xorg-x11-devel as Obsoletes
+- Removed zero-length AUTHORS README file
+
+* 一 9月 24 2007 Adam Jackson <ajax@redhat.com> 1.1.3-1
+- libXi 1.1.3
+
+* 二 8月 21 2007 Adam Jackson <ajax@redhat.com> - 1.1.1-2
+- Rebuild for build id
+
+* 三 7月 11 2007 Adam Jackson <ajax@redhat.com> 1.1.1-1
+- libXi 1.1.1
+
+* 六 4月 21 2007 Matthias Clasen <mclasen@redhat.com> 1.0.4-2
+- Don't install INSTALL
+
+* 三 4月 11 2007 Adam Jackson <ajax@redhat.com> 1.0.4-1
+- libXi 1.0.4
+
+* 一 11月 20 2006 Adam Jackson <ajax@redhat.com> 1.0.2-1
+- Update to 1.0.2
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> 1.0.1-3.1
+- rebuild
+
+* 一 6月 05 2006 Mike A. Harris <mharris@redhat.com> 1.0.1-3
+- Added "Requires: xorg-x11-proto-devel" to devel package for xi.pc
+- Remove package ownership of mandir/libdir/etc.
+
+* 一 6月 05 2006 Mike A. Harris <mharris@redhat.com> 1.0.1-2
+- Replace "makeinstall" with "make install DESTDIR=..." for (#192721)
+- Remove package ownership of mandir/libdir/etc.
+
+* 四 4月 27 2006 Adam Jackson <ajackson@redhat.com> 1.0.1-1
+- Update to 1.0.1
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.0-2.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.0.0-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 23 2006 Mike A. Harris <mharris@redhat.com> 1.0.0-2
+- Bumped and rebuilt
+
+* 五 12月 16 2005 Mike A. Harris <mharris@redhat.com> 1.0.0-1
+- Updated libXi to version 1.0.0 from X11R7 RC4
+
+* 二 12月 13 2005 Mike A. Harris <mharris@redhat.com> 0.99.2-1
+- Updated libXi to version 0.99.2 from X11R7 RC3
+- Added "Requires(pre): xorg-x11-filesystem >= 0.99.2-3", to ensure
+  that /usr/lib/X11 and /usr/include/X11 pre-exist.
+- Removed 'x' suffix from manpage directories to match RC3 upstream.
+
+* 二 11月 15 2005 Mike A. Harris <mharris@redhat.com> 0.99.1-3
+- Added "BuildRequires: libXau-devel", as build fails without it, but does
+  not check for it with ./configure.  Bug (fdo#5065)
+
+* 五 11月 11 2005 Mike A. Harris <mharris@redhat.com> 0.99.1-2
+- Changed 'Conflicts: XFree86-devel, xorg-x11-devel' to 'Obsoletes'
+- Changed 'Conflicts: XFree86-libs, xorg-x11-libs' to 'Obsoletes'
+
+* 一 10月 24 2005 Mike A. Harris <mharris@redhat.com> 0.99.1-1
+- Updated libXi to version 0.99.1 from X11R7 RC1
+- Updated file manifest to find manpages in "man3x"
+
+* 四 9月 29 2005 Mike A. Harris <mharris@redhat.com> 0.99.0-3
+- Renamed package to remove xorg-x11 from the name due to unanimous decision
+  between developers.
+- Use Fedora Extras style BuildRoot tag.
+- Disable static library creation by default.
+- Add missing defattr to devel subpackage
+- Add missing documentation files to doc macro
+
+* 二 8月 23 2005 Mike A. Harris <mharris@redhat.com> 0.99.0-2
+- Renamed package to prepend "xorg-x11" to the name for consistency with
+  the rest of the X11R7 packages.
+- Added "Requires: %{name} = %{version}-%{release}" dependency to devel
+  subpackage to ensure the devel package matches the installed shared libs.
+- Added virtual "Provides: lib<name>" and "Provides: lib<name>-devel" to
+  allow applications to use implementation agnostic dependencies.
+- Added post/postun scripts which call ldconfig.
+- Added Conflicts with XFree86-libs and xorg-x11-libs to runtime package,
+  and Conflicts with XFree86-devel and xorg-x11-devel to devel package.
+
+* 一 8月 22 2005 Mike A. Harris <mharris@redhat.com> 0.99.0-1
+- Initial build.
+

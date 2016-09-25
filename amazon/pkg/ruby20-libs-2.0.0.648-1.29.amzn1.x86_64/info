@@ -1,0 +1,19 @@
+Name        : ruby20-libs
+Version     : 2.0.0.648
+Release     : 1.29.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分46秒
+Group       : Development/Libraries
+Size        : 10494675
+License     : Ruby or BSD
+Signature   : RSA/SHA256, 2016年01月17日 星期日 19时44分23秒, Key ID bcb4a85b21c0f39f
+Source RPM  : ruby20-2.0.0.648-1.29.amzn1.src.rpm
+Build Date  : 2016年01月14日 星期四 21时13分29秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://ruby-lang.org/
+Summary     : Libraries necessary to run Ruby
+Description :
+This package includes the libruby, necessary to run Ruby.

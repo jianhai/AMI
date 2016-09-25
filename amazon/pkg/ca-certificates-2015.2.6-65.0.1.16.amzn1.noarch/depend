@@ -1,0 +1,11 @@
+/bin/bash
+/bin/sh
+/bin/sh
+/bin/sh
+config(ca-certificates) = 2015.2.6-65.0.1.16.amzn1
+coreutils
+coreutils
+p11-kit >= 0.18.4-2
+p11-kit-trust >= 0.18.4-2
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

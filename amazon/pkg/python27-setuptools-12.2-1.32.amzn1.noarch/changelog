@@ -1,0 +1,204 @@
+* 四 3月 12 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Add python34 subpackage
+
+* 一 2月 23 2015 Rodrigo Novo <rodarvus@amazon.de>
+- Updated to upstream version 12.2
+
+* 一 9月 15 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Split package into Python 2.6 / Python 2.7 subpackages
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-setuptools-0.9.8-3.el7
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 0.9.8-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/python-setuptools-0.9.8-2.el7
+
+* 三 9月 18 2013 Bohuslav Kabrda <bkabrda@redhat.com> - 0.9.8-2
+- Always use match_hostname function from backports-ssl_match_hostname.
+Resolves: rhbz#999863
+
+* 一 7月 29 2013 Bohuslav Kabrda <bkabrda@redhat.com> - 0.9.8-1
+- Update to setuptools 0.9.8.
+
+* 三 7月 17 2013 Matej Stuchlik <mstuchli@redhat.com> - 0.9.5-1
+- Updated to 0.9.5, fixing rhbz#963260
+
+* 一 7月 15 2013 Bohuslav Kabrda <bkabrda@redhat.com> - 0.9.1-1
+- Update to setuptools 0.9.1.
+
+* 四 7月 11 2013 Bohuslav Kabrda <bkabrda@redhat.com> - 0.8-1
+- Switch source from distribute to setuptools, that are now uptodate and supported.
+- Update to setuptools 0.8.0.
+- Specfile cleanup (unnecessary Python 3 logic, old RPM stuff, bogus changelog dates)
+
+* 四 4月 11 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.36-1
+- Update to upstream 0.6.36.  Many bugfixes
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.28-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 五 8月 03 2012 David Malcolm <dmalcolm@redhat.com> - 0.6.28-3
+- rebuild for https://fedoraproject.org/wiki/Features/Python_3.3
+
+* 五 8月 03 2012 David Malcolm <dmalcolm@redhat.com> - 0.6.28-2
+- remove rhel logic from with_python3 conditional
+
+* 一 7月 23 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.28-1
+- New upstream release:
+  - python-3.3 fixes
+  - honor umask when setuptools is used to install other modules
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.27-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 一 6月 11 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.27-2
+- Fix easy_install.py having a python3 shebang in the python2 package
+
+* 四 6月 07 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.27-1
+- Upstream bugfix
+
+* 二 5月 15 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.24-2
+- Upstream bugfix
+
+* 二 3月 06 2012 Cristian Gafton <gafton@amazon.com>
+- make check under p[ython 2.4 requires python newer than 2.4...
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.24-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 一 10月 17 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.24-1
+- Upstream bugfix
+- Compile the win32 launcher binary using mingw
+
+* 日 8月 21 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.21-1
+- Upstream bugfix release
+
+* 四 7月 14 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.19-1
+- Upstream bugfix release
+
+* 二 2月 22 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.14-7
+- Switch to patch that I got in to upstream
+
+* 二 2月 22 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.14-6
+- Fix build on python-3.2
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.14-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-setuptools-0.6.10-3.el6
+
+* 日 8月 22 2010 Thomas Spura <tomspur@fedoraproject.org> - 0.6.14-4
+- rebuild with python3.2
+  http://lists.fedoraproject.org/pipermail/devel/2010-August/141368.html
+
+* 二 8月 10 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.14-3
+- Update description to mention this is distribute
+
+* 四 7月 22 2010 Thomas Spura <tomspur@fedoraproject.org> - 0.6.14-2
+- bump for building against python 2.7
+
+* 四 7月 22 2010 Thomas Spura <tomspur@fedoraproject.org> - 0.6.14-1
+- update to new version
+- all patches are upsteam
+
+* 三 7月 21 2010 David Malcolm <dmalcolm@redhat.com> - 0.6.13-7
+- generalize path of easy_install-2.6 and -3.1 to -2.* and -3.*
+
+* 三 7月 21 2010 David Malcolm <dmalcolm@redhat.com> - 0.6.13-6
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 二 7月 13 2010 Cristian Gafton <gafton@amazon.com>
+- rebuild
+
+* 一 7月 12 2010 Cristian Gafton <gafton@amazon.com>
+- pre-merge commit for rhel6 merge
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-setuptools-0.6.10-1.el6
+- import source package RHEL6/python-setuptools-0.6c9-5.1.el6
+
+* 六 7月 03 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.13-5
+- Upstream patch for compatibility problem with setuptools
+- Minor spec cleanups
+- Provide python-distribute for those who see an import distribute and need
+  to get the proper package.
+
+* 三 6月 30 2010 Cristian Gafton <gafton@amazon.com>
+- import source package GOBI/python-setuptools-0.6c7-1
+
+* 四 6月 10 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.13-4
+- Fix race condition in unittests under the python-2.6.x on F-14.
+
+* 四 6月 10 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.13-3
+- Fix few more buildroot macros
+
+* 四 6月 10 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.13-2
+- Include data that's needed for running tests
+
+* 四 6月 10 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.13-1
+- Update to upstream 0.6.13
+- Minor specfile formatting fixes
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/python-setuptools-0.6c5-2.el5
+- added submodule prep for package python-setuptools
+
+* 四 2月 04 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.10-3
+- First build with python3 support enabled.
+
+* 五 1月 29 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.10-2
+- Really disable the python3 portion
+
+* 五 1月 29 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.10-1
+- Update the python3 portions but disable for now.
+- Update to 0.6.10
+- Remove %pre scriptlet as the file has a different name than the old
+  package's directory
+
+* 二 1月 26 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.9-4
+- Fix install to make /usr/bin/easy_install the py2 version
+- Don't need python3-tools since the library is now in the python3 package
+- Few other changes to cleanup style
+
+* 五 1月 22 2010 David Malcolm <dmalcolm@redhat.com> - 0.6.9-2
+- add python3 subpackage
+
+* 一 12月 14 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.9-1
+- New upstream bugfix release.
+
+* 日 12月 13 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.8-2
+- Test rebuild
+
+* 一 11月 16 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.8-1
+- Update to 0.6.8.
+- Fix directory => file transition when updating from setuptools-0.6c9.
+
+* 二 11月 03 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.7-2
+- Fix duplicate inclusion of files.
+- Only Obsolete old versions of python-setuptools-devel
+
+* 二 11月 03 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.7-1
+- Move easy_install back into the main package as the needed files have been
+  moved from python-devel to the main python package.
+- Update to 0.6.7 bugfix.
+
+* 五 10月 16 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.6-1
+- Upstream bugfix release.
+
+* 一 10月 12 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6.4-1
+- First build from the distribute codebase -- distribute-0.6.4.
+- Remove svn patch as upstream has chosen to go with an easier change for now.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6c9-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 14 2009 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c9-4
+- Apply SVN-1.6 versioning patch (rhbz #511021)
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6c9-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+

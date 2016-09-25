@@ -1,0 +1,52 @@
+* 二 8月 26 2014 Ben Cressey <bcressey@amazon.com>
+- list packaged files
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libpipeline-1.2.3-3.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 1.2.3-3
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.3-2
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libpipeline-1.2.3-1.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package libpipeline
+
+* 三 4月 24 2013 Peter Schiffer <pschiffe@redhat.com> - 1.2.3-1
+- resolves: #956003
+  updated to 1.2.3
+
+* 二 3月 19 2013 Peter Schiffer <pschiffe@redhat.com> - 1.2.2-4
+- fixed memory leaks detected by valgrind
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 五 11月 30 2012 Peter Schiffer <pschiffe@redhat.com> - 1.2.2-2
+- resolves: #876108
+  fixed size_t underflow in pipeline_readline() function
+
+* 四 10月 18 2012 Peter Schiffer <pschiffe@redhat.com> - 1.2.2-1
+- updated to 1.2.2
+
+* 四 9月 06 2012 Peter Schiffer <pschiffe@redhat.com> - 1.2.1-2
+- enabled test suite at build time
+- cleaned .spec file
+
+* 一 7月 23 2012 Peter Schiffer <pschiffe@redhat.com> - 1.2.1-1
+- update to 1.2.1
+- fixed FTBFS caused by gnulib
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 二 4月 19 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 1.2.0-1
+- initial build
+

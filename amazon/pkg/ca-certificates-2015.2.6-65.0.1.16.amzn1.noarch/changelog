@@ -1,0 +1,190 @@
+* 二 3月 22 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/ca-certificates-2015.2.6-65.0.1.el6_7
+
+* 五 1月 22 2016 Kai Engert <kaie@redhat.com> - 2015.2.6-65.0.1
+- Update to CKBI 2.6 from NSS 3.21 with legacy modifications.
+
+* 三 5月 06 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/ca-certificates-2015.2.4-65.0.1.el6_6
+
+* 四 4月 23 2015 Kai Engert <kaie@redhat.com> - 2015.2.4-65.1
+- Update to CKBI 2.4 from NSS 3.18.1 with legacy modifications.
+
+* 二 4月 14 2015 Kai Engert <kaie@redhat.com> - 2015.2.3-65.3
+- Fix a typo in the ca-legacy manual page (rhbz#1208850)
+
+* 三 4月 01 2015 Kai Engert <kaie@redhat.com> - 2015.2.3-65.2
+- Include the legacy CA certificates in the classic TLS bundle, too.
+
+* 二 3月 31 2015 Kai Engert <kaie@redhat.com> - 2015.2.3-65.1
+- Update to CKBI 2.3 from NSS 3.18 with legacy modifications.
+- Add a patch to the source RPM that documents the changes from the
+  upstream version.
+- Introduce the ca-legacy utility, a manual page, and the ca-legacy.conf
+  configuration file.
+- The new scriptlets require the coreutils package.
+- Remove the obsolete blacklist.txt file.
+
+* 五 1月 23 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 四 12月 04 2014 Kai Engert <kaie@redhat.com> - 2014.1.98-65.2
+- Add an alternative version of the "Thawte Premium Server CA" root,
+  which carries a SHA1-RSA signature, to allow OpenJDK to verify applets
+  which contain that version of the root certificate (rhbz#1138230).
+  This change doesn't add trust for another key, because both versions
+  of the certificate use the same public key.
+
+* 二 10月 14 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/ca-certificates-2014.1.98-65.1.el6
+
+* 二 8月 19 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/ca-certificates-2014.1.98-65.0.el6_5
+
+* 一 7月 14 2014 Kai Engert <kaie@redhat.com> - 2014.1.98-65.1
+- Rebuild, ensure y-stream uses larger release number than z-stream.
+
+* 四 5月 29 2014 Kai Engert <kaie@redhat.com> - 2014.1.98-65.0
+- Update to CKBI 1.98 from NSS 3.16.1
+
+* 五 12月 20 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/ca-certificates-2013.1.95-65.1.el6_5
+
+* 二 12月 17 2013 Kai Engert <kaie@redhat.com> - 2013.1.95-65.1
+- Bump release number for consistency across branches
+
+* 二 12月 17 2013 Kai Engert <kaie@redhat.com> - 2013.1.95-65.0
+- Update to CKBI 1.95 from NSS 3.15.3.1
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/ca-certificates-2013.1.94-65.0.el6
+
+* 二 9月 03 2013 Kai Engert <kaie@redhat.com> - 2013.1.94-65.0
+- Update to CKBI 1.94 from NSS 3.15
+
+* 四 7月 18 2013 Kai Engert <kaie@redhat.com> - 2012.87-65.9
+- fix manpage format
+
+* 三 7月 17 2013 Kai Engert <kaie@redhat.com> - 2012.87-65.8
+- improve manpage
+
+* 四 7月 11 2013 Kai Engert <kaie@redhat.com> - 2012.87-65.7
+- ExcludeArch/ExclusiveArch doesn't work to enforce a build host
+- Added comment that explains the special build requirements.
+- Added a comment suggesting to keep the release number below the 
+  ones used on RHEL 7.
+- Fixed permissions of /etc/pki/java (thanks to stefw)
+
+* 一 7月 08 2013 Kai Engert <kaie@redhat.com> - 2012.87-65.6
+- set a certificate alias in trusted bundle (thanks to Ludwig Nussel)
+
+* 一 7月 08 2013 Kai Engert <kaie@redhat.com> - 2012.87-65.5
+- update required p11-kit version
+
+* 三 7月 03 2013 Kai Engert <kaie@redhat.com> - 2012.87-65.4
+- attempt to handle unsupported downgrades, where the admin has enabled
+  legacy support, but downgrades to an old package that is incompatible
+  provide the new feature.
+- move manual page to the man8 section (system administration commands)
+- simplify the README files now that we have a manual page
+
+* 五 6月 14 2013 Kai Engert <kaie@redhat.com> - 2012.87-65.3
+- added a manual page and related build requirements
+- updated copyright sections in scripts
+- enhance update-ca-trust script
+
+* 五 6月 14 2013 Stef Walter <stefw@redhat.com> - 2012.87-65.2
+- update-ca-trust: Print warnings to stderr
+
+* 五 6月 14 2013 Stef Walter <stefw@redhat.com> - 2012.87-65.1
+- update-ca-trust: Update p11-kit script path
+- update-ca-trust: script uses bash not sh
+
+* 五 6月 14 2013 Kai Engert <kaie@redhat.com> - 2012.87-65.0
+- Major rework introducing the SharedSystemCertificates feature, 
+  disabled by default.
+- Require the p11-kit package that contains tools to automatically create
+  other file format bundles.
+- Added a update-ca-trust script which can be used to enable the
+  new system and to regenerate the merged trust output.
+- Refer to the various README files that have been added for more detailed
+  explanation of the new system.
+- No longer require rsc for building. Remove use of rcs/ident.
+- Update source URLs and comments, add source file for version information.
+- Add explanation for the future version numbering scheme,
+  because the old numbering scheme assumed upstream using cvs,
+  which is no longer true, and therefore can no longer be used.
+
+* 四 3月 01 2012 Joe Orton <jorton@redhat.com> - 2010.63-4
+- fix inclusion of code-signing-only certs in .trust.crt
+- exclude blacklisted root from java keystore too
+- remove trust from DigiNotar root (#734678)
+
+* 二 9月 13 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/ca-certificates-2010.63-3.el6_1.5
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/ca-certificates-2010.63-3.el6
+- import source package RHEL6/ca-certificates-2010-2.el6
+- setup complete for package ca-certificates
+
+* 三 4月 07 2010 Joe Orton <jorton@redhat.com> - 2010.63-3
+- package /etc/ssl/certs symlink for third-party apps (#572725)
+
+* 三 4月 07 2010 Joe Orton <jorton@redhat.com> - 2010.63-2
+- rebuild
+
+* 三 4月 07 2010 Joe Orton <jorton@redhat.com> - 2010.63-1
+- update to certdata.txt r1.63
+- use upstream RCS version in Version
+
+* 五 3月 19 2010 Joe Orton <jorton@redhat.com> - 2010-4
+- fix ca-bundle.crt (#575111)
+
+* 四 3月 18 2010 Joe Orton <jorton@redhat.com> - 2010-3
+- update to certdata.txt r1.58
+- add /etc/pki/tls/certs/ca-bundle.trust.crt using 'TRUSTED CERTICATE' format
+- exclude ECC certs from the Java cacerts database
+- catch keytool failures
+- fail parsing certdata.txt on finding untrusted but not blacklisted cert
+
+* 五 1月 15 2010 Joe Orton <jorton@redhat.com> - 2010-2
+- fix Java cacert database generation: use Subject rather than Issuer
+  for alias name; add diagnostics; fix some alias names.
+
+* 一 1月 11 2010 Joe Orton <jorton@redhat.com> - 2010-1
+- adopt Python certdata.txt parsing script from Debian
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2009-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Joe Orton <jorton@redhat.com> 2009-1
+- update to certdata.txt r1.53
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2008-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 10月 14 2008 Joe Orton <jorton@redhat.com> 2008-7
+- update to certdata.txt r1.49
+
+* 三 6月 25 2008 Thomas Fitzsimmons <fitzsim@redhat.com> - 2008-6
+- Change generate-cacerts.pl to produce pretty aliases.
+
+* 一 6月 02 2008 Joe Orton <jorton@redhat.com> 2008-5
+- include /etc/pki/tls/cert.pem symlink to ca-bundle.crt
+
+* 二 5月 27 2008 Joe Orton <jorton@redhat.com> 2008-4
+- use package name for temp dir, recreate it in prep
+
+* 二 5月 27 2008 Joe Orton <jorton@redhat.com> 2008-3
+- fix source script perms
+- mark packaged files as config(noreplace)
+
+* 二 5月 27 2008 Joe Orton <jorton@redhat.com> 2008-2
+- add (but don't use) mkcabundle.pl
+- tweak description
+- use /usr/bin/keytool directly; BR java-openjdk
+
+* 二 5月 27 2008 Joe Orton <jorton@redhat.com> 2008-1
+- Initial build (#448497)
+

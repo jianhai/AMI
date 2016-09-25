@@ -1,0 +1,29 @@
+Name        : libverto
+Version     : 0.2.5
+Release     : 4.9.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分42秒
+Group       : Unspecified
+Size        : 20348
+License     : MIT
+Signature   : RSA/SHA256, 2015年07月20日 星期一 22时58分11秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libverto-0.2.5-4.9.amzn1.src.rpm
+Build Date  : 2015年07月13日 星期一 23时39分20秒
+Build Host  : build-64010.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/libverto/
+Summary     : Main loop abstraction library
+Description :
+libverto provides a way for libraries to expose asynchronous interfaces
+without having to choose a particular event loop, offloading this
+decision to the end application which consumes the library.
+
+If you are packaging an application, not library, based on libverto,
+you should depend either on a specific implementation module or you
+can depend on the virtual provides 'libverto-module-base'. This will
+ensure that you have at least one module installed that provides io,
+timeout and signal functionality. Currently glib is the only module
+that does not provide these three because it lacks signal. However,
+glib will support signal in the future.

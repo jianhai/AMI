@@ -1,0 +1,25 @@
+Name        : libnih
+Version     : 1.0.1
+Release     : 7.8.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分39秒
+Group       : System Environment/Libraries
+Size        : 486942
+License     : GPLv2
+Signature   : RSA/SHA256, 2015年03月12日 星期四 19时47分24秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libnih-1.0.1-7.8.amzn1.src.rpm
+Build Date  : 2015年03月12日 星期四 03时52分26秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://launchpad.net/libnih
+Summary     : Lightweight application development library
+Description :
+libnih is a small library for C application development containing functions
+that, despite its name, are not implemented elsewhere in the standard library
+set.
+
+libnih is roughly equivalent to other C libraries such as glib, except that its
+focus is on a small size and intended for applications that sit very low in the
+software stack, especially outside of /usr.

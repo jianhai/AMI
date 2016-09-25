@@ -1,0 +1,139 @@
+* 四 10月 17 2013 Cristian Gafton <gafton@amazon.com>
+- add patch to allow building outside of git checkouts
+- import source package F19/libgpg-error-1.11-1.fc19
+
+* 五 4月 05 2013 Tomáš Mráz <tmraz@redhat.com> 1.11-1
+- new upstream release
+
+* 二 3月 12 2013 Lee Trager <ltrager@amazon.com>
+- import source package F18/libgpg-error-1.10-3.fc18
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.10-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.10-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 三 1月 18 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- import source package F16/libgpg-error-1.10-1.fc16
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 8月 11 2011 Cristian Gafton <gafton@amazon.com>
+- update to version 1.10 from AUTHOR upstream
+
+* 五 7月 15 2011 Tomáš Mráz <tmraz@redhat.com> 1.10-1
+- new upstream release
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.9-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 7月 23 2010 Rex Dieter <rdieter@fedoraproject.org> 1.9-1
+- libgpg-error-1.9
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgpg-error-1.7-3.el6
+- import source package RHEL6/libgpg-error-1.7-2.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/libgpg-error-1.4-2
+- added submodule prep for package libgpg-error
+
+* 四 2月 25 2010 Nalin Dahyabhai <nalin@redhat.com> - 1.7-3
+- turn off common lisp bindings the right way
+- drop finger output
+- recode the changelog into UTF-8 if it isn't UTF-8 (rpmlint)
+
+* 一 1月 11 2010 Nalin Dahyabhai <nalin@redhat.com> - 1.7-2
+- fix use of macro in changelog (rpmlint)
+- build with --disable-rpath (rpmlint)
+- build with %{?_smp_mflags}
+
+* 四 10月 15 2009 Nalin Dahyabhai <nalin@redhat.com> - 1.7-1
+- long-overdue update to 1.7
+- add a disttag
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.6-2
+- Autorebuild for GCC 4.3
+
+* 五 12月 07 2007 Nalin Dahyabhai <nalin@redhat.com>
+- remove the generic install docs (#226021)
+
+* 五 12月 07 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.6-1
+- update to 1.6
+- add suggested summary, buildrequires, and modify install call as suggested
+  by package review (#226021)
+
+* 一 10月 15 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.5-6
+- use ldconfig to make the soname symlink so that it gets packaged (#331241)
+
+* 三 8月 22 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.5-5
+- add missing gawk buildrequirement
+
+* 四 8月 16 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.5-4
+- clarify license
+
+* 一 7月 30 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.5-3
+- disable static libraries (part of #249815)
+
+* 五 7月 27 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.5-2
+- move libgpg-error shared library to /%{_lib} (#249816)
+
+* 四 7月 19 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.5-1
+- update to 1.5
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 1.4-2
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 一 9月 18 2006 Bill Nottngham <notting@redhat.com> - 1.4-1
+- update to 1.4
+- don't ship lisp bindings
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.3-3.1
+- rebuild
+
+* 一 6月 05 2006 Nalin Dahyabhai <nalin@redhat.com> 1.3-3
+- give gpg-error-config libdir=@exec_prefix@/lib instead of @libdir@, so that
+  it agrees on 32- and 64-bit arches (it suppresses the -L argument if @libdir@
+  is /usr/lib, so this should be cleaner than adding a non-standard .pc file
+  which upstream developers might inadvertently think they can depend to be on
+  every system which provides this library)
+
+* 一 5月 15 2006 Karsten Hopp <karsten@redhat.de> 1.3-2
+- switch to pkgconfig so that gpg-error-config can be the same on 
+  32bit and 64bit archs
+
+* 二 5月 02 2006 Nalin Dahyabhai <nalin@redhat.com> - 1.3-1
+- update to version 1.3
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.1-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.1-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 30 2005 Karsten Hopp <karsten@redhat.de> 1.1-1
+- update
+
+* 三 3月 02 2005 Bill Nottingham <notting@redhat.com> - 1.0-2
+- we can rebuild it. we have the technology.
+
+* 二 8月 31 2004 Bill Nottingham <notting@redhat.com> - 1.0-1
+- update to 1.0
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 4月 16 2004 Bill Nottingham <notting@redhat.com> - 0.7-1
+- adapt upstream specfile
+

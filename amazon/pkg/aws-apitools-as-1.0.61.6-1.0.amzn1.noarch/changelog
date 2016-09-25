@@ -1,0 +1,57 @@
+* 二 8月 19 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.0.61.6 from upstream
+
+* 三 4月 23 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.0.61.5 from upstream
+
+* 一 1月 13 2014 Lee Trager <ltrager@amazon.com>
+- Update to 1.0.61.4 from upstream
+
+* 二 9月 24 2013 Lee Trager <ltrager@amazon.com>
+- Update to 1.0.61.3 from upstream
+
+* 一 11月 19 2012 Lee Trager <ltrager@amazon.com>
+- Update to 1.0.61.2 from upstream
+
+* 五 9月 21 2012 Lee Trager <ltrager@amazon.com>
+- Update to 1.0.61.1 from upstream
+
+* 一 6月 25 2012 Lee Trager <ltrager@amazon.com>
+- Search builddir for CRLF files and require dos2unix
+- Convert all text files to Unix format
+
+* 五 6月 15 2012 Lee Trager <ltrager@amazon.com>
+- Add description back in
+- Don't create sym link for the service command as its used internally only
+- Update to 1.0.61.0 from upstream and clean up the spec file
+
+* 五 2月 03 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Update to 1.0.49.1
+
+* 一 9月 19 2011 Andrew Jorgensen <ajorgens@amazon.com>
+- Update to 1.0.39.0 and use upstream .zip (renamed to include version)
+
+* 二 8月 09 2011 Nathan Blackham <blackham@amazon.com>
+- add compat libs
+- Add old libs directory for deprecated tools to work.
+
+* 一 2月 07 2011 Nathan Blackham <blackham@amazon.com>
+- updating jre requires to >= 1.6.0
+
+* 二 12月 21 2010 Nathan Blackham <blackham@amazon.com>
+- upgrading to 1.0.33.1
+
+* 三 7月 21 2010 Nathan Blackham <blackham@amazon.com>
+- add dist tag
+
+* 四 7月 01 2010 Cristian Gafton <gafton@amazon.com>
+- import source package tools/aws-apitools-as-1.0.9.0-2
+- setup complete for package aws-apitools-as
+
+* 二 4月 13 2010 KaOS <kaos@amazon.com>
+- Requires: jre
+
+* 四 2月 25 2010 KaOS <kaos@amazon.com>
+- 1.0.9.0
+- Initial packaging
+

@@ -1,0 +1,211 @@
+* 五 2月 27 2015 Ben Cressey <bcressey@amazon.com>
+- add alternatives for docutils
+
+* 二 2月 03 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 四 9月 05 2013 Lee Trager <ltrager@amazon.com>
+- import source package F20/python-docutils-0.11-1.fc20
+
+* 四 8月 15 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 0.11-1
+- 0.11 final tarball.
+- Remove flash file from the install (it was only used to run the unittests anyhow)
+
+* 日 8月 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.11-0.2.20130715svn7687
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 三 7月 31 2013 Lee Trager <ltrager@amazon.com>
+- Use unittest2 if availible
+- import source package F19/python-docutils-0.11-0.1.20130715svn7687.fc19
+
+* 一 7月 15 2013 Matej Stuchlik <mstuchli@redhat.com> - 0.11-0.1.20130715svn7687
+- Rebased to new snapshot
+- Removed unnecessary patches
+
+* 四 3月 21 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 0.10-0.8.20120824svn7502
+- Add python3-imaging support :-)
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10-0.7.20120824svn7502
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 1月 10 2013 Lee Trager <ltrager@amazon.com>
+- Depend on python-devel, not python2-devel
+- Only list python3 files when building for python3
+- import source package F17/python-docutils-0.8.1-3.fc17
+
+* 六 8月 25 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.10-0.6.20120824svn7502
+- Further fix of places in the code that use__import__
+
+* 五 8月 24 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.10-0.5.20120824svn7502
+- Rebase to new snapshot with some fixes integrated
+- Reenable one test that I can't replicate the failure with.
+
+* 五 8月 24 2012 David Malcolm <dmalcolm@redhat.com> - 0.10-0.4.20120730svn7490
+- fix/disable failing tests with python 3.3
+
+* 二 8月 14 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.10-0.3.20120730svn7490
+- PyXML patch from upstream
+- Fix ability to disable python3 builds
+
+* 五 8月 03 2012 David Malcolm <dmalcolm@redhat.com> - 0.10-0.2.20120730svn7490
+- remove rhel logic from with_python3 conditional
+
+* 一 7月 30 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.10-0.1.20120730svn7490
+- Update to snapshot that's supposed to take care of the date directive unicode
+  problem in a different way
+- Patch to fix PyXML conflict without using rpm conflicts
+
+* 五 7月 20 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.9.1-1
+- New update from upstream
+- Fixes for previous patches incorporated there
+- roman.py has been moved into a docutils submodule
+- docutils doesn't work with PyXML.  before I poke around for the bug in PyXML,
+  seeing if we're going to go through with deprecating it or if we can sanitize
+  our python stdlib's handling of it.
+- Fix for traceback in https://bugzilla.redhat.com/show_bug.cgi?id=786867
+
+* 一 1月 30 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.8.1-2
+- Fix a unicode traceback https://bugzilla.redhat.com/show_bug.cgi?id=785622
+
+* 四 1月 05 2012 Toshio Kuratomi <toshio@fedoraproject.org> - 0.8.1-1
+- Update to new upstream that has properly licensed files and a few bugfixes
+- Add a patch to fix tracebacks when wrong values are given to CLI apps
+
+* 三 7月 20 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.8-2
+- Replace the Apache licensed files with BSD licensed versions from upstream
+
+* 二 7月 12 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.8-1
+- Upgrade to 0.8 final.
+- Remove the two remaining Apache licensed files until their license is fixed.
+- Patch regressions that we had already submitted upstream -- resubmit
+
+* 二 5月 17 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.8-0.1.20110517svn7036
+- Ship a snapshot of 0.8 so that we can build on python-3.2.1
+- Unfortunately, 3.2.1 isn't out yet either.  So also apply a fix for building
+  with 3.2.0 that we'll need to remove later.
+- The new docutils.math module is licensed Apache.  Update the license to reflect this
+
+* 三 3月 16 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.7-5
+- Fix building with python-3.2 via a workaround.  Sent upstream awaiting
+  feedback or a better fix.  Built in rawhide.
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.7-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 六 1月 01 2011 Toshio Kuratomi <toshio@fedoraproject.org> - 0.7-3
+- Fix scripts so they're the python2 versions not the python3 versions
+
+* 四 12月 30 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.7-2
+- Build for python3
+
+* 日 8月 01 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.7-1
+- Update for 0.7 release
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 0.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/python-docutils-0.6-1.el6
+- import source package RHEL6/python-docutils-0.5-4.1.el6
+- setup complete for package python-docutils
+
+* 二 1月 19 2010 Toshio Kuratomi <toshio@fedoraproject.org> - 0.6-1
+- Update for 0.6 release.
+- Switch from setuptools installed egg-info to distutils egg-info.  Note that
+  this works because we're also changing docutils version.  To do this between
+  0.5-4 and 0.5-5, for instance, we'd need to have %preun scriptlet to get rid
+  of the egg-info directory.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.5-2
+- Rebuild for Python 2.6
+
+* 三 8月 06 2008 Toshio Kuratomi <toshio@fedoraproject.org> 0.5-1
+- New upstream version.
+
+* 一 3月 03 2008 Toshio Kuratomi <toshio@fedoraproject.org> 0.4-8
+- Use regular Requires syntax for python-imaging as missingok is just wrong.
+
+* 四 9月 27 2007 Toshio Kuratomi <a.badger@gmail.com> 0.4-7
+- Build egg info.
+
+* 一 8月 13 2007 Toshio Kuratomi <a.badger@gmail.com> 0.4-6
+- Last version had both the old and new rst.el.  Try again with only
+  the new one.
+
+* 日 8月 12 2007 Toshio Kuratomi <a.badger@gmail.com> 0.4-5
+- Make License tag conform to the new Licensing Policy.
+- Fix the rst emacs mode (RH BZ 250100)
+
+* 六 12月 09 2006 Toshio Kuratomi <toshio-tiki-lounge.com> 0.4-4
+- Bump and rebuild for python 2.5 in devel.
+
+* 二 8月 29 2006 Toshio Kuratomi <toshio-tiki-lounge.com> 0.4-3
+- Bump for FC6 rebuild.
+- Remove python byte compilation as this is handled automatically in FC4+.
+- No longer %ghost .pyo files.
+
+* 四 2月 16 2006 Toshio Kuratomi <toshio-tiki-lounge.com> 0.4-2
+- Bump and rebuild for FC5.
+
+* 日 1月 15 2006 Toshio Kuratomi <toshio-tiki-lounge.com> 0.4-1
+- Update to 0.4.
+- Scripted the listing of files in the python module.
+- Add a missingok requirement on python-imaging as docutils can make use of
+  it when converting to formats that have images.
+
+* 二 6月 07 2005 Toshio Kuratomi <toshio-tiki-lounge.com> 0.3.9-1
+- Update to version 0.3.9.
+- Use a dist tag as there aren't any differences between supported fc
+  releases (FC3, FC4, devel.)
+
+* 四 5月 12 2005 Toshio Kuratomi <toshio-tiki-lounge.com> 0.3.7-7
+- Bump version and rebuild to sync across architectures.
+
+* 日 3月 20 2005 Toshio Kuratomi <toshio-tiki-lounge.com> 0.3.7-6
+- Rebuild for FC4t1
+
+* 六 3月 12 2005 Toshio Kuratomi <toshio.tiki-lounge.com> 0.3.7-5
+- Add GPL as a license (mschwendt)
+- Use versioned Obsoletes and Provides (mschwendt)
+
+* 五 3月 04 2005 Toshio Kuratomi <toshio.tiki-lounge.com> 0:0.3.7-4
+- Rename to python-docutils per the new packaging guidelines.
+
+* 三 1月 12 2005 Toshio Kuratomi <toshio.tiki-lounge.com> 0:0.3.7-0.fdr.3
+- Really install roman.py and build roman.py[co].  Needed to make sure I have
+  docutils installed to test that it builds roman.py fine in that case.
+
+* 二 1月 11 2005 Toshio Kuratomi <toshio.tiki-lounge.com> 0:0.3.7-0.fdr.2
+- Special case roman.py to always install.  This is the behaviour we want
+  unless something else provides it.  Will need to watch out for this in
+  future Core and Extras packages, but the auto detection code makes it
+  possible that builds will not be reproducible if roman.py were installed
+  from another package.... Lesser of two evils here.
+- Provide python-docutils in case that package were preinstalled from
+  another repository.
+
+* 五 12月 31 2004 Toshio Kuratomi <toshio.tiki-lounge.com> 0:0.3.7-0.fdr.1
+- Update to 0.3.7
+- Rename from python-docutils to docutils.
+- Make roman.py optionally a part of the files list.  In FC2, this will be
+  included.  In FC3, this won't.
+- BuildConflict with self since the docutils build detects the presence
+  of roman.py and doesn't reinstall itself.
+
+* 一 8月 09 2004 Toshio Kuratomi <toshio.tiki-lounge.com> 0:0.3.5-0.fdr.1
+- Update to 0.3.5.
+- Update spec style to latest fedora-rpmdevtools.
+- Merge everything into a single package.  There isn't very much space
+  advantage to having separate packages in a package this small and in
+  this case, the documentation on using docutils as a library is also a
+  good example of how to write in ReSructuredText.
+
+* 六 1月 10 2004 Michel Alexandre Salim <salimma[AT]users.sf.net> 0:0.3-0.fdr.1
+- Initial RPM release.
+

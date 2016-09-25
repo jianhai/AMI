@@ -1,0 +1,15 @@
+postinstall scriptlet (using /bin/sh):
+touch /var/spool/at/.SEQ
+chmod 600 /var/spool/at/.SEQ
+chown daemon:daemon /var/spool/at/.SEQ
+# must be in chkconfig on
+/sbin/chkconfig --add atd
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ] ; then
+	/sbin/service atd stop >/dev/null 2>&1 ||:
+	/sbin/chkconfig --del atd
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+	/sbin/service atd condrestart >/dev/null 2>&1 ||:
+fi

@@ -1,0 +1,16 @@
+/bin/sh
+/bin/sh
+/sbin/install-info
+/sbin/install-info
+/sbin/ldconfig
+/sbin/ldconfig
+/sbin/ldconfig
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libidn.so.11()(64bit)
+libidn.so.11(LIBIDN_1.0)(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

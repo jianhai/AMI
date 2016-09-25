@@ -1,0 +1,8 @@
+/bin/bash
+/bin/sh
+cloud-disk-utils
+dracut
+grep
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+util-linux

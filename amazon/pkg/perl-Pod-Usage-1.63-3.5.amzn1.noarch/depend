@@ -1,0 +1,15 @@
+/usr/bin/perl
+perl >= 0:5.006
+perl(:MODULE_COMPAT_5.16.3)
+perl(Carp)
+perl(Config)
+perl(Exporter)
+perl(File::Spec) >= 0.82
+perl(Getopt::Long)
+perl(Pod::Text) >= 3.15
+perl(Pod::Usage)
+perl(strict)
+perl(vars)
+perl-Pod-Perldoc
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

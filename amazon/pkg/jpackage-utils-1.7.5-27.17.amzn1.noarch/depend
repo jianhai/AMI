@@ -1,0 +1,8 @@
+/bin/bash
+/bin/sh
+config(jpackage-utils) = 0:1.7.5-27.17.amzn1
+coreutils
+javapackages-tools
+lua
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

@@ -1,0 +1,29 @@
+postinstall scriptlet (using /bin/sh):
+/usr/sbin/alternatives --install /usr/bin/gpg gpg /usr/bin/gpg2 20 \
+        --slave /usr/bin/gpgv gpgv /usr/bin/gpgv2 \
+        --slave /usr/bin/gpgsplit gpgsplit /usr/bin/gpgsplit2 \
+        --slave /usr/bin/gpg-zip gpg-zip /usr/bin/gpg-zip2 \
+        --slave /usr/share/man/man1/gpg.1.gz gpg-man /usr/share/man/man1/gpg2.1.gz \
+        --slave /usr/share/man/man1/gpgv.1.gz gpgv-man /usr/share/man/man1/gpgv2.1.gz \
+        --slave /usr/share/man/man1/gpg-zip.1.gz gpg-zip-man /usr/share/man/man1/gpg-zip2.1.gz \
+        
+/sbin/install-info /usr/share/info/gnupg.info /usr/share/info/dir ||:
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+  /usr/sbin/alternatives --remove gpg /usr/bin/gpg2
+  /sbin/install-info --delete /usr/share/info/gnupg.info /usr/share/info/dir ||:
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+    gpg=`readlink /etc/alternatives/gpg`
+    if [ -z "$gpg" ] ; then
+       # if unset at all, set it to auto
+       /usr/sbin/alternatives --auto gpg
+    elif [ "$gpg" == "/usr/bin/gpg2" ]; then
+        /usr/sbin/alternatives --set gpg /usr/bin/gpg2
+    fi
+fi
+exit 0
+posttrans scriptlet (using /bin/sh):
+/usr/sbin/alternatives --auto gpg

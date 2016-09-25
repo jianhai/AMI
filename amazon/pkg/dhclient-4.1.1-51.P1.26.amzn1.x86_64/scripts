@@ -1,0 +1,15 @@
+postinstall scriptlet (using /bin/sh):
+/bin/ls -1 /etc/dhclient* >/dev/null 2>&1
+if [ $? = 0 ]; then
+    /bin/ls -1 /etc/dhclient* | \
+    /bin/grep -v "\.rpmsave$" 2>/dev/null | \
+    while read etcfile ; do
+        cf="$(/bin/basename ${etcfile})"
+        if [ -f ${etcfile} ] && [ ! -r /etc/dhcp/${cf} ]; then
+            /bin/cp -a ${etcfile} /etc/dhcp/${cf} >/dev/null 2>&1
+            if [ -x /sbin/restorecon ]; then
+                /sbin/restorecon /etc/dhcp/${cf} >/dev/null 2>&1
+            fi
+        fi
+    done || :
+fi || :

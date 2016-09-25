@@ -1,0 +1,9 @@
+* 五 7月 09 2010 22:43:28 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/rootfiles-8.1-6.1.el6
+
+* 五 5月 07 2010 02:39:26 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/rootfiles-8.1-1.1.1
+
+* 五 5月 07 2010 00:16:43 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package rootfiles
+

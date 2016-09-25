@@ -1,0 +1,60 @@
+postinstall scriptlet (using /bin/sh):
+
+# Upgrade- remove old symlink
+if [ "$1" = "2" ]; then
+    /bin/rm -f /opt/aws/amitools/ec2
+fi
+
+# Install/Upgrade - Create symlink from versioned 
+# directory to product name directory if it doesn't exist
+if [ ! -e  /opt/aws/amitools/ec2 ]; then
+    ln -s  ./ec2-1.5.7  /opt/aws/amitools/ec2
+fi
+
+# Create aws bin directory if it doesn't exist:
+if [ ! -d /opt/aws/bin ]; then
+    /bin/mkdir /opt/aws/bin
+fi
+
+# All commands copied to aws bin directory should start
+# with product name
+for command in /opt/aws/amitools/ec2/bin/ec2*; do
+        if [ -e /opt/aws/bin/$(basename $command) ]; then
+        if [ "$1" = "2" ]; then
+            # Upgrade- remove old symlinks
+            /bin/rm -f /opt/aws/bin/$(basename $command)
+        fi
+    fi
+    if [ ! -h /opt/aws/bin/$(basename $command) ]; then
+	# Install relative symlink from generic directory to aws shared directory
+        ln -s ../amitools/ec2/bin/$(basename $command)  /opt/aws/bin/$(basename $command)
+    fi
+done
+preuninstall scriptlet (using /bin/sh):
+# Uninstall: 
+if [ "$1" = "0" ]; then
+    #Clean up the symlinks if it points to this version
+    if [ "x$(readlink /opt/aws/amitools/ec2)" == "x./ec2-1.5.7" ]; then
+        for command in /opt/aws/bin/ec2*; do
+            if [ "x$(readlink $command)" == "x../amitools/ec2/bin/$(basename $command)" ]; then
+                /bin/rm -f $command
+            fi
+        done
+    fi
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ]; then
+    if [ ! "$(ls -A /opt/aws/bin)" ]; then
+        rmdir /opt/aws/bin
+    fi
+
+    /bin/rm -f /opt/aws/amitools/ec2
+
+    if [ ! "$(ls -A /opt/aws/amitools)" ]; then
+        rmdir /opt/aws/amitools
+    fi
+
+    if [ ! "$(ls -A /opt/aws)" ]; then
+        rmdir /opt/aws
+    fi
+fi

@@ -1,0 +1,18 @@
+* 三 2月 04 2015 Jason Green <jasg@amazon.com>
+- Build for multiple pythons
+
+* 四 9月 29 2011 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/python-daemon-1.5.2-1.el6
+- setup complete for package python-daemon
+
+* 一 12月 28 2009 Thomas Spura <tomspur@fedoraproject.org> - 1.5.2-1
+- Add missing BR: python-nose, minimock, lockfile (for testsuite)
+- also add lockfile as R (bug #513546)
+- update to 1.5.2
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 24 2009 Kushal Das <kushal@fedoraproject.org> 1.4.6-1
+- Initial release
+

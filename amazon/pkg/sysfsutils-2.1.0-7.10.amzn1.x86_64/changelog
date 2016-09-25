@@ -1,0 +1,93 @@
+* 一 11月 12 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/sysfsutils-2.1.0-7.el6
+
+* 四 9月 20 2012 Anton Arapov <aarapov@redhat.com> - 2.1.0-7
+- Fix up memory leak (#671554)
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/sysfsutils-2.1.0-6.1.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/sysfsutils-2.0.0-6
+- added submodule prep for package sysfsutils
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.1.0-6.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.0-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.0-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 5月 20 2008 Jarod Wilson <jwilson@redhat.com> - 2.1.0-4
+- Fix up get_link on kernel 2.6.25+ (#447220)
+
+* 一 2月 25 2008 Jarod Wilson <jwilson@redhat.com> - 2.1.0-3
+- Review cleanups from Todd Zullinger (#226447)
+
+* 四 2月 14 2008 Jarod Wilson <jwilson@redhat.com> - 2.1.0-2
+- Bump and rebuild with gcc 4.3
+
+* 六 9月 29 2007 Jarod Wilson <jwilson@redhat.com> - 2.1.0-1
+- Update to upstream release 2.1.0
+
+* 一 9月 11 2006 Neil Horman <nhorman@redhat.com> - 2.0.0-6
+- Integrate patch for bz 205808
+
+* 一 7月 17 2006 Jesse Keating <jkeating@redhat.com> - 2.0.0-5
+- rebuild
+
+* 一 7月 10 2006 Neil Horman  <nhorman@redhat.com> - 2.0.0-4
+- Obsoleting old sysfsutil-devel package for upgrade path (bz 198054)
+
+* 五 7月 07 2006 Doug Ledford <dledford@redhat.com> - 2.0.0-3
+- Split the library and devel files out to libsysfs and leave the utils
+  in sysfsutils.  This is for multilib arch requirements.
+
+* 四 5月 25 2006 Neil Horman <nhorman@redhat.com> - 2.0.0-2
+- Fixed devel rpm to own sysfs include dir
+- Fixed a typo in changelog
+
+* 三 5月 24 2006 Neil Horman <nhorman@redhat.com> - 2.0.0-1
+- Rebase to sysfsutils-2.0.0 for RHEL5
+
+* 四 4月 27 2006 Jeremy Katz <katzj@redhat.com> - 1.3.0-2
+- move .so to devel subpackage
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.3.0-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.3.0-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 7月 08 2005 Bill Nottingham  <notting@redhat.com> 1.3.0-1
+- update to 1.3.0
+
+* 三 3月 02 2005 AJ Lewis <alewis@redhat.com> 1.2.0-4
+- Rebuild
+
+* 三 2月 09 2005 AJ Lewis <alewis@redhat.com> 1.2.0-3
+- start using %configure instead of calling configure directly
+
+* 三 2月 09 2005 AJ Lewis <alewis@redhat.com> 1.2.0-2
+- rebuild
+
+* 一 10月 11 2004 AJ Lewis <alewis@redhat.com> 1.2.0-1
+- Update to upstream version 1.2.0
+
+* 三 9月 22 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- added /sbin/ldconfig calls to post/postun
+
+* 三 9月 01 2004 AJ Lewis <alewis@redhat.com> 1.1.0-2
+- Fix permissions on -devel files
+
+* 五 8月 13 2004 AJ Lewis <alewis@redhat.com> 1.1.0-1.1
+- Rebuild
+
+* 五 8月 13 2004 AJ Lewis <alewis@redhat.com> 1.1.0-1
+- Initial package for FC3
+

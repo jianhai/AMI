@@ -1,0 +1,37 @@
+postinstall scriptlet (using /bin/sh):
+/bin/rm -f /usr/bin/ld
+/usr/sbin/alternatives --install /usr/bin/ld ld \
+  /usr/bin/ld.bfd 50
+/usr/sbin/alternatives --install /usr/bin/ld ld \
+  /usr/bin/ld.gold 30
+/usr/sbin/alternatives --auto ld 
+/sbin/ldconfig
+# For --excludedocs:
+if [ -e /usr/share/info/binutils.info.gz ]
+then
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/as.info.gz
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/binutils.info.gz
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/gprof.info.gz
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/ld.info.gz
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/standards.info.gz
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/configure.info.gz
+fi
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+  /usr/sbin/alternatives --remove ld /usr/bin/ld.bfd
+  /usr/sbin/alternatives --remove ld /usr/bin/ld.gold
+fi
+if [ $1 = 0 ]; then
+  if [ -e /usr/share/info/binutils.info.gz ]
+  then
+    /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/as.info.gz
+    /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/binutils.info.gz
+    /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/gprof.info.gz
+    /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/ld.info.gz
+    /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/standards.info.gz
+    /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/configure.info.gz
+  fi
+fi
+exit 0
+postuninstall program: /sbin/ldconfig

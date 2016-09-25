@@ -1,0 +1,15 @@
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libcrypt.so.1()(64bit)
+libdl.so.2()(64bit)
+libm.so.6()(64bit)
+libpthread.so.0()(64bit)
+librt.so.1()(64bit)
+libruby.so.2.0()(64bit)
+libyaml-0.so.2()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+ruby(release) = 2.0.0
+ruby20(rubygems) >= 2.0.14.1

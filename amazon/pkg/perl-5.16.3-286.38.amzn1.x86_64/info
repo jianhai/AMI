@@ -1,0 +1,30 @@
+Name        : perl
+Epoch       : 4
+Version     : 5.16.3
+Release     : 286.38.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分38秒
+Group       : Development/Languages
+Size        : 23404166
+License     : (GPL+ or Artistic) and (GPLv2+ or Artistic) and Copyright Only and MIT and Public Domain and UCD
+Signature   : RSA/SHA256, 2016年08月19日 星期五 01时33分52秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-5.16.3-286.38.amzn1.src.rpm
+Build Date  : 2016年08月16日 星期二 21时33分16秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.perl.org/
+Summary     : Practical Extraction and Report Language
+Description :
+Perl is a high-level programming language with roots in C, sed, awk and shell
+scripting.  Perl is good at handling processes and files, and is especially
+good at handling text.  Perl's hallmarks are practicality and efficiency.
+While it is used to do a lot of different things, Perl's most common
+applications are system administration utilities and web programming.  A large
+proportion of the CGI scripts on the web are written in Perl.  You need the
+perl package installed on your system so that your system can handle Perl
+scripts.
+
+Install this package if you want to program in Perl or enable your system to
+handle Perl scripts.

@@ -1,0 +1,57 @@
+* 二 2月 03 2015 Ben Cressey <bcressey@amazon.com>
+- build for multiple pythons
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/pyliblzma-0.5.3-11.el7
+
+* 二 1月 28 2014 Daniel Mach <dmach@redhat.com> - 0.5.3-11
+- Mass rebuild 2014-01-24
+
+* 五 1月 24 2014 James Antill <james.antill@redhat.com> - 0.5.3-10
+- Add python-test Build Requires so %check
+unset DISPLAY
+ works again.
+- Resolves: rhbz#1044625
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 0.5.3-9
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/pyliblzma-0.5.3-8.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package pyliblzma
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.3-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 六 8月 04 2012 Lee Trager <ltrager@amazon.com>
+- Add package group
+
+* 五 8月 03 2012 Lee Trager <ltrager@amazon.com>
+- Change BuildRequires to python-devel from python2-devel
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.3-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.3-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 7月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/pyliblzma-0.5.3-3.el6
+
+* 二 7月 19 2011 Cristian Gafton <gafton@amazon.com>
+- setup complete for package pyliblzma
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.3-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 二 7月 27 2010 David Malcolm <dmalcolm@redhat.com> - 0.5.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 五 6月 04 2010 Seth Vidal <skvidal at fedoraproject.org> - 0.5.3-3
+- set perms on lzma.so to 0755 so wonky umasks don't impact it
+
+* 五 5月 14 2010 Seth Vidal <skvidal at fedoraproject.org> - 0.5.3-1
+- cleanup from upstream spec to fedora-ish style/reqs
+

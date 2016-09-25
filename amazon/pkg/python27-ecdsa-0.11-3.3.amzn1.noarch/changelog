@@ -1,0 +1,26 @@
+* 二 3月 17 2015 Sean Kelly <seankell@amazon.com>
+- Build for python 2.6 and 2.7
+
+* 二 8月 12 2014 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL7/python-ecdsa-0.11-3.el7
+- setup complete for package python-ecdsa
+
+* 六 6月 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.11-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* 六 5月 10 2014 Orion Poplawski <orion@cora.nwra.com> - 0.11-2
+- Rebuild for Python 3.4
+
+* 六 5月 10 2014 Orion Poplawski <orion@cora.nwra.com> - 0.11-1
+- Update to 0.11
+
+* 一 2月 24 2014 Orion Poplawski <orion@cora.nwra.com> - 0.10-3
+- Add python3 package
+
+* 一 2月 24 2014 Orion Poplawski <orion@cora.nwra.com> - 0.10-2
+- Use system python-six
+- Remove extraneous #!s
+
+* 五 2月 21 2014 Orion Poplawski <orion@cora.nwra.com> - 0.10-1
+- Initial package
+

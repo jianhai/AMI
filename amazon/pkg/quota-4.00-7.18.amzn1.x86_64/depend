@@ -1,0 +1,27 @@
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+chkconfig
+chkconfig
+config(quota) = 1:4.00-7.18.amzn1
+initscripts >= 6.38
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.7)(64bit)
+libcom_err.so.2()(64bit)
+libdbus-1.so.3()(64bit)
+libext2fs.so.2()(64bit)
+libnl.so.1()(64bit)
+libpthread.so.0()(64bit)
+libpthread.so.0(GLIBC_2.2.5)(64bit)
+librt.so.1()(64bit)
+libwrap.so.0()(64bit)
+quota-nls = 1:4.00-7.18.amzn1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+tcp_wrappers

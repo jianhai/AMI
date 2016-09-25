@@ -1,0 +1,9 @@
+/bin/bash
+/bin/sh
+bash >= 4
+curl
+initscripts
+iproute
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+upstart

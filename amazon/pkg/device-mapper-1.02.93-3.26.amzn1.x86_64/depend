@@ -1,0 +1,15 @@
+device-mapper-libs(x86-64) = 1.02.93-3.26.amzn1
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libdevmapper.so.1.02()(64bit)
+libdevmapper.so.1.02(Base)(64bit)
+libudev
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+udev >= 147-2.18
+util-linux >= 2.23

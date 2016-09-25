@@ -1,0 +1,8 @@
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+  /usr/sbin/update-alternatives \
+    --update python /usr/bin/python2.7 \
+    --removeslave jp \
+    --removeslave jp.py \
+ || :
+fi

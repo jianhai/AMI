@@ -1,0 +1,5 @@
+/usr/bin/env
+aws-apitools-common
+jre >= 1.6.0
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

@@ -1,0 +1,21 @@
+Name        : perl-Filter
+Version     : 1.49
+Release     : 3.5.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分38秒
+Group       : Development/Libraries
+Size        : 134563
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分54秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-Filter-1.49-3.5.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 21时07分45秒
+Build Host  : build-64001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/Filter/
+Summary     : Perl source filters
+Description :
+Source filters alter the program text of a module before Perl sees it, much as
+a C preprocessor alters the source text of a C program before the compiler
+sees it.

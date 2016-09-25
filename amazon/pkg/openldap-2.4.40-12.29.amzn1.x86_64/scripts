@@ -1,0 +1,5 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+# create certificate database
+/usr/libexec/openldap/create-certdb.sh >&/dev/null || :
+postuninstall program: /sbin/ldconfig

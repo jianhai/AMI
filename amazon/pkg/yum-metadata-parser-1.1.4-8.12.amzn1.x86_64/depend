@@ -1,0 +1,15 @@
+glib2 >= 2.15
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libglib-2.0.so.0()(64bit)
+libpthread.so.0()(64bit)
+libpython2.7.so.1.0()(64bit)
+libsqlite3.so.0()(64bit)
+libxml2.so.2()(64bit)
+libxml2.so.2(LIBXML2_2.4.30)(64bit)
+python(abi) = 2.7
+python27(dist-packages)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

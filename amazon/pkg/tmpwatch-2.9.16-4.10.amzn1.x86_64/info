@@ -1,0 +1,24 @@
+Name        : tmpwatch
+Version     : 2.9.16
+Release     : 4.10.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时41分09秒
+Group       : System Environment/Base
+Size        : 41144
+License     : GPLv2
+Signature   : RSA/SHA256, 2012年02月17日 星期五 18时18分20秒, Key ID bcb4a85b21c0f39f
+Source RPM  : tmpwatch-2.9.16-4.10.amzn1.src.rpm
+Build Date  : 2012年01月05日 星期四 22时40分15秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/tmpwatch/
+Summary     : A utility for removing files based on when they were last accessed
+Description :
+The tmpwatch utility recursively searches through specified
+directories and removes files which have not been accessed in a
+specified period of time.  Tmpwatch is normally used to clean up
+directories which are used for temporarily holding files (for example,
+/tmp).  Tmpwatch ignores symlinks, won't switch filesystems and only
+removes empty directories and regular files.

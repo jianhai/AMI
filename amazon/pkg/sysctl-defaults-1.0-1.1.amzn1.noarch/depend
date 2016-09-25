@@ -1,0 +1,3 @@
+config(sysctl-defaults) = 1.0-1.1.amzn1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

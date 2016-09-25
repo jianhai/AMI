@@ -1,0 +1,4 @@
+/etc/tmpfiles.d/libselinux.conf
+/usr/lib64/libselinux.so.1
+/usr/sbin/matchpathcon
+/var/run/setrans

@@ -1,0 +1,570 @@
+* 日 9月 07 2014 Lee Trager <ltrager@amazon.com>
+- import source package F19/jpackage-utils-1.7.5-27.fc19
+- import source package F19/jpackage-utils-1.7.5-26.fc19
+
+* 四 7月 11 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 0:1.7.5-27
+- Add support for OpenJDK 8
+- Resolves: rhbz#982683
+
+* 一 4月 08 2013 Severin Gehwolf <sgehwolf@redhat.com> - 0:1.7.5-26
+- Revert implementation of abs2rel.sh in Perl going back to Lua.
+- Resolves RHBZ#823669
+- Resolves RHBZ#948161
+- Resolves RHBZ#882578
+
+* 六 3月 16 2013 Ralf Corsépius <corsepiu@fedoraproject.org> - 0:1.7.5-25
+- Remove %config from %{_sysconfdir}/rpm/macros.*
+  (https://fedorahosted.org/fpc/ticket/259).
+
+* 二 3月 12 2013 Lee Trager <ltrager@amazon.com>
+- import source package F18/jpackage-utils-1.7.5-21.fc18
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.7.5-24
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 12月 20 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 0:1.7.5-23
+- Set JAVA_HOME using java (not javac) location if _prefer_jre is true
+- Resolves: rhbz#642035
+
+* 四 12月 13 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-22
+- Make JNI directories arch independent and go back to noarch
+- Reimplement abs2rel.sh using perl File::Spec module
+- Reimplement %update_maven_depmap as NOOP
+- Resolves: rhbz#882537
+- Resolves: rhbz#823669
+- Resolves: rhbz#882578
+
+* 二 12月 11 2012 Deepak Bhole <dbhole@redhat.com> 1.7.5-21
+- rhbz#862001: Updated patches to java-functions so that no .orig is produced
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.7.5-20
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 一 7月 09 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-19
+- Rebuilt to make sure upgrade path works
+
+* 五 5月 25 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-18
+- Fix build-classpath ignoring symlinks in subdirs
+
+* 四 3月 08 2012 Cristian Gafton <gafton@amazon.com>
+- use stderr to print out error messages
+
+* 三 2月 15 2012 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-17
+- Remove bundled javapackages and Require separate package
+
+* 六 2月 11 2012 Nathan Blackham <blackham@amazon.com>
+- import source package F16/jpackage-utils-1.7.5-15.fc16
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.7.5-16
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 9月 15 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-15
+- Strip whitespace when generating fragments
+- Fixes in OSGI provides/requires generator
+
+* 五 8月 26 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-14
+- Check existence of jar file before creating depmap
+- Add support for additional jar directories
+
+* 二 7月 19 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-13
+- Fixed pom directory in javapackages
+
+* 四 7月 07 2011 Ville Skyttä <ville.skytta@iki.fi> - 0:1.7.5-12
+- Own the /usr/lib/rpm/fileattrs dir.
+
+* 二 7月 05 2011 Ville Skyttä <ville.skytta@iki.fi> - 0:1.7.5-11
+- Disable empty -debuginfo package.
+
+* 一 7月 04 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-10
+- Add javajnidir resolving to build-classpath script family
+
+* 一 7月 04 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-9
+- Change jnidir to libdir/java (see #665576)
+- Add javajnidir macro definition
+- Package is now architecture-specific because of _libdir use
+
+* 三 6月 29 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-8
+- Change pom and fragment directories to /usr/share
+- Improved error handing in add_maven_depmap
+- Improved osgi bundle provides generation
+- Addd osgi requires generator (disabled for now)
+- Remove old source files
+
+* 四 6月 23 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-7
+- Update javapackages to 0.2.2 - fix rpm macro expansion problems
+
+* 三 6月 22 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-6
+- Update javapackages macros to 0.2.1 - fix add_maven_depmap macro problems
+
+* 五 6月 03 2011 Stanislav Ochotnicky <sochotnicky@redhat.com> - 0:1.7.5-5
+- Guidelines fixes (buildroot def, cleaning etc)
+- Add fedora specific extension macros including depgenerators
+
+* 二 5月 31 2011 Alexander Kurtakov <akurtako@redhat.com> 0:1.7.5-4.14
+- Proper osgi attr file.
+
+* 二 5月 31 2011 Alexander Kurtakov <akurtako@redhat.com> 0:1.7.5-4.13
+- Add OSGi provides generator.
+
+* 五 4月 15 2011 Alexander Kurtakov <akurtako@redhat.com> 0:1.7.5-4.12
+- Update to current guidelines.
+- Drop patch enabling gcj_support macro by default.
+- Don't install ${_javadir}-{1.3.1,1.4.0,1.4.1,1.4.2} and ${_jnidir}-{1.3.1,1.4.0,1.4.1,1.4.2}.
+- Add mvn(groupId:artifactId) provides generator.
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.7.5-4.11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/jpackage-utils-1.7.5-3.12.el6
+
+* 二 7月 20 2010 Matt Wilson <msw@amazon.com>
+- add compatibiltiy script for older gcj
+- use bcond_with gcj_support instead of GCJ
+
+* 六 7月 17 2010 Cristian Gafton <gafton@amazon.com>
+- bcond GCJ support
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/jpackage-utils-1.7.5-3.11.el6
+- import source package RHEL6/jpackage-utils-1.7.5-3.9.el6
+
+* 一 6月 28 2010 Deepak Bhole <dbhole@redhat.com> - 0:1.7.5-3.11
+- Fix rhbz# 472800, patch from  Adam Goode: Handle classpaths with spaces
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/jpackage-utils-1.7.3-1jpp.2.el5
+- added submodule prep for package jpackage-utils
+
+* 二 5月 04 2010 Michel Salim <salimma@fedoraproject.org> - 0:1.7.5-3.10
+- Add Lua abs2rel script
+
+* 五 4月 30 2010 Deepak Bhole <dbhole@redhat.com> - 0:1.7.5-3.9
+- Stopgap fix for rhbz#461683 from Ville Skyttä.
+
+* 一 9月 21 2009 Orion Poplawski <orion@cora.nwra.com> - 0:1.7.5-3.8
+- Add Requires: coreutils because we provide scripts that are being executed
+  in rpm %post scriptlets that require it.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.7.5-3.7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 3月 31 2009 Deepak Bhole <dbhole@redhat.com> - 0:1.7.5-2.7
+- rhbz# 225950. Shortened description, moved it to a README
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.7.5-2.6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 9月 24 2008 Deepak Bhole <dbhole@redhat.com> 1.7.5-1.6
+- Update enable-gcj-support.patch to remove fuzz.
+
+* 三 7月 09 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.7.5-1.5
+- drop repotag
+- fix license tag
+
+* 二 7月 08 2008 Deepak Bhole <dbhole@redhat.com> 1.7.5-1jpp.4
+- Update some macros to be based on other system macros.
+
+* 一 7月 07 2008 Deepak Bhole <dbhole@redhat.com> 1.7.5-1jpp.3
+- Own mavendepmapfragdir as well.
+
+* 一 7月 07 2008 Deepak Bhole <dbhole@redhat.com> 1.7.5-1jpp.2
+- Add ownership of maven directories
+
+* 三 4月 02 2008 Thomas Fitzsimmons <fitzsim@redhat.com> - 0:1.7.5-1jpp.1
+- Import jpackage-utils 1.7.5-1jpp.
+- Update IcedTea references to OpenJDK.
+- Resolves: rhbz#440092
+
+* 二 4月 01 2008 Ville Skyttä <ville.skytta@iki.fi> - 0:1.7.5-1jpp
+- Workaround a possible sed bug (or my misunderstanding of it?) in
+  find_jvm unversioned fallback code.
+
+* 二 1月 22 2008 Thomas Fitzsimmons <fitzsim@redhat.com> - 0:1.7.4-2jpp.2
+- Replace GCJ security directory.
+
+* 二 1月 22 2008 Thomas Fitzsimmons <fitzsim@redhat.com> - 0:1.7.4-2jpp.1
+- Import jpackage-utils 1.7.4-2jpp.
+
+* 一 1月 21 2008 Thomas Fitzsimmons <fitzsim@redhat.com> - 0:1.7.3-1jpp.4
+- Remove AutoReqProv.
+- Remove Requires and BuildRequires.
+- Wrap export, install and maven lines at 80 columns.
+- Add jre option to java.conf comment.
+- Related: rhbz#428520
+- Remove commented jpackage.org sections.
+- Remove duplicate files from files list.
+- Remove trailing whitespace.
+- Remove rebuild-security-providers.
+- Resolves: rhbz#260161
+
+* 五 1月 04 2008 Ralph Apel <r.apel at r-apel.de> - 0:1.7.4-2jpp
+- Fix Bug 293
+
+* 三 12月 19 2007 Ville Skyttä <ville.skytta@iki.fi> - 0:1.7.4-1jpp
+- Terminate functions with %{nil} in macros.jpackage.
+- Make %jpackage_script install the script with 0755 permissions.
+- Use exec in java-functions' run().
+
+* 三 6月 20 2007 Thomas Fitzsimmons <fitzsim@redhat.com> - 0:1.7.3-1jpp.3
+- Add 1.7.0 directories.
+
+* 五 5月 25 2007 Jason Corley <jason.corley@gmail.com> - 0:1.7.3-2jpp
+- change distribution and vendor to macros
+- rebuild in mock
+
+* 四 1月 11 2007 Thomas Fitzsimmons <fitzsim@redhat.com> - 0:1.7.3-1jpp.2
+- Add 1.6.0 directories missed in merge.
+- Resolves: rhbz#221262
+
+* 一 12月 11 2006 Thomas Fitzsimmons <fitzsim@redhat.com> - 0:1.7.3-1jpp.1
+- Import version 0:1.7.3-1jpp from jpackage.org.
+- Change release numbering format to Xjpp.Y.fc7.
+- Resolves: rhbz#218936
+
+* 六 11月 11 2006 Ville Skyttä <ville.skytta@iki.fi> - 0:1.7.3-1jpp
+- Add Java 1.6.0 dirs.
+
+* 一 10月 23 2006 Deepak Bhole <dbhole@redhat.com> 1.7.2-1jpp
+- Added maven2 depmap related macros.
+
+* 二 9月 19 2006 Fernando Nasser <fnasser@jpackage.org> 0:1.7.1-1jpp
+- Add new scripts from Deepak Bhole
+- Add documentation from Jason Corley
+- Add XLT file shared by maven2 packages
+
+* 五 11月 04 2005 Fernando Nasser <fnasser@jpackage.org> 0:1.7.0-1jpp
+- Initial 1.7 release (eq. to 1.6.6)
+- Add Copyright notice and license as header
+
+* 日 9月 18 2005 David Walluck <david@jpackage.org> 0:1.6.6-1jpp
+- always define macros
+
+* 六 9月 17 2005 David Walluck <david@jpackage.org> 0:1.6.5-2jpp
+- clean tarball
+
+* 六 9月 17 2005 David Walluck <david@jpackage.org> 0:1.6.5-1jpp
+- fix conditional macros
+- merge nim's and robert's changes
+
+* 一 8月 22 2005 David Walluck <david@jpackage.org> 0:1.6.4-1jpp
+- long needed s/All/Some in error messages
+
+* 五 1月 28 2005 Nicolas Mailhot <nim at jpackage.org> - 0:1.6.3-1jpp
+- prefer full JVM to JRE when not specified (my bad, sorry)
+- remove LICENSE.txt as it does not seem to exist in the jpp16 branch anymore
+
+* 六 1月 15 2005 Nicolas Mailhot <nim at jpackage.org> - 0:1.6.2-1jpp
+- Happy new year jpackagers!
+- No longer define JAVA_HOME in default shipped java.conf (me)
+- Search if $JVM_ROOT/jre or $JVM_ROOT/java exist in functions if JAVA_HOME is
+  not defined in java.conf (me)
+- Source ~/.java/java.conf in addition to /etc/java/java.conf in functions
+  (me)
+- Make find-jar use the same error code as build-classpath (Joe Wortmann)
+  (note however find-jar was never intended to use directly in scripts, it's
+   a low-level way to test the search engine)
+- Change macros slightly so they no longer wreak havoc on x86_64 systems
+  (Thomas Fitzsimmons for Red Hat)
+  This is probably only a short-term fix since we've yet to decide how to
+  handle real x86_64 JVMs cleanly.
+
+* 四 12月 16 2004 Robert Ottenhag <support@bea.com> -  0:1.6.3-1jpp
+- Move the systemPrefs stuff into a separate new package java-systemprefs
+
+* 三 12月 15 2004 Robert Ottenhag <support@bea.com> -  0:1.6.2-1jpp
+- Reapply all updates from 1.5.40-1jpp o 1.5.42-1jpp
+  + Add support for splitting the installation of Java VMs/SDK/JREs
+    according to FHS 2.3 in its architecture dependent, architecture
+    independent, and configuration parts. Added new macros and dirs
+    - %{_jvmlibdir}, defined as %{_libdir}/jvm, equal to %{_jvmdir},
+    - %{_jvmdatadir}, defined as %{_datadir}/jvm
+    - %{_jvmsysconfdir}, defined as %{_sysconfdir}/jvm
+    in its common architecture dependent, architecture
+    - %{_jvmcommonlibdir}, defined as %{_libdir}/jvm-commmon
+    - %{_jvmcommondatadir}, defined as %{_datadir}/jvm-commmon
+    - %{_jvmcommonsysconfdir}, defined as %{_sysconfdir}/jvm-commmon
+  + Ensure that a global systemPrefs database used by
+    java.util.prefs.FileSystemPreferences exists at
+    /etc/.java/.systemPrefs, or create an empty one if not, and
+    symlink to it from %{_jvmcommonsysconfdir}/java/jre/systemprefs.
+
+* 六 12月 04 2004 Ville Skyttä <ville.skytta@iki.fi> - 0:1.6.1-1jpp
+- java-functions (set_jvm_dirs): try "java -fullversion" before
+  "java -version" for performance, improve regexps, use sed from $PATH.
+- Include correct specfile in tarball.
+
+* 二 11月 02 2004 Nicolas Mailhot <nim@jpackage.org> - 0:1.6.0-2jpp
+- fix missing %{_jnidir} in file list
+
+* 二 10月 12 2004 Ville Skyttä <ville.skytta@iki.fi> - 0:1.6.0-1jpp
+- Start preparing for JPackage 1.6:
+  - License change: jpackage-utils >= 1.6.0 is available under the (BSD-like)
+    JPackage License.  See included LICENSE.txt.
+  - Remove support for Java < 1.4 (dirs only for now).
+  - Remove java_home.list and support for it.
+- Add support for installing macros.jpackage into Asianux's rpm config,
+  thanks to Robert Ottenhag for the info.
+
+* 一 8月 23 2004 Randy Watler <rwatler at finali.com> - 0:1.5.38-2jpp
+- Rebuild with ant-1.6.2
+
+* 一 6月 07 2004 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.38-1jpp
+- Update java_home.list with Sun's default 1.5.0beta2 location.
+- Nuke extra copy of java.conf from tarball.
+
+* 三 5月 26 2004 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> - 0:1.5.37-1jpp
+- add the --preserve-naming switch to build-jar-repository, and document it
+  (following a discussion with Chip Turner)
+
+* 四 5月 06 2004 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.36-1jpp
+- Fix bootstrap problem by ensuring that build time macro expansion for
+  %{_sysconfdir}/java.conf uses macros defined in this package and does not
+  rely on the macros being already defined.
+- Include correct spec file in tarball.
+
+* 二 5月 04 2004 David Walluck <david@jpackage.org> 0:1.5.35-1jpp
+- expand macros in %{_sysconfdir}/java.conf
+
+* 五 3月 26 2004 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.34-1jpp
+- Update java_home.list with Sun's default 1.4.2_04, 1.4.1_07, 1.3.1_10
+  and 1.3.1_11 locations.
+
+* 一 2月 09 2004 David Walluck <david@anti-microsoft.org> 0:1.5.33-1jpp
+- update for J2SE 1.5.0 Beta 1
+
+* 二 1月 13 2004 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.32-1jpp
+- Fix java-functions location in diff-jars.
+- Add (X)Emacs mode cookies to java.conf and java-functions.
+- Micro-performance improvement to set_javacmd.
+- Insert macros.jpackage before anything starting with "~/" in rpmrc's.
+- Include example httpd.conf snippet for javadocs.
+
+* 一 12月 29 2003 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.31-1jpp
+- Update java_home.list with Sun's default 1.4.2_03, 1.4.1_06 and 1.4.0_04
+  locations.
+
+* 四 11月 13 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> - 0:1.5.30-1jpp
+- Add a minimalist xfonset entry to the default font.properties
+
+* 二 10月 21 2003 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.29-1jpp
+- Update java_home.list with Sun's default 1.4.2_02 and 1.4.1_05 locations.
+
+* 五 10月 17 2003 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.28-1jpp
+- Make package bootstrappable, thanks to Markus Pilzecker for ideas.
+
+* 日 8月 31 2003 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.27-1jpp
+- Update jpackage-1.5-policy wrt. jvm-private and speling fixxes.
+
+* 六 8月 30 2003 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.26-1jpp
+- Add %{_jvmprivdir} (== %{_libdir}/jvm-private), a directory for
+  JVM-private stuff (eg. JCE policy jars).
+- Update java_home.list with Sun's default 1.4.2_01 location.
+
+* 四 8月 14 2003 Ville Skyttä <ville.skytta@iki.fi> - 0:1.5.25-1jpp
+- Update java_home.list.
+- Save .spec in UTF-8.
+
+* 二 6月 10 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.24-1jpp
+- fix more symlinks/copy corner cases
+
+* 二 6月 10 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.23-1jpp
+- debug 1.5.22
+
+* 二 6月 10 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.22-1jpp
+- more correct java version detection regexp, courtesy of Scott Brickner
+- allow creation of harlink/copy jar repositories since tomcat4 seems to need
+  this (reported by Greg Barton)
+
+* 日 5月 18 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.21-1jpp
+- fix a bug in jar repository handling
+- remove unused APPDIR in jar resolution
+- add doc for jpackage 1.5 policy
+
+* 五 5月 16 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.20-1jpp
+- remove unneeded and brittle complexity
+
+* 二 5月 13 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.19-1jpp
+- fix new jar repository scripts (more corner cases)
+- create symlinks for not-found extensions to allow a later repository rebuild
+- create symlinks as [extension].jar, for example [jsse][jcert].jar
+- allow both extension split and collapsing
+  (one jar -> one directory of jars or the other way round)
+
+* 二 5月 13 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.18-1jpp
+- fix new scripts
+
+* 二 5月 13 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.17-1jpp
+- add initial java repository support
+
+* 六 5月 10 2003 David Walluck <david@anti-microsoft.org> 0:1.5.16-1jpp
+- %jpackage_script macro fix
+- add %doc to file list
+- add %config(noreplace) to jpackage-release in file list to shut up rpmlint
+
+* 三 5月 07 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.15-1jpp
+- fix error message in java dir computation
+
+* 六 4月 26 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.14-3jpp
+- use java fonts if available first
+
+* 六 4月 26 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.14-1jpp
+- add java font config
+
+* 三 4月 23 2003 David Walluck <david@anti-microsoft.org> 0:1.5.13-5jpp
+- use quotes in 'test -f'
+
+* 一 4月 21 2003 David Walluck <david@anti-microsoft.org> 0:1.5.13-4jpp
+- use hardcoded file list for %postun and %triggerin
+
+* 四 4月 17 2003 David Walluck <david@anti-microsoft.org> 0:1.5.13-3jpp
+- don't use quotes around the 'find' command in %postun and %triggerin
+- don't add a 'macrofiles:' line in %triggerin to rpmrc if one isn't
+  already there
+
+* 二 4月 15 2003 David Walluck <david@anti-microsoft.org> 0:1.5.13-2jpp
+- try to support macros.jpackage on RedHat 9
+
+* 一 4月 14 2003 David Walluck <david@anti-microsoft.org> 0:1.5.13-1jpp
+- change CLASSPATH to _CLASSPATH and JARS to _JARS
+- clean up trailing ':' in _CLASSPATH
+
+* 一 4月 14 2003 Nicolas Mailhot <Nicolas.Mailhot at laPoste.net> 0:1.5.12-1jpp
+- remove build-classpath dependency on David's stuff since it fails horribly
+  when people actually use it
+- try to actually fix triggers
+
+* 六 4月 12 2003 David Walluck <david@anti-microsoft.org> 0:1.5.11-3jpp
+- don't remove macros.jpackage from rpmrc on jpackage-utils upgrade
+
+* 六 4月 12 2003 David Walluck <david@anti-microsoft.org> 0:1.5.11-2jpp
+- remove argouml.log from tarball
+
+* 五 4月 11 2003 David Walluck <david@anti-microsoft.org> 0:1.5.11-1jpp
+- add build-classpath-directory
+- add epoch
+
+* 四 4月 10 2003 David Walluck <david@anti-microsoft.org> 1.5.10-1jpp
+- back to using %{_libdir}/rpm/rpmrc for macros.jpackage
+- add %{_javadir}--1.4.2 and %{_jnidir}-1.4.2 directories
+- update package description
+- add JAVACMD_OPTS to java.conf
+- use new external java.conf
+- update build-classpath and java-functions to support directories in
+  CLASSPATH
+
+* 一 3月 24 2003 Nicolas Mailhot <Nicolas.Mailhot@jpackage.org> 1.5.9-1jpp
+- more symlinks handling
+
+* 三 3月 19 2003 Nicolas Mailhot <Nicolas.Mailhot@jpackage.org> 1.5.7-1jpp
+- register new jvm alternatives
+- allow use of build-classpath for incomplete paths
+
+* 二 3月 11 2003 Nicolas Mailhot <Nicolas.Mailhot@jpackage.org> 1.5.6-1jpp
+- resurect borked icon/menu handling
+- hopefuly support jni jars (arch-dependant jars)
+
+* 四 2月 13 2003 Nicolas Mailhot <Nicolas.Mailhot@jpackage.org> 1.5.4-3jpp
+- extract jar resolving logic from classpath builder
+- hopefully integrate classpath builder in set_classpath macro
+
+* 三 2月 12 2003 Nicolas Mailhot <Nicolas.Mailhot@jpackage.org> 1.5.3-1jpp
+- add classpath builder
+
+* 三 2月 12 2003 Nicolas Mailhot <Nicolas.Mailhot@jpackage.org> 1.5.2-1jpp
+- New reorg
+
+* 二 2月 11 2003 Nicolas Mailhot <Nicolas.Mailhot@jpackage.org> 1.5.1-1jpp
+- add some extension handling
+- fix some macros broken in 1.5.0
+
+* 二 2月 11 2003 Nicolas Mailhot <Nicolas.Mailhot@jpackage.org> 1.5.0-1jpp
+- use a tar source file
+- use lsb locations
+- prepare for multi-jvm extensions support
+
+* 一 2月 10 2003 David Walluck <david@anti-microsoft.org> 1.4.8-1jpp
+- better installation of macros
+- update %description to list all files currently included in this package
+- jpackage-release in %{_sysconfdir}, not /etc (I hope this is more
+  correct)
+
+* 日 2月 09 2003 David Walluck <david@anti-microsoft.org> 1.4.7-1jpp
+- fix sed in %jpackage_script when paths to jars contain '/'
+- fix typo in macros documentation
+- add jpackage-policy
+- add jpackage-release
+
+* 三 2月 05 2003 David Walluck <david@anti-microsoft.org> 1.4.6-1jpp
+- macro bugfixes
+- instead of tarball we now use %{SOURCEn} format
+
+* 五 1月 31 2003 David Walluck <david@anti-microsoft.org> 1.4.5-1jpp
+- add macros.jpackage (DO NOT attempt to use this until we figure something
+  out, but I would still like to get some feedback about how it looks so far)
+
+* 日 1月 26 2003 David Walluck <david@anti-microsoft.org> 1.4.4-1jpp
+- fix exiting on failed `which` (Ville Skyttä <ville.skytta@iki.fi>)
+
+* 日 1月 26 2003 David Walluck <david@anti-microsoft.org> 1.4.3-2jpp
+- fix release tag in %changelog
+
+* 日 1月 26 2003 David Walluck <david@anti-microsoft.org> 1.4.3-1jpp
+- java-functions changes:
+  + set_jvm: look for javac first to avoid erroneously setting
+    JAVA_HOME to the location of the jre unless we have to
+  + set_jvm: follow symlinks to avoid erroneously setting JAVA_HOME to
+    /usr/bin
+  + set_jvm: export JAVA_HOME
+- changed to use install instead of mkdir and cp
+- remove %attr and rely on install to set the permissions instead
+
+* 六 1月 25 2003 Ville Skyttä <ville.skytta@iki.fi> - 1.4.2-1jpp
+- java-functions changes:
+  + Prevent non-success exit code from "which" in set_jvm, it can now
+    be used when building RPMs.
+  + Use set_jvm in set_javacmd.
+  + Use set_javacmd and $JAVACMD in run.
+- Fix Group tag.
+
+* 六 12月 28 2002 Ville Skyttä <ville.skytta@iki.fi> - 1.4.1-1jpp
+- Add Sun's 1.4.0_03 and BEA JRockit 7.0SP1 default RPM locations.
+
+* 四 11月 21 2002 Ville Skyttä <ville.skytta@iki.fi> - 1.4-1jpp
+- Fix diff-jars when diffing 2 jars with same basename (#635202).
+- Add IBM's 1.4 default RPM location to jvm.list.
+
+* 五 11月 08 2002 Ville Skyttä <ville.skytta@iki.fi> - 1.3-6jpp
+- Add Sun's 1.3.1_06 default RPM location.
+
+* 六 10月 19 2002 Ville Skyttä <ville.skytta@iki.fi> 1.3-5jpp
+- Add Sun's 1.4.1_01 and 1.3.1_05 default RPM locations.
+
+* 二 9月 17 2002 Ville Skyttä <ville.skytta@iki.fi> 1.3-4jpp
+- Add Sun's 1.4.1 default rpm location.
+
+* 四 9月 12 2002 Ville Skyttä <ville.skytta@iki.fi> 1.3-3jpp
+- Add Sun's 1.4.0_02 and new BEA JRockit locations.
+
+* 六 6月 29 2002 Ville Skyttä <ville.skytta@iki.fi> 1.3-2jpp
+- Add section macro.
+
+* 六 6月 29 2002 Ville Skyttä <ville.skytta@iki.fi> 1.3-1jpp
+- Add some variants of Sun J2SE java homes as well as JRockit.
+- Add Distribution tag.
+
+* 五 5月 03 2002 Nicolas Mailhot <nmailhot@users.sourceforge.net> 1.2-1jpp
+Add some stuff to please jakarta ant developpers :
+- OSX java home
+- new function set_javacmd with AIX hack included
+
+* 三 12月 19 2001 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.1-1jpp
+- java-functions: centralized configuration
+- java-functions: jvm list lookup
+- diff-jars: fixed typo
+- diff-jars: used /tmp for files
+- corrected changelog
+
+* 六 12月 01 2001 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.0-1jpp
+- first JPackage release
+

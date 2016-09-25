@@ -1,0 +1,22 @@
+Name        : nss-sysinit
+Version     : 3.21.0
+Release     : 9.76.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分54秒
+Group       : System Environment/Base
+Size        : 13113
+License     : MPLv2.0
+Signature   : RSA/SHA256, 2016年05月18日 星期三 00时31分35秒, Key ID bcb4a85b21c0f39f
+Source RPM  : nss-3.21.0-9.76.amzn1.src.rpm
+Build Date  : 2016年05月13日 星期五 22时45分29秒
+Build Host  : build-64011.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.mozilla.org/projects/security/pki/nss/
+Summary     : System NSS Initialization
+Description :
+Default Operating System module that manages applications loading
+NSS globally on the system. This module loads the system defined
+PKCS #11 modules for NSS and chains with other NSS modules to load
+any system or user configured modules.

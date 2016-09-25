@@ -1,0 +1,13 @@
+postinstall scriptlet (using /bin/sh):
+if [ "$1" = 1 ]; then
+    /sbin/chkconfig --add mdmonitor
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+    service mdmonitor stop > /dev/null 2>&1 ||:
+    /sbin/chkconfig --del mdmonitor
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+    service mdmonitor condrestart > /dev/null 2>&1
+fi

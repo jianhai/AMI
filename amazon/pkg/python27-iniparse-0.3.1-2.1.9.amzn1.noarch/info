@@ -1,0 +1,25 @@
+Name        : python27-iniparse
+Version     : 0.3.1
+Release     : 2.1.9.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时40分52秒
+Group       : Development/Libraries
+Size        : 108870
+License     : MIT
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分25秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-iniparse-0.3.1-2.1.9.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 04时35分42秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://code.google.com/p/iniparse/
+Summary     : Python Module for Accessing and Modifying Configuration Data in INI files
+Description :
+iniparse is an INI parser for Python which is API compatible
+with the standard library's ConfigParser, preserves structure of INI
+files (order of sections & options, indentation, comments, and blank
+lines are preserved when data is updated), and is more convenient to
+use.
+
+This package is meant to be used with Python 2.7.

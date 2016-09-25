@@ -1,0 +1,1165 @@
+* 五 1月 23 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 二 9月 16 2014 Ben Cressey <bcressey@amazon.com>
+- fix scriptlet error in %postun
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/glib2-2.36.3-5.el7
+
+* 一 3月 10 2014 Ben Cressey <bcressey@amazon.com>
+- move gio-querymodules call to posttrans
+
+* 二 2月 11 2014 Colin Walters <walters@redhat.com> - 2.36.3-5
+- Backport patch to fix gnome-shell lockups
+  Resolves: #1030601
+- Backport patch to fix vmtoolsd hangs
+  Resolves: #1063789
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 2.36.3-4
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 2.36.3-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/glib2-2.36.3-2.el7
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/glib2-2.26.1-3.el6
+
+* 四 6月 20 2013 Colin Walters <walters@redhat.com> - 2.36.3-2
+- Backport patch from upstream to fix dconf corruption, among
+  other failures. (#975521)
+
+* 日 6月 09 2013 Matthias Clasen <mclasen@redhat.com> - 2.36.3-1
+- Update to 2.36.3
+
+* 一 5月 13 2013 Richard Hughes <rhughes@redhat.com> - 2.36.2-1
+- Update to 2.36.2
+
+* 六 4月 27 2013 Thorsten Leemhuis <fedora@leemhuis.info> - 2.36.1-2
+- Fix pidgin freezes by applying patch from master (#956872)
+
+* 一 4月 15 2013 Kalev Lember <kalevlember@gmail.com> - 2.36.1-1
+- Update to 2.36.1
+
+* 一 3月 25 2013 Kalev Lember <kalevlember@gmail.com> - 2.36.0-1
+- Update to 2.36.0
+
+* 二 3月 19 2013 Matthias Clasen <mclasen@redhat.com> - 2.35.9-1
+- Update to 2.35.9
+
+* 四 2月 21 2013 Kalev Lember <kalevlember@gmail.com> - 2.35.8-1
+- Update to 2.35.8
+
+* 二 2月 05 2013 Kalev Lember <kalevlember@gmail.com> - 2.35.7-1
+- Update to 2.35.7
+
+* 二 1月 15 2013 Matthias Clasen <mclasen@redhat.com> - 2.35.4-1
+- Update to 2.35.4
+
+* 四 12月 20 2012 Kalev Lember <kalevlember@gmail.com> - 2.35.3-1
+- Update to 2.35.3
+
+* 六 11月 24 2012 Kalev Lember <kalevlember@gmail.com> - 2.35.2-1
+- Update to 2.35.2
+
+* 四 11月 08 2012 Kalev Lember <kalevlember@gmail.com> - 2.35.1-1
+- Update to 2.35.1
+- Drop upstreamed codegen-in-datadir.patch
+
+* 二 10月 16 2012 Kalev Lember <kalevlember@gmail.com> - 2.34.1-1
+- Update to 2.34.1
+
+* 三 10月 10 2012 Tomas Bzatek <tbzatek@redhat.com> - 2.34.0-4
+- Re-enable fam, put it in separate subpackage
+
+* 三 10月 10 2012 Matthias Clasen <mclasen@redhat.com> - 2.34.0-3
+- Disable fam. We use the inotify implementation at runtime anyway.
+  See http://lists.fedoraproject.org/pipermail/devel/2012-October/172438.htm
+
+* 四 9月 27 2012 Colin Walters <walters@verbum.org> - 2.34.0-2
+- Use install -p to preserve timestamps on .py files
+- Rename systemtap tapsets with architecture-specific prefix
+- Pull upstream patch to avoid conflict on /usr/bin/gdbus-codegen
+- Split gtk-doc off into -doc package to avoid multilib conflicts
+- Resolves: #718404
+
+* 一 9月 24 2012 Kalev Lember <kalevlember@gmail.com> - 2.34.0-1
+- Update to 2.34.0
+
+* 二 9月 18 2012 Kalev Lember <kalevlember@gmail.com> - 2.33.14-1
+- Update to 2.33.14
+
+* 三 9月 12 2012 Lennart Poettering <lpoetter@redhat.com> - 2.33.12-2
+- Drop explicit dependency on eject, as it is included in util-linux now, which is available in the base set
+
+* 二 9月 04 2012 Richard Hughes <hughsient@gmail.com> - 2.33.12-1
+- Update to 2.33.12
+
+* 二 8月 21 2012 Richard Hughes <hughsient@gmail.com> - 2.33.10-1
+- Update to 2.33.10
+
+* 一 8月 13 2012 Colin Walters <walters@verbum.org> - 2.33.6-3
+- Re-add code to strip RPATHs (#840414)
+
+* 五 7月 20 2012 Tomas Bzatek <tbzatek@redhat.com> - 2.33.6-2
+- Add runtime dependency on eject (#748007)
+
+* 三 7月 18 2012 Matthias Clasen <mclasen@redhat.com> - 2.33.6-1
+- Update to 2.33.6
+
+* 二 7月 17 2012 Richard Hughes <hughsient@gmail.com> - 2.33.4-1
+- Update to 2.33.4
+
+* 二 6月 26 2012 Matthias Clsaen <mclasen@redhat.com> - 2.33.3-1
+- Update to 2.33.3
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/glib2-2.22.5-7.el6
+
+* 三 6月 06 2012 Richard Hughes <hughsient@gmail.com> - 2.33.2-1
+- Update to 2.33.2
+
+* 六 5月 05 2012 Kalev Lember <kalevlember@gmail.com> - 2.33.1-1
+- Update to 2.33.1
+
+* 一 4月 30 2012 Kalev Lember <kalevlember@gmail.com> - 2.32.1-3
+- Obsolete the removed -static subpackage
+
+* 一 4月 30 2012 Colin Walters <walters@verbum.org> - 2.32.1-2
+- Drop glib2-static subpackage; anaconda hasn't required it since
+  2007.  See bug 193143.
+
+* 五 4月 13 2012 Matthias Clasen <mclasen@redhat.com> 2.32.1-1
+- Update to 2.32.1
+
+* 二 3月 27 2012 Matthias Clasen <mclasen@redhat.com> 2.32.0-1
+- Update to 2.32.0
+
+* 二 3月 20 2012 Kalev Lember <kalevlember@gmail.com> 2.31.22-1
+- Update to 2.31.22
+
+* 一 3月 05 2012 Matthias Clasen <mclasen@redhat.com> 2.31.20-1
+- Update to 2.31.20
+
+* 五 2月 24 2012 Matthias Clasen <mclasen@redhat.com> 2.31.18-1
+- Update to 2.31.18
+
+* 二 2月 21 2012 Richard Hughes <rhughes@redhat.com> 2.31.16-2
+- Add BR: elfutils-libelf-devel for the GResource functionality
+
+* 一 2月 06 2012 Matthias Clasen <mclasen@redhat.com> 2.31.16-1
+- Update to 2.31.16
+- Drop --with-runtime-libdir, since we have /lib -> /usr/lib now
+
+* 五 1月 20 2012 Matthias Clasen <mclasen@redhat.com> 2.31.12-1
+- Update to 2.31.12
+
+* 二 1月 17 2012 Matthias Clasen <mclasen@redhat.com> 2.31.10-2
+- Fix a header problem that was causing build failures
+
+* 一 1月 16 2012 Matthias Clasen <mclasen@redhat.com> - 2.31.10-1
+- Update to 2.31.10
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.31.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 一 12月 19 2011 Matthias Clasen <mclasen@redhat.com> - 2.31.6-1
+- Update to 2.31.6
+
+* 三 11月 23 2011 Matthias Clasen <mclasen@redhat.com> - 2.31.2-2
+- Fix a GDBus regression leading to segfaults
+
+* 一 11月 21 2011 Matthias Clasen <mclasen@redhat.com> - 2.31.2-1
+- Update to 2.31.2
+
+* 五 10月 21 2011 Tomas Bzatek <tbzatek@redhat.com> - 2.31.0-1
+- Update to 2.31.0
+
+* 五 10月 14 2011 Matthias Clasen <mclasen@redhat.com> - 2.30.1-1
+- Update to 2.30.1
+
+* 三 10月 05 2011 Dan Williams <dcbw@redhat.com> - 2.30.0-2
+- Fix signal marshalling on 64-bit big-endian platforms (rh #736489)
+
+* 一 9月 26 2011 Ray <rstrode@redhat.com> - 2.30.0-1
+- Update to 2.30.0
+
+* 一 9月 19 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.92-1
+- Update to 2.29.92
+
+* 二 9月 06 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.90-1
+- Update to 2.29.90
+
+* 二 8月 30 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.18-1
+- Update to 2.29.18
+
+* 二 8月 16 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.16-1
+- Update to 2.29.16
+
+* 六 7月 23 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.14-1
+- Update to 2.29.14
+
+* 二 7月 05 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.10-1
+- Update to 2.29.10
+
+* 二 6月 14 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.8-1
+- Update to 2.29.8
+
+* 四 6月 09 2011 Ville Skyttä <ville.skytta@iki.fi> - 2.29.6-4
+- Own %ghost /usr/lib*/gio/modules/giomodule.cache.
+
+* 一 6月 06 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.6-3
+- Fix a deadlock when finalizing e.g. widgets
+
+* 日 6月 05 2011 Matthias Clasen <mclasen@redhat.com> - 2.29.6-1
+- Update to 2.29.6
+
+* 五 5月 27 2011 Colin Walters <walters@verbum.org> - 2.29.4-2
+- Remove G_BROKEN_FILENAMES; Closes: #708536
+
+* 六 5月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/glib2-2.22.5-6.el6
+
+* 五 5月 06 2011 Tomas Bzatek <tbzatek@redhat.com> - 2.29.4-1
+- Update to 2.29.4
+
+* 四 4月 14 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.6-2
+- Include byte-compiled files, it seems to be required (#670861)
+
+* 四 4月 14 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.6-1
+- Update to 2.28.6
+
+* 五 4月 01 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.5-1
+- Update to 2.28.5
+
+* 二 3月 29 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.4-2
+- Fix some introspection annotations
+
+* 一 3月 21 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.4-1
+- Update to 2.28.4
+
+* 五 3月 18 2011 Colin Walters <walters@verbum.org> - 2.28.3-2
+- Rebuild to hopefully pick up new systemtap mark ABI
+  The current version doesn't seem to be triggering the stock
+  marks; a local rebuild of the RPM does, so let's do a rebuild
+  here.
+
+* 一 3月 14 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.3-1
+- Update to 2.28.3
+
+* 一 3月 07 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.2-1
+- Update to 2.28.2
+
+* 五 2月 18 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.1-1
+- Update to 2.28.1
+- Drop another space-saving hack from the spec
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.28.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 二 2月 08 2011 Matthias Clasen <mclasen@redhat.com> - 2.28.0-1
+- Update to 2.28.0
+
+* 六 1月 29 2011 Matthias Clasen <mclasen@redhat.com> - 2.27.93-1
+- Update to 2.27.93
+
+* 一 1月 24 2011 Ville Skyttä <ville.skytta@iki.fi> - 2.27.92-2
+- Don't run gio-querymodules* in %postun if it no longer exists.
+
+* 六 1月 22 2011 Matthias Clasen <mclasen@redhat.com> - 2.27.92-1
+- Update to 2.27.92
+- Drop update-gio-modules wrapper
+
+* 二 1月 11 2011 Matthias Clasen <mclasen@redhat.com> - 2.27.91-1
+- Update to 2.27.91
+
+* 四 1月 06 2011 Matthias Clasen <mclasen@redhat.com> - 2.27.90-1
+- Update to 2.27.90
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/glib2-2.22.5-5.el6
+
+* 三 12月 01 2010 Tomas Bzatek <tbzatek@redhat.com> - 2.27.4-1
+- Update to 2.27.4
+
+* 四 11月 11 2010 Matthias Clasen <mclasen@redhat.com> - 2.27.3-1
+- Update to 2.27.3
+
+* 一 11月 01 2010 Matthias Clasen <mclasen@redhat.com> - 2.27.2-1
+- Update to 2.27.2
+
+* 三 9月 29 2010 jkeating - 2.27.0-3
+- Rebuilt for gcc bug 634757
+
+* 一 9月 20 2010 Matthias Clasen <mclasen@redhat.com> - 2.27.0-2
+- Make /usr/bin/update-gio-modules executable
+- Make /etc/bash_completion.d/*.sh not executable
+
+* 一 9月 20 2010 Matthias Clasen <mclasen@redhat.com> - 2.27.0-1
+- Update to 2.27.0
+
+* 二 8月 31 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.15-1
+- Update to 2.25.15
+
+* 三 8月 18 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.14-2
+- Fix a PolicyKit problem
+
+* 二 8月 17 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.14-1
+- Update to 2.25.14
+
+* 一 8月 09 2010 Colin Walters <walters@verbum.org> - 2.25.13-2
+- Add patch from mjw to enable systemtap
+  For background, see: https://bugzilla.gnome.org/show_bug.cgi?id=606044
+
+* 五 8月 06 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.13-1
+- Update to 2.25.13
+
+* 一 8月 02 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.12-1
+- Update to 2.25.12
+
+* 一 7月 12 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.11-1
+- Update to 2.25.11
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/glib2-2.22.5-3.el6
+- import source package RHEL6/glib2-2.22.3-2.el6
+
+* 二 6月 29 2010 Colin Walters <walters@verbum.org> - 2.25.10-4
+- Include gsettings bash completion
+
+* 一 6月 28 2010 Colin Walters <walters@verbum.org> - 2.25.10-3
+- Revert rpath change; Fedora's libtool is supposed to not generate
+  them for system paths.
+- Add changes to spec file to support being built from snapshot as
+  well as "make dist"-ball.  This includes BuildRequires and autogen.sh
+  handling, and gtk-doc enabling if we're bootstrapping.
+
+* 日 6月 27 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.10-2
+- Fix an evince crash
+
+* 六 6月 26 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.10-1
+- Update to 2.25.10
+
+* 三 6月 23 2010 Colin Walters <walters@verbum.org> - 2.25.9-3
+- Only strip rpath at install time, not before build.  Neutering
+  libtool sabotages gtk-doc, since it needs those rpaths to run
+  an in-tree binary.
+
+* 二 6月 22 2010 Richard Hughes <rhughes@redhat.com> - 2.25.9-2
+- Backport a patch from git master to avoid a segfault when doing the
+  schema file check for several GNOME projects.
+
+* 五 6月 18 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.9-1
+- Update to 2.25.9
+
+* 二 6月 08 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.8-1
+- Update to 2.25.8
+
+* 二 5月 25 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.7-2
+- Require shared-mime-info
+
+* 一 5月 24 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.7-1
+- Update to 2.25.7
+
+* 三 5月 19 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.6-1
+- Update to 2.25.6
+- Simplify gio-querymodules handling
+
+* 一 5月 17 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.5-2
+- Remove an erroneous removal
+
+* 五 5月 14 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.5-1
+- Update to 2.25.5
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/glib2-2.12.3-4.el5_3.1
+- import source package RHEL5/glib2-2.12.3-2.fc6
+- added submodule prep for package glib2
+
+* 五 4月 23 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.3-1
+- Update to 2.25.3
+- Move schema compiler to the main package, since it is
+  needed by other rpm's %post at runtime
+- Split up man pages to go along with their binaries
+
+* 一 4月 19 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.1-2
+- Add a multilib wrapper for gio-querymodules
+
+* 一 4月 19 2010 Matthias Clasen <mclasen@redhat.com> - 2.25.1-1
+- Update to 2.25.1
+
+* 日 3月 28 2010 Matthias Clasen <mclasen@redhat.com> - 2.24.0-1
+- Update to 2.24.0
+
+* 一 3月 22 2010 Matthias Clasen <mclasen@redhat.com> - 2.23.6-1
+- Update to 2.23.6
+
+* 三 3月 10 2010 Matthias Clasen <mclasen@redhat.com> - 2.23.5-2
+- Fix some rpmlint complaints
+
+* 二 3月 09 2010 Matthias Clasen <mclasen@redhat.com> - 2.23.5-1
+- Update to 2.23.5
+
+* 日 2月 21 2010 Matthias Clasen <mclasen@redhat.com> - 2.23.4-1
+- Update to 2.23.4
+
+* 四 2月 11 2010 Matthias Clasen <mclasen@redhat.com> - 2.23.3-1
+- Update to 2.23.3
+
+* 一 1月 25 2010 Matthias Clasen <mclasen@redhat.com> - 2.23.2-3
+- Actually apply the patch, too
+
+* 一 1月 25 2010 Matthias Clasen <mclasen@redhat.com> - 2.23.2-2
+- Drop the dependency on a GLIBC_PRIVATE symbol
+
+* 一 1月 25 2010 Matthias Clasen <mclasen@redhat.com> - 2.23.2-1
+- Update to 2.23.2
+
+* 日 12月 20 2009 Matthias Clasen <mclasen@redhat.com> - 2.23.1-1
+- Update to 2.23.1
+
+* 一 11月 30 2009 Matthias Clasen <mclasen@redhat.com> - 2.23.0-1
+- Update to 2.23.0
+
+* 五 9月 25 2009 Matthias Clasen <mclasen@redhat.com> - 2.22.0-4
+- Avoid multilib conflicts even harder
+
+* 四 9月 24 2009 Matthias Clasen <mclasen@redhat.com> - 2.22.0-3
+- Avoid multilib conflicts (#525213)
+
+* 三 9月 23 2009 Matthias Clasen <mclasen@redhat.com> - 2.22.0-2
+- Fix location of gdb macros
+
+* 二 9月 22 2009 Matthias Clasen <mclasen@redhat.com> - 2.22.0-1
+- Update to 2.22.0
+
+* 五 9月 04 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.6-1
+- Update to 2.21.6
+
+* 一 8月 24 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.5-1
+- Update to 2.21.5
+
+* 日 8月 02 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.4-3
+- Save some space
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.21.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 17 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.4-1
+- Update to 2.21.4
+
+* 一 7月 06 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.3-2
+- Use --with-runtime-libdir
+
+* 一 7月 06 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.3-1
+- Update to 2.21.3
+
+* 一 6月 15 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.2-1
+- Update to 2.21.2
+
+* 五 5月 29 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.1-1
+- Update to 2.21.1
+
+* 五 5月 15 2009 Matthias Clasen <mclasen@redhat.com> - 2.21.0-1
+- Update to 2.21.0
+
+* 四 4月 09 2009 Matthias Clasen <mclasen@redhat.com> - 2.20.1-1
+- Update to 2.20.1
+- See http://download.gnome.org/sources/glib/2.20/glib-2.20.1.news
+
+* 五 3月 13 2009 Matthias Clasen <mclasen@redhat.com> - 2.20.0-1
+- Update to 2.20.0
+
+* 四 3月 12 2009 Matthias Clasen <mclasen@redhat.com> - 2.19.10-2
+- Fix integer overflows in the base64 handling functions. CVE-2008-4316
+
+* 一 3月 02 2009 Matthias Clasen <mclasen@redhat.com> - 2.19.10-1
+- Update to 2.19.10
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.19.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Matthias Clasen <mclasen@redhat.com> - 2.19.8-1
+- Update to 2.19.8
+- Drop atomic patch, since we are building for i586 now
+
+* 一 2月 16 2009 Matthias Clasen <mclasen@redhat.com> - 2.19.7-1
+- Update to 2.19.7
+
+* 一 2月 02 2009 Matthias Clasen <mclasen@redhat.com> - 2.19.6-1
+- Update to 2.19.6
+
+* 二 1月 20 2009 Matthias Clasen <mclasen@redhat.com> - 2.19.5-1
+- Update to 2.19.5
+
+* 一 1月 05 2009 Matthias Clasen <mclasen@redhat.com> - 2.19.4-1
+- Update to 2.19.4
+
+* 一 12月 15 2008 Matthias Clasen <mclasen@redhat.com> - 2.19.3-1
+- Update to 2.19.3
+
+* 二 12月 02 2008 Matthias Clasen <mclasen@redhat.com> - 2.19.2-2
+- Rebuild
+
+* 一 12月 01 2008 Matthias Clasen <mclasen@redhat.com> - 2.19.2-1
+- Update to 2.19.2
+
+* 一 12月 01 2008 Matthias Clasen <mclasen@redhat.com> - 2.19.1-2
+- Update to 2.19.1
+
+* 一 10月 27 2008 Matthias Clasen <mclasen@redhat.com> - 2.18.2-3
+- Use asm implementation for atomic ops on x86
+
+* 五 10月 24 2008 Alexander Larsson <alexl@redhat.com> - 2.18.2-2
+- Don't return generic fallback icons for files,
+  as this means custom mimetypes don't work (from svn)
+
+* 四 10月 16 2008 Matthias Clasen <mclasen@redhat.com> - 2.18.2-1
+- Update to 2.18.2
+
+* 三 10月 01 2008 David Zeuthen <davidz@redhat.com> - 2.18.1-2
+- Update the patch to always pass FUSE POSIX URI's
+
+* 三 9月 17 2008 Matthias Clasen <mclasen@redhat.com> - 2.18.1-1
+- Update to 2.18.1
+
+* 二 9月 02 2008 Matthias Clasen <mclasen@redhat.com> - 2.18.0-1
+- Update to 2.18.0
+
+* 五 8月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.7-1
+- Update to 2.17.7
+
+* 四 7月 24 2008 David Zeuthen <davidz@redhat.com> - 2.17.4-5
+- rebuild
+
+* 四 7月 24 2008 David Zeuthen <davidz@redhat.com> - 2.17.4-4
+- autoreconf
+
+* 四 7月 24 2008 David Zeuthen <davidz@redhat.com> - 2.17.4-3
+- Backport patch for g_mount_guess_content_type_sync
+
+* 一 7月 21 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.4-2
+- Fix statfs configure check
+
+* 一 7月 21 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.4-1
+- Update to 2.17.4
+
+* 四 7月 03 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.3-3
+- Fix a stupid crash
+
+* 三 7月 02 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.3-1
+- Update to 2.17.3
+
+* 一 6月 16 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.2-2
+- Fix a directory ownership oversight
+
+* 四 6月 12 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.2-1
+- Update to 2.17.2
+
+* 二 5月 27 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.0-1
+- Update to 2.17.0
+
+* 四 4月 24 2008 Tomas Bzatek <tbzatek@redhat.com> - 2.16.3-5
+- Add support for GIO to set selinux attributes (gnome #529694)
+
+* 四 4月 17 2008 David Zeuthen <davidz@redhat.com> - 2.16.3-4
+- Only pass URI's for gio apps (#442835)
+
+* 日 4月 13 2008 Dan Williams <dcbw@redhat.com> - 2.16.3-3
+- Revert upstream changes to g_static_mutex_get_mutex_impl_shortcut that broke
+    users of GMutex and GStaticMutex (bgo#316221)
+
+* 三 4月 09 2008 Matthias Clasen <mclasen@redhat.com> - 2.16.3-2
+- Fix a possible crash in application launching (bgo#527132)
+
+* 二 4月 08 2008 Matthias Clasen <mclasen@redhat.com> - 2.16.3-1
+- Update to 2.16.3
+
+* 四 4月 03 2008 Matthias Clasen <mclasen@redhat.com> - 2.16.2-2
+- Fix occasional misbehaviour of g_timeout_add_seconds
+
+* 二 4月 01 2008 Matthias Clasen <mclasen@redhat.com> - 2.16.2-1
+- Update to 2.16.2
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.16.1-1
+- Update to 2.16.1
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.16.0-1
+- Update to 2.16.0
+
+* 一 3月 03 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.6-2
+- Fix inline support
+
+* 一 2月 25 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.6-1
+- Update to 2.15.6
+
+* 一 2月 11 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.5-1
+- Update to 2.15.5
+
+* 四 2月 07 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.4-2
+- Update PCRE to 7.6
+
+* 一 1月 28 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.4-1
+- Update to 2.15.4
+
+* 一 1月 21 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.3-1
+- Update to 2.15.3
+
+* 一 1月 14 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.2-1
+- Update to 2.15.2
+
+* 二 1月 08 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.1-1
+- 2.15.1
+- add new BuildRequires
+
+* 六 12月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.15.0-4
+- Another attempt
+
+* 六 12月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.15.0-3
+- Fix some errors in desktop files handling
+
+* 五 12月 21 2007 Caolan McNamara <caolanm@redhat.com> - 2.15.0-2
+- add jakubs patch in so xulrunner will build and so gcc too
+
+* 四 12月 20 2007 Matthias Clasen <mclasen@redhat.com> - 2.15.0-1
+- Update to 2.15.0
+
+* 六 11月 24 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.4-1
+- Update to 2.14.4
+
+* 三 11月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.3-1
+- Update to 2.14.3, including a new version of PCRE that
+  fixes several vulnerabilities
+
+* 二 10月 16 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.2-1
+- Update to 2.14.2 (bug fixes)
+
+* 日 9月 16 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.1-1
+- Update to 2.14.1
+
+* 六 8月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.0-1
+- Update to 2.14.0
+
+* 四 8月 02 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.7-3
+- Update License field
+- Don't ship ChangeLog
+
+* 四 7月 12 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.7-2
+- Fix build issues on ppc
+
+* 四 7月 12 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.7-1
+- Update to 2.13.7
+
+* 五 6月 29 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.6-1
+- Update to 2.13.6
+- Drop an ancient Conflict
+
+* 一 6月 18 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.5-1
+- Update to 2.13.5
+
+* 三 6月 06 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.4-1
+- Update to 2.13.4
+
+* 一 6月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.3-1
+- Update to 2.13.3
+
+* 三 5月 23 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.2-1
+- Update to 2.13.2
+
+* 六 5月 19 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.1-1
+- Update to 2.13.1
+
+* 五 3月 09 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.11-1
+- Update to 2.12.11
+
+* 三 3月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.10-1
+- Update to 2.12.10
+
+* 五 2月 09 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.9-4
+- More package review demands:
+ * keep all -devel content in /usr/lib
+
+* 日 2月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.9-3
+- More package review feedback:
+ * install /etc/profile.d snipplets as 644
+ * explain Conflict with libgnomeui
+ * remove stale Conflict with glib-devel
+
+* 六 2月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.9-2
+- Incorporate package review feedback:
+ * drop an obsolete Provides:
+ * add a -static subpackage
+ * explain %check ppc exception
+ * align summaries
+
+* 二 1月 16 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.9-1
+- Update to 2.12.9
+
+* 一 1月 15 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.8-1
+- Update to 2.12.8
+
+* 四 1月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.7-1
+- Update to 2.12.7
+- Fix bit-test on x86-64
+
+* 三 12月 20 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.6-1
+- Update to 2.12.6
+
+* 一 12月 18 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.5-2
+- Fix the configure check for broken poll
+
+* 一 12月 18 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.5-1
+- Update to 2.12.5
+
+* 日 10月 22 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.4-1
+- Update to 2.12.4
+
+* 三 8月 30 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.3-1.fc6
+- Update to 2.12.3
+- Drop upstreamed patch
+
+* 日 8月 27 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.2-2.fc6
+- Use Posix monotonic timers for GTimer
+
+* 二 8月 15 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.2-1.fc6
+- Update to 2.12.2
+
+* 六 7月 22 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.1-1
+- Update to 2.12.1
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.12.0-1.1
+- rebuild
+
+* 日 7月 02 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.0-1
+- Update to 2.12.0
+
+* 二 6月 20 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.4-1
+- Update to 2.11.4
+
+* 一 6月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.3-1
+- Update to 2.11.3
+
+* 一 6月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.2-1
+- Update to 2.11.2
+
+* 四 6月 01 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.1-6
+- Rebuild
+
+* 四 5月 25 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.1-5
+- Fix some fallout
+
+* 四 5月 25 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.1-4
+- Include static libraries, since anaconda needs them (#193143)
+
+* 四 5月 25 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.1-3
+- Keep glibconfig.h in /usr/lib
+
+* 一 5月 22 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.1-2
+- Move glib to /lib
+
+* 一 5月 15 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.1-1
+- Update to 2.11.1
+
+* 二 5月 02 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.0-1
+- Update to 2.11.0
+
+* 五 4月 07 2006 Matthias Clasen <mclasen@redhat.com> - 2.10.2-2
+- Update to 2.10.2
+
+* 二 3月 07 2006 Matthias Clasen <mclasen@redhat.com> - 2.10.1-1
+- Update to 2.10.1
+
+* 五 2月 24 2006 Matthias Clasen <mclasen@redhat.com> - 2.10.0-1
+- Update to 2.10.0
+
+* 日 2月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.6-1
+- Update to 2.9.6
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.9.5-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.9.5-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 27 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.5-1
+- Update to 2.9.5
+
+* 三 1月 18 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.4-1
+- Update to 2.9.4
+
+* 一 1月 16 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.3-1
+- Update to 2.9.3
+
+* 五 1月 06 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.2-2
+- Update to 2.9.2
+
+* 日 12月 11 2005 Matthias Clasen <mclasen@redhat.com>
+- Specfile cosmetics
+
+* 六 12月 10 2005 Matthias Clasen <mclasen@redhat.com> - 2.9.1-1
+- New upstream version
+
+* 三 11月 30 2005 Matthias Clasen <mclasen@redhat.com> - 2.9.0-1
+- New upstream version
+
+* 二 11月 15 2005 Matthias Clasen <mclasen@redhat.com> - 2.8.4-1
+- New upstream version
+
+* 一 10月 03 2005 Matthias Clasen <mclasen@redhat.com> - 2.8.3-1
+- New upstream version
+
+* 一 9月 26 2005 Matthias Clasen <mclasen@redhat.com> - 2.8.2-1
+- New upstream version
+
+* 二 8月 23 2005 Matthias Clasen <mclasen@redhat.com> - 2.8.1-1
+- New upstream version
+- Drop patches
+
+* 六 8月 13 2005 Matthias Clasen <mclasen@redhat.com> - 2.8.0-1
+- New stable upstream version
+- Drop patches
+
+* 五 8月 05 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.6-3
+- Fix C++ guards in gstdio.h
+
+* 四 8月 04 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.6-2
+- Another attempt to fix atomic ops on s390
+
+* 三 8月 03 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.6-1
+- Update to 2.7.6
+
+* 二 8月 02 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.5-1
+- Update to 2.7.5
+
+* 五 7月 22 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.4-1
+- Update to 2.7.4
+
+* 五 7月 15 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.3-1
+- Update to 2.7.3
+
+* 五 7月 08 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.2-1
+- Update to 2.7.2
+
+* 五 7月 01 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.1-1
+- Update to 2.7.1
+
+* 一 6月 13 2005 Matthias Clasen <mclasen@redhat.com> - 2.7.0-1
+- Update to 2.7.0
+
+* 三 4月 06 2005 Matthias Clasen <mclasen@redhat.com> - 2.6.4-1
+- Update to 2.6.4
+- Drop upstreamed patches
+
+* 五 3月 11 2005 Matthias Clasen <mclasen@redhat.com> - 2.6.3-4
+- Fix #150817
+
+* 五 3月 04 2005 Matthias Clasen <mclasen@redhat.com> - 2.6.3-3
+- Rebuild
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com> - 2.6.3-2
+- Rebuild with gcc4
+
+* 一 2月 28 2005 Matthias Clasen <mclasen@redhat.com> - 2.6.3-1
+- Upgrade to 2.6.3
+
+* 五 2月 04 2005 Matthias Clasen <mclasen@redhat.com> - 2.6.2-1
+- Upgrade to 2.6.2
+
+* 一 1月 10 2005 Matthias Clasen <mclasen@redhat.com> - 2.6.1-1
+- Upgrade to 2.6.1
+
+* 二 12月 21 2004 Matthias Clasen <mclasen@redhat.com> - 2.6.0-1
+- Upgrade to 2.6.0
+
+* 一 12月 06 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.8-1
+- Upgrade to 2.4.8
+
+* 三 10月 13 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.7-1
+- Upgrade to 2.4.7
+
+* 五 8月 13 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.6-1
+- Update to 2.4.6
+
+* 日 8月 01 2004 ALan Cox <alan@redhat.com> - 2.4.5-2
+- Fixed BuildRoot to use % macro not hardcode /var/tmp
+
+* 五 7月 30 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.5-1
+- Update to 2.4.5
+- Escape macros in changelog section
+
+* 五 7月 09 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.4-1
+- Update to 2.4.4
+
+* 一 6月 21 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.2-1
+- Require gettext at build time  (#125320)
+- Update to 2.4.2 (#125736)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 19 2004 Matthias Clasen <mclasen@redhat.com> 2.4.1-1
+- Update to 2.4.1
+
+* 二 3月 16 2004 Owen Taylor <otaylor@redhat.com> 2.4.0-1
+- Update to 2.4.0
+
+* 三 3月 10 2004 Mark McLoughlin <markmc@redhat.com> 2.3.6-1
+- Update to 2.3.6
+- Remove gatomic build fix
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Mark McLoughlin <markmc@redhat.com> 2.3.5-1
+- Update to 2.3.5
+- Fix build on ppc64
+- Disable make check on s390 as well - test-thread failing
+
+* 三 2月 25 2004 Mark McLoughlin <markmc@redhat.com> 2.3.3-1
+- Update to 2.3.3
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 23 2004 Jonathan Blandford <jrb@redhat.com> 2.3.2-1
+- new version
+- remove 'make check' temporarily
+
+* 一 9月 08 2003 Owen Taylor <otaylor@redhat.com> 2.2.3-2.0
+- Conflict with libgnomeui <= 2.2.0 (#83581, Göran Uddeborg)
+
+* 二 8月 26 2003 Owen Taylor <otaylor@redhat.com> 2.2.3-1.1
+- Version 2.2.3
+
+* 二 7月 08 2003 Owen Taylor <otaylor@redhat.com> 2.2.2-2.0
+- Bump for rebuild
+
+* 日 6月 08 2003 Owen Taylor <otaylor@redhat.com>
+- Version 2.2.2
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 03 2003 Jeff Johnson <jbj@redhat.com>
+- add explicit epoch's where needed.
+
+* 日 2月 02 2003 Owen Taylor <otaylor@redhat.com>
+- Version 2.2.1
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 1月 09 2003 Owen Taylor <otaylor@redhat.com>
+- Add static libraries to build (#78685, Bernd Kischnick)
+- Bump-and-rebuild for new redhat-rpm-config
+
+* 五 12月 20 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.2.0
+- Add make check to the build process
+
+* 一 12月 16 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.1.5
+
+* 三 12月 11 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.1.4
+
+* 一 12月 02 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.1.3
+
+* 一 10月 07 2002 Havoc Pennington <hp@redhat.com>
+- Try rebuilding with new arches
+
+* 二 8月 13 2002 Havoc Pennington <hp@redhat.com>
+- install glib2.sh and glib2.csh to set G_BROKEN_FILENAMES
+- blow away unpackaged files in install
+
+* 四 8月 08 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.0.6
+- Remove fixed-ltmain.sh; shouldn't be needed any more.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 6月 16 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.4
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 4月 24 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 一 4月 15 2002 Owen Taylor <otaylor@redhat.com>
+- Fix missing .po files (#63336)
+
+* 三 4月 03 2002 Alex Larsson <alexl@redhat.com>
+- Update to version 2.0.1
+
+* 五 3月 08 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.0.0
+
+* 一 2月 25 2002 Alex Larsson <alexl@redhat.com>
+- Update to 1.3.15
+
+* 四 2月 21 2002 Alex Larsson <alexl@redhat.com>
+- Bump for rebuild
+
+* 一 2月 18 2002 Alex Larsson <alexl@redhat.com>
+- Update to 1.3.14
+
+* 五 2月 15 2002 Havoc Pennington <hp@redhat.com>
+- add horrible buildrequires hack
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- 1.3.13.91 cvs snap
+
+* 一 2月 11 2002 Matt Wilson <msw@redhat.com>
+- rebuild from CVS snapshot
+- use setup -q
+
+* 四 1月 31 2002 Jeremy Katz <katzj@redhat.com>
+- rebuild
+
+* 二 1月 29 2002 Owen Taylor <otaylor@redhat.com>
+- 1.3.13
+
+* 二 1月 22 2002 Havoc Pennington <hp@redhat.com>
+- attempting rebuild in rawhide
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- remove 64-bit patch now upstream, 1.3.12.90
+
+* 一 11月 26 2001 Havoc Pennington <hp@redhat.com>
+- add some missing files to file list, langify
+
+* 日 11月 25 2001 Havoc Pennington <hp@redhat.com>
+- add temporary patch to fix GTypeFundamentals on 64-bit
+- Version 1.3.11
+
+* 四 10月 25 2001 Owen Taylor <otaylor@redhat.com>
+- Version 1.3.10
+
+* 二 9月 25 2001 Owen Taylor <otaylor@redhat.com>
+- Version 1.3.9
+
+* 三 9月 19 2001 Owen Taylor <otaylor@redhat.com>
+- Version 1.3.8
+
+* 五 7月 20 2001 Owen Taylor <otaylor@redhat.com>
+- Make -devel package require main package (#45388)
+- Fix description and summary
+- Configure with --disable-gtk-doc
+
+* 三 6月 20 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add some portability fixes needed at least on s390
+- copy config.{guess,sub} instead of calling libtoolize
+
+* 三 6月 13 2001 Havoc Pennington <hp@redhat.com>
+- try a new glib tarball with Makefile changes to work around
+  libtool linking to installed .la files
+- make -devel require pkgconfig
+
+* 二 6月 12 2001 Havoc Pennington <hp@redhat.com>
+- either libtool or the bad libtool hacks caused link
+  against glib-gobject 1.3.2, rebuild
+- 1.3.6
+- bad libtool workarounds
+
+* 五 5月 04 2001 Owen Taylor <otaylor@redhat.com>
+- 1.3.5, rename to glib2
+
+* 五 11月 17 2000 Owen Taylor <otaylor@redhat.com>
+- Final 1.3.2
+
+* 一 11月 13 2000 Owen Taylor <otaylor@redhat.com>
+- Version 1.3.2pre1
+- Remove pkgconfig
+
+* 日 8月 13 2000 Owen Taylor <otaylor@redhat.com>
+- Call 1.3.1b instead of snap... the snap* naming doesn't
+  order correctly.
+
+* 四 8月 10 2000 Havoc Pennington <hp@redhat.com>
+- new snapshot with fixed .pc files
+- include .pc files in file list
+- Include pkg-config
+- Upgrade to a glib CVS snapshot
+
+* 三 7月 19 2000 Jakub Jelinek <jakub@redhat.com>
+- rebuild to cope with glibc locale binary incompatibility
+
+* 五 7月 14 2000 Owen Taylor <otaylor@redhat.com>
+- Remove glib-config.1 manpage from build since
+  it conflicts with glib-devel. When we go to
+  glib glib1.2 setup, we should add it back
+
+* 五 7月 07 2000 Owen Taylor <otaylor@redhat.com>
+- Version 1.3.1
+- Move back to standard %{prefix}
+
+* 四 6月 08 2000 Owen Taylor <otaylor@redhat.com>
+- Rebuild in /opt/gtk-beta
+
+* 二 5月 30 2000 Owen Taylor <otaylor@redhat.com>
+- New version (adds gobject)
+
+* 二 4月 25 2000 Owen Taylor <otaylor@redhat.com>
+- Don't blow away /etc/ld.so.conf (sorry!)
+
+* 一 4月 24 2000 Owen Taylor <otaylor@redhat.com>
+- Snapshot RPM for Pango testing
+
+* 五 2月 04 2000 Owen Taylor <otaylor@redhat.com>
+- Added fixes from stable branch of CVS
+
+* 四 10月 07 1999 Owen Taylor <otaylor@redhat.com>
+- version 1.2.6
+
+* 五 9月 24 1999 Owen Taylor <otaylor@redhat.com>
+- version 1.2.5
+
+* 五 9月 17 1999 Owen Taylor <otaylor@redhat.com>
+- version 1.2.4
+
+* 一 6月 07 1999 Owen Taylor <otaylor@redhat.com>
+- version 1.2.3
+
+* 四 3月 25 1999 Michael Fulbright <drmike@redhat.com>
+- version 1.2.1
+
+* 五 2月 26 1999 Michael Fulbright <drmike@redhat.com>
+- Version 1.2
+
+* 四 2月 25 1999 Michael Fulbright <drmike@redhat.com>
+- version 1.2.0pre1
+
+* 二 2月 23 1999 Cristian Gafton <gafton@redhat.com>
+- new description tags
+
+* 日 2月 21 1999 Michael Fulbright <drmike@redhat.com>
+- removed libtoolize from %build
+
+* 四 2月 11 1999 Michael Fulbright <drmike@redhat.com>
+- added libgthread to file list
+
+* 五 2月 05 1999 Michael Fulbright <drmike@redhat.com>
+- version 1.1.15
+
+* 三 2月 03 1999 Michael Fulbright <drmike@redhat.com>
+- version 1.1.14
+
+* 一 1月 18 1999 Michael Fulbright <drmike@redhat.com>
+- version 1.1.13
+
+* 三 1月 06 1999 Michael Fulbright <drmike@redhat.com>
+- version 1.1.12
+
+* 三 12月 16 1998 Michael Fulbright <drmike@redhat.com>
+- updated in preparation for the GNOME freeze
+
+* 一 4月 13 1998 Marc Ewing <marc@redhat.com>
+- Split out glib package
+

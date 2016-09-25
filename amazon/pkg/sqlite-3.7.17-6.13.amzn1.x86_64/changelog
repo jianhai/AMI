@@ -1,0 +1,376 @@
+* 二 8月 18 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/sqlite-3.7.17-6.el7_1.1
+
+* 四 7月 23 2015 Jan Stanek <jstanek@redhat.com> 3.7.17-6.1
+- Fixes for CVE-2015-3415 CVE-2015-3414 CVE-2015-3416
+  Resolves: rhbz#1244731
+
+* 二 10月 21 2014 Dan Horák <dhorak@redhat.com> - 3.7.17-6
+- Release bump for ppc64le
+
+* 四 9月 11 2014 Ben Cressey <bcressey@amazon.com>
+- list packaged files and directories
+
+* 二 8月 19 2014 Jan Stanek <jstanek@redhat.com> - 3.7.17-5
+- Release bump
+
+* 四 7月 10 2014 Yaakov Selkowitz <yselkowi@redhat.com> - 3.7.17-4.1
+- Backport 64k page fix from latest upstream (#1118151)
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/sqlite-3.7.17-4.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 3.7.17-4
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 3.7.17-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/sqlite-3.7.17-1.el7
+
+* 四 12月 05 2013 Jan Stanek <jstanek@redhat.com> - 3.7.17-2
+- Backported CAST fix from latest upstream
+
+* 三 5月 22 2013 Jan Stanek <jstanek@redhat.com> - 3.7.17-1
+- Update to 3.7.17 (http://www.sqlite.org/releaselog/3_7_17.html)
+
+* 四 5月 16 2013 Jan Stanek <jstanek@redhat.com> - 3.7.16.2-2
+- Added missing options to man page (#948862)
+
+* 一 4月 29 2013 Jan Stanek <jstanek@redhat.com> - 3.7.16.2-1
+- update to 3.7.16.2 (http://www.sqlite.org/releaselog/3_7_16_2.html)
+- add support for aarch64 (rerunning autoconf) (#926568)
+
+* 日 3月 31 2013 Panu Matilainen <pmatilai@redhat.com> - 3.7.16.1-1
+- update to 3.7.16.1 (https://www.sqlite.org/releaselog/3_7_16_1.html)
+
+* 三 3月 20 2013 Panu Matilainen <pmatilai@redhat.com> - 3.7.16-1
+- update to 3.7.16 (http://www.sqlite.org/releaselog/3_7_16.html)
+
+* 五 2月 15 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.7.15.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 1月 10 2013 Panu Matilainen <pmatilai@redhat.com> - 3.7.15.2-1
+- update to 3.7.15.2 (http://www.sqlite.org/releaselog/3_7_15_2.html)
+
+* 四 12月 13 2012 Panu Matilainen <pmatilai@redhat.com> - 3.7.15-1
+- update to 3.7.15 (http://www.sqlite.org/releaselog/3_7_15.html)
+- fix an old incorrect date in spec changelog
+
+* 二 11月 06 2012 Panu Matilainen <pmatilai@redhat.com> - 3.7.14.1-1
+- update to 3.7.14.1 (http://www.sqlite.org/releaselog/3_7_14_1.html)
+
+* 三 10月 03 2012 Panu Matilainen <pmatilai@redhat.com> - 3.7.14-1
+- update to 3.7.14 (http://www.sqlite.org/releaselog/3_7_14.html)
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.7.13-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 一 6月 25 2012 Panu Matilainen <pmatilai@redhat.com> - 3.7.13-1
+- update to 3.7.13 (http://www.sqlite.org/releaselog/3_7_13.html)
+- drop no longer needed savepoint relase patch
+
+* 五 6月 01 2012 Panu Matilainen <pmatilai@redhat.com> - 3.7.11-3
+- don't abort pending queries on release of nested savepoint (#821642)
+
+* 三 4月 25 2012 Panu Matilainen <pmatilai@redhat.com> - 3.7.11-2
+- run test-suite with MALLOC_CHECK_=3
+- disable buggy malloc_usable_size code (#801981)
+
+* 一 3月 26 2012 Panu Matilainen <pmatilai@redhat.com> - 3.7.11-1
+- update to 3.7.11 (http://www.sqlite.org/releaselog/3_7_11.html)
+
+* 三 3月 07 2012 Panu Matilainen <pmatilai@redhat.com> - 3.7.10-1
+- update to 3.7.10 (http://www.sqlite.org/releaselog/3_7_10.html)
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.7.9-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 二 11月 22 2011 Panu Matilainen <pmatilai@redhat.com> - 3.7.9-1
+- update to 3.7.9 (http://www.sqlite.org/releaselog/3_7_9.html)
+
+* 五 10月 28 2011 Panu Matilainen <pmatilai@redhat.com> - 3.7.8-1
+- update to 3.7.8 (http://www.sqlite.org/releaselog/3_7_8.html)
+
+* 三 7月 13 2011 Panu Matilainen <pmatilai@redhat.com> - 3.7.7.1-1
+- update to 3.7.7.1 (http://www.sqlite.org/releaselog/3_7_7_1.html)
+- autoconf no longer needed for build, libdl check finally upstreamed
+
+* 三 5月 25 2011 Panu Matilainen <pmatilai@redhat.com> - 3.7.6.3-1
+- update to 3.7.6.3 (http://www.sqlite.org/releaselog/3_7_6_3.html)
+
+* 六 5月 21 2011 Peter Robinson <pbrobinson@gmail.com> - 3.7.6.2-3
+- add arm to the exclude from tests list
+
+* 五 4月 29 2011 Panu Matilainen <pmatilai@redhat.com> - 3.7.6.2-2
+- comment out stupid tests causing very bogus build failure on koji
+
+* 四 4月 21 2011 Panu Matilainen <pmatilai@redhat.com> - 3.7.6.2-1
+- update to 3.7.6.2 (http://www.sqlite.org/releaselog/3_7_6_2.html)
+
+* 五 2月 25 2011 Dennis Gilmore <dennis@ausil.us> - 3.7.5-4
+- build tests on sparc expecting failures same as the other big endian arches
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.7.5-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 2月 02 2011 Panu Matilainen <pmatilai@redhat.com> - 3.7.5-2
+- unwanted cgi-script in docs creating broken dependencies, remove it
+- make doc sub-package noarch
+
+* 二 2月 01 2011 Panu Matilainen <pmatilai@redhat.com> - 3.7.5-1
+- update to 3.7.5 (http://www.sqlite.org/releaselog/3_7_5.html)
+
+* 四 12月 09 2010 Panu Matilainen <pmatilai@redhat.com> - 3.7.4-1
+- update to 3.7.4 (http://www.sqlite.org/releaselog/3_7_4.html)
+- deal with upstream source naming, versioning and format changing
+- fixup wal2-test expections wrt SQLITE_DISABLE_DIRSYNC use
+
+* 五 11月 05 2010 Dan Horák <dan[at]danny.cz> - 3.7.3-2
+- expect test failures also on s390x
+
+* 一 11月 01 2010 Panu Matilainen <pmatilai@redhat.com> - 3.7.3-1
+- update to 3.7.3 (http://www.sqlite.org/releaselog/3_7_3.html)
+
+* 四 9月 02 2010 Tom "spot" Callaway <tcallawa@redhat.com> - 3.7.0.1-2
+- enable SQLITE_SECURE_DELETE, SQLITE_ENABLE_UNLOCK_NOTIFY for firefox 4
+
+* 五 8月 13 2010 Panu Matilainen <pmatilai@redhat.com> - 3.7.0.1-1
+- update to 3.7.0.1 (http://www.sqlite.org/releaselog/3_7_0_1.html)
+
+* 二 7月 13 2010 Cristian Gafton <gafton@amazon.com>
+- undo tcl disablement
+
+* 一 7月 12 2010 Cristian Gafton <gafton@amazon.com>
+- disable tcl build ; rebuild
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/sqlite-3.6.20-1.el6
+
+* 六 7月 03 2010 Dan Horák <dan[at]danny.cz> - 3.6.23.1-2
+- some tests are failing on s390 and ppc/ppc64 so don't fail the whole build there
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/sqlite-3.3.6-5
+- import source package RHEL5/sqlite-3.3.6-2
+- added submodule prep for package sqlite
+
+* 一 4月 19 2010 Panu Matilainen <pmatilai@redhat.com> - 3.6.23.1-1
+- update to 3.6.23.1 (http://www.sqlite.org/releaselog/3_6_23_1.html)
+
+* 三 3月 10 2010 Panu Matilainen <pmatilai@redhat.com> - 3.6.23-1
+- update to 3.6.23 (http://www.sqlite.org/releaselog/3_6_23.html)
+- drop the lemon sprintf patch, upstream doesn't want it
+- make test-suite errors fail build finally
+
+* 一 1月 18 2010 Panu Matilainen <pmatilai@redhat.com> - 3.6.22-1
+- update to 3.6.22 (http://www.sqlite.org/releaselog/3_6_22.html)
+
+* 二 12月 08 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.21-1
+- update to 3.6.21 (http://www.sqlite.org/releaselog/3_6_21.html)
+
+* 二 11月 17 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.20-1
+- update to 3.6.20 (http://www.sqlite.org/releaselog/3_6_20.html)
+
+* 二 10月 06 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.18-1
+- update to 3.6.18 (http://www.sqlite.org/releaselog/3_6_18.html)
+- drop no longer needed test-disabler patches
+
+* 五 8月 21 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.17-1
+- update to 3.6.17 (http://www.sqlite.org/releaselog/3_6_17.html)
+- disable to failing tests until upstream fixes
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.6.14.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 6月 12 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.14.2-1
+- update to 3.6.14.2 (#505229)
+
+* 一 5月 18 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.14-2
+- disable rpath
+- add -doc subpackage instead of patching out reference to it
+
+* 四 5月 14 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.14-1
+- update to 3.6.14 (http://www.sqlite.org/releaselog/3_6_14.html)
+- merge-review cosmetics (#226429)
+  - drop ancient sqlite3 obsoletes
+  - fix tab vs space whitespace issues
+  - remove commas from summaries
+- fixup io-test fsync expectations wrt SQLITE_DISABLE_DIRSYNC
+
+* 三 4月 15 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.13-1
+- update to 3.6.13
+
+* 四 4月 09 2009 Dennis Gilmore <dennis@ausil.us> - 3.6.12-3
+- apply upstream patch for memory alignment issue (#494906)
+
+* 二 4月 07 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.12-2
+- disable strict aliasing to work around brokenness on 3.6.12 (#494266)
+- run test-suite on build but let it fail for now
+
+* 五 4月 03 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.12-1
+- update to 3.6.12 (#492662)
+- remove reference to non-existent sqlite-doc from manual (#488883)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.6.10-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 04 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.10-3
+- enable RTREE and FTS3 extensions (#481417)
+
+* 四 1月 22 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.10-2
+- upstream fix yum breakage caused by new keywords (#481189)
+
+* 四 1月 22 2009 Panu Matilainen <pmatilai@redhat.com> - 3.6.10-1
+- update to 3.6.10
+
+* 三 12月 31 2008 Panu Matilainen <pmatilai@redhat.com> - 3.6.7-1
+- update to 3.6.7
+- avoid lemon ending up in main sqlite package too
+
+* 五 12月 05 2008 Panu Matilainen <pmatilai@redhat.com> - 3.6.6.2-4
+- add lemon subpackage
+
+* 四 12月 04 2008 Matthias Clasen <mclasen@redhat.com> - 3.6.6.2-3
+- Rebuild for pkg-config provides
+
+* 二 12月 02 2008 Panu Matilainen <pmatilai@redhat.com> - 3.6.6.2-2
+- require tcl(abi) in sqlite-tcl subpackage (#474034)
+- move tcl extensions to arch-specific location
+- enable dependency extraction on the tcl dso
+- require pkgconfig in sqlite-devel
+
+* 六 11月 29 2008 Panu Matilainen <pmatilai@redhat.com> - 3.6.6.2-1
+- update to 3.6.6.2
+
+* 六 11月 08 2008 Panu Matilainen <pmatilai@redhat.com> - 3.6.4-1
+- update to 3.6.4
+- drop patches already upstream
+
+* 一 9月 22 2008 Panu Matilainen <pmatilai@redhat.com> - 3.5.9-2
+- Remove references to temporary registers from cache on release (#463061)
+- Enable loading of external extensions (#457433)
+
+* 二 6月 17 2008 Stepan Kasal <skasal@redhat.com> - 3.5.9-1
+- update to 3.5.9
+
+* 三 4月 23 2008 Panu Matilainen <pmatilai@redhat.com> - 3.5.8-1
+- update to 3.5.8
+- provide full version in pkg-config (#443692)
+
+* 一 3月 31 2008 Panu Matilainen <pmatilai@redhat.com> - 3.5.6-2
+- remove reference to static libs from -devel description (#439376)
+
+* 二 2月 12 2008 Panu Matilainen <pmatilai@redhat.com> - 3.5.6-1
+- update to 3.5.6
+- also fixes #432447
+
+* 五 1月 25 2008 Panu Matilainen <pmatilai@redhat.com> - 3.5.4-3
+- enable column metadata API (#430258)
+
+* 二 1月 08 2008 Panu Matilainen <pmatilai@redhat.com> - 3.5.4-2
+- avoid packaging CVS directory as documentation (#427755)
+
+* 五 12月 21 2007 Panu Matilainen <pmatilai@redhat.com> - 3.5.4-1
+- Update to 3.5.4 (#413801)
+
+* 五 9月 28 2007 Panu Matilainen <pmatilai@redhat.com> - 3.4.2-3
+- Add another build conditional for enabling %check
+
+* 五 9月 28 2007 Panu Matilainen <pmatilai@redhat.com> - 3.4.2-2
+- Use bconds for the spec build conditionals
+- Enable -tcl subpackage again (#309041)
+
+* 三 8月 15 2007 Paul Nasrat <pnasrat@redhat.com> - 3.4.2-1
+- Update to 3.4.2
+
+* 六 7月 21 2007 Paul Nasrat <pnasrat@redhat.com> - 3.4.1-1
+- Update to 3.4.1
+
+* 日 6月 24 2007 Paul Nasrat <pnsarat@redhat.com> - 3.4.0-2
+- Disable load for now (#245486)
+
+* 二 6月 19 2007 Paul Nasrat <pnasrat@redhat.com> - 3.4.0-1
+- Update to 3.4.0
+
+* 五 6月 01 2007 Paul Nasrat <pnasrat@redhat.com> - 3.3.17-2
+- Enable load 
+- Build fts1 and fts2
+- Don't sync on dirs (#237427)
+
+* 二 5月 29 2007 Paul Nasrat <pnasrat@redhat.com> - 3.3.17-1
+- Update to 3.3.17
+
+* 一 3月 19 2007 Paul Nasrat <pnasrat@redhat.com> - 3.3.13-1
+- Update to 3.3.13
+
+* 五 8月 11 2006 Paul Nasrat <pnasrat@redhat.com> - 3.3.6-2
+- Fix conditional typo (patch from Gareth Armstrong)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.3.6-1.1
+- rebuild
+
+* 一 6月 26 2006 Paul Nasrat <pnasrat@redhat.com> - 3.3.6-1
+- Update to 3.3.6
+- Fix typo  (#189647)
+- Enable threading fixes (#181298)
+- Conditionalize static library
+
+* 一 4月 17 2006 Paul Nasrat <pnasrat@redhat.com> - 3.3.5-1
+- Update to 3.3.5
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.3.3-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.3.3-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 31 2006 Christopher Aillon <caillon@redhat.com> - 3.3.3-1
+- Update to 3.3.3
+
+* 二 1月 31 2006 Christopher Aillon <caillon@redhat.com> - 3.3.2-1
+- Update to 3.3.2
+
+* 二 1月 24 2006 Paul Nasrat <pnasrat@redhat.com> - 3.2.8-1
+- Add --enable-threadsafe (Nicholas Miell)
+- Update to 3.2.8
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 10月 04 2005 Jeremy Katz <katzj@redhat.com> - 3.2.7-2
+- no more static file or libtool archive (#169874)
+
+* 三 9月 28 2005 Florian La Roche <laroche@redhat.com>
+- Upgrade to 3.2.7 release.
+
+* 四 9月 22 2005 Florian La Roche <laroche@redhat.com>
+- Upgrade to 3.2.6 release.
+
+* 日 9月 11 2005 Florian La Roche <laroche@redhat.com>
+- Upgrade to 3.2.5 release.
+
+* 五 7月 08 2005 Roland McGrath <roland@redhat.com> - 3.2.2-1
+- Upgrade to 3.2.2 release.
+
+* 六 4月 09 2005 Warren Togami <wtogami@redhat.com> - 3.1.2-3
+- fix buildreqs (#154298)
+
+* 一 4月 04 2005 Jeremy Katz <katzj@redhat.com> - 3.1.2-2
+- disable tcl subpackage
+
+* 三 3月 09 2005 Jeff Johnson <jbj@redhat.com> 3.1.2-1
+- rename to "sqlite" from "sqlite3" (#149719, #150012).
+
+* 三 2月 16 2005 Jeff Johnson <jbj@jbj.org> 3.1.2-1
+- upgrade to 3.1.2.
+- add sqlite3-tcl sub-package.
+
+* 六 2月 05 2005 Jeff Johnson <jbj@jbj.org> 3.0.8-3
+- repackage for fc4.
+
+* 一 1月 17 2005 R P Herrold <info@owlriver.com> 3.0.8-2orc
+- fix a man page nameing conflict when co-installed with sqlite-2, as
+  is permissible
+

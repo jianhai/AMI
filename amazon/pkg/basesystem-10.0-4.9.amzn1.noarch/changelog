@@ -1,0 +1,15 @@
+* 二 7月 19 2011 19:34:10 UTC Andrew Jorgensen <ajorgens@amazon.com>
+- re-brand to Amazon Linux
+
+* 五 7月 09 2010 21:37:22 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/basesystem-10.0-4.el6
+
+* 五 7月 09 2010 21:37:22 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/basesystem-10.0-3.1
+
+* 五 5月 07 2010 00:39:23 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/basesystem-8.0-5.1.1
+
+* 五 5月 07 2010 00:11:39 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package basesystem
+

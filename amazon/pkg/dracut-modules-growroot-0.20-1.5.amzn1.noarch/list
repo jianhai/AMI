@@ -1,0 +1,4 @@
+/usr/share/dracut/modules.d/50growroot
+/usr/share/dracut/modules.d/50growroot/growroot-dummy.sh
+/usr/share/dracut/modules.d/50growroot/growroot.sh
+/usr/share/dracut/modules.d/50growroot/install

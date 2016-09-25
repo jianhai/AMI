@@ -1,0 +1,16 @@
+device-mapper-event
+dmraid = 1.0.0.rc16-11.8.amzn1
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libdevmapper-event.so.1.02()(64bit)
+libdevmapper.so.1.02()(64bit)
+libdl.so.2()(64bit)
+libdmraid.so.1()(64bit)
+libdmraid.so.1(Base)(64bit)
+libselinux.so.1()(64bit)
+libsepol.so.1()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+sgpio

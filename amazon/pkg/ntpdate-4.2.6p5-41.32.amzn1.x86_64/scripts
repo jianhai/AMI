@@ -1,0 +1,12 @@
+preinstall scriptlet (using /bin/sh):
+/usr/sbin/groupadd -g 38 ntp  2> /dev/null || :
+/usr/sbin/useradd -u 38 -g 38 -s /sbin/nologin -M -r -d /etc/ntp ntp 2>/dev/null || :
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add ntpdate
+:
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" -eq 0 ]; then
+	/sbin/service ntpdate stop &> /dev/null
+	/sbin/chkconfig --del ntpdate
+fi
+:

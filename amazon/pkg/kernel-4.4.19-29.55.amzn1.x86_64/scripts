@@ -1,0 +1,8 @@
+postinstall program: /bin/sh
+preuninstall scriptlet (using /bin/sh):
+/sbin/new-kernel-pkg --rminitrd --rmmoddep --remove 4.4.19-29.55.amzn1.x86_64 || exit $?
+posttrans scriptlet (using /bin/sh):
+
+/sbin/new-kernel-pkg --package kernel --mkinitrd --make-default --dracut --depmod --install 4.4.19-29.55.amzn1.x86_64 || exit $?
+
+/sbin/new-kernel-pkg --package kernel --rpmposttrans 4.4.19-29.55.amzn1.x86_64 || exit $?

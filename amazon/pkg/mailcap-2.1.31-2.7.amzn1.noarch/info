@@ -1,0 +1,28 @@
+Name        : mailcap
+Version     : 2.1.31
+Release     : 2.7.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时40分28秒
+Group       : System Environment/Base
+Size        : 52877
+License     : Public Domain and MIT
+Signature   : RSA/SHA256, 2012年02月17日 星期五 18时14分57秒, Key ID bcb4a85b21c0f39f
+Source RPM  : mailcap-2.1.31-2.7.amzn1.src.rpm
+Build Date  : 2012年01月05日 星期四 21时59分44秒
+Build Host  : build-31005.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://git.fedoraproject.org/git/mailcap.git
+Summary     : Helper application and MIME type associations for file types
+Description :
+The mailcap file is used by the metamail program.  Metamail reads the
+mailcap file to determine how it should display non-text or multimedia
+material.  Basically, mailcap associates a particular type of file
+with a particular program that a mail agent or other program can call
+in order to handle the file.  Mailcap should be installed to allow
+certain programs to be able to handle non-text files.
+
+Also included in this package is the mime.types file which contains a
+list of MIME types and their filename "extension" associations, used
+by several applications e.g. to determine MIME types for filenames.

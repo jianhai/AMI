@@ -1,0 +1,12 @@
+* 五 7月 09 2010 22:45:49 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/sgpio-1.2.0.10-5.el6
+
+* 五 7月 09 2010 22:45:49 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/sgpio-1.2.0.10-4.1.el6
+
+* 五 5月 07 2010 02:48:46 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/sgpio-1.2.0_10-2.el5
+
+* 五 5月 07 2010 00:16:59 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package sgpio
+

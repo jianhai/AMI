@@ -1,0 +1,24 @@
+Name        : readline
+Version     : 6.2
+Release     : 9.14.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分34秒
+Group       : System Environment/Libraries
+Size        : 450640
+License     : GPLv3+
+Signature   : RSA/SHA256, 2014年06月11日 星期三 03时28分53秒, Key ID bcb4a85b21c0f39f
+Source RPM  : readline-6.2-9.14.amzn1.src.rpm
+Build Date  : 2014年06月10日 星期二 20时26分09秒
+Build Host  : build-64001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+Summary     : A library for editing typed command lines
+Description :
+The Readline library provides a set of functions that allow users to
+edit command lines. Both Emacs and vi editing modes are available. The
+Readline library includes additional functions for maintaining a list
+of previously-entered command lines for recalling or editing those
+lines, and for performing csh-like history expansion on previous
+commands.

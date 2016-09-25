@@ -1,0 +1,8 @@
+/usr/bin/env
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+ruby(release) = 2.0.0
+ruby20(irb)
+ruby20(rubygems)
+rubygem20(json) >= 1.4
+rubygem20(json) < 2

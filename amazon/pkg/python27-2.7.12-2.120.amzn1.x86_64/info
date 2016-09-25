@@ -1,0 +1,34 @@
+Name        : python27
+Version     : 2.7.12
+Release     : 2.120.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分43秒
+Group       : Development/Languages
+Size        : 87394
+License     : Python
+Signature   : RSA/SHA256, 2016年09月01日 星期四 23时53分28秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python27-2.7.12-2.120.amzn1.src.rpm
+Build Date  : 2016年09月01日 星期四 22时26分55秒
+Build Host  : build-64011.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.python.org/
+Summary     : An interpreted, interactive, object-oriented programming language
+Description :
+Python is an interpreted, interactive, object-oriented programming
+language often compared to Tcl, Perl, Scheme or Java. Python includes
+modules, classes, exceptions, very high level dynamic data types and
+dynamic typing. Python supports interfaces to many system calls and
+libraries, as well as to various windowing systems (X11, Motif, Tk,
+Mac and MFC).
+
+Programmers can write new built-in modules for Python in C or C++.
+Python can be used as an extension language for applications that need
+a programmable interface.
+
+Note that documentation for Python is provided in the python-docs
+package.
+
+This package provides the "python" executable; most of the actual
+implementation is within the "python-libs" package.

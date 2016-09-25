@@ -1,0 +1,11 @@
+postinstall scriptlet (using <lua>):
+if posix.access("/etc/ld.so.cache") then
+  if posix.stat("/usr/lib/locale/locale-archive.tmpl", "size") > 0 then
+    pid = posix.fork()
+    if pid == 0 then
+      posix.exec("/usr/sbin/build-locale-archive")
+    elseif pid > 0 then
+      posix.wait(pid)
+    end
+  end
+end

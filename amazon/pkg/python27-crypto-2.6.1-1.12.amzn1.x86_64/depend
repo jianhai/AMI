@@ -1,0 +1,13 @@
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libgmp.so.10()(64bit)
+libpthread.so.0()(64bit)
+libpython2.7.so.1.0()(64bit)
+python(abi) = 2.7
+python27(dist-packages)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

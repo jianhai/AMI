@@ -1,0 +1,528 @@
+* 二 3月 08 2016 Munehisa Kamata <kamatam@amazon.com>
+- remove attr man pages
+
+* 一 3月 07 2016 Munehisa Kamata <kamatam@amazon.com>
+- import source package F24/man-pages-4.04-2.fc24
+- import source package F24/man-pages-4.04-1.fc24
+- import source package F24/man-pages-4.02-2.fc24
+- import source package F24/man-pages-4.01-1.fc24
+- import source package F23/man-pages-4.00-5.fc23
+- import source package F23/man-pages-4.00-4.fc23
+- import source package F22/man-pages-3.81-3.fc22
+- import source package F22/man-pages-3.81-2.fc22
+- import source package F22/man-pages-3.81-1.fc22
+- import source package F22/man-pages-3.79-1.fc22
+- import source package F21/man-pages-3.69-5.fc21
+- import source package F21/man-pages-3.69-4.fc21
+- import source package F21/man-pages-3.69-3.fc21
+- import source package F21/man-pages-3.69-2.fc21
+
+* 四 2月 04 2016 Fedora Release Engineering <releng@fedoraproject.org> - 4.04-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
+* 一 1月 04 2016 Nikola Forró <nforro@redhat.com> - 4.04-1
+- updated to 4.04
+  resolves #1294723
+
+* 一 12月 07 2015 Nikola Forró <nforro@redhat.com> - 4.03-1
+- updated to 4.03
+  resolves #1288782
+
+* 四 10月 22 2015 Nikola Forró <nforro@redhat.com> - 4.02-2
+- added conflict with attr versions containing attr.5 man page
+  resolves #1273702
+
+* 一 8月 10 2015 Nikola Forró <nforro@redhat.com> - 4.02-1
+- updated to 4.02
+  resolves #1251780
+  resolves #1249444
+
+* 五 7月 24 2015 Nikola Forró <nforro@redhat.com> - 4.01-1
+- updated to 4.01
+  resolves #1246298
+
+* 三 6月 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.00-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
+
+* 五 5月 22 2015 jchaloup <jchaloup@redhat.com> - 4.00-2
+- rtld-audit.7: use the correct format character
+  resolves: #1222719
+
+* 四 5月 07 2015 jchaloup <jchaloup@redhat.com> - 4.00-1
+- updated to 4.00
+  resolves: #1219478
+
+* 一 4月 20 2015 jchaloup <jchaloup@redhat.com> - 3.83-1
+- updated to 3.83
+  resolves: #1213147
+
+* 二 3月 31 2015 jchaloup <jchaloup@redhat.com> - 3.82-1
+- updated to 3.82
+  resolves: #1207665
+
+* 二 3月 03 2015 jchaloup <jchaloup@redhat.com> - 3.81-1
+- updated to 3.81
+  resolves: #1197926
+
+* 日 2月 22 2015 jchaloup <jchaloup@redhat.com> - 3.80-1
+- updated to 3.80
+  resolves: #1194974
+
+* 一 2月 02 2015 jchaloup <jchaloup@redhat.com> - 3.79-1
+- updated to 3.79
+  resolves: #1188036
+
+* 五 1月 23 2015 jchaloup <jchaloup@redhat.com> - 3.78-1
+- updated to 3.78
+  resolves: #1185309
+
+* 四 1月 15 2015 jchaloup <jchaloup@redhat.com> - 3.77-1
+- updated to 3.77
+  resolves: #1181496
+
+* 一 1月 05 2015 jchaloup <jchaloup@redhat.com> - 3.76-1
+- updated to 3.76
+  resolves: #1178355
+
+* 六 10月 18 2014 jchaloup <jchaloup@redhat.com> - 3.75-1
+- updated to 3.75
+  resolves: #1154261
+
+* 三 10月 08 2014 jchaloup <jchaloup@redhat.com> - 3.74-1
+updated to 3.74
+- resolves: #1150489
+
+* 一 9月 22 2014 jchaloup <jchaloup@redhat.com> - 3.73-1
+- resolves: #1145003
+  updated to 3.73
+
+* 三 9月 17 2014 Ben Cressey <bcressey@amazon.com>
+- fix conflict with older quota package
+
+* 一 9月 08 2014 jchaloup <jchaloup@redhat.com> - 3.72-1
+- resolves: #1139140
+  updated to 3.72
+
+* 五 8月 22 2014 jchaloup <jchaloup@redhat.com> - 3.71-1
+- resolves: #1132845
+  updated to 3.71
+
+* 一 8月 04 2014 Ben Cressey <bcressey@amazon.com>
+- conditionalize removal of boot.7 manual
+
+* 五 7月 11 2014 jchaloup <jchaloup@redhat.com> - 3.70-1
+- resolves: #1118632
+  updated to 3.70
+
+* 一 6月 16 2014 jchaloup <jchaloup@redhat.com> - 3.69-1
+- resolves: #1111836
+  updated to 3.69
+
+* 六 6月 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.68-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* 一 6月 02 2014 jchaloup <jchaloup@redhat.com> - 3.68-1
+- resolves: #1103158
+  updated to 3.68
+
+* 二 5月 27 2014 jchaloup <jchaloup@redhat.com> - 3.67-1
+- resolves: #1100444
+  updated to 3.67
+
+* 五 5月 09 2014 Peter Schiffer <pschiffe@redhat.com> - 3.66-1
+- resolves: #1095840
+  updated to 3.66
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/man-pages-3.53-5.el7
+
+* 三 4月 23 2014 Peter Schiffer <pschiffe@redhat.com> - 3.65-1
+- resolves: #1071305
+  updated to 3.65
+- resolves: #1082566
+  install *xattr.2 man pages
+
+* 二 2月 18 2014 Peter Schiffer <pschiffe@redhat.com> - 3.60-1
+- updated to 3.60
+
+* 二 2月 18 2014 Peter Schiffer <pschiffe@redhat.com> - 3.59-1
+- resolves: #1066332
+  updated to 3.59
+- cleaned .spec file
+
+* 二 2月 11 2014 Peter Schiffer <pschiffe@redhat.com> - 3.58-1
+- resolves: #1063754
+  updated to 3.58
+
+* 三 2月 05 2014 Peter Schiffer <pschiffe@redhat.com> - 3.57-2
+- removed invalid patch for man(1p) man page
+
+* 三 1月 29 2014 Peter Schiffer <pschiffe@redhat.com> - 3.57-1
+- resolves: #1058001
+  updated to 3.57
+- resolves: #1056781
+  updated to POSIX.1 2013
+
+* 三 1月 15 2014 Peter Schiffer <pschiffe@redhat.com> - 3.56-1
+- resolves: #1051765
+  updated to 3.56
+
+* 一 12月 16 2013 Peter Schiffer <pschiffe@redhat.com> - 3.55-1
+- resolves: #1043074
+  updated to 3.55
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/man-pages-3.53-2.el7
+
+* 三 12月 04 2013 Peter Schiffer <pschiffe@redhat.com> - 3.54-2
+- resolves: #1031703
+  removed pt_chown(5) man page
+
+* 三 10月 09 2013 Peter Schiffer <pschiffe@redhat.com> - 3.54-1
+- resolves: #1009535
+  updated to 3.54
+
+* 三 7月 31 2013 Peter Schiffer <pschiffe@redhat.com> - 3.53-1
+- resolves: #990459
+  updated to 3.53
+
+* 一 7月 22 2013 Peter Schiffer <pschiffe@redhat.com> - 3.52-1
+- resolves: #981385
+  updated to 3.52
+- fixed broken sentence on the futex(7) man page
+- resolves: #885740
+  documented O_PATH flag on the open(2) man page
+
+* 二 4月 23 2013 Peter Schiffer <pschiffe@redhat.com> - 3.51-1
+- resolves: #921911
+  updated to 3.51
+
+* 四 3月 07 2013 Peter Schiffer <pschiffe@redhat.com> - 3.48-1
+- resolves: #918417
+  updated to 3.48
+
+* 一 2月 25 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/man-pages-3.22-20.el6
+
+* 二 2月 12 2013 Peter Schiffer <pschiffe@redhat.com> - 3.47-1
+- resolves: #910268
+  updated to 3.47
+
+* 五 2月 01 2013 Peter Schiffer <pschiffe@redhat.com> - 3.46-2
+- related: #858703
+  moved killpgrp(8) man page to the amanda-client package
+
+* 一 1月 28 2013 Peter Schiffer <pschiffe@redhat.com> - 3.46-1
+- resolves: #904950
+  updated to 3.46
+
+* 三 1月 16 2013 Peter Schiffer <pschiffe@redhat.com> - 3.45-2
+- dropped some outdated patches, few patches updated
+
+* 五 12月 21 2012 Peter Schiffer <pschiffe@redhat.com> - 3.45-1
+- resolves: #889446
+  updated to 3.45
+
+* 三 11月 21 2012 Peter Schiffer <pschiffe@redhat.com> - 3.44-1
+- resolves: #874650
+  updated to 3.44
+
+* 四 10月 25 2012 Peter Schiffer <pschiffe@redhat.com> - 3.43-1
+- resolves: #866874
+  updated to 3.43
+- added description of the TCP_CONGESTION on the tcp(7) man page
+- added description of the IP_MULTICAST_ALL on the ip(7) man page
+- updated additional man pages
+
+* 三 9月 19 2012 Peter Schiffer <pschiffe@redhat.com> - 3.42-1
+- resolves: #847941
+  update to 3.42
+- updated additional man pages
+- cleaned patches
+- cleaned .spec file, fixed minor encoding issue
+- resolves: #837090
+  updated example on inet(3) man page - use fprintf(stderr,..) instead of perror
+- resolves: #751429
+  included initgroups database in the nsswitch.conf(5) man page
+- removed the sccs-related man pages (#203302)
+- added description of single-request-reopen to the resolv.conf(5) man page (#717770)
+- added missing EIDRM error code description to the shmop(2) man page (#800256)
+- added documentation of several source-specific multicast socket options to the ip(7) man page (#804003)
+- improved explanation about calling listen or connect on the ip(7) man page (#787567)
+- added information about incorrect use of getdents(2) call to the man page (#809490)
+- removed man-pages-3.22-sched_setaffinity.patch because the problem it describes was fixed in the kernel. see #533811 for more info
+- documented why to use shutdown() before close() when dealing with sockets on close(2) man page (#650985)
+- updated description of /proc/sys/fs/file-nr file in proc(5) man page (#497197)
+- updated zdump(8) man page to match current zdump usage (#517309)
+- fixed one incorrect error code on connect(2) man page (#392431)
+- fixed typo in sysconf(3) man page (#202092)
+- removed additional uuname(1) man page - was moved to the uucp package (#858642)
+- removed obsolete additional userisdnctl(8) man page
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.41-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 5月 17 2012 Peter Schiffer <pschiffe@redhat.com> - 3.41-1
+- resolves: #820901
+  update to 3.41
+
+* 五 4月 27 2012 Peter Schiffer <pschiffe@redhat.com> - 3.40-2
+- related: #797857
+  fixed broken source file
+
+* 五 4月 27 2012 Peter Schiffer <pschiffe@redhat.com> - 3.40-1
+- resolves: #797857
+  update to 3.40
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.35-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 五 11月 11 2011 Peter Schiffer <pschiffe@redhat.com> - 3.35-1
+- resolves: #751620
+  update to 3.35
+- resolves: #723578
+  typo in readlink(3p)
+
+* 五 5月 27 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.32-14
+- resolves: #705888
+  the man page for proc is missing an explanation for /proc/[pid]/cgroup
+
+* 六 5月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/man-pages-3.22-17.el6
+
+* 五 4月 22 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.32-13
+- resolves: #698149
+  Remove documentation for "order" keyword in /etc/host.conf manpage
+
+* 五 4月 22 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.32-12
+- resolves: #680214
+  manpage for fallocate(2) is wrong
+
+* 五 3月 25 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.32-11
+- resolves: #681781
+  snprintf man page is wrong
+
+* 三 3月 09 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.32-10
+- resolves: #675544
+  perfmonctl(2) typo manpage fix
+
+* 四 2月 24 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.32-9
+- resolves: #679899
+  add scopev4 to gai.conf man page
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.32-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 1月 31 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.31-7
+- resolves: #673586
+  fix the sed pages parsing
+
+* 四 1月 27 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.31-6
+- resolves: #652869
+  fix the necessary buffer limit in the man page for readdir_r
+
+* 四 1月 27 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.31-5
+- resolves: #672348
+  problems with the encoding of characters set man-pages
+  thanks Denis Barbier for a patch
+
+* 二 1月 25 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.31-4
+- resolves: #672377
+  fix man-pages-2.48-passwd.patch remove trailing dots
+
+* 二 1月 25 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.31-3
+- resolves: #652870
+  fix strtol man-page
+
+* 一 1月 03 2011 Ivana Hutarova Varekova <varekova@redhat.com> - 3.31-2
+- update to 3.32
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/man-pages-3.22-12.el6
+
+* 三 11月 24 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.31-2
+- resolves: #655961
+  add the conflict tag
+
+* 五 11月 19 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.31-1
+- update to 3.31
+
+* 四 11月 18 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.30-3
+- resolves: #647269
+  PR_SET_SECCOMP and _exit, documentation bug
+
+* 四 11月 11 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.30-2
+- Resolves: #650257
+  fix open.2 O_EXCL description
+
+* 五 11月 05 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.30-1
+- update to 3.30
+
+* 一 10月 25 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.29-1
+- update 3.29
+  several bug fixes
+
+* 三 10月 06 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.28-3
+- don't remove numa_maps, now the man page is not in numactl
+- don't remove getipnodeby{name,addr}.3 and freehostent.3
+  they are not more part of glibc-devel
+- fix typo in gai_{error,suspend,cancel} pages
+
+* 三 10月 06 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.28-2
+- add quotactl.2 to man-pages (the package was removed from quota - #640590)
+
+* 三 10月 06 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.28-1
+- update to 3.28
+- move all additional man-pages to one source
+    (man-pages-additional-20101006.tar.bz2)
+- remove additional man-pages without the info about license
+
+* 四 9月 23 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.27-3
+- Resolves: #634626
+  remove link to non-existing man page
+
+* 四 9月 23 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.27-2
+- Resolves: #635869 
+  remove the link to removed man page
+
+* 四 9月 23 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.27-1
+- Update to 3.27
+- remove obsolete patch
+
+* 三 9月 08 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.26-1
+- Update to 3.26
+- Resolves: 624399 (rresvport man entry misleading)
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/man-pages-3.22-10.el6
+- import source package RHEL6/man-pages-3.22-8.el6
+
+* 四 7月 01 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.25-1
+- Update to 3.25
+
+* 四 6月 24 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.24-7
+- resolves: #606038
+  filesystems.5 makes no mention of ext4
+
+* 五 6月 04 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.24-6
+- Resolves: #596666
+  Man page for mmap64 is confusing
+
+* 一 5月 31 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.24-5
+- Resolves: #597429
+  remove the duplicate info about error output (recv(2) man page)
+
+* 一 5月 10 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.24-4
+- Resolves: #588620
+  Typo in sysconf(3) Manual page
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/man-pages-2.39-15.el5
+- import source package RHEL5/man-pages-2.39-12.el5
+- import source package RHEL5/man-pages-2.39-10.el5
+- import source package RHEL5/man-pages-2.39-9.el5
+- added submodule prep for package man-pages
+
+* 一 5月 03 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.24-3
+- fix atanh man-page bug in glibc was fixed so removed the info about it
+
+* 五 3月 19 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.24-2
+- Resolves: #570703
+  fix getnameinfo prototype
+
+* 二 3月 02 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.24-1
+- update to 3.24
+  Resolves: #569451
+
+* 一 2月 22 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.23-7
+- Resolves: #564528
+  Man page and "info" information on snprintf incomplete
+
+* 三 1月 27 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.23-6
+- Resolves: #556199
+  update iconv.1 man page
+
+* 二 1月 26 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 3.23-5
+- Resolves: #557971
+  remove unnecessary man-pages from man-pages_syscalls and man-pages_add
+
+* 四 12月 03 2009 Ivana Hutarova Varekova <varekova@redhat.com> - 3.23-4
+- fix typo in sched_setaffinity(2) patch
+
+* 三 12月 02 2009 Ivana Hutarova Varekova <varekova@redhat.com> - 3.23-3
+- fix sched_setaffinity(2) page - add an EXAMPLE and new NOTES
+
+* 三 11月 18 2009 Ivana Varekova <varekova@redhat.com> - 3.23-2
+- fix ld.so man-page (#532629)
+
+* 一 10月 05 2009 Ivana Varekova <varekova@redhat.com> - 3.23-1
+- update to 3.23
+- fix proc description
+
+* 三 9月 16 2009 Ivana Varekova <varekova@redhat.com> - 3.22-6
+- fix nsswitch.conf(5) man page
+
+* 一 9月 14 2009 Ivana Varekova <varekova@redhat.com> - 3.22-5
+- fix strcpy.3 man page
+- remove statfc64 man page from syscalls tarball
+
+* 二 8月 11 2009 Ivana Varekova <varekova@redhat.com> - 3.22-4
+- fix gai.conf an page (#515347)
+
+* 一 7月 27 2009 Ivana Varekova <varekova@redhat.com> - 3.22-3
+- update to 3.22
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.21-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 17 2009 Ivana Varekova <varekova@redhat.com> - 3.21-2
+- fix major.3 man page
+
+* 二 4月 21 2009 Ivana Varekova <varekova@redhat.com> - 3.21-1
+- update to 3.21
+
+* 二 3月 31 2009 Ivana Varekova <varekova@redhat.com> - 3.20-1
+- update to 3.20
+
+* 二 3月 10 2009 Ivana Varekova <varekova@redhat.com> - 3.19-1
+- update to 3.19
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.16-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 16 2009 Ivana Varekova <varekova@redhat.com> - 3.16-1
+- update to 3.16
+
+* 一 12月 08 2008 Ivana Varekova <varekova@redhat.com> - 3.15-1
+- update to 3.15
+
+* 四 11月 13 2008 Ivana Varekova <varekova@redhat.com> - 3.13-2
+- fix relative path in proc.5
+- not build yet
+
+* 四 11月 13 2008 Ivana Varekova <varekova@redhat.com> - 3.13-1
+- update to 3.13
+
+* 一 9月 15 2008 Ivana Varekova <varekova@redhat.com> - 3.09-2
+- remove numa_maps.5 man page (part of numactl)
+
+* 五 9月 12 2008 Ivana Varekova <varekova@redhat.com> - 3.09-1
+- update to 3.09
+
+* 四 8月 14 2008 Ivana Varekova <varekova@redhat.com> - 3.07-1
+- update to 3.07
+- remove ncsa_auth.8 (#458498)
+
+* 四 8月 07 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 3.04-2
+- fix license tag
+
+* 二 7月 22 2008 Ivana Varekova <varekova@redhat.com> - 3.04-1
+- update to 3.04
+- remove mmap, sched_setaffinity, crypt and prctl patches
+- remove -f from rm commands
+- remove unnecessary/bogus rm commands
+
+* 三 6月 18 2008 Ivana Varekova <varekova@redhat.com> - 3.00-1
+- update to 3.00
+- source files changes
+

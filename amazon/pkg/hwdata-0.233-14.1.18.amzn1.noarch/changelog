@@ -1,0 +1,853 @@
+* 二 4月 12 2016 Stanislav Spassov <stanspas@amazon.de>
+- Add pci.ids as a separate source file
+
+* 三 7月 22 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/hwdata-0.233-14.1.el6
+
+* 三 6月 24 2015 Michal Minar <miminar@redhat.com> 0.233-14.1
+- updated pci, usb and vendor ids
+
+* 四 5月 28 2015 Michal Minar <miminar@redhat.com> 0.233-13.1
+- updated pci, usb and vendor ids
+
+* 三 2月 25 2015 Michal Minar <miminar@redhat.com> 0.233-12.1
+- updated pci, usb and vendor ids
+
+* 二 10月 14 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hwdata-0.233-11.1.el6
+
+* 三 9月 17 2014 Michal Minar <miminar@redhat.com> 0.233-11.1
+- update pci, usb and vendor ids
+
+* 一 6月 16 2014 Michal Minar <miminar@redhat.com> 0.233-10.1
+- updated pci, usb and vendor ids
+
+* 三 11月 27 2013 Cristian Gafton <gafton@amazon.com>
+- fix source archive name reference
+
+* 四 11月 21 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hwdata-0.233-9.1.el6
+
+* 二 10月 29 2013 Michal Minar <miminar@redhat.com> 0.233-9.1
+- updated pci, usb and vendor ids
+
+* 三 8月 07 2013 Michal Minar <miminar@redhat.com> 0.233-8.1
+- updated pci.ids and vendor ids
+
+* 日 7月 21 2013 Michal Minar <miminar@redhat.com> 0.233-8.0
+- updated pci.ids, usb.ids, oui.txt and pnp.ids
+- Resolves: #739838, #948121, #982659
+
+* 四 2月 28 2013 Cristian Gafton <gafton@amazon.com>
+- fix source archive name
+
+* 五 2月 22 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hwdata-0.233-7.9.el6
+
+* 日 10月 14 2012 Cristian Gafton <gafton@amazon.com>
+- fix source file version
+
+* 二 9月 25 2012 Michal Minar <miminar@redhat.com> 0.233-7.9
+- updated pci.ids, usb.ids, oui.txt
+- Resolves: #739816, #739819, #739821, #739824
+- Resolves: #739825, #760031, #830253, #839221, #841423
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hwdata-0.233-7.8.el6
+
+* 三 5月 30 2012 Karsten Hopp <karsten@redhat.com> 0.233-7.8
+- update pci.ids, usb.ids
+
+* 二 2月 28 2012 Karsten Hopp <karsten@redhat.com> 0.233-7.7
+- add missing Acer 76ie monitor entry (#737467)
+- updated pci.ids, usb.ids (#760014)
+
+* 五 1月 06 2012 Cristian Gafton <gafton@amazon.com>
+- fix typo
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hwdata-0.233-7.6.el6
+
+* 三 11月 09 2011 Karsten Hopp <karsten@redhat.com> 0.233-7.6
+- update pci.ids, usb. ids
+
+* 三 11月 02 2011 Karsten Hopp <karsten@redhat.com> 0.233-7.5
+- update pci.ids, usb. ids
+
+* 一 8月 08 2011 Karsten Hopp <karsten@redhat.com> 0.233-7.3
+- update pci.ids, usb. ids
+
+* 四 7月 28 2011 Cristian Gafton <gafton@amazon.com>
+- fix source tarball name
+
+* 六 5月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hwdata-0.233-7.1.el6
+
+* 一 5月 02 2011 Karsten Hopp <karsten@redhat.com> 0.233-7.2
+- update pci.ids with a fix for QLogic Infiniband adapter
+
+* 三 4月 27 2011 Karsten Hopp <karsten@redhat.com> 0.233-7.1
+- update to latest pci.ids, usb.ids
+
+* 五 1月 28 2011 Karsten Hopp <karsten@redhat.com> 0.233-7
+- bump release
+- update oui.txt URL
+- fix tarball name in spec file
+- update usb.ids, out.txt and pci.ids
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hwdata-0.233-1.el6
+
+* 三 8月 25 2010 Karsten Hopp <karsten@redhat.com> 0.233-1
+- update usb.ids, out.txt and pci.ids
+
+* 四 8月 05 2010 Karsten Hopp <karsten@redhat.com> 0.232-1
+- update usb.ids, out.txt and pci.ids (#550020, #611860)
+- fix incorrect syntax doc/comment in blacklist.conf (Ville Skyttä, #532802)
+- add Acer B243HL and BenQ G2420HDBL (Ville Skyttä, #590787)
+- add HP LP2475w and Samsung 2494HM (Ville Skyttä, #595059)
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/hwdata-0.230-1.el6
+- import source package RHEL6/hwdata-0.228-1.el6
+
+* 二 5月 25 2010 Phil Knirsch <pknirsch@redhat.com> 0.230-1
+- update usb.ids, out.txt and pci.ids
+- Resolves: #584788
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/hwdata-0.213.18-1.el5.1
+- import source package RHEL5/hwdata-0.213.16-1.el5
+- import source package RHEL5/hwdata-0.213.11-1.el5
+- import source package RHEL5/hwdata-0.213.6-1.el5
+- import source package RHEL5/hwdata-0.211-1
+- import source package RHEL5/hwdata-0.194-1
+- added submodule prep for package hwdata
+
+* 一 3月 29 2010 Karsten Hopp <karsten@redhat.com> 0.229-1
+- update usb.ids, out.txt and pci.ids for F-13 (#571914)
+
+* 三 3月 17 2010 Phil Knirsch <pknirsch@redhat.com> 0.228-1
+- Blacklist chsc_sch for s390x
+- Resolves: #563228
+
+* 二 2月 23 2010 Dave Airlie <airlied@redhat.com> 0.227-1
+- add viafb to blacklist
+
+* 一 2月 22 2010 Karsten Hopp <karsten@redhat.com> 0.227-1
+- update usb.ids, pci.ids, oui.txt
+- update license
+
+* 五 1月 15 2010 Karsten Hopp <karsten@redhat.com> 0.226-1
+- update release number
+
+* 五 1月 15 2010 Karsten Hopp <karsten@redhat.com> 0.225-4
+- update usb.ids pci.ids oui.txt
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.225-3.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.225-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 07 2009 Adam Jackson <ajax@redhat.com> 0.225-2
+- pnp-dell.patch: Fix Dell's entry in pnp.ids
+
+* 四 4月 09 2009 Adam Jackson <ajax@redhat.com> 0.224-1
+- Update pci.ids, usb.ids, and oui.txt
+- Add pnp.ids
+
+* 四 3月 19 2009 Karsten Hopp <karsten@redhat.com> 0.223-1
+- update usb.ids pci.ids oui.txt
+- rename /etc/modprobe.d/blacklist to /etc/modprobe.d/blacklist.conf
+
+* 三 1月 28 2009 Karsten Hopp <karsten@redhat.com> 0.222-1
+- update usb.ids pci.ids oui.txt and build for all current releases
+  Fixes p.e. #465440
+
+* 三 1月 21 2009 Karsten Hopp <karsten@redhat.com> 0.221-1
+- update usb.ids pci.ids oui.txt
+
+* 二 12月 02 2008 Karsten Hopp <karsten@redhat.com> 0.220-1
+- add new monitor entries from Mandriva hardware database (Thierry Vignaud)
+- make generic entries have properly formated frequencies (Thierry Vignaud)
+- remove duplicate Dell monitor entries (Thierry Vignaud)
+- more vendor name fixes
+- fix extra field in 'Compudyne KD-1500N' definition (Thierry Vignaud)
+- make Dell monitors case consistent (Thierry Vignaud)
+- make all GoldStar monitors have the same vendor name (Thierry Vignaud)
+- add URL of git repository
+- fix spacing (Thierry Vignaud)
+- sort MonitorDB file with LANG=C sort -f -t ";" -k1,2
+- add Samsung SyncMaster 2443BWX (Marc van den Dikkenberg)
+- add some Lenovo monitors (Im Sza)
+
+* 三 7月 23 2008 Karsten Hopp <karsten@redhat.com> 0.220-1
+- update pci.ids, usb.ids, oui.txt
+- MonitorsDB: add some Samsung monitors (Ronald Warsow)
+- MonitorsDB: add Dell E1609W (Matt Domsch)
+- MonitorsDB: add 7 Dell monitors (Matt Domsch)
+- MonitorsDB: add a bunch of Hyundai and ImageQuest monitors
+
+* 一 6月 09 2008 Karsten Hopp <karsten@redhat.com> 0.219-1
+- add BenQ FP2091 monitor (Peter Williams)
+- add a bunch of Hyundai and ImageQuest monitors
+
+* 一 6月 02 2008 Karsten Hopp <karsten@redhat.com> 0.219-1
+- update pci.ids, usb.ids, oui.txt
+- blacklist snd-pcsp (#448425)
+
+* 一 5月 19 2008 Karsten Hopp <karsten@redhat.com> 0.218-1
+- add some Acer monitors (Im Sz)
+
+* 二 4月 01 2008 Karsten Hopp <karsten@redhat.com> 0.217-1
+- update pci.ids, oui.txt
+- update usb.ids, fixes #439963
+- add HP w1907 LCD monitor, fixes #431359
+- fix many monitor entries (Stanislav Ievlev, #430276)
+
+* 一 3月 03 2008 Karsten Hopp <karsten@redhat.com> 0.216-1
+- update pci.ids, usb.ids (#431658)
+
+* 二 1月 29 2008 Phil Knirsch <pknirsch@redhat.com> 0.215-1
+- Pull new upstream pci.ids
+
+* 三 1月 23 2008 Karsten Hopp <karsten@redhat.com> 0.215-1
+- add HP W2207 monitor
+- add oui.txt, a list of bluetooth device makers
+
+* 五 1月 18 2008 Karsten Hopp <karsten@redhat.com> 0.214-1
+- remove MonitorsDB.generic as it isn't used anywhere
+- drop RHEL-5 blacklist patch in -devel
+
+* 二 1月 15 2008 Karsten Hopp <karsten@redhat.com> 0.213-1
+- add many monitor entries (Im Sza, #367111)
+
+* 五 1月 11 2008 Karsten Hopp <karsten@redhat.com> 0.212-1
+- pull new upstream pci.ids, usb.ids
+- Resolves: #300831
+- added HP TFT5600 LCD Monitor
+- Resolves: #250569
+- added Acer AL1916W, Eizo L568/L568D, Samsung 795DF
+- Resolves: #250582
+- Add Samsung 205BW/206BW/225BW/226BW
+- Resolves: #250584
+- Add Samsung 931BF
+- Resolves: #250587
+
+* 六 12月 22 2007 Karsten Hopp <karsten@redhat.com> 0.209-1
+- add Proview 926w monitor (#363091)
+
+* 六 12月 22 2007 Karsten Hopp <karsten@redhat.com> 0.208-1
+- new release
+- drop dell-monitors patch, already included in tarball
+
+* 四 12月 13 2007 Karsten Hopp <karsten@redhat.com> 0.207-3
+- fix License tag
+- add empty %build section for fedora-review
+
+* 四 10月 25 2007 Matt Domsch <Matt_Domsch@dell.com> 0.207-2
+- MonitorsDB: add 20 new Dell monitors
+
+* 三 9月 26 2007 Karsten Hopp <karsten@redhat.com> 0.211-1
+- pull new upstream pci.ids, usb.ids
+
+* 四 9月 20 2007 Karsten Hopp <karsten@redhat.com> 0.210-1
+- add pci.id for Chelsio 10GbE Ethernet Adapter
+- Resolves: bz #296811
+
+* 三 9月 19 2007 Karsten Hopp <karsten@redhat.com> 0.209-1
+- pull new upstream pci.ids, usb.ids
+
+* 三 8月 29 2007 Karsten Hopp <karsten@redhat.com> 0.207-1
+- update license tag
+
+* 三 8月 15 2007 Karsten Hopp <karsten@redhat.com> 0.207-1
+- pull new upstream pci.ids and rebuild
+- Resolves: bz #251732
+- Resolves: bz #251734
+- Resolves: bz #252195
+- Resolves: bz #252196
+- Resolves: bz #241274
+
+* 二 8月 14 2007 Karsten Hopp <karsten@redhat.com> 0.205-1
+- add HP TFT5600        #229370
+
+* 一 7月 09 2007 Karsten Hopp <karsten@redhat.com> 0.205-1
+- enable iwl4965 blacklist
+- Resolves: bz#245379
+
+* 一 6月 25 2007 Karsten Hopp <karsten@redhat.com> 0.205-1
+- really update pci.ids, update-pciids downloaded an old file
+- disable iwl4965 blacklist as it is not approved yet (#245379)
+
+* 一 6月 25 2007 Karsten Hopp <karsten@redhat.com> 0.202-1
+- don't load iwl4965 module automatically
+- Resolves: #245379
+
+* 二 6月 19 2007 Karsten Hopp <karsten@redhat.com> 0.201-1
+- add some monitors
+- Resolves: #224511
+- update pci.ids
+- Related: #223105
+
+* 二 1月 02 2007 Karsten Hopp <karsten@redhat.com> 0.194-1
+- Update to latest pci.ids/usb.ids for RHEL5
+- Resolves: #220182
+  Add some Dell monitors to MonitorDB
+
+* 一 10月 09 2006 Phil Knirsch <pknirsch@redhat.com> - 0.191-1
+- Update to latest pci.ids for RHEL5
+
+* 四 9月 21 2006 Adam Jackson <ajackson@redhat.com> - 0.190-1
+- Add a description for the 'intel' driver.
+
+* 一 9月 18 2006 Phil Knirsch <pknirsch@redhat.com> - 0.189-1
+- Updated usb.ids for FC6
+
+* 一 9月 11 2006 Phil Knirsch <pknirsch@redhat.com> - 0.188-1
+- Update of pci.ids for FC6
+
+* 四 8月 31 2006 Adam Jackson <ajackson@redhat.com> - 0.187-1
+- Fix sync ranges for Samsung SyncMaster 710N (#202344)
+
+* 四 8月 03 2006 Phil Knirsch <pknirsch@redhat.com> - 0.186-1
+- Updated pci.ids once more.
+
+* 二 7月 25 2006 Phil Knirsch <pknirsch@redhat.com> - 0.185-1
+- Added the 17inch Philips LCD monitor entry (#199828)
+
+* 一 7月 24 2006 Phil Knirsch <pknirsch@redhat.com> - 0.184-1
+- Added one more entry for missing Philips LCD monitor (#199828)
+
+* 二 7月 18 2006 Phil Knirsch <pknirsch@redhat.com> - 0.183-1
+- Updated pci.ids before FC6 final (#198994)
+- Added several missing Samsung monitors (#197463)
+- Included a new inf2mondb.py from Matt Domsch (#158723)
+
+* 二 7月 11 2006 Adam Jackson <ajackson@redhat.com> - 0.182-1
+- Added ast driver description to videodrivers
+- Numerous Dell monitor additions (#196734)
+- Numerous Belinea monitor additions (#198087)
+
+* 六 7月 08 2006 Adam Jackson <ajackson@redhat.com> - 0.181-1
+- Updated videodrivers to mention i945
+- New monitors: Sony CPD-G420 (#145902), Compaq P1110 (#155120).
+
+* 四 5月 11 2006 Phil Knirsch <pknirsch@redhat.com> - 0.180-1
+- Updated and added some MonitorsDB entries
+
+* 二 5月 02 2006 Phil Knirsch <pknirsch@redhat.com> - 0.179-1
+- Updated PCI ids from upstream (#180402)
+- Fixed missing monitor entry in MonitorsDB (#189446)
+
+* 三 3月 01 2006 Phil Knirsch <pknirsch@redhat.com> - 0.178-1
+- Commented out the VT lines at the end of usb.ids as our tools don't handle
+  them properly.
+
+* 五 2月 24 2006 Bill Nottingham <notting@redhat.com> - 0.177-1
+- remove stock videoaliases in favor of driver-specific ones in
+  the X driver packages
+
+* 三 2月 22 2006 Phil Knirsch <pknirsch@redhat.com> - 0.176-1
+- More entries from Dell to MonitorsDB (#181008)
+
+* 五 2月 10 2006 Phil Knirsch <pknirsch@redhat.com> - 0.175-1
+- Added a few more entries to MonitorsDB
+
+* 三 2月 01 2006 Phil Knirsch <pknirsch@redhat.com> - 0.174-1
+- Some cleanup and adds to the MonitorDB which closes several db related bugs.
+
+* 二 12月 13 2005 Bill Nottingham <notting@redhat.com> - 0.173-1
+- add some IDs to the generic display entries for matching laptops
+
+* 五 11月 18 2005 Bill Nottingham <notting@redhat.com> - 0.172-1
+- ditto for radeon
+
+* 五 11月 18 2005 Jeremy Katz <katzj@redhat.com> - 0.171-1
+- r128 -> ati.  should fix the unresolved symbol and kem says its more 
+  generally the "right" thing to do
+
+* 三 11月 16 2005 Bill Nottingham <notting@redhat.com> - 0.170-1
+- handle mptsas for migration as well
+- move videoaliases file to a subdir
+
+* 五 9月 16 2005 Bill Nottingham <notting@redhat.com>
+- add Iiyama monitor (#168143)
+
+* 二 9月 13 2005 Bill Nottingham <notting@redhat.com>
+- add IBM monitor (#168080)
+
+* 四 9月 08 2005 Bill Nottingham <notting@redhat.com> - 0.169-1
+- remove Cards, pcitable. Add videodrivers
+
+* 五 9月 02 2005 Dan Williams <dcbw@redhat.com> - 0.168-1
+- Add more Gateway monitors
+
+* 五 9月 02 2005 Dan Williams <dcbw@redhat.com> - 0.167-1
+- Add some ADI monitors, one BenQ, and and DPMS codes for two Apples
+
+* 五 9月 02 2005 Bill Nottingham <notting@redhat.com> - 0.166-1
+- add videoaliases file
+- remove CardMonitorCombos, as nothing uses it
+
+* 四 8月 25 2005 Dan Williams <dcbw@redhat.com> - 0.165-1
+- Add a bunch of Acer monitors
+
+* 二 8月 09 2005 Jeremy Katz <katzj@redhat.com> - 0.164-1
+- migrate sk98lin -> skge
+
+* 六 7月 30 2005 Bill Nottingham <notting@redhat.com>
+- migrate mpt module names (#161420)
+- remove pcitable entries for drivers in modules.pcimap
+- switch lone remaining 'Server' entry - that can't work right
+
+* 二 7月 26 2005 Bill Nottingham <notting@redhat.com>
+- add Daytek monitor (#164339)
+
+* 三 7月 13 2005 Bill Nottingham <notting@redhat.com> - 0.162-1
+- remove /etc/pcmcia/config, conflict with pcmcia-cs
+
+* 四 7月 07 2005 Bill Nottingham <notting@redhat.com> - 0.160-1
+- move blacklist to /etc/modprobe.d, require new module-init-tools
+- add LG monitors (#162466, #161734)
+- add orinoco card (#161696)
+- more mptfusion stuff (#107088)
+
+* 四 6月 23 2005 Bill Nottingham <notting@redhat.com>
+- add Samsung monitor (#161013)
+
+* 三 6月 22 2005 Bill Nottingham <notting@redhat.com> - 0.159-1
+- pcitable: make branding happy (#160047)
+- Cards: add required blank line (#157972)
+- add some monitors
+- add JVC CD-ROM (#160907, <richard@rsk.demon.co.uk>)
+- add hisax stuff to blacklist (#154799, #159068)
+
+* 一 5月 16 2005 Bill Nottingham <notting@redhat.com> - 0.158-1
+- add a orinoco card (#157482)
+
+* 四 5月 05 2005 Jeremy Katz <katzj@redhat.com> - 0.157-1
+- add 20" Apple Cinema Display
+
+* 日 4月 10 2005 Mike A. Harris <mharris@redhat.com> 0.156-1
+- Update SiS entries in Cards/pcitable to match what Xorg X11 6.8.2 supports
+
+* 三 3月 30 2005 Dan Williams <dcbw@redhat.com> 0.155-1
+- Add a boatload of BenQ, Acer, Sony, NEC, Mitsubishi, and Dell monitors
+
+* 三 3月 30 2005 Dan Williams <dcbw@redhat.com> 0.154-1
+- Add Typhoon Speednet Wireless PCMCIA Card mapping to atmel_cs driver
+
+* 一 3月 28 2005 Bill Nottingham <notting@redhat.com> 0.153-1
+- update the framebuffer blacklist
+
+* 三 3月 09 2005 Bill Nottingham <notting@redhat.com> 0.152-1
+- fix qlogic driver mappings, add upgradelist mappings for the modules
+  that changed names (#150621)
+
+* 三 3月 02 2005 Mike A. Harris <mharris@redhat.com> 0.151-1
+- Added one hundred billion new nvidia PCI IDs to pcitable and Cards to
+  synchronize it with X.Org X11 6.8.2.  (#140601)
+
+* 二 1月 11 2005 Dan Williams <dcbw@redhat.com> - 0.150-1
+- Add Dell UltraSharp 1704FPV (Analog & Digital)
+
+* 日 11月 21 2004 Bill Nottingham <notting@redhat.com> - 0.148-1
+- add Amptron monitors (#139142)
+
+* 三 11月 10 2004 Bill Nottingham <notting@redhat.com> - 0.147-1
+- update usb.ids (#138533)
+- migrate dpt_i2o to i2o_block (#138603)
+
+* 二 11月 09 2004 Bill Nottingham <notting@redhat.com> - 0.146-1
+- update pci.ids (#138233)
+- add Apple monitors (#138481)
+
+* 三 10月 20 2004 Bill Nottingham <notting@redhat.com> - 0.145-1
+- remove ahci mappings, don't prefer it over ata_piix
+
+* 二 10月 19 2004 Kristian Høgsberg <krh@redhat.com> - 0.144-1
+- update IDs for Cirrus, Trident, C&T, and S3
+
+* 二 10月 12 2004 Bill Nottingham <notting@redhat.com> - 0.143-1
+- add ahci mappings to prefer it over ata_piix
+- map davej's ancient matrox card to vesa (#122750)
+
+* 四 10月 07 2004 Dan Williams <dcbw@redhat.com> - 0.141-1
+- Add Belkin F5D6020 ver.2 (802.11b card based on Atmel chipset)
+
+* 五 10月 01 2004 Bill Nottingham <notting@redhat.com> - 0.140-1
+- include /etc/hotplug/blacklist here
+
+* 四 9月 30 2004 Bill Nottingham <notting@redhat.com> - 0.136-1
+- add S3 UniChrome (#131403)
+- update pci.ids
+
+* 四 9月 23 2004 Bill Nottingham <notting@redhat.com> - 0.135-1
+- megaraid -> megaraid_mbox
+
+* 三 9月 22 2004 Bill Nottingham <notting@redhat.com> - 0.134-1
+- map ncr53c8xx to sym53c8xx (#133181)
+
+* 五 9月 17 2004 Bill Nottingham <notting@redhat.com> - 0.132-1
+- fix 3Ware 9000 mapping (#132851)
+
+* 二 9月 14 2004 Kristian Høgsberg <krh@redhat.com> - 0.131-1
+- Add python script to check sorting of pci.ids
+
+* 四 9月 09 2004 Kristian Høgsberg <krh@redhat.com> 0.131-1
+- Add pci ids and cards for new ATI, NVIDIA and Intel cards
+
+* 六 9月 04 2004 Bill Nottingham <notting@redhat.com> 0.130-1
+- trim pcitable - now just ids/drivers
+
+* 三 9月 01 2004 Bill Nottingham <notting@redhat.com> 0.125-1
+- pci.ids updates
+- remove updsftab.conf.*
+
+* 日 8月 29 2004 Mike A. Harris <mharris@redhat.com>  0.124-1
+- Updates to pcitable/Cards for 'S3 Trio64 3D' cards. (#125866,59956)
+
+* 五 7月 09 2004 Mike A. Harris <mharris@redhat.com>  0.123-1
+- Quick pcitable/Cards update for ATI Radeon and FireGL boards
+
+* 一 6月 28 2004 Bill Nottingham <notting@redhat.com>
+- add Proview monitor (#125853)
+- add ViewSonic monitor (#126324)
+- add a Concord camera (#126673)
+
+* 三 6月 23 2004 Brent Fox <bfox@redhat.com> - 0.122-1
+- Add Vobis monitor to MonitorsDB (bug #124151)
+
+* 三 6月 09 2004 Dan Williams <dcbw@redhat.com> - 0.121-1
+- add Belkin F5D5020 10/100 PCMCIA card (#125581)
+
+* 五 5月 28 2004 Bill Nottingham <notting@redhat.com>
+- add modem (#124663)
+
+* 一 5月 24 2004 Bill Nottingham <notting@redhat.com> - 0.120-1
+- mainly:
+  fix upgradelist module for CMPci cards (#123647)
+- also:
+  add another wireless card (#122676)
+  add wireless card (#122625)
+  add 1280x800 (#121548)
+  add 1680x1050 (#121148)
+  add IntelligentStick (#124313)
+
+* 一 5月 10 2004 Jeremy Katz <katzj@redhat.com> - 0.119-1
+- veth driver is iseries_veth in 2.6
+
+* 三 5月 05 2004 Jeremy Katz <katzj@redhat.com> - 0.118-1
+- add a wireless card (#122064)
+- and a monitor (#121696)
+
+* 五 4月 16 2004 Bill Nottingham <notting@redhat.com> 0.117-1
+- fix makefile
+
+* 四 4月 15 2004 Bill Nottingham <notting@redhat.com> 0.116-1
+- move updfstab.conf here
+- add wireless card (#116865)
+- add laptop display panel (#117385)
+- add clipdrive (#119928)
+- add travelling disk (#119143)
+- add NEXDISK (#106782)
+
+* 四 4月 15 2004 Brent Fox <bfox@redhat.com> 0.115-1
+- replace snd-es1960 driver with snd-es1968 in pcitable (bug #120729)
+
+* 一 3月 29 2004 Bill Nottingham <notting@redhat.com> 0.114-1
+- fix entries pointing to Banshee (#119388)
+
+* 二 3月 16 2004 Bill Nottingham <notting@redhat.com> 0.113-1
+- add a Marvell sk98lin card (#118467, <64bit_fedora@comcast.net>)
+
+* 五 3月 12 2004 Brent Fox <bfox@redhat.com> 0.112-1
+- add a Sun flat panel to MonitorsDB (bug #118138)
+
+* 五 3月 05 2004 Brent Fox <bfox@redhat.com> 0.111-1
+- add Samsung monitor to MonitorsDB (bug #112112)
+
+* 一 3月 01 2004 Mike A. Harris <mharris@redhat.com> 0.110-1
+- Added 3Dfx Voodoo Graphics and Voodoo II entries to the Cards database, both
+  pointing to Alan Cox's new "voodoo" driver which is now included in XFree86
+  4.3.0-62 and later builds in Fedora development.  Mapped their PCI IDs to
+  the new Cards entry in pcitable.
+- Updated the entries for 3Dfx Banshee
+
+* 一 2月 23 2004 Bill Nottingham <notting@redhat.com> 0.109-1
+- pci.ids and other updates
+
+* 四 2月 19 2004 Mike A. Harris <mharris@redhat.com> 0.108-1
+- Added Shamrock C407L to MonitorsDB for bug (#104920)
+
+* 四 2月 19 2004 Mike A. Harris <mharris@redhat.com> 0.107-1
+- Massive Viewsonic monitor update for MonitorsDB (#84882)
+
+* 五 2月 13 2004 John Dennis <jdennis@finch.boston.redhat.com> 0.106-1
+- fix typo, GP should have been HP
+
+* 四 1月 29 2004 Bill Nottingham <notting@redhat.com> 0.105-1
+- many monitor updates (#114260, #114216, #113993, #113932, #113782,
+  - add some PCMCIA cards (#113006, #112505)
+
+* 二 1月 20 2004 Bill Nottingham <notting@redhat.com> 0.104-1
+- switch sound module mappings to alsa drivers
+
+* 一 1月 19 2004 Brent Fox <bfox@redhat.com> 0.103-1
+- fix tab spacing
+
+* 五 1月 16 2004 Brent Fox <bfox@redhat.com> 0.102-1
+- added an entry for ATI Radeon 9200SE (bug #111306)
+
+* 日 10月 26 2003 Jeremy Katz <katzj@redhat.com> 0.101-1
+- add 1920x1200 Generic LCD as used on some Dell laptops (#108006)
+
+* 四 10月 16 2003 Brent Fox <bfox@redhat.com> 0.100-1
+- add entry for Sun (made by Samsung) monitor (bug #107128)
+
+* 二 9月 23 2003 Mike A. Harris <mharris@redhat.com> 0.99-1
+- Added entries for Radeon 9600/9600Pro/9800Pro to Cards
+- Fixed minor glitch in pcitable for Radeon 9500 Pro
+
+* 二 9月 23 2003 Jeremy Katz <katzj@redhat.com> 0.98-1
+- add VMWare display adapter pci id and map to vmware X driver
+
+* 四 9月 11 2003 Bill Nottingham <notting@redhat.com> 0.97-1
+- bcm4400 -> b44
+
+* 日 9月 07 2003 Bill Nottingham <notting@redhat.com> 0.96-1
+- fix provided Dell tweaks (#103892)
+
+* 五 9月 05 2003 Bill Nottingham <notting@redhat.com> 0.95-1
+- Dell tweaks (#103861)
+
+* 五 9月 05 2003 Bill Nottingham <notting@redhat.com> 0.94-1
+- add adaptec pci id (#100844)
+
+* 四 9月 04 2003 Brent Fox <bfox@redhat.com> 0.93-1
+- add an SGI monitor for bug (#74870)
+
+* 三 8月 27 2003 Bill Nottingham <notting@redhat.com> 0.92-1
+- updates from sourceforge.net pci.ids, update pcitable accordingly
+
+* 一 8月 18 2003 Mike A. Harris <mharris@redhat.com> 0.91-1
+- Added HP monitors for bug (#102495)
+
+* 五 8月 15 2003 Brent Fox <bfox@redhat.com> 0.90-1
+- added a sony monitor (bug #101550)
+
+* 二 7月 15 2003 Bill Nottingham <notting@redhat.com> 0.89-1
+- updates from modules.pcimap
+
+* 六 7月 12 2003 Mike A. Harris <mharris@redhat.com> 0.88-1
+- Update MonitorsDB for new IBM monitors from upstream XFree86 bugzilla:
+  http://bugs.xfree86.org/cgi-bin/bugzilla/show_bug.cgi?id=459
+
+* 一 6月 09 2003 Bill Nottingham <notting@redhat.com> 0.87-1
+- fusion update
+
+* 一 6月 09 2003 Jeremy Katz <katzj@redhat.com> 0.86-1
+- pci id for ata_piix
+
+* 三 6月 04 2003 Brent Fox <bfox@redhat.com> 0.85-1
+- correct entry for Dell P991 monitor
+
+* 二 6月 03 2003 Bill Nottingham <notting@redhat.com> 0.84-1
+- fix qla2100 mapping (#91476)
+- add dell mappings (#84069)
+
+* 一 6月 02 2003 John Dennis <jdennis@redhat.com>
+- Add new Compaq and HP monitors - bug 90570, bug 90707, bug 90575, IT 17231
+
+* 三 5月 21 2003 Brent Fox <bfox@redhat.com> 0.81-1
+- add an entry for SiS 650 video card (bug #88271)
+
+* 三 5月 21 2003 Michael Fulbright <msf@redhat.com> 0.80-1
+- Changed Generic monitor entries in MonitorsDB to being in LCD and CRT groups
+
+* 二 5月 20 2003 Bill Nottingham <notting@redhat.com> 0.79-1
+- pci.ids and usb.ids updates
+
+* 二 5月 06 2003 Brent Fox <bfox@redhat.com> 0.78-1
+- added a Samsung monitor to MonitorsDB
+
+* 五 5月 02 2003 Bill Nottingham <notting@redhat.com>
+- add Xircom wireless airo_cs card (#90099)
+
+* 五 4月 18 2003 Jeremy Katz <katzj@redhat.com> 0.77-1
+- add generic framebuffer to Cards
+
+* 一 3月 17 2003 Mike A. Harris <mharris@redhat.com> 0.76-1
+- Updated MonitorsDb for Dell monitors (#86072)
+
+* 二 2月 18 2003 Mike A. Harris <mharris@redhat.com> 0.75-1
+- Change savage MX and IX driver default back to "savage" for the 1.1.27t
+  driver update
+
+* 二 2月 18 2003 Brent Fox <bfox@redhat.com> 0.74-1
+- Use full resolution description for Dell laptop screens (bug #80398)
+
+* 四 2月 13 2003 Mike A. Harris <mharris@redhat.com> 0.73-1
+- Updated pcitable and Cards database to fix Savage entries up a bit, and
+  change default Savage/MX driver to 'vesa' as it is hosed and with no sign
+  of working in time for 4.3.0.  Fixes (#72476,80278,80346,80423,82394)
+
+* 三 2月 12 2003 Brent Fox <bfox@redhat.com> 0.72-1
+- slightly alter the sync rates for the Dell 1503FP (bug #84123)
+
+* 二 2月 11 2003 Bill Nottingham <notting@redhat.com> 0.71-1
+- large pcitable and pci.ids updates
+- more tg3, e100
+
+* 一 2月 10 2003 Mike A. Harris <mharris@redhat.com> 0.69-1
+- Updated pcitable and Cards database for new Intel i852/i855/i865 support
+
+* 一 2月 10 2003 Mike A. Harris <mharris@redhat.com> 0.68-1
+- Massive update of all ATI video hardware PCI IDs in pcitable and a fair
+  number of additions and corrections to the Cards database as well
+
+* 三 1月 29 2003 Brent Fox <bfox@redhat.com> 0.67-1
+- change refresh rates of sny0000 monitors to use a low common denominator
+
+* 三 1月 29 2003 Bill Nottingham <notting@redhat.com> 0.66-1
+- don't force DRI off on R200 (#82957)
+
+* 五 1月 24 2003 Mike A. Harris <mharris@redhat.com> 0.65-1
+- Added Card:S3 Trio64V2 (Unsupported RAMDAC) entry to pcitable, pci.ids, and
+  Cards database to default this particular variant to "vesa" driver (#81659)
+
+* 四 1月 02 2003 Bill Nottingham <notting@redhat.com> 0.64-1
+- pci.ids and associated pcitable updates
+
+* 日 12月 29 2002 Mike A. Harris <mharris@redhat.com> 0.63-1
+- Updates for GeForce 2 Go, GeForce 4 (#80209)
+
+* 四 12月 12 2002 Jeremy Katz <katzj@redhat.com> 0.62-2
+- fix Cards for NatSemi Geode
+
+* 四 12月 12 2002 Jeremy Katz <katzj@redhat.com> 0.62-1
+- use e100 instead of eepro100 for pcmcia
+
+* 一 11月 25 2002 Mike A. Harris <mharris@redhat.com>
+- Complete reconstruction of all Neomagic hardware entries in Cards
+  database to reflect current XFree86, as well as pcitable update,
+  and submitted cleaned up entries to sourceforge
+
+* 一 11月 04 2002 Bill Nottingham <notting@redhat.com> 0.61-1
+- move pcmcia config file here
+- sort MonitorsDB, add some entries, remove dups
+- switch some network driver mappings
+
+* 二 9月 24 2002 Bill Nottingham <notting@redhat.com> 0.48-1
+- broadcom 5704 mapping
+- aic79xx (#73781)
+
+* 四 9月 05 2002 Bill Nottingham <notting@redhat.com> 0.47-1
+- pci.ids updates
+- add msw's wireless card
+
+* 二 9月 03 2002 Jeremy Katz <katzj@redhat.com> 0.46-1
+- Card entries in pcitable need matching in Cards
+
+* 日 9月 01 2002 Mike A. Harris <mharris@redhat.com> 0.45-1
+- Update G450 entry in Cards
+
+* 二 8月 13 2002 Bill Nottingham <notting@redhat.com> 0.44-1
+- fix some of the Dell entries
+- add cardbus controller id (#71198)
+- add audigy mapping
+- add NEC monitor (#71320)
+
+* 二 8月 13 2002 Preston Brown <pbrown@redhat.com> 0.43-1
+- pci.id for SMC wireless PCI card (#67346)
+
+* 六 8月 10 2002 Mike A. Harris <mharris@redhat.com> 0.42-1
+- Change default driver for old S3 based "Miro" card for bug (#70743)
+
+* 五 8月 09 2002 Preston Brown <pbrown@redhat.com> 0.41-1
+- fix tabs in pci.ids
+- Change pci ids for the PowerEdge 4 series again...
+
+* 二 8月 06 2002 Preston Brown <pbrown@redhat.com> 0.39-1
+- Dell PERC and SCSI pci.id additions
+
+* 二 8月 06 2002 Mike A. Harris <mharris@redhat.com> 0.38-1
+- Removed and/or invalid entries from Cards database BLOCKER (#70802)
+
+* 一 8月 05 2002 Mike A. Harris <mharris@redhat.com> 0.37-1
+- Changed Matrox G450 driver default options to fix bug (#66697)
+- Corrected S3 Trio64V2 bug in Cards file (#66492)
+
+* 二 7月 30 2002 Bill Nottingham <notting@redhat.com> 0.36-1
+- tweaks for Dell Remote Assisstant cards (#60376)
+
+* 五 7月 26 2002 Mike A. Harris <mharris@redhat.com> 0.35-1
+- Updated Cards db for CT69000
+- Various ATI cleanups and additions to Cards and pcitable
+- Updated S3 Trio3D to default to "vesa" driver (#59956)
+
+* 二 7月 23 2002 Bill Nottingham <notting@redhat.com> 0.33-1
+- Eizo monitor updates (#56080, <triad@df.lth.se>)
+- pci.ids updates, corresponding pcitable updates
+- pcilint for pcitable
+
+* 五 6月 28 2002 Bill Nottingham <notting@redhat.com> 0.32-1
+- switch de4x5 back to tulip
+
+* 一 6月 24 2002 Mike A. Harris <mharris@redhat.com> 0.31-1
+- Modified ATI entries in pcitable to be able to autodetect the FireGL 8700
+  and FireGL 8800 which both have the same ID, but different subdevice ID's.
+  Added entries to Cards database for the 8700/8800 as well.
+
+* 二 5月 28 2002 Mike A. Harris <mharris@redhat.com> 0.30-1
+- Reconfigured Cards database to default to XFree86 4.x for ALL video
+  hardware, since 3.3.6 support is being removed.  Video cards not
+  supported natively by 4.x will be changed to use the vesa or vga
+  driver, or completely removed as unsupported.
+
+* 三 4月 17 2002 Michael Fulbright <msf@redhat.com> 0.14-1
+- another megaraid variant
+
+* 一 4月 15 2002 Michael Fulbright <msf@redhat.com> 0.13-1
+- fix monitor entry for Dell 1600X Laptop Display Panel
+
+* 五 4月 12 2002 Bill Nottingham <notting@redhat.com> 0.13-1
+- more aacraid
+
+* 二 4月 09 2002 Bill Nottingham <notting@redhat.com> 0.12-1
+- another 3ware, another megaraid
+
+* 五 4月 05 2002 Mike A. Harris <mharris@redhat.com> 0.11-1
+- Added commented out line for some Radeon 7500 cards to Cards database.
+
+* 二 4月 02 2002 Mike A. Harris <mharris@redhat.com> 0.10-1
+- Fixed i830 entry to use driver "i810" not "i830" which doesn't exist
+
+* 一 4月 01 2002 Bill Nottingham <notting@redhat.com> 0.9-1
+- fix rebuild (#62459)
+- SuperSavage ids (#62101)
+- updates from pci.ids
+
+* 一 3月 18 2002 Bill Nottingham <notting@redhat.com> 0.8-2
+- fix errant space (#61363)
+
+* 四 3月 14 2002 Bill Nottingham <notting@redhat.com> 0.8-1
+- nVidia updates
+
+* 三 3月 13 2002 Bill Nottingham <notting@redhat.com> 0.7-1
+- lots of pcitable updates
+
+* 二 3月 05 2002 Mike A. Harris <mharris@redhat.com> 0.6-1
+- Updated Cards database
+
+* 一 3月 04 2002 Mike A. Harris <mharris@redhat.com> 0.5-1
+- Built new package with updated database files for rawhide.
+
+* 五 2月 22 2002 Bill Nottingham <notting@redhat.com> 0.3-1
+- return of XFree86-3.3.x
+
+* 三 1月 30 2002 Bill Nottingham <notting@redhat.com> 0.1-1
+- initial build
+

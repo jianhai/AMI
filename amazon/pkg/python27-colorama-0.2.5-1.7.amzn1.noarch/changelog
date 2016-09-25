@@ -1,0 +1,18 @@
+* 三 2月 04 2015 Jason Green <jasg@amazon.com>
+- Build for multiple pythons
+
+* 一 9月 09 2013 Lee Trager <ltrager@amazon.com>
+- import source package F19/python-colorama-0.2.5-1.fc19
+
+* 五 3月 22 2013 Matthias Runge <mrunge@redhat.com> - 0.2.5-1
+- update to 0.2.5 (rhbz#913431)
+
+* 日 3月 17 2013 Lee Trager <ltrager@amazon.com>
+- setup complete for package python-colorama
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 9月 11 2012 Matthias Runge <mrunge@redhat.com> - 0.2.4-1
+- Initial package.
+

@@ -1,0 +1,21 @@
+* 一 1月 17 2011 01:35:23 UTC Cristian Gafton <gafton@amazon.com>
+- Merge branch 'rhel6'
+
+* 四 12月 02 2010 21:10:19 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pth-2.0.7-9.3.el6
+
+* 四 7月 22 2010 21:29:39 UTC Cristian Gafton <gafton@amazon.com>
+- fix spec file syntax
+
+* 五 7月 09 2010 22:38:53 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pth-2.0.7-9.2
+
+* 五 7月 09 2010 22:38:52 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/pth-2.0.7-9.1
+
+* 五 5月 07 2010 02:31:25 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/pth-2.0.7-6.el5
+
+* 五 5月 07 2010 00:16:20 UTC Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package pth
+

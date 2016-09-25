@@ -1,0 +1,4 @@
+postinstall scriptlet (using /bin/sh):
+rm -rf /var/cache/man/*
+
+# replace cached dirs to stop warnings from the obsolete man package

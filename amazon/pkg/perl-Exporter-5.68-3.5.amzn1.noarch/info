@@ -1,0 +1,23 @@
+Name        : perl-Exporter
+Version     : 5.68
+Release     : 3.5.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时40分38秒
+Group       : Development/Libraries
+Size        : 56612
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分53秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-Exporter-5.68-3.5.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 21时04分58秒
+Build Host  : build-60001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/Exporter/
+Summary     : Implements default import method for modules
+Description :
+The Exporter module implements an import method which allows a module to
+export functions and variables to its users' name spaces. Many modules use
+Exporter rather than implementing their own import method because Exporter
+provides a highly flexible interface, with an implementation optimized for
+the common case.

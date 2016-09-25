@@ -1,0 +1,7 @@
+perl >= 0:5.006
+perl(:MODULE_COMPAT_5.16.3)
+perl(Carp)
+perl(Exporter)
+perl(strict)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

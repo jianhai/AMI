@@ -1,0 +1,3 @@
+postinstall scriptlet (using /bin/sh):
+[ -x /sbin/telinit -a -p /dev/initctl -a -f /proc/1/exe -a -d /proc/1/root ] && /sbin/telinit u
+exit 0

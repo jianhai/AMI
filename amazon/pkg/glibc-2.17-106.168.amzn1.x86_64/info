@@ -1,0 +1,25 @@
+Name        : glibc
+Version     : 2.17
+Release     : 106.168.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分30秒
+Group       : System Environment/Libraries
+Size        : 13982285
+License     : LGPLv2+ and LGPLv2+ with exceptions and GPLv2+
+Signature   : RSA/SHA256, 2016年08月19日 星期五 01时33分35秒, Key ID bcb4a85b21c0f39f
+Source RPM  : glibc-2.17-106.168.amzn1.src.rpm
+Build Date  : 2016年08月18日 星期四 23时49分06秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/glibc/
+Summary     : The GNU libc libraries
+Description :
+The glibc package contains standard libraries which are used by
+multiple programs on the system. In order to save disk space and
+memory, as well as to make upgrading easier, common system code is
+kept in one place and shared between programs. This particular package
+contains the most important sets of shared libraries: the standard C
+library and the standard math library. Without these two libraries, a
+Linux system will not function.

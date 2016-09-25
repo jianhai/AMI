@@ -1,0 +1,6 @@
+/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-6
+/etc/rpm/macros.ghc-srpm
+/etc/yum.repos.d/epel-testing.repo
+/etc/yum.repos.d/epel.repo
+/usr/share/doc/epel-release-6
+/usr/share/doc/epel-release-6/GPL

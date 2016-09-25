@@ -1,0 +1,224 @@
+* 二 9月 08 2015 Tom Kirchner <tjk@amazon.com>
+- Require make check to pass
+
+* 五 8月 21 2015 Munehisa Kamata <kamatam@amazon.com>
+- Disable system call auditing on new installation.
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/audit-2.4.1-5.el7
+
+* 三 2月 18 2015 Ben Cressey <bcressey@amazon.com>
+- conflict with dependent packages built for an older python
+
+* 五 1月 23 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 三 1月 14 2015 Steve Grubb <sgrubb@redhat.com> 2.4.1-5
+resolves: #1180675 - rules with "-F arch=ppc64le" fail to load
+
+* 二 1月 13 2015 Steve Grubb <sgrubb@redhat.com> 2.4.1-4
+- Remove golang bindings added under the following bz
+resolves: #1115196 - Add golang bindings for libaudit
+
+* 三 12月 17 2014 Steve Grubb <sgrubb@redhat.com> 2.4.1-2
+resolves: #1173160 - Audit package needs update for new VPN crypto events
+
+* 二 10月 28 2014 Steve Grubb <sgrubb@redhat.com> 2.4.1-1
+resolves: #963353 - aarch64 userspace auditing needs to be written
+resolves: #1150202 - perf trace sleep 1 does not list any syscall information
+resolves: #1142989 - Update audit package to 2.4.1
+resolves: #1155221 - adjust fstatat naming to match kernel uapi
+
+* 四 9月 18 2014 Steve Grubb <sgrubb@redhat.com> 2.4-1
+resolves: #1115196 - Add golang bindings for libaudit
+resolves: #1105150 - audispd config file parser fails on long input
+resolves: #1104973 - auparse truncating selinux context after first category
+resolves: #1088593 - auditctl man page examples use deprecated syscalls
+resolves: #1087849 - support for setting loginuid immutable
+resolves: #1073063 - AUDIT_SECCOMP events syscall field is not interpretted
+resolves: #975796  - confusing aulast records for bad logins
+
+* 四 9月 11 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Revert minimum uid back to 500
+
+* 二 5月 06 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/audit-2.3.3-4.el7
+
+* 二 3月 18 2014 Steve Grubb <sgrubb@redhat.com> 2.3.3-4
+resolves: #1077249 - Audit update, various issues
+
+* 五 3月 07 2014 Ben Cressey <bcressey@amazon.com>
+- conditionalize systemd with standard bcond
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 2.3.3-3
+- Mass rebuild 2014-01-24
+
+* 一 1月 20 2014 Steve Grubb <sgrubb@redhat.com> 2.3.3-2
+- New upstream bugfix/enhancement release
+resolves: #1053804 - ausearch issues found by ausearch-test
+resolves: #1030409 - ausearch help typo for "-x" option
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 2.3.2-4
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/audit-2.3.2-3.el7
+
+* 四 10月 03 2013 Steve Grubb <sgrubb@redhat.com> 2.3.2-3
+resolves: #828495 - semanage port should generate an audit event
+
+* 四 8月 29 2013 Steve Grubb <sgrubb@redhat.com> 2.3.2-2
+resolves: #991056 - ausearch ignores USER events with -ua option
+
+* 一 7月 29 2013 Steve Grubb <sgrubb@redhat.com> 2.3.2-1
+- New upstream bugfix/enhancement release
+resolves: #982112 Add delay between stopping and starting auditd
+
+* 三 7月 10 2013 Steve Grubb <sgrubb@redhat.com> 2.3.1-4
+resolves: #982112 Add delay between stopping and starting auditd
+
+* 三 7月 03 2013 Steve Grubb <sgrubb@redhat.com> 2.3.1-3
+- Remove prelude support
+
+* 五 5月 31 2013 Steve Grubb <sgrubb@redhat.com> 2.3.1-2
+- Fix unknown lvalue in auditd.service (#969345)
+
+* 四 5月 30 2013 Steve Grubb <sgrubb@redhat.com> 2.3.1-1
+- New upstream bugfix/enhancement release
+
+* 五 5月 03 2013 Steve Grubb <sgrubb@redhat.com> 2.3-2
+- If no rules exist, copy shipped rules into place
+
+* 二 4月 30 2013 Steve Grubb <sgrubb@redhat.com> 2.3-1
+- New upstream bugfix release
+
+* 四 3月 21 2013 Steve Grubb <sgrubb@redhat.com> 2.2.3-2
+- Fix clone syscall interpretation
+
+* 二 3月 19 2013 Steve Grubb <sgrubb@redhat.com> 2.2.3-1
+- New upstream bugfix release
+
+* 三 2月 13 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 三 1月 16 2013 Steve Grubb <sgrubb@redhat.com> 2.2.2-4
+- Don't make auditd.service file executable (#896113)
+
+* 五 1月 11 2013 Steve Grubb <sgrubb@redhat.com> 2.2.2-3
+- Do not own /usr/lib64/audit
+
+* 三 12月 12 2012 Steve Grubb <sgrubb@redhat.com> 2.2.2-2
+- New upstream release
+
+* 三 7月 18 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.2.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/audit-2.2-2.el6
+
+* 五 3月 23 2012 Steve Grubb <sgrubb@redhat.com> 2.2.1-1
+- New upstream release
+
+* 四 3月 01 2012 Steve Grubb <sgrubb@redhat.com> 2.2-1
+- New upstream release
+
+* 四 1月 12 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.3-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 12月 07 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/audit-2.1.3-3.el6
+
+* 四 9月 15 2011 Adam Williamson <awilliam@redhat.com> 2.1.3-4
+- add in some systemd scriptlets that were missed, including one which
+  will cause auditd to be enabled on upgrade from pre-systemd builds
+
+* 三 9月 14 2011 Steve Grubb <sgrubb@redhat.com> 2.1.3-3
+- Enable by default (#737060)
+
+* 二 8月 30 2011 Steve Grubb <sgrubb@redhat.com> 2.1.3-2
+- Correct misplaced ifnarch (#734359)
+
+* 一 8月 15 2011 Steve Grubb <sgrubb@redhat.com> 2.1.3-1
+- New upstream release
+
+* 二 7月 26 2011 Jóhann B. Guðmundsson <johannbg@gmail.com> - 2.1.2-2
+- Introduce systemd unit file, drop SysV support
+
+* 六 6月 11 2011 Steve Grubb <sgrubb@redhat.com> 2.1.2-1
+- New upstream release
+
+* 六 5月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/audit-2.1-5.el6
+
+* 三 4月 20 2011 Steve Grubb <sgrubb@redhat.com> 2.1.1-1
+- New upstream release
+
+* 二 3月 29 2011 Steve Grubb <sgrubb@redhat.com> 2.1-1
+- New upstream release
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 2月 04 2011 Steve Grubb <sgrubb@redhat.com> 2.0.6-1
+- New upstream release
+
+* 四 1月 20 2011 Karsten Hopp <karsten@redhat.com> 2.0.5-2
+- bump and rebuild as 2.0.5-1 was erroneously linked with python-2.6 on ppc
+
+* 一 1月 17 2011 Cristian Gafton <gafton@amazon.com>
+- disable make check
+
+* 二 11月 02 2010 Steve Grubb <sgrubb@redhat.com> 2.0.5-1
+- New upstream release
+
+* 三 7月 21 2010 David Malcolm <dmalcolm@redhat.com> - 2.0.4-4
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 五 7月 16 2010 Nathan Blackham <blackham@amazon.com>
+- fixing bug - missing include file
+- add tcp_wrappers-devel dependency
+
+* 五 7月 16 2010 Matt Wilson <msw@amazon.com>
+- remove dist macro typo
+
+* 四 7月 15 2010 Cristian Gafton <gafton@amazon.com>
+- add dist tag to release
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/audit-2.0.4-1.el6
+
+* 二 7月 06 2010 Nathan Blackham <blackham@amazon.com>
+- Conditionalizing system-config-audit and cleaning up python site-packages macros
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/audit-1.7.17-3.el5
+- import source package RHEL5/audit-1.7.13-2.el5
+- import source package RHEL5/audit-1.7.7-6.el5_3.3
+- import source package RHEL5/audit-1.7.7-6.el5_3.2
+- import source package RHEL5/audit-1.7.7-6.el5
+- import source package RHEL5/audit-1.6.5-9.el5
+- import source package RHEL5/audit-1.5.5-7.el5
+- import source package RHEL5/audit-1.3.1-1.el5
+- added submodule prep for package audit
+
+* 二 2月 16 2010 Adam Jackson <ajax@redhat.com> 2.0.4-3
+- audit-2.0.4-add-needed.patch: Fix FTBFS for --no-add-needed
+
+* 五 1月 29 2010 Steve Grubb <sgrubb@redhat.com> 2.0.4-2
+- Split out static libs (#556039)
+
+* 二 12月 08 2009 Steve Grubb <sgrubb@redhat.com> 2.0.4-1
+- New upstream release
+
+* 六 10月 17 2009 Steve Grubb <sgrubb@redhat.com> 2.0.3-1
+- New upstream release
+
+* 五 10月 16 2009 Steve Grubb <sgrubb@redhat.com> 2.0.2-1
+- New upstream release
+
+* 一 9月 28 2009 Steve Grubb <sgrubb@redhat.com> 2.0.1-1
+- New upstream release
+
+* 五 8月 21 2009 Steve Grubb <sgrubb@redhat.com> 2.0-3
+- New upstream release
+

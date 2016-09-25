@@ -1,0 +1,37 @@
+/bin/bash
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/usr/bin/getent
+/usr/bin/pkg-config
+/usr/bin/stat
+/usr/sbin/groupadd
+config(udev) = 173-4.13.amzn1
+fileutils
+hwdata
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.10)(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.17)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.2)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.6)(64bit)
+libc.so.6(GLIBC_2.7)(64bit)
+libc.so.6(GLIBC_2.8)(64bit)
+libc.so.6(GLIBC_2.9)(64bit)
+libm.so.6()(64bit)
+libm.so.6(GLIBC_2.2.5)(64bit)
+libselinux >= 0:1.17.9-2
+libselinux.so.1()(64bit)
+libudev = 173-4.13.amzn1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)
+sed
+util-linux >= 2.15.1

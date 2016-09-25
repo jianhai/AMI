@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+if [ ! -e /var/log/tallylog ] ; then
+        install -m 600 /dev/null /var/log/tallylog
+fi
+postuninstall program: /sbin/ldconfig

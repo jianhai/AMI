@@ -1,0 +1,524 @@
+* 四 9月 12 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/db4-4.7.25-18.el6_4
+
+* 一 9月 09 2013 Jan Stanek <jstanek@redhat.com> 4.7.25-18
+- sanity fix for db locking bug
+- Resolves: #989348
+
+* 一 10月 22 2012 Cristian Gafton <gafton@amazon.com>
+- re-enable the db4-java subpackage
+
+* 六 7月 07 2012 Cristian Gafton <gafton@amazon.com>
+- conditionalize gcj support and disable
+
+* 三 4月 11 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/db4-4.7.25-17.el6
+
+* 六 2月 12 2011 Jindrich Novy <jnovy@redhat.com> 4.7.25-17
+- fix license tag (#784662)
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/db4-4.7.25-16.el6
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/db4-4.7.25-15.el6
+- import source package RHEL6/db4-4.7.25-13.1.el6
+
+* 五 6月 04 2010 Jindrich Novy <jnovy@redhat.com> 4.7.25-16
+- add Requires: db4-cxx to db4-devel (#596157)
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/db4-4.3.29-10.el5
+- import source package RHEL5/db4-4.3.29-9.fc6
+- added submodule prep for package db4
+
+* 一 3月 15 2010 Jindrich Novy <jnovy@redhat.com> 4.7.25-15
+- apply backported patch from 4.8.26 to fix dbverify (#563610, #472131)
+  (patch backported by Noriko Hosoi)
+
+* 一 3月 15 2010 Jindrich Novy <jnovy@redhat.com> 4.7.25-14
+- enable SHA-256 signatures for BDB packages (#565655)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 4.7.25-13.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.7.25-13
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 5月 06 2009 Jindrich Novy <jnovy@redhat.com> 4.7.25-12
+- fix for Java API __repmgr_send crash where eid=SELF_EID,
+  don't update master_id so soon after election (upstream bz#16299)
+
+* 二 5月 05 2009 Karsten Hopp <karsten@redhat.com> 4.7.25-11.1
+- add s390 and s390x to java_arches
+
+* 五 2月 27 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.25-11
+- build with md5 file digests for now to ensure upgradability of rpm
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.7.25-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 12月 23 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-9
+- remove dual tcl-devel requirement
+- nuke useless libtool hacks
+
+* 一 12月 22 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-8
+- DB_ENV->lock_get may self deadlock if user defined locks
+  are used and there is only one lock partition defined
+  (upstream bz#16415)
+- fix for dd segfaults (upstream bz#16541)
+- reorder patches
+
+* 二 12月 02 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-7
+- remove s390 and s390x from java_arches (#474061)
+- BR: tcl-devel for the tclConfig.sh change (#474062)
+
+* 日 11月 16 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-6
+- package complete db4 documentation in db4-devel (#471633)
+- add fix for the new libtool
+
+* 二 9月 16 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-5
+- build also if db4 is not installed (thanks to Michael A. Peters)
+
+* 三 9月 10 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-4
+- actually apply the .jni patch
+- fix permissions in db4-utils package (#225675)
+
+* 二 8月 19 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-3
+- apply upstream patch to allow replication clients to
+  opena sequence
+- rediff .jni patch
+
+* 三 7月 09 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-2
+- rebuild
+
+* 三 7月 09 2008 Jindrich Novy <jnovy@redhat.com> 4.7.25-1
+- update to 4.7.25 (#449735)
+- package static java library only if listed in java_arches
+- move to java-1.6.0-openjdk
+- fix tcl library path
+- drop glibc patch, no more needed
+
+* 六 5月 17 2008 Jindrich Novy <jnovy@redhat.com> 4.6.21-6
+- fix license, remove .la files (#225675)
+- move static libraries to separate package
+
+* 四 4月 03 2008 Jindrich Novy <jnovy@redhat.com> 4.6.21-5
+- add upstream patch to fix a race condition between checkpoint
+  and DB->close which can result in the checkpoint thread self-deadlocking
+
+* 一 3月 10 2008 Jindrich Novy <jnovy@redhat.com> 4.6.21-4
+- don't list headers twice in filelist (#436701)
+
+* 一 2月 25 2008 Jindrich Novy <jnovy@redhat.com> 4.6.21-3
+- manual rebuild because of gcc-4.3 (#434185)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 4.6.21-2
+- Autorebuild for GCC 4.3
+
+* 四 10月 11 2007 Jindrich Novy <jnovy@redhat.com> 4.6.21-1
+- update to 4.6.21
+- own %{_includedir}/db4 (#274251)
+
+* 一 9月 03 2007 Jindrich Novy <jnovy@redhat.com> 4.6.19-1
+- update to 4.6.19 (#273461)
+
+* 三 8月 29 2007 Jindrich Novy <jnovy@redhat.com> 4.6.18-2
+- rebuild for BuildID
+- BR util-linux-ng
+
+* 一 7月 30 2007 Jindrich Novy <jnovy@redhat.com> 4.6.18-1
+- update to 4.6.18
+- drop upstream patches for 4.5.20 and gcj patch
+- remove nptl-abi-note.S, useless as we are definitely
+  running kernel >= 2.4.20 (#245416)
+- move C++ stuff to subpackages to reduce dependency bloat (#220484)
+- package db_codegen
+- correct open() calls so that new db4 compiles with the new glibc
+
+* 六 3月 24 2007 Thomas Fitzsimmons <fitzsim@redhat.com> 4.5.20-5
+- Require java-1.5.0-gcj and java-1.5.0-gcj-devel for build.
+
+* 一 12月 04 2006 Jindrich Novy <jnovy@redhat.com> 4.5.20-4
+- apply upstream patches for 4.5.20
+  (Java API <-> core API related fixes)
+
+* 五 12月 01 2006 Jindrich Novy <jnovy@redhat.com> 4.5.20-3
+- temporarily remove ppc64 from java arches
+
+* 日 11月 26 2006 Jindrich Novy <jnovy@redhat.com> 4.5.20-2
+- sync db4 and compat-db licenses to BSD-style as the result of
+  consultation with legal department
+- fix some rpmlint warnings
+
+* 五 11月 10 2006 Jindrich Novy <jnovy@redhat.com> 4.5.20-1
+- update to db-4.5.20 (#198038)
+- fix BuildRoot
+- drop .64bit patch
+- patch/source URLs now point to correct location
+
+* 二 9月 12 2006 Jindrich Novy <jnovy@redhat.com> 4.3.29-9
+- rebuild
+
+* 三 9月 06 2006 Jindrich Novy <jnovy@redhat.com> 4.3.29-8
+- revert the previous fix, it crashes OOo help
+
+* 日 9月 03 2006 Jindrich Novy <jnovy@redhat.com> 4.3.29-7.fc6
+- fix memleak caused by SET_TXN macro in xa_db.c, when opening
+  database created with DB_XA_CREATE flag (#204920)
+
+* 三 7月 19 2006 Jindrich Novy <jnovy@redhat.com> 4.3.29-6
+- fix sparc64 build (#199358)
+
+* 一 7月 17 2006 Jindrich Novy <jnovy@redhat.com> 4.3.29-5
+- rebuild because of gnu_hash
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 4.3.29-4.1
+- rebuild
+
+* 五 3月 24 2006 Jindrich Novy <jnovy@redhat.com> 4.3.29-4
+- drop useless java, lfs patches
+
+* 一 3月 13 2006 Jindrich Novy <jnovy@redhat.com> 4.3.29-3
+- apply x86_64 fix from Henrik Nordstrom (#184588)
+- don't nuke non-versioned archives twice
+
+* 三 2月 15 2006 Jindrich Novy <jnovy@redhat.com> 4.3.29-2
+- don't package /usr/share/doc/images in the main db4 package
+  and move it to db4-devel (#33328)
+- make db4 LFS capable (#33849)
+- move db4-devel, db4-tcl, db4-java to Development/Libraries
+  group instead of System Environment/Libraries (#54320)
+- BuildPrereq -> BuildRequires
+- don't use RPM_SOURCE_DIR
+- Obsoletes db3, db2
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 4.3.29-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 4.3.29-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 10月 07 2005 Paul Nasrat <pnasrat@redhat.com> 4.3.29-1
+- New upstream release
+
+* 五 9月 30 2005 Paul Nasrat <pnasrat@redhat.com> 4.3.28-4
+- Re-enable java for ppc64
+
+* 三 9月 21 2005 Paul Nasrat <pnasrat@redhat.com> 4.3.28-3
+- Add fno-strict-aliasing for java (#168965)
+
+* 二 9月 20 2005 Paul Nasrat <pnasrat@redhat.com> 4.3.28-2
+- no java for ppc64 for now (#166657)
+
+* 二 9月 20 2005 Paul Nasrat <pnasrat@redhat.com> 4.3.28-1
+- FC5 is nptl only (derived from jbj's spec)
+- upgrade to 4.3.28
+
+* 四 7月 14 2005 Paul Nasrat <pnasrat@redhat.com> 4.3.27-5
+- re-enable db4-java
+
+* 二 5月 17 2005 Paul Nasrat <pnasrat@redhat.com> 4.3.27-4
+- /usr/lib/tls/ix86 dirs (#151371)
+
+* 一 4月 25 2005 Bill Nottingham <notting@redhat.com> 4.3.27-3
+- add libdb_cxx.so link (#149191)
+
+* 五 3月 04 2005 Jeff Johnson <jbj@jbj.org> 4.3.27-2
+- rebuild with gcc4.
+
+* 六 1月 01 2005 Jeff Johnson <jbj@jbj.org> 4.3.27-1
+- upgrade to 4.3.27.
+
+* 四 11月 11 2004 Jeff Johnson <jbj@jbj.org> 4.3.21-1
+- upgrade to 4.3.21, no db4-java for the moment again again.
+
+* 二 9月 21 2004 Nalin Dahyabhai <nalin@redhat.com> 4.2.52-6
+- on %{ix86} systems, make the availability of an NPTL-requiring libdb match
+  the availability of an NPTL libpthread in glibc > 2.3.3-48
+- run ldconfig in db4-java's %post/%postun
+- when building java support, assume that libgcj is equivalent enough to 1.3
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 6月 07 2004 Jeff Johnson <jbj@jbj.org> 4.2.52-4
+- remove dangling symlinks (#123721 et al).
+- remove db_cxx.so and db_tcl.so symlinks, versioned equivs exist.
+- apply 2 patches from sleepycat.
+- resurrect db4-java using sun jvm-1.4.2.
+- cripple autoconf sufficiently to build db4-java with gcj, without jvm.
+- check javac first, gcj34 next, then gcj-ssa, finally gcj.
+- add ed build dependency (#125180).
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 16 2004 Jeff Johnson <jbj@jbj.org> 4.2.52-2
+- fix: automake *.lo wrapper, not elf, files included in *.a (#113572).
+
+* 四 12月 11 2003 Jeff Johnson <jbj@jbj.org> 4.2.52-1
+- upgrade to db-4.2.52, no db4-java for the moment.
+
+* 五 11月 28 2003 Paul Nasrat <pauln@truemesh.com> 4.2.41-0.2
+- Add build requires tcl-devel
+
+* 五 10月 24 2003 Nalin Dahyabhai <nalin@redhat.com> 4.1.25-14
+- symlink from %{_libdir}/tls/libdb-4.1.so to the copy in /%{_lib}/tls, so
+  that the run-time linker can find the right copy for of apps which use an
+  RPATH to point at %{_libdir}/libdb-4.1.so
+
+* 四 10月 23 2003 Nalin Dahyabhai <nalin@redhat.com> 4.1.25-13
+- add another section to the ABI note for the TLS libdb so that it's marked as
+  not needing an executable stack (from Arjan Van de Ven)
+
+* 三 10月 15 2003 Nalin Dahyabhai <nalin@redhat.com>
+- build both with and without support for shared mutex locks, which require NPTL
+- make behavior wrt where we put libdb the same for all OSs
+- revert changes making tcl optional - nesting %if tcl and %ifarch nptl
+  doesn't work
+- fix dangling HREFs in utility docs (pointed to main docs dir, while they're
+  actually in the -utils docs dir)
+- run ldconfig when installing/removing the -utils subpackage, as it contains
+  shared libraries
+
+* 三 10月 15 2003 Nalin Dahyabhai <nalin@redhat.com> 4.1.25-11
+- fix multiple-inclusion problem of startup files when building shlibs without
+  the -nostdlib flag
+
+* 二 10月 14 2003 Nalin Dahyabhai <nalin@redhat.com>
+- link shared libraries without -nostdlib, which created an unresolvable dep
+  on a hidden symbol
+
+* 二 9月 23 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- allow compiling without tcl dependency
+
+* 六 9月 20 2003 Jeff Johnson <jbj@jbj.org> 4.2.42-0.1
+- update to 4.2.42.
+- build in build_unix subdir.
+- eliminate --enable-dump185, db_dump185.c no longer compiles for libdb*.
+- create db4-tcl sub-pkg to isolate libtcl dependencies.
+
+* 四 8月 21 2003 Nalin Dahyabhai <nalin@redhat.com> 4.1.25-9
+- rebuild
+
+* 二 8月 19 2003 Nalin Dahyabhai <nalin@redhat.com> 4.1.25-8
+- add missing tcl-devel buildrequires (#101814)
+
+* 二 7月 15 2003 Joe Orton <jorton@redhat.com> 4.1.25-7
+- rebuild
+
+* 五 6月 27 2003 Jeff Johnson <jbj@redhat.com> 4.1.25-6
+- build with libtool-1.5, which can't recognize the .so in libfoo*.so atm.
+- whack out libtool predep_objects wonkiness.
+
+* 四 6月 26 2003 Jeff Johnson <jbj@redhat.com> 4.1.25-5
+- rebuild.
+
+* 二 6月 24 2003 Jeff Johnson <jbj@redhat.com> 4.1.25-4
+- hack out O_DIRECT support in db4 for now.
+
+* 二 6月 24 2003 Nalin Dahyabhai <nalin@redhat.com>
+- replace libtool.ac with current libtool.m4 so that running libtoolize doesn't
+  cause a mismatch
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Nalin Dahyabhai <nalin@redhat.com> 4.1.25-2
+- change configure to only warn if JNI includes aren't found, assuming that
+  the C compiler can find them
+- remove build requirement on jdkgcj -- gcj is sufficient
+
+* 一 5月 05 2003 Jeff Johnson <jbj@redhat.com> 4.1.25-1
+- upgrade to 4.1.25, crypto version.
+- enable posix mutexes using nptl on all arches.
+
+* 一 3月 03 2003 Thoams Woerner <twoerner@redhat.com> 4.0.14-21
+- enabled db4-java for x86_64
+
+* 三 2月 05 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.14-20
+- add dynamic libdb-4.0.so link back to %{_libdir} so that dynamically
+  linking with -ldb-4.0 will work again
+
+* 二 2月 04 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.14-19
+- rebuild to use link the shared object with the same libraries we use
+  for the bundled utils, should pull in libpthread when needed
+- move libdb.so from /%{_lib} to %{_libdir} where the linker can find it
+
+* 日 2月 02 2003 Florian La Roche <Florian.LaRoche@redhat.de> 4.0.14-18
+- add java for s390x
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 4.0.14-17
+- rebuilt
+
+* 三 11月 20 2002 Florian La Roche <Florian.LaRoche@redhat.de> 4.0.14-16
+- add java for s390
+
+* 二 10月 08 2002 Nalin Dahyabhai <nalin@redhat.com> 4.0.14-15
+- add java bits back in for x86 boxes
+
+* 五 9月 20 2002 Than Ngo <than@redhat.com> 4.0.14-14.1
+- Added better fix for s390/s390x/x86_64
+
+* 四 9月 05 2002 Arjan van de Ven
+- remove java bits for x86-64
+
+* 二 8月 27 2002 Jeff Johnson <jbj@redhat.com> 4.0.14-14
+- include libdb_tcl-4.1.a library.
+- obsolete db1 packages.
+
+* 二 8月 13 2002 Nalin Dahyabhai <nalin@redhat.com> 4.0.14-13
+- include patch to avoid db_recover (#70362)
+
+* 六 8月 10 2002 Elliot Lee <sopwith@redhat.com>
+- rebuilt with gcc-3.2 (we hope)
+
+* 二 7月 23 2002 Nalin Dahyabhai <nalin@redhat.com> 4.0.14-11
+- own %{_includedir}/db4
+
+* 二 7月 23 2002 Tim Powers <timp@redhat.com> 4.0.14-10
+- build using gcc-3.2-0.1
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 6月 12 2002 Bernhard Rosenkraenzer <bero@redhat.com> 4.0.14-8
+- Add java bindings
+- Fix C++ bindings
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 09 2002 Jeff Johnson <jbj@redhat.com>
+- re-enable db.h symlink creation, db_util names, and db[23]-devel obsoletes.
+- make sure that -ldb is functional.
+
+* 四 2月 21 2002 Jeff Johnson <jbj@redhat.com>
+- avoid db_util name collisions with multiple versions installed.
+
+* 一 2月 18 2002 Nalin Dahyabhai <nalin@redhat.com> 4.0.14-3
+- remove relocatability stuffs
+- swallow a local copy of db1 and build db185_dump statically with it, to
+  remove the build dependency and simplify bootstrapping new arches
+
+* 日 1月 27 2002 Nalin Dahyabhai <nalin@redhat.com> 4.0.14-2
+- have subpackages obsolete their db3 counterparts, because they conflict anyway
+
+* 二 1月 08 2002 Jeff Johnson <jbj@redhat.com> db4-4.0.14-1
+- upgrade to 4.0.14.
+
+* 日 8月 05 2001 Nalin Dahyabhai <nalin@redhat.com>
+- fix dangling docs symlinks
+- fix dangling doc HREFs (#33328)
+- apply the two patches listed at http://www.sleepycat.com/update/3.2.9/patch.3.2.9.html
+
+* 二 6月 19 2001 Bill Nottingham <notting@redhat.com>
+- turn off --enable-debug
+
+* 四 5月 10 2001 Than Ngo <than@redhat.com>
+- fixed to build on s390x
+
+* 一 3月 19 2001 Jeff Johnson <jbj@redhat.com>
+- update to 3.2.9.
+
+* 二 12月 12 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild to remove 777 directories.
+
+* 六 11月 11 2000 Jeff Johnson <jbj@redhat.com>
+- don't build with --enable-diagnostic.
+- add build prereq on tcl.
+- default value for %_lib macro if not found.
+
+* 二 10月 17 2000 Jeff Johnson <jbj@redhat.com>
+- add /usr/lib/libdb-3.1.so symlink to %files.
+- remove dangling tags symlink from examples.
+
+* 一 10月 09 2000 Jeff Johnson <jbj@redhat.com>
+- rather than hack *.la (see below), create /usr/lib/libdb-3.1.so symlink.
+- turn off --enable-diagnostic for performance.
+
+* 五 9月 29 2000 Jeff Johnson <jbj@redhat.com>
+- update to 3.1.17.
+- disable posix mutexes Yet Again.
+
+* 二 9月 26 2000 Jeff Johnson <jbj@redhat.com>
+- add c++ and posix mutex support.
+
+* 四 9月 14 2000 Jakub Jelinek <jakub@redhat.com>
+- put nss_db into a separate package
+
+* 三 8月 30 2000 Matt Wilson <msw@redhat.com>
+- rebuild to cope with glibc locale binary incompatibility, again
+
+* 三 8月 23 2000 Jeff Johnson <jbj@redhat.com>
+- remove redundant strip of libnss_db* that is nuking symbols.
+- change location in /usr/lib/libdb-3.1.la to point to /lib (#16776).
+
+* 四 8月 17 2000 Jeff Johnson <jbj@redhat.com>
+- summaries from specspo.
+- all of libdb_tcl* (including symlinks) in db3-utils, should be db3->tcl?
+
+* 三 8月 16 2000 Jakub Jelinek <jakub@redhat.com>
+- temporarily build nss_db in this package, should be moved
+  into separate nss_db package soon
+
+* 三 7月 19 2000 Jakub Jelinek <jakub@redhat.com>
+- rebuild to cope with glibc locale binary incompatibility
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 11 2000 Jeff Johnson <jbj@redhat.com>
+- upgrade to 3.1.14.
+- create db3-utils sub-package to hide tcl dependency, enable tcl Yet Again.
+- FHS packaging.
+
+* 一 6月 05 2000 Jeff Johnson <jbj@redhat.com>
+- disable tcl Yet Again, base packages cannot depend on libtcl.so.
+
+* 六 6月 03 2000 Jeff Johnson <jbj@redhat.com>
+- enable tcl, rebuild against tcltk 8.3.1 (w/o pthreads).
+
+* 二 5月 30 2000 Matt Wilson <msw@redhat.com>
+- include /lib/libdb.so in the devel package
+
+* 三 5月 10 2000 Jeff Johnson <jbj@redhat.com>
+- put in "System Environment/Libraries" per msw instructions.
+
+* 二 5月 09 2000 Jeff Johnson <jbj@redhat.com>
+- install shared library in /lib, not /usr/lib.
+- move API docs to db3-devel.
+
+* 一 5月 08 2000 Jeff Johnson <jbj@redhat.com>
+- don't rename db_* to db3_*.
+
+* 二 5月 02 2000 Jeff Johnson <jbj@redhat.com>
+- disable --enable-test --enable-debug_rop --enable-debug_wop.
+- disable --enable-posixmutexes --enable-tcl as well, to avoid glibc-2.1.3
+  problems.
+
+* 一 4月 24 2000 Jeff Johnson <jbj@redhat.com>
+- add 3.0.55.1 alignment patch.
+- add --enable-posixmutexes (linux threads has not pthread_*attr_setpshared).
+- add --enable-tcl (needed -lpthreads).
+
+* 六 4月 01 2000 Jeff Johnson <jbj@redhat.com>
+- add --enable-debug_{r,w}op for now.
+- add variable to set shm perms.
+
+* 六 3月 25 2000 Jeff Johnson <jbj@redhat.com>
+- update to 3.0.55
+
+* 二 12月 29 1998 Jeff Johnson <jbj@redhat.com>
+- Add --enable-cxx to configure.
+
+* 四 6月 18 1998 Jeff Johnson <jbj@redhat.com>
+- Create.
+

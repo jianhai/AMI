@@ -1,0 +1,16 @@
+git = 2.7.4-1.47.amzn1
+perl >= 0:5.008
+perl(:MODULE_COMPAT_5.16.3)
+perl(Carp)
+perl(Cwd)
+perl(Error)
+perl(Error)
+perl(Exporter)
+perl(Fcntl)
+perl(Git)
+perl(IPC::Open2)
+perl(Time::Local)
+perl(strict)
+perl(warnings)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

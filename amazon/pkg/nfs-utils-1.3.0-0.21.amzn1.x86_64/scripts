@@ -1,0 +1,64 @@
+preinstall scriptlet (using /bin/sh):
+
+# move files so the running service will have this applied as well
+for x in gssd svcgssd idmapd ; do
+    if [ -f /var/lock/subsys/rpc.$x ]; then
+		mv /var/lock/subsys/rpc.$x /var/lock/subsys/rpc$x
+    fi
+done
+
+/usr/sbin/useradd -l -c "RPC Service User" -r \
+		-s /sbin/nologin -u 29 -d /var/lib/nfs rpcuser 2>/dev/null || :
+/usr/sbin/groupadd -g 29 rpcuser 2>/dev/null || :
+
+# Using the 16-bit value of -2 for the nfsnobody uid and gid
+
+# Create nfsnobody gid as long as it does not already exist
+cat /etc/group | cut -d':' -f 1 | grep --quiet nfsnobody 2>/dev/null
+if [ "$?" -eq 1 ]; then
+    /usr/sbin/groupadd -g 65534 nfsnobody 2>/dev/null || :
+else
+    /usr/sbin/groupmod -g 65534 nfsnobody 2>/dev/null || :
+fi
+
+# Create nfsnobody uid as long as it does not already exist.
+cat /etc/passwd | cut -d':' -f 1 | grep --quiet nfsnobody 2>/dev/null
+if [ "$?" -eq 1 ]; then
+    /usr/sbin/useradd -l -c "Anonymous NFS User" -r -g 65534 \
+		-s /sbin/nologin -u 65534 -d /var/lib/nfs nfsnobody 2>/dev/null || :
+else
+
+   /usr/sbin/usermod -u 65534 -g 65534 nfsnobody 2>/dev/null || :
+fi
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add nfs
+/sbin/chkconfig --add nfslock
+/sbin/chkconfig --add rpcgssd
+/sbin/chkconfig --add rpcsvcgssd
+# Make sure statd used the correct uid/gid.
+chown -R rpcuser:rpcuser /var/lib/nfs/statd
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ]; then
+    /sbin/service nfs condstop > /dev/null
+    /sbin/service rpcgssd condstop > /dev/null
+    /sbin/service nfslock condstop > /dev/null
+    /sbin/service rpcsvcgssd condstop > /dev/null
+    /sbin/chkconfig --del rpcgssd
+    /sbin/chkconfig --del rpcsvcgssd
+    /sbin/chkconfig --del nfs
+    /sbin/chkconfig --del nfslock
+    /usr/sbin/userdel rpcuser 2>/dev/null || :
+    /usr/sbin/groupdel rpcuser 2>/dev/null || :
+    /usr/sbin/userdel nfsnobody 2>/dev/null || :
+    /usr/sbin/groupdel nfsnobody 2>/dev/null || :
+    # Don't remove directories RPM expects to be able to remove later
+    find /var/lib/nfs/statd \! -type d -delete
+    find /var/lib/nfs/v4recovery -mindepth 1 -delete
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge 1 ]; then
+    /sbin/service rpcgssd condrestart > /dev/null
+    /sbin/service nfs condrestart > /dev/null
+    /sbin/service nfslock condrestart > /dev/null
+    /sbin/service rpcsvcgssd condrestart > /dev/null
+fi

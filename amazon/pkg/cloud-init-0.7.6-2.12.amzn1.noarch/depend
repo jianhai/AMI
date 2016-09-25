@@ -1,0 +1,29 @@
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/sbin/initctl
+/sbin/service
+/usr/bin/python2.7
+/usr/bin/rename
+chkconfig
+chkconfig
+config(cloud-init) = 0.7.6-2.12.amzn1
+e2fsprogs
+initscripts
+iproute
+mktemp
+net-tools
+procps
+python(abi) = 2.7
+python27(dist-packages)
+python27-PyYAML
+python27-configobj
+python27-jinja2
+python27-jsonpatch
+python27-requests
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+shadow-utils
+upstart

@@ -1,0 +1,18 @@
+/bin/bash
+/bin/sh
+config(cronie-anacron) = 1.4.4-15.7.amzn1
+coreutils
+cronie = 1.4.4-15.7.amzn1
+crontabs
+libaudit.so.1()(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.7)(64bit)
+libdl.so.2()(64bit)
+libpam.so.0()(64bit)
+libselinux.so.1()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

@@ -1,0 +1,19 @@
+Name        : aws-apitools-common
+Version     : 1.1.0
+Release     : 1.9.amzn1
+Architecture: noarch
+Install Date: 2016年09月11日 星期日 02时41分03秒
+Group       : System Environment/Base
+Size        : 915
+License     : Amazon Software License
+Signature   : RSA/SHA256, 2015年04月06日 星期一 22时03分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : aws-apitools-common-1.1.0-1.9.amzn1.src.rpm
+Build Date  : 2015年04月02日 星期四 23时49分09秒
+Build Host  : build-60007.build
+Relocations : /opt 
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon AWS
+URL         : http://aws.amazon.com
+Summary     : AWS common - provides directory structure and common configuration files
+Description :
+AWS common - provides directory structure and common configuration files

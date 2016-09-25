@@ -1,0 +1,23 @@
+Name        : grep
+Version     : 2.20
+Release     : 2.17.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时40分37秒
+Group       : Applications/Text
+Size        : 1185835
+License     : GPLv3+
+Signature   : RSA/SHA256, 2016年08月19日 星期五 01时33分44秒, Key ID bcb4a85b21c0f39f
+Source RPM  : grep-2.20-2.17.amzn1.src.rpm
+Build Date  : 2016年08月18日 星期四 22时38分40秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/grep/
+Summary     : Pattern matching utilities
+Description :
+The GNU versions of commonly used grep utilities. Grep searches through
+textual input for lines which contain a match to a specified pattern and then
+prints the matching lines. GNU's grep utilities include grep, egrep and fgrep.
+
+GNU grep is needed by many scripts, so it shall be installed on every system.

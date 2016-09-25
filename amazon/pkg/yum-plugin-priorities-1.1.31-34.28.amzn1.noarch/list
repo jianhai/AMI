@@ -1,0 +1,6 @@
+/etc/yum/pluginconf.d/priorities.conf
+/usr/lib/yum-plugins/priorities.py
+/usr/lib/yum-plugins/priorities.pyc
+/usr/lib/yum-plugins/priorities.pyo
+/usr/share/doc/yum-plugin-priorities-1.1.31
+/usr/share/doc/yum-plugin-priorities-1.1.31/COPYING

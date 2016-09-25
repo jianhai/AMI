@@ -1,0 +1,37 @@
+* 三 1月 28 2015 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL7/libpsl-0.6.2-1.el7
+
+* 四 11月 20 2014 Christopher Meng <rpm@cicku.me> - 0.6.2-1
+- Update to 0.6.2
+
+* 二 8月 26 2014 David Tardon <dtardon@redhat.com> - 0.5.1-3
+- rebuild for ICU 53.1
+
+* 日 8月 17 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
+* 二 8月 12 2014 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL7/libpsl-0.5.1-1.el7
+- setup complete for package libpsl
+
+* 一 8月 04 2014 Christopher Meng <rpm@cicku.me> - 0.5.1-1
+- Update to 0.5.1
+- Drop patch merged upstream
+
+* 六 8月 02 2014 Christopher Meng <rpm@cicku.me> - 0.5.0-3
+- Add a patch from Jakub Čajka to complete the tests on non-x86 arch.
+
+* 四 7月 24 2014 Christopher Meng <rpm@cicku.me> - 0.5.0-2
+- Drop useless test data
+- Add missing gettext-devel
+- psl is now separately packaged recommended by the upstream
+
+* 五 7月 04 2014 Christopher Meng <rpm@cicku.me> - 0.5.0-1
+- Update to 0.5.0
+
+* 二 7月 01 2014 Christopher Meng <rpm@cicku.me> - 0.4.0-1
+- Update to 0.4.0
+
+* 二 4月 08 2014 Christopher Meng <rpm@cicku.me> - 0.2-1
+- Initial Package.
+

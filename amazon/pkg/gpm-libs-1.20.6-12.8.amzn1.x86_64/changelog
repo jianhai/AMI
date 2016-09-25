@@ -1,0 +1,520 @@
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/gpm-1.20.6-12.el6
+
+* 一 6月 06 2011 Nikola Pajkovsky <npajkovs@redhat.com> - 1.20.6.12
+- Resolves: #684920 - FTBFS - unpackaged files (do not install t-mouse.el)
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/gpm-1.20.6-11.el6
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/gpm-1.20.6-10.el6
+
+* 四 6月 24 2010 Nikola Pajkovsky <npajkovs@redhat.com> - 1.20.6-11
+- add manpages
+- add Requires: gpm-libs = 1.20.6-12.8.amzn1
+- Resolves: #605053 - RPMdiff run failed for package gpm-1.20.6-10.el6
+[snip from email]
+ npajkovs@redhat.com: I'd like to ask you what kind of license did you use for inputattach?
+ steve@sk2.org: I didn't mention it in debian/copyright, but
+ all the packaging (including the manpages) are licensed under the same
+ terms as the packaged source, ie. GPL-2 or later.
+
+* 三 5月 19 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/gpm-1.20.1-74.1
+
+* 三 5月 19 2010 Cristian Gafton <gafton@amazon.com>
+- added submodule prep for package gpm
+
+* 二 1月 05 2010 Nikola Pajkovsky <npajkovs@redhat.com> - 1.20.6-10
+- fix Url and Source
+
+* 四 12月 10 2009 Nikola Pajkovsky <npajkovs@redhat.com> 1.20.6-9
+- add try-restart into gpm.init to be more LSB-compilant
+
+* 四 11月 19 2009 Nikola Pajkovsky <npajkovs@redhat.com> 1.20.6-8
+- drop patch7
+- resolved #537724(does not work with capabilities)
+
+* 三 9月 30 2009 Nikola Pajkovsky <npajkovs@redhat.com> 1.20.6-7
+- add BuildRequires: libcap-ng-devel
+- fix patch .capability
+
+* 四 8月 20 2009 Zdenek Prikryl <zprikryl@redhat.com> 1.20.6-6
+- Don't complain if installing with --excludedocs (#515927)
+- Drop unnecessary capabilities in gpm (#517659)
+
+* 三 8月 12 2009 Ville Skyttä <ville.skytta@iki.fi> - 1.20.6-5
+- Use lzma compressed upstream tarball.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.20.6-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 4月 14 2009 Zdenek Prikryl <zprikryl@redhat.com> 1.20.6-3
+- created new subpackage gpm-libs (#495124)
+
+* 二 2月 24 2009 Zdenek Prikryl <zprikryl@redhat.com> - 1.20.6-2
+- Fixed gpm.info.gz building
+
+* 二 2月 03 2009 Zdenek Prikryl <zprikryl@redhat.com> - 1.20.6-1
+- Spec review (#225856)
+- Updated to 1.20.6
+
+* 二 12月 02 2008 Zdenek Prikryl <zprikryl@redhat.com> - 1.20.5-2
+- Fixed debug mode (#473422)
+- Fixed description in init script (#474337)
+
+* 四 7月 17 2008 Zdenek Prikryl <zprikryl@redhat.com> - 1.20.5-1
+- Updated to 1.20.5
+- Removed doc patch
+- Removed lisp stuff, it is part of emacs-common now 
+- Spec clean up
+
+* 三 6月 04 2008 Zdenek Prikryl <zprikryl@redhat.com> - 1.20.3-2
+- Enable gpm in runlevel 5
+
+* 四 5月 29 2008 Zdenek Prikryl <zprikryl@redhat.com> - 1.20.3-1
+- Updated to 1.20.3
+- Fixed init script to comply with LSB standard (#246937)
+- Mass patch cleanup
+- Fixed typo in doc (#446679)
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.20.1-90
+- Autorebuild for GCC 4.3
+
+* 五 8月 24 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-89
+- license tag update (and rebuild for BuildID, etc.)
+
+* 三 7月 25 2007 Jesse Keating <jkeating@redhat.com> - 1.20.1-88
+- Rebuild for RH #249435
+
+* 二 7月 24 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-87
+- replace OPEN_MAX with sysconf(_SC_OPEN_MAX), fixing build with 2.6.23 kernel
+
+* 二 7月 24 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-86
+- don't install t-mouse.el, emacs-common contains a newer version,
+  fixes #249362
+
+* 五 6月 29 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-85
+- applied patch for #246219, fixing segfault with vsyslog on x86_64
+
+* 三 5月 23 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-84
+- applied patch for #240389, fixing default handlers
+
+* 四 5月 03 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-83
+- gpm-devel now requires version-release correctly, fixes #238785
+
+* 一 4月 02 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-82
+- updated inputattach.c to 1.24 from cvs, fixes #231635
+
+* 五 3月 23 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-81
+- the patch for #168076 caused a strange behaviour with ncurses, fixed it
+  differently
+
+* 一 1月 22 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-80
+- forgot to add the patch for #168076
+
+* 一 1月 22 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-79
+- added disttag to release
+
+* 一 1月 22 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-78
+- refuse connections while waiting for console, fixes #168076
+
+* 一 1月 22 2007 Tomas Janousek <tjanouse@redhat.com> - 1.20.1-77
+- #223696: non-failsafe install-info use in scriptlets
+
+* 二 10月 10 2006 Petr Rockai <prockai@redhat.com> - 1.20-1-76
+- align sleeps to tick boundary, should reduce cpu wakeups
+  on laptops, fixes #205064 (patch by Arjan van de Ven)
+- disable gpm altogether in runlevel 5, it is probably not
+  worth the overhead considering it is barely used at all
+
+* 五 9月 22 2006 Petr Rockai <prockai@redhat.com> - 1.20.1-75
+- fix a bug where gpm daemon kept stdin/out/err open after
+  detaching from terminal, causing eg. pipes from initscript
+  to hang for the lifetime of gpm
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.20.1-74.1
+- rebuild
+
+* 三 6月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.20.1-74
+- rebuild for -devel deps
+
+* 一 2月 13 2006 Petr Rockai <prockai@redhat.com> - 1.20.1-73.3
+- rebuild due to failure on x86-64 (possibly a glitch?)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.20.1-73.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.20.1-73.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 1月 18 2006 Petr Rockai <prockai@redhat.com> 1.20.1-73
+- do not ooops in gpm when console device cannot be found, print
+  an error message instead and exit(1), as per BR 140025, 176178
+- do not print messages in libgpm, unless envvar GPM_VERBOSE
+  is set -- avoids unwanted clutter from libgpm in apps like dialog
+  or mc when gpm is not available
+
+* 四 12月 22 2005 Jesse Keating <jkeating@redhat.com> 1.20.1-72
+- rebuilt again
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+- added autoconf as a BuildReq
+
+* 五 3月 04 2005 Petr Rockai <prockai@redhat.com>
+- rebuilt
+
+* 一 2月 14 2005 Adrian Havill <havill@redhat.com>
+- rebuilt
+
+* 四 10月 21 2004 Adrian Havill <havill@redhat.com> 1.20.1-66
+- avoid spawning multiple copies of inputattach, and kill process
+  when gpm shuts down (#135776)
+
+* 三 10月 20 2004 Bill Nottingham <notting@redhat.com> 1.20.1-65
+- remove buildroot paths from gpm.info, fixing #135305
+
+* 三 10月 20 2004 Adrian Havill <havill@redhat.com> 1.20.1-64
+- fixing multilib conflict (#135305):
+  o remove buildsys check/conditional for gziping info pages (let rpm
+    do it)
+  o don't pre-byte-compile emacs code
+
+* 四 10月 14 2004 Bill Nottingham <notting@redhat.com> 1.20.1-62
+- fix remaining sourcing of /etc/sysconfig/gpm (#135776)
+
+* 三 10月 13 2004 Adrian Havill <havill@redhat.com> 1.20.1-61
+- remove unnecessary diagnostic and check of the consolename (#129962)
+- remove /etc/sysconfig/gpm; set unset defaults in the init script instead
+  after mousecfg is (or is not) read
+
+* 三 10月 13 2004 Florian La Roche <laroche@redhat.com>
+- sysconfig/gpm should probably go away, that is more confusing than
+  helping anyone
+- read at least sysconfig/gpm first as it seems to have the default values
+  and sysconfig/mouse is getting probed values and probably has better
+  settings in it.
+
+* 二 10月 12 2004 Adrian Havill <havill@redhat.com> 1.20.1-57
+- read both the sysconfig/mouse and sysconfig/gpm (preferrence to gpm
+  settings), not just one of them, if both exist (#134389)
+
+* 二 10月 12 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- remove gzip of info pages within .spec file, #135305
+
+* 六 10月 09 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- initscript cleanup
+
+* 四 9月 23 2004 Adrian Havill <havill@redhat.com> 1.20.1-54
+- change init so that MOUSECFG fallsback to /etc/sysconfig/gpm if
+  /etc/sysconfig/mouse doesn't exist (#133141)
+- fixed compile vs new kernheaders (#131783)
+
+* 二 5月 04 2004 Adrian Havill <havill@redhat.com> 1.20.1-49
+- remove superfluous "i die" msg (#121845)
+
+* 二 5月 04 2004 Adrian Havill <havill@redhat.com> 1.20.1-48
+- restore gpmopen() NULL check that was removed with the
+  evdev superpatch (#118554)
+
+* 五 4月 16 2004 Adrian Havill <havill@redhat.com> 1.20.1-47
+- make presence of t-mouse.el flexible (#120958)
+
+* 三 3月 31 2004 Adrian Havill <havill@redhat.com> 1.20.1-46
+- revise nodebug patch as liblow reporting the VC to the console through
+  stderr has re-appeared (#117676)
+
+* 一 3月 22 2004 Adrian Havill <havill@redhat.com> 1.20.1-45
+- remove circular ncurses dep for prelink by restoring wgetch
+  patch (#117150)
+
+* 三 3月 17 2004 Bill Nottingham <notting@redhat.com> 1.20.1-44
+- include inputattach
+- if configured mouse has IMOUSETYPE, use inputattach
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 26 2004 Adrian Havill <havill@redhat.com> 1.20.1-43
+- add event device (for 2.6 kernel) superpatch-- includes all
+  patches up to release 38; thanks to Dmitry Torokhov
+- change default mouse device over to /dev/input/mice
+- set mouse type to Intellimouse Explorer (exps2), which is what
+  the 2.6 kernel exports by default
+
+* 六 2月 14 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- already add shared lib symlinks at install time
+- fix subscript #114289
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 11月 18 2003 Adrian Havill <havill@redhat.com> 1.20.1-39
+- re-add the $OPTIONS that gets pulled in from /etc/sysconfig/gpm
+  to the init.d script (#110248)
+
+* 四 8月 07 2003 Adrian Havill <havill@redhat.com> 1.20.1-38
+- Gpm_Open() NULL deref revisited (#101104). Patch by
+  <leonardjo@hetnet.nl>
+
+* 三 7月 30 2003 Adrian Havill <havill@redhat.com> 1.20.1-37
+- removed auto-add of repeat with -M (#84310)
+
+* 二 7月 29 2003 Adrian Havill <havill@redhat.com> 1.20.1-36
+- fixed grammar typos in the init script (#89109)
+- don't deref NULL string in Gpm_Open (#101104)
+
+* 三 7月 02 2003 Adrian Havill <havill@redhat.com> 1.20.1-35
+- remove debug output from gpm_report() to prevent spurious
+  debugging msgs even when not in debug mode (#98210)
+
+* 四 6月 26 2003 Adrian Havill <havill@redhat.com> 1.20.1-33
+- reversed -t and -m params in init script, removed $OPTION
+- add doc blurb regarding no auto-repeat with multiple mice
+
+* 二 6月 24 2003 Adrian Havill <havill@redhat.com> 1.20.1-32
+- update version
+- add -lm for ceil()
+- add hltest, mouse-test for all but zSeries
+
+* 一 6月 16 2003 Jakub Jelinek <jakub@redhat.com>
+- don't link against -lncurses, instead make wgetch and stdscr weak
+  undefined symbols to break library dependency cycle
+
+* 四 6月 12 2003 Elliot Lee <sopwith@redhat.com>
+- Remove pam requirement
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 29 2003 Bill Nottingham <notting@redhat.com> 1.19.13-27
+- ship libraries on s390/s390x
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 1月 13 2003 Bill Nottingham <notting@redhat.com> 1.19.13-25
+- don't automatically enable the repeater when '-M' is in use
+
+* 五 11月 22 2002 Tim Powers <timp@redhat.com>
+- remove unpackaged files from the buildroot
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 4月 09 2002 Bernhard Rosenkraenzer <bero@redhat.com> 
+- Revert to the version from 7.2 because later versions have some grave
+  issues I can't {reproduce,debug} with my hardware, such as
+
+* 四 7月 19 2001 Preston Brown <pbrown@redhat.com>
+- more documentation fixes for Netmouse type devices (#48885)
+
+* 二 6月 26 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add link from library major version number
+
+* 一 6月 25 2001 Preston Brown <pbrown@redhat.com>
+- small fixlet in init script (#36995)
+
+* 二 6月 19 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add ExcludeArch: s390 s390x
+
+* 五 4月 06 2001 Preston Brown <pbrown@redhat.com>
+- work better with unsupported devfs (#23500, #34883)
+
+* 一 2月 05 2001 Karsten Hopp <karsten@redhat.de>
+- found another bug: tmpfile was never removed if
+  gpm was already running
+
+* 一 2月 05 2001 Karsten Hopp <karsten@redhat.de>
+- really fix tmpfile path
+
+* 一 2月 05 2001 Karsten Hopp <karsten@redhat.de>
+- fix tmpfile path (bugzilla  #25967)
+
+* 二 1月 30 2001 Preston Brown <pbrown@redhat.com>
+- don't make PID file world-writable.
+
+* 一 1月 29 2001 Preston Brown <pbrown@redhat.com>
+- fix up devel dependency on main package
+
+* 日 1月 28 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Don't crash if we can't open /dev/console
+  (Happens with some devfs enabled kernels)
+
+* 二 1月 23 2001 Trond Eivind Glomsr�d <teg@redhat.com>
+- fix bug in i18n of initscript
+
+* 二 1月 23 2001 Preston Brown <pbrown@redhat.com>
+- bash2 style of i18n for initscript
+
+* 三 1月 17 2001 Preston Brown <pbrown@redhat.com>
+- i18n the initscript.
+
+* 四 1月 11 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add hooks for extra options in /etc/sysconfig/gpm (#23547)
+
+* 五 1月 05 2001 Preston Brown <pbrown@redhat.com>
+- patch added to abort if running on a serial console (#15784)
+
+* 五 7月 28 2000 Preston Brown <pbrown@redhat.com>
+- cleaned up post section
+
+* 三 7月 26 2000 Preston Brown <pbrown@redhat.com>
+- clarification: pam requirement added to fix permissions on /dev/gpmctl (#12849)
+
+* 六 7月 22 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.19.3
+
+* 六 7月 15 2000 Bill Nottingham <notting@redhat.com>
+- move initscript back
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 五 6月 30 2000 Matt Wilson <msw@redhat.com>
+- use sysconf(_SC_OPEN_MAX)
+
+* 二 6月 27 2000 Preston Brown <pbrown@redhat.com>
+- don't prereq, only require initscripts
+
+* 一 6月 26 2000 Preston Brown <pbrown@redhat.com>
+- fix up and move initscript
+- prereq initscripts >= 5.20
+
+* 六 6月 17 2000 Bill Nottingham <notting@redhat.com>
+- fix %config tag for initscript
+
+* 四 6月 15 2000 Bill Nottingham <notting@redhat.com>
+- move it back
+
+* 四 6月 15 2000 Preston Brown <pbrown@redhat.com>
+- move init script
+
+* 三 6月 14 2000 Preston Brown <pbrown@redhat.com>
+- security patch on socket descriptor from Chris Evans.  Thanks Chris.
+- include limits.h for OPEN_MAX
+
+* 一 6月 12 2000 Preston Brown <pbrown@redhat.com>
+- 1.19.2, fix up root (setuid) patch
+- FHS paths
+
+* 四 4月 06 2000 Jakub Jelinek <jakub@redhat.com>
+- 1.19.1
+- call initgroups in gpm-root before spawning command as user
+- make gpm-root work on big endian
+
+* 日 3月 26 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- call ldconfig directly in postun
+
+* 三 3月 22 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- rebuild with new libncurses
+
+* 六 3月 18 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.19.0
+- fix build on systems that don't have emacs
+  (configure built t-mouse* only if emacs was installed)
+
+* 二 2月 29 2000 Preston Brown <pbrown@redhat.com>
+- important fix: improperly buildrooted for /usr/share/emacs/site-lisp, fixed.
+
+* 二 2月 15 2000 Jakub Jelinek <jakub@redhat.com>
+- avoid cluttering of syslog with gpm No data messages
+
+* 一 2月 14 2000 Preston Brown <pbrown@redhat.com>
+- disable-paste and mouse-test removed, they seem broken.
+
+* 四 2月 03 2000 Preston Brown <pbrown@redhat.com>
+- updated gpm.init to have better shutdown and descriptive messages
+- strip lib
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description
+- man pages are compressed
+
+* 三 1月 12 2000 Preston Brown <pbrown@redhat.com>
+- 1.18.1.
+
+* 二 9月 28 1999 Preston Brown <pbrown@redhat.com>
+- upgraded to 1.18, hopefully fixes sparc protocol issues
+
+* 五 9月 24 1999 Bill Nottingham <notting@redhat.com>
+- install-info sucks, and then you die.
+
+* 五 9月 10 1999 Bill Nottingham <notting@redhat.com>
+- chkconfig --del in %preun, not %postun
+
+* 五 8月 27 1999 Preston Brown <pbrown@redhat.com>
+- upgrade to 1.17.9
+- the maintainers are taking care of .so version now, removed patch
+
+* 一 8月 16 1999 Bill Nottingham <notting@redhat.com>
+- initscript munging
+
+* 三 6月 02 1999 Jeff Johnson <jbj@redhat.com>
+- disable-paste need not be setuid root in Red Hat 6.0 (#2654)
+
+* 二 5月 18 1999 Michael K. Johnson <johnsonm@redhat.com>
+- gpm.init had wrong pidfile name in comments; confused linuxconf
+
+* 一 3月 22 1999 Preston Brown <pbrown@redhat.com>
+- make sure all binaries are stripped, make init stuff more chkconfig style
+- removed sparc-specific mouse stuff
+- bumped libver to 1.17.5
+- fixed texinfo source
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 2)
+
+* 四 3月 04 1999 Matt Wilson <msw@redhat.com>
+- updated to 1.75.5
+
+* 二 2月 16 1999 Cristian Gafton <gafton@redhat.com>
+- avoid using makedev for internal functions (it is a #define in the system
+  headers)
+
+* 三 1月 13 1999 Preston Brown <pbrown@redhat.com>
+- upgrade to 1.17.2.
+
+* 三 1月 06 1999 Cristian Gafton <gafton@redhat.com>
+- enforce the use of -D_GNU_SOURCE so that it will compile on the ARM
+- build against glibc 2.1
+
+* 二 8月 11 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 三 4月 22 1998 Michael K. Johnson <johnsonm@redhat.com>
+- enhanced initscript
+
+* 五 4月 10 1998 Cristian Gafton <gafton@redhat.com>
+- recompiled for manhattan
+
+* 三 4月 08 1998 Erik Troan <ewt@redhat.com>
+- updated to 1.13
+
+* 一 11月 03 1997 Donnie Barnes <djb@redhat.com>
+- added patch from Richard to get things to build on the SPARC
+
+* 二 10月 28 1997 Donnie Barnes <djb@redhat.com>
+- fixed the emacs patch to install the emacs files in the right
+  place (hopefully).
+
+* 一 10月 13 1997 Erik Troan <ewt@redhat.com>
+- added chkconfig support
+- added install-info
+
+* 四 9月 11 1997 Donald Barnes <djb@redhat.com>
+- upgraded from 1.10 to 1.12
+- added status/restart functionality to init script
+- added define LIBVER 1.11
+
+* 四 6月 19 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

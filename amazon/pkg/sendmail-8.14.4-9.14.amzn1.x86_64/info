@@ -1,0 +1,27 @@
+Name        : sendmail
+Version     : 8.14.4
+Release     : 9.14.amzn1
+Architecture: x86_64
+Install Date: 2016年09月11日 星期日 02时41分00秒
+Group       : System Environment/Daemons
+Size        : 1580123
+License     : Sendmail
+Signature   : RSA/SHA256, 2016年08月19日 星期五 01时34分37秒, Key ID bcb4a85b21c0f39f
+Source RPM  : sendmail-8.14.4-9.14.amzn1.src.rpm
+Build Date  : 2016年08月17日 星期三 19时23分22秒
+Build Host  : build-64011.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.sendmail.org/
+Summary     : A widely used Mail Transport Agent (MTA)
+Description :
+The Sendmail program is a very widely used Mail Transport Agent (MTA).
+MTAs send mail from one machine to another. Sendmail is not a client
+program, which you use to read your email. Sendmail is a
+behind-the-scenes program which actually moves your email over
+networks or the Internet to where you want it to go.
+
+If you ever need to reconfigure Sendmail, you will also need to have
+the sendmail-cf package installed. If you need documentation on
+Sendmail, you can install the sendmail-doc package.

@@ -1,0 +1,9 @@
+* 六 5月 21 2011 22:52:48 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgssglue-0.1-11.el6
+
+* 五 7月 09 2010 22:19:01 UTC Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgssglue-0.1-8.1.el6
+
+* 五 7月 09 2010 20:47:07 UTC Cristian Gafton <gafton@amazon.com>
+- setup complete for package libgssglue
+

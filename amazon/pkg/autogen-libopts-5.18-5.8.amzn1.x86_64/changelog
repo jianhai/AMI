@@ -1,0 +1,86 @@
+* 四 2月 26 2015 Sean Kelly <seankell@amazon.com>
+- setup complete for package autogen
+
+* 二 5月 06 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/autogen-5.18-5.el7
+
+* 五 3月 14 2014 Miroslav Lichvar <mlichvar@redhat.com> - 5.18-5
+- Remove arch-specific dependency to avoid multilib conflict (#1076407)
+
+* 二 2月 11 2014 Miroslav Lichvar <mlichvar@redhat.com> - 5.18-4
+- Package libopts tear-off tarball (#1055904)
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 5.18-3
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 5.18-2
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/autogen-5.18-1.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package autogen
+
+* 一 7月 29 2013 Miroslav Lichvar <mlichvar@redhat.com> - 5.18-1
+- Update to 5.18
+- Fix multilib conflicts (#831379)
+- Make some dependencies arch-specific
+- Remove obsolete macros
+
+* 三 7月 17 2013 Petr Pisar <ppisar@redhat.com> - 5.12-6
+- Perl 5.18 rebuild
+
+* 四 4月 18 2013 Debarshi Ray <rishi@fedoraproject.org> - 5.12-5
+- Fix build failure with guile2.
+
+* 三 2月 13 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.12-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 三 7月 18 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.12-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 1月 12 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.12-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 五 11月 25 2011 Anthony Green <green@redhat.com> - 5.12-1
+- Upgrade.
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.9.4-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 8月 10 2009 Ville Skyttä <ville.skytta@iki.fi> - 5.9.4-7
+- Use bzipped upstream tarball.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.9.4-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.9.4-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 25 2008 Debarshi Ray <rishi@fedoraproject.org> - 5.9.4-4
+- Changed dual licensing of autogen-libopts by dropping BSD.
+- Fixed multilib conflicts, static libraries and removed rpath setting bits
+  from autoopts-config.
+- Replaced 'BuildRequires: chrpath' with 'BuildRequires: libtool' for removing
+  rpaths.
+
+* 日 2月 24 2008 Debarshi Ray <rishi@fedoraproject.org> - 5.9.4-3
+- Added 'Obsoletes: autogen-manuals ...'.
+- Changed dual licensing of autogen-libopts-devel by dropping BSD.
+- Defined undefined non-weak symbols.
+- Omitted unused direct shared library dependencies.
+- Removed rpath setting bits from pkgconfig file.
+- Miscellaneous fixes.
+
+* 四 2月 21 2008 Debarshi Ray <rishi@fedoraproject.org> - 5.9.4-2
+- Prefixed libopts and libopts-devel with autogen-.
+- Removed 'BuildRequires: /usr/sbin/alternatives' and use of alternatives.
+- Added Provides & Obsoletes pair in autogen-libopts-devel according to
+  Fedora naming guidelines.
+
+* 六 2月 09 2008 Debarshi Ray <rishi@fedoraproject.org> - 5.9.4-1
+- Initial build. Imported SPEC from Rawhide.
+- Removed 'Obsoletes: libopts ...' and introduced libopts subpackages to avoid
+  mulitple licensing scenario.
+

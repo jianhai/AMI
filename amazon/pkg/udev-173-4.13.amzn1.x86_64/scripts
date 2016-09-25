@@ -1,0 +1,58 @@
+preinstall scriptlet (using /bin/sh):
+getent group cdrom >/dev/null || /usr/sbin/groupadd -g 11 cdrom || :
+getent group tape >/dev/null || /usr/sbin/groupadd -g 33 tape || :
+getent group dialout >/dev/null || /usr/sbin/groupadd -g 18 dialout || :
+getent group floppy >/dev/null || /usr/sbin/groupadd -g 19 floppy || :
+# kill daemon if we are not in a chroot
+if test -f /proc/1/exe -a -d /proc/1/root; then
+     if test -x /usr/bin/stat -a \
+             "$(/usr/bin/stat -Lc '%D-%i' /)" = "$(/usr/bin/stat -Lc '%D-%i' /proc/1/root)"; then
+          if test -x /sbin/udevd -a -x /sbin/pidof ; then
+               /sbin/udevadm control --stop-exec-queue
+               pid=$(/sbin/pidof -c udevd)
+               hard=""
+               while [ -n "$pid" ]; do
+                    for p in $pid; do
+                         kill $hard $p 2>/dev/null
+                    done
+                    sleep 0.2
+                    pid=$(/sbin/pidof -c udevd)
+                    hard="-9"
+               done
+          fi
+     fi
+fi
+exit 0
+postinstall scriptlet (using /bin/sh):
+# start daemon if we are not in a chroot
+if test -f /proc/1/exe -a -d /proc/1/root; then
+        if test "$(/usr/bin/stat -Lc '%D-%i' /)" = "$(/usr/bin/stat -Lc '%D-%i' /proc/1/root)"; then
+                /sbin/udevd -d >/dev/null 2>&1 || :
+                /sbin/udevadm control --start-exec-queue || :
+        fi
+fi
+/sbin/chkconfig --add udev-post >/dev/null 2>&1 || :
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" -eq 0 -a -f /etc/rc.d/init.d/udev ]; then
+     if test -x /usr/bin/stat -a \
+             "$(/usr/bin/stat -Lc '%D-%i' /)" = "$(/usr/bin/stat -Lc '%D-%i' /proc/1/root)"; then
+          if [ -x /sbin/pidof ]; then
+              pid=$(/sbin/pidof -c udevd)
+              hard=""
+              while [ -n "$pid" ]; do
+                  for p in $pid; do
+                       kill $hard $p 2>/dev/null
+                  done
+                  sleep 0.2
+                  pid=$(/sbin/pidof -c udevd)
+                  hard="-9"
+              done
+          fi
+     fi
+     /sbin/chkconfig --del udev >/dev/null 2>&1 || :
+fi
+if [ "$1" -eq 0 ]; then
+     /sbin/chkconfig --del udev-retry >/dev/null 2>&1 || :
+     /sbin/chkconfig --del udev-post >/dev/null 2>&1 || :
+fi
+exit 0

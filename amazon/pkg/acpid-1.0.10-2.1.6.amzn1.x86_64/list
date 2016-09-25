@@ -1,0 +1,16 @@
+/etc/acpi
+/etc/acpi/actions
+/etc/acpi/actions/power.sh
+/etc/acpi/events
+/etc/acpi/events/power.conf
+/etc/acpi/events/video.conf
+/etc/rc.d/init.d/acpid
+/usr/bin/acpi_listen
+/usr/sbin/acpid
+/usr/share/doc/acpid-1.0.10
+/usr/share/doc/acpid-1.0.10/COPYING
+/usr/share/doc/acpid-1.0.10/Changelog
+/usr/share/doc/acpid-1.0.10/README
+/usr/share/doc/acpid-1.0.10/TODO
+/usr/share/man/man8/acpi_listen.8.gz
+/usr/share/man/man8/acpid.8.gz
