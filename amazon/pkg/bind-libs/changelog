@@ -1,0 +1,2110 @@
+* 二 9月 13 2016 Jason Green <jasg@amazon.com>
+- Fix CVE-2016-2775
+
+* 三 3月 16 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.37.rc1.el6_7.7
+
+* 三 3月 09 2016 Tomas Hozza <thozza@redhat.com> - 32:9.8.2-0.37.rc1.7
+- Fix CVE-2016-1285 and CVE-2016-1286
+
+* 二 3月 08 2016 Jason Green <jasg@amazon.com>
+- Fix assertions in resolver, named and rndc
+
+* 三 1月 27 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.37.rc1.el6_7.6
+
+* 一 1月 18 2016 Tomas Hozza <thozza@redhat.com> - 32:9.8.2-0.37.rc1.6
+- Fix CVE-2015-8704
+
+* 一 1月 18 2016 Jason Green <jasg@amazon.com>
+- Fix a buffer size in apl_42.c
+
+* 三 12月 16 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.37.rc1.el6_7.5
+
+* 一 12月 14 2015 Tomas Hozza <thozza@redhat.com> - 32:9.8.2-0.37.rc1.5
+- Fix CVE-2015-8000
+
+* 六 12月 12 2015 Jason Green <jasg@amazon.com>
+- Validate class attribute in responses
+
+* 四 9月 03 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.37.rc1.el6_7.4
+
+* 三 9月 02 2015 Tomas Hozza <thozza@redhat.com> - 32:9.8.2-0.37.rc1.4
+- Apply previously not applied patch for CVE-2015-5722
+
+* 三 9月 02 2015 Tomas Hozza <thozza@redhat.com> - 32:9.8.2-0.37.rc1.3
+- Fix CVE-2015-5722
+
+* 二 9月 01 2015 Jason Green <jasg@amazon.com>
+- Fix for validation on DNSSEC-signed records
+
+* 三 7月 29 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.37.rc1.el6_7.2
+
+* 一 7月 27 2015 Florian Weimer <fweimer@redhat.com> - 32:9.8.2-0.37.rc1.2
+- Fix CVE-2015-5477
+
+* 一 7月 27 2015 Ian Weller <iweller@amazon.com>
+- Improve handling of TKEY queries
+
+* 三 7月 22 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.37.rc1.el6_7.1
+- import source package RHEL6/bind-9.8.2-0.37.rc1.el6
+
+* 六 7月 11 2015 Ben Cressey <bcressey@amazon.com>
+- backport fix for CVE-2015-4620
+
+* 四 7月 09 2015 Tomas Hozza <thozza@redhat.com> - 32:9.8.2-0.37.rc1.1
+- Fix CVE-2015-4620
+
+* 二 5月 19 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.30.rc1.el6_6.3
+
+* 四 5月 07 2015 Pavel Šimerda <psimerda@redhat.com> - 32:9.8.2-0.37.rc1
+- Resolves: 1215687 - DNS resolution failure in high load environment with
+  SERVFAIL and "out of memory/success" in the log
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.30.rc1.el6_6.2
+
+* 四 3月 12 2015 Jason Green <jasg@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.30.rc1.el6_6.2
+
+* 一 3月 02 2015 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.36.rc1
+- Fix CVE-2015-1349
+
+* 四 2月 19 2015 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.35.rc1
+- Enable RPZ-NSIP and RPZ-NSDNAME during compilation (#1176476)
+
+* 二 2月 17 2015 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.34.rc1
+- Fix race condition when using isc__begin_beginexclusive (#1175321)
+
+* 一 12月 22 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.30.rc1.el6_6.1
+
+* 二 12月 16 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.33.rc1
+- Sanitize SDB API to better handle database errors (#1146893)
+
+* 二 12月 09 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.32.rc1
+- Fix CVE-2014-8500 (#1171974)
+
+* 一 12月 08 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.31.rc1
+- Fix RRL slip behavior when set to 1 (#1112356)
+- Fix issue causing bind to hang after reload if using DYNDB (#1142152)
+
+* 二 10月 14 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.30.rc1.el6
+
+* 一 6月 09 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.30.rc1
+- Use /dev/urandom when generating rndc.key file (#951255)
+
+* 一 5月 19 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.29.rc1
+- Remove bogus file from /usr/share/doc, introduced by fix for bug #1092035
+
+* 一 5月 19 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.28.rc1
+- Add support for TLSA resource records (#956685)
+- Increase defaults for lwresd workers and make workers and client objects number configurable (#1092035)
+
+* 三 4月 23 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.27.rc1
+- Fix segmentation fault in nsupdate when -r option is used (#1064045)
+- Fix race condition on send buffer in host tool when sending UDP query (#1008827)
+- Allow authentication using TSIG in allow-notify configuration statement (#1044545)
+- Fix SELinux context of /var/named/chroot/etc/localtime (#902431)
+- Include updated named.ca file with root server addresses (#917356)
+- Don't generate rndc.key if there is rndc.conf on start-up (#997743)
+- Fix dig man page regarding how to disable IDN (#1023045)
+- Handle ICMP Destination unreachable (Protocol unreachable) response (#1066876)
+
+* 二 4月 22 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.26.rc1
+- Configure BIND with --with-dlopen=yes to support dynamically loadable DLZ drivers (#846065)
+- Fix initscript to return correct exit value when calling checkconfig/configtest/check/test (#848033)
+- Don't (un)mount chroot filesystem when running initscript command configtest with running server (#851123)
+- Fix zone2sqlite tool to accept zones containing "." or "-" or starting with a digit (#919414)
+- Fix initscript not to mount chroot filesystem is named is already running (#948743)
+- Fix initscript to check if the PID in PID-file is really s PID of running named server (#980632)
+- Correct the installed documentation ownership (#1051283)
+
+* 一 4月 14 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.25.rc1
+- configure with --enable-filter-aaaa to enable use of filter-aaaa-on-v4 option (#1025008)
+- Fix race condition when destroying a resolver fetch object (#993612)
+- Fix the RRL functionality to include referrals-per-second and nodata-per-second options (#1036700)
+- Fix segfault on SERVFAIL to NXDOMAIN failover (#919545)
+
+* 二 1月 21 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.23.rc1.el6_5.1
+
+* 一 1月 13 2014 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.24.rc1
+- Fix CVE-2014-0591
+
+* 二 8月 27 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.17.rc1.el6_4.6
+
+* 三 8月 14 2013 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.23.rc1
+- Fix gssapictx memory leak (#911167)
+
+* 二 7月 30 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.17.rc1.el6_4.5
+
+* 日 7月 28 2013 Tomas Hozza <thozza@redhat.com> 32:9.8.2-0.22.rc1
+- fix CVE-2013-4854
+
+* 一 4月 01 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.17.rc1.el6_4.4
+
+* 三 3月 27 2013 Adam Tkac <atkac redhat com> 32:9.8.2-0.21.rc1
+- fix  CVE-2013-2266
+- ship dns/rrl.h in -devel subpkg
+
+* 二 2月 26 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.17.rc1.el6.3
+- import source package RHEL6/bind-9.8.2-0.17.rc1.el6
+
+* 五 2月 08 2013 Adam Tkac <atkac redhat com> 32:9.8.2-0.20.rc1
+- remove one bogus file from /usr/share/doc, introduced by RRL patch
+
+* 五 2月 01 2013 Adam Tkac <atkac redhat com> 32:9.8.2-0.19.rc1
+- fix CVE-2012-5689
+
+* 四 1月 31 2013 Adam Tkac <atkac redhat com> 32:9.8.2-0.18.rc1
+- add response rate limit patch (#873624)
+
+* 五 12月 07 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.10.rc1.el6_3.6
+
+* 三 12月 05 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.17.rc1
+- fix CVE-2012-5688
+
+* 三 10月 17 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.16.rc1
+- initscript: silence spurious "named.pid: No such file" error
+
+* 一 10月 15 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.10.rc1.el6_3.5
+
+* 三 10月 10 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.10.rc1.el6_3.4
+
+* 三 10月 10 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.15.rc1
+- fix CVE-2012-5166
+
+* 二 9月 18 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.14.rc1
+- allow forward{,ers} statement in static-stub zones
+
+* 五 9月 14 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.10.rc1.el6_3.3
+
+* 四 9月 13 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.13.rc1
+- fix  CVE-2012-4244
+
+* 四 8月 02 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.10.rc1.el6_3.2
+
+* 三 7月 25 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.10.rc1.el6_3.1
+
+* 三 7月 25 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.12.rc1
+- fix CVE-2012-3817
+
+* 二 7月 10 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.11.rc1
+- fix rbtnode.deadlink INSIST failures in rbtdb.c (#837165)
+
+* 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.8.2-0.10.rc1.el6
+
+* 五 6月 08 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.3-8.P3.el6_2.3
+
+* 三 6月 06 2012 Cristian Gafton <gafton@amazon.com>
+- update to upstream version 9.7.6-P1
+
+* 一 6月 04 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.10.rc1
+- fix CVE-2012-1667
+
+* 一 5月 07 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.9.rc1
+- fix race condition in the resolver module
+- nslookup: return non-zero exit code when fail to get answer (#816164)
+
+* 四 4月 26 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.8.rc1
+- initscript: don't umount /var/named when didn't mount it
+
+* 三 4月 04 2012 Cristian Gafton <gafton@amazon.com>
+- disable the poorly performing internal malloc in favor of the system one
+
+* 三 4月 04 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.7.rc1
+- don't fail when logfile cannot be opened (#809084)
+
+* 二 3月 06 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.6.rc1
+- fix multilib regression in bind-devel (#800053)
+
+* 一 3月 05 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.5.rc1
+- fix errors reported by Coverity
+- be more strict when caching NS RRsets (CVE-2012-1033)
+
+* 二 2月 21 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.4.rc1
+- load dynamic-db plugins later (#795414)
+
+* 三 2月 15 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.3.rc1
+- decrease severity of various errors related to outside DNS environment
+  (#788870)
+- fixed various bind-chroot packaging errors (#789886)
+- use portreserve to reserve rndc control port (#790682)
+
+* 三 2月 15 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.2.rc1
+- harden dns_zone_setmasterswithkeys() to avoid INSIST failures
+- build with '--enable-fixed-rrset'
+- fix potential memory leak in code which processes rndc authentication
+  (#749582)
+- generate rndc.key during `service named start` (#768798)
+- nslookup: improve handling of AA responses with recursion off
+- removed obsolete bind97-rh714049.patch patch
+
+* 三 2月 15 2012 Adam Tkac <atkac redhat com> 32:9.8.2-0.1.rc1
+- update to 9.8.2rc1
+- patches merged
+  - bind97-rh754398.patch
+  - bind97-rh700097.patch
+  - bind97-rh734502.patch
+  - bind97-rh746694-1.patch
+  - bind97-rh746694-2.patch
+  - bind97-rh739406-1.patch
+  - bind97-rh739406-2.patch
+- ship DNSKEY for root zone in default configuration
+
+* 一 2月 13 2012 ltrager <ltrager@amazon.com>
+- Rebuild against MySQL 5.5
+
+* 四 1月 12 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.3-8.P3.el6_2.2
+
+* 三 12月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.3-8.P3.el6_2.1
+
+* 二 12月 20 2011 Adam Tkac <atkac redhat com> 32:9.7.3-10.P3
+- disable atomic ops on ppc* because they caused named to hang/crash
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.3-8.P3.el6
+
+* 二 11月 29 2011 Adam Tkac <atkac redhat com> 32:9.7.3-9.P3
+- fix race condition in resolver.c:validated()
+- improve error handling in zone.c:zone_refreshkeys() to avoid
+  hang during shutdown
+
+* 一 11月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.3-2.el6_1.P3.3
+
+* 三 11月 16 2011 Adam Tkac <atkac redhat com> 32:9.7.3-8.P3
+- fix DOS against recursive servers (#754398)
+
+* 五 9月 09 2011 Adam Tkac <atkac redhat com> 32:9.7.3-7.P3
+- fix memory leak in nsupdate when using SIG(0) keys
+
+* 五 8月 12 2011 Adam Tkac <atkac redhat com> 32:9.7.3-6.P3
+- load/unload dyndb plugins on appropriate places to avoid crashes (#725577)
+- nsupdate could have failed if server has multiple IPs and the first
+  was unreachable (#714049)
+- nsupdate returned zero when target zone didn't exist (#700097)
+- readd configtest target to initscript
+- print "the working directory is not writable" as debug message
+- fix some Coverity warnings
+
+* 四 8月 11 2011 Adam Tkac <atkac redhat com> 32:9.7.3-5.P3
+- fix rare race condition in request.c
+
+* 二 7月 12 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.3-2.el6_1.P3.2
+
+* 二 7月 05 2011 Adam Tkac <atkac redhat com> 32:9.7.3-4.P3
+- update to 9.7.3-P3 (CVE-2011-2464)
+
+* 四 6月 02 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.3-2.el6_1.P1.1
+
+* 五 5月 27 2011 Adam Tkac <atkac redhat com> 32:9.7.3-3.P1
+- update to 9.7.3-P1 (CVE-2011-1910)
+
+* 六 5月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.3-2.el6
+
+* 一 3月 28 2011 Adam Tkac <atkac redhat com> 32:9.7.3-2
+- don't generate rndc.key during installation
+
+* 一 2月 28 2011 Adam Tkac <atkac redhat com> 32:9.7.3-1
+- update to 9.7.3 (CVE-2011-0414)
+- patches merged
+  - bind97-gsstsig.patch
+  - bind97-rh664401.patch
+  - bind97-rh623638.patch
+
+* 五 1月 28 2011 Adam Tkac <atkac redhat com> 32:9.7.2-8.P3
+- regenerate fixed nsupdate manual page
+
+* 五 1月 28 2011 Adam Tkac <atkac redhat com> 32:9.7.2-7.P3
+- improve host/dig resolv.conf parser (#rh669163)
+- improve internal test suite
+- don't mention that HMAC-MD5 is the only one TSIG algorighm
+  in nsupdate manpage
+- initscript: sybsys name is always named, not named-sdb
+
+* 三 1月 12 2011 Adam Tkac <atkac redhat com> 32:9.7.2-6.P3
+- named could die on exit after negotiating a GSS-TSIG key (#653486)
+- fix typo in initscript
+
+* 四 1月 06 2011 Adam Tkac <atkac redhat com> 32:9.7.2-5.P3
+- include root zone DNSKEY in the bind package (#667375)
+
+* 四 1月 06 2011 Adam Tkac <atkac redhat com> 32:9.7.2-4.P3
+- solve conflict between i686 and x86_64 bind-devel packages (#658045)
+- fix "service named status" when used with named-sdb
+- fix "krb5-self" update-policy rule processing (#664401)
+- don't check MD5, size and mtime of sysconfig/named
+
+* 三 1月 05 2011 Adam Tkac <atkac redhat com> 32:9.7.2-3.P3
+- use same atomic operations on both ppc and ppc64 (#623638)
+- add new option DISABLE_ZONE_CHECKING to sysconfig/named (#623673)
+- document dig exit codes
+- add Requires: bind-libs to bind subpkgs
+- remove statement about system-config-bind from named.8 manpage (#660676)
+
+* 三 1月 05 2011 Adam Tkac <atkac redhat com> 32:9.7.2-2.P3
+- host utility now honors "attempts", "timeout" and "debug" options in
+  resolv.conf (#622764)
+- initscript should kill only the "correct" named process (#622785)
+- attempt to reconnect to PostgreSQL during each query if the initial
+  connection failed (#623190)
+
+* 二 12月 21 2010 Adam Tkac <atkac redhat com> 32:9.7.2-1.P3
+- update to 9.7.2-P3 (#623122)
+- patch bind97-managed-keyfile.patch replaced by bind97-compat-keysdir.patch
+- patches merged
+  - bind97-rh554316.patch
+  - bind97-rh576906.patch
+
+* 六 12月 18 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.0-5.P2.el6_0.1
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/bind-9.7.0-5.P2.el6
+- import source package RHEL6/bind-9.7.0-1.el6
+
+* 三 5月 26 2010 Adam Tkac <atkac redhat com> 32:9.7.0-5.P2
+- update to 9.7.0-P2
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/bind-9.3.6-4.P1.el5_4.2
+- import source package RHEL5/bind-9.3.6-4.P1.el5_4.1
+- import source package RHEL5/bind-9.3.6-4.P1.el5
+- import source package RHEL5/bind-9.3.4-10.P1.el5_3.3
+- import source package RHEL5/bind-9.3.4-10.P1.el5_3.2
+- import source package RHEL5/bind-9.3.4-10.P1.el5_3.1
+- import source package RHEL5/bind-9.3.4-10.P1.el5
+- import source package RHEL5/bind-9.3.4-6.0.3.P1.el5_2
+- import source package RHEL5/bind-9.3.4-6.0.2.P1.el5_2
+- import source package RHEL5/bind-9.3.4-6.0.1.P1.el5_2
+- import source package RHEL5/bind-9.3.4-6.P1.el5
+- import source package RHEL5/bind-9.3.3-10.el5
+- import source package RHEL5/bind-9.3.3-9.0.1.el5
+- import source package RHEL5/bind-9.3.3-8.el5
+- import source package RHEL5/bind-9.3.3-7.el5
+- added submodule prep for package bind
+
+* 二 3月 30 2010 Adam Tkac <atkac redhat com> 32:9.7.0-4.P1
+- fix occassional crash on keytable.c:286 (#554316)
+- active query might be destroyed in resume_dslookup() which triggered REQUIRE
+  failure (#507429)
+
+* 五 3月 19 2010 Adam Tkac <atkac redhat com> 32:9.7.0-3.P1
+- update to 9.7.0-P1 release
+
+* 一 3月 01 2010 Adam Tkac <atkac redhat com> 32:9.7.0-2
+- improve automatic DNSSEC reconfiguration trigger
+- initscript now returns 2 in case that action doesn't exist (#523435)
+- enable/disable chroot when bind-chroot is installed/uninstalled
+
+* 三 2月 17 2010 Adam Tkac <atkac redhat com> 32:9.7.0-1
+- update to production 9.7.0 release
+
+* 一 2月 15 2010 Adam Tkac <atkac redhat com> 32:9.7.0-0.14.rc2
+- obsolete dnssec-conf
+- automatically update configuration from old dnssec-conf based
+- improve default configuration; enable DLV by default
+- remove obsolete triggerpostun from bind-libs subpackage
+
+* 四 1月 28 2010 Adam Tkac <atkac redhat com> 32:9.7.0-0.13.rc2
+- update to 9.7.0rc2 bugfix release (CVE-2010-0097 and CVE-2010-0290)
+
+* 三 1月 27 2010 Adam Tkac <atkac redhat com> 32:9.7.0-0.12.rc1
+- initscript LSB related fixes (#523435)
+- revert the "DEBUG" feature (#510283), it causes too many problems (#545128)
+
+* 四 1月 07 2010 Adam Tkac <atkac redhat com> 32:9.7.0-0.11.rc1
+- disable PKCS11 support. PKCS11 support in openssl is not available in RHEL6
+
+* 二 12月 15 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.10.rc1
+- update to 9.7.0rc1
+- bind97-headers.patch merged
+- update default configuration
+
+* 二 12月 01 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.9.b3
+- update to 9.7.0b3
+
+* 四 11月 26 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.8.b2
+- install isc/namespace.h header
+
+* 五 11月 06 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.7.b2
+- update to 9.7.0b2
+
+* 二 11月 03 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.6.b1
+- update to 9.7.0b1
+- add bind-pkcs11 subpackage to support PKCS11 compatible keystores for DNSSEC
+  keys
+
+* 四 10月 08 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.5.a3
+- don't package named-bootconf utility, it is very outdated and unneeded
+
+* 一 9月 21 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.4.a3
+- determine file size via `stat` instead of `ls` (#523682)
+
+* 三 9月 16 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.3.a3
+- update to 9.7.0a3
+
+* 二 9月 15 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.2.a2
+- improve chroot related documentation (#507795)
+- add NetworkManager dispatcher script to reload named when network interface is
+  activated/deactivated (#490275)
+- don't set/unset named_write_master_zones SELinux boolean every time in
+  initscript, modify it only when it's actually needed
+
+* 二 9月 15 2009 Adam Tkac <atkac redhat com> 32:9.7.0-0.1.a2
+- update to 9.7.0a2
+- merged patches
+  - bind-96-db_unregister.patch
+  - bind96-rh507469.patch
+
+* 二 9月 01 2009 Adam Tkac <atkac redhat com> 32:9.6.1-9.P1
+- next attempt to fix the postun trigger (#520385)
+- remove obsolete bind-9.3.1rc1-fix_libbind_includedir.patch
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 32:9.6.1-8.P1
+- rebuilt with new openssl
+
+* 二 8月 04 2009 Martin Nagy <mnagy redhat com> 32:9.6.1-7.P1
+- update the patch for dynamic loading of database backends
+
+* 三 7月 29 2009 Adam Tkac <atkac redhat com> 32:9.6.1-6.P1
+- 9.6.1-P1 release (CVE-2009-0696)
+- fix postun trigger (#513016, hopefully)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 32:9.6.1-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 20 2009 Adam Tkac <atkac redhat com> 32:9.6.1-4
+- remove useless bind-9.3.3rc2-rndckey.patch
+
+* 一 7月 13 2009 Adam Tkac <atkac redhat com> 32:9.6.1-3
+- fix broken symlinks in bind-libs (#509635)
+- fix typos in /etc/sysconfig/named (#509650)
+- add DEBUG option to /etc/sysconfig/named (#510283)
+
+* 三 6月 24 2009 Adam Tkac <atkac redhat com> 32:9.6.1-2
+- improved "chroot automount" patches (#504596)
+- host should fail if specified server doesn't respond (#507469)
+
+* 三 6月 17 2009 Adam Tkac <atkac redhat com> 32:9.6.1-1
+- 9.6.1 release
+- simplify chroot maintenance. Important files and directories are mounted into
+  chroot (see /etc/sysconfig/named for more info, #504596)
+- fix doc/named.conf.default perms
+
+* 三 5月 27 2009 Adam Tkac <atkac redhat com> 32:9.6.1-0.4.rc1
+- 9.6.1rc1 release
+
+* 三 4月 29 2009 Martin Nagy <mnagy redhat com> 32:9.6.1-0.3.b1
+- update the patch for dynamic loading of database backends
+- create %{_libdir}/bind directory
+- copy default named.conf to doc directory, shared with s-c-bind (atkac)
+
+* 五 4月 24 2009 Martin Nagy <mnagy redhat com> 32:9.6.1-0.2.b1
+- update the patch for dynamic loading of database backends
+- fix dns_db_unregister()
+- useradd now takes "-N" instead of "-n" (atkac, #495726)
+- print nicer error msg when zone file is actually a directory (atkac, #490837)
+
+* 一 3月 30 2009 Adam Tkac <atkac redhat com> 32:9.6.1-0.1.b1
+- 9.6.1b1 release
+- patches merged
+  - bind-96-isc_header.patch
+  - bind-95-rh469440.patch
+  - bind-96-realloc.patch
+  - bind9-fedora-0001.diff
+- use -version-number instead of -version-info libtool param
+
+* 一 3月 23 2009 Adam Tkac <atkac redhat com> 32:9.6.0-11.1.P1
+- logrotate configuration file now points to /var/named/data/named.run by
+  default (#489986)
+
+* 二 3月 17 2009 Adam Tkac <atkac redhat com> 32:9.6.0-11.P1
+- fall back to insecure mode when no supported DNSSEC algorithm is found
+  instead of SERVFAIL
+- don't fall back to non-EDNS0 queries when DO bit is set
+
+* 二 3月 10 2009 Adam Tkac <atkac redhat com> 32:9.6.0-10.P1
+- enable DNSSEC only if it is enabled in sysconfig/dnssec
+
+* 一 3月 09 2009 Adam Tkac <atkac redhat com> 32:9.6.0-9.P1
+- add DNSSEC support to initscript, enabled it per default
+- add requires dnssec-conf
+
+* 一 3月 09 2009 Adam Tkac <atkac redhat com> 32:9.6.0-8.P1
+- fire away libbind, it is now separate package
+
+* 三 3月 04 2009 Adam Tkac <atkac redhat com> 32:9.6.0-7.P1
+- fixed some read buffer overflows (upstream)
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> 32:9.6.0-6.P1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 12 2009 Martin Nagy <mnagy redhat com> 32:9.6.0-5.P1
+- update the patch for dynamic loading of database backends
+- include iterated_hash.h
+
+* 六 1月 24 2009 Caolán McNamara <caolanm@redhat.com> 32:9.6.0-4.P1
+- rebuild for dependencies
+
+* 三 1月 21 2009 Adam Tkac <atkac redhat com> 32:9.6.0-3.P1
+- rebuild against new openssl
+
+* 四 1月 08 2009 Adam Tkac <atkac redhat com> 32:9.6.0-2.P1
+- 9.6.0-P1 release (CVE-2009-0025)
+
+* 一 1月 05 2009 Adam Tkac <atkac redhat com> 32:9.6.0-1
+- Happy new year
+- 9.6.0 release
+
+* 四 12月 18 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.7.rc2
+- 9.6.0rc2 release
+- bind-96-rh475120.patch merged
+
+* 二 12月 16 2008 Martin Nagy <mnagy redhat com> 32:9.6.0-0.6.rc1
+- add patch for dynamic loading of database backends
+
+* 二 12月 09 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.5.1.rc1
+- allow to reuse address for non-random query-source ports (#475120)
+
+* 三 12月 03 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.5.rc1
+- 9.6.0rc1 release
+- patches merged
+  - bind-9.2.0rc3-varrun.patch
+  - bind-95-sdlz-include.patch
+  - bind-96-libxml2.patch
+- fixed rare use-after-free problem in host utility (#452060)
+- enabled chase of DNSSEC signature chains in dig
+
+* 一 12月 01 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.4.1.b1
+- improved sample config file (#473586)
+
+* 三 11月 26 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.4.b1
+- reverted previous change, koji doesn't like it
+
+* 三 11月 26 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.3.b1
+- build bind-chroot as noarch
+
+* 一 11月 24 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.2.1.b1
+- updates due libtool 2.2.6
+- don't pass -DLDAP_DEPRECATED to cpp, handle it directly in sources
+
+* 二 11月 11 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.2.b1
+- make statistics http server working, patch backported from 9.6 HEAD
+
+* 一 11月 10 2008 Adam Tkac <atkac redhat com> 32:9.6.0-0.1.b1
+- 9.6.0b1 release
+- don't build ODBC and Berkeley DB DLZ drivers
+- end of bind-chroot-admin script, copy config files to chroot manually
+- /proc doesn't have to be mounted to chroot
+- temporary use libbind from 9.5 series, noone has been released for 9.6 yet
+
+* 一 11月 03 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.8.4.b2
+- dig/host: use only IPv4 addresses when -4 option is specified (#469440)
+
+* 四 10月 30 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.8.2.b2
+- removed unneeded bind-9.4.1-ldap-api.patch
+
+* 四 10月 30 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.8.1.b2
+- ship dns/{s,}dlz.h and isc/radix.h in bind-devel
+
+* 二 10月 07 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.8.b2
+- removed bind-9.4.0-dnssec-directory.patch, it is wrong
+
+* 三 9月 24 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.7.b2
+- 9.5.1b2 release
+- patches merged
+  - bind95-rh454783.patch
+  - bind-9.5-edns.patch
+  - bind95-rh450995.patch
+  - bind95-rh457175.patch
+
+* 三 9月 17 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.6.b1
+- IDN output strings didn't honour locale settings (#461409)
+
+* 二 8月 05 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.5.b1
+- disable transfer stats on DLZ zones (#454783)
+
+* 一 8月 04 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.4.b1
+- add forgotten patch for #457175
+- build with -O2
+
+* 四 7月 31 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.3.b1
+- static libraries are no longer supported
+- IP acls weren't merged correctly (#457175)
+- use fPIE on sparcv9/sparc64 (Dennis Gilmore)
+- add sparc64 to list of 64bit arches in spec (Dennis Gilmore)
+
+* 一 7月 21 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.2.b1
+- updated patches due new rpm (--fuzz=0 patch parameter)
+
+* 一 7月 14 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.1.1.b1
+- use %patch0 for Patch0 (#455061)
+- correct source address (#455118)
+
+* 二 7月 08 2008 Adam Tkac <atkac redhat com> 32:9.5.1-0.1.b1
+- 9.5.1b1 release (CVE-2008-1447)
+- dropped bind-9.5-recv-race.patch because upstream doesn't want it
+
+* 一 6月 30 2008 Adam Tkac <atkac redhat com> 32:9.5.0-37.1
+- update default named.conf statements (#452708)
+
+* 四 6月 26 2008 Adam Tkac <atkac redhat com> 32:9.5.0-37
+- some compat changes to fix building on RHEL4
+
+* 一 6月 23 2008 Adam Tkac <atkac redhat com> 32:9.5.0-36.3
+- fixed typo in %posttrans script
+
+* 三 6月 18 2008 Adam Tkac <atkac redhat com> 32:9.5.0-36.2
+- parse inner acls correctly (#450995)
+
+* 一 6月 02 2008 Adam Tkac <atkac redhat com> 32:9.5.0-36.1
+- removed dns-keygen utility in favour of rndc-confgen -a (#449287)
+- some minor sample fixes (#449274)
+
+* 四 5月 29 2008 Adam Tkac <atkac redhat com> 32:9.5.0-36
+- updated to 9.5.0 final
+- use getifaddrs to find available interfaces
+
+* 一 5月 26 2008 Adam Tkac <atkac redhat com> 32:9.5.0-35.rc1
+- make /var/run/named writable by named (#448277)
+- fixed one non-utf8 file
+
+* 四 5月 22 2008 Adam Tkac <atkac redhat com> 32:9.5.0-34.rc1
+- fixes needed to pass package review (#225614)
+
+* 三 5月 21 2008 Adam Tkac <atkac redhat com> 32:9.5.0-33.1.rc1
+- bind-chroot now depends on bind (#446477)
+
+* 三 5月 14 2008 Adam Tkac <atkac redhat com> 32:9.5.0-33.rc1
+- updated to 9.5.0rc1
+- merged patches
+  - bind-9.5-libcap.patch
+- make binaries readable by others (#427826)
+
+* 二 5月 13 2008 Adam Tkac <atkac redhat com> 32:9.5.0-32.b3
+- reverted "any" patch, upstream says not needed
+- log EDNS failure only when we really switch to plain EDNS (#275091)
+- detect configuration file better
+
+* 二 5月 06 2008 Adam Tkac <atkac redhat com> 32:9.5.0-31.1.b3
+- addresses 0.0.0.0 and ::0 really match any (#275091, comment #28)
+
+* 一 5月 05 2008 Adam Tkac <atkac redhat com> 32:9.5.0-31.b3
+- readded bind-9.5-libcap.patch
+- added bind-9.5-recv-race.patch from F8 branch (#400461)
+
+* 三 4月 23 2008 Adam Tkac <atkac redhat com> 32:9.5.0-30.1.b3
+- build Berkeley DB DLZ backend
+
+* 一 4月 21 2008 Adam Tkac <atkac redhat com> 32:9.5.0-30.b3
+- 9.5.0b3 release
+- dropped patches (upstream)
+  - bind-9.5-transfer-segv.patch
+  - bind-9.5-mudflap.patch
+  - bind-9.5.0-generate-xml.patch
+  - bind-9.5-libcap.patch
+
+* 三 4月 02 2008 Adam Tkac <atkac redhat com> 32:9.5.0-29.3.b2
+- fixed named.conf.sample file (#437569)
+
+* 五 3月 14 2008 Adam Tkac <atkac redhat com> 32:9.5.0-29.2.b2
+- fixed URLs
+
+* 一 2月 25 2008 Adam Tkac <atkac redhat com> 32:9.5.0-29.1.b2
+- BuildRequires cleanup
+
+* 日 2月 24 2008 Adam Tkac <atkac redhat com> 32:9.5.0-29.b2
+- rebuild without mudflap (#434159)
+
+* 三 2月 20 2008 Adam Tkac <atkac redhat com> 32:9.5.0-28.b2
+- port named to use libcap library, enable threads (#433102)
+- removed some unneeded Requires
+
+* 二 2月 19 2008 Adam Tkac <atkac redhat com> 32:9.5.0-27.b2
+- removed conditional build with libefence (use -fmudflapth instead)
+- fixed building of DLZ stuff (#432497)
+- do not build Berkeley DB DLZ backend
+- temporary build with --disable-linux-caps and without threads (#433102)
+- update named.ca file to affect IPv6 changes in root zone
+
+* 一 2月 11 2008 Adam Tkac <atkac redhat com> 32:9.5.0-26.b2
+- build with -D_GNU_SOURCE (#431734)
+- improved fix for #253537, posttrans script is now used
+- improved fix for #400461
+- 9.5.0b2
+  - bind-9.3.2b1-PIE.patch replaced by bind-9.5-PIE.patch
+    - only named, named-sdb and lwresd are PIE
+  - bind-9.5-sdb.patch has been updated
+  - bind-9.5-libidn.patch has been updated
+  - bind-9.4.0-sdb-sqlite-bld.patch replaced by bind-9.5-sdb-sqlite-bld.patch
+  - removed bind-9.5-gssapi-header.patch (upstream)
+  - removed bind-9.5-CVE-2008-0122.patch (upstream)
+- removed bind-9.2.2-nsl.patch
+- improved sdb_tools Makefile.in
+
+* 一 2月 04 2008 Adam Tkac <atkac redhat com> 32:9.5.0-25.b1
+- fixed segfault during sending notifies (#400461)
+- rebuild with gcc 4.3 series
+
+* 二 1月 22 2008 Adam Tkac <atkac redhat com> 32:9.5.0-24.b1
+- removed bind-9.3.2-prctl_set_dumpable.patch (upstream)
+- allow parallel building of libdns library
+- CVE-2008-0122
+
+* 四 12月 27 2007 Adam Tkac <atkac redhat com> 32:9.5.0-23.b1
+- fixed initscript wait loop (#426382)
+- removed dependency on policycoreutils and libselinux (#426515)
+
+* 四 12月 20 2007 Adam Tkac <atkac redhat com> 32:9.5.0-22.b1
+- fixed regression caused by libidn2 patch (#426348)
+
+* 三 12月 19 2007 Adam Tkac <atkac redhat com> 32:9.5.0-21.b1
+- fixed typo in post section (CVE-2007-6283)
+
+* 三 12月 19 2007 Adam Tkac <atkac redhat com> 32:9.5.0-20.b1
+- removed obsoleted triggers
+- CVE-2007-6283
+
+* 三 12月 12 2007 Adam Tkac <atkac redhat com> 32:9.5.0-19.2.b1
+- added dst/gssapi.h to -devel subpackage (#419091)
+- improved fix for (#417431)
+
+* 一 12月 10 2007 Adam Tkac <atkac redhat com> 32:9.5.0-19.1.b1
+- fixed shutdown with initscript when rndc doesn't work (#417431)
+- fixed IDN patch (#412241)
+
+* 四 12月 06 2007 Adam Tkac <atkac redhat com> 32:9.5.0-19.b1
+- 9.5.0b1 (#405281, #392491)
+
+* 四 12月 06 2007 Release Engineering <rel-eng at fedoraproject dot org> 32:9.5.0-18.6.a7
+- Rebuild for deps
+
+* 三 12月 05 2007 Adam Tkac <atkac redhat com> 32:9.5.0-18.5.a7
+- build with -O0
+
+* 一 12月 03 2007 Adam Tkac <atkac redhat com> 32:9.5.0-18.4.a7
+- bind-9.5-random_ports.patch was removed because upstream doesn't
+  like it. query-source{,v6} options are sufficient (#391931)
+- bind-chroot-admin called restorecon on /proc filesystem (#405281)
+
+* 一 11月 26 2007 Adam Tkac <atkac redhat com> 32:9.5.0-18.3.a7
+- removed edns patch to keep compatibility with vanilla bind
+  (#275091, comment #20)
+
+* 三 11月 21 2007 Adam Tkac <atkac redhat com> 32:9.5.0-18.2.a7
+- use system port selector instead ISC's (#391931)
+
+* 一 11月 19 2007 Adam Tkac <atkac redhat com> 32:9.5.0-18.a7
+- removed statement from initscript which passes -D to named
+
+* 四 11月 15 2007 Adam Tkac <atkac redhat com> 32:9.5.0-17.a7
+- 9.5.0a7
+- dropped patches (upstream)
+  - bind-9.5-update.patch
+  - bind-9.5-pool_badfree.patch
+  - bind-9.5-_res_errno.patch
+
+* 四 11月 15 2007 Adam Tkac <atkac redhat com> 32:9.5.0-16.5.a6
+- added bind-sdb again, contains SDB modules and DLZ modules
+- bind-9.3.1rc1-sdb.patch replaced by bind-9.5-sdb.patch
+
+* 一 11月 12 2007 Adam Tkac <atkac redhat com> 32:9.5.0-16.4.a6
+- removed Requires: openldap, postgresql, mysql, db4, unixODBC
+- new L.ROOT-SERVERS.NET address
+
+* 一 10月 29 2007 Adam Tkac <atkac redhat com> 32:9.5.0-16.3.a6
+- completely disable DBUS
+
+* 五 10月 26 2007 Adam Tkac <atkac redhat com> 32:9.5.0-16.2.a6
+- minor cleanup in bind-chroot-admin
+
+* 四 10月 25 2007 Adam Tkac <atkac redhat com> 32:9.5.0-16.1.a6
+- fixed typo in initscript
+
+* 二 10月 23 2007 Adam Tkac <atkac redhat com> 32:9.5.0-16.a6
+- disabled DBUS (dhcdbd doesn't exist & #339191)
+
+* 四 10月 18 2007 Adam Tkac <atkac redhat com> 32:9.5.0-15.1.a6
+- fixed missing va_end () functions (#336601)
+- fixed memory leak when dbus initialization fails
+
+* 二 10月 16 2007 Adam Tkac <atkac redhat com> 32:9.5.0-15.a6
+- corrected named.5 SDB statement (#326051)
+
+* 一 9月 24 2007 Adam Tkac <atkac redhat com> 32:9.5.0-14.a6
+- added edns patch again (#275091)
+
+* 一 9月 24 2007 Adam Tkac <atkac redhat com> 32:9.5.0-13.a6
+- removed bind-9.3.3-edns.patch patch (see #275091 for reasons)
+
+* 四 9月 20 2007 Adam Tkac <atkac redhat com> 32:9.5.0-12.4.a6
+- build with O2
+- removed "autotools" patch
+- bugfixing in bind-chroot-admin (#279901)
+
+* 四 9月 06 2007 Adam Tkac <atkac redhat com> 32:9.5.0-12.a6
+- bind-9.5-2119_revert.patch and bind-9.5-fix_h_errno.patch are
+  obsoleted by upstream bind-9.5-_res_errno.patch
+
+* 三 9月 05 2007 Adam Tkac <atkac redhat com> 32:9.5.0-11.9.a6
+- fixed wrong resolver's dispatch pool cleanup (#275011, patch from 
+  tmraz redhat com)
+
+* 三 9月 05 2007 Adam Tkac <atkac redhat com> 32:9.5.0-11.3.a6
+- initscript failure message is now printed correctly (#277981,
+  Quentin Armitage (quentin armitage org uk) )
+
+* 一 9月 03 2007 Adam Tkac <atkac redhat com> 32:9.5.0-11.2.a6
+- temporary revert ISC 2119 change and add "libbind-errno" patch
+  (#254501) again
+
+* 四 8月 23 2007 Adam Tkac <atkac redhat com> 32:9.5.0-11.1.a6
+- removed end dots from Summary sections (skasal@redhat.com)
+- fixed wrong file creation by autotools patch (skasal@redhat.com)
+
+* 四 8月 23 2007 Adam Tkac <atkac redhat com> 32:9.5.0-11.a6
+- start using --disable-isc-spnego configure option
+  - remove bind-9.5-spnego-memory_management.patch (source isn't
+    compiled)
+
+* 三 8月 22 2007 Adam Tkac <atkac redhat com> 32:9.5.0-10.2.a6
+- added new initscript option KEYTAB_FILE which specified where
+  is located kerberos .keytab file for named service
+- obsolete temporary bind-9.5-spnego-memory_management.patch by
+  bind-9.5-gssapictx-free.patch which conforms BIND coding standards
+  (#251853)
+
+* 二 8月 21 2007 Adam Tkac <atkac redhat com> 32:9.5.0-10.a6
+- dropped direct dependency to /etc/openldap/schema directory
+- changed hardcoded paths to macros
+- fired away code which configure LDAP server
+
+* 二 8月 14 2007 Adam Tkac <atkac redhat com> 32:9.5.0-9.1.a6
+- named could crash with SRV record UPDATE (#251336)
+
+* 一 8月 13 2007 Adam Tkac <atkac redhat com> 32:9.5.0-9.a6
+- disable 64bit dlz driver patch on alpha and ia64 (#251298)
+- remove wrong malloc functions from lib/dns/spnego.c (#251853)
+
+* 一 8月 06 2007 Adam Tkac <atkac redhat com> 32:9.5.0-8.2.a6
+- changed licence from BSD-like to ISC
+
+* 二 7月 31 2007 Adam Tkac <atkac redhat com> 32:9.5.0-8.1.a6
+- disabled named on all runlevels by default
+
+* 一 7月 30 2007 Adam Tkac <atkac redhat com> 32:9.5.0-8.a6
+- minor next improvements on autotools patch
+- dig and host utilities now using libidn instead idnkit for
+  IDN support
+
+* 三 7月 25 2007 Warren Togami <wtogami@redhat.com> 32:9.5.0-7.a6
+- binutils/gcc bug rebuild (#249435)
+
+* 二 7月 24 2007 Adam Tkac <atkac redhat com> 32:9.5.0-6.a6
+- updated to 9.5.0a6 which contains fixes for CVE-2007-2925 and
+  CVE-2007-2926
+- fixed building on 64bits
+
+* 一 7月 23 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-5
+- integrated "autotools" patch for testing purposes (upstream will
+  accept it in future, for easier building)
+
+* 一 7月 23 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-4.1
+- fixed DLZ drivers building on 64bit systems
+
+* 五 7月 20 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-4
+- fixed relation between logrotated and chroot-ed named
+
+* 三 7月 18 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-3.9
+- removed bind-sdb package (default named has compiled SDB backend now)
+- integrated DLZ (Dynamically loadable zones) drivers
+- integrated GSS-TSIG support (RFC 3645)
+- build with -O0 (many new features, potential core dumps will be more useful)
+
+* 二 7月 17 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-3.2
+- initscript should be ready for parallel booting (#246878)
+
+* 二 7月 17 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-3
+- handle integer overflow in isc_time_secondsastimet function gracefully (#247856)
+
+* 一 7月 16 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-2.2
+- moved chroot configfiles into chroot subpackage (#248306)
+
+* 一 7月 02 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-2
+- minor changes in default configuration
+- fix h_errno assigment during resolver initialization (unbounded recursion, #245857)
+- removed wrong patch to #150288
+
+* 二 6月 19 2007 Adam Tkac <atkac redhat com> 31:9.5.0a5-1
+- updated to latest upstream
+
+* 三 6月 13 2007 Adam Tkac <atkac redhat com> 31:9.4.1-7
+- marked caching-nameserver as obsolete (#244604)
+- fixed typo in initscript (causes that named doesn't detect NetworkManager
+  correctly)
+- next cleanup in configuration - moved configfiles into config.tar
+- removed delay between start & stop in restart function in named.init
+
+* 二 6月 12 2007 Adam Tkac <atkac redhat com> 31:9.4.1-6
+- major changes in initscript. Could be LSB compatible now
+- removed caching-nameserver subpackage. Move configs from this
+  package to main bind package as default configuration and major
+  configuration cleanup
+
+* 一 6月 04 2007 Adam Tkac <atkac redhat com> 31:9.4.1-5
+- very minor compatibility change in bind-chroot-admin (line 215)
+- enabled IDN support by default and don't distribute IDN libraries
+- specfile cleanup
+- add dynamic directory to /var/named. This directory will be primarily used for
+  dynamic DNS zones. ENABLE_ZONE_WRITE and SELinux's named_write_master_zones no longer exist
+
+* 四 5月 24 2007 Adam Tkac <atkac redhat com> 31:9.4.1-4
+- removed ldap-api patch and start using deprecated API
+- fixed minor problem in bind-chroot-admin script (#241103)
+
+* 二 5月 22 2007 Adam Tkac <atkac redhat com> 31:9.4.1-3
+- fixed bind-chroot-admin dynamic DNS handling (#239149)
+- updated zone-freeze patch to latest upstream
+- ldap sdb has been rewriten to latest api (#239802)
+
+* 一 5月 07 2007 Adam Tkac <atkac redhat com> 31:9.4.1-2.fc7
+- test build on new build system
+
+* 三 5月 02 2007 Adam Tkac <atkac redhat com> 31:9.4.1-1.fc7
+- updated to 9.4.1 which contains fix to CVE-2007-2241
+
+* 五 4月 27 2007 Adam Tkac <atkac redhat com> 31:9.4.0-8.fc7
+- improved "zone freeze patch" - if multiple zone with same name exists
+  no zone is freezed
+- minor cleanup in caching-nameserver's config file
+- fixed race-condition in dbus code (#235809)
+- added forgotten restorecon statement in bind-chroot-admin
+
+* 二 4月 17 2007 Adam Tkac <atkac redhat com> 31:9.4.0-7.fc7
+- removed DEBUGINFO option because with this option (default) was bind
+  builded with -O0 and without this flag no debuginfo package was produced.
+  (I want faster bind => -O2 + debuginfo)
+- fixed zone finding (#236426)
+
+* 一 4月 16 2007 Adam Tkac <atkac redhat com> 31:9.4.0-6.fc7
+- added idn support (still under development with upstream, disabled by default)
+
+* 三 4月 11 2007 Adam Tkac <atkac redhat com> 31:9.4.0-5.fc7
+- dnssec-signzone utility now doesn't ignore -d parameter
+
+* 二 4月 10 2007 Adam Tkac <atkac redhat com> 31:9.4.0-4.fc7
+- removed query-source[-v6] options from caching-nameserver config
+  (#209954, increase security)
+- throw away idn. It won't be ready in fc7
+
+* 二 3月 13 2007 Adam Tkac <atkac redhat com> 31:9.4.0-3.fc7
+- prepared bind to merge review
+- added experimental idn support to bind-utils utils (not enabled by default yet)
+- change chroot policy in caching-nameserver post section
+- fixed bug in bind-chroot-admin - rootdir function is called properly now
+
+* 一 3月 12 2007 Adam Tkac <atkac redhat com> 31:9.4.0-2.fc7
+- added experimental SQLite support (written by John Boyd <jaboydjr@netwalk.com>)
+- moved bind-chroot-admin script to chroot package
+- bind-9.3.2-redhat_doc.patch is always applied (#231738)
+
+* 二 3月 06 2007 Adam Tkac <atkac@redhat.com> 31:9.4.0-1.fc7
+- updated to 9.4.0
+- bind-chroot-admin now sets EAs correctly (#213926)
+- throw away next_server_on_referral and no_servfail_stops patches (fixed in 9.4.0)
+
+* 四 2月 15 2007 Adam Tkac <atkac@redhat.com> 31:9.3.4-7.fc7
+- minor cleanup in bind-chroot-admin script
+
+* 五 2月 09 2007 Adam Tkac <atkac@redhat.com> 31:9.3.4-6.fc7
+- fixed broken bind-chroot-admin script (#227995)
+
+* 三 2月 07 2007 Adam Tkac <atkac@redhat.com> 31:9.3.4-5.fc7
+- bind-chroot-admin now uses correct chroot path (#227600)
+
+* 一 2月 05 2007 Adam Tkac <atkac@redhat.com> 31:9.3.4-4.fc7
+- fixed conflict between bind-sdb and ldap
+- removed duplicated bind directory in bind-libs
+
+* 四 2月 01 2007 Adam Tkac <atkac@redhat.com> 31:9.3.4-3.fc7
+- fixed building without libbind
+- fixed post section (selinux commands is now in if-endif statement)
+- prever macro has been removed from version
+
+* 一 1月 29 2007 Adam Tkac <atkac@redhat.com> 31:9.3.4-2.fc7
+- redirected output from bind-chroot prep and %preun stages to /dev/null
+
+* 四 1月 25 2007 Adam Tkac <atkac@redhat.com> 31:9.3.4-1.fc7
+- updated to version 9.3.4 which contains security bugfixes
+
+* 二 1月 23 2007 Adam Tkac <atkac@redhat.com> 31:9.3.3-5.fc7
+- package bind-libbind-devel has been marked as obsolete
+
+* 一 1月 22 2007 Adam Tkac <atkac@redhat.com> 31:9.3.3-4.fc7
+- package bind-libbind-devel has beed removed (libs has been moved to bind-devel & bind-libs)
+- Resolves: #214208
+
+* 二 1月 16 2007 Martin Stransky <stransky@redhat.com> - 31:9.3.3-3
+- fixed a multi-lib issue
+- Resolves: rhbz#222717
+
+* 四 1月 04 2007 Martin Stransky <stransky@redhat.com> - 31:9.3.3-2
+- added namedGetForwarders written in shell (#176100),
+  created by Baris Cicek <baris@nerd.com.tr>.
+
+* 日 12月 10 2006 Martin Stransky <stransky@redhat.com> - 31:9.3.3-1
+- update to 9.3.3 final
+- fix for #219069: file included twice in src.rpm
+
+* 三 12月 06 2006 Martin Stransky <stransky@redhat.com> - 31:9.3.3-0.1.rc3
+- added back an interval to restart
+- renamed package, it should meet the N-V-R criteria
+- fix for #216185: bind-chroot-admin able to change root mode 750
+- added fix from #215997: incorrect permissions on dnszone.schema
+- added a notice to init script when /etc/named.conf doesn't exist (#216075)
+
+* 一 10月 30 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.3-6
+- fix for #200465: named-checkzone and co. cannot be run as non-root user
+- fix for #212348: chroot'd named causes df permission denied error
+- fix for #211249, #211083 - problems with stopping named
+- fix for #212549: init script does not unmount /proc filesystem
+- fix for #211282: EDNS is globally enabled, crashing CheckPoint FW-1,
+    added edns-enable options to named configuration file which can suppress
+    EDNS in queries to DNS servers (see /usr/share/doc/bind-9.3.3/misc/options)
+- fix for #212961: bind-chroot doesn't clean up its mess on %preun
+- update to 9.3.3rc3, removed already merged patches
+
+* 五 10月 13 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.3-5
+- fix for #209359: bind-libs from compatlayer CD will not 
+  install on ia64
+
+* 二 10月 10 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.3-4
+- added fix for #210096: warning: group named does not exist - using root
+
+* 四 10月 05 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.3-3
+- added fix from #209400 - Bind Init Script does not create 
+  the PID file always, created by Jeff Means
+- added timeout to stop section of init script. 
+  The default is 100 sec. and can be adjusted by NAMED_SHUTDOWN_TIMEOUT
+  shell variable.
+
+* 一 10月 02 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.3-2
+- removed chcon from %post script, replaced by restorecon 
+  (Bug 202547, comment no. 37)
+
+* 五 9月 15 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.3-1
+- updated to the latest upstream (9.3.3rc2)
+
+* 三 9月 06 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.2-41
+- added upstream patch for correct SIG handling - CVE-2006-4095
+
+* 二 9月 05 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.2-40
+- suppressed messages from bind-chroot-admin
+- cleared notes about bind-config
+
+* 二 8月 22 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.2-39
+- added fix for #203522 - "bind-chroot-admin -e" command fails
+
+* 一 8月 21 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.2-38
+- fix for #203194 - tmpfile usage
+
+* 四 8月 17 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.2-37
+- fix for #202542 - /usr/sbin/bind-chroot-admin: No such file or directory
+- fix for #202547 - file_contexts: invalid context
+
+* 五 8月 11 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.2-36
+- added Provides: bind-config
+
+* 五 8月 11 2006 Martin Stransky <stransky@redhat.com> - 30:9.3.2-35
+- fix bug 197493: renaming subpackage bind-config to caching-nameserver
+
+* 一 7月 24 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-34
+- fix bug 199876: make '%exclude libbbind.*' conditional on %{LIBBIND}
+
+* 一 7月 24 2006 Florian La Roche <laroche@redhat.com> - 30:9.3.2-33
+- fix #195881, perms are not packaged correctly
+
+* 五 7月 21 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-32
+- fix addenda to bug 189789: 
+  determination of selinux enabled was still not 100% correct in bind-chroot-admin
+- fix addenda to bug 196398:
+  make named.init test for NetworkManager being enabled AFTER testing for -D absence;
+  named.init now supports a 'DISABLE_NAMED_DBUS' /etc/sysconfig/named setting to disable
+  auto-enable of named dbus support if NetworkManager enabled.
+
+* 三 7月 19 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-30
+- fix bug 196398 - Enable -D option automatically in initscript
+  if NetworkManager enabled in any runlevel.
+- fix namedGetForwarders for new dbus
+- fix bug 195881 - libbind.so should be owned by bind-libbind-devel
+
+* 三 7月 19 2006 Matthias Clasen <mclasen@redhat.com> - 30:9.3.2-28.FC6
+- Rebuild against new dbus
+
+* 三 7月 12 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-27.FC6
+- rebuild with fixed glibc-kernheaders
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 30:9.3.2-26.FC6.1
+- rebuild
+
+* 三 6月 14 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-26.FC6
+- fix bugs 191093, 189789
+- backport selected fixes from upstream bind9 'v9_3_3b1' CVS version:
+  ( see http://www.isc.org/sw/bind9.3.php "Fixes" ): 
+  o change 2024 / bug 16027:
+    named emitted spurious "zone serial unchanged" messages on reload
+  o change 2013 / bug 15941:
+    handle unexpected TSIGs on unsigned AXFR/IXFR responses more gracefully
+  o change 2009 / bug 15808: coverity fixes
+  o change 1997 / bug 15818: 
+    named was failing to replace negative cache entries when a positive one
+    for the type was learnt
+  o change 1994 / bug 15694: OpenSSL 0.9.8 support
+  o change 1991 / bug 15813:
+    The configuration data, once read, should be treated as readonly.
+  o misc. validator fixes 
+  o misc. resolver fixes
+  o misc. dns fixes
+  o misc. isc fixes
+  o misc. libbind fixes
+  o misc. isccfg fix
+  o misc. lwres fix
+  o misc. named fixes
+  o misc. dig fixes
+  o misc. nsupdate fix
+  o misc. tests fixes
+
+* 三 6月 07 2006 Jeremy Katz <katzj@redhat.com> - 30:9.3.2-24.FC6
+- and actually put the devel symlinks in the right subpackage
+
+* 四 5月 25 2006 Jeremy Katz <katzj@redhat.com> - 30:9.3.2-23.FC6
+- rebuild for -devel deps
+
+* 二 4月 18 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-22
+- apply upstream patch for ncache_adderesult segfault bug 173961 addenda
+- fix bug 188382: rpm --verify permissions inconsistencies
+- fix bug 189186: use /sbin/service instead of initscript
+- rebuild for new gcc, glibc-kernheaders
+
+* 二 4月 04 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-20
+- fix resolver.c ncache_adderesult segfault reported in addenda to bug 173961 
+  (upstream bugs #15642, #15528 ?)
+- allow named ability to generate core dumps after setuid (upstream bug #15753)
+
+* 一 4月 03 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-18
+- fix bug 187529: make bind-chroot-admin deal with subdirectories properly
+
+* 四 3月 30 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-16
+- fix bug 187286: 
+     prevent host(1) printing duplicate 'is an alias for' messages
+     for the default AAAA and MX lookups as well as for the A lookup
+     (it now uses the CNAME returned for the A lookup for the AAAA and MX lookups).
+     This is upstream bug #15702 fixed in the unreleased bind-9.3.3
+- fix bug 187333: fix SOURCE24 and SOURCE25 transposition
+
+* 三 3月 29 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-14
+- fix bug 186577: remove -L/usr/lib from libbind.pc and more .spec file cleanup
+- add '%doc' sample configuration files in /usr/share/doc/bind*/sample
+- rebuild with new gcc and glibc
+
+* 三 3月 22 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-12
+- fix typo in initscript
+- fix Requires(post): policycoreutils in sub-packages
+
+* 一 3月 20 2006 Jason Vas Dias <jvdias@redhat.com> - 30.9.3.2-10
+- fix bug 185969: more .spec file cleanup
+
+* 三 3月 08 2006 Jason Vas Dias <jvdias@redhat.com> - 30.9.3.2-8
+- Do not allow package to be installed if named:25 userid creation fails
+- Give libbind a pkg-config file
+- remove restorecon from bind-chroot-admin (not required).
+- fix named.caching-nameserver.conf (listen-on-v6 port 53 { ::1 };)
+
+* 二 3月 07 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-7
+- fix issues with bind-chroot-admin
+
+* 一 3月 06 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-6
+- replace caching-nameserver with bind-config sub-package
+- fix bug 177595: handle case where $ROOTDIR is a link in initscript
+- fix bug 177001: bind-config creates symlinks OK now
+- fix bug 176388: named.conf is now never replaced by any RPM
+- fix bug 176248: remove unecessary creation of rpmsave links
+- fix bug 174925: no replacement of named.conf
+- fix bug 173963: existing named.conf never modified
+- major .spec file cleanup
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 30:9.3.2-4.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-4
+- regenerate redhat_doc patch for non-DBUS builds
+- allow dbus builds to work with dbus version < 0.6 (bz #179816)
+
+* 二 2月 07 2006 Florian La Roche <laroche@redhat.com> 30:9.3.2-3
+- try supporting without dbus support
+
+* 一 2月 06 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-2.1
+- Rebuild for new gcc, glibc, glibc-kernheaders
+
+* 一 1月 16 2006 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-2
+- fix bug 177854: temporary fix for broken kernel-2.6.15-1854+
+  /proc/net/if_inet6 format
+
+* 三 12月 21 2005 Jason Vas Dias <jvdias@redhat.com> - 30:9.3.2-1
+- Upgrade to 9.3.2, released today
+
+* 二 12月 20 2005 Jason Vas Dias <jvdias@redhat.com> - 28:9.3.2rc1-2
+- fix bug 176100: do not Require: perl just for namedGetForwarders !
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 02 2005 Jason Vas Dias <jvdias@redhat.com> - 28:9.3.2rc-1
+- Upgrade to upstream version 9.3.2rc1
+- fix namedSetForwarders -> namedGetForwarders SOURCE14 typo
+
+* 四 12月 01 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-26
+- rebuild for new dbus 0.6 dependency; remove use of
+  DBUS_NAME_FLAG_PROHIBIT_REPLACEMENT
+
+* 三 11月 23 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-24
+- allow D-BUS support to work in bind-chroot environment:
+  workaround latest selinux policy by mounting /var/run/dbus/
+  under chroot instead of /var/run/dbus/system-bus-socket
+
+* 日 11月 13 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-22
+- fix bug 172632 - remove .la files
+- ship namedGetForwarders and namedSetForwarders scripts
+- fix detection of -D option in chroot
+
+* 二 11月 08 2005 Tomas Mraz <tmraz@redhat.com> - 24:9.3.1-21
+- rebuilt with new openssl
+
+* 三 10月 19 2005 Jason Vas Dias <jvdias@redhat.com> - 24.9.3.1-20
+- Allow the -D enable D-BUS option to be used within bind-chroot .
+- fix bug 171226: supply some documentation for pgsql SDB .
+
+* 四 10月 06 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-18
+- fix bug 169969: do NOT call dbus_svc_dispatch() in dbus_mgr_init_dbus() -
+      task->state != task_ready and will cause Abort in task.c if process
+      is waiting for NameOwnerChanged to do a SetForwarders
+
+* 三 10月 05 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-16
+- Fix reconnecting to dbus-daemon after it stops & restarts .
+
+* 二 9月 27 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-14
+- When forwarder nameservers are changed with D-BUS, flush the cache.
+
+* 一 9月 26 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-12
+- fix bug 168302: use %{__cc} for compiling dns-keygen
+- fix bug 167682: bind-chroot directory permissions
+- fix issues with -D dbus option when dbus service not running or disabled
+
+* 二 8月 30 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-12
+- fix bug 167062: named should be started after syslogd by default
+
+* 一 8月 22 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-11
+- fix bug 166227: host: don't do default AAAA and MX lookups with '-t a' option
+
+* 二 8月 16 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-10
+- Build with D-BUS patch by default; D-BUS support enabled with named -D option
+- Enable D-BUS for named_sdb also
+- fix sdb pgsql's zonetodb.c: must use isc_hash_create() before dns_db_create()
+- update fix for bug 160914 : test for RD=1 and ARCOUNT=0 also before trying next server
+- fix named.init script to handle named_sdb properly
+- fix named.init script checkconfig() to handle named '-c' option
+  and make configtest, test, check configcheck synonyms
+
+* 二 7月 19 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-8
+- fix named.init script bugs 163598, 163409, 151852(addendum)
+
+* 二 7月 12 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-7
+- fix bug 160914: resolver utilities should try next server on empty referral
+                  (now that glibc bug 162625 is fixed)
+                  host and nslookup now by default try next server on SERVFAIL
+                  (host now has '-s' option to disable, and nslookup given
+                   '[no]fail' option similar to dig's [no]fail option).
+- rebuild and re-test with new glibc & gcc (all tests passed).
+
+* 二 5月 31 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-6
+- fix bug 157950: dig / host / nslookup should reject invalid resolv.conf
+                  files and not use uninitialized garbage nameserver values
+                  (ISC bug 14841 raised).
+
+* 一 5月 23 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-4_FC4
+- Fix SDB LDAP
+
+* 一 5月 16 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-4
+- Fix bug 157601: give named.init a configtest function
+- Fix bug 156797: named.init should check SELinux booleans.local before booleans
+- Fix bug 154335: if no controls in named.conf, stop named with -TERM sig, not rndc
+- Fix bug 155848: add NOTES section to named.8 man-page with info on all Red Hat
+                  BIND quirks and SELinux DDNS / slave zone file configuration
+- D-BUS patches NOT applied until dhcdbd is in FC
+
+* 日 5月 15 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-4_dbus
+- Enhancement to allow dynamic forwarder table management and
+- DHCP forwarder auto-configuration with D-BUS
+
+* 四 4月 14 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-2_FC4
+- Rebuild for bind-sdb libpq.so.3 dependency
+- fix bug 150981: don't install libbind man-pages if no libbind
+- fix bug 151852: mount proc on $ROOTDIR/proc to allow sysconf(...)
+  to work and correct number of CPUs to be determined
+
+* 五 3月 11 2005 Jason Vas Dias <jvdias@redhat.com> - 24:9.3.1-1_FC4
+- Upgrade to ISC BIND 9.3.1 (final release) released today.
+
+* 三 3月 09 2005 Jason Vas Dias <jvdias@redhat.com> - 22.9.3.1rc1-5
+- fix bug 150288: h_errno not being accessed / set correctly in libbind
+- add libbind man-pages from bind-8.4.6
+
+* 一 3月 07 2005 Jason Vas Dias <jvdias@redhat.com> - 22:9.3.1rc1-4
+- Rebuild with gcc4 / glibc-2.3.4-14.
+
+* 二 3月 01 2005 Nalin Dahyabhai <nalin@redhat.com> - 22:9.3.1rc1-3
+- configure with --with-pic to get PIC libraries
+
+* 日 2月 20 2005 Jason Vas Dias <jvdias@redhat.com> - 22:9.3.1rc1-2
+- fix bug 149183: don't use getifaddrs() .
+
+* 三 2月 16 2005 Jason Vas Dias <jvdias@redhat.com> - 22:9.3.1rc1-1
+- Upgrade to 9.3.1rc1
+- Add Simplified Database Backend (SDB) sub-package ( bind-sdb )
+-     add named_sdb - ldap + pgsql + dir database backend support with
+-     'ENABLE_SDB' named.sysconfig option
+- Add BIND resolver library & includes sub-package ( libbind-devel)
+- fix bug 147824 / 147073 / 145664: ENABLE_ZONE_WRITE in named.init
+- fix bug 146084 : shutup restorecon
+
+* 二 1月 11 2005 Jason Vas Dias <jvdias@redhat.com> - 22:9.3.0-2
+- Fix bug 143438: named.init will now make correct ownership of $ROOTDIR/var/named
+-                 based on 'named_write_master_zones' SELinux boolean.
+- Fix bug 143744: dig & nsupdate IPv6 timeout  (dup of 140528)
+
+* 一 11月 29 2004 Jason Vas Dias <jvdias@redhat.com> - 9.3.0-1
+- Upgrade BIND to 9.3.0 in Rawhide / FC4 (bugs 134529, 133654...)
+
+* 一 11月 29 2004 Jason Vas Dias <jvdias@redhat.com> - 20:9.2.4-4
+- Fix bugs 140528 and 141113:
+- 2 second timeouts when IPv6 not configured and root nameserver's
+- AAAA addresses are queried
+
+* 一 10月 18 2004 Jason Vas Dias <jvdias@redhat.com> - 20:9.2.4-2
+- Fix bug 136243: bind-chroot %post must run restorecon -R /var/named/chroot
+- Fix bug 135175: named.init must return non-zero if named is not run
+- Fix bug 134060: bind-chroot %post must use mktemp, not /tmp/named
+- Fix bug 133423: bind-chroot %files entries should have been %dirs
+
+* 四 9月 23 2004 Jason Vas Dias <jvdias@redhat.com> - 20:9.2.4-1
+- BIND 9.2.4 (final release) released - source code actually
+- identical to 9.2.4rc8, with only version number change.
+
+* 一 9月 20 2004 Jason Vas Dias <jvdias@redhat.com> - 10:9.2.4rc8-14
+- Upgrade to upstream bind-9.2.4rc8 .
+- Progress: Finally! Hooray! ISC bind now distributes:
+- o named.conf(5) and nslookup(8) manpages
+-    'bind-manpages.bz2' source can now disappear
+-    (could this have something to do with ISC bug I raised about this?)
+- o 'deprecation_msg' global has vanished
+-     bind-9.2.3rc3-deprecation_msg_shut_up.diff.bz2 can disappear
+- Fix bug 106572/132385: copy /etc/localtime to chroot on start
+
+* 五 9月 10 2004 Jason Vas Dias <jvdias@redhat.com> - 10:9.2.4rc7-12_EL3
+- Fix bug 132303: if ROOTDIR line was replaced after upgrade from
+- bind-chroot-9.2.2-21, restart named
+
+* 三 9月 08 2004 Jason Vas Dias <jvdias@redhat.com> - 10:9.2.4rc7-11_EL3
+- Fix bug 131803: replace ROOTDIR line removed by broken
+- bind-chroot 9.2.2-21's '%postun'; added %triggerpostun for bind-chroot
+
+* 二 9月 07 2004 Jason Vas Dias <jvdias@redhat.com> - 10:9.2.4rc7-10_EL3
+- Fix bugs 130121 & 130981 for RHEL-3
+
+* 一 8月 30 2004 Jason Vas Dias <jvdias@redhat.com> - 10:9.2.4rc7-10
+- Fix bug 130121: add '%ghost' entries for files included in previous
+- bind-chroot & not in current - ie. named.conf, rndc.key, dev/* -
+- that RPM removed after upgrade .
+
+* 四 8月 26 2004 Jason Vas Dias <jvdias@redhat.com>
+- Fix bug 130981: add '-t' option to named-checkconf invocation in
+- named.init if chroot installed.
+
+* 三 8月 25 2004 Jason Vas Dias <jvdias@redhat.com>
+- Remove resolver(5) manpage now in man-pages (bug 130792);
+- Don't create /dev/ entries in bind-chroot if already there (bug 127556);
+- fix bind-devel Requires (bug 130919)
+- Set default location for dumpdb & stats files to /var/named/data
+
+* 二 8月 24 2004 Jason Vas Dias <jvdias@redhat.com>
+- Fix devel Requires for bug 130738 & fix version
+- Fix errors on clean install if named group does not exist
+- (bug 130777)
+
+* 四 8月 19 2004 Jason Vas Dias <jvdias@redhat.com>
+- Upgrade to bind-9.2.4rc7; applied initscript fix
+- for bug 102035.
+
+* 一 8月 09 2004 Jason Vas Dias <jvdias@redhat.com>
+- Fixed bug 129289: bind-chroot install / deinstall
+- on install, existing config files 'safe_replace'd
+- with links to chroot copies; on uninstall, moved back.
+
+* 五 8月 06 2004 Jason Vas Dias <jvdias@redhat.com>
+- Fixed bug 129258: "${prefix}/var/tmp" typo in spec
+
+* 三 7月 28 2004 Jason Vas Dias <jvdias@redhat.com>
+- Fixed bug 127124 : 'Requires: kernel >= 2.4'
+- causes problems with Linux VServers
+
+* 二 7月 27 2004 Jason Vas Dias <jvdias@redhat.com>
+- Fixed bug 127555 : chroot tar missing var/named/slaves
+
+* 五 7月 16 2004 Jason Vas Dias <jvdias@redhat.com>
+- Upgraded to ISC version 9.2.4rc6
+- Fixed named.init generation of error messages on
+- 'service named stop' and 'service named reload'
+- as per bug 127775
+
+* 三 6月 23 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-19
+- Bump for rhel 3.0  U3
+
+* 三 6月 23 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-18
+- remove disable-linux-caps
+
+* 三 6月 16 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-17
+- Update RHEL3 to latest bind
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 08 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-15
+- Remove device files from chroot,  Named uses the system one
+
+* 五 3月 26 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-14
+- Move RFC to devel package
+
+* 五 3月 26 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-13
+- Fix location of restorecon
+
+* 四 3月 25 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-12
+- Tighten security on config files.  Should be owned by root
+
+* 四 3月 25 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-11
+- Update key patch to include conf-keygen
+
+* 二 3月 23 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-10
+- fix chroot to only happen once.
+- fix init script to do kill insteall of killall
+
+* 一 3月 15 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-9
+- Add fix for SELinux security context
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 2月 28 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- run ldconfig for libs subrpm
+
+* 一 2月 23 2004 Tim Waugh <twaugh@redhat.com>
+- Use ':' instead of '.' as separator for chown.
+
+* 二 2月 17 2004 Daniel Walsh <dwalsh@redhat.com> 9.2.3-7
+- Add COPYRIGHT
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 12月 30 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.3-5
+- Add defattr to libs
+
+* 一 12月 29 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.3-4
+- Break out library package
+
+* 一 12月 22 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.3-3
+- Fix condrestart
+
+* 三 11月 12 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.3-2
+- Move libisc and libdns to bind from bind-util
+
+* 二 11月 11 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.3-1
+- Move to 9.2.3
+
+* 一 10月 27 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2.P3-10
+- Add PIE support
+
+* 五 10月 17 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2.P3-9
+- Add /var/named/slaves directory
+
+* 日 10月 12 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- do not link against libnsl, not needed for Linux
+
+* 三 10月 08 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2.P3-6
+- Fix local time in log file
+
+* 二 10月 07 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2.P3-5
+- Try again
+
+* 一 10月 06 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2.P3-4
+- Fix handling of chroot -/dev/random
+
+* 四 10月 02 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2.P3-3
+- Stop hammering stuff on update of chroot environment
+
+* 一 9月 29 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2.P3-2
+- Fix chroot directory to grab all subdirectories
+
+* 三 9月 24 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2.P3-1
+- New patch to support for "delegation-only"
+
+* 三 9月 17 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-23
+- patch support for "delegation-only"
+
+* 三 7月 30 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-22
+- Update to build on RHL
+
+* 三 7月 30 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-21
+- Install libraries as exec so debug info will be pulled
+
+* 六 7月 19 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-20
+- Remove BSDCOMPAT (BZ 99454)
+
+* 二 7月 15 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-19
+- Update to build on RHL
+
+* 二 7月 15 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-18
+- Change protections on /var/named and /var/chroot/named
+
+* 二 6月 17 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-17
+- Update to build on RHL
+
+* 二 6月 17 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-16
+- Update to build on RHEL
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 4月 22 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-14
+- Update to build on RHEL
+
+* 二 4月 22 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-13
+- Fix config description of named.conf in chroot
+- Change named.init script to check for existence of /etc/sysconfig/network
+
+* 五 4月 18 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-12
+- Update to build on RHEL
+
+* 五 4月 18 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-11
+- Update to build on RHEL
+
+* 五 4月 18 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-10
+- Fix echo OK on starting/stopping service
+
+* 五 3月 28 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-9
+- Update to build on RHEL
+
+* 五 3月 28 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-8
+- Fix echo on startup
+
+* 二 3月 25 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-7
+- Fix problems with chroot environment
+- Eliminate posix threads
+
+* 一 3月 24 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-6
+- Fix build problems
+
+* 五 3月 14 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-5
+- Fix build on beehive
+
+* 四 3月 13 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-4
+- build bind-chroot kit
+
+* 二 3月 11 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-3
+- Change configure to use proper threads model
+
+* 五 3月 07 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-2
+- update to 9.2.2
+
+* 二 3月 04 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.2-1
+- update to 9.2.2
+
+* 五 1月 24 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.1-16
+- Put a sleep in restart to make sure stop completes
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 1月 07 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.1-14
+- Separate /etc/rndc.key to separate file
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 9.2.1-13
+- Use openssl's pkgconfig data, if available, at build-time.
+
+* 一 1月 06 2003 Daniel Walsh <dwalsh@redhat.com> 9.2.1-12
+- Fix log rotate to use service named reload
+- Change service named reload to give success/failure message [73770]
+- Fix File checking [75710]
+- Begin change to automatically run in CHROOT environment
+
+* 二 12月 24 2002 Daniel Walsh <dwalsh@redhat.com> 9.2.1-10
+- Fix startup script to work like all others.
+
+* 一 12月 16 2002 Daniel Walsh <dwalsh@redhat.com> 9.2.1-9
+- Fix configure to build on x86_64 platforms
+
+* 三 8月 07 2002 Karsten Hopp <karsten@redhat.de>
+- fix #70583,  doesn't build on IA64
+
+* 二 7月 30 2002 Karsten Hopp <karsten@redhat.de> 9.2.1-8
+- bind-utils shouldn't require bind
+
+* 一 7月 22 2002 Karsten Hopp <karsten@redhat.de> 9.2.1-7
+- fix name of pidfine in logrotate script (#68842)
+- fix owner of logfile in logrotate script (#41391)
+- fix nslookup and named.conf man pages (output on stderr)
+  (#63553, #63560, #63561, #54889, #57457)
+- add rfc1912 (#50005)
+- gzip all rfc's
+- fix typo in keygen.c (#54870)
+- added missing manpages (#64065)
+- shutdown named properly with rndc stop (#62492)
+- /sbin/nologin instead of /bin/false (#68607)
+- move nsupdate to bind-utils (where the manpage already was) (#66209, #66381)
+- don't kill initscript when rndc fails (reload)    (#58750)
+
+* 一 6月 24 2002 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.1-5
+- Fix #65975
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 09 2002 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.1-2
+- Move libisccc, lib isccfg and liblwres from bind-utils to bind,
+  they're not required if you aren't running a nameserver.
+
+* 五 5月 03 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 9.2.1 release
+
+* 四 3月 14 2002 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-8
+- Merge 30+ bug fixes from 9.2.1rc1 code
+
+* 一 3月 11 2002 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-7
+- Don't exit if /etc/named.conf doesn't exist if we're running
+  chroot (#60868)
+- Revert Elliot's changes, we do require specific glibc/glibc-kernheaders
+  versions or bug #58335 will be back. "It compiles, therefore it works"
+  isn't always true.
+
+* 四 2月 28 2002 Elliot Lee <sopwith@redhat.com> 9.2.0-6
+- Fix BuildRequires (we don't need specific glibc/glibc-kernheaders
+versions).
+- Use _smp_mflags
+
+* 三 2月 20 2002 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-4
+- rebuild, require recent autoconf, automake (#58335)
+
+* 五 1月 25 2002 Tim Powers <timp@redhat.com>
+- rebuild against new libssl
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 11月 27 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-1
+- 9.2.0
+
+* 四 11月 22 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-0.rc10.2
+- 9.2.0rc10
+
+* 一 11月 05 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-0.rc8.2
+- Fix up rndc.conf (#55574)
+
+* 四 10月 25 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-0.rc8.1
+- rc8
+- Enforce --enable-threads
+
+* 一 10月 22 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-0.rc7.1
+- 9.2.0rc7
+- Use rndc status for "service named status", it's supposed to actually
+  work in 9.2.x.
+
+* 三 10月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-0.rc5.1
+- 9.2.0rc5
+- Fix rpm --rebuild with ancient libtool versions (#53938, #54257)
+
+* 二 9月 25 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-0.rc4.1
+- 9.2.0rc4
+
+* 五 9月 14 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.2.0-0.rc3.1
+- 9.2.0rc3
+- remove ttl patch, I don't think we need this for 8.0.
+- remove dig.1.bz2 from the bind8-manpages tar file, 9.2 has a new dig man page
+- add lwres* man pages to -devel
+
+* 一 9月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-4
+- Make sure /etc/rndc.conf isn't world-readable even after the
+  %post script inserted a random key (#53009)
+
+* 四 7月 19 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-3
+- Add build dependencies (#49368)
+- Make sure running service named start several times doesn't create
+  useless processes (#47596)
+- Work around the named parent process returning 0 even if the config
+  file is broken (it's parsed later by the child processes) (#45484)
+
+* 一 7月 16 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-2
+- Don't use rndc status, it's not yet implemented (#48839)
+
+* 日 7月 08 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 9.1.3 release
+
+* 二 7月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-0.rc3.1
+- Fix up rndc configuration and improve security (#46586)
+
+* 二 6月 26 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-0.rc2.2
+- Sync with caching-nameserver-7.1-6
+
+* 一 6月 25 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-0.rc2.1
+- Update to rc2
+
+* 五 6月 01 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-0.rc1.3
+- Remove resolv.conf(5) man page, it's now in man-pages
+
+* 四 5月 31 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-0.rc1.2
+- Add named.conf man page from bind 8.x (outdated, but better than nothing,
+  - Rename the rndc key (#42895)
+- Add dnssec* man pages
+
+* 一 5月 28 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.3-0.rc1.1
+- 9.1.3rc1
+- s/Copyright/License/
+
+* 一 5月 07 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.2-1
+- 9.1.2 final. No changes between 9.1.2-0.rc1.1 and this one, except for
+  the version number, though.
+
+* 四 5月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.2-0.rc1.1
+- 9.1.2rc1
+
+* 四 3月 29 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.1-1
+- 9.1.1
+
+* 四 3月 15 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.0-10
+- Merge fixes from 9.1.1rc5
+
+* 日 3月 11 2001 Bernhard Rosenkraenzer <bero@redhat.com> 9.1.0-9
+- Work around bind 8 -> bind 9 migration problem when using buggy zone files:
+  accept zones without a TTL, but spew out a big fat warning. (#31393)
+
+* 四 3月 08 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add fixes from rc4
+
+* 五 3月 02 2001 Nalin Dahyabhai <nalin@redhat.com>
+- rebuild in new environment
+
+* 四 3月 01 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- killall -HUP named if rndc reload fails (#30113)
+
+* 二 2月 27 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Merge some fixes from 9.1.1rc3
+
+* 二 2月 20 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Don't use the standard rndc key from the documentation, instead, create a random one
+  at installation time (#26358)
+- Make /etc/rndc.conf readable by user named only, it contains secret keys
+- 9.1.1 probably won't be out in time, revert to 9.1.0 and apply fixes
+  from 9.1.1rc2
+- bind requires bind-utils (#28317)
+
+* 二 2月 13 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Update to rc2, fixes 2 more bugs
+- Fix build with glibc >= 2.2.1-7
+
+* 四 2月 08 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Update to 9.1.1rc1; fixes 17 bugs (14 of them affecting us;
+  1 was fixed in a Red Hat patch already, 2 others are portability
+  improvements)
+
+* 三 2月 07 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Remove initscripts 5.54 requirement (#26489)
+
+* 一 1月 29 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add named-checkconf, named-checkzone (#25170)
+
+* 一 1月 29 2001 Trond Eivind Glomsrod <teg@redhat.com>
+- use echo, not gprintf
+
+* 三 1月 24 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix problems with $GENERATE
+  Patch from Daniel Roesen <droesen@entire-systems.com>
+  Bug #24890
+
+* 四 1月 18 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 9.1.0 final
+
+* 六 1月 13 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 9.1.0rc1
+- i18nify init script
+- bzip2 source to save space
+
+* 四 1月 11 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix %postun script
+
+* 二 1月 09 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 9.1.0b3
+
+* 一 1月 08 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add named.conf man page from bind8 (#23503)
+
+* 日 1月 07 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Make /etc/rndc.conf and /etc/sysconfig/named noreplace
+- Make devel require bind = %{version} rather than just bind
+- Fix init script for real
+
+* 六 1月 06 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix init script when ROOTDIR is not set
+
+* 四 1月 04 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add hooks for setting up named to run chroot (RFE #23246)
+- Fix up requirements
+
+* 五 12月 29 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 9.1.0b2
+
+* 三 12月 20 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Move run files to /var/run/named/ - /var/run isn't writable
+  by the user we're running as. (Bug #20665)
+
+* 二 12月 19 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix reverse lookups (#22272)
+- Run ldconfig in %post utils
+
+* 二 12月 12 2000 Karsten Hopp <karsten@redhat.de>
+- fixed logrotate script (wrong path to kill)
+- include header files in -devel package
+- bugzilla #22049, #19147, 21606
+
+* 五 12月 08 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 9.1.0b1 (9.1.0 is in our timeframe and less buggy)
+
+* 一 11月 13 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 9.0.1
+
+* 一 10月 30 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix initscript (Bug #19956)
+- Add sample rndc.conf (Bug #19956)
+- Fix build with tar 1.13.18
+
+* 二 10月 10 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add some missing man pages (taken from bind8) (Bug #18794)
+
+* 日 9月 17 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 9.0.0 final
+
+* 三 8月 30 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- rc5
+- fix up nslookup
+
+* 四 8月 24 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- rc4
+
+* 四 7月 13 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 9.0.0rc1
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 7月 09 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- add "exit 0" for uninstall case
+
+* 五 7月 07 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- add prereq init.d and cleanup install section
+
+* 五 6月 30 2000 Trond Eivind Glomsrod <teg@redhat.com>
+- fix the init script
+
+* 三 6月 28 2000 Nalin Dahyabhai <nalin@redhat.com>
+- make libbind.a and nslookup.help readable again by setting INSTALL_LIB to ""
+
+* 一 6月 26 2000 Bernhard Rosenkranzer <bero@redhat.com>
+- Fix up the initscript (Bug #13033)
+- Fix build with current glibc (Bug #12755)
+- /etc/rc.d/init.d -> /etc/init.d
+- use %{_mandir} rather than /usr/share/man
+
+* 一 6月 19 2000 Bill Nottingham <notting@redhat.com>
+- fix conflict with man-pages
+- remove compatibilty chkconfig links
+- initscript munging
+
+* 三 6月 14 2000 Nalin Dahyabhai <nalin@redhat.com>
+- modify logrotate setup to use PID file
+- temporarily disable optimization by unsetting $RPM_OPT_FLAGS at build-time
+- actually bump the release this time
+
+* 日 6月 04 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- FHS compliance
+
+* 一 4月 17 2000 Nalin Dahyabhai <nalin@redhat.com>
+- clean up restart patch
+
+* 一 4月 10 2000 Nalin Dahyabhai <nalin@redhat.com>
+- provide /var/named (fix for bugs #9847, #10205)
+- preserve args when restarted via ndc(8) (bug #10227)
+- make resolv.conf(5) a link to resolver(5) (bug #10245)
+- fix SYSTYPE bug in all makefiles
+- move creation of named user from %post into %pre
+
+* 一 2月 28 2000 Bernhard Rosenkranzer <bero@redhat.com>
+- Fix TTL (patch from ISC, Bug #9820)
+
+* 三 2月 16 2000 Bernhard Rosenkranzer <bero@redhat.com>
+- fix typo in spec (it's %post, without a leading blank) introduced in -6
+- change SYSTYPE to linux
+
+* 五 2月 11 2000 Bill Nottingham <notting@redhat.com>
+- pick a standard < 100 uid/gid for named
+
+* 五 2月 04 2000 Elliot Lee <sopwith@redhat.com>
+- Pass named a '-u named' parameter by default, and add/remove user.
+
+* 四 2月 03 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- fix host mx bug (Bug #9021)
+
+* 一 1月 31 2000 Cristian Gafton <gafton@redhat.com>
+- rebuild to fix dependencies
+- man pages are compressed
+
+* 三 1月 19 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- It's /usr/bin/killall, not /usr/sbin/killall (Bug #8063)
+
+* 一 1月 17 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up location of named-bootconf.pl and make it executable
+  (Bug #8028)
+- bind-devel requires bind
+
+* 一 11月 15 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- update to 8.2.2-P5
+
+* 三 11月 10 1999 Bill Nottingham <notting@redhat.com>
+- update to 8.2.2-P3
+
+* 二 10月 12 1999 Cristian Gafton <gafton@redhat.com>
+- add patch to stop a cache only server from complaining about lame servers
+  on every request.
+
+* 五 9月 24 1999 Preston Brown <pbrown@redhat.com>
+- use real stop and start in named.init for restart, not ndc restart, it has
+  problems when named has changed during a package update... (# 4890)
+
+* 五 9月 10 1999 Bill Nottingham <notting@redhat.com>
+- chkconfig --del in %preun, not %postun
+
+* 一 8月 16 1999 Bill Nottingham <notting@redhat.com>
+- initscript munging
+
+* 一 7月 26 1999 Bill Nottingham <notting@redhat.com>
+- fix installed chkconfig links to match init file
+
+* 六 7月 03 1999 Jeff Johnson <jbj@redhat.com>
+- conflict with new (in man-1.24) man pages (#3876,#3877).
+
+* 二 6月 29 1999 Bill Nottingham <notting@redhat.com>
+- fix named.logrotate (wrong %SOURCE)
+
+* 五 6月 25 1999 Jeff Johnson <jbj@redhat.com>
+- update to 8.2.1.
+- add named.logrotate (#3571).
+- hack around egcs-1.1.2 -m486 bug (#3413, #3485).
+- vet file list.
+
+* 五 6月 18 1999 Bill Nottingham <notting@redhat.com>
+- don't run by default
+
+* 日 5月 30 1999 Jeff Johnson <jbj@redhat.com>
+- nslookup fixes (#2463).
+- missing files (#3152).
+
+* 六 5月 01 1999 Stepan Kasal <kasal@math.cas.cz>
+- nslookup patched:
+  to count numRecords properly
+  to fix subsequent calls to ls -d
+  to parse "view" and "finger" commands properly
+  the view hack updated for bind-8 (using sed)
+
+* 三 3月 31 1999 Bill Nottingham <notting@redhat.com>
+- add ISC patch
+- add quick hack to make host not crash
+- add more docs
+
+* 五 3月 26 1999 Cristian Gafton <gafton@redhat.com>
+- add probing information in the init file to keep linuxconf happy
+- dont strip libbind
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com>
+- auto rebuild in the new build environment (release 3)
+
+* 三 3月 17 1999 Preston Brown <pbrown@redhat.com>
+- removed 'done' output at named shutdown.
+
+* 二 3月 16 1999 Cristian Gafton <gafton@redhat.com>
+- version 8.2
+
+* 三 12月 30 1998 Cristian Gafton <gafton@redhat.com>
+- patch to use the __FDS_BITS macro
+- build for glibc 2.1
+
+* 三 9月 23 1998 Jeff Johnson <jbj@redhat.com>
+- change named.restart to /usr/sbin/ndc restart
+
+* 六 9月 19 1998 Jeff Johnson <jbj@redhat.com>
+- install man pages correctly.
+- change K10named to K45named.
+
+* 三 8月 12 1998 Jeff Johnson <jbj@redhat.com>
+- don't start if /etc/named.conf doesn't exist.
+
+* 六 8月 08 1998 Jeff Johnson <jbj@redhat.com>
+- autmagically create /etc/named.conf from /etc/named.boot in %post
+- remove echo in %post
+
+* 三 6月 10 1998 Jeff Johnson <jbj@redhat.com>
+- merge in 5.1 mods
+
+* 日 4月 12 1998 Manuel J. Galan <manolow@step.es>
+- Several essential modifications to build and install correctly.
+- Modified 'ndc' to avoid deprecated use of '-'
+
+* 一 12月 22 1997 Scott Lampert <fortunato@heavymetal.org>
+- Used buildroot
+- patched bin/named/ns_udp.c to use <libelf/nlist.h> for include
+  on Redhat 5.0 instead of <nlist.h>
+

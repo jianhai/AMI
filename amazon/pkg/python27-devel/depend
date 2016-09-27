@@ -1,0 +1,17 @@
+/bin/sh
+/bin/sh
+/bin/sh
+/usr/bin/pkg-config
+/usr/bin/python2.7
+alternatives(addslave)
+alternatives(force)
+alternatives(removeslave)
+alternatives(removeslave)
+libpython2.7.so.1.0()(64bit)
+pkgconfig
+python27(alternatives)
+python27(x86-64) = 2.7.12-2.120.amzn1
+python27(x86-64) = 2.7.12-2.120.amzn1
+python27(x86-64) = 2.7.12-2.120.amzn1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

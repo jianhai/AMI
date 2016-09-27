@@ -1,0 +1,328 @@
+* 二 9月 13 2016 Ian Weller <iweller@amazon.com>
+- Apply patches for CVE-2016-6313
+
+* 二 8月 04 2015 Ian Weller <iweller@amazon.com>
+- Add patches for CVE-2014-5270, CVE-2014-3591, and CVE-2015-0837
+
+* 二 5月 19 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/libgcrypt-1.5.3-12.el7_1.1
+
+* 五 4月 10 2015 Tomáš Mráz <tmraz@redhat.com> 1.5.3-12.1
+- touch only urandom in the selftest and when /dev/random is
+  unavailable for example by SELinux confinement
+- fix the RSA selftest key (p q swap)
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/libgcrypt-1.5.3-12.el7
+
+* 三 1月 14 2015 Tomáš Mráz <tmraz@redhat.com> 1.5.3-12
+- use macros instead of inline functions in the public header
+
+* 五 12月 12 2014 Tomáš Mráz <tmraz@redhat.com> 1.5.3-11
+- do not initialize secure memory during the selftest
+
+* 五 11月 14 2014 Tomáš Mráz <tmraz@redhat.com> 1.5.3-10
+- update the selftests for the new FIPS requirements
+
+* 五 10月 31 2014 Tomáš Mráz <tmraz@redhat.com> 1.5.3-9
+- apply the fips-cfgrandom change also to the drbg seeding
+
+* 二 10月 21 2014 Tomáš Mráz <tmraz@redhat.com> 1.5.3-7
+- make the RSA keygen to be compliant to FIPS 186-4 in
+  FIPS mode
+
+* 五 9月 26 2014 Tomáš Mráz <tmraz@redhat.com> 1.5.3-5
+- add FIPS DRBG implementation
+- run the FIPS POST tests in shared library constructor
+- make it possible to run the test suite in the FIPS mode
+
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libgcrypt-1.5.3-4.el7
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 1.5.3-4
+- Mass rebuild 2014-01-24
+
+* 二 1月 21 2014 Tomáš Mráz <tmraz@redhat.com> 1.5.3-3
+- fix a bug in the Whirlpool hash implementation
+- speed up the PBKDF2 computation
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.5.3-2
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/libgcrypt-1.5.3-1.el7
+
+* 四 10月 24 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgcrypt-1.4.5-11.el6_4
+
+* 四 9月 19 2013 Cristian Gafton <gafton@amazon.com>
+- add patch for CVE-2013-4242
+
+* 五 7月 26 2013 Tomáš Mráz <tmraz@redhat.com> 1.5.3-1
+- new upstream version fixing cache side-channel attack on RSA private keys
+
+* 四 6月 20 2013 Tomáš Mráz <tmraz@redhat.com> 1.5.2-3
+- silence false error detected by valgrind (#968288)
+
+* 四 4月 25 2013 Tomáš Mráz <tmraz@redhat.com> 1.5.2-2
+- silence strict aliasing warning in Rijndael
+- apply UsrMove
+- spec file cleanups
+
+* 五 4月 19 2013 Tomáš Mráz <tmraz@redhat.com> 1.5.2-1
+- new upstream version
+
+* 三 3月 20 2013 Tomas Mraz <tmraz@redhat.com> 1.5.1-1
+- new upstream version
+
+* 二 3月 05 2013 Tomas Mraz <tmraz@redhat.com> 1.5.0-11
+- use poll() instead of select() when gathering randomness (#913773)
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.0-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 1月 03 2013 Tomas Mraz <tmraz@redhat.com> 1.5.0-9
+- allow empty passphrase in PBKDF2 needed for cryptsetup (=891266)
+
+* 一 12月 03 2012 Tomas Mraz <tmraz@redhat.com> 1.5.0-8
+- fix multilib conflict in libgcrypt-config
+- fix minor memory leaks and other bugs found by Coverity scan
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.0-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 五 4月 20 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgcrypt-1.4.5-9.el6_2.2
+
+* 四 4月 05 2012 Tomas Mraz <tmraz@redhat.com> 1.5.0-5
+- Correctly rebuild the info documentation
+
+* 三 4月 04 2012 Tomas Mraz <tmraz@redhat.com> 1.5.0-4
+- Add GCRYCTL_SET_ENFORCED_FIPS_FLAG command
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 四 12月 08 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgcrypt-1.4.5-9.el6
+
+* 一 8月 29 2011 Cristian Gafton <gafton@amazon.com>
+- fix build requires and requires for libgpg-error
+
+* 一 8月 15 2011 Kalev Lember <kalevlember@gmail.com> 1.5.0-2
+- Rebuilt for rpm bug #728707
+
+* 四 7月 21 2011 Tomas Mraz <tmraz@redhat.com> 1.5.0-1
+- new upstream version
+
+* 一 6月 20 2011 Tomas Mraz <tmraz@redhat.com> 1.4.6-4
+- Always xor seed from /dev/urandom over /etc/gcrypt/rngseed
+
+* 四 6月 02 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgcrypt-1.4.5-5.el6_1.2
+
+* 一 5月 30 2011 Tomas Mraz <tmraz@redhat.com> 1.4.6-3
+- Make the FIPS-186-3 DSA implementation CAVS testable
+- add configurable source of RNG seed /etc/gcrypt/rngseed
+  in the FIPS mode (#700388)
+
+* 六 5月 21 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgcrypt-1.4.5-5.el6_1.1
+- import source package RHEL6/libgcrypt-1.4.5-5.el6
+
+* 五 2月 11 2011 Tomas Mraz <tmraz@redhat.com> 1.4.6-1
+- new upstream version with minor changes
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.5-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 五 2月 04 2011 Tomas Mraz <tmraz@redhat.com> 1.4.5-6
+- fix a bug in the fips-186-3 dsa parameter generation code
+
+* 二 2月 01 2011 Tomas Mraz <tmraz@redhat.com> 1.4.5-5
+- use /dev/urandom for seeding in the FIPS mode
+- make the tests to pass in the FIPS mode also fixing
+  the FIPS-186-3 DSA keygen
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/libgcrypt-1.4.5-3.el6
+- import source package RHEL6/libgcrypt-1.4.5-2.el6
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/libgcrypt-1.4.4-5.el5
+- import source package RHEL5/libgcrypt-1.2.4-1.el5
+- import source package RHEL5/libgcrypt-1.2.3-1
+- added submodule prep for package libgcrypt
+
+* 日 2月 14 2010 Rex Dieter <rdieter@fedoraproject.org> 1.4.5-4
+- FTBFS libgcrypt-1.4.5-3.fc13: ImplicitDSOLinking (#564973)
+
+* 三 2月 03 2010 Tomas Mraz <tmraz@redhat.com> 1.4.5-3
+- drop the S390 build workaround as it is no longer needed
+- additional spec file cleanups for merge review (#226008)
+
+* 一 12月 21 2009 Tomas Mraz <tmraz@redhat.com> 1.4.5-1
+- workaround for build on S390 (#548825)
+- spec file cleanups
+- upgrade to new minor upstream release
+
+* 二 8月 11 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-8
+- fix warning when installed with --excludedocs (#515961)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.4-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 6月 18 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-6
+- and now really apply the padlock patch
+
+* 三 6月 17 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-5
+- fix VIA padlock RNG inline assembly call (#505724)
+
+* 四 3月 05 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-4
+- with the integrity verification check the library needs to link to libdl
+  (#488702)
+
+* 二 3月 03 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-3
+- add hmac FIPS integrity verification check
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 30 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-1
+- update to 1.4.4
+- do not abort when the fips mode kernel flag is inaccessible
+  due to permissions (#470219)
+- hobble the library to drop the ECC support
+
+* 一 10月 20 2008 Dennis Gilmore <dennis@ausil.us> 1.4.3-2
+- disable asm on sparc64
+
+* 四 9月 18 2008 Nalin Dahyabhai <nalin@redhat.com> 1.4.3-1
+- update to 1.4.3
+- own /etc/gcrypt
+
+* 一 9月 15 2008 Nalin Dahyabhai <nalin@redhat.com>
+- invoke make with %{?_smp_mflags} to build faster on multi-processor
+  systems (Steve Grubb)
+
+* 一 9月 08 2008 Nalin Dahyabhai <nalin@redhat.com> 1.4.2-1
+- update to 1.4.2
+
+* 二 4月 29 2008 Nalin Dahyabhai <nalin@redhat.com> 1.4.1-1
+- update to 1.4.1
+- bump libgpgerror-devel requirement to 1.4, matching the requirement enforced
+  by the configure script
+
+* 四 4月 03 2008 Joe Orton <jorton@redhat.com> 1.4.0-3
+- add patch from upstream to fix severe performance regression
+  in entropy gathering
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.4.0-2
+- Autorebuild for GCC 4.3
+
+* 一 12月 10 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.4.0-1
+- update to 1.4.0
+
+* 二 10月 16 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-6
+- use ldconfig to build the soname symlink for packaging along with the
+  shared library (#334731)
+
+* 三 8月 22 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-5
+- add missing gawk buildrequirement
+- switch from explicitly specifying the /dev/random RNG to just verifying
+  that the non-LGPL ones were disabled by the configure script
+
+* 四 8月 16 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-4
+- clarify license
+- force use of the linux /dev/random RNG, to avoid accidentally falling back
+  to others which would affect the license of the resulting library
+
+* 一 7月 30 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-3
+- disable static libraries (part of #249815)
+
+* 五 7月 27 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-2
+- move libgcrypt shared library to /%{_lib} (#249815)
+
+* 二 2月 06 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-1
+- update to 1.2.4
+
+* 一 1月 22 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.3-2
+- make use of install-info more failsafe (Ville Skyttä, #223705)
+
+* 五 9月 01 2006 Nalin Dahyabhai <nalin@redhat.com> - 1.2.3-1
+- update to 1.2.3
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-3.1
+- rebuild
+
+* 一 6月 05 2006 Jesse Keating <jkeating@redhat.com> 1.2.2-3
+- Added missing buildreq pkgconfig
+
+* 二 5月 16 2006 Nalin Dahyabhai <nalin@redhat.com> 1.2.2-2
+- remove file conflicts in libgcrypt-config by making the 64-bit version
+  think the libraries are in /usr/lib (which is wrong, but which it also
+  prunes from the suggest --libs output, so no harm done, hopefully)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 10月 05 2005 Nalin Dahyabhai <nalin@redhat.com> 1.2.2-1
+- update to 1.2.2
+
+* 三 3月 16 2005 Nalin Dahyabhai <nalin@redhat.com> 1.2.1-1
+- update to 1.2.1
+
+* 五 7月 30 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- another try to package the symlink
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 5月 02 2004 Bill Nottingham <notting@redhat.com> - 1.2.0-1
+- update to official 1.2.0
+
+* 五 4月 16 2004 Bill Nottingham <notting@redhat.com> - 1.1.94-1
+- update to 1.1.94
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 2月 21 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- add symlinks to shared libs at compile time
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 3月 20 2003 Jeff Johnson <jbj@redhat.com> 1.1.12-1
+- upgrade to 1.1.12 (beta).
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 5月 21 2002 Jeff Johnson <jbj@redhat.com>
+- update to 1.1.7
+- change license to LGPL.
+- include splint annotations patch.
+- install info pages.
+
+* 二 4月 02 2002 Nalin Dahyabhai <nalin@redhat.com> 1.1.6-1
+- update to 1.1.6
+
+* 四 1月 10 2002 Nalin Dahyabhai <nalin@redhat.com> 1.1.5-1
+- fix the Source tag so that it's a real URL
+
+* 四 12月 20 2001 Nalin Dahyabhai <nalin@redhat.com>
+- initial package
+

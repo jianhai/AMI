@@ -1,0 +1,26 @@
+fileutils
+module-init-tools
+initscripts >= 8.11.1-1
+grubby >= 7.0.15-2.5
+dracut >= 004-336.27
+grubby >= 7.0.10-1
+/sbin/new-kernel-pkg
+/sbin/new-kernel-pkg
+/bin/sh
+/bin/sh
+/bin/sh
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+fileutils
+module-init-tools
+initscripts >= 8.11.1-1
+grubby >= 7.0.15-2.5
+dracut >= 004-336.27
+grubby >= 7.0.10-1
+/sbin/new-kernel-pkg
+/sbin/new-kernel-pkg
+/bin/sh
+/bin/sh
+/bin/sh
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
