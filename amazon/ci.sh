@@ -9,7 +9,7 @@ rm -rf pkg/*
 while read LINE
 do
   # Ignore Some Exclude package
-  package=${LINE%-*}
+  package=${LINE%%-[0-9]*}
   grep $package excludes 
   if [ $? == 0 ]; then 
     continue
