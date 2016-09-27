@@ -1,0 +1,10 @@
+#!/usr/bin/expect
+#set timeout 600
+set package [lindex $argv 0]
+
+spawn /usr/bin/get_reference_source  -p $package
+expect {
+  "type 'yes' to continue:" { send "yes\n" }
+}
+
+expect eof

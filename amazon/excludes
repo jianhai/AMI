@@ -1,4 +1,6 @@
+expect
 git
 perl-Error
 perl-Git
 perl-TermReadKey
+tcl

@@ -86,7 +86,6 @@ gdisk-0.8.10-1.5.amzn1.x86_64
 generic-logos-17.0.0-2.5.amzn1.noarch
 get_reference_source-1.2-0.4.amzn1.noarch
 giflib-4.1.6-3.1.6.amzn1.x86_64
-git-2.7.4-1.47.amzn1.x86_64
 glib2-2.36.3-5.18.amzn1.x86_64
 glibc-2.17-106.167.amzn1.x86_64
 glibc-common-2.17-106.167.amzn1.x86_64
@@ -115,7 +114,6 @@ javapackages-tools-0.9.1-1.5.amzn1.noarch
 jpackage-utils-1.7.5-27.17.amzn1.noarch
 kbd-1.15-11.4.amzn1.x86_64
 kbd-misc-1.15-11.4.amzn1.noarch
-kernel-4.4.11-23.53.amzn1.x86_64
 kernel-4.4.19-29.55.amzn1.x86_64
 kernel-tools-4.4.19-29.55.amzn1.x86_64
 keyutils-1.5.8-3.12.amzn1.x86_64
@@ -241,13 +239,11 @@ perl-Digest-HMAC-1.03-5.7.amzn1.noarch
 perl-Digest-MD5-2.52-3.5.amzn1.x86_64
 perl-Digest-SHA-5.85-3.5.amzn1.x86_64
 perl-Encode-2.51-7.5.amzn1.x86_64
-perl-Error-0.17020-2.9.amzn1.noarch
 perl-Exporter-5.68-3.5.amzn1.noarch
 perl-File-Path-2.09-2.5.amzn1.noarch
 perl-File-Temp-0.23.01-3.5.amzn1.noarch
 perl-Filter-1.49-3.5.amzn1.x86_64
 perl-Getopt-Long-2.40-2.5.amzn1.noarch
-perl-Git-2.7.4-1.47.amzn1.noarch
 perl-HTTP-Tiny-0.033-3.6.amzn1.noarch
 perl-libs-5.16.3-283.37.amzn1.x86_64
 perl-macros-5.16.3-283.37.amzn1.x86_64
@@ -261,7 +257,6 @@ perl-Pod-Usage-1.63-3.5.amzn1.noarch
 perl-Scalar-List-Utils-1.27-248.5.amzn1.x86_64
 perl-Socket-2.010-3.5.amzn1.x86_64
 perl-Storable-2.45-3.5.amzn1.x86_64
-perl-TermReadKey-2.30-20.9.amzn1.x86_64
 perl-Text-ParseWords-3.29-4.5.amzn1.noarch
 perl-threads-1.87-4.5.amzn1.x86_64
 perl-threads-shared-1.43-6.5.amzn1.x86_64
