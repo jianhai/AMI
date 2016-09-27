@@ -4,15 +4,16 @@ AWS TOOLS
 aws-apitools-as
 ---------------
 1. Auto Scaling Command Line Tools
-2. JAVA
-   /opt/aws/apitools/as-1.0.61.6/bin
+2. JAVA <br/>
+   /opt/aws/apitools/as-1.0.61.6/bin <br/>
      as-cmd
+<br/><br/>
 
 aws-apitools-ec2
 ----------------
 1. The API tools serve as the client interface to the Amazon EC2 web service. Use these tools to register and launch instances, manipulate security groups, and more.
-2. RUBY
-   /opt/aws/apitools/ec2-1.7.3.0/bin
+2. RUBY <br/>
+   /opt/aws/apitools/ec2-1.7.3.0/bin <br/>
      ec2-accept-vpc-peering-connection
      ec2-activate-license
      ec2-add-group
@@ -359,14 +360,13 @@ aws-apitools-ec2
      ec2umin
      ec2upip
      ec2ver
-
-
+<br/><br/>
 
 aws-amitools-ec2
 ----------------
 1. The Amazon EC2 AMI Tools are command-line utilities to help bundle an Amazon Machine Image (AMI), create an AMI from an existing machine or installed volume, and upload a bundled AMI to Amazon S3.
-2. RUBY
-   /opt/aws/amitools/ec2-1.5.7/bin
+2. RUBY <br/>
+   /opt/aws/amitools/ec2-1.5.7/bin <br/>
      ec2-ami-tools-version
      ec2-bundle-image
      ec2-bundle-vol
@@ -376,12 +376,13 @@ aws-amitools-ec2
      ec2-migrate-manifest
      ec2-unbundle
      ec2-upload-bundle
+<br/><br/>
 
 aws-apitools-mon
 ----------------
 1. Amazon CloudWatch (Monitoring) Command Line Tools
-2. JAVA
-   /opt/aws/apitools/mon-1.0.20.0/bin
+2. JAVA <br/>
+   /opt/aws/apitools/mon-1.0.20.0/bin <br/>
      mon-cmd
      mon-delete-alarms
      mon-describe-alarm-history
@@ -396,12 +397,13 @@ aws-apitools-mon
      mon-set-alarm-state
      mon-version
      service
+<br/><br/>
 
 aws-apitools-elb
 ----------------
 1. Elastic Load Balancing (ELB) Command Line Tool
-2. JAVA
-   /opt/aws/apitools/elb-1.0.35.0/bin/
+2. JAVA <br/>
+   /opt/aws/apitools/elb-1.0.35.0/bin/ <br/>
      elb-apply-security-groups-to-lb
      elb-associate-route53-hosted-zone
      elb-attach-lb-to-subnets
@@ -432,29 +434,33 @@ aws-apitools-elb
      elb-set-lb-policies-of-listener
      elb-version
      service
+<br/><br/>
 
 aws-apitools-common
 -------------------
 1. provides directory structure and common configuration files
-2. None
+2. None <br/>
    /etc/profile.d/aws-apitools-common.sh
    /opt/aws
    /opt/aws/amitools
    /opt/aws/apitools
    /opt/aws/bin
    /opt/aws/credential-file-path.template
+<br/><br/>
+
 
 aws-cli
 -------
 1. The  AWS  Command  Line  Interface is a unified tool to manage your AWS Services.
-2. Python 2.7
+2. Python 2.7 <br/>
    /usr/bin/aws
+<br/><br/>
 
 aws-cfn-bootstrap
 -----------------
 1. Bootstraps EC2 instances by retrieving and processing the Metadata block of a CloudFormation resource.
-2. Python 2.7
-   /opt/aws/apitools/cfn-init-1.4-12.7.amzn1/bin/
+2. Python 2.7 <br/>
+   /opt/aws/apitools/cfn-init-1.4-12.7.amzn1/bin <br/>
      cfn-elect-cmd-leader
      cfn-get-metadata
      cfn-hup
