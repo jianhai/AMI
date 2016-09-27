@@ -186,10 +186,6 @@ yes
 Source RPM downloaded to: /usr/src/srpm/debug/gnupg2-2.0.28-1.30.amzn1.src.rpm
 yes
 Source RPM downloaded to: /usr/src/srpm/debug/gpgme-1.4.3-5.15.amzn1.src.rpm
-expect: spawn id exp4 not open
-    while executing
-"expect eof"
-    (file "./scripts/getpkg.sh" line 13)
 yes
 Source RPM downloaded to: /usr/src/srpm/debug/gpm-1.20.6-12.8.amzn1.src.rpm
 yes
@@ -222,10 +218,8 @@ yes
 Source RPM downloaded to: /usr/src/srpm/debug/iputils-20121221-7.13.amzn1.src.rpm
 yes
 Source RPM downloaded to: /usr/src/srpm/debug/irqbalance-1.0.8-1.23.amzn1.src.rpm
-expect: spawn id exp4 not open
-    while executing
-"expect eof"
-    (file "./scripts/getpkg.sh" line 13)
+yes
+Source RPM downloaded to: /usr/src/srpm/debug/java-1.7.0-openjdk-1.7.0.111-2.6.7.2.68.amzn1.src.rpm
 yes
 Source RPM downloaded to: /usr/src/srpm/debug/javapackages-tools-0.9.1-1.5.amzn1.src.rpm
 yes
@@ -234,12 +228,6 @@ yes
 Source RPM downloaded to: /usr/src/srpm/debug/kbd-1.15-11.4.amzn1.src.rpm
 yes
 Source RPM downloaded to: /usr/src/srpm/debug/kbd-1.15-11.4.amzn1.src.rpm
-yes
-Source RPM downloaded to: /usr/src/srpm/debug/kernel-4.4.11-23.53.amzn1.src.rpm
-Source RPM downloaded to: /usr/src/srpm/debug/kernel-4.4.19-29.55.amzn1.src.rpm
-yes
-Source RPM downloaded to: /usr/src/srpm/debug/kernel-4.4.11-23.53.amzn1.src.rpm
-Source RPM downloaded to: /usr/src/srpm/debug/kernel-4.4.19-29.55.amzn1.src.rpm
 yes
 Source RPM downloaded to: /usr/src/srpm/debug/kernel-4.4.19-29.55.amzn1.src.rpm
 yes
