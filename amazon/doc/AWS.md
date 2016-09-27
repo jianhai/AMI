@@ -4,7 +4,7 @@ AWS TOOLS
 aws-apitools-as
 ---------------
 1. Auto Scaling Command Line Tools
-2. JAVA <br/>
+2. JAVA
 <br/>    /opt/aws/apitools/as-1.0.61.6/bin
 <br/>        as-cmd
 <br/><br/>
@@ -12,7 +12,7 @@ aws-apitools-as
 aws-apitools-ec2
 ----------------
 1. The API tools serve as the client interface to the Amazon EC2 web service. Use these tools to register and launch instances, manipulate security groups, and more.
-2. RUBY <br/>
+2. RUBY
 <br/>    /opt/aws/apitools/ec2-1.7.3.0/bin
 <br/>        ec2-accept-vpc-peering-connection
 <br/>        ec2-activate-license
@@ -365,7 +365,7 @@ aws-apitools-ec2
 aws-amitools-ec2
 ----------------
 1. The Amazon EC2 AMI Tools are command-line utilities to help bundle an Amazon Machine Image (AMI), create an AMI from an existing machine or installed volume, and upload a bundled AMI to Amazon S3.
-2. RUBY <br/>
+2. RUBY
 <br/>    /opt/aws/amitools/ec2-1.5.7/bin
 <br/>        ec2-ami-tools-version
 <br/>        ec2-bundle-image
@@ -381,7 +381,7 @@ aws-amitools-ec2
 aws-apitools-mon
 ----------------
 1. Amazon CloudWatch (Monitoring) Command Line Tools
-2. JAVA <br/>
+2. JAVA
 <br/>    /opt/aws/apitools/mon-1.0.20.0/bin
 <br/>        mon-cmd
 <br/>        mon-delete-alarms
@@ -403,43 +403,43 @@ aws-apitools-elb
 ----------------
 1. Elastic Load Balancing (ELB) Command Line Tool
 2. JAVA <br/>
-    /opt/aws/apitools/elb-1.0.35.0/bin
-        elb-apply-security-groups-to-lb
-        elb-associate-route53-hosted-zone
-        elb-attach-lb-to-subnets
-        elb-cmd
-        elb-configure-healthcheck
-        elb-create-app-cookie-stickiness-policy
-        elb-create-lb
-        elb-create-lb-cookie-stickiness-policy
-        elb-create-lb-listeners
-        elb-create-lb-policy
-        elb-delete-lb
-        elb-delete-lb-listeners
-        elb-delete-lb-policy
-        elb-deregister-instances-from-lb
-        elb-describe-instance-health
-        elb-describe-lb-attributes
-        elb-describe-lb-policies
-        elb-describe-lb-policy-types
-        elb-describe-lbs
-        elb-detach-lb-from-subnets
-        elb-disable-zones-for-lb
-        elb-disassociate-route53-hosted-zone
-        elb-enable-zones-for-lb
-        elb-modify-lb-attributes
-        elb-register-instances-with-lb
-        elb-set-lb-listener-ssl-cert
-        elb-set-lb-policies-for-backend-server
-        elb-set-lb-policies-of-listener
-        elb-version
-        service
+>    /opt/aws/apitools/elb-1.0.35.0/bin
+>        elb-apply-security-groups-to-lb
+>        elb-associate-route53-hosted-zone
+>        elb-attach-lb-to-subnets
+>        elb-cmd
+>        elb-configure-healthcheck
+>        elb-create-app-cookie-stickiness-policy
+>        elb-create-lb
+>        elb-create-lb-cookie-stickiness-policy
+>        elb-create-lb-listeners
+>        elb-create-lb-policy
+>        elb-delete-lb
+>        elb-delete-lb-listeners
+>        elb-delete-lb-policy
+>        elb-deregister-instances-from-lb
+>        elb-describe-instance-health
+>        elb-describe-lb-attributes
+>        elb-describe-lb-policies
+>        elb-describe-lb-policy-types
+>        elb-describe-lbs
+>        elb-detach-lb-from-subnets
+>        elb-disable-zones-for-lb
+>        elb-disassociate-route53-hosted-zone
+>        elb-enable-zones-for-lb
+>        elb-modify-lb-attributes
+>        elb-register-instances-with-lb
+>        elb-set-lb-listener-ssl-cert
+>        elb-set-lb-policies-for-backend-server
+>        elb-set-lb-policies-of-listener
+>        elb-version
+>        service
 <br/><br/>
 
 aws-apitools-common
 -------------------
 1. provides directory structure and common configuration files
-2. None <br/>
+2. None
 <br/>    /etc/profile.d/aws-apitools-common.sh
 <br/>    /opt/aws
 <br/>    /opt/aws/amitools
@@ -451,14 +451,14 @@ aws-apitools-common
 aws-cli
 -------
 1. The  AWS  Command  Line  Interface is a unified tool to manage your AWS Services.
-2. Python 2.7 <br/>
+2. Python 2.7
 <br/>    /usr/bin/aws
 <br/><br/>
 
 aws-cfn-bootstrap
 -----------------
 1. Bootstraps EC2 instances by retrieving and processing the Metadata block of a CloudFormation resource.
-2. Python 2.7 <br/>
+2. Python 2.7
 <br/>    /opt/aws/apitools/cfn-init-1.4-12.7.amzn1/bin
 <br/>        cfn-elect-cmd-leader
 <br/>        cfn-get-metadata
