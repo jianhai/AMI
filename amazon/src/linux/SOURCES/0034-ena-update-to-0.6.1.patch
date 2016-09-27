@@ -1,0 +1,271 @@
+From 76ef008b1126160b01f0d039b8de9500f78d06a5 Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Fri, 15 Apr 2016 01:23:14 +0000
+Subject: ena: update to 0.6.1
+
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+Reviewed-by: Netanel Belgazal <netanel@annapurnalabs.com>
+Reviewed-by: Rashika Kheria <rashika@amazon.de>
+Reviewed-by: Matt Nierzwicki <nierzwic@amazon.com>
+
+CR: https://cr.amazon.com/r/5132188/
+---
+ Documentation/networking/ena.txt |  4 ++--
+ drivers/amazon/ena/ena_com.c     | 18 +++++++-----------
+ drivers/amazon/ena/ena_com.h     |  4 +---
+ drivers/amazon/ena/ena_netdev.c  | 35 ++++++++++++++++++++++++++---------
+ drivers/amazon/ena/ena_netdev.h  |  4 ++--
+ 5 files changed, 38 insertions(+), 27 deletions(-)
+
+diff --git a/Documentation/networking/ena.txt b/Documentation/networking/ena.txt
+index f10e6db..34aed95 100644
+--- a/Documentation/networking/ena.txt
++++ b/Documentation/networking/ena.txt
+@@ -191,7 +191,7 @@ parameter.
+ The driver chooses interrupt delay value according to the number of bytes and
+ packets received between interrupt unmasking and interrupt posting. The driver
+ uses interrupt delay table that subdivides the range of received bytes/packets
+-into 5 levels and assignes interrupt delay value to each level.
++into 5 levels and assigns interrupt delay value to each level.
+ The user can enable/disable adaptive moderation, modify the interrupt delay
+ table and restore its default values through sysfs.
+ 
+@@ -207,7 +207,7 @@ DMA Coherent buffers are allocated for the following DMA rings:
+ - Admin completion ring
+ - AENQ ring
+ 
+-The ENA device AQ and AENQ are allocated on probe and freed ontermination.
++The ENA device AQ and AENQ are allocated on probe and freed on termination.
+ 
+ Regular allocations:
+ - Tx buffers info ring
+diff --git a/drivers/amazon/ena/ena_com.c b/drivers/amazon/ena/ena_com.c
+index be3ae12..1bb13bd 100644
+--- a/drivers/amazon/ena/ena_com.c
++++ b/drivers/amazon/ena/ena_com.c
+@@ -844,7 +844,7 @@ static int ena_com_hash_key_allocate(struct ena_com_dev *ena_dev)
+ 	return 0;
+ }
+ 
+-static int ena_com_hash_key_destroy(struct ena_com_dev *ena_dev)
++static void ena_com_hash_key_destroy(struct ena_com_dev *ena_dev)
+ {
+ 	struct ena_rss *rss = &ena_dev->rss;
+ 
+@@ -854,7 +854,6 @@ static int ena_com_hash_key_destroy(struct ena_com_dev *ena_dev)
+ 				  rss->hash_key,
+ 				  rss->hash_key_dma_addr);
+ 	rss->hash_key = NULL;
+-	return 0;
+ }
+ 
+ static int ena_com_hash_ctrl_init(struct ena_com_dev *ena_dev)
+@@ -866,10 +865,13 @@ static int ena_com_hash_ctrl_init(struct ena_com_dev *ena_dev)
+ 					    &rss->hash_ctrl_dma_addr,
+ 					    GFP_KERNEL | __GFP_ZERO);
+ 
++	if (unlikely(!rss->hash_ctrl))
++		return -ENOMEM;
++
+ 	return 0;
+ }
+ 
+-static int ena_com_hash_ctrl_destroy(struct ena_com_dev *ena_dev)
++static void ena_com_hash_ctrl_destroy(struct ena_com_dev *ena_dev)
+ {
+ 	struct ena_rss *rss = &ena_dev->rss;
+ 
+@@ -879,8 +881,6 @@ static int ena_com_hash_ctrl_destroy(struct ena_com_dev *ena_dev)
+ 				  rss->hash_ctrl,
+ 				  rss->hash_ctrl_dma_addr);
+ 	rss->hash_ctrl = NULL;
+-
+-	return 0;
+ }
+ 
+ static int ena_com_indirect_table_allocate(struct ena_com_dev *ena_dev,
+@@ -940,7 +940,7 @@ mem_err1:
+ 	return -ENOMEM;
+ }
+ 
+-static int ena_com_indirect_table_destroy(struct ena_com_dev *ena_dev)
++static void ena_com_indirect_table_destroy(struct ena_com_dev *ena_dev)
+ {
+ 	struct ena_rss *rss = &ena_dev->rss;
+ 	size_t tbl_size = (1ULL << rss->tbl_log_size) *
+@@ -956,8 +956,6 @@ static int ena_com_indirect_table_destroy(struct ena_com_dev *ena_dev)
+ 	if (rss->host_rss_ind_tbl)
+ 		devm_kfree(ena_dev->dmadev, rss->host_rss_ind_tbl);
+ 	rss->host_rss_ind_tbl = NULL;
+-
+-	return 0;
+ }
+ 
+ static int ena_com_create_io_sq(struct ena_com_dev *ena_dev,
+@@ -2449,15 +2447,13 @@ err_indr_tbl:
+ 	return rc;
+ }
+ 
+-int ena_com_rss_destroy(struct ena_com_dev *ena_dev)
++void ena_com_rss_destroy(struct ena_com_dev *ena_dev)
+ {
+ 	ena_com_indirect_table_destroy(ena_dev);
+ 	ena_com_hash_key_destroy(ena_dev);
+ 	ena_com_hash_ctrl_destroy(ena_dev);
+ 
+ 	memset(&ena_dev->rss, 0x0, sizeof(ena_dev->rss));
+-
+-	return 0;
+ }
+ 
+ int ena_com_allocate_host_attribute(struct ena_com_dev *ena_dev,
+diff --git a/drivers/amazon/ena/ena_com.h b/drivers/amazon/ena/ena_com.h
+index 105cc3e..3b1bb5e 100644
+--- a/drivers/amazon/ena/ena_com.h
++++ b/drivers/amazon/ena/ena_com.h
+@@ -634,10 +634,8 @@ int ena_com_rss_init(struct ena_com_dev *ena_dev, u16 log_size);
+  * @ena_dev: ENA communication layer struct
+  *
+  * Free all the RSS/RFS resources.
+- *
+- * @return: 0 on Success and negative value otherwise.
+  */
+-int ena_com_rss_destroy(struct ena_com_dev *ena_dev);
++void ena_com_rss_destroy(struct ena_com_dev *ena_dev);
+ 
+ /* ena_com_fill_hash_function - Fill RSS hash function
+  * @ena_dev: ENA communication layer struct
+diff --git a/drivers/amazon/ena/ena_netdev.c b/drivers/amazon/ena/ena_netdev.c
+index e792247..d1d2726 100644
+--- a/drivers/amazon/ena/ena_netdev.c
++++ b/drivers/amazon/ena/ena_netdev.c
+@@ -87,6 +87,8 @@ MODULE_PARM_DESC(enable_missing_tx_detection, "Enable missing Tx completions. (d
+ 
+ static struct ena_aenq_handlers aenq_handlers;
+ 
++static struct workqueue_struct *ena_wq;
++
+ MODULE_DEVICE_TABLE(pci, ena_pci_tbl);
+ 
+ static void ena_tx_timeout(struct net_device *dev)
+@@ -417,14 +419,14 @@ static void ena_free_all_io_rx_resources(struct ena_adapter *adapter)
+ }
+ 
+ static inline int ena_alloc_rx_page(struct ena_ring *rx_ring,
+-		struct ena_rx_buffer *rx_info, gfp_t gfp)
++				    struct ena_rx_buffer *rx_info, gfp_t gfp)
+ {
+ 	struct ena_com_buf *ena_buf;
+ 	struct page *page;
+ 	dma_addr_t dma;
+ 
+ 	/* if previous allocated page is not used */
+-	if (unlikely(rx_info->page != NULL))
++	if (unlikely(rx_info->page))
+ 		return 0;
+ 
+ 	page = alloc_page(gfp);
+@@ -458,7 +460,7 @@ static inline int ena_alloc_rx_page(struct ena_ring *rx_ring,
+ }
+ 
+ static void ena_free_rx_page(struct ena_ring *rx_ring,
+-	struct ena_rx_buffer *rx_info)
++			     struct ena_rx_buffer *rx_info)
+ {
+ 	struct page *page = rx_info->page;
+ 	struct ena_com_buf *ena_buf = &rx_info->ena_buf;
+@@ -488,8 +490,9 @@ static int ena_refill_rx_bufs(struct ena_ring *rx_ring, u32 num)
+ 		struct ena_rx_buffer *rx_info =
+ 			&rx_ring->rx_buffer_info[next_to_use];
+ 
+-		if (unlikely(ena_alloc_rx_page(rx_ring, rx_info,
+-			__GFP_COLD | GFP_ATOMIC | __GFP_COMP) < 0)) {
++		rc = ena_alloc_rx_page(rx_ring, rx_info,
++				       __GFP_COLD | GFP_ATOMIC | __GFP_COMP);
++		if (unlikely(rc < 0)) {
+ 			netif_warn(rx_ring->adapter, rx_err, rx_ring->netdev,
+ 				   "failed to alloc buffer for rx queue %d\n",
+ 				   rx_ring->qid);
+@@ -1582,7 +1585,7 @@ static int ena_create_io_rx_queue(struct ena_adapter *adapter, int qid)
+ 	ctx.mem_queue_type = ENA_ADMIN_PLACEMENT_POLICY_HOST;
+ 	ctx.msix_vector = msix_vector;
+ 	ctx.queue_size = adapter->rx_ring_size;
+-	ctx.numa_node =cpu_to_node(rx_ring->cpu);
++	ctx.numa_node = cpu_to_node(rx_ring->cpu);
+ 
+ 	rc = ena_com_create_io_queue(ena_dev, &ctx);
+ 	if (rc) {
+@@ -2594,7 +2597,7 @@ static void ena_timer_service(unsigned long data)
+ 			  "Trigger reset is on\n");
+ 		adapter->trigger_reset = false;
+ 		ena_dump_stats_to_dmesg(adapter);
+-		schedule_work(&adapter->reset_task);
++		queue_work(ena_wq, &adapter->reset_task);
+ 		return;
+ 	}
+ 
+@@ -3138,12 +3141,26 @@ static struct pci_driver ena_pci_driver = {
+ 
+ static int __init ena_init(void)
+ {
++	pr_info("%s", version);
++
++	ena_wq = create_singlethread_workqueue(DRV_MODULE_NAME);
++	if (!ena_wq) {
++		pr_err("Failed to create workqueue\n");
++		return -ENOMEM;
++	}
++
+ 	return pci_register_driver(&ena_pci_driver);
+ }
+ 
+ static void __exit ena_cleanup(void)
+ {
+ 	pci_unregister_driver(&ena_pci_driver);
++
++	if (ena_wq) {
++		destroy_workqueue(ena_wq);
++		ena_wq = NULL;
++	}
++
+ }
+ 
+ /******************************************************************************
+@@ -3194,10 +3211,10 @@ static void ena_notification(void *adapter_data,
+ 		 * We deliberately don't suspend admin so the timer and
+ 		 * the keep_alive events should remain.
+ 		 */
+-		schedule_work(&adapter->suspend_io_task);
++		queue_work(ena_wq, &adapter->suspend_io_task);
+ 		break;
+ 	case ENA_ADMIN_RESUME:
+-		schedule_work(&adapter->resume_io_task);
++		queue_work(ena_wq, &adapter->resume_io_task);
+ 		break;
+ 	default:
+ 		netif_err(adapter, drv, adapter->netdev,
+diff --git a/drivers/amazon/ena/ena_netdev.h b/drivers/amazon/ena/ena_netdev.h
+index fade9e7..283c311 100644
+--- a/drivers/amazon/ena/ena_netdev.h
++++ b/drivers/amazon/ena/ena_netdev.h
+@@ -45,7 +45,7 @@
+ 
+ #define DRV_MODULE_VER_MAJOR	0
+ #define DRV_MODULE_VER_MINOR	6
+-#define DRV_MODULE_VER_SUBMINOR	0
++#define DRV_MODULE_VER_SUBMINOR	1
+ 
+ #define DRV_MODULE_NAME		"ena"
+ #ifndef DRV_MODULE_VERSION
+@@ -54,7 +54,7 @@
+ 	__stringify(DRV_MODULE_VER_MINOR) "."	\
+ 	__stringify(DRV_MODULE_VER_SUBMINOR)
+ #endif
+-#define DRV_MODULE_RELDATE      "06-APRIL-2016"
++#define DRV_MODULE_RELDATE      "14-APRIL-2016"
+ 
+ #define DEVICE_NAME	"Elastic Network Adapter (ENA)"
+ 
+-- 
+2.7.4
+

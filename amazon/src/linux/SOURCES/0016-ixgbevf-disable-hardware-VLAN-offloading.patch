@@ -1,0 +1,76 @@
+From d419cf5d75042afc3b08aa9442f3f8efe6827774 Mon Sep 17 00:00:00 2001
+From: Cristian Gafton <gafton@amazon.com>
+Date: Tue, 4 Mar 2014 20:43:13 +0000
+Subject: ixgbevf: disable hardware VLAN offloading
+
+This is needed for this version of the driver (v2.12.1 and later) for reliable
+operation with Enhanced Networking instances.
+
+Signed-off-by: Cristian Gafton <gafton@amazon.com>
+(cherry picked from commit 6661796854ec825e4b034a45461043e87fd9421b)
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+---
+ drivers/amazon/ixgbevf/Makefile       |  1 +
+ drivers/amazon/ixgbevf/ixgbevf_main.c | 10 ++++++++++
+ 2 files changed, 11 insertions(+)
+
+diff --git a/drivers/amazon/ixgbevf/Makefile b/drivers/amazon/ixgbevf/Makefile
+index 92609ea..aab4cec 100644
+--- a/drivers/amazon/ixgbevf/Makefile
++++ b/drivers/amazon/ixgbevf/Makefile
+@@ -43,6 +43,7 @@ $(DRIVER_NAME)-HFILES = ixgbevf.h ixgbe_vf.h ixgbe_common.h ixgbe_mbx.h
+ EXTRA_CFLAGS += -DDRIVER_$(shell echo $(DRIVER_NAME) | tr '[a-z]' '[A-Z]')
+ EXTRA_CFLAGS += -DDRIVER_NAME=$(DRIVER_NAME)
+ EXTRA_CFLAGS += -DDRIVER_NAME_CAPS=$(shell echo $(DRIVER_NAME) | tr '[a-z]' '[A-Z]')
++EXTRA_CFLAGS += -DAMAZON_NOHW_VLAN
+ 
+ 
+ obj-$(CONFIG_AMAZON_IXGBEVF) += $(DRIVER_NAME).o
+diff --git a/drivers/amazon/ixgbevf/ixgbevf_main.c b/drivers/amazon/ixgbevf/ixgbevf_main.c
+index bd1f1ba..a11aa05 100644
+--- a/drivers/amazon/ixgbevf/ixgbevf_main.c
++++ b/drivers/amazon/ixgbevf/ixgbevf_main.c
+@@ -47,8 +47,10 @@
+ #include <linux/ethtool.h>
+ #endif
+ #if defined(NETIF_F_HW_VLAN_TX) || defined(NETIF_F_HW_VLAN_CTAG_TX)
++#if !defined(AMAZON_NOHW_VLAN)
+ #include <linux/if_vlan.h>
+ #endif
++#endif
+ 
+ #include "ixgbevf.h"
+ 
+@@ -56,7 +58,11 @@ char ixgbevf_driver_name[] = "ixgbevf";
+ static const char ixgbevf_driver_string[] =
+ 	"Intel(R) 10 Gigabit PCI Express Virtual Function Network Driver";
+ 
++#if defined(AMAZON_NOHW_VLAN)
++#define DRV_VERSION "2.14.2+amzn"
++#else
+ #define DRV_VERSION "2.14.2"
++#endif
+ const char ixgbevf_driver_version[] = DRV_VERSION;
+ static char ixgbevf_copyright[] = "Copyright (c) 2009-2014 Intel Corporation.";
+ 
+@@ -4525,13 +4531,17 @@ static int __devinit ixgbevf_probe(struct pci_dev *pdev,
+ 			   NETIF_F_IP_CSUM |
+ 			   NETIF_F_RXCSUM |
+ #ifdef NETIF_F_HW_VLAN_CTAG_TX
++#if !defined(AMAZON_NOHW_VLAN) /* disabled for Amazon for now */
+ 			   NETIF_F_HW_VLAN_CTAG_TX |
+ 			   NETIF_F_HW_VLAN_CTAG_RX |
++#endif /* no VLAN offload for Amazon */
+ 			   NETIF_F_HW_VLAN_CTAG_FILTER;
+ #endif
+ #ifdef NETIF_F_HW_VLAN_TX
++#if !defined(AMAZON_NOHW_VLAN) /* disabled for Amazon for now */
+ 			   NETIF_F_HW_VLAN_TX |
+ 			   NETIF_F_HW_VLAN_RX |
++#endif /* no VLAN offload for Amazon */
+ 			   NETIF_F_HW_VLAN_FILTER;
+ #endif
+ 
+-- 
+2.7.4
+

@@ -1,0 +1,34 @@
+From 4476ab3b6c67ea8eb58475790b16f2ddbbda5f96 Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Fri, 15 Apr 2016 19:25:45 +0000
+Subject: Revert "virtio-pci: also bind to Amazon PCI vendor ID"
+
+This reverts commit 66805e1198e4fd4c9732353e7eb8d91f3bd312b7.
+
+Revert this to avoid unexpected vendor ID conflicts in the future.
+
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+Reviewed-by: Jonghun Yoo <jhyoo@amazon.de>
+Reviewed-by: Rashika Kheria <rashika@amazon.de>
+
+CR: https://cr.amazon.com/r/5135780/
+---
+ drivers/virtio/virtio_pci_common.c | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/drivers/virtio/virtio_pci_common.c b/drivers/virtio/virtio_pci_common.c
+index 653fd47..2046a68 100644
+--- a/drivers/virtio/virtio_pci_common.c
++++ b/drivers/virtio/virtio_pci_common.c
+@@ -468,8 +468,6 @@ static const struct dev_pm_ops virtio_pci_pm_ops = {
+ /* Qumranet donated their vendor ID for devices 0x1000 thru 0x10FF. */
+ static const struct pci_device_id virtio_pci_id_table[] = {
+ 	{ PCI_DEVICE(0x1af4, PCI_ANY_ID) },
+-	/* Amazon.com vendor ID */
+-	{ PCI_DEVICE(0x1d0f, PCI_ANY_ID) },
+ 	{ 0 }
+ };
+ 
+-- 
+2.7.4
+

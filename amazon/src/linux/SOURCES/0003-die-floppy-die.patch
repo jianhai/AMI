@@ -1,0 +1,35 @@
+From e8426b172af4fa5459ad429fdb932ab7bccdf49f Mon Sep 17 00:00:00 2001
+From: Kyle McMartin <kyle@phobos.i.jkkm.org>
+Date: Tue, 30 Mar 2010 00:04:29 -0400
+Subject: die-floppy-die
+
+Kill the floppy.ko pnp modalias. We were surviving just fine without
+autoloading floppy drivers, tyvm.
+
+Please feel free to register all complaints in the wastepaper bin.
+
+Bugzilla: N/A
+Upstream-status: Fedora mustard
+(cherry picked from commit 374985ebc4d8e2f60dcb67f08bc0a3469dde8de9)
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+---
+ drivers/block/floppy.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/drivers/block/floppy.c b/drivers/block/floppy.c
+index 331363e..43fcb50 100644
+--- a/drivers/block/floppy.c
++++ b/drivers/block/floppy.c
+@@ -4634,8 +4634,7 @@ static const struct pnp_device_id floppy_pnpids[] = {
+ 	{"PNP0700", 0},
+ 	{}
+ };
+-
+-MODULE_DEVICE_TABLE(pnp, floppy_pnpids);
++/* MODULE_DEVICE_TABLE(pnp, floppy_pnpids); */
+ 
+ #else
+ 
+-- 
+2.7.4
+

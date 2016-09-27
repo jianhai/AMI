@@ -1,0 +1,32 @@
+From 10c3e6145899164c16da627077f4b2392d3c2712 Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Wed, 25 May 2016 20:53:27 +0000
+Subject: xen/pvhvm: unplug block devices even if out-of-tree xen-blkfront is
+ loadable
+
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+Reviewed-by: Erik Quanstrom <quanstro@amazon.com>
+Reviewed-by: Stanislav Spassov <stanspas@amazon.de>
+
+CR: https://cr.amazon.com/r/5322127/
+---
+ include/xen/platform_pci.h | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/include/xen/platform_pci.h b/include/xen/platform_pci.h
+index f50a8dd..eba9904 100644
+--- a/include/xen/platform_pci.h
++++ b/include/xen/platform_pci.h
+@@ -39,7 +39,8 @@ static inline int xen_must_unplug_nics(void) {
+ static inline int xen_must_unplug_disks(void) {
+ #if (defined(CONFIG_XEN_BLKDEV_FRONTEND) || \
+ 		defined(CONFIG_XEN_BLKDEV_FRONTEND_MODULE) || \
+-		defined(CONFIG_AMAZON_XEN_BLKDEV_FRONTEND)) && \
++		defined(CONFIG_AMAZON_XEN_BLKDEV_FRONTEND) || \
++		defined(CONFIG_AMAZON_XEN_BLKDEV_FRONTEND_MODULE)) && \
+ 		defined(CONFIG_XEN_PVHVM)
+         return 1;
+ #else
+-- 
+2.7.4
+

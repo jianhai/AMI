@@ -1,0 +1,45 @@
+From 4ebfc85757e59e992aafc49b9b314ee9d9995051 Mon Sep 17 00:00:00 2001
+From: Anthony Liguori <aliguori@amazon.com>
+Date: Wed, 13 Aug 2014 09:22:29 -0700
+Subject: virtio-pci: also bind to Amazon PCI vendor ID
+
+See https://issues.oasis-open.org/browse/VIRTIO-16 although it
+was prematurely closed.
+
+It is not possible to produce Windows drivers for virtio that can
+be published in Windows update because Red Hat controls the vendor ID
+that virtio is using and only provides non-redistributable drivers for
+Windows.
+
+The only option right now is to expose a virtio device with a
+different vendor ID if you want to support Windows with virtio.
+
+Cc: Matt Wilson <msw@amazon.com>
+Cc: Rusty Russell <rusty@rustcorp.com.au>
+Cc: Michael Tsirkin <mst@redhat.com>
+Signed-off-by: Anthony Liguori <aliguori@amazon.com>
+
+Conflicts:
+	drivers/virtio/virtio_pci.c
+
+(cherry picked from commit 7439ef72959c9e7582bff7d5c1d7c6c2f7ab8fa6)
+---
+ drivers/virtio/virtio_pci_common.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/drivers/virtio/virtio_pci_common.c b/drivers/virtio/virtio_pci_common.c
+index 2046a68..653fd47 100644
+--- a/drivers/virtio/virtio_pci_common.c
++++ b/drivers/virtio/virtio_pci_common.c
+@@ -468,6 +468,8 @@ static const struct dev_pm_ops virtio_pci_pm_ops = {
+ /* Qumranet donated their vendor ID for devices 0x1000 thru 0x10FF. */
+ static const struct pci_device_id virtio_pci_id_table[] = {
+ 	{ PCI_DEVICE(0x1af4, PCI_ANY_ID) },
++	/* Amazon.com vendor ID */
++	{ PCI_DEVICE(0x1d0f, PCI_ANY_ID) },
+ 	{ 0 }
+ };
+ 
+-- 
+2.7.4
+

@@ -1,0 +1,110 @@
+From 604121dccc58b97c181fa9db9688af8b1844169b Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Wed, 10 Jun 2015 23:25:44 +0000
+Subject: ixgbevf: minor changes to follow recent kernel API changes
+
+Code-Review: https://cr.amazon.com/r/3822148/
+Tested-by: Munehisa Kamata <kamatam@amazon.com>
+Reviewed-by: Cristian Gafton <gafton@amazon.com>
+(cherry picked from commit b4a2c282523a011d69869fc79b94580887ca0144)
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+---
+ drivers/amazon/ixgbevf/ixgbevf_ethtool.c |  4 ++++
+ drivers/amazon/ixgbevf/ixgbevf_main.c    | 20 ++++++++++----------
+ 2 files changed, 14 insertions(+), 10 deletions(-)
+
+diff --git a/drivers/amazon/ixgbevf/ixgbevf_ethtool.c b/drivers/amazon/ixgbevf/ixgbevf_ethtool.c
+index 436c672..29f105d 100644
+--- a/drivers/amazon/ixgbevf/ixgbevf_ethtool.c
++++ b/drivers/amazon/ixgbevf/ixgbevf_ethtool.c
+@@ -987,6 +987,10 @@ static struct ethtool_ops ixgbevf_ethtool_ops = {
+ 
+ void ixgbevf_set_ethtool_ops(struct net_device *netdev)
+ {
++#ifndef ETHTOOL_OPS_COMPAT
++	netdev->ethtool_ops = &ixgbevf_ethtool_ops;
++#else
+ 	SET_ETHTOOL_OPS(netdev, &ixgbevf_ethtool_ops);
++#endif
+ }
+ #endif /* SIOCETHTOOL */
+diff --git a/drivers/amazon/ixgbevf/ixgbevf_main.c b/drivers/amazon/ixgbevf/ixgbevf_main.c
+index a11aa05..2ba20bb 100644
+--- a/drivers/amazon/ixgbevf/ixgbevf_main.c
++++ b/drivers/amazon/ixgbevf/ixgbevf_main.c
+@@ -123,7 +123,7 @@ static void ixgbevf_service_event_complete(struct ixgbevf_adapter *adapter)
+ 	BUG_ON(!test_bit(__IXGBEVF_SERVICE_SCHED, &adapter->state));
+ 
+ 	/* flush memory to make sure state is correct before next watchdog */
+-	smp_mb__before_clear_bit();
++	smp_mb__before_atomic();
+ 	clear_bit(__IXGBEVF_SERVICE_SCHED, &adapter->state);
+ }
+ 
+@@ -2287,7 +2287,7 @@ static void ixgbevf_up_complete(struct ixgbevf_adapter *adapter)
+ 
+ 	spin_unlock_bh(&adapter->mbx_lock);
+ 
+-	smp_mb__before_clear_bit();
++	smp_mb__before_atomic();
+ 	clear_bit(__IXGBEVF_DOWN, &adapter->state);
+ 	ixgbevf_napi_enable_all(adapter);
+ 
+@@ -4022,8 +4022,8 @@ static int ixgbevf_xmit_frame_ring(struct sk_buff *skb,
+ 	first->gso_segs = 1;
+ 
+ #if defined(NETIF_F_HW_VLAN_TX) || defined(NETIF_F_HW_VLAN_CTAG_TX)
+-	if (vlan_tx_tag_present(skb)) {
+-		tx_flags |= vlan_tx_tag_get(skb);
++	if (skb_vlan_tag_present(skb)) {
++		tx_flags |= skb_vlan_tag_get(skb);
+ 		tx_flags <<= IXGBE_TX_FLAGS_VLAN_SHIFT;
+ 		tx_flags |= IXGBE_TX_FLAGS_VLAN;
+ 	/* else if it is a SW VLAN check the next protocol and store the tag */
+@@ -4242,7 +4242,7 @@ static int ixgbevf_resume(struct pci_dev *pdev)
+ 		dev_err(&pdev->dev, "Cannot enable PCI device from suspend\n");
+ 		return err;
+ 	}
+-	smp_mb__before_clear_bit();
++	smp_mb__before_atomic();
+ 	clear_bit(__IXGBEVF_DISABLED, &adapter->state);
+ 	pci_set_master(pdev);
+ 
+@@ -4286,10 +4286,10 @@ static struct rtnl_link_stats64 *ixgbevf_get_stats64(struct net_device *netdev,
+ 	for (i = 0; i < adapter->num_rx_queues; i++) {
+ 		ring = adapter->rx_ring[i];
+ 		do {
+-			start = u64_stats_fetch_begin_bh(&ring->syncp);
++			start = u64_stats_fetch_begin_irq(&ring->syncp);
+ 			bytes = ring->stats.bytes;
+ 			packets = ring->stats.packets;
+-		} while (u64_stats_fetch_retry_bh(&ring->syncp, start));
++		} while (u64_stats_fetch_retry_irq(&ring->syncp, start));
+ 		stats->rx_bytes += bytes;
+ 		stats->rx_packets += packets;
+ 	}
+@@ -4297,10 +4297,10 @@ static struct rtnl_link_stats64 *ixgbevf_get_stats64(struct net_device *netdev,
+ 	for (i = 0; i < adapter->num_tx_queues; i++) {
+ 		ring = adapter->tx_ring[i];
+ 		do {
+-			start = u64_stats_fetch_begin_bh(&ring->syncp);
++			start = u64_stats_fetch_begin_irq(&ring->syncp);
+ 			bytes = ring->stats.bytes;
+ 			packets = ring->stats.packets;
+-		} while (u64_stats_fetch_retry_bh(&ring->syncp, start));
++		} while (u64_stats_fetch_retry_irq(&ring->syncp, start));
+ 		stats->tx_bytes += bytes;
+ 		stats->tx_packets += packets;
+ 	}
+@@ -4749,7 +4749,7 @@ static pci_ers_result_t ixgbevf_io_slot_reset(struct pci_dev *pdev)
+ 		return PCI_ERS_RESULT_DISCONNECT;
+ 	}
+ 
+-	smp_mb__before_clear_bit();
++	smp_mb__before_atomic();
+ 	clear_bit(__IXGBEVF_DISABLED, &adapter->state);
+ 	pci_set_master(pdev);
+ 
+-- 
+2.7.4
+

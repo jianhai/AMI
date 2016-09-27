@@ -1,0 +1,43 @@
+From fc2a2db261b01eb71fb074c910bc1077593a8a4c Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Fri, 12 Aug 2016 22:39:28 +0000
+Subject: perf scripts: remove references to /usr/bin/python2
+
+This removes dependency on python26.
+
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+Reviewed-by: Vineeth Remanan Pillai <vineethp@amazon.com>
+Reviewed-by: Ben Cressey <bcressey@amazon.com>
+
+CR: https://cr.amazon.com/5718160/
+---
+ tools/perf/scripts/python/call-graph-from-postgresql.py | 2 +-
+ tools/perf/scripts/python/export-to-postgresql.py       | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/tools/perf/scripts/python/call-graph-from-postgresql.py b/tools/perf/scripts/python/call-graph-from-postgresql.py
+index e78fdc2..6e82d4c 100644
+--- a/tools/perf/scripts/python/call-graph-from-postgresql.py
++++ b/tools/perf/scripts/python/call-graph-from-postgresql.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2
++#!/usr/bin/python
+ # call-graph-from-postgresql.py: create call-graph from postgresql database
+ # Copyright (c) 2014, Intel Corporation.
+ #
+diff --git a/tools/perf/scripts/python/export-to-postgresql.py b/tools/perf/scripts/python/export-to-postgresql.py
+index 1b02cdc..dee00e4 100644
+--- a/tools/perf/scripts/python/export-to-postgresql.py
++++ b/tools/perf/scripts/python/export-to-postgresql.py
+@@ -172,7 +172,7 @@ import datetime
+ #		SELECT * FROM samples_view WHERE event = 'transactions' AND branch_type_name = 'transaction abort';
+ #
+ # To print a call stack requires walking the call_paths table.  For example this python script:
+-#   #!/usr/bin/python2
++#   #!/usr/bin/python
+ #
+ #   import sys
+ #   from PySide.QtSql import *
+-- 
+2.7.4
+

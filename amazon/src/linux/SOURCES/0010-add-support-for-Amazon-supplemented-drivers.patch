@@ -1,0 +1,86 @@
+From 35b9c453615db6de9720f661f1cc0e9e11ed17c3 Mon Sep 17 00:00:00 2001
+From: Cristian Gafton <gafton@amazon.com>
+Date: Fri, 20 Sep 2013 05:38:44 +0000
+Subject: add support for Amazon-supplemented drivers
+
+Conflicts:
+	drivers/Kconfig
+	drivers/Makefile
+
+(cherry picked from commit 87c650f1790c4182d38d2f7a2b33801558fb505d)
+Signed-off-by: Cristian Gafton <gafton@amazon.com>
+
+Conflicts:
+	drivers/Kconfig
+	drivers/Makefile
+
+Conflicts:
+	drivers/Kconfig
+	drivers/Makefile
+
+(cherry picked from commit e5a4dff0f37656c62a155ddddf3d419698205e02)
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+---
+ drivers/Kconfig         |  2 ++
+ drivers/Makefile        |  3 +++
+ drivers/amazon/Kconfig  | 15 +++++++++++++++
+ drivers/amazon/Makefile |  3 +++
+ 4 files changed, 23 insertions(+)
+ create mode 100644 drivers/amazon/Kconfig
+ create mode 100644 drivers/amazon/Makefile
+
+diff --git a/drivers/Kconfig b/drivers/Kconfig
+index d2ac339..e66efb1 100644
+--- a/drivers/Kconfig
++++ b/drivers/Kconfig
+@@ -198,4 +198,6 @@ source "drivers/hwtracing/intel_th/Kconfig"
+ 
+ source "drivers/fpga/Kconfig"
+ 
++source "drivers/amazon/Kconfig"
++
+ endmenu
+diff --git a/drivers/Makefile b/drivers/Makefile
+index 795d0ca..7da56ad 100644
+--- a/drivers/Makefile
++++ b/drivers/Makefile
+@@ -172,3 +172,6 @@ obj-$(CONFIG_STM)		+= hwtracing/stm/
+ obj-$(CONFIG_ANDROID)		+= android/
+ obj-$(CONFIG_NVMEM)		+= nvmem/
+ obj-$(CONFIG_FPGA)		+= fpga/
++
++# Amazon driver updates
++obj-$(CONFIG_VENDOR_AMAZON)	+= amazon/
+diff --git a/drivers/amazon/Kconfig b/drivers/amazon/Kconfig
+new file mode 100644
+index 0000000..dc328c4
+--- /dev/null
++++ b/drivers/amazon/Kconfig
+@@ -0,0 +1,15 @@
++#
++# Intel network device configuration
++#
++
++config VENDOR_AMAZON
++	bool "Amazon Driver Updates"
++	default y
++	depends on PCI || EXPERIMENTAL
++	---help---
++	  Amazon Driver Updates are newer versions of some of the drivers
++	  present in the stable kernel trees.
++
++if VENDOR_AMAZON
++
++endif # VENDOR_AMAZON
+diff --git a/drivers/amazon/Makefile b/drivers/amazon/Makefile
+new file mode 100644
+index 0000000..84fcbba
+--- /dev/null
++++ b/drivers/amazon/Makefile
+@@ -0,0 +1,3 @@
++# Amazon Driver Updates
++
++########################
+-- 
+2.7.4
+

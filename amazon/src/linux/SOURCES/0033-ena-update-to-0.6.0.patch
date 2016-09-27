@@ -1,0 +1,988 @@
+From 495d8b68aa3193cf052d6f0c1ef2b2e2b5664caa Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Fri, 15 Apr 2016 01:21:40 +0000
+Subject: ena: update to 0.6.0
+
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+Reviewed-by: Netanel Belgazal <netanel@annapurnalabs.com>
+Reviewed-by: Rashika Kheria <rashika@amazon.de>
+Reviewed-by: Matt Nierzwicki <nierzwic@amazon.com>
+
+CR: https://cr.amazon.com/r/5132188/
+---
+ drivers/amazon/ena/ena_admin_defs.h  |  20 +--
+ drivers/amazon/ena/ena_com.c         |  90 ++++++-----
+ drivers/amazon/ena/ena_com.h         |  30 ++--
+ drivers/amazon/ena/ena_eth_com.h     |  14 ++
+ drivers/amazon/ena/ena_eth_io_defs.h |  17 +++
+ drivers/amazon/ena/ena_netdev.c      | 287 ++++++++++++++++++++---------------
+ drivers/amazon/ena/ena_netdev.h      |  12 +-
+ 7 files changed, 278 insertions(+), 192 deletions(-)
+
+diff --git a/drivers/amazon/ena/ena_admin_defs.h b/drivers/amazon/ena/ena_admin_defs.h
+index d834156..e0dc371 100644
+--- a/drivers/amazon/ena/ena_admin_defs.h
++++ b/drivers/amazon/ena/ena_admin_defs.h
+@@ -128,11 +128,6 @@ enum ena_admin_aq_feature_id {
+ 	/* VLAN membership, frame format, etc.  */
+ 	ENA_ADMIN_VLAN_CONFIG = 6,
+ 
+-	/* Available size for various on-chip memory resources, accessible
+-	 * by the driver
+-	 */
+-	ENA_ADMIN_ON_DEVICE_MEMORY_CONFIG = 7,
+-
+ 	/* Receive Side Scaling (RSS) function */
+ 	ENA_ADMIN_RSS_HASH_FUNCTION = 10,
+ 
+@@ -438,9 +433,7 @@ struct ena_admin_acq_create_sq_resp_desc {
+ 
+ 	u16 reserved;
+ 
+-	/* word 3 : queue doorbell address as and offset to PCIe MMIO REG
+-	 * BAR
+-	 */
++	/* word 3 : queue doorbell address as an offset to PCIe MMIO REG BAR */
+ 	u32 sq_doorbell_offset;
+ 
+ 	/* word 4 : low latency queue ring base address as an offset to
+@@ -515,21 +508,20 @@ struct ena_admin_acq_create_cq_resp_desc {
+ 	/* cq identifier */
+ 	u16 cq_idx;
+ 
+-	/* actual cq depth in # of entries */
+-	u16 cq_actual_depth;
++	u16 reserved;
+ 
+-	/* word 3 : doorbell address as an offset to PCIe MMIO REG BAR */
+-	u32 cq_doorbell_offset;
++	/* word 3 : cpu numa node address as an offset to PCIe MMIO REG BAR */
++	u32 numa_node_register_offset;
+ 
+ 	/* word 4 : completion head doorbell address as an offset to PCIe
+ 	 * MMIO REG BAR
+ 	 */
+-	u32 cq_head_db_offset;
++	u32 cq_head_db_register_offset;
+ 
+ 	/* word 5 : interrupt unmask register address as an offset into
+ 	 * PCIe MMIO REG BAR
+ 	 */
+-	u32 cq_interrupt_unmask_register;
++	u32 cq_interrupt_unmask_register_offset;
+ };
+ 
+ /* ENA AQ Destroy Completion Queue command. Placed in control buffer
+diff --git a/drivers/amazon/ena/ena_com.c b/drivers/amazon/ena/ena_com.c
+index b1e75920..be3ae12 100644
+--- a/drivers/amazon/ena/ena_com.c
++++ b/drivers/amazon/ena/ena_com.c
+@@ -311,9 +311,11 @@ static struct ena_comp_ctx *ena_com_submit_admin_cmd(struct ena_com_admin_queue
+ }
+ 
+ static int ena_com_init_io_sq(struct ena_com_dev *ena_dev,
++			      struct ena_com_create_io_ctx *ctx,
+ 			      struct ena_com_io_sq *io_sq)
+ {
+ 	size_t size;
++	int dev_node;
+ 
+ 	memset(&io_sq->desc_addr, 0x0, sizeof(struct ena_com_io_desc_addr));
+ 
+@@ -324,15 +326,31 @@ static int ena_com_init_io_sq(struct ena_com_dev *ena_dev,
+ 
+ 	size = io_sq->desc_entry_size * io_sq->q_depth;
+ 
+-	if (io_sq->mem_queue_type == ENA_ADMIN_PLACEMENT_POLICY_HOST)
++	if (io_sq->mem_queue_type == ENA_ADMIN_PLACEMENT_POLICY_HOST) {
++		dev_node = dev_to_node(ena_dev->dmadev);
++		set_dev_node(ena_dev->dmadev, ctx->numa_node);
+ 		io_sq->desc_addr.virt_addr =
+ 			dma_alloc_coherent(ena_dev->dmadev,
+ 					   size,
+ 					   &io_sq->desc_addr.phys_addr,
+ 					   GFP_KERNEL | __GFP_ZERO);
+-	else
++		set_dev_node(ena_dev->dmadev, dev_node);
++		if (!io_sq->desc_addr.virt_addr)
++			io_sq->desc_addr.virt_addr =
++				dma_alloc_coherent(ena_dev->dmadev,
++						   size,
++						   &io_sq->desc_addr.phys_addr,
++						   GFP_KERNEL | __GFP_ZERO);
++	} else {
++		dev_node = dev_to_node(ena_dev->dmadev);
++		set_dev_node(ena_dev->dmadev, dev_node);
+ 		io_sq->desc_addr.virt_addr =
+ 			devm_kzalloc(ena_dev->dmadev, size, GFP_KERNEL);
++		set_dev_node(ena_dev->dmadev, dev_node);
++		if (!io_sq->desc_addr.virt_addr)
++			io_sq->desc_addr.virt_addr =
++				devm_kzalloc(ena_dev->dmadev, size, GFP_KERNEL);
++	}
+ 
+ 	if (!io_sq->desc_addr.virt_addr) {
+ 		ena_trc_err("memory allocation failed");
+@@ -347,9 +365,11 @@ static int ena_com_init_io_sq(struct ena_com_dev *ena_dev,
+ }
+ 
+ static int ena_com_init_io_cq(struct ena_com_dev *ena_dev,
++			      struct ena_com_create_io_ctx *ctx,
+ 			      struct ena_com_io_cq *io_cq)
+ {
+ 	size_t size;
++	int prev_node;
+ 
+ 	memset(&io_cq->cdesc_addr, 0x0, sizeof(struct ena_com_io_desc_addr));
+ 
+@@ -361,11 +381,21 @@ static int ena_com_init_io_cq(struct ena_com_dev *ena_dev,
+ 
+ 	size = io_cq->cdesc_entry_size_in_bytes * io_cq->q_depth;
+ 
++	prev_node = dev_to_node(ena_dev->dmadev);
++	set_dev_node(ena_dev->dmadev, ctx->numa_node);
+ 	io_cq->cdesc_addr.virt_addr =
+ 		dma_alloc_coherent(ena_dev->dmadev,
+ 				   size,
+ 				   &io_cq->cdesc_addr.phys_addr,
+ 				   GFP_KERNEL | __GFP_ZERO);
++	set_dev_node(ena_dev->dmadev, prev_node);
++	if (!io_cq->cdesc_addr.virt_addr) {
++		io_cq->cdesc_addr.virt_addr =
++			dma_alloc_coherent(ena_dev->dmadev,
++					   size,
++					   &io_cq->cdesc_addr.phys_addr,
++					   GFP_KERNEL | __GFP_ZERO);
++	}
+ 
+ 	if (!io_cq->cdesc_addr.virt_addr) {
+ 		ena_trc_err("memory allocation failed");
+@@ -1158,23 +1188,19 @@ int ena_com_create_io_cq(struct ena_com_dev *ena_dev,
+ 	}
+ 
+ 	io_cq->idx = cmd_completion.cq_idx;
+-	io_cq->db_addr = (u32 __iomem *)((uintptr_t)ena_dev->reg_bar +
+-		cmd_completion.cq_doorbell_offset);
+-
+-	if (io_cq->q_depth != cmd_completion.cq_actual_depth) {
+-		ena_trc_err("completion actual queue size (%d) is differ from requested size (%d)\n",
+-			    cmd_completion.cq_actual_depth, io_cq->q_depth);
+-		ena_com_destroy_io_cq(ena_dev, io_cq);
+-		return -ENOSPC;
+-	}
+ 
+ 	io_cq->unmask_reg = (u32 __iomem *)((uintptr_t)ena_dev->reg_bar +
+-		cmd_completion.cq_interrupt_unmask_register);
++		cmd_completion.cq_interrupt_unmask_register_offset);
+ 
+-	if (cmd_completion.cq_head_db_offset)
++	if (cmd_completion.cq_head_db_register_offset)
+ 		io_cq->cq_head_db_reg =
+ 			(u32 __iomem *)((uintptr_t)ena_dev->reg_bar +
+-			cmd_completion.cq_head_db_offset);
++			cmd_completion.cq_head_db_register_offset);
++
++	if (cmd_completion.numa_node_register_offset)
++		io_cq->numa_node_cfg_reg =
++			(u32 __iomem *)((uintptr_t)ena_dev->reg_bar +
++			cmd_completion.numa_node_register_offset);
+ 
+ 	ena_trc_dbg("created cq[%u], depth[%u]\n", io_cq->idx, io_cq->q_depth);
+ 
+@@ -1583,50 +1609,46 @@ error:
+ }
+ 
+ int ena_com_create_io_queue(struct ena_com_dev *ena_dev,
+-			    u16 qid,
+-			    enum queue_direction direction,
+-			    enum ena_admin_placement_policy_type mem_queue_type,
+-			    u32 msix_vector,
+-			    u16 queue_size)
++			    struct ena_com_create_io_ctx *ctx)
+ {
+ 	struct ena_com_io_sq *io_sq;
+ 	struct ena_com_io_cq *io_cq;
+ 	int ret = 0;
+ 
+-	if (qid >= ENA_TOTAL_NUM_QUEUES) {
++	if (ctx->qid >= ENA_TOTAL_NUM_QUEUES) {
+ 		ena_trc_err("Qid (%d) is bigger than max num of queues (%d)\n",
+-			    qid, ENA_TOTAL_NUM_QUEUES);
++			    ctx->qid, ENA_TOTAL_NUM_QUEUES);
+ 		return -EINVAL;
+ 	}
+ 
+-	io_sq = &ena_dev->io_sq_queues[qid];
+-	io_cq = &ena_dev->io_cq_queues[qid];
++	io_sq = &ena_dev->io_sq_queues[ctx->qid];
++	io_cq = &ena_dev->io_cq_queues[ctx->qid];
+ 
+ 	memset(io_sq, 0x0, sizeof(struct ena_com_io_sq));
+ 	memset(io_cq, 0x0, sizeof(struct ena_com_io_cq));
+ 
+ 	/* Init CQ */
+-	io_cq->q_depth = queue_size;
+-	io_cq->direction = direction;
+-	io_cq->qid = qid;
++	io_cq->q_depth = ctx->queue_size;
++	io_cq->direction = ctx->direction;
++	io_cq->qid = ctx->qid;
+ 
+-	io_cq->msix_vector = msix_vector;
++	io_cq->msix_vector = ctx->msix_vector;
+ 
+-	io_sq->q_depth = queue_size;
+-	io_sq->direction = direction;
+-	io_sq->qid = qid;
++	io_sq->q_depth = ctx->queue_size;
++	io_sq->direction = ctx->direction;
++	io_sq->qid = ctx->qid;
+ 
+-	io_sq->mem_queue_type = mem_queue_type;
++	io_sq->mem_queue_type = ctx->mem_queue_type;
+ 
+-	if (direction == ENA_COM_IO_QUEUE_DIRECTION_TX)
++	if (ctx->direction == ENA_COM_IO_QUEUE_DIRECTION_TX)
+ 		/* header length is limited to 8 bits */
+ 		io_sq->tx_max_header_size =
+ 			min_t(u32, ena_dev->tx_max_header_size, SZ_256);
+ 
+-	ret = ena_com_init_io_sq(ena_dev, io_sq);
++	ret = ena_com_init_io_sq(ena_dev, ctx, io_sq);
+ 	if (ret)
+ 		goto error;
+-	ret = ena_com_init_io_cq(ena_dev, io_cq);
++	ret = ena_com_init_io_cq(ena_dev, ctx, io_cq);
+ 	if (ret)
+ 		goto error;
+ 
+diff --git a/drivers/amazon/ena/ena_com.h b/drivers/amazon/ena/ena_com.h
+index d0203fe..105cc3e 100644
+--- a/drivers/amazon/ena/ena_com.h
++++ b/drivers/amazon/ena/ena_com.h
+@@ -158,14 +158,15 @@ struct ena_com_tx_meta {
+ struct ena_com_io_cq {
+ 	struct ena_com_io_desc_addr cdesc_addr;
+ 
+-	u32 __iomem *db_addr;
+-
+ 	/* Interrupt unmask register */
+ 	u32 __iomem *unmask_reg;
+ 
+ 	/* The completion queue head doorbell register */
+ 	u32 __iomem *cq_head_db_reg;
+ 
++	/* numa configuration register (for TPH) */
++	u32 __iomem *numa_node_cfg_reg;
++
+ 	/* The value to write to the above register to unmask
+ 	 * the interrupt of this queue
+ 	 */
+@@ -352,6 +353,15 @@ struct ena_com_dev_get_features_ctx {
+ 	struct ena_admin_feature_offload_desc offload;
+ };
+ 
++struct ena_com_create_io_ctx {
++	enum ena_admin_placement_policy_type mem_queue_type;
++	enum queue_direction direction;
++	int numa_node;
++	u32 msix_vector;
++	u16 queue_size;
++	u16 qid;
++};
++
+ typedef void (*ena_aenq_handler)(void *data,
+ 	struct ena_admin_aenq_entry *aenq_e);
+ 
+@@ -426,22 +436,14 @@ int ena_com_dev_reset(struct ena_com_dev *ena_dev);
+ 
+ /* ena_com_create_io_queue - Create io queue.
+  * @ena_dev: ENA communication layer struct
+- * @qid - the caller virtual queue id.
+- * @direction - the queue direction (Rx/Tx)
+- * @mem_queue_type - Indicate if this queue is LLQ or regular queue
+- * (relevant only for Tx queue)
+- * @msix_vector - MSI-X vector
+- * @queue_size - queue size
++ * ena_com_create_io_ctx - create context structure
+  *
+- * Create the submission and the completion queues for queue id - qid.
++ * Create the submission and the completion queues.
+  *
+  * @return - 0 on success, negative value on failure.
+  */
+-int ena_com_create_io_queue(struct ena_com_dev *ena_dev, u16 qid,
+-			    enum queue_direction direction,
+-			    enum ena_admin_placement_policy_type mem_queue_type,
+-			    u32 msix_vector,
+-			    u16 queue_size);
++int ena_com_create_io_queue(struct ena_com_dev *ena_dev,
++			    struct ena_com_create_io_ctx *ctx);
+ 
+ /* ena_com_admin_destroy - Destroy IO queue with the queue id - qid.
+  * @ena_dev: ENA communication layer struct
+diff --git a/drivers/amazon/ena/ena_eth_com.h b/drivers/amazon/ena/ena_eth_com.h
+index 9570944..0d50aa4 100644
+--- a/drivers/amazon/ena/ena_eth_com.h
++++ b/drivers/amazon/ena/ena_eth_com.h
+@@ -138,6 +138,20 @@ static inline int ena_com_update_dev_comp_head(struct ena_com_io_cq *io_cq)
+ 	return 0;
+ }
+ 
++static inline void ena_com_update_numa_node(struct ena_com_io_cq *io_cq,
++					    u8 numa_node)
++{
++	struct ena_eth_io_numa_node_cfg_reg numa_cfg;
++
++	if (!io_cq->numa_node_cfg_reg)
++		return;
++
++	numa_cfg.numa_cfg = (numa_node & ENA_ETH_IO_NUMA_NODE_CFG_REG_NUMA_MASK)
++		| ENA_ETH_IO_NUMA_NODE_CFG_REG_ENABLED_MASK;
++
++	writel(numa_cfg.numa_cfg, io_cq->numa_node_cfg_reg);
++}
++
+ static inline void ena_com_comp_ack(struct ena_com_io_sq *io_sq, u16 elem)
+ {
+ 	io_sq->next_to_comp += elem;
+diff --git a/drivers/amazon/ena/ena_eth_io_defs.h b/drivers/amazon/ena/ena_eth_io_defs.h
+index bfbb2b2..34fd33d 100644
+--- a/drivers/amazon/ena/ena_eth_io_defs.h
++++ b/drivers/amazon/ena/ena_eth_io_defs.h
+@@ -379,6 +379,16 @@ struct ena_eth_io_intr_reg {
+ 	u32 intr_control;
+ };
+ 
++/* ENA NUMA Node configuration register */
++struct ena_eth_io_numa_node_cfg_reg {
++	/* word 0 : */
++	/* 7:0 : numa
++	 * 30:8 : resrved
++	 * 31 : enabled
++	 */
++	u32 numa_cfg;
++};
++
+ /* tx_desc */
+ #define ENA_ETH_IO_TX_DESC_LENGTH_MASK GENMASK(15, 0)
+ #define ENA_ETH_IO_TX_DESC_REQ_ID_HI_SHIFT 16
+@@ -506,4 +516,11 @@ struct ena_eth_io_intr_reg {
+ #define ENA_ETH_IO_INTR_REG_INTR_UNMASK_SHIFT 30
+ #define ENA_ETH_IO_INTR_REG_INTR_UNMASK_MASK BIT(30)
+ 
++/* numa_node_cfg_reg */
++#define ENA_ETH_IO_NUMA_NODE_CFG_REG_NUMA_MASK GENMASK(7, 0)
++#define ENA_ETH_IO_NUMA_NODE_CFG_REG_RESRVED_SHIFT 8
++#define ENA_ETH_IO_NUMA_NODE_CFG_REG_RESRVED_MASK GENMASK(30, 8)
++#define ENA_ETH_IO_NUMA_NODE_CFG_REG_ENABLED_SHIFT 31
++#define ENA_ETH_IO_NUMA_NODE_CFG_REG_ENABLED_MASK BIT(31)
++
+ #endif /*_ENA_ETH_IO_H_ */
+diff --git a/drivers/amazon/ena/ena_netdev.c b/drivers/amazon/ena/ena_netdev.c
+index f1452b8..e792247 100644
+--- a/drivers/amazon/ena/ena_netdev.c
++++ b/drivers/amazon/ena/ena_netdev.c
+@@ -40,6 +40,7 @@
+ #include <linux/kernel.h>
+ #include <linux/module.h>
+ #include <linux/moduleparam.h>
++#include <linux/numa.h>
+ #include <linux/pci.h>
+ #include <linux/utsname.h>
+ #include <linux/version.h>
+@@ -171,6 +172,7 @@ static void ena_init_io_rings_common(struct ena_adapter *adapter,
+ 	ring->ena_dev = adapter->ena_dev;
+ 	ring->per_napi_packets = 0;
+ 	ring->per_napi_bytes = 0;
++	ring->cpu = 0;
+ 	u64_stats_init(&ring->syncp);
+ }
+ 
+@@ -214,7 +216,8 @@ static void ena_init_io_rings(struct ena_adapter *adapter)
+ static int ena_setup_tx_resources(struct ena_adapter *adapter, int qid)
+ {
+ 	struct ena_ring *tx_ring = &adapter->tx_ring[qid];
+-	int size, i;
++	struct ena_irq *ena_irq = &adapter->irq_tbl[ENA_IO_IRQ_IDX(qid)];
++	int size, i, node;
+ 
+ 	if (tx_ring->tx_buffer_info) {
+ 		netif_err(adapter, ifup,
+@@ -223,16 +226,23 @@ static int ena_setup_tx_resources(struct ena_adapter *adapter, int qid)
+ 	}
+ 
+ 	size = sizeof(struct ena_tx_buffer) * tx_ring->ring_size;
++	node = cpu_to_node(ena_irq->cpu);
+ 
+-	tx_ring->tx_buffer_info = vzalloc(size);
+-	if (!tx_ring->tx_buffer_info)
+-		return -ENOMEM;
++	tx_ring->tx_buffer_info = vzalloc_node(size, node);
++	if (!tx_ring->tx_buffer_info) {
++		tx_ring->tx_buffer_info = vzalloc(size);
++		if (!tx_ring->tx_buffer_info)
++			return -ENOMEM;
++	}
+ 
+ 	size = sizeof(u16) * tx_ring->ring_size;
+-	tx_ring->free_tx_ids = vzalloc(size);
++	tx_ring->free_tx_ids = vzalloc_node(size, node);
+ 	if (!tx_ring->free_tx_ids) {
+-		vfree(tx_ring->tx_buffer_info);
+-		return -ENOMEM;
++		tx_ring->free_tx_ids = vzalloc(size);
++		if (!tx_ring->free_tx_ids) {
++			vfree(tx_ring->tx_buffer_info);
++			return -ENOMEM;
++		}
+ 	}
+ 
+ 	/* Req id ring for TX out of order completions */
+@@ -244,6 +254,7 @@ static int ena_setup_tx_resources(struct ena_adapter *adapter, int qid)
+ 
+ 	tx_ring->next_to_use = 0;
+ 	tx_ring->next_to_clean = 0;
++	tx_ring->cpu = ena_irq->cpu;
+ 	return 0;
+ }
+ 
+@@ -315,7 +326,8 @@ static int ena_setup_rx_resources(struct ena_adapter *adapter,
+ 				  u32 qid)
+ {
+ 	struct ena_ring *rx_ring = &adapter->rx_ring[qid];
+-	int size;
++	struct ena_irq *ena_irq = &adapter->irq_tbl[ENA_IO_IRQ_IDX(qid)];
++	int size, node;
+ 
+ 	if (rx_ring->rx_buffer_info) {
+ 		netif_err(adapter, ifup, adapter->netdev,
+@@ -324,21 +336,26 @@ static int ena_setup_rx_resources(struct ena_adapter *adapter,
+ 	}
+ 
+ 	size = sizeof(struct ena_rx_buffer) * rx_ring->ring_size;
++	node = cpu_to_node(ena_irq->cpu);
+ 
+ 	/* alloc extra element so in rx path
+ 	 * we can always prefetch rx_info + 1
+ 	 */
+ 	size += sizeof(struct ena_rx_buffer);
+ 
+-	rx_ring->rx_buffer_info = vzalloc(size);
+-	if (!rx_ring->rx_buffer_info)
+-		return -ENOMEM;
++	rx_ring->rx_buffer_info = vzalloc_node(size, node);
++	if (!rx_ring->rx_buffer_info) {
++		rx_ring->rx_buffer_info = vzalloc(size);
++		if (!rx_ring->rx_buffer_info)
++			return -ENOMEM;
++	}
+ 
+ 	/* Reset rx statistics */
+ 	memset(&rx_ring->rx_stats, 0x0, sizeof(rx_ring->rx_stats));
+ 
+ 	rx_ring->next_to_clean = 0;
+ 	rx_ring->next_to_use = 0;
++	rx_ring->cpu = ena_irq->cpu;
+ 
+ 	return 0;
+ }
+@@ -399,77 +416,64 @@ static void ena_free_all_io_rx_resources(struct ena_adapter *adapter)
+ 		ena_free_rx_resources(adapter, i);
+ }
+ 
+-static inline int ena_alloc_rx_frag(struct ena_ring *rx_ring,
+-				    struct ena_rx_buffer *rx_info)
++static inline int ena_alloc_rx_page(struct ena_ring *rx_ring,
++		struct ena_rx_buffer *rx_info, gfp_t gfp)
+ {
+ 	struct ena_com_buf *ena_buf;
++	struct page *page;
+ 	dma_addr_t dma;
+-	u8 *data;
+-	u32 frame_size;
+ 
+-	/* if previous allocated frag is not used */
+-	if (rx_info->data)
++	/* if previous allocated page is not used */
++	if (unlikely(rx_info->page != NULL))
+ 		return 0;
+ 
+-	/* Limit the buffer to 1 page */
+-	frame_size = (rx_ring->mtu + ETH_HLEN + ETH_FCS_LEN + VLAN_HLEN);
+-	rx_info->data_size = min_t(u32, frame_size, PAGE_SIZE);
+-
+-	rx_info->data_size = max_t(u32,
+-				   rx_info->data_size,
+-				   ENA_DEFAULT_MIN_RX_BUFF_ALLOC_SIZE);
+-
+-	rx_info->frag_size =
+-		SKB_DATA_ALIGN(rx_info->data_size + NET_IP_ALIGN) +
+-		SKB_DATA_ALIGN(sizeof(struct skb_shared_info));
+-	data = netdev_alloc_frag(rx_info->frag_size);
+-
+-	if (unlikely(!data)) {
++	page = alloc_page(gfp);
++	if (unlikely(!page)) {
+ 		u64_stats_update_begin(&rx_ring->syncp);
+-		rx_ring->rx_stats.skb_alloc_fail++;
++		rx_ring->rx_stats.page_alloc_fail++;
+ 		u64_stats_update_end(&rx_ring->syncp);
+ 		return -ENOMEM;
+ 	}
+ 
+-	dma = dma_map_single(rx_ring->dev, data + NET_IP_ALIGN,
+-			     rx_info->data_size, DMA_FROM_DEVICE);
++	dma = dma_map_page(rx_ring->dev, page, 0, PAGE_SIZE,
++			   DMA_FROM_DEVICE);
+ 	if (unlikely(dma_mapping_error(rx_ring->dev, dma))) {
+ 		u64_stats_update_begin(&rx_ring->syncp);
+ 		rx_ring->rx_stats.dma_mapping_err++;
+ 		u64_stats_update_end(&rx_ring->syncp);
+-		put_page(virt_to_head_page(data));
++
++		__free_page(page);
+ 		return -EIO;
+ 	}
+-
+ 	netif_dbg(rx_ring->adapter, rx_status, rx_ring->netdev,
+-		  "alloc frag %p, rx_info %p len %x skb size %x\n", data,
+-		  rx_info, rx_info->data_size, rx_info->frag_size);
+-
+-	rx_info->data = data;
++		  "alloc page %p, rx_info %p\n", page, rx_info);
+ 
+-	rx_info->page = virt_to_head_page(rx_info->data);
+-	rx_info->page_offset = (uintptr_t)rx_info->data
+-		- (uintptr_t)page_address(rx_info->page);
++	rx_info->page = page;
++	rx_info->page_offset = 0;
+ 	ena_buf = &rx_info->ena_buf;
+ 	ena_buf->paddr = dma;
+-	ena_buf->len = rx_info->data_size;
++	ena_buf->len = PAGE_SIZE;
++
+ 	return 0;
+ }
+ 
+-static void ena_free_rx_frag(struct ena_ring *rx_ring,
+-			     struct ena_rx_buffer *rx_info)
++static void ena_free_rx_page(struct ena_ring *rx_ring,
++	struct ena_rx_buffer *rx_info)
+ {
+-	u8 *data = rx_info->data;
++	struct page *page = rx_info->page;
+ 	struct ena_com_buf *ena_buf = &rx_info->ena_buf;
+ 
+-	if (!data)
++	if (unlikely(!page)) {
++		netif_warn(rx_ring->adapter, rx_err, rx_ring->netdev,
++			   "Trying to free unallocated buffer\n");
+ 		return;
++	}
+ 
+-	dma_unmap_single(rx_ring->dev, ena_buf->paddr,
+-			 rx_info->data_size, DMA_FROM_DEVICE);
++	dma_unmap_page(rx_ring->dev, ena_buf->paddr, PAGE_SIZE,
++		       DMA_FROM_DEVICE);
+ 
+-	put_page(virt_to_head_page(data));
+-	rx_info->data = NULL;
++	__free_page(page);
++	rx_info->page = NULL;
+ }
+ 
+ static int ena_refill_rx_bufs(struct ena_ring *rx_ring, u32 num)
+@@ -484,8 +488,8 @@ static int ena_refill_rx_bufs(struct ena_ring *rx_ring, u32 num)
+ 		struct ena_rx_buffer *rx_info =
+ 			&rx_ring->rx_buffer_info[next_to_use];
+ 
+-		if (unlikely(
+-			ena_alloc_rx_frag(rx_ring, rx_info) < 0)) {
++		if (unlikely(ena_alloc_rx_page(rx_ring, rx_info,
++			__GFP_COLD | GFP_ATOMIC | __GFP_COMP) < 0)) {
+ 			netif_warn(rx_ring->adapter, rx_err, rx_ring->netdev,
+ 				   "failed to alloc buffer for rx queue %d\n",
+ 				   rx_ring->qid);
+@@ -535,8 +539,8 @@ static void ena_free_rx_bufs(struct ena_adapter *adapter,
+ 	for (i = 0; i < rx_ring->ring_size; i++) {
+ 		struct ena_rx_buffer *rx_info = &rx_ring->rx_buffer_info[i];
+ 
+-		if (rx_info->data)
+-			ena_free_rx_frag(rx_ring, rx_info);
++		if (rx_info->page)
++			ena_free_rx_page(rx_ring, rx_info);
+ 	}
+ }
+ 
+@@ -793,93 +797,84 @@ static struct sk_buff *ena_rx_skb(struct ena_ring *rx_ring,
+ 		&rx_ring->rx_buffer_info[*next_to_clean];
+ 	u32 len;
+ 	u32 buf = 0;
+-
+-	ENA_ASSERT(rx_info->data, "Invalid alloc frag buffer\n");
++	void *va;
+ 
+ 	len = ena_bufs[0].len;
+-	netif_dbg(rx_ring->adapter, rx_status, rx_ring->netdev,
+-		  "rx_info %p data %p\n", rx_info, rx_info->data);
++	ENA_ASSERT(rx_info->page, "page is NULL\n");
+ 
+-	ENA_ASSERT(len > 0, "pkt length is 0\n");
++	netif_dbg(rx_ring->adapter, rx_status, rx_ring->netdev,
++		  "rx_info %p page %p\n",
++		  rx_info, rx_info->page);
+ 
+-	prefetch(rx_info->data + NET_IP_ALIGN);
++	/* save virt address of first buffer */
++	va = page_address(rx_info->page) + rx_info->page_offset;
++	prefetch(va + NET_IP_ALIGN);
+ 
+ 	if (len <= rx_ring->rx_small_copy_len) {
+-		netif_dbg(rx_ring->adapter, rx_status, rx_ring->netdev,
+-			  "rx small packet. len %d\n", len);
+-
+ 		skb = netdev_alloc_skb_ip_align(rx_ring->netdev,
+ 						rx_ring->rx_small_copy_len);
+ 		if (unlikely(!skb)) {
+ 			u64_stats_update_begin(&rx_ring->syncp);
+ 			rx_ring->rx_stats.skb_alloc_fail++;
+ 			u64_stats_update_end(&rx_ring->syncp);
++			netif_err(rx_ring->adapter, rx_err, rx_ring->netdev,
++				  "Failed to allocate skb\n");
+ 			return NULL;
+ 		}
+ 
+-		pci_dma_sync_single_for_cpu(rx_ring->pdev,
+-					    dma_unmap_addr(&rx_info->ena_buf, paddr),
+-					    len,
+-					    DMA_FROM_DEVICE);
+-		skb_copy_to_linear_data(skb, rx_info->data + NET_IP_ALIGN, len);
+-		pci_dma_sync_single_for_device(rx_ring->pdev,
+-					       dma_unmap_addr(&rx_info->ena_buf, paddr),
+-					       len,
+-					       DMA_FROM_DEVICE);
++		netif_dbg(rx_ring->adapter, rx_status, rx_ring->netdev,
++			  "rx allocaed small packet. len %d. data_len %d\n",
++			  skb->len, skb->data_len);
++
++		/* sync this buffer for CPU use */
++		dma_sync_single_for_cpu(rx_ring->dev,
++					dma_unmap_addr(&rx_info->ena_buf, paddr),
++					len,
++					DMA_FROM_DEVICE);
++		skb_copy_to_linear_data(skb, va, len);
++		dma_sync_single_for_device(rx_ring->dev,
++					   dma_unmap_addr(&rx_info->ena_buf, paddr),
++					   len,
++					   DMA_FROM_DEVICE);
++
+ 		skb_put(skb, len);
+ 		skb->protocol = eth_type_trans(skb, rx_ring->netdev);
+-		*next_to_clean = ENA_RX_RING_IDX_NEXT(*next_to_clean,
+-						      rx_ring->ring_size);
++		*next_to_clean = ENA_RX_RING_IDX_ADD(*next_to_clean, descs,
++						     rx_ring->ring_size);
+ 		return skb;
+ 	}
+ 
+-	dma_unmap_single(rx_ring->dev, dma_unmap_addr(&rx_info->ena_buf, paddr),
+-			 rx_info->data_size, DMA_FROM_DEVICE);
+-
+ 	skb = napi_get_frags(rx_ring->napi);
+ 	if (unlikely(!skb)) {
++		netif_dbg(rx_ring->adapter, rx_status, rx_ring->netdev,
++			  "Failed allocating skb\n");
+ 		u64_stats_update_begin(&rx_ring->syncp);
+ 		rx_ring->rx_stats.skb_alloc_fail++;
+ 		u64_stats_update_end(&rx_ring->syncp);
+ 		return NULL;
+ 	}
+ 
+-	skb_fill_page_desc(skb, skb_shinfo(skb)->nr_frags, rx_info->page,
+-			   rx_info->page_offset + NET_IP_ALIGN, len);
+-
+-	skb->len += len;
+-	skb->data_len += len;
+-	skb->truesize += len;
+-
+-	netif_dbg(rx_ring->adapter, rx_status, rx_ring->netdev,
+-		  "rx skb updated. len %d. data_len %d\n",
+-		  skb->len, skb->data_len);
+-
+-	rx_info->data = NULL;
+-	*next_to_clean = ENA_RX_RING_IDX_NEXT(*next_to_clean,
+-					      rx_ring->ring_size);
+-
+-	while (--descs) {
+-		rx_info = &rx_ring->rx_buffer_info[*next_to_clean];
+-		len = ena_bufs[++buf].len;
+-
+-		dma_unmap_single(rx_ring->dev,
+-				 dma_unmap_addr(&rx_info->ena_buf, paddr),
+-				 rx_info->data_size, DMA_FROM_DEVICE);
++	do {
++		dma_unmap_page(rx_ring->dev,
++			       dma_unmap_addr(&rx_info->ena_buf, paddr),
++			       PAGE_SIZE, DMA_FROM_DEVICE);
+ 
+ 		skb_add_rx_frag(skb, skb_shinfo(skb)->nr_frags, rx_info->page,
+-				rx_info->page_offset + NET_IP_ALIGN, len,
+-				rx_info->data_size);
++				rx_info->page_offset, len, PAGE_SIZE);
+ 
+ 		netif_dbg(rx_ring->adapter, rx_status, rx_ring->netdev,
+ 			  "rx skb updated. len %d. data_len %d\n",
+ 			  skb->len, skb->data_len);
+ 
+-		rx_info->data = NULL;
+-
+-		*next_to_clean = ENA_RX_RING_IDX_NEXT(*next_to_clean,
+-						      rx_ring->ring_size);
+-	}
++		rx_info->page = NULL;
++		*next_to_clean =
++			ENA_RX_RING_IDX_NEXT(*next_to_clean,
++					     rx_ring->ring_size);
++		if (likely(--descs == 0))
++			break;
++		rx_info = &rx_ring->rx_buffer_info[*next_to_clean];
++		len = ena_bufs[++buf].len;
++	} while (1);
+ 
+ 	return skb;
+ }
+@@ -1087,6 +1082,32 @@ inline void ena_adjust_intr_moderation(struct ena_ring *rx_ring,
+ 	rx_ring->per_napi_bytes = 0;
+ }
+ 
++static inline void ena_update_ring_numa_node(struct ena_ring *tx_ring,
++					     struct ena_ring *rx_ring)
++{
++	int cpu = get_cpu();
++	int numa_node;
++
++	/* Check only one ring since the 2 rings are running on the same cpu */
++	if (likely(tx_ring->cpu == cpu))
++		goto out;
++
++	numa_node = cpu_to_node(cpu);
++	put_cpu();
++
++	if (numa_node != NUMA_NO_NODE) {
++		ena_com_update_numa_node(tx_ring->ena_com_io_cq, numa_node);
++		ena_com_update_numa_node(rx_ring->ena_com_io_cq, numa_node);
++	}
++
++	tx_ring->cpu = cpu;
++	rx_ring->cpu = cpu;
++
++	return;
++out:
++	put_cpu();
++}
++
+ static int ena_io_poll(struct napi_struct *napi, int budget)
+ {
+ 	struct ena_napi *ena_napi = container_of(napi, struct ena_napi, napi);
+@@ -1128,6 +1149,8 @@ static int ena_io_poll(struct napi_struct *napi, int budget)
+ 		 */
+ 		ena_com_unmask_intr(rx_ring->ena_com_io_cq, &intr_reg);
+ 
++		ena_update_ring_numa_node(tx_ring, rx_ring);
++
+ 		ret = rx_work_done;
+ 	} else {
+ 		ret = budget;
+@@ -1224,6 +1247,7 @@ static void ena_setup_mgmnt_intr(struct ena_adapter *adapter)
+ 	adapter->irq_tbl[ENA_MGMNT_IRQ_IDX].vector =
+ 		adapter->msix_entries[ENA_MGMNT_IRQ_IDX].vector;
+ 	cpu = cpumask_first(cpu_online_mask);
++	adapter->irq_tbl[ENA_MGMNT_IRQ_IDX].cpu = cpu;
+ 	cpumask_set_cpu(cpu,
+ 			&adapter->irq_tbl[ENA_MGMNT_IRQ_IDX].affinity_hint_mask);
+ }
+@@ -1231,12 +1255,13 @@ static void ena_setup_mgmnt_intr(struct ena_adapter *adapter)
+ static void ena_setup_io_intr(struct ena_adapter *adapter)
+ {
+ 	struct net_device *netdev;
+-	int irq_idx, i;
++	int irq_idx, i, cpu;
+ 
+ 	netdev = adapter->netdev;
+ 
+ 	for (i = 0; i < adapter->num_queues; i++) {
+ 		irq_idx = ENA_IO_IRQ_IDX(i);
++		cpu = i % num_online_cpus();
+ 
+ 		snprintf(adapter->irq_tbl[irq_idx].name, ENA_IRQNAME_SIZE,
+ 			 "%s-Tx-Rx-%d", netdev->name, i);
+@@ -1244,8 +1269,9 @@ static void ena_setup_io_intr(struct ena_adapter *adapter)
+ 		adapter->irq_tbl[irq_idx].data = &adapter->ena_napi[i];
+ 		adapter->irq_tbl[irq_idx].vector =
+ 			adapter->msix_entries[irq_idx].vector;
++		adapter->irq_tbl[irq_idx].cpu = cpu;
+ 
+-		cpumask_set_cpu(i % num_online_cpus(),
++		cpumask_set_cpu(cpu,
+ 				&adapter->irq_tbl[irq_idx].affinity_hint_mask);
+ 	}
+ }
+@@ -1473,6 +1499,7 @@ static int ena_up_complete(struct ena_adapter *adapter)
+ 
+ static int ena_create_io_tx_queue(struct ena_adapter *adapter, int qid)
+ {
++	struct ena_com_create_io_ctx ctx = { 0 };
+ 	struct ena_com_dev *ena_dev;
+ 	struct ena_ring *tx_ring;
+ 	u32 msix_vector;
+@@ -1485,11 +1512,14 @@ static int ena_create_io_tx_queue(struct ena_adapter *adapter, int qid)
+ 	msix_vector = ENA_IO_IRQ_IDX(qid);
+ 	ena_qid = ENA_IO_TXQ_IDX(qid);
+ 
+-	rc = ena_com_create_io_queue(ena_dev, ena_qid,
+-				     ENA_COM_IO_QUEUE_DIRECTION_TX,
+-				     ena_dev->tx_mem_queue_type,
+-				     msix_vector,
+-				     adapter->tx_ring_size);
++	ctx.direction = ENA_COM_IO_QUEUE_DIRECTION_TX;
++	ctx.qid = ena_qid;
++	ctx.mem_queue_type = ena_dev->tx_mem_queue_type;
++	ctx.msix_vector = msix_vector;
++	ctx.queue_size = adapter->tx_ring_size;
++	ctx.numa_node = cpu_to_node(tx_ring->cpu);
++
++	rc = ena_com_create_io_queue(ena_dev, &ctx);
+ 	if (rc) {
+ 		netif_err(adapter, ifup, adapter->netdev,
+ 			  "Failed to create I/O TX queue num %d rc: %d\n",
+@@ -1507,6 +1537,8 @@ static int ena_create_io_tx_queue(struct ena_adapter *adapter, int qid)
+ 		ena_com_destroy_io_queue(ena_dev, ena_qid);
+ 	}
+ 
++	ena_com_update_numa_node(tx_ring->ena_com_io_cq, ctx.numa_node);
++
+ 	return rc;
+ }
+ 
+@@ -1533,6 +1565,7 @@ create_err:
+ static int ena_create_io_rx_queue(struct ena_adapter *adapter, int qid)
+ {
+ 	struct ena_com_dev *ena_dev;
++	struct ena_com_create_io_ctx ctx = { 0 };
+ 	struct ena_ring *rx_ring;
+ 	u32 msix_vector;
+ 	u16 ena_qid;
+@@ -1544,11 +1577,14 @@ static int ena_create_io_rx_queue(struct ena_adapter *adapter, int qid)
+ 	msix_vector = ENA_IO_IRQ_IDX(qid);
+ 	ena_qid = ENA_IO_RXQ_IDX(qid);
+ 
+-	rc = ena_com_create_io_queue(ena_dev, ena_qid,
+-				     ENA_COM_IO_QUEUE_DIRECTION_RX,
+-				     ENA_ADMIN_PLACEMENT_POLICY_HOST,
+-				     msix_vector,
+-				     adapter->rx_ring_size);
++	ctx.qid = ena_qid;
++	ctx.direction = ENA_COM_IO_QUEUE_DIRECTION_RX;
++	ctx.mem_queue_type = ENA_ADMIN_PLACEMENT_POLICY_HOST;
++	ctx.msix_vector = msix_vector;
++	ctx.queue_size = adapter->rx_ring_size;
++	ctx.numa_node =cpu_to_node(rx_ring->cpu);
++
++	rc = ena_com_create_io_queue(ena_dev, &ctx);
+ 	if (rc) {
+ 		netif_err(adapter, ifup, adapter->netdev,
+ 			  "Failed to create I/O RX queue num %d rc: %d\n",
+@@ -1566,6 +1602,8 @@ static int ena_create_io_rx_queue(struct ena_adapter *adapter, int qid)
+ 		ena_com_destroy_io_queue(ena_dev, ena_qid);
+ 	}
+ 
++	ena_com_update_numa_node(rx_ring->ena_com_io_cq, ctx.numa_node);
++
+ 	return rc;
+ }
+ 
+@@ -2557,6 +2595,7 @@ static void ena_timer_service(unsigned long data)
+ 		adapter->trigger_reset = false;
+ 		ena_dump_stats_to_dmesg(adapter);
+ 		schedule_work(&adapter->reset_task);
++		return;
+ 	}
+ 
+ 	/* Reset the timer */
+@@ -2912,6 +2951,10 @@ static int ena_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
+ 
+ 	netdev->priv_flags |= IFF_UNICAST_FLT;
+ 
++	INIT_WORK(&adapter->suspend_io_task, ena_device_io_suspend);
++	INIT_WORK(&adapter->resume_io_task, ena_device_io_resume);
++	INIT_WORK(&adapter->reset_task, ena_fw_reset_device);
++
+ 	init_timer(&adapter->timer_service);
+ 	adapter->timer_service.expires = round_jiffies(jiffies + HZ);
+ 	adapter->timer_service.function = ena_timer_service;
+@@ -2921,10 +2964,6 @@ static int ena_probe(struct pci_dev *pdev, const struct pci_device_id *ent)
+ 
+ 	u64_stats_init(&adapter->syncp);
+ 
+-	INIT_WORK(&adapter->suspend_io_task, ena_device_io_suspend);
+-	INIT_WORK(&adapter->resume_io_task, ena_device_io_resume);
+-	INIT_WORK(&adapter->reset_task, ena_fw_reset_device);
+-
+ 	rc = ena_enable_msix_and_set_admin_interrupts(adapter, io_queue_num);
+ 	if (rc) {
+ 		dev_err(&pdev->dev,
+diff --git a/drivers/amazon/ena/ena_netdev.h b/drivers/amazon/ena/ena_netdev.h
+index f602a4c..fade9e7 100644
+--- a/drivers/amazon/ena/ena_netdev.h
++++ b/drivers/amazon/ena/ena_netdev.h
+@@ -44,8 +44,8 @@
+ #include "ena_eth_com.h"
+ 
+ #define DRV_MODULE_VER_MAJOR	0
+-#define DRV_MODULE_VER_MINOR	5
+-#define DRV_MODULE_VER_SUBMINOR	3
++#define DRV_MODULE_VER_MINOR	6
++#define DRV_MODULE_VER_SUBMINOR	0
+ 
+ #define DRV_MODULE_NAME		"ena"
+ #ifndef DRV_MODULE_VERSION
+@@ -54,7 +54,7 @@
+ 	__stringify(DRV_MODULE_VER_MINOR) "."	\
+ 	__stringify(DRV_MODULE_VER_SUBMINOR)
+ #endif
+-#define DRV_MODULE_RELDATE      "10-MARCH-2016"
++#define DRV_MODULE_RELDATE      "06-APRIL-2016"
+ 
+ #define DEVICE_NAME	"Elastic Network Adapter (ENA)"
+ 
+@@ -126,6 +126,7 @@
+ struct ena_irq {
+ 	irq_handler_t handler;
+ 	void *data;
++	int cpu;
+ 	u32 vector;
+ 	cpumask_t affinity_hint_mask;
+ 	char name[ENA_IRQNAME_SIZE];
+@@ -157,9 +158,6 @@ struct ena_tx_buffer {
+ struct ena_rx_buffer {
+ 	struct sk_buff *skb;
+ 	struct page *page;
+-	u8 *data;
+-	u32 data_size;
+-	u32 frag_size; /* used in rx skb allocation */
+ 	u32 page_offset;
+ 	struct ena_com_buf ena_buf;
+ } ____cacheline_aligned;
+@@ -217,6 +215,8 @@ struct ena_ring {
+ 	/* The maximum length the driver can push to the device (For LLQ) */
+ 	u8 tx_max_header_size;
+ 
++	/* cpu for TPH */
++	int cpu;
+ 	int ring_size; /* number of tx/rx_buffer_info's entries */
+ 
+ 	enum ena_admin_placement_policy_type tx_mem_queue_type;
+-- 
+2.7.4
+

@@ -1,0 +1,28 @@
+From 79a74d35badc3fd3224f7c8488d5559524430a37 Mon Sep 17 00:00:00 2001
+From: "kernel-team@fedoraproject.org" <kernel-team@fedoraproject.org>
+Date: Thu, 29 Jul 2010 16:46:31 -0700
+Subject: no pcspkr modalias
+
+Bugzilla: N/A
+Upstream-status: Fedora mustard
+(cherry picked from commit 6622b034009c7d64c49827848845be1300146f19)
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+---
+ drivers/input/misc/pcspkr.c | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/drivers/input/misc/pcspkr.c b/drivers/input/misc/pcspkr.c
+index 72b1fc3..86907ea 100644
+--- a/drivers/input/misc/pcspkr.c
++++ b/drivers/input/misc/pcspkr.c
+@@ -23,7 +23,6 @@
+ MODULE_AUTHOR("Vojtech Pavlik <vojtech@ucw.cz>");
+ MODULE_DESCRIPTION("PC Speaker beeper driver");
+ MODULE_LICENSE("GPL");
+-MODULE_ALIAS("platform:pcspkr");
+ 
+ static int pcspkr_event(struct input_dev *dev, unsigned int type, unsigned int code, int value)
+ {
+-- 
+2.7.4
+

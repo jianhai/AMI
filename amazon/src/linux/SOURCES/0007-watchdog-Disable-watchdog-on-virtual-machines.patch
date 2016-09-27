@@ -1,0 +1,81 @@
+From 174212f08e7b68ac6c3a9b0465b1fb9f660f0262 Mon Sep 17 00:00:00 2001
+From: Dave Jones <davej@redhat.com>
+Date: Tue, 24 Jun 2014 08:43:34 -0400
+Subject: watchdog: Disable watchdog on virtual machines.
+
+For various reasons, VMs seem to trigger the soft lockup detector a lot,
+in cases where it's just not possible for a lockup to occur.
+(Example: https://bugzilla.redhat.com/show_bug.cgi?id=971139)
+
+In some cases it seems that the host just never scheduled the app running
+the VM for a very long time (Could be the host was under heavy load).
+
+Just disable the detector on VMs.
+
+Bugzilla: 971139
+Upstream-status: Fedora mustard for now
+
+Signed-off-by: Dave Jones <davej@redhat.com>
+(cherry picked from commit 3fb899354090dbb381b253ec6deb9bdf6ae37bb5)
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+---
+ kernel/watchdog.c | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+
+diff --git a/kernel/watchdog.c b/kernel/watchdog.c
+index 198137b..1f13bcd 100644
+--- a/kernel/watchdog.c
++++ b/kernel/watchdog.c
+@@ -20,6 +20,7 @@
+ #include <linux/smpboot.h>
+ #include <linux/sched/rt.h>
+ #include <linux/tick.h>
++#include <linux/dmi.h>
+ 
+ #include <asm/irq_regs.h>
+ #include <linux/kvm_para.h>
+@@ -185,6 +186,32 @@ static int __init hardlockup_all_cpu_backtrace_setup(char *str)
+ __setup("hardlockup_all_cpu_backtrace=", hardlockup_all_cpu_backtrace_setup);
+ #endif
+ 
++static int disable_watchdog(const struct dmi_system_id *d)
++{
++	printk(KERN_INFO "watchdog: disabled (inside virtual machine)\n");
++	watchdog_user_enabled = 0;
++	return 0;
++}
++
++static const struct dmi_system_id watchdog_virt_dmi_table[] = {
++	{
++		.callback = disable_watchdog,
++		.ident = "VMware",
++		.matches = {
++			DMI_MATCH(DMI_SYS_VENDOR, "VMware, Inc."),
++		},
++	},
++	{
++		.callback = disable_watchdog,
++		.ident = "Bochs",
++		.matches = {
++			DMI_MATCH(DMI_SYS_VENDOR, "Bochs"),
++		},
++	},
++	{}
++};
++
++
+ /*
+  * Hard-lockup warnings should be triggered after just a few seconds. Soft-
+  * lockups can have false positives under extreme conditions. So we generally
+@@ -1037,6 +1064,8 @@ out:
+ 
+ void __init lockup_detector_init(void)
+ {
++	dmi_check_system(watchdog_virt_dmi_table);
++
+ 	set_sample_period();
+ 
+ #ifdef CONFIG_NO_HZ_FULL
+-- 
+2.7.4
+

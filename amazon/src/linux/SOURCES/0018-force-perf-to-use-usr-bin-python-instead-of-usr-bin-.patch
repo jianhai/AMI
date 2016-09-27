@@ -1,0 +1,52 @@
+From 9a2986f6033fead24be45c1030d745a5c3343548 Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Tue, 8 Dec 2015 19:38:31 +0000
+Subject: force perf to use /usr/bin/python instead of /usr/bin/python2
+
+This is required to allow customers to build kernel RPMs themselves.
+
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+Reviewed-by: Jonghun Yoo <jhyoo@amazon.de>
+Reviewed-by: Cristian Gafton <gafton@amazon.com>
+CR: https://cr.amazon.com/r/4617900/
+(cherry picked from commit eaaba5dd42c6b78b0349c21cb5bcfd2562b58df0)
+---
+ tools/perf/config/Makefile | 4 ++--
+ tools/perf/util/setup.py   | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/tools/perf/config/Makefile b/tools/perf/config/Makefile
+index de89ec5..631aa09 100644
+--- a/tools/perf/config/Makefile
++++ b/tools/perf/config/Makefile
+@@ -152,7 +152,7 @@ ifndef NO_LIBPYTHON
+   # python[2][-config] in weird combinations but always preferring
+   # python2 and python2-config as per pep-0394. If we catch a
+   # python[-config] in version 3, the version check will kill it.
+-  PYTHON2 := $(if $(call get-executable,python2),python2,python)
++  PYTHON2 := $(if $(call get-executable,python),python,python)
+   override PYTHON := $(call get-executable-or-default,PYTHON,$(PYTHON2))
+   PYTHON2_CONFIG := \
+     $(if $(call get-executable,$(PYTHON)-config),$(PYTHON)-config,python-config)
+@@ -497,7 +497,7 @@ else
+           $(warning If you also have Python 2 installed, then)
+           $(warning try something like:)
+           $(warning $(and ,))
+-          $(warning $(and ,)  make PYTHON=python2)
++          $(warning $(and ,)  make PYTHON=python)
+           $(warning $(and ,))
+           $(warning Otherwise, disable Python support entirely:)
+           $(warning $(and ,))
+diff --git a/tools/perf/util/setup.py b/tools/perf/util/setup.py
+index c868098..bdeb398 100644
+--- a/tools/perf/util/setup.py
++++ b/tools/perf/util/setup.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python2
++#!/usr/bin/python
+ 
+ from distutils.core import setup, Extension
+ from os import getenv
+-- 
+2.7.4
+

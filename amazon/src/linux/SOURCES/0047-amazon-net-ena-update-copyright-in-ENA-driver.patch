@@ -1,0 +1,135 @@
+From 8a8712debd47625c10bf49abcf7547bef9049bbd Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Wed, 27 Jul 2016 22:23:29 +0000
+Subject: amazon/net/ena: update copyright in ENA driver
+
+Singed-off-by: Munehisa Kamata <kamatam@amazon.com>
+Reviewed-by: Jonghun Yoo <jhyoo@amazon.de>
+Reviewed-by: Matt Nierzwicki <nierzwic@amazon.com>
+CR: https://cr.amazon.com/r/5186445/
+---
+ drivers/amazon/net/ena/ena_com.c        | 2 +-
+ drivers/amazon/net/ena/ena_com.h        | 2 +-
+ drivers/amazon/net/ena/ena_eth_com.c    | 2 +-
+ drivers/amazon/net/ena/ena_eth_com.h    | 2 +-
+ drivers/amazon/net/ena/ena_ethtool.c    | 2 +-
+ drivers/amazon/net/ena/ena_netdev.c     | 2 +-
+ drivers/amazon/net/ena/ena_netdev.h     | 2 +-
+ drivers/amazon/net/ena/ena_pci_id_tbl.h | 2 +-
+ drivers/amazon/net/ena/ena_sysfs.c      | 2 +-
+ drivers/amazon/net/ena/ena_sysfs.h      | 2 +-
+ 10 files changed, 10 insertions(+), 10 deletions(-)
+
+diff --git a/drivers/amazon/net/ena/ena_com.c b/drivers/amazon/net/ena/ena_com.c
+index 357e10f..1c79b14 100644
+--- a/drivers/amazon/net/ena/ena_com.c
++++ b/drivers/amazon/net/ena/ena_com.c
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_com.h b/drivers/amazon/net/ena/ena_com.h
+index a414ada..e028d69 100644
+--- a/drivers/amazon/net/ena/ena_com.h
++++ b/drivers/amazon/net/ena/ena_com.h
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_eth_com.c b/drivers/amazon/net/ena/ena_eth_com.c
+index 8a3ad2c..f31cfcf 100644
+--- a/drivers/amazon/net/ena/ena_eth_com.c
++++ b/drivers/amazon/net/ena/ena_eth_com.c
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_eth_com.h b/drivers/amazon/net/ena/ena_eth_com.h
+index 0d50aa4..571c827 100644
+--- a/drivers/amazon/net/ena/ena_eth_com.h
++++ b/drivers/amazon/net/ena/ena_eth_com.h
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_ethtool.c b/drivers/amazon/net/ena/ena_ethtool.c
+index 7972b5b..fc2d845 100644
+--- a/drivers/amazon/net/ena/ena_ethtool.c
++++ b/drivers/amazon/net/ena/ena_ethtool.c
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_netdev.c b/drivers/amazon/net/ena/ena_netdev.c
+index a000a7b..6ef418e 100644
+--- a/drivers/amazon/net/ena/ena_netdev.c
++++ b/drivers/amazon/net/ena/ena_netdev.c
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_netdev.h b/drivers/amazon/net/ena/ena_netdev.h
+index 5df5ccc..fa9bab4 100644
+--- a/drivers/amazon/net/ena/ena_netdev.h
++++ b/drivers/amazon/net/ena/ena_netdev.h
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_pci_id_tbl.h b/drivers/amazon/net/ena/ena_pci_id_tbl.h
+index ae23c5e..4f0aae1 100644
+--- a/drivers/amazon/net/ena/ena_pci_id_tbl.h
++++ b/drivers/amazon/net/ena/ena_pci_id_tbl.h
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_sysfs.c b/drivers/amazon/net/ena/ena_sysfs.c
+index e080807..d567164 100644
+--- a/drivers/amazon/net/ena/ena_sysfs.c
++++ b/drivers/amazon/net/ena/ena_sysfs.c
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+diff --git a/drivers/amazon/net/ena/ena_sysfs.h b/drivers/amazon/net/ena/ena_sysfs.h
+index dc0d4c9..9e60770 100644
+--- a/drivers/amazon/net/ena/ena_sysfs.h
++++ b/drivers/amazon/net/ena/ena_sysfs.h
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2015 Amazon.com, Inc. or its affiliates.
++ * Copyright 2015 - 2016 Amazon.com, Inc. or its affiliates.
+  *
+  * This software is available to you under a choice of one of two
+  * licenses.  You may choose to be licensed under the terms of the GNU
+-- 
+2.7.4
+

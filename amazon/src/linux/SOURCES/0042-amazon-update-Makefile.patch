@@ -1,0 +1,22 @@
+From a5f873b7370bb03370f6d5147d4ab30654091ed2 Mon Sep 17 00:00:00 2001
+From: Munehisa Kamata <kamatam@amazon.com>
+Date: Wed, 27 Apr 2016 17:38:49 +0000
+Subject: amazon: update Makefile
+
+Signed-off-by: Munehisa Kamata <kamatam@amazon.com>
+---
+ drivers/amazon/Makefile | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/amazon/Makefile b/drivers/amazon/Makefile
+index 8c1ce4f..c50200c 100644
+--- a/drivers/amazon/Makefile
++++ b/drivers/amazon/Makefile
+@@ -1,2 +1,2 @@
+-obj-y += net/
+-obj-y += block/
++obj-$(CONFIG_VENDOR_AMAZON) += net/
++obj-$(CONFIG_VENDOR_AMAZON) += block/
+-- 
+2.7.4
+
