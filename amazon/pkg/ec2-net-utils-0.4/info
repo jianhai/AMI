@@ -1,0 +1,20 @@
+Name        : ec2-net-utils
+Version     : 0.4
+Release     : 1.25.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分29秒
+Group       : System Tools
+Size        : 14204
+License     : Apache License 2.0
+Signature   : RSA/SHA256, 2016年04月20日 星期三 22时27分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : ec2-utils-0.4-1.25.amzn1.src.rpm
+Build Date  : 2016年04月11日 星期一 17时18分59秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1825
+Summary     : A set of network tools for managing ENIs
+Description :
+ec2-net-utils contains a set of utilities for managing elastic network
+interfaces.

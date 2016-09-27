@@ -1,0 +1,25 @@
+Name        : perl-Pod-Usage
+Version     : 1.63
+Release     : 3.5.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分04秒
+Group       : Development/Libraries
+Size        : 44671
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分59秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-Pod-Usage-1.63-3.5.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 20时48分01秒
+Build Host  : build-64002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/Pod-Usage/
+Summary     : Print a usage message from embedded POD documentation
+Description :
+pod2usage will print a usage message for the invoking script (using its
+embedded POD documentation) and then exit the script with the desired exit
+status. The usage message printed may have any one of three levels of
+"verboseness": If the verbose level is 0, then only a synopsis is printed.
+If the verbose level is 1, then the synopsis is printed along with a
+description (if present) of the command line options and arguments. If the
+verbose level is 2, then the entire manual page is printed.

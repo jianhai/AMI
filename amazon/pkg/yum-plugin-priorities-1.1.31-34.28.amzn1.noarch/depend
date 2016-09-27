@@ -1,5 +1,0 @@
-config(yum-plugin-priorities) = 1.1.31-34.28.amzn1
-rpmlib(CompressedFileNames) <= 3.0.4-1
-rpmlib(PartialHardlinkSets) <= 4.0.4-1
-rpmlib(PayloadFilesHavePrefix) <= 4.0-1
-yum(python27) >= 3.0

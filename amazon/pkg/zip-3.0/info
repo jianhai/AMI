@@ -1,0 +1,25 @@
+Name        : zip
+Version     : 3.0
+Release     : 1.10.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分33秒
+Group       : Applications/Archiving
+Size        : 823612
+License     : BSD
+Signature   : RSA/SHA256, 2011年01月25日 星期二 22时51分08秒, Key ID bcb4a85b21c0f39f
+Source RPM  : zip-3.0-1.10.amzn1.src.rpm
+Build Date  : 2011年01月15日 星期六 14时48分46秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.info-zip.org/Zip.html
+Summary     : A file compression and packaging utility compatible with PKZIP
+Description :
+The zip program is a compression and file packaging utility.  Zip is
+analogous to a combination of the UNIX tar and compress commands and
+is compatible with PKZIP (a compression and file packaging utility for
+MS-DOS systems).
+
+Install the zip package if you need to compress files using the zip
+program.

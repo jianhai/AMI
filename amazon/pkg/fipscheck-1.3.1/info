@@ -1,0 +1,21 @@
+Name        : fipscheck
+Version     : 1.3.1
+Release     : 3.13.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分21秒
+Group       : System Environment/Libraries
+Size        : 32751
+License     : BSD
+Signature   : RSA/SHA256, 2013年11月03日 星期日 02时50分02秒, Key ID bcb4a85b21c0f39f
+Source RPM  : fipscheck-1.3.1-3.13.amzn1.src.rpm
+Build Date  : 2013年10月30日 星期三 20时58分13秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://fedorahosted.org/fipscheck/
+Summary     : A library for integrity verification of FIPS validated modules
+Description :
+FIPSCheck is a library for integrity verification of FIPS validated
+modules. The package also provides helper binaries for creation and
+verification of the HMAC-SHA256 checksum files.

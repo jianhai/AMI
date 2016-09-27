@@ -1,0 +1,31 @@
+Name        : python27-imaging
+Version     : 1.1.6
+Release     : 19.9.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分16秒
+Group       : System Environment/Libraries
+Size        : 1243566
+License     : MIT
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分25秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-imaging-1.1.6-19.9.amzn1.src.rpm
+Build Date  : 2015年03月05日 星期四 00时55分07秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.pythonware.com/products/pil/
+Summary     : Python's own image processing library
+Description :
+Python Imaging Library
+
+The Python Imaging Library (PIL) adds image processing capabilities
+to your Python interpreter.
+
+This library provides extensive file format support, an efficient
+internal representation, and powerful image processing capabilities.
+
+Notice that in order to reduce the package dependencies there are
+three subpackages: devel (for development); tk (to interact with the
+tk interface) and sane (scanning devices interface).
+
+This package is meant to be used with Python 2.7.

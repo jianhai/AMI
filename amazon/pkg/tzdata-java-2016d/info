@@ -1,0 +1,19 @@
+Name        : tzdata-java
+Version     : 2016d
+Release     : 1.62.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时09分54秒
+Group       : System Environment/Base
+Size        : 367594
+License     : Public Domain and GPLv2
+Signature   : RSA/SHA256, 2016年05月18日 星期三 00时31分36秒, Key ID bcb4a85b21c0f39f
+Source RPM  : tzdata-2016d-1.62.amzn1.src.rpm
+Build Date  : 2016年05月11日 星期三 20时13分00秒
+Build Host  : build-64010.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://www.iana.org/time-zones
+Summary     : Timezone data for Java
+Description :
+This package contains timezone information for use by Java runtimes.

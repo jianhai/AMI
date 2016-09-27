@@ -1,0 +1,12 @@
+/bin/bash
+/bin/sh
+/usr/bin/python2.7
+config(system-release) = 2016.03-0.5
+ec2-utils
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+sysctl-defaults
+update-motd
+yum-plugin-priorities
+yum-plugin-security >= 1.1.30-6.11.amzn1
+yum-plugin-upgrade-helper

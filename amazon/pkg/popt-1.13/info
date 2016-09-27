@@ -1,0 +1,26 @@
+Name        : popt
+Version     : 1.13
+Release     : 7.7.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分58秒
+Group       : System Environment/Libraries
+Size        : 83420
+License     : MIT
+Signature   : RSA/SHA256, 2011年01月25日 星期二 22时40分44秒, Key ID bcb4a85b21c0f39f
+Source RPM  : popt-1.13-7.7.amzn1.src.rpm
+Build Date  : 2011年01月15日 星期六 20时44分01秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.rpm5.org/
+Summary     : C library for parsing command line parameters
+Description :
+Popt is a C library for parsing command line parameters. Popt was
+heavily influenced by the getopt() and getopt_long() functions, but
+it improves on them by allowing more powerful argument expansion.
+Popt can parse arbitrary argv[] style arrays and automatically set
+variables based on command line arguments. Popt allows command line
+arguments to be aliased via configuration files and includes utility
+functions for parsing arbitrary strings into argv[] arrays using
+shell-like rules.

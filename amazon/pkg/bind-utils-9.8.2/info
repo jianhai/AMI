@@ -1,0 +1,27 @@
+Name        : bind-utils
+Epoch       : 32
+Version     : 9.8.2
+Release     : 0.37.rc1.45.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分30秒
+Group       : Applications/System
+Size        : 415815
+License     : ISC
+Signature   : RSA/SHA256, 2016年03月09日 星期三 06时27分06秒, Key ID bcb4a85b21c0f39f
+Source RPM  : bind-9.8.2-0.37.rc1.45.amzn1.src.rpm
+Build Date  : 2016年03月08日 星期二 23时55分00秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.isc.org/products/BIND/
+Summary     : Utilities for querying DNS name servers
+Description :
+Bind-utils contains a collection of utilities for querying DNS (Domain
+Name System) name servers to find out information about Internet
+hosts. These tools will provide you with the IP addresses for given
+host names, as well as other information about registered domains and
+network addresses.
+
+You should install bind-utils if you need to get information from DNS name
+servers.

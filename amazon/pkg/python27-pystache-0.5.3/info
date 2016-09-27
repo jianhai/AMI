@@ -1,0 +1,25 @@
+Name        : python27-pystache
+Version     : 0.5.3
+Release     : 2.8.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分19秒
+Group       : System Environment/Libraries
+Size        : 519531
+License     : MIT
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分29秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-pystache-0.5.3-2.8.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 22时33分01秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://pypi.python.org/pypi/pystache/
+Summary     : Mustache for Python
+Description :
+Inspired by ctemplate and et, Mustache is a framework-agnostic way to render
+logic-free views.
+
+As ctemplates says, "It emphasizes separating logic from presentation: it is
+impossible to embed application logic in this template language."
+
+This package is meant to be used with Python 2.7.

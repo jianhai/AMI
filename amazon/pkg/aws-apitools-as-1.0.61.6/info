@@ -1,0 +1,19 @@
+Name        : aws-apitools-as
+Version     : 1.0.61.6
+Release     : 1.0.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分30秒
+Group       : Amazon/Tools
+Size        : 7434829
+License     : Amazon Software License
+Signature   : RSA/SHA256, 2014年08月20日 星期三 23时05分05秒, Key ID bcb4a85b21c0f39f
+Source RPM  : aws-apitools-as-1.0.61.6-1.0.amzn1.src.rpm
+Build Date  : 2014年08月19日 星期二 21时39分10秒
+Build Host  : build-64001.build
+Relocations : /opt 
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon AWS
+URL         : http://aws.amazon.com/autoscaling/
+Summary     : The Command Line Tool serves as the client interface to the Auto Scaling web service. Use this tool to create auto scaling groups and define triggers to launch and terminate Amazon EC2 instances automatically.
+Description :
+Auto Scaling allows you to scale your Amazon EC2 capacity up or down automatically according to conditions you define. With Auto Scaling, you can ensure that the number of Amazon EC2 instances you're using increases seamlessly during demand spikes to maintain performance, and decreases automatically during demand lulls to minimize costs. Auto Scaling is particularly well suited for applications that experience hourly, daily, or weekly variability in usage. Auto Scaling is enabled by Amazon CloudWatch and available at no additional charge beyond Amazon CloudWatch fees.

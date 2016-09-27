@@ -1,0 +1,26 @@
+Name        : python27-setuptools
+Version     : 12.2
+Release     : 1.30.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分17秒
+Group       : Applications/System
+Size        : 1944149
+License     : Python or ZPLv2.0
+Signature   : RSA/SHA256, 2015年04月01日 星期三 20时56分56秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-setuptools-12.2-1.30.amzn1.src.rpm
+Build Date  : 2015年03月31日 星期二 10时41分57秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://pypi.python.org/pypi/setuptools
+Summary     : Easily build and distribute Python packages
+Description :
+Setuptools is a collection of enhancements to the Python distutils that allow
+you to more easily build and distribute Python packages, especially ones that
+have dependencies on other packages.
+
+This package contains the runtime components of setuptools, necessary to
+execute the software that requires pkg_resources.py.
+
+This package is meant to be used with Python 2.7.

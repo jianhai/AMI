@@ -1,0 +1,23 @@
+Name        : perl-Digest
+Version     : 1.17
+Release     : 245.5.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分05秒
+Group       : Development/Libraries
+Size        : 28661
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分52秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-Digest-1.17-245.5.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 21时03分06秒
+Build Host  : build-60002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/Digest/
+Summary     : Modules that calculate message digests
+Description :
+The Digest:: modules calculate digests, also called "fingerprints" or
+"hashes", of some data, called a message. The digest is (usually)
+some small/fixed size string. The actual size of the digest depend of
+the algorithm used. The message is simply a sequence of arbitrary
+bytes or bits.

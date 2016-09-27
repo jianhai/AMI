@@ -1,0 +1,25 @@
+Name        : make
+Epoch       : 1
+Version     : 3.82
+Release     : 21.10.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分06秒
+Group       : Development/Tools
+Size        : 1152852
+License     : GPLv2+
+Signature   : RSA/SHA256, 2015年02月06日 星期五 17时05分20秒, Key ID bcb4a85b21c0f39f
+Source RPM  : make-3.82-21.10.amzn1.src.rpm
+Build Date  : 2015年01月09日 星期五 10时15分52秒
+Build Host  : build-64002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/make/
+Summary     : A GNU tool which simplifies the build process for users
+Description :
+A GNU tool for controlling the generation of executables and other
+non-source files of a program from the program's source files. Make
+allows users to build and install packages without any significant
+knowledge about the details of the build process. The details about
+how the program should be built are provided for make in the program's
+makefile.

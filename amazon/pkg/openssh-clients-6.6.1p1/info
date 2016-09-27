@@ -1,0 +1,21 @@
+Name        : openssh-clients
+Version     : 6.6.1p1
+Release     : 25.61.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分29秒
+Group       : Applications/Internet
+Size        : 2256813
+License     : BSD
+Signature   : RSA/SHA256, 2016年03月29日 星期二 01时55分54秒, Key ID bcb4a85b21c0f39f
+Source RPM  : openssh-6.6.1p1-25.61.amzn1.src.rpm
+Build Date  : 2016年03月28日 星期一 21时36分28秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.openssh.com/portable.html
+Summary     : An open source SSH client applications
+Description :
+OpenSSH is a free version of SSH (Secure SHell), a program for logging
+into and executing commands on a remote machine. This package includes
+the clients necessary to make encrypted connections to SSH servers.

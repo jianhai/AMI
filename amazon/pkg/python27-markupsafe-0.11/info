@@ -1,0 +1,21 @@
+Name        : python27-markupsafe
+Version     : 0.11
+Release     : 4.6.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分17秒
+Group       : Development/Languages
+Size        : 56395
+License     : BSD
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-markupsafe-0.11-4.6.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 22时50分17秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://pypi.python.org/pypi/MarkupSafe
+Summary     : Implements a XML/HTML/XHTML Markup safe string for Python
+Description :
+A library for safe markup escaping.
+
+This package is meant to be used with Python 2.7.

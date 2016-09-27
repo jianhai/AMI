@@ -1,0 +1,22 @@
+Name        : pciutils
+Version     : 3.1.10
+Release     : 4.11.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分30秒
+Group       : Applications/System
+Size        : 184024
+License     : GPLv2+
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分48秒, Key ID bcb4a85b21c0f39f
+Source RPM  : pciutils-3.1.10-4.11.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 03时12分54秒
+Build Host  : build-64001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
+Summary     : PCI bus related utilities
+Description :
+The pciutils package contains various utilities for inspecting and
+setting devices connected to the PCI bus. The utilities provided
+require kernel version 2.1.82 or newer (which support the
+/proc/bus/pci interface).

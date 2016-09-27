@@ -1,0 +1,31 @@
+Name        : python27-backports-ssl_match_hostname
+Version     : 3.4.0.2
+Release     : 1.12.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分17秒
+Group       : Unspecified
+Size        : 14193
+License     : Python
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分22秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-backports-ssl_match_hostname-3.4.0.2-1.12.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 22时23分40秒
+Build Host  : build-64011.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://bitbucket.org/brandon/backports.ssl_match_hostname
+Summary     : The ssl.match_hostname() function from Python 3, packaged for Python 2.7
+Description :
+The Secure Sockets layer is only actually secure if you check the hostname in
+the certificate returned by the server to which you are connecting, and verify
+that it matches to hostname that you are trying to reach.
+
+But the matching logic, defined in RFC2818, can be a bit tricky to implement on
+your own. So the ssl package in the Standard Library of Python 3.2 now includes
+a match_hostname() function for performing this check instead of requiring
+every application to implement the check separately.
+
+This backport brings match_hostname() to users of earlier versions of Python.
+The actual code inside comes verbatim from Python 3.2.
+
+This package is meant to be used with Python 2.7.

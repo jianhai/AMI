@@ -1,0 +1,24 @@
+Name        : cracklib-dicts
+Version     : 2.8.16
+Release     : 4.14.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分10秒
+Group       : System Environment/Libraries
+Size        : 9327207
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时15分54秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cracklib-2.8.16-4.14.amzn1.src.rpm
+Build Date  : 2015年03月04日 星期三 18时04分23秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://sourceforge.net/projects/cracklib/
+Summary     : The standard CrackLib dictionaries
+Description :
+The cracklib-dicts package includes the CrackLib dictionaries.
+CrackLib will need to use the dictionary appropriate to your system,
+which is normally put in /usr/share/dict/words. Cracklib-dicts also
+contains the utilities necessary for the creation of new dictionaries.
+
+If you are installing CrackLib, you should also install cracklib-dicts.

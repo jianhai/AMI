@@ -1,0 +1,25 @@
+Name        : screen
+Version     : 4.0.3
+Release     : 16.5.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分32秒
+Group       : Applications/System
+Size        : 814092
+License     : GPLv2+
+Signature   : RSA/SHA256, 2011年08月10日 星期三 01时43分48秒, Key ID bcb4a85b21c0f39f
+Source RPM  : screen-4.0.3-16.5.amzn1.src.rpm
+Build Date  : 2011年07月28日 星期四 09时40分52秒
+Build Host  : build-31005.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/screen
+Summary     : A screen manager that supports multiple logins on one terminal
+Description :
+The screen utility allows you to have multiple logins on just one
+terminal. Screen is useful for users who telnet into a machine or are
+connected via a dumb terminal, but want to use more than just one
+login.
+
+Install the screen package if you need a screen manager that can
+support multiple logins on one terminal.

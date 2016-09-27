@@ -1,0 +1,22 @@
+Name        : filesystem
+Version     : 2.4.30
+Release     : 3.8.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分51秒
+Group       : System Environment/Base
+Size        : 0
+License     : Public Domain
+Signature   : RSA/SHA256, 2012年02月17日 星期五 18时12分41秒, Key ID bcb4a85b21c0f39f
+Source RPM  : filesystem-2.4.30-3.8.amzn1.src.rpm
+Build Date  : 2012年01月06日 星期五 09时40分50秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/filesystem
+Summary     : The basic directory layout for a Linux system
+Description :
+The filesystem package is one of the basic packages that is installed
+on a Linux system. Filesystem contains the basic directory layout
+for a Linux operating system, including the correct permissions for
+the directories.

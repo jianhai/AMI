@@ -1,0 +1,23 @@
+Name        : python27-urlgrabber
+Version     : 3.9.1
+Release     : 9.13.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分24秒
+Group       : Development/Libraries
+Size        : 321306
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分31秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-urlgrabber-3.9.1-9.13.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 01时40分43秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://urlgrabber.baseurl.org/
+Summary     : A high-level cross-protocol url-grabber
+Description :
+A high-level cross-protocol url-grabber for python supporting HTTP, FTP
+and file locations.  Features include keepalive, byte ranges, throttling,
+authentication, proxies and more.
+
+This package is meant to be used with Python 2.7.

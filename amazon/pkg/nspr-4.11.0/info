@@ -1,0 +1,22 @@
+Name        : nspr
+Version     : 4.11.0
+Release     : 1.37.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分59秒
+Group       : System Environment/Libraries
+Size        : 273960
+License     : MPLv2.0
+Signature   : RSA/SHA256, 2016年05月18日 星期三 00时31分33秒, Key ID bcb4a85b21c0f39f
+Source RPM  : nspr-4.11.0-1.37.amzn1.src.rpm
+Build Date  : 2016年05月13日 星期五 17时43分36秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.mozilla.org/projects/nspr/
+Summary     : Netscape Portable Runtime
+Description :
+NSPR provides platform independence for non-GUI operating system
+facilities. These facilities include threads, thread synchronization,
+normal file and network I/O, interval timing and calendar time, basic
+memory management (malloc and free) and shared library linking.

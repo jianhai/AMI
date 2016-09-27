@@ -1,0 +1,29 @@
+Name        : dump
+Epoch       : 1
+Version     : 0.4
+Release     : 0.6.b42.7.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分32秒
+Group       : Applications/Archiving
+Size        : 294121
+License     : BSD
+Signature   : RSA/SHA256, 2012年02月17日 星期五 18时12分37秒, Key ID bcb4a85b21c0f39f
+Source RPM  : dump-0.4-0.6.b42.7.amzn1.src.rpm
+Build Date  : 2012年01月05日 星期四 21时50分20秒
+Build Host  : build-31005.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://dump.sourceforge.net/
+Summary     : Programs for backing up and restoring ext2/ext3 filesystems
+Description :
+The dump package contains both dump and restore. Dump examines files
+in a filesystem, determines which ones need to be backed up, and
+copies those files to a specified disk, tape, or other storage medium.
+The restore command performs the inverse function of dump; it can
+restore a full backup of a filesystem. Subsequent incremental backups
+can then be layered on top of the full backup. Single files and
+directory subtrees may also be restored from full or partial backups.
+
+Install dump if you need a system for both backing up filesystems and
+restoring filesystems after backups.

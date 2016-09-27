@@ -1,0 +1,21 @@
+Name        : perl-Storable
+Version     : 2.45
+Release     : 3.5.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分04秒
+Group       : Development/Libraries
+Size        : 180559
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分59秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-Storable-2.45-3.5.amzn1.src.rpm
+Build Date  : 2014年09月12日 星期五 03时14分47秒
+Build Host  : build-64001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/Storable/
+Summary     : Persistence for Perl data structures
+Description :
+The Storable package brings persistence to your Perl data structures
+containing scalar, array, hash or reference objects, i.e. anything that
+can be conveniently stored to disk and retrieved at a later time.

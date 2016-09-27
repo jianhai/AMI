@@ -1,0 +1,25 @@
+Name        : wget
+Version     : 1.17.1
+Release     : 1.17.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分32秒
+Group       : Applications/Internet
+Size        : 2420129
+License     : GPLv3+
+Signature   : RSA/SHA256, 2016年01月17日 星期日 19时44分39秒, Key ID bcb4a85b21c0f39f
+Source RPM  : wget-1.17.1-1.17.amzn1.src.rpm
+Build Date  : 2016年01月16日 星期六 00时24分22秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/wget/
+Summary     : A utility for retrieving files using the HTTP or FTP protocols
+Description :
+GNU Wget is a file retrieval utility which can use either the HTTP or
+FTP protocols. Wget features include the ability to work in the
+background while you are logged out, recursive retrieval of
+directories, file name wildcard matching, remote file timestamp
+storage and comparison, use of Rest with FTP servers and Range with
+HTTP servers to retrieve files over slow or unstable connections,
+support for Proxy servers, and configurability.

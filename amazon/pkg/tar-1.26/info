@@ -1,0 +1,29 @@
+Name        : tar
+Epoch       : 2
+Version     : 1.26
+Release     : 31.22.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分01秒
+Group       : Applications/Archiving
+Size        : 2838381
+License     : GPLv3+
+Signature   : RSA/SHA256, 2014年10月08日 星期三 01时05分42秒, Key ID bcb4a85b21c0f39f
+Source RPM  : tar-1.26-31.22.amzn1.src.rpm
+Build Date  : 2014年10月07日 星期二 20时47分48秒
+Build Host  : build-60004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/tar/
+Summary     : A GNU file archiving program
+Description :
+The GNU tar program saves many files together in one archive and can
+restore individual files (or all of the files) from that archive. Tar
+can also be used to add supplemental files to an archive and to update
+or list files in the archive. Tar includes multivolume support,
+automatic archive compression/decompression, the ability to perform
+remote archives, and the ability to perform incremental and full
+backups.
+
+If you want to use tar for remote backups, you also need to install
+the rmt package on the remote box.

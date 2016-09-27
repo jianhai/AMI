@@ -1,0 +1,38 @@
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/bin/sh
+/sbin/chkconfig
+/sbin/service
+/sbin/service
+/usr/sbin/groupadd
+/usr/sbin/useradd
+chkconfig
+config(dbus) = 1:1.6.12-8.27.amzn1
+dbus-libs(x86-64) = 1:1.6.12-8.27.amzn1
+expat >= 2.1.0
+libaudit.so.1()(64bit)
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.10)(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3.2)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.8)(64bit)
+libc.so.6(GLIBC_2.9)(64bit)
+libcap-ng.so.0()(64bit)
+libdbus-1.so.3()(64bit)
+libexpat.so.1()(64bit)
+libpthread.so.0()(64bit)
+libpthread.so.0(GLIBC_2.2.5)(64bit)
+libpthread.so.0(GLIBC_2.3.2)(64bit)
+libpthread.so.0(GLIBC_2.3.3)(64bit)
+librt.so.1()(64bit)
+librt.so.1(GLIBC_2.2.5)(64bit)
+libselinux(x86-64) >= 1.15.2
+libselinux.so.1()(64bit)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

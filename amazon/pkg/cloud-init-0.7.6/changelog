@@ -1,0 +1,266 @@
+* 四 1月 14 2016 Sean Kelly <seankell@amazon.com>
+- Produce canonical semaphore names with cloud-init-per
+
+* 五 9月 04 2015 Andrew Jorgensen <ajorgens@amazon.com>
+- Enable resolv-conf module
+
+* 四 9月 03 2015 Andrew Jorgensen <ajorgens@amazon.com>
+- Add chkconfig directives to workaround bug in ntsysv
+
+* 五 8月 14 2015 Andrew Jorgensen <ajorgens@amazon.com>
+- Suppress Cheetah not available warning
+- lock-passwd SELinux compatibility
+- Fix service control arguments accumulating
+
+* 二 3月 24 2015 Ben Cressey <bcressey@amazon.com>
+- Remove pickled data and re-run init on upgrade
+
+* 二 2月 24 2015 Andrew Jorgensen <ajorgens@amazon.com>
+- Resolve intervening symlinks
+
+* 四 2月 05 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 二 12月 02 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- import source package F22/cloud-init-0.7.6-2.fc22
+- import source package F22/cloud-init-0.7.5-8.fc22
+- import source package F21/cloud-init-0.7.5-6.fc21
+- import source package F21/cloud-init-0.7.5-5.fc21
+- import source package F20/cloud-init-0.7.2-10.fc20
+- import source package F20/cloud-init-0.7.2-9.fc20
+
+* 五 11月 14 2014 Colin Walters <walters@redhat.com> - 0.7.6-1
+- New upstream version [RH:974327]
+- Drop python-cheetah dependency (same as above bug)
+
+* 五 11月 07 2014 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.5-8
+- Dropped python-boto dependency [RH:1161257]
+- Dropped rsyslog dependency [RH:986511]
+
+* 四 9月 11 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Add upstream patch: provide default 'output' setting to log
+
+* 三 9月 10 2014 Ben Cressey <bcressey@amazon.com>
+- add patch for chef omnibus installation support
+- use distro preference for non-persistent hostname
+
+* 六 8月 16 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.7.5-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild
+
+* 五 8月 08 2014 Ian Weller <iweller@amazon.com>
+- Add write-metadata to cloud_init_modules
+
+* 五 7月 25 2014 Ian Weller <iweller@amazon.com>
+- Add write-metadata module
+
+* 三 7月 23 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- cloud-final runs despite start priority change
+
+* 六 6月 14 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Move the resetpriorities triggerpostun later in the scriptlets
+
+* 四 6月 12 2014 Dennis Gilmore <dennis@ausil.us> - 0.7.5-6
+- fix typo in settings.py preventing metadata being fecthed in ec2
+
+* 一 6月 09 2014 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.5-5
+- Stopped calling ``udevadm settle'' with --quiet since systemd 213 removed it
+
+* 六 6月 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.7.5-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* 一 6月 02 2014 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.5-3
+- Make dmidecode dependency arch-dependent [RH:1025071 RH:1067089]
+
+* 一 6月 02 2014 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.2-9
+- Write /etc/locale.conf instead of /etc/sysconfig/i18n [RH:1008250]
+- Add tmpfiles.d configuration for /run/cloud-init [RH:1103761]
+- Use the license rpm macro
+- BuildRequire python-setuptools, not python-setuptools-devel
+
+* 五 5月 30 2014 Matthew Miller <mattdm@fedoraproject.org> - 0.7.5-2
+- add missing python-jsonpatch dependency [RH:1103281]
+
+* 五 5月 02 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Move cloud-final to near the end of the boot process
+
+* 二 4月 29 2014 Sam Kottler <skottler@fedoraproject.org> - 0.7.5-1
+- Update to 0.7.5 and remove patches which landed in the release
+
+* 三 4月 23 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Cleanup whitespace in defaults config
+- Move defaults.cfg to 00_defaults.cfg to make it easier to override defaults
+- Default resize_rootfs to noblock
+- Add ecdsa to ssh_genkeytypes
+
+* 二 4月 08 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Move preserve_hostname: true to the main config only
+
+* 一 4月 07 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Exclude only kernel from upgrades, not kernel*
+
+* 五 4月 04 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Complete cloud-init run if cloud-init upgrades itself from 0.5
+- don't Require rsyslog
+
+* 三 4月 02 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Use set-defaults to block remaining modules on upgrade, migrate user-scripts, and use legacy sudoers file
+
+* 四 3月 27 2014 Tom Kirchner <tjk@amazon.com>
+- Default to preserving hostname
+
+* 四 3月 20 2014 Ethan Faust <efaust@amazon.com>
+- Remove prettytable dependency
+
+* 三 3月 19 2014 Ethan Faust <efaust@amazon.com>
+- Add fallback repo endpoint of amazonaws.com
+
+* 一 3月 17 2014 Ethan Faust <efaust@amazon.com>
+- Determine services domain dynamically
+
+* 三 3月 12 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Complete improvements to migrator module
+- Also migrate semaphores when upgrading from < 0.7
+
+* 二 3月 11 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Use file logging instead of syslog
+- Use triggers to migrate to new sysv names
+
+* 四 3月 06 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Fail softer on exceptions fetching #include data
+- Refresh Amazon patchset
+- Various fixes for logging
+
+* 三 3月 05 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Disable selinux support for now, and remove Require on policycoreutils and dmidecode
+
+* 四 2月 27 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- Update Amazon patches
+
+* 五 2月 21 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- First pass at rebase onto 0.7.x
+
+* 一 2月 03 2014 Andrew Jorgensen <ajorgens@amazon.com>
+- import source package F20/cloud-init-0.7.2-7.fc20
+
+* 六 1月 25 2014 Sam Kottler <skottler@fedoraproject.org> - 0.7.2-8
+- Remove patch to the Puppet service unit nane [RH:1057860]
+
+* 二 9月 24 2013 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.2-7
+- Dropped xfsprogs dependency [RH:974329]
+
+* 二 9月 24 2013 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.2-6
+- Added yum-add-repo module
+
+* 五 9月 20 2013 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.2-5
+- Fixed puppet agent service name [RH:1008250]
+- Let systemd handle console output [RH:977952 LP:1228434]
+- Fixed restorecon failure when selinux is disabled [RH:967002 LP:1228441]
+- Fixed rsyslog log filtering
+- Added missing modules [RH:966888]
+
+* 三 9月 04 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- import source package F19/cloud-init-0.7.2-1.fc19
+
+* 二 8月 20 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- import source package RHEL6/cloud-init-0.7.1-2.el6
+- setup complete for package cloud-init
+
+* 六 8月 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.7.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 六 6月 15 2013 Matthew Miller <mattdm@fedoraproject.org> - 0.7.2-3
+- switch ec2-user to "fedora" --  see bugzilla #971439. To use another
+  name, use #cloud-config option "users:" in userdata in cloud metadata
+  service
+- add that user to systemd-journal group
+
+* 五 5月 17 2013 Steven Hardy <shardy@redhat.com> - 0.7.2
+- Update to the 0.7.2 release
+
+* 四 5月 02 2013 Steven Hardy <shardy@redhat.com> - 0.7.2-0.1.bzr809
+- Rebased against upstream rev 809, fixes several F18 related issues
+- Added dependency on python-requests
+
+* 六 4月 06 2013 Orion Poplawski <orion@cora.nwra.com> - 0.7.1-4
+- Don't ship tests
+
+* 三 2月 13 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.7.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 12月 13 2012 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.1-2
+- Added default_user to cloud.cfg (this is required for ssh keys to work)
+
+* 三 11月 21 2012 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.1-1
+- Rebased against version 0.7.1
+- Fixed broken sudoers file generation
+- Fixed "resize_root: noblock" [LP:1080985]
+
+* 二 10月 09 2012 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.0-1
+- Rebased against version 0.7.0
+- Fixed / filesystem resizing
+
+* 六 9月 22 2012 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.0-0.3.bzr659
+- Added dmidecode dependency for DataSourceAltCloud
+
+* 六 9月 22 2012 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.0-0.2.bzr659
+- Rebased against upstream rev 659
+- Fixed hostname persistence
+- Fixed ssh key printing
+- Fixed sudoers file permissions
+
+* 一 9月 17 2012 Garrett Holmstrom <gholms@fedoraproject.org> - 0.7.0-0.1.bzr650
+- Rebased against upstream rev 650
+- Added support for useradd --selinux-user
+
+* 四 9月 13 2012 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.3-0.5.bzr532
+- Use a FQDN (instance-data.) for instance data URL fallback [RH:850916 LP:1040200]
+- Shut off systemd timeouts [RH:836269]
+- Send output to the console [RH:854654]
+
+* 三 7月 18 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.3-0.4.bzr532
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 三 6月 27 2012 Pádraig Brady <P@draigBrady.com> - 0.6.3-0.3.bzr532
+- Add support for installing yum packages
+
+* 六 3月 31 2012 Andy Grimm <agrimm@gmail.com> - 0.6.3-0.2.bzr532
+- Fixed incorrect interpretation of relative path for
+  AuthorizedKeysFile (BZ #735521)
+
+* 一 3月 05 2012 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.3-0.1.bzr532
+- Rebased against upstream rev 532
+- Fixed runparts() incompatibility with Fedora
+
+* 四 1月 12 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.2-0.8.bzr457
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 10月 05 2011 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.2-0.7.bzr457
+- Disabled SSH key-deleting on startup
+
+* 三 9月 28 2011 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.2-0.6.bzr457
+- Consolidated selinux file context patches
+- Fixed cloud-init.service dependencies
+- Updated sshkeytypes patch
+- Dealt with differences from Ubuntu's sshd
+
+* 六 9月 24 2011 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.2-0.5.bzr457
+- Rebased against upstream rev 457
+- Added missing dependencies
+
+* 五 9月 23 2011 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.2-0.4.bzr450
+- Added more macros to the spec file
+
+* 五 9月 23 2011 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.2-0.3.bzr450
+- Fixed logfile permission checking
+- Fixed SSH key generation
+- Fixed a bad method call in FQDN-guessing [LP:857891]
+- Updated localefile patch
+- Disabled the grub_dpkg module
+- Fixed failures due to empty script dirs [LP:857926]
+
+* 五 9月 23 2011 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.2-0.2.bzr450
+- Updated tzsysconfig patch
+
+* 三 9月 21 2011 Garrett Holmstrom <gholms@fedoraproject.org> - 0.6.2-0.1.bzr450
+- Initial packaging
+

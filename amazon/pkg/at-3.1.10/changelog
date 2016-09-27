@@ -1,0 +1,481 @@
+* 二 6月 16 2015 Matt Nierzwicki <nierzwic@amazon.com>
+- Add patch to atd.c to prevent logging invalid jobs
+
+* 三 10月 15 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/at-3.1.10-44.el6_6.2
+- import source package RHEL6/at-3.1.10-44.el6_4.1
+
+* 二 10月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/at-3.1.10-44.el6_5.2
+
+* 一 10月 06 2014 Tomáš Mráz <tmraz@redhat.com> - 3.1.10-44.2
+- filter environment variables not acceptable in bash input (#1147043)
+
+* 三 9月 10 2014 Rodrigo Novo <rodarvus@amazon.com>
+- Require flex and flex-devel together.
+- Require flex-devel instead of flex
+
+* 二 1月 31 2012 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/at-3.1.10-43.el6_2.1
+
+* 四 1月 19 2012 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-44
+- apply the fix from at-3.1.12
+- Resolves: rhbz#771095
+
+* 五 1月 14 2011 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/at-3.1.10-43.el6
+
+* 四 12月 02 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/at-3.1.10-42.el6
+
+* 一 11月 08 2010 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-43
+- 630019 set correct (f)pie build flags
+- 615104 fix double echo in initscript
+- 589099 Wrong file permissions for atd configuration
+- Resolves: rhbz#630019, rhbz#615104, rhbz#589099
+
+* 五 7月 16 2010 Cristian Gafton <gafton@amazon.com>
+- try a build against sendmail for once
+
+* 五 7月 09 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/at-3.1.10-41.el6
+- import source package RHEL6/at-3.1.10-40.el6
+
+* 二 6月 08 2010 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-42
+- fix permissions in files section
+- Resolves: rhbz#589099
+
+* 五 5月 07 2010 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL5/at-3.1.8-84.el5
+- import source package RHEL5/at-3.1.8-82.fc6
+- added submodule prep for package at
+
+* 五 2月 12 2010 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-41
+- prevent arbitrary destruction of at jobs (based on 564243)
+- Related: rhbz#543948
+
+* 四 1月 14 2010 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-40
+- there were missing apostrophes around delimiter
+- Resolves: rhbz#546103
+
+* 二 10月 13 2009 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-39
+- 528582 add noreplace option into files section
+
+* 二 9月 29 2009 Tomas Mraz <tmraz@redhat.com> 3.1.10-38
+- authentication PAM modules have to be configured for pam_setcred()
+
+* 三 9月 16 2009 Tomas Mraz <tmraz@redhat.com> 3.1.10-37
+- improve the PAM configuration, use password-auth common stack
+
+* 二 8月 18 2009 Adam Jackson <ajax@redhat.com> 3.1.10-36
+- Remove Requires: pm-utils-filesystem, dead package
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.1.10-35
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 20 2009 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-34
+- require pm-utils-filesystem instead of pm-utils which should help
+ minimal installation.
+
+* 一 6月 01 2009 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-33
+- clean cvs, check patches
+
+* 三 3月 18 2009 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-32
+- add the forgotten add delimiter thanks to Cong Ma
+
+* 四 2月 26 2009 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-31
+- preun script is sometimes failing. Add apostrofs around zero.
+
+* 四 2月 26 2009 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-30
+- 435765 and 486844 in some cases could be used bash for at commands
+ even if user sets different default shell. Also bash4.0 fix Here Documents
+ which breaks previous patch at-3.1.10-shell.patch.
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.1.10-29
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 19 2009 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-28
+- 486227 add hyphen date into manual page.
+
+* 三 12月 03 2008 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-27
+- 464393 add script into pm-utils, because daemon wasn't taking all jobs 
+	after suspend/hibernate
+
+* 五 10月 24 2008 Marcela Mašláňová <mmaslano@redhat.com> - 3.1.10-26
+- update init script according to SysVInitScript
+
+* 二 9月 16 2008 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-25
+- thanks dwalsh for selinux patch, which fix #460873
+
+* 五 7月 18 2008 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-24
+- 446004 hope adding || into scriptlets fix removing old package after upgrade
+- fixes for fuzz=0
+
+* 二 3月 25 2008 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-23
+- 436952 use local instead of posix output date/time format.
+
+* 四 2月 28 2008 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-22
+- #435250 mixed OPTS and OPTIONS variable in sysconfig
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 3.1.10-21
+- Autorebuild for GCC 4.3
+
+* 二 1月 08 2008 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-20
+- used PIE instead of pie (with pie wasn't build on 64b successful)
+- rewrite PAM fail check
+- fix checking of settings setuid(s)
+
+* 一 12月 03 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-19
+- another problem with permission
+
+* 二 10月 30 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-18
+- Bug 398981: change on correct permissions
+
+* 五 10月 05 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-17
+- Bug 250147: add optional support for gnome-keyring to passwd pam stack
+
+* 三 8月 22 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-16
+- macro with_pam instead of have_pam
+- license tag is gplv2+ because of license in source files
+
+* 三 7月 11 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-15
+- rewrite init script
+- add own session - setsid
+- Resolves: rhbz#247091
+
+* 一 7月 09 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-14
+- feature: add configuration file
+- fix -V option
+- fix init script
+
+* 二 7月 03 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-13
+- Resolves: rhbz#243064
+
+* 二 7月 03 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-12
+- crashing atd
+- work only for root, still broken some functions
+- Resolves: rhbz#243064
+
+* 二 3月 27 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-11
+- mistake in pam_atd
+- rhbz#234120
+
+* 一 3月 05 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-10
+- rhbz#224597
+
+* 六 3月 03 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-9
+- review
+
+* 二 2月 20 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-8
+- review
+- rhbz#225288
+
+* 二 1月 30 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-7
+- no debug file - useless
+- new pam configuration
+- rhbz#224597
+
+* 五 10月 27 2006 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-6
+- fix daylight-saving again 
+- fix #214759 - problem with seteuid
+
+* 三 10月 25 2006 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-5
+- daylight-saving
+
+* 二 10月 24 2006 Marcela Maslanova <mmaslano@redhat.com> - 3.1.10-3
+- new version from upstream 3.1.10
+
+* 三 8月 23 2006 Marcela Maslanova <mmaslano@redhat.com> - 3.1.8-82.fc6
+- #176486 don't fork option added (patch from Enrico Scholz)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.1.8-81.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.1.8-81.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jason Vas Dias <jvdias@redhat.com> - 3.1.8-81
+- rebuild for new gcc, glibc, glibc-kernheaders
+- workaround new refusal of /usr/bin/install to chown
+
+* 日 12月 18 2005 Jason Vas Dias<jvdias@redhat.com> - 3.1.8-80.2
+- rebuild for new flex
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 五 10月 14 2005 Dan Walsh <dwalsh@redhat.com> - 3.1.8-80
+- Add seuserbyname support
+
+* 五 9月 30 2005 Tomas Mraz <tmraz@redhat.com> - 3.1.8-79
+- use include instead of pam_stack in pam config
+
+* 五 6月 03 2005 Jason Vas Dias <jvdias@redhat.com> 3.1.8-78
+- fix bug 159220: add pam_loginuid to pam session stack in /etc/pam.d/atd 
+- fix bug 102341: add '-r' synonym for '-d' / atrm for POSIX / SuS conformance
+
+* 五 4月 08 2005 Jason Vas Dias <jvdias@redhat.com> 3.1.8-77
+- always call pam_setcred(pamh, PAM_DELETE_CRED) before session 
+- close
+
+* 二 4月 05 2005 Jason Vas Dias <jvdias@redhat.com> 3.1.8-70
+- always call pam_close_session on PAM_FAIL or pam_end
+
+* 二 3月 08 2005 Jason Vas Dias <jvdias@redhat.com> 3.1.8-68
+- Put PAM authentication check in 'check_permissions()', so
+- user can know when using at(1) if PAM permission is denied.
+
+* 二 3月 08 2005 Jason Vas Dias <jvdias@redhat.com> 3.1.8-67
+- better fix for bug 150131: change DAEMON_USERNAME and 
+- DAEMON_GROUPNAME to 'root' .
+
+* 一 3月 07 2005 Jason Vas Dias <jvdias@redhat.com> 3.1.8-66
+- fix bug 150131: atd should not relinquish root privilege if
+- doing su(1) equivalent with PAM .
+
+* 二 1月 25 2005 Jason Vas Dias <jvdias@redhat.com> 3.1.8-64
+- bugs 5160/146132: add PAM authentication control to atd
+
+* 二 10月 05 2004 Jason Vas Dias <jvdias@redhat.com> 3.1.8-60
+- fix bug 131510: no_export env. var. blacklisting should not
+- remove 'SHELL' when only 'SHELLOPTS' is blacklisted.
+- at(1) man-page should not say 'commands are run with /bin/sh'
+- and should explain usage of SHELL environement variable and
+- details of blacklisted variables.
+
+* 二 9月 28 2004 Rik van Riel <riel@redhat.com> 3.1.8-58
+- fix typo in man page, bug 112303 
+- (regenerated at-3.1.8-man-timespec-path.patch with fix)
+
+* 二 8月 03 2004 Jason Vas Dias <jvdias@redhat.com>
+- fixed bug 125634 - made usage() agree with manpage
+
+* 四 7月 29 2004 Jason Vas Dias <jvdias@redhat.com>
+- Added POSIX.2 -t option for RFE 127485
+- Had to disable the 'make test' for the build BEFORE
+- any changes were made (building on FC2 - perl issue?)
+- test.pl generates these 'errors' for what looks like
+- valid output to me:
+- $ ./test.pl 2>&1 | egrep -v '(^ok$)|(time_only)'
+- 1..3656
+- not ok
+- 'Monday - 1 month': 'Fri Jul  2 18:29:00 2004' =? 'Sat Jul  3 18:29:00 2004'
+- 'Monday - 10 months': 'Thu Oct  2 18:29:00 2003' =? 'Fri Oct  3 18:29:00 2003'
+- 'next week - 1 month': 'Mon Jul  5 18:29:00 2004' =? 'Tue Jul  6 18:29:00 2004'
+- 'next week - 10 months': 'Sun Oct  5 18:29:00 2003' =? 'Mon Oct  6 18:29:00 2003'
+- will investigate and fix for next release.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 12 2004 Thomas Woerner <twoerner@redhat.com> - 3.1.8-54
+- fixed pie patch: at is pie, now
+- added build requires for libselinux-devel
+
+* 二 5月 04 2004 Dan Walsh <dwalsh@redhat.com> - 3.1.8-53
+- Add fileentrypoint check
+
+* 四 4月 15 2004 Dan Walsh <dwalsh@redhat.com> - 3.1.8-52
+- Fix SELinux patch
+
+* 一 2月 23 2004 Tim Waugh <twaugh@redhat.com>
+- Use ':' instead of '.' as separator for chown.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> - 3.1.8-50
+- rebuilt
+
+* 二 12月 09 2003 Jens Petersen <petersen@redhat.com> - 3.1.8-49
+- replace at-3.1.8-SHELL-91233.patch by at-3.1.8-SHELL-111386.patch which
+  now executes $SHELL directly in the at shell script after all the variables
+  have been setup with /bin/sh (#91233) [suggested by Göran Uddeborg]
+- this changelog is now in utf-8
+
+* 五 11月 07 2003 Jens Petersen <petersen@redhat.com> - 3.1.8-48
+- add at-3.1.8-pie.patch to build atd as pie (#108415) [Ulrich Drepper]
+
+* 五 10月 31 2003 Dan Walsh <dwalsh@redhat.com> - 3.1.8-47.sel
+* Fri Jun 20 2003 Jens Petersen <petersen@redhat.com> - 3.1.8-46
+- add at-3.1.8-atrun.8-typo-97697.patch to fix typo in atrun.8 (#97697)
+- update at.1 description of shell behaviour (#91233)
+
+* 二 6月 17 2003 Jens Petersen <petersen@redhat.com> - 3.1.8-45
+- make the job shell default to SHELL instead of "/bin/sh" (#91233)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com> - 3.1.8-44
+- rebuilt
+
+* 二 6月 03 2003 Jens Petersen <petersen@redhat.com> - 3.1.8-43
+- Replace redundant at-3.1.7-paths.patch by at-3.1.8-man-timespec-path.patch
+  to fix timespec path
+
+* 二 6月 03 2003 Jens Petersen <petersen@redhat.com> - 3.1.8-41
+- update source to at_3.1.8-11 from debian upstream
+  - update source url
+  - at-debian.patch no longer needed
+  - at-3.1.7-paths.patch: the patch to "at.1.in" no longer needed
+  - replace at-3.1.8-lexer.patch with at-3.1.8-11-lexer-parser.diff
+  - at-3.1.8-dst.patch no longer needed
+  - at-3.1.8-lsbdoc.patch no longer needed
+  - at-3.1.8-o_excl.patch no longer needed
+  - bump release number
+- at-3.1.8-test.patch: move out test.pl to a separate source file
+  - apply at-3.1.8-test-fix.patch to it and drop patch
+- at-3.1.8-shell.patch: drop (#22216,#91233)
+- run "make test" after building
+- add "--without check" rpmbuild option
+- fix autoconf comment to point to right patch
+- use _sysconfdir, _sbindir, _bindir, and _localstatedir
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 3.1.8-33
+- rebuilt
+
+* 三 11月 27 2002 Tim Powers <timp@redhat.com> 3.1.8-32
+- remove unpackaged files from the buildroot
+
+* 四 7月 25 2002 Bill Huang <bhuang@redhat.com>
+- Fixed delaying job execution and missing starting jobs..(bug#69595)
+  (Thanks Bujor D Silaghi <bujor@cs.umd.edu> for his patch.)
+
+* 五 7月 19 2002 Bill Huang <bhuang@redhat.com>
+- Fixed cleaning atq and  multiple atd daemon.(bug#67414)
+  (Thanks Bujor D Silaghi <bujor@cs.umd.edu> for his patch.)
+- Fixed error message output in atd.c
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 27 2002 Bill Huang <bhuang@redhat.com>
+- Rebuild for Milan
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 2月 01 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.1.8-25
+- Require smtpdaemon rather than sendmail - postfix works just as well.
+
+* 四 1月 31 2002 Bill Nottingham <notting@redhat.com> 3.1.8-24
+- rebuild in new env.
+
+* 四 1月 17 2002 Trond Eivind Glomsrød <teg@redhat.com> 3.1.8-23
+- s/Copyright/License/
+
+* 一 1月 14 2002 Adrian Havill <havill@redhat.com> 3.1.8-21
+- fix man page (#51253)
+- fix env prop problem (#49491)
+- .SEQ should not be executable (#52626)
+- beefed up file creation perms against symlink exploits (O_EXCL)
+
+* 四 8月 02 2001 Crutcher Dunnavant <crutcher@redhat.com> 3.1.8-20
+- updated patch update, still bug #46546
+
+* 三 7月 18 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- applied enrico.scholz@informatik.tu-chemnitz.de's change to the env patch to 
+- address bug #46546
+
+* 一 6月 25 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- changed atd.init to start at 95, stop at 5, closing #15915
+- applied mailto:wp@supermedia.pl's environment patch
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 三 4月 04 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- much love to David Kilzer <ddkilzer@lubricants-oil.com>
+- who nailed UTC, Leap year, DST, and some other edge cases down
+- he also wrote a test harness in perl
+- bug #28448
+
+* 五 2月 02 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- i18nize initscript
+
+* 二 12月 12 2000 Bill Nottingham <notting@redhat.com>
+- fix documentation of which shell commands will be run with (#22216)
+
+* 三 8月 23 2000 Crutcher Dunnavant <crutcher@redhat.com>
+- Well, we will likely never really close the UTC issues,
+- because of 1) fractional timezones, and 2) daylight savigns time.
+- but there is a slight tweak to the handling of dst in the UTC patch.
+- fixed bug #15685
+- which had at miscaluclating UTC times.
+
+* 六 7月 15 2000 Bill Nottingham <notting@redhat.com>
+- move initscript back
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 四 7月 06 2000 Bill Nottingham <notting@redhat.com>
+- prereq /etc/init.d
+
+* 六 7月 01 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix syntax error in init script
+
+* 二 6月 27 2000 Preston Brown <pbrown@redhat.com>
+- don't prereq, only require initscripts
+
+* 一 6月 26 2000 Preston Brown <pbrown@redhat.com>
+- move init script
+- add condrestart directive
+- fix post/preun/postun scripts
+- prereq initscripts >= 5.20
+
+* 六 6月 17 2000 Bill Nottingham <notting@redhat.com>
+- fix verify of /var/spool/at/.SEQ (#12262)
+
+* 一 6月 12 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix status checking and syntax error in init script
+
+* 五 6月 09 2000 Bill Nottingham <notting@redhat.com>
+- fix for long usernames (#11321)
+- add some bugfixes from debian
+
+* 一 5月 08 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 3.1.8
+
+* 三 3月 01 2000 Bill Nottingham <notting@redhat.com>
+- fix a couple of more typos, null-terminate some strings
+
+* 四 2月 10 2000 Bill Nottingham <notting@redhat.com>
+- fix many-years-old typo in atd.c
+
+* 四 2月 03 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed man pages
+
+* 一 8月 16 1999 Bill Nottingham <notting@redhat.com>
+- initscript munging, build as non-root user
+
+* 日 6月 13 1999 Jeff Johnson <jbj@redhat.com>
+- correct perms for /var/spool/at after defattr.
+
+* 一 5月 24 1999 Jeff Johnson <jbj@redhat.com>
+- reset SIGCHLD before exec (#3016).
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 8)
+
+* 四 3月 18 1999 Cristian Gafton <gafton@redhat.com>
+- fix handling the 12:00 time
+
+* 三 1月 13 1999 Bill Nottingham <notting@redhat.com>
+- configure fix for arm
+
+* 三 1月 06 1999 Cristian Gafton <gafton@redhat.com>
+- build for glibc 2.1
+
+* 二 5月 05 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 三 4月 22 1998 Michael K. Johnson <johnsonm@redhat.com>
+- enhanced initscript
+
+* 日 11月 09 1997 Michael K. Johnson <johnsonm@redhat.com>
+- learned to spell
+
+* 三 10月 22 1997 Michael K. Johnson <johnsonm@redhat.com>
+- updated to at version 3.1.7
+- updated lock and sequence file handling with ghost
+- Use chkconfig and atd, now conflicts with old crontabs packages
+
+* 四 6月 19 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

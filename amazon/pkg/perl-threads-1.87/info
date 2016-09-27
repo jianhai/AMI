@@ -1,0 +1,25 @@
+Name        : perl-threads
+Version     : 1.87
+Release     : 4.5.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分04秒
+Group       : Development/Libraries
+Size        : 93791
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时36分06秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-threads-1.87-4.5.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 20时26分08秒
+Build Host  : build-64003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/threads/
+Summary     : Perl interpreter-based threads
+Description :
+Since Perl 5.8, thread programming has been available using a model called
+interpreter threads which provides a new Perl interpreter for each thread,
+and, by default, results in no data or state information being shared
+between threads.
+
+(Prior to Perl 5.8, 5005threads was available through the "Thread.pm" API.
+This threading model has been deprecated, and was removed as of Perl 5.10.0.)

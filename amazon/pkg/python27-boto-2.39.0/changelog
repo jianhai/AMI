@@ -1,0 +1,212 @@
+* 四 2月 18 2016 Matt Nierzwicki <nierzwic@amazon.com>
+- Update to 2.39.0 from upstream
+
+* 四 4月 16 2015 Jason Green <jasg@amazon.com>
+- update to 2.38.0 from upstream
+
+* 一 3月 02 2015 Ben Cressey <bcressey@amazon.com>
+- add alternatives for boto
+
+* 一 2月 09 2015 hpetty <hpetty@amazon.com>
+- update to 2.36.0 from upstream
+
+* 五 2月 06 2015 Ben Cressey <bcressey@amazon.com>
+- fix python version requirement in scripts
+
+* 四 2月 05 2015 Tom Kirchner <tjk@amazon.com>
+- Build for multiple python versions
+
+* 四 1月 22 2015 hpetty <hpetty@amazon.com>
+- update to 2.35.2 from upstream
+
+* 一 1月 12 2015 Lee Trager <ltrager@amazon.com>
+- Update to 2.35.1 from upstream
+
+* 五 1月 09 2015 Lee Trager <ltrager@amazon.com>
+- Update to 2.35.0 from upstream
+
+* 二 10月 21 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.34.0
+
+* 四 10月 09 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.33.0 from upstream
+
+* 二 8月 19 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.32.1 from upstream
+
+* 四 7月 31 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.32.0 from upstream
+
+* 二 7月 29 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.31.1 from upstream
+
+* 三 7月 02 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.30.0 from upstream
+
+* 二 6月 10 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.29.1 from upstream
+
+* 五 5月 09 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.28.0 from upstream
+
+* 五 3月 07 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.27.0 from upstream
+
+* 三 3月 05 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.26.1 from upstream
+
+* 四 2月 27 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.25.0 from upstream
+
+* 一 2月 03 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.24.0 from upstream
+
+* 一 1月 13 2014 Lee Trager <ltrager@amazon.com>
+- Update to 2.23.0 from upstream
+
+* 二 12月 17 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.20.1 from upstream
+
+* 二 12月 03 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.19.0 from upstream
+
+* 四 11月 14 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.17.0 from upstream
+
+* 六 11月 09 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.16.0 from upstream
+
+* 二 10月 22 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.15.0 from upstream
+
+* 三 10月 16 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.14.0 from upstream
+
+* 二 9月 17 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.13.3 from upstream
+
+* 五 9月 13 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.13.0 from upstream
+
+* 二 9月 10 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.12.0 from upstream
+
+* 五 8月 30 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.11.0 from upstream
+
+* 二 7月 30 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.9.9 from upstream
+
+* 一 7月 22 2013 Lee Trager <ltrager@amazon.com>
+- Update to boto 2.9.8 from upstream
+
+* 三 7月 10 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.9.7 from upstream
+
+* 三 6月 19 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.9.6 from upstream
+
+* 一 6月 10 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.9.5 from upstream
+
+* 四 5月 23 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.9.4 from upstream
+
+* 二 5月 07 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.9.2 from upstream
+
+* 四 4月 18 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.9.0 from upstream
+
+* 五 2月 01 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.8.0 from upstream and change homepage
+
+* 一 1月 14 2013 Lee Trager <ltrager@amazon.com>
+- Update to 2.7.0 from upstream
+
+* 五 9月 21 2012 Lee Trager <ltrager@amazon.com>
+- Add optional checks section
+- Update to 2.6.0 from upstream
+
+* 一 6月 25 2012 Lee Trager <ltrager@amazon.com>
+- Update to 2.5.2 from upstream
+
+* 四 6月 14 2012 Lee Trager <ltrager@amazon.com>
+- Update to 2.5.1 from upstream
+
+* 三 6月 13 2012 Lee Trager <ltrager@amazon.com>
+- Update Boto to 2.5.0 from upstream
+
+* 三 5月 23 2012 Lee Trager <ltrager@amazon.com>
+- Update to the latest release from upstream
+
+* 一 4月 23 2012 Lee Trager <ltrager@amazon.com>
+- Update to the latest upstream version
+
+* 四 3月 08 2012 Andrew Jorgensen <ajorgens@amazon.com> - 2.2.2-0
+- update to 2.2.2
+
+* 四 3月 08 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Update to 2.2.2
+
+* 五 12月 09 2011 Cristian Gafton <gafton@amazon.com> - 2.1.1-0
+- update to 2.1.1
+
+* 五 12月 09 2011 Cristian Gafton <gafton@amazon.com>
+- add cherry-picked patches
+- update to version 2.1.1
+
+* 五 8月 26 2011 Cristian Gafton <gafton@amazon.com> - 2.0-0
+- updated to version 2.0
+
+* 五 8月 26 2011 Cristian Gafton <gafton@amazon.com>
+- add patches from the 2.0_stable branch
+- update to version 2.0
+
+* 二 1月 11 2011 Cristian Gafton <gafton@amazon.com>
+- allow building in trees that do not have sistem-wide python macros
+
+* 三 7月 14 2010 Cristian Gafton <gafton@amazon.com>
+- use system python macros ; rebuild
+- import source package GOBI/python-boto-1.9b-2.fc12
+- import source package GOBI/python-boto-1.8d-1.fc12
+- import source package GOBI/python-boto-1.5c-2.fc11
+- setup complete for package python-boto
+
+* 二 2月 09 2010 Robert Scheck <robert@fedoraproject.org> 1.9b-2
+- Backported upstream patch for image registration (#561216)
+
+* 六 1月 09 2010 Robert Scheck <robert@fedoraproject.org> 1.9b-1
+- Upgrade to 1.9b
+
+* 五 7月 24 2009 Robert Scheck <robert@fedoraproject.org> 1.8d-1
+- Upgrade to 1.8d (#513560)
+
+* 三 6月 03 2009 Luke Macken <lmacken@redhat.com> 1.7a-2
+- Add python-setuptools-devel to our build requirements, for egg-info
+
+* 四 4月 16 2009 Robert Scheck <robert@fedoraproject.org> 1.7a-1
+- Upgrade to 1.7a
+
+* 一 2月 23 2009 Robert Scheck <robert@fedoraproject.org> 1.5c-2
+- Rebuild against rpm 4.6
+
+* 日 12月 07 2008 Robert Scheck <robert@fedoraproject.org> 1.5c-1
+- Upgrade to 1.5c
+
+* 五 12月 05 2008 Jeremy Katz <katzj@redhat.com> 1.2a-2
+- Rebuild for python 2.6
+
+* 三 5月 07 2008 Robert Scheck <robert@fedoraproject.org> 1.2a-1
+- Upgrade to 1.2a
+
+* 六 2月 09 2008 Robert Scheck <robert@fedoraproject.org> 1.0a-1
+- Upgrade to 1.0a
+
+* 六 12月 08 2007 Robert Scheck <robert@fedoraproject.org> 0.9d-1
+- Upgrade to 0.9d
+
+* 四 8月 30 2007 Robert Scheck <robert@fedoraproject.org> 0.9b-1
+- Upgrade to 0.9b
+- Initial spec file for Fedora and Red Hat Enterprise Linux
+

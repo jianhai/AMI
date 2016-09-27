@@ -1,0 +1,34 @@
+Name        : cracklib
+Version     : 2.8.16
+Release     : 4.14.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分10秒
+Group       : System Environment/Libraries
+Size        : 188777
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时15分53秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cracklib-2.8.16-4.14.amzn1.src.rpm
+Build Date  : 2015年03月04日 星期三 18时04分23秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://sourceforge.net/projects/cracklib/
+Summary     : A password-checking library
+Description :
+CrackLib tests passwords to determine whether they match certain
+security-oriented characteristics, with the purpose of stopping users
+from choosing passwords that are easy to guess. CrackLib performs
+several tests on passwords: it tries to generate words from a username
+and gecos entry and checks those words against the password; it checks
+for simplistic patterns in passwords; and it checks for the password
+in a dictionary.
+
+CrackLib is actually a library containing a particular C function
+which is used to check the password, as well as other C
+functions. CrackLib is not a replacement for a passwd program; it must
+be used in conjunction with an existing passwd program.
+
+Install the cracklib package if you need a program to check users'
+passwords to see if they are at least minimally secure. If you install
+CrackLib, you will also want to install the cracklib-dicts package.

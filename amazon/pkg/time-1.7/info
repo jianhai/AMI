@@ -1,0 +1,21 @@
+Name        : time
+Version     : 1.7
+Release     : 38.9.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分33秒
+Group       : Applications/System
+Size        : 37551
+License     : GPLv2+
+Signature   : RSA/SHA256, 2015年03月27日 星期五 20时46分14秒, Key ID bcb4a85b21c0f39f
+Source RPM  : time-1.7-38.9.amzn1.src.rpm
+Build Date  : 2015年03月27日 星期五 18时33分27秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/time/
+Summary     : A GNU utility for monitoring a program's use of system resources
+Description :
+The GNU time utility runs another program, collects information about
+the resources used by that program while it is running, and displays
+the results.

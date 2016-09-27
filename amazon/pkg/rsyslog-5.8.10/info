@@ -1,0 +1,24 @@
+Name        : rsyslog
+Version     : 5.8.10
+Release     : 9.26.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分26秒
+Group       : System Environment/Daemons
+Size        : 2186574
+License     : (GPLv3+ and ASL 2.0)
+Signature   : RSA/SHA256, 2014年11月12日 星期三 16时21分09秒, Key ID bcb4a85b21c0f39f
+Source RPM  : rsyslog-5.8.10-9.26.amzn1.src.rpm
+Build Date  : 2014年11月11日 星期二 00时29分36秒
+Build Host  : build-64002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.rsyslog.com/
+Summary     : Enhanced system logging and kernel message trapping daemons
+Description :
+Rsyslog is an enhanced, multi-threaded syslog daemon. It supports MySQL,
+syslog/TCP, RFC 3195, permitted sender lists, filtering on any message part,
+and fine grain output format control. It is compatible with stock sysklogd
+and can be used as a drop-in replacement. Rsyslog is simple to set up, with
+advanced features suitable for enterprise-class, encryption-protected syslog
+relay chains.

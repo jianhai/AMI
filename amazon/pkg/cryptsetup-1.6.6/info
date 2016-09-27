@@ -1,0 +1,20 @@
+Name        : cryptsetup
+Version     : 1.6.6
+Release     : 3.21.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分30秒
+Group       : Applications/System
+Size        : 258982
+License     : GPLv2+ and LGPLv2+
+Signature   : RSA/SHA256, 2015年08月29日 星期六 23时51分37秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cryptsetup-1.6.6-3.21.amzn1.src.rpm
+Build Date  : 2015年08月27日 星期四 20时19分50秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://cryptsetup.googlecode.com/
+Summary     : A utility for setting up encrypted disks
+Description :
+The cryptsetup package contains a utility for setting up
+disk encryption using dm-crypt kernel module.

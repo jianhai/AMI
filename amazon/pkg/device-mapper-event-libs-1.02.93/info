@@ -1,0 +1,20 @@
+Name        : device-mapper-event-libs
+Version     : 1.02.93
+Release     : 3.26.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分22秒
+Group       : System Environment/Libraries
+Size        : 26984
+License     : LGPLv2
+Signature   : RSA/SHA256, 2015年08月22日 星期六 02时06分33秒, Key ID bcb4a85b21c0f39f
+Source RPM  : lvm2-2.02.115-3.26.amzn1.src.rpm
+Build Date  : 2015年08月20日 星期四 23时28分08秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://sources.redhat.com/lvm2
+Summary     : Device-mapper event daemon shared library
+Description :
+This package contains the device-mapper event daemon shared library,
+libdevmapper-event.

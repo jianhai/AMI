@@ -1,0 +1,28 @@
+Name        : libtirpc
+Version     : 0.2.4
+Release     : 0.3.13.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分13秒
+Group       : System Environment/Libraries
+Size        : 172663
+License     : SISSL and BSD
+Signature   : RSA/SHA256, 2014年07月23日 星期三 00时13分18秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libtirpc-0.2.4-0.3.13.amzn1.src.rpm
+Build Date  : 2014年07月21日 星期一 22时13分56秒
+Build Host  : build-64004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://nfsv4.bullopensource.org/
+Summary     : Transport Independent RPC Library
+Description :
+This package contains SunLib's implementation of transport-independent
+RPC (TI-RPC) documentation.  This library forms a piece of the base of
+Open Network Computing (ONC), and is derived directly from the
+Solaris 2.3 source.
+
+TI-RPC is an enhanced version of TS-RPC that requires the UNIX System V
+Transport Layer Interface (TLI) or an equivalent X/Open Transport Interface
+(XTI).  TI-RPC is on-the-wire compatible with the TS-RPC, which is supported
+by almost 70 vendors on all major operating systems.  TS-RPC source code
+(RPCSRC 4.0) remains available from several internet sites.

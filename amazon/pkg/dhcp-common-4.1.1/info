@@ -1,0 +1,26 @@
+Name        : dhcp-common
+Epoch       : 12
+Version     : 4.1.1
+Release     : 43.P1.24.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分55秒
+Group       : System Environment/Base
+Size        : 198000
+License     : ISC
+Signature   : RSA/SHA256, 2016年04月20日 星期三 22时27分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : dhcp-4.1.1-43.P1.24.amzn1.src.rpm
+Build Date  : 2016年04月14日 星期四 23时34分22秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://isc.org/products/DHCP/
+Summary     : Common files used by ISC dhcp client and server
+Description :
+DHCP (Dynamic Host Configuration Protocol) is a protocol which allows
+individual devices on an IP network to get their own network
+configuration information (IP address, subnetmask, broadcast address,
+etc.) from a DHCP server. The overall purpose of DHCP is to make it
+easier to administer a large network.
+
+This package provides common files used by dhcp and dhclient package.

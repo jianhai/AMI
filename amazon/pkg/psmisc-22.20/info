@@ -1,0 +1,24 @@
+Name        : psmisc
+Version     : 22.20
+Release     : 8.12.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分02秒
+Group       : Applications/System
+Size        : 473992
+License     : GPLv2+
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时36分18秒, Key ID bcb4a85b21c0f39f
+Source RPM  : psmisc-22.20-8.12.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 19时39分55秒
+Build Host  : build-64002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://sourceforge.net/projects/psmisc
+Summary     : Utilities for managing processes on your system
+Description :
+The psmisc package contains utilities for managing processes on your
+system: pstree, killall and fuser.  The pstree command displays a tree
+structure of all of the running processes on your system.  The killall
+command sends a specified signal (SIGTERM if nothing is specified) to
+processes identified by name.  The fuser command identifies the PIDs
+of processes that are using specified files or filesystems.

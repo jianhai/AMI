@@ -1,0 +1,21 @@
+Name        : cronie-anacron
+Version     : 1.4.4
+Release     : 12.6.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分27秒
+Group       : System Environment/Base
+Size        : 44006
+License     : MIT and BSD and ISC and GPLv2
+Signature   : RSA/SHA256, 2014年02月28日 星期五 02时31分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cronie-1.4.4-12.6.amzn1.src.rpm
+Build Date  : 2013年11月27日 星期三 00时36分59秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/cronie
+Summary     : Utility for running regular jobs
+Description :
+Anacron became part of cronie. Anacron is used only for running regular jobs.
+The default settings execute regular jobs by anacron, however this could be
+overloaded in settings.

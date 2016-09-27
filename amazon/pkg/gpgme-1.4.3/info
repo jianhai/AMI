@@ -1,0 +1,22 @@
+Name        : gpgme
+Version     : 1.4.3
+Release     : 5.15.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分24秒
+Group       : Applications/System
+Size        : 583599
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2015年04月01日 星期三 20时56分52秒, Key ID bcb4a85b21c0f39f
+Source RPM  : gpgme-1.4.3-5.15.amzn1.src.rpm
+Build Date  : 2015年04月01日 星期三 18时55分26秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnupg.org/related_software/gpgme/
+Summary     : GnuPG Made Easy - high level crypto API
+Description :
+GnuPG Made Easy (GPGME) is a library designed to make access to GnuPG
+easier for applications.  It provides a high-level crypto API for
+encryption, decryption, signing, signature verification and key
+management.

@@ -1,0 +1,24 @@
+Name        : python27-virtualenv
+Version     : 12.0.7
+Release     : 1.12.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分32秒
+Group       : Development/Languages
+Size        : 2886861
+License     : MIT
+Signature   : RSA/SHA256, 2016年01月17日 星期日 19时44分18秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-virtualenv-12.0.7-1.12.amzn1.src.rpm
+Build Date  : 2016年01月07日 星期四 23时14分15秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://pypi.python.org/pypi/virtualenv
+Summary     : Tool to create isolated Python environments
+Description :
+virtualenv is a tool to create isolated Python environments. virtualenv
+is a successor to workingenv, and an extension of virtual-python. It is
+written by Ian Bicking, and sponsored by the Open Planning Project. It is
+licensed under an MIT-style permissive license.
+
+This package is meant to be used with Python 2.7.

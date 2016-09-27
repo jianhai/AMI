@@ -1,0 +1,20 @@
+Name        : cyrus-sasl-plain
+Version     : 2.1.23
+Release     : 13.16.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分33秒
+Group       : System Environment/Libraries
+Size        : 37696
+License     : BSD
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时34分35秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cyrus-sasl-2.1.23-13.16.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 03时57分13秒
+Build Host  : build-60002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://asg.web.cmu.edu/sasl/sasl-library.html
+Summary     : PLAIN and LOGIN authentication support for Cyrus SASL
+Description :
+The cyrus-sasl-plain package contains the Cyrus SASL plugins which support
+PLAIN and LOGIN authentication schemes.

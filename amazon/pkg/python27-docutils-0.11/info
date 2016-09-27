@@ -1,0 +1,29 @@
+Name        : python27-docutils
+Version     : 0.11
+Release     : 1.15.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分16秒
+Group       : System Environment/Libraries
+Size        : 6125311
+License     : Public Domain and BSD and Python and GPLv3+
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分24秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-docutils-0.11-1.15.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 01时43分05秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://docutils.sourceforge.net
+Summary     : System for processing plaintext documentation
+Description :
+The Docutils project specifies a plaintext markup language, reStructuredText,
+which is easy to read and quick to write. The project includes a python
+library to parse rST files and transform them into other useful formats such
+as HTML, XML, and TeX as well as commandline tools that give the enduser
+access to this functionality.
+
+Currently, the library supports parsing rST that is in standalone files and
+PEPs (Python Enhancement Proposals). Work is underway to parse rST from
+Python inline documentation modules and packages.
+
+This package is meant to be used with Python 2.7.

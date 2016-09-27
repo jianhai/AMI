@@ -1,0 +1,22 @@
+Name        : words
+Version     : 3.0
+Release     : 17.8.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分33秒
+Group       : System Environment/Libraries
+Size        : 4959484
+License     : Public Domain
+Signature   : RSA/SHA256, 2011年01月25日 星期二 22时50分47秒, Key ID bcb4a85b21c0f39f
+Source RPM  : words-3.0-17.8.amzn1.src.rpm
+Build Date  : 2011年01月17日 星期一 01时31分13秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://en.wikipedia.org/wiki/Moby_Project
+Summary     : A dictionary of English words for the /usr/share/dict directory
+Description :
+The words file is a dictionary of English words for the
+/usr/share/dict directory. Some programs use this database of
+words to check spelling. Password checkers use it to look for bad
+passwords.

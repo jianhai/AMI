@@ -1,0 +1,27 @@
+Name        : python27-babel
+Version     : 0.9.4
+Release     : 5.1.8.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分17秒
+Group       : Development/Languages
+Size        : 5439493
+License     : BSD
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分21秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-babel-0.9.4-5.1.8.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 01时49分09秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://babel.edgewall.org/
+Summary     : Library for internationalizing Python applications
+Description :
+Babel is composed of two major parts:
+
+* tools to build and work with gettext message catalogs
+
+* a Python interface to the CLDR (Common Locale Data Repository),
+  providing access to various locale display names, localized number
+  and date formatting, etc.
+
+This package is meant to be used with Python 2.7.

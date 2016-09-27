@@ -1,0 +1,21 @@
+Name        : dracut-modules-growroot
+Version     : 0.20
+Release     : 1.5.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分28秒
+Group       : System Environment/Base
+Size        : 2596
+License     : GPLv3
+Signature   : RSA/SHA256, 2016年04月27日 星期三 21时02分15秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cloud-utils-0.27-1.5.amzn1.src.rpm
+Build Date  : 2016年04月22日 星期五 21时14分30秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://launchpad.net/cloud-initramfs-tools
+Summary     : Automatically resize the root partition
+Description :
+This dracut module will rewrite the partition table of a disk so that the root
+partition has as much space as possible: growing it to the edge of the disk, or
+the edge of the next partition.

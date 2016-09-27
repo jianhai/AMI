@@ -1,0 +1,29 @@
+Name        : python27-backports
+Version     : 1.0
+Release     : 3.14.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分17秒
+Group       : Development/Libraries
+Size        : 638
+License     : Public Domain
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分21秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-backports-1.0-3.14.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 23时30分29秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://pypi.python.org/pypi/backports
+Summary     : Namespace for backported Python 3.x features
+Description :
+The backports namespace is a namespace reserved for features backported from
+the Python standard library to older versions of Python 2.
+
+Packages that exist in the backports namespace in Fedora should not provide
+their own backports/__init__.py, but instead require this package.
+
+Backports to earlier versions of Python 3, if they exist, do not need this
+package because of changes made in Python 3.3 in PEP 420
+(http://www.python.org/dev/peps/pep-0420/).
+
+This package is meant to be used with Python 2.7.

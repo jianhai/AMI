@@ -1,0 +1,21 @@
+Name        : iptables
+Version     : 1.4.18
+Release     : 1.22.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分06秒
+Group       : System Environment/Base
+Size        : 1189600
+License     : GPLv2
+Signature   : RSA/SHA256, 2013年09月27日 星期五 18时07分50秒, Key ID bcb4a85b21c0f39f
+Source RPM  : iptables-1.4.18-1.22.amzn1.src.rpm
+Build Date  : 2013年09月27日 星期五 14时40分06秒
+Build Host  : build-31003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.netfilter.org/
+Summary     : Tools for managing Linux kernel packet filtering capabilities
+Description :
+The iptables utility controls the network packet filtering code in the
+Linux kernel. If you need to set up firewalls and/or IP masquerading,
+you should install this package.

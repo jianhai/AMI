@@ -1,0 +1,23 @@
+Name        : generic-logos
+Version     : 17.0.0
+Release     : 2.5.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分19秒
+Group       : System Environment/Base
+Size        : 699393
+License     : GPLv2 and LGPLv2+
+Signature   : RSA/SHA256, 2013年03月07日 星期四 18时38分21秒, Key ID bcb4a85b21c0f39f
+Source RPM  : generic-logos-17.0.0-2.5.amzn1.src.rpm
+Build Date  : 2013年03月07日 星期四 01时37分13秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/generic-logos/
+Summary     : Icons and pictures
+Description :
+The generic-logos package contains various image files which can be
+used by the bootloader, anaconda, and other related tools. It can
+be used as a replacement for the fedora-logos package, if you are
+unable for any reason to abide by the trademark restrictions on the
+fedora-logos or fedora-remix-logos package.

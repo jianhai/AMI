@@ -1,0 +1,22 @@
+Name        : libidn
+Version     : 1.18
+Release     : 2.8.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分00秒
+Group       : System Environment/Libraries
+Size        : 567580
+License     : LGPLv2+ and GPLv3+ and GFDL
+Signature   : RSA/SHA256, 2011年01月25日 星期二 21时38分37秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libidn-1.18-2.8.amzn1.src.rpm
+Build Date  : 2011年01月16日 星期日 00时04分42秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/libidn/
+Summary     : Internationalized Domain Name support library
+Description :
+GNU Libidn is an implementation of the Stringprep, Punycode and
+IDNA specifications defined by the IETF Internationalized Domain
+Names (IDN) working group, used for internationalized domain
+names.

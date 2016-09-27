@@ -1,0 +1,386 @@
+* 二 4月 07 2015 Jamie Anderson <jamieand@amazon.com>
+- Require device-mapper-libs that supports deferred removal
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/cryptsetup-1.6.6-3.el7
+
+* 六 1月 24 2015 Ben Cressey <bcressey@amazon.com>
+- build with system python
+
+* 四 12月 18 2014 Ondrej Kozina <okozina@redhat.com> - 1.6.6-3
+- drop FIPS power on self test and library checksum
+- Resolves: #1158897
+
+* 一 9月 29 2014 Ondrej Kozina <okozina@redhat.com> - 1.6.6-2
+- patch: fix failures related to reencrypt log files
+- Resolves: #1140199
+
+* 一 9月 08 2014 Ondrej Kozina <okozina@redhat.com> - 1.6.6-1
+- Update to cryptsetup 1.6.6.
+- Resolves: #1117372 #1038097
+
+* 二 5月 06 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/cryptsetup-1.6.3-2.el7
+
+* 三 1月 29 2014 Cristian Gafton <gafton@amazon.com>
+- update build req for libgcrypt
+- import source package F18/cryptsetup-1.6.2-1.fc18
+- import source package F18/cryptsetup-1.6.1-1.fc18
+- import source package F18/cryptsetup-1.6.0-1.fc18
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 1.6.3-2
+- Mass rebuild 2014-01-24
+
+* 一 1月 06 2014 Ondrej Kozina <okozina@redhat.com> - 1.6.3-1
+- Update to cryptsetup 1.6.3.
+- various fixes related to block devices with 4KiB sectors
+- enable reencryption using specific keyslot (dracut module)
+- fix failure in reading last keyslot from external LUKS header
+- update FIPS POST to be complaint with actual requirements
+- fix hash limiting if parameter is not numeric
+- Resolves: #1028362 #1029032 #1029406 #1030288 #1034388 #1038097
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 1.6.2-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/cryptsetup-1.6.2-2.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package cryptsetup
+
+* 二 11月 05 2013 Ondrej Kozina <okozina@redhat.com> - 1.6.2-2
+- 90reencrypt: Move conflict with 90crypt to install() section.
+- 90reencrypt: Drop to emergency_shell after successful reencryption.
+- Resolves: #1021593
+
+* 一 10月 14 2013 Ondrej Kozina <okozina@redhat.com> - 1.6.2-1
+- Update to cryptsetup 1.6.2.
+- Add dracut module for cryptsetup-reencrypt (90reencrypt).
+- 90reencrypt: Rename dracut parameteres to be compliant with actual naming guidance.
+- 90reencrypt: Install and load loop kernel module.
+- 90reencrypt: Fix lock file name.
+- 90reencrypt: Add conflict with 90crypt dracut module (more info in #1010287)
+- Resolves: #1010278 #1010287
+
+* 日 8月 04 2013 Milan Broz <gmazyland@gmail.com> - 1.6.2-1
+- Update to cryptsetup 1.6.2.
+
+* 六 8月 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 五 7月 19 2013 Steven Noonan <snoonan@amazon.com>
+- cryptsetup.spec: move libcryptsetup.pc from //lib64 to /usr//lib64
+
+* 日 3月 31 2013 Milan Broz <gmazyland@gmail.com> - 1.6.1-1
+- Update to cryptsetup 1.6.1.
+- Install ReleaseNotes files instead of empty Changelog file.
+
+* 二 3月 26 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- add (x86-64) to library package requires and require device-mapper-libs(x86-64) >= 1.02.77
+
+* 一 3月 25 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Move binaries and libraries back to / from /usr
+
+* 三 2月 13 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 一 1月 14 2013 Milan Broz <mbroz@redhat.com> - 1.6.0-1
+- Update to cryptsetup 1.6.0.
+- Change default LUKS encryption mode to aes-xts-plain64 (AES128).
+- Force use of gcrypt PBKDF2 instead of internal implementation.
+
+* 六 12月 29 2012 Milan Broz <mbroz@redhat.com> - 1.6.0-0.1
+- Update to cryptsetup 1.6.0-rc1.
+- Relax license to GPLv2+ according to new release.
+- Compile cryptsetup with libpwquality support.
+
+* 四 12月 06 2012 Lee Trager <ltrager@amazon.com>
+- import source package F17/cryptsetup-1.5.1-1.fc17
+
+* 四 12月 06 2012 ltrager <ltrager@amazon.com>
+- setup complete for package cryptsetup
+
+* 二 10月 16 2012 Milan Broz <mbroz@redhat.com> - 1.5.1-1
+- Update to cryptsetup 1.5.1.
+
+* 三 7月 18 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 二 7月 10 2012 Milan Broz <mbroz@redhat.com> - 1.5.0-1
+- Update to cryptsetup 1.5.0.
+
+* 三 6月 20 2012 Milan Broz <mbroz@redhat.com> - 1.5.0-0.2
+- Update to cryptsetup 1.5.0-rc2.
+- Add cryptsetup-reencrypt subpackage.
+
+* 一 6月 11 2012 Milan Broz <mbroz@redhat.com> - 1.5.0-0.1
+- Update to cryptsetup 1.5.0-rc1.
+- Add veritysetup subpackage.
+- Move localization files to libs subpackage.
+
+* 四 5月 31 2012 Milan Broz <mbroz@redhat.com> - 1.4.3-2
+- Build with fipscheck (verification in fips mode).
+- Clean up spec file, use install to /usr.
+
+* 四 5月 31 2012 Milan Broz <mbroz@redhat.com> - 1.4.3-1
+- Update to cryptsetup 1.4.3.
+
+* 四 4月 12 2012 Milan Broz <mbroz@redhat.com> - 1.4.2-1
+- Update to cryptsetup 1.4.2.
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 11月 09 2011 Milan Broz <mbroz@redhat.com> - 1.4.1-1
+- Update to cryptsetup 1.4.1.
+- Add Python cryptsetup bindings.
+- Obsolete separate python-cryptsetup package.
+
+* 三 10月 26 2011 Milan Broz <mbroz@redhat.com> - 1.4.0-1
+- Update to cryptsetup 1.4.0.
+
+* 一 10月 10 2011 Milan Broz <mbroz@redhat.com> - 1.4.0-0.1
+- Update to cryptsetup 1.4.0-rc1.
+- Rename package back from cryptsetup-luks to cryptsetup.
+
+* 三 6月 22 2011 Milan Broz <mbroz@redhat.com> - 1.3.1-2
+- Fix return code for status command when device doesn't exist.
+
+* 二 5月 24 2011 Milan Broz <mbroz@redhat.com> - 1.3.1-1
+- Update to cryptsetup 1.3.1.
+
+* 二 4月 05 2011 Milan Broz <mbroz@redhat.com> - 1.3.0-1
+- Update to cryptsetup 1.3.0.
+
+* 二 3月 22 2011 Milan Broz <mbroz@redhat.com> - 1.3.0-0.2
+- Update to cryptsetup 1.3.0-rc2
+
+* 一 3月 14 2011 Milan Broz <mbroz@redhat.com> - 1.3.0-0.1
+- Update to cryptsetup 1.3.0-rc1
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 12月 20 2010 Milan Broz <mbroz@redhat.com> - 1.2.0-1
+- Update to cryptsetup 1.2.0
+
+* 四 11月 25 2010 Milan Broz <mbroz@redhat.com> - 1.2.0-0.2
+- Fix crypt_activate_by_keyfile() to work with PLAIN devices.
+
+* 二 11月 16 2010 Milan Broz <mbroz@redhat.com> - 1.2.0-0.1
+- Add FAQ to documentation.
+- Update to cryptsetup 1.2.0-rc1
+
+* 六 7月 03 2010 Milan Broz <mbroz@redhat.com> - 1.1.3-1
+- Update to cryptsetup 1.1.3
+
+* 一 6月 07 2010 Milan Broz <mbroz@redhat.com> - 1.1.2-2
+- Fix alignment ioctl use.
+- Fix API activation calls to handle NULL device name.
+
+* 日 5月 30 2010 Milan Broz <mbroz@redhat.com> - 1.1.2-1
+- Update to cryptsetup 1.1.2
+- Fix luksOpen handling of new line char on stdin.
+
+* 日 5月 23 2010 Milan Broz <mbroz@redhat.com> - 1.1.1-1
+- Update to cryptsetup 1.1.1
+- Fix luksClose for stacked LUKS/LVM devices.
+
+* 一 5月 03 2010 Milan Broz <mbroz@redhat.com> - 1.1.1-0.2
+- Update to cryptsetup 1.1.1-rc2.
+
+* 六 5月 01 2010 Milan Broz <mbroz@redhat.com> - 1.1.1-0.1
+- Update to cryptsetup 1.1.1-rc1.
+
+* 日 1月 17 2010 Milan Broz <mbroz@redhat.com> - 1.1.0-1
+- Update to cryptsetup 1.1.0.
+
+* 五 1月 15 2010 Milan Broz <mbroz@redhat.com> - 1.1.0-0.6
+- Fix gcrypt initialisation.
+- Fix backward compatibility for hash algorithm (uppercase).
+
+* 三 12月 30 2009 Milan Broz <mbroz@redhat.com> - 1.1.0-0.5
+- Update to cryptsetup 1.1.0-rc4
+
+* 一 11月 16 2009 Milan Broz <mbroz@redhat.com> - 1.1.0-0.4
+- Update to cryptsetup 1.1.0-rc3
+
+* 四 10月 01 2009 Milan Broz <mbroz@redhat.com> - 1.1.0-0.3
+- Update to cryptsetup 1.1.0-rc2
+- Fix libcryptsetup to properly export only versioned symbols.
+
+* 二 9月 29 2009 Milan Broz <mbroz@redhat.com> - 1.1.0-0.2
+- Update to cryptsetup 1.1.0-rc1
+- Add luksHeaderBackup and luksHeaderRestore commands.
+
+* 五 9月 11 2009 Milan Broz <mbroz@redhat.com> - 1.1.0-0.1
+- Update to new upstream testing version with new API interface.
+- Add luksSuspend and luksResume commands.
+- Introduce pkgconfig.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Milan Broz <mbroz@redhat.com> - 1.0.7-1
+- Update to upstream final release.
+- Split libs subpackage.
+- Remove rpath setting from cryptsetup binary.
+
+* 三 7月 15 2009 Till Maas <opensource@till.name> - 1.0.7-0.2
+- update BR because of libuuid splitout from e2fsprogs
+
+* 一 6月 22 2009 Milan Broz <mbroz@redhat.com> - 1.0.7-0.1
+- Update to new upstream 1.0.7-rc1.
+
+- Wipe old fs headers to not confuse blkid (#468062)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.6-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 10月 30 2008 Milan Broz <mbroz@redhat.com> - 1.0.6-6
+- Wipe old fs headers to not confuse blkid (#468062)
+
+* 二 9月 23 2008 Milan Broz <mbroz@redhat.com> - 1.0.6-5
+- Change new project home page.
+- Print more descriptive messages for initialization errors.
+- Refresh patches to versions commited upstream.
+
+* 六 9月 06 2008 Milan Broz <mbroz@redhat.com> - 1.0.6-4
+- Fix close of zero decriptor.
+- Fix udevsettle delays - use temporary crypt device remapping.
+
+* 三 5月 28 2008 Till Maas <opensource till name> - 1.0.6-3
+- remove a duplicate sentence from the manpage (RH #448705)
+- add patch metadata about upstream status
+
+* 二 4月 15 2008 Bill Nottinghm <notting@redhat.com> - 1.0.6-2
+- Add the device to the luksOpen prompt (#433406)
+- Use iconv, not recode (#442574)
+
+* 四 3月 13 2008 Till Maas <opensource till name> - 1.0.6-1
+- Update to latest version
+- remove patches that have been merged upstream
+
+* 一 3月 03 2008 Till Maas <opensource till name> - 1.0.6-0.1.pre2
+- Update to new version with several bugfixes
+- remove patches that have been merged upstream
+- add patch from cryptsetup newsgroup
+- fix typo / missing luksRemoveKey in manpage (patch)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0.5-9
+- Autorebuild for GCC 4.3
+
+* 六 1月 19 2008 Peter Jones <pjones@redhat.com> - 1.0.5-8
+- Rebuild for broken deps.
+
+* 四 8月 30 2007 Till Maas <opensource till name> - 1.0.5-7
+- update URL
+- update license tag
+- recode ChangeLog from latin1 to uf8
+- add smp_mflags to make
+
+* 五 8月 24 2007 Till Maas <opensource till name> - 1.0.5-6
+- cleanup BuildRequires:
+- removed versions, packages in Fedora are new enough
+- changed popt to popt-devel
+
+* 四 8月 23 2007 Till Maas <opensource till name> - 1.0.5-5
+- fix devel subpackage requires
+- remove empty NEWS README
+- remove uneeded INSTALL
+- remove uneeded ldconfig requires
+- add readonly detection patch
+
+* 三 8月 08 2007 Till Maas <opensource till name> - 1.0.5-4
+- disable patch2, libsepol is now detected by configure
+- move libcryptsetup.so to %{_libdir} instead of /%{_lib}
+
+* 五 7月 27 2007 Till Maas <opensource till name> - 1.0.5-3
+- Use /%{_lib} instead of /lib to use /lib64 on 64bit archs
+
+* 四 7月 26 2007 Till Maas <opensource till name> - 1.0.5-2
+- Use /lib as libdir (#243228)
+- sync header and library (#215349)
+- do not use %makeinstall (recommended by PackageGuidelines)
+- select sbindir with %configure instead with make
+- add TODO
+
+* 三 6月 13 2007 Jeremy Katz <katzj@redhat.com> - 1.0.5-1
+- update to 1.0.5
+
+* 一 6月 04 2007 Peter Jones <pjones@redhat.com> - 1.0.3-5
+- Don't build static any more.
+
+* 一 2月 05 2007 Alasdair Kergon <agk@redhat.com> - 1.0.3-4
+- Add build dependency on new device-mapper-devel package.
+- Add preun and post ldconfig requirements.
+- Update BuildRoot.
+
+* 三 11月 01 2006 Peter Jones <pjones@redhat.com> - 1.0.3-3
+- Require newer libselinux (#213414)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.0.3-2.1
+- rebuild
+
+* 三 6月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.0.3-2
+- put shared libs in the right subpackages
+
+* 五 4月 07 2006 Bill Nottingham <notting@redhat.com> 1.0.3-1
+- update to final 1.0.3
+
+* 一 2月 27 2006 Bill Nottingham <notting@redhat.com> 1.0.3-0.rc2
+- update to 1.0.3rc2, fixes bug with HAL & encrypted devices (#182658)
+
+* 三 2月 22 2006 Bill Nottingham <notting@redhat.com> 1.0.3-0.rc1
+- update to 1.0.3rc1, reverts changes to default encryption type
+
+* 二 2月 21 2006 Bill Nottingham <notting@redhat.com> 1.0.2-1
+- update to 1.0.2, fix incompatiblity with old cryptsetup (#176726)
+
+* 一 2月 20 2006 Karsten Hopp <karsten@redhat.de> 1.0.1-5
+- BuildRequires: libselinux-devel
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.1-4.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.0.1-4.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 12月 05 2005 Bill Nottingham <notting@redhat.com> 1.0.1-4
+- rebuild against new libdevmapper
+
+* 四 10月 13 2005 Florian La Roche <laroche@redhat.com>
+- add -lsepol to rebuild on current fc5
+
+* 一 8月 22 2005 Karel Zak <kzak@redhat.com> 1.0.1-2
+- fix cryptsetup help for isLuks action
+
+* 五 7月 01 2005 Bill Nottingham <notting@redhat.com> 1.0.1-1
+- update to 1.0.1 - fixes incompatiblity with previous cryptsetup for
+  piped passwords
+
+* 四 6月 16 2005 Bill Nottingham <notting@redhat.com> 1.0-2
+- add patch for 32/64 bit compatibility (#160445, <redhat@paukstadt.de>)
+
+* 二 3月 29 2005 Bill Nottingham <notting@redhat.com> 1.0-1
+- update to 1.0
+
+* 四 3月 10 2005 Bill Nottingham <notting@redhat.com> 0.993-1
+- switch to cryptsetup-luks, for LUKS support
+
+* 二 10月 12 2004 Bill Nottingham <notting@redhat.com> 0.1-4
+- oops, make that *everything* static (#129926)
+
+* 二 8月 31 2004 Bill Nottingham <notting@redhat.com> 0.1-3
+- link some things static, move to /sbin (#129926)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 4月 16 2004 Bill Nottingham <notting@redhat.com> 0.1-1
+- initial packaging
+

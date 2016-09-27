@@ -1,0 +1,20 @@
+Name        : coreutils
+Version     : 8.22
+Release     : 15.52.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分08秒
+Group       : System Environment/Base
+Size        : 14153993
+License     : GPLv3+
+Signature   : RSA/SHA256, 2016年02月27日 星期六 18时47分21秒, Key ID bcb4a85b21c0f39f
+Source RPM  : coreutils-8.22-15.52.amzn1.src.rpm
+Build Date  : 2016年02月25日 星期四 22时28分33秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/coreutils/
+Summary     : A set of basic GNU tools commonly used in shell scripts
+Description :
+These are the GNU core utilities.  This package is the combination of
+the old GNU fileutils, sh-utils, and textutils packages.

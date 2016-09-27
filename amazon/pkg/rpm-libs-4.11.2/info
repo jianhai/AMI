@@ -1,0 +1,19 @@
+Name        : rpm-libs
+Version     : 4.11.2
+Release     : 2.73.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分22秒
+Group       : Development/Libraries
+Size        : 585136
+License     : GPLv2+ and LGPLv2+ with exceptions
+Signature   : RSA/SHA256, 2015年11月23日 星期一 19时42分10秒, Key ID bcb4a85b21c0f39f
+Source RPM  : rpm-4.11.2-2.73.amzn1.src.rpm
+Build Date  : 2015年11月16日 星期一 21时31分56秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.rpm.org/
+Summary     : Libraries for manipulating RPM packages
+Description :
+This package contains the RPM shared libraries.

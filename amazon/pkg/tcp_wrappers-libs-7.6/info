@@ -1,0 +1,19 @@
+Name        : tcp_wrappers-libs
+Version     : 7.6
+Release     : 75.11.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分59秒
+Group       : System Environment/Libraries
+Size        : 133010
+License     : BSD
+Signature   : RSA/SHA256, 2014年04月09日 星期三 02时21分48秒, Key ID bcb4a85b21c0f39f
+Source RPM  : tcp_wrappers-7.6-75.11.amzn1.src.rpm
+Build Date  : 2014年04月09日 星期三 00时13分42秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : ftp://ftp.porcupine.org/pub/security/index.html
+Summary     : Libraries for tcp_wrappers
+Description :
+tcp_wrappers-libs contains the libraries of the tcp_wrappers package.

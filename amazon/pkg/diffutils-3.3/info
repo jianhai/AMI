@@ -1,0 +1,29 @@
+Name        : diffutils
+Version     : 3.3
+Release     : 4.15.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分06秒
+Group       : Applications/Text
+Size        : 1048200
+License     : GPLv3+
+Signature   : RSA/SHA256, 2015年08月22日 星期六 02时06分33秒, Key ID bcb4a85b21c0f39f
+Source RPM  : diffutils-3.3-4.15.amzn1.src.rpm
+Build Date  : 2015年08月18日 星期二 01时23分53秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/diffutils/diffutils.html
+Summary     : A GNU collection of diff utilities
+Description :
+Diffutils includes four utilities: diff, cmp, diff3 and sdiff. Diff
+compares two files and shows the differences, line by line.  The cmp
+command shows the offset and line numbers where two files differ, or
+cmp can show the characters that differ between the two files.  The
+diff3 command shows the differences between three files.  Diff3 can be
+used when two people have made independent changes to a common
+original; diff3 can produce a merged file that contains both sets of
+changes and warnings about conflicts.  The sdiff command can be used
+to merge two files interactively.
+
+Install diffutils if you need to compare text files.

@@ -1,0 +1,23 @@
+Name        : pam_passwdqc
+Version     : 1.0.5
+Release     : 6.8.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分32秒
+Group       : System Environment/Base
+Size        : 64029
+License     : BSD and Copyright only
+Signature   : RSA/SHA256, 2011年01月25日 星期二 22时08分54秒, Key ID bcb4a85b21c0f39f
+Source RPM  : pam_passwdqc-1.0.5-6.8.amzn1.src.rpm
+Build Date  : 2011年01月17日 星期一 02时19分35秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.openwall.com/passwdqc/
+Summary     : Pluggable password quality-control module
+Description :
+pam_passwdqc is a simple password strength checking module for
+PAM-aware password changing programs, such as passwd(1).  In addition
+to checking regular passwords, it offers support for passphrases and
+can provide randomly generated passwords.  All features are optional
+and can be (re-)configured without rebuilding.

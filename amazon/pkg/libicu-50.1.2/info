@@ -1,0 +1,28 @@
+Name        : libicu
+Version     : 50.1.2
+Release     : 11.12.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分06秒
+Group       : System Environment/Libraries
+Size        : 25128797
+License     : MIT and UCD and Public Domain
+Signature   : RSA/SHA256, 2014年06月11日 星期三 03时28分38秒, Key ID bcb4a85b21c0f39f
+Source RPM  : icu-50.1.2-11.12.amzn1.src.rpm
+Build Date  : 2014年06月10日 星期二 20时42分07秒
+Build Host  : build-64001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.icu-project.org/
+Summary     : International Components for Unicode - libraries
+Description :
+The International Components for Unicode (ICU) libraries provide
+robust and full-featured Unicode services on a wide variety of
+platforms. ICU supports the most current version of the Unicode
+standard, and they provide support for supplementary Unicode
+characters (needed for GB 18030 repertoire support).
+As computing environments become more heterogeneous, software
+portability becomes more important. ICU lets you produce the same
+results across all the various platforms you support, without
+sacrificing performance. It offers great flexibility to extend and
+customize the supplied services.

@@ -1,0 +1,20 @@
+Name        : libstdc++48
+Version     : 4.8.3
+Release     : 9.109.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分59秒
+Group       : System Environment/Libraries
+Size        : 1068854
+License     : GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
+Signature   : RSA/SHA256, 2015年08月07日 星期五 00时06分02秒, Key ID bcb4a85b21c0f39f
+Source RPM  : gcc48-4.8.3-9.109.amzn1.src.rpm
+Build Date  : 2015年08月06日 星期四 16时54分16秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://gcc.gnu.org
+Summary     : GNU Standard C++ Library
+Description :
+The libstdc++ package contains a rewritten standard compliant GCC Standard
+C++ Library.

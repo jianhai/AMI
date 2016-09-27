@@ -1,0 +1,18 @@
+Name        : sysctl-defaults
+Version     : 1.0
+Release     : 1.1.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时09分54秒
+Group       : System Environment/Base
+Size        : 570
+License     : ASL 2.0
+Signature   : RSA/SHA256, 2016年03月22日 星期二 23时08分32秒, Key ID bcb4a85b21c0f39f
+Source RPM  : sysctl-defaults-1.0-1.1.amzn1.src.rpm
+Build Date  : 2016年03月22日 星期二 20时53分04秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+Summary     : Linux sysctl defaults suitable for the Amazon Linux AMI
+Description :
+Linux sysctl defaults suitable for the Amazon Linux AMI on EC2.

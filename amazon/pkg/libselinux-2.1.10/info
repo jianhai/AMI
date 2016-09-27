@@ -1,0 +1,31 @@
+Name        : libselinux
+Version     : 2.1.10
+Release     : 3.22.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分58秒
+Group       : System Environment/Libraries
+Size        : 134682
+License     : Public Domain
+Signature   : RSA/SHA256, 2015年03月25日 星期三 06时39分45秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libselinux-2.1.10-3.22.amzn1.src.rpm
+Build Date  : 2015年03月25日 星期三 06时15分23秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://oss.tresys.com/git/selinux.git
+Summary     : SELinux library and simple utilities
+Description :
+Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libselinux provides an API for SELinux applications to get and set
+process and file security contexts and to obtain security policy
+decisions.  Required for any applications that use the SELinux API.

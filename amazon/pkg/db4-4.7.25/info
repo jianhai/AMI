@@ -1,0 +1,26 @@
+Name        : db4
+Version     : 4.7.25
+Release     : 18.11.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分58秒
+Group       : System Environment/Libraries
+Size        : 1510215
+License     : Sleepycat and BSD
+Signature   : RSA/SHA256, 2014年02月28日 星期五 02时31分39秒, Key ID bcb4a85b21c0f39f
+Source RPM  : db4-4.7.25-18.11.amzn1.src.rpm
+Build Date  : 2013年11月27日 星期三 00时38分23秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.oracle.com/database/berkeley-db/
+Summary     : The Berkeley DB database library (version 4) for C
+Description :
+The Berkeley Database (Berkeley DB) is a programmatic toolkit that
+provides embedded database support for both traditional and
+client/server applications. The Berkeley DB includes B+tree, Extended
+Linear Hashing, Fixed and Variable-length record access methods,
+transactions, locking, logging, shared memory caching, and database
+recovery. The Berkeley DB supports C, C++, Java, and Perl APIs. It is
+used by many applications, including Python and Perl, so this should
+be installed on all systems.

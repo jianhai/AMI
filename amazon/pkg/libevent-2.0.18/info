@@ -1,0 +1,24 @@
+Name        : libevent
+Version     : 2.0.18
+Release     : 1.11.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分21秒
+Group       : System Environment/Libraries
+Size        : 618703
+License     : BSD
+Signature   : RSA/SHA256, 2015年03月17日 星期二 20时11分02秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libevent-2.0.18-1.11.amzn1.src.rpm
+Build Date  : 2015年03月17日 星期二 18时03分24秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://sourceforge.net/projects/levent/
+Summary     : Abstract asynchronous event notification library
+Description :
+The libevent API provides a mechanism to execute a callback function
+when a specific event occurs on a file descriptor or after a timeout
+has been reached. libevent is meant to replace the asynchronous event
+loop found in event driven network servers. An application just needs
+to call event_dispatch() and can then add or remove events dynamically
+without having to change the event loop.

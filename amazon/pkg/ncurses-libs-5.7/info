@@ -1,0 +1,24 @@
+Name        : ncurses-libs
+Version     : 5.7
+Release     : 3.20090208.13.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分58秒
+Group       : System Environment/Libraries
+Size        : 763080
+License     : MIT
+Signature   : RSA/SHA256, 2013年03月14日 星期四 23时33分37秒, Key ID bcb4a85b21c0f39f
+Source RPM  : ncurses-5.7-3.20090208.13.amzn1.src.rpm
+Build Date  : 2013年03月13日 星期三 21时29分42秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://invisible-island.net/ncurses/ncurses.html
+Summary     : Ncurses libraries
+Description :
+The curses library routines are a terminal-independent method of
+updating character screens with reasonable optimization.  The ncurses
+(new curses) library is a freely distributable replacement for the
+discontinued 4.4 BSD classic curses library.
+
+This package contains the ncurses libraries.

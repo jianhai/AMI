@@ -1,0 +1,19 @@
+Name        : xz-libs
+Version     : 5.1.2
+Release     : 12alpha.12.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分59秒
+Group       : System Environment/Libraries
+Size        : 229959
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2016年02月27日 星期六 18时47分29秒, Key ID bcb4a85b21c0f39f
+Source RPM  : xz-5.1.2-12alpha.12.amzn1.src.rpm
+Build Date  : 2016年02月19日 星期五 03时04分51秒
+Build Host  : build-64011.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://tukaani.org/xz/
+Summary     : Libraries for decoding LZMA compression
+Description :
+Libraries for decoding files compressed with LZMA or XZ utils.

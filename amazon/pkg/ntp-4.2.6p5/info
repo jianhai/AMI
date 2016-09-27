@@ -1,0 +1,26 @@
+Name        : ntp
+Version     : 4.2.6p5
+Release     : 40.30.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分28秒
+Group       : System Environment/Daemons
+Size        : 1316417
+License     : (MIT and BSD and BSD with advertising) and GPLv2
+Signature   : RSA/SHA256, 2016年06月02日 星期四 17时53分53秒, Key ID bcb4a85b21c0f39f
+Source RPM  : ntp-4.2.6p5-40.30.amzn1.src.rpm
+Build Date  : 2016年06月01日 星期三 22时15分44秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.ntp.org
+Summary     : The NTP daemon and utilities
+Description :
+The Network Time Protocol (NTP) is used to synchronize a computer's
+time with another reference time source. This package includes ntpd
+(a daemon which continuously adjusts system time) and utilities used
+to query and configure the ntpd daemon.
+
+Perl scripts ntp-wait and ntptrace are in the ntp-perl package,
+ntpdate is in the ntpdate package and sntp is in the sntp package.
+The documentation is in the ntp-doc package.

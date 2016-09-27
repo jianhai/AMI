@@ -1,0 +1,24 @@
+Name        : python27-pip
+Version     : 6.1.1
+Release     : 1.21.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分18秒
+Group       : Development/Libraries
+Size        : 6657041
+License     : MIT
+Signature   : RSA/SHA256, 2015年08月22日 星期六 01时37分00秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-pip-6.1.1-1.21.amzn1.src.rpm
+Build Date  : 2015年08月21日 星期五 18时20分35秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.pip-installer.org
+Summary     : A tool for installing and managing Python packages
+Description :
+Pip is a replacement for `easy_install
+<http://peak.telecommunity.com/DevCenter/EasyInstall>`_.  It uses mostly the
+same techniques for finding packages, so packages that were made
+easy_installable should be pip-installable as well.
+
+This package is meant to be used with Python 2.7.

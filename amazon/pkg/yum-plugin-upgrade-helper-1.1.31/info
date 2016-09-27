@@ -1,0 +1,20 @@
+Name        : yum-plugin-upgrade-helper
+Version     : 1.1.31
+Release     : 29.26.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分25秒
+Group       : System Environment/Base
+Size        : 25113
+License     : GPLv2+
+Signature   : RSA/SHA256, 2015年09月25日 星期五 21时01分49秒, Key ID bcb4a85b21c0f39f
+Source RPM  : yum-utils-1.1.31-29.26.amzn1.src.rpm
+Build Date  : 2015年09月23日 星期三 22时03分02秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://yum.baseurl.org/download/yum-utils/
+Summary     : Yum plugin to help upgrades to the next distribution version
+Description :
+this plugin allows yum to erase specific packages on install/update based on an additional
+metadata file in repositories. It is used to simplify distribution upgrade hangups.

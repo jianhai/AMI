@@ -1,0 +1,33 @@
+Name        : perl-constant
+Version     : 1.27
+Release     : 2.5.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分04秒
+Group       : Development/Libraries
+Size        : 26364
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时36分04秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-constant-1.27-2.5.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 20时56分20秒
+Build Host  : build-64003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/constant/
+Summary     : Perl pragma to declare constants
+Description :
+This pragma allows you to declare constants at compile-time:
+
+use constant PI => 4 * atan2(1, 1);
+
+When you declare a constant such as "PI" using the method shown above,
+each machine your script runs upon can have as many digits of accuracy
+as it can use. Also, your program will be easier to read, more likely
+to be maintained (and maintained correctly), and far less likely to
+send a space probe to the wrong planet because nobody noticed the one
+equation in which you wrote 3.14195.
+
+When a constant is used in an expression, Perl replaces it with its
+value at compile time, and may then optimize the expression further.
+In particular, any code in an "if (CONSTANT)" block will be optimized
+away if the constant is false.

@@ -1,0 +1,23 @@
+Name        : mdadm
+Version     : 3.2.6
+Release     : 7.32.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分29秒
+Group       : System Environment/Base
+Size        : 867822
+License     : GPLv2+
+Signature   : RSA/SHA256, 2014年09月18日 星期四 01时36分39秒, Key ID bcb4a85b21c0f39f
+Source RPM  : mdadm-3.2.6-7.32.amzn1.src.rpm
+Build Date  : 2014年09月18日 星期四 00时09分18秒
+Build Host  : build-64001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.kernel.org/pub/linux/utils/raid/mdadm/
+Summary     : The mdadm program controls Linux md devices (software RAID arrays)
+Description :
+The mdadm program is used to create, manage, and monitor Linux MD (software
+RAID) devices.  As such, it provides similar functionality to the raidtools
+package.  However, mdadm is a single program, and it can perform
+almost all functions without a configuration file, though a configuration
+file can be used to help with some common tasks.

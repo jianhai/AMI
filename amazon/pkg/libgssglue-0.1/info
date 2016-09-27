@@ -1,0 +1,21 @@
+Name        : libgssglue
+Version     : 0.1
+Release     : 11.7.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分24秒
+Group       : System Environment/Libraries
+Size        : 41157
+License     : GPL+
+Signature   : RSA/SHA256, 2011年08月10日 星期三 01时40分05秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libgssglue-0.1-11.7.amzn1.src.rpm
+Build Date  : 2011年07月28日 星期四 09时30分55秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.citi.umich.edu/projects/nfsv4/linux/
+Summary     : Generic Security Services Application Programming Interface Library
+Description :
+This library exports a gssapi interface, but doesn't implement any gssapi
+mechanisms itself; instead it calls gssapi routines in other libraries,
+depending on the mechanism.

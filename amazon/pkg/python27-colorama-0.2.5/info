@@ -1,0 +1,29 @@
+Name        : python27-colorama
+Version     : 0.2.5
+Release     : 1.7.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分19秒
+Group       : System Environment/Libraries
+Size        : 60860
+License     : BSD
+Signature   : RSA/SHA256, 2015年03月05日 星期四 03时17分22秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-colorama-0.2.5-1.7.amzn1.src.rpm
+Build Date  : 2015年03月03日 星期二 21时40分30秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://pypi.python.org/pypi/colorama/0.2.4
+Summary     : Cross-platform colored terminal text
+Description :
+Makes ANSI escape character sequences, for producing colored
+terminal text and cursor positioning, work under MS Windows.
+
+ANSI escape character sequences have long been used to produce colored terminal
+text and cursor positioning on Unix and Macs. Colorama makes this work on
+Windows, too.
+It also provides some shortcuts to help generate ANSI sequences, and works fine
+in conjunction with any other ANSI sequence generation library, such as
+Termcolor.
+
+This package is meant to be used with Python 2.7.

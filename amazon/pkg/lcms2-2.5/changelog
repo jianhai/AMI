@@ -1,0 +1,103 @@
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/lcms2-2.5-4.el7
+
+* 六 3月 08 2014 Cristian Gafton <gafton@amazon.com>
+- eliminate some more hardcoded version references from the spec file
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 2.5-4
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 2.5-3
+- Mass rebuild 2013-12-27
+
+* 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/lcms2-2.5-2.el7
+
+* 四 12月 12 2013 Cristian Gafton <gafton@amazon.com>
+- setup complete for package lcms2
+
+* 二 10月 08 2013 Matthias Clasen <mclasen@redhat.com> 2.5-2
+- Disable strict aliasing (related: #884068)
+
+* 一 7月 01 2013 Richard Hughes <richard@hughsie.com> 2.5-1
+- Update to new upstream version.
+- Added a reference for Mac MLU tag
+- Added a way to read the profile creator from header
+- Added error descriptions on cmsSmoothToneCurve
+- Added identity curves support for write V2 LUT
+- Added new cmsPlugInTHR() and fixed some race conditions
+- Added TIFF Lab16 handling on tifficc
+- Fixed a bug on big endian platforms not supporting uint64 or long long.
+- Fixed a multithead bug on optimization
+- Fixed devicelink generation for 8 bits
+- Fixed some 64 bit warnings on size_t to uint32 conversions
+- Rendering intent used when creating the transform is now propagated to profile
+- RGB profiles store only one copy of the curve to save space
+- Transform2Devicelink now keeps white point when guessing deviceclass is enabled
+- Update black point detection algorithm to reflect ICC changes
+- User defined parametric curves can now be saved in ICC profiles
+
+* 四 4月 25 2013 Tim Waugh <twaugh@redhat.com> - 2.4-6
+- Applied upstream fixes for threading (bug #951984).
+
+* 四 3月 07 2013 Tim Waugh <twaugh@redhat.com> - 2.4-5
+- Added upstream fix for threading issue with plugin registration
+  (bug #912307).
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 五 1月 18 2013 Adam Tkac <atkac redhat com> - 2.4-3
+- rebuild due to "jpeg8-ABI" feature drop
+
+* 五 12月 21 2012 Adam Tkac <atkac redhat com> - 2.4-2
+- rebuild against new libjpeg
+
+* 六 9月 15 2012 Richard Hughes <richard@hughsie.com> 2.4-1
+- Update to new upstream version.
+- Black point detection from the algorithm disclosed by Adobe
+- Added support for transforms on planar data with different stride
+- Added a new plug-in type for optimizing full transforms
+- Linear (gamma 1.0) profiles can now operate in unbounded mode
+- Added "half" float support
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 6月 07 2012 Cristian Gafton <gafton@amazon.com>
+- import source package EPEL6/lcms2-2.3-2.el6
+
+* 三 6月 06 2012 Cristian Gafton <gafton@amazon.com>
+- setup complete for package lcms2
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 五 6月 10 2011 Richard Hughes <richard@hughsie.com> 2.3-1
+- Update to new upstream version which incorporates many bugfixes.
+
+* 五 6月 10 2011 Richard Hughes <richard@hughsie.com> 2.2-2
+- Actually update the sources...
+
+* 五 6月 10 2011 Richard Hughes <richard@hughsie.com> 2.2-1
+- Update to new upstream version
+- Stability and efficienty fixes
+- Adds support for dictionary metatag
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 12月 01 2010 Richard Hughes <richard@hughsie.com> 2.1-1
+- Update to new upstream version.
+
+* 五 6月 18 2010 Richard Hughes <richard@hughsie.com> 2.0a-3
+- Address some more review comments.
+- Resolves #590387
+
+* 五 6月 18 2010 Richard Hughes <richard@hughsie.com> 2.0a-2
+- Address some review comments.
+- Resolves #590387
+
+* 五 6月 18 2010 Richard Hughes <richard@hughsie.com> 2.0a-1
+- Initial package for Fedora review
+

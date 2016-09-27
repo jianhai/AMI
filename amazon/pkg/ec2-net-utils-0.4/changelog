@@ -1,0 +1,66 @@
+* 一 4月 11 2016 Matt Nierzwicki <nierzwic@amazon.com>
+- Add udev rule to skip cd/dvd capability probing
+
+* 四 11月 12 2015 Jamie Anderson <jamieand@amazon.com>
+- only run ec2net.hotplug for devices named ethX
+
+* 一 5月 18 2015 Matt Nierzwicki <nierzwic@amazon.com>
+- Prevent ec2-metadata from expanding wildcards when printing to console
+
+* 四 5月 08 2014 Ben Cressey <bcressey@amazon.com>
+- delay running ec2ifscan until after udev-post
+
+* 五 4月 11 2014 Ethan Faust <efaust@amazon.com>
+- don't bring up vcpus automatically if maxcpus is set
+
+* 五 1月 10 2014 Ben Cressey <bcressey@amazon.com>
+- Do not use DNS settings from secondary interfaces by default
+
+* 二 9月 24 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Add hotplug script and module config
+
+* 一 8月 26 2013 Ben Cressey <bcressey@amazon.com>
+- Configure interfaces attached at launch time
+
+* 三 3月 13 2013 Andrew Jorgensen <ajorgens@amazon.com>
+- Use -q to avoid using a user's .curlrc
+
+* 日 9月 16 2012 Ben Cressey <bcressey@amazon.com>
+- Add documentation for ec2ifup and ec2ifdown
+
+* 四 9月 13 2012 Ben Cressey <bcressey@amazon.com>
+- Optimize metadata queries for elastic interfaces
+
+* 二 9月 11 2012 Ben Cressey <bcressey@amazon.com>
+- Adjust route table usage for elastic interfaces
+- Update headers to reflect Apache 2.0 license
+
+* 三 9月 05 2012 Ben Cressey <bcressey@amazon.com>
+- Configure elastic network interfaces via DHCP
+
+* 三 8月 29 2012 Andrew Jorgensen <ajorgens@amazon.com>
+- Add dependency on curl for ec2-metadata
+- Update ec2-metadata to 0.1.1 bugfix release
+
+* 一 8月 13 2012 Ben Cressey <bcressey@amazon.com>
+- Add rules and scripts for MultiIP / MultiVIF support
+
+* 一 7月 30 2012 Ethan Faust <efaust@amazon.com>
+- Added udev rules to automatically bring up vCPUs when they're added.
+
+* 一 8月 01 2011 Nathan Blackham <blackham@amazon.com>
+- adding BuildRoot directive to specfile.
+
+* 三 9月 22 2010 Nathan Blackham <blackham@amazon.com>
+- move to ec2-utils
+- add udev code for symlinking xvd* devices to sd*
+- fixing typo in spec file
+- adding udev symlinks for xvd* devices
+
+* 二 9月 07 2010 Nathan Blackham <blackham@amazon.com>
+- initial packaging of script as an rpm
+- moving rpm to noarch
+- adding Group line in specfile
+- initial packaging of ec2-metadata
+- setup complete for package ec2-metadata
+

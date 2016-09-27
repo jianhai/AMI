@@ -1,0 +1,22 @@
+Name        : dbus
+Epoch       : 1
+Version     : 1.6.12
+Release     : 8.27.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分29秒
+Group       : System Environment/Libraries
+Size        : 796224
+License     : GPLv2+ or AFL
+Signature   : RSA/SHA256, 2015年03月12日 星期四 19时46分01秒, Key ID bcb4a85b21c0f39f
+Source RPM  : dbus-1.6.12-8.27.amzn1.src.rpm
+Build Date  : 2015年03月12日 星期四 03时44分26秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.freedesktop.org/software/dbus/
+Summary     : D-BUS message bus
+Description :
+D-BUS is a system for sending messages between applications. It is
+used both for the system-wide message bus service, and as a
+per-user-login-session messaging facility.

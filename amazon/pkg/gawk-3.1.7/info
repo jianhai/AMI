@@ -1,0 +1,24 @@
+Name        : gawk
+Version     : 3.1.7
+Release     : 10.10.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分59秒
+Group       : Applications/Text
+Size        : 2034728
+License     : GPLv3+
+Signature   : RSA/SHA256, 2012年10月24日 星期三 00时47分37秒, Key ID bcb4a85b21c0f39f
+Source RPM  : gawk-3.1.7-10.10.amzn1.src.rpm
+Build Date  : 2012年10月14日 星期日 21时43分34秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Koji
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/gawk/gawk.html
+Summary     : The GNU version of the awk text processing utility
+Description :
+The gawk package contains the GNU version of awk, a text processing
+utility. Awk interprets a special-purpose programming language to do
+quick and easy text pattern matching and reformatting jobs.
+
+Install the gawk package if you need a text processing utility. Gawk is
+considered to be a standard Linux tool for processing text.

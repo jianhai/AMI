@@ -1,0 +1,21 @@
+Name        : cloud-init
+Version     : 0.7.6
+Release     : 2.11.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分29秒
+Group       : System Environment/Base
+Size        : 1267438
+License     : GPLv3
+Signature   : RSA/SHA256, 2016年01月17日 星期日 19时43分48秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cloud-init-0.7.6-2.11.amzn1.src.rpm
+Build Date  : 2016年01月15日 星期五 21时27分10秒
+Build Host  : build-64010.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://launchpad.net/cloud-init
+Summary     : Cloud instance init scripts
+Description :
+Cloud-init is a set of init scripts for cloud instances.  Cloud instances
+need special scripts to run during initialization to retrieve and install
+ssh keys and to let the user run various scripts.

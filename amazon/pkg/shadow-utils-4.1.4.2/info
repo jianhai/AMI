@@ -1,0 +1,29 @@
+Name        : shadow-utils
+Epoch       : 2
+Version     : 4.1.4.2
+Release     : 13.10.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分00秒
+Group       : System Environment/Base
+Size        : 2777471
+License     : BSD and GPLv2+
+Signature   : RSA/SHA256, 2012年02月17日 星期五 18时17分51秒, Key ID bcb4a85b21c0f39f
+Source RPM  : shadow-utils-4.1.4.2-13.10.amzn1.src.rpm
+Build Date  : 2012年01月05日 星期四 22时35分54秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://pkg-shadow.alioth.debian.org/
+Summary     : Utilities for managing accounts and shadow password files
+Description :
+The shadow-utils package includes the necessary programs for
+converting UNIX password files to the shadow password format, plus
+programs for managing user and group accounts. The pwconv command
+converts passwords to the shadow password format. The pwunconv command
+unconverts shadow passwords and generates a passwd file (a standard
+UNIX password file). The pwck command checks the integrity of password
+and shadow files. The lastlog command prints out the last login times
+for all users. The useradd, userdel, and usermod commands are used for
+managing user accounts. The groupadd, groupdel, and groupmod commands
+are used for managing group accounts.

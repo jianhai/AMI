@@ -1,0 +1,23 @@
+Name        : libpipeline
+Version     : 1.2.3
+Release     : 3.3.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分25秒
+Group       : Development/Libraries
+Size        : 141305
+License     : GPLv3+
+Signature   : RSA/SHA256, 2014年08月29日 星期五 00时27分43秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libpipeline-1.2.3-3.3.amzn1.src.rpm
+Build Date  : 2014年08月28日 星期四 00时23分36秒
+Build Host  : build-64004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://libpipeline.nongnu.org/
+Summary     : A pipeline manipulation library
+Description :
+libpipeline is a C library for setting up and running pipelines of
+processes, without needing to involve shell command-line parsing which is
+often error-prone and insecure. This alleviates programmers of the need to
+laboriously construct pipelines using lower-level primitives such as fork(2)
+and execve(2).

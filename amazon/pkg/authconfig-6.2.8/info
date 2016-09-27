@@ -1,0 +1,22 @@
+Name        : authconfig
+Version     : 6.2.8
+Release     : 9.27.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分28秒
+Group       : System Environment/Base
+Size        : 2210940
+License     : GPLv2+
+Signature   : RSA/SHA256, 2015年09月08日 星期二 23时08分21秒, Key ID bcb4a85b21c0f39f
+Source RPM  : authconfig-6.2.8-9.27.amzn1.src.rpm
+Build Date  : 2015年09月03日 星期四 23时05分28秒
+Build Host  : build-64011.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/authconfig
+Summary     : Command line tool for setting up authentication from network services
+Description :
+Authconfig is a command line utility which can configure a workstation
+to use shadow (more secure) passwords.  Authconfig can also configure a
+system to be a client for certain networked user information and
+authentication schemes.

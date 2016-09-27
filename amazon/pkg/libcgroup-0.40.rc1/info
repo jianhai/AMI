@@ -1,0 +1,20 @@
+Name        : libcgroup
+Version     : 0.40.rc1
+Release     : 5.11.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分26秒
+Group       : Development/Libraries
+Size        : 327599
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2014年02月28日 星期五 22时45分45秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libcgroup-0.40.rc1-5.11.amzn1.src.rpm
+Build Date  : 2014年02月28日 星期五 21时54分35秒
+Build Host  : build-31003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://libcg.sourceforge.net/
+Summary     : Tools and libraries to control and monitor control groups
+Description :
+Control groups infrastructure. The tools and library help manipulate, control,
+administrate and monitor control groups and the associated controllers.

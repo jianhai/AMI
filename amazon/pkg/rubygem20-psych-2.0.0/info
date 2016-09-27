@@ -1,0 +1,22 @@
+Name        : rubygem20-psych
+Version     : 2.0.0
+Release     : 1.29.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分16秒
+Group       : Development/Libraries
+Size        : 104409
+License     : MIT
+Signature   : RSA/SHA256, 2016年01月17日 星期日 19时44分28秒, Key ID bcb4a85b21c0f39f
+Source RPM  : ruby20-2.0.0.648-1.29.amzn1.src.rpm
+Build Date  : 2016年01月14日 星期四 21时13分29秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://ruby-lang.org/
+Summary     : A libyaml wrapper for Ruby
+Description :
+Psych is a YAML parser and emitter. Psych leverages
+libyaml[http://pyyaml.org/wiki/LibYAML] for its YAML parsing and emitting
+capabilities. In addition to wrapping libyaml, Psych also knows how to
+serialize and de-serialize most Ruby objects to and from the YAML format.

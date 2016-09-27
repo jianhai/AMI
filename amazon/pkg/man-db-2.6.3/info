@@ -1,0 +1,24 @@
+Name        : man-db
+Version     : 2.6.3
+Release     : 9.3.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分30秒
+Group       : System Environment/Base
+Size        : 1829280
+License     : GPLv2+ and GPLv3+
+Signature   : RSA/SHA256, 2014年08月29日 星期五 00时27分43秒, Key ID bcb4a85b21c0f39f
+Source RPM  : man-db-2.6.3-9.3.amzn1.src.rpm
+Build Date  : 2014年08月28日 星期四 00时36分51秒
+Build Host  : build-60002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.nongnu.org/man-db/
+Summary     : Tools for searching and reading man pages
+Description :
+The man-db package includes five tools for browsing man-pages:
+man, whatis, apropos, manpath and lexgrog. man formats and displays
+manual pages. whatis searches the manual page names. apropos searches the
+manual page names and descriptions. manpath determines search path
+for manual pages. lexgrog directly reads header information in
+manual pages.

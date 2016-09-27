@@ -1,0 +1,25 @@
+Name        : jpackage-utils
+Epoch       : 0
+Version     : 1.7.5
+Release     : 27.17.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分19秒
+Group       : Utilities
+Size        : 180607
+License     : BSD
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分34秒, Key ID bcb4a85b21c0f39f
+Source RPM  : jpackage-utils-1.7.5-27.17.amzn1.src.rpm
+Build Date  : 2014年09月09日 星期二 22时01分28秒
+Build Host  : build-64003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.jpackage.org/
+Summary     : JPackage utilities
+Description :
+Utilities for the JPackage Project <http://www.jpackage.org/>.
+
+It contains also the License, man pages, documentation, XSL files of general
+use with maven2, a header file for spec files, etc. Please See
+the /usr/share/doc/jpackage-utils-1.7.5/jpackage-utils-README file for more
+information.

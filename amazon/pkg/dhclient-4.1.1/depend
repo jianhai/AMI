@@ -1,0 +1,20 @@
+/bin/bash
+/bin/sh
+/bin/sh
+coreutils
+dhcp-common = 12:4.1.1-43.P1.24.amzn1
+grep
+initscripts >= 6.75
+libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.15)(64bit)
+libc.so.6(GLIBC_2.2.5)(64bit)
+libc.so.6(GLIBC_2.3)(64bit)
+libc.so.6(GLIBC_2.3.4)(64bit)
+libc.so.6(GLIBC_2.4)(64bit)
+libc.so.6(GLIBC_2.8)(64bit)
+libcap-ng.so.0()(64bit)
+network-functions(should-skip-arping)
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)

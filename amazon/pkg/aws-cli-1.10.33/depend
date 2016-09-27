@@ -1,0 +1,12 @@
+/etc/mime.types
+/usr/bin/python2.7
+python(abi) = 2.7
+python27(dist-packages)
+python27-botocore = 1.4.23
+python27-colorama >= 0.2.5
+python27-docutils >= 0.10
+python27-jmespath = 0.9.0
+python27-rsa >= 3.1.2-4.7
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1

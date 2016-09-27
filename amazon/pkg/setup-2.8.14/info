@@ -1,0 +1,20 @@
+Name        : setup
+Version     : 2.8.14
+Release     : 20.12.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时09分51秒
+Group       : System Environment/Base
+Size        : 666477
+License     : Public Domain
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时36分48秒, Key ID bcb4a85b21c0f39f
+Source RPM  : setup-2.8.14-20.12.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 03时15分31秒
+Build Host  : build-60001.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/setup/
+Summary     : A set of system configuration and setup files
+Description :
+The setup package contains a set of important system configuration and
+setup files, such as passwd, group, and profile.

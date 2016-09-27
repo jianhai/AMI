@@ -1,0 +1,30 @@
+Name        : openssh
+Version     : 6.6.1p1
+Release     : 25.61.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分25秒
+Group       : Applications/Internet
+Size        : 1431906
+License     : BSD
+Signature   : RSA/SHA256, 2016年03月29日 星期二 01时55分53秒, Key ID bcb4a85b21c0f39f
+Source RPM  : openssh-6.6.1p1-25.61.amzn1.src.rpm
+Build Date  : 2016年03月28日 星期一 21时36分28秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.openssh.com/portable.html
+Summary     : An open source implementation of SSH protocol versions 1 and 2
+Description :
+SSH (Secure SHell) is a program for logging into and executing
+commands on a remote machine. SSH is intended to replace rlogin and
+rsh, and to provide secure encrypted communications between two
+untrusted hosts over an insecure network. X11 connections and
+arbitrary TCP/IP ports can also be forwarded over the secure channel.
+
+OpenSSH is OpenBSD's version of the last free version of SSH, bringing
+it up to date in terms of security and features.
+
+This package includes the core files necessary for both the OpenSSH
+client and server. To make this package useful, you should also
+install openssh-clients, openssh-server, or both.

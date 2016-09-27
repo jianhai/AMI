@@ -1,0 +1,25 @@
+Name        : pam_ccreds
+Version     : 10
+Release     : 4.9.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分32秒
+Group       : System Environment/Base
+Size        : 40773
+License     : GPL+
+Signature   : RSA/SHA256, 2013年03月17日 星期日 01时53分19秒, Key ID bcb4a85b21c0f39f
+Source RPM  : pam_ccreds-10-4.9.amzn1.src.rpm
+Build Date  : 2013年03月13日 星期三 21时40分00秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.padl.com/OSS/pam_ccreds.html
+Summary     : Pam module to cache login credentials
+Description :
+The pam_ccreds module provides a mechanism for caching
+credentials when authenticating against a network
+authentication service, so that authentication can still
+proceed when the service is down. Note at present no
+mechanism is provided for caching _authorization_
+information, i.e. whether you are allowed to login once
+authenticated.

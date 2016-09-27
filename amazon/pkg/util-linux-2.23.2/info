@@ -1,0 +1,22 @@
+Name        : util-linux
+Version     : 2.23.2
+Release     : 22.26.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分22秒
+Group       : System Environment/Base
+Size        : 7570199
+License     : GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
+Signature   : RSA/SHA256, 2015年09月15日 星期二 23时03分29秒, Key ID bcb4a85b21c0f39f
+Source RPM  : util-linux-2.23.2-22.26.amzn1.src.rpm
+Build Date  : 2015年09月10日 星期四 22时13分02秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://en.wikipedia.org/wiki/Util-linux
+Summary     : A collection of basic system utilities
+Description :
+The util-linux package contains a large variety of low-level system
+utilities that are necessary for a Linux system to function. Among
+others, Util-linux contains the fdisk configuration tool and the login
+program.

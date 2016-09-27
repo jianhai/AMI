@@ -1,0 +1,20 @@
+Name        : perl-libs
+Epoch       : 4
+Version     : 5.16.3
+Release     : 283.37.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分04秒
+Group       : Development/Languages
+Size        : 1616912
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月16日 星期二 00时24分05秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-5.16.3-283.37.amzn1.src.rpm
+Build Date  : 2014年09月15日 星期一 18时20分45秒
+Build Host  : build-64003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.perl.org/
+Summary     : The libraries for the perl runtime
+Description :
+The libraries for the perl runtime

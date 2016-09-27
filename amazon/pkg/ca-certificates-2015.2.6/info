@@ -1,0 +1,20 @@
+Name        : ca-certificates
+Version     : 2015.2.6
+Release     : 65.0.1.15.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分09秒
+Group       : System Environment/Base
+Size        : 3253603
+License     : Public Domain
+Signature   : RSA/SHA256, 2016年05月18日 星期三 00时31分21秒, Key ID bcb4a85b21c0f39f
+Source RPM  : ca-certificates-2015.2.6-65.0.1.15.amzn1.src.rpm
+Build Date  : 2016年05月16日 星期一 21时21分37秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.mozilla.org/
+Summary     : The Mozilla CA root certificate bundle
+Description :
+This package contains the set of CA certificates chosen by the
+Mozilla Foundation for use with the Internet PKI.

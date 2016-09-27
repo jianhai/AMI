@@ -1,0 +1,23 @@
+Name        : grubby
+Version     : 7.0.15
+Release     : 5.7.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分16秒
+Group       : System Environment/Base
+Size        : 85106
+License     : GPLv2+
+Signature   : RSA/SHA256, 2014年02月28日 星期五 02时32分53秒, Key ID bcb4a85b21c0f39f
+Source RPM  : grubby-7.0.15-5.7.amzn1.src.rpm
+Build Date  : 2013年12月02日 星期一 19时58分19秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://git.fedorahosted.org/git/grubby.git
+Summary     : Command line tool for updating bootloader configs
+Description :
+grubby  is  a command line tool for updating and displaying information about
+the configuration files for the grub, lilo, elilo (ia64),  yaboot (powerpc)
+and zipl (s390) boot loaders. It is primarily designed to be used from scripts
+which install new kernels and need to find information about the current boot
+environment.

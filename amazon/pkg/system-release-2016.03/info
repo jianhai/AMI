@@ -1,0 +1,18 @@
+Name        : system-release
+Version     : 2016.03
+Release     : 0.5
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分25秒
+Group       : System Environment/Base
+Size        : 26745
+License     : GPLv2
+Signature   : RSA/SHA256, 2016年02月27日 星期六 18时51分14秒, Key ID bcb4a85b21c0f39f
+Source RPM  : system-release-2016.03-0.5.src.rpm
+Build Date  : 2016年02月27日 星期六 01时22分33秒
+Build Host  : build-64010.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+Summary     : Amazon Linux AMI release file
+Description :
+Amazon Linux AMI release files

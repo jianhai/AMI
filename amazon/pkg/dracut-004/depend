@@ -1,0 +1,30 @@
+/bin/bash
+/bin/sh
+/lib/udev/ata_id
+/lib/udev/firmware
+/lib/udev/input_id
+/lib/udev/path_id
+/lib/udev/scsi_id
+bash
+bzip2
+config(dracut) = 004-336.28.amzn1
+coreutils
+cpio >= 2.10-9.9
+dash
+file
+filesystem >= 2.1.0
+findutils
+grep
+gzip
+initscripts >= 8.63-1
+kbd
+mktemp >= 1.5-5
+module-init-tools >= 3.7-9
+mount
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+sed
+tar
+udev
+util-linux-ng >= 2.16
+which

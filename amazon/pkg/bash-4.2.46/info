@@ -1,0 +1,22 @@
+Name        : bash
+Version     : 4.2.46
+Release     : 19.35.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分58秒
+Group       : System Environment/Shells
+Size        : 3638430
+License     : GPLv3+
+Signature   : RSA/SHA256, 2016年02月27日 星期六 18时47分11秒, Key ID bcb4a85b21c0f39f
+Source RPM  : bash-4.2.46-19.35.amzn1.src.rpm
+Build Date  : 2016年02月19日 星期五 20时07分21秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/bash
+Summary     : The GNU Bourne Again shell
+Description :
+The GNU Bourne Again shell (Bash) is a shell or command language
+interpreter that is compatible with the Bourne shell (sh). Bash
+incorporates useful features from the Korn shell (ksh) and the C shell
+(csh). Most sh scripts can be run by bash without modification.

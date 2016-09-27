@@ -1,0 +1,20 @@
+Name        : libudev
+Version     : 173
+Release     : 4.13.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分59秒
+Group       : System Environment/Libraries
+Size        : 89736
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2014年03月19日 星期三 23时33分48秒, Key ID bcb4a85b21c0f39f
+Source RPM  : udev-173-4.13.amzn1.src.rpm
+Build Date  : 2014年03月19日 星期三 22时12分47秒
+Build Host  : build-31005.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+Summary     : Dynamic library to access udev device information
+Description :
+This package contains the dynamic library libudev, which provides access
+to udev device information, and an interface to search devices in sysfs.

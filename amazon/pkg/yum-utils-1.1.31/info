@@ -1,0 +1,26 @@
+Name        : yum-utils
+Version     : 1.1.31
+Release     : 29.26.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分30秒
+Group       : Development/Tools
+Size        : 332042
+License     : GPLv2+
+Signature   : RSA/SHA256, 2015年09月25日 星期五 21时01分49秒, Key ID bcb4a85b21c0f39f
+Source RPM  : yum-utils-1.1.31-29.26.amzn1.src.rpm
+Build Date  : 2015年09月23日 星期三 22时03分02秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://yum.baseurl.org/download/yum-utils/
+Summary     : Utilities based around the yum package manager
+Description :
+yum-utils is a collection of utilities and examples for the yum package
+manager. It includes utilities by different authors that make yum easier and
+more powerful to use. These tools include: debuginfo-install,
+find-repos-of-install, needs-restarting, package-cleanup, repoclosure,
+repodiff, repo-graph, repomanage, repoquery, repo-rss, reposync,
+repotrack, show-installed, show-changed-rco, verifytree, yumdownloader,
+yum-builddep, yum-complete-transaction, yum-config-manager, yum-debug-dump,
+yum-debug-restore and yum-groups-manager.

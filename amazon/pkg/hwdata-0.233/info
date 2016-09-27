@@ -1,0 +1,20 @@
+Name        : hwdata
+Version     : 0.233
+Release     : 14.1.18.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分21秒
+Group       : System Environment/Base
+Size        : 5514329
+License     : GPLv2+
+Signature   : RSA/SHA256, 2016年04月20日 星期三 22时27分33秒, Key ID bcb4a85b21c0f39f
+Source RPM  : hwdata-0.233-14.1.18.amzn1.src.rpm
+Build Date  : 2016年04月13日 星期三 16时52分16秒
+Build Host  : build-60006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://git.fedorahosted.org/git/hwdata.git
+Summary     : Hardware identification and configuration data
+Description :
+hwdata contains various hardware identification and configuration data,
+such as the pci.ids database and MonitorsDb databases.

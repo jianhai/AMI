@@ -1,16 +1,33 @@
 #!/bin/bash
 
+# Get All Package from system
+rpm -qa | sort > packages
+
+# Delete all Package information
+rm -rf pkg/*
+
 while read LINE
 do
-  echo $LINE
-
-  if [ ! -d "pkg/$LINE" ]; then
-    mkdir pkg/$LINE
+  # Ignore Some Exclude package
+  package=${LINE%-*}
+  grep $package excludes 
+  if [ $? == 0 ]; then 
+    continue
   fi
 
-  rpm -q -l $LINE > pkg/$LINE/list
-  rpm -q -i $LINE > pkg/$LINE/info
-  rpm -q -R $LINE > pkg/$LINE/depend
-  rpm -q --changelog $LINE > pkg/$LINE/changelog
-  rpm -q --scripts $LINE > pkg/$LINE/scripts
+  # Show Processing Line
+  echo $LINE
+
+  # Create Package Directory
+  if [ ! -d "pkg/$package" ]; then
+    mkdir pkg/$package
+  fi
+  DIR=pkg/$package
+
+  # Collection infromation from each Package
+  rpm -q -l $package > $DIR/list
+  rpm -q -i $package > $DIR/info
+  rpm -q -R $package > $DIR/depend
+  rpm -q --changelog $package > $DIR/changelog
+  rpm -q --scripts $package > $DIR/scripts
 done < packages

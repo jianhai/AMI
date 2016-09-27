@@ -1,0 +1,19 @@
+Name        : libICE
+Version     : 1.0.6
+Release     : 1.4.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分02秒
+Group       : System Environment/Libraries
+Size        : 117691
+License     : MIT
+Signature   : RSA/SHA256, 2011年01月25日 星期二 18时45分23秒, Key ID bcb4a85b21c0f39f
+Source RPM  : libICE-1.0.6-1.4.amzn1.src.rpm
+Build Date  : 2011年01月15日 星期六 13时55分10秒
+Build Host  : build-31002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.x.org
+Summary     : X.Org X11 ICE runtime library
+Description :
+The X.Org X11 ICE (Inter-Client Exchange) runtime library.

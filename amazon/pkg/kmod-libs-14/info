@@ -1,0 +1,20 @@
+Name        : kmod-libs
+Version     : 14
+Release     : 10.10.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分05秒
+Group       : System Environment/Libraries
+Size        : 85888
+License     : LGPLv2+
+Signature   : RSA/SHA256, 2015年09月08日 星期二 23时08分38秒, Key ID bcb4a85b21c0f39f
+Source RPM  : kmod-14-10.10.amzn1.src.rpm
+Build Date  : 2015年09月04日 星期五 21时46分58秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://git.kernel.org/?p=utils/kernel/kmod/kmod.git;a=summary
+Summary     : Libraries to handle kernel module loading and unloading
+Description :
+The kmod-libs package provides runtime libraries for any application that
+wishes to load or unload Linux kernel modules from the running system.

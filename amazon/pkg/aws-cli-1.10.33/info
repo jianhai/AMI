@@ -1,0 +1,21 @@
+Name        : aws-cli
+Version     : 1.10.33
+Release     : 1.38.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分31秒
+Group       : Amazon/Tools
+Size        : 3218750
+License     : ASL 2.0 and BSD
+Signature   : RSA/SHA256, 2016年06月02日 星期四 17时53分50秒, Key ID bcb4a85b21c0f39f
+Source RPM  : aws-cli-1.10.33-1.38.amzn1.src.rpm
+Build Date  : 2016年05月27日 星期五 21时53分48秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://aws.amazon.com/cli/
+Summary     : Provides a unified command line interface to Amazon Web Services
+Description :
+This package provides a unified command line interface to Amazon Web Services.
+
+For more information and documentation please visit http://aws.amazon.com/documentation/cli/

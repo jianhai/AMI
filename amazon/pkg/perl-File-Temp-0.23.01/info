@@ -1,0 +1,23 @@
+Name        : perl-File-Temp
+Version     : 0.23.01
+Release     : 3.5.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分04秒
+Group       : Development/Libraries
+Size        : 158781
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分54秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-File-Temp-0.23.01-3.5.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 21时07分33秒
+Build Host  : build-60002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://search.cpan.org/dist/File-Temp/
+Summary     : Return name and handle of a temporary file safely
+Description :
+File::Temp can be used to create and open temporary files in a safe way.
+There is both a function interface and an object-oriented interface. The
+File::Temp constructor or the tempfile() function can be used to return the
+name and the open file handle of a temporary file. The tempdir() function
+can be used to create a temporary directory.

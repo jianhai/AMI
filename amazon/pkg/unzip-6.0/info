@@ -1,0 +1,27 @@
+Name        : unzip
+Version     : 6.0
+Release     : 2.9.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分33秒
+Group       : Applications/Archiving
+Size        : 345878
+License     : BSD
+Signature   : RSA/SHA256, 2015年04月16日 星期四 05时06分54秒, Key ID bcb4a85b21c0f39f
+Source RPM  : unzip-6.0-2.9.amzn1.src.rpm
+Build Date  : 2015年04月14日 星期二 16时32分29秒
+Build Host  : build-60009.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.info-zip.org/UnZip.html
+Summary     : A utility for unpacking zip files
+Description :
+The unzip utility is used to list, test, or extract files from a zip
+archive.  Zip archives are commonly found on MS-DOS systems.  The zip
+utility, included in the zip package, creates zip archives.  Zip and
+unzip are both compatible with archives created by PKWARE(R)'s PKZIP
+for MS-DOS, but the programs' options and default behaviors do differ
+in some respects.
+
+Install the unzip package if you need to list, test or extract files from
+a zip archive.

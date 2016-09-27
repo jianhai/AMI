@@ -1,0 +1,21 @@
+Name        : passwd
+Version     : 0.79
+Release     : 4.13.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分30秒
+Group       : System Environment/Base
+Size        : 428730
+License     : BSD or GPL+
+Signature   : RSA/SHA256, 2015年09月15日 星期二 23时03分04秒, Key ID bcb4a85b21c0f39f
+Source RPM  : passwd-0.79-4.13.amzn1.src.rpm
+Build Date  : 2015年09月10日 星期四 21时57分53秒
+Build Host  : build-64013.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://fedorahosted.org/passwd
+Summary     : An utility for setting or changing passwords using PAM
+Description :
+This package contains a system utility (passwd) which sets
+or changes passwords, using PAM (Pluggable Authentication
+Modules) library.

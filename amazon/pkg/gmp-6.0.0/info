@@ -1,0 +1,28 @@
+Name        : gmp
+Version     : 6.0.0
+Release     : 11.16.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分02秒
+Group       : System Environment/Libraries
+Size        : 641758
+License     : LGPLv3+ or GPLv2+
+Signature   : RSA/SHA256, 2015年09月15日 星期二 23时02分52秒, Key ID bcb4a85b21c0f39f
+Source RPM  : gmp-6.0.0-11.16.amzn1.src.rpm
+Build Date  : 2015年09月15日 星期二 16时57分13秒
+Build Host  : build-60007.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://gmplib.org/
+Summary     : A GNU arbitrary precision library
+Description :
+The gmp package contains GNU MP, a library for arbitrary precision
+arithmetic, signed integers operations, rational numbers and floating
+point numbers. GNU MP is designed for speed, for both small and very
+large operands. GNU MP is fast because it uses fullwords as the basic
+arithmetic type, it uses fast algorithms, it carefully optimizes
+assembly code for many CPUs' most common inner loops, and it generally
+emphasizes speed over simplicity/elegance in its operations.
+
+Install the gmp package if you need a fast arbitrary precision
+library.

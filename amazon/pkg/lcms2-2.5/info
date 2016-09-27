@@ -1,0 +1,21 @@
+Name        : lcms2
+Version     : 2.5
+Release     : 4.4.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分07秒
+Group       : Unspecified
+Size        : 418367
+License     : MIT
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时35分34秒, Key ID bcb4a85b21c0f39f
+Source RPM  : lcms2-2.5-4.4.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 19时39分24秒
+Build Host  : build-64004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.littlecms.com/
+Summary     : Color Management Engine
+Description :
+LittleCMS intends to be a small-footprint, speed optimized color management
+engine in open source form. LCMS2 is the current version of LCMS, and can be
+parallel installed with the original (deprecated) lcms.

@@ -1,0 +1,22 @@
+Name        : iputils
+Version     : 20121221
+Release     : 7.13.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分25秒
+Group       : System Environment/Daemons
+Size        : 361136
+License     : BSD and GPLv2+
+Signature   : RSA/SHA256, 2016年05月18日 星期三 00时31分21秒, Key ID bcb4a85b21c0f39f
+Source RPM  : iputils-20121221-7.13.amzn1.src.rpm
+Build Date  : 2016年05月17日 星期二 23时44分45秒
+Build Host  : build-64012.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.skbuff.net/iputils
+Summary     : Network monitoring tools including ping
+Description :
+The iputils package contains basic utilities for monitoring a network,
+including ping. The ping command sends a series of ICMP protocol
+ECHO_REQUEST packets to a specified network host to discover whether
+the target machine is alive and receiving network traffic.

@@ -1,0 +1,21 @@
+Name        : basesystem
+Version     : 10.0
+Release     : 4.9.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时09分54秒
+Group       : System Environment/Base
+Size        : 0
+License     : Public Domain
+Signature   : RSA/SHA256, 2011年08月10日 星期三 01时37分07秒, Key ID bcb4a85b21c0f39f
+Source RPM  : basesystem-10.0-4.9.amzn1.src.rpm
+Build Date  : 2011年07月19日 星期二 20时07分39秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Koji
+Vendor      : Amazon.com
+Summary     : The skeleton package which defines a simple Amazon Linux system
+Description :
+Basesystem defines the components of a basic Amazon Linux
+system (for example, the package installation order to use during
+bootstrapping). Basesystem should be in every installation of a system,
+and it should never be removed.

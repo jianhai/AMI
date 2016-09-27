@@ -1,0 +1,21 @@
+Name        : info
+Version     : 5.1
+Release     : 4.10.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分58秒
+Group       : System Environment/Base
+Size        : 476486
+License     : GPLv3+
+Signature   : RSA/SHA256, 2014年09月16日 星期二 00时23分55秒, Key ID bcb4a85b21c0f39f
+Source RPM  : texinfo-5.1-4.10.amzn1.src.rpm
+Build Date  : 2014年09月15日 星期一 20时21分27秒
+Build Host  : build-60002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.gnu.org/software/texinfo/
+Summary     : A stand-alone TTY-based reader for GNU texinfo documentation
+Description :
+The GNU project uses the texinfo file format for much of its
+documentation. The info package provides a standalone TTY-based
+browser program for viewing texinfo files.

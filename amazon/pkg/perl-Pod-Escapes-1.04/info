@@ -1,0 +1,21 @@
+Name        : perl-Pod-Escapes
+Epoch       : 1
+Version     : 1.04
+Release     : 283.37.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分03秒
+Group       : Development/Libraries
+Size        : 21091
+License     : GPL+ or Artistic
+Signature   : RSA/SHA256, 2014年09月16日 星期二 00时24分04秒, Key ID bcb4a85b21c0f39f
+Source RPM  : perl-5.16.3-283.37.amzn1.src.rpm
+Build Date  : 2014年09月15日 星期一 18时20分45秒
+Build Host  : build-64003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.perl.org/
+Summary     : Perl module for resolving POD escape sequences
+Description :
+This module provides things that are useful in decoding Pod E<...> sequences.
+Presumably, it should be used only by Pod parsers and/or formatters.

@@ -1,0 +1,21 @@
+Name        : lsof
+Version     : 4.82
+Release     : 4.10.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分33秒
+Group       : Development/Debuggers
+Size        : 911411
+License     : zlib
+Signature   : RSA/SHA256, 2012年08月14日 星期二 00时16分55秒, Key ID bcb4a85b21c0f39f
+Source RPM  : lsof-4.82-4.10.amzn1.src.rpm
+Build Date  : 2012年07月07日 星期六 07时45分08秒
+Build Host  : build-31006.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : ftp://lsof.itap.purdue.edu/pub/tools/unix/lsof
+Summary     : A utility which lists open files on a Linux/UNIX system
+Description :
+Lsof stands for LiSt Open Files, and it does just that: it lists
+information about files that are open by the processes running on a
+UNIX system.

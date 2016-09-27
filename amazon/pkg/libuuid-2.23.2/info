@@ -1,0 +1,28 @@
+Name        : libuuid
+Version     : 2.23.2
+Release     : 22.26.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时09分59秒
+Group       : Development/Libraries
+Size        : 15830
+License     : BSD
+Signature   : RSA/SHA256, 2015年09月15日 星期二 23时03分03秒, Key ID bcb4a85b21c0f39f
+Source RPM  : util-linux-2.23.2-22.26.amzn1.src.rpm
+Build Date  : 2015年09月10日 星期四 22时13分02秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://en.wikipedia.org/wiki/Util-linux
+Summary     : Universally unique ID library
+Description :
+This is the universally unique ID library, part of util-linux.
+
+The libuuid library generates and parses 128-bit universally unique
+id's (UUID's).  A UUID is an identifier that is unique across both
+space and time, with respect to the space of all UUIDs.  A UUID can
+be used for multiple purposes, from tagging objects with an extremely
+short lifetime, to reliably identifying very persistent objects
+across a network.
+
+See also the "uuid" package, which is a separate implementation.

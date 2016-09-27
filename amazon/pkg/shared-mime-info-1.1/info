@@ -1,0 +1,24 @@
+Name        : shared-mime-info
+Version     : 1.1
+Release     : 7.7.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分01秒
+Group       : System Environment/Base
+Size        : 4105435
+License     : GPLv2+
+Signature   : RSA/SHA256, 2014年09月12日 星期五 04时36分48秒, Key ID bcb4a85b21c0f39f
+Source RPM  : shared-mime-info-1.1-7.7.amzn1.src.rpm
+Build Date  : 2014年09月10日 星期三 19时25分14秒
+Build Host  : build-60002.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://freedesktop.org/Software/shared-mime-info
+Summary     : Shared MIME information database
+Description :
+This is the freedesktop.org shared MIME info database.
+
+Many programs and desktops use the MIME system to represent the types of
+files. Frequently, it is necessary to work out the correct MIME type for
+a file. This is generally done by examining the file's name or contents,
+and looking up the correct MIME type in a database.

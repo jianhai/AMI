@@ -1,0 +1,19 @@
+Name        : acpid
+Version     : 1.0.10
+Release     : 2.1.6.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分29秒
+Group       : System Environment/Daemons
+Size        : 74381
+License     : GPLv2+
+Signature   : RSA/SHA256, 2011年01月25日 星期二 18时32分36秒, Key ID bcb4a85b21c0f39f
+Source RPM  : acpid-1.0.10-2.1.6.amzn1.src.rpm
+Build Date  : 2011年01月15日 星期六 13时48分31秒
+Build Host  : build-31003.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://acpid.sourceforge.net/
+Summary     : ACPI Event Daemon
+Description :
+acpid is a daemon that dispatches ACPI events to user-space programs.

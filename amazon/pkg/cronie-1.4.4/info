@@ -1,0 +1,22 @@
+Name        : cronie
+Version     : 1.4.4
+Release     : 12.6.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分27秒
+Group       : System Environment/Base
+Size        : 178643
+License     : MIT and BSD and ISC and GPLv2
+Signature   : RSA/SHA256, 2014年02月28日 星期五 02时31分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : cronie-1.4.4-12.6.amzn1.src.rpm
+Build Date  : 2013年11月27日 星期三 00时36分59秒
+Build Host  : build-31004.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : https://fedorahosted.org/cronie
+Summary     : Cron daemon for executing programs at set times
+Description :
+Cronie contains the standard UNIX daemon crond that runs specified programs at
+scheduled times and related tools. It is a fork of the original vixie-cron and
+has security and configuration enhancements like the ability to use pam and
+SELinux.

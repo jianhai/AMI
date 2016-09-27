@@ -1,0 +1,19 @@
+Name        : nano
+Version     : 2.5.3
+Release     : 1.19.amzn1
+Architecture: x86_64
+Install Date: 2016年06月21日 星期二 20时10分32秒
+Group       : Applications/Editors
+Size        : 2085578
+License     : GPLv3+
+Signature   : RSA/SHA256, 2016年04月04日 星期一 22时23分27秒, Key ID bcb4a85b21c0f39f
+Source RPM  : nano-2.5.3-1.19.amzn1.src.rpm
+Build Date  : 2016年04月01日 星期五 21时20分04秒
+Build Host  : build-60008.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://www.nano-editor.org
+Summary     : A small text editor
+Description :
+GNU nano is a small and friendly text editor.

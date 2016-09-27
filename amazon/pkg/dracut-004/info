@@ -1,0 +1,19 @@
+Name        : dracut
+Version     : 004
+Release     : 336.28.amzn1
+Architecture: noarch
+Install Date: 2016年06月21日 星期二 20时10分25秒
+Group       : System Environment/Base
+Size        : 253164
+License     : GPLv2+
+Signature   : RSA/SHA256, 2015年09月15日 星期二 23时02分51秒, Key ID bcb4a85b21c0f39f
+Source RPM  : dracut-004-336.28.amzn1.src.rpm
+Build Date  : 2015年09月14日 星期一 22时32分19秒
+Build Host  : build-64010.build
+Relocations : (not relocatable)
+Packager    : Amazon.com, Inc. <http://aws.amazon.com>
+Vendor      : Amazon.com
+URL         : http://apps.sourceforge.net/trac/dracut/wiki
+Summary     : Initramfs generator using udev
+Description :
+dracut is a new, event-driven initramfs infrastructure based around udev.
