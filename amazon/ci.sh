@@ -27,7 +27,7 @@ function do_srpm()
 {
   package=$1
 
-  ./scripts/getsrc.expect $package
+  ./scripts/getpkg.sh $package
 }
 
 # Set default Action
