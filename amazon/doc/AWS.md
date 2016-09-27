@@ -402,38 +402,38 @@ aws-apitools-mon
 aws-apitools-elb
 ----------------
 1. Elastic Load Balancing (ELB) Command Line Tool
-2. JAVA <br/>
->    /opt/aws/apitools/elb-1.0.35.0/bin
->        elb-apply-security-groups-to-lb
->        elb-associate-route53-hosted-zone
->        elb-attach-lb-to-subnets
->        elb-cmd
->        elb-configure-healthcheck
->        elb-create-app-cookie-stickiness-policy
->        elb-create-lb
->        elb-create-lb-cookie-stickiness-policy
->        elb-create-lb-listeners
->        elb-create-lb-policy
->        elb-delete-lb
->        elb-delete-lb-listeners
->        elb-delete-lb-policy
->        elb-deregister-instances-from-lb
->        elb-describe-instance-health
->        elb-describe-lb-attributes
->        elb-describe-lb-policies
->        elb-describe-lb-policy-types
->        elb-describe-lbs
->        elb-detach-lb-from-subnets
->        elb-disable-zones-for-lb
->        elb-disassociate-route53-hosted-zone
->        elb-enable-zones-for-lb
->        elb-modify-lb-attributes
->        elb-register-instances-with-lb
->        elb-set-lb-listener-ssl-cert
->        elb-set-lb-policies-for-backend-server
->        elb-set-lb-policies-of-listener
->        elb-version
->        service
+2. JAVA
+<br/>    /opt/aws/apitools/elb-1.0.35.0/bin
+<br/>        elb-apply-security-groups-to-lb
+<br/>        elb-associate-route53-hosted-zone
+<br/>        elb-attach-lb-to-subnets
+<br/>        elb-cmd
+<br/>        elb-configure-healthcheck
+<br/>        elb-create-app-cookie-stickiness-policy
+<br/>        elb-create-lb
+<br/>        elb-create-lb-cookie-stickiness-policy
+<br/>        elb-create-lb-listeners
+<br/>        elb-create-lb-policy
+<br/>        elb-delete-lb
+<br/>        elb-delete-lb-listeners
+<br/>        elb-delete-lb-policy
+<br/>        elb-deregister-instances-from-lb
+<br/>        elb-describe-instance-health
+<br/>        elb-describe-lb-attributes
+<br/>        elb-describe-lb-policies
+<br/>        elb-describe-lb-policy-types
+<br/>        elb-describe-lbs
+<br/>        elb-detach-lb-from-subnets
+<br/>        elb-disable-zones-for-lb
+<br/>        elb-disassociate-route53-hosted-zone
+<br/>        elb-enable-zones-for-lb
+<br/>        elb-modify-lb-attributes
+<br/>        elb-register-instances-with-lb
+<br/>        elb-set-lb-listener-ssl-cert
+<br/>        elb-set-lb-policies-for-backend-server
+<br/>        elb-set-lb-policies-of-listener
+<br/>        elb-version
+<br/>        service
 <br/><br/>
 
 aws-apitools-common
