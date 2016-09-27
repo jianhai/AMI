@@ -6,9 +6,9 @@ function is_ignore()
 
   rec=`grep "$package" excludes`
   if [ -z "$rec" ]; then 
-    return 1
+    return 0
   fi
-  return 0
+  return 1
 }
 
 function do_ci()
@@ -60,7 +60,8 @@ do
   package=${LINE%%-[0-9]*}
 
   # Ignore Some Exclude package
-  if [ `is_ignore $package` ]; then 
+  is_ignore $package
+  if [ $? -eq 1 ]; then 
     continue
   fi
 
