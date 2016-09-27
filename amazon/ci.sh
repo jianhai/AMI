@@ -27,6 +27,14 @@ function do_srpm()
 {
   package=$1
 
+  if [ $package == "java" ]; then
+    package="java-1.7.0-openjdk"
+  elif [ $package == "kernel" ]; then
+    return
+  elif [ $package == "gpg-pubkey" ]; then
+    return
+  fi
+
   ./scripts/getpkg.sh $package
 }
 
