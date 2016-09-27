@@ -4,3 +4,4 @@ perl-Error
 perl-Git
 perl-TermReadKey
 tcl
+tmux
