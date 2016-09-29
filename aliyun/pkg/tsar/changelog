@@ -1,0 +1,9 @@
+* 日 1月 06 2013 Ke Li <kongjian@taobao.com>
+- merge inner and opensource tsar
+
+* 四 12月 09 2010 Ke Li <kongjian@taobao.com>
+- add logrotate for tsar.data
+
+* 一 4月 26 2010 Bin Chen <kuotai@taobao.com>
+- first create tsar rpm package
+

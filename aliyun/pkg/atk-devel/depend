@@ -1,0 +1,11 @@
+/usr/bin/pkg-config  
+atk = 1.30.0-1.2.alios6
+glib2-devel >= 2.6.0
+libatk-1.0.so.0()(64bit)  
+pkgconfig  
+pkgconfig(gobject-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

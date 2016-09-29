@@ -1,0 +1,198 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.5-9.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.5-9.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.4.5-9.1
+- rebuild for alios6
+
+* 一 8月 15 2011 Tomas Mraz <tmraz@redhat.com> 1.4.5-9
+- add partial relro to LDFLAGS (#727283)
+
+* 一 5月 30 2011 Tomas Mraz <tmraz@redhat.com> 1.4.5-8
+- Make the FIPS-186-3 DSA implementation CAVS testable
+
+* 五 5月 06 2011 Tomas Mraz <tmraz@redhat.com> 1.4.5-7
+- add configurable source of RNG seed /etc/gcrypt/rngseed
+  in the FIPS mode (#700388)
+
+* 五 2月 04 2011 Tomas Mraz <tmraz@redhat.com> 1.4.5-5
+- use /dev/urandom for seeding in the FIPS mode
+- make the tests to pass in the FIPS mode also fixing
+  the FIPS-186-3 DSA keygen
+
+* 三 2月 03 2010 Tomas Mraz <tmraz@redhat.com> 1.4.5-3
+- drop the S390 build workaround as it is no longer needed
+- additional spec file cleanups for merge review (#226008)
+
+* 一 12月 21 2009 Tomas Mraz <tmraz@redhat.com> 1.4.5-1
+- upgrade to new minor upstream release
+
+* 一 12月 21 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-9
+- Workaround for build on S390 (#548825)
+- Spec file cleanups
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.4.4-8.1
+- Rebuilt for RHEL 6
+
+* 二 8月 11 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-8
+- fix warning when installed with --excludedocs (#515961)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.4-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 6月 18 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-6
+- and now really apply the padlock patch
+
+* 三 6月 17 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-5
+- fix VIA padlock RNG inline assembly call (#505724)
+
+* 四 3月 05 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-4
+- with the integrity verification check the library needs to link to libdl
+  (#488702)
+
+* 二 3月 03 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-3
+- add hmac FIPS integrity verification check
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 30 2009 Tomas Mraz <tmraz@redhat.com> 1.4.4-1
+- update to 1.4.4
+- do not abort when the fips mode kernel flag is inaccessible
+  due to permissions (#470219)
+- hobble the library to drop the ECC support
+
+* 一 10月 20 2008 Dennis Gilmore <dennis@ausil.us> 1.4.3-2
+- disable asm on sparc64
+
+* 四 9月 18 2008 Nalin Dahyabhai <nalin@redhat.com> 1.4.3-1
+- update to 1.4.3
+- own /etc/gcrypt
+
+* 一 9月 15 2008 Nalin Dahyabhai <nalin@redhat.com>
+- invoke make with %{?_smp_mflags} to build faster on multi-processor
+  systems (Steve Grubb)
+
+* 一 9月 08 2008 Nalin Dahyabhai <nalin@redhat.com> 1.4.2-1
+- update to 1.4.2
+
+* 二 4月 29 2008 Nalin Dahyabhai <nalin@redhat.com> 1.4.1-1
+- update to 1.4.1
+- bump libgpgerror-devel requirement to 1.4, matching the requirement enforced
+  by the configure script
+
+* 四 4月 03 2008 Joe Orton <jorton@redhat.com> 1.4.0-3
+- add patch from upstream to fix severe performance regression
+  in entropy gathering
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.4.0-2
+- Autorebuild for GCC 4.3
+
+* 一 12月 10 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.4.0-1
+- update to 1.4.0
+
+* 二 10月 16 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-6
+- use ldconfig to build the soname symlink for packaging along with the
+  shared library (#334731)
+
+* 三 8月 22 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-5
+- add missing gawk buildrequirement
+- switch from explicitly specifying the /dev/random RNG to just verifying
+  that the non-LGPL ones were disabled by the configure script
+
+* 四 8月 16 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-4
+- clarify license
+- force use of the linux /dev/random RNG, to avoid accidentally falling back
+  to others which would affect the license of the resulting library
+
+* 一 7月 30 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-3
+- disable static libraries (part of #249815)
+
+* 五 7月 27 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-2
+- move libgcrypt shared library to /%{_lib} (#249815)
+
+* 二 2月 06 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.4-1
+- update to 1.2.4
+
+* 一 1月 22 2007 Nalin Dahyabhai <nalin@redhat.com> - 1.2.3-2
+- make use of install-info more failsafe (Ville Skyttä, #223705)
+
+* 五 9月 01 2006 Nalin Dahyabhai <nalin@redhat.com> - 1.2.3-1
+- update to 1.2.3
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-3.1
+- rebuild
+
+* 一 6月 05 2006 Jesse Keating <jkeating@redhat.com> 1.2.2-3
+- Added missing buildreq pkgconfig
+
+* 二 5月 16 2006 Nalin Dahyabhai <nalin@redhat.com> 1.2.2-2
+- remove file conflicts in libgcrypt-config by making the 64-bit version
+  think the libraries are in /usr/lib (which is wrong, but which it also
+  prunes from the suggest --libs output, so no harm done, hopefully)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 10月 05 2005 Nalin Dahyabhai <nalin@redhat.com> 1.2.2-1
+- update to 1.2.2
+
+* 三 3月 16 2005 Nalin Dahyabhai <nalin@redhat.com> 1.2.1-1
+- update to 1.2.1
+
+* 五 7月 30 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- another try to package the symlink
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 5月 02 2004 Bill Nottingham <notting@redhat.com> - 1.2.0-1
+- update to official 1.2.0
+
+* 五 4月 16 2004 Bill Nottingham <notting@redhat.com> - 1.1.94-1
+- update to 1.1.94
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 2月 21 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- add symlinks to shared libs at compile time
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 3月 20 2003 Jeff Johnson <jbj@redhat.com> 1.1.12-1
+- upgrade to 1.1.12 (beta).
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 5月 21 2002 Jeff Johnson <jbj@redhat.com>
+- update to 1.1.7
+- change license to LGPL.
+- include splint annotations patch.
+- install info pages.
+
+* 二 4月 02 2002 Nalin Dahyabhai <nalin@redhat.com> 1.1.6-1
+- update to 1.1.6
+
+* 四 1月 10 2002 Nalin Dahyabhai <nalin@redhat.com> 1.1.5-1
+- fix the Source tag so that it's a real URL
+
+* 四 12月 20 2001 Nalin Dahyabhai <nalin@redhat.com>
+- initial package
+

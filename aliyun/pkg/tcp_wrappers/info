@@ -1,0 +1,19 @@
+Name        : tcp_wrappers                 Relocations: (not relocatable)
+Version     : 7.6                               Vendor: Alibaba
+Release     : 57.4.alios6                   Build Date: 2014年07月28日 星期一 05时29分19秒
+Install Date: 2015年03月25日 星期三 11时00分24秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Daemons    Source RPM: tcp_wrappers-7.6-57.4.alios6.src.rpm
+Size        : 149750                           License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 18时54分32秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : ftp://ftp.porcupine.org/pub/security/index.html
+Summary     : A security tool which acts as a wrapper for TCP daemons
+Description :
+The tcp_wrappers package provides small daemon programs which can
+monitor and filter incoming requests for systat, finger, FTP, telnet,
+rlogin, rsh, exec, tftp, talk and other network services.
+
+Install the tcp_wrappers program if you need a security tool for
+filtering incoming network services requests.
+
+This version also supports IPv6.

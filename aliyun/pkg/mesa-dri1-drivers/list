@@ -1,0 +1,4 @@
+/usr/lib64/dri/mga_dri.so
+/usr/lib64/dri/r128_dri.so
+/usr/lib64/dri/savage_dri.so
+/usr/lib64/dri/unichrome_dri.so

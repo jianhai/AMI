@@ -1,0 +1,442 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4:5.10.1-119.4.1
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4:5.10.1-119.3.1
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4:5.10.1-119.2.1
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 4:5.10.1-119.1.1
+- rebuild for alios6
+
+* 二 10月 04 2011 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-119.1
+- 731246 (CVE-2011-2939)CVE-2011-2939 heap overflow - decoding Unicode string
+- 743010 - perl: code injection vulnerability in Digest->new()
+- Resolves: rhbz#743090, rhbz#743092
+
+* 二 4月 19 2011 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-119
+- 692862 - lc launders tainted flag, CVE-2011-1487
+- make SOURCE1 executable, because it missed +x in brew
+- Resolves: rhbz#692862
+
+* 一 2月 14 2011 Petr Pisar <ppisar@redhat.com> - 4:5.10.1-118
+- Correct perl-5.10.1-rt77352.patch
+- Related: rhbz#640720
+
+* 五 1月 21 2011 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-117
+- 671352 CGI-3.51 security update
+- Resolves: rhbz#671352
+
+* 三 1月 05 2011 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-116
+- require Digest::SHA 640716
+- remove removal of NDBM 640729
+- remove unsupported option fork from prove's documentation 609492
+- Thread desctructor leaks 640720
+- update threads to 1.82 (bugfixes releases) 626330
+- remove unused patches from cvs
+- Resolves: rhbz#640729, rhbz#640716, rhbz#609492, rhbz#640720, rhbz#626330
+
+* 一 7月 19 2010 Petr Pisar <ppisar@redhat.com> - 4:5.10.1-115
+- Resolves: #614917 - Remove trailing slashes from vendor paths
+
+* 五 7月 16 2010 Petr Pisar <ppisar@redhat.com> - 4:5.10.1-114
+- Remove unused @INC paths
+- Own all used @INC paths
+- Own architecture dependent paths by perl-libs due to multiarch
+- Resolves: rhbz#554671
+
+* 三 6月 30 2010 Petr Pisar <ppisar@redhat.com> - 4:5.10.1-113
+- fix CGI test data location to pass internal tests 
+- remove CPAN and CPANPLUS sysconfig declarations as they are not provided
+- disable tests on s390(x) and ppc64 as multithread stress tests fails
+- Related: rhbz#594768
+
+* 三 6月 30 2010 Petr Pisar <ppisar@redhat.com> - 4:5.10.1-112
+- fix Archive::Tar to return correct code on failed extraction
+- Resolves: rhbz#606813
+
+* 三 6月 30 2010 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-111
+- fix conflicts in specfile, upload missing sources, upload patch with
+ wrong name
+- Related: rhbz# 594768
+
+* 二 6月 08 2010 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-110
+- set CPAN installation path into "site"
+- 'make local' now pass because of Patch0, which removes incorectly set
+ dependencies
+- Related: rhbz#594768
+
+* 五 6月 04 2010 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-110
+- 597982 add all version* in -version sub-package
+- Resolves: rhbz#597982, rhbz#598397, rhbz#595387, rhbz#595387
+
+* 三 4月 14 2010 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-109
+- fix macro of Module::Build again
+- Resolves: rhbz#580238
+
+* 二 3月 30 2010 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-108
+- remove DPERL_USE_SAFE_PUTENV from Configure #577229 Use perl internal
+ putenv, which doesn't leak memory.
+- 580238 wrong version of module
+Resolves: rhbz#580238
+
+* 三 3月 03 2010 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-107
+- clean spec - remove unused patches, rename patches, sources
+- add releases macros for all modules
+- change license according to legal
+- update modules to stable version. e.g. Module-Build can't be updated anymore
+  because of API breakage, that's true also for some other modules.
+- Related: rhbz#543948
+
+* 二 1月 19 2010 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-106
+- 554654 -  "perldoc perlvar" renders incorrectly in C and en_US.UTF-8 locales.
+- 554666 -  Wrong man pages location specified in perl manual page
+- Resolves: rhbz#554654, rhbz#554666
+
+* 二 12月 22 2009 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.1-105
+- 547657 CVE-2009-3626 perl: regexp matcher crash on invalid UTF-8 characters  
+- 549306 version::Internals should be packaged in perl-version subpackage
+- Parse-CPAN-Meta updated and separate package is dead
+- subpackage parent and Parse-CPAN-Meta; add them to core's dep list
+- exclude "parent".
+- exclude Parse-CPAN-Meta.
+Resolves: rhbz#547657
+
+* 一 12月 07 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.1-104
+- do not pack Bzip2 manpages either (#544582)
+
+* 一 12月 07 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.1-103
+- do not pack Bzip2 modules (#544582)
+- hack: cheat about Compress::Raw::Zlib version (#544582)
+
+* 四 12月 03 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.1-102
+- switch off check for ppc64 and s390x
+- remove the hack for "make test," it is no longer needed
+
+* 四 12月 03 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.1-101
+- be more careful with the libperl.so compatibility symlink (#543936)
+
+* 三 12月 02 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.1-100
+- new upstream version
+- release number must be high, because of stale version numbers of some
+  of the subpackages
+- drop upstreamed patches
+- update the versions of bundled modules
+- shorten the paths in @INC
+- build without DEBUGGING
+- implement compatibility measures for the above two changes, for a short
+  transition period
+- provide perl(:MODULE_COMPAT_5.10.0), for that transition period only
+
+* 二 12月 01 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-87
+- fix patch-update-Compress-Raw-Zlib.patch (did not patch Zlib.pm)
+- update Compress::Raw::Zlib to 2.023
+- update IO::Compress::Base, and IO::Compress::Zlib to 2.015 (#542645)
+
+* 一 11月 30 2009 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-86
+- 542645 update IO-Compress-Base
+
+* 二 11月 24 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-85
+- back out perl-5.10.0-spamassassin.patch (#528572)
+
+* 四 10月 01 2009 Chris Weyl <cweyl@alumni.drew.edu> - 4:5.10.0-84
+- add /perl(UNIVERSAL)/d; /perl(DB)/d to perl_default_filter auto-provides
+  filtering
+
+* 四 10月 01 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-83
+- update Storable to 2.21
+
+* 一 8月 31 2009 Chris Weyl <cweyl@alumni.drew.edu> - 4:5.10.0-82
+- update our Test-Simple update to 0.92 (patch by Iain Arnell), #519417
+- update Module-Pluggable to 3.9
+
+* 四 8月 27 2009 Chris Weyl <cweyl@alumni.drew.edu> - 4:5.10.0-81
+- fix macros.perl *sigh*
+
+* 一 8月 24 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-80
+- Remove -DDEBUGGING=-g, we are not ready yet.
+
+* 五 8月 21 2009 Chris Weyl <cweyl@alumni.drew.edu> - 4:5.10.0-79
+- add helper filtering macros to -devel, for perl-* package invocation
+  (#502402)
+
+* 五 7月 31 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-78
+- Add configure option -DDEBUGGING=-g (#156113)
+
+* 二 7月 28 2009 arcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-77
+- 510127 spam assassin suffer from tainted bug
+
+* 一 7月 27 2009 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-76
+- 494773 much better swap logic to support reentrancy and fix assert failure (rt #60508)
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4:5.10.0-75
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 10 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-74
+- fix generated .ph files so that they no longer cause warnings (#509676)
+- remove PREREQ_FATAL from Makefile.PL's processed by miniperl
+- update to latest Scalar-List-Utils (#507378)
+- perl-skip-prereq.patch: skip more prereq declarations in Makefile.PL files
+
+* 二 7月 07 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-73
+- re-enable tests
+
+* 二 7月 07 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-72
+- move -DPERL_USE_SAFE_PUTENV to ccflags (#508496)
+
+* 一 6月 08 2009 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-71
+- #504386 update of Compress::Raw::Zlib 2.020
+
+* 四 6月 04 2009 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-70
+- update File::Spec (PathTools) to 3.30
+
+* 三 6月 03 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-69
+- fix #221113, $! wrongly set when EOF is reached
+
+* 五 4月 10 2009 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-68
+- do not use quotes in patchlevel.h; it breaks installation from cpan (#495183)
+
+* 二 4月 07 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-67
+- update CGI to 3.43, dropping upstreamed perl-CGI-escape.patch
+
+* 二 4月 07 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-66
+- fix CGI::escape for all strings (#472571)
+- perl-CGI-t-util-58.patch: Do not distort lib/CGI/t/util-58.t
+  http://rt.perl.org/rt3/Ticket/Display.html?id=64502
+
+* 五 3月 27 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-65
+- Move the gargantuan Changes* collection to -devel (#492605)
+
+* 二 3月 24 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-64
+- update module autodie
+
+* 一 3月 23 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-63
+- update Digest::SHA (fixes 489221)
+
+* 三 3月 11 2009 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-62
+- drop 26_fix_pod2man_upgrade (don't need it)
+- fix typo in %define ExtUtils_CBuilder_version
+
+* 三 3月 11 2009 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-61
+- apply Change 34507: Fix memory leak in single-char character class optimization
+- Reorder @INC, based on b9ba2fadb18b54e35e5de54f945111a56cbcb249
+- fix Archive::Extract to fix test failure caused by tar >= 1.21
+- Merge useful Debian patches
+
+* 二 3月 10 2009 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-60
+- remove compatibility obsolete sitelib directories
+- use a better BuildRoot
+- drop a redundant mkdir in %install
+- call patchlevel.h only once; rm patchlevel.bak
+- update modules Sys::Syslog, Module::Load::Conditional, Module::CoreList,
+  Test::Harness, Test::Simple, CGI.pm (dropping the upstreamed patch),
+  File::Path (that includes our perl-5.10.0-CVE-2008-2827.patch),
+  constant, Pod::Simple, Archive::Tar, Archive::Extract, File::Fetch,
+  File::Temp, IPC::Cmd, Time::HiRes, Module::Build, ExtUtils::CBuilder
+- standardize the patches for updating embedded modules
+- work around a bug in Module::Build tests bu setting TMPDIR to a directory
+  inside the source tree
+
+* 日 3月 08 2009 Robert Scheck <robert@fedoraproject.org> - 4:5.10.0-59
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 16 2009 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-58
+- add /usr/lib/perl5/site_perl to otherlibs (bz 484053)
+
+* 一 2月 16 2009 Dennis Gilmore <dennis@ausil.us> - 4:5.10.0-57
+- build sparc64 without _smp_mflags
+
+* 六 2月 07 2009 Dennis Gilmore <dennis@ausil.us> - 4:5.10.0-56
+- limit sparc builds to -j12
+
+* 二 2月 03 2009 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-55
+- update IPC::Cmd to v 0.42
+
+* 一 1月 19 2009 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-54
+- 455410 http://rt.perl.org/rt3/Public/Bug/Display.html?id=54934
+  Attempt to free unreferenced scalar fiddling with the symbol table
+  Keep the refcount of the globs generated by PerlIO::via balanced.
+
+* 一 12月 22 2008 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-53
+- add missing XHTML.pm into Pod::Simple
+
+* 五 12月 12 2008 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-52
+- 295021 CVE-2007-4829 perl-Archive-Tar directory traversal flaws
+- add another source for binary files, which test untaring links
+
+* 五 11月 28 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-51
+- to fix Fedora bz 473223, which is really perl bug #54186 (http://rt.perl.org/rt3//Public/Bug/Display.html?id=54186)
+  we apply Changes 33640, 33881, 33896, 33897
+
+* 一 11月 24 2008 Marcela Mašláňová <mmaslano@redhat.com> - 4:5.10.0-50
+- change summary according to RFC fix summary discussion at fedora-devel :)
+
+* 四 10月 23 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-49
+- update File::Temp to 0.20
+
+* 日 10月 12 2008 Lubomir Rintel <lkundrak@v3.sk> - 4:5.10.0-48
+- Include fix for rt#52740 to fix a crash when using Devel::Symdump and
+  Compress::Zlib together
+
+* 二 10月 07 2008 Marcela Mašláňová <mmaslano@redhat.com> 4:5.10.0-47.fc10
+- rt#33242, rhbz#459918. Segfault after reblessing objects in Storable.
+- rhbz#465728 upgrade Simple::Pod to 3.07
+
+* 三 10月 01 2008 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-46
+- also preserve the timestamp of AUTHORS; move the fix to the recode
+  function, which is where the stamps go wrong
+
+* 三 10月 01 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-45
+- give Changes*.gz the same datetime to avoid multilib conflict
+
+* 三 9月 17 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-44.fc10
+- remove Tar.pm from Archive-Extract
+- fix version of Test::Simple in spec
+- update Test::Simple
+- update Archive::Tar to 1.38
+
+* 二 9月 16 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-43.fc10
+- 462444 update Test::Simple to 0.80
+
+* 四 8月 14 2008 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-42.fc10
+- move libnet to the right directory, along Net/Config.pm
+
+* 三 8月 13 2008 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-41.fc10
+- do not create directory .../%{version}/auto
+
+* 二 8月 05 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-40.fc10
+- 457867 remove required IPC::Run from CPANPLUS - needed only by win32
+- 457771 add path
+
+* 五 8月 01 2008 Stepan Kasal <skasal@redhat.com> 4:5.10.0-39.fc10
+- CGI.pm bug in exists() on tied param hash (#457085)
+- move the enc2xs templates (../Encode/*.e2x) to -devel, (#456534)
+
+* 一 7月 21 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-38
+- 455933 update to CGI-3.38
+- fix fuzz problems (patch6)
+- 217833 pos() function handle unicode characters correct
+
+* 四 7月 10 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-36
+- rebuild for new db4 4.7
+
+* 三 7月 09 2008 Stepan Kasal <skasal@redhat.com> 4:5.10.0-35
+- remove db4 require, it is handled automatically
+
+* 四 7月 03 2008 Stepan Kasal <skasal@redhat.com> 4:5.10.0-34
+- 453646 use -DPERL_USE_SAFE_PUTENV. Without fail some modules f.e. readline.
+
+* 二 7月 01 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-33
+- 451078 update Test::Harness to 3.12 for more testing. Removed verbose 
+test, new Test::Harness has possibly verbose output, but updated package
+has a lot of features f.e. TAP::Harness. Carefully watched all new bugs 
+related to tests!
+
+* 五 6月 27 2008 Stepan Kasal <skasal@redhat.com> 4:5.10.0-32
+- bump the release number, so that it is not smaller than in F-9
+
+* 二 6月 24 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-28
+- CVE-2008-2827 perl: insecure use of chmod in rmtree
+
+* 三 6月 11 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-27
+- 447371 wrong access permission rt49003
+
+* 二 6月 10 2008 Stepan Kasal <skasal@redhat.com> 4:5.10.0-26
+- make config parameter list consistent for 32bit and 64bit platforms,
+  add config option -Dinc_version_list=none (#448735)
+- use perl_archname consistently
+- cleanup of usage of *_lib macros in %install
+
+* 五 6月 06 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-25
+- 449577 rebuild for FTBFS
+
+* 一 5月 26 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-24
+- 448392 upstream fix for assertion
+
+* 四 5月 22 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-23
+- sparc64 breaks with the rpath hack patch applied
+
+* 一 5月 19 2008 Marcela Maslanova <mmaslano@redhat.com>
+- 447142 upgrade CGI to 3.37 (this actually happened in -21 in rawhide.)
+
+* 六 5月 17 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-21
+- sparc64 fails two tests under mysterious circumstances. we need to get the
+  rest of the tree moving, so we temporarily disable the tests on that arch.
+
+* 二 3月 18 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-20
+- create the vendor_perl/%{perl_version}/%{perl_archname}/auto directory 
+  in %{_libdir} so we own it properly
+
+* 二 3月 18 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-19
+- fix CPANPLUS-Dist-Build Provides/Obsoletes (bz 437615)
+- bump version on Module-CoreList subpackage
+
+* 二 3月 18 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-18
+- forgot to create the auto directory for multilib vendor_perl dirs
+
+* 二 3月 18 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-17
+- own multilib vendor_perl directories
+- mark Module::CoreList patch in patchlevel.h
+
+* 二 3月 18 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-16
+- 437817: RFE: Upgrade Module::CoreList to 2.14
+
+* 三 3月 12 2008 Marcela Maslanova <mmaslano@redhat.com> 4:5.10.0-15
+- xsubpp now lives in perl-devel instead of perl.
+
+* 六 3月 08 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-14
+- back out Archive::Extract patch, causing odd test failure
+
+* 六 3月 08 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-13
+- add missing lzma test file
+
+* 五 3月 07 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-12
+- conditionalize multilib patch report in patchlevel.h
+- Update Archive::Extract to 0.26
+- Update Module::Load::Conditional to 0.24
+
+* 五 3月 07 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-11
+- only do it once, and do it for all our patches
+
+* 五 3月 07 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-10
+- note 32891 in patchlevel.h
+
+* 五 3月 07 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-9
+- get rid of bad conflicts on perl-File-Temp
+
+* 五 3月 07 2008 Tom "spot" Callaway <tcallawa@redhat.com> 4:5.10.0-8
+- use /usr/local for sitelib/sitearch dirs
+- patch 32891 for significant performance improvement
+
+* 五 2月 22 2008 Stepan Kasal <skasal@redhat.com> - 4:5.10.0-7
+- Add perl-File-Temp provides/obsoletes/conflicts (#433836),
+  reported by Bill McGonigle <bill@bfccomputing.com>
+- escape the macros in Jan 30 entry
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 4:5.10.0-6
+- Autorebuild for GCC 4.3
+
+* 三 1月 30 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-5
+- disable some futime tests in t/io/fs.t because they started failing on x86_64
+  in the Fedora builders, and no one can figure out why. :/
+
+* 三 1月 30 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-4
+- create %{_prefix}/lib/perl5/vendor_perl/%{perl_version}/auto and own it
+  in base perl (resolves bugzilla 214580)
+
+* 四 1月 10 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-3
+- Update Sys::Syslog to 0.24, to fix test failures
+
+* 三 1月 09 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-2
+- add some BR for tests
+
+* 二 1月 08 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4:5.10.0-1
+- 5.10.0 final
+- clear out all the unnecessary patches (down to 8 patches!)
+- get rid of super perl debugging mode
+- add new subpackages
+
+* 四 11月 29 2007 Robin Norwood <rnorwood@redhat.com> - 4:5.10.0_RC2-0.1
+- first attempt at building 5.10.0
+

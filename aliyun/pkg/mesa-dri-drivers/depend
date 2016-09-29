@@ -1,0 +1,42 @@
+config(mesa-dri-drivers) = 9.2-0.5.3.alios6.2
+libLLVM-3.3-mesa.so()(64bit)  
+libLLVM-3.3-mesa.so(libLLVM-3.3-mesa.so)(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+libdricore9.2.0-devel.so.1()(64bit)  
+libdrm.so.2()(64bit)  
+libdrm_intel.so.1()(64bit)  
+libdrm_radeon.so.1()(64bit)  
+libelf.so.1()(64bit)  
+libelf.so.1(ELFUTILS_1.0)(64bit)  
+libelf.so.1(ELFUTILS_1.5)(64bit)  
+libexpat.so.1()(64bit)  
+libgcc_s.so.1()(64bit)  
+libgcc_s.so.1(GCC_3.0)(64bit)  
+libgcc_s.so.1(GCC_3.4)(64bit)  
+libglapi.so.0()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpthread.so.0(GLIBC_2.3.2)(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+libselinux.so.1()(64bit)  
+libstdc++.so.6()(64bit)  
+libstdc++.so.6(CXXABI_1.3)(64bit)  
+libstdc++.so.6(GLIBCXX_3.4)(64bit)  
+mesa-dri-filesystem(x86-64)  
+mesa-dri1-drivers >= 7.11-6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

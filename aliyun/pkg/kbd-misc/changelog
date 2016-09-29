@@ -1,0 +1,349 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.15-11.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.15-11.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.15-11.1
+- rebuild for alios6
+
+* 二 6月 22 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.15-11
+- Ship /lib/kbd in separate subpackage
+
+* 一 6月 07 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.15-10
+- Fix name referring to default keymap
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.15-9.1
+- Rebuilt for RHEL 6
+
+* 三 8月 26 2009 Karsten Hopp <karsten@redhat.com> 1.15-9
+- drop excludearch s390x, we need this package to be able to build other packages on s390x
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.15-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 3月 05 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.15-7
+- Add loadkeys 'q' option to loadkeys manpage and --help
+  Resolves: #487538
+
+* 一 3月 02 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.15-6
+- Remove static loadkeys binary (it's not needed anymore)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.15-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 06 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.15-4
+- Merge review (drop Provides/Obsoletes, change Prereq to Requires,
+  add URL, convert ChangeLog to utf-8, replace locale destination
+  with macro, add COPYING and add dvorak documentation)
+  Resolves: #225958
+
+* 四 1月 29 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.15-3
+- Rename conflicting keymaps to have unique names
+  Resolves: #481674
+
+* 一 1月 12 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.15-2
+- Move loadkeys to /bin
+
+* 四 1月 08 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.15-1
+- Update to kbd-1.15
+
+* 一 9月 08 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-32
+- Rediff all patches to work with patch --fuzz=0
+- Add static loadkeys
+  Related: #451672
+
+* 二 2月 26 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-31
+- Fix trq.map
+  Resolves: #216710
+
+* 五 2月 22 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-30
+- Rebuild fo GCC 4.3
+
+* 二 11月 27 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-29
+- Stop kbdrate using consolehelper
+  Resolves: #393231
+
+* 四 11月 15 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-28
+- Fix ro.map.gz, add ro_std.map.gz, drop ro_win.map.gz,
+  add Lat2-Terminus16.psf console font (many thanks to Alexandru Szasz
+  <alexxed@gmail.com>)
+  Resolves: #253892
+
+* 三 10月 17 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-27
+- Add resizecons (with man page) for x86_64
+  Resolves: #333651
+
+* 一 10月 15 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-26
+- Fix ro.map to generate right unicode for s, S, t, T with comma
+- Fix LatArCyrHeb-16 unicode mapping table to show comma-version
+  of s, S, t, T and cedilla-version of s, S, t, T as the same glyph
+  (because there is no font in kbd for comma-version)
+  Resolves: #329071
+
+* 二 9月 18 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-25
+- Add new romanian keymap
+  Resolves: #253892
+
+* 一 8月 27 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-24
+- Fix license
+- Symlink sr-cy layout to sr-latin
+  Resolves: #253957
+
+* 二 7月 03 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-23
+- Rebuild
+
+* 二 7月 03 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.12-22
+- Fix sun12x22 font missing unicode mapping table
+  Resolves: #244628
+
+* 二 1月 09 2007 Miloslav Trmac <mitr@redhat.com> - 1.12-21
+- Add a "ko" (Korean) keyboard layout, equivalent to the "us" layout
+  Resolves: #220151
+
+* 四 12月 07 2006 Miloslav Trmac <mitr@redhat.com> - 1.12-20
+- Document that setkeycodes doesn't affect USB keyboards and that the kernel
+  doesn't provide the raw scan codes by default
+  Resolves: #211803
+
+* 二 10月 31 2006 Miloslav Trmac <mitr@redhat.com> - 1.12-19
+- Ship "el" translation instead of the obsolete "gr" translation
+  Resolves: #210749
+- Fix % quoting in %changelog
+
+* 五 9月 29 2006 Miloslav Trmac <mitr@redhat.com> - 1.12-18
+- Add a missing tilde to U+00E3 in latarcyrheb-sun16.psfu (#204470)
+
+* 五 7月 14 2006 Jesse Keating <jkeating@redhat.com> - 1.12-17
+- Obsoletes/Provides open
+- Create a symlink from open to openvt
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.12-16.1
+- rebuild
+
+* 日 7月 09 2006 Miloslav Trmac <mitr@redhat.com> - 1.12-16
+- Don't include <asm/kbdio.h> on SPARC (#198040, patch by Dennis Gilmore
+  <dennis@ausil.us>)
+
+* 一 5月 29 2006 Miloslav Trmac <mitr@redhat.com> - 1.12-15
+- Fix missing BuildRequires (#193406)
+
+* 一 3月 27 2006 Miloslav Trmac <mitr@redhat.com> - 1.12-14
+- Don't install resizecons.8 on non-x86 (#186877, patch by Keiichi Mori
+  <kmori@redhat.com>)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.12-13.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.12-13.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 20 2006 Miloslav Trmac <mitr@redhat.com> - 1.12-13
+- Fix build with new coreutils
+- Hardcode paths in unicode_start to avoid a few file lookups (#178329)
+- Drop unnecessary Prereq: sed mktemp
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 12月 01 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-12
+- Don't reload the keymap in unicode_start (#172425)
+
+* 五 11月 11 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-11
+- Don't ship character set lists (they are already in glibc-common) and an
+  obsolete copy of kbd.FAQ
+
+* 五 5月 20 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-10
+- Don't attempt to open directories as source files (#141634, original patch by
+  Paul Nasrat)
+
+* 二 5月 17 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-9
+- Fix another violation of C aliasing rules (#157720, patch by Jan Kratochvil)
+
+* 六 3月 12 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-8
+- Fix violation of C aliasing rules (#150440)
+
+* 日 3月 06 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-7
+- Don't run ldconfig
+- Don't strip executables
+
+* 五 3月 04 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-6
+- Rebuild with gcc4
+
+* 日 2月 20 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-5
+- Put "Meta_acute" back in German keymaps, just ignore it in (loadkeys -u)
+  (patch by Jochen Schmitt)
+- Don't ship patch backup files, simpler way
+
+* 六 2月 19 2005 Miloslav Trmac <mitr@redhat.com> - 1.12-4
+- Don't ship a patch backup file
+- Mention in setfont.8 that 512-glyph fonts reduce the number of available
+  colors (#140935, patch by Dmitry Butskoj)
+- Remove "Meta_acute" from German keymaps (#143124)
+- Make the %triggerun script condition more precise, ignore failure of the
+  script
+
+* 一 2月 14 2005 Adrian Havill <havill@redhat.com>
+- rebuilt
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 26 2004 Adrian Havill <havill@redhat.com>
+- update to 1.12
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 14 2004 Bill Nottingham <notting@redhat.com> 1.08-12
+- remove speakup patch at request of author
+
+* 三 1月 14 2004 Bill Nottingham <notting@redhat.com> 1.08-12
+- remove speakup patch at request of author
+
+* 五 10月 10 2003 Bill Nottingham <notting@redhat.com> 1.08-11
+- remove keytable init script (#106783)
+
+* 二 8月 12 2003 Adrian Havill <havill@rtedhat.com> 1.08-10.1
+- bump for RHEL
+
+* 二 8月 12 2003 Adrian Havill <havill@rtedhat.com> 1.08-10
+- apply the rukbd patch (#78218)
+
+* 四 7月 31 2003 Adrian Havill <havill@redhat.com> 1.08-9
+- don't print "plus before..." warnings about non-supported capslock
+  in unimode <Andries.Brouwer@cwi.nl> (#81855)
+
+* 三 7月 30 2003 Adrian Havill <havill@redhat.com> 1.08-8
+- replaced Russian keyboard map with working UTF-8 equivalent (#79338)
+
+* 四 7月 24 2003 Adrian Havill <havill@redhat.com> 1.08-7
+- make euro/latin-9 the default instead of latin-1 and 7-bit (#97013)
+- fix swedish keymap; se, not sv (#88791)
+- add fr-latin0 legacy alias of fr-latin-9 (#88324)
+- add ".map" ext to filename param of init script (#90562)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 3月 06 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- build new rpm
+
+* 五 2月 21 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- ExcludeArch mainframe
+
+* 四 1月 30 2003 Bill Nottingham <notting@redhat.com> 1.08-4
+- remove condrestart from initscript
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 12月 06 2002 Nalin Dahyabhai <nalin@redhat.com> 1.08-2
+- only output terminal unicode init sequence if both stdout and stderr are
+  connected to terminals, so that it doesn't show up when script outputs
+  get piped to files
+
+* 五 11月 22 2002 Nalin Dahyabhai <nalin@redhat.com> 1.08-1
+- update to 1.08
+- drop updates which went mainline
+
+* 一 11月 11 2002 Nalin Dahyabhai <nalin@redhat.com> 1.06-27
+- add detached signature
+- remove directory names from PAM configuration so that the same config file
+  can be used for any arch on multilib systems
+
+* 三 9月 04 2002 Bill Nottingham <notting@redhat.com> 1.06-26
+- don't munge /etc/sysconfig/i18n
+
+* 二 9月 03 2002 Bill Nottingham <notting@redhat.com> 1.06-25
+- don't run setsysfont in upgrade trigger on console-tools
+
+* 四 8月 29 2002 Jakub Jelinek <jakub@redhat.com> 1.06-24
+- use cyr-sun16 cyrillic chars in latarcyrheb-sun16 font
+  instead of old LatArCyrHeb-16 chars
+- add Euro character to latarcyrheb-sun16
+- use latarcyrheb-sun16 by default in unicode_start script
+
+* 二 8月 27 2002 Jakub Jelinek <jakub@redhat.com> 1.06-23
+- add back lat[02]-sun16 fonts plus latarcyrheb-sun16 font
+
+* 四 8月 22 2002 Karsten Hopp <karsten@redhat.de>
+- needs to conflict with older util-linux packages
+  (kbdrate moved between packages)
+
+* 二 8月 13 2002 Bill Nottingham <notting@redhat.com> 1.06-21
+- remove Evil Hack in favor of slightly-less-evil-hack in initscripts
+
+* 二 7月 09 2002 Bill Nottingham <notting@redhat.com> 1.06-20
+- fix speakup keymap names
+
+* 二 7月 09 2002 Phil Knirsch <pknirsch@redhat.com> 1.06-19
+- Evil hack to make setfont work correctly on all consoles (#68018)
+
+* 四 6月 27 2002 Bill Nottingham <notting@redhat.com> 1.06-18
+- move unicode_stop to /bin too
+- fix path to loadkeys in keytable.init
+- add in speakup keymaps
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 6月 11 2002 Nalin Dahyabhai <nalin@redhat.com> 1.06-16
+- fix incorrect path in console.apps configuration file
+
+* 四 5月 30 2002 Bill Nottingham <notting@redhat.com> 1.06-14
+- move some more stuff to /bin (unicode_start and dependencies)
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 2月 25 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.06-12
+- Rebuild in new environment
+
+* 三 1月 30 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.06-11
+- Oops, actually list the pam files in %files
+
+* 二 1月 29 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.06-10
+- Add and consolehelper'ify kbdrate
+
+* 二 1月 29 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.06-9
+- Re-remove kbdrate
+
+* 四 1月 24 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.06-7
+- Fix build in current environment
+- Get rid of kbdrate, it's in util-linux these days
+
+* 三 7月 18 2001 Matt Wilson <msw@redhat.com>
+- added a patch (Patch4) that allows --tty= in setfont
+- modified patch not to break translations
+
+* 二 7月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.06-4
+- Add cyrillic patches from leon@geon.donetsk.ua (#47144)
+
+* 二 6月 26 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.06-3
+- Fix "Alt+AltGr=Compose" in qwertz-keyboards
+
+* 一 6月 25 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.06-2
+- Fix "make install" and init script (#45327)
+
+* 六 6月 16 2001 Than Ngo <than@redhat.com>
+- update to 1.0.6
+- use %{_tmppath}
+- use find_lang
+- support new gettext
+- remove some patch files, which are included in 1.0.6
+- fix to use RPM_OPT_FLAGS
+
+* 四 5月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.05-3
+- Fix up resizecons
+
+* 三 5月 02 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.05-2
+- Build everything, obsoletes console-tools
+- s/Copyright:/License:/
+- License is GPL, not just distributable
+- Add our compose mappings from old console-tools
+- Add triggerpostun -- console-tools magic to get sane fonts and mappings
+
+* 二 4月 17 2001 Erik Troan <ewt@redhat.com>
+- initial packaging for kbdrate
+

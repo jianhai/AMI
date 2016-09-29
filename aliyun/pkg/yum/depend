@@ -1,0 +1,18 @@
+/usr/bin/python  
+config(yum) = 3.2.29-22.8.alios6
+pygpgme  
+python >= 2.4
+python(abi) = 2.6
+python-iniparse  
+python-sqlite  
+python-urlgrabber >= 3.9.0-8
+rpm >= 0:4.4.2
+rpm-python  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+yum-metadata-parser >= 1.1.0
+yum-plugin-fastestmirror  
+rpmlib(PayloadIsXz) <= 5.2-1

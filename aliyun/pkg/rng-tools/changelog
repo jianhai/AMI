@@ -1,0 +1,55 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2-10.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2-10.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2-10.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2-10.1
+- rebuild for alios6
+
+* 四 11月 03 2011 Don Zickus <dzickus@redhat.com> - 2-10
+- Resolves: bz#749629
+  add ignorefail option to manpage
+
+* 二 10月 25 2011 Jay Fenlason <fenlason@redhat.com> - 2-9
+- Add patch from James M. Leddy <james.leddy@redhat.com> to add
+  an option to ignore FIPS failures.
+  Resolves: bz#733452
+
+* 一 8月 23 2010 Jeff Garzik <jgarzik@redhat.com> - 2-8
+- Resolves: bz#624530
+- Fix loop on bad RNG
+
+* 五 5月 28 2010 David Howells <dhowells@rehdat.com> - 2-7
+- Resolves: bz#597221
+- Fix some compiler warnings thus dealing with the SEGV
+- Make do_loop() correctly interpret the result of iter->xread()
+
+* 五 3月 26 2010 Jeff Garzik <jgarzik@redhat.com> - 2-6
+- Resolves: bz#576678
+- increase version number of rng-utils that we obsolete
+- use global rather than define, for sbindir (Fedora pkg review)
+- improve BuildRoot (Fedora pkg review)
+
+* 四 3月 25 2010 Jeff Garzik <jgarzik@redhat.com> - 2-5
+- Fix specfile error preventing TPM patch from being applied
+- Resolves: bz#530012
+
+* 四 3月 25 2010 Jeff Garzik <jgarzik@redhat.com> - 2-4
+- Add TPM patch from Dell
+- Resolves: bz#530012
+
+* 四 3月 25 2010 Jeff Garzik <jgarzik@redhat.com> - 2-3
+- Related: bz#576678
+- bump release number due to tag confusion w/ devel branch
+
+* 四 3月 25 2010 Jeff Garzik <jgarzik@redhat.com> - 2-2
+- Related: bz#576678
+- several minor updates from Fedora package review
+
+* 三 3月 24 2010 Jeff Garzik <jgarzik@redhat.com> - 2-1
+- initial revision (as rng-tools)
+

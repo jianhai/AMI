@@ -1,0 +1,551 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.0-6.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.0-6.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.28.0-6.1
+- rebuild for alios6
+
+* 二 3月 23 2010 Ray Strode <rstrode@redhat.com> 2.28.0-6
+Resolves: #576226
+- Add new environment variables for controlling sync and
+  exiting behavior.
+
+* 五 1月 29 2010 Ray Strode <rstrode@redhat.com> 2.28.0-5
+Resolves: #559991
+- spec clean ups
+
+* 二 1月 19 2010 Matthias Clasen <mclasen@redhat.com> - 2.28.0-4
+- Make the defaults mechanism use the right polkit actions
+
+* 一 12月 14 2009 Matthias Clasen <mclasen@redhat.com> - 2.28.0-3
+- Avoid a crash when gconftool-2 can't read the db  (#547238)
+
+* 三 10月 07 2009 Matthias Clasen <mclasen@redhat.com> - 2.28.0-2
+- Fix a problem with schema translations
+
+* 三 9月 23 2009 Matthias Clasen <mclasen@redhat.com> - 2.28.0-1
+- Update to 2.28.0
+
+* 二 8月 25 2009 Matthias Clasen <mclasen@redhat.com> - 2.27.0-1
+- Update to 2.27.0
+
+* 一 8月 10 2009 Ville Skyttä <ville.skytta at iki.fi> - 2.26.2-6
+- Convert specfile to UTF-8.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.26.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 日 6月 14 2009 Matthias Clasen  <mclasen@redhat.com> - 2.26.2-4
+- Minor directory ownership cleanup
+
+* 二 6月 09 2009 Matthias Clasen  <mclasen@redhat.com> - 2.26.2-3
+- Improve the port
+
+* 二 6月 09 2009 Matthias Clasen  <mclasen@redhat.com> - 2.26.2-2
+- Port to PolicyKit 1
+
+* 五 5月 15 2009 Matthias Clasen  <mclasen@redhat.com> - 2.26.2-1
+- Update to 2.26.2
+- See http://download.gnome.org/sources/GConf/2.26/GConf-2.26.1.news
+- See http://download.gnome.org/sources/GConf/2.26/GConf-2.26.2.news
+
+* 一 4月 27 2009 Matthias Clasen  <mclasen@redhat.com> - 2.26.0-3
+- Support client-side translations
+
+* 一 4月 13 2009 Adam Jackson <ajax@redhat.com> 2.26.0-2
+- Explicit Conflicts: GConf2-dbus (#492636)
+
+* 一 3月 16 2009 Ray Strode <rstrode@redhat.com> - 2.26.0-1
+- update to 2.26.0
+
+* 二 3月 03 2009 Matthias Clasen  <mclasen@redhat.com> - 2.25.2-2
+- Avoid some gratitious extra work in the markup backend
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.25.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Matthias Clasen  <mclasen@redhat.com> - 2.25.2-1
+- Update to 2.25.2
+
+* 日 2月 15 2009 Matthias Clasen  <mclasen@redhat.com> - 2.25.1-1
+- Update to 2.25.1
+
+* 六 1月 10 2009 Matthias Clasen  <mclasen@redhat.com> - 2.25.0-1
+- Update to 2.25.0
+
+* 二 12月 16 2008 Matthias Clasen  <mclasen@redhat.com> - 2.24.0-3
+- Rebuild for pkg-config requires
+
+* 五 11月 21 2008 Matthias Clasen  <mclasen@redhat.com> - 2.24.0-2
+- Better URL
+
+* 一 9月 22 2008 Matthias Clasen  <mclasen@redhat.com> - 2.24.0-1
+- Update to 2.24.0
+- Drop obsolete timeout patch
+
+* 五 8月 22 2008 Matthias Clasen  <mclasen@redhat.com> - 2.23.2-1
+- Update to 2.23.2
+- Drop upstreamed patches
+
+* 三 6月 04 2008 Matthias Clasen  <mclasen@redhat.com> - 2.23.1-1
+- Upodate to 2.23.1
+
+* 一 6月 02 2008 Matthias Clasen  <mclasen@redhat.com> - 2.22.0-10
+- Make gconfd notice defaults changes
+
+* 三 5月 21 2008 Ray Strode <rstrode@redhat.com> - 2.22.0-9
+- Don't ever try to autolaunch a bus if DISPLAY is unset
+
+* 三 5月 21 2008 Ray Strode <rstrode@redhat.com> - 2.22.0-8
+- If the session bus isn't running, assume local client side
+  access to the database (bug 446703)
+
+* 三 5月 14 2008 Ray Strode <rstrode@redhat.com> - 2.22.0-7
+- update add_seconds patch to not remove timeouts that aren't
+  created anymore
+
+* 一 5月 12 2008 Ray Strode <rstrode@redhat.com> - 2.22.0-6
+- If the session bus isn't running, don't autolaunch it unless
+  we also want to autostart gconfd.
+
+* 四 5月 08 2008 Ray Strode <rstrode@redhat.com> - 2.22.0-5
+- Tie gconf to session bus.  This means it will exit when the session
+  exits and won't leave /tmp/gconf-$USER DoS possibilities
+
+* 日 5月 04 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-4
+- Apply some patches: 
+  - Don't spam syslog
+  - Handle unsetting mandatory keys without critical warnings
+
+* 五 5月 02 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-3
+- Add a dbus service to set defaults
+
+* 五 5月 02 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-2
+- Use g_timeout_add_seconds for long timeouts
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-1
+- Update to 2.22.0
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.21.90-2
+- Autorebuild for GCC 4.3
+
+* 二 1月 29 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.90-1
+- Update to 2.21.90
+
+* 一 1月 21 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.2-1
+- Update to 2.21.2
+
+* 三 1月 09 2008 Caolan McNamara <caolanm@redhat.com> - 2.21.1-2
+- fix .pc so I can build
+
+* 二 1月 08 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.1-1
+- Update to 2.21.1
+- Drop upstreamed patches
+
+* 一 12月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1-4
+- Rebuild against new openldap
+
+* 五 11月 16 2007 Ray Strode <rstrode@redhat.com> - 2.20.1-3
+- Add the system-wide settings location in post to be more
+  upgrade friendly (config file is noreplace)
+
+* 六 11月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1-2
+- Add a location for system-wide settings
+
+* 一 10月 15 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1-1
+- 2.20.1 (translation and documentation updates)
+
+* 六 9月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.0-2
+- Require /usr/bin/killall, since gconftool uses it
+
+* 三 9月 19 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.0-1
+- Update to 2.20.0
+
+* 二 9月 11 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.1-5
+- Some more leak fixes
+
+* 二 9月 11 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.1-4
+- Fix memory leaks
+
+* 四 8月 23 2007 Adam Jackson <ajax@redhat.com> - 2.19.1-3
+- Rebuild for ppc toolchain bug
+
+* 一 8月 06 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.1-2
+- Update license field
+
+* 一 6月 25 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.1-1
+- Update to 2.19.1
+
+* 日 3月 25 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.0.1-2
+- Fix a directory ownership issue.  (#233756)
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.0.1-1
+- Update to 2.18.0.1
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 2.16.1-1
+- Update to 2.16.1
+
+* 一 2月 05 2007 Matthias Clasen <mclasen@redhat.com> - 2.16.0-6
+- Split off a -gtk subpackage to reduce dependencies
+
+* 六 2月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.16.0-5
+- Minor cleanups from package review
+
+* 一 1月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.16.0-4
+- Own the /etc/gconf/schemas directory
+- Misc cleanups
+
+* 日 10月 29 2006 Ray Strode <rstrode@redhat.com> - 2.16.0-3
+- run autoreconf, so that configure gets updated before 
+  it generates libtool (so it doesn't just regenerate
+  the original, broken libtool) (again bug 203813)
+
+* 二 10月 24 2006 Ray Strode <rstrode@redhat.com> - 2.16.0-2
+- regenerate packaged libtool from RHEL version of libtool so
+  that rpath's don't get added to plugin DSOs (bug 203813).
+
+* 五 10月 20 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-1
+- 2.16.0
+- Update reload patch
+
+* 四 10月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.0-5
+- Require a new enough glib2 to fix upgrade issues (#203813)
+
+* 五 10月 06 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.0-4
+- Fix an issue with error reporting (#202549)
+- Don't ship static libraries
+- Require pkgconfig for the -devel package
+
+* 一 9月 18 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.0-3
+- Make sure that gconfd dies shortly after the session ends
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.14.0-2.1
+- rebuild
+
+* 二 6月 06 2006 Adam Jackson <ajackson@redhat.com> 2.14.0-2
+- Rebuild.
+
+* 日 3月 19 2006 Ray Strode <rstrode@redhat.com> 2.14.0-1
+- Update to 2.14.0
+
+* 一 3月 06 2006 Ray Strode <rstrode@redhat.com> 2.13.5-5
+- Only sync the database once when installing multiple
+  schema files.  Patch by Josselin Mouette <joss@debian.org>.
+  (upstream bug 333353)
+
+* 三 2月 15 2006 Christopher Aillon <caillon@redhat.com> 2.13.5-4
+- Send SIGTERM instead of SIGHUP to gconfd
+
+* 一 2月 13 2006 Jesse Keating <jkeating@redhat.com> 2.13.5-3.2.1
+- rebump for build order issues during double-long bump
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> 2.13.5-3.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> 2.13.5-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Christopher Aillon <caillon@redhat.com> 2.13.5-3
+- Use the correct patch ;-)
+
+* 三 2月 01 2006 Christopher Aillon <caillon@redhat.com> 2.13.5-2
+- Add patch from Mandriva to reload GConf2 every time a schema is
+  added or removed (solves bug 173869)
+
+* 一 1月 16 2006 Matthias Clasen <mclasen@redhat.com> 2.13.5-1
+- Update to 2.13.5
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 12月 07 2005 Dan Williams <dcbw@redhat.com> 2.12.1-2
+- Fix segfault in gconf_unescape_key().  GNOME #323479
+
+* 四 11月 03 2005 Alexander Larsson <alexl@redhat.com> - 2.12.1-1
+- Update to 2.12.1
+
+* 四 9月 08 2005 Matthias Clasen <mclasen@redhat.com> 2.12.0-1
+- Update to 2.12.0
+
+* 二 8月 16 2005 Ray Strode <rstrode@redhat.com> 2.11.90-2
+- rebuild
+
+* 三 8月 03 2005 Ray Strode <rstrode@redhat.com> 2.11.90-1
+- Newer upstream version
+
+* 五 7月 15 2005 Matthias Clasen <mclasen@redhat.com> 2.11.1-1
+- Newer upstream version
+- Drop upstreamed patch
+
+* 一 5月 09 2005 Mark McLoughlin <markmc@redhat.com> 2.10.0-4
+- Update to upstream evoldap.schema which uses GNOME's OID base
+  rather than Red Hat's OID.
+
+* 三 4月 27 2005 Mark McLoughlin <markmc@redhat.com> 2.10.0-3
+- Fix undefined symbol in the evoldap backend
+
+* 一 4月 18 2005 Mark McLoughlin <markmc@redhat.com> - 2.10.0-2
+- Add evolution mail accounts backend
+
+* 四 3月 17 2005 Ray Strode <rstrode@redhat.com> 2.10.0-1
+- Update to 2.10.0
+
+* 一 2月 07 2005 Mark McLoughlin <markmc@redhat.com> 2.9.91-1
+- Update to 2.9.91
+
+* 五 1月 28 2005 Matthias Clasen <mclasen@redhat.com> 2.9.2-1
+- Update to 2.9.2
+
+* 三 1月 19 2005 Mark McLoughlin <markmc@redhat.com> 2.8.1-2
+- Backport some fixes from upstream CVS
+
+* 二 10月 12 2004 Mark McLoughlin <markmc@redhat.com> 2.8.1-1
+- Update to 2.8.1
+
+* 二 9月 21 2004 Mark McLoughlin <markmc@redhat.com> 2.8.0.1-1
+- Update to 2.8.0.1
+
+* 一 8月 30 2004 Mark McLoughlin <markmc@redhat.com> 2.7.92-1
+- Update to 2.7.92
+
+* 四 8月 19 2004 Mark McLoughlin <markmc@redhat.com> 2.7.91.1-1
+- Update to 2.7.91.1
+
+* 三 8月 18 2004 Mark McLoughlin <markmc@redhat.com> 2.7.91-1
+- Update to 2.7.91
+
+* 二 8月 03 2004 Mark McLoughlin <markmc@redhat.com> 2.7.90-1
+- Update to 2.7.90
+- Add patch to disable merge files for now
+
+* 五 7月 02 2004 Mark McLoughlin <markmc@redhat.com> 2.6.0-7
+- Add patch to fix problem when using merged files. Mainly
+  neccessary only to work will with GConf 2.8.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 4月 16 2004 Colin Walters <walters@redhat.com> - 2.6.0-5
+- Apply patch to move temporary directory creation into daemon,
+  needed for SELinux GConf policy
+
+* 三 4月 14 2004 Warren Togami <wtogami@redhat.com> - 2.6.0-4
+- #110724 BR gtk2-devel gettext
+- #106283 add versioned ORBit2 minimum
+- #112863 own /etc/gconf/2/
+- really kill *.la
+
+* 一 4月 05 2004 Mark McLoughlin <markmc@redhat.com> - 2.6.0-3
+- Remove the dont-dump-schema-default patch
+
+* 四 4月 01 2004 Mark McLoughlin <markmc@redhat.com> - 2.6.0-2
+- Backport some fixes from HEAD for lockdown/deployment type stuff
+
+* 二 3月 23 2004 Alex Larsson <alexl@redhat.com> 2.6.0-1
+- update to 2.6.0
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 Mark McLoughlin <markmc@redhat.com> 2.5.90-1
+- Update to 2.5.90
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 16 2004 Jonathan Blandford <jrb@redhat.com> 2.5.1-1
+- new version
+
+* 二 9月 09 2003 Alexander Larsson <alexl@redhat.com> 2.4.0-1
+- 2.4.0
+
+* 四 8月 07 2003 Jonathan Blandford <jrb@redhat.com>
+- begin the move to GNOME-2.4
+- locking patch appears to be upstream.  Removing.
+
+* 二 8月 05 2003 Elliot Lee <sopwith@redhat.com> 2.2.1-3
+- Fix libtool
+
+* 一 7月 14 2003 Havoc Pennington <hp@redhat.com>
+- automated rebuild
+
+* 一 7月 07 2003 Havoc Pennington <hp@redhat.com> 2.2.1-1
+- upgrade to 2.2.1
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 4月 08 2003 Matt Wilson <msw@redhat.com> 2.2.0-2
+- use system libtool (#88338)
+
+* 二 2月 04 2003 Havoc Pennington <hp@redhat.com> 2.2.0-1
+- 2.2.0
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 日 1月 12 2003 Havoc Pennington <hp@redhat.com>
+- 2.1.90
+
+* 五 1月 10 2003 Havoc Pennington <hp@redhat.com>
+- rebuild as libc seems to have changed or something
+
+* 五 11月 08 2002 Havoc Pennington <hp@redhat.com>
+- rebuild
+- standardize spec file name
+
+* 五 8月 30 2002 Havoc Pennington <hp@redhat.com>
+- add GCONF_LOCAL_LOCKS mode, and syslog encoding patch from tagoh
+
+* 三 8月 21 2002 Havoc Pennington <hp@redhat.com>
+- add dialog to offer to delete gconf locks
+
+* 二 8月 06 2002 Havoc Pennington <hp@redhat.com>
+- 1.2.1
+- include libexecdir stuff
+
+* 三 7月 31 2002 Havoc Pennington <hp@redhat.com>
+- move .pc fle to -devel package
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 6月 16 2002 Havoc Pennington <hp@redhat.com>
+- fix warning on gnome-panel install
+
+* 日 6月 16 2002 Havoc Pennington <hp@redhat.com>
+- 1.2.0
+- own libdir/GConf/2 directory
+- include gtk-doc docs
+- don't include static lib for backend modules
+
+* 四 6月 06 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 二 6月 04 2002 Havoc Pennington <hp@redhat.com>
+- 1.1.11
+- remove AUTHORS for rpmlint
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 20 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 五 5月 17 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 四 5月 02 2002 Havoc Pennington <hp@redhat.com>
+- 1.1.10
+
+* 四 4月 04 2002 Jeremy Katz <katzj@redhat.com>
+- 1.1.9
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- 1.1.8
+- remove .la files
+
+* 三 1月 30 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.1.6
+- Rebuild for dependencies
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 1月 04 2002 Havoc Pennington <hp@redhat.com>
+- 1.1.5.93 snap with important bugfix so gconf actually works
+
+* 四 1月 03 2002 Havoc Pennington <hp@redhat.com>
+- 1.1.5.92 snap with GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
+
+* 四 1月 03 2002 Havoc Pennington <hp@redhat.com>
+- 1.1.5.91 snap with gconf.m4 fix for libgnome
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- since every other build seems to avoid libglib-1.3.so.11, 
+  rebuild and hope
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- cvs snap 1.1.5.90
+
+* 一 11月 26 2001 Havoc Pennington <hp@redhat.com>
+- GConf 1.1.5, glib 1.3.11
+
+* 六 10月 27 2001 Havoc Pennington <hp@redhat.com>
+- rebuild for glib 1.3.10
+
+* 日 10月 14 2001 Havoc Pennington <hp@redhat.com>
+- 1.1.3
+
+* 五 10月 05 2001 Havoc Pennington <hp@redhat.com>
+- cvs snap, remove bonobo-activation deps
+
+* 五 9月 21 2001 Havoc Pennington <hp@redhat.com>
+- update to new CVS snap, rebuild
+
+* 一 9月 17 2001 Havoc Pennington <hp@redhat.com>
+- create gconf2 rpm based on gconf1, comment out pofiles 
+- include .pc files
+
+* 五 9月 14 2001 Havoc Pennington <hp@redhat.com>
+- fix description/summary
+
+* 五 8月 31 2001 Havoc Pennington <hp@redhat.com>
+- Add po files from sources.redhat.com
+
+* 一 8月 27 2001 Havoc Pennington <hp@redhat.com>
+- Add po files from sources.redhat.com
+
+* 三 8月 15 2001 Havoc Pennington <hp@redhat.com>
+- upgrade to 1.0.4 release I just made
+- fixes #51223, syslog spew
+
+* 二 7月 24 2001 Havoc Pennington <hp@redhat.com>
+- move gconf-config to devel RPM
+
+* 一 7月 23 2001 Havoc Pennington <hp@redhat.com>
+- how many releases of GConf can I make before it works?
+
+* 日 7月 22 2001 Havoc Pennington <hp@redhat.com>
+- Upgrade to 1.0.2 (which contains only bugfixes that 
+  I reviewed and/or wrote myself)
+
+* 三 7月 18 2001 Havoc Pennington <hp@redhat.com>
+- create the /etc/gconf/gconf.xml.defaults directory
+
+* 五 7月 06 2001 Alexander Larsson <alexl@redhat.com>
+- Install the .la files in the devel package.
+
+* 五 7月 06 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Use %{_tmppath}
+- Move the .so files to the devel subpackage
+- langify
+- Move changelog to the end, where it should be :)
+- Don't specify (a bad) doc directory
+- Don't define name, version and release and use it in the rpm headers later
+- Remove "Packager:"
+- s/Copyright/License/
+
+* 五 6月 22 2001 Havoc Pennington <hp@redhat.com>
+- add --direct option to gconftool to avoid spawning oafd,
+  then commented out gconftool entirely since it checks
+  whether gconfd is running and that spawns oafd anyhow.
+  oafd simply needs to exit when unused.
+
+* 二 5月 15 2001 Havoc Pennington <hp@redhat.com>
+- Fix post, pointed out by Bill
+
+* 一 5月 14 2001 Havoc Pennington <hp@redhat.com>
+- Upgrade to 1.0.1
+
+* 二 4月 17 2001 Jonathan Blandford <jrb@redhat.com>
+- Import to Red Hat build system.
+
+* 日 6月 11 2000 Eskil Heyn Olsen <deity@eazel.com>
+- Created the .spec file
+

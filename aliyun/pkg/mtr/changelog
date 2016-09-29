@@ -1,0 +1,290 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:0.75-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:0.75-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2:0.75-5.1
+- rebuild for alios6
+
+* 五 9月 25 2009 Adam Tkac <atkac redhat com> 2:0.75-5
+- remove unneeded build requires (#525547)
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:0.75-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:0.75-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 10月 29 2008 Zdenek Prikryl <zprikryl@redhat.com> - 2:0.75-2
+- Fixed setting socket flags in ipv4 only environment (#467964)
+
+* 二 9月 23 2008 Zdenek Prikryl <zprikryl@redhat.com> - 2:0.75-1
+- Updated to 0.75
+- Removed confusing underflow patch
+- Removed format patch bacause of -w option
+
+* 二 9月 09 2008 Zdenek Prikryl <zprikryl@redhat.com> - 2:0.74-1
+- Updated to 0.74
+
+* 二 9月 02 2008 Zdenek Prikryl <zprikryl@redhat.com> - 2:0.73-2
+- Minor fix in the patch underflow
+
+* 三 5月 21 2008 Zdenek Prikryl <zprikryl@redhat.com> - 2:0.73-1
+- Updated to 0.73
+- Fixed mtr-0.69-CVE-2002-0497.patch
+- Added build requirement for GTK+
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2:0.72-4
+- Autorebuild for GCC 4.3
+
+* 五 8月 24 2007 Marcela Maslanova <mmaslano@redhat.com> - 2:0.72-3
+- rebuild for mas rebuild
+- check license
+
+* 四 3月 15 2007 Karsten Hopp <karsten@redhat.com> 2:0.72-2
+- rebuild with current gtk2 to add png support (#232013)
+
+* 四 2月 22 2007 Marcela Maslanova <mmaslano@redhat.com> - 2:0.72-1
+- review
+- rhbz#226164
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2:0.71-3.1
+- rebuild
+
+* 一 7月 03 2006 Marcela Maslanova <mmaslano@redhat.com> - 2:0.71-3
+- bugzilla #195458 – reverse-map bug in mtr and patch - resolving ipv6 hostname correctly
+
+* 二 5月 30 2006 Marcela Maslanova <mmaslano@redhat.com> - 2:0.71-2
+- underflow solved
+
+* 五 3月 24 2006 Miroslav Lichvar <mlichvar@redhat.com> - 2:0.71-1
+- update to mtr-0.71
+
+* 四 3月 23 2006 Miroslav Lichvar <mlichvar@redhat.com> - 2:0.70-1
+- update to mtr-0.70
+- replace s390x patch, drop automake dependency
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2:0.69-7.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2:0.69-7.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 10月 21 2005 Phil Knirsch <pknirsch@redhat.com> 2:0.69-7
+- Fixed xmtr to be installed in /usr/bin instead of /usr/X11R6/bin (#170945)
+
+* 一 10月 10 2005 Phil Knirsch <pknirsch@redhat.com> 2:0.69-6
+- Added missing gtk+-devel BuildPreReq (#168215)
+
+* 五 10月 07 2005 Tomas Mraz <tmraz@redhat.com> 2:0.69-5
+- use include instead of pam_stack in pam config
+
+* 一 9月 05 2005 Phil Knirsch <pknirsch@redhat.com> 2:0.69-4
+- Made the output, especially for reports much more readable (#147865)
+- Fixed --address option (#162029)
+
+* 三 3月 02 2005 Phil Knirsch <pknirsch@redhat.com> 2:0.69-3
+- bump release and rebuild with gcc 4
+
+* 四 2月 10 2005 Karsten Hopp <karsten@redhat.de> 2:0.69-2 
+- build with --enable-gtk2 (John Thacker)
+
+* 三 2月 09 2005 Phil Knirsch <pknirsch@redhat.com> 2:0.69-1
+- Updated to mtr-0.69
+- Dropped quite a few patches
+- Forewardported the CVE patch
+
+* 一 10月 18 2004 Phil Knirsch <pknirsch@redhat.com> 2:0.54-10
+- rebuilt
+
+* 三 10月 06 2004 Phil Knirsch <pknirsch@redhat.com> 2:0.54-9
+- Add CVE patch for security reasons (#129386)
+- Add patch to fix broken --address option (#132628)
+- Add patch to fix broken reverse DNS lookups for ipv6 (#134532)
+
+* 二 8月 24 2004 Warren Togami <wtogami@redhat.com> 2:0.54-8
+- #121705 and other spec cleanups
+- remove redundant documentation
+
+* 四 7月 01 2004 Phil Knirsch <pknirsch@redhat.com> 0.54-7
+- Fixed broken behaviour with resolver SERVFAIL results (#125392)
+- Added ncurses-devel libtermcap-devel as BuildPreReq (#124553)
+- Added gtk+ Requires for mtr-gtk package (#121705)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 4月 21 2004 Phil Knirsch <pknirsch@redhat.com> 0.54-5
+- Removed absolute path for Icon in desktop file (#120170)
+
+* 一 2月 16 2004 Phil Knirsch <pknirsch@redhat.com>
+- Added IPv6 patch from ftp://ftp.kame.net/pub/kame/misc/mtr-054-*
+- Enabled IPv6 in mtr.
+- Included fix from Robert Scheck to make GTK optional in configure.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 04 2004 Phil Knirsch <pknirsch@redhat.com> 0.54-2
+- Fix to build on current tree.
+
+* 六 10月 18 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 0.54
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 11月 29 2002 Phil Knirsch <pknirsch@redhat.com> 0.52-1
+- Update to latest upstream version (0.52).
+
+* 二 11月 12 2002 Nalin Dahyabhai <nalin@redhat.com> 0.49-9
+- Remove absolute paths from the PAM configuration, ensuring that the modules
+  for the right arch get used on multilib systems.
+- Remove Icon:.
+
+* 二 9月 24 2002 Bernhard Rosenkraenzer <bero@redhat.com> 0.49-7a
+- Fix build on s390x
+
+* 一 8月 19 2002 Phil Knirsch <pknirsch@redhat.com> 0.49-7
+- Fixed consolehelper support.
+
+* 三 8月 07 2002 Phil Knirsch <pknirsch@redhat.com> 0.49-6
+- Desktop file fixes (#69550).
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 0.49-5
+- automated rebuild
+
+* 二 6月 18 2002 Phil Knirsch <pknirsch@redhat.com> 0.49-4
+- Added consolehelper support to xmtr.
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 5月 22 2002 Phil Knirsch <pknirsch@redhat.com> 0.49-2
+- Fixed autoFOO problems.
+
+* 五 3月 08 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- 0.49 update
+
+* 四 3月 07 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- 0.48 update
+
+* 一 6月 25 2001 Preston Brown <pbrown@redhat.com>
+- 0.44 bugfix release
+- fix display of icon in .desktop entry
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 一 2月 12 2001 Preston Brown <pbrown@redhat.com>
+- don't advertise gtk support in non-gtk binary (#27172)
+
+* 五 10月 20 2000 Bill Nottingham <notting@redhat.com>
+- fix autoconf check for resolver functions
+
+* 五 7月 21 2000 Bill Nottingham <notting@redhat.com>
+- fix group
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 四 7月 06 2000 Bill Nottingham <notting@redhat.com>
+- fix setuid bit
+- remove symlink
+- force build of non-gtk version
+
+* 一 6月 19 2000 Preston Brown <pbrown@redhat.com>
+- disable SUID bits
+- desktop entry
+
+* 一 6月 19 2000 Than Ngo <than@redhat.de>
+- FHS fixes
+
+* 五 5月 26 2000 Preston Brown <pbrown@redhat.com>
+- adopted for Winston
+
+* 四 8月 19 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.41-1]
+- Added afr's patch to allow disabeling of gtk without Robn's hack. 
+- Made report mode report the newly added extra resolution.
+
+* 三 8月 18 1999 Ryan Weaver <ryanw@infohwy.com>
+- renamed mtr-gtk to xmtr
+- added symlink from /usr/bin/mtr to /usr/sbin/mtr
+
+  [mtr-0.40-1]
+- Fixed some problems with HPUX and SunOS.
+- Included Olav Kvittem's patch to do packetsize option.
+- Made the timekeeping in micro seconds.
+
+* 四 6月 10 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.39-1]
+- Updated to version 0.39.
+
+* 三 6月 09 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.38-1]
+- Updated to version 0.38.
+
+* 四 4月 15 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.37-2]
+- Changed RPM headers to conform to Red Hat Contrib|Net specs.
+
+* 一 4月 12 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.37-1]
+- v0.37
+- Added Bill Bogstad's "show the local host & time" patch. 
+- Added R. Sparks' show-last-ping patch, submitted by Philip Kizer.
+
+- v0.36
+- Added Craigs change-the-interval-on-the-fly patch.
+- Added Moritz Barsnick's "do something sensible if host not found" 
+  patch.
+- Some cleanup of both Craigs and Moritz' patches.
+
+* 三 4月 07 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.35-1]
+- v0.35
+- Added Craig Milo Rogers pause/resume for GTK patch.
+- Added Craig Milo Rogers cleanup of "reset". (restart at the beginning)
+- Net_open used to send a first packet. After that the display-driver
+  got a chance to distort the timing by taking its time to initialize.
+
+* 一 4月 05 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.34-1]
+- v0.34
+- Added Matt's nifty "use the icmp unreachables to do the timing" patch.
+- Added Steve Kann's pause/resume patch.
+
+* 三 3月 10 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.33-1]
+- v0.33
+- Fixed the Linux glibc resolver problems.
+- Fixed the off-by-one problem with -c option.
+
+* 一 3月 08 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.32-1]
+- v0.32
+- Fixed the FreeBSD bug detection stuff.
+
+* 五 3月 05 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.31-1]
+- v0.31
+- Fixed a few documentation issues. -- Matt
+- Changed the autoconf stuff to find the resolver library on
+  Solaris. -- REW
+- Cleaned up the autoconf.in file a bit. -- Matt.
+
+* 四 3月 04 1999 Ryan Weaver <ryanw@infohwy.com>
+[mtr-0.30-1]
+- Build gtk version against gtk+-1.2.0
+- v0.30
+- Fixed a typo in the changelog (NEWS) entry for 0.27. :-)
+- added use of "MTR_OPTIONS" environment variable for defaults.
+

@@ -1,0 +1,1011 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 5.1.73-3.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 5.1.73-3.1
+- rebuild for alios6-update
+
+* 一 2月 03 2014 Honza Horak <hhorak@redhat.com> 5.1.73-3
+- Fixes for CVE-2014-0001
+  Resolves: #1055880
+
+* 二 1月 28 2014 Honza Horak <hhorak@redhat.com> 5.1.73-2
+- Make mysqld init script more robust and ignore existing but
+  non-being-used unix socket file
+  Resolves: #1058719
+
+* 三 1月 22 2014 Jakub Dorňák <jdornak@redhat.com> - 5.1.73-1
+- Update to MySQL 5.1.73, for various fixes described at
+  http://dev.mysql.com/doc/relnotes/mysql/5.1/en/news-5-1-73.html
+  (CVE-2014-0412, CVE-2014-0437, CVE-2013-5908, CVE-2014-0393,
+  CVE-2014-0386, CVE-2014-0401, CVE-2014-0402)
+  Resolves: #1055880
+
+* 五 8月 09 2013 Honza Horak <hhorak@redhat.com> 5.1.71-1
+- Update to MySQL 5.1.71, for various fixes described at
+  http://dev.mysql.com/doc/relnotes/mysql/5.1/en/news-5-1-71.html
+  Resolves: #990796
+
+* 二 7月 23 2013 Honza Horak <hhorak@redhat.com> 5.1.70-1
+- Update to MySQL 5.1.70, for various fixes described at
+  http://dev.mysql.com/doc/relnotes/mysql/5.1/en/news-5-1-70.html
+  Resolves: #990796, #842052
+- Fix mysqldump failure against MySQL 5.0.x server due missing tables
+  Resolves: #877557
+- Add logrotate script
+  Resolves: #904061
+- Fix init script to not show failed on start even when server started
+  Resolves: #884651
+
+* 五 4月 19 2013 Tom Lane <tgl@redhat.com> 5.1.69-1
+- Update to 5.1.69, for assorted upstream bugfixes including
+  CVEs announced in April 2013
+Resolves: #953085
+
+* 二 1月 22 2013 Tom Lane <tgl@redhat.com> 5.1.67-1
+- Update to 5.1.67, for assorted upstream bugfixes including
+  CVEs announced in January 2013
+Resolves: #901381
+
+* 二 12月 04 2012 Tom Lane <tgl@redhat.com> 5.1.66-2
+- Add backported patch for CVE-2012-5611
+Resolves: CVE-2012-5611
+
+* 五 11月 02 2012 Tom Lane <tgl@redhat.com> 5.1.66-1
+- Update to 5.1.66, for assorted upstream bugfixes including
+  CVEs announced in July and October 2012
+Resolves: #871814
+
+* 五 4月 20 2012 Tom Lane <tgl@redhat.com> 5.1.61-4
+- Add backported patch for CVE-2012-2102
+Resolves: #812435
+
+* 五 2月 24 2012 Tom Lane <tgl@redhat.com> 5.1.61-3
+- Enable innodb plugin, but only on x86 and x86_64 architectures
+Resolves: #740224
+
+* 五 2月 03 2012 Tom Lane <tgl@redhat.com> 5.1.61-1
+- Update to 5.1.61, for assorted upstream bugfixes including
+  numerous CVEs announced in January 2012
+Resolves: #787192
+
+* 一 12月 20 2010 Tom Lane <tgl@redhat.com> 5.1.52-1
+- Update to MySQL 5.1.52, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-52.html
+  including numerous small security issues
+Resolves: #652554
+- Sync with current Fedora package; this includes:
+- Duplicate COPYING and EXCEPTIONS-CLIENT in -libs and -embedded subpackages,
+  to ensure they are available when any subset of mysql RPMs are installed,
+  per revised packaging guidelines
+- Allow init script's STARTTIMEOUT/STOPTIMEOUT to be overridden from sysconfig
+
+* 四 7月 15 2010 Tom Lane <tgl@redhat.com> 5.1.47-4
+- Add backported patch for CVE-2010-2008 (upstream bug 53804)
+Resolves: #614215
+- Add BuildRequires perl(Time::HiRes) ... seems to no longer be installed
+  by just pulling in perl.
+
+* 一 6月 28 2010 Tom Lane <tgl@redhat.com> 5.1.47-3
+- Add -p "$mypidfile" to initscript's status call to improve corner cases.
+  (Note: can't be fixed in Fedora until 595597 is fixed there.)
+Resolves: #596008
+
+* 一 6月 07 2010 Tom Lane <tgl@redhat.com> 5.1.47-2
+- Add back "partition" storage engine
+Resolves: #598585
+- Fix broken "federated" storage engine plugin
+Resolves: #587170
+- Read all certificates in SSL certificate files, to support chained certs
+Resolves: #598656
+
+* 一 5月 24 2010 Tom Lane <tgl@redhat.com> 5.1.47-1
+- Update to MySQL 5.1.47, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-47.html
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-46.html
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-45.html
+  including fixes for CVE-2010-1621, CVE-2010-1626,
+  CVE-2010-1848, CVE-2010-1849, CVE-2010-1850
+Resolves: #590598
+- Create mysql group explicitly in pre-server script, to ensure correct GID
+
+* 一 3月 08 2010 Tom Lane <tgl@redhat.com> 5.1.44-2
+- Update to MySQL 5.1.44, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-44.html
+Resolves: #565554
+- Remove mysql.info, which is not freely redistributable
+Related: #560181
+- Revert broken upstream fix for their bug 45058
+Related: #566547
+- Bring init script into some modicum of compliance with Fedora/LSB standards
+Resolves: #557711
+Resolves: #562749
+
+* 一 2月 15 2010 Tom Lane <tgl@redhat.com> 5.1.43-2
+- Update to MySQL 5.1.43, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-43.html
+Resolves: #565554
+- Remove mysql-cluster, which is no longer supported by upstream in this
+  source distribution.  If we want it we'll need a separate SRPM for it.
+Resolves: #565210
+
+* 五 1月 29 2010 Tom Lane <tgl@redhat.com> 5.1.42-7
+- Add backported patch for CVE-2008-7247 (upstream bug 39277)
+Resolves: #549329
+- Use non-expired certificates for SSL testing (upstream bug 50702)
+
+* 二 1月 26 2010 Tom Lane <tgl@redhat.com> 5.1.42-6
+- Emit explicit error message if user tries to build RPM as root
+Resolves: #558915
+
+* 三 1月 20 2010 Tom Lane <tgl@redhat.com> 5.1.42-5
+- Correct Source0: tag and comment to reflect how to get the tarball
+
+* 五 1月 08 2010 Tom Lane <tgl@redhat.com> 5.1.42-4
+- Sync with current Fedora build, including:
+- Update to MySQL 5.1.42, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-42.html
+- Disable symbolic links by default in /etc/my.cnf
+Resolves: #553653
+- Remove static libraries (.a files) from package, per packaging guidelines
+- Change %define to %global, per packaging guidelines
+- Disable building the innodb plugin; it tickles assorted gcc bugs and
+  doesn't seem entirely ready for prime time anyway.
+Resolves: #553632
+- Start mysqld_safe with --basedir=/usr, to avoid unwanted SELinux messages
+  (see 547485)
+- Stop waiting during "service mysqld start" if mysqld_safe exits
+Resolves: #544095
+
+* 一 11月 23 2009 Tom Lane <tgl@redhat.com> 5.1.41-1
+- Update to MySQL 5.1.41, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-41.html
+  including fixes for CVE-2009-4019
+Resolves: #549327
+- Don't set old_passwords=1; we aren't being bug-compatible with 3.23 anymore
+Resolves: #540735
+
+* 二 11月 10 2009 Tom Lane <tgl@redhat.com> 5.1.40-1
+- Update to MySQL 5.1.40, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-40.html
+- Do not force the --log-error setting in mysqld init script
+Resolves: #533736
+
+* 六 10月 17 2009 Tom Lane <tgl@redhat.com> 5.1.39-4
+- Replace kluge fix for ndbd sparc crash with a real fix (mysql bug 48132)
+
+* 四 10月 15 2009 Tom Lane <tgl@redhat.com> 5.1.39-3
+- Work around two different compiler bugs on sparc, one by backing off
+  optimization from -O2 to -O1, and the other with a klugy patch
+Related: #529298, #529299
+- Clean up bogosity in multilib stub header support: ia64 should not be
+  listed (it's not multilib), sparc and sparc64 should be
+
+* 三 9月 23 2009 Tom Lane <tgl@redhat.com> 5.1.39-2
+- Work around upstream bug 46895 by disabling outfile_loaddata test
+
+* 二 9月 22 2009 Tom Lane <tgl@redhat.com> 5.1.39-1
+- Update to MySQL 5.1.39, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-39.html
+
+* 一 8月 31 2009 Tom Lane <tgl@redhat.com> 5.1.37-5
+- Work around unportable assumptions about stpcpy(); re-enable main.mysql test
+- Clean up some obsolete parameters to the configure script
+
+* 六 8月 29 2009 Tom Lane <tgl@redhat.com> 5.1.37-4
+- Remove one misguided patch; turns out I was chasing a glibc bug
+- Temporarily disable "main.mysql" test; there's something broken there too,
+  but we need to get mysql built in rawhide for dependency reasons
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 5.1.37-3
+- rebuilt with new openssl
+
+* 五 8月 14 2009 Tom Lane <tgl@redhat.com> 5.1.37-2
+- Add a couple of patches to improve the probability of the regression tests
+  completing in koji builds
+
+* 日 8月 02 2009 Tom Lane <tgl@redhat.com> 5.1.37-1
+- Update to MySQL 5.1.37, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-37.html
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.1.36-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 10 2009 Tom Lane <tgl@redhat.com> 5.1.36-1
+- Update to MySQL 5.1.36, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-36.html
+
+* 六 6月 06 2009 Tom Lane <tgl@redhat.com> 5.1.35-1
+- Update to MySQL 5.1.35, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-35.html
+- Ensure that /var/lib/mysql is created with the right SELinux context
+Resolves: #502966
+
+* 五 5月 15 2009 Tom Lane <tgl@redhat.com> 5.1.34-1
+- Update to MySQL 5.1.34, for various fixes described at
+  http://dev.mysql.com/doc/refman/5.1/en/news-5-1-34.html
+- Increase startup timeout per bug #472222
+
+* 三 4月 15 2009 Tom Lane <tgl@redhat.com> 5.1.33-2
+- Increase stack size of ndbd threads for safety's sake.
+Related: #494631
+
+* 二 4月 07 2009 Tom Lane <tgl@redhat.com> 5.1.33-1
+- Update to MySQL 5.1.33.
+- Disable use of pthread_setschedparam; doesn't work the way code expects.
+Related: #477624
+
+* 三 3月 04 2009 Tom Lane <tgl@redhat.com> 5.1.32-1
+- Update to MySQL 5.1.32.
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.1.31-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 13 2009 Tom Lane <tgl@redhat.com> 5.1.31-1
+- Update to MySQL 5.1.31.
+
+* 四 1月 22 2009 Tom Lane <tgl@redhat.com> 5.1.30-2
+- hm, apparently --with-innodb and --with-ndbcluster are still needed
+  even though no longer documented ...
+
+* 四 1月 22 2009 Tom Lane <tgl@redhat.com> 5.1.30-1
+- Update to MySQL 5.1.30.  Note that this includes an ABI break for
+  libmysqlclient (it's now got .so major version 16).
+- This also updates mysql for new openssl build
+
+* 三 10月 01 2008 Tom Lane <tgl@redhat.com> 5.0.67-2
+- Build the "embedded server" library, and package it in a new sub-RPM
+  mysql-embedded, along with mysql-embedded-devel for devel support files.
+Resolves: #149829
+
+* 六 8月 23 2008 Tom Lane <tgl@redhat.com> 5.0.67-1
+- Update to mysql version 5.0.67
+- Move mysql_config's man page to base package, again (apparently I synced
+  that change the wrong way while importing specfile changes for ndbcluster)
+
+* 日 7月 27 2008 Tom Lane <tgl@redhat.com> 5.0.51a-2
+- Enable ndbcluster support
+Resolves: #163758
+- Suppress odd crash messages during package build, caused by trying to
+  build dbug manual (which we don't install anyway) with dbug disabled
+Resolves: #437053
+- Improve mysql.init to pass configured datadir to mysql_install_db,
+  and to force user=mysql for both mysql_install_db and mysqld_safe.
+Related: #450178
+
+* 一 3月 03 2008 Tom Lane <tgl@redhat.com> 5.0.51a-1
+- Update to mysql version 5.0.51a
+
+* 一 3月 03 2008 Tom Lane <tgl@redhat.com> 5.0.45-11
+- Fix mysql-stack-guard patch to work correctly on IA64
+- Fix mysql.init to wait correctly when socket is not in default place
+Related: #435494
+
+* 一 3月 03 2008 Dennis Gilmore <dennis@ausil.us> 5.0.45-10
+- add sparc64 to 64 bit arches for test suite checking
+- add sparc, sparcv9 and sparc64 to multilib handling
+
+* 四 2月 28 2008 Tom Lane <tgl@redhat.com> 5.0.45-9
+- Fix the stack overflow problem encountered in January.  It seems the real
+issue is that the buildfarm machines were moved to RHEL5, which uses 64K not
+4K pages on PPC, and because RHEL5 takes the guard area out of the requested
+thread stack size we no longer had enough headroom.
+Related: #435337
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 5.0.45-8
+- Autorebuild for GCC 4.3
+
+* 二 1月 08 2008 Tom Lane <tgl@redhat.com> 5.0.45-7
+- Unbelievable ... upstream still thinks that it's a good idea to have a
+  regression test that is guaranteed to begin failing come January 1.
+- ... and it seems we need to raise STACK_MIN_SIZE again too.
+
+* 四 12月 13 2007 Tom Lane <tgl@redhat.com> 5.0.45-6
+- Back-port upstream fixes for CVE-2007-5925, CVE-2007-5969, CVE-2007-6303.
+Related: #422211
+
+* 三 12月 05 2007 Tom Lane <tgl@redhat.com> 5.0.45-5
+- Rebuild for new openssl
+
+* 六 8月 25 2007 Tom Lane <tgl@redhat.com> 5.0.45-4
+- Seems we need explicit BuildRequires on gawk and procps now
+- Rebuild to fix Fedora toolchain issues
+
+* 日 8月 12 2007 Tom Lane <tgl@redhat.com> 5.0.45-3
+- Recent perl changes in rawhide mean we need a more specific BuildRequires
+
+* 四 8月 02 2007 Tom Lane <tgl@redhat.com> 5.0.45-2
+- Update License tag to match code.
+- Work around recent Fedora change that makes "open" a macro name.
+
+* 日 7月 22 2007 Tom Lane <tgl@redhat.com> 5.0.45-1
+- Update to MySQL 5.0.45
+Resolves: #246535
+- Move mysql_config's man page to base package
+Resolves: #245770
+- move my_print_defaults to base RPM, for consistency with Stacks packaging
+- mysql user is no longer deleted at RPM uninstall
+Resolves: #241912
+
+* 四 3月 29 2007 Tom Lane <tgl@redhat.com> 5.0.37-2
+- Use a less hacky method of getting default values in initscript
+Related: #233771, #194596
+- Improve packaging of mysql-libs per suggestions from Remi Collet
+Resolves: #233731
+- Update default /etc/my.cnf ([mysql.server] has been bogus for a long time)
+
+* 一 3月 12 2007 Tom Lane <tgl@redhat.com> 5.0.37-1
+- Update to MySQL 5.0.37
+Resolves: #231838
+- Put client library into a separate mysql-libs RPM to reduce dependencies
+Resolves: #205630
+
+* 五 2月 09 2007 Tom Lane <tgl@redhat.com> 5.0.33-1
+- Update to MySQL 5.0.33
+- Install band-aid fix for "view" regression test designed to fail after 2006
+- Don't chmod -R the entire database directory tree on every startup
+Related: #221085
+- Fix unsafe use of install-info
+Resolves: #223713
+- Cope with new automake in F7
+Resolves: #224171
+
+* 四 11月 09 2006 Tom Lane <tgl@redhat.com> 5.0.27-1
+- Update to MySQL 5.0.27 (see CVE-2006-4031, CVE-2006-4226, CVE-2006-4227)
+Resolves: #202247, #202675, #203427, #203428, #203432, #203434, #208641
+- Fix init script to return status 1 on server start timeout
+Resolves: #203910
+- Move mysqldumpslow from base package to mysql-server
+Resolves: #193559
+- Adjust link options for BDB module
+Resolves: #199368
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 5.0.22-2.1
+- rebuild
+
+* 六 6月 10 2006 Tom Lane <tgl@redhat.com> 5.0.22-2
+- Work around brew's tendency not to clean up failed builds completely,
+  by adding code in mysql-testing.patch to kill leftover mysql daemons.
+
+* 四 6月 08 2006 Tom Lane <tgl@redhat.com> 5.0.22-1
+- Update to MySQL 5.0.22 (fixes CVE-2006-2753)
+- Install temporary workaround for gcc bug on s390x (bz #193912)
+
+* 二 5月 02 2006 Tom Lane <tgl@redhat.com> 5.0.21-2
+- Fix bogus perl Requires for mysql-test
+
+* 一 5月 01 2006 Tom Lane <tgl@redhat.com> 5.0.21-1
+- Update to MySQL 5.0.21
+
+* 一 3月 27 2006 Tom Lane <tgl@redhat.com> 5.0.18-4
+- Modify multilib header hack to not break non-RH arches, per bug #181335
+- Remove logrotate script, per bug #180639.
+- Add a new mysql-test RPM to carry the regression test files;
+  hack up test scripts as needed to make them run in /usr/share/mysql-test.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 5.0.18-2.1
+- bump again for double-long bug on ppc(64)
+
+* 四 2月 09 2006 Tom Lane <tgl@redhat.com> 5.0.18-2
+- err-log option has been renamed to log-error, fix my.cnf and initscript
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 5.0.18-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 1月 05 2006 Tom Lane <tgl@redhat.com> 5.0.18-1
+- Update to MySQL 5.0.18
+
+* 四 12月 15 2005 Tom Lane <tgl@redhat.com> 5.0.16-4
+- fix my_config.h for ppc platforms
+
+* 四 12月 15 2005 Tom Lane <tgl@redhat.com> 5.0.16-3
+- my_config.h needs to guard against 64-bit platforms that also define the
+  32-bit symbol
+
+* 三 12月 14 2005 Tom Lane <tgl@redhat.com> 5.0.16-2
+- oops, looks like we want uname -i not uname -m
+
+* 一 12月 12 2005 Tom Lane <tgl@redhat.com> 5.0.16-1
+- Update to MySQL 5.0.16
+- Add EXCEPTIONS-CLIENT license info to the shipped documentation
+- Make my_config.h architecture-independent for multilib installs;
+  put the original my_config.h into my_config_$ARCH.h
+- Add -fwrapv to CFLAGS so that gcc 4.1 doesn't break it
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 14 2005 Tom Lane <tgl@redhat.com> 5.0.15-3
+- Make stop script wait for daemon process to disappear (bz#172426)
+
+* 三 11月 09 2005 Tom Lane <tgl@redhat.com> 5.0.15-2
+- Rebuild due to openssl library update.
+
+* 四 11月 03 2005 Tom Lane <tgl@redhat.com> 5.0.15-1
+- Update to MySQL 5.0.15 (scratch build for now)
+
+* 三 10月 05 2005 Tom Lane <tgl@redhat.com> 4.1.14-1
+- Update to MySQL 4.1.14
+
+* 二 8月 23 2005 Tom Lane <tgl@redhat.com> 4.1.12-3
+- Use politically correct patch name.
+
+* 二 7月 12 2005 Tom Lane <tgl@redhat.com> 4.1.12-2
+- Fix buffer overflow newly exposed in isam code; it's the same issue
+  previously found in myisam, and not very exciting, but I'm tired of
+  seeing build warnings.
+
+* 一 7月 11 2005 Tom Lane <tgl@redhat.com> 4.1.12-1
+- Update to MySQL 4.1.12 (includes a fix for bz#158688, bz#158689)
+- Extend mysql-test-ssl.patch to solve rpl_openssl test failure (bz#155850)
+- Update mysql-lock-ssl.patch to match the upstream committed version
+- Add --with-isam to re-enable the old ISAM table type, per bz#159262
+- Add dependency on openssl-devel per bz#159569
+- Remove manual.txt, as upstream decided not to ship it anymore;
+  it was redundant with the mysql.info file anyway.
+
+* 一 5月 09 2005 Tom Lane <tgl@redhat.com> 4.1.11-4
+- Include proper locking for OpenSSL in the server, per bz#155850
+
+* 一 4月 25 2005 Tom Lane <tgl@redhat.com> 4.1.11-3
+- Enable openssl tests during build, per bz#155850
+- Might as well turn on --disable-dependency-tracking
+
+* 五 4月 08 2005 Tom Lane <tgl@redhat.com> 4.1.11-2
+- Avoid dependency on <asm/atomic.h>, cause it won't build anymore on ia64.
+  This is probably a cleaner solution for bz#143537, too.
+
+* 四 4月 07 2005 Tom Lane <tgl@redhat.com> 4.1.11-1
+- Update to MySQL 4.1.11 to fix bz#152911 as well as other issues
+- Move perl-DBI, perl-DBD-MySQL dependencies to server package (bz#154123)
+- Override configure thread library test to suppress HAVE_LINUXTHREADS check
+- Fix BDB failure on s390x (bz#143537)
+- At last we can enable "make test" on all arches
+
+* 五 3月 11 2005 Tom Lane <tgl@redhat.com> 4.1.10a-1
+- Update to MySQL 4.1.10a to fix security vulnerabilities (bz#150868,
+  for CAN-2005-0711, and bz#150871 for CAN-2005-0709, CAN-2005-0710).
+
+* 日 3月 06 2005 Tom Lane <tgl@redhat.com> 4.1.10-3
+- Fix package Requires: interdependencies.
+
+* 六 3月 05 2005 Tom Lane <tgl@redhat.com> 4.1.10-2
+- Need -fno-strict-aliasing in at least one place, probably more.
+- Work around some C spec violations in mysql.
+
+* 五 2月 18 2005 Tom Lane <tgl@redhat.com> 4.1.10-1
+- Update to MySQL 4.1.10.
+
+* 六 1月 15 2005 Tom Lane <tgl@redhat.com> 4.1.9-1
+- Update to MySQL 4.1.9.
+
+* 三 1月 12 2005 Tom Lane <tgl@redhat.com> 4.1.7-10
+- Don't assume /etc/my.cnf will specify pid-file (bz#143724)
+
+* 三 1月 12 2005 Tim Waugh <twaugh@redhat.com> 4.1.7-9
+- Rebuilt for new readline.
+
+* 二 12月 21 2004 Tom Lane <tgl@redhat.com> 4.1.7-8
+- Run make test on all archs except s390x (which seems to have a bdb issue)
+
+* 一 12月 13 2004 Tom Lane <tgl@redhat.com> 4.1.7-7
+- Suppress someone's silly idea that libtool overhead can be skipped
+
+* 日 12月 12 2004 Tom Lane <tgl@redhat.com> 4.1.7-6
+- Fix init script to not need a valid username for startup check (bz#142328)
+- Fix init script to honor settings appearing in /etc/my.cnf (bz#76051)
+- Enable SSL (bz#142032)
+
+* 四 12月 02 2004 Tom Lane <tgl@redhat.com> 4.1.7-5
+- Add a restorecon to keep the mysql.log file in the right context (bz#143887)
+
+* 二 11月 23 2004 Tom Lane <tgl@redhat.com> 4.1.7-4
+- Turn off old_passwords in default /etc/my.cnf file, for better compatibility
+  with mysql 3.x clients (per suggestion from Joe Orton).
+
+* 五 10月 29 2004 Tom Lane <tgl@redhat.com> 4.1.7-3
+- Handle ldconfig more cleanly (put a file in /etc/ld.so.conf.d/).
+
+* 四 10月 28 2004 Tom Lane <tgl@redhat.com> 4.1.7-2
+- rebuild in devel branch
+
+* 三 10月 27 2004 Tom Lane <tgl@redhat.com> 4.1.7-1
+- Update to MySQL 4.1.x.
+
+* 二 10月 12 2004 Tom Lane <tgl@redhat.com> 3.23.58-13
+- fix security issues CAN-2004-0835, CAN-2004-0836, CAN-2004-0837
+  (bugs #135372, 135375, 135387)
+- fix privilege escalation on GRANT ALL ON `Foo\_Bar` (CAN-2004-0957)
+
+* 三 10月 06 2004 Tom Lane <tgl@redhat.com> 3.23.58-12
+- fix multilib problem with mysqlbug and mysql_config
+- adjust chkconfig priority per bug #128852
+- remove bogus quoting per bug #129409 (MySQL 4.0 has done likewise)
+- add sleep to mysql.init restart(); may or may not fix bug #133993
+
+* 二 10月 05 2004 Tom Lane <tgl@redhat.com> 3.23.58-11
+- fix low-priority security issues CAN-2004-0388, CAN-2004-0381, CAN-2004-0457
+  (bugs #119442, 125991, 130347, 130348)
+- fix bug with dropping databases under recent kernels (bug #124352)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com> 3.23.58-10
+- rebuilt
+
+* 六 4月 17 2004 Warren Togami <wtogami@redhat.com> 3.23.58-9
+- remove redundant INSTALL-SOURCE, manual.*
+- compress manual.txt.bz2
+- BR time
+
+* 二 3月 16 2004 Tom Lane <tgl@redhat.com> 3.23.58-8
+- repair logfile attributes in %files, per bug #102190
+- repair quoting problem in mysqlhotcopy, per bug #112693
+- repair missing flush in mysql_setpermission, per bug #113960
+- repair broken error message printf, per bug #115165
+- delete mysql user during uninstall, per bug #117017
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 Tom Lane <tgl@redhat.com>
+- fix chown syntax in mysql.init
+- rebuild
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 11月 18 2003 Kim Ho <kho@redhat.com> 3.23.58-5
+- update mysql.init to use anonymous user (UNKNOWN_MYSQL_USER) for
+  pinging mysql server (#108779)
+
+* 一 10月 27 2003 Kim Ho <kho@redhat.com> 3.23.58-4
+- update mysql.init to wait (max 10 seconds) for mysql server to 
+  start (#58732)
+
+* 一 10月 27 2003 Patrick Macdonald <patrickm@redhat.com> 3.23.58-3
+- re-enable Berkeley DB support (#106832)
+- re-enable ia64 testing
+
+* 五 9月 19 2003 Patrick Macdonald <patrickm@redhat.com> 3.23.58-2
+- rebuilt
+
+* 一 9月 15 2003 Patrick Macdonald <patrickm@redhat.com> 3.23.58-1
+- upgrade to 3.23.58 for security fix
+
+* 二 8月 26 2003 Patrick Macdonald <patrickm@redhat.com> 3.23.57-2
+- rebuilt
+
+* 三 7月 02 2003 Patrick Macdonald <patrickm@redhat.com> 3.23.57-1
+- revert to prior version of MySQL due to license incompatibilities 
+  with packages that link against the client.  The MySQL folks are
+  looking into the issue.
+
+* 三 6月 18 2003 Patrick Macdonald <patrickm@redhat.com> 4.0.13-4
+- restrict test on ia64 (temporary)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com> 4.0.13-3
+- rebuilt
+
+* 四 5月 29 2003 Patrick Macdonald <patrickm@redhat.com> 4.0.13-2
+- fix filter-requires-mysql.sh with less restrictive for mysql-bench
+
+* 三 5月 28 2003 Patrick Macdonald <patrickm@redhat.com> 4.0.13-1
+- update for MySQL 4.0
+- back-level shared libraries available in mysqlclient10 package
+
+* 五 5月 09 2003 Patrick Macdonald <patrickm@redhat.com> 3.23.56-2
+- add sql-bench package (#90110)
+
+* 三 3月 19 2003 Patrick Macdonald <patrickm@redhat.com> 3.23.56-1
+- upgrade to 3.23.56 for security fixes
+- remove patch for double-free (included in 3.23.56)
+
+* 二 2月 18 2003 Patrick Macdonald <patrickm@redhat.com> 3.23.54a-11
+- enable thread safe client
+- add patch for double free fix
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 1月 13 2003 Karsten Hopp <karsten@redhat.de> 3.23.54a-9
+- disable checks on s390x
+
+* 六 1月 04 2003 Jeff Johnson <jbj@redhat.com> 3.23.54a-8
+- use internal dep generator.
+
+* 三 1月 01 2003 Bill Nottingham <notting@redhat.com> 3.23.54a-7
+- fix mysql_config on hammer
+
+* 日 12月 22 2002 Tim Powers <timp@redhat.com> 3.23.54a-6
+- don't use rpms internal dep generator
+
+* 二 12月 17 2002 Elliot Lee <sopwith@redhat.com> 3.23.54a-5
+- Push it into the build system
+
+* 一 12月 16 2002 Joe Orton <jorton@redhat.com> 3.23.54a-4
+- upgrade to 3.23.54a for safe_mysqld fix
+
+* 四 12月 12 2002 Joe Orton <jorton@redhat.com> 3.23.54-3
+- upgrade to 3.23.54 for latest security fixes
+
+* 二 11月 19 2002 Jakub Jelinek <jakub@redhat.com> 3.23.52-5
+- Always include <errno.h> for errno
+- Remove unpackaged files
+
+* 二 11月 12 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- do not prereq userdel, not used at all
+
+* 一 9月 09 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.52-4
+- Use %{_libdir}
+- Add patch for x86-64
+
+* 三 9月 04 2002 Jakub Jelinek <jakub@redhat.com> 3.23.52-3
+- rebuilt with gcc-3.2-7
+
+* 四 8月 29 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.52-2
+- Add --enable-local-infile to configure - a new option
+  which doesn't default to the old behaviour (#72885)
+
+* 五 8月 23 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.52-1
+- 3.23.52. Fixes a minor security problem, various bugfixes.
+
+* 六 8月 10 2002 Elliot Lee <sopwith@redhat.com> 3.23.51-5
+- rebuilt with gcc-3.2 (we hope)
+
+* 一 7月 22 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.51-4
+- rebuild
+
+* 四 7月 18 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.51-3
+- Fix #63543 and #63542
+
+* 四 7月 11 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.51-2
+- Turn off bdb on PPC(#68591)
+- Turn off the assembly optimizations, for safety.
+
+* 三 6月 26 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.51-1
+- Work around annoying auto* thinking this is a crosscompile
+- 3.23.51
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 6月 10 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.50-2
+- Add dependency on perl-DBI and perl-DBD-MySQL (#66349)
+
+* 四 5月 30 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.50-1
+- 3.23.50
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 13 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.49-4
+- Rebuild
+- Don't set CXX to gcc, it doesn't work anymore
+- Exclude Alpha
+
+* 一 4月 08 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.49-3
+- Add the various .cnf examples as doc files to mysql-server (#60349)
+- Don't include manual.ps, it's just 200 bytes with a URL inside (#60349)
+- Don't include random files in /usr/share/mysql (#60349)
+- langify (#60349)
+
+* 四 2月 21 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.49-2
+- Rebuild
+
+* 日 2月 17 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.49-1
+- 3.23.49
+
+* 四 2月 14 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.48-2
+- work around perl dependency bug.
+
+* 一 2月 11 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.48-1
+- 3.23.48
+
+* 四 1月 17 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.47-4
+- Use kill, not mysqladmin, to flush logs and shut down. Thus, 
+  an admin password can be set with no problems.
+- Remove reload from init script
+
+* 三 1月 16 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.47-3
+- remove db3-devel from buildrequires, 
+  MySQL has had its own bundled copy since the mid thirties
+
+* 日 1月 06 2002 Trond Eivind Glomsrd <teg@redhat.com> 3.23.47-1
+- 3.23.47
+- Don't build for alpha, toolchain immature.
+
+* 一 12月 03 2001 Trond Eivind Glomsrd <teg@redhat.com> 3.23.46-1
+- 3.23.46
+- use -fno-rtti and -fno-exceptions, and set CXX to increase stability. 
+  Recommended by mysql developers.
+
+* 日 11月 25 2001 Trond Eivind Glomsrd <teg@redhat.com> 3.23.45-1
+- 3.23.45
+
+* 三 11月 14 2001 Trond Eivind Glomsrd <teg@redhat.com> 3.23.44-2
+- centralize definition of datadir in the initscript (#55873)
+
+* 五 11月 02 2001 Trond Eivind Glomsrd <teg@redhat.com> 3.23.44-1
+- 3.23.44
+
+* 四 10月 04 2001 Trond Eivind Glomsrd <teg@redhat.com> 3.23.43-1
+- 3.23.43
+
+* 一 9月 10 2001 Trond Eivind Glomsrd <teg@redhat.com> 3.23.42-1
+- 3.23.42
+- reenable innodb
+
+* 二 8月 14 2001 Trond Eivind Glomsrd <teg@redhat.com> 3.23.41-1
+- 3.23.41 bugfix release
+- disable innodb, to avoid the broken updates
+- Use "mysqladmin flush_logs" instead of kill -HUP in logrotate 
+  script (#51711)
+
+* 六 7月 21 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.40, bugfix release
+- Add zlib-devel to buildrequires:
+
+* 五 7月 20 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- BuildRequires-tweaking
+
+* 四 6月 28 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- Reenable test, but don't run them for s390, s390x or ia64
+- Make /etc/my.cnf config(noplace). Same for /etc/logrotate.d/mysqld
+
+* 四 6月 14 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.29
+- enable innodb
+- enable assembly again
+- disable tests for now...
+
+* 二 5月 15 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.38
+- Don't use BDB on Alpha - no fast mutexes
+
+* 二 4月 24 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.37
+- Add _GNU_SOURCE to the compile flags
+
+* 三 3月 28 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- Make it obsolete our 6.2 PowerTools packages
+- 3.23.36 bugfix release - fixes some security issues
+  which didn't apply to our standard configuration
+- Make "make test" part of the build process, except on IA64
+  (it fails there)
+
+* 二 3月 20 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.35 bugfix release
+- Don't delete the mysql user on uninstall
+
+* 二 3月 13 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.34a bugfix release
+
+* 三 2月 07 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- added readline-devel to BuildRequires:
+
+* 二 2月 06 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- small i18n-fixes to initscript (action needs $)
+
+* 二 1月 30 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- make it shut down and rotate logs without using mysqladmin 
+  (from #24909)
+
+* 一 1月 29 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- conflict with "MySQL"
+
+* 二 1月 23 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- improve gettextizing
+
+* 一 1月 22 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.32
+- fix logrotate script (#24589)
+
+* 三 1月 17 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- gettextize
+- move the items in Requires(post): to Requires: in preparation
+  for an errata for 7.0 when 3.23.31 is released
+- 3.23.31
+
+* 二 1月 16 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- add the log file to the rpm database, and make it 0640
+  (#24116)
+- as above in logrotate script
+- changes to the init sequence - put most of the data
+  in /etc/my.cnf instead of hardcoding in the init script
+- use /var/run/mysqld/mysqld.pid instead of 
+  /var/run/mysqld/pid
+- use standard safe_mysqld
+- shut down cleaner
+
+* 一 1月 08 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.30
+- do an explicit chmod on /var/lib/mysql in post, to avoid 
+  any problems with broken permissons. There is a report
+  of rm not changing this on its own (#22989)
+
+* 一 1月 01 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- bzipped source
+- changed from 85 to 78 in startup, so it starts before
+  apache (which can use modules requiring mysql)
+
+* 三 12月 27 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.29a
+
+* 二 12月 19 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- add requirement for new libstdc++, build for errata
+
+* 一 12月 18 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.29
+
+* 一 11月 27 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.28 (gamma)
+- remove old patches, as they are now upstreamed
+
+* 二 11月 14 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- Add a requirement for a new glibc (#20735)
+- build on IA64
+
+* 三 11月 01 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- disable more assembly
+
+* 三 11月 01 2000 Jakub Jelinek <jakub@redhat.com>
+- fix mysql on SPARC (#20124)
+
+* 二 10月 31 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.27
+
+* 三 10月 25 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- add patch for fixing bogus aliasing in mysql from Jakub,
+  which should fix #18905 and #18620
+
+* 一 10月 23 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- check for negative niceness values, and negate it
+  if present (#17899)
+- redefine optflags on IA32 FTTB
+
+* 三 10月 18 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.26, which among other fixes now uses mkstemp()
+  instead of tempnam().
+- revert changes made yesterday, the problem is now
+  isolated
+
+* 二 10月 17 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- use the compat C++ compiler FTTB. Argh.
+- add requirement of ncurses4 (see above)
+
+* 日 10月 01 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.25
+- fix shutdown problem (#17956)
+
+* 二 9月 26 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- Don't try to include no-longer-existing PUBLIC file
+  as doc (#17532)
+
+* 二 9月 12 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- rename config file to /etc/my.cnf, which is what
+  mysqld wants... doh. (#17432)
+- include a changed safe_mysqld, so the pid file option
+  works. 
+- make mysql dir world readable to they can access the 
+  mysql socket. (#17432)
+- 3.23.24
+
+* 三 9月 06 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.23
+
+* 日 8月 27 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- Add "|| :" to condrestart to avoid non-zero exit code
+
+* 四 8月 24 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- it's mysql.com, not mysql.org and use correct path to 
+  source (#16830)
+
+* 三 8月 16 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- source file from /etc/rc.d, not /etc/rd.d. Doh.
+
+* 日 8月 13 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- don't run ldconfig -n, it doesn't update ld.so.cache
+  (#16034)
+- include some missing binaries
+- use safe_mysqld to start the server (request from
+  mysql developers)
+
+* 六 8月 05 2000 Bill Nottingham <notting@redhat.com>
+- condrestart fixes
+
+* 二 8月 01 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.22. Disable the old patches, they're now in.
+
+* 四 7月 27 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- bugfixes in the initscript
+- move the .so link to the devel package
+
+* 三 7月 19 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- rebuild due to glibc changes
+
+* 二 7月 18 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- disable compiler patch
+- don't include info directory file
+
+* 一 7月 17 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- move back to /etc/rc.d/init.d
+
+* 五 7月 14 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- more cleanups in initscript
+
+* 四 7月 13 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- add a patch to work around compiler bug 
+  (from monty@mysql.com)
+
+* 三 7月 12 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- don't build the SQL daemon statically (glibc problems)
+- fix the logrotate script - only flush log if mysql
+  is running
+- change the reloading procedure 
+- remove icon - glint is obsolete a long time ago
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 7月 10 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- try the new compiler again
+- build the SQL daemon statically
+- add compile time support for complex charsets
+- enable assembler
+- more cleanups in initscript
+
+* 日 7月 09 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- use old C++ compiler
+- Exclusivearch x86
+
+* 六 7月 08 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- move .so files to devel package
+- more cleanups
+- exclude sparc for now
+
+* 三 7月 05 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- 3.23.21
+- remove file from /etc/sysconfig
+- Fix initscript a bit - initialization of databases doesn't
+  work yet
+- specify the correct licenses
+- include a /etc/my.conf (empty, FTTB)
+- add conditional restart to spec file
+
+* 日 7月 02 2000 Jakub Jelinek <jakub@redhat.com>
+- Rebuild with new C++
+
+* 五 6月 30 2000 Trond Eivind Glomsrd <teg@redhat.com>
+- update to 3.23.20
+- use %configure, %makeinstall, %{_tmppath}, %{_mandir},
+  %{_infodir}, /etc/init.d
+- remove the bench package
+- change some of the descriptions a little bit
+- fix the init script
+- some compile fixes
+- specify mysql user
+- use mysql uid 27 (postgresql is 26)
+- don't build on ia64
+
+* 六 2月 26 2000 Jos Vos <jos@xos.nl>
+- Version 3.22.32 release XOS.1 for LinuX/OS 1.8.0
+- Upgrade from version 3.22.27 to 3.22.32.
+- Do "make install" instead of "make install-strip", because "install -s"
+  now appears to fail on various scripts.  Afterwards, strip manually.
+- Reorganize subpackages, according to common Red Hat packages: the client
+  program and shared library become the base package and the server and
+  some accompanying files are now in a separate server package.  The
+  server package implicitly requires the base package (shared library),
+  but we have added a manual require tag anyway (because of the shared
+  config file, and more).
+- Rename the mysql-benchmark subpackage to mysql-bench.
+
+* 一 1月 31 2000 Jos Vos <jos@xos.nl>
+- Version 3.22.27 release XOS.2 for LinuX/OS 1.7.1
+- Add post(un)install scripts for updating ld.so.conf (client subpackage).
+
+* 日 11月 21 1999 Jos Vos <jos@xos.nl>
+- Version 3.22.27 release XOS.1 for LinuX/OS 1.7.0
+- Initial version.
+- Some ideas borrowed from Red Hat Powertools 6.1, although this spec
+  file is a full rewrite from scratch.
+

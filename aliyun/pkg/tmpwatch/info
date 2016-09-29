@@ -1,0 +1,17 @@
+Name        : tmpwatch                     Relocations: (not relocatable)
+Version     : 2.9.16                            Vendor: Alibaba
+Release     : 4.4.alios6                    Build Date: 2014年07月28日 星期一 06时02分12秒
+Install Date: 2015年03月25日 星期三 11时00分13秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Base       Source RPM: tmpwatch-2.9.16-4.4.alios6.src.rpm
+Size        : 41144                            License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 18时56分17秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : https://fedorahosted.org/tmpwatch/
+Summary     : A utility for removing files based on when they were last accessed
+Description :
+The tmpwatch utility recursively searches through specified
+directories and removes files which have not been accessed in a
+specified period of time.  Tmpwatch is normally used to clean up
+directories which are used for temporarily holding files (for example,
+/tmp).  Tmpwatch ignores symlinks, won't switch filesystems and only
+removes empty directories and regular files.

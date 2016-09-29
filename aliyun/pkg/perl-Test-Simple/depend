@@ -1,0 +1,18 @@
+perl >= 0:5.004
+perl >= 0:5.006
+perl = 4:5.10.1-119.4.alios6.1
+perl(Carp)  
+perl(Config)  
+perl(Exporter)  
+perl(Symbol)  
+perl(Test::Builder)  
+perl(Test::Builder::Module)  
+perl(Test::Builder::Tester)  
+perl(strict)  
+perl(warnings)  
+perl-devel  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

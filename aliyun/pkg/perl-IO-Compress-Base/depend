@@ -1,0 +1,22 @@
+perl >= 0:5.004
+perl = 4:5.10.1-119.4.alios6.1
+perl(Carp)  
+perl(Exporter)  
+perl(File::GlobMapper)  
+perl(IO::Compress::Base::Common) >= 2.020
+perl(IO::File)  
+perl(IO::Handle)  
+perl(IO::Uncompress::Base) >= 2.020
+perl(List::Util)  
+perl(Scalar::Util)  
+perl(Symbol)  
+perl(bytes)  
+perl(constant)  
+perl(strict)  
+perl(utf8)  
+perl(warnings)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

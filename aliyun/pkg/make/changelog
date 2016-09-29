@@ -1,0 +1,244 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:3.81-19.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:3.81-19.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:3.81-19.1
+- rebuild for alios6
+
+* 四 6月 24 2010 Petr Machata <pmachata@redhat.com> - 1:3.81-19
+- Fix recursion test
+- Resolves: #595367
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1:3.81-18.1
+- Rebuilt for RHEL 6
+
+* 二 8月 11 2009 Petr Machata <pmachata@redhat.com> - 1:3.81-18
+- Fix installation with --excludedocs
+- Resolves: #515917
+
+* 五 7月 31 2009 Petr Machata <pmachata@redhat.com> - 1:3.81-17
+- Replace the use of strcpy on overlapping areas with memmove
+- Resolves: #514721
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:3.81-16
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:3.81-15
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 9月 22 2008 Petr Machata <pmachata@redhat.com> - 1:3.81-14
+- Fix patches to apply cleanly with fuzz=0
+
+* 二 9月 16 2008 Petr Machata <pmachata@redhat.com> - 1:3.81-13
+- Mark opened files as cloexec to prevent their leaking through fork
+- Resolves: #462090
+
+* 二 3月 25 2008 Petr Machata <pmachata@redhat.com> - 1:3.81-12
+- Fix the rlimit patch.  The success flag is kept in memory shared
+  with parent process after vfork, and so cannot be reset.
+- Related: #214033
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1:3.81-11
+- Autorebuild for GCC 4.3
+
+* 四 10月 04 2007 Petr Machata <pmachata@redhat.com> - 1:3.81-10
+- Fix parallel builds with reexec.
+- Related: #212111, #211290
+
+* 四 10月 04 2007 Petr Machata <pmachata@redhat.com> - 1:3.81-8
+- Cleaned up per merge review.
+- Related: #226120
+
+* 四 8月 16 2007 Petr Machata <pmachata@redhat.com> - 1:3.81-7
+- Fix licensing tag.
+
+* 五 3月 16 2007 Petr Machata <pmachata@redhat.com> - 1:3.81-6
+- Always run testsuite with C locale.
+- Resolves: #232607
+
+* 四 2月 22 2007 Petr Machata <pmachata@redhat.com> - 1:3.81-5
+- Fix newline handling for quoted SHELL.
+- Resolves: #219409
+
+* 五 2月 02 2007 Petr Machata <pmachata@redhat.com> - 1:3.81-4
+- Tidy up the specfile per rpmlint comments
+- Use utf-8 and fix national characters in contributor's names
+
+* 四 1月 25 2007 Petr Machata <pmachata@redhat.com> - 1:3.81-3
+- Ville Skyttä: patch for non-failing %post, %preun
+- Resolves: #223709
+
+* 四 1月 25 2007 Petr Machata <pmachata@redhat.com> - 1:3.81-2
+- make now restores rlimit to its original values before launching
+  subprocess (#214033)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:3.81-1.1
+- rebuild
+
+* 二 5月 23 2006 Petr Machata <pmachata@redhat.com> - 1:3.81-1
+- Upstream 3.81:
+  - Contains several backwards incompatible changes.  See NEWS inside
+    the source package to find out more.
+- memory patch and error reporting patch were ported to this version.
+
+* 三 3月 15 2006 Petr Machata <pmachata@redhat.com> 1:3.80-11
+- Applied (five years old) patch from Jonathan Kamens to allow make to
+  handle several pattern-specific variables (#52962).
+
+  The patch was changed so that it forces make to process pattern
+  specific variables in the same order as they appear in file.
+  (Upstream make behaves this way, too.)  This is change from old make
+  behavior, which processed the variables in reverse order.  In case
+  you used only x=a assignments, this had the effect of using the
+  first pattern specific variable that matched.  For x+=a this just
+  doesn't work, and it produces absolutely nonintuitive results.
+
+- (It would be great if make's target-specific variables were handled
+  the same way as pattern-specific ones, just without the pattern
+  component.  However current handling is documented and considered a
+  feature.)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1:3.80-10.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1:3.80-10.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Petr Machata <pmachata@redhat.com> 3.80-10
+- H.J. Lu caught a typo in the patch and provided a new one. (#175376)
+
+* 一 1月 09 2006 Petr Machata <pmachata@redhat.com> 3.80-9
+- Applied patch from H.J. Lu.  Somehow reduces make's enormous memory
+  consumption. (#175376)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 8月 22 2005 Jakub Jelinek <jakub@redhat.com> 3.80-8
+- make sure errno for error reporting is not lost accross _() calls
+- report EOF on read pipe differently from read returning < 0 reporting
+
+* 一 3月 07 2005 Jakub Jelinek <jakub@redhat.com> 3.80-7
+- rebuilt with GCC 4
+
+* 一 12月 13 2004 Jakub Jelinek <jakub@redhat.com> 3.80-6
+- refuse -jN where N is bigger than PIPE_BUF (#142691, #17374)
+
+* 四 10月 07 2004 Jakub Jelinek <jakub@redhat.com> 3.80-5
+- add URL rpm tag (#134799)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 12月 02 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- add important bug-fixes from make home-page
+
+* 日 11月 30 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 3.80
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 日 12月 29 2002 Tim Powers <timp@redhat.com>
+- fix references to %install in the changelog so that the package will build
+
+* 二 12月 03 2002 Elliot Lee <sopwith@redhat.com> 3.79.1-15
+- _smp_mflags
+- Fix ppc build (sys_siglist issues in patch2)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Jakub Jelinek <jakub@redhat.com>
+- Run make check during build
+
+* 四 5月 23 2002 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix build with current auto* tools
+
+* 五 1月 25 2002 Jakub Jelinek <jakub@redhat.com>
+- rebuilt with gcc 3.1
+
+* 五 7月 06 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- s/Copyright/License/
+- langify
+- Make sure it isn't setgid if built as root
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 一 8月 07 2000 Tim Waugh <twaugh@redhat.com>
+- change info-dir entry so that 'info make' works (#15029).
+
+* 二 8月 01 2000 Jakub Jelinek <jakub@redhat.com>
+- assume we don't have clock_gettime in configure, so that
+  make is not linked against -lpthread (and thus does not
+  limit stack to 2MB).
+
+* 六 7月 22 2000 Jeff Johnson <jbj@redhat.com>
+- add locale files (#14362).
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 六 6月 24 2000 Preston Brown <pbrown@redhat.com>
+- 3.79.1 bugfix release
+
+* 一 6月 05 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 日 5月 07 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix build for some odd situations, such as
+  - previously installed make != GNU make
+  - /bin/sh != bash
+
+* 一 4月 17 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- update to 3.79
+
+* 四 2月 24 2000 Cristian Gafton <gafton@redhat.com>
+- add patch from Andreas Jaeger to fix dtype lookups (for glibc 2.1.3
+  builds)
+
+* 一 2月 07 2000 Jeff Johnson <jbj@redhat.com>
+- compress man page.
+
+* 五 1月 21 2000 Cristian Gafton <gafton@redhat.com>
+- apply patch to fix a /tmp race condition from Thomas Biege
+- simplify %install
+
+* 六 11月 27 1999 Jeff Johnson <jbj@redhat.com>
+- update to 3.78.1.
+
+* 四 4月 15 1999 Bill Nottingham <notting@redhat.com>
+- added a serial tag so it upgrades right
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 5)
+
+* 三 9月 16 1998 Cristian Gafton <gafton@redhat.com>
+- added a patch for large file support in glob
+
+* 二 8月 18 1998 Jeff Johnson <jbj@redhat.com>
+- update to 3.77
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 10月 16 1997 Donnie Barnes <djb@redhat.com>
+- udpated from 3.75 to 3.76
+- various spec file cleanups
+- added install-info support
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

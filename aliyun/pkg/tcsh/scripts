@@ -1,0 +1,16 @@
+postinstall scriptlet (using /bin/sh):
+if [ ! -f /etc/shells ]; then
+ echo "/bin/tcsh" >> /etc/shells
+ echo "/bin/csh"	>> /etc/shells
+else
+ grep -q '^/bin/tcsh$' /etc/shells || \
+ echo "/bin/tcsh" >> /etc/shells
+ grep -q '^/bin/csh$'  /etc/shells || \
+ echo "/bin/csh"	>> /etc/shells
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ ! -x /bin/tcsh ]; then
+ grep -v '^/bin/tcsh$'  /etc/shells | \
+ grep -v '^/bin/csh$' > /etc/shells.rpm && \
+ mv /etc/shells.rpm /etc/shells
+fi

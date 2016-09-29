@@ -1,0 +1,352 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 5.44.1.15-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 5.44.1.15-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 5.44.1.15-2.1
+- rebuild for alios6
+
+* 二 6月 08 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.44.1.15-2
+- Fix wrong symlink
+
+* 四 3月 18 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.44.1.15-1
+- Update to 5.44.1.15 from upstream CVS
+- Remove config.sub (no longer needed), remove unused patches (few are
+  upstream now, few are pointless with new version), comment patches
+- Fix unbuffer to return exit code of ubuffered program
+- Fix Tk initialization
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 5.43.0-19.1
+- Rebuilt for RHEL 6
+
+* 一 8月 10 2009 Ville Skyttä <ville.skytta@iki.fi> - 5.43.0-19
+- Use bzipped upstream tarball.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.43.0-18
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.43.0-17
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 11 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 5:43.0-16
+- Modify and rebuild for new Tcl
+
+* 四 9月 25 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 5:43.0-15
+- Rediff all patches to work with patch --fuzz=0
+
+* 一 6月 09 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 5:43.0-14
+- Use latest config.sub file for package build
+  Resolves: #449560
+
+* 一 2月 11 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 5:43.0-13
+- Rebuild
+
+* 一 1月 14 2008 Wart <wart@kobold.org> - 5.43.0-12
+- Update install locations to reflect updated auto_path in the tcl 8.5 package
+
+* 一 1月 07 2008 Adam Tkac <atkac redhat com> - 5.43.0-11
+- updated "tcl8.5" patch
+
+* 六 1月 05 2008 Alex Lancaster <alexlan[AT]fedoraproject org> - 5.43.0-10
+- Rebuild for new Tcl 8.5
+
+* 四 8月 23 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.43.0-9
+- rebuild
+
+* 六 2月 10 2007 Jakub Jelinek <jakub@redhat.com> - 5.43.0-8
+- Update to build this time with Tcl 8.4
+
+* 四 2月 08 2007 Miloslav Trmac <mitr@redhat.com> - 5.43.0-7
+- s/%{buildroot}/"$RPM_BUILD_ROOT"/g
+- s,/usr/share/man,%{_mandir},g
+- Use the Fedora-specified Buildroot:
+- Remove BuildRequires: libX11-devel
+- Don't install pkgIndex.tcl as an executable file
+- Drop the incorrect expect-5.32.2-fixcat.patch
+- Remove comments from *.h.in because they confuse config.status; this makes
+  the workaround expect-5.43.0-cfg-setpgrp.patch unnecesary.
+
+* 六 2月 03 2007 Miloslav Trmac <mitr@redhat.com> - 5.43.0-6
+- Update to build with Tcl 8.5
+- Drop static libraries
+- Ship more documentation
+- Use %check for (make test), remove the conditional
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 5.43.0-5.1
+- rebuild
+
+* 一 5月 15 2006 David Cantrell <dcantrell@redhat.com> - 5.43.0-5
+- BuildRequires libX11-devel
+
+* 五 2月 24 2006 David Cantrell <dcantrell@redhat.com> - 5.43.0-4
+- Patch expLogChannelOpen() to create files with 0666 permissions (#182724)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 5.43.0-3.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 David Cantrell <dcantrell@redhat.com> - 5.43.0-3
+- Rebuilt
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 5月 31 2005 Jens Petersen <petersen@redhat.com> - 5.43.0-2
+- fix flushing of unbuffer script (Charles Sullivan, #143963)
+  with unbuffer-child-flush-143963.patch (Don Libes)
+- make autoconf include parent dir in testsuite to avoid error
+  (Robert Scheck, 150369)
+- separate the examples scripts patches from the rest
+
+* 一 3月 07 2005 Jens Petersen <petersen@redhat.com>
+- replace expect-5.32.2-setpgrp.patch by expect-5.43.0-cfg-setpgrp.patch
+  to set SETPGRP_VOID correctly
+
+* 一 3月 07 2005 Jens Petersen <petersen@redhat.com> - 5.43.0-1
+- run test make target by default
+  - can be turned off with --without check
+
+* 六 3月 05 2005 Robert Scheck <redhat@linuxnetz.de>
+- update to 5.43.0 (150369)
+  - no longer need expect-5.39.0-64bit-82547.patch,
+    expect-5.38.0-autopasswd-9917.patch
+    and expect-5.42-mkpasswd-verbose-user-141454.patch
+- run aclocal and configure with current autoconf (116777)
+  - buildrequire autoconf and automake instead of autoconf213
+
+* 五 12月 03 2004 Jens Petersen <petersen@redhat.com> - 5.42.1-2
+- fix "mkpasswd -v" failure when user not specified with
+  expect-5.42-mkpasswd-verbose-user-141454.patch (J F Wheeler, 141454)
+
+* 四 8月 05 2004 Jens Petersen <petersen@redhat.com> - 5.42.1-1
+- update to 5.42.1 (Robert Scheck, 126536)
+  - no longer need expect-5.32.2-kibitz.patch
+  - update expect-5.38.0-autopasswd-9917.patch
+- drop explicit tcl and tk requires
+
+* 一 6月 21 2004 Alan Cox <alan@redhat.com>
+- Autopasswd doesnt work and isnt ever going to work with pam around
+  since password setting depends on the modules in use (think "fingerprint"
+  or "smartcard"..). Remove it.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 11月 28 2003 Jens Petersen <petersen@redhat.com> - 5.39.0-95
+- new package split out from tcltk
+- build against installed tcl and tk
+- filtered changelog for expect
+- buildrequire autoconf213 (#110583) [mvd@mylinux.com.ua]
+
+* 一 11月 17 2003 Thomas Woerner <twoerner@redhat.com> 8.3.5-94
+- fixed RPATH for expect and expectk: expect-5.39.0-libdir.patch
+
+* 三 10月 15 2003 Jens Petersen <petersen@redhat.com> - 8.3.5-93
+- update expect to 5.39.0 (fixes #58317)
+- drop first hunk of 64bit patch and rename to expect-5.39.0-64bit-82547.patch
+- expect-5.32.2-weather.patch and expect-5.32.2-expectk.patch no longer needed
+
+* 三 9月 17 2003 Matt Wilson <msw@redhat.com> 8.3.5-92
+- rebuild again for #91211
+
+* 三 9月 17 2003 Matt Wilson <msw@redhat.com> 8.3.5-91
+- rebuild to fix gzipped file md5sums (#91211)
+
+* 五 7月 04 2003 Jens Petersen <petersen@redhat.com> - 8.3.5-90
+- make sure expect and itcl are linked against buildroot not installroot libs
+
+* 二 1月 28 2003 Jens Petersen <petersen@redhat.com> - 8.3.5-87
+- bring back expect alpha patch, renamed to 64bit patch (#82547)
+
+* 五 1月 17 2003 Jens Petersen <petersen@redhat.com> - 8.3.5-85
+- add some requires
+
+* 二 1月 14 2003 Jens Petersen <petersen@redhat.com> - 8.3.5-84
+- drop synthetic lib provides
+- remove obsolete patches from srpm
+- update buildrequires
+- use buildroot instead of RPM_BUILD_ROOT
+- install all man pages under mandir, instead of moving some from /usr/man
+- introduce _genfilelist macro for clean single-sweep find filelist generation
+  for each package
+- use perl to remove buildroot prefix from filelists
+
+* 二 1月 07 2003 Jeff Johnson <jbj@redhat.com> 8.3.5-80
+- rebuild to generate deps for4 DSO's w/o DT_SONAME correctly.
+
+* 六 1月 04 2003 Jeff Johnson <jbj@redhat.com> 8.3.5-79
+- set execute bits on library so that requires are generated.
+
+* 二 12月 10 2002 Jens Petersen <petersen@redhat.com> 8.3.5-78
+- make lib symlinks to .so not .so.0
+
+* 一 12月 09 2002 Jens Petersen <petersen@redhat.com> 8.3.5-76
+- make it build on x86_64 (details below)
+- add 100 to expect patches
+- patch expect configure to get EXP_LIB_SPEC to use libdir
+- don't explicitly update config.{guess,sub} since %configure does it for us
+- added "--without check" rpmbuild option to disable running tests in future
+- generate filelists from datadir and not from mandir from now on
+
+* 二 12月 03 2002 Jens Petersen <petersen@redhat.com>
+- build without all makecfg patches for now
+  - in particular use upstream versioned library name convention
+- add backward compatible lib symlinks for now
+- add unversioned symlinks for versioned bindir files
+- use make's -C option rather than jumping in and out of source dirs
+  during install
+- use INSTALL_ROOT destdir-like make variable instead of makeinstall
+  for all subpackages except tix and itcl
+
+* 一 10月 21 2002 Jens Petersen <petersen@redhat.com>
+- move expectk and expect-devel files out of expect into separate packages
+  (#9832)
+- drop the crud compat dir symlinks in libdir
+- correct expect license
+- don't explicitly provide 64bit libs on ia64 and sparc64
+
+* 二 8月 20 2002 Jens Petersen <petersen@redhat.com> 8.3.3-74
+- fix compat symlink from /usr/lib/expect (#71606)
+
+* 三 8月 14 2002 Jens Petersen <petersen@redhat.com> 8.3.3-73
+- update to expect spawn patch from hjl@gnu.org (bug 43310)
+
+* 二 8月 13 2002 Jens Petersen <petersen@redhat.com> 8.3.3-72
+- update expect to 5.38.0
+- fixes #71113 (reported by yarnall@lvc.edu)
+
+* 一 1月 07 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- quick hack to have a correct setpgrp() call in expect
+- fix config.guess and config.sub to newer versions
+
+* 二 8月 28 2001 Adrian Havill <havill@redhat.com>
+- expect's fixline1 busted for expectk scripts (tkpasswd/tknewsbiff/tkterm)
+
+* 三 8月 08 2001 Adrian Havill <havill@redhat.com>
+- re-enable glibc string and math inlines; recent gcc is a-ok.
+- optimize at -O2 instead of -O
+- rename "soname" patches related to makefile/autoconf changes
+
+* 三 7月 25 2001 Adrian Havill <havill@redhat.com>
+- fixed 64 bit RPM provides for dependencies
+
+* 四 7月 19 2001 Adrian Havill <havill@redhat.com>
+- used %makeinstall to brute force fix any remaining unflexible makefile dirs
+- improved randomness of expect's mkpasswd script via /dev/random (bug 9507)
+- revert --enable-threads, linux is (still) not ready (yet) (bug 49251)
+
+* 日 7月 08 2001 Adrian Havill <havill@redhat.com>
+- refresh all sources to latest stable (TODO: separate expect/expectk)
+- massage out some build stuff to patches (TODO: libtoolize hacked constants)
+- remove patches already rolled into the upstream
+- removed RPATH (bugs 45569, 46085, 46086), added SONAMEs to ELFs
+- changed shared object filenames to something less gross
+- reenable threads which seem to work now
+- fixed spawn/eof read problem with expect (bug 43310)
+- made compile-friendly for IA64
+
+* 五 3月 23 2001 Bill Nottingham <notting@redhat.com>
+- bzip2 sources
+
+* 一 3月 19 2001 Bill Nottingham <notting@redhat.com>
+- build with -D_GNU_SOURCE - fixes expect on ia64
+
+* 一 3月 19 2001 Preston Brown <pbrown@redhat.com>
+- build fix from ahavill.
+
+* 三 2月 21 2001 Tim Powers <timp@redhat.com>
+- fixed weather expect script using wrong server (#28505)
+
+* 二 2月 13 2001 Adrian Havill <havill@redhat.com>
+- rebuild so make check passes
+
+* 五 10月 20 2000 Than Ngo <than@redhat.com>
+- rebuild with -O0 on alpha (bug #19461)
+
+* 四 8月 17 2000 Jeff Johnson <jbj@redhat.com>
+- summaries from specspo.
+
+* 四 7月 27 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild against "working" util-linux col.
+
+* 五 6月 16 2000 Jeff Johnson <jbj@redhat.com>
+- don't mess with %{_libdir}, it's gonna be a FHS pita.
+
+* 五 6月 02 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging changes.
+- revert --enable-threads, linux is not ready (yet) (#11789).
+- expect: update to 5.31.7+ (#11595).
+
+* 六 3月 18 2000 Jeff Johnson <jbj@redhat.com>
+- update to (tcl,tk}-8.2.3, expect-5.31, and itcl-3.1.0, URL's as well.
+- use perl to drill out pre-pended RPM_BUILD_ROOT.
+- configure with --enable-threads (experimental).
+- autopasswd needs to handle password starting with hyphen (#9917).
+- handle 553 ftp status in rftp expect script (#7869).
+- remove cryptdir/decryptdir, as Linux has not crypt command (#6668).
+- correct hierarchy spelling (#7082).
+- fix "expect -d ...", format string had int printed as string (#7775).
+
+* 二 3月 07 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild for sparc baud rates > 38400.
+
+* 一 2月 07 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed manpages
+
+* 四 2月 03 2000 Elliot Lee <sopwith@redhat.com>
+- Make changes from bug number 7602
+- Apply patch from bug number 7537
+- Apply fix from bug number 7157
+- Add fixes from bug #7601 to the runtcl patch
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix descriptions
+- man pages are compressed (whatapain)
+
+* 二 11月 30 1999 Jakub Jelinek <jakub@redhat.com>
+- compile on systems where SIGPWR == SIGLOST.
+
+* 四 4月 08 1999 Jeff Johnson <jbj@redhat.com>
+- use /usr/bin/write in kibitz (#1320).
+- use cirrus.sprl.umich.edu in weather (#1926).
+
+* 二 2月 16 1999 Jeff Johnson <jbj@redhat.com>
+- expect does unaligned access on alpha (#989)
+- upgrade expect to 5.28.
+
+* 二 1月 12 1999 Cristian Gafton <gafton@redhat.com>
+- call libtoolize to allow building on the arm
+- build for glibc 2.1
+- strip binaries
+
+* 四 9月 10 1998 Jeff Johnson <jbj@redhat.com>
+- update tcl/tk/tclX to 8.0.3, expect is updated also.
+
+* 一 6月 29 1998 Jeff Johnson <jbj@redhat.com>
+- expect: mkpasswd needs delay before sending password (problem #576)
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 六 5月 02 1998 Cristian Gafton <gafton@redhat.com>
+- fixed expect binaries exec permissions
+
+* 三 10月 22 1997 Otto Hammersmith <otto@redhat.com>
+- fixed src urls
+
+* 一 10月 06 1997 Erik Troan <ewt@redhat.com>
+- removed version numbers from descriptions
+
+* 一 9月 22 1997 Erik Troan <ewt@redhat.com>
+- updated to tcl/tk 8.0 and related versions of packages
+
+* 二 6月 17 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+- fixed dangling tclx/tkx symlinks
+

@@ -1,0 +1,13 @@
+/bin/sh  
+/usr/bin/python  
+automake  
+gnome-doc-utils-stylesheets = 0.18.1-1.3.alios6
+libxml2 >= 2.6.12
+libxml2-python  
+libxslt >= 1.1.8
+python(abi) = 2.6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

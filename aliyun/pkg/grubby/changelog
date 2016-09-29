@@ -1,0 +1,92 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.0.15-2.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.0.15-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.0.15-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 7.0.15-2.1
+- rebuild for alios6
+
+* 二 7月 13 2010 Brian C. Lane <bcl@redhat.com> - 7.0.15-2
+- Add patch to check the return value of getuuidbydev
+- Resolves: rhbz#592294
+
+* 三 4月 14 2010 Peter Jones <pjones@redhat.com> - 7.0.15-1
+- Update to 7.0.15
+- Add man pages for installkernel and new-kernel-pkg
+  Resolves: rhbz#529333
+
+* 三 4月 14 2010 Peter Jones <pjones@redhat.com> - 7.0.14-1
+- Update to 7.0.14
+
+* 五 3月 05 2010 Peter Jones <pjones@redhat.com> - 7.0.13-2
+- Rebase to 7.0.13
+  Resolves: rhbz#570573
+
+* 四 2月 11 2010 Peter Jones <pjones@redhat.com> - 7.0.13-1
+- Strip boot partition prefix from initrd path if present during --update.
+- add host only support for local kernel compiles (airlied)
+
+* 一 2月 08 2010 Peter Jones <pjones@redhat.com> - 7.0.12-1
+- compare rootdev using uuid instead of stat, for better btrfs support (josef)
+
+* 一 2月 08 2010 Peter Jones <pjones@redhat.com> - 7.0.11-1
+- Make it possible to update the initrd without any other change.
+
+* 五 2月 05 2010 Peter Jones <pjones@redhat.com> - 7.0.10-1
+- Make --update able to add an initramfs.
+
+* 一 11月 30 2009 Peter Jones <pjones@redhat.com> - 7.0.9-3
+- Use s390utils-base as the s390 dep, not s390utils
+  Related: rhbz#540565
+
+* 二 11月 24 2009 Peter Jones <pjones@redhat.com> - 7.0.9-2
+- Add s390utils dep when on s390, since new-kernel-package needs it.
+  Resolves: rhbz#540565
+
+* 五 10月 30 2009 Peter Jones <pjones@redhat.com> - 7.0.9-1
+- Add support for dracut to installkernel (notting)
+
+* 四 10月 01 2009 Hans de Goede <hdegoede@redhat.com> - 7.0.8-1
+- Stop using nash
+
+* 五 9月 11 2009 Hans de Goede <hdegoede@redhat.com> - 7.0.7-1
+- Remove writing rd_plytheme=$theme to kernel args in dracut mode (hansg)
+- Add a couple of test cases for extra initrds (rstrode)
+- Allow tmplLine to be NULL in getInitrdVal (rstrode)
+
+* 五 9月 11 2009 Peter Jones <pjones@redhat.com> - 7.0.6-1
+- Fix test case breakage from 7.0.5 (rstrode)
+
+* 五 9月 11 2009 Peter Jones <pjones@redhat.com> - 7.0.5-1
+- Add support for plymouth as a second initrd. (rstrode)
+  Resolves: rhbz#520515
+
+* 三 9月 09 2009 Hans de Goede <hdegoede@redhat.com> - 7.0.4-1
+- Add --dracut cmdline argument for %post generation of dracut initrd
+
+* 三 8月 26 2009 Hans de Goede <hdegoede@redhat.com> - 7.0.3-1
+- Silence error when no /etc/sysconfig/keyboard (#517187)
+
+* 五 8月 07 2009 Hans de Goede <hdegoede@redhat.com> - 7.0.2-1
+- Add --add-dracut-args new-kernel-pkg cmdline option
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.0.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 17 2009 Jeremy Katz <katzj@redhat.com> - 7.0.1-1
+- Fix blkid usage (#124246)
+
+* 三 6月 24 2009 Jeremy Katz <katzj@redhat.com> - 7.0-1
+- BR libblkid-devel now instead of e2fsprogs-devel
+- Add bits to switch to using dracut for new-kernel-pkg
+
+* 三 6月 03 2009 Jeremy Katz <katzj@redhat.com> - 6.0.86-2
+- add instructions for checking out from git
+
+* 二 6月 02 2009 Jeremy Katz <katzj@redhat.com> - 6.0.86-1
+- initial build after splitting out from mkinitrd
+

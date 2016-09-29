@@ -1,0 +1,44 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1-11.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1-11.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.1-11.1
+- rebuild for alios6
+
+* 四 3月 31 2011 Steve Dickson <steved@redhat.com>  0.1-11
+- Run autoreconf so configuration uses updated files (bz 681660)
+
+* 一 3月 28 2011 Steve Dickson <steved@redhat.com>  0.1-10
+- Removed the Conflict in 32 bit and 64 bit devel packages (bz 681660)
+
+* 五 1月 14 2011 Steve Dickson <steved@redhat.com>  0.1-9
+- Moved the libraries from /usr/lib to /lib (bz 558941)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.1-8.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 6月 27 2008 Steve Dickson <steved@redhat.com> 0.1-6
+- Changed gssapi_mech.conf to use libgssapi_krb5.so.2 
+  instead of libgssapi_krb5.so (bz 447503)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.1-5
+- Autorebuild for GCC 4.3
+
+* 三 10月 17 2007 Steve Dickson <steved@redhat.com> 0.1-4
+- updated Obsoletes: (0.1-3)
+- Obsolete -devel package
+
+* 一 9月 17 2007 Steve Dickson <steved@redhat.com> 0.1-2
+- RPM review
+
+* 二 9月 11 2007 Steve Dickson <steved@redhat.com>
+- Initial commit
+

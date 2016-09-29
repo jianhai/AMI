@@ -1,0 +1,15 @@
+Name        : giflib                       Relocations: (not relocatable)
+Version     : 4.1.6                             Vendor: Alibaba
+Release     : 3.1.3.alios6                  Build Date: 2014年07月26日 星期六 05时09分05秒
+Install Date: 2015年03月25日 星期三 11时01分03秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: giflib-4.1.6-3.1.3.alios6.src.rpm
+Size        : 81932                            License: MIT
+Signature   : RSA/8, 2014年07月31日 星期四 16时32分07秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.sourceforge.net/projects/giflib/
+Summary     : Library for manipulating GIF format image files
+Description :
+The giflib package contains a shared library of functions for loading and
+saving GIF format image files. It is API and ABI compatible with libungif,
+the library which supported uncompressed GIFs while the Unisys LZW patent
+was in effect.

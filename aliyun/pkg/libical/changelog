@@ -1,0 +1,98 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.43-5.1.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.43-5.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.43-5.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.43-5.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.43-5.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.43-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 日 3月 15 2009 Debarshi Ray <rishi@fedoraproject.org> - 0.43-4
+- Updated patch to fix #includes in the headers to work with
+  'pkg-config --cflags libical'. (Red Hat Bugzilla #484091)
+
+* 三 2月 25 2009 Release Engineering <rel-eng@.fedoraproject.org> - 0.43-3
+- Autorebuild for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Debarshi Ray <rishi@fedoraproject.org> - 0.43-2
+- Added patch to fix CFLAGS in libical.pc. (Red Hat Bugzilla #484091)
+
+* 二 1月 13 2009 Debarshi Ray <rishi@fedoraproject.org> - 0.43-1
+- Version bump to 0.43.
+- Added patch to fix implicit pointer conversion from Debian. (Debian BTS
+  - Upstream has switched off ICAL_ERRORS_ARE_FATAL by default. This behaviour
+  is being retained across all distributions, including Fedora 11.
+- Added 'Requires: tzdata'.
+- Enabled backtrace dumps in the syslog.
+
+* 四 1月 08 2009 Debarshi Ray <rishi@fedoraproject.org> - 0.41-2
+- Switched off ICAL_ERRORS_ARE_FATAL for all distributions, except Fedora 11.
+  (Red Hat Bugzilla #478331)
+
+* 日 11月 23 2008 Debarshi Ray <rishi@fedoraproject.org> - 0.41-1
+- Version bump to 0.41. (Red Hat Bugzilla #469252)
+- Disabled C++ bindings.
+
+* 二 10月 28 2008 Kevin Kofler <Kevin@tigcc.ticalc.org> - 0.40-1
+- Version bump to 0.40. (Red Hat Bugzilla #466359)
+- Add patch from upstream to fix crash in icalvalue.c.
+- Update makefile patch, remove the test part (already applied).
+- Package libical.pc, add Requires: pkgconfig to -devel.
+
+* 三 9月 03 2008 Debarshi Ray <rishi@fedoraproject.org> - 0.32-1
+- Version bump to 0.32.
+- Parallel build problems fixed.
+
+* 日 7月 27 2008 Jeff Perry <jeffperry_fedora@sourcesink.com> - 0.31-3
+- Added 'BuildRequires: bison byacc flex'.
+
+* 日 7月 27 2008 Debarshi Ray <rishi@fedoraproject.org> - 0.31-2
+- Fixed linkage problems and disabled parallel build till upstream accepts fix.
+
+* 四 7月 17 2008 Jeff Perry <jeffperry_fedora@sourcesink.com> - 0.31-1
+- Version bump to 0.31.
+
+* 四 7月 17 2008 Debarshi Ray <rishi@fedoraproject.org> - 0.30-4
+- Changed value of License according to Fedora licensing guidelines.
+- Enabled reentrant system calls and C++ bindings.
+- Omitted unused direct shared library dependencies.
+- Added ChangeLog, COPYING, LICENSE, NEWS and README to doc and dropped
+  examples.
+
+* 三 4月 02 2008 Jakub 'Livio' Rusinek <jakub.rusinek@gmail.com> - 0.30-3
+- Source URL... Fixed
+
+* 三 4月 02 2008 Jakub 'Livio' Rusinek <jakub.rusinek@gmail.com> - 0.30-2
+- Removed untrue note about libical's homepage (to get rid of eventuall mess)
+
+* 六 2月 23 2008 David Nielsen <gnomeuser@gmail.com> - 0.30-1
+- Switch to freeassociation libical
+- bump to 0.30
+
+* 六 2月 09 2008 Jakub 'Livio' Rusinek <jakub.rusinek@gmail.com> - 0.27-5
+- Mass rebuild for new GCC... Done
+
+* 六 1月 19 2008 Jakub 'Livio' Rusinek <jakub.rusinek@gmail.com> - 0.27-4
+- Licence... Fixed
+
+* 五 1月 18 2008 Jakub 'Livio' Rusinek <jakub.rusinek@gmail.com> - 0.27-3
+- Files section... Fixed
+
+* 四 1月 17 2008 Jakub 'Livio' Rusinek <jakub.rusinek@gmail.com> - 0.27-2
+- Source... Changed
+- Debug information in libical main package... Excluded
+- Non-numbered .so files in libical main package... Moved
+- libical-devel documentation... Added
+
+* 一 12月 24 2007 Jakub 'Livio' Rusinek <jakub.rusinek@gmail.com> - 0.27-1
+- Initial release
+

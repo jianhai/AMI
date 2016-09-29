@@ -1,0 +1,37 @@
+/bin/sh  
+/usr/bin/pkg-config  
+check-devel  
+glib2-devel >= 2.8.3
+gstreamer = 0.10.29-1.4.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libdl.so.2()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgstbase-0.10.so.0()(64bit)  
+libgstcheck-0.10.so.0()(64bit)  
+libgstcontroller-0.10.so.0()(64bit)  
+libgstdataprotocol-0.10.so.0()(64bit)  
+libgstnet-0.10.so.0()(64bit)  
+libgstreamer-0.10.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libm.so.6()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+libxml2-devel >= 2.4.0
+pkgconfig(glib-2.0)  
+pkgconfig(gmodule-no-export-2.0)  
+pkgconfig(gobject-2.0)  
+pkgconfig(gstreamer-0.10)  
+pkgconfig(gthread-2.0)  
+pkgconfig(libxml-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

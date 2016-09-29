@@ -1,0 +1,22 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+config(libtirpc) = 0.2.1-5.3.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libdl.so.2()(64bit)  
+libgssglue.so.1()(64bit)  
+libgssglue.so.1(libgssapi_CITI_2)(64bit)  
+libnsl.so.1()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpthread.so.0(GLIBC_2.3.2)(64bit)  
+libtirpc.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,126 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.0-17.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.0-17.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.0-17.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.0-17.1
+- rebuild for alios6
+
+* 四 1月 07 2010 Karel Zak <kzak@redhat.com> - 3.0-17
+- remove obsolete URL to source usptream tarball
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 3.0-16.1
+- Rebuilt for RHEL 6
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0-16
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0-15
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 1月 12 2009 Karel Zak <kzak@redhat.com> - 3.0-14
+- fix #457309 - contains both 'unnecessary' and 'unneccesary'
+- fix #470921 -"Barack" and "Obama" are not in /usr/share/dict/words
+- update spec file (#226542 - Merge Review)
+
+* 一 6月 23 2008 Karel Zak <kzak@redhat.com> - 3.0-13
+- fix #428582 - linux.words contains misspelled word "flourescent"
+- fix #440146 - misspelled word in /usr/share/dict/words (architecure)
+
+* 一 4月 02 2007 Karel Zak <kzak@redhat.com> - 3.0-12
+- fix #226542 - Merge Review: words
+
+* 一 4月 02 2007 Karel Zak <kzak@redhat.com> - 3.0-11
+- cleanup spec file
+- fix #227216 - Unnecessary BuildRequirement to ncompress
+
+* 三 1月 24 2007 Karel Zak <kzak@redhat.com> - 3.0-10
+- fix regex that removes possessives ('s)
+
+* 三 7月 19 2006 Karel Zak <kzak@redhat.com> - 3.0-9
+- rebuild
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.0-8.1.1
+- rebuild
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 21 2005 Karel Zak <kzak@redhat.com> 3-8
+- rebuilt
+
+* 一 5月 02 2005 Karel Zak <kzak@redhat.com> 3-7
+- sort with --dictionary-order
+- remove words with possessives ('s)
+
+* 一 4月 04 2005 Karel Zak <kzak@redhat.com> 3-6
+- fix uniq command usage
+
+* 二 3月 29 2005 Karel Zak <kzak@redhat.com> 3-5
+- replace word list with much better Moby Project words list (#61395)
+- revise %description; ispell/aspell no longer uses words
+
+* 一 9月 27 2004 Adrian Havill <havill@redhat.com> 2-23
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 05 2003 Nalin Dahyabhai <nalin@redhat.com> 2-21
+- rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 4月 03 2002 Trond Eivind Glomsrod <teg@redhat.com> 2-18
+- Bump.
+
+* 一 3月 18 2002 Trond Eivind Glomsrod <teg@redhat.com> 2-17
+- s/Copyright/License/
+- add gullible and facetious (#60166, #60173)
+
+* 五 4月 06 2001 Trond Eivind Glomsrod <teg@redhat.com>
+- Add carnivore (#35031)
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 13 2000 Trond Eivind Glomsrod <teg@redhat.com>
+- use %{_tmppath}
+
+* 四 4月 13 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add some words: some food additives, dinosaurs, atmospheric terms
+
+* 五 4月 07 2000 Trond Eivind Glomsrod <teg@redhat.com>
+- update description
+- moved it to /usr/share/dict
+- updated URL
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 12)
+
+* 三 9月 30 1998 Bill Nottingham <notting@redhat.com>
+- take out extra.words (they're all in linux.words)
+
+* 日 8月 23 1998 Jeff Johnson <jbj@redhat.com>
+- correct desiccate (problem #794)
+
+* 二 8月 11 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 10月 21 1997 Donnie Barnes <djb@redhat.com>
+- spec file cleanups
+
+* 二 9月 23 1997 Erik Troan <ewt@redhat.com>
+- made a noarch package
+

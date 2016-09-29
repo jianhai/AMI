@@ -1,0 +1,7 @@
+foomatic-db-filesystem = 4.0-7.20091126.3.alios6
+foomatic-db-ppds = 4.0-7.20091126.3.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

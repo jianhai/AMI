@@ -1,0 +1,13 @@
+preinstall scriptlet (using /bin/sh):
+# Add the "dbus" user and group
+/usr/sbin/groupadd -r -g 81 dbus 2>/dev/null || :
+/usr/sbin/useradd -c 'System message bus' -u 81 -g 81 \
+	-s /sbin/nologin -r -d '/' dbus 2> /dev/null || :
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add messagebus
+/sbin/chkconfig messagebus resetpriorities
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+    /sbin/service messagebus stop
+    /sbin/chkconfig --del messagebus
+fi

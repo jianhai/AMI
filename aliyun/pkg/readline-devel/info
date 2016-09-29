@@ -1,0 +1,15 @@
+Name        : readline-devel               Relocations: (not relocatable)
+Version     : 6.0                               Vendor: Alibaba
+Release     : 3.4.alios6                    Build Date: 2014年07月28日 星期一 03时24分09秒
+Install Date: 2015年03月25日 星期三 11时02分28秒      Build Host: x86-004.build.alibaba
+Group       : Development/Libraries         Source RPM: readline-6.0-3.4.alios6.src.rpm
+Size        : 260901                           License: GPLv3+
+Signature   : RSA/8, 2014年07月31日 星期四 18时40分07秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html
+Summary     : Files needed to develop programs which use the readline library
+Description :
+The Readline library provides a set of functions that allow users to
+edit typed command lines. If you want to develop programs that will
+use the readline library, you need to have the readline-devel package
+installed. You also need to have the readline package installed.

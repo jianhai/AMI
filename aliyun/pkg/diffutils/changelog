@@ -1,0 +1,188 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.8.1-28.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.8.1-28.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.8.1-28.1
+- rebuild for alios6
+
+* 五 6月 25 2010 Tim Waugh <twaugh@redhat.com> 2.8.1-28
+- For 'cmp -s', compare file sizes only if both non-zero (bug #565366).
+
+* 三 4月 21 2010 Tim Waugh <twaugh@redhat.com> - 2.8.1-27
+- Build requires help2man (bug #584043).  Fixes empty diff man page.
+
+* 三 3月 03 2010 Tim Waugh <twaugh@redhat.com> - 2.8.1-26
+- Added comments for all patches.
+- Use upstream man pages.
+- Ship COPYING file.
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.8.1-25.1
+- Rebuilt for RHEL 6
+
+* 二 8月 11 2009 Tim Waugh <twaugh@redhat.com> 2.8.1-25
+- Only try to install the info file if it exists so that package
+  installation does not fail with --excludedocs (bug #515919).
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.8.1-24
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.8.1-23
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 13 2009 Tim Waugh <twaugh@redhat.com> 2.8.1-22
+- Fixed 'sdiff -E' (bug #484892).
+
+* 三 2月 13 2008 Tim Waugh <twaugh@redhat.com> 2.8.1-21
+- Rebuild for GCC 4.3.
+
+* 三 1月 02 2008 Tim Waugh <twaugh@redhat.com> 2.8.1-20
+- Converted spec file to UTF-8 (bug #225696).
+- Fixed summary (bug #225696).
+- Fixed PreReq (bug #225696).
+- Removed Prefix (bug #225696).
+- Fixed build root (bug #225696).
+- Avoid %makeinstall (bug #225696).
+- Fixed license tag (bug #225696).
+
+* 二 11月 06 2007 Tim Waugh <twaugh@redhat.com> 2.8.1-19
+- Rebuilt.
+
+* 二 11月 06 2007 Tim Waugh <twaugh@redhat.com> 2.8.1-18
+- Fixed multibyte speed improvement patch (bug #363831).
+
+* 二 8月 14 2007 Tim Waugh <twaugh@redhat.com> 2.8.1-17
+- Multibyte speed improvement (bug #252117).
+
+* 一 1月 22 2007 Tim Waugh <twaugh@redhat.com> 2.8.1-16
+- Make scriptlet unconditionally succeed (bug #223683).
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.8.1-15.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.8.1-15.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.8.1-15.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 4月 06 2005 Tim Waugh <twaugh@redhat.com> 2.8.1-15
+- Fixed sdiff exit code handling (bug #152967).
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 2.8.1-14
+- Rebuild for new GCC.
+
+* 三 2月 09 2005 Tim Waugh <twaugh@redhat.com> 2.8.1-13
+- Rebuilt.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 1月 08 2004 Tim Waugh <twaugh@redhat.com> 2.8.1-10
+- Fix mistaken use of '|' instead of '||'.
+
+* 六 10月 25 2003 Tim Waugh <twaugh@redhat.com> 2.8.1-9
+- Rebuilt.
+
+* 二 6月 17 2003 Tim Waugh <twaugh@redhat.com> 2.8.1-8
+- Rebuilt.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 11月 19 2002 Tim Waugh <twaugh@redhat.com> 2.8.1-5
+- i18n patch.
+
+* 二 10月 22 2002 Tim Waugh <twaugh@redhat.com> 2.8.1-4
+- Ship translations.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 4月 22 2002 Tim Waugh <twaugh@redhat.com> 2.8.1-1
+- 2.8.1.
+- No longer need immunix-owl-tmp patch.
+
+* 三 2月 27 2002 Tim Waugh <twaugh@redhat.com> 2.7.2-5
+- Rebuild in new environment.
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 11月 02 2001 Tim Waugh <twaugh@redhat.com> 2.7.2-3
+- Make sure %post scriplet doesn't fail if --excludedocs is used.
+
+* 五 6月 01 2001 Tim Waugh <twaugh@redhat.com> 2.7.2-2
+- Install diff.1, since it's no longer in man-pages.
+
+* 五 3月 30 2001 Tim Waugh <twaugh@redhat.com> 2.7.2-1
+- 2.7.2.
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 四 7月 06 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- fix %changelog entries (escape them)
+- update source location
+- remove manual stripping
+- add URL
+
+* 二 6月 06 2000 Than Ngo <than@redhat.de>
+- add %defattr
+- use rpm macros
+
+* 三 5月 31 2000 Ngo Than <than@redhat.de>
+- put man pages and info files in correct place
+- cleanup specfile
+
+* 四 2月 03 2000 Preston Brown <pbrown@redhat.com>
+- rebuild to gzip man pages.
+
+* 一 4月 19 1999 Jeff Johnson <jbj@redhat.com>
+- man pages not in %files.
+- but avoid conflict for diff.1
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 14)
+
+* 日 3月 14 1999 Jeff Johnson <jbj@redhat.com>
+- add man pages (#831).
+- add %configure and Prefix.
+
+* 四 12月 17 1998 Cristian Gafton <gafton@redhat.com>
+- build for glibc 2.1
+
+* 二 7月 14 1998 Bill Kawakami <billk@home.com>
+- included the four man pages stolen from Slackware
+
+* 二 5月 05 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 日 5月 03 1998 Cristian Gafton <gafton@redhat.com>
+- fixed spec file to reference/use the $RPM_BUILD_ROOT always
+
+* 三 12月 31 1997 Otto Hammersmith <otto@redhat.com>
+- fixed where it looks for 'pr' (/usr/bin, rather than /bin)
+
+* 五 10月 17 1997 Donnie Barnes <djb@redhat.com>
+- added BuildRoot
+
+* 日 9月 14 1997 Erik Troan <ewt@redhat.com>
+- uses install-info
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

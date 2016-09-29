@@ -1,0 +1,295 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0-1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 6.0-1.1
+- rebuild for alios6
+
+* 二 5月 25 2010 Karel Klic <kklic@redhat.com> - 6.0-1
+- Rebase to upstream 6.0
+  Resolves: #594860
+- Fixed a buffer overflow (rhbz#532380, unzip-6.0-attribs-overflow.patch)
+- Generate debuginfos (rhbz#540220, unzip-6.0-nostrip.patch)
+- New upstream version
+- Compiled using `make generic_gcc` (includes asm)
+- Removed unzip542-rpmoptflags.patch, because RPM_OPT_FLAGS 
+  are provided using command line
+- Removed unzip-5.51-link-segv.patch, because the link file 
+  is not reopened in the current version
+- Removed unzip-5.51-link-segv2.patch, the bug was already fixed 
+  in open_outfile in 5.52
+- Removed unzip-5.52-toctou.patch (CAN-2005-2475), the vulnerability 
+  is fixed in the current version
+- Removed unzip-5.52-near-4GB.patch, unzip-5.52-near-4GB2.patch, 
+  unzip-5.52-4GB3.patch, and unzip-5.52-4GB_types.patch, because 
+  the current version supports large files
+- Removed unzip-5.52-long-filename.patch, the current version
+  fixes the vulnerability by checking the length of command line 
+  arguments in unzip.c
+- Removed unzip-5.52-makefile.patch, because we no longer create
+  the link manually
+- Removed unzip-5.52-open.patch, the current version uses umask.
+- Removed unzip-5.52-cve-2008-0888.patch, the current version
+  fixes this vulnerability
+- Ported unzip-5.52-249057.patch to current version (unzip-6.0-close)
+
+* 二 1月 05 2010 Karel Klic <kklic@redhat.com> - 5.52-12
+- Fixed Source URL in the spec file
+  Related: rhbz#543948
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 5.52-11.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.52-11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.52-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 3月 19 2008 Ivana Varekova <varekova@redhat.com> - 5.52-9
+- fix crash (double free) on malformed zip archive
+  CVE-2008-0888 (#431438)
+
+* 五 2月 08 2008 Ivana Varekova <varekova@redhat.com> - 5.52-8
+- fix output when out of space error appears
+
+* 三 1月 23 2008 Ivana Varekova <varekova@redhat.com> - 5.52-7
+- fix another long file support problem
+
+* 二 1月 22 2008 Ivana Varekova <varekova@redhat.com> - 5.52-6
+- add 4GB patch (#429674)
+
+* 二 9月 04 2007 Ivana Varekova <varekova@redhat.com> - 5.52-5
+- fix open call
+
+* 三 2月 07 2007 Ivana Varekova <varekova@redhat.com> - 5.52-4
+- incorporate the next peckage review comment
+
+* 二 2月 06 2007 Ivana Varekova <varekova@redhat.com> - 5.52-3
+- Resolves: 226516 
+  Incorporate the package review
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 5.52-2.2.1
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 5.52-2.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 5.52-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 2月 06 2006 Ivana Varekova <varekova@redhat.com> 5.52-2
+- fix bug 180078 - unzip -l causing error
+- fix CVE-2005-4667 - unzip long file name buffer overflow
+
+* 四 12月 22 2005 Ivana Varekova <varekova@redhat.com> 5.52-1
+- update to 5.52
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 8月 03 2005 Ivana Varekova <varekova@redhat.com> 5.51-12
+- fix bug 164928 - TOCTOU issue in unzip
+
+* 一 5月 09 2005 Ivana Varekova <varekova@redhat.com> 5.51-11
+- fix bug 156959 â€“ invalid file mode on created files
+
+* 一 3月 07 2005 Ivana Varekova <varekova@redhat.com> 5.51-10
+- rebuilt
+
+* 四 2月 10 2005 Ivana Varekova <varekova@redhat.com> 5.51-9
+- fix the other problem with unpacking zipfiles containing symlinks
+  (bug #134073)
+
+* 四 2月 03 2005 Ivana Varekova <varekova@redhat.com> 5.51-8
+- fix segfault with unpacking of zipfiles containing dangling symlinks
+  (bug #134073)
+
+* 四 12月 02 2004 Lon Hohberger <lhh@redhat.com> 5.51-6
+- Rebuild
+
+* 四 12月 02 2004 Lon Hohberger <lhh@redhat.com> 5.51-5
+- Fix segfault on extraction of symlinks
+
+* 一 6月 21 2004 Lon Hohberger <lhh@redhat.com> 5.51-4
+- Extend max file/archive size to 2^32-8193 (4294959103) bytes
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 08 2004 Lon Hohberger <lhh@redhat.com> 5.51-2
+- Rebuild
+
+* 二 6月 08 2004 Lon Hohberger <lhh@redhat.com> 5.51-1.1
+- Update to 5.51; remove dotdot patch.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 11月 17 2003 Lon Hohberger <lhh@redhat.com> 5.50-36
+- Rebuild for FC-next
+
+* 五 8月 01 2003 Lon Hohberger <lhh@redhat.com> 5.50-35
+- Rebuild for Severn
+
+* 五 8月 01 2003 Lon Hohberger <lhh@redhat.com> 5.50-34
+- Rebuild for Taroon
+
+* 五 8月 01 2003 Lon Hohberger <lhh@redhat.com> 5.50-33
+- Rebuild for 9 errata
+
+* 五 8月 01 2003 Lon Hohberger <lhh@redhat.com> 5.50-32
+- Rebuild for 8.0 errata
+
+* 五 8月 01 2003 Lon Hohberger <lhh@redhat.com> 5.50-31
+- Rebuild for 7.3 errata
+
+* 三 7月 30 2003 Lon Hohberger <lhh@redhat.com> 5.50-30
+- SECURITY Round 3: Fix up original patch (from 5.50-9) to fix
+^V/ exploit, but still allow '-:', which the other patch (5.50-18)
+does not allow.  Never allow explicit writing to the root
+directory; force users to change there and extract it manually.
+
+* 三 7月 30 2003 Lon Hohberger <lhh@redhat.com> 5.50-29
+- Rebuild for Severn
+
+* 三 7月 30 2003 Lon Hohberger <lhh@redhat.com> 5.50-28
+- Rebuild
+
+* 三 7月 30 2003 Lon Hohberger <lhh@redhat.com> 5.50-27
+- Rebuild for 9
+
+* 三 7月 30 2003 Lon Hohberger <lhh@redhat.com> 5.50-26
+- Rebuild for 8.0
+
+* 二 7月 22 2003 Lon Hohberger <lhh@redhat.com> 5.50-23
+- Rebuild for 7.3
+
+* 一 7月 21 2003 Lon Hohberger <lhh@redhat.com> 5.50-22
+- Rebuild for Severn
+
+* 一 7月 21 2003 Lon Hohberger <lhh@redhat.com> 5.50-21
+- Rebuild
+
+* 一 7月 21 2003 Lon Hohberger <lhh@redhat.com> 5.50-20
+- Rebuild for 9
+
+* 一 7月 21 2003 Lon Hohberger <lhh@redhat.com> 5.50-19
+- Rebuild for 8.0
+
+* 一 7月 21 2003 Lon Hohberger <lhh@redhat.com> 5.50-18
+- SECURITY: Incorporate far cleaner patch from Ben Laurie
+<ben@algroup.co.uk> which also fixes ^V/ (quote-slash).
+Patch checks post-decode as opposed to inline as previous
+patch does.
+
+* 一 6月 16 2003 Lon Hohberger <lhh@redhat.com> 5.50-17
+- Rebuilt per request
+
+* 四 6月 12 2003 Lon Hohberger <lhh@redhat.com> 5.50-16
+- Rebuilt
+
+* 四 6月 12 2003 Lon Hohberger <lhh@redhat.com> 5.50-15
+- Rebuilt
+
+* 四 6月 12 2003 Lon Hohberger <lhh@redhat.com> 5.50-14
+- Rebuilt: Red Hat Linux 9
+
+* 四 6月 12 2003 Lon Hohberger <lhh@redhat.com> 5.50-13
+- Rebuilt: Red Hat Enterprise Linux 2.1
+
+* 四 6月 12 2003 Lon Hohberger <lhh@redhat.com> 5.50-12
+- Rebuilt Red Hat Linux 8.0
+
+* 四 6月 12 2003 Lon Hohberger <lhh@redhat.com> 5.50-11
+- Rebuilt Red Hat Linux 7.3
+
+* 三 6月 11 2003 Lon Hohberger <lhh@redhat.com> 5.50-10
+- Rebuilt
+
+* 三 6月 11 2003 Lon Hohberger <lhh@redhat.com> 5.50-9
+- SECURITY: Scour start of filename for ../ patterns which
+include quote and/or control characters.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 19 2002 Tim Powers <timp@redhat.com>
+- bump and rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 4月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 5.50-3
+- Rebuild
+
+* 二 4月 02 2002 Trond Eivind Glomsrød <teg@redhat.com> 5.50-2
+- Make it not strip
+
+* 三 3月 13 2002 Trond Eivind Glomsrød <teg@redhat.com> 5.50-1
+- 5.50
+
+* 四 2月 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 5.42-3
+- Rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 21 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- 5.42
+- Don't strip binaries explicitly
+- build without assembly, it doesn't seem to increase performance 
+- make it respect RPM_OPT_FLAGS, define _GNU_SOURCE
+- use %{_tmppath}
+- "License:" replaces "Copyright:"
+- Update URL
+- include zipgrep
+- COPYING doesn't exist anymore, include LICENSE instead
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 11 2000 BIll Nottingham <notting@redhat.com>
+- rebuild in new env.; FHS fixes.
+
+* 二 4月 18 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 4.51 (an acceptable license at last...)
+
+* 四 2月 03 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed man pages
+
+* 五 7月 30 1999 Bill Nottingham <notting@redhat.com>
+- update to 5.40
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 5)
+
+* 四 12月 17 1998 Michael Maher <mike@redhat.com>
+- built for 6.0
+
+* 二 8月 11 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 10月 21 1997 Erik Troan <ewt@redhat.com>
+- builds on non i386 platforms
+
+* 一 10月 20 1997 Otto Hammersmith <otto@redhat.com>
+- updated the version
+
+* 四 7月 10 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

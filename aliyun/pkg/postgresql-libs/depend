@@ -1,0 +1,29 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcrypt.so.1()(64bit)  
+libcrypto.so.10()(64bit)  
+libcrypto.so.10(libcrypto.so.10)(64bit)  
+libecpg.so.6()(64bit)  
+libecpg_compat.so.3()(64bit)  
+libgssapi_krb5.so.2()(64bit)  
+libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit)  
+libldap_r-2.4.so.2()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libpgtypes.so.3()(64bit)  
+libpq.so.5()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libssl.so.10()(64bit)  
+libssl.so.10(libssl.so.10)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

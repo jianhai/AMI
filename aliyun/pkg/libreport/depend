@@ -1,0 +1,31 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+config(libreport) = 2.0.9-19.2.alios6
+libabrt_dbus.so.0()(64bit)  
+libabrt_web.so.0()(64bit)  
+libbtparser.so.2()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libcurl.so.4()(64bit)  
+libdbus-1.so.3()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libproxy.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libreport-compat = 2.0.9-19.2.alios6
+libreport-plugin-reportuploader = 2.0.9-19.2.alios6
+libreport-python = 2.0.9-19.2.alios6
+libreport.so.0()(64bit)  
+librt.so.1()(64bit)  
+libxml2.so.2()(64bit)  
+libxmlrpc.so.3()(64bit)  
+libxmlrpc_client.so.3()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

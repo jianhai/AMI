@@ -1,0 +1,193 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.8-16.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.8-16.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.2.8-16.1
+- rebuild for alios6
+
+* 二 6月 22 2010 Caolan McNamara <caolanm@redhat.com> - 1.2.8-16
+- Resolves: rhbz#605249 clarify licence
+- Resolves: rhbz#605815 survive unset LANG
+
+* 四 6月 03 2010 Caolan McNamara <caolanm@redhat.com> - 1.2.8-15
+- Resolves: rhbz#599383 backport strict aliasing fix
+
+* 四 5月 06 2010 Caolan McNamara <caolanm@redhat.com> - 1.2.8-14
+- Resolves: rhbz#589475 crash in overlong line
+
+* 二 12月 08 2009 Caolan McNamara <caolanm@redhat.com> - 1.2.8-13
+- Resolves: rhbz#544372 survive having no HOME
+
+* 四 7月 30 2009 Caolan McNamara <caolanm@redhat.com> - 1.2.8-12
+- handle some other interesting edge-cases
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.8-11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 23 2009 Caolan McNamara <caolanm@redhat.com> - 1.2.8-10
+- run tests in check
+
+* 四 7月 09 2009 Caolan McNamara <caolanm@redhat.com> - 1.2.8-9
+- Resolves: rhbz#510360 unowned dirs
+- fix up rpmlint warnings
+
+* 二 7月 07 2009 Caolan McNamara <caolanm@redhat.com> - 1.2.8-8
+- Resolves: rhbz#509882 ignore an empty LANGUAGE variable
+
+* 五 6月 26 2009 Caolan McNamara <caolanm@redhat.com> - 1.2.8-7
+- Related: rhbz#498556 default to something sensible in "C" locale
+  for language
+
+* 三 6月 24 2009 Caolan McNamara <caolanm@redhat.com> - 1.2.8-6
+- Resolves: rhbz#507829 fortify fixes
+
+* 五 5月 01 2009 Caolan McNamara <caolanm@redhat.com> - 1.2.8-5
+- Resolves: rhbz#498556 fix default language detection
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.8-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 11月 23 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.8-3
+- tweak summary
+
+* 三 11月 19 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.8-2
+- Resolves: rhbz#471085 in ispell compatible mode (-a), ignore
+  -m option which means something different to ispell
+
+* 日 11月 02 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.8-1
+- latest version
+
+* 六 10月 18 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.7-5
+- sort as per "C" locale
+
+* 五 10月 17 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.7-4
+- make wordlist2hunspell remove blank lines
+
+* 一 9月 15 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.7-3
+- Workaround rhbz#462184 uniq/sort problems with viramas
+
+* 二 9月 09 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.7-2
+- add wordlist2hunspell
+
+* 六 8月 23 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.7-1
+- latest version
+
+* 二 7月 29 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.6-1
+- latest version
+
+* 日 7月 27 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.5-1
+- latest version
+
+* 二 7月 22 2008 Kristian Høgsberg <krh@redhat.com> - 1.2.4.2-2
+- Drop ABI breaking hunspell-1.2.2-xulrunner.pita.patch and fix the
+  hunspell include in xulrunner.
+
+* 三 6月 18 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.4.2-1
+- latest version
+
+* 二 6月 17 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.4-1
+- latest version
+
+* 五 5月 16 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.2-3
+- Resolves: rhbz#446821 fix crash
+
+* 三 5月 14 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.2-2
+- give xulrunner what it needs so we can get on with it
+
+* 五 4月 18 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.2-1
+- latest version
+- drop integrated hunspell-1.2.1-1863239.badstructs.patch
+
+* 三 3月 05 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.1-6
+- add ispellaff2myspell to devel
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.2.1-5
+- Autorebuild for GCC 4.3
+
+* 四 1月 03 2008 Caolan McNamara <caolanm@redhat.com> - 1.2.1-4
+- add hunspell-1.2.1-1863239.badstructs.patch
+
+* 五 11月 09 2007 Caolan McNamara <caolanm@redhat.com> - 1.2.1-2
+- pkg-config cockup
+
+* 一 11月 05 2007 Caolan McNamara <caolanm@redhat.com> - 1.2.1-1
+- latest version
+
+* 一 10月 08 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.12.2-2
+- lang fix for man pages from Ville Skyttä
+
+* 三 9月 05 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.12.2-1
+- next version
+
+* 二 8月 28 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.11.2-1
+- next version
+
+* 五 8月 24 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.10-1
+- next version
+
+* 四 8月 02 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.9-2
+- clarify license
+
+* 三 7月 25 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.9-1
+- latest version
+
+* 三 7月 18 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.8.2-1
+- latest version
+
+* 二 7月 17 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.8-1
+- latest version
+
+* 六 7月 07 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.7-1
+- latest version
+- drop integrated hunspell-1.1.5.freem.patch
+
+* 五 6月 29 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.6-1
+- latest version
+- drop integrated hunspell-1.1.4-defaultdictfromlang.patch
+- drop integrated hunspell-1.1.5-badheader.patch
+- drop integrated hunspell-1.1.5.encoding.patch
+
+* 五 6月 29 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.5.3-5
+- fix memory leak
+  http://sourceforge.net/tracker/index.php?func=detail&aid=1745263&group_id=143754&atid=756395
+
+* 三 6月 06 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.5.3-4
+- Resolves: rhbz#212984 discovered problem with missing wordchars
+
+* 二 5月 22 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.5.3-3
+- Resolves: rhbz#240696 extend encoding patch to promote and add
+  dictionary 8bit WORDCHARS to the ucs-2 word char list
+
+* 一 5月 21 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.5.3-2
+- Resolves: rhbz#240696 add hunspell-1.1.5.encoding.patch
+
+* 一 5月 21 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.5.3-1
+- patchlevel release
+
+* 二 3月 20 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.5-2
+- some junk in delivered headers
+
+* 二 3月 20 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.5-1
+- next version
+
+* 五 2月 09 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.4-6
+- some spec cleanups
+
+* 五 1月 19 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.4-5
+- .pc
+
+* 四 1月 11 2007 Caolan McNamara <caolanm@redhat.com> - 1.1.4-4
+- fix out of range
+
+* 五 12月 15 2006 Caolan McNamara <caolanm@redhat.com> - 1.1.4-3
+- hunspell#1616353 simple c api for hunspell
+
+* 三 11月 29 2006 Caolan McNamara <caolanm@redhat.com> - 1.1.4-2
+- add hunspell-1.1.4-defaultdictfromlang.patch to take locale as default
+  dictionary
+
+* 三 10月 25 2006 Caolan McNamara <caolanm@redhat.com> - 1.1.4-1
+- initial version
+

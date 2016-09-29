@@ -1,0 +1,62 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+atk >= 1.29.4-2
+glib2 >= 2.23.6-1
+hicolor-icon-theme  
+libX11.so.6()(64bit)  
+libXcomposite.so.1()(64bit)  
+libXcursor.so.1()(64bit)  
+libXdamage.so.1()(64bit)  
+libXext.so.6()(64bit)  
+libXfixes.so.3()(64bit)  
+libXi.so.6()(64bit)  
+libXinerama.so.1()(64bit)  
+libXrandr >= 1.2.99.4-2
+libXrandr.so.2()(64bit)  
+libXrender.so.1()(64bit)  
+libatk-1.0.so.0()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.11)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libcairo.so.2()(64bit)  
+libcups.so.2()(64bit)  
+libfontconfig.so.1()(64bit)  
+libfreetype.so.6()(64bit)  
+libgailutil.so.18()(64bit)  
+libgdk-x11-2.0.so.0()(64bit)  
+libgdk_pixbuf-2.0.so.0()(64bit)  
+libgdk_pixbuf_xlib-2.0.so.0()(64bit)  
+libgio-2.0.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libgtk-x11-2.0.so.0()(64bit)  
+libjasper.so.1()(64bit)  
+libjpeg.so.62()(64bit)  
+libjpeg.so.62(LIBJPEG_6.2)(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libpango-1.0.so.0()(64bit)  
+libpangocairo-1.0.so.0()(64bit)  
+libpangoft2-1.0.so.0()(64bit)  
+libpng12.so.0()(64bit)  
+libpng12.so.0(PNG12_0)(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+libtiff >= 3.6.1
+libtiff.so.3()(64bit)  
+pango >= 1.20.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

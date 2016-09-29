@@ -1,0 +1,17 @@
+/bin/sh  
+/bin/sh  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcdda_interface.so.0()(64bit)  
+libcdda_paranoia.so.0()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

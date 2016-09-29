@@ -1,0 +1,11 @@
+/sbin/lspci
+/sbin/setpci
+/usr/sbin/update-pciids
+/usr/share/doc/pciutils-3.1.4
+/usr/share/doc/pciutils-3.1.4/COPYING
+/usr/share/doc/pciutils-3.1.4/ChangeLog
+/usr/share/doc/pciutils-3.1.4/README
+/usr/share/doc/pciutils-3.1.4/pciutils.lsm
+/usr/share/man/man8/lspci.8.gz
+/usr/share/man/man8/setpci.8.gz
+/usr/share/man/man8/update-pciids.8.gz

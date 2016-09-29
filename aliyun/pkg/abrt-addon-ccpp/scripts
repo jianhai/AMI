@@ -1,0 +1,27 @@
+postinstall scriptlet (using /bin/sh):
+# this is required for transition from 1.1.x to 2.x
+# because /cache/abrt-di/* was created under root with root:root
+# so 2.x fails when it tries to extract debuginfo there..
+chown -R abrt:abrt /var/cache/abrt-di
+if [ $1 -eq 1 ]; then # Is this a clean install (as opposed to upgrade?)
+    /sbin/chkconfig --add abrt-ccpp
+fi
+# FIXME: Workaround for update from abrt-1.1.x, can be removed in
+# rhel6.3 update.  When we are updating from ABRT 1 to ABRT 2, assume
+# that abrtd service is enabled and thus enable the new abrt-ccpp
+# service.  If abrtd is running on the system, run abrt-ccpp service
+# as well, because what was a part of abrtd became a separate service.
+if [ $1 -gt 1 ]; then # Is this an upgrade?
+   /sbin/chkconfig --add abrt-ccpp
+   /sbin/pidof abrtd >/dev/null 2>&1
+   if [ $? -eq 0 ]; then # Is abrtd running?
+      service abrt-ccpp restart >/dev/null 2>&1 || :
+   fi
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" -eq "0" ] ; then
+    service abrt-ccpp stop >/dev/null 2>&1
+    /sbin/chkconfig --del abrt-ccpp
+fi
+posttrans scriptlet (using /bin/sh):
+service abrt-ccpp condrestart >/dev/null 2>&1 || :

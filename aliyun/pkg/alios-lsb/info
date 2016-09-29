@@ -1,0 +1,17 @@
+Name        : alios-lsb                    Relocations: (not relocatable)
+Version     : 4.0                               Vendor: Alibaba
+Release     : 3.5.alios6                    Build Date: 2014年08月14日 星期四 15时09分42秒
+Install Date: 2015年03月25日 星期三 11时01分50秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Base       Source RPM: alios-lsb-4.0-3.5.alios6.src.rpm
+Size        : 22814                            License: GPL
+Signature   : RSA/8, 2014年08月18日 星期一 16时59分38秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.linuxfoundation.org/collaborate/workgroups/lsb
+Summary     : LSB base libraries support for CentOS
+Description :
+The Linux Standard Base (LSB) is an attempt to develop a set of
+standards that will increase compatibility among Linux distributions.
+The alios-lsb package provides utilities needed for LSB Compliant
+Applications.  It also contains requirements that will ensure that all
+components required by the LSB that are provided by CentOS are
+installed on the system.

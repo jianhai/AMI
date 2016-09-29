@@ -1,0 +1,25 @@
+/usr/bin/pkg-config  
+dbus-devel  
+dbus-glib = 0.86-6.2.alios6
+glib2-devel  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libdbus-1.so.3()(64bit)  
+libdbus-glib-1.so.2()(64bit)  
+libexpat.so.1()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+librt.so.1()(64bit)  
+pkgconfig  
+pkgconfig(dbus-1)  
+pkgconfig(glib-2.0)  
+pkgconfig(gobject-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

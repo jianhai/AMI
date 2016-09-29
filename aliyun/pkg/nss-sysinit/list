@@ -1,0 +1,5 @@
+/etc/pki/nssdb/cert9.db
+/etc/pki/nssdb/key4.db
+/etc/pki/nssdb/pkcs11.txt
+/usr/bin/setup-nsssysinit.sh
+/usr/lib64/libnsssysinit.so

@@ -1,0 +1,14 @@
+Name        : krb5-libs                    Relocations: (not relocatable)
+Version     : 1.10.3                            Vendor: Alibaba
+Release     : 15.2.alios6.1                 Build Date: 2014年07月28日 星期一 22时56分37秒
+Install Date: 2015年03月25日 星期三 11时09分21秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Libraries   Source RPM: krb5-1.10.3-15.2.alios6.1.src.rpm
+Size        : 2126628                          License: MIT
+Signature   : RSA/8, 2014年08月01日 星期五 14时55分32秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://web.mit.edu/kerberos/www/
+Summary     : The shared libraries used by Kerberos 5
+Description :
+Kerberos is a network authentication system. The krb5-libs package
+contains the shared libraries needed by Kerberos 5. If you are using
+Kerberos, you need to install this package.

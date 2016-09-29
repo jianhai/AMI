@@ -1,0 +1,43 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+config(krb5-libs) = 1.10.3-15.2.alios6.1
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libc.so.6(GLIBC_2.9)(64bit)  
+libcom_err.so.2()(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+libgssapi_krb5.so.2()(64bit)  
+libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit)  
+libgssrpc.so.4()(64bit)  
+libgssrpc.so.4(gssrpc_4_MIT)(64bit)  
+libk5crypto.so.3()(64bit)  
+libk5crypto.so.3(k5crypto_3_MIT)(64bit)  
+libkadm5clnt_mit.so.8()(64bit)  
+libkadm5srv_mit.so.8()(64bit)  
+libkadm5srv_mit.so.8(kadm5srv_mit_8_MIT)(64bit)  
+libkdb5.so.6()(64bit)  
+libkdb5.so.6(kdb5_6_MIT)(64bit)  
+libkeyutils.so.1()(64bit)  
+libkeyutils.so.1(KEYUTILS_0.3)(64bit)  
+libkrb5.so.3()(64bit)  
+libkrb5.so.3(krb5_3_MIT)(64bit)  
+libkrb5support.so.0()(64bit)  
+libkrb5support.so.0(krb5support_0_MIT)(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libresolv.so.2()(64bit)  
+libresolv.so.2(GLIBC_2.2.5)(64bit)  
+libselinux.so.1()(64bit)  
+libverto-k5ev.so.0()(64bit)  
+libverto.so.0()(64bit)  
+libverto.so.0(verto_0_MIT)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

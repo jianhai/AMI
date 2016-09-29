@@ -1,0 +1,30 @@
+/bin/sh  
+/sbin/ldconfig  
+/usr/bin/killall  
+config(GConf2) = 2.28.0-6.3.alios6
+dbus  
+libORBit-2.so.0()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libdbus-1.so.3()(64bit)  
+libdbus-glib-1.so.2()(64bit)  
+libgconf-2.so.4()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+liblber-2.4.so.2()(64bit)  
+libldap-2.4.so.2()(64bit)  
+libpolkit-gobject-1.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libxml2.so.2()(64bit)  
+libxml2.so.2(LIBXML2_2.4.30)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+sgml-common  
+rpmlib(PayloadIsXz) <= 5.2-1

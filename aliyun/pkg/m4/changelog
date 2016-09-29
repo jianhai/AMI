@@ -1,0 +1,185 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.13-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.13-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.4.13-5.1
+- rebuild for alios6
+
+* 四 6月 03 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.13-5
+- Include sys/stat.h in path.c
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.4.13-4.1
+- Rebuilt for RHEL 6
+
+* 四 9月 03 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.13-4
+- Fix errors installing m4 with --excludedocs
+  Resolves: #516013
+
+* 三 8月 12 2009 Ville Skyttä <ville.skytta@iki.fi> - 1.4.13-3
+- Use xz compressed upstream tarball.
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.13-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 5月 27 2009 Stepan Kasal <skasal@redhat.com> - 1.4.13-1
+- new upstream release
+- drop the ununsed Source1: %{SOURCE0}.sig
+- enable %check again
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.12-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 11月 05 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.12-1
+- Update to m4-1.4.12
+  Resolves: #469944
+- Merge review
+  Resolves: #226115
+
+* 三 4月 23 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.11-1
+- Update to m4-1.4.11 (removed vasnprintf patch, it's included in
+  upstream source)
+  Resolves: #443589
+
+* 一 2月 11 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.10-3
+- Fix Buildroot
+
+* 一 12月 17 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.10-2
+- Fix vasnprintf puts %n into a writeable format string in all cases
+  Resolves: #345651
+
+* 三 8月 22 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.10-1
+- Update to m4-1.4.10
+- Fix license to GPL version 3 or later
+
+* 二 6月 05 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.9-1
+- Update to m4-1.4.9
+
+* 四 4月 19 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 1.4.8-2
+- Rebuild
+
+* 日 11月 26 2006 Miloslav Trmac <mitr@redhat.com> - 1.4.8-1
+- Update to m4-1.4.8
+
+* 三 10月 25 2006 Miloslav Trmac <mitr@redhat.com> - 1.4.7-2
+- Drop %check again.  SIGPIPE is set to SIG_IGN in mock, which breaks the
+  sysval test.
+
+* 二 10月 24 2006 Miloslav Trmac <mitr@redhat.com> - 1.4.7-1
+- Update to m4-1.4.7
+- Add %check
+- Fix a rpmlint warning about Summary:
+
+* 一 7月 17 2006 Miloslav Trmac <mitr@redhat.com> - 1.4.5-3
+- Use the install-info scriptlets recommended in the Fedora Extras wiki
+- Move $RPM_BUILD_ROOT cleaning from %prep to %install
+
+* 一 7月 17 2006 Tomas Mraz <tmraz@redhat.com> - 1.4.5-2
+- remove infodir/dir so it isn't included in the package
+
+* 一 7月 17 2006 Miloslav Trmac <mitr@redhat.com> - 1.4.5-1
+- Update to m4-1.4.5
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.4.4-1.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.4.4-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.4.4-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 六 10月 22 2005 Miloslav Trmac <mitr@redhat.com> - 1.4.4-1
+- Update to m4-1.4.4
+
+* 日 9月 18 2005 Miloslav Trmac <mitr@redhat.com> - 1.4.3-2
+- Ship COPYING and ChangeLog
+
+* 五 4月 01 2005 Miloslav Trmac <mitr@redhat.com> - 1.4.3-1
+- Update to m4-1.4.3
+
+* 三 3月 02 2005 Karsten Hopp <karsten@redhat.de> 1.4.2-3
+- build with gcc-4
+
+* 日 2月 27 2005 Florian La Roche <laroche@redhat.com>
+- rebuild
+
+* 日 12月 12 2004 Miloslav Trmac <mitr@redhat.com> - 1.4.2-1
+- Update to m4-1.4.2
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 11月 11 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- add french translation file
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 6月 19 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- do not strip apps
+
+* 五 6月 14 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 3月 07 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- use _infodir on popular request #47465
+
+* 六 1月 05 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- add URL tag
+- improved spec file
+- add hack to update config.guess config.sub
+- fix to build with newer autoconf versions
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 二 2月 13 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- signal patch is not necessary anymore
+- fix printf buffer overflow problem
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 六 6月 17 2000 Matt Wilson <msw@redhat.com>
+- added defattr
+
+* 一 6月 05 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- FHS compliance
+- 1.4.1
+- some fixes to spec file
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 12)
+
+* 四 12月 17 1998 Cristian Gafton <gafton@redhat.com>
+- build against glibc 2.1
+
+* 五 4月 24 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 4月 10 1998 Cristian Gafton <gafton@redhat.com>
+- Manhattan build
+
+* 二 10月 21 1997 Cristian Gafton <gafton@redhat.com>
+- added info file handling and BuildRoot
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

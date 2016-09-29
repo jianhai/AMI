@@ -1,0 +1,92 @@
+* 四 8月 21 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.4-2.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.4-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.4-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.2.4-2.1
+- rebuild for alios6
+
+* 三 4月 28 2010 Deepak Bhole <dbhole@redhat.com> 3.2.4-2
+- Import Colin Walters' gcj build changes from Fedora spec file
+
+* 六 11月 14 2009 Levente Farkas <lfarkas@lfarkas.org> - 3.2.4-1
+- Rebase on upstream 3.2.4
+
+* 四 10月 29 2009 Lubomir Rintel <lkundrak@v3.sk> - 3.0.9-6
+- Add examples subpackage
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.9-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.9-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 12月 30 2008 Colin Walters <walters@redhat.com> - 3.0.9-3
+- Add patch to allow opening current process
+
+* 日 11月 30 2008 Colin Walters <walters@redhat.com> - 3.0.9-2
+- Fix library mapping, remove upstreamed patches
+
+* 五 10月 31 2008 Colin Walters <walters@redhat.com> - 3.0.9-1
+- Rebase on upstream 3.0.9
+
+* 二 10月 14 2008 Colin Walters <walters@redhat.com> - 3.0.4-10.svn729
+- Add patch to support String[] returns
+
+* 三 10月 01 2008 Colin Walters <walters@redhat.com> - 3.0.4-9.svn729
+- Add new patch to support NativeMapped[] which I want
+
+* 三 10月 01 2008 Colin Walters <walters@redhat.com> - 3.0.4-8.svn729
+- Update to svn r729
+- drop upstreamed typemapper patch
+
+* 四 9月 18 2008 Colin Walters <walters@redhat.com> - 3.0.4-7.svn700
+- Add patch to make typemapper always accessible
+- Add patch to skip cracktastic X11 test bits which currently fail
+
+* 二 9月 09 2008 Colin Walters <walters@redhat.com> - 3.0.4-5.svn700
+- Update to upstream SVN r700; drop all now upstreamed patches
+
+* 六 9月 06 2008 Colin Walters <walters@redhat.com> - 3.0.4-3.svn630
+- A few more patches for JGIR
+
+* 四 9月 04 2008 Colin Walters <walters@redhat.com> - 3.0.4-2.svn630
+- Add two (sent upstream) patches that I need for JGIR
+
+* 四 7月 31 2008 Colin Walters <walters@redhat.com> - 3.0.4-1.svn630
+- New upstream version, drop upstreamed patch parts
+- New patch jna-3.0.4-nomixedjar.patch which ensures that we don't
+  include the .so in the .jar
+
+* 五 4月 04 2008 Colin Walters <walters@redhat.com> - 3.0.2-7
+- Add patch to use JPackage-compatible JNI library path
+- Do build debuginfo package
+- Refactor build patch greatly so it's hopefully upstreamable
+- Install .so directly to JNI directory, rather than inside jar
+- Clean up Requires/BuildRequires (thanks Mamoru Tasaka)
+
+* 日 3月 30 2008 Conrad Meyer <konrad@tylerc.org> - 3.0.2-6
+- -javadocs should be -javadoc.
+- %files section cleaned a bit.
+
+* 一 3月 17 2008 Conrad Meyer <konrad@tylerc.org> - 3.0.2-5
+- -javadocs package should be in group "Documentation".
+
+* 一 3月 17 2008 Conrad Meyer <konrad@tylerc.org> - 3.0.2-4
+- License should be LGPLv2+, not GPLv2+.
+- Several minor fixes.
+- Fix Requires in javadoc package.
+
+* 日 3月 16 2008 Conrad Meyer <konrad@tylerc.org> - 3.0.2-3
+- Don't use internal libffi.
+
+* 四 3月 06 2008 Conrad Meyer <konrad@tylerc.org> - 3.0.2-2
+- Don't pull in jars from the web.
+
+* 一 3月 03 2008 Conrad Meyer <konrad@tylerc.org> - 3.0.2-1
+- Initial package.
+

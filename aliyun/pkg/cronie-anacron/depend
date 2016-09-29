@@ -1,0 +1,21 @@
+/bin/bash  
+/bin/sh  
+config(cronie-anacron) = 1.4.4-7.4.alios6
+coreutils  
+cronie = 1.4.4-7.4.alios6
+crontabs  
+libaudit.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libdl.so.2()(64bit)  
+libpam.so.0()(64bit)  
+libselinux.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

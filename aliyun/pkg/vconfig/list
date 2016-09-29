@@ -1,0 +1,12 @@
+/sbin/vconfig
+/usr/share/doc/vconfig-1.9
+/usr/share/doc/vconfig-1.9/CHANGELOG
+/usr/share/doc/vconfig-1.9/README
+/usr/share/doc/vconfig-1.9/contrib
+/usr/share/doc/vconfig-1.9/contrib/README
+/usr/share/doc/vconfig-1.9/contrib/network
+/usr/share/doc/vconfig-1.9/contrib/vlan_2.2-full.patch
+/usr/share/doc/vconfig-1.9/contrib/vlan_2.2-module.patch
+/usr/share/doc/vconfig-1.9/vlan.html
+/usr/share/doc/vconfig-1.9/vlan_test.pl
+/usr/share/man/man8/vconfig.8.gz

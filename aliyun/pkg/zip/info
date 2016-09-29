@@ -1,0 +1,18 @@
+Name        : zip                          Relocations: (not relocatable)
+Version     : 3.0                               Vendor: Alibaba
+Release     : 1.4.alios6                    Build Date: 2014年07月28日 星期一 01时40分08秒
+Install Date: 2015年03月25日 星期三 10时59分55秒      Build Host: x86-004.build.alibaba
+Group       : Applications/Archiving        Source RPM: zip-3.0-1.4.alios6.src.rpm
+Size        : 823164                           License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 19时08分19秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.info-zip.org/Zip.html
+Summary     : A file compression and packaging utility compatible with PKZIP
+Description :
+The zip program is a compression and file packaging utility.  Zip is
+analogous to a combination of the UNIX tar and compress commands and
+is compatible with PKZIP (a compression and file packaging utility for
+MS-DOS systems).
+
+Install the zip package if you need to compress files using the zip
+program.

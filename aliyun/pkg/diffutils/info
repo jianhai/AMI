@@ -1,0 +1,22 @@
+Name        : diffutils                    Relocations: (not relocatable)
+Version     : 2.8.1                             Vendor: Alibaba
+Release     : 28.3.alios6                   Build Date: 2014年07月26日 星期六 02时50分04秒
+Install Date: 2015年03月25日 星期三 10时59分31秒      Build Host: x86-004.build.alibaba
+Group       : Applications/Text             Source RPM: diffutils-2.8.1-28.3.alios6.src.rpm
+Size        : 588699                           License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时22分16秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnu.org/software/diffutils/diffutils.html
+Summary     : A GNU collection of diff utilities
+Description :
+Diffutils includes four utilities: diff, cmp, diff3 and sdiff. Diff
+compares two files and shows the differences, line by line.  The cmp
+command shows the offset and line numbers where two files differ, or
+cmp can show the characters that differ between the two files.  The
+diff3 command shows the differences between three files.  Diff3 can be
+used when two people have made independent changes to a common
+original; diff3 can produce a merged file that contains both sets of
+changes and warnings about conflicts.  The sdiff command can be used
+to merge two files interactively.
+
+Install diffutils if you need to compare text files.

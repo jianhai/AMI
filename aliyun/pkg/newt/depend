@@ -1,0 +1,19 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libnewt.so.0.52()(64bit)  
+libnewt.so.0.52(NEWT_0.52)(64bit)  
+libpopt.so.0()(64bit)  
+libpopt.so.0(LIBPOPT_0)(64bit)  
+libslang.so.2()(64bit)  
+libslang.so.2(SLANG2)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

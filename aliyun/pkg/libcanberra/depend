@@ -1,0 +1,35 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libasound.so.2()(64bit)  
+libasound.so.2(ALSA_0.9)(64bit)  
+libasound.so.2(ALSA_0.9.0rc4)(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libcanberra.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgstreamer-0.10.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libltdl.so.7()(64bit)  
+libm.so.6()(64bit)  
+libogg.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpulse.so.0()(64bit)  
+libpulse.so.0(PULSE_0)(64bit)  
+librt.so.1()(64bit)  
+libtdb.so.1()(64bit)  
+libvorbis.so.0()(64bit)  
+libvorbisfile.so.3()(64bit)  
+libxml2.so.2()(64bit)  
+pulseaudio-libs >= 0.9.15
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+sound-theme-freedesktop  
+rpmlib(PayloadIsXz) <= 5.2-1

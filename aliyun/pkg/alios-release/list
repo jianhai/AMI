@@ -1,0 +1,14 @@
+/etc/alios-release
+/etc/issue
+/etc/issue.net
+/etc/pki/rpm-gpg
+/etc/pki/rpm-gpg/RPM-GPG-KEY-aliyun-release
+/etc/rpm/macros.dist
+/etc/system-release
+/etc/system-release-cpe
+/etc/yum.repos.d/aliyun-extras.repo
+/etc/yum.repos.d/aliyun-main.repo
+/etc/yum.repos.d/aliyun-update.repo
+/usr/share/doc/alios-release-15.01
+/usr/share/doc/alios-release-15.01/EULA
+/usr/share/doc/alios-release-15.01/GPL

@@ -1,0 +1,18 @@
+/bin/sh  
+/usr/bin/python  
+config(system-config-network-tui) = 1.6.0.alios6.2-1.5.alios6
+dbus-python  
+initscripts >= 0:5.99
+newt-python  
+pciutils  
+python  
+python-ethtool  
+python-iwlib  
+rpm-python  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+usermode  
+rpmlib(PayloadIsXz) <= 5.2-1

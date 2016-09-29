@@ -1,0 +1,16 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+if [ -f /usr/share/info/cp-tools.info.gz ]; then
+  /sbin/install-info \
+    --info-dir=/usr/share/info /usr/share/info/cp-tools.info.gz || :
+  /sbin/install-info \
+    --info-dir=/usr/share/info /usr/share/info/fastjar.info.gz || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 -a -f /usr/share/info/cp-tools.info.gz ]; then
+  /sbin/install-info --delete \
+    --info-dir=/usr/share/info /usr/share/info/cp-tools.info.gz || :
+  /sbin/install-info --delete \
+    --info-dir=/usr/share/info /usr/share/info/fastjar.info.gz || :
+fi
+postuninstall program: /sbin/ldconfig

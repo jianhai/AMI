@@ -1,0 +1,177 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.5.0-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.5.0-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.5.0-1.1
+- rebuild for alios6
+
+* 二 6月 29 2010 Jon McCann <jmccann@redhat.com> - 0.5.0-1
+- Update to 0.5.0
+  Resolves: #599043
+- Remove provides notify-daemon
+  Resolves: #561581
+
+* 五 10月 23 2009 Matthias Clasen <mclasen@redhat.com> - 0.4.1-1.20090923.4
+- Don't abort if gnome-screensaver is not running (#529592)
+
+* 四 10月 15 2009 Matthias Clasen <mclasen@redhat.com> - 0.4.1-1.20090923.3
+- Fix issues with the multi-monitor support
+- Make screensaver check work
+- Use gvfs-open instead of gnome-open
+
+* 四 9月 24 2009 Matthias Clasen <mclasen@redhat.com> - 0.4.1-1.20090923.2
+- Change default theme to 'slider'
+
+* 三 9月 23 2009 Jon McCann <jmccann@redhat.com> - 0.4.1-0.20090923.1
+- Update to snapshot to fix crashers
+- Add internal API to allow themes to stack only
+
+* 六 8月 22 2009 Matthias Clasen <mclasen@redhat.com> - 0.4.0-8
+- Change location for stacked notifications to top-right
+
+* 二 8月 04 2009 Matthias Clasen <mclasen@redhat.com> - 0.4.0-7
+- Fix the libsexy patch to make markup work again
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.0-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Matthias Clasen <mclasen@redhat.com> - 0.4.0-5
+- Copy nodoka patch from F11
+
+* 二 7月 21 2009 Adam Tkac <atkac redhat com> - 0.4.0-4
+- improve libsexy patch
+
+* 四 7月 02 2009 Matthias Clasen <mclasen@redhat.com> - 0.4.0-3
+- Drop libsexy dependency
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 11月 22 2008 Matthias Clasen <mclasen@redhat.com> - 0.4.0-1
+- Update to 0.4.0
+- Drop obosolete patches
+- Tweak description
+
+* 一 7月 14 2008 Matthias Clasen <mclasen@redhat.com> - 0.3.7.90-1.svn3009
+- Build against libsexy rather than copying part of it in a broken way (#455289)
+
+* 二 6月 10 2008 Colin Walters <walters@redhat.com> -0.3.7.90-0.svn3009
+- Update to SVN snapshot 3009 (patches below are against it)
+- BR gnome-common so we can autogen
+- Add positioning patch
+- Add patch to fix the dist
+- Edit libsexy patch to adapt to the fact we're using an SVN export
+- Drop upstreamed summary patch
+- Add some code in install to delete notification-properties crapplet
+- BR libglade2-devel
+
+* 日 4月 06 2008 Jon McCann <jmccann@redhat.com> - 0.3.7-9
+- Don't clip text in message bubbles (#441099)
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.3.7-8
+- Autorebuild for GCC 4.3
+
+* 二 10月 23 2007 Matthias Clasen <mclasen@redhat.com> - 0.3.7-7
+- Rebuild against new dbus-glib
+
+* 三 9月 26 2007 Matthias Clasen <mclasen@redhat.com> - 0.3.7-6
+- Make it build with the latest intltool
+
+* 三 8月 08 2007 Matthias Clasen <mclasen@redhat.com> - 0.3.7-5
+- Update the license field
+
+* 二 6月 05 2007 Matthias Clasen <mclasen@redhat.com> - 0.3.7-4
+- Rebuild again
+
+* 一 6月 04 2007 - Bastien Nocera <bnocera@redhat.com> - 0.3.7-3
+- Rebuild with new libwnck
+
+* 一 5月 14 2007 Matthias Clasen <mclasen@redhat.com> - 0.3.7-2
+- Escape markup in summaries (#239950)
+
+* 五 3月 23 2007 Matthias Clasen <mclasen@redhat.com> - 0.3.7-1
+- Update to 0.3.7, which contains important bug fixes 
+  and theming improvements
+
+* 一 1月 29 2007 Matthias Clasen <mclasen@redhat.com> - 0.3.6-1
+- Update to 0.3.6
+- Apply a patch by Thorsten Leemhuis to fix some spec issues
+
+* 三 10月 18 2006 Matthias Clasen <mclasen@redhat.com> - 0.3.5-8
+- Fix scripts according to packaging guidelines
+
+* 二 10月 17 2006 Matthias Clasen <mclasen@redhat.com> - 0.3.5-7
+- Tighten up Requires (#203813)
+
+* 四 7月 20 2006 Jesse Keating <jkeating@redhat.com> - 0.3.5-6
+- Remove gconf kills, no longer necessary
+
+* 三 7月 19 2006 John (J5) Palmieri <johnp@redhat.com> - 0.3.5-5
+- add BR on dbus-glib-devel
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.3.5-4.1
+- rebuild
+
+* 五 6月 09 2006 John (J5) Palmieri <johnp@redhat.com> - 0.3.5-4
+- Mark schema as config
+- Add libtool BR
+- Add intltool BR
+
+* 一 6月 05 2006 John (J5) Palmieri <johnp@redhat.com> - 0.3.5-3
+- More spec file cleanups
+
+* 五 5月 26 2006 John (J5) Palmieri <johnp@redhat.com> - 0.3.5-2
+- Spec file cleanup
+
+* 五 5月 19 2006 John (J5) Palmieri <johnp@redhat.com> - 0.3.5-1
+- Update to upstream 0.3.5
+- Rename to notification-daemon to track upstream
+
+* 一 4月 17 2006 Kristian Høgsberg <krh@redhat.com> 0.3.1-10
+- Update name of compositing manager selection to track recent
+  metacity changes.
+
+* 三 3月 08 2006 John (J5) Palmieri <johnp@redhat.com> - 0.3.1-9
+- Add patch to fix struct handling in the dbus glib binding for dbus 0.61
+  so image data works again
+
+* 二 2月 14 2006 Christopher Aillon <caillon@redhat.com> - 0.3.1-8
+- BuildRequires love, for all you lovers out there.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.3.1-7.1
+- bump again for double-long bug on ppc(64)
+
+* 四 2月 09 2006 Florian La Roche <laroche@redhat.com>
+- remove empty scripts from .spec file
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.3.1-6.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 2月 03 2006 Christopher Aillon <caillon@redhat.com> - 0.3.1-6
+- Add patch to determine whether a compositing manager is running
+  when drawing a new notification bubble, as long as the CM grabs
+  the appropriate XSelection.
+
+* 五 1月 20 2006 Christopher Aillon <caillon@redhat.com> - 0.3.1-5
+- Make it so that marked-up messages appear with markup
+
+* 四 1月 12 2006 Christopher Aillon <caillon@redhat.com> - 0.3.1-4
+- Provide desktop-notification-daemon, since libnotify requires a
+  notification deamon, but not this specific one.  Other notification
+  daemons can exist on the system so long as they meet the provides
+  (and the API of course).
+
+* 一 1月 09 2006 Christopher Aillon <caillon@redhat.com> - 0.3.1-3
+- Fix positioning of the notification bubble to not draw off-screen
+
+* 三 12月 14 2005 John (J5) Palmieri <johnp@redhat.com> - 0.3.1-2
+- Actuall release of 0.3.1
+
+* 四 11月 17 2005 John (J5) Palmieri <johnp@redhat.com> - 0.3.1-1
+- Upgrade to upstream 0.3.1
+
+* 二 11月 15 2005 John (J5) Palmieri <johnp@redhat.com> - 0.3.0-1
+- inital build
+

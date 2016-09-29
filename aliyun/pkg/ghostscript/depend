@@ -1,0 +1,47 @@
+/bin/sh  
+/sbin/ldconfig  
+/sbin/ldconfig  
+config(ghostscript) = 8.70-11.3.alios6.2
+ghostscript-fonts  
+libICE.so.6()(64bit)  
+libSM.so.6()(64bit)  
+libX11.so.6()(64bit)  
+libXext.so.6()(64bit)  
+libXt.so.6()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.11)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libcairo.so.2()(64bit)  
+libcom_err.so.2()(64bit)  
+libcrypt.so.1()(64bit)  
+libcups.so.2()(64bit)  
+libcupsimage.so.2()(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+libfontconfig.so.1()(64bit)  
+libgs.so.8()(64bit)  
+libgssapi_krb5.so.2()(64bit)  
+libjasper.so.1()(64bit)  
+libjpeg.so.62()(64bit)  
+libjpeg.so.62(LIBJPEG_6.2)(64bit)  
+libk5crypto.so.3()(64bit)  
+libkrb5.so.3()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libpng12.so.0()(64bit)  
+libpng12.so.0(PNG12_0)(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpthread.so.0(GLIBC_2.3.2)(64bit)  
+libstdc++.so.6()(64bit)  
+libz.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+urw-fonts >= 1.1
+rpmlib(PayloadIsXz) <= 5.2-1

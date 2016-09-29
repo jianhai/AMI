@@ -1,0 +1,8 @@
+preinstall scriptlet (using /bin/sh):
+# Add the floopy group and the vcsa user.
+getent group floppy >/dev/null || groupadd -g 19 -r -f floppy
+getent group vcsa >/dev/null || groupadd -g 69 -r -f vcsa
+getent passwd vcsa >/dev/null || \
+	useradd -r -g vcsa -d /dev -s /sbin/nologin -u 69 \
+	-c "virtual console memory owner" vcsa 2>/dev/null
+exit 0

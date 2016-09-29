@@ -1,0 +1,139 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 20090716-3.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 20090716-3.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 20090716-3.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 20090716-3.1
+- Rebuilt for RHEL 6
+
+* 四 7月 30 2009 Richard Hughes <rhughes@redhat.com> - 20090716-3
+- Remove 30-keymap-olpc.fdi as it's now shipped in olpc-utils
+- Fixes #514081
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 20090716-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 16 2009 Richard Hughes <rhughes@redhat.com> - 20090716-1
+- New upstream release to fix some more music players, resume problems and
+  keymaps. See http://lists.freedesktop.org/archives/hal/2009-July/013481.html
+  for full list.
+
+* 二 4月 14 2009 Richard Hughes <rhughes@redhat.com> - 20090414-1
+- New upstream release to fix a load of HP keymaps.
+
+* 二 4月 14 2009 Richard Hughes <rhughes@redhat.com> - 20090330-2
+- A key labelled "Music" on a Dell USB keyboard shows up in X as "XF86Tools"
+  which is wrong. Reassigns the key to be "Media".
+
+* 一 3月 30 2009 Richard Hughes <rhughes@redhat.com> - 20090330-1
+- Update to latest upstream release
+
+* 一 3月 09 2009 Richard Hughes <rhughes@redhat.com> - 20090309-1
+- Update to latest upstream release
+
+* 二 3月 03 2009 - Bastien Nocera <bnocera@redhat.com> - 20090202-3
+- Remove the Dell native killswitches, replaced by the kernel killswitches
+  in dell_laptop (#488177)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 20090202-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 02 2009 Richard Hughes <rhughes@redhat.com> - 20090202-1
+- Update to latest upstream release
+
+* 五 12月 19 2008 Richard Hughes <rhughes@redhat.com> - 20081219-1
+- Update to latest upstream release
+
+* 一 12月 01 2008 Richard Hughes <rhughes@redhat.com> - 20081127-1
+- Update to latest upstream release
+
+* 三 11月 12 2008 Richard Hughes <rhughes@redhat.com> - 20081022-2
+- Add a OLPC keymap file, based from one by Ignacio Vazquez-Abrams.
+
+* 三 10月 22 2008 Richard Hughes <rhughes@redhat.com> - 20081022-1
+- Update to latest upstream release
+
+* 一 10月 13 2008 Richard Hughes <rhughes@redhat.com> - 20081013-1
+- Update to latest upstream release
+
+* 三 10月 01 2008 Richard Hughes <rhughes@redhat.com> - 20081001-2
+- Bump for rebuild
+
+* 三 10月 01 2008 Richard Hughes <rhughes@redhat.com> - 20081001-1
+- Update to latest upstream release
+
+* 四 9月 11 2008 Soren Sandmann <sandmann@redhat.com> - 20080813-2
+- Add patch for Lenovo 3000 video key
+
+* 三 8月 13 2008 Matthew Garrett <mjg@redhat.com> - 20080813-1
+- update to git snapshot
+
+* 六 6月 07 2008 Dan Williams <dcbw@redhat.com> - 20080607-1
+- Update to git snapshot
+
+* 五 5月 09 2008 Richard Hughes <rhughes@redhat.com> - 20080508-1
+- Update to latest upstream release
+
+* 四 4月 24 2008 Dan Williams <dcbw@redhat.com> - 20080317-6
+- Add CDMA Novatel S620
+
+* 三 4月 02 2008 Dan Williams <dcbw@redhat.com> - 20080317-5
+- Add more Novatel U727s
+
+* 三 4月 02 2008 Dan Williams <dcbw@redhat.com> - 20080317-4
+- Really fix MC5720 (rh #439753)
+
+* 一 3月 31 2008 Dan Williams <dcbw@redhat.com> - 20080317-3
+- Fix for Sierra MC5720 (rh #439753)
+
+* 五 3月 28 2008 Dan Williams <dcbw@redhat.com> - 20080317-2
+- Fix for Sierra 595U and others (rh #439536)
+
+* 日 3月 23 2008 Lubomir Kundrak <lkundrak@redhat.com> - 20080317-1
+- Update to latest upstream release
+
+* 六 3月 15 2008 Lubomir Kundrak <lkundrak@redhat.com> - 20080313-1
+- Update to latest upstream release
+- Fix License tag
+
+* 一 3月 10 2008 Ray Strode <rstrode@redhat.com> - 20080310-1
+- Update to latest upstream release
+
+* 三 3月 05 2008 Dan Williams <dcbw@redhat.com> - 20080215-2
+- Fix modem tags for Kyocera KPC-650
+
+* 五 2月 15 2008 Dan Williams <dcbw@redhat.com> - 20080215-1
+- Update to latest upstream release (mainly for mobile broadband updates)
+
+* 日 1月 06 2008 Lubomir Kundrak <lkundrak@redhat.com> - 20071212-1
+- Update to latest upstream release
+- Clean buildroot in %install
+
+* 二 10月 30 2007 David Zeuthen <davidz@redhat.com> - 20071030-1
+- Update to latest upstream release
+
+* 四 10月 11 2007 David Zeuthen <davidz@redhat.com> - 20071011-1
+- Update to latest upstream release
+
+* 二 9月 25 2007 David Zeuthen <davidz@redhat.com> - 20070925-1
+- Update to latest release.
+
+* 五 8月 31 2007 David Zeuthen <davidz@redhat.com> - 20070831-1
+- Update to latest release.
+
+* 二 7月 31 2007 David Zeuthen <davidz@redhat.com> - 20070725-1
+- Update to latest release.
+
+* 四 5月 17 2007 Richard Hughes <rhughes@redhat.com> - 20070516-2
+- Oops. My packaging blunder. Apologies.
+
+* 四 5月 17 2007 Richard Hughes <rhughes@redhat.com> - 20070516-1
+- Update to latest release.
+
+* 二 4月 17 2007 David Zeuthen <davidz@redhat.com> - 20070402-1
+- Initial build.
+

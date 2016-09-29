@@ -1,0 +1,14 @@
+Name        : bzip2-devel                  Relocations: (not relocatable)
+Version     : 1.0.5                             Vendor: Alibaba
+Release     : 7.3.alios6                    Build Date: 2014年07月26日 星期六 01时23分33秒
+Install Date: 2015年03月25日 星期三 11时02分46秒      Build Host: x86-004.build.alibaba
+Group       : Development/Libraries         Source RPM: bzip2-1.0.5-7.3.alios6.src.rpm
+Size        : 421900                           License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 16时15分18秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.bzip.org/
+Summary     : Header files developing apps which will use bzip2
+Description :
+
+Header files and a library of bzip2 functions, for developing apps
+which will use the library.

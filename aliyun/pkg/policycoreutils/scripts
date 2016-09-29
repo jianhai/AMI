@@ -1,0 +1,14 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add restorecond
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+   /sbin/service restorecond stop > /dev/null 2>&1
+   /sbin/chkconfig --del restorecond
+fi
+exit 0
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then 
+   [ -x /sbin/service ] && /sbin/service restorecond condrestart  > /dev/null
+fi
+exit 0

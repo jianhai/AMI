@@ -1,0 +1,19 @@
+Name        : m4                           Relocations: (not relocatable)
+Version     : 1.4.13                            Vendor: Alibaba
+Release     : 5.3.alios6                    Build Date: 2014年07月26日 星期六 15时57分32秒
+Install Date: 2015年03月25日 星期三 10时59分31秒      Build Host: x86-003.build.alibaba
+Group       : Applications/Text             Source RPM: m4-1.4.13-5.3.alios6.src.rpm
+Size        : 561781                           License: GPLv3+
+Signature   : RSA/8, 2014年07月31日 星期四 17时29分57秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnu.org/software/m4/
+Summary     : The GNU macro processor
+Description :
+A GNU implementation of the traditional UNIX macro processor.  M4 is
+useful for writing text files which can be logically parsed, and is used
+by many programs as part of their build process.  M4 has built-in
+functions for including files, running shell commands, doing arithmetic,
+etc.  The autoconf program needs m4 for generating configure scripts, but
+not for running configure scripts.
+
+Install m4 if you need a macro processor.

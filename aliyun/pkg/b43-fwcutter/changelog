@@ -1,0 +1,40 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 012-2.2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 012-2.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 012-2.2.1
+- rebuild for alios6
+
+* 二 7月 27 2010 John W. Linville <linville@redhat.com> 012-2.2
+- Add COPYING file
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 012-2.1
+- Rebuilt for RHEL 6
+
+* 五 8月 28 2009 Bill Nottingham <notting@redhat.com> 012-2
+- Update with some patches from git
+
+* 一 8月 24 2009 John W. Linville <linville@redhat.com> 012-1
+- Update for b43-fwcutter-012
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 011-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 5月 07 2009 Ville Skyttä <ville.skytta at iki.fi> - 011-5
+- Build with $RPM_OPT_FLAGS.
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 011-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 15 2008 John W. Linville <linville@redhat.com> 011-3
+- Update for b43-fwcutter-011
+
+* 一 1月 21 2008 John W. Linville <linville@redhat.com> 010-2
+- Update for b43-fwcutter-010
+
+* 四 8月 23 2007 John W. Linville <linville@redhat.com> 008-1
+- Import skeleton from bcm43xx-fwcutter-006-3
+- Initial build
+

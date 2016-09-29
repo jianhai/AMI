@@ -1,0 +1,18 @@
+Name        : iptables-ipv6                Relocations: (not relocatable)
+Version     : 1.4.7                             Vendor: Alibaba
+Release     : 4.3.alios6                    Build Date: 2014年07月26日 星期六 08时31分43秒
+Install Date: 2015年03月25日 星期三 11时00分11秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Base       Source RPM: iptables-1.4.7-4.3.alios6.src.rpm
+Size        : 187742                           License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 16时46分12秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.netfilter.org/
+Summary     : IPv6 support for iptables
+Description :
+The iptables package contains IPv6 (the next version of the IP
+protocol) support for iptables. Iptables controls the Linux kernel
+network packet filtering code, allowing you to set up firewalls and IP
+masquerading.
+
+Install iptables-ipv6 if you need to set up firewalling for your
+network and you are using ipv6.

@@ -1,0 +1,8 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+/sbin/install-info /usr/share/info/autosprintf.info /usr/share/info/dir || :
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+  /sbin/install-info --delete /usr/share/info/autosprintf.info /usr/share/info/dir || :
+fi
+postuninstall program: /sbin/ldconfig

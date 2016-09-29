@@ -1,0 +1,40 @@
+/usr/bin/perl  
+perl >= 0:5.00503
+perl >= 0:5.006
+perl = 4:5.10.1-119.4.alios6.1
+perl(AutoSplit)  
+perl(Carp)  
+perl(Config)  
+perl(Cwd)  
+perl(DirHandle)  
+perl(Exporter)  
+perl(ExtUtils::Installed)  
+perl(ExtUtils::Liblist)  
+perl(ExtUtils::Liblist::Kid)  
+perl(ExtUtils::MM)  
+perl(ExtUtils::MM_Any)  
+perl(ExtUtils::MM_Unix)  
+perl(ExtUtils::MM_Win32)  
+perl(ExtUtils::MY)  
+perl(ExtUtils::MakeMaker)  
+perl(ExtUtils::MakeMaker::Config)  
+perl(ExtUtils::Packlist)  
+perl(File::Basename)  
+perl(File::Compare)  
+perl(File::Copy)  
+perl(File::Find)  
+perl(File::Path)  
+perl(File::Spec)  
+perl(IO::File)  
+perl(Test::Harness)  
+perl(VMS::Filespec)  
+perl(lib)  
+perl(strict)  
+perl(vars)  
+perl(warnings)  
+perl-devel  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

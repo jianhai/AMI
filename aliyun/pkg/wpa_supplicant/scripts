@@ -1,0 +1,10 @@
+postinstall scriptlet (using /bin/sh):
+if [ $1 = 1 ]; then
+	chkconfig --add wpa_supplicant
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+	service wpa_supplicant stop > /dev/null 2>&1
+	killall -TERM wpa_supplicant >/dev/null 2>&1
+	/sbin/chkconfig --del wpa_supplicant
+fi

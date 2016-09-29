@@ -1,0 +1,101 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 015-4.2.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 015-4.2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 015-4.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 015-4.2.1
+- rebuild for alios6
+
+* 二 6月 29 2010 Harald Hoyer <harald@redhat.com> 015-4.2
+- rebuilt with -fno-strict-aliasing
+Resolves: rhbz#605098
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 015-4.1
+- Rebuilt for RHEL 6
+
+* 四 8月 06 2009 Harald Hoyer <harald@redhat.com> 015-4
+- add i686 buildarch
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 015-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 3月 12 2009 Harald Hoyer <harald@redhat.com> 015-2
+- moved binaries for udev rules to /lib/udev
+
+* 五 3月 06 2009 Harald Hoyer <harald@redhat.com> 015-1
+- version 015
+- added buildarch i586
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 014-13
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 014-12
+- Autorebuild for GCC 4.3
+
+* 五 9月 07 2007 Harald Hoyer <harald@redhat.com> - 014-11
+- fixed udev rule
+
+* 三 8月 22 2007 Harald Hoyer <harald@redhat.com> - 014-10
+- changed license tag
+- added arm architecture
+- removed sh execution in udev rule
+
+* 四 6月 21 2007 Harald Hoyer <harald@redhat.com> - 014-9
+- fixed modprobe udev rule
+
+* 三 6月 06 2007 Harald Hoyer <harald@redhat.com> - 014-8
+- fixed 'pccardctl ident' SEGV
+- Resolves: rhbz#242805
+
+* 一 4月 02 2007 Harald Hoyer <harald@redhat.com> - 014-7
+- removed Provides, because it would conflict (#234504)
+- Resolves: rhbz#234504
+
+* 五 3月 23 2007 Harald Hoyer <harald@redhat.com> - 014-6
+- specfile cleanup
+
+* 一 7月 17 2006 Jesse Keating <jkeating@redhat.com> - 014-5
+- rebuild
+- change br sysfsutils-devel to libsysfs-devel
+
+* 一 6月 19 2006 Harald Hoyer <harald@redhat.com> - 014-3
+- changed MODALIAS to ENV{MODALIAS} in the rules file
+
+* 三 6月 07 2006 Harald Hoyer <harald@redhat.com> - 014-2
+- better buildrequires
+
+* 二 6月 06 2006 Harald Hoyer <harald@redhat.com> - 014-1
+- more build requires (bug #194144)
+- version 014
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 011-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 011-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 12月 13 2005 Bill Nottingham <notting@redhat.com> 011-1
+- update to 011, now ships with its own udev rules
+- remove pcmcia-cs provide
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 日 7月 24 2005 Bill Nottingham <notting@redhat.com> 007-1
+- further udev-related tweaks (#163311)
+
+* 四 7月 21 2005 Bill Nottingham <notting@redhat.com> 006-2
+- udev patch - right idea, awful execution. fix that (#163311)
+- add requirement for 2.6.13-rc1, basically
+
+* 三 7月 20 2005 Bill Nottingham <notting@redhat.com> 006-1
+- update to 006
+- link libsysfs statically
+
+* 五 7月 08 2005 Bill Nottingham <notting@redhat.com> 005-1
+- initial packaging
+

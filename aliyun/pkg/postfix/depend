@@ -1,0 +1,51 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/chkconfig  
+/sbin/chkconfig  
+/sbin/service  
+/sbin/service  
+/usr/sbin/alternatives  
+/usr/sbin/alternatives  
+/usr/sbin/groupadd  
+/usr/sbin/useradd  
+config(postfix) = 2:2.6.6-2.2.4.alios6
+cyrus-sasl >= 2.1.10
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.11)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.2)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libcrypto.so.10()(64bit)  
+libdb-4.7.so()(64bit)  
+libdl.so.2()(64bit)  
+liblber-2.4.so.2()(64bit)  
+libldap-2.4.so.2()(64bit)  
+libm.so.6()(64bit)  
+libmysqlclient.so.16()(64bit)  
+libmysqlclient.so.16(libmysqlclient_16)(64bit)  
+libnsl.so.1()(64bit)  
+libnsl.so.1(GLIBC_2.2.5)(64bit)  
+libpcre.so.0()(64bit)  
+libresolv.so.2()(64bit)  
+libresolv.so.2(GLIBC_2.2.5)(64bit)  
+libsasl2.so.2()(64bit)  
+libssl.so.10()(64bit)  
+libz.so.1()(64bit)  
+mysql-libs  
+openldap >= 2.0.27
+openssl  
+pcre  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+setup >= 2.5.36-1
+rpmlib(PayloadIsXz) <= 5.2-1

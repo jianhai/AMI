@@ -1,0 +1,58 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6-1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.6-1.1
+- rebuild for alios6
+
+* 三 3月 02 2011 David Malcolm <dmalcolm@redhat.com> - 0.6-1
+- cherrypick fixes for Py_None reference leak, and for some error-handling bugs
+Resolves: rhbz#680269
+
+* 四 2月 24 2011 David Sommerseth <davids@redhat.com> - 0.6-0
+- Rebased to upstream python-ethtool-0.6
+
+* 五 2月 04 2011 Jeff Garzik <jgarzik@redhat.com> - 0.3-5.2
+- Import man page patch from Fedora BZ# 638475
+- Fix description spelling errors found by rpmlint.
+- Fixes BZ# 605535
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.3-5.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.3-3
+- Rebuild for Python 2.6
+
+* 五 9月 05 2008 Arnaldo Carvalho de Melo <acme@redhat.com> - 0.3-2
+- Rewrote build and install sections as part of the fedora review process
+  BZ #459549
+
+* 二 8月 26 2008 Arnaldo Carvalho de Melo <acme@redhat.com> - 0.3-1
+- Add get_flags method from the first python-ethtool contributor, yay
+- Add pifconfig command, that mimics the ifconfig tool using the
+  bindings available
+
+* 三 8月 20 2008 Arnaldo Carvalho de Melo <acme@redhat.com> - 0.2-1
+- Expand description and summary fields, as part of the fedora
+  review process.
+
+* 二 6月 10 2008 Arnaldo Carvalho de Melo <acme@redhat.com> - 0.1-3
+- add dist to the release tag
+
+* 二 12月 18 2007 Arnaldo Carvalho de Melo <acme@redhat.com> - 0.1-2
+- First build into MRG repo
+
+* 二 12月 18 2007 Arnaldo Carvalho de Melo <acme@redhat.com> - 0.1-1
+- Get ethtool code from rhpl 0.212
+

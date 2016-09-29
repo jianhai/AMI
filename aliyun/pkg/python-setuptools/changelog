@@ -1,0 +1,106 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.10-3.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.10-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.10-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.6.10-3.1
+- rebuild for alios6
+
+* 三 7月 14 2010 David Malcolm <dmalcolm@redhat.com> - 0.6.10-3
+- cherrypick upstream patch for easy_install (ignore locally installed
+packages: patch0)
+- provide "python-distribute"
+- add README.txt and other .txt documentation files to the payload
+Resolves: rhbz#613138
+
+* 一 6月 28 2010 David Malcolm <dmalcolm@redhat.com> - 0.6.10-2
+- delete stray ".orig" file
+- change %define to %global ; use %{buildroot} rather than env var
+- move %check lower down
+- explicitly list executables
+
+* 一 3月 08 2010 David Malcolm <dmalcolm@redhat.com> - 0.6.10-1
+- Switch over to using the "distribute" project; rebase to 0.6.10 (rhbz:570350)
+- Remove svn patch as upstream has chosen to go with an easier change for now.
+- Move easy_install back into the main package as the needed files have been
+  moved from python-devel to the main python package.
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.6c9-5.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6c9-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 14 2009 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c9-4
+- Apply SVN-1.6 versioning patch (rhbz #511021)
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6c9-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 11月 28 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.6c9-2
+- Rebuild for Python 2.6
+
+* 日 11月 23 2008 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c9-1
+- Update to 0.6c9
+- Small fixes to URL, summary and description
+
+* 六 6月 21 2008 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c8-1
+- Update to 0.6c8
+- Accept small tweaks from Gareth Armstrong
+
+* 一 9月 24 2007 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c7-2
+- Move pretty much everything back into runtime in order to avoid more
+  brokenness than we're trying to address with these fixes.
+
+* 五 9月 14 2007 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c7-1
+- Upstream 0.6c7
+- Move some things from devel into runtime, in order to not break other
+  projects.
+
+* 六 8月 18 2007 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c6-2
+- Make license tag conform to the new Licensing Guidelines
+- Move everything except pkg_resources.py into a separate -devel package
+  so we avoid bundling python-devel when it's not required (#251645)
+- Do not package tests
+
+* 日 6月 10 2007 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c6-1
+- Upstream 0.6c6
+- Require python-devel (#240707)
+
+* 日 1月 28 2007 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c5-1
+- Upstream 0.6c5 (known bugs, but the promised 0.6c6 is taking too long)
+
+* 二 12月 05 2006 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c3-1
+- Upstream 0.6c3 (#218540, thanks to Michel Alexandre Salim for the patch)
+
+* 二 9月 12 2006 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c2-1
+- Upstream 0.6c2
+- Ghostbusting
+
+* 一 7月 31 2006 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c1-2
+- Set perms on license files (#200768)
+
+* 六 7月 22 2006 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6c1-1
+- Version 0.6c1
+
+* 三 6月 28 2006 Konstantin Ryabitsev <icon@fedoraproject.org> - 0.6b3-1
+- Taking over from Ignacio
+- Version 0.6b3
+- Ghost .pyo files in sitelib
+- Add license files
+- Remove manual python-abi, since we're building FC4 and up
+- Kill .exe files
+
+* 三 2月 15 2006 Ignacio Vazquez-Abrams <ivazquez@ivazquez.net> 0.6a10-1
+- Upstream update
+
+* 一 1月 16 2006 Ignacio Vazquez-Abrams <ivazquez@ivazquez.net> 0.6a9-1
+- Upstream update
+
+* 六 12月 24 2005 Ignacio Vazquez-Abrams <ivazquez@ivazquez.net> 0.6a8-1
+- Initial RPM release
+

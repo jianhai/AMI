@@ -1,0 +1,35 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --del cupsd 2>/dev/null || true # Make sure old versions aren't there anymore
+/sbin/chkconfig --add cups || true
+# Remove old-style certs directory; new-style is /var/run
+# (see bug #194581 for why this is necessary).
+/bin/rm -rf /etc/cups/certs
+/usr/sbin/alternatives --install /usr/bin/lpr print /usr/bin/lpr.cups 40 \
+	 --slave /usr/bin/lp print-lp /usr/bin/lp.cups \
+	 --slave /usr/bin/lpq print-lpq /usr/bin/lpq.cups \
+	 --slave /usr/bin/lprm print-lprm /usr/bin/lprm.cups \
+	 --slave /usr/bin/lpstat print-lpstat /usr/bin/lpstat.cups \
+	 --slave /usr/bin/cancel print-cancel /usr/bin/cancel.cups \
+	 --slave /usr/sbin/lpc print-lpc /usr/sbin/lpc.cups \
+	 --slave /usr/share/man/man1/cancel.1.gz print-cancelman /usr/share/man/man1/cancel-cups.1.gz \
+	 --slave /usr/share/man/man1/lp.1.gz print-lpman /usr/share/man/man1/lp-cups.1.gz \
+	 --slave /usr/share/man/man8/lpc.8.gz print-lpcman /usr/share/man/man8/lpc-cups.8.gz \
+	 --slave /usr/share/man/man1/lpq.1.gz print-lpqman /usr/share/man/man1/lpq-cups.1.gz \
+	 --slave /usr/share/man/man1/lpr.1.gz print-lprman /usr/share/man/man1/lpr-cups.1.gz \
+	 --slave /usr/share/man/man1/lprm.1.gz print-lprmman /usr/share/man/man1/lprm-cups.1.gz \
+	 --slave /usr/share/man/man1/lpstat.1.gz print-lpstatman /usr/share/man/man1/lpstat-cups.1.gz \
+	 --initscript cups
+rm -f /var/cache/cups/*.ipp /var/cache/cups/*.cache
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ]; then
+	/sbin/service cups stop > /dev/null 2>&1
+	/sbin/chkconfig --del cups
+	/usr/sbin/alternatives --remove print /usr/bin/lpr.cups
+fi
+exit 0
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+	/sbin/service cups condrestart > /dev/null 2>&1
+fi
+exit 0

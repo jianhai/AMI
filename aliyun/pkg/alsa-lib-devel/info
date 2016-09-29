@@ -1,0 +1,16 @@
+Name        : alsa-lib-devel               Relocations: (not relocatable)
+Version     : 1.0.22                            Vendor: Alibaba
+Release     : 3.3.alios6                    Build Date: 2014年07月26日 星期六 00时23分21秒
+Install Date: 2015年03月25日 星期三 11时02分41秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: alsa-lib-1.0.22-3.3.alios6.src.rpm
+Size        : 13332583                         License: LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时08分50秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.alsa-project.org/
+Summary     : Development files from the ALSA library
+Description :
+The Advanced Linux Sound Architecture (ALSA) provides audio and MIDI
+functionality to the Linux operating system.
+
+This package includes the ALSA development libraries for developing
+against the ALSA libraries and interfaces.

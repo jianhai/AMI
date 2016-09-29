@@ -1,0 +1,16 @@
+cyrus-sasl-lib = 2.1.23-13.3.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcrammd5.so.2()(64bit)  
+libcrypt.so.1()(64bit)  
+libcrypto.so.10()(64bit)  
+libdigestmd5.so.2()(64bit)  
+libresolv.so.2()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

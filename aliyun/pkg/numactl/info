@@ -1,0 +1,14 @@
+Name        : numactl                      Relocations: (not relocatable)
+Version     : 2.0.3                             Vendor: Alibaba
+Release     : 9.3.alios6                    Build Date: 2014年07月26日 星期六 21时25分17秒
+Install Date: 2015年03月25日 星期三 11时00分12秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: numactl-2.0.3-9.3.alios6.src.rpm
+Size        : 133309                           License: LGPLv2/GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 17时36分48秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : ftp://oss.sgi.com/www/projects/libnuma/download
+Summary     : Library for tuning for Non Uniform Memory Access machines
+Description :
+Simple NUMA policy support. It consists of a numactl program to run
+other programs with a specific NUMA policy and a libnuma to do
+allocations with NUMA policy in applications.

@@ -1,0 +1,18 @@
+Name        : yum-utils                    Relocations: (not relocatable)
+Version     : 1.1.30                            Vendor: Alibaba
+Release     : 10.4.alios6                   Build Date: 2014年07月28日 星期一 01时26分02秒
+Install Date: 2015年03月25日 星期三 11时02分32秒      Build Host: x86-004.build.alibaba
+Group       : Development/Tools             Source RPM: yum-utils-1.1.30-10.4.alios6.src.rpm
+Size        : 293001                           License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 19时08分14秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://yum.baseurl.org/download/yum-utils/
+Summary     : Utilities based around the yum package manager
+Description :
+yum-utils is a collection of utilities and examples for the yum package
+manager. It includes utilities by different authors that make yum easier and
+more powerful to use. These tools include: debuginfo-install,
+find-repos-of-install, needs-restarting, package-cleanup, repoclosure,
+repodiff, repo-graph, repomanage, repoquery, repo-rss, reposync,
+repotrack, verifytree, yumdownloader, yum-builddep, yum-complete-transaction,
+yum-config-manager, yum-debug-dump, yum-debug-restore and yum-groups-manager.

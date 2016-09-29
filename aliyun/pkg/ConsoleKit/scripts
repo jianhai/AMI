@@ -1,0 +1,4 @@
+postinstall scriptlet (using /bin/sh):
+if [ -f /var/log/ConsoleKit/history ]; then
+   chmod a+r /var/log/ConsoleKit/history
+fi

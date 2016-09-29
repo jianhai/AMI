@@ -1,0 +1,7 @@
+preinstall scriptlet (using /bin/sh):
+{
+    /usr/sbin/groupadd -g 22 -r -f utmp || :
+    /usr/sbin/groupadd -g 35 -r -f utempter || :
+}
+postinstall program: /sbin/ldconfig
+postuninstall program: /sbin/ldconfig

@@ -1,0 +1,15 @@
+Name        : util-linux-ng                Relocations: (not relocatable)
+Version     : 2.17.2                            Vendor: Alibaba
+Release     : 12.4.6.alios6                 Build Date: 2014年08月22日 星期五 20时16分58秒
+Install Date: 2015年03月25日 星期三 11时01分11秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: util-linux-ng-2.17.2-12.4.6.alios6.src.rpm
+Size        : 5879213                          License: GPLv1+ and GPLv2 and GPLv2+ and LGPLv2+ and MIT and BSD with advertising and Public Domain
+Signature   : RSA/8, 2014年08月25日 星期一 23时30分15秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : ftp://ftp.kernel.org/pub/linux/utils/util-linux-ng
+Summary     : A collection of basic system utilities
+Description :
+The util-linux-ng package contains a large variety of low-level system
+utilities that are necessary for a Linux system to function. Among
+others, Util-linux contains the fdisk configuration tool and the login
+program.

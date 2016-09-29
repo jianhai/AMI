@@ -1,0 +1,14 @@
+Name        : perl-URI                     Relocations: (not relocatable)
+Version     : 1.40                              Vendor: Alibaba
+Release     : 2.4.alios6                    Build Date: 2014年07月27日 星期日 17时56分26秒
+Install Date: 2015年03月25日 星期三 10时59分38秒      Build Host: x86-004.build.alibaba
+Group       : Development/Libraries         Source RPM: perl-URI-1.40-2.4.alios6.src.rpm
+Size        : 256097                           License: GPL+ or Artistic
+Signature   : RSA/8, 2014年07月31日 星期四 18时02分33秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://search.cpan.org/dist/URI/
+Summary     : A Perl module implementing URI parsing and manipulation
+Description :
+This module implements the URI class. Objects of this class represent
+"Uniform Resource Identifier references" as specified in RFC 2396 (and
+updated by RFC 2732).

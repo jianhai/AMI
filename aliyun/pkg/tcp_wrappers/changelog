@@ -1,0 +1,233 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.6-57.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.6-57.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.6-57.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 7.6-57.1
+- rebuild for alios6
+
+* 二 8月 10 2010 Jan F.Chadima <jchadima@redhat.com> - 7.6-57
+- Add partial relro for libraries (#727287)
+
+* 五 2月 05 2010 Jan F. Chadima <jchadima@redhat.com> - 7.6-56.3
+- Add manual pages for safe_finger and try-from (#522102)
+
+* 三 1月 06 2010 Jan F. Chadima <jchadima@redhat.com> - 7.6-56.2
+- Merge review (#226482)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 7.6-56.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.6-56
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 4月 14 2009 Jan F. Chadima <jchadima@redhat.com> - 7.6-55
+- resolving addr when name == "" (repair of patch #220015)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.6-54
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 8月 29 2008 Jan Safranek <jsafranek@redhat.com> - 7.6-53
+- rediff all patches to get rid of patch fuzz
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 7.6-52
+- Autorebuild for GCC 4.3
+
+* 二 10月 16 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-51
+- review changes
+
+* 五 8月 24 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-50
+- license tag update (and rebuild for BuildID, etc.)
+- include docs in the -libs subpackage, as it is the only one installed on most
+  systems (and to comply with the license text)
+
+* 三 7月 25 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-49
+- fix for a.b.c.d/255.255.255.255 - fixes #249430
+
+* 四 6月 28 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-48
+- dropped the hostname resolving patch
+- resolve the address given to hosts_ctl to hostname, if hostname not given
+- compare localhost and localhost.localdomain as the same
+- fixed a few compile warnings
+
+* 三 6月 06 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-47
+- fix the hostname resolving patch for x86_64
+
+* 一 5月 28 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-46
+- modified the fix for #112975 to fix #156373 as well
+
+* 五 5月 25 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-45
+- unblock and catch SIGCHLD from spawned shell commands, fixes #112975
+
+* 一 4月 16 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-44
+- added restore_sigalarm and siglongjmp patches from Debian, fixes #205129
+
+* 五 3月 09 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-43
+- resolve hostnames in hosts.{allow,deny}, should fix a bunch of issues with
+  IPv4/6
+
+* 四 3月 08 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-42.1
+- moved libwrap.so* to /lib
+- removed the static library libwrap.a
+
+* 一 3月 05 2007 Tomas Janousek <tjanouse@redhat.com> - 7.6-42
+- added Obsoletes field so that the upgrade goes cleanly
+- added dist tag
+
+* 一 12月 04 2006 Thomas Woerner <twoerner@redhat.com> 7.6-41
+- moved devel libraries, headers and man pages into devel sub package (#193188)
+- new libs sub package for libraries
+- using BuildRequires instead of BuildPreReq
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 7.6-40.2.1
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 7.6-40.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 7.6-40.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 24 2006 Thomas Woerner <twoerner@redhat.com> 7.6-40
+- fixed uninitialized fp in function inet_cfg (#162412)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 5月 06 2005 Thomas Woerner <twoerner@redhat.com> 7.6-39
+- fixed sig patch (#141110). Thanks to Nikita Shulga for the patch
+
+* 三 2月 09 2005 Thomas Woerner <twoerner@redhat.com> 7.6-38
+- rebuild
+
+* 四 10月 07 2004 Thomas Woerner <twoerner@redhat.com> 7.6-37.2
+- new URL and spec file cleanup, patch from Robert Scheck
+
+* 一 10月 04 2004 Thomas Woerner <twoerner@redhat.com> 7.6-37.1
+- rebuilt
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 3月 05 2004 Thomas Woerner <twoerner@redhat.com> 7.6-36
+- pied tcpd
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 2月 16 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- use strerror  #84312
+
+* 二 2月 11 2003 Harald Hoyer <harald@redhat.de> 7.6-33
+- revert Nalins weak version
+- link libwrap.so against libnsl, on which it depends
+
+* 一 2月 10 2003 Nalin Dahyabhai <nalin@redhat.com> 7.6-32
+- link libwrap.so against libnsl, on which it depends
+- add default (weak) versions of allow_severity and deny_severity to the shared
+  library so that configure tests can find it correctly
+
+* 一 2月 10 2003 Harald Hoyer <harald@redhat.de> 7.6-29
+- shared library generated and added #75494
+- added security patch tcp_wrappers-7.6-sig.patch
+- compile and link with -fPIC -DPIC
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 1月 07 2003 Jeff Johnson <jbj@redhat.com> 7.6-25
+- don't include -debuginfo files in package.
+
+* 二 11月 19 2002 Tim Powers <timp@redhat.com>
+- rebuild on all arches
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 6月 11 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- fix #61192
+- added Patch8 to fix #17847
+- update IPv6 patch
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 3月 11 2001 Pekka Savola <pekkas@netcore.fi>
+- Add IPv6 patch from USAGI, enable it.
+
+* 一 2月 05 2001 Preston Brown <pbrown@redhat.com>
+- fix gethostbyname to work better with dot "." notation (#16949)
+
+* 六 12月 30 2000 Jeff Johnson <jbj@redhat.com>
+- permit hosts.{allow,deny} to be assembled from included components (#17795).
+- permit '*' and '?' wildcard matches on hostnames (#17847).
+
+* 日 11月 19 2000 Bill Nottingham <notting@redhat.com>
+- ia64 needs -fPIC too
+
+* 一 8月 14 2000 Jeff Johnson <jbj@redhat.com>
+- remove utilities that expect /etc/inetd.conf (#16059).
+
+* 四 7月 27 2000 Jeff Johnson <jbj@redhat.com>
+- security hardening (#11881).
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 06 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 二 5月 16 2000 Chris Evans <chris@ferret.lmh.ox.ac.uk>
+- Make tcpd mode -rwx--x--x as a security hardening measure
+
+* 一 2月 07 2000 Jeff Johnson <jbj@redhat.com>
+- compress man pages.
+
+* 一 8月 23 1999 Jeff Johnson <jbj@redhat.com>
+- add netgroup support (#3940).
+
+* 三 5月 26 1999 Jeff Johnson <jbj@redhat.com>
+- compile on sparc with -fPIC.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 7)
+
+* 三 12月 30 1998 Cristian Gafton <gafton@redhat.com>
+- build for glibc 2.1
+
+* 六 8月 22 1998 Jeff Johnson <jbj@redhat.com>
+- close setenv bug (problem #690)
+- spec file cleanup
+
+* 四 6月 25 1998 Alan Cox <alan@redhat.com>
+- Erp where did the Dec 05 patch escape to
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 12月 05 1997 Erik Troan <ewt@redhat.com>
+- don't build setenv.o module -- it just breaks things
+
+* 三 10月 29 1997 Marc Ewing <marc@redhat.com>
+- upgrade to 7.6
+
+* 四 7月 17 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 一 3月 03 1997 Erik Troan <ewt@redhat.com>
+- Upgraded to version 7.5
+- Uses a build root
+

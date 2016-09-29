@@ -1,0 +1,1283 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.20.51.0.2-5.28.4
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.20.51.0.2-5.28.3
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.20.51.0.2-5.28.1
+- rebuild for alios6
+
+* 一 10月 24 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.28
+- Fix lost addend (#747695)
+
+* 二 8月 30 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.27
+- Fix PowerPC64 toc edit fail (#733122)
+
+* 三 7月 27 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.26
+- Add support for AMD piledriver insns (#696368)
+
+* 五 7月 15 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.25
+- Fix linker crash handling local symbols in .toc (#721079)
+
+* 二 6月 28 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.24
+- Fix GC of DWARF ranges (#714824)
+
+* 三 6月 01 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.23
+- Add support for new IVB insns (#696494)
+
+* 三 5月 25 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.22
+- Fix powerpc64 ld "sibling call" error (#707387)
+
+* 二 5月 17 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.21
+- Copy over OSABI header (#698005)
+- Don't set OSABI_LINUX in dynamic ifunc-using executable (#689829)
+- Handle non-ASCII in readelf output (#664640)
+- Remove unneeded clearing (#674925)
+- Handle old ABI calls to new ABI code (#701586)
+
+* 三 4月 20 2011 Jan Kratochvil <jan.kratochvil@redhat.com> - 2.20.51.0.2-5.20
+- Fix RELOC_AGAINST_DISCARDED_SECTION crash by off-by-one overrun (#697703).
+
+* 五 2月 25 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.19
+- Check audit entry only on ELF input (#680143)
+
+* 五 2月 25 2011 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.18
+- Don't match zero size sections at start or end of PT_DYNAMIC (#679435)
+
+* 五 12月 17 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.17
+- Large-TOC support for powerpc (#663587)
+
+* 三 12月 08 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.16
+- Set proper offset in empty section (#614443)
+
+* 一 11月 29 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.15
+- Add support for System z196 processor (#631540)
+
+* 四 11月 25 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.14
+- Support EM_L1OM in objdump and readelf (#464723)
+
+* 三 11月 24 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.13
+- Add support for notes in s390 core files (#633448)
+
+* 二 11月 23 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.12
+- Add support for more than 65535 program headers (#578661)
+
+* 三 5月 05 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.11
+- Add STB_GNU_UNIQUE symbols to archive index (#588825)
+
+* 三 5月 05 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.10
+- Avoid generating R_*_NONE (#587788)
+
+* 二 4月 06 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.9
+- Handle DWARF-4 (#578576)
+
+* 二 4月 06 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.8
+- Fix non-zero section address in relocatable link (#579696)
+
+* 二 4月 06 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.7
+- Add BNI support (#576315)
+
+* 三 3月 24 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.6
+- Fix crash building qt (#576129, PR ld/11088)
+
+* 四 2月 11 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.5
+- Fix last change (#561850)
+
+* 三 2月 10 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.4
+- Fix testsuite failures (#561850)
+
+* 二 1月 05 2010 Andreas Schwab <schwab@redhat.com> - 2.20.51.0.2-5.3
+- Fix doc typo (#545384)
+
+* 五 12月 11 2009 Jakub Jelinek <jakub@redhat.com> 2.20.51.0.2-5.2
+- Apply patch for PR 10856.  (BZ 544358)
+- Fix permissions of PIEs in objcopy.  (PR binutils/10802)
+- Fix readelf -D with DT_RUNPATH.
+- Fix PowerPC TLS transitions.  (PR ld/11047)
+- Fix order of relocations in IFUNC PowerPC64 objects linked with
+  -z nocombreloc.  (PR ld/11012)
+- Add AMD Orochi XOP support, some FMA4 support fixes.
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.20.51.0.2-5.1
+- Rebuilt for RHEL 6
+
+* 一 11月 09 2009 Jakub Jelinek <jakub@redhat.com> 2.20.51.0.2-5
+- Fix up --copy-dt-needed-entries default.  (Nick Clifton)
+
+* 一 11月 09 2009 Jakub Jelinek <jakub@redhat.com> 2.20.51.0.2-4
+- Fix ld -s with IRELATIVE relocations.  (BZ 533321, PR ld/10911)
+- Add AMD Orochi LWP support, fix FMA4 support.
+
+* 四 11月 05 2009 Nick CLifton <nickc@redhat.com> 2.20.51.0.2-3
+- Rename --add-needed to --copy-dt-needed-entries and improve error message about unresolved symbols in DT_NEEDED DSOs.
+
+* 二 10月 27 2009 Jan Kratochvil <jan.kratochvil@redhat.com> 2.20.51.0.2-2
+- Fix rpm --excludedocs (BZ 515922).
+- Fix spurious scriplet errors by `exit 0'. (BZ 517979, Nick Clifton)
+
+* 一 10月 12 2009 Nick Clifton <nickc@redhat.com> 2.20.51.0.2-1
+- Rebase on 2.20 tarball.
+- Remove redundant moxie patch.
+- Remove redundant unique is global patch.
+- Remove redundant cxxfilt java doc patch.
+
+* 二 9月 29 2009 Jan Kratochvil <jan.kratochvil@redhat.com> 2.19.51.0.14-32
+- Remove spurious description of nonexistent --java switch for cxxfilt.
+
+* 四 8月 06 2009 Jakub Jelinek <jakub@redhat.com> 2.19.51.0.14-31
+- Fix strip on objects with STB_GNU_UNIQUE symbols. (BZ 515700, PR binutils/10492)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.19.51.0.14-30
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.11-28
+- Rebase sources on 2.19.51.0.14 tarball.  Gain fixes for PRs 10429 and 10433.
+
+* 三 7月 22 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.11-28
+- Rebase sources on 2.19.51.0.13 tarball.  Remove redundant orphan section placement patch. (BZ 512937)
+
+* 二 7月 14 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.11-27
+- Add patch to allow moxie target to build, and hence --enable-targets=all to work.
+
+* 二 7月 14 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.11-26
+- Import orphan section placement patch from mainline.  (BZ 510384)
+
+* 二 7月 14 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.11-25
+- Fix build-id patch to avoid memory corruption.  (BZ 501582)
+
+* 六 7月 11 2009 Jan Kratochvil <jan.kratochvil@redhat.com> 2.19.51.0.11-24
+- Provide uuencode output of the testsuite results.
+
+* 二 6月 30 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.11-23
+- Rebase sources on the 2.19.51.0.11 tarball.
+
+* 一 6月 22 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.10-22
+- Rebase sources on the 2.19.51.0.10 tarball.
+
+* 四 6月 11 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.2-21
+- Do not attempt to set execute permission on non-regular files.  (BZ 503426)
+
+* 二 6月 09 2009 Jakub Jelinek <jakub@redhat.com> 2.19.51.0.2-20
+- Fix .cfi_* skip over >= 64KB of code.  (PR gas/10255)
+
+* 三 5月 27 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.2-19
+- Import fix for binutils PR #9938.  (BZ 500295)
+
+* 三 4月 15 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.2-18
+- Update IBM Power 7 support patch to fix tlbilx opcode.  (BZ 494718)
+
+* 二 3月 17 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.2-17
+- Add glibc-static to BuildRequires when running the testsuite.
+
+* 四 3月 05 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.2-16
+- Add IBM Power7 support.  (BZ 487887)
+
+* 一 3月 02 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.2-15
+- Add IFUNC support.  (BZ 465302)
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.19.51.0.2-14
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 23 2009 Jan Kratochvil <jan.kratochvil@redhat.com> 2.19.50.0.2-13
+- Rediff the symbolic-envvar-revert patch to comply with rpm patch --fuzz=0.
+
+* 四 2月 05 2009 Nick Clifton <nickc@redhat.com> 2.19.51.0.2-12
+- Rebase sources on 2.19.51.0.2 tarball.  Remove linkonce-r-discard and 
+  gcc-expect-table patches.
+
+* 一 2月 02 2009 Jan Kratochvil <jan.kratochvil@redhat.com> 2.19.50.0.1-11
+- Fix .eh_frame_hdr build also for .gcc_except_table LSDA refs (BZ 461675).
+
+* 五 1月 23 2009 Nick Clifton <nickc@redhat.com> 2.19.50.0.1-10
+- Only require dejagnu if the testsuites are going to be run.  (BZ 481169)
+
+* 六 11月 29 2008 Nick Clifton <nickc@redhat.com> 2.19.50.0.1-8
+- Add build-id patch to ensure that section contents are incorporated
+  into a build id.  (BZ 472152)
+
+* 五 11月 21 2008 Nick Clifton <nickc@redhat.com> 2.19.50.0.1
+- Rebase sources on 2.19.50.0.1 tarball.  Update all patches, trimming
+  those that are no longer needed.
+
+* 四 10月 30 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.9-7
+- Fix %{_prefix}/include/bfd.h on 32-bit hosts due the 64-bit BFD target
+  support from 2.18.50.0.8-2 (BZ 468495).
+
+* 四 10月 30 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.9-6
+- binutils-devel now requires zlib-devel (BZ 463101 comment 5).
+- Fix complains on .gnu.linkonce.r relocations to their discarded
+  .gnu.linkonce.t counterparts.
+
+* 一 9月 22 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.9-5
+- Remove %makeinstall to comply with the spu-binutils review (BZ 452211).
+
+* 一 9月 22 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.9-4
+- Fix *.so scripts for multilib linking (BZ 463101, suggested by Jakub Jelinek).
+
+* 日 9月 21 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.9-3
+- Provide libbfd.so and libopcodes.so for automatic dependencies (BZ 463101).
+- Fix .eh_frame_hdr build on C++ files with discarded common groups (BZ 458950).
+- Provide --build and --host to fix `rpmbuild --target' biarch builds.
+- Include %{binutils_target}- filename prefix for binaries for cross builds.
+- Fix multilib conflict on %{_prefix}/include/bfd.h's BFD_HOST_64BIT_LONG_LONG.
+
+* 一 9月 15 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.9-2
+- Package review, analysed by Jon Ciesla and Patrice Dumas (BZ 225615).
+ - build back in the sourcedir without problems as gasp is no longer included.
+ - Fix the install-info requirement.
+ - Drop the needless gzipping of the info files.
+ - Provide Obsoletes versions.
+ - Use the %configure macro.
+
+* 六 8月 30 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.9-1
+- Update to 2.18.50.0.9.
+  - Drop the ppc-only spu target pre-build stage (BZ 455242).
+  - Drop parsing elf64-i386 files for kdump PAE vmcore dumps (BZ 457189).
+- New .spec BuildRequires zlib-devel (/-static) for compressed sections.
+- Update .spec Buildroot to be more unique.
+
+* 五 8月 01 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.8-2
+- Fix parsing elf64-i386 files for kdump PAE vmcore dumps (BZ 457189).
+- Turn on 64-bit BFD support for i386, globally enable AC_SYS_LARGEFILE.
+- `--with debug' builds now with --disable-shared.
+- Removed a forgotten unused ld/eelf32_spu.c workaround from 2.18.50.0.8-1.
+
+* 四 7月 31 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.8-1
+- Update to 2.18.50.0.8.
+  - Drop the .clmul -> .pclmul renaming backport.
+- Add %{binutils_target} macro to support building cross-binutils.
+  (David Woodhouse)
+- Support `--without testsuite' to suppress the testsuite run.
+- Support `--with debug' to build without optimizations.
+- Refresh the patchset with fuzz 0 (for new rpmbuild).
+- Enable the spu target on ppc/ppc64 (BZ 455242).
+
+* 三 7月 16 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.6-4
+- include the `dist' tag in the Release number
+- libbfd.a symbols visibility is now hidden (for #447426, suggested by Jakub)
+
+* 三 7月 16 2008 Jan Kratochvil <jan.kratochvil@redhat.com> 2.18.50.0.6-3
+- rebuild libbfd.a with -fPIC for inclusion into shared libraries (#447426)
+
+* 二 4月 08 2008 Jakub Jelinek <jakub@redhat.com> 2.18.50.0.6-2
+- backport .clmul -> .pclmul renaming
+
+* 五 4月 04 2008 Jakub Jelinek <jakub@redhat.com> 2.18.50.0.6-1
+- update to 2.18.50.0.6
+  - Intel AES, CLMUL, AVX/FMA support
+
+* 一 3月 03 2008 Jakub Jelinek <jakub@redhat.com> 2.18.50.0.4-2
+- revert aranges optimization (Alan Modra, BZ#5303, BZ#5755)
+- fix ld-shared testcase for GCC 4.3 (H.J. Lu)
+
+* 五 2月 29 2008 Jakub Jelinek <jakub@redhat.com> 2.18.50.0.4-1
+- update to 2.18.50.0.4
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> 2.18.50.0.3-2
+- Autorebuild for GCC 4.3
+
+* 三 12月 12 2007 Jakub Jelinek <jakub@redhat.com> 2.18.50.0.3-1
+- update to 2.18.50.0.3
+  - fix build with recent makeinfo (#415271)
+
+* 四 8月 16 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.18-1
+- update to 2.17.50.0.18
+  - GPLv3+
+  - preserve .note.gnu.build-id in objcopy --only-keep-debug (#251935)
+  - fix sparc64/alpha broken by --build-id patch (#252936)
+- update License tag
+- fix ld crash with --build-id and non-ELF output format (Alan Modra, BZ#4923)
+
+* 二 7月 31 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.17-7
+- fix ppc32 secure PLT detection (Alan Modra)
+
+* 三 7月 25 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.17-6
+- rebuilt to make sure even libbfd.so and libopcodes.so aren't
+  broken by #249435
+
+* 二 7月 24 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.17-5
+- add .note.gnu.build-id into default linker script (#249435)
+
+* 二 7月 24 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.17-4
+- don't kill the %{_gnu} part of target name on arm
+  (Lennert Buytenhek, #243516)
+- create just one PT_NOTE segment header for all consecutive SHT_NOTE
+  sections
+
+* 三 7月 18 2007 Roland McGrath <roland@redhat.com> 2.17.50.0.17-3
+- fix for ld --build-id
+
+* 日 7月 15 2007 Roland McGrath <roland@redhat.com> 2.17.50.0.17-2
+- ld --build-id support
+
+* 三 6月 27 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.17-1
+- update to 2.17.50.0.17
+
+* 二 6月 12 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.16-1
+- update to 2.17.50.0.16
+
+* 六 4月 14 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.12-4
+- fix linking non-ELF input objects into ELF output (#235747)
+
+* 三 3月 14 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.12-3
+- don't require matching ELF_OSABI for target vecs with ELFOSABI_NONE,
+  only prefer specific osabi target vecs over the generic ones
+  (H.J.Lu, #230964, BZ#3826)
+- build libbfd.so and libopcodes.so with -Bsymbolic-functions
+
+* 五 3月 02 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.12-2
+- ignore install-info errors from scriptlets (#223678)
+
+* 四 3月 01 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.12-1
+- update to 2.17.50.0.12
+- revert the misdesigned LD_SYMBOLIC{,_FUNCTIONS} env var support,
+  only support -Bsymbolic/-Bsymbolic-functions/--dynamic-list*
+
+* 一 1月 08 2007 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.9-1
+- update to 2.17.50.0.9
+- fix tekhex reader
+
+* 六 12月 23 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.8-2
+- fix --as-needed on ppc64 (#219629)
+
+* 日 12月 03 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.8-1
+- update to 2.17.50.0.8
+- initialize frch_cfi_data (BZ#3607)
+
+* 五 12月 01 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.7-1
+- update to 2.17.50.0.7
+  - .cfi_personality and .cfi_lsda directives, per subsection .cfi_*
+    directives, better .eh_frame CIE merging
+
+* 四 11月 09 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.6-3
+- fix popcnt instruction assembly and disassembly on amd64 (#214767)
+
+* 一 10月 23 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.6-2
+- update to 2.17.50.0.6
+  - fix for section relative linker script defined symbols in
+    empty sections (#207598, BZ#3267)
+  - fix handling of DW_CFA_set_loc in .eh_frame optimizations
+  - fix R_PPC_{PLT,GOT{,_TLSGD,_TLSLD,_TPREL,_DTPREL}}16_HA relocation
+    handling with weak undefined symbols (Alan Modra, #211094)
+
+* 二 9月 12 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.3-6
+- fix multilib conflict in %{_prefix}/include/bfd.h
+
+* 二 9月 12 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.3-5
+- fix efi-app-ia64 magic number (#206002, BZ#3171)
+
+* 二 9月 05 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.3-4
+- link libopcodes*.so against libbfd*.so (#202327)
+- split *.a and header files into binutils-devel
+
+* 五 8月 18 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.3-3
+- on ppc and ppc64 increase default -z commonpagesize to 64K (#203001)
+
+* 五 7月 28 2006 Alexandre Oliva <aoliva@redhat.com> 2.17.50.0.3-2
+- do not infer x86 arch implicitly based on instruction in the input
+  (#200330)
+
+* 一 7月 17 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.3-1
+- update to 2.17.50.0.3
+
+* 五 7月 14 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.2-8
+- add support for new AMDFAM10 instructions (#198281, IT#97662)
+- add -march=/-mtune= gas support on x86/x86-64
+- x86/x86-64 nop insn improvements
+- fix DT_GNU_HASH shift count value computation
+
+* 二 7月 11 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.2-7
+- add DT_GNU_HASH support (--hash-style=gnu and --hash-style=both
+  ld options)
+
+* 四 6月 29 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.2-4
+- fix i?86 TLS GD->IE transition in executables (#196157, BZ#2513)
+
+* 一 6月 19 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.2-3
+- fix two places in ld that misbehaved with MALLOC_PERTURB_=N
+- fix .tls_common handling in relocatable linking
+
+* 一 6月 05 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.2-2
+- fix --as-needed (Alan Modra, #193689, BZ#2721)
+
+* 四 6月 01 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.2-1
+- update to 2.17.50.0.2
+- update from CVS to 20060601
+- speed up the ELF linker by caching the result of kept section check
+  (H.J. Lu)
+
+* 二 5月 09 2006 Jakub Jelinek <jakub@redhat.com> 2.17.50.0.1-1
+- update to 2.17.50.0.1
+
+* 五 3月 31 2006 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.6-6
+- fix ld error message formatting, so that collect2 parser can
+  parse it again for g++ -frepo (#187142)
+
+* 四 3月 09 2006 Alexandre Oliva <aoliva@redhat.com> 2.16.91.0.6-4
+- fix relaxation of TLS GD to LE on PPC (#184590)
+
+* 五 3月 03 2006 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.6-3
+- support DW_CFA_val_{offset,offset_sf,expression} in readelf/objdump
+
+* 二 2月 28 2006 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.6-2
+- add MNI support on i?86/x86_64 (#183080)
+- support S signal frame augmentation flag in .eh_frame,
+  add .cfi_signal_frame support (#175951, PR other/26208, BZ#300)
+
+* 二 2月 14 2006 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.6-1
+- update to 2.16.91.0.6
+  - fix ppc64 --gc-sections
+  - disassembler fixes for x86_64 cr/debug regs
+  - fix linker search order for DT_NEEDED libs
+
+* 一 1月 02 2006 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.5-1
+- update to 2.16.91.0.5
+- don't error about .toc1 references to discarded sectiosn on ppc64
+  (#175944)
+
+* 三 12月 14 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.3-2
+- put .gnu.linkonce.d.rel.ro.* sections into relro region
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 11月 11 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.3-1
+- update to 2.16.91.0.3
+- add .weakref support (Alexandre Oliva, #115157, #165728)
+
+* 四 8月 18 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.2-4
+- install-info also configure.info
+- update standards.texi from gnulib (#165530)
+
+* 二 8月 16 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.2-3
+- update to 20050816 CVS
+- better fix for ld-cdtest
+- fix symbol version script parsing
+
+* 五 7月 29 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.2-2
+- don't complain about relocs to discarded sections in ppc32
+  .got2 sections (Alan Modra, PR target/17828)
+
+* 五 7月 22 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.2-1
+- update to 2.16.91.0.2
+
+* 四 7月 21 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.1-3
+- fix buffer overflow in readelf ia64 unwind printing code
+- use vsnprintf rather than vsprintf in gas diagnostics (Tavis Ormandy)
+- fix ld-cdtest when CFLAGS contains -fexceptions
+
+* 三 7月 20 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.1-2
+- update to 20050720 CVS
+
+* 一 7月 11 2005 Jakub Jelinek <jakub@redhat.com> 2.16.91.0.1-1
+- update to 2.16.91.0.1 plus 20050708 CVS
+
+* 三 6月 15 2005 Jakub Jelinek <jakub@redhat.com> 2.16.90.0.3-1
+- update to 2.16.90.0.3
+- update to 20050615 CVS
+  - ppc32 secure PLT support (Alan Modra)
+- further bfd/readelf robustification
+
+* 六 6月 11 2005 Jakub Jelinek <jakub@redhat.com> 2.15.94.0.2.2-4
+- further bfd robustification (CAN-2005-1704, #158680)
+
+* 五 6月 10 2005 Jakub Jelinek <jakub@redhat.com> 2.15.94.0.2.2-3
+- further objdump and readelf robustification (CAN-2005-1704, #158680)
+
+* 三 5月 25 2005 Jakub Jelinek <jakub@redhat.com> 2.15.94.0.2.2-2
+- bfd and readelf robustification (CAN-2005-1704, #158680)
+
+* 二 3月 29 2005 Jakub Jelinek <jakub@redhat.com> 2.15.94.0.2.2-1
+- update to 2.15.94.0.2.2
+- speed up walk_wild_section (Robert O'Callahan)
+
+* 一 3月 07 2005 Jakub Jelinek <jakub@redhat.com> 2.15.94.0.2-4
+- rebuilt with GCC 4
+
+* 一 2月 28 2005 Jakub Jelinek <jakub@redhat.com> 2.15.94.0.2-3
+- fix buffer overflows in readelf (#149506)
+- move c++filt to binutils from gcc-c++, conflict with gcc-c++ < 4.0 (#86333)
+
+* 四 2月 10 2005 Jakub Jelinek <jakub@redhat.com> 2.15.94.0.2-1
+- update to 2.15.94.0.2
+- fix .note.GNU-stack/PT_GNU_STACK computation in linker on ppc64 (#147296)
+- fix stripping of binaries/libraries that have empty sections right before
+  .dynamic section (with the same starting address; #144038)
+- handle AS_NEEDED (...) in linker script INPUT/GROUP
+
+* 二 12月 14 2004 Jakub Jelinek <jakub@redhat.com> 2.15.92.0.2-11
+- fix a longstanding -z relro bug
+
+* 一 12月 13 2004 Jakub Jelinek <jakub@redhat.com> 2.15.92.0.2-10
+- avoid unnecessary gap with -z relro showing on i686 libc.so
+- ppc64 --emit-relocs fix (Alan Modra)
+- don't crash if STT_SECTION symbol has incorrect st_shndx (e.g. SHN_ABS,
+  as created by nasm; #142181)
+- don't try to make absptr LSDAs relative if they don't have relocations
+  against them (Alan Modra, #141162)
+
+* 三 10月 27 2004 Jakub Jelinek <jakub@redhat.com> 2.15.92.0.2-5.EL4
+- fix ar xo (#104344)
+
+* 三 10月 20 2004 Jakub Jelinek <jakub@redhat.com> 2.15.92.0.2-5
+- fix --just-symbols on ppc64 (Alan Modra, #135498)
+
+* 五 10月 15 2004 Jakub Jelinek <jakub@redhat.com> 2.15.92.0.2-4
+- fix code detecting matching linkonce and single member comdat
+  group sections (#133078)
+
+* 一 10月 11 2004 Jakub Jelinek <jakub@redhat.com> 2.15.92.0.2-3
+- revert Sep 09 change to make ppc L second argument e.g. for tlbie
+  non-optional
+- fix stripping of prelinked binaries and libraries (#133734)
+- allow strings(1) on 32-bit arches to be used again with > 2GB
+  files (#133555)
+
+* 一 10月 04 2004 Jakub Jelinek <jakub@redhat.com> 2.15.92.0.2-2
+- update to 2.15.92.0.2
+- change ld's ld.so.conf parser to match ldconfig's (#129340)
+
+* 一 9月 20 2004 Jakub Jelinek <jakub@redhat.com> 2.15.91.0.2-9
+- avoid almost 1MB (sparse) gaps in the middle of -z relro
+  libraries on x86-64 (Andreas Schwab)
+- fix -z relro to make sure end of PT_GNU_RELRO segment is always
+  COMMONPAGESIZE aligned
+
+* 一 8月 16 2004 Jakub Jelinek <jakub@redhat.com> 2.15.91.0.2-8
+- fix linker segfaults on input objects with SHF_LINK_ORDER with
+  incorrect sh_link (H.J.Lu, Nick Clifton, #130198, BZ #290)
+
+* 一 8月 16 2004 Jakub Jelinek <jakub@redhat.com> 2.15.91.0.2-7
+- resolve all undefined ppc64 .* syms to the function bodies through
+  .opd, not just those used in brach instructions (Alan Modra)
+
+* 一 8月 16 2004 Jakub Jelinek <jakub@redhat.com> 2.15.91.0.2-6
+- fix ppc64 ld --dotsyms (Alan Modra)
+
+* 一 8月 16 2004 Jakub Jelinek <jakub@redhat.com> 2.15.91.0.2-5
+- various ppc64 make check fixes when using non-dot-syms gcc (Alan Modra)
+- fix --gc-sections
+- on ia64 create empty .gnu.linkonce.ia64unw*.* sections for
+  .gnu.linkonce.t.* function doesn't need unwind info
+
+* 一 8月 16 2004 Jakub Jelinek <jakub@redhat.com> 2.15.91.0.2-4
+- kill ppc64 dot symbols (Alan Modra)
+- objdump -d support for objects without dot symbols
+- support for overlapping ppc64 .opd entries
+
+* 一 8月 09 2004 Jakub Jelinek <jakub@redhat.com> 2.15.91.0.2-3
+- fix a newly introduced linker crash on x86-64
+
+* 日 8月 08 2004 Alan Cox <alan@redhat.com> 2.15.91.0.2-2
+- BuildRequire bison and macroise buildroot - from Steve Grubb
+
+* 五 7月 30 2004 Jakub Jelinek <jakub@redhat.com> 2.15.91.0.2-1
+- update to 2.15.91.0.2
+- BuildRequire flex (#117763)
+
+* 三 5月 19 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.3-7
+- use lib64 instead of lib directories on ia64 if %{_lib} is
+  set to lib64 by rpm
+
+* 六 5月 15 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.3-6
+- fix a bug introduced in the ++/-- rejection patch
+  from 2.15.90.0.3 (Alan Modra)
+
+* 二 5月 04 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.3-5
+- fix s390{,x} .{,b,p2}align handling
+- ppc/ppc64 testsuite fix
+
+* 一 5月 03 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.3-4
+- -z relro ppc/ppc64/ia64 fixes
+- change x86-64 .plt symbol st_size handling to match ia32
+- prettify objdump -d output
+
+* 二 4月 20 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.3-3
+- several SPARC fixes
+
+* 日 4月 18 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.3-2
+- yet another fix for .tbss handling
+
+* 五 4月 16 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.3-1
+- update to 2.15.90.0.3
+
+* 五 3月 26 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.1.1-2
+- update to 20040326 CVS
+  - fix ppc64 weak .opd symbol handling (Alan Modra, #119086)
+- fix .tbss handling bug introduced
+
+* 五 3月 26 2004 Jakub Jelinek <jakub@redhat.com> 2.15.90.0.1.1-1
+- update to 2.15.90.0.1.1
+
+* 六 2月 21 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.8-8
+- with -z now without --enable-new-dtags create DT_BIND_NOW
+  dynamic entry in addition to DT_FLAGS_1 with DF_1_NOW bit set
+
+* 五 2月 20 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.8-7
+- fix -pie on ppc32
+
+* 五 2月 20 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.8-6
+- clear .plt sh_entsize on sparc32
+- put whole .got into relro area with -z now -z relro
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 1月 22 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.8-4
+- fix -pie on IA64
+
+* 一 1月 19 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.8-3
+- fix testcases on s390 and s390x
+
+* 五 1月 16 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.8-2
+- fix testcases on AMD64
+- fix .got's sh_entsize on IA32/AMD64
+- set COMMONPAGESIZE on s390/s390x
+- set COMMONPAGESIZE on ppc32 (Alan Modra)
+
+* 五 1月 16 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.8-1
+- update to 2.14.90.0.8
+
+* 二 1月 13 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.7-4
+- fix -z relro on 64-bit arches
+
+* 一 1月 12 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.7-3
+- fix some bugs in -z relro support
+
+* 五 1月 09 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.7-2
+- -z relro support, reordering of RW sections
+
+* 五 1月 09 2004 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.7-1
+- update to 2.14.90.0.7
+
+* 一 11月 24 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.6-4
+- fix assembly parsing of foo=(.-bar)/4 (Alan Modra)
+- fix IA-64 assembly parsing of (p7) hint @pause
+
+* 二 9月 30 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.6-3
+- don't abort on some linker warnings/errors on IA-64
+
+* 六 9月 20 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.6-2
+- fix up merge2.s to use .p2align instead of .align
+
+* 六 9月 20 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.6-1
+- update to 2.14.90.0.6
+- speed up string merging (Lars Knoll, Michael Matz, Alan Modra)
+- speed up IA-64 local symbol handling during linking
+
+* 五 9月 05 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.5-7
+- avoid ld -s segfaults introduced in 2.14.90.0.5-5 (Dmitry V. Levin,
+
+* 五 8月 29 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.5-6
+- build old demangler into libiberty.a (#102268)
+- SPARC .cfi* support
+
+* 二 8月 05 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.5-5
+- fix orphan section placement
+
+* 二 7月 29 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.5-4
+- fix ppc64 elfvsb linker tests
+- some more 64-bit cleanliness fixes, give ppc64 fdesc symbols
+  type and size (Alan Modra)
+
+* 二 7月 29 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.5-3
+- fix 64-bit unclean code in ppc-opc.c
+
+* 一 7月 28 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.5-2
+- fix 64-bit unclean code in tc-ppc.c
+
+* 一 7月 28 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.5-1
+- update to 2.14.90.0.5
+- fix ld -r on ppc64 (Alan Modra)
+
+* 五 7月 18 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-23
+- rebuilt
+
+* 四 7月 17 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-22
+- fix elfNN_ia64_dynamic_symbol_p (Richard Henderson, #86661)
+- don't access memory beyond what was allocated in readelf
+  (Richard Henderson)
+
+* 四 7月 10 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-21
+- add .cfi_* support on ppc{,64} and s390{,x}
+
+* 二 7月 08 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-20
+- remove lib{bfd,opcodes}.la (#98190)
+
+* 一 7月 07 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-19
+- fix -pie support on amd64, s390, s390x and ppc64
+- issue relocation overflow errors for s390/s390x -fpic code when
+  accessing .got slots above 4096 bytes from .got start
+
+* 四 7月 03 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-18
+- rebuilt
+
+* 四 7月 03 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-17
+- fix ia64 -pie support
+- require no undefined non-weak symbols in PIEs like required for normal
+  binaries
+
+* 三 7月 02 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-16
+- fix readelf -d on IA-64
+- build libiberty.a with -fPIC, so that it can be lined into shared
+  libraries
+
+* 三 6月 25 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-15
+- rebuilt
+
+* 三 6月 25 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-14
+- added support for Intel Prescott instructions
+- fix hint@pause for ia64
+- add workaround for LTP sillyness (#97934)
+
+* 三 6月 18 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-13
+- update CFI stuff to 2003-06-18
+- make sure .eh_frame is aligned to 8 bytes on 64-bit arches,
+  remove padding within one .eh_frame section
+
+* 二 6月 17 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-12
+- rebuilt
+
+* 二 6月 17 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-11
+- one more fix for the same patch
+
+* 二 6月 17 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-10
+- fix previous patch
+
+* 一 6月 16 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-9
+- ensure R_PPC64_{RELATIVE,ADDR64} have *r_offset == r_addend
+  and the other relocs have *r_offset == 0
+
+* 二 6月 10 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-8
+- remove some unnecessary provides in ppc64 linker script
+  which were causing e.g. empty .ctors/.dtors section creation
+
+* 五 6月 06 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-7
+- some CFI updates/fixes
+- don't create dynamic relocations against symbols defined in PIE
+  exported from its .dynsym
+
+* 三 6月 04 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-6
+- update gas to 20030604
+- PT_GNU_STACK support
+
+* 一 6月 02 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-5
+- buildrequire gettext (#91838)
+
+* 六 5月 31 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-4
+- fix shared libraries with >= 8192 .plt slots on ppc32
+
+* 四 5月 29 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-3
+- rebuilt
+
+* 四 5月 29 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-2
+- rename ld --dynamic option to --pic-executable or --pie
+- fix ld --help output
+- document --pie/--pic-executable in ld.info and ld.1
+
+* 三 5月 28 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.4-1
+- update to 2.14.90.0.4-1
+- gas CFI updates (Richard Henderson)
+- dynamic executables (Ulrich Drepper)
+
+* 二 5月 20 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.2-2
+- fix ELF visibility handling
+- tidy plt entries on IA-32, ppc and ppc64
+
+* 一 5月 19 2003 Jakub Jelinek <jakub@redhat.com> 2.14.90.0.2-1
+- update to 2.14.90.0.2-1
+
+* 二 5月 13 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.20-8
+- fix bfd_elf_hash on 64-bit arches (Andrew Haley)
+
+* 三 4月 30 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.20-7
+- rebuilt
+
+* 一 4月 14 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.20-6
+- optimize DW_CFA_advance_loc4 in gas even if there is 'z' augmentation
+  with size 0 in FDE
+
+* 五 4月 11 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.20-5
+- fix SPARC build
+
+* 四 4月 03 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.20-4
+- fix ppc32 plt reference counting
+- don't include %{_prefix}/%{_lib}/debug in the non-debuginfo package
+  (#87729)
+
+* 一 3月 31 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.20-3
+- make elf64ppc target native extra on ppc and elf32ppc native extra
+  on ppc64.
+
+* 五 3月 28 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.20-2
+- fix TLS on IA-64 with ld relaxation
+
+* 六 3月 22 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.20-1
+- update to 2.13.90.0.20
+
+* 一 2月 24 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-9
+- rebuilt
+
+* 一 2月 24 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-8
+- don't strip binaries in %install, so that there is non-empty
+  debuginfo
+
+* 一 2月 24 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-7
+- don't optimize .eh_frame during ld -r
+
+* 四 2月 13 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-6
+- don't clear elf_link_hash_flags in the .symver patch
+- only use TC_FORCE_RELOCATION in s390's TC_FORCE_RELOCATION_SUB_SAME
+  (Alan Modra)
+
+* 一 2月 10 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-5
+- fix the previous .symver change
+- remove libbfd.so and libopcodes.so symlinks, so that other packages
+  link statically, not dynamically against libbfd and libopcodes
+  whose ABI is everything but stable
+
+* 一 2月 10 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-4
+- do .symver x, x@FOO handling earlier
+- support .file and .loc on s390*
+
+* 一 2月 10 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-3
+- handle .symver x, x@FOO in ld such that relocs against x become
+  dynamic relocations against x@FOO (#83325)
+- two PPC64 TLS patches (Alan Modra)
+
+* 日 2月 09 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-2
+- fix SEARCH_DIR on x86_64/s390x
+- fix Alpha --relax
+- create DT_RELA{,SZ,ENT} on s390 even if there is just .rela.plt
+  and no .rela.dyn section
+- support IA-32 on IA-64 (#83752)
+- .eh_frame_hdr fix (Andreas Schwab)
+
+* 四 2月 06 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.18-1
+- update to 2.13.90.0.18 + 20030121->20030206 CVS diff
+
+* 二 2月 04 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.16-8
+- alpha TLS fixes
+- use .debug_line directory table to make the section tiny bit smaller
+- libtool fix from Jens Petersen
+
+* 日 2月 02 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.16-7
+- sparc32 TLS
+
+* 五 1月 24 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.16-6
+- s390{,x} TLS and two other mainframe patches
+
+* 五 1月 17 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.16-5
+- fix IA-64 TLS IE in shared libs
+- .{preinit,init,fini}_array compat hack from Alexandre Oliva
+
+* 四 1月 16 2003 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.16-4
+- IA-64 TLS fixes
+- fix .plt sh_entsize on Alpha
+- build with %_smp_mflags
+
+* 六 11月 30 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.16-3
+- fix strip on TLS binaries and libraries
+
+* 五 11月 29 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.16-2
+- fix IA-64 ld bootstrap
+
+* 四 11月 28 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.16-1
+- update to 2.13.90.0.16
+- STT_TLS SHN_UNDEF fix
+
+* 三 11月 27 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.10-4
+- pad .rodata.cstNN sections at the end if they aren't sized to multiple
+  of sh_entsize
+- temporary patch to make .eh_frame and .gcc_except_table sections
+  readonly if possible (should be removed when AUTO_PLACE is implemented)
+- fix .PPC.EMB.apuinfo section flags
+
+* 三 10月 23 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.10-3
+- fix names and content of alpha non-alloced .rela.* sections (#76583)
+- delete unpackaged files from the buildroot
+
+* 二 10月 15 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.10-2
+- enable s390x resp. s390 emulation in linker too
+
+* 一 10月 14 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.10-1
+- update to 2.13.90.0.10
+- add a bi-arch patch for sparc/s390/x86_64
+- add --enable-64-bit-bfd on sparc, s390 and ppc
+
+* 四 10月 10 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.4-3
+- fix combreloc testcase
+
+* 四 10月 10 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.4-2
+- fix orphan .rel and .rela section placement with -z combreloc (Alan Modra)
+- skip incompatible linker scripts when searching for libraries
+
+* 二 10月 01 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.4-1
+- update to 2.13.90.0.4
+- x86-64 TLS support
+- some IA-32 TLS fixes
+- some backported patches from trunk
+- include opcodes, ld, gas and bfd l10n too
+
+* 四 9月 19 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.2-3
+- allow addends for IA-32 TLS @tpoff, @ntpoff and @dtpoff
+- clear memory at *r_offset of dynamic relocs on PPC
+- avoid ld crash if accessing non-local symbols through LE relocs
+- new IA-32 TLS relocs, bugfixes and testcases
+- use brl insn on IA-64 (Richard Henderson)
+- fix R_IA64_PCREL21{M,F} handling (Richard Henderson)
+- build in separate builddir, so that gasp tests don't fail
+- include localization
+
+* 四 8月 08 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.2-2
+- fix R_386_TPOFF32 addends (#70824)
+
+* 六 8月 03 2002 Jakub Jelinek <jakub@redhat.com> 2.13.90.0.2-1
+- update to 2.13.90.0.2
+  - fix ld TLS assertion failure (#70084)
+  - fix readelf --debug-dump= handling to match man page and --help
+    (#68997)
+- fix _GLOBAL_OFFSET_TABLE gas handling (#70241)
+
+* 三 7月 24 2002 Jakub Jelinek <jakub@redhat.com> 2.12.90.0.15-1
+- update to 2.12.90.0.15
+- TLS .tbss fix
+- don't use rpm %configure macro, it is broken too often (#69366)
+
+* 四 5月 30 2002 Jakub Jelinek <jakub@redhat.com> 2.12.90.0.9-1
+- update to 2.12.90.0.9
+  - TLS support
+- remove gasp.info from %post/%preun (#65400)
+
+* 一 4月 29 2002 Jakub Jelinek <jakub@redhat.com> 2.12.90.0.7-1
+- update to 2.12.90.0.7
+- run make check
+
+* 一 4月 29 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-12
+- fix .hidden handling on SPARC (Richard Henderson)
+- don't crash when linking -shared non-pic code with SHF_MERGE
+- fix .eh_frame_hdr for DW_EH_PE_aligned
+- correctly adjust DW_EH_PE_pcrel encoded personalities in CIEs
+
+* 五 4月 05 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-11
+- don't emit dynamic R_SPARC_DISP* relocs against STV_HIDDEN symbols
+  into shared libraries
+
+* 四 3月 21 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-10
+- don't merge IA-64 unwind info sections together during ld -r
+
+* 一 3月 11 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-9
+- fix DATA_SEGMENT_ALIGN on ia64/alpha/sparc/sparc64
+
+* 五 3月 08 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-8
+- don't crash on SHN_UNDEF local dynsyms (Andrew MacLeod)
+
+* 四 3月 07 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-7
+- fix bfd configury bug (Alan Modra)
+
+* 二 3月 05 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-6
+- don't copy visibility when equating symbols
+- fix alpha .text/.data with .previous directive bug
+
+* 二 3月 05 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-5
+- fix SHF_MERGE crash with --gc-sections (#60369)
+- C++ symbol versioning patch
+
+* 五 2月 22 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-4
+- add DW_EH_PE_absptr -> DW_EH_PE_pcrel optimization for shared libs,
+  if DW_EH_PE_absptr cannot be converted that way, don't build the
+  .eh_frame_hdr search table
+
+* 五 2月 15 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-3
+- fix ld -N broken by last patch
+
+* 二 2月 12 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-2
+- trade one saved runtime page for data segment (=almost always not shared)
+  for up to one page of disk space where possible
+
+* 五 2月 08 2002 Jakub Jelinek <jakub@redhat.com> 2.11.93.0.2-1
+- update to 2.11.93.0.2
+- use %{ix86} instead of i386 for -z combreloc default (#59086)
+
+* 四 1月 31 2002 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-10
+- don't create SHN_UNDEF STB_WEAK symbols unless there are any relocations
+  against them
+
+* 三 1月 30 2002 Bill Nottingham <notting@redhat.com> 2.11.92.0.12-9.1
+- rebuild (fix ia64 miscompilation)
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 12月 28 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-8
+- two further .eh_frame patch fixes
+
+* 三 12月 19 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-7
+- as ld is currently not able to shrink input sections to zero size
+  during discard_info, build a fake minimal CIE in that case
+- update elf-strtab patch to what was commited
+
+* 一 12月 17 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-6
+- one more .eh_frame patch fix
+- fix alpha .eh_frame handling
+- optimize elf-strtab finalize
+
+* 六 12月 15 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-5
+- yet another fix for the .eh_frame patch
+
+* 五 12月 14 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-4
+- Alan Modra's patch to avoid crash if there is no dynobj
+
+* 四 12月 13 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-3
+- H.J.'s patch to avoid crash if input files are not ELF
+- don't crash if a SHF_MERGE for some reason could not be merged
+- fix objcopy/strip to preserve SHF_MERGE sh_entsize
+- optimize .eh_frame sections, add PT_GNU_EH_FRAME support
+- support anonymous version tags in version script
+
+* 二 11月 27 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-2
+- fix IA-64 SHF_MERGE handling
+
+* 二 11月 27 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.12-1
+- update to 2.11.92.0.12
+  - optimize .dynstr and .shstrtab sections (#55524)
+  - fix ld.1 glitch (#55459)
+- turn relocs against SHF_MERGE local symbols with zero addend
+  into STT_SECTION + addend
+- remove man pages for programs not included (nlmconv, windres, dlltool;
+  - add BuildRequires for texinfo
+
+* 四 10月 25 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.7-2
+- duh, fix strings on bfd objects (#55084)
+
+* 六 10月 20 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.7-1
+- update to 2.11.92.0.7
+- remove .rel{,a}.dyn from output if it is empty
+
+* 四 10月 11 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.5-2
+- fix strings patch
+- use getc_unlocked in strings to speed it up by 50% on large files
+
+* 三 10月 10 2001 Jakub Jelinek <jakub@redhat.com> 2.11.92.0.5-1
+- update to 2.11.92.0.5
+  - binutils localization (#45148)
+  - fix typo in REPORT_BUGS_TO (#54325)
+- support files bigger than 2GB in strings (#54406)
+
+* 三 9月 26 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-12
+- on IA-64, don't mix R_IA64_IPLTLSB relocs with non-PLT relocs in
+  .rela.dyn section.
+
+* 二 9月 25 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-11
+- add iplt support for IA-64 (Richard Henderson)
+- switch to new section flags for SHF_MERGE and SHF_STRINGS, put
+  in compatibility code
+- "s" section flag for small data sections on IA-64 and Alpha
+  (Richard Henderson)
+- fix sparc64 .plt[32768+] handling
+- don't emit .rela.stab on sparc
+
+* 一 9月 10 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-10
+- fix SHF_MERGE on Sparc
+
+* 五 8月 31 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-9
+- on Alpha, copy *r_offset to R_ALPHA_RELATIVE's r_addend
+
+* 四 8月 30 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-8
+- on IA-64, put crtend{,S}.o's .IA_64.unwind section last in
+  .IA_64.unwind output section (for compatibility with 7.1 eh)
+
+* 五 8月 24 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-7
+- put RELATIVE relocs first, not last
+- enable -z combreloc by default on IA-{32,64}, Alpha, Sparc*
+
+* 四 8月 23 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-6
+- support for -z combreloc
+- remove .dynamic patch, -z combreloc patch does this better
+- set STT_FUNC default symbol sizes in .endp directive on IA-64
+
+* 一 7月 16 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-5
+- fix last patch (H.J.Lu)
+
+* 五 7月 13 2001 Jakub Jelinek <jakub@redhat.com> 2.11.90.0.8-4
+- fix placing of orphan sections
+
+* 六 6月 23 2001 Jakub Jelinek <jakub@redhat.com>
+- fix SHF_MERGE support on Alpha
+
+* 五 6月 08 2001 Jakub Jelinek <jakub@redhat.com>
+- 2.11.90.0.8
+  - some SHF_MERGE suport fixes
+- don't build with tooldir /usrusr instead of /usr (#40937)
+- reserve few .dynamic entries for prelinking
+
+* 一 4月 16 2001 Jakub Jelinek <jakub@redhat.com>
+- 2.11.90.0.5
+  - SHF_MERGE support
+
+* 二 4月 03 2001 Jakub Jelinek <jakub@redhat.com>
+- 2.11.90.0.4
+  - fix uleb128 support, so that CVS gcc bootstraps
+  - some ia64 fixes
+
+* 一 3月 19 2001 Jakub Jelinek <jakub@redhat.com>
+- add -Bgroup support from Ulrich Drepper
+
+* 五 3月 09 2001 Jakub Jelinek <jakub@redhat.com>
+- hack - add elf_i386_glibc21 emulation
+
+* 五 2月 16 2001 Jakub Jelinek <jakub@redhat.com>
+- 2.10.91.0.2
+
+* 五 2月 09 2001 Jakub Jelinek <jakub@redhat.com>
+- 2.10.1.0.7
+- remove ExcludeArch ia64
+- back out the -oformat, -omagic and -output change for now
+
+* 五 12月 15 2000 Jakub Jelinek <jakub@redhat.com>
+- Prereq /sbin/install-info
+
+* 二 11月 21 2000 Jakub Jelinek <jakub@redhat.com>
+- 2.10.1.0.2
+
+* 二 11月 21 2000 Jakub Jelinek <jakub@redhat.com>
+- add one more alpha patch
+
+* 三 11月 15 2000 Jakub Jelinek <jakub@redhat.com>
+- fix alpha visibility as problem
+- add support for Ultra-III
+
+* 五 9月 15 2000 Jakub Jelinek <jakub@redhat.com>
+- and one more alpha patch
+
+* 五 9月 15 2000 Jakub Jelinek <jakub@redhat.com>
+- two sparc patches
+
+* 一 7月 24 2000 Jakub Jelinek <jakub@redhat.com>
+- 2.10.0.18
+
+* 一 7月 10 2000 Jakub Jelinek <jakub@redhat.com>
+- 2.10.0.12
+
+* 一 6月 26 2000 Jakub Jelinek <jakub@redhat.com>
+- 2.10.0.9
+
+* 四 6月 15 2000 Jakub Jelinek <jakub@redhat.com>
+- fix ld -r
+
+* 一 6月 05 2000 Jakub Jelinek <jakub@redhat.com>
+- 2.9.5.0.46
+- use _mandir/_infodir/_lib
+
+* 一 5月 08 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.9.5.0.41
+
+* 三 4月 12 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.9.5.0.34
+
+* 三 3月 22 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.9.5.0.31
+
+* 五 2月 04 2000 Cristian Gafton <gafton@redhat.com>
+- man pages are compressed
+- apply kingdon's patch from #5031
+
+* 三 1月 19 2000 Jeff Johnson <jbj@redhat.com>
+- Permit package to be built with a prefix other than /usr.
+
+* 四 1月 13 2000 Cristian Gafton <gafton@redhat.com>
+- add pacth from hjl to fix the versioning problems in ld
+
+* 二 1月 11 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add sparc patches from Jakub Jelinek <jakub@redhat.com>
+- Add URL:
+
+* 二 12月 14 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.9.5.0.22
+
+* 三 11月 24 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.9.5.0.19
+
+* 日 10月 24 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.9.5.0.16
+
+* 一 9月 06 1999 Jakub Jelinek <jj@ultra.linux.cz>
+- make shared non-pic libraries work on sparc with glibc 2.1.
+
+* 五 8月 27 1999 Jim Kingdon
+- No source/spec changes, just rebuilding with egcs-1.1.2-18 because
+  the older egcs was miscompling gprof.
+
+* 一 4月 26 1999 Cristian Gafton <gafton@redhat.com>
+- back out very *stupid* sparc patch done by HJLu. People, keep out of
+  things you don't understand.
+- add alpha relax patch from rth
+
+* 一 4月 05 1999 Cristian Gafton <gafton@redhat.com>
+- version  2.9.1.0.23
+- patch to make texinfo documentation compile
+- auto rebuild in the new build environment (release 2)
+
+* 二 2月 23 1999 Cristian Gafton <gafton@redhat.com>
+- updated to 2.9.1.0.21
+- merged with UltraPenguin
+
+* 一 1月 04 1999 Cristian Gafton <gafton@redhat.com>
+- added ARM patch from philb
+- version 2.9.1.0.19a
+- added a patch to allow arm* arch to be identified as an ARM
+
+* 四 10月 01 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 2.9.1.0.14.
+
+* 六 9月 19 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 2.9.1.0.13.
+
+* 三 9月 09 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 2.9.1.0.12
+
+* 四 7月 02 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 2.9.1.0.7.
+
+* 三 6月 03 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 2.9.1.0.6.
+
+* 二 6月 02 1998 Erik Troan <ewt@redhat.com>
+- added patch from rth to get right offsets for sections in relocateable
+  objects on sparc32
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 5月 05 1998 Cristian Gafton <gafton@redhat.com>
+- version 2.9.1.0.4 is out; even more, it is public !
+
+* 二 5月 05 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 2.9.1.0.3.
+
+* 一 4月 20 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 2.9.0.3
+
+* 二 4月 14 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded to 2.9.0.2
+
+* 日 4月 05 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 2.8.1.0.29 (HJ warned me that this thing is a moving target...
+  :-)
+- "fixed" the damn make install command so that all tools get installed
+
+* 四 4月 02 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded again to 2.8.1.0.28 (at least on alpha now egcs will compile)
+- added info packages handling
+
+* 二 3月 10 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded to 2.8.1.0.23
+
+* 一 3月 02 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 2.8.1.0.15 (required to compile the newer glibc)
+- all patches are obsoleted now
+
+* 三 10月 22 1997 Erik Troan <ewt@redhat.com>
+- added 2.8.1.0.1 patch from hj
+- added patch for alpha palcode form rth
+

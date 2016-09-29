@@ -1,0 +1,747 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.14.2-7.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.14.2-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.14.2-7.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 6.14.2-7.1
+- rebuild for alios6
+
+* 四 10月 20 2011 Jerome Glisse <jglisse@redhat.com> 6.14.2-7
+- Fallback to vesa for GPU without UMS (#747131)
+
+* 五 7月 22 2011 Jerome Glisse <jglisse@redhat.com> 6.14.2-6
+- RHEL6.2 bring in fixes since 6.14.2 release (#713766)
+
+* 三 6月 29 2011 Jerome Glisse <jglisse@redhat.com> 6.14.2-5
+- RHEL6.2 add build dependency (#713766)
+
+* 三 6月 29 2011 Jerome Glisse <jglisse@redhat.com> 6.14.2-4
+- RHEL6.2 actually upload the patch (#713766)
+
+* 三 6月 29 2011 Jerome Glisse <jglisse@redhat.com> 6.14.2-3
+- RHEL6.2 rebase proper background patch for last xserver (#713766)
+
+* 三 6月 29 2011 Jerome Glisse <jglisse@redhat.com> 6.14.2-2
+- RHEL6.2 rebase against lastest xserver (#713766)
+
+* 四 6月 23 2011 Dave Airlie <airlied@redhat.com> 6.14.2-1
+- rebase to latest upstream release + llano support + new firmware (#713622)
+
+* 五 6月 11 2010 Dave Airlie <airlied@redhat.com> 6.13.0-6
+- fix a powerpc endian + incorrect cursor pitch on rn50/power (#593949)
+
+* 三 6月 09 2010 Dave Airlie <airlied@redhat.com> 6.13.0-5
+- fix rn50 cloning (patch from Alex Deucher @ AMD + fix 1 crtc issue) (#512023)
+
+* 五 5月 07 2010 Dave Airlie <airlied@redhat.com> 6.13.0-4
+- add uevent support for hotplug monitors
+
+* 二 4月 27 2010 Dave Airlie <airlied@redhat.com> 6.13.0-3
+- if copying the fb fails - don't display garbage (#585091)
+
+* 五 4月 09 2010 Dave Airlie <airlied@redhat.com> 6.13.0-2
+- add r800 firmware + fix for rn50 Xv
+
+* 四 4月 08 2010 Dave Airlie <airlied@redhat.com> 6.13.0-1
+- Upstream 6.13.0 finally released - can drop git snapshots
+
+* 一 3月 08 2010 Jerome Glisse <jglisse@redhat.com> 6.13.0-0.20.20100219git1b7e9a2e5
+- build firmware as noarch package + add ExcludeArch to it fix (#570702)
+
+* 四 2月 25 2010 Dave Airlie <airlied@redhat.com> 6.13.0-0.20.20100219git1b7e9a2e5
+- rebase to F-12 + zaphod fixes + clone mode server fix (#568214)
+
+* 一 12月 21 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.19.20091221git4b05c47ac
+- rebase for latest libdrm_radeon API changes - should be final API.
+
+* 三 12月 02 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.18.20091201git88a50a30d
+- add R600 RLC firmware for IRQ handling
+
+* 三 12月 02 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.17.20091201git88a50a30d
+- ums displayport + bump libdrm requires for new function needed
+
+* 二 12月 01 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.16.20091201git88a50a30d
+- fixed up multi-op support for r600s
+
+* 五 11月 27 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.15.20091127gita8dbf7c23
+- upstream snapshot with fix for resize under shadowfb, merged multi-op
+
+* 四 11月 26 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.14.20091125git8b28534bc
+- revert r600 multi-op for now seems to cause regression
+
+* 三 11月 25 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.13.20091125git8b28534bc
+- rebase to upstream with r600 speed ups and r100 fixes integrated.
+
+* 五 11月 20 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.12.20091119git437113124
+- fix r100 Xv (partly inspired by 505152), rn50 small VRAM fixes.
+
+* 四 11月 19 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.11.20091119git437113124
+- upstream snapshot (#538561), amongst others
+
+* 五 10月 09 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.10.20091006git457646d73
+- Don't use scratch pixmaps for rotate
+
+* 五 10月 09 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.9.20091006git457646d73
+- reload cursors on mode switch/rotate
+
+* 三 10月 07 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.8.20091006git457646d73
+- fix rotate (#527000)
+
+* 二 10月 06 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.7.20091006git457646d73
+- resnapshot with VT switch fixes and mixed issue was in server which is fixed
+
+* 三 9月 30 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.6.20090929git7968e1fb8
+- mixed appears to break r600 for some reason need to investigate disable for
+  beta
+
+* 二 9月 29 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.5.20090929git7968e1fb8
+- rebase to latest upstream for vline fixes and zaphod fixes
+
+* 四 9月 10 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.4.20090908git651fe5a47
+- fix EXA server crasher + use mixed pixmaps for speed ups
+
+* 二 9月 08 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.3.20090908git651fe5a47
+- New snapshot with r600 kms support
+
+* 五 8月 21 2009 Adam Jackson <ajax@redhat.com> 6.13.0-0.2.20090821gitb1b77a4d6
+- radeon-6.13-dri2-init.patch: Fix DRI2 init.
+
+* 五 8月 21 2009 Dave Airlie <airlied@redhat.com> 6.13.0-0.1.20090821gitb1b77a4d6
+- change versioning to git snapshot for now
+
+* 五 8月 21 2009 Dave Airlie <airlied@redhat.com> 6.12.2-22
+- change to a git snapshot
+
+* 二 8月 04 2009 Dave Airlie <airlied@redhat.com> 6.12.2-21
+- ati: rebase to git master - need to fixup a few patches later
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 6.12.2-20.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 15 2009 Adam Jackson <ajax@redhat.com> - 6.12.2-19.1
+- ABI bump
+
+* 四 6月 25 2009 Dave Airlie <airlied@redhat.com> 6.12.2-19
+- fix kms compat
+
+* 一 6月 22 2009 Dave Airlie <airlied@redhat.com> 6.12.2-18
+- rebuild against xorg F12 master
+
+* 五 6月 19 2009 Adam Jackson <ajax@redhat.com> 6.12.2-17
+- Obsoletes: xorg-x11-drv-avivo
+
+* 二 6月 09 2009 Dave Airlie <airlied@redhat.com> 6.12.2-16
+- add KMS compat patches + dri2 fixes for running on glisse kernel
+
+* 四 5月 21 2009 Adam Jackson <ajax@redhat.com> 6.12.2-15
+- Update to tip of 6.12 branch, 74cb2aba79049b792c22abf25ade3693b802b260
+- Drop stuff from radeon-modeset-fixes.patch to match
+- Generate radeon.xinf automatically from the CSV
+- radeon-6.12.2-hax.patch: Fix cursor setup and initial framebuffer clear
+  in KMS.
+
+* 四 5月 14 2009 Kyle McMartin <kyle@redhat.com> 6.12.2-14
+- radeon-modeset-still-more-fixes.patch: Bump the GEM interface version to
+  31 so we don't activate it... (#500801)
+
+* 四 5月 07 2009 Adam Jackson <ajax@redhat.com> 6.12.2-13
+- radeon-6.12.2-lvds-default-modes.patch: Add default modes to the LVDS mode
+  list if we got no EDID from the kernel.
+
+* 三 5月 06 2009 Dave Airlie <airlied@redhat.com> 6.12.2-12
+- radeon-6.12.2-rs690-hack.patch - workaround rs690 hangs with firefox safely
+
+* 二 5月 05 2009 Dave Airlie <airlied@redhat.com> 6.12.2-11
+- make src/mask prepare access force to GTT.
+
+* 二 5月 05 2009 Dave Airlie <airlied@redhat.com> 6.12.2-10
+- radeon-modeset-fixes.patch: backport fixes from upstream for rs480 firefox gpu crash
+
+* 二 4月 28 2009 Dave Airlie <airlied@redhat.com> 6.12.2-9
+- fix gamma code to work properly
+- bump kernel requires for gamma interface not oopsing
+
+* 二 4月 28 2009 Dave Airlie <airlied@redhat.com> 6.12.2-8
+- restrict texture coords to 0.0->1.0 explicitly.
+- enable gamma now kernel is tagged
+
+* 一 4月 27 2009 Dave Airlie <airlied@redhat.com> 6.12.2-7
+- revert rs690 fixes for now until we can research properly
+- fix xv warning
+
+* 五 4月 24 2009 Dave Airlie <airlied@redhat.com> 6.12.2-6
+- rs690: fix clamps patch so it doesn't break other cards
+
+* 四 4月 23 2009 Dave Airlie <airlied@redhat.com> 6.12.2-5
+- rs690: fix crashing when firefox or gimp is used
+
+* 四 4月 16 2009 Dave Airlie <airlied@redhat.com> 6.12.2-4
+- radeon-modeset.patch: fix stupid idle drawing corrupt since mmap cache
+
+* 三 4月 15 2009 Dave Airlie <airlied@redhat.com> 6.12.2-3
+- radeon-modeset-zaphod.patch: fix zaphod under kms in theory
+
+* 三 4月 15 2009 Dave Airlie <airlied@redhat.com> 6.12.2-2
+- radeon-modeset.patch: fix rotation + cache mmap uninit var path
+
+* 一 4月 13 2009 Adam Jackson <ajax@redhat.com> 6.12.2-1
+- radeon 6.12.2
+
+* 四 4月 09 2009 Adam Jackson <ajax@redhat.com> 6.12.1-10
+- radeon-6.12.1-r600-fb-size.patch: Bump fb size max on R600+ when no KMS
+  so single-link dualhead stands a chance of working.
+
+* 二 4月 07 2009 Dave Airlie <airlied@redhat.com> 6.12.1-9
+- cache mmaps for objects until remove time.
+
+* 二 4月 07 2009 Dave Airlie <airlied@redhat.com> 6.12.1-8
+- re-enable DFS for kms
+
+* 二 4月 07 2009 Dave Airlie <airlied@redhat.com> 6.12.1-7
+- radeon-modeset-fix-nomodeset.patch: fix no modeset paths
+
+* 一 4月 06 2009 Dave Airlie <airlied@redhat.com> 6.12.1-6
+- kms: add config.h to get mmap working properly
+
+* 一 4月 06 2009 Dave Airlie <airlied@redhat.com> 6.12.1-5
+- radeon-modeset.patch: break APIs;
+- radeon: move to latest git fixups
+- bump min kernel required
+
+* 五 4月 03 2009 Dave Airlie <airlied@redhat.com> 6.12.1-4
+- fix up r600 xv harder
+
+* 五 4月 03 2009 Dave Airlie <airlied@redhat.com> 6.12.1-3
+- fix up r600 xv src offsets hopefully
+
+* 三 4月 01 2009 Dave Airlie <airlied@redhat.com> 6.12.1-2
+- attempt to fix r100/r200 xv better
+
+* 三 4月 01 2009 Dave Airlie <airlied@redhat.com> 6.12.1-1
+- rebase to upstream + fix FUS on DRI2 + video on r100/r200 hopefully
+
+* 一 3月 16 2009 Dave Airlie <airlied@redhat.com> 6.12.0-2
+- radeon-6.12.0-git-fixes: fixes from git upstream
+
+* 六 3月 14 2009 Dave Airlie <airlied@redhat.com> 6.12.0-1
+- rebase to latest -ati upstream release
+
+* 五 3月 13 2009 Dave Airlie <airlied@redhat.com> 6.11.0-10
+- radeon-modeset.patch: merge patches into kms patch
+- radeon-6.11.0-git.patch: fix suspend/resume on r600
+
+* 四 3月 12 2009 Adam Jackson <ajax@redhat.com> 6.11.0-9
+- radeon-r600-kms-shadowfb.patch: Make R600 fall back to shadowfb whne KMS
+  is enabled (as opposed to crashing).
+
+* 四 3月 12 2009 Dave Airlie <airlied@redhat.com> 6.11.0-8
+- fix r600 GART table sizing bug
+
+* 二 3月 10 2009 Dave Airlie <airlied@redhat.com> 6.11.0-7
+- fix r600 xv, thanks to twoerner on #radeon for testing
+
+* 二 3月 10 2009 Dave Airlie <airlied@redhat.com> 6.11.0-6
+- master fixes for panning + enable r600 accel by default
+
+* 六 3月 07 2009 Dave Airlie <airlied@redhat.com> 6.11.0-5
+- pull in more fixes from master
+
+* 四 3月 05 2009 Dave Airlie <airlied@redhat.com> 6.11.0-4
+- modeset: fixup radeon Xv with latest kernel
+
+* 二 3月 03 2009 Dave Airlie <airlied@redhat.com> 6.11.0-3
+- initial support for dynamic fb resize
+
+* 二 3月 03 2009 Dave Airlie <airlied@redhat.com> 6.11.0-2
+- rebase to latest upstream r600 accel
+- fixup VT switch on DRI2
+
+* 五 2月 27 2009 Dave Airlie <airlied@redhat.com> 6.11.0-1
+- rebase to latest upstream
+- enable R600 acceleration for EXA and Xv.
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 6.10.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Dave Airlie <airlied@redhat.com> 6.10.0-3
+- fix VT switch on non-kms on rawhide
+
+* 五 1月 30 2009 Dave Airlie <airlied@redhat.com> 6.10.0-2
+- Fix corruption on rs780 hopefully
+
+* 三 1月 07 2009 Dave Airlie <airlied@redhat.com> 6.10.0-1
+- rebase to latest upstream release
+
+* 一 12月 22 2008 Dave Airlie <airlied@redhat.com> 6.9.0-65
+- fix rotate API
+
+* 一 12月 22 2008 Dave Airlie <airlied@redhat.com> 6.9.0-64
+- rebuild for new API
+
+* 六 12月 20 2008 Dave Airlie <airlied@redhat.com> 6.9.0-63
+- rebase F11 patch to upstream master + modesetting bits
+
+* 六 11月 01 2008 Dave Airlie <airlied@redhat.com> 6.9.0-41
+- radeon-modeset.patch - hopefully speed up mozilla again
+
+* 五 10月 31 2008 Adam Jackson <ajax@redhat.com> 6.9.0-40
+- radeon-6.9.0-dig1-hdmi.patch: Fix minor logic error.
+
+* 五 10月 31 2008 Adam Jackson <ajax@redhat.com> 6.9.0-39
+- radeon-6.9.0-dig1-hdmi.patch: Fix initialization of DVI sinks on HDMI
+  connectors for DCE3.
+
+* 四 10月 30 2008 Dave Airlie <airlied@redhat.com> 6.9.0-38
+- don't enable DFS under kms on anything but PCIE by default.
+
+* 四 10月 30 2008 Dave Airlie <airlied@redhat.com> 6.9.0-37
+- fix memory leak in -ati driver (#469024)
+
+* 三 10月 29 2008 Dave Airlie <airlied@redhat.com> 6.9.0-36
+- radeon-6.9.0-add-hd3300.patch - add missing pciid (#466706)
+- radeon-6.9.0-quirk-agp.patch - from Ubuntu.
+
+* 三 10月 29 2008 Dave Airlie <airlied@redhat.com> 6.9.0-35
+- radeon-6.9.0-bgnr-enable.patch - enable bg none when kms enabled (#468879)
+
+* 二 10月 28 2008 Dave Airlie <airlied@redhat.com> 6.9.0-34
+- remove some left over debug
+
+* 二 10月 28 2008 Dave Airlie <airlied@redhat.com> 6.9.0-33
+- add support for wait for rendering
+
+* 一 10月 27 2008 Dave Airlie <airlied@redhat.com> 6.9.0-32
+- move to CS2 mechanism - using chunks to avoid multiple relocations
+- add kernel requires about 2.6.27.4-52 for new CS mechanism
+
+* 四 10月 23 2008 Dave Airlie <airlied@redhat.com> 6.9.0-31
+- limit VRAM usage in driver - not perfect but a good start
+
+* 四 10月 23 2008 Dave Airlie <airlied@redhat.com> 6.9.0-30
+- fix some bad memory allocations
+
+* 二 10月 21 2008 Dave Airlie <airlied@redhat.com> 6.9.0-29
+- fix most obvious glyph corruption issues in modesetting mode
+
+* 日 10月 19 2008 Dave Airlie <airlied@redhat.com> 6.9.0-28
+- fix set tex offset for non modesetting cases
+
+* 三 10月 15 2008 Dave Airlie <airlied@redhat.com> 6.9.0-27
+- modeset - radeon add support for basic r100/r200 EXA
+- modeset - add Download from screen accel.
+- radeon-6.9.0-to-git.patch : fix 30" monitor
+
+* 一 10月 13 2008 Dave Airlie <airlied@redhat.com> 6.9.0-26
+- radeon-modeset.patch - fix nexuiz mode switch - remove unused reuse code
+
+* 五 10月 10 2008 Dave Airlie <airlied@redhat.com> 6.9.0-25
+- fix rotation
+- make output names compatible with non-kms
+
+* 五 10月 10 2008 Dave Airlie <airlied@redhat.com> 6.9.0-24
+- radeon-modeset.patch - fix silly debugging fallback.
+
+* 五 10月 10 2008 Dave Airlie <airlied@redhat.com> 6.9.0-23
+- rebase to upstream master
+- radeon-6.9.0-lvds-mapping.patch - merged upstream
+- copy-fb-contents.patch merged into modesetting tree.
+
+* 三 10月 08 2008 Adam Jackson <ajax@redhat.com> 6.9.0-22
+- radeon-6.9.0-lvds-mapping.patch: Fix connector mapping on LVDS.
+
+* 三 10月 01 2008 Dave Airlie <airlied@redhat.com> 6.9.0-21
+- rebase for latest fixes and new libdrm
+
+* 一 9月 29 2008 Dave Airlie <airlied@redhat.com> 6.9.0-20
+- fix collision with copy fb contents patch
+
+* 一 9月 29 2008 Dave Airlie <airlied@redhat.com> 6.9.0-19
+- fix textured video + merge otaylor fix into exa fixes patch
+
+* 六 9月 27 2008 Dave Airlie <airlied@redhat.com> 6.9.0-18
+- fix fb contents patch
+- EXA speedup from otaylor.
+
+* 五 9月 26 2008 Dave Airlie <airlied@redhat.com> 6.9.0-17
+- exa offset fixes for changes in X server
+
+* 五 9月 26 2008 Dave Airlie <airlied@redhat.com> 6.9.0-16
+- rebase to a later tree - still not fully up to git master
+- add some fixes to the resize stuff - not fully done
+
+* 五 9月 19 2008 Kristian Høgsberg <krh@redhat.com> - 6.9.0-15
+- Add copy-fb-contents.patch to initialize the root window contents
+  with the fbdev contents for slick startup.
+
+* 四 9月 11 2008 Adam Jackson <ajax@redhat.com> 6.9.0-14
+- radeon-6.9.0-panel-size-sanity.patch: Panels smaller than 800x480 are
+  highly implausible, disable them if we find them.  If you have one,
+  you can force it with Option "PanelSize".
+
+* 四 9月 11 2008 Soren Sandmann <sandmann@redhat.com> 6.9.0-13
+- Remove the fb size hack since there is a fix in the server now.
+- Unfortunately, the driver prevents this fix from working by applying 
+  its own heuristics. Remove those.
+
+* 三 9月 10 2008 Adam Jackson <ajax@redhat.com> 6.9.0-12
+- Do the fb size hack a differently bad way.
+
+* 二 9月 09 2008 Kristian Høgsberg <krh@redhat.com> 6.9.0-11
+- Restore CFLAGS after testing for DRM_MODE in radeon-modeset.patch.
+
+* 一 9月 08 2008 Adam Jackson <ajax@redhat.com> 6.9.0-10
+- radeon-6.9.0-fb-size.patch: Yet more lame heuristics to preallocate a
+  usable framebuffer for laptops. (#458864)
+
+* 五 9月 05 2008 Dave Airlie <airlied@redhat.com> 6.9.0-9
+- add fix for pipe register emits on r300
+
+* 五 9月 05 2008 Dave Airlie <airlied@redhat.com> 6.9.0-8
+- fix suspend/resume support - needs new pinning API
+
+* 三 8月 27 2008 Dave Airlie <airlied@redhat.com> 6.9.0-7
+- fix bug in modesetting to make 3D work again
+
+* 二 8月 26 2008 Dave Airlie <airlied@redhat.com> 6.9.0-6
+- update modesetting/memory manager support
+
+* 五 8月 15 2008 Dave Airlie <airlied@redhat.com> 6.9.0-5
+- Add a perl script to generate the radeon.xinf from the actual PCI IDs the driver supports.
+- not build integrated yet though
+- update pciids
+
+* 五 8月 15 2008 Dave Airlie <airlied@redhat.com> 6.9.0-4
+- fix bugs in modesetting and bring PLL fixes in from master
+
+* 四 8月 14 2008 Dave Airlie <airlied@redhat.com> 6.9.0-3
+- bring back modesetting
+
+* 一 8月 11 2008 Adam Jackson <ajax@redhat.com> 6.9.0-2
+- Rebuild without modesetting since libdrm lost the API.  It'll be back soon,
+  I'm sure.
+
+* 日 8月 10 2008 Adam Jackson <ajax@redhat.com> 6.9.0-1
+- Move to 6.9.0, now that the r128 and mach64 drivers are split out.
+- Add git fixes since 6.9.0.
+- Rebase the modesetting patch onto git master.
+
+* 三 8月 06 2008 Dave Airlie <airlied@redhat.com> 6.8.0-21
+- bunch of fixes to modesetting code + remove debugging.
+
+* 五 8月 01 2008 Dave Airlie <airlied@redhat.com> 6.8.0-20
+- DDX modesetting code
+
+* 三 7月 30 2008 Dave Airlie <airlied@redhat.com> 6.8.0-19
+- Update to latest upstream release + fixes
+
+* 四 6月 26 2008 Dave Airlie <airlied@redhat.com> 6.8.0-18
+- update to latest git 6.8.192 beta
+
+* 三 5月 28 2008 Dave Airlie <airlied@redhat.com> 6.8.0-17
+- fix multiple VT switch issues on r600 cards
+- assorted upstream goodness
+
+* 六 5月 24 2008 Dave Airlie <airlied@redhat.com> 6.8.0-16
+- Fix PLL on r600 LVDS (#444542)
+- update to other upstream fixes
+
+* 一 5月 12 2008 Dave Airlie <airlied@redhat.com> 6.8.0-15
+- The RS482 sucks - same pci id, mobile and non-mobile parts.
+
+* 一 5月 12 2008 Dave Airlie <airlied@redhat.com> 6.8.0-14
+- add initial cloning support for RN50 (#439879)
+
+* 三 5月 07 2008 Dave Airlie <airlied@redhat.com> 6.8.0-13
+- more upstream fixes for EXA accel + zaphod mode
+
+* 四 4月 24 2008 Dave Airlie <airlied@redhat.com> 6.8.0-12
+- not so much faster as kill my Apple MAC DDC - next time do this upstream first
+
+* 四 4月 24 2008 Dave Airlie <airlied@redhat.com> 6.8.0-11
+- fix r128 bios size issue (#439022)
+
+* 日 4月 06 2008 Dave Airlie <airlied@redhat.com> 6.8.0-10
+- attempt to fix VT switch and X restart hangs
+
+* 三 4月 02 2008 Dave Airlie <airlied@redhat.com> 6.8.0-9
+- attempt to fix dualhead and rotation at the same time.
+
+* 一 3月 31 2008 Dave Airlie <airlied@redhat.com> 6.8.0-8
+- Hopefully fix quirks not applying on radeon LVDS (#435126)
+- quirk connector table from (#428515)
+- fix rotate on r500 cards
+
+* 日 3月 30 2008 Dave Airlie <airlied@redhat.com> 6.8.0-7
+- Major upstream fixes backported - render accel, xv etc.
+- This is done with a separate patch as upstream has split mach64/r128 already
+
+* 五 3月 28 2008 Adam Jackson <ajax@redhat.com> 6.8.0-6
+- radeon.xinf: :1,$s/radeon_tp/radeon/
+
+* 三 3月 26 2008 Dave Airlie <airlied@redhat.com> 6.8.0-5
+- Fix mach64 on ia64 with 16k pagesize (#438947)
+
+* 二 3月 11 2008 Adam Jackson <ajax@redhat.com> 6.8.0-4
+- r500-dual-link-love.patch: Make R300+ max CRTC size guess big enough
+  for a 30" monitor.
+
+* 一 3月 03 2008 Dave Airlie <airlied@redhat.com> 6.8.0-3
+- rebuild for upstream ABI breakage
+
+* 二 2月 26 2008 Dave Airlie <airlied@redhat.com> 6.8.0-2
+- rebase to upstream 6.8.0 release + git fixes
+
+* 二 2月 19 2008 Dave Airlie <airlied@redhat.com> 6.8.0-1
+- rebase to upstream 6.8.0 release.
+
+* 一 2月 18 2008 Dave Airlie <airlied@redhat.com> 6.7.197-3
+- rebase to upstream git master - lots of r600 fixes
+
+* 五 2月 08 2008 Dave Airlie <airlied@redhat.com> 6.7.197-2
+- rebase to upstream git master - add rv67x ids
+
+* 一 2月 04 2008 Dave Airlie <airlied@redhat.com> 6.7.197-1
+- rebase to upstream git master
+- add r5xx and r6xx pci ids to xinf
+
+* 四 1月 17 2008 Dave Airlie <airlied@redhat.com> 6.7.196-7
+- fix up IGPs from upstream fix.
+
+* 三 1月 09 2008 Adam Jackson <ajax@redhat.com> 6.7.196-6
+- Rebuild for new server ABI.
+
+* 三 1月 02 2008 Adam Jackson <ajax@redhat.com> 6.7.196-5
+- r128-6.7.196-pciaccess.patch: Fix some preprocessor dumbness.
+
+* 三 1月 02 2008 Adam Jackson <ajax@redhat.com> 6.7.196-4
+- r128-6.7.196-pciaccess.patch: Port r128 to libpciaccess.
+
+* 三 12月 19 2007 Dave Airlie <airlied@redhat.com> 6.7.196-3
+- radeon-git-upstream-fixes.patch - update for latest git master
+- radeon-6.7.196-atombios-support.patch - update for r500/r600
+
+* 一 12月 17 2007 Adam Jackson <ajax@redhat.com> 6.7.196-2
+- *-6.7.196-alloca.patch: Fix ALLOCATE_LOCAL failures.
+
+* 三 11月 14 2007 Adam Jackson <ajax@redhat.com> 6.7.196-1
+- xf86-video-ati 6.7.196
+
+* 二 11月 13 2007 Adam Jackson <ajax@redhat.com> 6.7.195-5
+- Require xserver 1.4.99.1
+
+* 四 11月 08 2007 Adam Jackson <ajax@redhat.com> 6.7.195-4
+- radeon-6.7.195-faster-ddc.patch: Speed up X startup by assuming the
+  monitor doesn't need a dead chicken waved over it to get DDC.
+
+* 二 10月 16 2007 Dave Airlie <airlied@redhat.com> 6.7.195-3
+- upstream fixes including previous patches + attempted mac detection
+
+* 二 10月 09 2007 Adam Jackson <ajax@redhat.com> 6.7.195-2
+- DDC and LVDS patches from git.
+
+* 六 10月 06 2007 Adam Jackson <ajax@redhat.com> 6.7.195-1
+- xf86-video-ati 6.7.195
+
+* 五 10月 05 2007 Dave Airlie <airlied@redhat.com> 6.7.194-3
+- radeon-6.7.194-upstream-fixes - Upstream LVDS fixes
+  improve chances of working on more panels.
+
+* 五 9月 28 2007 Dave Airlie <airlied@redhat.com> 6.7.194-2
+- radeon-6.7.194-disable-rc410-dri.patch - Disable DRI on
+  RC410 by default as it seems to need some more work.
+
+* 一 9月 24 2007 Dave Airlie <airlied@redhat.com> 6.7.194-1
+- xf86-video-ati 6.7.194
+
+* 四 9月 20 2007 Dave Airlie <airlied@redhat.com> 6.7.193-1
+- xf86-video-ati 6.7.193
+
+* 一 8月 27 2007 Adam Jackson <ajax@redhat.com> 6.7.192-1
+- xf86-video-ati 6.7.192
+
+* 一 8月 27 2007 Dave Airlie <airlied@redhat.com> 6.7.191-2
+- radeon-6.7.191-git-master.patch - upgrade to git head
+  f36720377737210c985b196d9a988efdd767f1c7
+
+* 四 8月 23 2007 Dave Airlie <airlied@redhat.com> 6.7.191-1
+- xf86-video-ati 6.7.191. - Add a pre-release of radeon randr code
+  This will break old zaphod mode further than the current 6.6.193
+  driver, and will probably break mergedfb configs, however it will
+  work with randr-1.2 properly and is the more supported codebase going
+  forward.
+
+* 二 8月 21 2007 Adam Jackson <ajax@redhat.com> - 6.6.193-3
+- Rebuild for build id
+
+* 三 8月 08 2007 Dave Airlie <airlied@redhat.com> 6.6.193-2
+- xf86-video-ati 6.6.193. - remove dotclock workaround for now
+  It causes crashes bug 251051
+
+* 六 8月 04 2007 Dave Airlie <airlied@redhat.com> 6.6.193-1
+- xf86-video-ati 6.6.193.
+
+* 三 6月 27 2007 Adam Jackson <ajax@redhat.com> 6.6.192-1
+- xf86-video-ati 6.6.192.
+
+* 二 6月 19 2007 Adam Jackson <ajax@redhat.com> 6.6.3-4
+- radeon-6.6.3-renderaccel-buglet.patch: Fix OpenOffice font corruption
+  when RenderAccel is disabled. (#244675)
+
+* 一 6月 18 2007 Adam Jackson <ajax@redhat.com> 6.6.3-3
+- Update Requires and BuildRequires.  Disown the module directories.  Add
+  Requires: hwdata.
+
+* 四 2月 15 2007 Adam Jackson <ajax@redhat.com> 6.6.3-2
+- ExclusiveArch -> ExcludeArch
+
+* 二 11月 07 2006 Adam Jackson <ajackson@redhat.com> 6.6.3-1.fc7
+- Update to 6.6.3.
+
+* 一 10月 02 2006 Adam Jackson <ajackson@redhat.com> 6.6.2-4
+- ati-prefer-radeon-then-r128.patch: When loading through the 'ati' wrapper,
+  prefer radeon to rage128 to mach{64,32,16,8,4,2,1}. 
+- r128-fp-dpms.patch: Hook up DPMS for Rage128 DFPs. (#197436)
+- radeon-6.6.2-dac-fix.patch: Even though we turn DACs on for probing, don't
+  turn them off.  Fixes black screen of death post-rhgb.  (#208610)
+- radeon-6.6.2-pmac-bios.patch: Be more suspicious of ROMs before interpreting
+  their content.  (#208694)
+- radeon-6.6.2-usefbdev-patch.patch: Use the framebuffer stride from fbdev,
+  instead of making up numbers.  (#208694)
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 6.6.2-3
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 四 9月 21 2006 Adam Jackson <ajackson@redhat.com> 6.6.2-2.fc6
+- radeon-6.6.2-dac-fix.patch: Backport 25fa71... from git.  Turn on the DAC
+  before doing CRT connection probe, otherwise we might incorrectly detect
+  a CRT where there isn't one. (#202240 and others)
+
+* 二 8月 29 2006 Adam Jackson <ajackson@redhat.com> 6.6.2-1.fc6
+- Update to 6.6.2 from upstream:
+  - Mach64 stability and correctness fixes
+  - Mach64 EXA support.
+  - Misc bugfixes for radeon.
+
+* 四 8月 24 2006 Adam Jackson <ajackson@redhat.com> 6.6.1-11.fc6
+- radeon-6.6.1-use-mtdriver.patch: Only flag modes with M_T_PREFERRED if
+  the EDID blocks says to.
+
+* 五 8月 18 2006 Adam Jackson <ajackson@redhat.com> 6.6.1-10.fc6
+- radeon-6.6.1-use-mtdriver.patch: Use new M_T_DRIVER mode type for mode
+  synthesis.
+- Bump Requires to match.
+
+* 五 8月 18 2006 Adam Jackson <ajackson@redhat.com> 6.6.1-9.fc6
+- mach64-cpio-for-ia64.patch: Enable CPIO for mach64 on ia64. (#203017)
+
+* 四 8月 10 2006 Adam Jackson <ajackson@redhat.com> 6.6.1-8.fc6
+- radeon-6.6.1-xpress-200.patch: Also disable DRI on xpress200, known broken.
+
+* 三 8月 02 2006 Adam Jackson <ajackson@redhat.com> 6.6.1-7.fc6
+- Make sure DRI and Render accel are disabled on RN50.
+
+* 六 7月 29 2006 Kristian Høgsberg <krh@redhat.com> 6.6.1-6.fc5.aiglx
+- Build for fc5 aiglx repo.
+
+* 四 7月 27 2006 Adam Jackson <ajackson@redhat.com> 6.6.1-6.fc6
+- Updated radeon.xinf: comments, a handful of new devices.
+
+* 一 7月 24 2006 Mike A. Harris <mharris@redhat.com> 6.6.1-5.fc6
+- Added r128-missing-xf86ForceHWCursor-symbol-bug168753.patch to fix (#168753)
+- Add {?dist} tag to Release field
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> 6.6.1-4.1
+- rebuild
+
+* 三 6月 28 2006 Mike A. Harris <mharris@@redhat.com> 6.6.1-4
+- Added "BuildRequires: xorg-x11-server-sdk >= 1.1.0-12" to fix the same
+  problem at build time as were added in 6.6.1-2 to fix it at runtime.
+
+* 二 6月 27 2006 Kristian Høgsberg <krh@redhat.com> 6.6.1-3
+- Bump release for FC5 aiglx build.
+
+* 一 6月 26 2006 Adam Jackson <ajackson@redhat.com> 6.6.1-2
+- Filter the EDID mode list by the monitor's reported pixel clock.  Bump
+  the BuildReq to a server that provides the necessary ABI field.
+
+* 六 6月 17 2006 Mike A. Harris <mharris@redhat.com> 6.6.1-1
+- Updated xorg-x11-drv-ati to version 6.6.1 update release for X11R7.1
+- Drop db-root-visual.patch, as it is included in 6.6.1
+- Enable DRI support for sparc/sparc64 builds.
+
+* 五 6月 09 2006 Kristian Høgsberg <krh@redhat.com> 6.6.0-7
+- Committed db-root-visual.patch and reenabled.
+
+* 四 6月 08 2006 Mike A. Harris <mharris@@redhat.com> 6.6.0-6
+- Disable db-root-visual.patch, because the file wasn't committed to CVS.
+
+* 四 6月 08 2006 Kristian Høgsberg <krh@redhat.com> 6.6.0-5
+- Bump for rawhide build.
+
+* 四 6月 08 2006 Kristian Høgsberg <krh@redhat.com> 6.6.0-4
+- Add db-root-visual.patch to make root visual double buffered.
+
+* 二 5月 23 2006 Adam Jackson <ajackson@redhat.com> 6.6.0-3
+- Rebuild for 7.1 ABI fix.
+
+* 二 4月 11 2006 Kristian Høgsberg <krh@redhat.com> 6.6.0-2
+- Bump for fc5-bling build.
+
+* 日 4月 09 2006 Adam Jackson <ajackson@redhat.com> 6.6.0-1
+- Update to 6.6.0 from 7.1RC1.
+
+* 二 4月 04 2006 Kristian Høgsberg <krh@redhat.com> 6.5.7.3-4.cvs20060404
+- Update to CVS snapshot from 20060404.
+
+* 三 3月 22 2006 Kristian Høgsberg <krh@redhat.com> 6.5.7.3-4.cvs20060322
+- Update to CVS snapshot of 20060322.
+- Drop xorg-x11-drv-ati-6.5.7.3-radeon-metamodes-SEGV-fix.patch.
+
+* 二 2月 21 2006 Mike A. Harris <mharris@redhat.com> 6.5.7.3-4
+- Added xorg-x11-drv-ati-6.5.7.3-radeon-metamodes-SEGV-fix.patch from CVS HEAD.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 6.5.7.3-3.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 6.5.7.3-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 日 2月 05 2006 Mike A. Harris <mharris@redhat.com> 6.5.7.3-3
+- Updated radeon.xinf to be up to date with the xf86PciInfo.h from the Xorg
+  X server 1.0.1-1 source.  This should account for all supported Radeon
+  models now modulo errors/omissions.
+
+* 四 2月 02 2006 Mike A. Harris <mharris@redhat.com> 6.5.7.3-2
+- Added r128.xinf and radeon.xinf videoalias files to fix bug (#174101).
+- Added "BuildRequires: libdrm-devel >= 2.0-1" to fix bug (#178613)
+
+* 三 1月 18 2006 Mike A. Harris <mharris@redhat.com> 6.5.7.3-1
+- Updated xorg-x11-drv-ati to version 6.5.7.3 from X11R7.0
+- Added ati.xinf videoalias file for hardware autodetection.
+
+* 二 12月 20 2005 Mike A. Harris <mharris@redhat.com> 6.5.7.2-1
+- Updated xorg-x11-drv-ati to version 6.5.7.2 from X11R7 RC4
+- Removed 'x' suffix from manpage dirs to match RC4 upstream.
+
+* 三 11月 16 2005 Mike A. Harris <mharris@redhat.com> 6.5.7-1
+- Updated xorg-x11-drv-ati to version 6.5.7 from X11R7 RC2
+
+* 五 11月 04 2005 Mike A. Harris <mharris@redhat.com> 6.5.6.1-1
+- Updated xorg-x11-drv-ati to version 6.5.6.1 from X11R7 RC1
+- Fix *.la file removal.
+- Add "BuildRequires: mesa-libGL-devel >= 6.4-4 for DRI builds"
+
+* 一 10月 03 2005 Mike A. Harris <mharris@redhat.com> 6.5.6-1
+- Update BuildRoot to use Fedora Packaging Guidelines.
+- Deglob file manifest.
+- Use _smp_mflags with make, to speed up SMP builds.
+- Add "alpha sparc sparc64" to ExclusiveArch
+
+* 五 9月 02 2005 Mike A. Harris <mharris@redhat.com> 6.5.6-0
+- Initial spec file for ati video driver generated automatically
+  by my xorg-driverspecgen script.
+

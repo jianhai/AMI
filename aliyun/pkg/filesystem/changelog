@@ -1,0 +1,350 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.4.30-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.4.30-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.4.30-3.1
+- rebuild for alios6
+
+* 二 6月 28 2011 Ondrej Vasik <ovasik@redhat.com> 2.4-31-3
+- add ownership for several folders below /usr/share/locale(#620063)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.4.30-2.1
+- Rebuilt for RHEL 6
+
+* 二 8月 25 2009 Karsten Hopp <karsten@redhat.com> 2.4.30-2
+- fix typo in Provides
+
+* 一 8月 17 2009 Ondrej Vasik <ovasik@redhat.com> 2.4.30-1
+- adjust directory rights for usage of capabilities(#517575)
+
+* 一 8月 10 2009 Ondrej Vasik <ovasik@redhat.com> 2.4.29-1
+- iso_codes package no longer provides tab files, do generate
+  them on fly with sed (thanks D. Tardon)
+
+* 三 8月 05 2009 Ondrej Vasik <ovasik@redhat.com> 2.4.28-1
+- Provide/obsolete pm-utils-filesystem, own dirs for pm-utils
+  hooks(#515362)
+- Do own man sections for /usr/share/man/<locale> dirs (#220265)
+- Do own /usr/share/sounds (#515485)
+
+* 二 8月 04 2009 Adam Jackson <ajax@redhat.com> 2.4.27-1
+- Prov/Obs: xorg-x11-filesystem
+
+* 一 8月 03 2009 Ondrej Vasik <ovasik@redhat.com> 2.4.26-1
+- Do own /usr/share/man/<locale> directories (ghosted, missingok) - #220265
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4.25-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 23 2009 Adam Jackson <ajax@redhat.com> 2.4.25-1
+- Remove explicit /usr/lib/X11, everything uses %_libdir now.
+
+* 四 7月 23 2009 Adam Jackson <ajax@redhat.com> 2.4.24-1
+- Added /usr/share/X11
+
+* 四 7月 09 2009 Ondrej Vasik <ovasik@redhat.com> - 2.4.23-1
+- do own /usr/src/debug (#214983)
+
+* 三 7月 08 2009 Ondrej Vasik <ovasik@redhat.com> - 2.4.22-1
+- do own interface description directory /usr/share/idl(#451719)
+- add a few missing lang-exceptions to filelist(#508309)
+
+* 三 3月 04 2009 Phil Knirsch <pknirsch@redhat.com> - 2.4.21-1
+- Added /usr/share/backgrounds (#487957)
+- Added /usr/share/ghostscript/{conf.d} (#302521)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4.20-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 19 2009 Phil Knirsch <pknirsch@redhat.com> - 2.4.20-1
+- Removed ownership of fonts directories (#477046)
+
+* 六 9月 06 2008 Phil Knirsch <pknirsch@redhat.com> - 2.4.19-1
+- Added augeas lenses dir (#461317)
+
+* 二 6月 24 2008 Phil Knirsch <pknirsch@redhat.com> - 2.4.18-1
+- Added comment with raw format lang-exception URL
+
+* 一 6月 23 2008 Phil Knirsch <pknirsch@redhat.com> - 2.4.17-1
+- Added URL for lang-exception source (#225752)
+
+* 三 6月 18 2008 Phil Knirsch <pknirsch@redhat.com> - 2.4.16-1
+- Dropped /etc/news again as we're handling it now correctly (#437462)
+- Filesystem is now an official fedorahosted project, part of the review
+  changes (#225752)
+- Removed duplicate entry in lang_exceptions for ca_ES@valencian (#225752)
+
+* 二 5月 27 2008 Phil Knirsch <pknirsch@redhat.com> - 2.4.15-1
+- First round of Fedora package review changes (#225752)
+
+* 二 5月 20 2008 Phil Knirsch <pknirsch@redhat.com> - 2.4.14-1
+- Added /usr/src/kernels to owned and created dirs (#442283)
+
+* 一 4月 07 2008 Phil Knirsch <pknirsch@redhat.com> - 2.4.13-1
+- Added /etc/news to owned and created directories
+
+* 四 3月 27 2008 Phil Knirsch <pknirsch@redhat.com> - 2.4.12-1
+- Added be@latin to lang-exceptions (#231737)
+- Added /usr/share/man{0,1,3]p to owned files (#233879)
+- Added /usr/share/fonts to owned files (#302141)
+- Renamed sr@Latn to sr@latin (#436887)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.4.11-2
+- Autorebuild for GCC 4.3
+
+* 一 8月 13 2007 Phil Knirsch <pknirsch@redhat.com> 2.4.11-1
+- Added /etc/X11/fontpath.d and dropped /etc/X11/sysconfig /etc/X11/serverconfig
+ (#251707)
+
+* 三 7月 18 2007 Phil Knirsch <pknirsch@redhat.com> 2.4.10-1
+- Replaced gtk-doc with gnome (#247276)
+
+* 二 5月 29 2007 Phil Knirsch <pknirsch@redhat.com> 2.4.9-1
+- Fixed nasty typo for /etc directories (#241525)
+
+* 五 5月 25 2007 Phil Knirsch <pknirsch@redhat.com> 2.4.8-1
+- Fixed description to avoid trademark issues (#234093)
+
+* 四 5月 24 2007 Phil Knirsch <pknirsch@redhat.com> 2.4.7-1
+- Added /etc/fonts/conf.d and /usr/share/themes (#239246)
+- Removed /etc/xdg/menus, already owned by redhat-menus (#228779)
+
+* 二 4月 17 2007 Phil Knirsch <pknirsch@redhat.com> - 2.4.6-1
+- Added several more /usr/share directories (#222905)
+
+* 六 3月 31 2007 Peter Jones <pjones@redhat.com> - 2.4.5-1
+- add /usr/local/share/applications
+
+* 五 3月 30 2007 Jeremy Katz <katzj@redhat.com> - 2.4.4-1
+- add /etc/xdg/autostart
+
+* 四 3月 15 2007 Phil Knirsch <pknirsch@redhat.com> - 2.4.3-1
+- Fixed typo for new /etc/xdg entries (#224052)
+- One more tiny specile cleanup
+
+* 一 2月 12 2007 Phil Knirsch <pknirsch@redhat.com> - 2.4.2-1
+- Added several missing unowned directories (#224052)
+- Tiny specfile cleanups
+
+* 三 12月 20 2006 Phil Knirsch <pknirsch@redhat.com> - 2.4.1-1
+- Dropped the obsolete directories /usr/lib{,64}/gcc-lib (#220235)
+
+* 二 10月 10 2006 Bill Nottingham <notting@redhat.com> - 2.4.0-1
+- create and own /usr/share/locale/*/LC_MESSAGES (#196669)
+
+* 二 10月 10 2006 Phil Knirsch <pknirsch@redhat.com> - 2.3.8-1
+- Added the manXx directories to the ownership of filesystem (#208121)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.3.7-2.1
+- rebuild
+
+* 三 6月 28 2006 Phil Knirsch <pknirsch@redhat.com> - 2.3.7-2
+- Fixed games location according to FHS 2.1 (#165425)
+- Added {_libdir}/sse2 to owned files (#192853)
+- Added /dev to owned files (#192860)
+- Added {_datadir}/icons to owned files (#195911)
+- Dropped obsolete /etc/X11/starthere (#191163)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.3.7-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.3.7-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 11月 17 2005 Bill Nottingham <notting@redhat.com> - 2.3.7-1
+- actually, *do* package /usr/lib/X11, etc, but as directories
+- remove /usr/X11R6 heirarchy
+
+* 一 11月 07 2005 Bill Nottingham <notting@redhat.com> - 2.3.6-1
+- don't package /usr/lib/X11 or /usr/bin/X11 symlinks
+
+* 五 8月 19 2005 Bill Nottingham <notting@redhat.com> - 2.3.5-1
+- package / (#165797)
+
+* 一 5月 23 2005 Bill Nottingham <notting@redhat.com> - 2.3.4-1
+- ship /usr/share/games (#158433, <ville.skytta@iki.fi>)
+
+* 四 5月 05 2005 Peter Jones <pjones@redhat.com> - 2.3.3-1
+- remove /initrd, since mkinitrd doesn't use it anymore by default
+
+* 三 4月 20 2005 John Dennis <jdennis@redhat.com> - 2.3.2-1
+- add /etc/pki, a place to store keys and certificates
+
+* 三 3月 09 2005 Bill Nottingham <notting@redhat.com> 2.3.1-1
+- don't ship /usr/lib64/X11 in general (#147077)
+
+* 四 8月 12 2004 Bill Nottingham <notting@redhat.com> 2.3.0-1
+- add /media, /srv
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 3月 11 2004 Bill Nottingham <notting@redhat.com> 2.2.4-1
+- move /selinux here from SysVinit
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 1月 15 2004 Bill Nottingham <notting@redhat.com> 2.2.3-1
+- move /usr/dict to /usr/share/dict (#113645)
+- add /usr/lib/locale, /var/empty (#108686,#113036)
+- add */%{_lib}/tls (#113050)
+
+* 五 11月 21 2003 Bill Nottingham <notting@redhat.com> 2.2.2-1
+- add /sys
+
+* 二 10月 07 2003 Than Ngo <than@redhat.com> 2.2.1-5
+- add /usr/share/xsessions
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 日 12月 01 2002 Tim Waugh <twaugh@redhat.com> 2.2.1-2
+- Really fix /var/mail
+
+* 四 11月 28 2002 Bill Nottingham <notting@redhat.com> 2.2.1-1
+- fix /var/mail
+
+* 三 11月 20 2002 Bill Nottingham <notting@redhat.com>
+- make arch specific, handle lib/lib64 stuff
+- add /usr/libexec, /usr/share/applications
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 8月 20 2001 Bill Nottingham <notting@redhat.com>
+- %ghost /mnt/cdrom, /mnt/floppy (fixes #52046)
+
+* 三 8月 15 2001 Bill Nottingham <notting@redhat.com>
+- add /usr/X11R6/share (#51830)
+
+* 一 8月 13 2001 Bill Nottingham <notting@redhat.com>
+- prereq a particular version of the setup package
+
+* 四 8月 09 2001 Bill Nottingham <notting@redhat.com>
+- remove /mnt/cdrom, /mnt/floppy (updfstab will create them if needed)
+- make it noarch again
+
+* 三 8月 08 2001 Bill Nottingham <notting@redhat.com>
+- /var/lock needs to be root.lock, not lock.lock
+
+* 一 8月 06 2001 Jeff Johnson <jbj@redhat.com>
+- lock.lock ownership, 0775 permissions, for /var/lock.
+
+* 二 7月 17 2001 Bill Nottingham <notting@redhat.com>
+- add /etc/sysconfig, /var/yp, /usr/share/pixmaps
+
+* 二 7月 10 2001 Bill Nottingham <notting@redhat.com>
+- add stuff under /etc/X11
+- remove extraneous /usr/X11R6/doc (#47490)
+
+* 一 6月 25 2001 Bill Nottingham <notting@redhat.com>
+- don't conflict with rpm
+
+* 五 6月 22 2001 Bill Nottingham <notting@redhat.com>
+- don't own /var/lib/rpm (#43315)
+- add some stuff in /usr/local (#36522)
+
+* 四 6月 21 2001 Bill Nottingham <notting@redhat.com>
+- add /initrd
+
+* 四 6月 07 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- remove noarch
+- do not include /mnt/cdrom and /mnt/floppy for s390/s390x
+
+* 一 4月 16 2001 Bill Nottingham <notting@redhat.com>
+- take the group write off of /var/lock
+
+* 五 7月 21 2000 Bill Nottingham <notting@redhat.com>
+- add /usr/share/empty
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 三 6月 28 2000 Preston Brown <pbrown@redhat.com>
+- remove /usr/doc
+
+* 四 6月 22 2000 Preston Brown <pbrown@redhat.com>
+- remove /usr/info
+
+* 一 6月 19 2000 Bill Nottingham <notting@redhat.com>
+- remove /usr/man
+
+* 六 6月 17 2000 Bill Nottingham <notting@redhat.com>
+- /var/spool/lpd should have normal perms (#12272)
+
+* 二 6月 06 2000 Bill Nottingham <notting@redhat.com>
+- add /etc/skel
+
+* 四 6月 01 2000 Preston Brown <pbrown@redhat.com>
+- add /var/spool/lpd to filesystem, owned by user/group lp, tight permissions
+
+* 二 5月 23 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- Added /etc/xinetd.d
+
+* 一 5月 15 2000 Preston Brown <pbrown@redhat.com>
+- /etc/opt, /usr/share/{info,man/man*,misc,doc} (FHS 2.1)
+- added /var/games.  Data should move from /var/lib/games to there (FHS 2.1)
+- bump version up to 2.0 already!
+
+* 四 4月 13 2000 Jakub Jelinek <jakub@redhat.com>
+- removed /var/state, added /var/opt, /var/mail for FHS 2.1 compliance
+
+* 六 8月 28 1999 Preston Brown <pbrown@redhat.com>
+- added /opt, /var/state, /var/cache for FHS compliance (#3966)
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 日 1月 17 1999 Jeff Johnson <jbj@redhat.com>
+- don't carry X11R6.1 as directory on sparc.
+- /var/tmp/build root (#811)
+
+* 三 1月 13 1999 Preston Brown <pbrown@redhat.com>
+- font directory didn't belong, which I previously misunderstood.  removed.
+
+* 五 11月 13 1998 Preston Brown <pbrown@redhat.com>
+- /usr/share/fonts/default added.
+
+* 五 10月 09 1998 Bill Nottingham <notting@redhat.com>
+- put /mnt/cdrom back in
+
+* 三 10月 07 1998 Bill Nottingham <notting@redhat.com>
+- Changed /root to 0750
+
+* 三 8月 05 1998 Erik Troan <ewt@redhat.com>
+- added /var/db
+- set attributes in the spec file; don't depend on the ones in the cpio
+  archive
+- use a tarball instead of a cpioball
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 9月 09 1997 Erik Troan <ewt@redhat.com>
+- made a noarch package
+
+* 三 7月 09 1997 Erik Troan <ewt@redhat.com>
+- added /
+
+* 三 4月 16 1997 Erik Troan <ewt@redhat.com>
+- Changed /proc to 555
+- Removed /var/spool/mqueue (which is owned by sendmail)
+

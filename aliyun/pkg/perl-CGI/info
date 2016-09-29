@@ -1,0 +1,16 @@
+Name        : perl-CGI                     Relocations: (not relocatable)
+Version     : 3.51                              Vendor: Alibaba
+Release     : 119.4.alios6.1                Build Date: 2014年07月27日 星期日 16时45分03秒
+Install Date: 2015年03月25日 星期三 11时00分12秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: perl-5.10.1-119.4.alios6.1.src.rpm
+Size        : 444359                           License: GPL+ or Artistic
+Signature   : RSA/8, 2014年07月31日 星期四 17时53分32秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.perl.org/
+Summary     : Handle Common Gateway Interface requests and responses
+Description :
+CGI.pm is a stable, complete and mature solution for processing and
+preparing HTTP requests and responses. Major features including processing
+form submissions, file uploads, reading and writing cookies, query string
+generation and manipulation, and processing and preparing HTTP headers.
+Some HTML generation utilities are included as well.

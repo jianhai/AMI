@@ -1,0 +1,6 @@
+/etc/libreport/events.d/tarball_event.conf
+/etc/libreport/events.d/uploader_event.conf
+/etc/libreport/events/report_Tarball.xml
+/etc/libreport/events/report_Uploader.xml
+/usr/bin/reporter-upload
+/usr/share/man/man1/reporter-upload.1.gz

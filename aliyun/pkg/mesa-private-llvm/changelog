@@ -1,0 +1,30 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.3-0.3.rc3.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.3-0.3.rc3.1
+- rebuild for alios6-update
+
+* 二 6月 18 2013 Adam Jackson <ajax@redhat.com> 3.3-0.3.rc3
+- Port to RHEL6
+- Don't bother building R600 on s390x
+
+* 二 6月 11 2013 Adam Jackson <ajax@redhat.com> 3.3-0.2.rc3
+- 3.3 rc3
+- Drop tblgen
+- Strip out some headers
+
+* 二 5月 14 2013 Adam Jackson <ajax@redhat.com> 3.3-0.1.rc1
+- Update to 3.3 rc1
+- Move library to %{_libdir} to avoid rpath headaches
+- Link with -Bsymbolic and --default-symver
+- --disable-libffi
+- Misc spec cleanup
+
+* 三 12月 05 2012 Adam Jackson <ajax@redhat.com> 3.1-13
+- Forked spec for RHEL7 Mesa's private use
+  - no ocaml support
+  - no doxygen build
+  - no clang support
+  - no static archives
+  - no libraries, binaries, or manpages not needed by Mesa
+

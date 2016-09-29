@@ -1,0 +1,24 @@
+Name        : libselinux                   Relocations: (not relocatable)
+Version     : 2.0.94                            Vendor: Alibaba
+Release     : 5.2.3.alios6                  Build Date: 2014年07月26日 星期六 12时52分46秒
+Install Date: 2015年03月25日 星期三 10时59分28秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: libselinux-2.0.94-5.2.3.alios6.src.rpm
+Size        : 130088                           License: Public Domain
+Signature   : RSA/8, 2014年07月31日 星期四 17时18分16秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.selinuxproject.org
+Summary     : SELinux library and simple utilities
+Description :
+Security-enhanced Linux is a feature of the Linux® kernel and a number
+of utilities with enhanced security functionality designed to add
+mandatory access controls to Linux.  The Security-enhanced Linux
+kernel contains new architectural components originally developed to
+improve the security of the Flask operating system. These
+architectural components provide general support for the enforcement
+of many kinds of mandatory access control policies, including those
+based on the concepts of Type Enforcement®, Role-based Access
+Control, and Multi-level Security.
+
+libselinux provides an API for SELinux applications to get and set
+process and file security contexts and to obtain security policy
+decisions.  Required for any applications that use the SELinux API.

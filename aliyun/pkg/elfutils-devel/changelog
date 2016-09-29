@@ -1,0 +1,604 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.152-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.152-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.152-1
+- rebuild for alios6
+
+* 二 2月 15 2011 Roland McGrath <roland@redhat.com> - 0.152-1
+- Update to 0.152
+  - Various build and warning nits fixed for newest GCC and Autoconf.
+  - libdwfl: Yet another prelink-related fix for another regression. (#674465)
+  - eu-elfcmp: New flag --ignore-build-id to ignore differing build ID bits.
+  - eu-elfcmp: New flag -l/--verbose to print all differences.
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.151-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 1月 12 2011 Roland McGrath <roland@redhat.com> - 0.151-1
+- Update to 0.151
+  - libdwfl: Fix for more prelink cases with separate debug file.
+  - eu-strip: New flag --strip-sections to remove section headers entirely.
+
+* 四 12月 02 2010 Roland McGrath <roland@redhat.com> - 0.150-2
+- libdwfl: Remove bogus assert. (#658268)
+
+* 二 11月 23 2010 Roland McGrath <roland@redhat.com> - 0.150-1
+- Update to 0.150
+  - libdw: Fix for handling huge .debug_aranges section. (#638432)
+  - libdwfl: Fix for handling prelinked DSO with separate debug file. (#652857)
+  - findtextrel: Fix diagnostics to work with usual section ordering.
+
+* 三 9月 29 2010 jkeating - 0.149-2
+- Rebuilt for gcc bug 634757
+
+* 一 9月 13 2010 Roland McGrath <roland@redhat.com> - 0.149-1
+- Update to 0.149
+  - libdw: Decode new DW_OP_GNU_implicit_pointer operation;
+           new function dwarf_getlocation_implicit_pointer.
+  - libdwfl: New function dwfl_dwarf_line.
+  - eu-addr2line: New flag -F/--flags to print more DWARF line info details.
+  - eu-readelf: better .debug_loc processing (#627729)
+  - eu-strings: Fix non-mmap file reading. (#609468)
+  - eu-strip: -g recognizes .gdb_index as a debugging section. (#631997)
+
+* 一 6月 28 2010 Roland McGrath <roland@redhat.com> - 0.148-1
+- Update to 0.148
+  - libdw: Accept DWARF 4 format: new functions dwarf_next_unit,
+           dwarf_offdie_types.
+           New functions dwarf_lineisa, dwarf_linediscriminator,
+           dwarf_lineop_index.
+  - libdwfl: Fixes in core-file handling, support cores from PIEs. (#588818)
+             When working from build IDs, don't open a named file
+             that mismatches.
+  - readelf: Handle DWARF 4 formats.
+
+* 一 5月 03 2010 Roland McGrath <roland@redhat.com> - 0.147-1
+- Update to 0.147
+
+* 三 4月 21 2010 Roland McGrath <roland@redhat.com> - 0.146-1
+- Update to 0.146
+  - libdwfl: New function dwfl_core_file_report.
+  - libelf: Fix handling of phdrs in truncated file. (#577310)
+  - libdwfl: Fix infinite loop handling clobbered link_map. (#576379)
+- Package translations.
+
+* 二 2月 23 2010 Roland McGrath <roland@redhat.com> - 0.145-1
+- Update to 0.145
+  - Fix build with --disable-dependency-tracking. (#564646)
+  - Fix build with most recent glibc headers.
+  - libdw: Fix CFI decoding. (#563528)
+  - libdwfl: Fix address bias returned by CFI accessors. (#563528)
+             Fix core file module layout identification. (#559836)
+  - readelf: Fix CFI decoding.
+
+* 五 1月 15 2010 Roland McGrath <roland@redhat.com> - 0.144-2
+- Fix sloppy #include's breaking build with F-13 glibc.
+
+* 四 1月 14 2010 Roland McGrath <roland@redhat.com> - 0.144-1
+- Update to 0.144
+  - libdw: New function dwarf_aggregate_size for computing (constant) type
+           sizes, including array_type cases with nontrivial calculation.
+  - readelf: Don't give errors for missing info under -a.
+             Handle Linux "VMCOREINFO" notes under -n.
+- Resolves: RHBZ #527004, RHBZ #530704, RHBZ #550858
+
+* 一 9月 21 2009 Roland McGrath <roland@redhat.com> - 0.143-1
+- Update to 0.143
+  - libdw: Various convenience functions for individual attributes now use
+           dwarf_attr_integrate to look up indirect inherited attributes.
+           Location expression handling now supports DW_OP_implicit_value.
+  - libdwfl: Support automatic decompression of files in XZ format,
+             and of Linux kernel images made with bzip2 or LZMA
+             (as well as gzip).
+
+* 二 7月 28 2009 Roland McGrath <roland@redhat.com> - 0.142-1
+- Update to 0.142
+  - libelf: Bug fix in filling gaps between sections. (#512840)
+  - libelf: Add elf_getshdrnum alias for elf_getshnum and elf_getshdrstrndx
+            alias for elf_getshstrndx and deprecate original names.
+  - libebl, elflint: Add support for STB_GNU_UNIQUE. (#511436)
+  - readelf: Add -N option, speeds up DWARF printing
+             without address->name lookups. (#505347)
+  - libdw: Add support for decoding DWARF CFI into location description form.
+           Handle some new DWARF 3 expression operations previously omitted.
+           Basic handling of some new encodings slated for DWARF 4.
+
+* 四 4月 23 2009 Roland McGrath <roland@redhat.com> - 0.141-1
+- Update to 0.141
+  - libebl: sparc backend fixes (#490585)
+            some more arm backend support
+  - libdwfl: fix dwfl_module_build_id for prelinked DSO case (#489439)
+             fixes in core file support (#494858)
+             dwfl_module_getsym interface improved for non-address symbols
+  - eu-strip: fix infinite loop on strange inputs with -f
+  - eu-addr2line: take -j/--section=NAME option for binutils compatibility
+                  (same effect as '(NAME)0x123' syntax already supported)
+- Resolves: RHBZ #495213, RHBZ #465872, RHBZ #470055, RHBZ #484623
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.140-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 2月 15 2009 Roland McGrath <roland@redhat.com> - 0.140-1
+- Update to 0.140
+  - libelf: Fix regression in creation of section header. (#484946)
+
+* 五 1月 23 2009 Roland McGrath <roland@redhat.com> - 0.139-1
+- Update to 0.139
+  - libcpu: Add Intel SSE4 disassembler support
+  - readelf: Implement call frame information and exception handling dumping.
+             Add -e option.  Enable it implicitly for -a.
+  - elflint: Check PT_GNU_EH_FRAME program header entry.
+  - libdwfl: Support automatic gzip/bzip2 decompression of ELF files. (#472136)
+
+* 四 1月 01 2009 Roland McGrath <roland@redhat.com> - 0.138-2
+- Fix libelf regression.
+
+* 三 12月 31 2008 Roland McGrath <roland@redhat.com> - 0.138-1
+- Update to 0.138
+  - Install <elfutils/version.h> header file for applications to use in
+    source version compatibility checks.
+  - libebl: backend fixes for i386 TLS relocs; backend support for NT_386_IOPERM
+  - libcpu: disassembler fixes (#469739)
+  - libdwfl: bug fixes (#465878)
+  - libelf: bug fixes
+  - eu-nm: bug fixes for handling corrupt input files (#476136)
+
+* 三 10月 01 2008 Roland McGrath <roland@redhat.com> - 0.137-3
+- fix libdwfl regression (#462689)
+
+* 四 8月 28 2008 Roland McGrath <roland@redhat.com> - 0.137-2
+- Update to 0.137
+  - libdwfl: bug fixes; new segment interfaces;
+             all the libdwfl-based tools now support --core=COREFILE option
+- Resolves: RHBZ #325021, RHBZ #447416
+
+* 一 7月 07 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0.135-2
+- fix conditional comparison
+
+* 一 5月 12 2008 Roland McGrath <roland@redhat.com> - 0.135-1
+- Update to 0.135
+  - libdwfl: bug fixes
+  - eu-strip: changed handling of ET_REL files wrt symbol tables and relocs
+
+* 三 4月 09 2008 Roland McGrath <roland@redhat.com> - 0.134-1
+- Update to 0.134
+  - elflint: backend improvements for sparc, alpha (#204170)
+  - libdwfl, libelf: bug fixes (#439344, #438867, #438263, #438190)
+- Remove Conflicts: libelf-devel from elfutils-libelf-devel. (#435742)
+
+* 日 3月 02 2008 Roland McGrath <roland@redhat.com> - 0.133-2
+- Update to 0.133
+  - readelf, elflint, libebl: SHT_GNU_ATTRIBUTE section handling (readelf -A)
+  - readelf: core note handling for NT_386_TLS, NT_PPC_SPE, Alpha NT_AUXV
+  - libdwfl: bug fixes and optimization in relocation handling
+  - elfcmp: bug fix for non-allocated section handling
+  - ld: implement newer features of binutils linker.
+- Install eu-objdump and libasm, now has limited disassembler support.
+
+* 一 1月 21 2008 Roland McGrath <roland@redhat.com> - 0.132-3
+- Update to 0.132
+  - libelf: Use loff_t instead of off64_t in libelf.h header. (#377241)
+  - eu-readelf: Fix handling of ET_REL files in archives.
+  - libcpu: Implement x86 and x86-64 disassembler.
+  - libasm: Add interface for disassembler.
+  - all programs: add debugging of branch prediction.
+  - libelf: new function elf_scnshndx.
+
+* 日 11月 11 2007 Roland McGrath <roland@redhat.com> - 0.131-1
+- Update to 0.131
+  - libdw: DW_FORM_ref_addr support; dwarf_formref entry point now deprecated;
+           bug fixes for oddly-formatted DWARF
+  - libdwfl: bug fixes in offline archive support, symbol table handling;
+             apply partial relocations for dwfl_module_address_section on ET_REL
+  - libebl: powerpc backend support for Altivec registers
+
+* 三 10月 17 2007 Roland McGrath <roland@redhat.com> - 0.130-3
+- Fix ET_REL support.
+- Fix odd indentation in eu-readelf -x output.
+
+* 二 10月 16 2007 Roland McGrath <roland@redhat.com> - 0.130-1
+- Update to 0.130
+  - eu-readelf -p option can take an argument like -x for one section
+  - eu-readelf --archive-index (or -c)
+  - eu-readelf -n improved output for core dumps
+  - eu-readelf: handle SHT_NOTE sections without requiring phdrs (#249467)
+  - eu-elflint: ditto
+  - eu-elflint: stricter checks on debug sections
+  - eu-unstrip: new options, --list (or -n), --relocate (or -R)
+  - libelf: new function elf_getdata_rawchunk, replaces gelf_rawchunk;
+            new functions gelf_getnote, gelf_getauxv, gelf_update_auxv
+  - libebl: backend improvements (#324031)
+  - libdwfl: build_id support, new functions for it
+  - libdwfl: dwfl_module_addrsym fixes (#268761, #268981)
+  - libdwfl offline archive support, new script eu-make-debug-archive
+
+* 一 8月 20 2007 Roland McGrath <roland@redhat.com> - 0.129-2
+- Fix false-positive eu-elflint failure on ppc -mbss-plt binaries.
+
+* 二 8月 14 2007 Roland McGrath <roland@redhat.com> - 0.129-1
+- Update to 0.129
+  - readelf: new options --hex-dump (or -x), --strings (or -p) (#250973)
+  - addr2line: new option --symbols (or -S)
+  - libdw: dwarf_getscopes fixes (#230235)
+  - libdwfl: dwfl_module_addrsym fixes (#249490)
+
+* 五 6月 08 2007 Roland McGrath <roland@redhat.com> - 0.128-2
+- Update to 0.128
+  - new program: unstrip
+  - elfcmp: new option --hash-inexact
+- Replace Conflicts: with Provides/Requires using -arch
+
+* 三 4月 18 2007 Roland McGrath <roland@redhat.com> - 0.127-1
+- Update to 0.127
+  - libdw: new function dwarf_getsrcdirs
+  - libdwfl: new functions dwfl_module_addrsym, dwfl_report_begin_add,
+             dwfl_module_address_section
+
+* 一 2月 05 2007 Roland McGrath <roland@redhat.com> - 0.126-1
+- Update to 0.126
+  - New program eu-ar.
+  - libdw: fix missing dwarf_getelf (#227206)
+  - libdwfl: dwfl_module_addrname for st_size=0 symbols (#227167, #227231)
+
+* 三 1月 10 2007 Roland McGrath <roland@redhat.com> - 0.125-3
+- Fix overeager warn_unused_result build failures.
+
+* 三 1月 10 2007 Roland McGrath <roland@redhat.com> - 0.125-1
+- Update to 0.125
+  - elflint: Compare DT_GNU_HASH tests.
+  - move archives into -static RPMs
+  - libelf, elflint: better support for core file handling
+  - Really fix libdwfl sorting of modules with 64-bit addresses (#220817).
+- Resolves: RHBZ #220817, RHBZ #213792
+
+* 二 10月 10 2006 Roland McGrath <roland@redhat.com> - 0.124-1
+- eu-strip -f: copy symtab into debuginfo file when relocs use it (#203000)
+- Update to 0.124
+  - libebl: fix ia64 reloc support (#206981)
+  - libebl: sparc backend support for return value location
+  - libebl, libdwfl: backend register name support extended with more info
+  - libelf, libdw: bug fixes for unaligned accesses on machines that care
+  - readelf, elflint: trivial bugs fixed
+
+* 一 8月 14 2006 Roland McGrath <roland@redhat.com> 0.123-1
+- Update to 0.123
+  - libebl: Backend build fixes, thanks to Stepan Kasal.
+  - libebl: ia64 backend support for register names, return value location
+  - libdwfl: Handle truncated linux kernel module section names.
+  - libdwfl: Look for linux kernel vmlinux files with .debug suffix.
+  - elflint: Fix checks to permit --hash-style=gnu format.
+
+* 一 7月 17 2006 Roland McGrath <roland@redhat.com> - 0.122-4
+- Fix warnings in elflint compilation.
+
+* 三 7月 12 2006 Roland McGrath <roland@redhat.com> - 0.122-3
+- Update to 0.122
+  - Fix libdwfl sorting of modules with 64-bit addresses (#198225).
+  - libebl: add function to test for relative relocation
+  - elflint: fix and extend DT_RELCOUNT/DT_RELACOUNT checks
+  - elflint, readelf: add support for DT_GNU_HASH
+  - libelf: add elf_gnu_hash
+  - elflint, readelf: add support for 64-bit SysV-style hash tables
+  - libdwfl: new functions dwfl_module_getsymtab, dwfl_module_getsym.
+
+* 四 6月 15 2006 Roland McGrath <roland@redhat.com> - 0.121-1
+- Update to 0.121
+  - libelf: bug fixes for rewriting existing files when using mmap (#187618).
+  - make all installed headers usable in C++ code (#193153).
+  - eu-readelf: better output format.
+  - eu-elflint: fix tests of dynamic section content.
+  - libdw, libdwfl: handle files without aranges info.
+
+* 四 5月 25 2006 Jeremy Katz <katzj@redhat.com> - 0.120-3
+- rebuild to pick up -devel deps
+
+* 二 4月 04 2006 Roland McGrath <roland@redhat.com> - 0.120-2
+- Update to 0.120
+  - License changed to GPL, with some exceptions for using
+    the libelf, libebl, libdw, and libdwfl library interfaces.
+    Red Hat elfutils is an included package of the Open Invention Network.
+  - dwarf.h updated for DWARF 3.0 final specification.
+  - libelf: Fix corruption in ELF_C_RDWR uses (#187618).
+  - libdwfl: New function dwfl_version; fixes for offline.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.119-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.119-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 13 2006 Roland McGrath <roland@redhat.com> - 0.119-1
+- update to 0.119
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 日 11月 27 2005 Roland McGrath <roland@redhat.com> - 0.118-1
+- update to 0.118
+  - elflint: more tests.
+  - libdwfl: New function dwfl_module_register_names.
+  - libebl: New backend hook for register names.
+- Make sure -fexceptions is always in CFLAGS.
+
+* 二 11月 22 2005 Roland McGrath <roland@redhat.com> - 0.117-2
+- update to 0.117
+  - libdwfl: New function dwfl_module_return_value_location (#166118)
+  - libebl: Backend improvements for several CPUs
+
+* 一 10月 31 2005 Roland McGrath <roland@redhat.com> - 0.116-1
+- update to 0.116
+  - libdw fixes, API changes and additions
+  - libdwfl fixes (#169672)
+  - eu-strip/libelf fix to preserve setuid/setgid permission bits (#167745)
+
+* 五 9月 09 2005 Roland McGrath <roland@redhat.com> - 0.115-3
+- Update requires/conflicts for better biarch update behavior.
+
+* 一 9月 05 2005 Roland McGrath <roland@redhat.com> - 0.115-2
+- update to 0.115
+  - New program eu-strings.
+  - libdw: New function dwarf_getscopes_die.
+  - libelf: speed-ups of non-mmap reading.
+  - Implement --enable-gcov option for configure.
+
+* 三 8月 24 2005 Roland McGrath <roland@redhat.com> - 0.114-1
+- update to 0.114
+  - new program eu-ranlib
+  - libdw: new calls for inlines
+  - libdwfl: new calls for offline modules
+
+* 六 8月 13 2005 Roland McGrath <roland@redhat.com> - 0.113-2
+- update to 0.113
+  - elflint: relax a bit.  Allow version definitions for defined symbols
+    against DSO versions also for symbols in nobits sections.
+    Allow .rodata section to have STRINGS and MERGE flag set.
+  - strip: add some more compatibility with binutils.
+  - libdwfl: bug fixes.
+- Separate libdw et al into elfutils-libs subpackage.
+
+* 六 8月 06 2005 Roland McGrath <roland@redhat.com> - 0.112-1
+- update to 0.112
+  - elfcmp: some more relaxation.
+  - elflint: many more tests, especially regarding to symbol versioning.
+  - libelf: Add elfXX_offscn and gelf_offscn.
+  - libasm: asm_begin interface changes.
+  - libebl: Add three new interfaces to directly access machine, class,
+    and data encoding information.
+
+* 五 7月 29 2005 Roland McGrath <roland@redhat.com> - 0.111-2
+- update portability patch
+
+* 四 7月 28 2005 Roland McGrath <roland@redhat.com> - 0.111-1
+- update to 0.111
+  - libdwfl library now merged into libdw
+
+* 日 7月 24 2005 Roland McGrath <roland@redhat.com> - 0.110-1
+- update to 0.110
+
+* 五 7月 22 2005 Roland McGrath <roland@redhat.com> - 0.109-2
+- update to 0.109
+  - verify that libebl modules are from the same build
+  - new eu-elflint checks on copy relocations
+  - new program eu-elfcmp
+  - new experimental libdwfl library
+
+* 四 6月 09 2005 Roland McGrath <roland@redhat.com> - 0.108-5
+- robustification of eu-strip and eu-readelf
+
+* 三 5月 25 2005 Roland McGrath <roland@redhat.com> - 0.108-3
+- more robustification
+
+* 一 5月 16 2005 Roland McGrath <roland@redhat.com> - 0.108-2
+- robustification
+
+* 一 5月 09 2005 Roland McGrath <roland@redhat.com> - 0.108-1
+- update to 0.108
+  - merge strip fixes
+  - sort records in dwarf_getsrclines, fix dwarf_getsrc_die searching
+  - update elf.h from glibc
+
+* 日 5月 08 2005 Roland McGrath <roland@redhat.com> - 0.107-2
+- fix strip -f byte-swapping bug
+
+* 日 5月 08 2005 Roland McGrath <roland@redhat.com> - 0.107-1
+- update to 0.107
+  - readelf: improve DWARF output format
+  - elflint: -d option to support checking separate debuginfo files
+  - strip: fix ET_REL debuginfo files (#156341)
+
+* 一 4月 04 2005 Roland McGrath <roland@redhat.com> - 0.106-3
+- fix some bugs in new code, reenable make check
+
+* 一 4月 04 2005 Roland McGrath <roland@redhat.com> - 0.106-2
+- disable make check for most arches, for now
+
+* 一 4月 04 2005 Roland McGrath <roland@redhat.com> - 0.106-1
+- update to 0.106
+
+* 一 3月 28 2005 Roland McGrath <roland@redhat.com> - 0.104-2
+- update to 0.104
+
+* 三 3月 23 2005 Jakub Jelinek <jakub@redhat.com> 0.103-2
+- update to 0.103
+
+* 三 2月 16 2005 Jakub Jelinek <jakub@redhat.com> 0.101-2
+- update to 0.101.
+- use %configure macro to get CFLAGS etc. right
+
+* 六 2月 05 2005 Jeff Johnson <jbj@redhat.com> 0.99-2
+- upgrade to 0.99.
+
+* 日 9月 26 2004 Jeff Johnson <jbj@redhat.com> 0.97-3
+- upgrade to 0.97.
+
+* 二 8月 17 2004 Jakub Jelinek <jakub@redhat.com> 0.95-5
+- upgrade to 0.96.
+
+* 一 7月 05 2004 Jakub Jelinek <jakub@redhat.com> 0.95-4
+- rebuilt with GCC 3.4.x, workaround VLA + alloca mixing
+  warning
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 4月 02 2004 Jeff Johnson <jbj@redhat.com> 0.95-2
+- upgrade to 0.95.
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 16 2004 Jakub Jelinek <jakub@redhat.com> 0.94-1
+- upgrade to 0.94
+
+* 五 1月 16 2004 Jakub Jelinek <jakub@redhat.com> 0.93-1
+- upgrade to 0.93
+
+* 四 1月 08 2004 Jakub Jelinek <jakub@redhat.com> 0.92-1
+- full version
+- macroized spec file for GPL or OSL builds
+- include only libelf under GPL plus wrapper scripts
+
+* 三 1月 07 2004 Jakub Jelinek <jakub@redhat.com> 0.91-2
+- macroized spec file for GPL or OSL builds
+
+* 三 1月 07 2004 Ulrich Drepper <drepper@redhat.com>
+- split elfutils-devel into two packages.
+
+* 三 1月 07 2004 Jakub Jelinek <jakub@redhat.com> 0.91-1
+- include only libelf under GPL plus wrapper scripts
+
+* 二 12月 23 2003 Jeff Johnson <jbj@redhat.com> 0.89-3
+- readelf, not readline, in %description (#111214).
+
+* 五 9月 26 2003 Bill Nottingham <notting@redhat.com> 0.89-1
+- update to 0.89 (fix eu-strip)
+
+* 二 9月 23 2003 Jakub Jelinek <jakub@redhat.com> 0.86-3
+- update to 0.86 (fix eu-strip on s390x/alpha)
+- libebl is an archive now; remove references to DSO
+
+* 一 7月 14 2003 Jeff Johnson <jbj@redhat.com> 0.84-3
+- upgrade to 0.84 (readelf/elflint improvements, rawhide bugs fixed).
+
+* 五 7月 11 2003 Jeff Johnson <jbj@redhat.com> 0.83-3
+- upgrade to 0.83 (fix invalid ELf handle on *.so strip, more).
+
+* 三 7月 09 2003 Jeff Johnson <jbj@redhat.com> 0.82-3
+- upgrade to 0.82 (strip tests fixed on big-endian).
+
+* 二 7月 08 2003 Jeff Johnson <jbj@redhat.com> 0.81-3
+- upgrade to 0.81 (strip excludes unused symtable entries, test borked).
+
+* 四 6月 26 2003 Jeff Johnson <jbj@redhat.com> 0.80-3
+- upgrade to 0.80 (debugedit changes for kernel in progress).
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 21 2003 Jeff Johnson <jbj@redhat.com> 0.79-2
+- upgrade to 0.79 (correct formats for size_t, more of libdw "works").
+
+* 一 5月 19 2003 Jeff Johnson <jbj@redhat.com> 0.78-2
+- upgrade to 0.78 (libdwarf bugfix, libdw additions).
+
+* 一 2月 24 2003 Elliot Lee <sopwith@redhat.com>
+- debuginfo rebuild
+
+* 四 2月 20 2003 Jeff Johnson <jbj@redhat.com> 0.76-2
+- use the correct way of identifying the section via the sh_info link.
+
+* 六 2月 15 2003 Jakub Jelinek <jakub@redhat.com> 0.75-2
+- update to 0.75 (eu-strip -g fix)
+
+* 二 2月 11 2003 Jakub Jelinek <jakub@redhat.com> 0.74-2
+- update to 0.74 (fix for writing with some non-dirty sections)
+
+* 四 2月 06 2003 Jeff Johnson <jbj@redhat.com> 0.73-3
+- another -0.73 update (with sparc fixes).
+- do "make check" in %check, not %install, section.
+
+* 一 1月 27 2003 Jeff Johnson <jbj@redhat.com> 0.73-2
+- update to 0.73 (with s390 fixes).
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Jakub Jelinek <jakub@redhat.com> 0.72-4
+- fix arguments to gelf_getsymshndx and elf_getshstrndx
+- fix other warnings
+- reenable checks on s390x
+
+* 六 1月 11 2003 Karsten Hopp <karsten@redhat.de> 0.72-3
+- temporarily disable checks on s390x, until someone has
+  time to look at it
+
+* 四 12月 12 2002 Jakub Jelinek <jakub@redhat.com> 0.72-2
+- update to 0.72
+
+* 三 12月 11 2002 Jakub Jelinek <jakub@redhat.com> 0.71-2
+- update to 0.71
+
+* 三 12月 11 2002 Jeff Johnson <jbj@redhat.com> 0.69-4
+- update to 0.69.
+- add "make check" and segfault avoidance patch.
+- elfutils-libelf needs to run ldconfig.
+
+* 二 12月 10 2002 Jeff Johnson <jbj@redhat.com> 0.68-2
+- update to 0.68.
+
+* 五 12月 06 2002 Jeff Johnson <jbj@redhat.com> 0.67-2
+- update to 0.67.
+
+* 二 12月 03 2002 Jeff Johnson <jbj@redhat.com> 0.65-2
+- update to 0.65.
+
+* 一 12月 02 2002 Jeff Johnson <jbj@redhat.com> 0.64-2
+- update to 0.64.
+
+* 日 12月 01 2002 Ulrich Drepper <drepper@redhat.com> 0.64
+- split packages further into elfutils-libelf
+
+* 六 11月 30 2002 Jeff Johnson <jbj@redhat.com> 0.63-2
+- update to 0.63.
+
+* 五 11月 29 2002 Ulrich Drepper <drepper@redhat.com> 0.62
+- Adjust for dropping libtool
+
+* 日 11月 24 2002 Jeff Johnson <jbj@redhat.com> 0.59-2
+- update to 0.59
+
+* 四 11月 14 2002 Jeff Johnson <jbj@redhat.com> 0.56-2
+- update to 0.56
+
+* 四 11月 07 2002 Jeff Johnson <jbj@redhat.com> 0.54-2
+- update to 0.54
+
+* 日 10月 27 2002 Jeff Johnson <jbj@redhat.com> 0.53-2
+- update to 0.53
+- drop x86_64 hack, ICE fixed in gcc-3.2-11.
+
+* 六 10月 26 2002 Jeff Johnson <jbj@redhat.com> 0.52-3
+- get beehive to punch a rhpkg generated package.
+
+* 三 10月 23 2002 Jeff Johnson <jbj@redhat.com> 0.52-2
+- build in 8.0.1.
+- x86_64: avoid gcc-3.2 ICE on x86_64 for now.
+
+* 二 10月 22 2002 Ulrich Drepper <drepper@redhat.com> 0.52
+- Add libelf-devel to conflicts for elfutils-devel
+
+* 一 10月 21 2002 Ulrich Drepper <drepper@redhat.com> 0.50
+- Split into runtime and devel package
+
+* 五 10月 18 2002 Ulrich Drepper <drepper@redhat.com> 0.49
+- integrate into official sources
+
+* 三 10月 16 2002 Jeff Johnson <jbj@redhat.com> 0.46-1
+- Swaddle.
+

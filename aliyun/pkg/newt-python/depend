@@ -1,0 +1,15 @@
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libnewt.so.0.52()(64bit)  
+libnewt.so.0.52(NEWT_0.52)(64bit)  
+libnewt.so.0.52(NEWT_0.52.13)(64bit)  
+libnewt.so.0.52(NEWT_0.52.6)(64bit)  
+newt = 0.52.11-3.3.alios6
+python(abi) = 2.6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

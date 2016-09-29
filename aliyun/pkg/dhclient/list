@@ -1,0 +1,17 @@
+/etc/NetworkManager
+/etc/NetworkManager/dispatcher.d
+/etc/NetworkManager/dispatcher.d/10-dhclient
+/etc/dhcp
+/etc/dhcp/dhclient.d
+/sbin/dhclient
+/sbin/dhclient-script
+/usr/lib64/pm-utils/sleep.d/56dhclient
+/usr/share/doc/dhclient-4.1.1
+/usr/share/doc/dhclient-4.1.1/README.dhclient.d
+/usr/share/doc/dhclient-4.1.1/dhclient.conf.sample
+/usr/share/doc/dhclient-4.1.1/dhclient6.conf.sample
+/usr/share/man/man5/dhclient.conf.5.gz
+/usr/share/man/man5/dhclient.leases.5.gz
+/usr/share/man/man8/dhclient-script.8.gz
+/usr/share/man/man8/dhclient.8.gz
+/var/lib/dhclient

@@ -1,0 +1,146 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.16.24-1200.1840.4.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.16.24-1200.1840.3.4
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.16.24-1200.1840.2.4
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.16.24-1200.1840.1.4
+- rebuild for alios6
+
+* 四 8月 11 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 1.16.24-1200.1840.el6_1.4
+- fixed various RpmDiff warning messages about missing sub-packages requires
+
+* 四 8月 11 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 1.16.24-1200.1840.el6_1.2
+- added Requires libcurl to the client/apps packages (.so libraries needed)
+- specified BuildRequires curl-devel version for CURLOPT_GSSAPI_DELEGATION option
+
+* 四 8月 11 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 1.16.24-1200.1840.el6_1.1
+- backported GSSAPI delegation from upstream version 1.27.04 with strong attention
+  to libxmlrpc++ client ABI backward compatibility (#729793)
+
+* 六 11月 21 2009 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.16.24-1200.1840
+- updated to 1.16.24
+- rediffed patches
+- added patch fix handling of wrong certificates (Nikola Pajkovsky)
+- added support for $XMLRPC_TRACE_CURL env (John Dennis)
+- fixed 'xmlrpc-c-config --help' output (#531910)
+- build xmlrpc_pstream tool
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.16.6-3.1582
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.16.6-2.1582
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 12月 11 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.16.6-1.1582
+- updated to 1.16.6; rediffed patches
+- fixed client headers (bug #475887)
+
+* 六 11月 15 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.16.4.1567-2
+- updated to 1.16.4
+- rediffed/updated patches
+- splitted some subpackages (c++, client) out of main package as they
+  introduce additional dependencies (c++, curl)
+
+* 六 9月 06 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.14.8-2
+- fix license tag
+
+* 六 6月 21 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.14.8-1
+- updated to 1.14.8
+
+* 日 5月 25 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.14.6-1
+- updated to 1.14.6
+
+* 六 4月 12 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.14.2-1
+- updated to 1.14.2
+- rediffed patches
+- added patch to fix broken usage of 'long long' datatype
+
+* 一 3月 17 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.13.8-2
+- fixed cmake quoting so that pkgconfig files get correct version number
+- fixed handling of 'server-util' and '--cflags' within xmlrpc-c-config
+
+* 日 3月 16 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.13.8-1
+- updated to 1.13.8
+- removed some patches which were applied upstream
+
+* 二 2月 26 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.13.07-2
+- moved to advanced branched; rediffed/updated existing cmake patch
+  and fixed other compilation issues (#369841)
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.06.23-2
+- Autorebuild for GCC 4.3
+
+* 三 1月 02 2008 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.23-1
+- use correct pkg-config script for 'xmlrpc-config abyss-server'
+  output (#355411)
+- updated to 1.06.23 (#355411)
+
+* 二 9月 04 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.18-1
+- updated to 1.06.18
+
+* 四 8月 16 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.17-1
+- updated to 1.06.17
+
+* 日 7月 22 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.16-1
+- updated to 1.06.16
+
+* 四 6月 14 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.14-1
+- updated to 1.06.14
+
+* 日 4月 01 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.11-2
+- rediffed cmake patch against current version
+- made the xmlrpc-c-config compatible to the upstream version
+- added compatibility symlinks for some header files (thx to Robert de
+  Vries for reporting these two issues)
+
+* 六 3月 17 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.11-1
+- updated to 1.06.11
+
+* 六 2月 03 2007 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.09-1
+- updated to 1.06.09
+- removed -typo patch since applied upstream
+
+* 一 11月 06 2006 Jindrich Novy <jnovy@redhat.com> - 1.06.05-3
+- rebuild against the new curl
+
+* 一 10月 02 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.05-2
+- updated cmake patch
+- strip installed libraries
+
+* 三 9月 20 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.05-1
+- updated to 1.06.05
+- merged + updated patches
+
+* 六 9月 16 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.06.04-1
+- updated to 1.06.04
+- patched the broken buildsystem
+- disabled libwww backend explicitely
+
+* 日 6月 04 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.05-1
+- updated to 1.05
+- updated patches
+
+* 六 2月 18 2006 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.04-2
+- rebuilt for FC5
+
+* 日 12月 18 2005 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.04-1
+- added libxml2-devel and openssl-devel Requires: for the -devel
+  subpackage
+- ship doc/* instead of doc
+- initial Fedora Extras package (review 175840)
+
+* 四 12月 15 2005 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.04-0.1
+- disabled w3c-libwww because it does not exist anymore in FC5 and
+  seems to be unmaintained upstream
+- added missing libxml2-devel
+- cleaned up list of %doc files
+- fixed gcc4.1 build issues
+- removed static libraries when there exists a corresponding dynamic one
+
+* 二 8月 02 2005 Enrico Scholz <enrico.scholz@informatik.tu-chemnitz.de> - 1.03.02-1
+- Initial build.
+

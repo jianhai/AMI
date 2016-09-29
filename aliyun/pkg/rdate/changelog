@@ -1,0 +1,140 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4-16.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4-16.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4-16.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.4-16.1
+- rebuild for alios6
+
+* 五 6月 04 2010 Jiri Moskovcak <jmoskovc@redhat.com> - 1.4-16
+- added -fno-strict-aliasing to CFLAGS
+- Resolves: #596203
+
+* 五 2月 26 2010 Jiri Moskovcak <jmoskovc@redhat.com> - 1.4-15
+- added COPYING
+- Related: rhbz#543948
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.4-14.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4-14
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4-13
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 9月 03 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.4-12
+- fix license tag
+
+* 一 3月 31 2008 Jiri Moskovcak <jmoskovc@redhat.com> - 1.4-11
+- fixed early freeing of addrinfo
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.4-10
+- Autorebuild for GCC 4.3
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 1.4-9
+- Rebuild for selinux ppc32 issue.
+
+* 二 7月 10 2007 Jiri Moskovcak <jmoskovc@redhat.com> 1.4-8
+- fixes memory allocation
+- Resolves: #190883
+
+* 二 5月 29 2007 Phil Knirsch <pknirsch@redhat.com> - 1.4-7
+- Ceanups related to package review. (#226357)
+
+* 五 8月 25 2006 Phil Knirsch <pknirsch@redhat.com> - 1.4-6
+- Enabled IPv6 support (#197509)
+
+* 五 7月 14 2006 Jesse Keating <jkeating@redhat.com> - 1.4-5
+- bump
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.4-4.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.4-4.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 3月 02 2005 Phil Knirsch <pknirsch@redhat.com> 1.4-4
+- bump release and rebuild with gcc 4
+
+* 五 2月 18 2005 Phil Knirsch <pknirsch@redhat.com> 1.4-3
+- rebuilt
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com> 1.4-2
+- rebuilt
+
+* 一 3月 22 2004 Elliot Lee <sopwith@redhat.com> 1.4-1
+- Timeout (-t) patch from Johan Nilsson <joh-nils@dsv.su.se>
+
+* 三 1月 29 2003 Phil Knirsch <pknirsch@redhat.com> 1.3-2
+- Bump release and rebuild.
+
+* 三 11月 06 2002 Elliot Lee <sopwith@redhat.com> 1.3-1
+- New release
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 6月 19 2002 Phil Knirsch <pknirsch@redhat.com> 1.2-4
+- Don't forcibly strip binaries
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 3月 07 2002 Elliot Lee <sopwith@redhat.com>
+- Make a 1.2 release, update to it. In the future, please commit changes
+to CVS and make a new release, instead of adding patches to the rpm
+package.
+
+* 一 2月 25 2002 Elliot Lee <sopwith@redhat.com>
+- Bump & rebuild for 7.3
+
+* 三 12月 05 2001 Tim Powers <timp@redhat.com>
+- bump release number and rebuild on alpha.
+
+* 四 12月 07 2000 Crutcher Dunnavant <crutcher@redhat.com>
+- Fixed Bugzilla bug #41119. More of a RFE, but still important.
+
+* 四 12月 07 2000 Crutcher Dunnavant <crutcher@redhat.com>
+- rebuild for new tree
+
+* 四 8月 17 2000 Jeff Johnson <jbj@redhat.com>
+- summaries from specspo.
+
+* 三 8月 09 2000 Philipp Knirsch <pknirsch@redhat.com>
+- Bugfix for missing /etc/services entry for time protocol (#15797)
+
+* 一 7月 31 2000 Crutcher Dunnavant <crutcher@redhat.com>
+- tracked successful rdate attempts, so that failure returns 1
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 18 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 五 2月 04 2000 Elliot Lee <sopwith@redhat.com>
+- Rewrite the stinking thing due to license worries (bug #8619)
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com>
+- auto rebuild in the new build environment (release 8)
+
+* 日 8月 16 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 二 5月 05 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 一 10月 20 1997 Otto Hammersmith <otto@redhat.com>
+- fixed the url to the source
+
+* 一 7月 21 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

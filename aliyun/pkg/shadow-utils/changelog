@@ -1,0 +1,708 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:4.1.4.2-13.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:4.1.4.2-13.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:4.1.4.2-13.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2:4.1.4.2-13.1
+- rebuild for alios6
+
+* 二 8月 02 2011 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-13
+- fix semanage issues
+  Resolves: #639975
+
+* 三 6月 29 2011 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-12
+- add PIE and RELRO flags
+  Resolves: #723921
+
+* 三 6月 29 2011 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-11
+- man page fixes
+  Resolves: #696213 #674878
+
+* 二 6月 28 2011 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-10
+- support ACLs under skel directory
+- refer to PAM in /etc/login.defs
+- userdel option to remove Linux login <-> SELinux login mapping
+- useradd special exit value if SELinux user mapping is invalid
+- usermod special exit value if SELinux user mapping is invalid
+- fix gshadow functions from shadow utils
+- fix find_new_uid/gid for big UID/GID_MAX
+- don't show users who were not logged in lastlog
+  Resolves: #586796 #629277 #639900 
+  Resolves: #639975 #639976 #667593 #672510
+  Resolves: #693377 #706321
+
+* 三 2月 23 2011 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-9
+- faillog application is no longer needed
+  Resolves: #675168
+
+* 二 7月 20 2010 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-8
+- fix pwck/grpck hang
+  Resolves: #586322
+
+* 三 6月 16 2010 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-7
+- fix integer underflow in faillog 
+  Resolves: #603691
+
+* 五 5月 21 2010 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-6
+- create system accounts with the same uid and gid when no groupid specified
+  Resolves: #593683
+
+* 三 4月 28 2010 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-5
+- newusers man page more informative
+- userdel should not need to run semanage
+  Resolves: #586330 #586408
+
+* 四 4月 01 2010 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-4
+- max group name length set to 32 characters
+  Resolves: #576893
+
+* 二 1月 12 2010 Steve Grubb <sgrubb@redhat.com> 2:4.1.4.2-3
+- rebuild for new audit-libs
+
+* 三 11月 18 2009 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-2
+- apply patches{1,2,3}
+- enable SHA512 in /etc/login.defs
+
+* 一 9月 07 2009 Peter Vrabec <pvrabec@redhat.com> - 2:4.1.4.2-1
+- upgrade
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 2:4.1.4.1-7
+- rebuilt with new audit
+
+* 三 8月 05 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.4.1-6
+- increase threshold for uid/gid reservations to 200 (#515667)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:4.1.4.1-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 16 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.4.1-4
+- fix a list of owned directories (#510366)
+
+* 四 7月 16 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.4.1-3
+- reduce the reuse of system IDs
+
+* 三 7月 15 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.4.1-2
+- speed up sys users look up on LDAP boxes (#511813)
+
+* 二 6月 16 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.4.1-1
+- upgrade
+
+* 五 5月 15 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.4-1
+- upgrade
+
+* 三 4月 22 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.3.1-2
+- lastlog fix
+
+* 五 4月 17 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.3.1-1
+- upgrade
+
+* 二 4月 14 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.3-2
+- get "-n" option back
+- fix selinux issues
+
+* 二 4月 14 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.3-1
+- upgrade
+
+* 二 3月 24 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-12
+- don not allow UID/GID = 4294967295 (#484040)
+
+* 一 1月 19 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-11
+- fix license tag (#226416)
+- get rid of tabs in spec file (#226416)
+- convert HOWTO to UTF8 (#226416)
+
+* 一 1月 05 2009 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-10
+- Add policycoreutils as Requires, because of restorecon (#478494)
+
+* 日 12月 21 2008 Jesse Keating <jkeating@redhat.com> - 2:4.1.2-9
+- Add setup as a Requires. Perhaps this should be a files requires. (#477529)
+
+* 三 9月 24 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-8
+- groupmems: check username for valid character (#455603)
+- groupmems: don't segfault on nonexistent group (#456088)
+
+* 四 9月 11 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-7
+- fix usermod SELinux user mappings change (#458766)
+
+* 二 9月 02 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-6
+- audit improvements, thnx. to sgrubb@redhat.com
+
+* 二 9月 02 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-5
+- fix groupmems issues (#459825)
+
+* 一 7月 28 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-4
+- fix configure options (#456748)
+
+* 四 7月 24 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-3
+- recreate selinux patch
+
+* 二 7月 22 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-2
+- provide getspnam by man-pages
+
+* 一 5月 26 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.2-1
+- upgrade
+
+* 二 5月 20 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.1-2
+- fix salt size problem (#447136)
+
+* 一 4月 07 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.1-1
+- upgrade
+
+* 五 3月 07 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.0-5
+- improve newgrp audit patch
+
+* 一 3月 03 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.0-4
+- fix selinux labeling  (#433757)
+
+* 二 2月 19 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.0-3
+- fix groupmems segmentation fault (#430813)
+
+* 三 2月 13 2008 Peter Vrabec <pvrabec@redhat.com> 2:4.1.0-2
+- fix newgrp audit event
+
+* 三 12月 12 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.1.0-1
+- new upgrade release from new upstream
+- provide vipw and vigr
+
+* 四 11月 29 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-20
+- do not create mail spool entries for system accounts (#402351)
+
+* 四 10月 18 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-19
+- fix timestamps when moving home dirs to another file system (#278571)
+
+* 一 10月 08 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-18
+- mark localized man pages with %lang
+
+* 三 8月 22 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-17
+- rebuild
+
+* 二 6月 26 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-16
+- fix "CAVEATS" section of groupadd man page (#245590)
+
+* 三 6月 06 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-15
+- fix infinitive loop if there are duplicate entries
+  in /etc/group (#240915)
+
+* 三 6月 06 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-14
+- do not run find_new_uid() twice and use getpwuid() to check
+  UID uniqueness (#236871)
+
+* 二 4月 10 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-13
+- fix useradd dump core when build without WITH_SELINUX (#235641)
+
+* 一 3月 26 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-12
+- create user's mailbox file by default (#231311)
+
+* 五 3月 16 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-11
+- assign system dynamic UID/GID from the top of available UID/GID (#190523)
+
+* 三 2月 28 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-10
+- spec file fixes to meet fedora standarts.
+- fix useless call of restorecon(). (#222159)
+
+* 日 1月 14 2007 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-9
+- fix append option in usermod (#222540).
+
+* 四 12月 21 2006 Dan Walsh <dwalsh@redhat.com> 2:4.0.18.1-8
+- Fix execution and creation of Home Directories under SELinux
+- Resolves: rhbz#217441
+
+* 四 12月 14 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-7
+- fix rpmlint issues
+
+* 三 12月 06 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-6
+- use MD5 encryption by default (#218629).
+
+* 四 11月 30 2006 Steve Grubb <sgrubb@redhat.com> 2:4.0.18.1-5
+- Fix SELinux context on home directories created with useradd (#217441)
+
+* 二 11月 14 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-4
+- fix chpasswd and chgpasswd stack overflow (#213052)
+
+* 六 11月 04 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-3
+- fix "-g" and "-G" option.
+
+* 五 11月 03 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-2
+- improve audit logging (#211659)
+- improve "-l" option. Do not reset faillog if it's used (#213450).
+
+* 三 11月 01 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.18.1-1
+- upgrade
+
+* 三 10月 25 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.17-7
+- add dist-tag
+
+* 三 10月 04 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.17-6
+- fix regression. Permissions on user* group* binaries 
+  should be 0750, because of CAPP/LSPP certification
+- fix groupdel man page
+
+* 五 8月 11 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.17-5
+- fix bug introduced with UIG_GID.patch (#201991)
+
+* 六 8月 05 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.17-4
+- fix userdel, it didn't delete user's group (#201379)
+
+* 五 8月 04 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.17-3
+- fix UID/GID overflow in user* group* (#198920)
+
+* 五 8月 04 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.17-2
+- do not inherit file desc. in execve(nscd)
+
+* 一 7月 17 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.17-1
+- upgrade
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2:4.0.16-3.1
+- rebuild
+
+* 二 6月 13 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.16-3
+- call "nscd -i" to flush nscd cache (#191464)
+
+* 六 6月 10 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.16-2
+- "useradd -r" must create a system group (#194728)
+
+* 二 6月 06 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.16-1
+- upgrade
+- do not replace login.defs file (#190014)
+
+* 六 4月 08 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.15-3
+- fix typo in shadow-4.0.15-login.defs (#188263)
+
+* 二 4月 04 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.15-2
+- properly notify nscd to flush its cache(#186803)
+
+* 一 4月 03 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.15-1
+- upgrade
+
+* 五 3月 10 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.14-4
+- fix lrename() function to handle relative symlinks too
+
+* 二 3月 07 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.14-3
+- set default umask to 077 in login.defs
+
+* 一 3月 06 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.14-2
+- use lrename() function, which follow a destination symbolic link(#181977)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2:4.0.14-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2:4.0.14-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 06 2006 Peter Vrabec <pvrabec@redhat.com> 2:4.0.14-1
+- upgrade
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 11月 29 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.13-4
+- fix incorrect audit record in userdel (#174392)
+
+* 三 11月 16 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.13-3
+- fix useradd segfaults (#173241)
+
+* 六 11月 05 2005 Steve Grubb <sgrubb@redhat.com> 2:4.0.13-2
+- Update audit communication to standard format messages
+
+* 五 10月 21 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.13-1
+- upgrade
+
+* 五 9月 23 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.12-4
+- add useradd -l option back, it was removed by mistake
+
+* 二 9月 20 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.12-3
+- provide login.defs man page
+- adjust audit patch
+
+* 二 8月 30 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.12-2
+- audit support
+
+* 六 8月 27 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.12-1
+- upgrade
+
+* 六 8月 13 2005 Dan Walsh <dwalsh@redhat.com> 2:4.0.11.1-5
+- Change to use new selinux api for selinux_check_passwd_access
+
+* 二 8月 09 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.11.1-4
+- change the password last changed field in the shadow file
+  when "usermod -p" is used (#164943)
+
+* 一 8月 08 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.11.1-3
+- provide getspnam.3 man page(#162476)
+- fix useradd man page(#97131)
+
+* 一 8月 08 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.11.1-2
+- do not copy files from skel directory if home directory 
+  already exist (#89591,#80242)
+
+* 五 8月 05 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.11.1-1
+- upgrade
+
+* 一 5月 23 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.7-9
+- remove vigr binary
+
+* 一 5月 23 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.7-8
+- fix nscd socket path
+
+* 五 4月 29 2005 Jeremy Katz <katzj@redhat.com> - 2:4.0.7-7
+- don't assume selinux is enabled if is_selinux_enabled() returns -1
+
+* 一 4月 18 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.7-6
+- fix chage -l option (#109499, #137498)
+
+* 一 4月 04 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.7-5
+- fix memory leak, and CPU spinning when grp_update() and 
+  duplicate group entries in /etc/group (#151484)
+
+* 二 3月 29 2005 Peter Vrabec <pvrabec@redhat.com>  2:4.0.7-4
+- use newgrp binary
+- newgrp don't ask for password if user's default GID = group ID,
+  ask for password if there is some in /etc/gshadow 
+  and in /etc/group is 'x' (#149997)
+
+* 一 3月 14 2005 Peter Vrabec <pvrabec@redhat.com>
+- gcc4 fix (#150994) 2:4.0.7-3
+
+* 一 3月 07 2005 Peter Vrabec <pvrabec@redhat.com>
+- man pages cs,es,ko,ru,zh_CN,zh_TW to UTF-8
+
+* 三 3月 02 2005 Peter Vrabec <pvrabec@redhat.com>
+- upgrade 2:4.0.7-1
+
+* 五 2月 25 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.3-59
+- static limit on group count to dynamic (#125510, #148994, #147742)
+
+* 一 2月 21 2005 Peter Vrabec <pvrabec@redhat.com> 2:4.0.3-58
+- add "-l" option #146214
+
+* 一 2月 14 2005 Adrian Havill <havill@redhat.com>
+- rebuilt
+
+* 三 2月 09 2005 Dan Walsh <dwalsh@redhat.com> 2:4.0.3-39
+- Change useradd to use matchpathcon
+
+* 四 10月 21 2004 Dan Walsh <dwalsh@redhat.com> 2:4.0.3-37
+- Add matchpathcon to create the files correctly when they do not exist.
+
+* 一 10月 18 2004 Miloslav Trmac <mitr@redhat.com> - 2:4.0.3-36
+- Change symlink ownership when copying from /etc/skel (#66819, patch by
+  Michael Weiser)
+
+* 五 10月 15 2004 Adrian Havill <havill@redhat.com> 2:4.0.3-35
+- make the limit for the group name the same as the username (determined
+  by the header files, rather than a constant) (#56850)
+
+* 三 10月 13 2004 Adrian Havill <havill@redhat.com> 2:4.0.3-33
+- allow for mixed case and dots in usernames (#135401)
+- all man pages to UTF-8, not just Japanese (#133883)
+- add Polish blurb for useradd -n man page option (#82177)
+
+* 二 10月 12 2004 Adrian Havill <havill@redhat.com> 2:4.0.3-31
+- check for non-standard legacy place for ncsd HUP (/var/run/nscd.pid) and
+  then the std FHS place (/var/run/nscd.pid) (#125421)
+
+* 五 10月 01 2004 Dan Walsh <dwalsh@redhat.com> 2:4.0.3-30
+- Add checkPasswdAccess for chage in SELinux
+
+* 日 9月 26 2004 Adrian Havill <riel@redhat.com> 2:4.0.3-29
+- always unlock all files on any exit (#126709)
+
+* 二 8月 24 2004 Warren Togami <wtogami@redhat.com> 2:4.0.3-26
+- #126596 fix Req and BuildReqs
+
+* 日 8月 01 2004 Alan Cox <alan@redhat.com> 4.0.3-25
+- Fix build deps etc, move to current auto* (Steve Grubb)
+
+* 六 7月 10 2004 Alan Cox <alan@redhat.com> 4.0.3-24
+- Fix nscd path. This fixes various stale data caching bugs (#125421)
+
+* 四 6月 17 2004 Dan Walsh <dwalsh@redhat.com> 4.0.3-23
+- Add get_enforce checks
+- Clean up patch for potential upstream submission
+- Add removemalloc patch to get it to build on 3.4
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 30 2004 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-21
+- rebuild
+
+* 二 3月 30 2004 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-20
+- make /etc/default world-readable, needed for #118338
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 21 2004 Dan Walsh <dwalsh@redhat.com> 4.0.3-18
+- Fix selinux relabel of /etc/passwd file
+
+* 三 1月 07 2004 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-17
+- fix use of uninitialized memory in useradd (#89145)
+
+* 二 12月 16 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-16
+- back to UTF-8 again
+- remove getspnam(3) man page, now conflicts with man-pages 1.64
+
+* 四 11月 13 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-15
+- don't convert man pages to UTF-8 for RHEL 3, conditionalized using macro
+- fixup dangling man page references
+
+* 一 11月 10 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-14
+- lastlog: don't pass a possibly-smaller field to localtime (#109648)
+- configure: call AC_SYS_LARGEFILE to get large file support
+
+* 五 11月 07 2003 Dan Walsh <dwalsh@redhat.com> 4.0.3-13.sel
+- turn on SELinux support
+
+* 三 10月 22 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-12
+- convert ja man pages to UTF-8 (#106051)
+- override MKINSTALLDIRS at install-time (#107476)
+
+* 一 9月 08 2003 Dan Walsh <dwalsh@redhat.com>
+- turn off SELinux support
+
+* 四 9月 04 2003 Dan Walsh <dwalsh@redhat.com> 4.0.3-11.sel
+- build with SELinux support
+
+* 一 7月 28 2003 Dan Walsh <dwalsh@redhat.com> 4.0.3-10
+- Add SELinux support
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-8
+- rebuild
+
+* 二 6月 03 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-7
+- run autoconf to generate updated configure at compile-time
+
+* 三 2月 12 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-6
+- adjust mailspool patch to complain if no group named "mail" exists, even
+  though that should never happen
+
+* 二 2月 11 2003 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-5
+- fix perms on mailspools created by useradd to be owned by the "mail"
+  group (#59810)
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 12月 09 2002 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-3
+- install the shadow.3 man page
+
+* 一 11月 25 2002 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-2
+- disable use of cracklib at build-time
+- fixup reserved-account changes for useradd
+
+* 四 11月 21 2002 Nalin Dahyabhai <nalin@redhat.com> 4.0.3-1
+- update to 4.0.3, bumping epoch
+
+* 一 11月 18 2002 Nalin Dahyabhai <nalin@redhat.com> 20000902-14
+- remove man pages which conflict with the man-pages package(s)
+
+* 五 11月 15 2002 Nalin Dahyabhai <nalin@redhat.com> 20000902-13
+- prevent libshadow from being built more than once, to keep automake happy
+- change how md5 and md5crypt are enabled, to keep autoconf happy
+- remove unpackaged files after %install
+
+* 四 8月 29 2002 Nalin Dahyabhai <nalin@redhat.com> 20000902-12
+- force .mo files to be regenerated with current gettext to flush out possible
+  problems
+- fixup non-portable encodings in translations
+- make sv translation header non-fuzzy so that it will be included (#71281)
+
+* 五 8月 23 2002 Nalin Dahyabhai <nalin@redhat.com> 20000902-11
+- don't apply aging parameters when creating system accounts (#67408)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 5月 17 2002 Nalin Dahyabhai <nalin@redhat.com> 20000902-8
+- rebuild in new environment
+
+* 三 3月 27 2002 Nalin Dahyabhai <nalin@redhat.com> 20000902-7
+- rebuild with proper defines to get support for large lastlog files (#61983)
+
+* 五 2月 22 2002 Nalin Dahyabhai <nalin@redhat.com> 20000902-6
+- rebuild
+
+* 五 1月 25 2002 Nalin Dahyabhai <nalin@redhat.com> 20000902-5
+- fix autoheader breakage and random other things autotools complain about
+
+* 一 8月 27 2001 Nalin Dahyabhai <nalin@redhat.com> 20000902-4
+- use -O0 instead of -O on ia64
+- build in source directory
+- don't leave lock files on the filesystem when useradd creates a group for
+  the user (#50269)
+- fix the -o option to check for duplicate UIDs instead of login names (#52187)
+
+* 四 7月 26 2001 Bill Nottingham <notting@redhat.com> 20000902-3
+- build with -O on ia64
+
+* 五 6月 08 2001 Than Ngo <than@redhat.com> 20000902-2
+- fixup broken specfile
+
+* 二 5月 22 2001 Bernhard Rosenkraenzer <bero@redhat.com> 20000902-1
+- Create an empty mailspool when creating a user so non-setuid/non-setgid
+  MDAs (postfix+procmail) can deliver mail (#41811)
+- 20000902
+- adapt patches
+
+* 五 3月 09 2001 Nalin Dahyabhai <nalin@redhat.com>
+- don't overwrite user dot files in useradd (#19982)
+- truncate new files when moving overwriting files with the contents of other
+  files while moving directories (keeps files from looking weird later on)
+- configure using %{_prefix} as the prefix
+
+* 五 2月 23 2001 Trond Eivind Glomsrxd <teg@redhat.com>
+- langify
+
+* 三 8月 30 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up chage behavior (Bug #15883)
+
+* 三 8月 30 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 20000826
+- Fix up useradd man page (Bug #17036)
+
+* 二 8月 08 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- check for vipw lock before adding or deleting users (Bug #6489)
+
+* 一 8月 07 2000 Nalin Dahyabhai <nalin@redhat.com>
+- take LOG_CONS out of the openlog() call so that we don't litter the
+  screen during text-mode upgrades
+
+* 二 7月 18 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Remove a fixed-size buffer that caused problems when adding a huge number
+  of users to a group (>8192 bytes) (Bugs #3809, #11930)
+
+* 二 7月 18 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- remove dependency on util-linux because it causes prereq loops
+
+* 二 7月 18 2000 Nalin Dahyabhai <nalin@redhat.com>
+- change symlinked man pages to includers
+- require /usr/bin/newgrp (util-linux) so that /usr/bin/sg isn't left dangling
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 18 2000 Matt Wilson <msw@redhat.com>
+- use mandir for FHS
+- added patches in src/ and po/ to honor DESTDIR
+- use make install DESTDIR=$RPM_BUILD_ROOT
+
+* 三 2月 16 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up usermod's symlink behavior (Bug #5458)
+
+* 五 2月 11 2000 Cristian Gafton <gafton@redhat.com>
+- get rid of mkpasswd
+
+* 一 2月 07 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix usermod patch to check for shadow before doing any shadow-specific stuff
+  and merge it into the pwlock patch
+
+* 六 2月 05 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- fix man symlinks
+
+* 三 2月 02 2000 Nalin Dahyabhai <gafton@redhat.com>
+- make -p only change shadow password (bug #8923)
+
+* 一 1月 31 2000 Cristian Gafton <gafton@redhat.com>
+- rebuild to fix dependeencies
+- man pages are compressed
+
+* 三 1月 19 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix a security bug (adduser could overwrite previously existing
+  groups, Bug #8609)
+
+* 日 1月 09 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- unset LINGUAS before building
+- Fix typo in newusers manpage (Bug #8258)
+- libtoolize
+
+* 三 9月 22 1999 Cristian Gafton <gafton@redhat.com>
+- fix segfault for userdel when the primary group for the user is not
+  defined
+
+* 二 9月 21 1999 Cristian Gafton <gafton@redhat.com>
+- Serial: 1 because now we are using 19990827 (why the heck can't they have
+  a normal version just like everybody else?!)
+- ported all patches to the new code base
+
+* 四 4月 15 1999 Bill Nottingham <notting@redhat.com>
+- SIGHUP nscd from usermod, too
+
+* 五 4月 09 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added usermod password locking from Chris Adams <cadams@ro.com>
+
+* 四 4月 08 1999 Bill Nottingham <notting@redhat.com>
+- have things that modify users/groups SIGHUP nscd on exit
+
+* 三 3月 31 1999 Michael K. Johnson <johnsonm@redhat.com>
+- have userdel remove user private groups when it is safe to do so
+- allow -f to force user removal even when user appears busy in utmp
+
+* 二 3月 23 1999 Preston Brown <pbrown@redhat.com>
+- edit out unused CHFN fields from login.defs.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 7)
+
+* 三 1月 13 1999 Bill Nottingham <notting@redhat.com>
+- configure fix for arm
+
+* 三 12月 30 1998 Cristian Gafton <gafton@redhat.com>
+- build against glibc 2.1
+
+* 五 8月 21 1998 Jeff Johnson <jbj@redhat.com>
+- Note that /usr/sbin/mkpasswd conflicts with /usr/bin/mkpasswd;
+  one of these (I think /usr/sbin/mkpasswd but other opinions are valid)
+  should probably be renamed.  In any case, mkpasswd.8 from this package
+  needs to be installed. (problem #823)
+
+* 五 5月 08 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 4月 21 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 980403
+- redid the patches
+
+* 二 12月 30 1997 Cristian Gafton <gafton@redhat.com>
+- updated the spec file
+- updated the patch so that new accounts created on shadowed system won't
+  confuse pam_pwdb anymore ('!!' default password instead on '!')
+- fixed a bug that made useradd -G segfault
+- the check for the ut_user is now patched into configure
+
+* 四 11月 13 1997 Erik Troan <ewt@redhat.com>
+- added patch for XOPEN oddities in glibc headers
+- check for ut_user before checking for ut_name -- this works around some
+  confusion on glibc 2.1 due to the utmpx header not defining the ut_name
+  compatibility stuff. I used a gross sed hack here because I couldn't make
+  automake work properly on the sparc (this could be a glibc 2.0.99 problem
+  though). The utuser patch works fine, but I don't apply it.
+- sleep after running autoconf
+
+* 四 11月 06 1997 Cristian Gafton <gafton@redhat.com>
+- added forgot lastlog command to the spec file
+
+* 日 10月 26 1997 Cristian Gafton <gafton@redhat.com>
+- obsoletes adduser
+
+* 四 10月 23 1997 Cristian Gafton <gafton@redhat.com>
+- modified groupadd; updated the patch
+
+* 五 9月 12 1997 Cristian Gafton <gafton@redhat.com>
+- updated to 970616
+- changed useradd to meet RH specs
+- fixed some bugs
+
+* 二 6月 17 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

@@ -1,0 +1,13 @@
+/usr/bin/update-mime-database
+/usr/share/applications/defaults.list
+/usr/share/doc/shared-mime-info-0.70
+/usr/share/doc/shared-mime-info-0.70/COPYING
+/usr/share/doc/shared-mime-info-0.70/HACKING
+/usr/share/doc/shared-mime-info-0.70/NEWS
+/usr/share/doc/shared-mime-info-0.70/README
+/usr/share/doc/shared-mime-info-0.70/shared-mime-info-spec.xml
+/usr/share/man/man1/update-mime-database.1.gz
+/usr/share/mime
+/usr/share/mime/packages
+/usr/share/mime/packages/freedesktop.org.xml
+/usr/share/pkgconfig/shared-mime-info.pc

@@ -1,0 +1,13 @@
+/usr/bin/pkg-config  
+libX11-devel  
+libXext = 1.1-3.3.alios6
+libXext.so.6()(64bit)  
+pkgconfig  
+pkgconfig(x11)  
+pkgconfig(xextproto)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+xorg-x11-proto-devel >= 7.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

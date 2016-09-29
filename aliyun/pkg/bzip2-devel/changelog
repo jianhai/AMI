@@ -1,0 +1,247 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.5-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.5-7.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.5-7.1
+- rebuild for alios6
+
+* 一 9月 13 2010 Ivana Hutarova Varekova <varekova@redhat.com> 1.0.5-7
+- Resolves: #632268
+  integer overflow flaw in BZ2_decompress - CVE-2010-0405
+  (upstream patch)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.0.5-6.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.5-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 3月 17 2009 Ivana Varekova <varekova@redhat.com> 1.0.5-5
+- remove static library
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.5-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 9月 01 2008 Ivana Varekova <varekova@redhat.com> 1.0.5-3
+- minor spec file changew
+
+* 四 4月 10 2008 Ivana Varekova <varekova@redhat.com> 1.0.5-2
+- Resolves: #441775
+  fix libs link
+
+* 二 3月 25 2008 Ivana Varekova <varekova@redhat.com> 1.0.5-1
+- update to 1.0.5
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0.4-14
+- Autorebuild for GCC 4.3
+
+* 三 1月 23 2008 Ivana Varekova <varekova@redhat.com> 1.0.4-13
+- rebuild
+
+* 一 5月 21 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-12
+- fix *.so,*.a directory
+
+* 一 5月 21 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-11
+- remove libbz2.* from /usr/lib* to /lib*
+
+* 三 4月 04 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-10
+- change libz.a permissions
+
+* 三 4月 04 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-9
+- remove useless -p
+
+* 四 3月 15 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-8
+- remove unnecessary "/" after RPM_BUILD_ROOT macro
+
+* 一 2月 19 2007 Jesse Keating <jkeating@redhat.com> 1.0.4-7
+- Temporarily add static lib back in for rpm
+
+* 五 2月 16 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-6
+- incorporate the next review feedback
+
+* 四 2月 15 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-5
+- incorporate package review feedback
+
+* 二 2月 06 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-4
+- fix bzip2recover patch
+
+* 一 2月 05 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-3
+- Resolves: 226979 
+  Buffer overflow in bzip2's bzip2recover
+
+* 一 1月 08 2007 Ivana Varekova <varekova@redhat.com> 1.0.4-1
+- update to 1.0.4
+- spec file cleanup
+
+* 一 7月 17 2006 Ivana Varekova <varekova@redhat.com> 1.0.3-3
+- add cflags (#198926)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.0.3-2.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.3-2.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.0.3-2.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 11月 25 2005 Ivana Varekova <varekova@redhat.com> 1.0.3-2
+- fix bug 174172 - CAN-2005-0758 bzgrep has security issue in sed usage
+
+* 一 8月 29 2005 Ivana Varekova <varekova@redhat.com> 1.0.3-1
+- 1.0.3
+- add NULL-ptr-check patch 
+  (patch author: Mihai Limbasan <mihailim@gmail.com)
+
+* 四 5月 19 2005 Jiri Ryska <jryska@redhat.com>
+- fixed permission setting for decompressed files #155742
+- fixed decompression bomb (DoS) #157548
+
+* 五 3月 04 2005 Jiri Ryska <jryska@redhat.com>
+- rebuilt
+
+* 四 12月 09 2004 Jiri Ryska <jryska@redhat.com>
+- changed temp file creation in bzdiff #92444
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 17 2003 Jeff Johnson <jbj@redhat.com> 1.0.2-11
+- rebuilt because of crt breakage on ppc64.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 3月 31 2003 Jeff Johnson <jbj@redhat.com> 1.0.2-9
+- rebuild to get rid of undefined __ctype_b in libbz2.a.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 11月 21 2002 Elliot Lee <sopwith@redhat.com>
+- Pass __cc/__ar/__ranlib to makefiles
+- Use _smp_mflags
+
+* 二 11月 19 2002 Tim Powers <timp@redhat.com>
+- rebuild on all arches
+- fix %doc file list
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 4月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.0.2-3
+- Rebuild in new environment
+
+* 四 2月 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.0.2-2
+- Rebuild
+
+* 三 1月 30 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.0.2-1
+- 1.0.2
+- Total overhaul of build precedure
+- Add many small helper programs added to 1.0.2
+- drop old patches
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 11月 26 2001 Trond Eivind Glomsrød <teg@redhat.com> 1.0.1-5
+- Don't segfault when infile is a directory and "-f" is used (#56623)
+- Automake is evil. Add workaround
+
+* 五 3月 30 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- use "License" instead of "Copyright"
+- split out libs
+
+* 五 7月 21 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- new URL and source location
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 六 7月 01 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- 1.0.1
+- ported my patch
+
+* 二 6月 13 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging to build on solaris2.5.1.
+- remove config.cache from autoconf patch.
+- sparc: use %configure, but not the m4 macros.
+
+* 二 6月 06 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- Use %configure, %makeinstall, %{_manpath} and %{_tmpdir}
+
+* 三 5月 17 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- 1.0.0 - ported my 1.0pre8 libtoolizedautoconf patch
+
+* 二 5月 16 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- use soft links, not hardlinks, for binaries
+- mv .so to devel
+
+* 一 5月 15 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- autoconfed and libtoolized package 
+- fixed Copyright (it's BSD, not GPL)
+- dumped bzless (less works fine with bz2-files)
+- rewrote build and install parts
+- separated main package and devel package
+
+* 一 5月 08 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- 1.0pre8
+
+* 五 4月 14 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- Add bzgrep (a version of zgrep hacked to do bzip2)
+
+* 一 2月 07 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed manpages
+
+* 五 12月 31 1999 Bernhard Rosenkränzer <bero@redhat.com>
+- 0.9.5d
+- Update download URL, add URL: tag in header
+
+* 二 8月 10 1999 Jeff Johnson <jbj@redhat.com>
+- upgrade to 0.9.5c.
+
+* 一 8月 09 1999 Bill Nottingham <notting@redhat.com>
+- install actual bzip2 binary, not libtool cruft.
+
+* 日 8月 08 1999 Jeff Johnson <jbj@redhat.com>
+- run ldconfig to get shared library.
+
+* 一 8月 02 1999 Jeff Johnson <jbj@redhat.com>
+- create shared libbz1.so.* library.
+
+* 日 4月 04 1999 Jeff Johnson <jbj@redhat.com>
+- update to bzip2-0.9.0c.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 四 12月 17 1998 Cristian Gafton <gafton@redhat.com>
+- build against glibc 2.1
+
+* 三 9月 30 1998 Cristian Gafton <gafton@redhat.com>
+- force compilation with egcs to avoid gcc optimization bug (thank God 
+  we haven't been beaten by it)
+
+* 三 9月 09 1998 Cristian Gafton <gafton@redhat.com>
+- version 0.9.0b
+
+* 二 9月 08 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 0.9.0
+
+* 四 4月 09 1998 Cristian Gafton <gafton@redhat.com>
+- first build for Manhattan
+

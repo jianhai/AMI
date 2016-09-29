@@ -1,0 +1,15 @@
+Name        : python-pip                   Relocations: (not relocatable)
+Version     : 7.1.0                             Vendor: Fedora Project
+Release     : 1.el6                         Build Date: 2015年07月01日 星期三 17时51分29秒
+Install Date: 2016年05月24日 星期二 12时18分42秒      Build Host: buildhw-04.phx2.fedoraproject.org
+Group       : Development/Libraries         Source RPM: python-pip-7.1.0-1.el6.src.rpm
+Size        : 6942574                          License: MIT
+Signature   : RSA/8, 2015年07月01日 星期三 20时56分40秒, Key ID 3b49df2a0608b895
+Packager    : Fedora Project
+URL         : http://www.pip-installer.org
+Summary     : A tool for installing and managing Python packages
+Description :
+Pip is a replacement for `easy_install
+<http://peak.telecommunity.com/DevCenter/EasyInstall>`_.  It uses mostly the
+same techniques for finding packages, so packages that were made
+easy_installable should be pip-installable as well.

@@ -1,0 +1,19 @@
+/bin/sh  
+/sbin/ldconfig  
+config(fontconfig) = 2.8.0-3.3.alios6
+coreutils  
+freetype >= 2.1.4
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libexpat.so.1()(64bit)  
+libfontconfig.so.1()(64bit)  
+libfreetype.so.6()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

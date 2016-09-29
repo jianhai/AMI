@@ -1,0 +1,335 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.75.2-6.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.75.2-6.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.75.2-6.1
+- rebuild for alios6
+
+* 二 5月 04 2010 Ondrej Vasik <ovasik@redhat.com> 1.75.2-6
+- ship eclipse help stylesheets(#588765)
+
+* 五 12月 18 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.2-5
+- comment patches purpose
+- License Copyright only
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.75.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 23 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.2-3
+- upstream changed changed doc tarball after release
+  (empty reference pdf file in old tarball)
+
+* 三 7月 22 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.2-2
+- upstream changed tarballs after release
+
+* 二 7月 21 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.2-1
+- New upstream release 1.75.2
+
+* 四 5月 28 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.1-1
+- New upstream release 1.75.1
+
+* 一 5月 11 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.0-1
+- New upstream release 1.75.0
+- update marginleft patch
+
+* 三 3月 11 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.3-1
+- New upstream release 1.74.3
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.74.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 23 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.2-2
+- updated Makefile: do ship .svg images(#486849), xsl
+  stylesheets for website, xhtml-1_1, docbook -> epub
+  convertor
+
+* 五 2月 20 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.2-1
+- New upstream release 1.74.2
+
+* 三 2月 18 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.1-1
+- New upstream release, removed included patches
+
+* 三 2月 11 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.0-7
+- fix broken varlistentry (#479683)
+
+* 一 2月 02 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.0-6
+- fix improper localization for rtl languages, thanks
+  Muayyad Alsadi(#475077)
+
+* 三 1月 28 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.0-5
+- fix xsl stylesheets for rtl languages(#475077)
+
+* 五 12月 12 2008 Ondrej Vasik <ovasik@redhat.com> 1.74.0-4
+- Author_Group "<orgname>" merged between "<surname>"
+  and "<surname>" (#473019)
+
+* 三 8月 06 2008 Kamil Dudka <kdudka@redhat.com> 1.74.0-3
+- Rediffed all patches to work with patch --fuzz=0
+
+* 三 8月 06 2008 Kamil Dudka <kdudka@redhat.com> 1.74.0-2
+- Tiny changes in docbook-xsl-newmethods.patch to work with xalan
+  (#452867)
+
+* 二 6月 03 2008 Ondrej Vasik <ovasik@redhat.com> 1.74.0-1
+- New upstream release 1.74.0, adapted patches
+
+* 五 12月 14 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-9
+- added fixes for passivetex extension and list-item-body
+  (#161371)
+
+* 二 12月 11 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-8
+- remove entries from xmlcatalog only on removal of package
+  (required because of the change with droping release
+   -caused drop of catalog entries during update)
+
+* 二 12月 04 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-7
+- change a few non-constant expressions to constant that
+  could now be handled by passivetex(#366441)
+
+* 一 12月 03 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-6
+- fixed docbook-xsl-pagesetup.patch to follow Norman Walsh's
+  documentation for nonpassivetex processing(#307001)
+
+* 二 11月 27 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-5
+- convert all html files in doc to UTF-8 in prep
+  (latest rpmlint gives warnings)
+- no longer using release in style-xsl dir(#389231)
+
+* 二 11月 06 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-4
+- Merge review(#225704)
+- spec file modified to follow guidelines
+
+* 三 10月 24 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-3
+- rpmlint check
+- fixed License Tag, Requires and some cosmetic issues
+
+* 五 9月 07 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-2
+- Added PreReq of libxml2(#253962)
+
+* 三 9月 05 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.2-1
+- new upstream version
+
+* 四 8月 30 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.1-2
+- removed patch for #249294(included in new version other way)
+
+* 三 8月 29 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.1-1
+- new upstream version(fixing some bugs)
+- small new-methods patch change
+
+* 一 7月 23 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.0-2
+- fixed manpages/docbook.xsl failure(Tim Waugh,#249294)
+
+* 一 7月 23 2007 Ondrej Vasik <ovasik@redhat.com> 1.73.0-1
+- update to latest upstream version
+- patch changes because of rejects
+
+* 一 6月 18 2007 Ondrej Vasik <ovasik@redhat.com> 1.72.0-3
+- patch fixing #161619 taken from upstream
+
+* 三 1月 24 2007 Tomas Mraz <tmraz@redhat.com> 1.72.0-2
+- Install missing *.ent from common.
+
+* 二 1月 23 2007 Tim Waugh <twaugh@redhat.com> 1.72.0-1
+- 1.72.0.
+
+* 五 1月 19 2007 Tomas Mraz <tmraz@redhat.com> 1.71.1-2
+- Add new wordml and especially highlighting (which is referenced
+  from html) subdirs to Makefile.
+
+* 五 1月 19 2007 Tim Waugh <twaugh@redhat.com> 1.71.1-1
+- 1.71.1.  No longer seem to need lists patch.  Removed out of date sp
+  patch.
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.69.1-5.1
+- rebuild
+
+* 二 1月 24 2006 Tim Waugh <twaugh@redhat.com> 1.69.1-5
+- Don't ship docsrc/* (bug #177256).
+- Don't ship the extensions (bug #177256).
+
+* 四 1月 19 2006 Tim Waugh <twaugh@redhat.com> 1.69.1-4
+- Better 'lists' patch (bug #161371).
+
+* 四 1月 19 2006 Tim Waugh <twaugh@redhat.com> 1.69.1-3
+- Apply patch to fix simpara manpage output, which asciidoc tends to use
+  (bug #175592).
+
+* 二 1月 03 2006 Tim Waugh <twaugh@redhat.com> 1.69.1-2
+- Patches from W. Michael Petullo:
+  - Fix lists blocking (bug #161371).
+  - Avoid proportional-column-width for passivetex (bug #176766).
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 8月 12 2005 Tim Waugh <twaugh@redhat.com> 1.69.1-1
+- 1.69.1.
+
+* 一 7月 18 2005 Tim Waugh <twaugh@redhat.com> 1.69.0-1
+- 1.69.0.
+
+* 一 2月 14 2005 Tim Waugh <twaugh@redhat.com> 1.68.1-1
+- 1.68.1.
+
+* 三 2月 09 2005 Tim Waugh <twaugh@redhat.com> 1.68.0-1
+- 1.68.0.
+
+* 三 12月 08 2004 Tim Waugh <twaugh@redhat.com> 1.67.2-2
+- Prevent expressions in passivetex output from index.xsl (bug #142229).
+
+* 四 12月 02 2004 Tim Waugh <twaugh@redhat.com> 1.67.2-1
+- 1.67.2.
+- No longer need nbsp or listblock patches.
+
+* 一 11月 22 2004 Tim Waugh <twaugh@redhat.com> 1.67.0-3
+- Avoid non-ASCII in generated man pages.
+
+* 三 11月 10 2004 Tim Waugh <twaugh@redhat.com> 1.67.0-1
+- 1.67.0.
+
+* 二 11月 02 2004 Tim Waugh <twaugh@redhat.com> 1.66.1-1
+- 1.66.1 (bug #133586).
+
+* 五 6月 04 2004 Tim Waugh <twaugh@redhat.com> 1.65.1-2
+- Fix strange filenames (bug #125311).
+
+* 二 3月 09 2004 Tim Waugh <twaugh@redhat.com> 1.65.1-1
+- 1.65.1.
+
+* 一 3月 01 2004 Tim Waugh <twaugh@redhat.com> 1.65.0-1
+- 1.65.0.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 1月 20 2004 Tim Waugh <twaugh@redhat.com> 1.64.1-6
+- Fix last margin-left fix (bug #113456).
+- Reduce instances of itemized/ordered lists having misalignments.
+
+* 日 1月 18 2004 Tim Waugh <twaugh@redhat.com> 1.64.1-5
+- And another (bug #113456).
+
+* 四 1月 15 2004 Tim Waugh <twaugh@redhat.com> 1.64.1-4
+- Fixed another instance of bug #113456 in lists layout.
+
+* 三 1月 14 2004 Tim Waugh <twaugh@redhat.com> 1.64.1-3
+- Hard-code the margin-left work around to expect passivetex (bug #113456).
+
+* 三 12月 24 2003 Tim Waugh <twaugh@redhat.com> 1.64.1-2
+- Another manpage fix.
+
+* 五 12月 19 2003 Tim Waugh <twaugh@redhat.com> 1.64.1-1
+- 1.64.1.
+
+* 四 12月 18 2003 Tim Waugh <twaugh@redhat.com> 1.64.0-2
+- Another manpage fix.
+
+* 二 12月 16 2003 Tim Waugh <twaugh@redhat.com> 1.64.0-1
+- 1.64.0.
+
+* 五 12月 12 2003 Tim Waugh <twaugh@redhat.com> 1.62.4-3
+- Use the fr.xml from 1.62.1 (bug #111989).
+
+* 四 12月 11 2003 Tim Waugh <twaugh@redhat.com> 1.62.4-2
+- Manpages fixes.
+
+* 四 12月 11 2003 Tim Waugh <twaugh@redhat.com> 1.62.4-1
+- 1.62.4.
+- No longer need hyphens patch.
+- Avoid expressions in margin-left attributes, since passivetex does not
+  understand them.
+
+* 五 7月 04 2003 Tim Waugh <twaugh@redhat.com> 1.61.2-2.1
+- Rebuilt.
+
+* 五 7月 04 2003 Tim Waugh <twaugh@redhat.com> 1.61.2-2
+- Rebuilt.
+
+* 五 5月 23 2003 Tim Waugh <twaugh@redhat.com> 1.61.2-1
+- 1.61.2.
+
+* 日 5月 18 2003 Tim Waugh <twaugh@redhat.com> 1.61.1-1
+- 1.61.1.
+
+* 五 5月 09 2003 Tim Waugh <twaugh@redhat.com> 1.61.0-1
+- Prevent hyphenation-character confusing passivetex.
+- 1.61.0.
+
+* 四 3月 06 2003 Tim Waugh <twaugh@redhat.com> 1.60.1-1
+- 1.60.1.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 12月 02 2002 Tim Waugh <twaugh@redhat.com> 1.58.1-1
+- 1.58.1.
+- No longer need marker patch.
+
+* 一 11月 04 2002 Tim Waugh <twaugh@redhat.com> 1.57.0-2
+- Ship profiling directory (bug #77191).
+
+* 二 10月 22 2002 Tim Waugh <twaugh@redhat.com> 1.57.0-1
+- 1.57.0.
+
+* 三 10月 16 2002 Tim Waugh <twaugh@redhat.com> 1.56.1-1
+- 1.56.1.
+- Use value-of not copy-of for fo:marker content.
+- Conflict with passivetex < 1.21.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 5月 01 2002 Tim Waugh <twaugh@redhat.com> 1.50.0-1
+- 1.50.0.
+
+* 四 2月 21 2002 Tim Waugh <twaugh@redhat.com> 1.49-1
+- 1.49.
+- Rebuild in new environment.
+
+* 五 2月 01 2002 Tim Waugh <twaugh@redhat.com> 1.48-4
+- Put URIs instead of pathnames in the XML catalog.
+
+* 四 1月 17 2002 Tim Waugh <twaugh@redhat.com> 1.48-3
+- Back to /usr/share/sgml.
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com> 1.48-2
+- automated rebuild
+
+* 一 1月 07 2002 Tim Waugh <twaugh@redhat.com> 1.48-1
+- 1.48.
+
+* 六 12月 08 2001 Tim Waugh <twaugh@redhat.com> 1.47-2
+- Conflict with PassiveTeX before 1.11.
+
+* 二 10月 16 2001 Tim Waugh <twaugh@redhat.com> 1.47-1
+- 1.47-experimental.
+
+* 二 10月 09 2001 Tim Waugh <twaugh@redhat.com> 1.45-2
+- Fix unversioned symlink.
+
+* 一 10月 08 2001 Tim Waugh <twaugh@redhat.com> 1.45-1
+- XML Catalog entries.
+- Move files to /usr/share/xml.
+
+* 一 10月 01 2001 Tim Waugh <twaugh@redhat.com> 1.45-0.1
+- 1.45.
+- Built for Red Hat Linux.
+
+* 二 6月 26 2001 Chris Runge <crunge@pobox.com>
+- 1.40
+
+* 六 6月 09 2001 Chris Runge <crunge@pobox.com>
+- added extensions and additional doc
+- bin added to doc; the Perl files are for Win32 Perl and so need some
+  conversion first
+
+* 五 6月 08 2001 Chris Runge <crunge@pobox.com>
+- Initial RPM (based on docbook-style-dsssl RPM)
+- note: no catalog right now (I don't know how to do it; and not sure why
+  it is necessary)
+

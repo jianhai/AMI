@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+test -f /usr/share/info/libtasn1.info.gz && \
+	/sbin/install-info --info-dir=/usr/share/info /usr/share/info/libtasn1.info || :
+preuninstall scriptlet (using /bin/sh):
+test "$1" = 0 -a -f /usr/share/info/libtasn1.info.gz && \
+	/sbin/install-info --info-dir=/usr/share/info --delete /usr/share/info/libtasn1.info || :

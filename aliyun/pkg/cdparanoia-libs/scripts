@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+  /sbin/ldconfig
+fi

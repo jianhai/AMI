@@ -1,0 +1,92 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.20090216-7.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.20090216-7.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.20090216-7.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.20090216-7.1
+- Rebuilt for RHEL 6
+
+* 六 7月 25 2009 Caolan McNamara <caolanm@redhat.com> - 0.20090216-7
+- add extra mozilla REPs
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.20090216-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 7月 11 2009 Caolan McNamara <caolanm@redhat.com> - 0.20090216-5
+- tidy spec
+
+* 五 6月 12 2009 Caolan McNamara <caolanm@redhat.com> - 0.20090216-4
+- extend coverage
+
+* 六 6月 06 2009 Caolan McNamara <caolanm@redhat.com> - 0.20090216-3
+- Change two suspicious words with two initial capitals in en_GB
+  from ADte TEirtza to ADTe Teirtza
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.20090216-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 16 2009 Caolan McNamara <caolanm@redhat.com> - 0.20090216-1
+- fix upstreamed
+
+* 一 2月 16 2009 Caolan McNamara <caolanm@redhat.com> - 0.20090208-1
+- latest version
+
+* 三 1月 14 2009 Caolan McNamara <caolanm@redhat.com> - 0.20090114-1
+- latest version
+
+* 日 1月 11 2009 Caolan McNamara <caolanm@redhat.com> - 0.20090110-1
+- latest version
+
+* 四 12月 18 2008 Caolan McNamara <caolanm@redhat.com> - 0.20081216-1
+- latest version
+
+* 六 12月 06 2008 Caolan McNamara <caolanm@redhat.com> - 0.20081205-1
+- latest version
+
+* 二 12月 02 2008 Caolan McNamara <caolanm@redhat.com> - 0.20081202-1
+- latest version
+
+* 六 11月 29 2008 Caolan McNamara <caolanm@redhat.com> - 0.20081129-1
+- mozilla blog ... webmistresses signature range integrated
+
+* 四 11月 27 2008 Caolan McNamara <caolanm@redhat.com> - 0.20081127-2
+- abbrevs are always stripped out from US/CA dicts
+- some single characters are missing from en_GB
+
+* 四 11月 27 2008 Caolan McNamara <caolanm@redhat.com> - 0.20081127-1
+- hardcoded path dropped upstream
+
+* 二 11月 25 2008 Caolan McNamara <caolanm@redhat.com> - 0.20081124-1
+- latest version, i.e +Barack +Obama and co.
+
+* 五 8月 29 2008 Caolan McNamara <caolanm@redhat.com> - 0.20080829-1
+- latest version
+
+* 五 2月 08 2008 Caolan McNamara <caolanm@redhat.com> - 0.20080207-1
+- canonical upstream source
+
+* 四 2月 07 2008 Caolan McNamara <caolanm@redhat.com> - 0.20061130-5
+- apply mozilla word diff
+
+* 二 1月 15 2008 Caolan McNamara <caolanm@redhat.com> - 0.20061130-4
+- clean up spec
+
+* 一 9月 17 2007 Caolan McNamara <caolanm@redhat.com> - 0.20061130-3
+- new varient alias
+
+* 四 8月 09 2007 Caolan McNamara <caolanm@redhat.com> - 0.20061130-2
+- clarify licence
+
+* 五 6月 01 2007 Caolan McNamara <caolanm@redhat.com> - 0.20061130-1
+- update to latest dictionaries
+
+* 四 2月 08 2007 Caolan McNamara <caolanm@redhat.com> - 0.20040623-2
+- update to new spec guidelines
+
+* 四 12月 07 2006 Caolan McNamara <caolanm@redhat.com> - 0.20040623-1
+- initial version
+

@@ -1,0 +1,1243 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.3.8b-30.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.3.8b-30.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.3.8b-30.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.3.8b-30.1
+- rebuild for alios6
+
+* 一 7月 18 2011 Than Ngo <than@redhat.com> - 3.3.8b-30
+- Resolves: bz#651426, qt3 should prefer 64 bit arch in ppc64
+
+* 三 6月 30 2010 Than Ngo <than@redhat.com> - 3.3.8b-29
+- Resolves: bz#605106, XML validity issue, fno-strict-aliasing
+
+* 四 9月 10 2009 Than Ngo <than@redhat.com> - 3.3.8b-28
+- drop support fedora < 10
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.3.8b-27
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 5月 15 2009 Rex Dieter <rdieter@fedoraproject.org> - 3.3.8b-26
+- arm patch
+
+* 四 4月 16 2009 Rex Dieter <rdieter@fedoraproject.org> - 3.3.8b-25
+- move designer plugins to runtime (#487622)
+
+* 五 4月 10 2009 Than Ngo <than@redhat.com> - 3.3.8b-24
+- unneeded executable permissions for profile.d scripts
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.3.8b-23
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 24 2009 Than Ngo <than@redhat.com> - 3.3.8b-22
+- fix build problem against new unixODBC
+
+* 三 2月 04 2009 Rex Dieter <rdieter@fedoraproject.org> 3.3.8b-21
+- unowned %qt_docdir (#483441)
+
+* 一 2月 02 2009 Rex Dieter <rdieter@fedoraproject.org> 3.3.8b-20
+- unowned dirs (#483441)
+
+* 六 1月 31 2009 Karsten Hopp <karsten@redhat.com> 3.3.8b-19
+- s390x is 64bit, s390 is 32bit. Fixed in /etc/profile.d/qt.*
+
+* 四 1月 22 2009 Rex Dieter <rdieter@fedoraproject.org> 3.3.8b-18
+- respin (mysql)
+
+* 三 10月 08 2008 Than Ngo <than@redhat.com> 3.3.8b-17
+- update qt-x11-immodule-unified-qt3 patch
+
+* 二 9月 30 2008 Than Ngo <than@redhat.com> 3.3.8b-16
+- mv translations in main package (bz#448761)
+
+* 六 9月 20 2008 Kevin Kofler <Kevin@tigcc.ticalc.org> - 3.3.8b-15
+- set _default_patch_fuzz (fixes FTBFS)
+
+* 一 7月 07 2008 Rex Dieter <rdieter@fedoraproject.org> - 3.3.8b-14
+- QTDIR isn't set in ppc64 buildroot (#454313)
+- /etc/profile.d/qt.sh leaks variable ARCH (#454260)
+
+* 五 5月 23 2008 Than Ngo <than@redhat.com> -  3.3.8b-13
+- fix rh#448027, qt3's PATH not set properly unless qt3-devel is installed
+
+* 三 4月 02 2008 Than Ngo <than@redhat.com> -  3.3.8b-12
+- get rid of 0088-fix-xinput-clash.diff, it's fixed in
+  new xorg-x11-proto-7.3-11
+
+* 一 3月 17 2008 Than Ngo <than@redhat.com> 3.3.8b-11
+- fix obsolete/provides of version/release
+
+* 四 3月 13 2008 Kevin Kofler <Kevin@tigcc.ticalc.org> 3.3.8b-10
+- fix  idiom not to add a ':' after it
+
+* 三 3月 12 2008 Kevin Kofler <Kevin@tigcc.ticalc.org> 3.3.8b-9
+- rename to qt3 on Fedora >= 9
+
+* 二 3月 11 2008 Kevin Kofler <Kevin@tigcc.ticalc.org> 3.3.8b-8
+- prepare for rename to qt3 on Fedora >= 9 (not enabled yet)
+- add Provides and Obsoletes everywhere
+- update summaries and descriptions
+- remove dots at end of Summary tags
+- fix non-UTF-8 characters
+
+* 二 3月 11 2008 Than Ngo <than@redhat.com> 3.3.8b-7
+- 0088-fix-xinput-clash.diff, fix compile errors with Xmd.h
+
+* 五 3月 07 2008 Than Ngo <than@redhat.com> 3.3.8b-6
+- move qt.[c]sh in main package (#221000)
+
+* 一 2月 18 2008 Kevin Kofler <Kevin@tigcc.ticalc.org> 3.3.8b-5
+- fix buildkey for GCC 4.3 (#433235)
+
+* 一 2月 11 2008 Than Ngo <than@redhat.com> 3.3.8b-4
+- rebuild for GCC 4.3
+
+* 四 1月 24 2008 Than Ngo <than@redhat.com> 3.3.8b-3
+- add LICENSE.GPL2/GPL3
+
+* 四 1月 24 2008 Than Ngo <than@redhat.com> 3.3.8b-2
+- License: GPLv2 or GPLv3
+- merged in 3.3.8b -> drop following patches:
+    * qt-3.3.6-fontrendering-punjabi-209970.patch
+    * qt-3.3.6-fontrendering-or_IN-209098.patch
+    * qt-3.3.6-fontrendering-gu-228451.patch
+    * qt-font-default-subst.diff
+    * 0076-fix-qprocess.diff
+    * 0082-fix-qdatetime-fromstring.diff
+    * qt-x11-free-3.3.8-bz#243722-mysql.patch
+    * qt3-CVE-2007-3388.patch
+    * utf8-bug-qt3-CVE-2007-0242.diff
+    * qt-3.3.6-bz#292941-CVE-2007-4137.patch
+
+* 三 1月 23 2008 Than Ngo <than@redhat.com> 3.3.8b-1
+- update to 3.3.8b, fix License
+
+* 一 11月 26 2007 Than Ngo <than@redhat.com> 3.3.8-11
+- add Provides: qt3 = %version-%release
+
+* 三 11月 07 2007 Stepan Kasal <skasal@redhat.com> - 3.3.8-10
+- rh#239216, fix a typo in qt-config description
+
+* 四 10月 04 2007 Than Ngo <than@redhat.com> - 3.3.8-9
+- rh#309091, qt should provide %{qtdir}/plugins/styles
+- rh#276521, qt-copy patches 0079, 0080, 0082 and 0084
+
+* 一 9月 17 2007 Than Ngo <than@redhat.com> - 3.3.8-8
+- CVE-2007-4137
+
+* 三 8月 29 2007 Than Ngo <than@redhat.com> - 1:3.3.8-7.fc7.1
+- CVE-2007-0242
+
+* 二 8月 28 2007 Than Ngo <than@redhat.com> - 1:3.3.8-7
+- CVE-2007-3388 qt3 format string flaw
+- backport to fix #bz243722, bz#244148, Applications using qt-mysql crash if database is
+  removed before QApplication is destroyed
+- cleanup desktop files
+
+* 一 4月 23 2007 Than Ngo <than@redhat.com> - 1:3.3.8-5.fc7
+- apply patch to fix fontrendering problem in gu_IN #228451,#228452
+
+* 三 4月 11 2007 Than Ngo <than@redhat.com> - 1:3.3.8-4.fc7
+- adjust qt-3.3.8-fontrendering-as_IN-209972.patch and
+  qt-3.3.8-fontrendering-#214570.patch for qt-3.3.8
+
+* 一 4月 02 2007 Than Ngo <than@redhat.com> - 1:3.3.8-3.fc7
+- apply patches to fix
+   Qt UTF-8 overlong sequence decoding vulnerability
+   QPopupMenu aware of Xinerama
+   a regression in QProgress::writeToStdin()
+
+* 二 3月 27 2007 Than Ngo <than@redhat.com> 1:3.3.8-2.fc7
+- enable tablet support
+
+* 一 3月 19 2007 Than Ngo <than@redhat.com> 1:3.3.8-1.fc7
+- update to 3.3.8
+
+* 三 12月 06 2006 Than Ngo <than@redhat.com> - 1:3.3.7-2.fc7
+- Resolves: bz#214371, bn_IN font rendering
+- Resolves: bz#217657, ml_IN issue with cursor position
+- Resolves: bz#217638, regression bug in qt
+- Resolves: bz#209974, Vowel position set properly
+- Resolves: bz#214570, Rendering is not fine for 'RA' 09B0
+
+* 四 11月 09 2006 Than Ngo <than@redhat.com> 1:3.3.7-1.fc6
+- update to 3.3.7
+- fix #209097, ml_IN font rendering
+- fix #209970, pa font rendering
+- fix #209098, or_IN font rendering
+- fix #209972, as_IN font rendering
+- fix #209975, bn_IN font rendering
+- fix #211259, te_IN font rendering
+- fix #211436, as_IN font rendering
+  thanks Sachin Tawniya, LingNing Zhang for the fixes
+- move html files to devel
+- add sqlite plugin
+- fix #189012, qt settings should be readable for other
+
+* 四 8月 31 2006 Than Ngo <than@redhat.com> 1:3.3.6-13
+- add missing desktop files
+
+* 一 7月 17 2006 Than Ngo <than@redhat.com> 1:3.3.6-12
+- rebuild
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:3.3.6-11.1
+- rebuild
+
+* 一 7月 10 2006 Than Ngo <than@redhat.com> 1:3.3.6-11
+- apply upstream patches, fix arabic fonts issue, and
+  problems with missing minimum size when richtext
+  labels are used
+
+* 四 6月 29 2006 Than Ngo <than@redhat.com> 1:3.3.6-10
+- apply patch from Lars, fixes Qt 3.3.6 for Arabic fonts
+
+* 三 6月 28 2006 Than Ngo <than@redhat.com> 1:3.3.6-9
+- fix #183302, IM preedit issue in kbabel
+
+* 一 6月 26 2006 Than Ngo <than@redhat.com> 1:3.3.6-8
+- rebuilt
+
+* 四 6月 08 2006 Than Ngo <than@redhat.com> 1:3.3.6-7
+- fix utf8 issue in changelog
+- fix #195410, don't strip binaries/libraries
+- fix #156572, keyReleaseEvent issue
+
+* 一 6月 05 2006 Than Ngo <than@redhat.com> 1:3.3.6-6
+- qt-devel requires on mesa-libGLU-devel mesa-libGU-devel
+
+* 二 5月 16 2006 Than Ngo <than@redhat.com> 1:3.3.6-5 
+- fix #191895, BR libXmu-devel
+- disable warnings if debug is off
+
+* 一 5月 15 2006 Than Ngo <than@redhat.com> 1:3.3.6-4
+- fix multilib issue
+
+* 二 5月 09 2006 Than Ngo <than@redhat.com> 1:3.3.6-3 
+- add subpackage qt-devel-docs #191099
+
+* 四 4月 13 2006 Than Ngo <than@redhat.com> 1:3.3.6-2
+- fix xorg prefix #188510
+
+* 一 3月 20 2006 Than Ngo <than@redhat.com> 1:3.3.6-1
+- update to 3.3.6
+- adapt qt-x11-immodule-unified-qt3.3.5-20060318 to qt-3.3.6
+- remove set of fixes for the immodule patch, included in qt-x11-immodule-unified-qt3.3.5-20060318
+- remove 0051-qtoolbar_77047.patch, qt-x11-free-3.3.4-assistant_de.patch,
+  qt-x11-free-3.3.5-warning.patch, included in new upstream
+
+* 一 2月 27 2006 Than Ngo <than@redhat.com> 1:3.3.5-13
+- add set of fixes for the immodule patch, thanks to Dirk Müller
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1:3.3.5-12.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1:3.3.5-12.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 17 2006 Than Ngo <than@redhat.com> 1:3.3.5-12
+- add BuildRequires on mesa-libGL-devel
+
+* 三 12月 21 2005 Than Ngo <than@redhat.com> 1:3.3.5-11 
+- BuildRequires on libXt-devel/xorg-x11-proto-devel
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 日 11月 13 2005 Than Ngo <than@redhat.com> 1:3.3.5-10
+- workaround for keyboard input action in KHotKeys
+
+* 二 11月 08 2005 Than Ngo <than@redhat.com> 1:3.3.5-9 
+- fix for modular X
+
+* 二 11月 08 2005 Than Ngo <than@redhat.com> 1:3.3.5-8
+- get rid of xorg-x11-devel, fix for modular X
+
+* 二 10月 25 2005 Than Ngo <than@redhat.com> 1:3.3.5-7
+- update qt-x11-immodule-unified-qt3.3.5-20051012-quiet.patch
+
+* 一 10月 24 2005 Than Ngo <than@redhat.com> 1:3.3.5-6
+- update qt-x11-immodule-unified-qt3.3.5-20051018.diff
+- remove unneeded qt-x11-immodule-unified-qt3.3.5-20051012-build.patch
+
+* 四 10月 13 2005 Than Ngo <than@redhat.com> 1:3.3.5-5
+- update qt-x11-immodule-unified-qt3.3.5-20051012
+- disable some debug messages
+- apply patch to fix build problem with the new immodule patch
+
+* 二 9月 27 2005 Than Ngo <than@redhat.com> 1:3.3.5-4
+- apply patch to fix gcc warnings
+
+* 一 9月 26 2005 Than Ngo <than@redhat.com> 1:3.3.5-3 
+- export QTINC/QTLIB, thanks to Rex Dieter (#169132)
+
+* 二 9月 20 2005 Than Ngo <than@redhat.com> 1:3.3.5-2
+- German translation of the Qt Assistent #161558
+- add uic workaround
+
+* 日 9月 11 2005 Than Ngo <than@redhat.com> 1:3.3.5-1
+- update to 3.3.5
+
+* 一 8月 22 2005 Than Ngo <than@redhat.com> 1:3.3.4-22
+- apply upstream patch to fix kmail folder selector #166430
+
+* 一 8月 15 2005 Than Ngo <than@redhat.com> 1:3.3.4-21
+- fix gcc4 build problem
+
+* 三 8月 10 2005 Than Ngo <than@redhat.com> 1:3.3.4-20
+- apply missing patches
+
+* 三 8月 10 2005 Than Ngo <than@redhat.com> 1:3.3.4-19
+- apply patch to fix wrong K menu width, #165510
+
+* 一 8月 01 2005 Than Ngo <than@redhat.com> 1:3.3.4-18
+- add visibility patch
+
+* 三 7月 20 2005 Than Ngo <than@redhat.com> 1:3.3.4-17
+- fix German translation of the Qt Assistent #161558
+
+* 一 6月 27 2005 Than Ngo <than@redhat.com> 1:3.3.4-16
+- apply patch to fix Rendering for Punjabii, thanks to Trolltech #156504
+
+* 二 5月 24 2005 Than Ngo <than@redhat.com> 1:3.3.4-15
+- add better fix for #156977, thanks to trolltech
+- apply patch to fix keyReleaseEvent problem #156572
+
+* 三 5月 18 2005 Than Ngo <than@redhat.com> 1:3.3.4-14
+- apply patch to use ecvt, fcvt (thanks to Jakub)
+- fix a bug in printing of postscript #156977
+
+* 三 5月 18 2005 Than Ngo <than@redhat.com> 1:3.3.4-13
+- rebuild
+
+* 四 4月 14 2005 Than Ngo <than@redhat.com> 1:3.3.4-12
+- fix bad symlink #154086
+
+* 三 4月 13 2005 Than Ngo <than@redhat.com> 1:3.3.4-11
+- remove bad symlink #154086
+- built with PostgresSQL 8.0.2
+
+* 三 3月 23 2005 Than Ngo <than@redhat.com> 1:3.3.4-10
+- add GtkStyle patch from Peter Backlund #141125
+
+* 五 3月 04 2005 Than Ngo <than@redhat.com> 1:3.3.4-9
+- fix buildkey issue with gcc-4
+
+* 五 3月 04 2005 Than Ngo <than@redhat.com> 1:3.3.4-8
+- rebuilt against gcc-4.0.0-0.31
+
+* 二 3月 01 2005 Than Ngo <than@redhat.com> 1:3.3.4-7
+- fix build problem with gcc4
+
+* 一 2月 28 2005 Than Ngo <than@redhat.com> 1:3.3.4-6
+- rebuilt against gcc-4
+
+* 二 2月 22 2005 Than Ngo <than@redhat.com> 1:3.3.4-5
+- fix application crash when input methode not available (bug #140658)
+- remove .moc/.obj
+- add qt-copy patch to fix KDE #80072
+
+* 五 2月 11 2005 Than Ngo <than@redhat.com> 1:3.3.4-4
+- update qt-x11-immodule-unified patch
+
+* 四 2月 10 2005 Than Ngo <than@redhat.com> 1:3.3.4-3 
+- fix rpm file conflict
+
+* 三 2月 02 2005 Than Ngo <than@redhat.com> 1:3.3.4-2
+- remove useless doc files #143949
+- fix build problem if installman is disable #146311
+- add missing html/examples/tutorial symlinks
+
+* 五 1月 28 2005 Than Ngo <than@redhat.com> 1:3.3.4-1
+- update to 3.3.4
+- adapt many patches to qt-3.3.4
+- drop qt-x11-free-3.3.0-freetype, qt-x11-free-3.3.3-qmake, qt-x11-free-3.3.1-lib64
+  qt-x11-free-3.3.3-qimage, which are included in new upstream
+
+* 二 11月 30 2004 Than Ngo <than@redhat.com> 1:3.3.3-16
+- add sql macro
+
+* 一 11月 29 2004 Than Ngo <than@redhat.com> 1:3.3.3-15
+- convert qdial.3qt to UTF-8 bug #140946
+
+* 二 11月 23 2004 Than Ngo <than@redhat.com> 1:3.3.3-14
+- add missing lupdate and lrelease #140230
+
+* 五 11月 19 2004 Than Ngo <than@redhat.com> 1:3.3.3-13 
+- apply patch to fix qinputcontext
+
+* 四 11月 11 2004 Than Ngo <than@redhat.com> 1:3.3.3-12
+- link against MySQL 3
+- fix rpm conflict
+
+* 三 11月 10 2004 Than Ngo <than@redhat.com> 1:3.3.3-11
+- apply patch to fix fullscreen problem
+- remove html documents duplicate #135696
+
+* 二 11月 02 2004 Than Ngo <than@redhat.com> 1:3.3.3-10
+- rebuilt
+
+* 二 11月 02 2004 Than Ngo <than@redhat.com> 1:3.3.3-9
+- remove unused patch
+- set XIMInputStyle=On The Spot
+- require xorg-x11-devel instead XFree86-devel
+
+* 四 10月 14 2004 Than Ngo <than@redhat.com> 1:3.3.3-8
+- don't compress examples/tutorial
+
+* 四 10月 07 2004 Than Ngo <than@redhat.com> 1:3.3.3-7
+- fix build problem without qt immodule #134918
+
+* 二 9月 28 2004 Than Ngo <than@redhat.com> 1:3.3.3-6
+- fix font problem, bz #133578
+
+* 二 9月 14 2004 Than Ngo <than@redhat.com> 1:3.3.3-4
+- update new immodule patch
+- fix multilib problem #132516
+
+* 三 8月 18 2004 Than Ngo <than@redhat.com> 1:3.3.3-3
+- add patch to fix dlopen issue (#126422)
+- add image handling fix
+
+* 四 8月 12 2004 Than Ngo <than@redhat.com> 1:3.3.3-2
+- fix qmake broken link (#129723)
+
+* 三 8月 11 2004 Than Ngo <than@redhat.com> 1:3.3.3-1
+- update to 3.3.3 release
+
+* 四 7月 01 2004 Than Ngo <than@redhat.com> 1:3.3.2-10
+- add immodule for Qt
+
+* 二 6月 29 2004 Than Ngo <than@redhat.com> 1:3.3.2-9
+- add sub package config, allow multi lib installation (#126643)
+
+* 四 6月 24 2004 Than Ngo <than@redhat.com> 1:3.3.2-8
+- add fontconfig fix for qfontdatabase, #123868
+- fix some buildrequires problem, #125289
+- fix dangling symlink, #125351
+- get rid of backup files
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com> 1:3.3.2-7
+- rebuilt
+
+* 二 5月 25 2004 Than Ngo <than@redhat.com> 1:3.3.2-5
+- add missing qembed tool #124052, #124052
+- get rid of unused trigger
+- add qt.conf in ld.so.conf.d -> don't change ld.so.conf #124080
+
+* 三 5月 12 2004 Than Ngo <than@redhat.com> 1:3.3.2-4
+- backport some qt patches, Symbol font works again
+
+* 一 5月 10 2004 Than Ngo <than@redhat.com> 1:3.3.2-3
+- fixed annoying warning
+
+* 二 5月 04 2004 Than Ngo <than@redhat.com> 1:3.3.2-2
+- fix broken symlink at qt document, bug #121652
+
+* 四 4月 29 2004 Than Ngo <than@redhat.com> 3.3.2-1
+- update to 3.3.2
+
+* 四 4月 22 2004 Than Ngo <than@redhat.com> 3.3.1-1
+- add cvs backport
+- fix lib64 issue, #121052
+- fix CJK font display, bug #121017, #120542, thanks to Leon Ho
+- compress tutorial/examples
+
+* 五 3月 26 2004 Than Ngo <than@redhat.com> 3.3.1-0.8
+- fixed symlinks issue, #117572
+
+* 四 3月 25 2004 Than Ngo <than@redhat.com> 3.3.1-0.7
+- add Trolltech patch, fix dpi setting issue
+
+* 二 3月 23 2004 Than Ngo <than@redhat.com> 3.3.1-0.6
+- add 0034-qclipboard_recursion_fix.patch from CVS, #118368
+- add better qt-x11-free-3.3.1-fontdatabase.patch
+
+* 日 3月 07 2004 Than Ngo <than@redhat.com> 1:3.3.1-0.5
+- disable smpflags
+
+* 五 3月 05 2004 Than Ngo <than@redhat.com> 1:3.3.1-0.4
+- fix font alias
+
+* 四 3月 04 2004 Than Ngo <than@redhat.com> 1:3.3.1-0.3
+- add fontdatabase fix from Trolltech
+
+* 四 3月 04 2004 Than Ngo <than@redhat.com> 1:3.3.1-0.2
+- fix wrong symlink #117451
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 3月 01 2004 Than Ngo <than@redhat.com> 3.3.1-0.1
+- update to 3.3.1
+
+* 一 2月 23 2004 Than Ngo <than@redhat.com> 3.3.0-0.4
+- add fix for building with freetype 2.1.7 or newer
+
+* 二 2月 17 2004 Than Ngo <than@redhat.com> 3.3.0-0.3 
+- enable IPv6 support
+- use dlopen, instead of linking with OpenGL libraries directly
+- don't install backup files
+
+* 四 2月 05 2004 Than Ngo <than@redhat.com> 1:3.3.0-0.2
+- fix fontdatabase
+- don't use strip in install script
+- fix qt default setting
+
+* 三 2月 04 2004 Than Ngo <than@redhat.com> 1:3.3.0-0.1
+- 3.3.0
+
+* 五 1月 30 2004 Than Ngo <than@redhat.com> 1:3.2.3-0.4
+- add mouse patch from CVS, bug #114647
+
+* 二 1月 20 2004 Than Ngo <than@redhat.com> 1:3.2.3-0.3
+- rebuild
+
+* 二 12月 02 2003 Than Ngo <than@redhat.com> 1:3.2.3-0.2
+- Added missing prl files, (report from trolltech)
+- Fixed description
+- include requires XFree86-devel on qt-devel
+
+* 五 11月 14 2003 Than Ngo <than@redhat.com> 1:3.2.3-0.1
+- 3.2.3 release
+
+* 四 10月 30 2003 Than Ngo <than@redhat.com> 1:3.2.2-0.4
+- fix encoding problem
+
+* 六 10月 18 2003 Than Ngo <than@redhat.com> 1:3.2.2-0.3
+- fix encoding problem
+
+* 五 10月 17 2003 Than Ngo <than@redhat.com> 1:3.2.2-0.2
+- add font alias patch file, thanks to Leon Ho
+- clean up monospace.patch from Leon Ho
+- remove some unneeded patch files
+
+* 四 10月 16 2003 Than Ngo <than@redhat.com> 1:3.2.2-0.1
+- 3.2.2 release
+- remove a patch file, which is included in 3.2.2
+
+* 二 10月 14 2003 Than Ngo <than@redhat.com> 1:3.2.1-1.3
+- remove some unneeded patch files
+- don't load XLFDs if XFT2 is used
+
+* 一 9月 08 2003 Than Ngo <than@redhat.com> 1:3.2.1-1.2
+- fixed rpm file list
+
+* 二 9月 02 2003 Than Ngo <than@redhat.com> 1:3.2.1-1.1
+- fix for the khtml form lineedit bug from CVS
+
+* 三 8月 27 2003 Than Ngo <than@redhat.com> 1:3.2.1-1
+- 3.2.1 release
+
+* 三 7月 23 2003 Than Ngo <than@redhat.com> 1:3.2.0-1
+- 3.2.0 release
+
+* 一 6月 23 2003 Than Ngo <than@redhat.com> 3.2.0b2-0.1
+- 3.2.0b2
+- add missing templates for designer
+
+* 三 6月 18 2003 Than Ngo <than@redhat.com> 3.2.0b1-0.2
+- clean up specfile
+
+* 三 6月 18 2003 Than Ngo <than@redhat.com> 3.2.0b1-0.1
+- 3.2.0b1
+
+* 二 6月 17 2003 Than Ngo <than@redhat.com> 3.1.2-12
+- rebuilt
+
+* 二 6月 17 2003 Than Ngo <than@redhat.com> 3.1.2-10
+- add missing translations
+
+* 三 6月 11 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 5月 19 2003 Than Ngo <than@redhat.com> 3.1.2-7
+- add some patches from KDE CVS qt-copy, thanks to Alexei Podtelezhnikov
+
+* 一 5月 05 2003 Than Ngo <than@redhat.com> 3.1.2-5.1
+- set correct permission config scripts
+
+* 二 4月 29 2003 Than Ngo <than@redhat.com> 3.1.2-4
+- fix typo bug in font loader
+
+* 三 4月 09 2003 Than Ngo <than@redhat.com> 3.1.2-2
+- add xrandr extension
+
+* 一 3月 03 2003 Than Ngo <than@redhat.com> 3.1.2-1
+- 3.1.2 release
+
+* 一 2月 17 2003 Elliot Lee <sopwith@redhat.com> 3.1.1-7
+- ppc64 support
+
+* 三 1月 29 2003 Than Ngo <than@redhat.com> 3.1.1-6
+- add missing Categories section in qt designer #82920
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 12月 30 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- Change qmlined.h to not include an attic header that is also not shipped
+  with Red Hat Linux. This also fixes building unixODBC, that includes this
+  header (apparently also without needing it).
+
+* 四 12月 19 2002 Than Ngo <than@redhat.com> 3.1.1-3
+- add monospace patch file from Leon Ho (bug #79949)
+- add small patch file from Sysoltsev Slawa (bug #79731)
+
+* 二 12月 17 2002 Than Ngo <than@redhat.com> 3.1.1-2
+- don't require XFree86, it's not needed
+
+* 二 12月 17 2002 Than Ngo <than@redhat.com> 3.1.1-1
+- update to 3.1.1
+
+* 四 11月 28 2002 Than Ngo <than@redhat.com> 3.1.0-1.3
+- don't write Date into created moc files
+
+* 一 11月 18 2002 Than Ngo <than@redhat.com> 3.1.0-1.2
+- add missing libs
+- remove workaround for ppc
+
+* 日 11月 17 2002 Than Ngo <than@redhat.com> 3.1.0-1.1
+- adjust qfontdatabase_x11 for 3.1.0
+- fix lib64 issue
+- add workaround to build on ppc
+
+* 三 11月 13 2002 Than Ngo <than@redhat.com> 3.1.0-1
+- update to 3.1.0
+- adjust some patch files for 3.1.0
+- clean up specfile
+- remove some Xft2 patch files, which are now in 3.1.0
+- add qwidget_x11.cpp.diff from Trolltech
+- install qt in %{_libdir}/qt-3.1 (bug #77706)
+- don't use rpath
+- enable large file support
+- use system Xinerama
+- remove unneeded cups patch file
+- fix to build against new XFree86
+
+* 二 11月 05 2002 Than Ngo <than@redhat.com> 3.0.5-19
+- examples misconfigured (bug #76083)
+- don't include pkg-config (bug #74621)
+- fix build problem with new XFree86
+
+* 二 9月 17 2002 Than Ngo <than@redhat.com> 3.0.5-18
+- Fixed binaries symlinks
+
+* 一 9月 09 2002 Than Ngo <than@redhat.com> 3.0.5-17hammer
+- clean up spec file for 64bit machine
+
+* 四 8月 29 2002 Than Ngo <than@redhat.com> 3.0.5-17
+- Fixed rpath issue (bug #69692, #69575)
+- Removed dlopen patch
+- Added monospace alias patch from Leon Ho (bug #72811)
+- Added man pages
+
+* 日 8月 25 2002 Than Ngo <than@redhat.com> 3.0.5-16
+- Added missing catagory in qt designer
+- Added small gb18030 patch file from Leon Ho
+
+* 四 8月 22 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.5-15
+- Prereq fileutils (#71500)
+
+* 二 8月 20 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.5-14
+- Don't link to libstdc++, it isn't used
+- Work around s390 compiler bug (fpic/fPIC coexistance)
+- Do away with the "Feature Bluecurve already defined" warning message
+- Remove qmake cache files from the package
+
+* 三 8月 14 2002 Than Ngo <than@redhat.com> 3.0.5-13
+- Added fix to use VT100 graphic characters (bug #71364)
+- Added fontdatabase fix from llch@redhat.com (bug #68353)
+
+* 一 8月 12 2002 Bernhard Rosenkraenzer <bero@redhat.com> [not built]
+- Fix default qtrc
+
+* 一 8月 12 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.5-12
+- Fix CJK Printing (#71123)
+
+* 日 8月 11 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.5-11
+- Move qtconfig from qt-devel to qt, it's generally useful
+- Use -fno-use-cxa-atexit
+- Some tweaks to allow building Qt/Embedded with the same spec file
+- Apply the GB18030 patch even if xft2 isn't set
+
+* 五 8月 09 2002 Than Ngo <than@redhat.com> 3.0.5-10
+- Added XIM patch from llch@redhat.com (bug #70411)
+
+* 日 8月 04 2002 Than Ngo <than@redhat.com> 3.0.5-9
+- add a missing patch file (closelock/openlock)
+
+* 四 8月 01 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.5-8
+- Define QT_INSTALL_PREFIX in qmake
+
+* 四 8月 01 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.5-7
+- Find correct location of qmake mkspecs even if QTDIR isn't set
+
+* 四 7月 25 2002 Than Ngo <than@redhat.com> 3.0.5-6
+- Check file descriptor before closelock
+
+* 四 7月 25 2002 Than Ngo <than@redhat.com> 3.0.5-5
+- Fixed a bug in openlock
+
+* 三 7月 24 2002 Than Ngo <than@redhat.com> 3.0.5-4
+- Tiny tweaks to qt3 patch
+
+* 二 7月 23 2002 Owen Taylor <otaylor@redhat.com>
+- Tiny fix to qt3.diff to not add '0' as a test character (#68964)
+
+* 一 7月 22 2002 Tim Powers <timp@redhat.com> 3.0.5-2
+- rebuild using gcc-3.2-0.1
+
+* 一 7月 22 2002 Than Ngo <than@redhat.com> 3.0.5-1
+- 3.0.5
+- Fixed dependencies issue
+
+* 四 7月 18 2002 Than Ngo <than@redhat.com> 3.0.4-12
+- Added qt-clipfix from Harald Hoyer (bug #67648)
+
+* 二 7月 16 2002 Than Ngo <than@redhat.com> 3.0.4-11
+- get rid of qt resource, it's now in redhat-artworks
+- add some define to build for 7.3
+
+* 四 7月 11 2002 Than Ngo <than@redhat.com> 3.0.4-10
+- add missing Buildprequires desktop-file-utils
+- add patches for GB18030 (llch@redhat.com) bug #68430
+
+* 二 7月 09 2002 Than Ngo <than@redhat.com> 3.0.4-9
+- add new desktop file for qt designer
+
+* 五 7月 05 2002 Jakub Jelinek <jakub@redhat.com> 3.0.4-8
+- compile libXinerama.a with -fpic in Qt until XFree86 is fixed
+- make %xft2 work even if old Xft headers aren't installed
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 6月 18 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.4-6
+- Re-enable Xft2 now that fontconfig is fixed
+- Require a version of fontconfig that works
+- Use -fPIC rather than -fpic on alpha
+
+* 二 6月 18 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.4-5
+- Revert to Xft1 for now, Xft2 is too unstable
+- Exclude alpha for now to work around binutils bugs
+
+* 二 6月 11 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.4-4
+- Add (and fix up) fontconfig patch
+
+* 一 6月 03 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.4-3
+- Remove the glweak patch, it isn't needed after dropping XFree86 3.x
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 05 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.4-1
+- 3.0.4
+- Make SQL plugins optional (buildtime)
+- Register with pkgconfig
+
+* 四 5月 02 2002 Than Ngo <than@redhat.com> 3.0.3-12
+- qtdir /usr/lib/qt3
+- build against gcc-3.1-0.26
+- add qt-3.0.3-glweak.patch
+
+* 三 4月 17 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.3-11
+- qt3-gcc2.96 should be in qt, not qt-devel
+
+* 一 4月 15 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.3-10
+- Tweaks to allow parallel installations of Qt 3.x (gcc 2.96) and Qt 3.x
+  (gcc 3.1)
+- Fix up debug spewage at Qt designer startup
+
+* 三 4月 10 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.3-9
+- Spec file fixes
+
+* 三 4月 10 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.3-8
+- Get rid of non-threaded version, dlopen()'ing threaded code
+  (like plugins) from non-threaded code is dangerous
+- Add some fixes from qt-copy, fixing the ksplash crash some people
+  have noticed on a first login
+- Add translation fixes from CVS
+- Patch example .pro files to build outside the Qt source tree (#63023)
+- Fix various bugs
+
+* 四 4月 04 2002 Leon Ho <llch@redhat.com> 3.0.3-7
+- fixes for CJK - qpsprinter
+- fixes for CJK - gb18030
+
+* 五 3月 29 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.3-6
+- Make sure it builds with both gcc 2.96 and 3.1
+
+* 四 3月 28 2002 Leon Ho <llch@redhat.com> 3.0.3-5
+- fixes for CJK - qpsprinter
+
+* 三 3月 27 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.3-4
+- Add CJK patches
+
+* 二 3月 26 2002 Than Ngo <than@redhat.com> 3.0.3-3
+- fix loading kde styles
+
+* 二 3月 19 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.3-1
+- Update to 3.0.3 final
+
+* 四 3月 14 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.3-0.cvs20020314.1
+- Update to 3.0.3-pre, required for KDE3
+- force -fPIC usage
+- Remove conflict with qt2 < 2.3.2-1, the new qt2 2.3.1 is fixed and qt 2.3.2
+  is broken
+- Ship the qmake config files (so qmake works for building any 3rd party stuff,
+  e.g. aethera)
+
+* 三 3月 06 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.2-2
+- Add some fixes from KDE's qt-copy CVS
+- Pluginize image formats
+
+* 一 2月 25 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.2-1
+- 3.0.2 final
+
+* 二 2月 19 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.2-0.cvs20020118.3
+- Add GB18030 codec patch, #60034
+- Force-build jpeg support, fixing #59775 and #59795
+
+* 六 1月 26 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.2-0.cvs20020118.2
+- Build with CUPS support
+
+* 五 1月 18 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.2-0.cvs20020118.1
+- Fix up /usr/bin/moc links, they should point to qt3
+
+* 一 1月 14 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.2-0.cvs20020114.1
+- Build styles directly into the main library for now, there's too much broken
+  code out there depending on this ATM.
+
+* 三 1月 09 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.2-0.cvs20020109.1
+- Stop excluding alpha, gcc has been fixed
+
+* 二 1月 08 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.2-0.cvs20020108.1
+- Add fixes from CVS; this fixes the "Alt + F1, arrow up, arrow up doesn't work
+  in KDE" bug
+
+* 一 12月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.1-2
+- Fix up settings search path
+- Add default qtrc allowing to use KDE 3.x Qt plugins
+- Make sure QLibrary uses RTLD_GLOBAL when dlopen()ing libraries
+
+* 四 12月 13 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.1.0-1
+- Work around gcc bug #57467
+
+* 三 12月 12 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 3.0.1 final
+
+* 一 12月 10 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.1-0.cvs20011210.1
+- Update to current (needed by KDE 3.x)
+- Rebuild with current libstdc++
+- Temporarily disable building on alpha
+- Fix build with PostgreSQL 7.2
+
+* 一 11月 26 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-5
+- Fix up glweak
+
+* 一 11月 05 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-4
+- Give designer, uic, moc, etc. their real names - the qt2 versions
+  have been renamed in qt2-2.3.2-1.
+  Conflict with qt2 < 2.3.2-1.
+
+* 四 10月 25 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-3
+- Add symlink /usr/lib/qt-3.0.0 -> /usr/lib/qt3 and set QTDIR to the
+  symlink, allowing to update to 3.0.1 without breaking rpath'ed binaries
+
+* 二 10月 16 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-1
+- 3.0.0 final
+- fix some minor specfile bugs
+- Modularize some more (image format plugins)
+- Build codecs
+
+* 二 9月 18 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.beta5.1
+- beta5
+- Share more code between qt-x11 and qt-embedded builds
+
+* 三 8月 29 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.beta4.1
+- beta4
+- build the Motif style directly into Qt rather than as a plugin - Qt should
+  always have at least one style...
+- replace the designer3 symlink with a shell script that sets QTDIR correctly
+  before launching designer
+- Add desktop file for designer
+
+* 一 8月 06 2001 Tim Powers <timp@redhat.com> 3.0.0-0.beta3.4
+- explicitly include qm2ts, qmake, qtconfig in the devel package file list to avoid dangling symlinks
+
+* 四 8月 02 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.beta3.3
+- Try yet another workaround for buildsystem breakages
+
+* 二 7月 31 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add another ugly workaround for build system problems, this should finally
+  get rid of the dangling symlinks
+
+* 二 7月 31 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.beta3.2
+- Rephrase parts of the spec file, hopefully pleasing the build system
+
+* 日 7月 29 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.beta3.1
+- beta3
+- Fix dangling symlinks
+
+* 日 6月 24 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.beta1.2
+- Fix up QSQL Postgres classes for Postgres 7.1.x
+- Fix various bugs:
+  - QtMultilineEdit and QtTableView should actually compile
+  - Link libqsqlpsql with libpq
+  - Don't link the base library with libmysqlclient, linking the MySQL
+    module with it is sufficient
+- Add missing const qualifier
+- move the SQL drivers to separate packages to avoid dependencies
+- build and install designer plugins - converting glade files to Qt is fun. ;)
+- handle RPM_OPT_FLAGS
+
+* 二 5月 22 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.beta1.1
+- 3.0 beta 1
+
+* 三 5月 16 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.cvs20010516.1
+- Update, remove conflicts with Qt 2.x
+
+* 一 5月 14 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.0.0-0.cvs20010514.1
+- Initial build of 3.0 branch
+
+* 五 4月 27 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.3.0-6
+- Fix crashes on ia64, Patch from Bill Nottingham <notting@redhat.com>
+- Allow building qt-nox
+
+* 五 4月 20 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.3.0-5
+- Make sure uic and designer use the libqui from the source tree, not
+  a previously installed one.
+  Linking uic-x11 against libqui-embedded is definitely not a feature. ;)
+- The qclipboard fix is needed for qt-x11 only, don't apply it if we're
+  building qt-embedded
+
+* 六 4月 14 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Handle LPRng specific constructs in printcap, Bug #35937
+
+* 日 3月 25 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add qfont patch from Trolltech
+
+* 二 3月 13 2001 Harald Hoyer <harald@redhat.de>
+- added patch for '@euro' language settings
+
+* 二 3月 06 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.3.0 final
+- BuildRequires XFree86-devel >= 4.0.2 (#30486)
+
+* 一 2月 26 2001 Than Ngo <than@redhat.com>
+- fix check_env function, so that qt does not crash if QT_XFT is not set
+- fix symlinks
+
+* 一 2月 26 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.3.0b1
+- Add a patch to qpsprinter that handles TrueType fonts even if they come from xfs
+
+* 二 2月 13 2001 Preston Brown <pbrown@redhat.com>
+- japanese input and clipboard fixes applied.  Changes have been sent upstream by patch authors.
+
+* 五 2月 09 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Rebuild with new Mesa to get rid of pthreads linkage
+- Add Xft fix from KDE CVS
+
+* 三 2月 07 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add printing bugfix patch from Trolltech
+
+* 六 2月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.2.4
+- Qt Embedded: Add QVfb and VNC support
+
+* 二 1月 16 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Don't segfault when running Qt/Embedded applications as root
+- Improve the Qt/Embedded sparc patch so we don't need the specfile hacks
+  anymore
+- Fix a bug in QPrintDialog (causing KDE Bug #18608)
+
+* 四 1月 11 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- bzip2 source to save space
+- Qt/Embedded 2.2.3
+- Fix qte build on sparc
+
+* 三 12月 20 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Run ldconfig in %post and %postun for qt-Xt
+
+* 日 12月 17 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Build with the Xrender extension
+  (Patch from Keith Packard <keithp@keithp.com>)
+
+* 三 12月 13 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.2.3
+
+* 二 12月 12 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Rebuild to fix permissions on doc dir
+- Don't exclude ia64 anymore
+
+* 五 11月 17 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up uic (Patch from trolltech)
+
+* 三 11月 15 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Build qt-embedded
+  changes to base: fix build, fix ISO C99 compliance, fix 64bit support
+
+* 一 11月 13 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.2.2
+
+* 二 10月 24 2000 Than Ngo <than@redhat.com>
+- call ldconfig for updating (Bug #19687)
+- added patch from Trolltech, thanks to Rainer <rms@trolltech.com>
+
+* 三 10月 18 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add missing msg2qm, msgmerge, qconfig tools (Bug #18997), introduced
+  by broken Makefiles in base
+- fix up %install so it works both with old-style and new-style fileutils
+  (fileutils <= 4.0z don't know about -L)
+
+* 五 10月 13 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Disable exception handling; this speeds up KDE 2.x and reduces its
+  memory footprint by 20 MB.
+
+* 二 10月 10 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- dereference symlinks in include
+
+* 日 10月 08 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- fix -devel
+- update to the new version of 2.2.1 on trolltech.com; the initial tarball
+  contained broken docs
+
+* 四 10月 05 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.2.1
+
+* 一 9月 25 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add missing uic
+
+* 四 9月 21 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Move Qt designer to a different source RPM to get rid of a
+  circular dependency (kdelibs2->qt, qt->kdelibs2)
+- Enable MNG support
+- Don't compile (just include) examples and tutorials
+- move the static libraries to a separate package (qt-static).
+  They're HUGE, and most people won't ever need them.
+- clean up spec file
+- fix up dependencies (-devel requires base, -static requires devel,
+  Xt requires base)
+- add BuildRequires line
+
+* 二 9月 12 2000 Than Ngo <than@redhat.com>
+- update release 2.2.0
+- changed copyright to GPL
+- added missing static libraries
+- made symbolic link for designer to load the help files correct
+- made designer and designer-kde2 as sub packages
+- added missing templates for designer
+- remove jakub patch, since the release 2.2.0 already 
+  contains this patch.
+- fixed qt again to compile with gcc-2.96
+- use make -j for building
+
+* 三 8月 23 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Work around compiler bugs (Patch from Jakub)
+- Use relative symlinks (Bug #16750)
+
+* 一 8月 21 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- beta2
+
+* 一 8月 14 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- new qt-copy from KDE2 CVS
+
+* 三 8月 09 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- official beta 1
+
+* 四 8月 03 2000 Than Ngo <than@redhat.de>
+- rebuilt against the libpng-1.0.8
+
+* 四 7月 27 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- rebuild (so we have it on all arches)
+
+* 二 7月 25 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- move man pages to a more reasonable place (this fixes Bug #14126)
+- exclude ia64 for now (compiler problems!!!)
+
+* 一 7月 24 2000 Harald Hoyer <harald@redhat.de>
+- modified connect patch to fit qt 2.2.0 beta.
+
+* 四 7月 20 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- update to current qt-copy; this is now a qt 2.2.0 beta.
+
+* 一 7月 17 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- update to current qt-copy in kde CVS, required
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 7月 11 2000 Harald Hoyer <harald@redhat.de>
+- made patch smaller and binary compatible when recompiled with 6.2
+- modified connect and moc to cope with the new g++ class layout
+
+* 日 7月 09 2000 Than Ngo <than@redhat.de>
+- rebuilt qt with gcc-2.96-34
+
+* 五 7月 07 2000 Than Ngo <than@redhat.de>
+- rebuilt qt with c++ 2.96
+
+* 一 7月 03 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix dependancies
+
+* 日 7月 02 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Use egcs++ for now ** FIXME
+
+* 三 6月 28 2000 Preston Brown <pbrown@redhat.com>
+- fix up qt.sh
+
+* 日 6月 25 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Build in jpeg and threading support
+- Fix a bug in clipboard pasting code
+
+* 三 6月 07 2000 Preston Brown <pbrown@redhat.com>
+- fix qt.{sh,csh}
+- use new rpm macro paths
+- package man pages
+
+* 五 6月 02 2000 Bill Nottingham <notting@redhat.com>
+- build without optimization on ia64
+
+* 一 5月 29 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.1.1
+
+* 四 5月 18 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- recompile with correct libstdc++
+
+* 四 4月 13 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 2.1.0 final
+
+* 三 4月 05 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- beta4
+- depend on libGL.so.1 rather than Mesa - XFree86 4.0 provides that
+  lib, too
+
+* 三 3月 22 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- beta3
+
+* 二 3月 07 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- beta2
+- fix compilation of the NSPlugin add-on
+
+* 五 3月 03 2000 Bill Nottingham <notting@redhat.com>
+- fix %postun script
+
+* 五 2月 18 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- beta1
+- get rid of qt-ImageIO, the functionality is now in the main Qt library
+- remove qt-Network, the functionality is now in the main Qt library
+- add changes-2.1.0 to %doc
+
+* 四 2月 17 2000 Preston Brown <pbrown@redhat.com>
+- no refcount check on postun script, we want it to happen even on upgrades
+
+* 四 2月 10 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- new snapshot, should fix QWhatsThisButton
+- remove executable permissions from *.pro files
+
+* 一 2月 07 2000 Preston Brown <pbrown@redhat.com>
+- strip binaries in examples, tutorial
+
+* 一 1月 31 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- new snapshot - should fix the hotkey bug
+- Fix up the Makefiles so it compiles
+
+* 二 1月 18 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- new snapshot - we need those QVariant fixes
+
+* 四 1月 13 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- switch from glxMesa to Mesa for the GL addon
+
+* 三 1月 05 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- Fix up dependencies
+- new snapshot
+
+* 一 1月 03 2000 Ngo Than <than@redhat.de>
+- new snapshot for Red Hat Linux 6.2
+- increase version number
+
+* 一 12月 20 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- new snapshot
+- handle RPM_OPT_FLAGS
+
+* 一 12月 13 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- new snapshot
+- -GL requires libGL.so.1 instead of Mesa (might as well be glxMesa
+  or some commercial OpenGL)
+- -GL BuildPrereqs /usr/X11R6/include/GL/gl.h instead of Mesa-devel
+  (might as well be glxMesa or some commercial OpenGL)
+
+* 日 12月 05 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- update to current RSYNC version
+- remove compilation patch - it finally works out of the box
+
+* 三 10月 27 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- update to current CVS snapshot
+- build extensions
+- add patch to fix QNetwork compilation
+
+* 日 10月 24 1999 Bernhard Rosenkraenzer <bero@redhat.de>
+- current CVS snapshot
+- fix compilation with gcc 2.95.x
+- use install -c rather than just install to make BSD install happy
+
+* 一 10月 11 1999 Bernhard Rosenkraenzer <bero@redhat.de>
+- 2.1.0 snapshot (for KDE2)
+- Fix typo in spec
+
+* 四 9月 23 1999 Preston Brown <pbrown@redhat.com>
+- don't ship tutorial or example binaries
+
+* 二 9月 21 1999 Preston Brown <pbrown@redhat.com>
+- substitution in tutorial and examples so that dependencies are correct and
+  they can be successfully rebuilt.
+- switched to completely using QTDIR.  trying to coexist with links into
+  /usr/{include,lib} and still compile with qt 1.x is very hard for
+  configure scripts to cope with.
+
+* 四 8月 19 1999 Preston Brown <pbrown@redhat.com>
+- implemented QTDIR compatibility.
+
+* 二 7月 20 1999 Preston Brown <pbrown@redhat.com>
+- qt 2.0.1 packaged.
+
+* 三 7月 14 1999 Preston Brown <pbrown@redhat.com>
+- Qt 2.00 packaged.
+- examples, html documentation, tutorial moved to /usr/doc
+
+* 六 4月 17 1999 Preston Brown <pbrown@redhat.com>
+- static library supplied in dev package.
+
+* 三 4月 07 1999 Preston Brown <pbrown@redhat.com>
+- turn on internal GIF reading support
+
+* 二 4月 06 1999 Preston Brown <pbrown@redhat.com>
+- strip binaries
+
+* 一 3月 15 1999 Preston Brown <pbrown@redhat.com>
+- upgrade to qt 1.44.
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 二 1月 19 1999 Preston Brown <pbrown@redhat.com>
+- moved includes to /usr/include/qt
+
+* 一 1月 04 1999 Preston Brown <pbrown@redhat.com>
+- made setup phase silent.
+
+* 五 12月 04 1998 Preston Brown <pbrown@redhat.com>
+- upgraded to qt 1.42, released today.
+
+* 二 12月 01 1998 Preston Brown <pbrown@redhat.com>
+- took Arnts RPM and made some minor changes for Red Hat.
+

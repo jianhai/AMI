@@ -1,0 +1,12 @@
+Name        : mesa-dri1-drivers            Relocations: (not relocatable)
+Version     : 7.11                              Vendor: Alibaba
+Release     : 8.1.alios6                    Build Date: 2014年07月28日 星期一 23时21分50秒
+Install Date: 2015年03月25日 星期三 11时09分31秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: mesa-dri1-drivers-7.11-8.1.alios6.src.rpm
+Size        : 14110088                         License: MIT
+Signature   : RSA/8, 2014年08月01日 星期五 14时57分17秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.mesa3d.org
+Summary     : Mesa graphics libraries
+Description :
+Mesa DRI1 drivers

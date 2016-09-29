@@ -1,0 +1,58 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 14:1.0.0-6.20091201git117cb5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 14:1.0.0-6.20091201git117cb5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 14:1.0.0-6.20091201git117cb5.1
+- rebuild for alios6
+
+* 五 6月 18 2010 Miroslav Lichvar <mlichvar@redhat.com> 14:1.0.0-6.20091201git117cb5
+- compile with -fno-strict-aliasing (#605080)
+
+* 三 12月 16 2009 Miroslav Lichvar <mlichvar@redhat.com> 14:1.0.0-5.20091201git117cb5
+- update to snapshot 20091201git117cb5
+
+* 六 10月 17 2009 Dennis Gilmore <dennis@ausil.us> 14:1.0.0-4.20090922gite154e2
+- use -fPIC on sparc arches
+
+* 三 9月 23 2009 Miroslav Lichvar <mlichvar@redhat.com> 14:1.0.0-3.20090922gite154e2
+- update to snapshot 20090922gite154e2
+- drop old soname
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 14:1.0.0-2.20090716git6de2de
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Miroslav Lichvar <mlichvar@redhat.com> 14:1.0.0-1.20090716git6de2de
+- update to 1.0.0, git snapshot 20090716git6de2de
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 14:0.9.8-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 6月 27 2008 Miroslav Lichvar <mlichvar@redhat.com> 14:0.9.8-3
+- use CFLAGS when linking (#445682)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 14:0.9.8-2
+- Autorebuild for GCC 4.3
+
+* 三 10月 24 2007 Miroslav Lichvar <mlichvar@redhat.com> 14:0.9.8-1
+- update to 0.9.8
+
+* 三 8月 22 2007 Miroslav Lichvar <mlichvar@redhat.com> 14:0.9.7-3
+- update license tag
+
+* 三 7月 25 2007 Jesse Keating <jkeating@redhat.com> - 14:0.9.7-2
+- Rebuild for RH #249435
+
+* 二 7月 24 2007 Miroslav Lichvar <mlichvar@redhat.com> 14:0.9.7-1
+- update to 0.9.7
+
+* 二 6月 19 2007 Miroslav Lichvar <mlichvar@redhat.com> 14:0.9.6-1
+- update to 0.9.6
+
+* 二 11月 28 2006 Miroslav Lichvar <mlichvar@redhat.com> 14:0.9.5-1
+- split from tcpdump package (#193657)
+- update to 0.9.5
+- don't package static library
+- maintain soname
+

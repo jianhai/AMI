@@ -1,0 +1,14 @@
+Name        : python-iwlib                 Relocations: (not relocatable)
+Version     : 0.1                               Vendor: Alibaba
+Release     : 1.2.4.alios6                  Build Date: 2014年07月27日 星期日 19时13分44秒
+Install Date: 2015年03月25日 星期三 11时01分30秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: python-iwlib-0.1-1.2.4.alios6.src.rpm
+Size        : 27328                            License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 18时08分57秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://git.fedorahosted.org/git/python-iwlib.git
+Summary     : Wireless settings python bindings
+Description :
+Python bindings for the iwlib kernel interface,
+that provides functions to examine the wireless network devices
+installed on the system.

@@ -1,0 +1,18 @@
+Name        : eject                        Relocations: (not relocatable)
+Version     : 2.1.5                             Vendor: Alibaba
+Release     : 17.3.alios6                   Build Date: 2014年07月26日 星期六 04时19分11秒
+Install Date: 2015年03月25日 星期三 11时02分49秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Base       Source RPM: eject-2.1.5-17.3.alios6.src.rpm
+Size        : 137173                           License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时25分55秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.pobox.com/~tranter
+Summary     : A program that ejects removable media using software control
+Description :
+The eject program allows the user to eject removable media (typically
+CD-ROMs, floppy disks or Iomega Jaz or Zip disks) using software
+control. Eject can also control some multi-disk CD changers and even
+some devices' auto-eject features.
+
+Install eject if you'd like to eject removable media using software
+control.

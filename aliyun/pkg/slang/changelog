@@ -1,0 +1,276 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.2.1-1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.2.1-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.2.1-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.2.1-1.1
+- rebuild for alios6
+
+* 一 9月 07 2009 Miroslav Lichvar <mlichvar@redhat.com> - 2.2.1-1
+- update to 2.2.1
+
+* 一 8月 03 2009 Miroslav Lichvar <mlichvar@redhat.com> - 2.2.0-1
+- update to 2.2.0
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.4-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 12月 12 2008 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.4-2
+- convert changes.txt to UTF-8, comment patches (#226420)
+
+* 一 9月 08 2008 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.4-1
+- update to 2.1.4
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.1.3-3
+- Autorebuild for GCC 4.3
+
+* 四 1月 24 2008 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.3-2
+- drop lang patch
+- build oniguruma module (#226420)
+
+* 一 11月 05 2007 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.3-1
+- update to 2.1.3
+
+* 二 9月 25 2007 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.2-2
+- fix integer underflow in compute_hash (#302181)
+- fix SLang_set_error when called from signal handler (#297661)
+
+* 一 9月 17 2007 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.2-1
+- update to 2.1.2
+
+* 四 8月 23 2007 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.1-2
+- update license tag
+- buildrequire gawk
+
+* 一 7月 09 2007 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.1-1
+- update to 2.1.1
+
+* 五 6月 15 2007 Miroslav Lichvar <mlichvar@redhat.com> - 2.1.0-1
+- update to 2.1.0
+- create -slsh subpackage for slsh and modules
+
+* 一 2月 19 2007 Miroslav Lichvar <mlichvar@redhat.com> - 2.0.7-2
+- ignore background color of trailing spaces if terminal has bce (#217276)
+- move static library to -static subpackage
+- spec cleanup
+
+* 一 11月 06 2006 Miroslav Lichvar <mlichvar@redhat.com> - 2.0.7-1
+- update to 2.0.7
+
+* 三 7月 12 2006 Miroslav Lichvar <mlichvar@redhat.com> - 2.0.6-3
+- don't build unpackaged stuff
+- package just txt files from doc directory
+
+* 二 5月 23 2006 Peter Jones <pjones@redhat.com> - 2.0.6-2
+- put static lib back; it is required by anaconda
+
+* 一 5月 22 2006 Miroslav Lichvar <mlichvar@redhat.com> - 2.0.6-1
+- update to slang-2.0.6
+- move .so.2 link to main package
+- don't package static library and utf8 link
+- remove requires for libtool and libtermcap
+- rearrange doc files (#191583)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.0.5-5.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.0.5-5.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 02 2005 Petr Raszyk <praszyk@redhat.com> - 2.0.5-5
+- A patch by Bill Nottingham <notting@redhat.com>
+  (#174761). slang-LANG.patch
+  slang reads automatically sh-env-variable LANG.
+
+* 一 11月 21 2005 Petr Raszyk <praszyk@redhat.com> - 2.0.5-3
+- Rebuild.
+
+* 一 11月 21 2005 Petr Raszyk <praszyk@redhat.com> - 2.0.5-1
+- Upgrade to slang 20005.
+- (#161536). slang-nointerlibc2.patch
+- slang-makefile.patch
+
+* 一 10月 24 2005 Petr Raszyk <praszyk@redhat.com> - 1.4.9-23
+- rebuild
+
+* 一 10月 24 2005 Petr Raszyk <praszyk@redhat.com> - 1.4.9-22
+- libslang-utf8.so should not use the symbol __libc_enable_secure 
+- (#161536). slang-nointerlibc.patch
+- Additional some comments/hints for C-Frame 121
+
+* 日 10月 16 2005 Florian La Roche <laroche@redhat.com>
+- set _filter_GLIBC_PRIVATE
+
+* 日 10月 16 2005 Florian La Roche <laroche@redhat.com>
+- add exec perms to shared libs
+
+* 一 9月 05 2005 Petr Raszyk <praszyk@redhat.com> - 1.4.9-19
+- One line in the patch 'slang-utf8-acs.ptach' commented out (#138445).
+
+* 四 8月 18 2005 Petr Raszyk <praszyk@redhat.com> - 1.4.9-18
+- Patch to resolve the problem with displaying the 'x' character
+  in the latin2 mode (#139127)
+
+* 五 3月 18 2005 Petr Rockai <prockai@redhat.com> - 1.4.9-17
+- Patch to compile with gcc4 by Robert Scheck (#151029). (Weeird,
+  probably on march 2nd the used buildroot wasn't updated with
+  gcc4 yet?).
+
+* 三 3月 02 2005 Petr Rockai <prockai@redhat.com>
+- rebuild
+
+* 一 2月 14 2005 Adrian Havill <havill@redhat.com>
+- rebuilt
+
+* 日 8月 01 2004 Alan Cox <alan@redhat.com>
+- fixed requires so slang-devel pulls in libtermcap-devel (#125299)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 12月 05 2003 Jeremy Katz <katzj@redhat.com> 1.4.9-2
+- rebuild to fix libslang-utf8.so.1 symlink
+
+* 二 10月 28 2003 Adrian Havill <havill@redhat.com> 1.4.9-1
+- big upgrade to 1.4.9
+- manually redid partially rotted utf patch for sldisply.c
+- no longer necessary to chmod the so files
+- change copyright header to license
+
+* 五 6月 13 2003 Bill Nottingham <notting@redhat.com> 1.4.5-18
+- fix segfault in slcurses (#97216)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 24 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 21 2003 Jakub Jelinek <jakub@redhat.com> 1.4.5-15
+- for ACS characters, take them as is, not through wcrtomb
+  and assume wcwidth returns 1 for them
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 六 1月 04 2003 Jeff Johnson <jbj@redhat.com> 1.4.5-13
+- set execute bits on library so that requires are genereted.
+
+* 三 11月 27 2002 Tim Powers <timp@redhat.com> 1.4.5-12
+- remove unpackaged files from the buildroot
+- lib64'ize
+
+* 三 7月 24 2002 Bill Nottingham <notting@redhat.com> 1.4.5-11
+- fix write-before-beginning-of-string in SLsmg_write_nwchars
+
+* 二 7月 09 2002 Bill Nottingham <notting@redhat.com> 1.4.5-10
+- fix segfault in odd environments
+
+* 一 7月 08 2002 Bill Nottingham <notting@redhat.com> 1.4.5-9
+- tweak UTF-8 linedrawing patch slightly; add README describing some of
+  the changes
+- fix a utee/dtee typo
+
+* 三 6月 26 2002 Bill Nottingham <notting@redhat.com> 1.4.5-7
+- add patch to support ACS linedrawing characters in UTF-8
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 6月 12 2002 Bill Nottingham <notting@redhat.com> 1.4.5-5
+- removed keymap patch (#59171)
+- added Debian utf8 patch
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 3月 05 2002 Bill Nottingham <notting@redhat.com>
+- fix symlink & ia64 fubarness
+
+* 一 3月 04 2002 Bill Nottingham <notting@redhat.com>
+- update to 1.4.5
+
+* 二 6月 26 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add link from library major version number
+
+* 一 6月 25 2001 Bill Nottingham <notting@redhat.com>
+- added patch to fix Alt/Meta key handling (originally from mutt,
+  <jorton@btconnect.com>)
+
+* 五 6月 01 2001 Oliver Paukstadt <oliver.paukstadt@millenux.com>
+- forced to use RPM_OPT_FLAGS for ELF_CFLAGS too
+
+* 一 3月 12 2001 Bill Nottingham <notting@redhat.com>
+- update to 1.4.4
+
+* 二 2月 27 2001 Bill Nottingham <notting@redhat.com>
+- have slang-devel require slang = %{version}
+
+* 二 8月 29 2000 Bill Nottingham <notting@redhat.com>
+- update to 1.4.2
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 六 6月 17 2000 Matt Wilson <msw@redhat.com>
+- added defattr
+
+* 六 6月 10 2000 Bill Nottingham <notting@redhat.com>
+- rebuild, FHS stuff
+
+* 五 4月 28 2000 Bill Nottingham <notting@redhat.com>
+- autoconf fix for ia64
+
+* 一 4月 24 2000 Bill Nottingham <notting@redhat.com>
+- update to 1.4.1
+
+* 三 3月 29 2000 Bill Nottingham <notting@redhat.com>
+- fix background color problem with newt
+
+* 四 3月 02 2000 Bill Nottingham <notting@redhat.com>
+- resurrect for the devel tree
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 三 10月 21 1998 Bill Nottingham <notting@redhat.com>
+- libslang.so goes in -devel
+
+* 日 6月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de
+
+* 六 6月 06 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 1.2.2 with buildroot.
+
+* 二 5月 05 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 六 4月 18 1998 Erik Troan <ewt@redhat.com>
+- rebuilt to find terminfo in /usr/share
+
+* 二 10月 14 1997 Donnie Barnes <djb@redhat.com>
+- spec file cleanups
+
+* 一 9月 01 1997 Donnie Barnes <djb@redhat.com>
+- upgraded to 0.99.38 (will it EVER go 1.0???)
+- all patches removed (all appear to be in this version)
+
+* 四 6月 19 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

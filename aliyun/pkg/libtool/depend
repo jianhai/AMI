@@ -1,0 +1,13 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/install-info  
+/sbin/install-info  
+autoconf >= 2.58
+automake >= 1.4
+gcc = 4.4.4
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+sed  
+rpmlib(PayloadIsXz) <= 5.2-1

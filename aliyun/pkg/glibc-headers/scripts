@@ -1,0 +1,5 @@
+preinstall scriptlet (using /bin/sh):
+# this used to be a link and it is causing nightmares now
+if [ -L /usr/include/scsi ] ; then
+  rm -f /usr/include/scsi
+fi

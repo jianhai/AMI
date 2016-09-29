@@ -1,0 +1,8 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+/sbin/chkconfig --add iptables
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+	/sbin/chkconfig --del iptables
+fi
+postuninstall program: /sbin/ldconfig

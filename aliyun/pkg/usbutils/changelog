@@ -1,0 +1,153 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 003-4.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 003-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 003-4.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 003-4.1
+- rebuild for alios6
+
+* 四 9月 15 2011 Lukas Nykryn <lnykryn@redhat.com> 003-4
+- fixed usb.ids path in manpage rhbz#730671
+- Resolves: #730671
+
+* 五 9月 09 2011 Jiri Moskovcak <jmoskovc@redhat.com> 003-3
+- symlinked lsusb to /usr/sbin rhbz#736739
+- Resolves: #736739
+
+* 四 8月 11 2011 Jiri Moskovcak <jmoskovc@redhat.com> 003-2
+- fixed path to usb.ids in lsusb.py rhbz#729901
+- Resolves: #729901
+
+* 四 7月 28 2011 Jiri Moskovcak <jmoskovc@redhat.com> 003-1
+- update to the latest upstream
+- adds support for usb3
+- Resolves: #725096 #725982 #725973
+
+* 二 9月 22 2009 Jiri Moskovcak <jmoskovc@redhat.com> 0.86-2
+- spec file fixes - package should not own /usr/{bin,sbin} (rhbz#524005)
+
+* 三 9月 16 2009 Jiri Moskovcak <jmoskovc@redhat.com> 0.86-1
+- new version
+- spec file fixes as suggested in rhbz#466041 (info@owlriver.com)
+
+* 一 8月 24 2009 Karsten Hopp <karsten@redhat.com> 0.82-5
+- drop ExcludeArch: s390 s390x as we need this package on s390x to be able to build
+  p.e. udev without any hacks
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.82-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 01 2009 Jiri Moskovcak <jmoskovc@rdhat.com> 0.82-3
+- added autoconf to fix build in koji
+
+* 三 7月 01 2009 Jiri Moskovcak <jmoskovc@redhat.com> 0.82-2
+- minor fix in Makefile.am to properly find usb.ids from hwdata
+- Resolves: #506974
+
+* 五 5月 22 2009 David Zeuthen <davidz@redhat.com> 0.82-1
+- Update to 0.82
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.73-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 12 2008 Jiri Moskovcak <jmoskovc@redhat.com> 0.73-2
+- spec file cleanup
+
+* 四 1月 17 2008 Jiri Moskovcak <jmoskovc@redhat.com> 0.73-1
+- new version 0.73
+
+* 一 9月 18 2006 Thomas Woerner <twoerner@redhat.com> 0.72-1
+- new version 0.72
+- videoterminal (vt) patch is now upstream, dropped
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.71-2.1
+- rebuild
+
+* 三 3月 01 2006 Karsten Hopp <karsten@redhat.de> 1.71-2
+- add usbutils-0.71-VT.patch to fix warnings about unknown lines
+  (#176903)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.71-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.71-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 12月 13 2005 Thomas Woerner <twoerner@redhat.com> 0.71-1
+- new version 0.71
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 4月 15 2005 Thomas Woerner <twoerner@redhat.com> 0.70-1.1
+- added fix from Robert Scheck to fix missing BuildRequires for libusb-devel
+ (#155006)
+
+* 四 4月 14 2005 Thomas Woerner <twoerner@redhat.com> 0.70-1
+- new version 0.70
+
+* 四 1月 20 2005 David Woodhouse <dwmw2@redhat.com> 0.11-6.2
+- Don't byteswap parts of device descriptor which kernel already swapped
+
+* 一 9月 13 2004 Thomas Woerner <twoerner@redhat.com> 0.11-6.1
+- added missing BuildRequires for libtool (#132406)
+
+* 三 9月 01 2004 Thomas Woerner <twoerner@redhat.com> 0.11-6
+- added patch from Aurelien Jarno for unknown HID Country Code entries in
+  usb.ids (#127415)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 04 2004 Bill Nottingham <notting@redhat.com> 0.11-4
+- add patch from USB maintainer to fix various brokenness (#115694, <david-b@pacbell.net>)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 03 2003 Jeff Johnson <jbj@redhat.com>
+- add explicit epoch's where needed.
+
+* 一 5月 19 2003 Bill Nottingham <notting@redhat.com> 0.11-1
+- update to 0.11, fixes #90640
+- add patch to fix some warnings (#78462, <d.binderman@virgin.net>)
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 11月 29 2002 Tim Powers <timp@redhat.com> 0.9-9
+- remove unpackaged files from the buildroot
+
+* 三 11月 20 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- exclude mainframe
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 3月 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.9-5
+- Fix conflict check
+
+* 一 3月 18 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.9-4
+- Conflict with older versions of hotplug which contained
+  parts of this package (#60615)
+
+* 五 2月 22 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.9-3
+- Rebuild
+
+* 三 1月 30 2002 Bill Nottingham <notting@redhat.com> 0.9-2
+- require hwdata
+
+* 三 1月 16 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.9-1
+- Initial RPM
+- make it build on ia64
+

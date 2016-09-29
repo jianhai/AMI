@@ -1,0 +1,26 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/chkconfig  
+/sbin/chkconfig  
+/sbin/service  
+config(ntpdate) = 4.2.6p5-2.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcap.so.2()(64bit)  
+libcrypto.so.10()(64bit)  
+libcrypto.so.10(OPENSSL_1.0.1)(64bit)  
+libcrypto.so.10(libcrypto.so.10)(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+librt.so.1(GLIBC_2.3.3)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+shadow-utils  
+rpmlib(PayloadIsXz) <= 5.2-1

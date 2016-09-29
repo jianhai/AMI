@@ -1,0 +1,147 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.86-6.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.86-6.1
+- rebuild for alios6-update
+
+* 一 2月 20 2012 Colin Walters <walters@redhat.com> - 0.86-6
+- Add patch from upstream for CVE-2013-0292
+  Resolves: #913077
+
+* 三 7月 14 2010 Colin Walters <walters@redhat.com> - 0.86-5
+- Add patch from upstream to fix shadow properties
+  Resolves: #609628
+
+* 三 4月 28 2010 Colin Walters <walters@redhat.com> - 0.86-3
+- Sync with F-13 (bugfix only release)
+- Add patch to validate property access
+  Resolves: #585396
+
+* 四 3月 18 2010 Colin Walters <walters@verbum.org> - 0.86-1
+- New upstream
+  Drop upstreamed patch
+
+* 二 3月 02 2010 Colin Walters <walters@verbum.org> - 0.84-3
+- Revert previous broken patch for error names, add better fix
+
+* 一 2月 15 2010 Colin Walters <walters@verbum.org> - 0.84-2
+- Add patch to avoid assertions when setting a GError that
+  includes a '-' in the enumeration value.  Should fix #528897
+
+* 三 1月 27 2010 Colin Walters <walters@verbum.org> - 0.84-1
+- New upstream
+  Has introspect.xml internally, drop it from here
+
+* 五 1月 15 2010 Colin Walters <walters@verbum.org> - 0.82-3
+- Add ListActivatableNames to dbus-bus-introspect.xml to help tracker build
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.82-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 16 2009 Colin Walters <walters@verbum.org> - 0.82-1
+- New upstream 0.82
+- Remove mclasen accidental commit of CFLAGS="-O0 -g3"
+
+* 日 6月 14 2009 Matthias Clasen <mclasen@redhat.com> - 0.80-3
+- Minor directory ownership cleanup
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.80-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 02 2009 Colin Walters <walters@verbum.org> - 0.80-1
+- New upstream release
+- Adjust to new bash completion dir
+- Includes patch noreply patch
+
+* 三 1月 07 2009 Colin Walters <walters@verbum.org> - 0.78-2
+- Add patch to avoid sending reply to noreply messages; this avoids
+  some spurious dbus denial logs during system startup from NM
+
+* 四 12月 04 2008 Colin Walters <walters@verbum.org> - 0.78-1
+- New upstream release, drop upstreamed patches
+
+* 二 11月 25 2008 Matthias Clasen <mclasen@redhat.com> - 0.76-4
+- Avoid some spurious linkage
+
+* 一 11月 17 2008 Dan Williams <dcbw@redhat.com> - 0.76-3
+- Fix crashes when a tracked service restarts too quickly (fdo #18573)
+
+* 四 7月 31 2008 David Zeuthen <davidz@redhat.com> - 0.76-2
+- Add bash completion for dbus-send(1)
+
+* 四 6月 05 2008 Colin Walters <walters@redhat.com> - 0.76-1
+- New upstream 0.76
+- Drop all upstreamed patches
+
+* 二 5月 27 2008 Dan Williams <dcbw@redhat.com> - 0.74-9
+- Handle unknown object properties without asserting (fdo #16079)
+- Handle GetAll() property names correctly (fdo #16114)
+- Enable the freeze-abi patch
+- Cherry-pick some fixes from upstream git
+
+* 四 5月 08 2008 Matthias Clasen <mclasen@redhat.com> - 0.74-8
+- Fix license field
+
+* 二 4月 15 2008 Colin Walters <walters@redhat.com> - 0.74-7
+- Ensure ABI is frozen as it stands now
+
+* 五 4月 04 2008 David Zeuthen <davidz@redhat.com> - 0.74-6
+- Add another upstreamed patch for setting the default timeout
+  on a proxy
+
+* 五 4月 04 2008 David Zeuthen <davidz@redhat.com> - 0.74-5
+- Add an already upstreamed patch to export the GetAll() method on
+  the org.freedesktop.DBus.Properties interface
+
+* 三 3月 19 2008 Dan Williams <dcbw@redhat.com> - 0.74-4
+- Ignore children of namespaced nodes too
+
+* 二 2月 12 2008 Dan Williams <dcbw@redhat.com> - 0.74-3
+- Ignore namespaces in introspection XML
+
+* 日 11月 18 2007 Dan Williams <dcbw@redhat.com> - 0.74-2
+- Actually apply the patch for fdo #12505
+
+* 一 10月 22 2007 Ray Strode <rstrode@redhat.com> - 0.74-1
+- Update to 0.74
+
+* 一 9月 24 2007 Dan Williams <dcbw@redhat.com> - 0.73-4
+- Dispatch NameOwnerChanged signals to proxies only once (fdo #12505)
+
+* 六 9月 15 2007 Matthias Clasen <mclasen@redhat.com> - 0.73-3
+- Rebuild against new expat
+
+* 三 8月 01 2007 Matthias Clasen <mclasen@redhat.com> - 0.73-2
+- Fix a bug in introspection support (#248150)
+
+* 三 4月 04 2007 Matthias Clasen <mclasen@redhat.com> - 0.73-1
+- Update to 0.73 (#233631)
+- Drop upstreamed patches
+
+* 二 12月 19 2006 John (J5) Palmieri <johnp@redhat.com> - 0.71-4
+- Add dbus-glib-0.70-use-default-threads.patch
+- Partial fix to #219257
+
+* 三 11月 29 2006 David Zeuthen <davidz@redhat.com> - 0.71-3.alios6
+- Add dbus-glib-0.70-fix-info-leak.patch
+- Resolves: #216034
+
+* 日 11月 05 2006 Matthias Clasen <mclasen@redhat.com> - 0.71-2
+- Fix up Requires for the -devel package
+
+* 一 10月 23 2006 Matthias Clasen <mclasen@redhat.com> - 0.71-1
+- Update to 0.71
+
+* 四 7月 20 2006 Jesse Keating <jkeating@redhat.com> - 0.70-4
+- remove improper obsoletes
+
+* 二 7月 18 2006 John (J5) Palmieri <johnp@redhat.com> - 0.70-3
+- Pregenerate the xml introspect file so you don't need dbus running during
+  the build
+
+* 二 7月 18 2006 John (J5) Palmieri <johnp@redhat.com> - 0.70-2
+- Spec file cleanups
+
+* 一 7月 17 2006 John (J5) Palmieri <johnp@redhat.com> - 0.70-1
+- Initial dbus-glib package
+

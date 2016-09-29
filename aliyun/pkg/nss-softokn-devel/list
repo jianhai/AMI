@@ -1,0 +1,6 @@
+/usr/bin/nss-softokn-config
+/usr/include/nss3
+/usr/include/nss3/ecl-exp.h
+/usr/include/nss3/nsslowhash.h
+/usr/include/nss3/shsign.h
+/usr/lib64/pkgconfig/nss-softokn.pc

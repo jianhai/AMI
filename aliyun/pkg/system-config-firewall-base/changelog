@@ -1,0 +1,470 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.27-5.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.27-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.27-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.2.27-5.1
+- rebuild for alios6
+
+* 一 8月 01 2011 Thomas Woerner <twoerner@redhat.com> 1.2.27-5
+- updated Hindi translation (rhbz#632979)
+- updated Punjabi translation (rhbz#635245)
+
+* 一 7月 11 2011 Thomas Woerner <twoerner@redhat.com> 1.2.27-4
+- fixed possible privilege escalation flaw via use of python pickle
+  (CVE-2011-2520), replaced pickle by json (rhbz#717985, rhbz#719871)
+- stop D-BUS firewall mechanism on update
+
+* 二 9月 21 2010 Thomas Woerner <twoerner@redhat.com> 1.2.27-3
+- fixed tamil translation (rhbz#624400)
+
+* 四 9月 09 2010 Thomas Woerner <twoerner@redhat.com> 1.2.27-2
+- fixed port of libvirt-tls (rhbz#565625)
+
+* 二 8月 10 2010 Thomas Woerner <twoerner@redhat.com> 1.2.27-1
+- updated translations: bn_IN, de, fi, fr, gu, hi, it, ja, kn, ko, ml, mr, or,
+                        pt_BR, ru, ta, te, zh_CN, zh_TW
+
+* 二 6月 29 2010 Thomas Woerner <twoerner@redhat.com> 1.2.26-1
+- added libvirt services (rhbz#565625)
+- added Bakula service (rhbz#588377)
+- fixed DBUS mechanism to report complete syslog message (rhbz#604623)
+- fixed crash because of missing /etc/services file (rhbz#604726)
+- updated translations: ar, as, bn_IN, da, de, es, fi, fr, gu, he, hi, is, it,
+                        ja, kn, ko, ml, mr, nl, or, pa, pl, pt, ru, ta, te, 
+                        zh_CN
+
+* 一 4月 26 2010 Thomas Woerner <twoerner@redhat.com> 1.2.25-1
+- fixed lokkit: do not create or alter firewall in selinux only mode
+  (rhbz#583986)
+- use new icons (rhbz#583715)
+- fixed treeviewtooltips to not show the tooltip if an overlapping window has
+  the focus
+- updated translations: bn_IN, de, es, gu, it, kn, ml, mr, nl, or, pa, pl, pt,
+                        pt_BR, ru, sk, sr, sr@latin, te
+
+* 二 3月 23 2010 Thomas Woerner <twoerner@redhat.com> 1.2.24-1
+- DBUS-mechanism: report errors to syslog and print traceback (rhbz#563354)
+- fixed minor misspellings (rhbz#566468)
+- msgmerged po files
+- added missing default values for ip*tables-config content (rhbz#566869)
+- autofoo utils update
+- fixed max length of user defined interface name in interfaceDialog
+- added missing range check to port_entry_changed_cb
+- fixed sensitiveness of protocol label in portDialog
+- fixed misuse of MARK extension in nat table, now in mangle table
+- port forwarding dialog usability fixes (rhbz#507638)
+- use new fw_functions.checkInterface function in tui and gui
+- new function to check interface names in fw_functions
+- use new checkInterface function in parser for trust, masq and forward-port
+- add wlan standard device
+- fixed build (fw_nm.py not packaged)
+- updated translations: bn_IN, cs, da, de, el, en_GB, es, fi, fr, hu, is, it,
+                        ja, nb, nl, or, pl, pt, pt_BR, ru, sr, sr@latin, sv,
+                        te, uk
+
+* 四 2月 25 2010 Thomas Woerner <twoerner@redhat.com> 1.2.23-2
+- fixed missing execution bits for convert-config according to review
+
+* 一 1月 18 2010 Thomas Woerner <twoerner@redhat.com> 1.2.23-1
+- fixed build (fw_nm.py not packaged)
+- dropped dbus requirement for tui version
+
+* 五 1月 15 2010 Thomas Woerner <twoerner@redhat.com> 1.2.22-1
+- using NetworkManager DBUS interface to replace NCDeviceList from
+  system-config-network
+- not opening orig port for local port forwarding, only new port is open
+- added isakmp support for IPsec (rhbz#504446)
+- added amanda client support (rhbz#541679)
+- fixed requirement for setenforce: libselinux-utils instead of libselinux
+- removed unused import socket
+- added download url to Source tag in spec file
+- fixed wrong license header in src/fw_tui.py (LGPL instead of GPL)
+- update cluster-suite service: disable rgmanager and cssd
+- removed separator at the end of the Options menu (rhbz#531635)
+- removed 2049/udp from NFS4 service (rhbz#532491)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.2.21-1.1
+- Rebuilt for RHEL 6
+
+* 四 10月 08 2009 Thomas Woerner <twoerner@redhat.com> 1.2.21-1
+- fixed Policykit v0 compatibility for Fedora version 10 and 11: python-slip
+  for PolicyKit v0 does not provide dbus
+- updated translations: bn_IN, uk, zh_CN
+
+* 二 9月 29 2009 Thomas Woerner <twoerner@redhat.com> 1.2.20-1
+- new sub-package base containing the base components and the command line tool
+  (rhbz#525153)
+
+* 二 9月 29 2009 Thomas Woerner <twoerner@redhat.com> 1.2.19-1
+- enhanced build environment to support usermode and policykit switches, new
+  options for configure and spec file
+- make toplevel invisible to not show half initialized window while policykit
+  dialog is shown
+- system-config-firewall.desktop.in moved to config subdir
+- disable dbus usage if gui is used as root (needed for policykit v0)
+- do not report dbus error if there is no firewall configuration (empty or
+  missing /etc/sysconfig/system-config-firewall)
+- resize main window to comfortably fit in a 800x600 gnome desktop
+- moved all config files into config subdir: sysconfig, dekstop, pam and console
+- new infrastructure to enable policy translations
+- print exception if polkit authorization failes to console
+- show dbus error dialog if dbus conection can not be established
+- set title to APP_NAME for dialogs if there is no title
+- center dialogs on screen if there is no parent
+- make main app invisible at first to prevent to show an empty app while
+  PolicyKit password dialog is visible
+- updated translations: as, bn_IN, ca, da, de, ca, cs, es, fi, fr, gu, hi, it,
+                        ja, kn, ko, ml, mr, nl, or, pa, pl, pt, pt_BR, ru, sk,
+                        sr, sr@latin, sv, ta, te, uk, zh_TW
+
+* 五 9月 11 2009 Thomas Woerner <twoerner@redhat.com> 1.2.18-1
+- added support for PolicyKit
+- removed unused inconsistent flag from CellRendererToggle in serviceView (rhbz#521144)
+- made "Port/Protocol" cell resizable in "Trusted Services"-view
+- fixed hidden one line label after resize caused by fix for bgo#315462
+- fixed startup busy loops if assistive technologies is enabled (rhbz#515048)
+  by moving set_model after adding the columns to a TreeView
+- fixed tui to create valid empty self.config object (rhbz#518210)
+- failing to load the icon in fw_gui.setupScreen should not be fatal
+  (rhbz#508186)
+- made description column in settings dialog resizable
+- removed rhpl usage (rhbz#508991)
+- fixed not reappearing TreeViewTooltips if mouse moved in the tooltip popup
+- hide TreeViewTooltips while scrolling
+- code cleanup
+- sort ports in fw_services by protocol, id
+- updated translations: as, bn_IN, ca, da, de, es, fi, fr, gu, hi, kn, hu, it, 
+                        ja, ko, ml, mr, nl, or, pa, pl, pt, pt_BR, ru, sk, sr,
+			sr@latin, ta, te, uk, zh_CN, zh_TW
+
+* 一 7月 27 2009 Thomas Woerner <twoerner@redhat.com> 1.2.17-1
+- Added Red Hat Cluster Suite to trusted services (rhbz#493668)
+- Fixed wrong patch for system-config-firewall-tui (rhbz#461046)
+- Fixed sysctl parser to also support ';' for comments
+- Fixed port range check for service names containing '-'
+- New column in serviceView for conntrack helper, removed from tooltip
+- New column in icmpView for protocol types, removed from tooltip
+- Added TFTP and TFTP client support (rhbz#494417)
+- Fixed sensitiveness of OK button in portDialog if editing an Port
+  (rhbz#500380)
+- Added missing tooltips for buttons in mainNotebook tabs. (rhbz#493872)
+- updated po files
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.16-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 4月 13 2009 Thomas Woerner <twoerner@redhat.com> 1.2.16-2
+- release bump
+
+* 一 4月 13 2009 Thomas Woerner <twoerner@redhat.com> 1.2.16-1
+- fixed build system to update desktop file from desktop.in
+  fixes icon reference in desktop file (rhbz#493674)
+- updated translations: fr
+
+* 一 4月 13 2009 Thomas Woerner <twoerner@redhat.com> 1.2.15-1
+- fixed icon reference in desktop file (rhbz#493674)
+- fixed po/POTFILES.in
+- updated translations: as, bn_IN, el, fi, gu, hi, hu, it, kn, ko, mai, ml, mr, or, pa, pt, ru, sk, sv, ta, te, zh_TW
+
+* 五 3月 27 2009 Thomas Woerner <twoerner@redhat.com> 1.2.14-1
+- new build environment using configure, autofoo and intltool
+- fixed typo in router-solicitation description (rhbz#490979)
+- new themable application icon: preferences-system-firewall (rhbz#454402)
+- make backup copies before overwriting files (rhbz#437374)
+- updated translations:
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.13-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 12月 01 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 1.2.13-3
+- Rebuild for Python 2.6
+
+* 二 10月 28 2008 Thomas Woerner <twoerner@redhat.com> 1.2.13-2
+- fixed system-config-firewall-tui path (rhbz#457485)
+
+* 二 10月 28 2008 Thomas Woerner <twoerner@redhat.com> 1.2.13-1
+- fixed two typos in fw_icmp (rhbz#467334)
+- added ability to sort custom rules files (rhbz#467696)
+- fixed modified test in sysctl writer: fixes rhbz#462325
+  also removed quotes around values for new keys
+- some build fixes
+- updated translations for: as, de, fi, fr, he, hi, ko, hu, it, ja, ko, ml,
+                            pl, pt_BR, ru, sk, sr, sr@latin, sv, ta, te, 
+                            zh_CN, zh_TW
+
+* 二 10月 21 2008 Thomas Woerner <twoerner@redhat.com> 1.2.12-2
+- require usermode-gtk instead of usermode
+
+* 二 10月 07 2008 Thomas Woerner <twoerner@redhat.com> 1.2.12-1
+- only provide lang files in tui sub-package (rhbz#465572)
+- updated translations for: as, bn_IN, ca, cs, es, fr, gu, it, ja, kn, mr, nl,
+                            pa, or, pl, pt_BR, sk, zh_CN, zh_TW
+
+* 五 9月 19 2008 Thomas Woerner <twoerner@redhat.com> 1.2.11-1
+- use dialogs for parser errors in tui (rhbz#457485)
+- enable to add protocol specific (IPv4, IPv6) icmp types for ICMP filtering
+- updated translations for he, ja, ko and zh_CN
+
+* 二 7月 08 2008 Thomas Woerner <twoerner@redhat.com> 1.2.10-1
+- lokkit: fixed path for system-config-firewall-tui (rhbz#454108)
+- updated translations for: it, fr, nl, ru, sr, sr@latin
+
+* 三 6月 11 2008 Thomas Woerner <twoerner@redhat.com> 1.2.9-1
+- fixed format string to silence inttool
+- new remider to check if the ip*tables services are enabled
+- use proper dialog functions in the tui
+- updated translations: cs, de, es, gu, pl
+
+* 五 5月 23 2008 Thomas Woerner <twoerner@redhat.com> 1.2.8-1
+- new tui interface
+- new system-config-firewall-tui
+- new client services for ipp and samba
+- lokkit: fixed disabling of firewall in force mode (rhbz#443411)
+- disabled port forwarding for IPv6
+- some minor fixes and enhancements
+
+* 四 4月 03 2008 Thomas Woerner <twoerner@redhat.com> 1.2.7-1
+- fixed crash if encoding is not UTF-8 (rhbz#439902)
+- updated translations: bn_IN, cs, de, es, fi, fr, gu, hi, it, kn, ko, ml,
+                        mr, pa, pl, pt_BR, ru, sr, sr@latin, ta, te, zh_CN
+
+* 二 3月 04 2008 Thomas Woerner <twoerner@redhat.com> 1.2.6-1
+- new ICMP filter to block specified ICMP types
+- fixed minor problem in lokkit (initialize old_config)
+- set starting diretory for custom rules files to /etc/sysconfig
+- more build environment changes for git
+- use gtk.CellRendererToggle instead of own CellRendererCheck
+- several parser changes for transparent error handling and output
+- some minor enhancements
+- translation updates
+
+* 三 2月 20 2008 Thomas Woerner <twoerner@redhat.com> 1.2.5-1
+- dropped system-config-securitylevel compatibility files
+- project moved to git.fedoraproject.org
+
+* 四 2月 14 2008 Thomas Woerner <twoerner@redhat.com> 1.2.4-1
+- fixed overwrite problem if IPTABLES_SAVE_ON_RESTART is set (rhbz#431961)
+- use SELECTION_NONE for trustedView
+
+* 一 2月 11 2008 Thomas Woerner <twoerner@redhat.com> 1.2.3-2
+- fixed usermode version (rhbz#428392)
+
+* 五 2月 08 2008 Thomas Woerner <twoerner@redhat.com> 1.2.3-1
+- fixed traceback for empty configuration use in life installer (rhbz#430963)
+- use config-util for usealiosper configuration (rhbz#428392)
+- mark dirty after applying new default configuration
+- do not overwrite attributes filename and converted in config
+- use new shared ChooserButton
+- fixed forward dialog and labels to use current dialog width
+- use tempfile.mkdtemp for better security
+- updated translations: fi, fr, it, ja, nl, pt_BR, sr and sr@latin
+
+* 五 2月 01 2008 Thomas Woerner <twoerner@redhat.com> 1.2.2-1
+- fixed icmp handling for ip6tables in FORWARD chain
+- do state established, related test early in FORWARD chain
+- fixed typo in address for port-forwarding
+- added IPv4 only message to masquerading and port-forwarding for lokkit
+- updated translations: es, pl
+
+* 四 1月 31 2008 Thomas Woerner <twoerner@redhat.com> 1.2.1-1
+- fixed traceback for clean selinux configuration (rhbz#430963)
+- fixed icmp handling for ip6tables
+- updated translations: as, de, it, ja, pl, pt_BR, zh_CN
+
+* 五 1月 25 2008 Thomas Woerner <twoerner@redhat.com> 1.2.0-1
+- added port forwarding
+- using INPUT chain in table filter instead of RH-Firewall-1-INPUT
+- fixed masquerading
+- rewrite of firewall generation code
+- trusted hosts now also allowed for FORWARD
+- lots of bug fixes
+- gui enhancements
+
+* 三 1月 16 2008 Thomas Woerner <twoerner@redhat.com> 1.1.3-2
+- added fw_compat files to files section
+
+* 二 1月 15 2008 Thomas Woerner <twoerner@redhat.com> 1.1.3-1
+- new fw_compat, used in config-convert and fw_sysconfig to automatically 
+  convert old system-config-securitylevel configurations
+- new wizard look
+- fixed range check for user defined ports
+- some code cleanup
+- updated translations for fi, fr and ja
+
+* 一 1月 07 2008 Thomas Woerner <twoerner@redhat.com> 1.1.2-1
+- fw_gui: fixed row activation for masquerading
+- fw_gui: fixed _setInterfaces to use internal functions to correctly set
+  toggles
+- fw_gui: show info dialog if no config exists and firewall gets enabled: new
+  function enableFirewall
+- fw_gui, fw_tui: disable firewall if no config exists
+- fw_gui, fw_tui: do not print traceback if NCDeviceList.getDeviceList raises
+  and exception
+- forward masqueraded connections
+- gtk_cellrenderercheck: fixed size calculations
+- fw_sysconfig: set config.filename to None for merged configuration in
+  read_sysconfig_config if no configuration exists
+- new translations
+
+* 五 12月 21 2007 Thomas Woerner <twoerner@redhat.com> 1.1.1-1
+- use radio buttons for skill menu entries to show active level
+- fixed convert-config problem if there is no configuration to convert
+  (rhbz#426477)
+- minor string changes
+- new it and pt_BR translations
+
+* 四 12月 20 2007 Thomas Woerner <twoerner@redhat.com> 1.1.0-1
+- new default configurations: server, desktop
+- cleanup of wizard: dropped network connection tab
+- new option in wizard to keep configuration or load a default configuration
+- new menu entry and dialog to configure iptables and ip6tables service settings
+- some enhancements to the gtk_cellrenderercheck for better look and feel
+
+* 五 12月 14 2007 Thomas Woerner <twoerner@redhat.com> 1.1.0-0
+- ports are ports and services are services: there is a new service tag to
+  enable services; a port is not enabling a service anymore
+- new conversion tool for 1.0.X to 1.1.X configuration
+- new version option for lokkit
+- wizard
+  - dropped network connection selection tab
+  - using keep configuration check instead of clear configuration check
+  - added default configuration selection
+- gui: new menu for skill level and load default configuration
+- use choices in optparse, removed obsolete check functions
+
+* 四 12月 13 2007 Thomas Woerner <twoerner@redhat.com> 1.0.12-2
+- fixed lokkit command problem for non english languages
+- using latest translations
+
+* 一 12月 10 2007 Thomas Woerner <twoerner@redhat.com> 1.0.12-1
+- allow to activate checkboxes by row activation in treeviews
+- code cleanup in view_toggle_cb
+- fixed port display for IPSec
+- use system icons where possible, new wizard icons
+- added fallback for CellRendererCheck if icons are missing, size fixes
+- added tooltips for toolbar and menu entries (if needed)
+- improved more english texts (rhbz#395801)
+  thanks to Paul W. Frields for the initial patch
+
+* 三 11月 21 2007 Thomas Woerner <twoerner@redhat.com> 1.0.11-1
+- fixed crash on startup for network device aliases (rhbz#384891)
+  thanks to Loran Freval for the patch
+- added port entry max length in other ports dialog (rhbz#385931)
+- added version number to about dialog (rhbz#387891)
+- improved some english texts (rhbz#383741)
+  thanks to Paul W. Frields for the initial patch
+- code cleanup with start speedup
+- do not allow to add custm rules for ipv6:nat
+- also translate parser error messages
+
+* 五 11月 09 2007 Thomas Woerner <twoerner@redhat.com> 1.0.10-1
+- fixed problem with network devices (rhbz#331671)
+- dropped obsolete translation no.po (rhbz#332331)
+
+* 一 11月 05 2007 Thomas Woerner <twoerner@redhat.com> 1.0.9-1
+- do not report configuration failed if ipv6 is disabled (rhbz#355561)
+- print messages if lokkit failed
+- lokkit be more verbose on restarting ipXtables in verbose mode
+
+* 五 10月 26 2007 Thomas Woerner <twoerner@redhat.com> 1.0.8-2
+- lokkit: write new config with nostart option (rhbz#353961)
+- translation fixes for de, it, nb, sr@latin
+
+* 一 10月 01 2007 Thomas Woerner <twoerner@redhat.com> 1.0.8-1
+- use extension match for protocols (rhbz#229879)
+- use ipv6-icmp instead of icmpv6 (rhbz#291001)
+- use ':' in tui as port/proto delimiter for other ports (rhbz#292171)
+- some translation fixes
+
+* 二 9月 25 2007 Thomas Woerner <twoerner@redhat.com> 1.0.7-1
+- new translations
+- added openvpn to services (rhbz#)
+- fixed typo in description text for ipsec
+- using port numbers instead of port names for services
+- renamed some variables to be consistent
+- make tolltip better: bigger text, helper modules
+- dropped unused code: inconsistent handling
+- make port check button inactive in add_port_cb
+- new function _addDevice: code cleanup
+- allow to set variables in ipXtablesConfig, which were not set before
+- fixed os.system calls in ipXtablesClass to return proper return values
+- fixed status funciton in ipXtablesClass
+- new _append_unique function in fw_parser to prevent duplicates
+- added warning dialog for missing or unusable /etc/sysconfig/ip*tables files
+- fixed expand of the warning label in the startup dialog
+
+* 三 9月 12 2007 Thomas Woerner <twoerner@redhat.com> 1.0.6-1
+- dropped --stop option from fw_gui::genArgs
+- new translations
+- sysctl support for masquerading (net.ipv4.ip_forward will be set)
+- glade file: fixed spacings, dropped not needed containers
+
+* 三 9月 05 2007 Thomas Woerner <twoerner@redhat.com> 1.0.5-4
+- fixed problem if /etc/sysconfig/system-config-securtylevel and 
+  /etc/sysconfig/system-config-firewall are not readable
+
+* 五 8月 31 2007 Thomas Woerner <twoerner@redhat.com> 1.0.5-3
+- fixed problem if IP*TABLES_MODULES is not set in config files
+
+* 五 8月 31 2007 Thomas Woerner <twoerner@redhat.com> 1.0.5-2
+- fixed lokkit problem if selinux configuration is not available (rhbz#269601)
+
+* 四 8月 30 2007 Thomas Woerner <twoerner@redhat.com> 1.0.5-1
+- more translations
+- fixed IPsec description
+- fixed po file generation to use xgettext only
+
+* 三 8月 22 2007 Thomas Woerner <twoerner@redhat.com> 1.0.4-1
+- more translations
+- build environment changes
+- dropped build stage, because it is not needed at all
+
+* 二 8月 21 2007 Thomas Woerner <twoerner@redhat.com> 1.0.3-1
+- added missing system-config-securitylevel compatibility files
+- string and documentation fixes
+- fixed typos reported by Alain Portal
+- more translations
+- fixed buildroot
+- cleanup and changes according to review (rhbz#253232)
+- moved doc to tui sub package
+
+* 五 8月 17 2007 Thomas Woerner <twoerner@redhat.com> 1.0.2-2
+- fixed license headers for GPLv2+
+
+* 四 8月 16 2007 Thomas Woerner <twoerner@redhat.com> 1.0.2-1
+- obsolete and provide system-config-securitylevel package
+- added compat files for anaconda, firstboot and system-config-kickstart
+- lokkit fixes for nostart option:
+  - only write config for iptables and ip6tables if enabled
+  - stop iptables and ip6tables if disabled
+  - unlink iptables and ip6tables rule files if disabled
+- lokkit: new option --update to regenerate firewall configuration if not 
+  disabled
+- check for include files only when writing firewall configuration
+- clean buildroot in install
+- made system-config-securitylevel a synonym for system-config-firewall
+- ip6tables: reject with icmp6-adm-prohibited instead of icmp6-port-unreachable
+  (rhbz#250915)
+- moved config files from /etc/sysconfig into tui sub package
+- removed x bit from import files
+
+* 一 7月 23 2007 Thomas Woerner <twoerner@redhat.com> 1.0.1-2
+- fixed disabled string in fw_gui
+- set mode after copying of ip*tables-config to 0600
+- fixed categories in desktop file
+
+* 一 6月 04 2007 Thomas Woerner <twoerner@redhat.com> 1.0.1-1
+- fixed startup and description texts
+- added missing requirement for system-config-network-tui
+- moved base python files into tui sub package
+- fixed requirements
+- made package noarch
+
+* 五 6月 01 2007 Thomas Woerner <twoerner@redhat.com> 1.0.0-1
+- initial package
+

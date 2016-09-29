@@ -1,0 +1,326 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.11.1-1.2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.11.1-1.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.11.1-1.2.1
+- rebuild for alios6
+
+* 三 6月 23 2010 Karsten Hopp <karsten@redhat.com> 1.11.1-1.2
+- fix release number
+
+* 五 2月 19 2010 Karsten Hopp <karsten@redhat.com> 1.11.1-1.1
+- remove vala from buildrequires and from self checks
+- fix variable usage in spec file
+- use pregenerated manpages from automake-1.11
+
+* 三 12月 09 2009 Karsten Hopp <karsten@redhat.com> 1.11.1-1
+- update to version 1.11.1 to fix CVE-2009-4029
+
+* 二 12月 01 2009 Karsten Hopp <karsten@redhat.com> 1.11-6
+- preserve time stamps of man pages (#225302)
+- drop MIT from list of licenses
+
+* 三 11月 04 2009 Stepan Kasal <skasal@redhat.com> - 1.11-5
+- add even more testsuite build requires
+
+* 三 11月 04 2009 Stepan Kasal <skasal@redhat.com> - 1.11-4
+- add build requires for testsuite
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.11-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 5月 25 2009 Stepan Kasal <skasal@redhat.com> 1.11-2
+- re-enable make check
+- Automake 1.11 requires autoconf 2.62 or later
+
+* 一 5月 25 2009 Karsten Hopp <karsten@redhat.com> 1.11-1
+- update to automake 1.11
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.10.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 1月 21 2009 Karsten Hopp <karsten@redhat.com> 1.10.2-2
+- convert NEWS file to UTF-8 (#225302)
+
+* 三 1月 14 2009 Karsten Hopp <karsten@redhat.com> 1.10.2-1
+- version 1.10.2
+
+* 一 2月 04 2008 Stepan Kasal <skasal@redhat.com> 1.10.1-2
+- require autoconf 2.60 or later
+
+* 六 1月 26 2008 Stepan Kasal <skasal@redhat.com> 1.10.1-1
+- automake-1.10.1
+
+* 一 10月 29 2007 Stepan Kasal <skasal@redhat.com> 1.10-7
+- keep amhello-1.0.tar.gz in the installed documentation
+
+* 四 8月 09 2007 Karsten Hopp <karsten@redhat.com> 1.10-6
+- update license tag
+- add Debian man pages for aclocal and automake (#246087)
+
+* 二 2月 20 2007 Karsten Hopp <karsten@redhat.com> 1.10-5
+- fix some rpmlint warnings
+
+* 二 2月 20 2007 Karsten Hopp <karsten@redhat.com> 1.10-4
+- bz 225302:
+- make install DESTDIR=...
+- fix BuildRoot
+- fix post/preun requirements
+- define all directories on ./configure line
+- filter perl(Automake*) dependencies
+- replace all tabs with spaces
+- remove trailing dot from summary
+
+* 四 1月 18 2007 Karsten Hopp <karsten@redhat.com> 1.10-3
+- don't abort (un)install scriptlets when _excludedocs is set (Ville Skyttä)
+
+* 二 11月 21 2006 Karsten Hopp <karsten@redhat.com> 1.10-2
+- rebuild
+
+* 五 11月 10 2006 Karsten Hopp <karsten@redhat.de> 1.10-1
+- automake 1.10
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.9.6-2.1
+- rebuild
+
+* 一 12月 19 2005 Karsten Hopp <karsten@redhat.de> 1.9.6-2
+- include NEWS file (#174674)
+- add %check (#174674)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 7月 19 2005 Karsten Hopp <karsten@redhat.de> 1.9.6-1
+- Automake 1.9.6
+
+* 日 2月 13 2005 Florian La Roche <laroche@redhat.com>
+- 1.9.5 bug-fix release
+
+* 二 2月 01 2005 Daniel Reed <djr@redhat.com> 1.9.4-1
+- version bump
+  - Portability nits in install-sh and mdata-sh.
+  - Don't let `make install' fails if a _JAVA primary becomes empty
+    because of conditionals.
+  - Do not confuse CHANGELOG with ChangeLog on case-insensitive
+    case-preserving file systems (likewise for all automatically
+    distributed files).
+  - Do not embed $DESTDIR in Python's byte-code files.
+  - Work around programs that read stdin when checking for --version
+    and --help options (when the `std-options' is used).
+  - Fix AM_PATH_PYTHON to correctly define PYTHON as `:' when no minimum
+    version was supplied and no interpreter is found.
+
+* 一 11月 01 2004 Daniel Reed <djr@redhat.com> 1.9.3-1
+- version bump
+  - Dependency tracking using mode "dashmstdout" or "dashXmstdout" did not work for libtool objects compiled with --tag (i.e., compiled with Libtool 1.5 or later). The compilation would succeed, but `depcomp' would emit a warning and not output any dependency information.
+  - Ignore comments from augmented variables ...
+  - `install-sh -d a/b/' failed to create `a/b/' because of the trailing `/'.
+  - _PROGRAMS now always create programs. Before 1.9 it would mistakenly create a libtool library if the name of the program ended in `.la'.
+  - `compile' now handles `*.obj' objects.
+  - `aclocal' recognizes AC_DEFUN_ONCE.
+
+* 二 9月 28 2004 Warren Togami <wtogami@redhat.com> - 1.9.2-3
+- trim docs
+
+* 一 9月 20 2004 Daniel Reed <djr@redhat.com> - 1.9.2-1
+- version bump
+  - Sort rm commands output for mostlyclean-generic, clean-generic, distclean-generic and maintainer-clean-generic, so that the produced Makefile is not sensitive to the way Perl sorts its hashes.
+  - Support `+' in the name of directories given to `include'.
+  - Preserve spaces in the arguments of `compile'.
+  - `missing' will no longer try to emulate a tool that is run with `--version' or `--help' as argument.
+  - There is a new chapter about the history of Automake.
+
+* 三 8月 11 2004 Daniel Reed <djr@redhat.com> - 1.9.1-1
+- version bump
+  - Adjust #line directives in `parser.h' (when ylwrap is not used). (PR/432)
+  - Fix definition of YLWRAP when ylwrap is installed in a default aux directory found in a parent package.
+  - Properly recognize AC_CANONICAL_BUILD and AC_CANONICAL_TARGET.
+
+* 五 7月 30 2004 Daniel Reed <djr@redhat.com> - 1.9-1
+- version bump
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 5月 17 2004 Jens Petersen <petersen@redhat.com> - 1.8.5-1
+- update to 1.8.5
+
+* 四 5月 13 2004 Jens Petersen <petersen@redhat.com> - 1.8.4-1
+- update to 1.8.4
+
+* 五 3月 12 2004 Jens Petersen <petersen@redhat.com> - 1.8.3-1
+- update to 1.8.3 bugfix release
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 1月 13 2004 Jens Petersen <petersen@redhat.com> - 1.8.2-1
+- 1.8.2 bugfix release
+- do not pass VERBOSE=xNO to "make check" as non-empty means be verbose
+
+* 四 12月 11 2003 Jens Petersen <petersen@redhat.com> - 1.8-1
+- update to 1.8 release
+- require autoconf 2.58 or later
+- don't use %configure for now to prevent very recent configure from running
+  "config.sub noarch-redhat-linux"
+
+* 一 11月 10 2003 Jens Petersen <petersen@redhat.com> - 1.7.9-1
+- update to 1.7.9 bugfix release
+- require autoconf 2.54 or later
+
+* 二 10月 07 2003 Jens Petersen <petersen@redhat.com> - 1.7.8-1
+- update to 1.7.8 bugfix release
+
+* 三 9月 10 2003 Jens Petersen <petersen@redhat.com> - 1.7.7-1
+- update to 1.7.7 bugfix release
+
+* 五 7月 11 2003 Jens Petersen <petersen@redhat.com> - 1.7.6-1
+- update to 1.7.6 bugfix release
+
+* 二 5月 20 2003 Jens Petersen <petersen@redhat.com> - 1.7.5-1
+- update to 1.7.5 bugfix release
+
+* 四 4月 24 2003 Jens Petersen <petersen@redhat.com> - 1.7.4-1
+- update to 1.7.4
+
+* 四 3月 06 2003 Jens Petersen <petersen@redhat.com> - 1.7.3-1
+- update to 1.7.3
+- python dir lib64 patch no longer needed
+- build requires Autoconf 2.54 or later
+
+* 一 1月 27 2003 Jens Petersen <petersen@redhat.com> - 1.6.3-5
+- patch from 1.7-branch to try python distutils for setting pythondir (#80994)
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 12 2002 Elliot Lee <sopwith@redhat.com> 1.6.3-3
+- Fix unpackaged file
+
+* 二 12月 03 2002 Jens Petersen <petersen@redhat.com> 1.6.3-2
+- add "--without check" rpmbuild option to switch "make check" off
+- exclude info dir file
+- don't gzip info files explicitly
+
+* 一 11月 18 2002 Jens Petersen <petersen@redhat.com>
+- use api_version in version
+
+* 一 7月 29 2002 Jens Petersen <petersen@redhat.com> 1.6.3-1
+- bug fix release 1.6.3
+
+* 四 7月 11 2002 Jens Petersen <petersen@redhat.com> 1.6.2-2
+- add buildrequires autoconf 2.52 or greater [reported by Edward Avis]
+
+* 三 6月 19 2002 Jens Petersen <petersen@redhat.com> 1.6.2-1
+- 1.6.2 (bug fix release)
+- do "make check" after building
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com> 1.6.1-2
+- automated rebuild
+
+* 二 4月 23 2002 Jens Petersen <petersen@redhat.com> 1.6.1-1
+- 1.6.1
+
+* 二 3月 12 2002 Jens Petersen <petersen@redhat.com> 1.6-1
+- new package based on automake15
+- 1.6
+
+* 三 1月 23 2002 Jens Petersen <petersen@redhat.com> 1.5-8
+- better aclocal versioning
+
+* 三 1月 23 2002 Jens Petersen <petersen@redhat.com> 1.5-7
+- don't version datadir/automake
+
+* 二 1月 15 2002 Jens Petersen <petersen@redhat.com> 1.5-6
+- version suffix programs and data directories
+- own symlinks to programs and /usr/share/aclocal
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com> 1.5-5
+- automated rebuild
+
+* 三 1月 09 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.5-4
+- Completely back out the fix for #56624 for now, it causes more problems
+  than it fixes in either form.
+
+* 三 1月 09 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.5-3
+- Don't use AS_DIRNAME, it doesn't work.
+
+* 一 1月 07 2002 Jens Petersen <petersen@redhat.com> 1.5-2
+- Patch depout.m4 to handle makefiles passed to make with "-f" (#56624)
+
+* 二 9月 18 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5-1
+- Update to 1.5 - much better to coexist with autoconf 2.52...
+- Fix specfile
+- No patches
+
+* 五 8月 24 2001 Jens Petersen <petersen@redhat.com> - 1.4p5-2
+- dont raise error when there is source in a subdirectory (bug #35156).
+  This was preventing automake from working in binutuls/gas 
+  [patch from HJ Lu <hjl@gnu.org>]
+- format long lines of output properly with backslash + newlines as in 1.4
+  (bug #35259) [patch from HJ Lu <hjl@gnu.org>]
+
+* 六 7月 21 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- 1.4-p5, fixes #48788
+
+* 二 6月 12 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add the patch from #20559
+- really update to 1.4-p4
+
+* 一 6月 11 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.4-p4
+
+* 六 5月 12 2001 Owen Taylor <otaylor@redhat.com>
+- Version 1.4-p1 to work with libtool-1.4
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 05 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 五 2月 04 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix bug #8870
+
+* 六 8月 21 1999 Jeff Johnson <jbj@redhat.com>
+- revert to pristine automake-1.4.
+
+* 一 3月 22 1999 Preston Brown <pbrown@redhat.com>
+- arm netwinder patch
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 一 2月 08 1999 Jeff Johnson <jbj@redhat.com>
+- add patches from CVS for 6.0beta1
+
+* 日 1月 17 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.4.
+
+* 一 11月 23 1998 Jeff Johnson <jbj@redhat.com>
+- update to 1.3b.
+- add URL.
+
+* 五 4月 24 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 4月 07 1998 Erik Troan <ewt@redhat.com>
+- updated to 1.3
+
+* 二 10月 28 1997 Cristian Gafton <gafton@redhat.com>
+- added BuildRoot; added aclocal files
+
+* 五 10月 24 1997 Erik Troan <ewt@redhat.com>
+- made it a noarch package
+
+* 四 10月 16 1997 Michael Fulbright <msf@redhat.com>
+- Fixed some tag lines to conform to 5.0 guidelines.
+
+* 四 7月 17 1997 Erik Troan <ewt@redhat.com>
+- updated to 1.2
+
+* 三 3月 05 1997 msf@redhat.com <Michael Fulbright>
+- first version (1.0)
+

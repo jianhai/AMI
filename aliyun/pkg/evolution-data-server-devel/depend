@@ -1,0 +1,44 @@
+/usr/bin/pkg-config  
+evolution-data-server = 2.28.3-15.3.alios6
+evolution-data-server-doc = 2.28.3-15.3.alios6
+libbonobo-devel  
+libcamel-1.2.so.14()(64bit)  
+libcamel-provider-1.2.so.14()(64bit)  
+libebackend-1.2.so.0()(64bit)  
+libebook-1.2.so.9()(64bit)  
+libecal-1.2.so.7()(64bit)  
+libedata-book-1.2.so.2()(64bit)  
+libedata-cal-1.2.so.6()(64bit)  
+libedataserver-1.2.so.11()(64bit)  
+libedataserverui-1.2.so.8()(64bit)  
+libegroupwise-1.2.so.13()(64bit)  
+libexchange-storage-1.2.so.3()(64bit)  
+libgdata-1.2.so.1()(64bit)  
+libgdata-google-1.2.so.1()(64bit)  
+libgweather-devel  
+libical-devel  
+libsoup-devel  
+pkgconfig(ORBit-2.0) >= 2.9.8
+pkgconfig(camel-1.2)  
+pkgconfig(gconf-2.0)  
+pkgconfig(gio-2.0)  
+pkgconfig(glib-2.0)  
+pkgconfig(gtk+-2.0)  
+pkgconfig(libbonobo-2.0) >= 2.20.3
+pkgconfig(libebackend-1.2)  
+pkgconfig(libebook-1.2)  
+pkgconfig(libecal-1.2)  
+pkgconfig(libedataserver-1.2)  
+pkgconfig(libgdata-1.2)  
+pkgconfig(libglade-2.0)  
+pkgconfig(libical) >= 0.43
+pkgconfig(libsoup-2.4)  
+pkgconfig(libsoup-2.4) >= 2.3.0
+pkgconfig(libxml-2.0)  
+pkgconfig(sqlite3)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+sqlite-devel  
+rpmlib(PayloadIsXz) <= 5.2-1

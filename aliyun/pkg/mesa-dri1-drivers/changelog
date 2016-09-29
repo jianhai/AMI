@@ -1,0 +1,12 @@
+* 一 7月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 7.11-8.1
+- rebuild for alios6-update
+
+* 二 10月 02 2012 Dave Airlie <airlied@redhat.com> 7.11-8
+- drop the directory from this rpm the filesystem one owns it
+
+* 二 10月 02 2012 Dave Airlie <airlied@redhat.com> 7.11-7
+- fix mesa-dri-filesystem requires
+
+* 三 8月 22 2012 Dave Airlie <airlied@redhat.com> 7.11-6
+- initial fork from 7.11 mesa packages
+

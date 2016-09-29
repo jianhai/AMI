@@ -1,0 +1,19 @@
+Name        : popt                         Relocations: (not relocatable)
+Version     : 1.13                              Vendor: Alibaba
+Release     : 7.4.alios6                    Build Date: 2014年07月27日 星期日 18时40分28秒
+Install Date: 2015年03月25日 星期三 10时59分27秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: popt-1.13-7.4.alios6.src.rpm
+Size        : 83420                            License: MIT
+Signature   : RSA/8, 2014年07月31日 星期四 18时05分40秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.rpm5.org/
+Summary     : C library for parsing command line parameters
+Description :
+Popt is a C library for parsing command line parameters. Popt was
+heavily influenced by the getopt() and getopt_long() functions, but
+it improves on them by allowing more powerful argument expansion.
+Popt can parse arbitrary argv[] style arrays and automatically set
+variables based on command line arguments. Popt allows command line
+arguments to be aliased via configuration files and includes utility
+functions for parsing arbitrary strings into argv[] arrays using
+shell-like rules.

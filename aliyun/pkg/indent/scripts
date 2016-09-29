@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/install-info /usr/share/info/indent.info.gz /usr/share/info/dir --entry="* indent: (indent).				Program to format source code." >/dev/null 2>&1 || :
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+	/sbin/install-info --delete /usr/share/info/indent.info.gz /usr/share/info/dir --entry="* indent: (indent).				Program to format source code." >/dev/null 2>&1 || :
+fi

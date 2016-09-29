@@ -1,0 +1,18 @@
+/bin/bash  
+/bin/sh  
+/usr/sbin/build-locale-archive  
+/usr/sbin/tzdata-update  
+config(glibc-common) = 2.12-1.166.alios6.7
+glibc = 2.12-1.166.alios6.7
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.10)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libcap.so.2()(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+tzdata >= 2003a
+rpmlib(PayloadIsXz) <= 5.2-1

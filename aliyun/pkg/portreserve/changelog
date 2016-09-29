@@ -1,0 +1,67 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.0.4-4.4.1
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.0.4-4.3.1
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.0.4-4.2.1
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.0.4-4.1.1
+- rebuild for alios6
+
+* 三 8月 31 2011 Tim Waugh <twaugh@redhat.com> 0.0.4-4:.1
+- Fixed linked list handling when removing items (bug #718178).
+
+* 四 3月 04 2010 Tim Waugh <twaugh@redhat.com> 0.0.4-4
+- Added comments to all patches.
+
+* 五 1月 22 2010 Tim Waugh <twaugh@redhat.com> 0.0.4-3
+- Walk the list of newmaps correctly (bug #557785).
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.0.4-2.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 2月 27 2009 Tim Waugh <twaugh@redhat.com> 0.0.4-1
+- 0.0.4:
+  - Fixed initscript so that it will not be reordered to start after
+    rpcbind (bug #487250).
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 04 2009 Tim Waugh <twaugh@redhat.com> 0.0.3-3
+- No longer need SELinux policy as it is now part of the
+  selinux-policy package.
+
+* 三 10月 15 2008 Tim Waugh <twaugh@redhat.com> 0.0.3-2
+- New selinux sub-package for SELinux policy.  Policy contributed by
+  Miroslav Grepl (thanks!).
+
+* 二 7月 01 2008 Tim Waugh <twaugh@redhat.com> 0.0.3-1
+- 0.0.3:
+  - Allow multiple services to be defined in a single configuration
+    file.
+  - Allow protocol specifications, e.g. ipp/udp.
+
+* 一 6月 30 2008 Tim Waugh <twaugh@redhat.com> 0.0.2-1
+- 0.0.2.
+
+* 五 5月 09 2008 Tim Waugh <twaugh@redhat.com> 0.0.1-2
+- More consistent use of macros.
+- Build requires xmlto.
+- Don't use %makeinstall.
+- No need to run make check.
+
+* 四 5月 08 2008 Tim Waugh <twaugh@redhat.com> 0.0.1-1
+- Default permissions for directories.
+- Initscript should not be marked config.
+- Fixed license tag.
+- Better buildroot tag.
+
+* 三 9月 03 2003 Tim Waugh <twaugh@redhat.com>
+- Initial spec file.
+

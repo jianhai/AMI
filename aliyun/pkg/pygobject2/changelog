@@ -1,0 +1,179 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.20.0-5.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.20.0-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.20.0-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.20.0-5.1
+- rebuild for alios6
+
+* 三 6月 23 2010 Matthew Barnes <mbarnes@redhat.com> - 2.20.0-5.el6
+- Spec file cleanups.
+
+* 四 1月 14 2010 Owen Taylor <otaylor@redhat.com> - 2.20.0-4.el6
+- Build without gobject-introspection support, the form of support
+  in 2.20 was subsequently removed upstream.
+  Resolves: rhbz 555583
+
+* 五 1月 08 2010 Matthew Barnes <mbarnes@redhat.com> - 2.20.0-2.el6
+- Provide a complete URI for the Source field.
+
+* 三 9月 23 2009 Matthew Barnes <mbarnes@redhat.com> - 2.20.0-1.fc12
+- Update to 2.20.0
+
+* 二 8月 11 2009 Matthew Barnes <mbarnes@redhat.com> - 2.19.0-1.fc12
+- Update to 2.19.0
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.18.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 5月 25 2009 Matthew Barnes <mbarnes@redhat.com> - 2.18.0-1.fc12
+- Update to 2.18.0
+
+* 四 4月 30 2009 Matthew Barnes <mbarnes@redhat.com> - 2.17.1-1.fc12
+- Update to 2.17.0
+- Remove patch for GNOME bug #566571 (fixed upstream).
+
+* 三 4月 22 2009 Matthew Barnes <mbarnes@redhat.com> - 2.16.1-4.fc11
+- Add patch for GNOME bug #566571 (classic vs new-style inheritance crash).
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.16.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 24 2009 Matthias Clasen <mclasen@redhat.com> - 2.16.1-2
+- Make -doc noarch
+
+* 日 2月 22 2009 - Matthew Barnes <mbarnes@redhat.com> - 2.16.1-1.fc11
+- Update to 2.16.1
+
+* 日 1月 04 2009 - Matthew Barnes <mbarnes@redhat.com> - 2.16.0-1.fc11
+- Update to 2.16.0
+- Remove patch for RH bug #457502 (fixed upstream).
+- Remove patch for GNOME bug #551059 and #551212 (fixed upstream).
+
+* 六 11月 29 2008 - Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.15.4-4
+- Rebuild for Python 2.6
+
+* 二 10月 21 2008 - Bastien Nocera <bnocera@redhat.com> - 2.15.4-3.fc10
+- Add patch to fix typos breaking compilation
+
+* 二 10月 21 2008 - Bastien Nocera <bnocera@redhat.com> - 2.15.4-2.fc10
+- Add 2-liner fixing the load_contents functions not working appropriately
+
+* 三 9月 03 2008 Matthew Barnes <mbarnes@redhat.com> - 2.15.4-1.fc10
+- Update to 2.15.4
+
+* 日 8月 31 2008 Matthew Barnes <mbarnes@redhat.com> - 2.15.3-1.fc10
+- Update to 2.15.3
+
+* 二 8月 12 2008 Matthew Barnes <mbarnes@redhat.com> - 2.15.2-3.fc10
+- Modify thread initialization patch to fix RH bug #458522.
+
+* 四 8月 07 2008 Matthew Barnes <mbarnes@redhat.com> - 2.15.2-2.fc10
+- Add patch for RH bug #457502 (error on gtk.gdk.threads_init).
+
+* 六 7月 26 2008 Matthew Barnes <mbarnes@redhat.com> - 2.15.2-1.fc10
+- Update to 2.15.2
+
+* 日 7月 20 2008 Matthew Barnes <mbarnes@redhat.com> - 2.15.1-2.fc10
+- Fix directory ownership.  (RH bug #455974, patch by Robert Scheck).
+
+* 三 7月 16 2008 Matthew Barnes <mbarnes@redhat.com> - 2.15.1-1.fc10
+- Update to 2.15.1
+- Bump glib2_version to 2.16.0.
+- Remove ancient automake_version.
+- Add a pygobject2-codegen subpackage.
+
+* 五 5月 23 2008 Matthew Barnes <mbarnes@redhat.com> - 2.14.2-1.fc10
+- Update to 2.14.2
+
+* 日 2月 17 2008 Matthew Barnes <mbarnes@redhat.com> - 2.14.1-2.fc9
+- Rebuild with GCC 4.3
+
+* 四 1月 03 2008 Matthew Barnes <mbarnes@redhat.com> - 2.14.1-1.fc9
+- Update to 2.14.1
+
+* 五 10月 26 2007 Matthew Barnes <mbarnes@redhat.com> - 2.14.0-2.fc9
+- Remove redundant requirements.
+- Use name tag where appropriate.
+
+* 日 9月 16 2007 Matthew Barnes <mbarnes@redhat.com> - 2.14.0-1.fc8
+- Update to 2.14.0
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 2.13.2-3
+- Rebuild for selinux ppc32 issue.
+
+* 三 8月 08 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.2-2
+- Update the license field
+
+* 六 7月 07 2007 Matthew Barnes <mbarnes@redhat.com> - 2.13.2-1.fc8
+- Update to 2.13.2
+
+* 五 5月 18 2007 Matthew Barnes <mbarnes@redhat.com> - 2.13.1-1.fc8
+- Update to 2.13.1
+- Remove patch for RH bug #237179 (fixed upstream).
+
+* 四 5月 03 2007 Matthew Barnes <mbarnes@redhat.com> - 2.12.3-5.fc7
+- Fix devel subpackage dependency (RH bug #238793).
+
+* 四 4月 19 2007 Matthew Barnes <mbarnes@redhat.com> - 2.12.3-3.fc7
+- Add patch for RH bug #237179 (memory leak).
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 2.12.3-2
+- rebuild against python 2.5
+
+* 六 11月 18 2006 Matthew Barnes <mbarnes@redhat.com> - 2.12.3-1.fc7
+- Update to 2.12.3
+
+* 四 10月 26 2006 Matthew Barnes <mbarnes@redhat.com> - 2.12.2-3.fc7
+- Add subpackage pygobject2-doc (bug #205231).
+
+* 二 10月 24 2006 Matthew Barnes <mbarnes@redhat.com> - 2.12.2-2.fc7
+- Use python_sitearch instead of python_sitelib.
+
+* 日 10月 15 2006 Matthew Barnes <mbarnes@redhat.com> - 2.12.2-1.fc7
+- Update to 2.12.2
+
+* 日 9月 24 2006 Matthew Barnes <mbarnes@redhat.com> - 2.12.1-3.fc6
+- Require glib2-devel for the -devel package.
+
+* 五 9月 22 2006 Matthew Barnes <mbarnes@redhat.com> - 2.12.1-2.fc6
+- Define a python_sitelib macro for files under site_packages.
+- Spec file cleanups.
+
+* 二 9月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.12.1-1.fc6
+- Update to 2.12.1
+- Require pkgconfig for the -devel package
+
+* 日 8月 27 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.4-1.fc6
+- Update to 2.11.4
+- Use pre-built docs
+
+* 一 8月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.3-1.fc6
+- Update to 2.11.3
+
+* 日 8月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.2-2.fc6
+- BR libxslt
+
+* 日 8月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.2-1.fc6
+- Update to 2.11.2
+
+* 三 7月 19 2006 Jesse Keating <jkeating@redhat.com> - 2.11.0-2
+- rebuild
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.11.0-1
+- Update to 2.11.0
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.10.1-3
+- rebuild
+- Add missing br libtool
+
+* 五 5月 19 2006 John (J5) Palmieri <johnp@redhat.com> - 2.10.1-2
+- Cleanup
+
+* 五 5月 12 2006 John (J5) Palmieri <johnp@redhat.com> - 2.10.1-1
+- Initial package
+

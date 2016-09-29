@@ -1,0 +1,358 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.9-3.3.2
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.9-3.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.3.9-3.1.2
+- rebuild for alios6
+
+* 五 5月 20 2011 Joe Orton <jorton@redhat.com> - 1.3.9-3.2
+- add fix for apr_fnmatch() regression (CVE-2011-1928, #706352)
+
+* 二 5月 10 2011 Joe Orton <jorton@redhat.com> - 1.3.9-3.1
+- add fix for CVE-2011-0419 (#703520)
+
+* 日 10月 25 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.9-3
+- remove uuid/crypt libs from pkg-config file
+
+* 一 9月 28 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.9-2
+- revert use of accept4(), dup3() and epoll_create1()
+
+* 五 9月 25 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.9-1
+- bump up to 1.3.9
+
+* 四 8月 06 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.8-1
+- bump up to 1.3.8
+- CVE-2009-2412
+- allocator alignment fixes
+
+* 日 7月 26 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.7-2
+- include apr_cv_sock_cloexec too
+
+* 日 7月 26 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.7-1
+- bump up to 1.3.7
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 15 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.6-1
+- bump up to 1.3.6
+
+* 二 6月 30 2009 Joe Orton <jorton@redhat.com> 1.3.5-5
+- BR libuuid-devel instead of e2fsprogs-devel
+
+* 一 6月 08 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.5-4
+- bump up to 1.3.5
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 04 2009 Joe Orton <jorton@redhat.com> 1.3.3
+- fix build with libtool 2.2
+
+* 五 1月 02 2009 Joe Orton <jorton@redhat.com> 1.3.3
+- rebuild
+
+* 六 8月 16 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.3-1
+- bump up to 1.3.3
+
+* 三 7月 16 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.2-2
+- ship find_apr.m4, fix bug #455189
+
+* 四 6月 19 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.2-1
+- bump up to 1.3.2
+
+* 日 6月 01 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.0-1
+- bump up to 1.3.0
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.2.12-2
+- Autorebuild for GCC 4.3
+
+* 一 11月 26 2007 Bojan Smojver <bojan@rexursive.com> 1.2.12-1
+- bump up to 1.2.12
+- add dist
+- remove a comment from apr-1.2.7-psprintfpi.patch (applied upstream)
+
+* 二 9月 18 2007 Joe Orton <jorton@redhat.com> 1.2.11-2
+- fix %check for non-multilib 64-bit platforms
+
+* 日 9月 09 2007 Bojan Smojver <bojan@rexursive.com> 1.2.11-1
+- bump up to 1.2.11
+- drop openlfs patch (fixed upstream)
+
+* 日 9月 02 2007 Joe Orton <jorton@redhat.com> 1.2.9-4
+- fix API/ABI of 32-bit builds (#254241)
+
+* 二 8月 21 2007 Joe Orton <jorton@redhat.com> 1.2.9-2
+- fix License
+
+* 一 6月 25 2007 Bojan Smojver <bojan@rexursive.com> 1.2.9-1
+- bump up to 1.2.9
+
+* 一 6月 04 2007 Joe Orton <jorton@redhat.com> 1.2.8-7
+- drop %check section entirely; inappropriate to run in build env.
+
+* 五 3月 30 2007 Joe Orton <jorton@redhat.com> 1.2.8-6
+- merge review (#225253): drop .a archive; drop use of CC/CXX,
+  use BuildRequires; drop old Conflicts; URL reference for Source
+
+* 四 3月 22 2007 Joe Orton <jorton@redhat.com> 1.2.8-5
+- drop the doxygen documentation (which causes multilib conflicts)
+
+* 四 2月 15 2007 Joe Orton <jorton@redhat.com> 1.2.8-4
+- add BR for python
+
+* 四 2月 15 2007 Joe Orton <jorton@redhat.com> 1.2.8-3
+- update to pick up new libtool, drop specific gcc requirement
+
+* 一 12月 04 2006 Joe Orton <jorton@redhat.com> 1.2.8-2
+- update to 1.2.8
+
+* 三 7月 19 2006 Joe Orton <jorton@redhat.com> 1.2.7-10
+- fix buildconf with autoconf 2.60 (#199067)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> 1.2.7-9.1
+- rebuild
+
+* 一 6月 19 2006 Joe Orton <jorton@redhat.com> 1.2.7-9
+- add fix for use of %pI with psprintf
+
+* 五 5月 26 2006 Jakub Jelinek <jakub@redhat.com> 1.2.7-8
+- rebuilt with GCC 4.1.0
+
+* 二 5月 23 2006 Joe Orton <jorton@redhat.com> 1.2.7-7
+- fix another multilib conflict (#192659)
+
+* 二 5月 16 2006 Joe Orton <jorton@redhat.com> 1.2.7-6
+- BR e2fsprogs-devel for libuuid
+
+* 一 5月 08 2006 Joe Orton <jorton@redhat.com> 1.2.7-4
+- use multilib parallel-installation wrapper hack for apr.h
+
+* 二 5月 02 2006 Joe Orton <jorton@redhat.com> 1.2.7-3
+- fix installbuilddir in apr-1-config
+
+* 二 5月 02 2006 Joe Orton <jorton@redhat.com> 1.2.7-2
+- update to 1.2.7
+- use pkg-config in apr-1-config to make it libdir-agnostic
+
+* 四 4月 06 2006 Joe Orton <jorton@redhat.com> 1.2.6-2
+- update to 1.2.6
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-7.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-7.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 1月 04 2006 Joe Orton <jorton@redhat.com> 1.2.2-7
+- fix namespace pollution (r354824, r355464)
+
+* 三 1月 04 2006 Joe Orton <jorton@redhat.com> 1.2.2-6
+- fix build with recent glibc (#176911)
+
+* 二 1月 03 2006 Jesse Keating <jkeating@redhat.com> 1.2.2-5.2
+- rebuilt again
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 09 2005 Joe Orton <jorton@redhat.com> 1.2.2-5
+- rebuild for new gcc
+
+* 四 12月 08 2005 Joe Orton <jorton@redhat.com> 1.2.2-4
+- add apr_file_seek() fixes from upstream (r326593, r326597)
+
+* 三 12月 07 2005 Joe Orton <jorton@redhat.com> 1.2.2-3
+- apr-1-config: strip more exports (#175124)
+
+* 二 12月 06 2005 Joe Orton <jorton@redhat.com> 1.2.2-2
+- avoid linking against -lrt
+- don't print -L${libdir} in --libs output
+- don't export -lcrypt/-luuid in .la file
+
+* 五 12月 02 2005 Joe Orton <jorton@redhat.com> 1.2.2-1
+- update to 1.2.2
+
+* 四 11月 24 2005 Joe Orton <jorton@redhat.com> 0.9.7-3
+- use RTLD_DEEPBIND in apr_dso_open by default
+
+* 四 10月 20 2005 Joe Orton <jorton@redhat.com> 0.9.7-2
+- update to 0.9.7
+
+* 五 9月 30 2005 Florian La Roche <laroche@redhat.com>
+- rebuild for new gcc
+
+* 四 9月 15 2005 Joe Orton <jorton@redhat.com> 0.9.6-6
+- don't override CFLAGS at build time
+- allow setting TCP_NODELAY and TCP_CORK concurrently
+- use _exit() not exit() in child if exec*() fails (upstream #30913)
+
+* 五 9月 09 2005 Joe Orton <jorton@redhat.com> 0.9.6-5
+- add from 0.9.x branch:
+ * fix for apr_{uid,gid}_* error handling (r239592)
+ * fix for apr_file_ write flushing (r267192)
+- add backport for use of readdir64_r (r265032, r265681, r265684)
+
+* 一 7月 11 2005 Florian La Roche <laroche@redhat.com>
+- rebuild
+
+* 二 5月 17 2005 Joe Orton <jorton@redhat.com> 0.9.6-3
+- fix apr_procattr_child_*_set error handling
+
+* 二 3月 01 2005 Joe Orton <jorton@redhat.com> 0.9.6-2
+- have apr-devel depend on specific version of gcc
+- add NOTICE to docdir
+
+* 三 2月 09 2005 Joe Orton <jorton@redhat.com> 0.9.6-1
+- update to 0.9.6
+
+* 三 2月 02 2005 Joe Orton <jorton@redhat.com> 0.9.5-4
+- don't disable sendfile on s390 (IBM LTC, #146891)
+
+* 一 11月 22 2004 Joe Orton <jorton@redhat.com> 0.9.5-3
+- really fix apr-config --srcdir
+
+* 一 11月 22 2004 Joe Orton <jorton@redhat.com> 0.9.5-2
+- fix apr-config --srcdir again
+
+* 日 11月 21 2004 Joe Orton <jorton@redhat.com> 0.9.5-1
+- update to 0.9.5
+
+* 一 9月 27 2004 Joe Orton <jorton@redhat.com> 0.9.4-24
+- rebuild
+
+* 三 9月 01 2004 Joe Orton <jorton@redhat.com> 0.9.4-23
+- have -devel require apr of same V-R
+
+* 二 8月 31 2004 Joe Orton <jorton@redhat.com> 0.9.4-22
+- backport fixes from HEAD:
+ * correct implementation of nested mutexes
+ * support for POSIX semaphores on LP64 platforms
+
+* 四 7月 15 2004 Joe Orton <jorton@redhat.com> 0.9.4-21
+- rebuild for another attempt at using sem_open
+
+* 二 7月 13 2004 Joe Orton <jorton@redhat.com> 0.9.4-20
+- move sticky/suid bits outside APR_OS_DEFAULT bitmask (Greg Hudson)
+
+* 四 7月 01 2004 Joe Orton <jorton@redhat.com> 0.9.4-19
+- rebuild
+
+* 三 6月 30 2004 Joe Orton <jorton@redhat.com> 0.9.4-18
+- rebuild now /dev/shm is mounted
+
+* 四 6月 17 2004 Joe Orton <jorton@redhat.com> 0.9.4-17
+- add fix for cleanup structure reuse (part of upstream #23567)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 6月 10 2004 Joe Orton <jorton@redhat.com> 0.9.4-15
+- add support for setuid/setgid/sticky bits (André Malo)
+- add apr_threadattr_{guardsize,stacksize}_set() (latter by Jeff Trawick)
+
+* 一 6月 07 2004 Joe Orton <jorton@redhat.com> 0.9.4-14
+- enable posixsem and process-shared pthread mutex support, but
+  ensure that sysvsem remains the default mechanism
+
+* 一 5月 24 2004 Joe Orton <jorton@redhat.com> 0.9.4-13
+- entirely remove 2Gb file size limit from apr_file_copy();
+  fixes "svnadmin hotcopy" on repos with >2Gb strings table
+- work around getnameinfo bugs with v4-mapped addresses
+- fix apr_time_exp_get() for dates in 2038 (Philip Martin)
+
+* 四 5月 13 2004 Joe Orton <jorton@redhat.com> 0.9.4-12
+- use APR_LARGEFILE in apr_file_{copy,append}
+
+* 三 3月 24 2004 Joe Orton <jorton@redhat.com> 0.9.4-11
+- add APR_LARGEFILE flag
+
+* 一 3月 15 2004 Joe Orton <jorton@redhat.com> 0.9.4-10
+- fix configure check for mmap of /dev/zero
+- just put -D_GNU_SOURCE in CPPFLAGS not _{BSD,SVID,XOPEN}_SOURCE
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com> 0.9.4-9.1
+- rebuilt
+
+* 四 2月 19 2004 Joe Orton <jorton@redhat.com> 0.9.4-9
+- undocument apr_dir_read() ordering constraint and fix tests
+
+* 日 2月 15 2004 Joe Orton <jorton@redhat.com> 0.9.4-8
+- rebuilt without -Wall -Werror
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> 0.9.4-7
+- rebuilt
+
+* 二 2月 03 2004 Joe Orton <jorton@redhat.com> 0.9.4-6
+- define apr_off_t as int/long/... to prevent it changing
+  with _FILE_OFFSET_BITS on 32-bit platforms
+
+* 一 1月 12 2004 Joe Orton <jorton@redhat.com> 0.9.4-5
+- add apr_temp_dir_get fixes from HEAD
+
+* 四 1月 08 2004 Joe Orton <jorton@redhat.com> 0.9.4-4
+- ensure that libapr is linked against libpthread
+- don't link libapr against -lnsl
+
+* 四 11月 13 2003 Joe Orton <jorton@redhat.com> 0.9.4-3
+- -devel package no longer requires libtool
+
+* 五 10月 03 2003 Joe Orton <jorton@redhat.com> 0.9.4-2
+- disable tests on x86_64 (#97611)
+
+* 五 10月 03 2003 Joe Orton <jorton@redhat.com> 0.9.4-1
+- update to 0.9.4, enable tests
+- ensure that libresolv is not used
+
+* 日 9月 07 2003 Joe Orton <jorton@redhat.com> 0.9.3-14
+- use /dev/urandom (#103049)
+
+* 四 7月 24 2003 Joe Orton <jorton@redhat.com> 0.9.3-13
+- add back CC=gcc, CXX=g++
+
+* 二 7月 22 2003 Nalin Dahyabhai <nalin@redhat.com> 0.9.3-12
+- rebuild
+
+* 一 7月 14 2003 Joe Orton <jorton@redhat.com> 0.9.3-11
+- work round useless autoconf 2.57 AC_DECL_SYS_SIGLIST
+
+* 四 7月 10 2003 Joe Orton <jorton@redhat.com> 0.9.3-10
+- support --cc and --cpp arguments in apr-config
+
+* 四 7月 03 2003 Joe Orton <jorton@redhat.com> 0.9.3-9
+- force libtool to use CC=gcc, CXX=g++
+
+* 四 7月 03 2003 Joe Orton <jorton@redhat.com> 0.9.3-8
+- fix libtool location in apr_rules.mk
+
+* 一 6月 30 2003 Joe Orton <jorton@redhat.com> 0.9.3-7
+- use AI_ADDRCONFIG in getaddrinfo() support (#73350)
+- include a working libtool script rather than relying on
+ /usr/bin/libtool (#97695)
+
+* 三 6月 18 2003 Joe Orton <jorton@redhat.com> 0.9.3-6
+- don't use /usr/bin/libtool
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 20 2003 Joe Orton <jorton@redhat.com> 0.9.3-5
+- add fix for psprintf memory corruption (CAN-2003-0245)
+- remove executable bit from apr_poll.h
+
+* 四 5月 01 2003 Joe Orton <jorton@redhat.com> 0.9.3-4
+- link libapr against libpthread
+- make apr-devel conflict with old subversion-devel
+- fix License
+
+* 二 4月 29 2003 Joe Orton <jorton@redhat.com> 0.9.3-3
+- run ldconfig in post/postun
+
+* 二 4月 29 2003 Joe Orton <jorton@redhat.com> 0.9.3-2
+- patch test suite to not care if IPv6 is disabled
+
+* 一 4月 28 2003 Joe Orton <jorton@redhat.com> 0.9.3-1
+- initial build
+

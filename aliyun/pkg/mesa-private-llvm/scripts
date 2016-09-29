@@ -1,0 +1,5 @@
+postinstall program: /sbin/ldconfig
+postuninstall scriptlet (using /sbin/ldconfig):
+
+# also unlike fedora, we don't alternatives around llvm-config
+# mesa knows to append -64

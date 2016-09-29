@@ -1,0 +1,30 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.6-3.1
+- rebuild for alios6
+
+* 六 6月 19 2010 Christopher Aillon <caillon@redhat.com> - 0.6-3
+- Minor packaging fixups
+
+* 五 11月 13 2009 David Zeuthen <davidz@redhat.com> - 0.6-2
+- Rebuild
+
+* 五 11月 13 2009 David Zeuthen <davidz@redhat.com> - 0.6-1
+- Update to 0.6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 6月 19 2009 David Zeuthen <davidz@redhat.com> - 0.5-1
+- Update to 0.5
+
+* 三 5月 27 2009 David Zeuthen <davidz@redhat.com> - 0.4-1
+- Update to 0.4
+
+* 一 2月 09 2009 David Zeuthen <davidz@redhat.com> - 0.3-1
+- Initial spec file.
+

@@ -1,0 +1,245 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.26.2-5.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.26.2-5.1
+- rebuild for alios6-update
+
+* 二 3月 26 2013 Soren Sandmann <ssp@redhat.com> 0.26.2-5
+- Fix bug 914474 (CVE 2013-1591)
+- Remove openmp.patch
+
+* 一 7月 30 2012 Adam Jackson <ajax@redhat.com> 0.26.2-4
+- Disable openmp patch in RHEL for the moment
+
+* 六 7月 21 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.26.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 五 7月 06 2012 Peter Robinson <pbrobinson@fedoraproject.org> - 0.26.2-2
+- run autoreconf to properly pull in gomp
+
+* 四 7月 05 2012 Peter Robinson <pbrobinson@fedoraproject.org> - 0.26.2-1
+- update to 0.26.2
+- drop upstreamed patch
+
+* 二 6月 26 2012 Soren Sandmann <ssp@redhat.com> - 0.26.0-4
+- Add -fopenmp to CFLAGS and LDFLAGS on the make command line instead
+  of in Makefile.am.
+
+* 二 6月 26 2012 Soren Sandmann <ssp@redhat.com> - 0.26.0-3
+- Add -fopenmp to pixman-sse2.c CFLAGS
+
+* 二 6月 26 2012 Soren Sandmann <ssp@redhat.com> - 0.26.0-2
+- Add experimental patch to use OpenMP
+  If this causes your X server to misbehave, please file bugs.
+
+* 三 5月 30 2012 Soren Sandmann <ssp@redhat.com> - 0.26.0-1
+- update to 0.26.0
+- patch to add missing emms instructions
+- reenable iwmmxt since configure should now detect if it can't built
+
+* 二 5月 15 2012 Dennis Gilmore <dennis@ausil.us> - 0.25.6-2
+- rely on runtime cpu detection for arm optimisations
+- disable failing to build iwmmxt
+
+* 二 5月 15 2012 Soren Sandmann <ssp@redhat.com>
+- pixman 0.25.6
+
+* 四 3月 29 2012 Dennis Gilmore <dennis@ausil.us> 0.25.2-2
+- always disable iwmmxt  and disable neon and simd unless building armv7hnl
+
+* 一 3月 26 2012 Soren Sandmann <ssp@redhat.com> 0.25.2-1
+- pixman 0.25.2
+
+* 四 3月 15 2012 Adam Jackson <ajax@redhat.com> 0.24.4-1
+- pixman 0.24.4
+
+* 四 1月 19 2012 Soren Sandmann <ssp@redhat.com> 0.24.2-1
+- pixman 0.24.2
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.24.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 一 11月 07 2011 Soren Sandmann <ssp@redhat.com> 0.24.0-1
+- pixman 0.24.0
+
+* 二 10月 11 2011 Soren Sandmann <ssp@redhat.com> 0.23.6-1
+- pixman 0.23.6
+
+* 四 10月 06 2011 Soren Sandmann <ssp@redhat.com> 0.23.4-1
+- pixman 0.23.4
+
+* 二 7月 05 2011 Adam Jackson <ajax@redhat.com> 0.22.2-1
+- pixman 0.22.2
+
+* 二 5月 03 2011 Soren Sandmann <ssp@redhat.com> - 0.22.0-1
+pixman 0.22.0
+
+* 三 4月 20 2011 Soren Sandmann <ssp@redhat.com> - 0.21.8-1
+pixman 0.21.8
+
+* 四 2月 24 2011 Soren sandmann <ssp@redhat.com> - 0.21.6-1
+- pixman 0.21.6
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.20.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 1月 20 2011 Soren Sandmann <ssp@redhat.com> - 0.20.2-1
+- pixman 0.20.2
+
+* 三 10月 27 2010 Soren Sandmann <ssp@redhat.com> - 0.20.0-1
+- pixman 0.20.0
+
+* 一 10月 25 2010 Matthias Clasen <mclasen@redhat.com> - 0.19.6-1
+- Update to 0.19.6
+
+* 一 9月 06 2010 Soren Sandmann <ssp@redhat.com> - 0.19.2-1
+- pixman 0.19.2
+
+* 四 4月 01 2010 Soren Sandmann <ssp@redhat.com> - 0.18.0-1
+- pixman 0.18.0
+
+* 三 3月 17 2010 Soren Sandmann <ssp@redhat.com> - 0.17.12-1
+- pixman 0.17.12
+
+* 五 3月 05 2010 Soren Sandmann <ssp@redhat.com> - 0.17.10-1
+- pixman 0.17.10
+
+* 四 2月 25 2010 Soren Sandmann <ssp@redhat.com> - 0.17.8-1
+- pixman 0.17.8
+
+* 一 1月 18 2010 Soren Sandmann <ssp@redhat.com> - 0.17.6-1
+- pixman 0.17.6
+
+* 一 1月 18 2010 Soren Sandmann <ssp@redhat.com> - 0.17.4-1
+- pixman 0.17.4
+
+* 三 12月 02 2009 Soren Sandmann <ssp@redhat.com> - 0.17.2-1
+- pixman 0.17.2
+
+* 一 9月 28 2009 Soren Sandmann <ssp@redhat.com> - 0.16.2-1
+- pixman 0.16.2
+
+* 五 8月 28 2009 Soren Sandmann <ssp@redhat.com> - 0.16.0-1
+- pixman 0.16.0
+
+* 二 8月 11 2009 Soren Sandmann <ssp@redhat.com> - 0.15.20-1
+- pixman 0.15.20
+
+* 一 8月 10 2009 Ville Skyttä <ville.skytta@iki.fi> - 0.15.18-3
+- Use bzipped upstream tarball.
+- Fix URL.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.15.18-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 21 2009 Soren Sandmann <ssp@redhat.com> 0.15.18-1
+- pixman 0.15.18
+
+* 一 7月 13 2009 Soren Sandmann <ssp@redhat.com> 0.15.16-1
+- pixman 0.15.16
+
+* 三 6月 24 2009 Soren Sandmann <ssp@redhat.com> 0.15.14-1
+- pixman 0.15.14
+
+* 三 6月 17 2009 Soren Sandmann <ssp@redhat.com> 0.15.12-1
+- pixman 0.15.12
+
+* 五 6月 05 2009 Soren Sandmann <ssp@redhat.com> 0.15.10-1
+- pixman 0.15.10
+
+* 六 5月 30 2009 Soren Sandmann <ssp@redhat.com> 0.15.8-1
+- pixman 0.15.8
+
+* 五 5月 22 2009 Soren Sandmann <ssp@redhat.com> 0.15.6-2
+- pixman 0.15.6
+
+* 五 5月 15 2009 Soren Sandmann <ssp@redhat.com> 0.15.4-1
+- pixman 0.15.4
+
+* 三 5月 13 2009 Soren Sandmann <ssp@redhat.com> 0.15.2-3
+- Remove patch to implement new clipping rules as it was completely broken.
+
+* 二 5月 12 2009 Soren Sandmann <ssp@redhat.com> 0.15.2-2
+- Add patch to implement new clipping rules.
+
+* 四 4月 16 2009 Soren Sandmann <ssp@redhat.com> 0.15.2-1
+- pixman 0.15.2
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.14.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 2月 07 2009 Soren Sandmann <sandmann@redhat.com> 0.14.0-1
+- pixman 0.14.0
+
+* 二 12月 16 2008 Adam Jackson <ajax@redhat.com> 0.13.2-1
+- pixman 0.13.2
+
+* 日 12月 14 2008 Mamoru Tasaka <mtasaka@ioa.s.u-tokyo.ac.jp> 0.12.0-3
+- Rebuild for pkgconfig provides
+
+* 二 11月 18 2008 Dan Williams <dcbw@redhat.com> 0.12.0-2
+- Actually build with the altivec detection fix (rh #472000, #451831)
+
+* 三 9月 17 2008 Soren Sandmann <sandmann@redhat.com> 0.12.0-1
+- Upgrade to 0.12.0. Drop stripes patch.
+
+* 三 9月 10 2008 Soren Sandmann <sandmann@redhat.com> 0.11.10-2
+- Add patch to fix stripes in the Nautilus selection retangle.
+
+* 六 9月 06 2008 Soren Sandmann <sandmann@redhat.com> 0.11.10-1
+- Upgrade to 0.11.10. Drop altivec patch.
+
+* 四 7月 17 2008 Soren Sandmann <sandmann@redhat.com> 0.11.8-1
+- Upgrade to 0.11.8. Drop altivec patch.
+
+* 三 6月 25 2008 Soren Sandmann <sandmann@redhat.com> 0.11.6-1
+- Upgrade to 0.11.6. Drop fix for leak.
+
+* 二 6月 17 2008 David Woodhouse <dwmw2@infradead.org> 0.11.4-3
+- Fix Altivec detection breakage (#451831)
+
+* 五 6月 13 2008 Soren Sandmann <sandmann@redhat.com> 0.11.4-2
+- Plug bad leak (cherrypicked from master)
+
+* 一 6月 09 2008 Soren Sandmann <sandmann@redhat.com> 0.11.4-1
+- Update to 0.11.4
+
+* 一 6月 09 2008 Soren Sandmann <sandmann@redhat.com> 0.11.2-1
+- Update to 0.11.2
+
+* 四 4月 03 2008 Soren Sandmann <sandmann@redhat.com> 0.10.0-1
+- Update to 0.10.0
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.9.6-4
+- Autorebuild for GCC 4.3
+
+* 三 10月 31 2007 Behdad Esfahbod <besfahbo@redhat.com> 0.9.6-3
+- Third time's the charm.
+
+* 三 10月 31 2007 Behdad Esfahbod <besfahbo@redhat.com> 0.9.6-2
+- Second try.
+
+* 三 10月 31 2007 Behdad Esfahbod <besfahbo@redhat.com> 0.9.6-1
+- Update to 0.9.6 release.
+
+* 三 9月 05 2007 Adam Jackson <ajax@redhat.com> 0.9.5-1
+- Update to 0.9.5 release.
+
+* 一 8月 27 2007 Adam Jackson <ajax@redhat.com> 0.9.0-7.20070827
+- New snapshot
+
+* 五 8月 24 2007 Adam Jackson <ajax@redhat.com> 0.9.0-4.20070824
+- New snapshot
+
+* 三 7月 25 2007 Jeremy Katz <katzj@redhat.com> - 0.9.0-3.20070724
+- rebuild for toolchain bug
+
+* 二 7月 24 2007 Adam Jackson <ajax@redhat.com> 0.9.0-2.20070724
+- Re-add it, %dir is not the same as adding a dir whole.
+
+* 二 7月 24 2007 Adam Jackson <ajax@redhat.com> 0.9.0-1.20070724
+- Remove redundant header from %files devel.
+
+* 五 5月 18 2007 Adam Jackson <ajax@redhat.com> 0.9.0-0.20070724
+- git build so I can build git X.
+

@@ -1,0 +1,39 @@
+/bin/sh  
+/bin/sh  
+cairo >= 1.7.6
+config(pango) = 1.28.1-3.3.alios6.5
+freetype >= 2.1.3-3
+freetype >= 2.1.3-3
+glib2 >= 2.17.3-1
+libX11.so.6()(64bit)  
+libXft.so.2()(64bit)  
+libXrender.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libcairo.so.2()(64bit)  
+libfontconfig.so.1()(64bit)  
+libfreetype.so.6()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libpango-1.0.so.0()(64bit)  
+libpangocairo-1.0.so.0()(64bit)  
+libpangoft2-1.0.so.0()(64bit)  
+libpangox-1.0.so.0()(64bit)  
+libpangoxft-1.0.so.0()(64bit)  
+libthai >= 0.1.9
+libthai.so.0()(64bit)  
+libthai.so.0(LIBTHAI_0.1)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+sed  
+sed  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,20 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.2)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libevent-1.4.so.2()(64bit)  
+libevent_core-1.4.so.2()(64bit)  
+libevent_extra-1.4.so.2()(64bit)  
+libnsl.so.1()(64bit)  
+libresolv.so.2()(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

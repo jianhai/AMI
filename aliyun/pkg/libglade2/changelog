@@ -1,0 +1,249 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.6.4-3.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.6.4-3.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.6.4-3.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.6.4-3.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 日 6月 14 2009 Matthias Clasen <mclasen@redhat.com> 2.6.4-2
+- Require xml-common
+
+* 二 3月 17 2009 Matthias Clasen <mclasen@redhat.com> 2.6.4-1
+- Update to 2.6.4
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 20 2009 Matthias Clasen <mclasen@redhat.com> 2.6.3-3
+- Treat help buttons in dialogs properly
+
+* 日 11月 09 2008 Debarshi Ray <rishi@fedoraproject.org> 2.6.3-2
+- Create and own %{_libdir}/libglade and %{_libdir}/libglade/2.0.
+
+* 五 8月 22 2008 Matthias Clasen  <mclasen@redhat.com>  2.6.3-1
+- Update to 2.6.3
+- Drop upstreamed patch
+
+* 二 2月 19 2008 Matthias Clasen  <mclasen@redhat.com>  2.6.2-5
+- Fix a crash
+
+* 六 2月 09 2008 Matthias Clasen  <mclasen@redhat.com>  2.6.2-4
+- Rebuild for gcc 4.3
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 2.6.2-3
+- Rebuild for selinux ppc32 issue.
+
+* 五 8月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.6.2-2
+- Update the license field
+
+* 一 7月 30 2007 Matthias Clasen <mclasen@redhat.com> - 2.6.2-1
+- Update to 2.6.2
+
+* 二 6月 19 2007 Matthias Clasen <mclasen@redhat.com> - 2.6.1-1
+- Update to 2.6.1
+
+* 五 12月 08 2006 Matthias Clasen <mclasen@redhat.com> - 2.6.0-3
+- Small spec file cleanups
+
+* 五 7月 14 2006 Matthias Clasen <mclasen@redhat.com> - 2.6.0-2
+- BuildRequire gettext
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.6.0-1
+- Update to 2.6.0
+
+* 四 3月 23 2006 Matthias Clasen <mclasen@redhat.com> - 2.5.1-5
+- Make non-ASCII invisible characters work
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.5.1-3.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.5.1-3.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 8月 16 2005 Matthias Clasen <mclasen@redhat.com> 
+- Rebuilt
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com> - 2.5.1-2
+- Rebuild with gcc4
+
+* 五 2月 11 2005 Matthias Clasen <mclasen@redhat.com> - 2.5.1-1
+- Update to 2.5.1
+
+* 三 1月 26 2005 Matthias Clasen <mclasen@redhat.com> - 2.5.0-1
+- update to 2.5.0
+
+* 一 8月 16 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.0-5
+- Remove unnecessary auto-* invokations
+
+* 三 7月 14 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.0-4
+- Escape macros in %changelog (#127050)
+
+* 一 6月 21 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.0-2
+- Require a new enough gtk+ (#117436)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 20 2004 Matthias Clasen <mclasen@redhat.com> - 2.4.0-1
+- Upgrade to 2.4.0
+
+* 三 3月 10 2004 Mark McLoughlin <markmc@redhat.com> 2.3.6-1
+- Update to 2.3.6
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 23 2004 Alexander Larsson <alexl@redhat.com> 2.3.2-1
+- Update to 2.3.2
+
+* 五 8月 29 2003 Owen Taylor <otaylor@redhat.com> 2.0.1-5.0
+- Fix a couple of warnings for unknown properties GtkToolbar (Hardy Merrill,
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 14 2003 Tim Powers <timp@redhat.com> 2.0.1-3
+- remove BuildRequires on Xft
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 11月 08 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.1
+
+* 二 10月 08 2002 Havoc Pennington <hp@redhat.com>
+- destroy .la files
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 六 6月 15 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.0
+- check over file list, add XML DTD to it
+
+* 五 5月 17 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 五 5月 17 2002 Havoc Pennington <hp@redhat.com>
+- don't run auto*
+
+* 五 5月 17 2002 Havoc Pennington <hp@redhat.com>
+- 1.99.12
+- remove gtk-doc hack, --disable-gtk-doc now works
+
+* 四 5月 02 2002 Havoc Pennington <hp@redhat.com>
+- 1.99.11
+
+* 四 4月 04 2002 Jeremy Katz <katzj@redhat.com>
+- 1.99.10
+
+* 二 3月 19 2002 Alex Larsson <alexl@redhat.com>
+- Update autoconf dependency to 2.53
+
+* 一 3月 11 2002 Alex Larsson <alexl@redhat.com>
+- Update to 1.99.9
+
+* 一 2月 25 2002 Alex Larsson <alexl@redhat.com>
+- Bump for rebuild
+
+* 四 2月 21 2002 Alex Larsson <alexl@redhat.com>
+- Bump for rebuild
+
+* 二 2月 19 2002 Alex Larsson <alexl@redhat.com>
+- Add horrible buildroot check hacks. Require new Gtk+.
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- rebuild for new gtk
+
+* 三 1月 30 2002 Owen Taylor <otaylor@redhat.com>
+- Rebuild against new GTK+
+
+* 二 1月 22 2002 Havoc Pennington <hp@redhat.com>
+- put "nogtkdoc" patch back, it avoids X display requirement
+- automake14
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- 1.99.5.90 snap
+- comment out "nogtkdoc" patch, don't run autoconf
+
+* 一 11月 26 2001 Havoc Pennington <hp@redhat.com>
+- new 1.99.4.91 snap with Jacob's fixes, he 
+  assures me we are 1.99.4.90 ABI-compatible
+
+* 一 11月 26 2001 Havoc Pennington <hp@redhat.com>
+- new 1.99.4.90 snap, gtk 1.3.11
+
+* 五 10月 26 2001 Havoc Pennington <hp@redhat.com>
+- new snap, rebuild on gtk 1.3.10
+
+* 六 10月 06 2001 Havoc Pennington <hp@redhat.com>
+- new snap, add hack to avoid trying to build docs
+- add the ltmain.sh hack to avoid relinking
+
+* 一 9月 24 2001 Havoc Pennington <hp@redhat.com>
+- new snap
+
+* 五 9月 21 2001 Havoc Pennington <hp@redhat.com>
+- convert libglade rpm to libglade2 rpm, initial build of libglade2
+
+* 一 8月 20 2001 Jonathan Blandford <jrb@redhat.com>
+- Escape strings, #51966
+
+* 日 7月 22 2001 Havoc Pennington <hp@redhat.com>
+- add build requires, bug #49508
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 二 4月 17 2001 Jonathan Blandford <jrb@redhat.com>
+- New Version.
+
+* 四 3月 01 2001 Owen Taylor <otaylor@redhat.com>
+- Rebuild for GTK+-1.2.9 include paths
+
+* 四 2月 08 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add libtoolize to make porting to new archs easy
+
+* 五 12月 29 2000 Matt Wilson <msw@redhat.com>
+- 0.14
+- added patch for gtk-doc scanner linkage
+
+* 五 8月 11 2000 Jonathan Blandford <jrb@redhat.com>
+- Up Epoch and release
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 四 6月 29 2000 Owen Taylor <otaylor@redhat.com>
+- specfile fixes
+
+* 三 5月 31 2000 Owen Taylor <otaylor@redhat.com>
+- Upgraded to libglade-0.13
+- Use %makeinstall, since that is required when %configure is used.
+
+* 五 5月 19 2000 Owen Taylor <otaylor@redhat.com>
+- Upgraded to libglade-0.12
+
+* 二 9月 07 1999 Elliot Lee <sopwith@redhat.com>
+- Updated RHL 6.1 package to libglade-0.5
+
+* 日 11月 01 1998 James Henstridge <james@daa.com.au>
+- Updated the dependencies of the devel package, so users must have gtk+-devel.
+
+* 日 10月 25 1998 James Henstridge <james@daa.com.au>
+- Initial release 0.0.1
+

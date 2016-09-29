@@ -1,0 +1,12 @@
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libdl.so.2()(64bit)  
+libglib-2.0.so.0()(64bit)  
+librt.so.1()(64bit)  
+pkgconfig  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+which  
+rpmlib(PayloadIsXz) <= 5.2-1

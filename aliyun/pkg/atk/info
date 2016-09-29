@@ -1,0 +1,16 @@
+Name        : atk                          Relocations: (not relocatable)
+Version     : 1.30.0                            Vendor: Alibaba
+Release     : 1.2.alios6                    Build Date: 2014年07月28日 星期一 21时26分31秒
+Install Date: 2015年03月25日 星期三 11时09分22秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Libraries   Source RPM: atk-1.30.0-1.2.alios6.src.rpm
+Size        : 957540                           License: LGPLv2+
+Signature   : RSA/8, 2014年08月01日 星期五 14时53分43秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://developer.gnome.org/projects/gap/
+Summary     : Interfaces for accessibility support
+Description :
+The ATK library provides a set of interfaces for adding accessibility
+support to applications and graphical user interface toolkits. By
+supporting the ATK interfaces, an application or toolkit can be used
+with tools such as screen readers, magnifiers, and alternative input
+devices.

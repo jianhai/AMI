@@ -1,0 +1,15 @@
+Name        : libxslt-devel                Relocations: /usr 
+Version     : 1.1.26                            Vendor: Alibaba
+Release     : 2.3.alios6                    Build Date: 2014年07月26日 星期六 13时55分35秒
+Install Date: 2015年03月25日 星期三 11时00分14秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: libxslt-1.1.26-2.3.alios6.src.rpm
+Size        : 3152768                          License: MIT
+Signature   : RSA/8, 2014年07月31日 星期四 17时22分10秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://xmlsoft.org/XSLT/
+Summary     : Libraries, includes, etc. to embed the Gnome XSLT engine
+Description :
+This C library allows to transform XML files into other XML files
+(or HTML, text, ...) using the standard XSLT stylesheet transformation
+mechanism. To use it you need to have a version of libxml2 >= 2.6.27
+installed.

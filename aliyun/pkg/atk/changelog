@@ -1,0 +1,298 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.30.0-1.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.30.0-1.1
+- rebuild for alios6-update
+
+* 四 6月 06 2013 Matthew Barnes <mbarnes@redhat.com> - 1.30.0-1
+- Rebase to 1.30.0 based on the Fedora 13 package.
+- Build with introspection disabled since glib-introspection is not
+  avalable in rhel6.
+Resolves: #883027
+
+* 三 12月 02 2009 Matthias Clasen <mclasen@redhat.com> - 1.28.0-2
+- Drop unneeded BR
+
+* 三 9月 23 2009 Matthias Clasen <mclasen@redhat.com> - 1.28.0-1
+- Update to 2.28.0
+
+* 一 8月 10 2009 Matthias Clasen <mclasen@redhat.com> - 1.27.90-1
+- Update to 2.27.90
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.25.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.25.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 12月 03 2008 Matthias Clasen <mclasen@redhat.com> - 1.25.2-1
+- Update to 2.25.2
+
+* 五 11月 21 2008 Matthias Clasen <mclasen@redhat.com> - 1.24.0-2
+- Tweak %summary and %description
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 1.24.0-1
+- Update to 1.24.0
+
+* 一 7月 21 2008 Matthias Clasen <mclasen@redhat.com> - 1.23.5-1
+- Update to 1.23.5
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 1.22.0-1
+- Update to 1.22.0
+
+* 一 2月 25 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.92-1
+- Update to 1.21.92
+
+* 五 2月 08 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.5-2
+- Rebuild for gcc 4.3
+
+* 一 1月 14 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.5-1
+- Update to 1.21.5
+
+* 一 9月 17 2007 Matthias Clasen <mclasen@redhat.com> - 1.20.0-1
+- Update to 1.20.0
+
+* 三 8月 15 2007 Matthias Clasen <mclasen@redhat.com> - 1.19.6-3
+- Small fixes
+
+* 一 8月 06 2007 Matthias Clasen <mclasen@redhat.com> - 1.19.6-2
+- Update license field
+
+* 一 7月 30 2007 Matthias Clasen <mclasen@redhat.com> - 1.19.6-1
+- Update to 1.19.6
+
+* 一 6月 04 2007 Matthias Clasen <mclasen@redhat.com> - 1.19.3-1
+- Update to 1.19.3
+
+* 日 5月 20 2007 Matthias Clasen <mclasen@redhat.com> - 1.19.1-1
+- Update to 1.19.1
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 1.18.0-1
+- Update to 1.18.0
+
+* 二 2月 13 2007 Matthias Clasen <mclasen@redhat.com> - 1.17.0-1
+- Update to 1.17.0
+
+* 一 1月 22 2007 Matthias Clasen <mclasen@redhat.com> - 1.13.2-1
+- Update to 1.13.2
+
+* 三 1月 10 2007 Matthias Clasen <mclasen@redhat.com> - 1.13.1-1
+- Update to 1.13.1
+
+* 二 12月 19 2006 Matthias Clasen <mclasen@redhat.com> - 1.12.4-1
+- Update to 1.12.4
+
+* 五 10月 20 2006 Matthias Clasen <mclasen@redhat.com> - 1.12.3-1
+- Update to 1.12.3
+- Require pkgconfig in the -devel package
+
+* 一 8月 21 2006 Matthias Clasen <mclasen@redhat.com> - 1.12.2-1.fc6
+- Update to 1.12.2
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 1.12.1-2
+- Rebuild
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 1.12.1-1
+- Update to 1.12.1
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.11.4-4.1
+- rebuild
+
+* 四 6月 08 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.4-4
+- Rebuild
+
+* 四 6月 01 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.4-3
+- Rebuild
+
+* 二 4月 04 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.4-2
+- Update to 1.11.4
+
+* 一 3月 13 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.3-1
+- Update to 1.11.3
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.11.2-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.11.2-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 17 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.2-1
+- Update to 1.11.2
+
+* 一 1月 16 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.0-1
+- Update to 1.11.0
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 9月 07 2005 Matthias Clasen <mclasen@redhat.com> - 1.10.3-1
+- Update to 1.10.3
+
+* 二 6月 28 2005 Matthias Clasen <mclasen@redhat.com> - 1.10.1-1
+- Update to 1.10.1
+
+* 一 3月 14 2005 Matthias Clasen <mclasen@redhat.com> - 1.9.1-1
+- Update to 1.9.1
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com> - 1.9.0-2
+- Rebuilt
+
+* 三 1月 26 2005 Matthias Clasen <mclasen@redhat.com> - 1.9.0-1
+- update to 1.9.0
+
+* 二 10月 12 2004 Matthias Clasen <mclasen@redhat.com> - 1.8.0-2
+- convert tamil translations to UTF-8 (#135343)
+
+* 三 9月 22 2004 Matthias Clasen <mclasen@redhat.com> - 1.8.0-1
+- update to 2.8.0
+
+* 一 8月 16 2004 Matthias Clasen <mclasen@redhat.com> - 1.7.3-2
+- Remove unnecessary BuildPrereqs
+
+* 五 7月 30 2004 Matthias Clasen <clasen@redhat.com> 1.7.3-1
+- update to 2.7.3
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 3月 12 2004 Alex Larsson <alexl@redhat.com> 1.6.0-1
+- update to 2.6.0
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 25 2004 Mark McLoughlin <markmc@redhat.com> 1.5.5-1
+- Update to 1.5.5.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 23 2004 Jonathan Blandford <jrb@redhat.com> 1.5.2-1
+- new version
+
+* 二 9月 09 2003 Jonathan Blandford <jrb@redhat.com> 1.4.0-1
+- new version
+
+* 二 8月 19 2003 Jonathan Blandford <jrb@redhat.com> 1.3.5-1
+- new version for 2.4
+
+* 三 7月 09 2003 Owen Taylor <otaylor@redhat.com> 1.2.4-3.0
+- Remove specific version requirement from libtool
+
+* 二 7月 08 2003 Owen Taylor <otaylor@redhat.com> 1.2.4-2.0
+- Bump for rebuild
+
+* 二 6月 10 2003 Owen Taylor <otaylor@redhat.com> 1.2.4-1
+- Version 1.2.4
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 12月 20 2002 Owen Taylor <otaylor@redhat.com>
+- Package documentation, instead of blowing it away
+- Version 1.2.0
+
+* 三 11月 27 2002 Tim Powers <timp@redhat.com> 1.0.3-3
+- remove unpackaged files from the buildroot
+
+* 一 10月 07 2002 Havoc Pennington <hp@redhat.com>
+- require glib 2.0.6-3
+
+* 三 7月 31 2002 Owen Taylor <otaylor@redhat.com>
+- Remove fixed-ltmain.sh
+- Version 1.0.3
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 6月 04 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 二 6月 04 2002 Havoc Pennington <hp@redhat.com>
+- 1.0.2
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 4月 24 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 三 4月 03 2002 Alex Larsson <alexl@redhat.com>
+- Update to version 1.0.1
+
+* 五 3月 08 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.0.0
+
+* 一 2月 25 2002 Alex Larsson <alexl@redhat.com>
+- Update to 0.13
+
+* 四 2月 21 2002 Alex Larsson <alexl@redhat.com>
+- Bump for rebuild
+
+* 一 2月 18 2002 Havoc Pennington <hp@redhat.com>
+- rebuild for glib 1.3.14
+
+* 五 2月 15 2002 Havoc Pennington <hp@redhat.com>
+- add horrible buildrequires hack
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- 0.12.90 cvs snap
+
+* 二 1月 29 2002 Owen Taylor <otaylor@redhat.com>
+- Version 0.10
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- new snap 0.8.90
+
+* 日 11月 25 2001 Havoc Pennington <hp@redhat.com>
+- rebuild with glib hacked to work on 64-bit
+
+* 日 11月 25 2001 Havoc Pennington <hp@redhat.com>
+- Version 0.7
+- add explicit check for required glib2 version before we do the build,
+  so we don't end up with bad RPMs on --nodeps builds
+
+* 五 10月 26 2001 Havoc Pennington <hp@redhat.com>
+- rebuild due to hosage on ia64 build system causing link to old glib
+
+* 四 10月 25 2001 Owen Taylor <otaylor@redhat.com>
+- Version 0.6
+
+* 四 9月 27 2001 Havoc Pennington <hp@redhat.com>
+- 0.5
+- sync with Owen's version
+
+* 三 9月 19 2001 Havoc Pennington <hp@redhat.com>
+- 0.4
+- fix requires
+- --enable-static
+- put static libs back in file list
+
+* 一 9月 10 2001 Havoc Pennington <hp@redhat.com>
+- update to CVS snapshot
+
+* 三 9月 05 2001 Havoc Pennington <hp@redhat.com>
+- require specific pango version
+- fix ltmain.sh to destroy all relinking BS
+
+* 二 9月 04 2001 root <root@dhcpd37.meridian.redhat.com>
+- Version 0.2
+
+* 六 7月 21 2001 Owen Taylor <otaylor@redhat.com>
+- Configure with --disable-gtk-doc
+
+* 二 7月 10 2001 Trond Eivind Glomsrod <teg@redhat.com>
+- Add post- and postun-sections running ldconfig
+
+* 三 6月 13 2001 Havoc Pennington <hp@redhat.com>
+- 0.2
+
+* 五 5月 04 2001 Owen Taylor <otaylor@redhat.com>
+- Initial version
+

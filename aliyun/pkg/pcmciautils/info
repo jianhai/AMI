@@ -1,0 +1,13 @@
+Name        : pcmciautils                  Relocations: (not relocatable)
+Version     : 015                               Vendor: Alibaba
+Release     : 4.2.4.alios6                  Build Date: 2014年07月27日 星期日 16时40分44秒
+Install Date: 2015年03月25日 星期三 11时01分52秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Base       Source RPM: pcmciautils-015-4.2.4.alios6.src.rpm
+Size        : 105789                           License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 17时52分52秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.kernel.org/pub/linux/utils/kernel/pcmcia/pcmcia.html
+Summary     : PCMCIA utilities and initialization programs
+Description :
+The pcmciautils package contains utilities for initializing and
+debugging PCMCIA and Cardbus sockets.

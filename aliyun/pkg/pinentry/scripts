@@ -1,0 +1,12 @@
+preinstall scriptlet (using /bin/sh):
+/usr/sbin/update-alternatives --remove pinentry /usr/bin/pinentry-curses ||:
+/usr/sbin/update-alternatives --remove pinentry /usr/bin/pinentry-gtk ||:
+/usr/sbin/update-alternatives --remove pinentry /usr/bin/pinentry-qt ||:
+postinstall scriptlet (using /bin/sh):
+if [ -f /usr/share/info/pinentry.info* ]; then
+/sbin/install-info /usr/share/info/pinentry.info /usr/share/info/dir ||:
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 -a -f /usr/share/info/pinentry.info* ] ; then
+  /sbin/install-info --delete /usr/share/info/pinentry.info /usr/share/info/dir ||:
+fi

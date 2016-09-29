@@ -1,0 +1,30 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libICE.so.6()(64bit)  
+libSM.so.6()(64bit)  
+libX11.so.6()(64bit)  
+libXtst.so.6()(64bit)  
+libasyncns.so.0()(64bit)  
+libavahi-client.so.3()(64bit)  
+libavahi-common.so.3()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libdbus-1.so.3()(64bit)  
+libdl.so.2()(64bit)  
+libm.so.6()(64bit)  
+libpthread.so.0()(64bit)  
+libpulse-browse.so.0()(64bit)  
+libpulse-browse.so.0(PULSE_0)(64bit)  
+libpulse.so.0()(64bit)  
+libpulse.so.0(PULSE_0)(64bit)  
+libpulsecommon-0.9.21.so()(64bit)  
+librt.so.1()(64bit)  
+libsndfile.so.1()(64bit)  
+libwrap.so.0()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

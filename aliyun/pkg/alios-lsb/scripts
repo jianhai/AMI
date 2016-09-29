@@ -1,0 +1,7 @@
+preinstall scriptlet (using /bin/sh):
+# remove the extra symlink /bin/mailx -> /bin/mail
+if [ -e /bin/mailx ]; then
+   if [ -L /bin/mailx ]; then
+     rm -f /bin/mailx
+   fi 
+fi

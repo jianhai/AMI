@@ -1,0 +1,15 @@
+/etc/drirc
+/usr/lib64/dri/i915_dri.so
+/usr/lib64/dri/i965_dri.so
+/usr/lib64/dri/r200_dri.so
+/usr/lib64/dri/r300_dri.so
+/usr/lib64/dri/r600_dri.so
+/usr/lib64/dri/radeon_dri.so
+/usr/lib64/dri/radeonsi_dri.so
+/usr/lib64/dri/swrast_dri.so
+/usr/lib64/libdricore9.2.0-devel.so
+/usr/lib64/libdricore9.2.0-devel.so.1
+/usr/lib64/libdricore9.2.0-devel.so.1.0.0
+/usr/lib64/libglapi.so
+/usr/lib64/libglapi.so.0
+/usr/lib64/libglapi.so.0.0.0

@@ -1,0 +1,11 @@
+/etc/profile.d/less.csh
+/etc/profile.d/less.sh
+/usr/bin/less
+/usr/bin/lessecho
+/usr/bin/lesskey
+/usr/bin/lesspipe.sh
+/usr/share/doc/less-436
+/usr/share/doc/less-436/LICENSE
+/usr/share/man/man1/less.1.gz
+/usr/share/man/man1/lessecho.1.gz
+/usr/share/man/man1/lesskey.1.gz

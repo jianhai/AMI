@@ -1,0 +1,808 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.28.1-3.3.5
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.28.1-3.2.5
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.28.1-3.1.5
+- rebuild for alios6
+
+* 一 2月 28 2011 Matthias Clasen <mclasen@redhat.com> - 1.28.1-3.el6_0.5
+- Prevent an integer overflow in hb_buffer_ensure()
+Related: #679693
+
+* 六 2月 26 2011 Tomas Hoger <thoger@redhat.com> - 1.28.1-3.el6_0.4
+- Check for realloc failures in hb_buffer_ensure() (CVE-2011-0064)
+
+* 三 1月 26 2011 Matthias Clasen <mclasen@redhat.com> - 1.28.1-3.el6_0.3
+- Fix a division by zero found in testing
+
+* 一 1月 24 2011 Matthias Clasen <mclasen@redhat.com> - 1.28.1-3.el6_0.2
+- Use -fno-strict-aliasing for C++, too
+- Escape macros in %changelog
+
+* 一 1月 24 2011 Matthias Clasen <mclasen@redhat.com> - 1.28.1-3.el6_0.1
+- Prevent heap corruption with malformed fonts. (CVE-2011-0020)
+- Resolves: #671529
+
+* 五 6月 25 2010 Matthias Clasen <mclasen@redhat.com> - 1.28.1-3
+- Fix up requires
+Resolves: #593073
+
+* 三 6月 23 2010 Matthias Clasen <mclasen@redhat.com> - 1.28.1-2
+- Build with -fno-strict-aliasing
+Resolves: #605097
+
+* 二 6月 15 2010 Behdad Esfahbod <besfahbo@redhat.com> - 1.28.1-1
+- 1.28.1
+- Resolves: #594602
+
+* 二 1月 05 2010 Matthias Clasen <mclasen@redhat.com> - 1.26.2-2
+- Fix host triplet trouble on 390
+
+* 一 1月 04 2010 Matthias Clasen <mclasen@redhat.com> - 1.26.2-1
+- Update to 1.26.2
+
+* 四 12月 03 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.26.1-1
+- 1.26.1
+
+* 一 9月 21 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.26.0-1
+- 1.26.0
+
+* 二 9月 08 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.6-1
+- 1.25.6
+
+* 一 8月 24 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.5-1
+- 1.25.5
+
+* 四 8月 20 2009 Karsten Hopp <karsten@redhat.com> 1.25.4-2
+- fix autoconf host on s390x
+
+* 一 8月 17 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.4-1
+- 1.25.4
+
+* 二 8月 11 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.3-1
+- 1.25.3
+
+* 二 8月 11 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.2-1
+- 1.25.2
+
+* 一 8月 10 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.1-7
+- Yes, I am stupid.
+
+* 一 8月 10 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.1-6
+- One more try
+
+* 一 8月 10 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.1-5
+- Remove -fexceptions from CXXFLAGS actually
+- Hopefully builds this time
+
+* 一 8月 10 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.1-4
+- Remove -fexceptions from RPM_OPT_FLAGS
+- Hopefully builds this time
+
+* 一 8月 10 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.1-3
+- Remove pango-1.25.1-no-hb-main.patch
+- Add pango-1.25.1-cxx.patch
+- Hopefully builds this time
+
+* 一 8月 10 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.1-2
+- Add pango-1.25.1-no-hb-main.patch to fix build on x86-64
+
+* 一 8月 10 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.25.1-1
+- Update to 1.25.1
+
+* 三 7月 22 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.24.5-1
+- Update to 1.24.5
+
+* 二 6月 30 2009 Matthias Clasen <mclasen@redhat.com> - 1.24.4-1
+- Update to 1.24.4
+
+* 三 6月 24 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.24.3-1
+- Update to 1.24.3
+
+* 五 5月 15 2009 Karsten Hopp <karsten@redhat.com> 1.24.2-1
+- Update to 1.24.2
+- See http://download.gnome.org/sources/pango/1.24/pango-1.24.2.news
+
+* 六 4月 18 2009 Karsten Hopp <karsten@redhat.com> 1.24.1-1.1
+- autoconf uses ibm-linux not redhat-linux (s390x)
+
+* 一 4月 13 2009 Matthias Clasen <mclasen@redhat.com> - 1.24.1-1
+- Update to 1.24.1
+- See http://download.gnome.org/sources/pango/1.24/pango-1.24.1.news
+
+* 四 3月 26 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.24.0-2
+- Remove weird Requires(pre).
+- Resolves #486641
+
+* 一 3月 16 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.24.0-1
+- Update to 1.24.0
+- Package pango-view.1.gz
+
+* 三 3月 11 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.23.0-4.g5317893
+- Push changes from git
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.23.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 04 2009 Behdad Esfahbod <besfahbo@redhat.com> - 1.23.0-2
+- Move pango-view from pango-devel to pango
+
+* 二 2月 03 2009 Matthias Clasen <mclasen@redhat.com> - 1.23.0-1
+- Update to 1.23.0
+
+* 二 12月 16 2008 Matthias Clasen <mclasen@redhat.com> - 1.22.4-1
+- Update to 1.22.4
+
+* 日 12月 07 2008 Mamoru Tasaka <mtasaka@ioa.s.u-tokyo.ac.jp> - 1.22.3-2
+- Rebuild for pkgconfig provides
+
+* 一 11月 24 2008 Matthias Clasen <mclasen@redhat.com> - 1.22.3-1
+- Update to 1.22.3
+
+* 三 11月 12 2008 Matthias Clasen <mclasen@redhat.com> - 1.22.2-1
+- Update to 1.22.2
+
+* 一 10月 20 2008 Matthias Clasen <mclasen@redhat.com> - 1.22.1-1
+- Update to 1.22.1
+
+* 一 9月 22 2008 Behdad Esfahbod <besfahbo@redhat.com> - 1.22.0-1.1
+- Rebuild against cairo 1.7.6
+- Update cairo and glib required versions
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 1.22.0-1
+- Update to 1.22.0
+
+* 一 9月 08 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.6-1
+- Update to 1.21.6
+
+* 二 8月 26 2008 Behdad Esfahbod <besfahbo@redhat.com> - 1.21.5-1
+- Update to 1.21.5
+
+* 一 8月 11 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.4-1
+- Update to 1.21.4
+
+* 二 6月 17 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.3-1
+- Update to 1.21.3
+
+* 二 6月 03 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.2-1
+- Update to 1.21.2
+
+* 一 5月 26 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.21.1-2
+- add sparc64 to multilib handling
+
+* 二 5月 13 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.1-1
+- Update to 1.21.1
+
+* 五 4月 25 2008 Matthias Clasen <mclasen@redhat.com> - 1.21.0-1
+- Update to 1.21.0
+
+* 二 4月 08 2008 Matthias Clasen <mclasen@redhat.com> - 1.20.1-1
+- Update to 1.20.1
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 1.20.0-1
+- Update to 1.20.0
+
+* 一 2月 25 2008 Matthias Clasen <mclasen@redhat.com> - 1.19.4-1
+- Update to 1.19.4
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.19.3-3
+- Autorebuild for GCC 4.3
+
+* 二 1月 29 2008 Behdad Esfahbod <besfahbo@redhat.com> - 1.19.3-2
+- Bump libthai requirement.
+
+* 一 1月 21 2008 Behdad Esfahbod <besfahbo@redhat.com> - 1.19.3-1
+- Update to 1.19.3
+
+* 二 12月 18 2007 Matthias Clasen <mclasne@redhat.com> - 1.19.2-1
+- Update to 1.19.2
+
+* 四 12月 06 2007 Matthias Clasen <mclasne@redhat.com> - 1.19.1-1
+- Update to 1.19.1
+
+* 三 10月 31 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.19.0-1
+- Update to 1.19.0
+
+* 一 10月 15 2007 Matthias Clasen <mclasen@redhat.com> - 1.18.3-1
+- Update to 1.18.3 (make Nafees Nastaliq font work)
+
+* 二 9月 18 2007 Matthias Clasen <mclasen@redhat.com> - 1.18.2-1
+- Update to 1.18.2
+
+* 二 9月 04 2007 Matthias Clasen <mclasen@redhat.com> - 1.18.1-1
+- Update to 1.18.1
+
+* 四 8月 23 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.18.0-1
+- Update to 1.18.0
+
+* 三 8月 22 2007 Adam Jackson <ajax@redhat.com> - 1.17.5-3
+- Rebuild for PPC toolchain bug
+
+* 四 8月 02 2007 Matthias Clasen <mclasen@redhat.com> - 1.17.5-2
+- Update license field
+- Don't install ChangeLog
+
+* 一 7月 30 2007 Matthias Clasen <mclasen@redhat.com> - 1.17.5-1
+- Update to 1.17.5
+
+* 二 7月 03 2007 Behdad Esfahbod <besfahbo@redhat.com>
+- Distribute NEWS
+
+* 一 7月 02 2007 Matthias Clasen <mclasen@redhat.com> - 1.17.4-1
+- Update to 1.17.4
+
+* 一 7月 02 2007 Matthias Clasen <mclasen@redhat.com> - 1.17.3-1
+- Update to 1.17.3
+- Drop ancient Obsoletes
+
+* 一 6月 04 2007 Matthias Clasen <mclasen@redhat.com> - 1.17.2-1
+- Update to 1.17.2
+
+* 一 5月 28 2007 Matthias Clasen <mclasen@redhat.com> - 1.17.1-1
+- Update to 1.17.1
+
+* 六 5月 19 2007 Matthias Clasen <mclasen@redhat.com> - 1.17.0-1
+- Update to 1.17.0
+
+* 二 4月 10 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.16.4-1
+- Update to 1.16.4.
+- Enable doc rebuilding to get cross-references right.
+
+* 二 4月 10 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.16.2-1
+- Update to 1.16.2.
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 1.16.1-1
+- Update to 1.16.1
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 1.16.0-1
+- Update to 1.16.0
+
+* 二 2月 13 2007 Matthias Clasen <mclasen@redhat.com> - 1.15.6-1
+- Update to 1.15.6
+
+* 一 1月 22 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.5-1
+- Update to 1.15.5.
+- Drop upstreamed pango-1.15.4-slighthint.patch
+
+* 四 1月 18 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.4-5
+- Again... HELLO.txt is moved.
+
+* 四 1月 18 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.4-4
+- Bump again.  I accidentally tagged 1.15.3-4 as 1.15.4-3 previously :(.
+
+* 四 1月 18 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.4-3
+- s/HELLO.utf8/HELLO.txt/ to match upstream.
+
+* 三 1月 17 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.4-2
+- Update slighthint patch to apply.
+
+* 三 1月 17 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.4-1
+- Update to 1.15.4
+- [Build]Require libthai[-devel]
+- Require pkgconfig in -devel
+- Remove "static libs" from -devel description, since we don't ship them.
+
+* 五 1月 12 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.3-5
+- Require pango = %{version}-%{release} in devel (previously didn't have
+  releaes).
+
+* 四 1月 11 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.3-4
+- Undo the posttrans change.  That's a no no.  We now regenerate the module
+  file in postun if there are any other pango versions left.  This should
+  take care of the problem in the future.
+
+* 四 1月 11 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.3-3
+- Move pango.modules generation to posttrans, to make sure modules available
+  in an older version but not this one are removed.
+- Resolves #222217
+
+* 二 1月 09 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.3-2
+- Update sources
+
+* 二 1月 09 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1.15.3-1
+- Update to 1.15.3
+- Pass --with-included-modules=basic-fc.  Saves one page of memory per process.
+
+* 四 12月 21 2006 Matthias Clasen <mclasen@redhat.com> - 1.15.2-1
+- Update to 1.15.2
+
+* 二 12月 05 2006 Matthias Clasen <mclasen@redhat.com> - 1.15.1-1
+- Update to 1.15.1
+
+* 五 10月 20 2006 Matthias Clasen <mclasen@redhat.com> - 1.15.0-1
+- Update to 1.15.0
+
+* 四 10月 12 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.14.6-1
+- Update to 1.14.6
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 1.14.4-3
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 一 9月 25 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.14.4-2
+- Remove illegal g_object_unref().
+
+* 五 9月 15 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.14.4-1
+- Update to 1.14.4
+- Fixes bugs 198136, 306388, 206390
+- Remove upstreamed patch
+
+* 二 9月 12 2006 Matthias Clasen <mclasen@redhat.com> - 1.14.3-2
+- Fix Hangul decomposition issues (#206044)
+
+* 一 9月 04 2006 Matthias Clasen <mclasen@redhat.com> - 1.14.3-1
+- Update to 1.14.3
+
+* 二 8月 22 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.14.2-1
+- Update to 1.14.2
+
+* 一 8月 21 2006 Matthias Clasen <mclasen@redhat.com> - 1.14.1-1.fc6
+- Update to 1.14.1
+
+* 四 8月 17 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.14.0-3
+- Bump glib requirement to 2.12.0. (bug #201586)
+
+* 一 8月 07 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.14.0-2
+- Incorrect sources in last update.  Fix.
+
+* 一 8月 07 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.14.0-1
+- Update to 1.14.0
+
+* 三 8月 02 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.13.5-1
+- Update to 1.13.5
+
+* 四 7月 27 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.13.4-2
+- Add umask 022 to post (#185419)
+
+* 二 7月 25 2006 Matthias Clasen <mclasen@redhat.com> - 1.13.4-1
+- Update to 1.13.4
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.13.3-1.1
+- rebuild
+
+* 一 7月 10 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.13.3-1
+- Update to 1.13.3
+
+* 四 6月 15 2006 Behdad Esfahbod <besfahbo@redhat.com> - 1.13.2-1
+- Update to 1.13.2
+
+* 日 5月 21 2006 Matthias Clasen <mclasen@redhat.com> - 1.13.1-3
+- Add missing BuildRequires (#191958)
+
+* 二 5月 16 2006 Matthias Clasen <mclasen@redhat.com> - 1.13.1-2
+- Update to 1.13.1
+
+* 一 5月 08 2006 Matthias Clasen <mclasen@redhat.com> - 1.13.0-1
+- Update to 1.13.0
+
+* 五 4月 07 2006 Matthias Clasen <mclasen@redhat.com> - 1.12.1-2
+- Update to 1.12.1
+
+* 一 3月 13 2006 Matthias Clasen <mclasen@redhat.com> - 1.12.0-1
+- Update to 1.12.0
+
+* 日 2月 26 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.99-1
+- Update to 1.11.99
+
+* 二 2月 21 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.6-1
+- Upate to 1.11.6
+- Drop upstreamed patches
+
+* 五 2月 17 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.5-2
+- Fix a crash in pango_split
+- Hide some private API
+
+* 六 2月 11 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.5-1
+- Update to 1.11.5
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.11.4-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.11.4-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 2月 06 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.4-1
+- Update to 1.11.4
+
+* 一 1月 30 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.3-1
+- Update to 1.11.3
+
+* 一 1月 16 2006 Matthias Clasen <mclasen@redhat.com> - 1.11.2-1
+- Update to 1.11.2
+
+* 一 12月 19 2005 Matthias Clasen <mclasen@redhat.com> - 1.11.1-2
+- BuildRequire cairo-devel
+
+* 三 12月 14 2005 Matthias Clasen <mclasen@redhat.com> - 1.11.1-1
+- Update to 1.11.1
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 30 2005 Matthias Clasen <mclasen@redhat.com> - 1.11.0-1
+- Update to 1.11.0
+
+* 二 11月 29 2005 Matthias Clasen <mclasen@redhat.com> - 1.10.2-1
+- Update to 1.10.2
+
+* 日 11月 13 2005 Jeremy Katz <katzj@redhat.com> - 1.10.1-6
+- switch prereqs to modular X
+
+* 五 11月 04 2005 Matthias Clasen <mclasen@redhat.com> - 1.10.1-5
+- Switch buildrequires to modular X.
+- Don't install .la files for modules.
+
+* 四 10月 27 2005 Matthias Clasen <mclasen@redhat.com> - 1.10.1-2
+- Bump the requirement for glib (#165928)
+
+* 一 10月 03 2005 Matthias Clasen <mclasen@redhat.com> - 1.10.1-1
+- Newer upstream version
+- Use the docs which are included in the tarball
+
+* 三 8月 17 2005 Owen Taylor <otaylor@redhat.com> - 1.10.0-1
+- Upgrade to 1.10.0
+
+* 一 8月 15 2005 Kristian Høgsberg <krh@redhat.com> 1.9.1-2
+- Patch out libpixman dependency.
+
+* 四 7月 28 2005 Owen Taylor <otaylor@redhat.com> 1.9.1-1
+- Update to 1.9.1
+
+* 二 6月 21 2005 Matthias Clasen <mclasen@redhat.com> 
+- Add a missing requires
+
+* 二 6月 21 2005 Matthias Clasen <mclasen@redhat.com> 1.9.0-1
+- Update to 1.9.0
+- Require cairo
+
+* 五 3月 04 2005 Owen Taylor <otaylor@redhat.com> - 1.8.1-1
+- Update to 1.8.1
+
+* 二 12月 21 2004 Matthias Clasen <mclasen@redhat.com> - 1.8.0-1
+- Version 1.8.0
+- Drop unneeded patches and hacks
+
+* 三 10月 20 2004 Owen Taylor <otaylor@redhat.com> - 1.6.0-7
+- Fix problem with pango_layout_get_attributes returning one too few items
+  (Needed to fix problems mentioned in #135656, 
+  http://bugzilla.gnome.org/show_bug.cgi?id=155912)
+
+* 二 10月 19 2004 Owen Taylor <otaylor@redhat.com> - 1.6.0-6
+- Make Hangul and Kana not backspace-deletes-char (#135356)
+
+* 二 10月 19 2004 Owen Taylor <otaylor@redhat.com> - 1.6.0-5
+- Fix problem in the last patch where we weren't getting the metrics from the 
+  right font description (#136428, Steven Lawrance)
+
+* 一 10月 18 2004 Owen Taylor <otaylor@redhat.com> - 1.6.0-4
+- Move place where we compute fontset metrics to fix problems with line 
+  height in CJK locales (#131218)
+
+* 一 10月 11 2004 Colin Walters <walters@redhat.com> - 1.6.0-3
+- BR xorg-x11-devel instead of XFree86-devel
+
+* 一 9月 20 2004 Owen Taylor <otaylor@redhat.com> - 1.6.0-2
+- Add patch from CVS to fix display of U+3000 (#132203,  
+  reported upstream by Suresh Chandrasekharan, Federic Zhang)
+
+* 一 9月 20 2004 Owen Taylor <otaylor@redhat.com> - 1.6.0-1
+- Version 1.6.0
+- Add patch from CVS to fix bitmap-fonts/no-hint problem (#129246)
+
+* 三 9月 08 2004 Jeremy Katz <katzj@redhat.com> - 1.5.2-3
+- fix running of pango-query-modules to have necessary libraries available
+  (#132052)
+
+* 一 8月 16 2004 Owen Taylor <otaylor@redhat.com> - 1.5.2-2
+- Fix crashes with left-matra fixups (#129982, Jatin Nansi)
+
+* 一 8月 02 2004 Owen Taylor <otaylor@redhat.com> - 1.5.2-1
+- Update to 1.5.2
+- Fix ppc/powerpc confusion when creating query-modules binary (#128645)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 3月 17 2004 Owen Taylor <otaylor@redhat.com> 1.4.0-2
+- Fix location for modules file on ppc/ppc64 (#114399)
+- Make the spec file check to avoid further mismatches
+
+* 三 3月 17 2004 Alex Larsson <alexl@redhat.com> 1.4.0-1
+- update to 1.4.0
+
+* 三 3月 10 2004 Mark McLoughlin <markmc@redhat.com> 1.3.6-1
+- Update to 1.3.6
+- Bump required glib2 to 2.3.1
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Mark McLoughlin <markmc@redhat.com> 1.3.5-1
+- Update to 1.3.5
+
+* 三 2月 25 2004 Mark McLoughlin <markmc@redhat.com> 1.3.3-1
+- Update to 1.3.3
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 23 2004 Jonathan Blandford <jrb@redhat.com> 1.3.2-1
+- new version
+- add man page
+
+* 四 12月 18 2003 Owen Taylor <otaylor@redhat.com> 1.2.5-4
+- Deal with autoconf changing -linux to -linux-gnu (#112387)
+
+* 一 12月 08 2003 Owen Taylor <otaylor@redhat.com> 1.2.5-3.0
+- Package pango-querymodules as pango-querymodules-{32,64}; look for 
+  pango.modules in an architecture-specific directory.
+  (Fixes #111511, Justin M. Forbes)
+
+* 一 9月 08 2003 Owen Taylor <otaylor@redhat.com> 1.2.5-2.0
+- Fix problem with corrupt Thai shaper
+
+* 三 8月 27 2003 Owen Taylor <otaylor@redhat.com> 1.2.5-1.1
+- Version 1.2.5
+
+* 二 8月 26 2003 Owen Taylor <otaylor@redhat.com> 1.2.4-1.1
+- Version 1.2.4
+
+* 二 7月 08 2003 Owen Taylor <otaylor@redhat.com> 1.2.3-2.0
+- Bump for rebuild
+
+* 一 6月 09 2003 Owen Taylor <otaylor@redhat.com>
+- Version 1.2.3
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 6月 02 2003 Owen Taylor <otaylor@redhat.com>
+- Use the right version-1.2.2 tarball
+
+* 四 5月 29 2003 Owen Taylor <otaylor@redhat.com>
+- Version 1.2.2
+
+* 四 2月 13 2003 Tim Powers <timp@redhat.com> 1.2.1-3
+- remove deps on Xft and Xft-devel since XFree86 no longer has the
+  virtual prvodes. Instead, require XFree86-devel > 4.2.99
+
+* 二 2月 11 2003 Owen Taylor <otaylor@redhat.com>
+- Fix problem where language tag wasn't causing relookup of font (#84034)
+
+* 日 2月 02 2003 Owen Taylor <otaylor@redhat.com>
+- Version 1.2.1
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 1月 14 2003 Owen Taylor <otaylor@redhat.com>
+- Patch from CVS to synthesize GDEF tables for fonts
+  without them, like the Kacst fonts in fonts-arabic
+
+* 四 1月 09 2003 Owen Taylor <otaylor@redhat.com>
+- Make requires freetype, not freetype-devel (#81423)
+
+* 二 1月 07 2003 Owen Taylor <otaylor@redhat.com>
+- Update slighthint patch for freetype-2.1.3 (#81125)
+
+* 五 12月 20 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.2.0
+
+* 一 12月 16 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.1.6
+
+* 三 12月 11 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.1.5
+
+* 二 12月 03 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.1.4
+
+* 四 11月 21 2002 Havoc Pennington <hp@redhat.com>
+- change PKG_CONFIG_PATH hack to also search /usr/X11R6/lib64/pkgconfig
+
+* 三 11月 20 2002 Havoc Pennington <hp@redhat.com>
+- explicitly require pangoxft to be built, so we catch situations such
+  as xft.pc moving to /usr/X11R6
+- also add /usr/X11R6/lib/pkgconfig to PKG_CONFIG_PATH as a temporary 
+  hack
+
+* 四 11月 07 2002 Havoc Pennington <hp@redhat.com>
+- 1.1.3
+
+* 四 10月 31 2002 Owen Taylor <otaylor@redhat.com> 1.1.1-5
+- Require the necessary freetype version, don't just
+  BuildRequires it (#74744)
+
+* 四 10月 31 2002 Owen Taylor <otaylor@redhat.com> 1.1.1-4
+- Own /etc/pango (#73962, Enrico Scholz)
+- Remove .la files from the build root
+
+* 一 10月 07 2002 Havoc Pennington <hp@redhat.com>
+- require glib 2.0.6-3, try rebuild on more arches
+
+* 三 8月 21 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.1.1 (main change, fixes font selection for FT2 backend, 
+  as in gdmgreeter)
+
+* 四 8月 15 2002 Owen Taylor <otaylor@redhat.com>
+- Fix linked list manipulation problem that was causing hang for anaconda
+- Fix warning from loading mini-fonts with context == NULL
+
+* 三 8月 14 2002 Owen Taylor <otaylor@redhat.com>
+- Fix major memory leak in the last patch
+
+* 二 8月 13 2002 Owen Taylor <otaylor@redhat.com>
+- Actually use language tags at the rendering layer (should fix #68211)
+
+* 一 7月 15 2002 Owen Taylor <otaylor@redhat.com>
+- Remove fixed-ltmain.sh, relibtoolize; to fix relink problems without 
+- Fix bug causing hex boxes to be misrendered
+  leaving RPATH (#66005)
+- For FT2 backend, supply FT_LOAD_NO_BITMAP to avoid problems with 
+  fonts with embedded bitmaps (#67851)
+
+* 一 7月 08 2002 Owen Taylor <otaylor@redhat.com>
+- Make basic-x shaper work with our big-5 fonts
+
+* 三 7月 03 2002 Owen Taylor <otaylor@redhat.com>
+- New upstream tarball with hooks for change-on-the fly font rendering
+
+* 二 6月 25 2002 Owen Taylor <otaylor@redhat.com>
+- Up FreeType version to deal with FreeType-2.0.x / 2.1.x \
+  ABI changes for pango's OpenType code.
+
+* 一 6月 24 2002 Owen Taylor <otaylor@redhat.com>
+- Add some Korean aliases that the installer wants
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 六 6月 08 2002 Havoc Pennington <hp@redhat.com>
+- devel package requires fontconfig/Xft devel packages
+
+* 五 6月 07 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 四 6月 06 2002 Owen Taylor <otaylor@redhat.com>
+- Snapshot with Xft2/fontconfig support
+
+* 三 5月 29 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.0.2
+- Patch for charmaps problem
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 5月 22 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 三 5月 22 2002 Havoc Pennington <hp@redhat.com>
+- add patch to adjust to newer version of freetype
+
+* 三 4月 03 2002 Alex Larsson <alexl@redhat.com>
+- Update to version 1.0.1, remove patch
+
+* 二 3月 19 2002 Owen Taylor <otaylor@redhat.com>
+- Patch from CVS for big speedup with FreeType-2.0.9
+
+* 一 3月 11 2002 Owen Taylor <otaylor@redhat.com>
+- Rebuild
+
+* 五 3月 08 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.0.0
+
+* 一 2月 25 2002 Alex Larsson <alexl@redhat.com>
+- Update to 0.26
+
+* 四 2月 21 2002 Alex Larsson <alexl@redhat.com>
+- Bump for rebuild
+
+* 一 2月 18 2002 Alex Larsson <alexl@redhat.com>
+- Update to 0.25
+
+* 五 2月 15 2002 Havoc Pennington <hp@redhat.com>
+- add horrible buildrequires hack
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- 0.24.90 cvs snap
+
+* 二 1月 29 2002 Owen Taylor <otaylor@redhat.com>
+- Version 0.24
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- new snap 0.23.90
+
+* 日 11月 25 2001 Havoc Pennington <hp@redhat.com>
+- rebuild with 64-bit-fixed glib
+
+* 日 11月 25 2001 Havoc Pennington <hp@redhat.com>
+- Version 0.22
+- add explicit check for required glib2 version before we do the build,
+  so we don't end up with bad RPMs on --nodeps builds
+- PreReq the glib2_version version, instead of 1.3.8 hardcoded that 
+  no one had updated recently
+
+* 四 10月 25 2001 Owen Taylor <otaylor@redhat.com>
+- Version 0.21
+
+* 四 10月 04 2001 Havoc Pennington <hp@redhat.com>
+- cvs snap
+- new cvs snap with a bugfix
+
+* 四 9月 27 2001 Havoc Pennington <hp@redhat.com>
+- sync with Owen's changes, fix up dependency versions
+
+* 三 9月 19 2001 Havoc Pennington <hp@redhat.com>
+- 0.19
+
+* 一 9月 10 2001 Havoc Pennington <hp@redhat.com>
+- build CVS snap
+
+* 三 9月 05 2001 Havoc Pennington <hp@redhat.com>
+- no relinking junk
+
+* 二 9月 04 2001 root <root@dhcpd37.meridian.redhat.com>
+- Version 0.18
+
+* 五 7月 20 2001 Owen Taylor <otaylor@redhat.com>
+- Configure --disable-gtk-doc
+- BuildRequires freetype-devel, XFree86-devel
+
+* 二 6月 12 2001 Havoc Pennington <hp@redhat.com>
+- 0.17
+- libtool hackarounds
+
+* 五 5月 04 2001 Owen Taylor <otaylor@redhat.com>
+- 0.16, rename back to pango from pango-gtkbeta
+
+* 五 2月 16 2001 Owen Taylor <otaylor@redhat.com>
+- Obsolete fribidi-gtkbeta
+
+* 一 12月 11 2000 Havoc Pennington <hp@redhat.com>
+- Remove that patch I just put in
+
+* 一 12月 11 2000 Havoc Pennington <hp@redhat.com>
+- Patch pangox.pc.in to include -Iincludedir
+
+* 五 11月 17 2000 Owen Taylor <otaylor@redhat.com>
+- final 0.13
+
+* 二 11月 14 2000 Owen Taylor <otaylor@redhat.com>
+- New 0.13 tarball
+
+* 一 11月 13 2000 Owen Taylor <otaylor@redhat.com>
+- 0.13pre1
+
+* 日 8月 13 2000 Owen Taylor <otaylor@redhat.com>
+- Rename to 0.12b to avoid versioning problems
+
+* 四 8月 10 2000 Havoc Pennington <hp@redhat.com>
+- Move to a CVS snapshot
+
+* 五 7月 07 2000 Owen Taylor <otaylor@redhat.com>
+- Move back to /usr
+- Version 0.12
+
+* 一 6月 19 2000 Owen Taylor <otaylor@redhat.com>
+- Add missing %defattr
+
+* 四 6月 08 2000 Owen Taylor <otaylor@redhat.com>
+- Rebuild with a prefix of /opt/gtk-beta
+
+* 三 5月 31 2000 Owen Taylor <otaylor@redhat.com>
+- version 0.11
+- add --without-qt
+
+* 三 4月 26 2000 Owen Taylor <otaylor@redhat.com>
+- Make the devel package require *-gtkbeta-* not the normal packages.
+
+* 二 4月 25 2000 Owen Taylor <otaylor@redhat.com>
+- GTK+ snapshot version installing in /opt/gtk-beta
+
+* 五 2月 11 2000 Owen Taylor <otaylor@redhat.com>
+- Created spec file
+

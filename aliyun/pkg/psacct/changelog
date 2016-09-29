@@ -1,0 +1,269 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.3.2-63.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.3.2-63.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.3.2-63.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 6.3.2-63.1
+- rebuild for alios6
+
+* 一 4月 19 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 6.2.3-63
+- Related: # 575762
+  fix the initscript output
+
+* 一 4月 19 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 6.2.3-62
+- Resolves: # 575762
+  fix initscript
+
+* 一 2月 22 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 6.3.2-61
+- Resolves: #543948
+  minor spec file changes
+
+* 一 12月 21 2009 Ivana Hutarova Varekova <varekova@redhat.com> - 6.3.2-60
+- Resolves: #548731
+  fix license and source tag
+
+* 二 12月 08 2009 Ivana Hutarova Varekova <varekova@redhat.com> - 6.3.2-59
+- fix the initscript (service restart does not work)
+
+* 三 12月 02 2009 Ivana Hutarova Varekova <varekova@redhat.com> - 6.3.2-58
+- add dump-utmp.8 and dump-acct.8 man-pages
+
+* 四 11月 26 2009 Ivana Varekova <varekova@redhat.com> - 6.3.2-57
+- fix the ac_version variable handle on ppc64 (BIG_ENDIAN machine)
+
+* 五 11月 13 2009 Ivana Varekova <varekova@redhat.com> - 6.3.2-56
+- fix the psacct to deal with all acct types and
+  if it is possible and wanted then add the possibility
+  to display the pid and ppid number
+
+* 三 9月 16 2009 Ivana Varekova <varekova@redhat.com> - 6.3.2-55
+- fix init script (#521195)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 6.3.2-54
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 6.3.2-53
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 11月 13 2008 Ivana Varekova <varekova@redhat.com> - 6.3.2-52
+- remove link to nonexisting page from sa man-page
+
+* 二 6月 03 2008 Ivana Varekova <varekova@redhat.com> - 6.3.2-51
+- remove unwanted file
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 6.3.2-50
+- Autorebuild for GCC 4.3
+
+* 五 1月 18 2008 Ivana Varekova <varekova@redhat.com> - 6.3.2-49
+- rebuilt
+
+* 二 8月 28 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 6.3.2-48
+- Rebuild for selinux ppc32 issue.
+
+* 三 7月 25 2007 Ivana Varekova <varekova@redhat.com> - 6.3.2-47
+- fix status service
+
+* 三 7月 25 2007 Ivana Varekova <varekova@redhat.com> - 6.3.2-46
+- Resolves: #247034
+  fix init script
+
+* 一 5月 28 2007 Ivana Varekova <varekova@redhat.com> - 6.3.2-45
+- fix the return value of "service psacct status" command
+
+* 四 4月 05 2007 Ivana Varekova <varekova@redhat.com> - 6.3.2-44
+- small spec changes
+- change buildroot
+- remove makeinstall macro
+
+* 二 1月 23 2007 Ivana Varekova <varekova@redhat.com> - 6.3.2-43
+- Resolves: 223728
+  psacct logrotate file looks for non existant directory
+
+* 二 1月 02 2007 Ivana Varekova <varekova@redhat.com> - 6.3.2-42
+- Resolves: 221069
+  (fix lastcomm man page)
+- spec file cleanup
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 6.3.2-41.1
+- rebuild
+
+* 一 2月 27 2006 Peter Jones <pjones@redhat.com> - 6.3.2-41
+- add touch to prereq
+
+* 一 2月 27 2006 Ivana Varekova <varekova@redhat.com> - 6.3.2-40
+- add chkconfig to prereq - bug 182848
+
+* 一 2月 20 2006 Ivana Varekova <varekova@redhat.com> - 6.3.2-39
+- add Large File Support
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 6.3.2-38.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 6.3.2-38.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 03 2006 Ivana Varekova <varekova@redhat.com> 6.3.2-38
+- fix typo bug 176811
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 3月 04 2005 Ivana Varekova <varekova@redhat.com> 6.3.2-37
+- rebuilt
+
+* 二 2月 15 2005 Ivana Varekova <varekova@redhat.com> 6.3.2-36
+- fix sa manpage - necessary becouse of bug #43294 and previous patch
+
+* 二 2月 15 2005 Ivana Varekova <varekova@redhat.com> 6.3.2-35
+- fix #147782 logrotate script error
+
+* 四 2月 03 2005 Charles Bennett <ccb@redhat.com> 6.3.2-33.fc4
+- rhbz 133077: logrotate fixed to continue accounting during rotate
+- rhbz 141802: lastcomm was not handling all forms of --strict-match
+- rhbz 141971: rpm -e no longer leaves /var/lock/subsys/psacct
+- rhbz 43294: sa will never report any io because the kernel doesn't
+   provide it.  Tweaked to ignore ac_io in acct.h
+- integrate lastcomm hz patch from RH support
+
+* 三 9月 01 2004 root <ccb@redhat.com> - 6.3.2-31
+- integrate JFenlason's hz patch, improve pts device reporting
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 26 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- make /etc/info-dir an optional file
+
+* 三 11月 13 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-25
+- Added with_last conditional to disable /usr/bin/last because ours is in
+  the SysVInit package.  This fixes unpackaged files terminate build prob.
+
+* 四 8月 22 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-24
+- Fixed initscript reload/restart by creating start/stop functions and
+  making everything use them (#72261)
+
+* 二 8月 06 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-23
+- Fixed chkconfig issue in rpm scripts (#61191)
+- Excludearch ia64, not taking the time to debug/troubleshoot random
+  buildsystem failure due to higher priorities.
+
+* 一 7月 08 2002 Elliot Lee <sopwith@redhat.com>
+- Take the time to make sure things get through on all archs, by simply
+  running it through the build system.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 3月 27 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-19
+- Made initscript touch/chmod accounting file if it is not present during
+  startup, to ensure accounting works properly when enabled.
+
+* 二 3月 26 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-18
+- Fixed duh in initscript pointing to wrong accounting file (#61939)
+
+* 日 3月 17 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-17
+- Removed the files usracct and savacct, which are not used by psacct
+  utilities at all, but by the sa program.  Our sa uses files in a different
+  location, and so these files are unused and unnecessary.
+
+* 六 3月 16 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-16
+- Added chkconfig to post and preun scripts for bug (#61191)
+
+* 二 3月 12 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-15
+- Added new feature - psacct initscript now controls process accounting so
+  that it is not just forced on if installed as was the previous behaviour
+- Modified the initscripts package to not force psacct on anymore and made
+  the new psacct-6.3.2-15 conflict with previous initscripts packages.
+- Fixed logrotate config to set perms/owner of new log files, and closed
+  bug (#54165)
+
+* 四 3月 07 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-14
+- Fixed 64bit bug in calls to ctime() in lastcomm and dump-utmp (#60712)
+
+* 三 3月 06 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-13
+- Removed Build_7x flag, added FHS_compliant flag, reworked specfile to use new
+  flag, and fixed bug (#60716)
+
+* 四 2月 28 2002 Bill Nottingham <notting@redhat.com> 6.3.2-12
+- rebuild in new environment for FHS correctness
+
+* 四 1月 31 2002 Mike A. Harris <mharris@redhat.com> 6.3.2-11
+- Conditionalized acct-6.3.2-config.patch to only be applied for RHL 7.x
+  builds, as it breaks FHS compliance by putting files in nonstandard
+  locations.  Also fixed up other places in specfile for FHS 2.2.
+- Added acct-6.3.2-I-HATE-GNU-AUTOCONK.patch because I hate GNU autoconk
+  really really badly.
+  
+- Bumped to -11 to avoid buildsystem stupidness
+
+* 四 9月 06 2001 Mike A. Harris <mharris@redhat.com> 6.3.2-9
+- Fixed bug (#53307) psacct is enabled by default, and the log files
+  are huge, and will fill the disk up very quickly.  logrotate will
+  now compress them daily.
+
+* 六 9月 01 2001 Florian La Roche <Florian.LaRoche@redhat.de> 6.3.2-8
+- do not fail for ENOSYS to silently support kernels without
+  process accounting
+
+* 日 8月 26 2001 Mike A. Harris <mharris@redhat.com> 6.3.2-7
+- Change spec tag Copyright -> License
+- change logrotate to rotate daily, and keep 1 month (31 days) of data
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 五 2月 02 2001 Helge Deller <hdeller@redhat.de>
+- added logrotate file for /var/log/pacct (#24900)
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 05 2000 Nalin Dahyabhai <nalin@redhat.com>
+- FHS fixes
+
+* 六 5月 06 2000 Bill Nottingham <notting@redhat.com>
+- fix for new patch
+
+* 四 2月 03 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 6.3.2
+
+* 一 4月 05 1999 Preston Brown <pbrown@redhat.com>
+- wrap post script with reference count.
+
+* 二 3月 23 1999 Preston Brown <pbrown@redhat.com>
+- install-info sucks.  Still.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 8)
+
+* 四 3月 18 1999 Bill Nottingham <notting@redhat.com>
+- #define HAVE_LINUX_ACCT_H too, so it works. :)
+
+* 日 8月 16 1998 Jeff Johnson <jbj@redhat.com>
+- accton needs to be accessible to /etc/rc.d/init.d/halt
+
+* 五 5月 08 1998 Erik Troan <ewt@redhat.com>
+- install-info sucks
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 10月 23 1997 Donnie Barnes <djb@redhat.com>
+- updated from 6.2 to 6.3
+
+* 一 7月 21 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

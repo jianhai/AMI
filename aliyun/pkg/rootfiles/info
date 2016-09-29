@@ -1,0 +1,14 @@
+Name        : rootfiles                    Relocations: (not relocatable)
+Version     : 8.1                               Vendor: Alibaba
+Release     : 6.1.4.alios6                  Build Date: 2014年07月28日 星期一 03时36分11秒
+Install Date: 2015年03月25日 星期三 11时02分53秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: rootfiles-8.1-6.1.4.alios6.src.rpm
+Size        : 599                              License: Public Domain
+Signature   : RSA/8, 2014年07月31日 星期四 18时40分54秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+Summary     : The basic required files for the root user's directory
+Description :
+The rootfiles package contains basic required files that are placed
+in the root user's account.  These files are basically the same
+as those in /etc/skel, which are placed in regular
+users' home directories.

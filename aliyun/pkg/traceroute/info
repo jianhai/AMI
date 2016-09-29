@@ -1,0 +1,20 @@
+Name        : traceroute                   Relocations: (not relocatable)
+Version     : 2.0.14                            Vendor: Alibaba
+Release     : 2.4.alios6                    Build Date: 2014年07月28日 星期一 05时49分26秒
+Install Date: 2015年03月25日 星期三 11时02分48秒      Build Host: x86-003.build.alibaba
+Group       : Applications/Internet         Source RPM: traceroute-2.0.14-2.4.alios6.src.rpm
+Size        : 81398                            License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 18时56分58秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://traceroute.sourceforge.net
+Summary     : Traces the route taken by packets over an IPv4/IPv6 network
+Description :
+The traceroute utility displays the route used by IP packets on their
+way to a specified network (or Internet) host.  Traceroute displays
+the IP number and host name (if possible) of the machines along the
+route taken by the packets.  Traceroute is used as a network debugging
+tool.  If you're having network connectivity problems, traceroute will
+show you where the trouble is coming from along the route.
+
+Install traceroute if you need a tool for diagnosing network connectivity
+problems.

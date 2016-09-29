@@ -1,0 +1,2564 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.10.2-29.2.9
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.10.2-29.1.9
+- rebuild for alios6-update
+
+* 四 5月 29 2014 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.9
+- qemuDomainObjBeginJobInternal: Return -2 for temporary failures (rhbz#1100671)
+- qemu: Make qemuProcess{Start, Stop}CPUs easier to follow (rhbz#1100671)
+- qemu: Ignore temporary job errors when checking migration status (rhbz#1100671)
+- qemu: Send migrate_cancel when aborting migration (rhbz#1100642)
+- qemu: add host-pci-multidomain capability (rhbz#1100737)
+- qemu: specify domain in host-side PCI addresses when needed/supported (rhbz#1100737)
+- spec: Switch to "git am" for applying patches
+
+* 三 5月 14 2014 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.8
+- LSN-2014-0003: Don't expand entities when parsing XML (CVE-2014-0179)
+- QoS: make tc filters match all traffic (rhbz#1096806)
+- use virBitmapFree instead of VIR_FREE for cpumask (rhbz#1091206)
+- Properly free vcpupin info for unplugged CPUs (rhbz#1091206)
+- sanlock: code movement in virLockManagerSanlockAcquire (rhbz#1097227)
+- sanlock: don't fail with unregistered domains (rhbz#1097227)
+- sanlock: avoid leak in acquire() (rhbz#1097227)
+
+* 三 3月 26 2014 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.7
+- Avoid applying reproducer from libvirt-qemu-monitor-Fix-invalid-parentheses.patch (rhbz#1080471)
+
+* 二 3月 25 2014 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.6
+- Remove contiguous CPU indexes assumption (rhbz#1080439)
+- qemu: monitor: Fix error message and comment when getting cpu info (rhbz#1080439)
+- qemu: monitor: Filter out thread ids of CPUS that were unplugged (rhbz#1080439)
+- qemu: monitor: Fix invalid parentheses (rhbz#1080471)
+- virNetClientSetTLSSession: Restore original signal mask (rhbz#1080501)
+
+* 五 2月 28 2014 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.5
+- sanlock: Truncate domain names longer than SANLK_NAME_LEN (rhbz#1070905)
+
+* 三 2月 12 2014 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.4
+- Block info query: Add check for transient domain (rhbz#1059904)
+- network: Only prevent forwarding of DNS requests for unqualified names (rhbz#1062708)
+- network: Change default of forwardPlainNames to 'yes' (rhbz#1062708)
+
+* 二 1月 21 2014 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.3
+- qemu: Avoid operations on NULL monitor if VM fails early (rhbz#1055578)
+- qemu: Do not access stale data in virDomainBlockStats (CVE-2013-6458)
+- qemu: Avoid using stale data in virDomainGetBlockInfo (CVE-2013-6458)
+- qemu: Fix job usage in qemuDomainBlockJobImpl (CVE-2013-6458)
+- qemu: Fix job usage in qemuDomainBlockCopy (rhbz#1054804)
+- qemu: Fix job usage in virDomainGetBlockIoTune (CVE-2013-6458)
+- Don't crash if a connection closes early (CVE-2014-1447)
+- Really don't crash if a connection closes early (CVE-2014-1447)
+
+* 三 12月 11 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.2
+- qemuDomainDestroyFlags: Don't allow @vm to disappear while executing API (rhbz#1038816)
+- python: Return dictionary without value in case of no blockjob (rhbz#1038815)
+- remote: Fix regression in event deregistration (rhbz#1038814)
+- Add virtio-scsi to fallback models of scsi controller (rhbz#1040141)
+
+* 二 11月 12 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29.el6_5.1
+- Fix race in starting transient VMs (rhbz#1029632)
+
+* 三 10月 09 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-29
+- virNetDevBandwidthEqual: Make it more robust (rhbz#1014198)
+- qemu_hotplug: Allow QoS update in qemuDomainChangeNet (rhbz#1014198)
+- qemu: Generate correct name for hostdev network devices (rhbz#1001881)
+
+* 三 10月 02 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-28
+- libvirt-guests: status: Return non-zero when stopped (rhbz#1011981)
+- qemu: Drop qemuDomainMemoryLimit (rhbz#1013758)
+- docs: Discourage users to set hard_limit (rhbz#1013758)
+- docs: Clean 09adfdc62de2b up (rhbz#1013758)
+- qemuSetupMemoryCgroup: Handle hard_limit properly (rhbz#1013758)
+- qemuBuildCommandLine: Fall back to mem balloon if there's no hard_limit (rhbz#1013758)
+
+* 三 9月 25 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-27
+- qemu: Fix seamless SPICE migration (rhbz#1009886)
+
+* 四 9月 19 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-26
+- Fix crash in remoteDispatchDomainMemoryStats (CVE-2013-4296)
+- Introduce APIs for splitting/joining strings (rhbz#1006266)
+- Rename virKillProcess to virProcessKill (rhbz#1006266)
+- Rename virPid{Abort, Wait} to virProcess{Abort, Wait} (rhbz#1006266)
+- Rename virCommandTranslateStatus to virProcessTranslateStatus (rhbz#1006266)
+- Move virProcessKill into virprocess.{h, c} (rhbz#1006266)
+- Move virProcess{Kill, Abort, TranslateStatus} into virprocess.{c, h} (rhbz#1006266)
+- Include process start time when doing polkit checks (rhbz#1006266)
+- Add support for using 3-arg pkcheck syntax for process (CVE-2013-4311)
+
+* 二 9月 17 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-25
+- migration: Do not restore labels on failed migration (rhbz#895826)
+- qemu: Use default machine type if missing it in qemu command line (rhbz#995312)
+- qemu: Don't leak vm on failure (rhbz#995312)
+- virDomainDefParseXML: Set the argument of virBitmapFree to NULL after calling virBitmapFree (rhbz#1006710)
+- tests: Files named '.*-invalid.xml' should fail validation (rhbz#1006710)
+- tests: Use portable shell code (rhbz#1006710)
+- Add test for the nodemask double free crash (rhbz#1006710)
+
+* 五 9月 06 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-24
+- security: Provide supplemental groups even when parsing label (rhbz#964359)
+- qemu: Remove hostdev entry when freeing the depending network entry (rhbz#1000973)
+- virsh: Correct DESCRIPTION for virsh help blockcopy (rhbz#1002790)
+- Add '<nat>' element to '<forward>' network schemas (rhbz#1004365)
+- build: More workarounds for if_bridge.h (rhbz#1002735)
+
+* 三 8月 21 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-23
+- virnettlscontext: Resolve Coverity warnings (UNINIT) (rhbz#975201)
+- Fix qemuProcessReadLog with non-zero offset (rhbz#991334)
+- virSecurityManagerGenLabel: Skip seclabels without model (rhbz#997818)
+- bitmap: Add virBitmapCountBits (rhbz#997367)
+- virbitmap: Refactor virBitmapParse to avoid access beyond bounds of array (rhbz#997367)
+- virbitmaptest: Add test for out of bounds condition (rhbz#997367)
+- network: Allow <vlan> in type='hostdev' networks (rhbz#999107)
+- python: Fix bindings that don't raise an exception (rhbz#912170)
+- storage: Update pool metadata after adding/removing/resizing volume (rhbz#965442)
+- storage: Fix coverity warning (rhbz#965442)
+- storage: Fix the use-after-free memory bug (rhbz#965442)
+- network: Permit upstream forwarding of unqualified DNS names (rhbz#928638)
+
+* 三 8月 14 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-22
+- virsh: Fix change-media bug on disk block type (rhbz#923053)
+- Fix patches for multiple graphics and spice migration (rhbz#975751)
+- Revert "qemu: Remove maximum cpu limit when setting processor count using the API" (rhbz#855296)
+- Remove VIR_DOMAIN_SHUTDOWN_CRASHED from public API (rhbz#822306)
+- Rename VIR_DOMAIN_PAUSED_GUEST_PANICKED to VIR_DOMAIN_PAUSED_CRASHED (rhbz#822306)
+- Improve LXC startup error reporting (rhbz#903092)
+- qemu: Take error path if acquiring of job fails in qemuDomainSaveInternal (rhbz#928661)
+- util: Improve user lookup helper (rhbz#964359)
+- util: Add virGetGroupList (rhbz#964359)
+- util: Make virSetUIDGID async-signal-safe (rhbz#964359)
+- Fix potential deadlock across fork() in QEMU driver (rhbz#964359)
+- security: Framework for driver PreFork handler (rhbz#964359)
+- security_dac: Compute supplemental groups before fork (rhbz#964359)
+- security: Fix deadlock with prefork (rhbz#964359)
+- Split TLS test into two separate tests (rhbz#975201)
+- Avoid re-generating certs every time (rhbz#975201)
+- Change data passed into TLS test cases (rhbz#975201)
+- Fix validation of CA certificate chains (rhbz#975201)
+- Fix parallel runs of TLS test suites (rhbz#975201)
+- tests: Fix parallel runs of TLS test suites (rhbz#975201)
+
+* 四 7月 18 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-21
+- conf: Avoid NULL deref for pmsuspended domain state (rhbz#822306)
+- libvirt: Define domain crash event types (rhbz#822306)
+- qemu: Refactor processWatchdogEvent (rhbz#822306)
+- qemu: Expose qemuProcessShutdownOrReboot() (rhbz#822306)
+- qemu: Implement 'oncrash' events when guest panicked (rhbz#822306)
+- qemu: Implement 'oncrash' coredump events when guest panicked (rhbz#822306)
+- conf: Fix a memory leak when parsing nat port XML nodes (rhbz#851455)
+- security_manager: Fix comparison (rhbz#984793)
+- qemu: Prevent crash of libvirtd without guest agent configuration (rhbz#984821)
+- qemu: Fix double free of returned JSON array in qemuAgentGetVCPUs() (rhbz#984821)
+- qemu_agent: Add support for appending arrays to commands (rhbz#924400)
+- Add support for locking domain's memory pages (rhbz#947118)
+- qemu: Implement support for locking domain's memory pages (rhbz#947118)
+- qemu: Check for -realtime mlock=on|off support (rhbz#947118)
+- qemu: Move memory limit computation to a reusable function (rhbz#947118)
+- util: New virCommandSetMax(MemLock|Processes|Files) (rhbz#947118)
+- qemu: Set RLIMIT_MEMLOCK when memoryBacking/locked is used (rhbz#947118)
+- Add Gluster protocol as supported network disk backend (rhbz#849796)
+- qemu: Add support for gluster protocol based network storage backend. (rhbz#849796)
+- tests: Add tests for gluster protocol based network disks support (rhbz#849796)
+
+* 一 7月 15 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-20
+- qemu: Don't force port=0 for SPICE (rhbz#975751)
+- qemu: Refactor graphics code to not hardcode a single display (rhbz#975751)
+- qemu: Graphics support for simultaneous one of each sdl, vnc, spice (rhbz#975751)
+- qemu: Don't miss errors when changing graphics passwords (rhbz#975751)
+- qemu: Allow seamless migration for domains with multiple graphics (rhbz#975751)
+- qemu_migration: Move waiting for SPICE migration (rhbz#920205)
+- util: Refactor iptables command construction into multiple steps (rhbz#851455)
+- net: Support set public ip range for forward mode nat (rhbz#851455)
+- net: Add support for specifying port range for forward mode nat (rhbz#851455)
+- qemu_migrate: Dispose listen address if set from config (rhbz#971485)
+- qemu: Remove maximum cpu limit when setting processor count using the API (rhbz#855296)
+- qemu_agent: Introduce helpers for agent based CPU hot(un)plug (rhbz#924400)
+- virsh-domain: Refactor cmdVcpucount and fix output on inactive domains (rhbz#924400)
+- API: Introduce VIR_DOMAIN_VCPU_AGENT, for agent based CPU hot(un)plug (rhbz#924400)
+- qemu: Implement request of vCPU state using the guest agent (rhbz#924400)
+- qemu: Implement support for VIR_DOMAIN_VCPU_AGENT in qemuDomainSetVcpusFlags (rhbz#924400)
+- qemuDomainGetVcpusFlags: Initialize ncpuinfo (rhbz#924400)
+- Fix commit 29c1e913e459058c12d02b3f4b767b3dd428a498 (rhbz#924400)
+- qemu: Make qemuMigrationIsAllowed more reusable (rhbz#972675)
+- qemu: Cancel migration if guest encoutners I/O error while migrating (rhbz#972675)
+- qemu: Forbid migration of machines with I/O errors (rhbz#972675)
+- migration: Make erroring out on I/O error controllable by flag (rhbz#972675)
+- migration: Don't propagate VIR_MIGRATE_ABORT_ON_ERROR (rhbz#972675)
+- Paused domain should remain paused after migration (rhbz#972675)
+- qemu: New vnc display sharing policy caps flag (rhbz#803602)
+- conf: Add 'sharePolicy' attribute to graphics element for vnc (rhbz#803602)
+- qemu: Add ', share=<policy>' to qemu commandline (rhbz#803602)
+- virsh: Distinguish errors between missing argument and wrong option (rhbz#924596)
+- virsh: Fix incorrect argument errors for long options (rhbz#924596)
+- virsh: Resolve Coverity 'MISSING_BREAK' (rhbz#924596)
+- virnetdev: Need to initialize 'pciConfigAddr' (rhbz#980339)
+- qemu: Fix double free in qemuMigrationPrepareDirect (rhbz#977961)
+- sec_manager: Refuse to start domain with unsupported seclabel (rhbz#947387)
+- usb: Don't spoil decimal addresses (rhbz#981503)
+- storage: Return -1 when fs pool can't be mounted (rhbz#983539)
+
+* 一 7月 08 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-19
+- xen: Resolve resource leak with 'cpuset' (rhbz#888503)
+- schema: Make the cpuset type reusable across schema files (rhbz#888503)
+- schemas: Add schemas for more CPU topology information in the caps XML (rhbz#888503)
+- conf: Split out NUMA topology formatting to simplify access to data (rhbz#888503)
+- capabilities: Switch CPU data in NUMA topology to a struct (rhbz#888503)
+- capabilities: Add additional data to the NUMA topology info (rhbz#888503)
+- test: Add support for thread and core information for the test driver (rhbz#888503)
+- xen: Initialize variable before using (rhbz#888503)
+- xen: Actually fix the uninitialized variable (rhbz#888503)
+- spice: Properly reserve tlsPort when no port specified (rhbz#913244)
+- qemu_agent: Ignore expected EOFs (rhbz#892079)
+- qemu: Nicer error message if live disk snapshot unsupported (rhbz#882077)
+- qemu: Destroy domain on decompression binary error (rhbz#894723)
+- qemu: Run lzop with '--ignore-warn' (rhbz#894723)
+- Don't ignore return value of qemuProcessKill (rhbz#903238)
+- Fix race condition when destroying guests (rhbz#903238)
+- Log warning if storage magic matches, but version does not (rhbz#903248)
+- Add lots of debugging to storage file probing code (rhbz#903248)
+- Fix probing of QED file format (rhbz#903248)
+- util: Add virendian.h macros (rhbz#903248)
+- util: Use new virendian.h macros (rhbz#903248)
+- storage: Rearrange functions (rhbz#903248)
+- storage: Prepare for refactoring (rhbz#903248)
+- storage: Refactor metadata lookup (rhbz#903248)
+- storage: Don't follow backing chain symlinks too eagerly (rhbz#903248)
+- storage: Test backing chain traversal (rhbz#903248)
+- qemu: Check backing chains even when cgroup is omitted (rhbz#896013)
+- python: Fix bindings for virDomainSnapshotGet{Domain,Connect} (rhbz#895882)
+- qemu: Add checking in helpers for sgio setting (rhbz#908073)
+- qemu: Merge qemuCheckSharedDisk into qemuAddSharedDisk (rhbz#908073)
+- qemu: Record names of domain which uses the shared disk in hash table (rhbz#908073)
+- qemu: Update shared disk table when reconnecting qemu process (rhbz#908073)
+- qemu: Move the shared disk adding and sgio setting prior to attaching (rhbz#908073)
+- qemu: Remove the shared disk entry if the operation is ejecting or updating (rhbz#908073)
+- qemu: Fix the memory leak (rhbz#908073)
+- Fix crash changing CDROM media (rhbz#908073)
+- qemu: Avoid NULL dereference in qemuSharedDiskEntryFree (rhbz#908073)
+- qemu: Do not set unpriv_sgio if neither supported nor requested (rhbz#914677)
+- Use size_t instead of int for virDomainDefPtr struct (rhbz#896604)
+- util: Add VIR_(APPEND|INSERT|DELETE)_ELEMENT (rhbz#896604)
+- qemu: Fix QMP detection of QXL graphics (rhbz#896604)
+- qemu: Add qemu vga devices caps and one cap to mark them usable (rhbz#896604)
+- conf: Add optional attribte primary to video <model> element (rhbz#896604)
+- qemu: Use newer -device video device in qemu commandline (rhbz#896604)
+- tests: Add one -device video device testcase (rhbz#896604)
+- qemu: Detect VGA_QXL capability correctly (rhbz#896604)
+- qemu: Support ram bar size for qxl devices (rhbz#896604)
+- conf: Don't leak 'primary' video property on error (rhbz#896604)
+- storage: lvm: Don't overwrite lvcreate errors (rhbz#912179)
+- storage: lvm: Lvcreate fails with allocation=0, don't do that (rhbz#912179)
+- storage: Cleanup logical volume creation code (rhbz#912179)
+- docs: Clarify semantics of sparse storage volumes (rhbz#912179)
+- storage: Fix memory leak with regfree(reg) call. (rhbz#906299)
+- storage: Resource resource leak using 'tmp_vols' (rhbz#906299)
+- interface: Resolve resource leak wth 'tmp_iface_objs' (rhbz#906299)
+- locking: Resolve resource leaks on non error path (rhbz#906299)
+- selinux: Resolve resource leak using the default disk label (rhbz#906299)
+- storage: Resolve resource leaks with cmd processing (rhbz#906299)
+- domain_conf: Resolve resource leaks found by Valgrind (rhbz#906299)
+- qemu_command: Resolve resource leaks found by Valgrind (rhbz#906299)
+- storage: Need to add virCommandFree() (rhbz#906299)
+- qemu: Fix startupPolicy regression (rhbz#896013)
+- util: Retry NLM_F_REQUEST with different values of IFLA_EXT_MASK (rhbz#923963)
+- security_manager: Don't manipulate domain XML in virDomainDefGetSecurityLabelDef (rhbz#923946)
+- security: Don't add seclabel of type none if there's already a seclabel (rhbz#923946)
+- libvirt_private.syms: Correctly export seclabel APIs (rhbz#923946)
+- security_manager.c: Append seclabel iff generated (rhbz#923946)
+- rpc: Fix client crash when server drops connection (rhbz#921538)
+- storage: Fix volume cloning for logical volume. (rhbz#948678)
+- qemu: Allow migration over IPv6 (rhbz#846013)
+- qemu: Set IPv6 migration capability when dump-guest-core is present (rhbz#846013)
+- remote: Don't call NULL closeFreeCallback (rhbz#911609)
+- libvirt: Increase connection reference count for callbacks (rhbz#911609)
+- virsh: Unregister the connection close notifier upon termination (rhbz#911609)
+- virsh: Move cmdConnect from virsh-host.c to virsh.c (rhbz#911609)
+- virsh: Register and unregister the close callback also in cmdConnect (rhbz#911609)
+- rpc: Fix connection close callback race condition and memory corruption/crash (rhbz#911609)
+- tests: Fix qemumonitorjsontest deadlock when the machine is under load (rhbz#951227)
+- Avoid use of free'd memory in auto destroy callback (rhbz#950286)
+- Fix crash in QEMU auto-destroy with transient guests (rhbz#950286)
+- daemon: Fix leak after listing volumes (CVE-2013-1962)
+- Don't try to add non-existant devices to ACL (rhbz#922153)
+- Avoid spamming logs with cgroups warnings (rhbz#922153)
+- audit: Properly encode device path in cgroup audit (rhbz#922203)
+- qemu: Set correct migrate host in client_migrate_info (rhbz#920441)
+- qemu: Fix crash in migration of graphics-less guests. (rhbz#920441)
+- Fix F_DUPFD_CLOEXEC operation args (rhbz#961034)
+- cgroup: Be robust against cgroup movement races (rhbz#903433)
+- virsocket: Introduce virSocketAddrIsWildcard (rhbz#920441)
+- qemuDomainMigrateGraphicsRelocate: Use then new virSocketAddrIsWildcard (rhbz#920441)
+- virSocketAddrIsWildcard: Use IN6_IS_ADDR_UNSPECIFIED correctly (rhbz#920441)
+- libvirt: lxc: Don't mkdir when selinux is disabled (rhbz#915485)
+- Don't mount selinux fs in LXC if selinux is disabled (rhbz#915485)
+- virsh: Don't print --(null) in vol-name and vol-pool (rhbz#924571)
+- virsh: Fix docs for "virsh setmaxmem" (rhbz#924648)
+- qemu: Remove managed save flag from VM when starting with --force-boot (rhbz#917510)
+- qemu: Don't update count of vCPUs if hot-unplug has failed (rhbz#895424)
+- conf: net: Fix deadlock if assignment of network def fails (rhbz#921777)
+- RPC: Support up to 16384 cpus on the host and 4096 in the guest (rhbz#960683)
+- conf: Don't fail to parse <boot> when parsing a single device (rhbz#895294)
+- conf: Allow for non-contiguous device boot orders (rhbz#889961)
+- qemuDomainChangeGraphics: Check listen address change by listen type (rhbz#976401)
+- build: Fix build with -Werror (rhbz#976401)
+- qemuDomainBlockStatsFlags: Guard disk lookup with a domain job (rhbz#916315)
+- qemu: Don't fail to shutdown domains with unresponsive agent (rhbz#889635)
+- qemu: Wrap controllers code into dummy loop (rhbz#870003)
+- qemu: Add controllers in specified order (rhbz#870003)
+- tests: Add test for controller order (rhbz#870003)
+- bandwidth: Attach sfq to leaf node (rhbz#895340)
+- bandwidth: Create hierarchical shaping classes (rhbz#895340)
+- remote: Forbid default "/session" connections when using ssh transport (rhbz#847822)
+- remote: Fix client crash when URI path is empty when using ssh (rhbz#847822)
+- udev: Fix crash in libudev logging (rhbz#971904)
+- iscsi: Don't leak portal string when starting a pool (rhbz#975392)
+- storage: Avoid double virCommandFree in virStorageBackendLogicalDeletePool (rhbz#921387)
+- manual: Fix copy-paste errors (rhbz#923613)
+- esx: Support virtualHW version 9 (rhbz#955575)
+- manual: Add info about migrateuri in virsh manual (rhbz#878765)
+- conf: Fix cpumask leak in virDomainDefFree (rhbz#977430)
+- qemu: Avoid leaking uri in qemuMigrationPrepareDirect (rhbz#977961)
+- Document that runtime changes may be lost after S4 suspend (rhbz#872419)
+- virsh iface-bridge: Ignore delay if stp is turned off (rhbz#892403)
+- virsh: Obey pool-or-uuid spec when creating volumes (rhbz#970495)
+- Add method for checking if a string is (probably) a log message (rhbz#954248)
+- Convert QEMU driver to use virLogProbablyLogMessage (rhbz#954248)
+- util: Escapes special characters in VIR_LOG_REGEX (rhbz#954248)
+- qemu: Move QEMU log reading into a separate function (rhbz#954248)
+- qemu: Ignore libvirt logs when reading QEMU error output (rhbz#954248)
+- logging: Make log regexp more compact (and readable) (rhbz#954248)
+- qemu: Do not report unsafe migration for local files (rhbz#913363)
+- Plug leak in virCgroupMoveTask (rhbz#978352)
+- Fix invalid read in virCgroupGetValueStr (rhbz#978356)
+- pci: Initialize virtual_functions array pointer to avoid segfault (rhbz#980339)
+- Node device driver: update driver name during dumpxml (rhbz#979330)
+
+* 一 1月 28 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-18
+- rpc: Fix crash on error paths of message dispatching (CVE-2013-0170)
+- spec: Disable libssh2 support (rhbz#513363)
+
+* 三 1月 23 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-17
+- storage: Fix lvcreate parameter for backingStore. (rhbz#896398)
+- qemu: Don't return success if creation of snapshot save file fails (rhbz#896403)
+- qemu: Reject attempts to create snapshots with names containig '/' (rhbz#896403)
+
+* 三 1月 16 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-16
+- qemu_agent: Remove agent reference only when disposing it (rhbz#892079)
+- Add RESUME event listener to qemu monitor. (rhbz#894085)
+
+* 三 1月 09 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-15
+- snapshot: conf: Make virDomainSnapshotIsExternal more reusable (rhbz#889407)
+- snapshot: qemu: Separate logic blocks with newlines (rhbz#889407)
+- snapshot: qemu: Fix segfault and vanishing snapshots when redefining (rhbz#889407)
+- snapshot: qemu: Allow redefinition of external snapshots (rhbz#889407)
+- util: Prepare helpers for unpriv_sgio setting (rhbz#878578)
+- qemu: Add a hash table for the shared disks (rhbz#878578)
+- docs: Add docs and rng schema for new XML tag sgio (rhbz#878578)
+- conf: Parse and format the new XML (rhbz#878578)
+- qemu: Set unpriv_sgio when starting domain and attaching disk (rhbz#878578)
+- qemu: Check if the shared disk's cdbfilter conflicts with others (rhbz#878578)
+- qemu: Relax hard RSS limit (rhbz#891653)
+
+* 四 1月 03 2013 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-14
+- util: Add missing error log messages when failing to get netlink VFINFO (rhbz#889319)
+- util: Fix functions that retrieve SRIOV VF info (rhbz#889319)
+- util: Fix botched check for new netlink request filters (rhbz#889319)
+- blockjob: Fix memleak that prevented block pivot (rhbz#888426)
+- sanlock: Chown lease files as well (rhbz#820173)
+
+* 三 12月 19 2012 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-13
+- network: Prevent dnsmasq from listening on localhost (rhbz#886821)
+- sanlock: Re-add lockspace unconditionally (rhbz#820173)
+- Fix "virsh create" example (rhbz#887187)
+- docs: Fix some typos in examples (rhbz#887187)
+- network: Don't require private addresses if dnsmasq uses SO_BINDTODEVICE (rhbz#882265)
+
+* 三 12月 12 2012 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-12
+- qemu: Eliminate bogus error log when changing netdev's bridge (rhbz#885838)
+- remote: Avoid the thread race condition (rhbz#866524)
+- storage: Error out earlier if the volume target path already exists (rhbz#832302)
+- dnsmasq: Fix parsing of the version number (rhbz#885727)
+- qemu: Restart CPUs with valid async job type when doing external snapshots (rhbz#885081)
+- examples: Fix balloon event callback (rhbz#884650)
+- util: Don't fail virGetGroupIDByName when group not found (rhbz#883832)
+- util: Don't fail virGetUserIDByName when user not found (rhbz#883832)
+- util: Rework error reporting in virGet(User|Group)IDByName (rhbz#883832)
+- util: Fix warning message in previous patch (rhbz#883832)
+
+* 三 12月 05 2012 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-11
+- Fix uninitialized variable in virLXCControllerSetupDevPTS (rhbz#880064)
+- storage: Fix device detach regression with cgroup ACLs (rhbz#876828)
+- storage: Fix bug of fs pool destroying (rhbz#878400)
+- qemu: Fix a crash when save file can't be opened (rhbz#880919)
+- bitmap: Fix typo to use UL type of integer constant in virBitmapIsAllSet (rhbz#876415)
+- virsh: Rewrite cmdDomDisplay (rhbz#878779)
+- network: Fix crash when portgroup has no name (rhbz#879473)
+- util: Capabilities detection for dnsmasq (rhbz#882265)
+- util: New virSocketAddrIsPrivate function (rhbz#882265)
+- network: Use dnsmasq --bind-dynamic when available (rhbz#882265)
+- storage: Fix scsi detach regression with cgroup ACLs (rhbz#876828)
+- libssh2_session: Support DSS keys as well (rhbz#878376)
+- virsh: Fix error messages in iface-bridge (rhbz#878376)
+- virsh: Check the return value of virStoragePoolGetAutostart (rhbz#878376)
+- conf: Check the return value of virXPathNodeSet (rhbz#878376)
+- conf: snapshot: Check return value of virDomainSnapshotObjListNum (rhbz#878376)
+- util: Fix virBitmap allocation in virProcessInfoGetAffinity (rhbz#878376)
+- virsh: Use correct sizeof when allocating cpumap (rhbz#878376)
+- rpc: Don't destroy xdr before creating it in virNetMessageEncodeHeader (rhbz#878376)
+- virsh: Do timing even for unusable connections (rhbz#878376)
+- conf: Fix uninitialized variable in virDomainListSnapshots (rhbz#878376)
+- Fix error handling in virSecurityManagerGetMountOptions (rhbz#878376)
+- conf: Prevent crash with no uuid in cephx auth secret (rhbz#878376)
+- conf: Fix virDomainNetGetActualDirect*() and BridgeName() (rhbz#881480)
+- virsh: Report errors if arguments of the schedinfo command are incorrect (rhbz#882915)
+- systemd: Require dbus service (rhbz#830201)
+- spec: Require dbus-daemon when using libvirtd in Fedora (rhbz#830201)
+- qemu: Don't free PCI device if adding it to activePciHostdevs fails (rhbz#877095)
+- util: Slightly refactor PCI list functions (rhbz#877095)
+- qemu: Fix memory (and FD) leak on PCI device detach (rhbz#877095)
+- util: Do not keep PCI device config file open (rhbz#877095)
+- node_memory: Improve the docs (rhbz#872656)
+- node_memory: Do not fail if there is parameter unsupported (rhbz#872656)
+- node_memory: Fix bug of node_memory_tune (rhbz#872656)
+
+* 一 11月 26 2012 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-10
+- Add note about numeric domain names to manpage (rhbz#824253)
+- Use virNetServerRun instead of custom main loop (rhbz#867246)
+- qemu: Fix RBD attach regression (rhbz#878862)
+- qemu: Stop recursive detection of image chains when an image is missing (rhbz#878862)
+- Fix exiting of libvirt_lxc program on container quit (rhbz#879360)
+- snapshot: qemu: Add support for external inactive snapshots (rhbz#876816)
+- conf: Fix private symbols exported by files in conf (rhbz#876816)
+- snapshot: qemu: Fix detection of external snapshots when deleting (rhbz#876816)
+- snapshot: Require user to supply external memory file name (rhbz#876816)
+- snapshot: Add two more filter sets to API (rhbz#876817)
+- snapshot: Add virsh back-compat support for new filters (rhbz#876817)
+- snapshot: Implement new filter sets (rhbz#876817)
+- snapshot: Expose location through virsh snapshot-info (rhbz#876817)
+- sanlock: Retry after EINPROGRESS (rhbz#820173)
+- storage: Fix logical volume cloning (rhbz#879780)
+- cpu: Add Intel Haswell cpu model (fix previous downstream definition) (rhbz#879282)
+- virsh: Report error when taking a snapshot with empty --memspec argument (rhbz#879130)
+- lxc: Don't crash if no security driver is specified in libvirt_lxc (rhbz#880064)
+- lxc: Avoid segfault of libvirt_lxc helper on early cleanup paths (rhbz#880064)
+
+* 一 11月 19 2012 Jiri Denemark <jdenemar@redhat.com> - 0.10.2-9
+- util: Improve error reporting from absolutePathFromBaseFile helper (rhbz#874860)
+- storage: Fix broken backing chain (rhbz#874860)
+- nodeinfo: Add check and workaround to guarantee valid cpu topologies (rhbz#874050)
+- nodeinfotest: Add test data for 2 processor host with broken NUMA (rhbz#874050)
+- nodeinfotest: Add test data from a AMD bulldozer machine. (rhbz#874050)
+- virsh: save: Report an error if XML file can't be read (rhbz#876868)
+- virsh: Fix uninitialized variable in cmdSnapshotEdit (rhbz#877303)
+- qemu: Allow larger discrepency between memory & currentMemory in domain xml (rhbz#873134)
+
+* 一 11月 12 2012 Jiri Denemark <jdenemar@redhat.com> - libvirt-0.10.2-8.el6
+- iohelper: Don't report errors on special FDs (rhbz#866369)
+- esx: Yet another connection fix for 5.1 (rhbz#873538)
+- qemu: Don't corrupt pointer in qemuDomainSaveMemory() (rhbz#873537)
+- build: Place attributes in correct location (rhbz#873934)
+- Introduce new VIR_DOMAIN_EVENT_SUSPENDED_API_ERROR event (rhbz#866388)
+- qemu: Emit event if 'cont' fails (rhbz#866388)
+- virsh: Make ,, escape parsing common (rhbz#874171)
+- virsh: Add snapshot-create-as memspec support (rhbz#874171)
+- qemu: Fix domain ID numbering race condition (rhbz#874330)
+- qemu: Allow migration to be cancelled at prepare phase (rhbz#873792)
+- AbortJob: Fix documentation (rhbz#873792)
+
+* 一 11月 05 2012 Jiri Denemark <jdenemar@redhat.com> - libvirt-0.10.2-7.el6
+- sanlock: Introduce 'user' and 'group' conf variables (rhbz#820173)
+- esx: Fix connection to ESX 5.1 (rhbz#865670)
+- cpu: Fix definition of flag smap (rhbz#797283)
+- util: Do a better job of matching up pids with their binaries (rhbz#871201)
+- qemu: Fix EmulatorPinInfo without emulatorpin (rhbz#871312)
+- build: Fix RPM build for non-x86 platforms (rhbz#820173)
+- qemu: Report errors from iohelper (rhbz#866369)
+- build: Fix linking with systemtap probes (rhbz#866369)
+- iohelper: Fdatasync() at the end (rhbz#866369)
+- net-update docs: S/domain/network/ (rhbz#872104)
+- cpu: Add newly added cpu flags (rhbz#838127)
+- cpu: Add AMD Opteron G5 cpu model (rhbz#838127)
+- cpu: Add Intel Haswell cpu model (rhbz#843087)
+- snapshot: New XML for external system checkpoint (rhbz#638512)
+- snapshot: Improve disk align checking (rhbz#638512)
+- snapshot: Populate new XML info for qemu snapshots (rhbz#638512)
+- snapshot: Merge pre-snapshot checks (rhbz#638512)
+- qemu: Fix possible race when pausing guest (rhbz#638512)
+- qemu: Clean up snapshot retrieval to use the new helper (rhbz#638512)
+- qemu: Split out domain memory saving code to allow reuse (rhbz#638512)
+- snapshot: Add flag to enable creating checkpoints in live state (rhbz#638512)
+- snapshot: qemu: Add async job type for snapshots (rhbz#638512)
+- snapshot: qemu: Rename qemuDomainSnapshotCreateActive (rhbz#638512)
+- snapshot: qemu: Add support for external checkpoints (rhbz#638512)
+- snapshot: qemu: Remove restrictions preventing external checkpoints (rhbz#638512)
+
+* 一 10月 29 2012 Jiri Denemark <jdenemar@redhat.com> - libvirt-0.10.2-6.el6
+- xml: Omit domain name from comment if it contains double hyphen (rhbz#868692)
+- cpu: Add recently added cpu feature flags. (rhbz#797283)
+- esx: Update version checks for vSphere 5.1 (rhbz#865670)
+- qemu: Add helper to prepare cpumap for affinity setting (rhbz#869096)
+- qemu: Keep the affinity when creating cgroup for emulator thread (rhbz#869096)
+- qemu: Prohibit chaning affinity of domain process if placement is 'auto' (rhbz#870099)
+- network: Fix networkValidate check for default portgroup and vlan (rhbz#868483)
+- qemu: Fix attach/detach of netdevs with matching mac addrs (rhbz#862515)
+- snapshot: Improve snapshot-list error message (rhbz#869100)
+- virsh: Remove --flags from nodesuspend (rhbz#869508)
+- virsh: Fix POD syntax (rhbz#870273)
+- xml: Print uuids in the warning (rhbz#868692)
+- blockjob: Support both RHEL and upstream qemu drive-mirror (rhbz#871055)
+
+* 二 10月 23 2012 Jiri Denemark <jdenemar@redhat.com> - libvirt-0.10.2-5.el6
+- qemu: Clear async job when p2p migration fails early (rhbz#867412)
+- qemu: Pin the emulator when only cpuset is specified (rhbz#867372)
+- qemu: Correctly wait for spice to migrate (rhbz#867724)
+- qemu: Fixed default machine detection in qemuCapsParseMachineTypesStr (rhbz#867764)
+- conf: Make tri-state feature options more universal (rhbz#864606)
+- conf: Add support for HyperV Enlightenment features (rhbz#864606)
+- qemu: Add support for HyperV Enlightenment feature "relaxed" (rhbz#864606)
+- network: Set to NULL after virNetworkDefFree() (rhbz#866364)
+- qemu: Always format CPU topology (rhbz#866999)
+- qemu: Don't fail without emulatorpin or cpumask (rhbz#867372)
+- qemu: Allow migration with host USB devices (rhbz#843560)
+- qemu: Do not require hostuuid in migration cookie (rhbz#863059)
+- network: Free/null newDef if network fails to start (rhbz#866364)
+- migrate: v2: Use VIR_DOMAIN_XML_MIGRATABLE when available (rhbz#856864)
+- qemu: Avoid holding the driver lock in trivial snapshot API's (rhbz#772088)
+- storage: List more file types (rhbz#772088)
+- storage: Treat 'aio' like 'raw' at parse time (rhbz#772088)
+- storage: Match RNG to supported driver types (rhbz#772088)
+- storage: Use enum for default driver type (rhbz#772088)
+- storage: Use enum for disk driver type (rhbz#772088)
+- storage: Use enum for snapshot driver type (rhbz#772088)
+- storage: Don't probe non-files (rhbz#772088)
+- storage: Get entire metadata chain in one call (rhbz#772088)
+- storage: Don't require caller to pre-allocate metadata struct (rhbz#772088)
+- storage: Remember relative names in backing chain (rhbz#772088)
+- storage: Make it easier to find file within chain (rhbz#772088)
+- storage: Cache backing chain while qemu domain is live (rhbz#772088)
+- storage: Use cache to walk backing chain (rhbz#772088)
+- blockjob: Remove unused parameters after previous patch (rhbz#772088)
+- blockjob: Manage qemu block-commit monitor command (rhbz#772088)
+- blockjob: Wire up online qemu block-commit (rhbz#772088)
+- blockjob: Implement shallow commit flag in qemu (rhbz#772088)
+- blockjob: Refactor qemu disk chain permission grants (rhbz#772088)
+- blockjob: Properly label disks for qemu block-commit (rhbz#772088)
+- blockjob: Avoid segv on early error (rhbz#772088)
+- blockjob: Accommodate early RHEL backport naming (rhbz#772088)
+- virsh: Fix segfault of snapshot-list (rhbz#837544)
+- network: Always create dnsmasq hosts and addnhosts files, even if empty (rhbz#868389)
+- network: Don't allow multiple default portgroups (rhbz#868483)
+- selinux: Use raw contexts (rhbz#851981)
+- selinux: Add security selinux function to label tapfd (rhbz#851981)
+- selinux: Use raw contexts 2 (rhbz#851981)
+- selinux: Fix wrong tapfd relablling (rhbz#851981)
+- selinux: Remove unused variables in socket labelling (rhbz#851981)
+- selinux: Relabel tapfd in qemuPhysIfaceConnect (rhbz#851981)
+- storage: Let format probing work on root-squash NFS (rhbz#856247)
+- snapshot: Sanity check when reusing file for snapshot (rhbz#856247)
+- blockjob: Add qemu capabilities related to block jobs (rhbz#856247)
+- blockjob: React to active block copy (rhbz#856247)
+- blockjob: Return appropriate event and info (rhbz#856247)
+- blockjob: Support pivot operation on cancel (rhbz#856247)
+- blockjob: Make drive-reopen safer (rhbz#856247)
+- blockjob: Implement block copy for qemu (rhbz#856247)
+- blockjob: Allow for existing files in block-copy (rhbz#856247)
+- blockjob: Allow mirroring under SELinux and cgroup (rhbz#856247)
+- blockjob: Relabel entire existing chain (rhbz#856247)
+
+* 三 10月 17 2012 Jiri Denemark <jdenemar@redhat.com> - libvirt-0.10.2-4.el6
+- node_memory: Add new parameter field to tune the new sysfs knob (rhbz#840113)
+- daemon: Fix removing abstract namespaces (rhbz#859331)
+- tests: Fix domain-events python test (rhbz#839661)
+- conf: Fix crash with cleanup (rhbz#866288)
+- spec: Add runtime requirement for libssh2 (rhbz#866508)
+- spec: Require newer sanlock on recent distros (rhbz#832156)
+- spec: Require newer sanlock on recent distros 2 (rhbz#832156)
+
+* 一 10月 15 2012 Jiri Denemark <jdenemar@redhat.com> - libvirt-0.10.2-3.el6
+- conf: Rename life cycle actions to event actions (rhbz#832156)
+- conf: Add on_lockfailure event configuration (rhbz#832156)
+- locking: Add const char * parameter to avoid ugly typecasts (rhbz#832156)
+- locking: Pass hypervisor driver name when acquiring locks (rhbz#832156)
+- locking: Add support for lock failure action (rhbz#832156)
+- locking: Implement lock failure action in sanlock driver (rhbz#832156)
+- conf: Add support for startupPolicy for USB devices (rhbz#843560)
+- qemu: Introduce qemuFindHostdevUSBDevice (rhbz#843560)
+- qemu: Add option to treat missing USB devices as success (rhbz#843560)
+- qemu: Implement startupPolicy for USB passed through devices (rhbz#843560)
+- Add MIGRATABLE flag for virDomainGetXMLDesc (rhbz#843560)
+- qemu: Make save/restore with USB devices usable (rhbz#843560)
+- conf: Mark missing optional USB devices in domain XML (rhbz#843560)
+- security: Also parse user/group names instead of just IDs for DAC labels (rhbz#860519)
+- doc: Update description about security labels on formatdomain.html (rhbz#860519)
+- util: Extend virGetUserID and virGetGroupID to support names and IDs (rhbz#860519)
+- security: Update user and group parsing in security_dac.c (rhbz#860519)
+- doc: Update description about user/group in qemu.conf (rhbz#860519)
+- Fix kvm_pv_eoi with kvmclock (rhbz#860971)
+- Change qemuSetSchedularParameters to use AFFECT_CURRENT (rhbz#852260)
+- Fix handling of itanium arch name in QEMU driver (rhbz#863115)
+- Add a qemu capabilities cache manager (rhbz#863115)
+- Switch over to use cache for building QEMU capabilities (rhbz#863115)
+- Remove probing of flags when launching QEMU guests (rhbz#863115)
+- Remove probing of machine types when canonicalizing XML (rhbz#863115)
+- Remove probing of CPU models when launching QEMU guests (rhbz#863115)
+- Make qemuCapsProbeMachineTypes & qemuCapsProbeCPUModels static (rhbz#863115)
+- Remove xenner support (rhbz#863115)
+- Refactor guest init to support qemu-system-i386 binary too (rhbz#863115)
+- Add a qemuMonitorGetVersion() method for QMP query-version command (rhbz#863115)
+- Add a qemuMonitorGetMachines() method for QMP query-machines command (rhbz#863115)
+- Add a qemuMonitorGetCPUDefinitions method for QMP query-cpu-definitions command (rhbz#863115)
+- Add a qemuMonitorGetCommands() method for QMP query-commands command (rhbz#863115)
+- Add a qemuMonitorGetEvents() method for QMP query-events command (rhbz#863115)
+- Add a qemuMonitorGetObjectTypes() method for QMP qom-list-types command (rhbz#863115)
+- Add a qemuMonitorGetObjectProps() method for QMP device-list-properties command (rhbz#863115)
+- Add a qemuMonitorGetTargetArch() method for QMP query-target command (rhbz#863115)
+- Remove some unused includes in QEMU code (rhbz#863115)
+- Move command/event capabilities detection out of QEMU monitor code (rhbz#863115)
+- Fix regression starting QEMU instances without query-events (rhbz#863115)
+- Refactor qemuCapsParseDeviceStr to work from data tables (rhbz#863115)
+- Fix QEMU test with 1.2.0 help output (rhbz#863115)
+- Ignore error from query-cpu-definitions (rhbz#863115)
+- Fix potential deadlock when agent is closed (rhbz#859712)
+- Fix (rare) deadlock in QEMU monitor callbacks (rhbz#859712)
+- Convert virLXCMonitor to use virObject (rhbz#864336)
+- Remove pointless virLXCProcessMonitorDestroy method (rhbz#864336)
+- Simplify some redundant locking while unref'ing objects (rhbz#859712)
+- Fix deadlock in handling EOF in LXC monitor (rhbz#864336)
+- Avoid bogus I/O event errors when closing the QEMU monitor (rhbz#859712)
+- qemu: Fix parsing of x86 CPU models (rhbz#864097)
+- python: Keep consistent handling of Python integer conversion (rhbz#816609)
+- esx: Fix and improve esxListAllDomains function (rhbz#864384)
+- virsh: Block SIGINT while getting BlockJobInfo (rhbz#845448)
+- spec: Add support for libssh2 transport (rhbz#513363)
+- Revert "Use XDG Base Directories instead of storing in home directory" (rhbz#859331)
+- doc: Sort out the relationship between <vcpu>, <vcpupin>, and <emulatorpin> (rhbz#855218)
+- conf: Ignore vcpupin for not onlined vcpus when parsing (rhbz#855218)
+- conf: Initialize the pinning policy for vcpus (rhbz#855218)
+- qemu: Create or remove cgroup when doing vcpu hotpluging (rhbz#857013)
+- qemu: Initialize cpuset for hotplugged vcpu as def->cpuset (rhbz#855218)
+- conf: Ignore emulatorpin if vcpu placement is auto (rhbz#855218)
+- qemu: Ignore def->cpumask if emulatorpin is specified (rhbz#855218)
+- Avoid straying </cpuset> (rhbz#855218)
+- conf: Fix virDevicePCIAddressEqual args (rhbz#805071)
+- conf: VirDomainDeviceInfoCopy utility function (rhbz#805071)
+- qemu: Reorganize qemuDomainChangeNet and qemuDomainChangeNetBridge (rhbz#805071)
+- Add support for SUSPEND_DISK event (rhbz#839661)
+
+* 一 10月 08 2012 Jiri Denemark <jdenemar@redhat.com> - libvirt-0.10.2-2.el6
+- qemu: Wait for SPICE to migrate (rhbz#836135)
+- lxc: Correctly report active cgroups (rhbz#860907)
+- network: Backend for virNetworkUpdate of interface list (rhbz#844404)
+- Fix start of containers with custom root filesystem (rhbz#861564)
+- Correct checking of virStrcpyStatic() return value (rhbz#864122)
+
+* 一 9月 24 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.10.2-1.el6
+- New build based on upstream release 0.10.2 (rhbz#836934)
+- network: define new API virNetworkUpdate
+- add support for QEmu sandbox support
+- blockjob: add virDomainBlockCommit
+- New APIs to get/set Node memory parameters
+- new API virConnectListAllSecrets
+- new API virConnectListAllNWFilters
+- new API virConnectListAllNodeDevices
+- new API virConnectListAllInterfaces
+- new API virConnectListAllNetworks
+- new API virStoragePoolListAllVolumes
+- Add PMSUSPENDED life cycle event
+- new API virStorageListAllStoragePools
+- Add per-guest S3/S4 state configuration
+- qemu: Support for Block Device IO Limits
+- a lot of bug fixes, improvements and portability work
+
+* 二 9月 18 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.10.2-0rc1.el6
+- New build based on upstream release candidate 1 of 0.10.2 (rhbz#836934)
+
+* 四 9月 13 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.10.1-2.el6
+- Don't assume use of /sys/fs/cgroup (rhbz#842979)
+
+* 五 8月 31 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.10.1-1.el6
+- New build based on upstream release 0.10.1 (rhbz#836934)
+- many fixes on top of 0.10.0
+
+* 三 8月 29 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.10.0-1.el6
+- New build based on upstream release 0.10.0 (rhbz#836934)
+- agent: add qemuAgentArbitraryCommand() for general qemu agent command
+- Introduce virDomainPinEmulator and virDomainGetEmulatorPinInfo functions
+- network: use firewalld instead of iptables, when available
+- network: make network driver vlan-aware
+- esx: Implement network driver
+- Various LXC improvements
+- Add virDomainGetHostname
+- a lot of bug fixes, improvements and portability work
+
+* 四 8月 23 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.10.0-0rc1.el6
+- New build based on upstream snapshot 0.10.0-0rc1 (rhbz#836934)
+
+* 三 8月 01 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.10.0-0rc0.el6
+- New build based on upstream snapshot 0.10.0-0rc0 (rhbz#836934)
+- Cleanup and rebase of the few RHEL-only patches
+
+* 五 7月 20 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.13-3.el6
+- fix the package split to be similar to 6.3 one instead of upstream
+
+* 二 7月 03 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.13-2.el6
+- fix a package dependency problem making -1 uninstallable
+
+* 二 7月 03 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.13-1.el6
+- first rebase for 6.4 more to come
+- kvm-guest failed to start; double-close bug in libvirt (rhbz#823716)
+- potential to deadlock libvirt on EPIPE (rhbz#827234)
+- fix keepalive issues (rhbz#832081)
+- CPU topology parsing bug on special NUMA platform (rhbz#828729)
+- libvirtd will crash when tight loop of hotplug/unplug PCI device (rhbz#822373)
+
+* 四 6月 14 2012 Eric Blake <eblake@redhat.com> - libvirt-0.9.10-21.el6_3.1
+- avoid closing uninitialized fd (rhbz#827050)
+- avoid fd leak (rhbz#827050)
+- command: avoid double close bugs (rhbz#827050)
+- fdstream: avoid double close bug (rhbz#827050)
+- command: check for fork error before closing fd (rhbz#827050)
+- qemu: avoid closing fd more than once (rhbz#827050)
+- Disable keepalives by default (rhbz#832184)
+
+* 三 5月 23 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-21.el6
+- qemu: Rollback on used USB devices (rhbz#743671)
+- qemu: Don't delete USB device on failed qemuPrepareHostdevUSBDevices (rhbz#743671)
+- Revert "rpc: Discard non-blocking calls only when necessary" (rhbz#821468)
+
+* 三 5月 16 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-20.el6
+- Fix virDomainDeviceInfoIsSet() to check all struct fields (rhbz#820869)
+- Fix logic for assigning PCI addresses to USB2 companion controllers (rhbz#820869)
+- Set a sensible default master start port for ehci companion controllers (rhbz#820869)
+
+* 二 5月 15 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-19.el6
+- build: Fix the typo in configure.ac (rhbz#820461)
+- qemu: Fix build when !HAVE_NUMACTL (rhbz#820461)
+- usb: Fix crash when failing to attach a second usb device (rhbz#815755)
+- qemu: Use the CPU index in capabilities to map NUMA node to cpu list. (rhbz#820461)
+- qemu: Set memory policy using cgroup if placement is auto (rhbz#820461)
+
+* 三 5月 09 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-18.el6
+- numad: Set memory policy from numad advisory nodeset (rhbz#810157)
+- numad: Copy 'placement' of <numatune> to <vcpu> by default (rhbz#810157)
+- numad: Always output 'placement' of <vcpu> (rhbz#810157)
+- qemu: Avoid the memory allocation and freeing (rhbz#810157)
+- numad: Divide cur_balloon by 1024 before passing it to numad (rhbz#810157)
+- numad: Check numactl-devel if compiled with numad support (rhbz#810157)
+
+* 三 5月 09 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-17.el6
+- qemu: Don't modify domain on failed blockiotune (rhbz#819014)
+- qemu: Reject blockiotune if qemu too old (rhbz#819014)
+- qemu: Don't use virDomainDefFormat* directly (rhbz#815503)
+- qemu: Emit compatible XML when migrating a domain (rhbz#815503)
+- usb: Create functions to search usb device accurately (rhbz#815755)
+- qemu: Call usb search function for hostdev initialization and hotplug (rhbz#815755)
+- virsh: Avoid heap corruption leading to virsh abort (rhbz#819636)
+- util: Fix libvirtd startup failure due to netlink error (rhbz#816465)
+- util: Allow specifying both src and dst pid in virNetlinkCommand (rhbz#816465)
+- util: Function to get local nl_pid used by netlink event socket (rhbz#816465)
+- util: Set src_pid for virNetlinkCommand when appropriate (rhbz#816465)
+- domain_conf: Add "usbredir" to list of valid spice channels (rhbz#819498)
+- domain_conf: Add "default" to list of valid spice channels (rhbz#819499)
+- snapshot: Allow block devices past cgroup (rhbz#810200)
+- blockjob: Allow block devices past cgroup (rhbz#810200)
+- util: Avoid libvirtd crash in virNetDevTapCreate (rhbz#817234)
+- python: Fix the forward_null error in Python binding codes (rhbz#771021)
+- xen: Fix resource leak in xen driver (rhbz#771021)
+- test: Fix resource leak in test driver (rhbz#771021)
+- node: Fix resource leak in nodeinfo.c (rhbz#771021)
+- virnet: Fix resource leak in virnetlink.c (rhbz#771021)
+- vmx: Fix resource leak (rhbz#771021)
+- qemu: Fix resource leak (rhbz#771021)
+- uuid: Fix possible non-terminated string (rhbz#771021)
+- node_device: Fix possible non-terminated string (rhbz#771021)
+
+* 三 5月 02 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-16.el6
+- qemuOpenFile: Don't force chown on NFS (rhbz#810241)
+- util: Fix crash when starting macvtap interfaces (rhbz#815270)
+- qemu: Fix segfault when host CPU is empty (rhbz#817078)
+- blockjob: Allow speed setting in block copy (rhbz#815791)
+- blockjob: Fix block-stream bandwidth race (rhbz#815791)
+
+* 二 5月 01 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-15.el6
+- qemu: Improve errors related to offline domains (rhbz#816662)
+- blockjob: Check for active vm before checking blockcopy bits (rhbz#816662)
+- qemu: Preserve original error during migration (rhbz#807907)
+- rpc: Discard non-blocking calls only when necessary (rhbz#807907)
+- qemu: Fix detection of failed migration (rhbz#807907)
+- qemu: Avoid bogus error at the end of tunnelled migration (rhbz#807907)
+- qemu: Make sure qemu can access its directory in hugetlbfs (rhbz#815206)
+- virsh: Fix docs for list command (rhbz#814021)
+- virsh: Fix and clarify the --title flag for the list command in man page (rhbz#814021)
+
+* 二 4月 24 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-14.el6
+- blockjob: Add new API flags (rhbz#638506)
+- blockjob: Add 'blockcopy' to virsh (rhbz#638506)
+- blockjob: Enhance xml to track mirrors across libvirtd restart (rhbz#638506)
+- blockjob: React to active block copy (rhbz#638506)
+- blockjob: Add qemu capabilities related to block jobs (rhbz#638506)
+- blockjob: Return appropriate event and info (rhbz#638506)
+- blockjob: Support pivot operation on cancel (rhbz#638506)
+- blockjob: Make drive-reopen safer (rhbz#638506)
+- blockjob: Implement block copy for qemu (rhbz#638506)
+- blockjob: Allow for existing files (rhbz#638506)
+- blockjob: Allow mirroring under SELinux (rhbz#638506)
+- blockjob: Accommodate RHEL backport names (rhbz#638506)
+- virsh: Avoid strtol (rhbz#813972)
+- conf: Tighten up XML integer parsing (rhbz#813972)
+- snapshot: Fix memory leak on error (rhbz#782457)
+- virsh: Avoid uninitialized memory usage (rhbz#814080)
+
+* 四 4月 19 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-13.el6
+- Fix a problem in the patchset, rhbz#811497 one was applied twice in -12
+- qemu, util: On restart of libvirt restart vepa callbacks (rhbz#812430)
+- qemu, util: Fix netlink callback registration for migration (rhbz#812430)
+- util: Only register callbacks for CREATE operations in virnetdevmacvlan.c (rhbz#812430)
+
+* 三 4月 18 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-12.el6
+- blockjob: Add qemu capabilities related to block pull jobs (rhbz#811683)
+- blockjob: Add API for async virDomainBlockJobAbort (rhbz#811683)
+- blockjob: Optimize JSON event handler lookup (rhbz#811683)
+- blockjob: Wire up qemu async virDomainBlockJobAbort (rhbz#811683)
+- blockjob: Allow for fast-finishing job (rhbz#811683)
+- virsh: Minor syntactic cleanups (rhbz#811683)
+- qemu: Use consistent error when qemu binary is too old (rhbz#811683)
+- blockjob: Add virsh blockpull --wait (rhbz#811683)
+- qemu: Fix deadlock when qemuDomainOpenConsole cleans up a connection (rhbz#811497)
+- qemu: Fix deadlock when qemuDomainOpenConsole cleans up a connection (rhbz#811497)
+- qemu: Fix mem leak in qemuProcessInitCpuAffinity (rhbz#810157)
+- numad: Convert node list to cpumap before setting affinity (rhbz#810157)
+- numad: Ignore cpuset if placement is auto (rhbz#810157)
+- conf: Do not parse cpuset only if the placement is auto (rhbz#810157)
+
+* 三 4月 11 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-11.el6
+- test: Fix segfault in networkxml2argvtest (rhbz#810100)
+- conf: Plug memory leaks on virDomainDiskDefParseXML (rhbz#575160)
+- qemu_ga: Don't overwrite errors on FSThaw (rhbz#808527)
+- Fix parallel build in docs/ directory (rhbz#810559)
+- qemu: Make migration fail when port profile association fails on the dst host (rhbz#811026)
+- Wire up <loader> to set the QEMU BIOS path (rhbz#811227)
+
+* 四 4月 05 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-10.el6
+- python: Add new helper functions for python to C conversion (rhbz#807751)
+- python: Make python APIs use these helper functions (rhbz#807751)
+- python: Improve conversion validation (rhbz#807751)
+- qemu_agent: Issue guest-sync prior to every command (rhbz#808527)
+- qemu: Fix memory leak in virDomainGetVcpus (rhbz#808979)
+- qemu: Reflect any memory rounding back to xml (rhbz#808522)
+- conf: Allow fuzz in XML with cur balloon > max (rhbz#808522)
+- qemu: Start nested job in qemuDomainCheckEjectableMedia (rhbz#803186)
+- virsh: Clarify escape sequence (rhbz#808652)
+- virsh: Plug memory leaks on failure path (rhbz#807555)
+- conf: Prevent crash of libvirtd without channel target name (rhbz#808371)
+- qemu: Don't leak temporary list of USB devices (rhbz#808459)
+- qemu: Delete USB devices used by domain on stop (rhbz#808459)
+- qemu: Build activeUsbHostdevs list on process reconnect (rhbz#808459)
+- qemu: Fix virtio+macvtap migration from 6.3 to older hosts (rhbz#806633)
+
+* 四 3月 29 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-9.el6
+- qemu: Avoid entering monitor with locked driver (rhbz#803186)
+- snapshot: Don't pass NULL to QMP command creation (rhbz#807147)
+
+* 一 3月 26 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-8.el6
+- rebuild, forgot to apply part of the patch
+- spec: Add missed dependancy for numad (rhbz#769930)
+
+* 一 3月 26 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-7.el6
+- snapshot: Make quiesce a bit safer (rhbz#804210)
+- python: Avoid memory leaks on libvirt_virNodeGetMemoryStats (rhbz#770944)
+- qemu: Use unlimited speed when migrating to file (rhbz#740099)
+- qemu: Add support for domain cleanup callbacks (rhbz#795305)
+- qemu: Avoid dangling migration-in job on shutoff domains (rhbz#795305)
+- qemu: Add connection close callbacks (rhbz#795305)
+- qemu: Make autodestroy utilize connection close callbacks (rhbz#795305)
+- qemu: Avoid dangling migration-out job when client dies (rhbz#795305)
+- python: Avoid memory leaks on libvirt_virNodeGetCPUStats (rhbz#770943)
+- util: Consolidate duplicated error messages in virnetlink.c (rhbz#693842)
+- python: Add virDomainGetCPUStats python binding API (rhbz#800366)
+- snapshot: Add qemu capability for 'transaction' command (rhbz#782457)
+- snapshot: Add atomic create flag (rhbz#782457)
+- snapshot: Make offline qemu snapshots atomic (rhbz#782457)
+- snapshot: Rudimentary qemu support for atomic disk snapshot (rhbz#782457)
+- snapshot: Add support for qemu transaction command (rhbz#782457)
+- snapshot: Wire up qemu transaction command (rhbz#782457)
+- snapshot: Improve qemu handling of reused snapshot targets (rhbz#782457)
+- Clarify virsh freecell manpage entry (rhbz#698521)
+- Add support for event tray moved of removable disks (rhbz#575160)
+- docs: Add documentation for new attribute tray of disk target (rhbz#575160)
+- conf: Parse and for the tray attribute (rhbz#575160)
+- qemu: Do not start with source for removable disks if tray is open (rhbz#575160)
+- qemu: Prohibit setting tray status as open for block type disk (rhbz#575160)
+- qemu: Update tray status while tray moved event is emitted (rhbz#575160)
+- build: Fix incorrect enum declaration (rhbz#575160)
+- spec: Add missed dependancy for numad (rhbz#769930)
+
+* 一 3月 19 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-6.el6
+- cpu: Add new flag supported by qemu to the cpu definition (rhbz#767364)
+- Added support for AMD Bulldozer CPU (rhbz#767364)
+- graphics: Cleanup port policy (rhbz#801443)
+- qemu: Reverse condition in qemuDomainCheckDiskPresence (rhbz#798938)
+- cpu: Add cpu definition for Intel Sandy Bridge cpu type (rhbz#761005)
+- cpu: Disable tsc-deadline feature not supported in qemu on RHEL 6.3 (rhbz#761005)
+- qemu: Support numad (rhbz#769930)
+- numad: Fix typo and warning (rhbz#769930)
+- qemu: Use scsi-block for lun passthrough instead of scsi-disk (rhbz#782034)
+- util: Make virDomainLeaseDefFree global (rhbz#802851)
+- qemu: Don't 'remove' hostdev objects from domain if operation fails (rhbz#802851)
+- util: Eliminate device object leaks related to virDomain*Remove*() (rhbz#802851)
+- virsh: Fix invalid free (rhbz#803591)
+- qemu: Eliminate memory leak in qemuDomainUpdateDeviceConfig (rhbz#802854)
+- qemu: Support persistent hotplug of <hostdev> devices (rhbz#802856)
+- qemu: Fix segfault when detaching non-existent network device (rhbz#802644)
+- remote: Fix migration leaks (rhbz#798497)
+- virsh: Trim aliases from -h output (rhbz#796526)
+- Fix handling of blkio deviceWeight empty string (rhbz#804028)
+
+* 二 3月 13 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-5.el6
+- Avoid global variable shadowed (rhbz#737726)
+- Add nodeGetCPUmap() for getting available CPU IDs in a cpumap. (rhbz#737726)
+- Qemu driver for virDomainGetCPUstats using cpuacct cgroup. (rhbz#737726)
+- Cpu-stats command shows cpu statistics information of a domain. (rhbz#737726)
+- Ensure max_id is initialized in linuxParseCPUmap() (rhbz#737726)
+- rpc: Allow truncated return for virDomainGetCPUStats (rhbz#737726)
+- qemu: Don't parse device twice in attach/detach (rhbz#770031)
+- sanlock: Fix condition left crippled while debugging (rhbz#785736)
+- sanlock: Use STREQ_NULLABLE instead of STREQ on strings that may be null (rhbz#785736)
+- qemu: Fix startupPolicy for snapshot-revert (rhbz#798938)
+- util: Don't overflow on errno in virFileAccessibleAs (rhbz#798938)
+- blockResize: Add flag for bytes (rhbz#796526)
+- docs: Use correct terminology for 1024 bytes (rhbz#796526)
+- api: Add overflow error (rhbz#796526)
+- util: New function for scaling numbers (rhbz#796526)
+- xml: Share 'unit' in RNG (rhbz#796526)
+- xml: Output memory unit for clarity (rhbz#796526)
+- storage: Support more scaling suffixes (rhbz#796526)
+- xml: Drop unenforced minimum memory limit from RNG (rhbz#796526)
+- xml: Use long long internally, to centralize overflow checks (rhbz#796526)
+- xml: Use better types for memory values (rhbz#796526)
+- xml: Allow scaled memory on input (rhbz#796526)
+- virsh: Add option aliases (rhbz#796526)
+- virsh: Use option aliases (rhbz#796526)
+- virsh: Add command aliases, and rename nodedev-detach (rhbz#796526)
+- virsh: Improve storage unit parsing (rhbz#796526)
+- virsh: Improve memory unit parsing (rhbz#796526)
+- qemuBuildCommandLine: Don't add tlsPort if none set (rhbz#801443)
+- Removed more AMD-specific features from cpu64-alios* models (rhbz#768450)
+- qemu: Support disk filenames with comma (rhbz#801970)
+- cpustats: Collect VM user and sys times (miss python bindings) (rhbz#800366)
+- cpustats: Report user and sys times (rhbz#800366)
+- qemu: Fix (managed)save and snapshots with host mode CPU (rhbz#801160)
+- qemu: Make block io tuning smarter (rhbz#770683)
+
+* 二 3月 06 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-4.el6
+- Improve error reporting when virsh console is run without a TTY (rhbz#729940)
+- pidfile: Make checking binary path in virPidFileRead optional (rhbz#729940)
+- Add flags for virDomainOpenConsole (rhbz#729940)
+- virsh: Add support for VIR_DOMAIN_CONSOLE_* flags (rhbz#729940)
+- fdstream: Emit stream abort callback even if poll() doesnt. (rhbz#729940)
+- fdstream: Add internal callback on stream close (rhbz#729940)
+- util: Add helpers for safe domain console operations (rhbz#729940)
+- qemu: Add ability to abort existing console while creating new one (rhbz#729940)
+- Fixed service handling in specfile (rhbz#786770)
+- qemu: Don't emit tls-port spice option if port is -1 (rhbz#798220)
+- docs: Comments wiping supported algorithms (rhbz#725013)
+- libvirt-guests: Add documentation and clean up to use virsh's improved list (rhbz#693758)
+- libvirt-guests: Don't try to do a managed-save of transient guests (rhbz#693758)
+- virsh: Enhance list command to ease creation of shell scripts (rhbz#693758)
+- libvirt-guests: Check if URI is reachable before launching commands (rhbz#720691)
+- hooks: Add support for capturing hook output (rhbz#795127)
+- qemu: Add pre-migration hook (rhbz#795127)
+- Support for cpu64-rhel* qemu cpu models (rhbz#768450)
+- util: Add netlink event handling to virnetlink.c (rhbz#693842)
+- Add de-association handling to macvlan code (rhbz#693842)
+- qemu: Add ibmvscsi controller model (rhbz#782034)
+- qemu: Add virtio-scsi controller model (rhbz#782034)
+- conf: Add helper function to look up disk controller model (rhbz#782034)
+- conf: Introduce new attribute for device address format (rhbz#782034)
+- qemu: New cap flag to indicate if channel is supported by scsi-disk (rhbz#782034)
+- qemu: Build command line for the new address format (rhbz#782034)
+- tests: Add tests for virtio-scsi and ibmvscsi controllers (rhbz#782034)
+- virsh: Two new helper functions for disk device changes (rhbz#713932)
+- virsh: Use vshFindDisk and vshPrepareDiskXML in cmdDetachDisk (rhbz#713932)
+- virsh: New command cmdChangeMedia (rhbz#713932)
+- qemu: Require json for block jobs (rhbz#799055)
+- qemu: Pass block pull backing file to monitor (rhbz#799055)
+- virsh: Expose partial pull (rhbz#799055)
+- libvirt-guests: Add parallel startup and shutdown of guests (rhbz#625362)
+- qemu: Shared or readonly disks are always safe wrt migration (rhbz#751631)
+- util: Eliminate crash in virNetDevMacVLanCreateWithVPortProfile (rhbz#693842)
+- rpc: Fix client crash on connection close (rhbz#800185)
+- conf: Add missing device types to virDomainDevice(Type|Def) (rhbz#691539)
+- conf: Relocate virDomainDeviceDef and virDomainHostdevDef (rhbz#691539)
+- conf: Reorder static functions in domain_conf.c (rhbz#691539)
+- qemu: Rename virDomainDeviceInfoPtr variables to avoid confusion (rhbz#691539)
+- conf: Add device pointer to args of virDomainDeviceInfoIterate callback (rhbz#691539)
+- conf: Make hostdev info a separate object (rhbz#691539)
+- conf: HostdevDef parse/format helper functions (rhbz#691539)
+- conf: Give each hostdevdef a parent pointer (rhbz#691539)
+- conf: Put subsys part of virDomainHostdevDef into its own struct (rhbz#691539)
+- conf: Hostdev utility functions (rhbz#691539)
+- qemu: Re-order functions in qemu_hotplug.c (rhbz#691539)
+- qemu: Refactor hotplug detach of hostdevs (rhbz#691539)
+- conf: Parse/format type='hostdev' network interfaces (rhbz#691539)
+- qemu: Support type='hostdev' network devices at domain start (rhbz#691539)
+- conf: Change virDomainNetRemove from static to global (rhbz#691539)
+- qemu: Use virDomainNetRemove instead of inline code (rhbz#691539)
+- qemu: Support type=hostdev network device live hotplug attach/detach (rhbz#691539)
+- util: Two new pci util functions (rhbz#691539)
+- util: Support functions for mac/portprofile associations on hostdev (rhbz#691539)
+- util: Changes to support portprofiles for hostdevs (rhbz#691539)
+- qemu: Install port profile and mac address on netdev hostdevs (rhbz#691539)
+- Fix build after commit e3ba4025 (rhbz#693842)
+
+* 二 2月 28 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-3.el6
+- storage: Allow runtime detection of scrub missing build dep (rhbz#725013)
+- daemon: Plug memory leak (rhbz#795978)
+- daemon: Fix logic bug with virAsprintf (rhbz#795978)
+- util: Fix virFileAccessibleAs return path from parent (rhbz#795093)
+- Add support for unsafe migration (rhbz#751631)
+- virsh: Add --unsafe option to migrate command (rhbz#751631)
+- Introduce virStorageFileIsClusterFS (rhbz#751631)
+- qemu: Forbid migration with cache != none (rhbz#751631)
+- qemu: Nicer error message on failed graceful destroy (rhbz#795656)
+- Error out when using SPICE TLS with spice_tls=0 (rhbz#790436)
+- Revert "spec: Mark directories in /var/run as ghosts" (rhbz#788985)
+- Fixed URI parsing (rhbz#785164)
+- virsh: Fix informational message in iface-bridge command (rhbz#797066)
+
+* 二 2月 21 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-2.el6
+- qemu: Set capabilities based on supported monitor commands (rhbz#766958)
+- qemu: Implement DomainPMSuspendForDuration (rhbz#766958)
+- snapshot: Fix snapshot deletion use-after-free (rhbz#790744)
+- storage: Allow runtime detection of scrub (rhbz#725013)
+- qemu: Unlock monitor when connecting to dest qemu fails (rhbz#783968)
+- qemu: Prevent crash of libvirtd without guest agent (rhbz#790745)
+- python: Expose virDomain{G,S}etInterfaceParameters APIs in python binding (rhbz#770971)
+
+* 二 2月 14 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-1.el6
+- Rebase to upstream 0.9.10 (rhbz#752433)
+- Add support for sVirt in the LXC driver
+- block rebase: add new API virDomainBlockRebase
+- API: Add api to set and get domain metadata
+- virDomainGetDiskErrors public API
+- conf: add rawio attribute to disk element of domain XML
+- Add new public API virDomainGetCPUStats()
+- Introduce virDomainPMSuspendForDuration API
+- resize: add virStorageVolResize() API
+- Add a virt-host-validate command to sanity check HV config
+- Add new virDomainShutdownFlags API
+- QEMU guest agent support
+- many improvements and bug fixes
+
+* 三 2月 08 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-0rc2.el6
+- Rebase to upstream 0.9.10 release candidate 2 (rhbz#752433)
+
+* 一 2月 06 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.10-0rc1.el6
+- Rebase to upstream 0.9.10 release candidate 1 (rhbz#752433)
+
+* 二 1月 17 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.9-2.el6
+- Remove dependancy to dmidecode for non PC arches (rhbz#782444)
+
+* 一 1月 09 2012 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.9-1.el6
+- Rebase to upstream 0.9.9 (rhbz#752433)
+
+* 五 12月 30 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.9-0rc1.el6
+- Rebase to upstream 0.9.9 release candidate 1 (rhbz#752433)
+
+* 四 12月 08 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.8-1.el6
+- Rebase to upstream 0.9.8 (rhbz#752433)
+- some cleanups on the few remaining RHEL-only patches
+
+* 一 12月 05 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.8-0rc2.el6
+- Rebase to upstream 0.9.8 release candidate 2 (rhbz#752433)
+
+* 三 11月 09 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-23.el6
+- Revert "Set qemu migration speed unlimited when migrating to file" (rhbz#751900)
+
+* 一 11月 07 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-22.el6
+- conf: Don't free uninitialized pointer (rhbz#751287)
+
+* 三 11月 02 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-21.el6
+- docs: Document managed=yes of hostdev passthrough (rhbz#740686)
+- ServerClient: Flush cached data (rhbz#748025)
+
+* 三 10月 26 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-20.el6
+- qemu: Avoid leaking uninit data from hotplug to dumpxml (rhbz#747516)
+- storage: Plug iscsi memory leak (rhbz#747516)
+
+* 三 10月 19 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-19.el6
+- snapshot: Detect when qemu lacks disk-snapshot support (rhbz#747115)
+
+* 一 10月 17 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-18.el6
+- virDomainCoreDump: Introduce VIR_DUMP_RESET flag (rhbz#632498)
+- qemu: Implement VIR_DUMP_RESET (rhbz#632498)
+- qemu: Check for domain being active on successful job acquire (rhbz#745734)
+- Set to NULL members that have been freed to prevent crashes (rhbz#746075)
+- virFDStream: Close also given errfd (fd leak) (rhbz#746075)
+- qemu: Silence Coverity false positive (rhbz#739704)
+- command: Avoid fd leak on failure (rhbz#739704)
+- build: Add compiler attributes to virUUIDParse (rhbz#739704)
+- qemu: Check for json allocation failure (rhbz#739704)
+- qemu: Fix text block info parsing (rhbz#739704)
+- storage: Plug memory leak on error (rhbz#739704)
+- conf: Plug memory leak on error (rhbz#739704)
+- qemu: Plug memory leak on migration (rhbz#739704)
+- macvtap: Plug memory leak for 802.1Qbh (rhbz#739704)
+- macvtap: Avoid invalid free (rhbz#739704)
+- Update to require sanlock 1.8 for license compliance (rhbz#739518)
+- events: Propose a separate lock for event queue (rhbz#743817)
+- util: Make getaddrinfo failure nonfatal in virGetHostname (rhbz#738915)
+- qemu: Make sure BeginJob is always followed by EndJob (rhbz#746268)
+- pci: Fix pciDeviceListSteal on multiple devices (rhbz#733587)
+- qemu: Do not reattach PCI device used by other domain when shutdown (rhbz#733587)
+- qemu: Honor the orginal PCI dev properties when reattaching (rhbz#736214)
+- daemon: Always advertise libvirtd service (rhbz#726616)
+
+* 三 10月 12 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-17.el6
+- Fix deadlock when the RPC program is unknown (rhbz#743843)
+- qemuDomainAttach: Initialize pidfile variable (rhbz#744548)
+- storage: Do not use comma as seperator for lvs output (rhbz#727474)
+- snapshot: Avoid accidental renames with snapshot-edit (rhbz#744724)
+
+* 五 10月 07 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-16.el6
+- qemu: Enable multifunction for older qemu (rhbz#738388)
+- qemu: Don't fail virDomainGetInfo if we can't update balloon info (rhbz#741217)
+- qemu: Leave rerror policy at default when enospace is requested (rhbz#730909)
+- snapshot: Fix virsh error message typo (rhbz#735457)
+- snapshot: Let virsh edit disk snapshots (rhbz#744071)
+- snapshot: Simplify redefinition of disk snapshot (rhbz#744071)
+
+* 五 10月 07 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-15.el6
+- Add virFileLock and virFileUnlock APIs (rhbz#728153)
+- Move pidfile functions into util/virpidfile.{c, h} (rhbz#728153)
+- Introduce functions for checking whether a pidfile is valid (rhbz#728153)
+- Add some APIs which use locking for crashsafe pidfile handling (rhbz#728153)
+- Convert libvirtd to use crash-safe pidfile APIs (rhbz#728153)
+- build: Fix recent build failures (rhbz#728153)
+- daemon: Don't remove pidfiles in init scripts (rhbz#728153)
+- daemon: Modify init script to detect upstart managed libvirtd (rhbz#728153)
+- qemu: Check for outstanding async job too (rhbz#742277)
+- qemu: Make PCI multifunction support more manual (rhbz#727530)
+- network: Fill in bandwidth from portgroup for all forward modes (rhbz#743176)
+- snapshot: Refactor virsh snapshot parent computation (rhbz#742410)
+- snapshot: Better virsh handling of missing current, parent (rhbz#742410)
+- qemu: Fix migration with dname (rhbz#740533)
+- qemu: Correct misspelled 'enospc' option, and only use for werror (rhbz#730909)
+- snapshot: Add REVERT_FORCE to API (rhbz#742615)
+- snapshot: Use qemu-img on disks in use at time of snapshot (rhbz#742615)
+- snapshot: Enforce REVERT_FORCE on qemu (rhbz#742615)
+- init: Raise default system aio limits (rhbz#740899)
+
+* 四 9月 29 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-14.el6
+- Fix synchronous reading of stream data (rhbz#741337)
+- qemu: Add ability to set PCI device "rombar" on or off (rhbz#738095)
+- virsh: Better document --copy-storage migrate options (rhbz#677220)
+- virsh: Enhance documentation of commands starting jobs (rhbz#705237)
+- qemu: Always remove domain object if MigratePrepare fails (rhbz#741251)
+- security: Properly chown/label bidirectional and unidirectional fifos (rhbz#740478)
+- qemu: Check domain status details when reconnecting monitor (rhbz#617890)
+- qemu: Finish domain shutdown on reconnect (rhbz#617890)
+- qemu: Avoid loop of fake reboots (rhbz#617890)
+- qemu: Preserve fakeReboot flag in domain status (rhbz#617890)
+- snapshot: Fix man page typos (rhbz#740686)
+- docs: Document virsh nodedev-* commands (rhbz#740686)
+- docs: Document node device XML (rhbz#740686)
+- qemu: Add return value check (rhbz#739704)
+- qemu: Check for ejected media during startup and migration (rhbz#725673)
+- virsh: Update man page for cpu_shares parameter (rhbz#639591)
+- virsh: Describe attach-interface parameter target (rhbz#698899)
+
+* 一 9月 26 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-13.el6
+- Fix crash on events due to allocation errors (rhbz#737881)
+- remote: Fix crash on OOM (rhbz#737881)
+- Fix persistent migration config save (rhbz#738148)
+- qemu: Transfer inactive XML among cookie (rhbz#738148)
+- storage: Ensure the device path exists before refreshing disk pool (rhbz#611442)
+- Store max migration bandwidth in qemuDomainObjPrivate struct (rhbz#740099)
+- Save migration speed in qemuDomainMigrateSetMaxSpeed (rhbz#740099)
+- Set qemu migration speed unlimited when migrating to file (rhbz#740099)
+- Use max bandwidth from qemuDomainObjPrivate struct when migrating (rhbz#740099)
+- build: Silence warning on 32-bit build (rhbz#740099)
+- conf: Assign newDef of active domain as persistent conf if it is NULL (rhbz#728428)
+- qemu: Avoid dereferencing a NULL pointer (rhbz#739704)
+- sanlock: Fix memory leak (rhbz#739704)
+- virsh: Fix regression in argv parsing (rhbz#740168)
+- snapshot: Fix logic bug in qemu undefine (rhbz#735457)
+- snapshot: Prepare to remove transient snapshot metadata (rhbz#735457)
+- snapshot: Remove snapshot metadata on transient exit (rhbz#735457)
+- snapshot: Also delete empty directory (rhbz#735457)
+- virsh: Do not ignore the specified flags for cmdSaveImageDefine (rhbz#740508)
+- selinux: Correctly report warning if virt_use_nfs not set (rhbz#589922)
+- qemu: Properly hot-unplug drives (rhbz#696596)
+
+* 二 9月 20 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-12.el6
+- selinux: Detect virt_use_nfs boolean set (rhbz#589922)
+- virnetsocket: Pass KRB5CCNAME env variable (rhbz#737176)
+- snapshot: Fix double free of qemuImgBinary (rhbz#737010)
+- qemu_api: Modify apibuild.py to generate docs for QEMU APIs (rhbz#736040)
+- qemu_api: Update Makefile for subdir docs (rhbz#736040)
+- qemu_api: Add comments for API virDomainQemuMonitorCommand (rhbz#736040)
+- qemu_api: Add override XML and C files for QEMU APIs (rhbz#736040)
+- qemu_api: Update Py binding generator to generate files for QEMU APIs (rhbz#736040)
+- qemu_api: Update Makefile to generate libvirtmod_qemu lib (rhbz#736040)
+- qemu_api: Update libvirt spec file (rhbz#736040)
+- Remove two references to files not generated (rhbz#736040)
+- qemu_api: Doc improvements (rhbz#736040)
+- python: Fix libvirt.py generation to include virterror info (rhbz#736040)
+- snapshot: New APIs for inspecting snapshot object (rhbz#735457)
+- snapshot: Use new API for less work (rhbz#735457)
+- snapshot: ABI stability must include memory sizing (rhbz#735553)
+- spec: Require augeas for sanlock (rhbz#738314)
+- sanlock: Add missing test command in virt-sanlock-cleanup.in (rhbz#738534)
+- snapshot: Tweak snapshot-create-as diskspec docs (rhbz#738411)
+- qemu: Hold conn open for all threads started by qemuProcessReconnectAll (rhbz#738778)
+- rpc: Convert unknown procedures to VIR_ERR_NO_SUPPORT (rhbz#738439)
+- Prevent crash from dlclose() of libvirt.so (rhbz#739167)
+- doc: Add statment about permissions needed to do a core dump (rhbz#738146)
+- snapshot: Affect persistent xml after disk snapshot (rhbz#738676)
+- snapshot: Allow disk snapshots of qcow2 disks (rhbz#738676)
+- qemu: Prevent disk corruption on domain shutdown (rhbz#734773)
+- qemu: Introduce shutdown reason for paused state (rhbz#734773)
+- qemu: Fix shutoff reason when domain crashes (rhbz#739641)
+- qemu: Properly detect crash of a rebooted domain (rhbz#739641)
+- qemu: Avoid memory leak (rhbz#739704)
+- remote: Avoid memory leak (rhbz#739704)
+- util: Avoid memory leak (rhbz#739704)
+- Fix memory leak parsing 'relabel' attribute in domain security XML (rhbz#739704)
+- Don't leak memory if a cgroup is mounted multiple times (rhbz#739704)
+- network: Eliminate potential memory leak on parse failure (rhbz#739704)
+- virsh: doc: Fix supported driver types for attach-disk command (rhbz#738970)
+- Do not log invalid operations in libvirtd logs (rhbz#590807)
+
+* 四 9月 08 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-11.el6
+- blockinfo: Fix qemu regression in handling disk name (rhbz#736603)
+- doc: Fix incorrect option in send-key (rhbz#736297)
+- virsh: Fix typo in opts_send_key (rhbz#736297)
+- rpc: Avoid memory leak on virNetTLSContextValidCertificate (rhbz#735650)
+- tests: Avoid memory leak on testTLSSessionInit (rhbz#735650)
+- qemu: Fix seamless SPICE migration with older qemu (rhbz#730753)
+- snapshot: Fix regression with system checkpoints (rhbz#736682)
+
+* 三 9月 07 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-10.el6
+- virterror: Fix error message for VIR_ERR_INVALID_ARG (rhbz#689388)
+- remote: Refuse connecting to remote socket (rhbz#689388)
+- Threadpool: Initialize new dynamic workers (rhbz#692663)
+
+* 二 9月 06 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-9.el6
+- adds a missing patch in previous build (rhbz#735498)
+
+* 二 9月 06 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-8.el6
+- qemu: Fix a regression of domain save (rhbz#735011)
+- virsh: Improve send-key documentation (rhbz#699847)
+- start: Allow discarding managed save (rhbz#730750)
+- virsh: Support 'virsh start --force-boot' on older servers (rhbz#730750)
+- maint: Fix comment typos (rhbz#730750)
+- qemu: Refactor file opening (rhbz#730750)
+- qemu: Detect incomplete save files (rhbz#730750)
+- virsh: Avoid memory leak on cmdVolCreateAs (rhbz#735008)
+- snapshot: Fix corner case on OOM during creation (rhbz#674537)
+- Ensure stream is aborted when exiting console (rhbz#731673)
+- following for (rhbz#731583, rhbz#731579, rhbz#731584, rhbz#731673):
+- Ensure client streams are closed when marking a client for close
+- Fix race condition in abort of stream
+- Tweak debugging message in RPC client code
+- Don't attempt to read from a stream if it is closed
+- Ensure async packets never get marked for sync replies
+- Ignore unused streams in virStreamAbort
+- rpc: Don't close connection if program is unknown
+- rpc: Fix a typo in debugging log in virNetServerProgramSendStreamData
+- stream: Remove redundant reference to client while sending stream data
+- Fix memory leak dispatching domain events
+- Avoid use-after-free on streams, due to message callbacks
+- Fix tracking of RPC messages wrt streams
+- Fix parted sector size assumption (rhbz#735441)
+- Fix incorrect path length check in sanlock lockspace setup (rhbz#735443)
+- Fix sanlock socket security labelling (rhbz#735442)
+- Remove bogus virSecurityManagerSetProcessFDLabel method (rhbz#735442)
+- security: Fix build (rhbz#735442)
+- Fix keymap used to talk with QEMU (rhbz#632499)
+- virsh: Fix snapshot-create-as to handle arbitrary names (rhbz#735495)
+- virsh: Add virsh snapshot-current --name (rhbz#735495)
+- virsh: Add snapshot-parent (rhbz#735495)
+- virsh: Don't reject undefine on active domain (rhbz#735495)
+- virsh: Fix logic bug (rhbz#735495)
+- virsh: Fix dead store (rhbz#735495)
+- virsh: Tweak misleading wording (rhbz#735495)
+- virsh: Concatenate qemu-monitor-command arguments (rhbz#735495)
+- maint: Treat more libxml2 functions as free-like (rhbz#735495)
+- xml: Add another convenience function (rhbz#735495)
+- maint: Simplify lots of libxml2 clients (rhbz#735495)
+- virsh: Add list --managed-save (rhbz#735495)
+- virsh: Prefer unsigned flags (rhbz#735495)
+- snapshot: Add snapshot-list --parent to virsh (rhbz#735495)
+- qemu: Allow to undefine a running domain (rhbz#735498)
+- test: Allow to undefine a running domain (rhbz#735498)
+- build: Fix typo in recent test patch (rhbz#735498)
+- test: Rewrite test to match change in behavior (rhbz#735498)
+- virsh: Properly interleave shared stdout and stderr (rhbz#735498)
+- snapshot: Better events when starting paused (rhbz#733762)
+- snapshot: Fine-tune ability to start paused (rhbz#733762)
+- snapshot: Expose --running and --paused in virsh (rhbz#733762)
+- snapshot: Fine-tune qemu saved images starting paused (rhbz#733762)
+- snapshot: Improve reverting to qemu paused snapshots (rhbz#733762)
+- snapshot: Properly revert qemu to offline snapshots (rhbz#733762)
+- snapshot: Fine-tune qemu snapshot revert states (rhbz#733762)
+- snapshot: Properly revert qemu to offline snapshots (rhbz#733762)
+- snapshot: Fine-tune qemu snapshot revert states (rhbz#733762)
+- snapshot: Speed up snapshot location (rhbz#733529)
+- snapshot: Avoid crash when deleting qemu snapshots (rhbz#733529)
+- snapshot: Track current domain across deletion of children (rhbz#733529)
+- snapshot: Simplify acting on just children (rhbz#733529)
+- snapshot: Allow deletion of just snapshot metadata (rhbz#735457)
+- snapshot: Let qemu discard only snapshot metadata (rhbz#735457)
+- snapshot: Identify which snapshots have metadata (rhbz#735457)
+- snapshot: Reflect new dumpxml and list options in virsh (rhbz#735457)
+- snapshot: Identify qemu snapshot roots (rhbz#735457)
+- snapshot: Allow recreation of metadata (rhbz#735457)
+- snapshot: Refactor virsh snapshot creation (rhbz#735457)
+- snapshot: Improve virsh snapshot-create, add snapshot-edit (rhbz#735457)
+- snapshot: Add qemu snapshot creation without metadata (rhbz#735457)
+- snapshot: Add qemu snapshot redefine support (rhbz#735457)
+- vbox, xenapi: Add virDomainUndefineFlags (rhbz#735457)
+- snapshot: Prevent stranding snapshot data on domain destruction (rhbz#735457)
+- snapshot: Teach virsh about new undefine flags (rhbz#735457)
+- snapshot: Refactor some qemu code (rhbz#735457)
+- snapshot: Cache qemu-img location (rhbz#735457)
+- snapshot: Support new undefine flags in qemu (rhbz#735457)
+- snapshot: Prevent migration from stranding snapshot data (rhbz#735457)
+- snapshot: Refactor domain xml output (rhbz#735553)
+- snapshot: Allow full domain xml in snapshot (rhbz#735553)
+- snapshot: Correctly escape generated xml (rhbz#735553)
+- snapshot: Update rng to support full domain in xml (rhbz#735553)
+- snapshot: Store qemu domain details in xml (rhbz#735553)
+- schedinfo: Update man page about virsh schedinfo command (unknown)
+- snapshot: Additions to domain xml for disks (rhbz#638510)
+- snapshot: Reject transient disks where code is not ready (rhbz#638510)
+- snapshot: Introduce new deletion flag (rhbz#638510)
+- snapshot: Expose new delete flag in virsh (rhbz#638510)
+- snapshot: Allow halting after snapshot (rhbz#638510)
+- snapshot: Expose halt-after-creation in virsh (rhbz#638510)
+- snapshot: Support extra state in snapshots (unknown)
+- snapshot: Add <disks> to snapshot xml (rhbz#638510)
+- snapshot: Also support disks by path (rhbz#638510)
+- snapshot: Add virsh domblklist command (rhbz#638510)
+- snapshot: Add flag for requesting disk snapshot (rhbz#638510)
+- snapshot: Wire up disk-only flag to snapshot-create (rhbz#638510)
+- snapshot: Reject unimplemented disk snapshot features (rhbz#638510)
+- snapshot: Make it possible to audit external snapshot (rhbz#638510)
+- snapshot: Wire up new qemu monitor command (rhbz#638510)
+- snapshot: Wire up live qemu disk snapshots (rhbz#638510)
+- snapshot: Use SELinux and lock manager with external snapshots (rhbz#638510)
+- daemon: Create priority workers pool (rhbz#692663)
+- qemu: Introduce job queue size limit (rhbz#692663)
+- qemu: Deal with stucked qemu on daemon startup (rhbz#692663)
+
+* 三 8月 31 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-7.el6
+- qemu: Properly label outgoing pipe for tunneled migration (rhbz#733998)
+- snapshot: Forbid snapshot on autodestroy domain (rhbz#733806)
+
+* 五 8月 26 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-6.el6
+- daemon: Move TLS initialization to virInitialize (rhbz#732893)
+- Fix command test wrt gnutls initialize & fix debugging (rhbz#732893)
+- qemu: Init reattaching related members pciDevice before reattach (rhbz#728203)
+- qemu: error if qemu monitor command not found for BlockJob (rhbz#727502)
+- virsh: error if specified bandwidth is invalid for blockjob (rhbz#727502)
+- util: Only fchown newly created files in virFileOpenAs (rhbz#534010)
+- screenshot: Implement multiple screen support (rhbz#710489)
+- security: Rename SetSocketLabel APIs to SetDaemonSocketLabel (rhbz#731243)
+- security: Introduce SetSocketLabel (rhbz#731243)
+- qemu: Correctly label migration TCP socket (rhbz#731243)
+- snapshot: Don't leak resources on qemu snapshot failure (rhbz#733499)
+- Fix memory leak while scanning snapshots (rhbz#674537)
+- qemu: Minor formatting cleanup (rhbz#674537)
+- Swap virDomain and virDomainSnapshot declaration (rhbz#674537)
+- snapshot: Only pass snapshot to qemu command line when reverting (rhbz#674537)
+- snapshot: Track current snapshot across restarts (rhbz#674537)
+- send-key: Fix scan keycode map (rhbz#733597)
+
+* 一 8月 22 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-5.el6
+- patch problem for seamless SPICE migration (rhbz#730753)
+- macvtap: Fix getPhysfn to get the PF of a direct attach network interface (rhbz#732082)
+- SSL spice session can't be kept during migration (rhbz#729874)
+- Storage driver should flush host cache after cloning volumes (rhbz#689416)
+- Documentation for CFS bandwidth limiting cgroup (rhbz#692769)
+- libvirt error message should show the uri content but not (null) (rhbz#730244)
+- libvirtd.conf error causes libvirtd to exit silently (rhbz#728654)
+
+* 一 8月 15 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-4.el6
+- Bugfix: Check stdoutWatch before removing the handler. (rhbz#730600)
+- daemon: Fix regression of libvirtd reloading support (rhbz#730428)
+- libvirtd.init.in: Stop/restart() - wrong return value in case of failure (rhbz#730510)
+- Add API for duplicating a socket/client file descriptor (rhbz#720269)
+- Add backlog parameter to virNetSocketListen (rhbz#720269)
+- Support changing UNIX socket owner in virNetSocketNewListenUNIX (rhbz#720269)
+- qemu: Refactor do{Tunnel, Native}Migrate functions (rhbz#720269)
+- qemu: Use virNetSocket for tunneled migration (rhbz#720269)
+- qemu: Use fd: protocol for migration (rhbz#720269)
+- qemu: Support event_idx parameter for virtio disk and net devices (rhbz#725448)
+
+* 一 8月 15 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-3.el6
+- Fix large files support (rhbz#728992)
+- qemu: Avoid overwriting errors from virGetHostname (rhbz#729567)
+- qemu: Fix -chardev udp if parameters are omitted (rhbz#689761)
+- managedsave: Prohibit use on transient domains (rhbz#729714)
+- nwfilter: Tolerate disappearing interfaces while instantiating filter (rhbz#729945)
+- docs: Describe new virtual switch configuration in network XML docs (rhbz#643947)
+- storage: Directory shouldn't be listed as type 'file' (rhbz#727088)
+- virsh: Add dir type for listing volumes with vol-list (rhbz#727088)
+- qemu: Avoid crash on process attach (rhbz#730615)
+
+* 二 8月 09 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-2.el6
+- daemon: Unlink unix socket paths on shutdown (rhbz#725702)
+- rpc:Fix sasl session relocking intead of unlocking it (rhbz#729198)
+- network: Eliminate lag in updating dnsmasq hosts files (rhbz#727982)
+- Don't mount /dev for application containers (rhbz#728835)
+- support connected parameter in set_password (rhbz#707212)
+
+* 三 8月 03 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-1.el6
+- Rebased to upstream 0.9.4 (rhbz#705814)
+- The rebase also fixes the following bugs:
+    rhbz#634653, rhbz#707212, rhbz#722806, rhbz#723862, rhbz#726304,
+    rhbz#726398, rhbz#727047, rhbz#727094
+
+* 五 7月 29 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-0rc2.el6
+- rebased to upstream 0.9.4 release candidate 2 (rhbz#705814)
+- the rebase also fixes the following bugs:
+    rhbz#667624, rhbz#669586, rhbz#682084, rhbz#707155, rhbz#707212,
+    rhbz#725322, rhbz#725935, rhbz#725950
+
+* 五 7月 29 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-0rc1.1.el6
+- add a fix for a refcounting bug leading to a crash (rhbz#723811)
+
+* 二 7月 26 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.4-0rc1.el6
+- rebased to upstream 0.9.4 release candidate 1 (rhbz#705814)
+- the rebase also fixes the following bugs:
+    rhbz#603039, rhbz#632499, rhbz#632760, rhbz#643947, rhbz#678027,
+    rhbz#697742, rhbz#697841, rhbz#704836, rhbz#707530, rhbz#720350,
+    rhbz#720889, rhbz#721335, rhbz#722862
+
+* 二 7月 26 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-8.el6
+- libvirt crash when running domains and vdsm is restarted (rhbz#723811)
+- connect to hypervisor with unconfigured tls/tcp connection pbm (rhbz#723442)
+- virsh list produced segmentation fault when libvirtd is not up (rhbz#723843)
+- clientcert.pem validation failure cause libvirtd crash (rhbz#723881)
+
+* 三 7月 20 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-7.el6
+- Fix TLS certificate checking problems (rhbz#723447)
+
+* 三 7月 20 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-6.el6
+- Fix migration with TLS bugs (rhbz#722738 and rhbz#722748)
+- assorted small fixes from upstream
+
+* 五 7月 15 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-5.el6
+- Fix migrating domain error (rhbz#721411)
+
+* 五 7月 15 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-4.el6
+- storage: Avoid memory leak on metadata fetching (rhbz#707155)
+- graphics: Add support for action_if_connected in qemu (rhbz#707212)
+- qemu: Save domain status ASAP after creating qemu process (rhbz#707894)
+- bios: Add support for SGA (rhbz#711598)
+- pci: Initialize state values on reattach (rhbz#713697)
+- Keep consistence between code and doc on log level and usage (rhbz#716888)
+
+* 四 7月 14 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-3.el6
+- util: Avoid duplicating virFileOpenAsNoFork in virFileOpenAs (rhbz#707257)
+
+* 一 7月 11 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-2.el6
+- Fix mistaken order of server cert/key parameters in constructor (rhbz#719838)
+- qemu: Don't chown files on NFS share if dynamic_ownership is off (rhbz#716478)
+- util: Don't try to fchown files opened as non-root (rhbz#707257)
+
+* 一 7月 04 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-1.el6
+- Rebased to upstream 0.9.3 (rhbz#705814)
+- The rebase also fixes the following bugs:
+    rhbz#591974, rhbz#632499, rhbz#641087, rhbz#664629, rhbz#679668,
+    rhbz#682121, rhbz#693648, rhbz#693650, rhbz#693661, rhbz#698340,
+    rhbz#698825, rhbz#698861, rhbz#701394, rhbz#707439, rhbz#707530,
+    rhbz#715355, rhbz#716826, rhbz#717203, rhbz#718143, rhbz#712050,
+    rhbz#715184
+
+* 四 6月 30 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.3-0rc2.el6
+- Rebased to upstream 0.9.3 prerelease 2 (rhbz#705814)
+
+* 一 6月 20 2011 Daniel Veillard <veillard@redhat.com> - libvirt-0.9.2-1.el6
+- Rebased to upstream 0.9.2 (rhbz#705814)
+- The rebase also fixes the following bugs:
+    rhbz#569567, rhbz#691830, rhbz#607526, rhbz#609650, rhbz#632495,
+    rhbz#640603, rhbz#658713, rhbz#669549, rhbz#677229, rhbz#678548,
+    rhbz#640603, rhbz#682237, rhbz#683005, rhbz#684848, rhbz#688859,
+    rhbz#690695, rhbz#692355, rhbz#693203, rhbz#694516, rhbz#697650,
+    rhbz#698133, rhbz#702044, rhbz#704124, rhbz#704144, rhbz#705405,
+    rhbz#706869, rhbz#706883, rhbz#706966, rhbz#707173, rhbz#707257,
+    rhbz#707298, rhbz#709576, rhbz#709776, rhbz#710150, rhbz#711151
+
+* 四 5月 19 2011 Jiri Denemark <jdenemar@redhat.com> - libvirt-0.9.1-1.el6
+- Rebased to upstream 0.9.1 (rhbz#705814)
+- The rebase also fixes the following bugs:
+    rhbz#587276, rhbz#591058, rhbz#592170, rhbz#598792, rhbz#673814,
+    rhbz#677228, rhbz#681458, rhbz#682237, rhbz#692745, rhbz#693932,
+    rhbz#694382, rhbz#695653, rhbz#698071, rhbz#698197, rhbz#698208,
+    rhbz#698490, rhbz#701305
+
+* 一 4月 18 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-18.el6
+- network: Fix NULL dereference during error recovery (rhbz#696660)
+- virsh: Fix regression in parsing optional integer (rhbz#693963)
+- util: Fix crash when removing entries during hash iteration (rhbz#693385)
+- Experimental libvirtd upstart job (rhbz#678084)
+
+* 三 4月 13 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-17.el6
+- Don't return an error on failure to create blkio controller (rhbz#689030)
+- Fix possible infinite loop in remote driver (rhbz#691514)
+- qemu: Remove the managed state file only if restoring succeeded (rhbz#692998)
+- docs: Tweak virsh restore warning (rhbz#692998)
+
+* 三 4月 06 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-16.el6
+- nwfilter: Enable rejection of packets (rhbz#681948)
+- Revert all previous error log priority hacks (rhbz#587603)
+- Filter out certain expected error messages from libvirtd (rhbz#587603)
+- qemu: Unlock qemu driver before return from domain save (rhbz#688774)
+- Do not send monitor command after monitor meet error (rhbz#688774)
+- qemu: Ignore libvirt debug messages in qemu log (rhbz#681492)
+- virsh: Fix memtune's help message for swap_hard_limit (rhbz#680190)
+- virsh: Fix documentation for memtune command (rhbz#680190)
+- docs: Fix typo (rhbz#680190)
+- Fix typo in systemtap tapset directory name (rhbz#693701)
+- qemu: Ignore unusable binaries (rhbz#676563)
+- qemu: Support for overriding NPROC limit (rhbz#674602)
+
+* 二 3月 29 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-15.el6
+- Fix return value for virJSONValueFromString if it fails (rhbz#688723)
+- Fix positioning to end of qemu log file (rhbz#689986)
+- Initialization error of qemuCgroupData in Qemu host usb hotplug (rhbz#690183)
+- 8021Qbh: Use preassociate-rr during the migration prepare stage (rhbz#684870)
+- Make error reporting in libvirtd thread safe (rhbz#689374)
+- Add missing dependencies (rhbz#690022)
+- Fix restoring a compressed save image (rhbz#691034)
+- Fix label restore bugs in qemu driver (rhbz#690737)
+
+* 二 3月 22 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-14.el6
+- Fix delayed events when SASL is active (rhbz#624252)
+- Fix ref-counting bugs (rhbz#688774)
+- Log an error if on failure to connect to netlink socket (rhbz#689001)
+- Log error and abort network startup when radvd isn't found (rhbz#688957)
+- Add PCI sysfs reset access rights to qemu (rhbz#689002)
+- Fix regression with qemu:///session URI (rhbz#684655)
+- Avoid leaking PCI config fd into qemu (rhbz#687993)
+
+* 三 3月 16 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-13.el6
+- Properly report error in virConnectDomainXMLToNative (CVE-2011-1146)
+- Handle DNS over IPv6 (rhbz#687896)
+- Start dnsmasq even if no dhcp ranges/hosts are specified (rhbz#687291)
+- Use a separate dhcp leases file for each network (rhbz#687551)
+- Fix a possible crash in storage driver (rhbz#684712)
+
+* 二 3月 15 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-12.el6
+- Fix vram settings for qxl graphics (rhbz#673578)
+- Free stream when domain shuts down while its console is open (rhbz#682741)
+- Use hardcoded python path in libvirt.py (rhbz#684204)
+- Add missing checks for read only connections (CVE-2011-1146)
+- Eliminate potential null pointer deref when auditing macvtap devices (rhbz#642785)
+- Insert error messages to avoid a quiet abortion of commands (rhbz#605660)
+
+* 四 3月 10 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-11.el6
+- Support vram specification for qxl graphics (rhbz#673578)
+- Fix parsing int options in virsh (rhbz#639587)
+- Use -o encryption=on instead of -e for qemu-img (rhbz#676984)
+- Support domain snapshots with current QMP (rhbz#589076)
+- Update auditing support (rhbz#642785)
+- Only request sound cgroup ACL when required (rhbz#680398)
+- Allow fine-tuning of device ACL permissions (rhbz#683163)
+- Support vhost in attach-interface (rhbz#683276)
+- Don't request cgroup ACL access for /dev/net/tun (rhbz#683305)
+
+* 一 3月 07 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-10.el6
+- Fix deadlock caused by a fix for rhbz#670848
+
+* 五 3月 04 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-9.el6
+- Reorder nwfilter match extensions relative to state match (rhbz#678139)
+- Avoid overwriting error message in qemu driver (rhbz#678870)
+- Allow removing hash entries in virHashForEach (rhbz#681459)
+- Avoid double close on qemu domain restore (rhbz#672725)
+- Fix DomainObj refcounting/hashtable races in qemu driver (rhbz#670848)
+- Fix several memory leaks (rhbz#682249)
+
+* 四 2月 24 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-8.el6
+- Fix --all flag of virsh freecell to really show all cells (rhbz#653530)
+- Add txmode attribute to interface XML for virtio backend (rhbz#629662)
+- Give each virtual network bridge its own fixed MAC address (rhbz#609463)
+- Fix virsh snapshot-list with --quiet option (rhbz#678833)
+- Delay IFF_UP'ing 802.1Qbh interface until migration final stage (rhbz#678826)
+- Fix several memory bugs (rhbz#679164)
+- Fix virt-pki-validate when CERTTOOL is missing (rhbz#679153)
+- Fix memory corruption in virFileAbsPath (rhbz#680281)
+
+* 四 2月 17 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-7.el6
+- Properly escape special characters in domain names (rhbz#676908)
+- Fix enum type declaration (rhbz#628940)
+- Fix cleanup on VM state after failed QEMU startup (rhbz#673588)
+- Fix XML generation for smartcards (rhbz#677308)
+- Ignore failure of "qemu -M ?" on older qemu (rhbz#676563)
+- Fix typo in setting up SPICE passwords (rhbz#677709)
+- Avoid NULL dereference in virDomainMemoryStats (rhbz#677484)
+- Avoid NULL dereference on error in qemu driver (rhbz#677493)
+- Fix error message when saving a shutoff domain (rhbz#677547)
+- Create enough volumes for mpath pool (rhbz#677231)
+- Allow to delete device mapper disk partition (rhbz#611443)
+
+* 五 2月 11 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-6.el6
+- Fix typo in parsing of spice 'auth' data (rhbz#676374)
+- Fix attach-interface regression (rhbz#676686)
+- Block I/O tunables via blkio cgroups controller (rhbz#632492)
+- Support SCSI RAID type & lower log level for unknown types (rhbz#675771)
+- Only initialize/cleanup libpciaccess once (rhbz#675698)
+- Imprint all logs with version + package build information (rhbz#673226)
+
+* 五 2月 04 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-5.el6
+- Docs for customizable x509 certificate paths for client (rhbz#629510)
+- Fix tests for VNC over a unix domain socket (rhbz#651415)
+- Fix problems with peer-to-peer migration (rhbz#673434)
+- Fix tunneled migration broken since 0.8.7-2 (rhbz#672199)
+- Update docs for cpu_shares setting (rhbz#641187)
+- Fix possible hang if SASL is used (rhbz#672226)
+- Cancel migration in progress when virsh gets Ctrl-C (rhbz#635353)
+- Enhance virsh migrate command (rhbz#619039)
+- Support for specifying AIO mode for qemu disks (rhbz#591703)
+- Don't leave domain paused after restore (rhbz#670278)
+- Fix possible deadlock/crash in qemu driver (rhbz#673588)
+- Add shortcut for qemu HMP pass through (rhbz#628940)
+- Fix error message when attach device fails (rhbz#675030)
+- Support for booting from assigned PCI devices (rhbz#646895)
+- Improve handling of unlimited value for memory tunables (rhbz#669069)
+- Add smartcard support (rhbz#641834)
+- Remove some RHEL-specific patches which are no longer required (rhbz#653985)
+- Support for disabling/enabling KSM per domain (rhbz#635419)
+- Add --all flag to virsh freecell command (rhbz#653530)
+
+* 四 1月 27 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-4.el6
+- Fix event-handling data race (rhbz#671567)
+- Add support for VNC over a unix domain socket (rhbz#651415)
+- Support intel 'ich6' model (rhbz#648486)
+- Do not use virtio-serial port 0 for generic ports (rhbz#670394)
+- Set SELinux context label of pipes used for qemu migration (rhbz#667756)
+- Support customizable x509 certificate paths for client (rhbz#629510)
+- Round up capacity for LVM volume creation (rhbz#670529)
+- Show error prompt when trying to managed save a shutoff domain (rhbz#672449)
+- Report more proper error for unsupported graphics (rhbz#671319)
+- Expand the man page text for virsh setmaxmem (rhbz#622534)
+- Fix event-handling allocation crash (rhbz#671564)
+- Require --mac to avoid detach-interface ambiguity (rhbz#671050)
+
+* 四 1月 20 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-3.el6
+- Report error if invalid type specified for character device (rhbz#638968)
+- Improve log for domain related APIs (rhbz#640202)
+- Reject SDL graphic if it's not supported by qemu (rhbz#633326)
+- Don't lose track of events when callbacks are slow (rhbz#624252)
+- Fail if per-device boot is used but deviceboot is not supported (rhbz#670399)
+- Avoid sending STOPPED event twice (rhbz#666158)
+- Fix issues introduced by dependency patches for rhbz#646895
+
+* 一 1月 17 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-2.el6
+- Fix spec file which was not fully rebased to 0.8.7 (rhbz#653985, rhbz#660706)
+- Skip IB700 watchdog device when assigning PCI slots (rhbz#667091)
+- Improve error reporting when parsing dhcp info (rhbz#653300)
+- Don't chown saved image back to root if dynamic_ownership=0 (rhbz#661720)
+- Fix core dumps if unix_sock_group is set (rhbz#623166)
+- Add support for Westmere CPU model (rhbz#656248)
+- Add XML config switch to enable/disable vhost-net support (rhbz#643050)
+- Enable tuning of qemu network tap device "sndbuf" size (rhbz#665293)
+- Support for explicit boot device ordering (rhbz#646895)
+- Avoid qemu holding migration fd indefinitely (rhbz#620363)
+
+* 日 1月 09 2011 Jiri Denemark <jdenemar@redhat.com> - 0.8.7-1.el6
+- Rebased to upstream 0.8.7 (rhbz#653985)
+- The following bugs got fixed by the rebase:
+    rhbz#586124, rhbz#595350, rhbz#611793, rhbz#611822, rhbz#617439,
+    rhbz#620363, rhbz#626873, rhbz#627143, rhbz#628772, rhbz#639595,
+    rhbz#639603, rhbz#656795, rhbz#658657, rhbz#659855, rhbz#660706,
+    rhbz#664406, rhbz#665446
+
+* 四 12月 23 2010 Jiri Denemark <jdenemar@redhat.com> - 0.8.6-1.el6
+- Rebased to upstream 0.8.6 (rhbz#653985)
+
+* 五 12月 10 2010 Jiri Denemark <jdenemar@redhat.com> - 0.8.1-29.el6
+- spec file cleanups (rhbz#649523)
+- Fix deadlock on concurrent multiple bidirectional migration (rhbz#659310)
+- Fix funny error in clock-variable (rhbz#660194)
+- Export host information through SMBIOS to guests (rhbz#526224)
+- Ensure device is deleted from guest after unplug (rhbz#644015)
+- Distinguish between QEMU domain shutdown and crash (rhbz#656845)
+
+* 一 11月 29 2010 Jiri Denemark <jdenemar@redhat.com> - 0.8.1-28.el6
+- Fix JSON migrate_set_downtime command (rhbz#561935)
+- Make SASL work over UNIX domain sockets (rhbz#641687)
+- Let qemu group look below /var/lib/libvirt/qemu/ (rhbz#643407)
+- Fix save/restore on root_squashed NFS (rhbz#643884)
+- Fix race on multiple migration (rhbz#638285)
+- Export host information through SMBIOS to guests (rhbz#526224)
+- Support forcing a CDROM eject (rhbz#626305)
+
+* 三 8月 18 2010 Daniel Veillard <veillard@redhat.com> - 0.8.1-27
+- build -26 hit a miscompilation error c.f. 624895 drop -j16
+- Resolves: rhbz#620847
+- Resolves: rhbz#623877
+
+* 二 8月 17 2010 Dave Allan <dallan@redhat.com> - 0.8.1-26
+- Fix problem with capabilities XML generation
+- Resolves: rhbz#620847
+- Correctly reserve and release PCI slots
+- Resolves: rhbz#623877
+
+* 日 8月 15 2010 Daniel Veillard <veillard@redhat.com> - 0.8.1-25
+- fix PXE booting on the virtual network
+- Resolves: rhbz#623951
+- fix tunelled migration
+- Resolves: rhbz#624062
+
+* 四 8月 12 2010 Daniel Veillard <veillard@redhat.com> - 0.8.1-24
+- do not call balloon info command if balloon is desactivated
+- Resolves: rhbz#617286
+
+* 三 8月 11 2010 Daniel Veillard <veillard@redhat.com> - 0.8.1-23
+- give a way to desactivate memory balloon support
+- Resolves: rhbz#617286
+
+* 二 8月 10 2010 Dave Allan <dallan@redhat.com> - 0.8.1-22
+- Mitigate asynchronous device_del
+- Resolves: rhbz#609437
+- Fix PCI address allocation
+- Resolves: rhbz#618484
+- Make nodeinfo skip offline CPUs
+- Resolves: rhbz#622515
+
+* 二 8月 03 2010 Dave Allan <dallan@redhat.com> - 0.8.1-21
+- Fix multiple PCI device assignment bugs
+- Resolves: rhbz#617116
+- Fix the ACS checking in the PCI code
+- Resolves: rhbz#615218
+- Disable boot=on when not using KVM
+- Resolves: rhbz#594068
+- Don't leak delay string when freeing virInterfaceBridgeDefs
+- Resolves: rhbz#620837
+
+* 三 7月 28 2010 Dave Allan <dallan@redhat.com> - 0.8.1-20
+- Fix error message in guests init script when libvirtd isn't installed
+- Resolves: rhbz#617527
+
+* 二 7月 27 2010 Dave Allan <dallan@redhat.com> - 0.8.1-19
+- Add character device backend activating QEMU internal spice agent
+- Resolves: rhbz#615757
+- Make libvirt-guests initscript Fedora compliant
+- Resolves: rhbz#617300
+
+* 四 7月 22 2010 Daniel Veillard <veillard@redhat.com> - 0.8.1-18
+- Fix patch for PIIX3 slot 1 reservation, in case it's already reserved
+- Resolves: rhbz#592026
+
+* 三 7月 21 2010 Dave Allan <dallan@redhat.com> - 0.8.1-17
+- Set a stable & high MAC addr for guest TAP devices
+- Resolves: rhbz#616517
+- Fix bogus commit of -16 patches
+- Related: rhbz#592026
+- Related: rhbz#599590
+
+* 三 7月 21 2010 Dave Allan <dallan@redhat.com> - 0.8.1-16
+- Make PCI device ordering consistent with older releases
+- Resolves: rhbz#592026
+- Fix libvirtd hang during concurrent bi-directional migration
+- Resolves: rhbz#599590
+
+* 三 7月 14 2010 Dave Allan <dallan@redhat.com> - 0.8.1-15
+- Add iptables rule to fixup DHCP response checksum
+- Resolves: rhbz#612588
+
+* 二 7月 13 2010 Dave Allan <dallan@redhat.com> - 0.8.1-14
+- Support virtio disk hotplug in JSON mode
+- Resolves: rhbz#573946
+- Fix QEMU monitor JSON crash
+- Resolves: rhbz#604585
+- CVE-2010-2237 CVE-2010-2238 CVE-2010-2239
+- Resolves: rhbz#607817
+- CVE-2010-2242 Apply a source port mapping to virtual network masquerading
+- Resolves: rhbz#608049
+- Fix hang if QEMU exits (almost) immediately
+- Resolves: rhbz#610056
+- Support new CPU models provided by qemu-kvm
+- Resolves: rhbz#605830
+- Fix comparison of two host CPUs
+- Resolves: rhbz#611401
+- Don't mess with the CPU returned by arch driver
+- Resolves: rhbz#613014
+- Fail when CPU type cannot be detected from XML
+- Resolves: rhbz#613760
+- Use -nodefconfig when probing for CPU models
+- Resolves: rhbz#613764
+- cpuCompare: Fix crash on unexpected CPU XML
+- Resolves: rhbz#613765
+- Properly report failure to create raw storage volume files
+- Related: rhbz#547543
+- Fix IOErrorReasonCallback python bindings
+- Related: rhbz#586353
+- Parthelper: canonicalize block device paths
+- Related: rhbz#593785
+
+* 三 6月 30 2010 Dave Allan <dallan@redhat.com> - 0.8.1-13
+- Don't invoke destroy callback from qemuMonitorOpen() failure paths (v2)
+- Related: rhbz#609060
+
+* 二 6月 29 2010 Dave Allan <dallan@redhat.com> - 0.8.1-12
+- Don't invoke destroy callback from qemuMonitorOpen() failure paths
+- Resolves: rhbz#609060
+- virFileResolveLink: guarantee an absolute path
+- Resolves: rhbz#608092
+- SPICE patches have translatable strings without format args
+- Resolves: rhbz#608917
+- No way to pass disk format type to pool-define-as nor pool-create-as
+- Resolves: rhbz#597790
+- Fix enforcement of direction of traffic for rules describing incoming traffic
+- Resolves: rhbz#606889
+- Clarify virsh help pool-create-as text
+- Resolves: rhbz#609044
+
+* 一 6月 28 2010 Dave Allan <dallan@redhat.com> - 0.8.1-11
+- Do not block during incoming migration
+- Resolves: rhbz#579440
+- Label serial devices
+- Resolves: rhbz#585249
+- parthelper: fix compilation without optimization
+- Related: rhbz#593785
+- Fix name/UUID uniqueness checking in storage/network
+- Resolves: rhbz#593951
+- Don't squash file permissions when migration fails
+- Resolves: rhbz#607922
+- Properly handle 'usbX' sysfs files
+- Resolves: rhbz#603867
+- add pool support to vol-key command & improve vol commands help
+- Resolves: rhbz#598365
+- document attach-disk better
+- Resolves: rhbz#601143
+- Config iptables to allow tftp port if network <tftp> element exists
+- Resolves: rhbz#607294
+- Fix failure to generate python bindings when libvirt.h.in is updated
+- Related: rhbz#589465
+- Allow all interface names
+- Resolves: rhbz#593907
+- Fix nodedevice refcounting
+- Resolves: rhbz#608753
+- Move nwfilter functions inside extern C and fix a locking bug
+- Resolves: rhbz#597391
+- Fix failure to restore qemu domains with selinux enforcing
+- Resolves: rhbz#590975
+- Check for presence of qemu -nodefconfig option before using it
+- Resolves: rhbz#608859
+
+* 一 6月 21 2010 Dave Allan <dallan@redhat.com> - 0.8.1-10
+- Add multiIQN XML output
+- Resolves: rhbz#587700
+- Fix udev node device parent-child device relationships
+- Resolves: rhbz#593995
+- Fix leaks in udev device add/remove
+- Resolves: rhbz#595490
+- Fix device destroy return value
+- Resolves: rhbz#597998
+- Update nodedev scsi_host data before use
+- Resolves: rhbz#600048
+- Display wireless devices in nodedev list
+- Resolves: rhbz#604811
+- Show pool and domain persistence
+- Resolves: rhbz#603696
+- Fix cleanup after failing to hotplug a PCI device
+- Resolves: rhbz#605168
+- Add '-nodefconfig' command line arg to QEMU
+- Resolves: rhbz#602778
+- Switch to private redhat namespace for QMP I/O error reason
+- Resolves: rhbz#586353
+- Improve error messages for missing drivers & unsupported functions
+- Resolves: rhbz#595609
+- macvtap: get interface index if not provided
+- Resolves: rhbz#605187
+- Fix leaks in remote code
+- Resolves: rhbz#603442
+- Add an optional switch --uuid to the virsh vol-pool command
+- Resolves: rhbz#604929
+- Change per-connection hashes to be indexed by UUIDs
+- Resolves: rhbz#603494
+- Run virsh from libvirt-guests script with /dev/null on stdin
+- Resolves: rhbz#606314
+- Increase dd block size to speed up domain save
+- Resolves: rhbz#601775
+- Fix reference counting bugs on qemu monitor
+- Resolves: rhbz#602660
+- Add missing action parameter in IO error callback
+- Resolves: rhbz#607157
+
+* 三 6月 16 2010 Dave Allan <dallan@redhat.com> - 0.8.1-9
+- Touch libvirt-guests lockfile
+- Resolves: rhbz#566647
+- Add qemu.conf option for clearing capabilities
+- Resolves: rhbz#593903
+- Add support for launching guest in paused state
+- Resolves: rhbz#589465
+- Add virsh vol-pool command
+- Resolves: rhbz#602217
+- Add vol commands to virsh man page
+- Resolves: rhbz#600640
+- Remove bogus migrate error messages
+- Resolves: rhbz#601575
+
+* 四 6月 10 2010 Dave Allan <dallan@redhat.com> - 0.8.1-8
+- Ensure virtio serial has stable addressing
+- Resolves: rhbz#586665
+- SELinux socket labelling on QEMU monitor socket for MLS
+- Resolves: rhbz#593739
+- Fix enumeration of partitions in disks with a trailing digit in path
+- Resolves: rhbz#593785
+- Enable probing of VPC disk format type
+- Resolves: rhbz#597981
+- Delete UNIX domain sockets upon daemon shutdown
+- Resolves: rhbz#598163
+- Fix Migration failure 'canonical hostname pointed to localhost'
+- Resolves: rhbz#589864
+- Fix up the python bindings for snapshotting
+- Resolves: rhbz#591839
+- Sanitize pool target paths
+- Resolves: rhbz#593565
+- Prevent host network conflicts
+- Resolves: rhbz#594494
+- Support 802.1Qbg and bh (vnlink/VEPA) (refresh)
+- Resolves: rhbz#590110
+
+* 三 5月 26 2010 Dave Allan <dallan@redhat.com> - 0.8.1-7
+- Fix sign extension error in libvirt's parsing of qemu options
+- Resolves: rhbz#592070
+- Graceful shutdown/suspend of libvirt guests on host shutdown
+- Resolves: rhbz#566647
+- Fix pci device hotplug
+- Resolves: rhbz#572867
+- Support 802.1Qbg and bh
+- Resolves: rhbz#532760, rhbz#570949, rhbz#590110, rhbz#570923
+
+* 三 5月 19 2010 Dave Allan <dallan@redhat.com> - 0.8.1-6
+- Support seamless migration of SPICE graphics clients (refresh)
+- Resolves: rhbz#591551
+- Fix swapping of PCI vendor & product names in udev backend
+- Resolves: rhbz#578419
+- Fix cgroup setup code to cope with root squashing NFS
+- Resolves: rhbz#593193
+- Fix startup error reporting race
+- Resolves: rhbz#591272
+
+* 二 5月 18 2010 Dave Allan <dallan@redhat.com> - 0.8.1-5
+- Don't reset user/group/security label for any files on shared filesystems
+- Resolves: rhbz#578889
+- Make saved state labelling ignore the dynamic_ownership parameter
+- Resolves: rhbz#588562
+- Fix & protect against NULL pointer dereference in monitor code
+- Resolves: rhbz#591076
+- Fix virFileResolveLink return value
+- Resolves: rhbz#591363
+- Add support for SSE4.1 and SSE4.2 CPU features
+- Resolves: rhbz#592977
+
+* 五 5月 14 2010 Dave Allan <dallan@redhat.com> - 0.8.1-4
+- query QEMU to get the actual allocated extent of a block device
+- Resolves: rhbz#526289
+
+* 三 5月 12 2010 Daniel Veillard <veillard@redhat.com> - 0.8.1-3
+- missing python bindings due to older XML api
+- Resolves: rhbz#589453
+- Fix two possible crashes in JSON event dispatch
+- Resolves: rhbz#586353
+- Fix handling of disk backing stores with cgroups
+- Resolves: rhbz#581476
+- virsh schedinfo --set error handling on unknow parameters
+- Resolves: rhbz#586632
+- Apply extra patches for nwfilter
+- Resolves: rhbz#588554
+- Fix hang during concurrent guest migrations
+- Resolves: rhbz#582278
+
+* 五 5月 07 2010 Daniel Veillard <veillard@redhat.com> - 0.8.1-2
+- Don't wipe generated iface target in active domains (588046)
+- Fix LXC domain lookup and error handling (586361)
+- Fix a protocol breakage introduced in libvirt-0.8.0
+- Add support for nic hotplug in QEMU/KVM (589978)
+- Seemless migration of spice graphics clients (589989)
+- fix build with ESX support
+- Resolves: rhbz#581966
+- fix multilib problem (587231)
+
+* 五 4月 30 2010 Daniel Veillard <veillard@redhat.com> - 0.8.1-1
+- Rebase to upstream 0.8.1
+- Resolves: rhbz#558761
+
+* 五 4月 23 2010 Daniel Veillard <veillard@redhat.com> - 0.8.0-4
+- Fix libvirtd startup when avahi failed to look up local host name
+- CPU selection fixes
+- Resolves: rhbz#581627
+- fix migration poll value
+- Resolves: rhbz#584928
+- crash dump job caused libvirt hang
+- Resolves: rhbz#580853
+- Fix initial VCPU pinning in qemu driver
+- Resolves: rhbz#578434
+- fix cpu hotplug command names
+
+* 二 4月 20 2010 Daniel Veillard <veillard@redhat.com> - 0.8.0-3
+- Build ESX support in
+- Resolves: rhbz#581966
+- a batch of network filter fixes, IBM request and upstream fixes
+- Resolves: rhbz#579993
+- couple of patchs to fix device handling with QMP
+- Related: rhbz#563189
+- fix python binding for snapshotting
+- spec file fixes for nwfiler build and RHEL-5 virt-v2v specific rebuild
+
+* 二 4月 13 2010 Daniel P. Berrange <berrange@redhat.com> - 0.8.0-2
+- Refresh SPICE patches to fix test failures
+- Related: rhbz#515265, rhbz#524623, rhbz#573382
+- Enable test suite during build, disabling tests that don't work in mock
+- Related: rhbz#558761
+
+* 一 4月 12 2010 Daniel Veillard <veillard@redhat.com> - 0.8.0-1
+- official 0.8.0 upstream release
+- Resolves: rhbz#558761
+- new patch set of patches for RHEL-6 SPICE and addons
+- Enable QMP/ JSON mode in the QEMU monitor
+- Resolves: rhbz#563189
+- Support configuration of SPICE as a graphics protocol
+- Resolves: rhbz#515265
+- vnc (and spice) ticketing
+- Resolves: rhbz#524623
+- enable spice tls encryption in domainXML, and which channels are encrypted
+- Resolves: rhbz#573382
+- notification of VNC/SPICE client disconnect/connect events
+- Resolves: rhbz#515268
+
+* 三 4月 07 2010 Daniel Veillard <veillard@redhat.com> - 0.8.0-0.pre20100407
+- preview #4 for 0.8.0 rebase
+- snapshot API
+- domain with disk on root-squashing nfs and security driver mismatch
+- Resolves: rhbz#578630
+- Fail to read xml when restore domain
+- Resolves: rhbz#577719
+- loop "virsh cd" in virsh interactive terminal generate unknown error
+- Resolves: rhbz#572380
+- support setting qemu's -drive werror=stop/enospc with configuration
+- Resolves: rhbz#526231
+
+* 二 3月 30 2010 Daniel Veillard <veillard@redhat.com> - 0.7.8-0.pre20100330
+- preview #3 for 0.7.8 rebase
+- kvm hpet support
+- Resolves: rhbz#576973
+- hook scripts support
+- Resolves: rhbz#569965
+- Need to add time keeping abstraction
+- Resolves: rhbz#557285
+- notification of guest reboot
+- Resolves: rhbz#527572
+- Ability to preserve RTC clock adjustments across guest reboots
+- Resolves: rhbz#515273
+- Notifications of guest stopping due to disk I/O errors
+- Resolves: rhbz#515270
+- VNC ticketing support (524623) spice still needed
+- VNC client disconnect/connect events (515268) spice still needed
+
+* 一 3月 22 2010 Daniel Veillard <veillard@redhat.com> - 0.7.8-0.pre20100322
+- preview #2 for 0.7.8 rebase
+- migration max downtime API
+- Resolves: rhbz#561935
+- allow suspend during migration
+- Resolves: rhbz#561934
+- support vhost net mode at qemu startup for net devices
+- Resolves: rhbz#540391
+- read-only device access support for qemu
+- Resolves: rhbz#556769
+- LSB compliance of libvirtd init script
+- Resolves: rhbz#538701
+- No domain vcpu information output when using JSON monitor
+- Resolves: rhbz#572051
+- "qemudDomainSetMaxMemory" does not work and should be removed
+- Resolves: rhbz#572146
+- after setvcpus, any virsh command will be hung
+- Resolves: rhbz#572193
+- virsh interactive terminal crash or hung
+- Resolves: rhbz#572376
+- virsh hangs after core dump
+- Resolves: rhbz#572544
+- Fix very slow file allocation on ext3
+
+* 五 3月 12 2010 Daniel Veillard <veillard@redhat.com> - 0.7.8-0.pre20100312
+- preview for 0.7.8 rebase
+- Extra non upstream basic patch for spice and XQL
+- Resolves: rhbz#515264
+- Resolves: rhbz#515265
+- connected virsh dies with a SIGPIPE after libvirtd restart
+- Resolves: rhbz#526656
+- error when running logrotate on s/390x arch
+- Resolves: rhbz#547514
+
+* 五 3月 05 2010 Daniel Veillard <veillard@redhat.com> - 0.7.7-1
+- macvtap support (rhbz#553348)
+- async job handling (rhbz #515278)
+- virtio channel (rhbz#515281)
+- computing baseline CPU
+- virDomain{Attach,Detach}DeviceFlags
+- Improve libvirt error reporting for failed migrations (rhbz#528793)
+- qemu driver support CPU hotplug (rhbz#533138)
+- wrong (octal) device number for attaching USB devices (rhbz#549840)
+- cannot save domain into root_squashing nfs export (rhbz#558763)
+- assorted bug fixes and lots of cleanups
+
+* 三 3月 03 2010 Daniel P. Berrange <berrange@redhat.com> - 0.7.6-4
+- Fix balloon parameter name handling in JSON mode (rhbz #566261)
+
+* 五 2月 26 2010 Daniel P. Berrange <berrange@redhat.com> - 0.7.6-3
+- Fix balloon units handling in JSON mode (rhbz #566261)
+- Invoke qmp_capabilities at monitor startup (rhbz #563189)
+
+* 三 2月 10 2010 Daniel Veillard <veillard@redhat.com> - 0.7.6-2
+- enable JSON interface, desactivated by default in 0.7.6
+- Resolves: rhbz#563189
+- make sure cgroups are installed and that cgconfig service is on
+- Resolves: rhbz#531263
+
+* 三 2月 03 2010 Daniel Veillard <veillard@redhat.com> - 0.7.6-1
+- upstream release of 0.7.6
+- Use QEmu new device adressing when possible
+- Implement CPU topology support for QEMU driver
+- Implement SCSI controller hotplug/unplug for QEMU
+- Implement support for multi IQN
+- a lot of fixes and improvements
+- Resolves: rhbz#558761
+
+* 五 1月 22 2010 Daniel Veillard <veillard@redhat.com> - 0.7.6-0.pre20100121
+- push updated prerelease version of 0.7.6 for testing in Beta1
+- Resolves: rhbz#515213
+
+* 四 1月 21 2010 Daniel Veillard <veillard@redhat.com> - 0.7.6-0.pre20100121
+- Push a prerelease version of 0.7.6 for testing in Beta1
+- Allow specifying -cpu model/flags for qemu
+- Resolves: rhbz#515213
+- Add async qemu machine protocol to libvirt based on JSON QEmu API
+- Resolves: rhbz#518701
+- Allow for static PCI address assignment to all devices
+- Resolves: rhbz#481924
+- expose qemu's -fda fat:floppy feature (525074)
+- configuration of virtual CPU topology (sockets, threads, cores) (538015)
+- rewrite file chown'ing code to use security driver framework (547545 )
+- cannot create a headless KVM virtual machine (548127)
+- Improve virsh schedular parameters documentation (548485)
+- Fail to delete a inactive pool using command "virsh pool-delete" (530985)
+- virsh man page updation for using container (lxc:///) (528709)
+- Command 'virsh vcpuinfo' returns libvirt error in RHEL6 with KVM (522829)
+- Expose information about host CPU flags in capabilities (518062)
+
+* 五 1月 15 2010 Daniel P. Berrange <berrange@redhat.com> - 0.7.5-2
+- Rebuild for libparted soname change (rhbz #555741)
+
+* 三 12月 23 2009 Daniel Veillard <veillard@redhat.com> - 0.7.5-1
+- Add new API virDomainMemoryStats
+- Public API and domain extension for CPU flags
+- vbox: Add support for version 3.1
+- Support QEMU's virtual FAT block device driver
+- a lot of fixes
+
+* 五 11月 20 2009 Daniel Veillard <veillard@redhat.com> - 0.7.4-1
+- upstream release of 0.7.4
+- udev node device backend
+- API to check object properties
+- better QEmu monitor processing
+- MAC address based port filtering for qemu
+- support IPv6 and multiple addresses per interfaces
+- a lot of fixes
+
+* 四 11月 19 2009 Daniel P. Berrange <berrange@redhat.com> - 0.7.2-6
+- Really fix restore file labelling this time
+
+* 三 11月 11 2009 Daniel P. Berrange <berrange@redhat.com> - 0.7.2-5
+- Disable numactl on s390[x]. Again.
+
+* 三 11月 11 2009 Daniel P. Berrange <berrange@redhat.com> - 0.7.2-4
+- Fix QEMU save/restore permissions / labelling
+
+* 四 10月 29 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.2-3
+- Avoid compressing small log files (#531030)
+
+* 四 10月 29 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.2-2
+- Make libvirt-devel require libvirt-client, not libvirt
+- Fix qemu machine types handling
+
+* 三 10月 14 2009 Daniel Veillard <veillard@redhat.com> - 0.7.2-1
+- Upstream release of 0.7.2
+- Allow to define ESX domains
+- Allows suspend and resulme of LXC domains
+- API for data streams
+- many bug fixes
+
+* 二 10月 13 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-12
+- Fix restore of qemu guest using raw save format (#523158)
+
+* 五 10月 09 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-11
+- Fix libvirtd memory leak during error reply sending (#528162)
+- Add several PCI hot-unplug typo fixes from upstream
+
+* 二 10月 06 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-10
+- Create /var/log/libvirt/{lxc,uml} dirs for logrotate
+- Make libvirt-python dependon on libvirt-client
+- Sync misc minor changes from upstream spec
+
+* 二 10月 06 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-9
+- Change logrotate config to weekly (#526769)
+
+* 四 10月 01 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-8
+- Disable sound backend, even when selinux is disabled (#524499)
+- Re-label qcow2 backing files (#497131)
+
+* 三 9月 30 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-7
+- Fix USB device passthrough (#522683)
+
+* 一 9月 21 2009 Chris Weyl <cweyl@alumni.drew.edu> - 0.7.1-6
+- rebuild for libssh2 1.2
+
+* 一 9月 21 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-5
+- Don't set a bogus error in virDrvSupportsFeature()
+- Fix raw save format
+
+* 四 9月 17 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-4
+- A couple of hot-unplug memory handling fixes (#523953)
+
+* 四 9月 17 2009 Daniel Veillard <veillard@redhat.com> - 0.7.1-3
+- disable numactl on s390[x]
+
+* 四 9月 17 2009 Daniel Veillard <veillard@redhat.com> - 0.7.1-2
+- revamp of spec file for modularity and RHELs
+
+* 二 9月 15 2009 Daniel Veillard <veillard@redhat.com> - 0.7.1-1
+- Upstream release of 0.7.1
+- ESX, VBox driver updates
+- mutipath support
+- support for encrypted (qcow) volume
+- compressed save image format for Qemu/KVM
+- QEmu host PCI device hotplug support
+- configuration of huge pages in guests
+- a lot of fixes
+
+* 一 9月 14 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-0.2.gitfac3f4c
+- Update to newer snapshot of 0.7.1
+- Stop libvirt using untrusted 'info vcpus' PID data (#520864)
+- Support relabelling of USB and PCI devices
+- Enable multipath storage support
+- Restart libvirtd upon RPM upgrade
+
+* 日 9月 06 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.1-0.1.gitg3ef2e05
+- Update to pre-release git snapshot of 0.7.1
+- Drop upstreamed patches
+
+* 三 8月 19 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.0-6
+- Fix migration completion with newer versions of qemu (#516187)
+
+* 三 8月 19 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.0-5
+- Add PCI host device hotplug support
+- Allow PCI bus reset to reset other devices (#499678)
+- Fix stupid PCI reset error message (bug #499678)
+- Allow PM reset on multi-function PCI devices (bug #515689)
+- Re-attach PCI host devices after guest shuts down (bug #499561)
+- Fix list corruption after disk hot-unplug
+- Fix minor 'virsh nodedev-list --tree' annoyance
+
+* 四 8月 13 2009 Daniel P. Berrange <berrange@redhat.com> - 0.7.0-4
+- Rewrite policykit support (rhbz #499970)
+- Log and ignore NUMA topology problems (rhbz #506590)
+
+* 一 8月 10 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.0-3
+- Don't fail to start network if ipv6 modules is not loaded (#516497)
+
+* 四 8月 06 2009 Mark McLoughlin <markmc@redhat.com> - 0.7.0-2
+- Make sure qemu can access kernel/initrd (bug #516034)
+- Set perms on /var/lib/libvirt/boot to 0711 (bug #516034)
+
+* 三 8月 05 2009 Daniel Veillard <veillard@redhat.com> - 0.7.0-1
+- ESX, VBox3, Power Hypervisor drivers
+- new net filesystem glusterfs
+- Storage cloning for LVM and Disk backends
+- interface implementation based on netcf
+- Support cgroups in QEMU driver
+- QEmu hotplug NIC support
+- a lot of fixes
+
+* 五 7月 03 2009 Daniel Veillard <veillard@redhat.com> - 0.6.5-1
+- release of 0.6.5
+
+* 五 5月 29 2009 Daniel Veillard <veillard@redhat.com> - 0.6.4-1
+- release of 0.6.4
+- various new APIs
+
+* 五 4月 24 2009 Daniel Veillard <veillard@redhat.com> - 0.6.3-1
+- release of 0.6.3
+- VirtualBox driver
+
+* 五 4月 03 2009 Daniel Veillard <veillard@redhat.com> - 0.6.2-1
+- release of 0.6.2
+
+* 三 3月 04 2009 Daniel Veillard <veillard@redhat.com> - 0.6.1-1
+- release of 0.6.1
+
+* 六 1月 31 2009 Daniel Veillard <veillard@redhat.com> - 0.6.0-1
+- release of 0.6.0
+
+* 二 11月 25 2008 Daniel Veillard <veillard@redhat.com> - 0.5.0-1
+- release of 0.5.0
+
+* 二 9月 23 2008 Daniel Veillard <veillard@redhat.com> - 0.4.6-1
+- release of 0.4.6
+
+* 一 9月 08 2008 Daniel Veillard <veillard@redhat.com> - 0.4.5-1
+- release of 0.4.5
+
+* 三 6月 25 2008 Daniel Veillard <veillard@redhat.com> - 0.4.4-1
+- release of 0.4.4
+- mostly a few bug fixes from 0.4.3
+
+* 四 6月 12 2008 Daniel Veillard <veillard@redhat.com> - 0.4.3-1
+- release of 0.4.3
+- lots of bug fixes and small improvements
+
+* 二 4月 08 2008 Daniel Veillard <veillard@redhat.com> - 0.4.2-1
+- release of 0.4.2
+- lots of bug fixes and small improvements
+
+* 一 3月 03 2008 Daniel Veillard <veillard@redhat.com> - 0.4.1-1
+- Release of 0.4.1
+- Storage APIs
+- xenner support
+- lots of assorted improvements, bugfixes and cleanups
+- documentation and localization improvements
+
+* 二 12月 18 2007 Daniel Veillard <veillard@redhat.com> - 0.4.0-1
+- Release of 0.4.0
+- SASL based authentication
+- PolicyKit authentication
+- improved NUMA and statistics support
+- lots of assorted improvements, bugfixes and cleanups
+- documentation and localization improvements
+
+* 日 9月 30 2007 Daniel Veillard <veillard@redhat.com> - 0.3.3-1
+- Release of 0.3.3
+- Avahi support
+- NUMA support
+- lots of assorted improvements, bugfixes and cleanups
+- documentation and localization improvements
+
+* 二 8月 21 2007 Daniel Veillard <veillard@redhat.com> - 0.3.2-1
+- Release of 0.3.2
+- API for domains migration
+- APIs for collecting statistics on disks and interfaces
+- lots of assorted bugfixes and cleanups
+- documentation and localization improvements
+
+* 二 7月 24 2007 Daniel Veillard <veillard@redhat.com> - 0.3.1-1
+- Release of 0.3.1
+- localtime clock support
+- PS/2 and USB input devices
+- lots of assorted bugfixes and cleanups
+- documentation and localization improvements
+
+* 一 7月 09 2007 Daniel Veillard <veillard@redhat.com> - 0.3.0-1
+- Release of 0.3.0
+- Secure remote access support
+- unification of daemons
+- lots of assorted bugfixes and cleanups
+- documentation and localization improvements
+
+* 五 6月 08 2007 Daniel Veillard <veillard@redhat.com> - 0.2.3-1
+- Release of 0.2.3
+- lot of assorted bugfixes and cleanups
+- support for Xen-3.1
+- new scheduler API
+
+* 二 4月 17 2007 Daniel Veillard <veillard@redhat.com> - 0.2.2-1
+- Release of 0.2.2
+- lot of assorted bugfixes and cleanups
+- preparing for Xen-3.0.5
+
+* 四 3月 22 2007 Jeremy Katz <katzj@redhat.com> - 0.2.1-2.fc7
+- don't require xen; we don't need the daemon and can control non-xen now
+- fix scriptlet error (need to own more directories)
+- update description text
+
+* 五 3月 16 2007 Daniel Veillard <veillard@redhat.com> - 0.2.1-1
+- Release of 0.2.1
+- lot of bug and portability fixes
+- Add support for network autostart and init scripts
+- New API to detect the virtualization capabilities of a host
+- Documentation updates
+
+* 五 2月 23 2007 Daniel P. Berrange <berrange@redhat.com> - 0.2.0-4.fc7
+- Fix loading of guest & network configs
+
+* 五 2月 16 2007 Daniel P. Berrange <berrange@redhat.com> - 0.2.0-3.fc7
+- Disable kqemu support since its not in Fedora qemu binary
+- Fix for -vnc arg syntax change in 0.9.0  QEMU
+
+* 四 2月 15 2007 Daniel P. Berrange <berrange@redhat.com> - 0.2.0-2.fc7
+- Fixed path to qemu daemon for autostart
+- Fixed generation of <features> block in XML
+- Pre-create config directory at startup
+
+* 三 2月 14 2007 Daniel Veillard <veillard@redhat.com> 0.2.0-1.fc7
+- support for KVM and QEmu
+- support for network configuration
+- assorted fixes
+
+* 一 1月 22 2007 Daniel Veillard <veillard@redhat.com> 0.1.11-1.fc7
+- finish inactive Xen domains support
+- memory leak fix
+- RelaxNG schemas for XML configs
+
+* 三 12月 20 2006 Daniel Veillard <veillard@redhat.com> 0.1.10-1.fc7
+- support for inactive Xen domains
+- improved support for Xen display and vnc
+- a few bug fixes
+- localization updates
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 0.1.9-2
+- rebuild against python 2.5
+
+* 三 11月 29 2006 Daniel Veillard <veillard@redhat.com> 0.1.9-1
+- better error reporting
+- python bindings fixes and extensions
+- add support for shareable drives
+- add support for non-bridge style networking
+- hot plug device support
+- added support for inactive domains
+- API to dump core of domains
+- various bug fixes, cleanups and improvements
+- updated the localization
+
+* 二 11月 07 2006 Daniel Veillard <veillard@redhat.com> 0.1.8-3
+- it's pkgconfig not pgkconfig !
+
+* 一 11月 06 2006 Daniel Veillard <veillard@redhat.com> 0.1.8-2
+- fixing spec file, added .alios6, -devel requires pkgconfig and xen-devel
+- Resolves: rhbz#202320
+
+* 一 10月 16 2006 Daniel Veillard <veillard@redhat.com> 0.1.8-1
+- fix missing page size detection code for ia64
+- fix mlock size when getting domain info list from hypervisor
+- vcpu number initialization
+- don't label crashed domains as shut off
+- fix virsh man page
+- blktapdd support for alternate drivers like blktap
+- memory leak fixes (xend interface and XML parsing)
+- compile fix
+- mlock/munlock size fixes
+
+* 五 9月 22 2006 Daniel Veillard <veillard@redhat.com> 0.1.7-1
+- Fix bug when running against xen-3.0.3 hypercalls
+- Fix memory bug when getting vcpus info from xend
+
+* 五 9月 22 2006 Daniel Veillard <veillard@redhat.com> 0.1.6-1
+- Support for localization
+- Support for new Xen-3.0.3 cdrom and disk configuration
+- Support for setting VNC port
+- Fix bug when running against xen-3.0.2 hypercalls
+- Fix reconnection problem when talking directly to http xend
+
+* 二 9月 05 2006 Jeremy Katz <katzj@redhat.com> - 0.1.5-3
+- patch from danpb to support new-format cd devices for HVM guests
+
+* 二 9月 05 2006 Daniel Veillard <veillard@redhat.com> 0.1.5-2
+- reactivating ia64 support
+
+* 二 9月 05 2006 Daniel Veillard <veillard@redhat.com> 0.1.5-1
+- new release
+- bug fixes
+- support for new hypervisor calls
+- early code for config files and defined domains
+
+* 一 9月 04 2006 Daniel Berrange <berrange@redhat.com> - 0.1.4-5
+- add patch to address dom0_ops API breakage in Xen 3.0.3 tree
+
+* 一 8月 28 2006 Jeremy Katz <katzj@redhat.com> - 0.1.4-4
+- add patch to support paravirt framebuffer in Xen
+
+* 一 8月 21 2006 Daniel Veillard <veillard@redhat.com> 0.1.4-3
+- another patch to fix network handling in non-HVM guests
+
+* 四 8月 17 2006 Daniel Veillard <veillard@redhat.com> 0.1.4-2
+- patch to fix virParseUUID()
+
+* 三 8月 16 2006 Daniel Veillard <veillard@redhat.com> 0.1.4-1
+- vCPUs and affinity support
+- more complete XML, console and boot options
+- specific features support
+- enforced read-only connections
+- various improvements, bug fixes
+
+* 三 8月 02 2006 Jeremy Katz <katzj@redhat.com> - 0.1.3-6
+- add patch from pvetere to allow getting uuid from libvirt
+
+* 三 8月 02 2006 Jeremy Katz <katzj@redhat.com> - 0.1.3-5
+- build on ia64 now
+
+* 四 7月 27 2006 Jeremy Katz <katzj@redhat.com> - 0.1.3-4
+- don't BR xen, we just need xen-devel
+
+* 四 7月 27 2006 Daniel Veillard <veillard@redhat.com> 0.1.3-3
+- need rebuild since libxenstore is now versionned
+
+* 一 7月 24 2006 Mark McLoughlin <markmc@redhat.com> - 0.1.3-2
+- Add BuildRequires: xen-devel
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.1.3-1.1
+- rebuild
+
+* 二 7月 11 2006 Daniel Veillard <veillard@redhat.com> 0.1.3-1
+- support for HVM Xen guests
+- various bugfixes
+
+* 一 7月 03 2006 Daniel Veillard <veillard@redhat.com> 0.1.2-1
+- added a proxy mechanism for read only access using httpu
+- fixed header includes paths
+
+* 三 6月 21 2006 Daniel Veillard <veillard@redhat.com> 0.1.1-1
+- extend and cleanup the driver infrastructure and code
+- python examples
+- extend uuid support
+- bug fixes, buffer handling cleanups
+- support for new Xen hypervisor API
+- test driver for unit testing
+- virsh --conect argument
+
+* 一 4月 10 2006 Daniel Veillard <veillard@redhat.com> 0.1.0-1
+- various fixes
+- new APIs: for Node information and Reboot
+- virsh improvements and extensions
+- documentation updates and man page
+- enhancement and fixes of the XML description format
+
+* 二 2月 28 2006 Daniel Veillard <veillard@redhat.com> 0.0.6-1
+- added error handling APIs
+- small bug fixes
+- improve python bindings
+- augment documentation and regression tests
+
+* 四 2月 23 2006 Daniel Veillard <veillard@redhat.com> 0.0.5-1
+- new domain creation API
+- new UUID based APIs
+- more tests, documentation, devhelp
+- bug fixes
+
+* 五 2月 10 2006 Daniel Veillard <veillard@redhat.com> 0.0.4-1
+- fixes some problems in 0.0.3 due to the change of names
+
+* 三 2月 08 2006 Daniel Veillard <veillard@redhat.com> 0.0.3-1
+- changed library name to libvirt from libvir, complete and test the python
+  bindings
+
+* 日 1月 29 2006 Daniel Veillard <veillard@redhat.com> 0.0.2-1
+- upstream release of 0.0.2, use xend, save and restore added, python bindings
+  fixed
+
+* 三 11月 02 2005 Daniel Veillard <veillard@redhat.com> 0.0.1-1
+- created
+

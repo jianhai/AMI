@@ -1,0 +1,16 @@
+Name        : boost-thread                 Relocations: (not relocatable)
+Version     : 1.41.0                            Vendor: Alibaba
+Release     : 11.4.alios6.2                 Build Date: 2014年08月21日 星期四 20时05分34秒
+Install Date: 2015年03月25日 星期三 10时59分39秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Libraries   Source RPM: boost-1.41.0-11.4.alios6.2.src.rpm
+Size        : 85098                            License: Boost
+Signature   : RSA/8, 2014年08月25日 星期一 23时14分14秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sodium.resophonic.com/boost-cmake/1.41.0.cmake0/
+Summary     : Runtime component of boost thread library
+Description :
+
+Runtime component Boost.Thread library, which provides classes and
+functions for managing multiple threads of execution, and for
+synchronizing data between the threads or providing separate copies of
+data specific to individual threads.

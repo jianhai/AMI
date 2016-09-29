@@ -1,0 +1,76 @@
+postinstall scriptlet (using /bin/sh):
+
+##################  XML catalog registration #######################
+
+## Define handy variables ##
+
+ROOT_XML_CATALOG=/etc/xml/catalog
+PKG_XML_CATALOG=/etc/xml/docbook-slides.xml
+#LOCAL_XML_CATALOG=/usr/share/xml/docbook/slides/3.4.0/catalog.xml
+
+#
+# Register it in the super catalog with the appropriate delegates
+#
+if [ -w $ROOTCATALOG ]
+then
+        /usr/bin/xmlcatalog --noout --add "delegatePublic" \
+                "-//Norman Walsh//DTD Slides" \
+                "file://$PKG_XML_CATALOG" $ROOT_XML_CATALOG
+
+        /usr/bin/xmlcatalog --noout --add "delegateSystem" \
+                "http://docbook.sourceforge.net/release/slides" \
+                "file://$PKG_XML_CATALOG" $ROOT_XML_CATALOG
+        /usr/bin/xmlcatalog --noout --add "delegateURI" \
+                "http://docbook.sourceforge.net/release/slides" \
+                "file://$PKG_XML_CATALOG" $ROOT_XML_CATALOG
+fi
+####################################################################
+
+
+#################  SGML catalog registration  ######################
+
+ROOT_SGML_CATALOG=/etc/sgml/catalog
+PKG_SGML_CATALOG=/etc/sgml/docbook-slides.cat
+
+#### Root SGML Catalog Entries ####
+#### "Delegate" appropriate lookups to package catalog ####
+
+############## use install-catalog ######################
+
+if [ -w $ROOT_SGML_CATALOG ]
+then
+# xmlcatalog deletes OVERRIDE YES directive, use install-catalog instead
+#         /usr/bin/xmlcatalog --sgml --noout --add \
+#     "/etc/sgml/docbook-slides.cat"
+
+  install-catalog --add \
+  $PKG_SGML_CATALOG \
+  $ROOT_SGML_CATALOG 1>/dev/null
+
+# Hack to workaround bug in install-catalog
+  sed -i '/^CATALOG.*log\"$/d' $PKG_SGML_CATALOG
+  sed -i '/^CATALOG.*log$/d' $PKG_SGML_CATALOG
+fi
+
+####################################################################
+
+# Finally, make sure everything in /etc/*ml is readable!
+/bin/chmod a+r /etc/sgml/*
+/bin/chmod a+r /etc/xml/*
+postuninstall scriptlet (using /bin/sh):
+##
+## SGML and XML catalogs
+##
+## Jobs: remove package catalog entries from both root catalogs &
+##       remove package catalogs
+
+# remove catalog entries only on removal of package
+if [ "$1" = 0 ]; then
+  /usr/bin/xmlcatalog --sgml --noout --del \
+    /etc/sgml/catalog \
+    "/etc/sgml/docbook-slides.cat"
+
+  /usr/bin/xmlcatalog --noout --del \
+    "file:///etc/xml/docbook-slides.xml" \
+    /etc/xml/catalog
+fi

@@ -1,0 +1,572 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 8.4.20-1.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 8.4.20-1.1
+- rebuild for alios6-update
+
+* 二 2月 18 2014 Pavel Raiskup <praiskup@redhat.com> - 8.4.20-1
+- Update to PostgreSQL 8.4.20 (#1065843) for fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-19.html
+  http://www.postgresql.org/docs/8.4/static/release-8-4-20.html
+
+* 五 10月 11 2013 Pavel Raiskup <praiskup@redhat.com> - 8.4.18-1
+- Update to PostgreSQL 8.4.18, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-14.html
+  http://www.postgresql.org/docs/8.4/static/release-8-4-15.html
+  http://www.postgresql.org/docs/8.4/static/release-8-4-16.html
+  http://www.postgresql.org/docs/8.4/static/release-8-4-17.html
+  http://www.postgresql.org/docs/8.4/static/release-8-4-18.html
+  including fixes for CVE-2013-0255, CVE-2013-1900 (#1017837)
+
+* 一 8月 27 2012 Tom Lane <tgl@redhat.com> 8.4.13-1
+- Update to PostgreSQL 8.4.13, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-13.html
+  including the fixes for CVE-2012-3488, CVE-2012-3489
+Resolves: #852021
+
+* 三 6月 13 2012 Tom Lane <tgl@redhat.com> 8.4.12-1
+- Update to PostgreSQL 8.4.12, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-12.html
+  including the fixes for CVE-2012-2143, CVE-2012-2655
+Resolves: #830726
+
+* 二 6月 12 2012 Tom Lane <tgl@redhat.com> 8.4.11-2
+- Add patches for CVE-2012-2143, CVE-2012-2655
+Resolves: #830726
+
+* 四 4月 12 2012 Tom Lane <tgl@redhat.com> 8.4.11-1
+- Update to PostgreSQL 8.4.11, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-11.html
+  http://www.postgresql.org/docs/8.4/static/release-8-4-10.html
+  including the fixes for CVE-2012-0866, CVE-2012-0867, CVE-2012-0868
+Resolves: #812082
+
+* 二 9月 27 2011 Tom Lane <tgl@redhat.com> 8.4.9-1
+- Update to PostgreSQL 8.4.9, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-9.html
+  http://www.postgresql.org/docs/8.4/static/release-8-4-8.html
+  including the fix for CVE-2011-2483
+Resolves: #740736
+
+* 四 4月 07 2011 Tom Lane <tgl@redhat.com> 8.4.7-2
+- Add fix to make plpgsql cope with dropped columns in rowtypes
+Resolves: #694249
+- Add %{?_isa} to cross-subpackage Requires, per latest packaging guidelines,
+  and add explicit dependencies on the -libs subpackage to pacify rpmdiff
+
+* 五 1月 28 2011 Tom Lane <tgl@redhat.com> 8.4.7-1
+- Update to PostgreSQL 8.4.7, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-7.html
+  http://www.postgresql.org/docs/8.4/static/release-8-4-6.html
+  including the fix for CVE-2010-4015
+Resolves: #672635
+
+* 四 11月 11 2010 Tom Lane <tgl@redhat.com> 8.4.5-2
+- Ensure we don't package any .gitignore files from the source tarball
+Resolves: #650913
+
+* 一 10月 04 2010 Tom Lane <tgl@redhat.com> 8.4.5-1
+- Update to PostgreSQL 8.4.5, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-5.html
+  including the fix for CVE-2010-3433
+Resolves: #640090
+- Duplicate COPYRIGHT in -libs subpackage, per revised packaging guidelines
+
+* 一 6月 28 2010 Tom Lane <tgl@redhat.com> 8.4.4-2
+- Add -p "$pidfile" to initscript's status call to improve corner cases.
+  (Note: can't be fixed in Fedora until 595597 is fixed there.)
+Resolves: #561010
+
+* 一 5月 17 2010 Tom Lane <tgl@redhat.com> 8.4.4-1
+- Update to PostgreSQL 8.4.4, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-4.html
+  including fixes for CVE-2010-1169 and CVE-2010-1170
+Resolves: #593033
+
+* 一 3月 15 2010 Tom Lane <tgl@redhat.com> 8.4.3-1
+- Update to PostgreSQL 8.4.3, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-3.html
+Resolves: #565558
+- Bring init script into some modicum of compliance with Fedora/LSB standards
+Resolves: #561010
+- adjust license tag to reflect OSI decision
+
+* 二 2月 02 2010 Tom Lane <tgl@redhat.com> 8.4.2-7
+- Apply upstream fix for CVE-2010-0442 (negative length for bit substr())
+Resolves: #559661
+
+* 二 1月 26 2010 Tom Lane <tgl@redhat.com> 8.4.2-6
+- Emit explicit error message if user tries to build RPM as root
+Resolves: #558921
+
+* 三 1月 20 2010 Tom Lane <tgl@redhat.com> 8.4.2-5
+- Latest version of systemtap needs the probes.o file to be built again
+Resolves: #557297
+- Provide script and instructions for building the documentation PDF
+
+* 三 1月 13 2010 Tom Lane <tgl@redhat.com> 8.4.2-4
+- Sync with Fedora devel, including:
+- Update to PostgreSQL 8.4.2, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-2.html
+  including two security issues
+Resolves: #552617
+- Remove the postgresql-python and postgresql-tcl subpackages.  These files
+  are now broken out as their own packages (PyGreSQL and tcl-pgtcl,
+  respectively), to reflect the now longstanding split of upstream projects.
+Related: #554431
+- Arrange for the postmaster, but not any of its child processes, to be run
+  with oom_adj -17.  This compensates for the OOM killer not being smart about
+  accounting for shared memory usage.
+- Remove static libraries (.a files) from package, per packaging guidelines
+- Change %define to %global, per packaging guidelines
+- Use -N not the obsolete -n in useradd call
+- Clean up specfile to eliminate rpmlint gripes, mainly by removing
+  no-longer-needed provisions for superseding rh-postgresql
+- add sparc/sparc64 to multilib header support
+
+* 四 12月 03 2009 Dennis Gregorovic <dgregor@redhat.com> - 8.4.1-3.2
+- Rebuilt for RHEL 6
+
+* 一 11月 23 2009 Dennis Gregorovic <dgregor@redhat.com> - 8.4.1-3.1
+- Rebuilt for RHEL 6
+
+* 一 9月 21 2009 Tom Lane <tgl@redhat.com> 8.4.1-3
+- Ensure pgstartup.log gets the right ownership/permissions during initdb
+Resolves: #498959
+
+* 三 9月 16 2009 Tomas Mraz <tmraz@redhat.com> - 8.4.1-2
+- Use password-auth common PAM configuration instead of system-auth
+
+* 三 9月 09 2009 Tom Lane <tgl@redhat.com> 8.4.1-1
+- Update to PostgreSQL 8.4.1, for various fixes described at
+  http://www.postgresql.org/docs/8.4/static/release-8-4-1.html
+  including two security issues
+Related: #522085
+Related: #522092
+
+* 二 9月 01 2009 Karsten Hopp <karsten@redhat.com> 8.4.0-3.2
+- bump release and build again with the correct libssl
+
+* 二 9月 01 2009 Karsten Hopp <karsten@redhat.com> 8.4.0-3.1
+- disable dtrace on s390x as a workaround until #520469 has been fixed
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 8.4.0-3
+- rebuilt with new openssl
+
+* 四 8月 20 2009 Tom "spot" Callaway <tcallawa@redhat.com> 8.4.0-2
+- update License tag to MIT (PostgreSQL calls it "BSD", but it is MIT)
+- Note: This changes nothing from a license compatibility perspective.
+
+* 一 8月 17 2009 Tom Lane <tgl@redhat.com> 8.4.0-1
+- Update to PostgreSQL 8.4.0.  See release notes at
+  http://www.postgresql.org/docs/8.4/static/release-8-4.html
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.3.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 3月 21 2009 Tom Lane <tgl@redhat.com> 8.3.7-1
+- Update to PostgreSQL 8.3.7, for various fixes described at
+  http://www.postgresql.org/docs/8.3/static/release-8-3-7.html
+  notably the fix for CVE-2009-0922
+
+* 二 3月 10 2009 Tom Lane <tgl@redhat.com> 8.3.6-4
+- Prevent dependent packages from needing to include sys/sdt.h
+  (unintended side effect of previous patch)
+- Use -O1 on alpha, per report from Oliver Falk; -O2 tickles gcc bugs
+
+* 日 3月 08 2009 Tom Lane <tgl@redhat.com> 8.3.6-3
+- Enable tracing via systemtap
+Resolves: #488941
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.3.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 2月 07 2009 Tom Lane <tgl@redhat.com> 8.3.6-1
+- Update to PostgreSQL 8.3.6, for various fixes described at
+  http://www.postgresql.org/docs/8.3/static/release-8-3-6.html
+
+* 三 1月 21 2009 Dennis Gilmore <dennis@ausil.us> 8.3.5-4
+- use -O1 on sparc64
+
+* 六 1月 17 2009 Tomas Mraz <tmraz@redhat.com> - 8.3.5-3
+- rebuild with new openssl
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 8.3.5-2
+- Rebuild for Python 2.6
+
+* 日 11月 02 2008 Tom Lane <tgl@redhat.com> 8.3.5-1
+- Update to PostgreSQL 8.3.5.
+- Improve display from init script's initdb action, per Michael Schwendt
+
+* 四 9月 25 2008 Tom Lane <tgl@redhat.com> 8.3.4-1
+- Update to PostgreSQL 8.3.4.
+
+* 一 7月 28 2008 Tom Lane <tgl@redhat.com> 8.3.3-3
+- Fix build failure caused by new default patch fuzz = 0 policy in rawhide.
+
+* 五 6月 20 2008 Tom Lane <tgl@redhat.com> 8.3.3-2
+- Install Pgtcl in /usr/lib/tcl$TCL_VERSION, not directly in /usr/lib.
+  Needed because tcl 8.5 no longer puts /usr/lib into its package search path.
+  NOTE: do not back-port this change into branches using pre-8.5 tcl, because
+  /usr/lib/tcl8.4 had been a symlink to /usr/share/tcl8.4, and /usr/share
+  is exactly where we must not put Pgtcl.
+Resolves: #228263
+
+* 三 6月 11 2008 Tom Lane <tgl@redhat.com> 8.3.3-1
+- Update to PostgreSQL 8.3.3.
+- Remove postgresql-prefer-ncurses.patch, no longer needed in recent
+  Fedora releases because libtermcap is gone.
+
+* 六 5月 17 2008 Tom Lane <tgl@redhat.com> 8.3.1-5
+- rebuild because of buildsystem hiccup
+
+* 六 5月 17 2008 Tom Lane <tgl@redhat.com> 8.3.1-4
+- Enable LDAP support
+Resolves: #445315
+- Use -Wl,--as-needed to suppress bogus dependencies for libraries that
+  are really only needed by some of the subpackages
+
+* 一 4月 28 2008 Tom Lane <tgl@redhat.com> 8.3.1-3
+- Fix build breakage on PPC due to incorrect configure test
+Related: #444317
+
+* 六 4月 26 2008 Tom Lane <tgl@redhat.com> 8.3.1-2
+- Clean up cross-subpackage Requires: to ensure that updating any one
+  subpackage brings in the matching versions of others.
+Resolves: #444271
+
+* 二 3月 25 2008 Tom Lane <tgl@redhat.com> 8.3.1-1
+- Update to PostgreSQL 8.3.1.
+
+* 二 3月 18 2008 Tom "spot" Callaway <tcallawa@redhat.com> 8.3.0-3
+- add Requires for versioned perl (libperl.so)
+
+* 三 2月 06 2008 Tom Lane <tgl@redhat.com> 8.3.0-2
+- Enable the new GSSAPI support in 8.3.0.
+
+* 一 2月 04 2008 Tom Lane <tgl@redhat.com> 8.3.0-1
+- Update to PostgreSQL 8.3.0.
+
+* 五 1月 18 2008 Tom Lane <tgl@redhat.com> 8.3RC2-1
+- Update to PostgreSQL 8.3RC2 (not waiting for 8.3.0 because Fedora 9 alpha
+  should be 8.3-based not 8.2-based).
+- Update to pgtcl 1.6.2
+
+* 一 1月 07 2008 Tom Lane <tgl@redhat.com> 8.2.6-1
+- Update to PostgreSQL 8.2.6 to fix CVE-2007-4769, CVE-2007-4772,
+  CVE-2007-6067, CVE-2007-6600, CVE-2007-6601
+- Make initscript and pam config files be installed unconditionally;
+  seems new buildroots don't necessarily have those directories in place
+
+* 三 12月 05 2007 Tom Lane <tgl@redhat.com> 8.2.5-2
+- Rebuild for new openssl
+
+* 四 9月 20 2007 Tom Lane <tgl@redhat.com> 8.2.5-1
+- Update to PostgreSQL 8.2.5 and pgtcl 1.6.0
+
+* 二 9月 04 2007 Tom Lane <tgl@redhat.com> 8.2.4-6
+- Fix multilib problem for /usr/include/ecpg_config.h (which is new in 8.2.x)
+
+* 六 8月 25 2007 Tom Lane <tgl@redhat.com> 8.2.4-5
+- Use nicer solution for tzdata file substitution: upstream discussion
+  concluded that hardwiring the path was better than a symlink after all.
+
+* 三 8月 22 2007 Tom Lane <tgl@redhat.com> 8.2.4-4
+- Use tzdata package's data files instead of private copy, so that
+  postgresql-server need not be turned for routine timezone updates
+- Don't remove postgres user/group during RPM uninstall, per Fedora
+  packaging guidelines
+- Seems we need an explicit BuildRequires on gawk now
+- Rebuild to fix Fedora toolchain issues
+
+* 日 8月 12 2007 Tom Lane <tgl@redhat.com> 8.2.4-3
+- Recent perl changes in rawhide mean we need a more specific BuildRequires
+
+* 三 6月 20 2007 Tom Lane <tgl@redhat.com> 8.2.4-2
+- Fix oversight in postgresql-test makefile: pg_regress isn't a shell script
+  anymore.  Per upstream bug 3398.
+
+* 二 4月 24 2007 Tom Lane <tgl@redhat.com> 8.2.4-1
+- Update to PostgreSQL 8.2.4 for CVE-2007-2138, data loss bugs
+Resolves: #237682
+
+* 三 2月 14 2007 Karsten Hopp <karsten@redhat.com> 8.2.3-2
+- rebuild with tcl-8.4
+
+* 三 2月 07 2007 Tom Lane <tgl@redhat.com> 8.2.3-1
+- Update to PostgreSQL 8.2.3 due to regression induced by security fix
+Resolves: #227522
+
+* 日 2月 04 2007 Tom Lane <tgl@redhat.com> 8.2.2-1
+- Update to PostgreSQL 8.2.2 to fix CVE-2007-0555, CVE-2007-0556
+Related: #225496
+
+* 五 1月 12 2007 Tom Lane <tgl@redhat.com> 8.2.1-2
+- Split -pl subpackage into three new packages to reduce dependencies
+  and track upstream project's packaging.
+
+* 三 1月 10 2007 Tom Lane <tgl@redhat.com> 8.2.1-1
+- Update to PostgreSQL 8.2.1
+- Update to pgtcl 1.5.3
+- Be sure we link to libncurses, not libtermcap which is disappearing in Fedora
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 8.2.0-2
+- rebuild for python 2.5
+
+* 一 12月 04 2006 Tom Lane <tgl@redhat.com> 8.2.0-1
+- Update to PostgreSQL 8.2.0
+- Update to PyGreSQL 3.8.1
+- Fix chcon arguments in test/regress/Makefile
+Related: #201035
+- Adjust init script to not fool /etc/rc.d/rc
+Resolves: #161470
+- Change init script to not do initdb automatically, but require
+  manual "service postgresql initdb" for safety.  Per upstream discussions.
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 8.1.4-1.1
+- rebuild
+
+* 一 5月 22 2006 Tom Lane <tgl@redhat.com> 8.1.4-1
+- Update to PostgreSQL 8.1.4 (includes fixes for CVE-2006-2313, CVE-2006-2314;
+  see bug #192173)
+- Update to PyGreSQL 3.8
+- Suppress noise from chcon, per bug #187744
+
+* 一 3月 27 2006 Tom Lane <tgl@redhat.com> 8.1.3-2
+- Remove JDBC from this build; we will package it as separate SRPM
+
+* 一 2月 13 2006 Jesse Keating <jkeating@redhat.com> - 8.1.3-1.1
+- rebump for build order issues during double-long bump
+
+* 一 2月 13 2006 Tom Lane <tgl@redhat.com> 8.1.3-1
+- Update to PostgreSQL 8.1.3 (fixes bug #180617, CVE-2006-0553)
+- Update to jdbc driver build 405
+- Modify multilib header hack to not break non-RH arches, per bug #177564
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 8.1.2-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 09 2006 Tom Lane <tgl@redhat.com> 8.1.2-1
+- Update to PostgreSQL 8.1.2
+- Repair extraneous quote in pgtcl configure script ... odd that bash
+  didn't use to spit up on this.
+
+* 四 12月 15 2005 Tom Lane <tgl@redhat.com> 8.1.1-3
+- fix pg_config.h for 64-bit and ppc platforms
+- update Makefile.regress (needs to --load-language=plpgsql)
+
+* 三 12月 14 2005 Tom Lane <tgl@redhat.com> 8.1.1-2
+- oops, looks like we want uname -i not uname -m
+
+* 三 12月 14 2005 Tom Lane <tgl@redhat.com> 8.1.1-1
+- Update to PostgreSQL 8.1.1
+- Make pg_config.h architecture-independent for multilib installs;
+  put the original pg_config.h into pg_config_$ARCH.h
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 六 11月 12 2005 Tom Lane <tgl@redhat.com> 8.1.0-4
+- Update included PDF-format manual to 8.1.
+
+* 三 11月 09 2005 Tom Lane <tgl@redhat.com> 8.1.0-3
+- Rebuild due to openssl library update.
+
+* 三 11月 09 2005 Tom Lane <tgl@redhat.com> 8.1.0-2
+- Rebuild due to openssl library update.
+
+* 一 11月 07 2005 Tom Lane <tgl@redhat.com> 8.1.0-1
+- Update to PostgreSQL 8.1.0, PyGreSQL 3.7, and jdbc driver build 404
+- Fix PAM config file (must have account not only auth) (bug #167040)
+- Add BuildPrereq: libxslt-devel (bug #170141)
+- Sync with PGDG SRPM as much as feasible
+
+* 五 10月 14 2005 Tomas Mraz <tmraz@redhat.com>
+- use include instead of pam_stack in pam config
+
+* 二 10月 04 2005 Tom Lane <tgl@redhat.com> 8.0.4-2
+- Add rpath to plperl.so (bug #162198)
+
+* 二 10月 04 2005 Tom Lane <tgl@redhat.com> 8.0.4-1
+- Update to PostgreSQL 8.0.4, PyGreSQL 3.6.2, and jdbc driver build 312
+- Adjust pgtcl link command to ensure it binds to correct libpq (bug #166665)
+- Remove obsolete Conflicts: against other python versions (bug #166754)
+- Add /etc/pam.d/postgresql (bug #167040)
+- Include contrib/xml2 in build (bug #167492)
+
+* 二 5月 10 2005 Tom Lane <tgl@redhat.com> 8.0.3-1
+- Update to PostgreSQL 8.0.3 (includes security and data-loss fixes; see
+  bz#156727, CAN-2005-1409, CAN-2005-1410)
+- Update to jdbc driver build 311
+- Recreate postgres user after superseding an rh-postgresql install (bug #151911)
+- Ensure postgresql server is restarted if running during an upgrade
+
+* 四 4月 14 2005 Florian La Roche <laroche@redhat.com> 8.0.2-2
+- rebuild for postgresql-tcl
+
+* 二 4月 12 2005 Tom Lane <tgl@redhat.com> 8.0.2-1
+- Update to PostgreSQL 8.0.2.
+
+* 五 3月 11 2005 Tom Lane <tgl@redhat.com> 8.0.1-5
+- Remove unwanted rpath specification from pgtcl (bz#150649)
+
+* 三 3月 02 2005 Tom Lane <tgl@redhat.com> 8.0.1-4
+- Attach Obsoletes: declarations for rh-postgresql to subpackages (bz#144435)
+- Make Requires: and Prereq: package linkages specify release not only
+  version, as per recent mailing list discussion.
+
+* 二 3月 01 2005 Tomas Mraz <tmraz@redhat.com> 8.0.1-3
+- rebuild with openssl-0.9.7e
+
+* 一 2月 21 2005 Tom Lane <tgl@redhat.com> 8.0.1-2
+- Repair improper error message in init script when PGVERSION doesn't match.
+- Arrange for auto update of version embedded in init script.
+
+* 日 1月 30 2005 Tom Lane <tgl@redhat.com> 8.0.1-1
+- Update to PostgreSQL 8.0.1.
+- Add versionless symlinks to jar files (bz#145744)
+
+* 三 1月 19 2005 Tom Lane <tgl@redhat.com> 8.0.0-1
+- Update to PostgreSQL 8.0.0, PyGreSQL 3.6.1, pgtcl 1.5.2,
+  and jdbc driver build 309.
+- Extensive cleanout of obsolete cruft in patch set.
+- Regression tests are run during RPM build (NOTE: cannot build as root when
+  this is enabled).
+- Postmaster stderr goes someplace useful, not /dev/null (bz#76503, #103767)
+- Make init script return a useful exit status (bz#80782)
+- Move docs' tutorial directory to %{_libdir}/pgsql/tutorial, since it
+  includes .so files that surely do not belong under /usr/share.
+- Remove useless .sgml files from docs RPM (bz#134450)
+- Put regression tests under /usr/lib64 on 64-bit archs, since .so files
+  are not architecture-independent.
+
+* 三 1月 12 2005 Tim Waugh <twaugh@redhat.com> 7.4.6-5
+- Rebuilt for new readline.
+
+* 二 1月 11 2005 Dan Walsh <dwalsh@redhat.com> 7.4.6-4
+- Add restorecon to postgresql.init in order to restore database to correct
+- SELinux context.
+
+* 四 12月 16 2004 Tom Lane <tgl@redhat.com> 7.4.6-3
+- Update to PyGreSQL 3.6 (to fix bug #142711)
+- Adjust a few file permissions (bug #142431)
+- Assign %{_libdir}/pgsql to base package instead of -server (bug #74003)
+
+* 一 11月 15 2004 Tom Lane <tgl@redhat.com> 7.4.6-2
+- Rebuild so python components play with python 2.4 (bug 139160)
+
+* 六 10月 23 2004 Tom Lane <tgl@redhat.com> 7.4.6-1
+- Update to PostgreSQL 7.4.6 (bugs 136947, 136949)
+- Make init script more paranoid about mkdir step of initializing a new
+  database (bugs 136947, 136949)
+
+* 三 10月 20 2004 Tom Lane <tgl@redhat.com> 7.4.5-4
+- Remove contrib/oidjoins stuff from installed fileset; it's of no use
+  to ordinary users and has a security issue (bugs 136300, 136301)
+- adjust chkconfig priority (bug 128852)
+
+* 二 10月 05 2004 Tom Lane <tgl@redhat.com> 7.4.5-3
+- Solve the stale lockfile problem (bugs 71295, 96981, 134090)
+- Use runuser instead of su for SELinux (bug 134588)
+
+* 一 8月 30 2004 Tom Lane <tgl@redhat.com> 7.4.5-2
+- Update to PyGreSQL 3.5.
+
+* 二 8月 24 2004 Tom Lane <tgl@redhat.com> 7.4.5-1
+- Update to PostgreSQL 7.4.5.
+- Update JDBC jars to driver build 215.
+- Add Obsoletes: entries for rh-postgresql packages, per bug 129278.
+
+* 六 7月 10 2004 Tom Lane <tgl@redhat.com> 7.4.3-3
+- Undo ill-considered chkconfig change that causes server to start
+  immediately upon install.  Mea culpa (bug 127552).
+
+* 六 7月 03 2004 Tom Lane <tgl@redhat.com> 7.4.3-2
+- Update JDBC jars to driver build 214.
+
+* 三 6月 23 2004 Tom Lane <tgl@redhat.com> 7.4.3-1
+- Update to PostgreSQL 7.4.3.
+- Uninstalling server RPM stops postmaster first, per bug 114846.
+- Fix su commands to not assume PG user's shell is sh-like, per bug 124024.
+- Fix permissions on postgresql-python doc files, per bug 124822.
+- Minor postgresql.init improvements.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 3月 10 2004 Tom Lane <tgl@redhat.com> 7.4.2-1
+- Update to PostgreSQL 7.4.2; sync with community SRPM as much as possible.
+- Support PGOPTS from /etc/sysconfig/pgsql, per bug 111504.
+- Fix permissions on /etc/sysconfig/pgsql, per bug 115278.
+- SELinux patch in init file: always su </dev/null, per bug 117901.
+- Rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 25 2004 Tom Lane <tgl@redhat.com>
+- Update to PostgreSQL 7.4.1.
+- Rebuilt
+
+* 二 2月 24 2004 Tom Lane <tgl@redhat.com>
+- Fix chown syntax in postgresql.init also.
+- Rebuilt
+
+* 一 2月 23 2004 Tim Waugh <twaugh@redhat.com>
+- Use ':' instead of '.' as separator for chown.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 09 2004 Lamar Owen <lowen@pari.edu>
+- 7.4.1-1PGDG
+- Merge Sander Steffann's changes up to 7.4-0.5PGDG
+- Proper 7.4.1 JDBC jars this time.
+- Patch for no pl/python from Alvaro
+
+* 五 12月 05 2003 David Jee <djee@redhat.com> 7.4-5
+- Rebuild for Perl 5.8.2.
+
+* 一 12月 01 2003 David Jee <djee@redhat.com> 7.4-4
+- Add PyGreSQL patch for deprecated column pg_type.typprtlen [Bug #111263]
+- Add headers patch which moves ecpg headers to /usr/include/ecpg
+  [Bug #111195]
+
+* 五 11月 28 2003 David Jee <djee@redhat.com> 7.4-3
+- uncomment buildrequires tcl-devel
+
+* 五 11月 28 2003 David Jee <djee@redhat.com> 7.4-2
+- rebuild
+
+* 一 11月 24 2003 David Jee <djee@redhat.com> 7.4-1
+- initial Red Hat build
+- move jars to /usr/share/java
+- fix rpm-multilib patch to use sysconfig
+
+* 五 11月 21 2003 Lamar Owen <lowen@pari.edu> <lamar.owen@wgcr.org>
+- 7.4-0.1PGDG
+- Development JDBC jars in addition to the 7.3 jars; will replace the
+- 7.3 jars once 7.4 official jars are released.
+- Changed to use the bzip2 source to save a little size.
+- Removed some commented out portions of the specfile.
+- Removed the 7.3.4 PDF docs.  Will replace with 7.4 PDF's once they
+- are ready.
+
+* 二 11月 18 2003 Kaj J. Niemi <kajtzu@fi.basen.net> 7.4-0.1
+- 7.4
+- Fixed Patch #1 (now rpm-pgsql-7.4.patch)
+- Fixed Patch #2 (now rpm-multilib-7.4.patch):
+- Patch #4 is unnecessary (upstream)
+- Fixed Patch #6 (now postgresql-7.4-src-tutorial.patch)
+- Added Patch #8 (postgresql-7.4-com_err.patch) as com_err()
+  is provided by e2fsprogs and CPPFLAGS gets lost somewhere
+  inside configure (bad macro?)
+- No 7.4 PDF docs available yet (Source #17)
+- PyGreSQL is separated from the upstream distribution but
+  we include it as usual (Source #18)
+- Default to compiling libpq and ECPG as fully thread-safe
+
+- 7.4 Origin.  See previous spec files for previous history. Adapted
+- from Red Hat and PGDG's 7.3.4 RPM, directly descended from 
+- postgresql-7.3.4-2 as shipped in Fedora Core 1.
+

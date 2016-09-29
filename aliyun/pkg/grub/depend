@@ -1,0 +1,12 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/install-info  
+/sbin/install-info  
+/usr/bin/python  
+mktemp  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+system-logos  
+rpmlib(PayloadIsXz) <= 5.2-1

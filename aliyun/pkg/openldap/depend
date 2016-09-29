@@ -1,0 +1,45 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+config(openldap) = 2.4.23-20.5.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.12)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.2)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+liblber-2.4.so.2()(64bit)  
+libldap-2.4.so.2()(64bit)  
+libldap_r-2.4.so.2()(64bit)  
+libldif-2.4.so.2()(64bit)  
+libnspr4.so()(64bit)  
+libnss3.so()(64bit)  
+libnss3.so(NSS_3.10)(64bit)  
+libnss3.so(NSS_3.11.1)(64bit)  
+libnss3.so(NSS_3.12)(64bit)  
+libnss3.so(NSS_3.12.5)(64bit)  
+libnss3.so(NSS_3.12.9)(64bit)  
+libnss3.so(NSS_3.2)(64bit)  
+libnss3.so(NSS_3.3)(64bit)  
+libnss3.so(NSS_3.4)(64bit)  
+libnss3.so(NSS_3.6)(64bit)  
+libnss3.so(NSS_3.8)(64bit)  
+libnss3.so(NSS_3.9.2)(64bit)  
+libnss3.so(NSS_3.9.3)(64bit)  
+libnssutil3.so()(64bit)  
+libplc4.so()(64bit)  
+libplds4.so()(64bit)  
+libresolv.so.2()(64bit)  
+libresolv.so.2(GLIBC_2.2.5)(64bit)  
+libsasl2.so.2()(64bit)  
+libsmime3.so()(64bit)  
+libssl3.so()(64bit)  
+libssl3.so(NSS_3.2)(64bit)  
+libssl3.so(NSS_3.4)(64bit)  
+libssl3.so(NSS_3.7.4)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

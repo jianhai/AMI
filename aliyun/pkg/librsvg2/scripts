@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+/usr/bin/update-gdk-pixbuf-loaders x86_64-koji-linux-gnu || :
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+/usr/bin/update-gdk-pixbuf-loaders x86_64-koji-linux-gnu || :

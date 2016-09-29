@@ -1,0 +1,17 @@
+Name        : fio                          Relocations: (not relocatable)
+Version     : 2.0.13                            Vendor: Alibaba
+Release     : 1.1.alios6                    Build Date: 2014年08月05日 星期二 16时58分11秒
+Install Date: 2015年03月25日 星期三 11时09分10秒      Build Host: x86-003.build.alibaba
+Group       : Applications/System           Source RPM: fio-2.0.13-1.1.alios6.src.rpm
+Size        : 1104077                          License: GPLv2
+Signature   : RSA/8, 2014年08月05日 星期二 17时02分41秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://git.kernel.dk/?p=fio.git;a=summary
+Summary     : Multithreaded IO generation tool
+Description :
+fio is an I/O tool that will spawn a number of threads or processes doing
+a particular type of io action as specified by the user.  fio takes a
+number of global parameters, each inherited by the thread unless
+otherwise parameters given to them overriding that setting is given.
+The typical use of fio is to write a job file matching the io load
+one wants to simulate.

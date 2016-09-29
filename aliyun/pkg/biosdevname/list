@@ -1,0 +1,6 @@
+/lib/udev/rules.d/71-biosdevname.rules
+/sbin/biosdevname
+/usr/share/doc/biosdevname-0.3.11
+/usr/share/doc/biosdevname-0.3.11/COPYING
+/usr/share/doc/biosdevname-0.3.11/README
+/usr/share/man/man1/biosdevname.1.gz

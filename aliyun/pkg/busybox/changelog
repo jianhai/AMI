@@ -1,0 +1,365 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.15.1-11.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.15.1-11.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:1.15.1-11.1
+- rebuild for alios6
+
+* 二 11月 30 2010 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-11
+- Fix cpio applet to print "N blocks" to stderr, not stdout
+- Change .config, making hwclock read adjtime from correct location:
+  /etc/adjtime
+- Fix awk to correctly interpret numbers with leading zeros: 02.345
+- Resolves: #615391, #621853, #633961
+
+* 四 7月 15 2010 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-10
+- Add -x handling to hush: msh used to have it, thus it was a regression
+- Resolves: #612394
+
+* 二 6月 01 2010 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-9
+- Update xz unpacker to not fail on SHA-256 xz format
+- Resolves: #534092
+
+* 一 5月 31 2010 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-8
+- Add xz unpacking support (incl. to rpm)
+- Resolves: #534092
+
+* 三 5月 05 2010 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-7
+- teach uclibc to use /etc/localtime
+
+* 三 2月 24 2010 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-6
+- tweak installed docs
+
+* 三 1月 27 2010 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-5
+- enable Fedora-specific uname -p behavior (#534081)
+
+* 四 11月 26 2009 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-4
+- make uclibc use 32-bit compat struct utmp (#541587)
+
+* 二 11月 10 2009 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-3
+- re-enable rpm applet (#534092)
+
+* 五 10月 02 2009 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-2
+- add manpage generation (#525658)
+
+* 日 9月 13 2009 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.15.1-1
+- Rebase to 1.15.1
+
+* 五 9月 11 2009 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.14.1-6
+- REALLY fix build on s390, ia64
+
+* 五 9月 11 2009 Denys Vlasenko <dvlasenk@redhat.com> - 1:1.14.1-5
+- fix build on s390, ia64
+
+* 三 9月 02 2009 Chris Lumens <clumens@redhat.com> 1.14.1-4
+- Remove busybox-anaconda (#514319).
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.14.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 6月 12 2009 Ivana Varekova <varekova@redhat.com> - 1:1.14.1-2
+- add new options to readlink - patch created by Denys Valsenko
+
+* 四 5月 28 2009 Ivana Varekova <varekova@redhat.com> - 1:1.14.1-1
+- fix ppc problem
+- update to 1.14.1
+
+* 日 5月 24 2009 Milos Jakubicek <xjakub@fi.muni.cz> - 1:1.13.2-4
+- Fixing FTBFS on i586/x86_64/ppc, ppc64 still an issue:
+- Updated uClibc to 0.9.30.1, subsequently:
+- Removed uClibc-0.9.30 patch (merged upstream).
+- Added uClibc-0.9.30.1-getline.patch -- prevents conflicts with getline()
+  from stdio.h
+- Temporarily disable C99 math to bypass ppc bug, see https://bugs.uclibc.org/show_bug.cgi?id=55
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.13.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 09 2009 Ivana Varekova <varekova@redhat.com> - 1:1.13.2-2
+- use uClibc instead of glibc for static build - thanks Denys Vlasenko
+
+* 一 1月 19 2009 Ivana Varekova <varekova@redhat.com> - 1:1.13.2-1
+- update to 1.13.2
+
+* 二 12月 02 2008 Ivana Varekova <varekova@redhat.com> - 1:1.12.1-2
+- enable selinux in static version of busybox (#462724)
+
+* 一 11月 10 2008 Ivana Varekova <varekova@redhat.com> - 1:1.12.1-1
+- update to 1.12.1
+
+* 二 8月 26 2008 Ivana Varekova <varekova@redhat.com> - 1:1.10.3-3
+- fix findfs problem - #455998
+
+* 三 7月 23 2008 Ivana Varekova <varekova@redhat.com> - 1:1.10.3-2
+- add findfs to static version of busybox 
+  (kexec-tools need it #455998)
+
+* 二 6月 10 2008 Ivana Varekova <varekova@redhat.com> - 1:1.10.3-1
+- update to 1.10.3
+
+* 五 5月 16 2008 Ivana Varekova <varekova@redhat.com> - 1:1.10.2-1
+- update to 1.10.2
+
+* 五 5月 09 2008 Ivana Varekova <varekova@redhat.com> - 1:1.10.1-1
+- update to 1.10.1
+
+* 四 2月 14 2008 Ivana Varekova <varekova@redhat.com> - 1:1.9.1-1
+- update to 1.9.1
+- fix a problem with netfilter.h - thanks dwmw2
+
+* 五 2月 08 2008 Ivana Varekova <varekova@redhat.com> - 1:1.9.0-2
+- fix hwclock on ia64 machines
+
+* 一 1月 07 2008 Ivana Varekova <varekova@redhat.com> - 1:1.9.0-1
+- update to 1.9.0
+
+* 一 12月 03 2007 Ivana Varekova <varekova@redhat.com> - 1:1.8.2-1
+- update to 1.8.2
+
+* 三 11月 21 2007 Ivana Varekova <varekova@redhat.com> - 1:1.8.1-1
+- update to 1.8.1
+
+* 二 11月 06 2007 Ivana Varekova <varekova@redhat.com> - 1:1.7.3-1
+- update to 1.7.3 
+- remove --gc-sections from static build Makefile
+
+* 四 11月 01 2007 Ivana Varekova <varekova@redhat.com> - 1:1.7.2-4
+- fix 359371 - problem with grep output
+
+* 三 10月 31 2007 Ivana Varekova <varekova@redhat.com> - 1:1.7.2-3
+- fix another sed problem (forgotten fflush - #356111)
+
+* 一 10月 29 2007 Ivana Varekova <varekova@redhat.com> - 1:1.7.2-2
+- fix sed problem with output (#356111)
+
+* 一 10月 22 2007 Ivana Varekova <varekova@redhat.com> - 1:1.7.2-1
+- update to 1.7.2
+
+* 二 9月 04 2007 Ivana Varekova <varekova@redhat.com> - 1:1.6.1-2
+- spec file cleanup
+
+* 一 7月 23 2007 Ivana Varekova <varekova@redhat.com> - 1:1.6.1-1
+- update to 1.6.1
+
+* 五 6月 01 2007 Ivana Varekova <varekova@redhat.com> - 1:1.5.1-2
+- add msh shell
+
+* 四 5月 24 2007 Ivana Varekova <varekova@redhat.com> - 1:1.5.1-1
+- update to 1.5.1
+
+* 六 4月 07 2007 David Woodhouse <dwmw2@redhat.com> - 1:1.2.2-8
+- Add busybox-petitboot subpackage
+
+* 一 4月 02 2007 Ivana Varekova <varekova@redhat.com> - 1:1.2.2-7
+- Resolves: 234769 
+  busybox ls does not work without a tty
+
+* 一 2月 19 2007 Ivana Varekova <varekova@redhat.com> - 1:1.2.2-6
+- incorporate package review feedback
+
+* 五 2月 02 2007 Ivana Varekova <varekova@redhat.com> - 1:1.2.2-5
+- fix id_ps patch (thanks Chris MacGregor)
+
+* 二 1月 30 2007 Ivana Varekova <varekova@redhat.com> - 1:1.2.2-4
+- remove debuginfo
+
+* 一 1月 22 2007 Ivana Varekova <varekova@redhat.com> - 1:1.2.2-3
+- Resolves: 223620
+  id output shows context twice
+- fix iptunnel x kernel-headers problem
+
+* 日 12月 10 2006 Ivana Varekova <varekova@redhat.com> - 1:1.2.2-2
+- enable ash
+
+* 四 11月 16 2006 Ivana Varekova <varekova@redhat.com> - 1:1.2.2-1
+- update to 1.2.2
+
+* 一 8月 28 2006 Ivana Varekova <varekova@redhat.com> - 1:1.2.0-3
+- fix #200470 - dmesg aborts
+  backport dmesg upstream changes
+
+* 一 8月 28 2006 Ivana Varekova <varekova@redhat.com> - 1:1.2.0-2
+- fix #202891 - tar problem
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:1.2.0-1.1
+- rebuild
+
+* 二 7月 04 2006 Ivana Varekova <varekova@redhat.com> - 1:1.2.0-1
+- update to 1.2.0
+
+* 四 6月 08 2006 Jeremy Katz <katzj@redhat.com> - 1:1.1.3-2
+- fix so that busybox.anaconda has sh
+
+* 三 5月 31 2006 Ivana Varekova <varekova@redhat.com> - 1:1.1.3-1
+- update to 1.1.3
+
+* 一 5月 29 2006 Ivana Varekova <varekova@redhat.com> - 1:1.1.2-3
+- fix Makefile typo (#193354)
+
+* 五 5月 05 2006 Ivana Varekova <varekova@redhat.com> - 1:1.1.2-1
+- update to 1.1.2
+
+* 四 5月 04 2006 Ivana Varekova <varekova@redhat.com> - 1:1.1.1-2
+- add -Z option to id command, rename ps command -Z option (#190534)
+
+* 三 5月 03 2006 Ivana Varekova <varekova@redhat.com> - 1:1.1.1-1
+- update to 1.1.1
+- fix CVE-2006-1058 - BusyBox passwd command 
+  fails to generate password with salt (#187386)
+- add -minimal-toc option
+- add RPM_OPT_FLAGS
+- remove asm/page.h used sysconf command to get PAGE_SIZE
+- add overfl patch to aviod Buffer warning
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1:1.01-2.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1:1.01-2.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 10月 13 2005 Daniel Walsh <dwalsh@redhat.com> -  1.01-2
+- Add sepol for linking load_policy
+
+* 四 9月 01 2005 Ivana Varekova <varekova@redhat.com> - 1.01-1
+- update to 1.01
+
+* 三 5月 11 2005 Ivana Varekova <varekova@redhat.com> - 1.00-5
+- add debug files to debug_package
+
+* 一 3月 07 2005 Ivana Varekova <varekova@redhat.com> - 1.00-4
+- rebuilt
+
+* 三 1月 26 2005 Ivana Varekova <varekova@redhat.com> - 1.00-3
+- update to 1.00 - fix bug #145681
+- rebuild
+
+* 四 1月 13 2005 Jeremy Katz <katzj@redhat.com> - 1.00.rc1-6
+- enable ash as the shell in busybox-anaconda
+
+* 六 10月 02 2004 Bill Nottingham <notting@redhat.com> - 1.00.rc1-5
+- fix segfault in SELinux patch (#134404, #134406)
+
+* 五 9月 17 2004 Phil Knirsch <pknirsch@redhat.com> - 1.00.rc1-4
+- Fixed double free in freecon() call (#132809)
+
+* 五 9月 10 2004 Daniel Walsh <dwalsh@redhat.com> - 1.00.rc1-3
+- Add CONFIG_STATIC=y for static builds
+
+* 三 8月 25 2004 Jeremy Katz <katzj@redhat.com> - 1.00.rc1-2
+- rebuild
+
+* 五 6月 25 2004 Dan Walsh <dwalsh@redhat.com> 1.00-pre10.1
+- Add BuildRequires libselinux-devel
+- Update to latest from upstream
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 11 2004 Karsten Hopp <karsten@redhat.de> 1.00.pre8-4 
+- add mknod to busybox-anaconda
+
+* 三 4月 21 2004 Karsten Hopp <karsten@redhat.de> 1.00.pre8-3 
+- fix LS_COLOR in anaconda patch
+
+* 二 3月 23 2004 Jeremy Katz <katzj@redhat.com> 1.00.pre8-2
+- add awk to busybox-anaconda
+
+* 六 3月 20 2004 Dan Walsh <dwalsh@redhat.com> 1.00-pre8.1
+- Update with latest patch. 
+- Turn off LS_COLOR in static patch
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 1月 27 2004 Dan Walsh <dwalsh@redhat.com> 1.00-pre5.2
+- Fix is_selinux_enabled calls
+
+* 一 12月 29 2003 Dan Walsh <dwalsh@redhat.com> 1.00-pre5.1
+-Latest update
+
+* 三 11月 26 2003 Dan Walsh <dwalsh@redhat.com> 1.00-pre3.2
+- Add insmod
+
+* 一 9月 15 2003 Dan Walsh <dwalsh@redhat.com> 1.00-pre3.1
+- Upgrade to pre3
+
+* 四 9月 11 2003 Dan Walsh <dwalsh@redhat.com> 1.00.2
+- Upgrade selinux support
+
+* 三 7月 23 2003 Dan Walsh <dwalsh@redhat.com> 1.00.1
+- Upgrade to 1.00 package
+
+* 三 7月 16 2003 Elliot Lee <sopwith@redhat.com> 0.60.5-10
+- Rebuild
+
+* 一 7月 14 2003 Jeremy Katz <katzj@redhat.com> 0.60.5-9
+- rebuild
+
+* 一 7月 14 2003 Jeremy Katz <katzj@redhat.com> 0.60.5-8
+- add dmesg to busybox-anaconda
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 1月 13 2003 Jeremy Katz <katzj@redhat.com> 0.60.5-5
+- lost nolock for anaconda mount when rediffing, it returns (#81764)
+
+* 一 1月 06 2003 Dan Walsh <dwalsh@redhat.com> 0.60.5-4
+- Upstream developers wanted to eliminate the use of floats
+
+* 五 1月 03 2003 Dan Walsh <dwalsh@redhat.com> 0.60.5-3
+- Fix free to work on large memory machines.
+
+* 六 12月 28 2002 Jeremy Katz <katzj@redhat.com> 0.60.5-2
+- update Config.h for anaconda build to include more useful utils
+
+* 四 12月 19 2002 Dan Walsh <dwalsh@redhat.com> 0.60.5-1
+- update latest release
+
+* 四 12月 19 2002 Dan Walsh <dwalsh@redhat.com> 0.60.2-8
+- incorporate hammer changes
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 06 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- fix compilation on mainframe
+
+* 二 4月 02 2002 Jeremy Katz <katzj@redhat.com>
+- fix static busybox (#60701)
+
+* 四 2月 28 2002 Jeremy Katz <katzj@redhat.com>
+- don't include mknod in busybox.anaconda so we get collage mknod
+
+* 五 2月 22 2002 Jeremy Katz <katzj@redhat.com>
+- rebuild in new environment
+
+* 三 1月 30 2002 Jeremy Katz <katzj@redhat.com>
+- update to 0.60.2
+- include more pieces for the anaconda version so that collage can go away
+- make the mount in busybox.anaconda default to -onolock
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+`- automated rebuild
+
+* 一 7月 09 2001 Tim Powers <timp@redhat.com>
+- don't obsolete sash
+- fix URL and spelling in desc. to satisfy rpmlint
+
+* 四 7月 05 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add missing defattr for anaconda subpackage
+
+* 四 6月 28 2001 Erik Troan <ewt@redhat.com>
+- initial build for Red Hat
+

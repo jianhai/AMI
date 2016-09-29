@@ -1,0 +1,74 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.4.7-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.4.7-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.4.7-1.1
+- rebuild for alios6
+
+* 五 2月 04 2011 Daniel Veillard <veillard@redhat.com> - 0.4.7-1
+- rebase to 0.4.7
+- Added libvirt support up to 0.8.2 API
+- Only throw errors on real errors.
+- Remote non thread safe error reporting
+- fix 600819 Incorrect scheduler parameter value passed to native API.
+- Resolves: rhbz#675044
+
+* 四 7月 08 2010 Daniel Veillard <veillard@redhat.com> - 0.4.5-2
+- extraneous CopyOf from java-1.6 broke the release on old java versions
+- Resolves: rhbz#582294
+
+* 二 6月 29 2010 Daniel Veillard <veillard@redhat.com> - 0.4.5-1
+- rebase to 0.4.5
+- Added libvirt support up to 0.8.1 API
+- Improved packaging for javadocs
+- Better Free/Close handling
+- Resolves: rhbz#582332
+
+* 三 5月 26 2010 Deepak Bhole <dbhole@redhat.com> - 0.4.2-3
+- Remove epoch from the java 1.5.0 requirements
+
+* 四 4月 15 2010 Daniel Veillard <veillard@redhat.com> - 0.4.2-2
+- Missing /usr/share/javadoc/libvirt symlink
+- Resolves: rhbz#579037
+- Allow libvirt-java build on all architecture, lower require to java >= 1.5
+- Resolves: rhbz#582294
+
+* 二 2月 02 2010 Daniel Veillard <veillard@redhat.com> - 0.4.2-1
+- update to upstream 0.4.2
+- fix a crash in getSchedulerParameters()
+- Resolves: rhbz#560658
+
+* 三 1月 20 2010 Daniel Veillard <veillard@redhat.com> - 0.4.1-1
+- update to upstream 0.4.1
+- better scheduler parameters checking and error reporting 
+- Resolves: rhbz#557066
+
+* 一 1月 11 2010 Daniel Veillard <veillard@redhat.com> - 0.4.0-1
+- update to 0.4.0
+- Modified the dependency to be libvirt-client instead of libvirt.
+- Added libvirt APIs up through 0.7.0
+- Added maven building tools.
+- Fixed connection and domain bugs found by Thomas Treutner
+- Resolves: rhbz#554348
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.3.0-1.1
+- Rebuilt for RHEL 6
+
+* 三 7月 29 2009 Bryan Kearney <bkearney@redhat.com> - 0.3.0-1
+- refactored the code to use jna (https://jna.dev.java.net/)
+
+* 五 7月 18 2008 Daniel Veillard <veillard@redhat.com> - 0.2.0-1
+- new release 0.2.0
+- finished cleanup of APIs
+
+* 四 7月 03 2008 Daniel Veillard <veillard@redhat.com> - 0.1.2-1
+- new release 0.1.2
+
+* 二 7月 01 2008 Daniel Veillard <veillard@redhat.com> - 0.1.1-1
+- new release 0.1.1
+
+* 二 6月 24 2008 Daniel Veillard <veillard@redhat.com> - 0.1.0-1
+- created
+

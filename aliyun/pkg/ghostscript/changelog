@@ -1,0 +1,898 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 8.70-11.3.2
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 8.70-11.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 8.70-11.1.2
+- rebuild for alios6
+
+* 二 5月 31 2011 Tim Waugh <twaugh@redhat.com> - 8.70-11:.2
+- Use landscape PXL page sizes when appropriate (bug #710651).
+
+* 四 3月 24 2011 Tim Waugh <twaugh@redhat.com> - 8.70-11
+- Fixed generation of hyperlinks in ps2pdf (bug #675692).
+
+* 二 2月 01 2011 Tim Waugh <twaugh@redhat.com> - 8.70-10
+- Actually apply the Fontmap.local patch (bug #629941).
+
+* 五 12月 10 2010 Tim Waugh <twaugh@redhat.com> - 8.70-8
+- Restored Fontmap.local patch, incorrectly dropped after
+  ghostscript-8.15.4-3 (bug #629941).
+
+* 五 11月 26 2010 Tim Waugh <twaugh@redhat.com> - 8.70-7
+- Fixed jbig2dec-nullderef patch (bug #621118).
+- Applied upstream patch to fix iname.c segfault (bug #629562).
+
+* 五 7月 16 2010 Tim Waugh <twaugh@redhat.com> - 8.70-6
+- Applied patch to fix CVE-2010-1628 (memory corruption at PS stack
+  overflow, bug #592492).
+
+* 四 4月 15 2010 Tim Waugh <twaugh@redhat.com> - 8.70-5
+- Fix denial of service vulnerability in iscan module (bug #582300).
+
+* 五 4月 09 2010 Tim Waugh <twaugh@redhat.com> - 8.70-4
+- Fixed Y-axis when duplexing with cups device (bug #557458).  This
+  patch incorporates upstream commits 10625, 10631, and 10890.
+
+* 三 3月 03 2010 Tim Waugh <twaugh@redhat.com> - 8.70-3
+- Fixed summary.
+- Fixed macros in changelog.
+- Avoid mixed spaces and tabs.
+- Ship COPYING file.
+- Added comments for all patches.
+- Don't ship libtool la files (bug #542674).
+- Don't build static library for ijs (bug #556051).
+- Added comment next to /usr/lib/cups paths.
+- More consistent macro use.
+
+* 四 12月 24 2009 Tim Waugh <twaugh@redhat.com> 8.70-2
+- Fix debugging output from gdevcups (CVE-2009-4270, bug #550293).
+- Harden ghostscript's debugging output functions (bug #550293).
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 8.70-1.1
+- Rebuilt for RHEL 6
+
+* 一 8月 03 2009 Tim Waugh <twaugh@redhat.com> 8.70-1
+- 8.70.
+- License has changed to GPLv3+.  Packages containing programs that
+  link to libgs/libijs are:
+  - foomatic (GPLv2+)
+  - libspectre (GPLv2+)
+  - ImageMagick (ImageMagick, listed on Licensing wiki page under
+    "Good Licenses" and marked as GPLv3 compat)
+  - gutenprint (GPLv2+)
+
+* 一 8月 03 2009 Tim Waugh <twaugh@redhat.com> 8.64-12
+- Moved examples to doc subpackage (bug #515167).
+- Converted spec file to UTF-8.
+
+* 四 7月 30 2009 Tim Waugh <twaugh@redhat.com> 8.64-11
+- Fixed CVE-2009-0583,0584 patch by using 255 as the maximum number of
+  points, not 100, and by not treating a missing black point tag as an
+  error (bug #487744).
+
+* 四 7月 30 2009 Rex Dieter <rdieter@fedoraproject.org> - 8.64-10
+- License: GPLv2 and Redistributable, no modification permitted (bug #487510)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.64-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 10 2009 Tim Waugh <twaugh@redhat.com> 8.64-8
+- Fix scripts so they don't get broken on install (bug #502550).
+
+* 四 6月 04 2009 Tim Waugh <twaugh@redhat.com> 8.64-7
+- Applied patch to fix NULL dereference in JBIG2 decoder (bug #503995).
+
+* 三 4月 15 2009 Tim Waugh <twaugh@redhat.com> 8.64-6
+- Applied patch to fix CVE-2009-0792 (bug #491853).
+- Applied patch to fix CVE-2009-0196 (bug #493379).
+
+* 五 3月 20 2009 Tim Waugh <twaugh@redhat.com> 8.64-5
+- Applied patch to fix CVE-2009-0583 (bug #487742) and CVE-2009-0584
+  (bug #487744).
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.64-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Tim Waugh <twaugh@redhat.com> 8.64-3
+- Fix bitcmyk driver (bug #486644).
+
+* 三 2月 04 2009 Tim Waugh <twaugh@redhat.com> 8.64-2
+- 8.64 (bug #483958).
+- Removed trade marks to avoid any potential confusion.
+
+* 五 10月 17 2008 Tim Waugh <twaugh@redhat.com>
+- Removed last patch (unsuccessful).
+
+* 五 10月 17 2008 Tim Waugh <twaugh@redhat.com> 8.63-4
+- Try out a work-around for bug #465311.
+
+* 三 10月 15 2008 Tim Waugh <twaugh@redhat.com> 8.63-3
+- Don't ship fixmswrd.pl as it pulls in perl (bug #463948).
+
+* 二 10月 14 2008 Tim Waugh <twaugh@redhat.com> 8.63-2
+- Split out a doc sub-package (bug #466507).
+
+* 一 8月 04 2008 Tim Waugh <twaugh@redhat.com> 8.63-1
+- 8.63.  No longer need r8591 or incomplete-ccittfax patches.
+- Compile without strict aliasing opts due to warnings across several
+  files.
+- Don't run autogen.sh for main package, just for ijs which doesn't
+  ship with a configure script.
+
+* 一 6月 23 2008 Tim Waugh <twaugh@redhat.com> 8.62-4
+- Applied patch to work around bug #229174.
+- Applied patch from upstream to fix box_fill_path for shfill (bug #452348).
+
+* 一 3月 31 2008 Tim Waugh <twaugh@redhat.com> 8.62-3
+- Fix pksmraw output (bug #308211).
+
+* 二 3月 04 2008 Tim Waugh <twaugh@redhat.com> 8.62-2
+- No longer need CVE-2008-0411 patch.
+- Don't ship URW fonts; we already have them.
+
+* 二 3月 04 2008 Tim Waugh <twaugh@redhat.com> 8.62-1
+- 8.62.  No longer need IJS KRGB patch, or patch for gs bug 689577.
+
+* 三 2月 27 2008 Tim Waugh <twaugh@redhat.com> 8.61-10
+- Applied patch to fix CVE-2008-0411 (bug #431536).
+
+* 五 2月 22 2008 Tim Waugh <twaugh@redhat.com> 8.61-9
+- Build with jasper again (bug #433897).  Build requires jasper-devel, and
+  a patch to remove jas_set_error_cb reference.
+
+* 三 2月 13 2008 Tim Waugh <twaugh@redhat.com> 8.61-8
+- Rebuild for GCC 4.3.
+
+* 一 1月 28 2008 Tim Waugh <twaugh@redhat.com> 8.61-7
+- Don't build with jasper support.
+- Remove bundled libraries.
+
+* 二 12月 11 2007 Tim Waugh <twaugh@redhat.com> 8.61-6
+- Applied upstream patch for bug #416321.
+
+* 五 11月 30 2007 Tim Waugh <twaugh@redhat.com> 8.61-5
+- Fixed runlibfileifexists patch.
+
+* 五 11月 30 2007 Tim Waugh <twaugh@redhat.com> 8.61-4
+- Revert previous change, but define .runlibfileifexists, not just
+  runlibfileifexists.
+
+* 三 11月 28 2007 Tim Waugh <twaugh@redhat.com> 8.61-3
+- No longer need runlibfileifexists.
+- Use runlibfile in cidfmap.
+
+* 三 11月 28 2007 Tim Waugh <twaugh@redhat.com> 8.61-2
+- Add /usr/share/fonts to fontpath (bug #402551).
+- Restore cidfmap-switching bits, except for FAPIcidfmap which is no
+  longer used.
+- Add runlibfileifexists to gs_init.ps.
+- Build with --disable-compile-inits (bug #402501).
+
+* 五 11月 23 2007 Tim Waugh <twaugh@redhat.com> 8.61-1
+- 8.61.
+
+* 二 10月 23 2007 Tim Waugh <twaugh@redhat.com> 8.60-5
+- Applied patch from upstream to fix CVE-2007-2721 (bug #346511).
+
+* 二 10月 09 2007 Tim Waugh <twaugh@redhat.com> 8.60-4
+- Marked localized man pages as %lang (bug #322321).
+
+* 四 9月 27 2007 Tim Waugh <twaugh@redhat.com> 8.60-3
+- Back-ported mkstemp64 patch (bug #308211).
+
+* 四 8月 23 2007 Tim Waugh <twaugh@redhat.com> 8.60-2
+- More specific license tag.
+
+* 五 8月 03 2007 Tim Waugh <twaugh@redhat.com> 8.60-1
+- 8.60.
+
+* 一 7月 16 2007 Tim Waugh <twaugh@redhat.com> 8.60-0.r8112.2
+- Own %{_libdir}/ghostscript (bug #246026).
+
+* 二 7月 10 2007 Tim Waugh <twaugh@redhat.com> 8.60-0.r8112.1
+- 8.60 snapshot from svn.  Patches dropped:
+  - big-cmap-post
+  - split-cidfnmap
+  - exactly-enable-cidfnmap
+  - Fontmap.local
+  No longer needed:
+  - gxcht-64bit-crash
+
+* 二 4月 17 2007 Tim Waugh <twaugh@redhat.com> 8.15.4-3
+- Apply fonts in CIDFnmap even if the same fontnames are already registered
+  (bug #163231).
+- New file CIDFmap (bug #233966).
+- Allow local overrides for FAPIcidfmap, cidfmap and Fontmap (bug #233966).
+
+* 二 4月 03 2007 Tim Waugh <twaugh@redhat.com> 8.15.4-2
+- Fixed configuration file locations (bug #233966).
+
+* 三 3月 14 2007 Tim Waugh <twaugh@redhat.com> 8.15.4-1
+- 8.15.4.
+
+* 四 1月 25 2007 Tim Waugh <twaugh@redhat.com> 8.15.3-7
+- dvipdf script fixes (bug #88906).
+- Moved libijs.so and libgs.so into devel package (bug #203623).
+
+* 三 1月 24 2007 Tim Waugh <twaugh@redhat.com> 8.15.3-6
+- Configure with --with-drivers=ALL since the advertised default is not
+  what gets used (bug #223819).
+
+* 四 1月 18 2007 Tim Waugh <twaugh@redhat.com> 8.15.3-5
+- Backported gxcht 64bit crash fix from GPL trunk (bug #177763).
+
+* 五 1月 12 2007 Tim Waugh <twaugh@redhat.com> 8.15.3-4
+- Own cjkv directory (bug #221380, bug #222375).
+
+* 二 12月 05 2006 Tim Waugh <twaugh@redhat.com> 8.15.3-3
+- Added split-cidfnmap patch (bug #194592).
+
+* 四 11月 16 2006 Tim Waugh <twaugh@redhat.com> 8.15.3-2
+- 8.15.3.  No longer need gtk2, ps2epsi, badc, pagesize,
+  use-external-freetype, split-font-configuration or cjkv patches.
+- Renumbered patches.
+
+* 二 10月 03 2006 Tim Waugh <twaugh@redhat.com> 8.15.2-9
+- Apply CJKV patch from svn164:165 plus the fix from svn173:174 (bug #194592,
+  bug #203712, possibly bug #167596).
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 8.15.2-8.1
+- rebuild
+
+* 五 6月 23 2006 Tim Waugh <twaugh@redhat.com> 8.15.2-8
+- Revert CJKV patch.
+
+* 三 6月 14 2006 Tomas Mraz <tmraz@redhat.com> - 8.15.2-7
+- rebuilt with new gnutls
+
+* 二 6月 13 2006 Tim Waugh <twaugh@redhat.com> 8.15.2-6
+- Undo svn sync.
+- Apply CJKV patch from svn164:165.
+
+* 五 6月 09 2006 Tim Waugh <twaugh@redhat.com> 8.15.2-5
+- Sync to svn165.
+
+* 五 5月 26 2006 Tim Waugh <twaugh@redhat.com> 8.15.2-4
+- Fix ijs-config not to have multilib conflicts (bug #192672)
+
+* 二 5月 02 2006 Tim Waugh <twaugh@redhat.com> 8.15.2-3
+- Remove adobe-cmaps and acro5-cmaps, since latest CMaps are already
+  included (bug #190463).
+
+* 二 4月 25 2006 Tim Waugh <twaugh@redhat.com> 8.15.2-2
+- 8.15.2.
+- No longer need build, krgb, pdfwrite, str1570 patches.
+
+* 一 4月 24 2006 Tim Waugh <twaugh@redhat.com> 8.15.1-10
+- Fix emacs interaction (bug #189321, STR #1570).
+
+* 一 4月 10 2006 Tim Waugh <twaugh@redhat.com> 8.15.1-9
+- Add %{_datadir}/fonts/japanese to font path (bug #188448).
+- Spec file cleanups (bug #188066).
+
+* 六 4月 08 2006 Tim Waugh <twaugh@redhat.com>
+- Build requires libtool (bug #188341).
+
+* 四 4月 06 2006 Tim Waugh <twaugh@redhat.com> 8.15.1-8
+- Fix pdfwrite (bug #187834).
+- CUPS filters go in /usr/lib/cups/filter even on lib64 platforms.
+
+* 四 3月 02 2006 Tim Waugh <twaugh@redhat.com> 8.15.1-7
+- BuildRequires: gnutls-devel
+- Updated KRGB patch for gdevijs.
+
+* 二 2月 28 2006 Karsten Hopp <karsten@redhat.de> 8.15.1-6
+- BuildRequires: libXt-devel
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 8.15.1-5.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 8.15.1-5.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 30 2006 Tim Waugh <twaugh@redhat.com> 8.15.1-5
+- Updated adobe-cmaps to 200406 (bug #173613).
+
+* 五 1月 27 2006 Tim Waugh <twaugh@redhat.com> 8.15.1-4
+- Support reading a big cmap/post table from a TrueType font.
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 09 2005 Tomas Mraz <tmraz@redhat.com> 8.15.1-3
+- Build does not explicitly require xorg-x11-devel.
+
+* 三 11月 09 2005 Tomas Mraz <tmraz@redhat.com> 8.15.1-2
+- rebuilt with new openssl
+
+* 一 9月 26 2005 Tim Waugh <twaugh@redhat.com> 8.15.1-1
+- Some directories should be "8.15" not "8.15.1" (bug #169198).
+
+* 四 9月 22 2005 Tim Waugh <twaugh@redhat.com> 8.15.1-0.1
+- 8.15.1.
+- No longer need overflow patch.
+
+* 二 8月 16 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc4.3
+- Rebuilt for new cairo.
+
+* 一 8月 15 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc4.2
+- Parametrize freetype, and disable it (bug #165962).
+
+* 五 8月 12 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc4.1
+- 8.15rc4.
+- Fixed lips4v driver (bug #165713).
+
+* 二 8月 09 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc3.7
+- Install adobe/acro5 CMaps (bug #165428).
+
+* 一 7月 18 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc3.6
+- Fixed split font configuration patch (bug #161187).
+
+* 三 7月 13 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc3.5
+- Split font configuration (bug #161187).
+- Reverted this change:
+  - Build requires xorg-x11-devel, not XFree86-devel.
+
+* 二 7月 12 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc3.4
+- Add Japanese fonts to FAPIcidfmap (bug #161187).
+- Moved Resource directory.
+- Added use-external-freetype patch (bug #161187).
+
+* 一 7月 11 2005 Tim Waugh <twaugh@redhat.com>
+- Build requires libtiff-devel (bug #162826).
+
+* 四 6月 09 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc3.3
+- Build requires xorg-x11-devel, not XFree86-devel.
+- Include ierrors.h in the devel package.
+
+* 三 6月 08 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc3.2
+- Drop 'Provides: libijs.so' because it is incorrect.
+- Build igcref.c with -O0 to work around bug #150771.
+- Renumber patches.
+
+* 五 6月 03 2005 Tim Waugh <twaugh@redhat.com> 8.15-0.rc3.1
+- Switch to ESP Ghostscript.
+- 8.15rc3.
+- Lots of patches dropped.  Perhaps some will need to be re-added.
+
+* 四 3月 10 2005 Tim Waugh <twaugh@redhat.com> 7.07-40
+- Build igcref.c with -O0 to work around bug #150771.
+
+* 二 3月 01 2005 Tim Waugh <twaugh@redhat.com> 7.07-39
+- Rebuilt for new GCC.
+
+* 一 2月 21 2005 Tim Waugh <twaugh@redhat.com> 7.07-38
+- Fixes inspired by GCC 4.
+
+* 二 1月 18 2005 Tim Waugh <twaugh@redhat.com>
+- Correct permissions for %{_datadir}/ghostscript/Resource (bug #145420).
+
+* 五 12月 10 2004 Tim Waugh <twaugh@redhat.com> 7.07-37
+- Fixed missing return statement (bug #136757).
+
+* 四 12月 09 2004 Tim Waugh <twaugh@redhat.com> 7.07-36
+- Remove VFlib2 bits (bug #120498).
+
+* 五 12月 03 2004 Tim Waugh <twaugh@redhat.com> 7.07-35
+- Added /etc/ghostscript to search path and to file manifest (bug #98974).
+
+* 六 11月 20 2004 Miloslav Trmac <mitr@redhat.com> - 7.07-34
+- Convert man pages to UTF-8
+
+* 三 10月 20 2004 Tim Waugh <twaugh@redhat.com> 7.07-33
+- Fix for bug #136322 (temporary files).
+
+* 二 9月 28 2004 Tim Waugh <twaugh@redhat.com> 7.07-32
+- Turn off fontconfig until it's fixed (bug #133353).
+
+* 三 8月 18 2004 Tim Waugh <twaugh@redhat.com> 7.07-31
+- Only ship gsx in the gtk subpackage.
+
+* 五 8月 06 2004 Tim Waugh <twaugh@redhat.com>
+- Run /sbin/ldconfig in %post/%postun.
+- Stricter requirements for the main package in the subpackages.
+
+* 二 7月 20 2004 Tim Waugh <twaugh@redhat.com> 7.07-30
+- Updated eplaser driver to add alc4000 (bug #128007).
+
+* 五 6月 25 2004 Tim Waugh <twaugh@redhat.com> 7.07-29
+- Prevent pdf2ps generating "null setpagesize" (bug #126446).
+
+* 四 6月 24 2004 Tim Waugh <twaugh@redhat.com> 7.07-28
+- Fix Omni patch assumption about /usr/lib which breaks for multilib
+  architectures.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 01 2004 Tim Waugh <twaugh@redhat.com> 7.07-26
+- Removed another debug message from the fontconfig patch.
+
+* 二 3月 09 2004 Tim Waugh <twaugh@redhat.com> 7.07-25
+- Added bjc250gs driver (bug #117860).
+
+* 四 3月 04 2004 Tim Waugh <twaugh@redhat.com> 7.07-24
+- Fix compilation with GCC 3.4.
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 18 2004 Tim Waugh <twaugh@redhat.com> 7.07-23
+- Build against gtk2/glib2 (bug #115619).  Patch from W. Michael Petullo.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> 7.07-22
+- rebuilt
+
+* 四 2月 12 2004 Tim Waugh <twaugh@redhat.com> 7.07-21
+- Leave gdevpdfm.c seemingly-mistaken bitwise ops alone (bug #115396).
+
+* 四 2月 05 2004 Tim Waugh <twaugh@redhat.com> 7.07-20
+- Fix compilation with GCC 3.4.
+
+* 三 1月 28 2004 Tim Waugh <twaugh@redhat.com> 7.07-19
+- Attempt to fix gdevcups crash (bug #114256).
+- Make gs dynamically link to libgs (bug #114276).
+- Fix gdevesmv.c's misuse of const (bug #114250).
+
+* 二 1月 20 2004 Tim Waugh <twaugh@redhat.com> 7.07-18
+- Turn on libgs again (bug #88175).
+
+* 一 1月 19 2004 Tim Waugh <twaugh@redhat.com> 7.07-17
+- Removed stp driver.  Use the IJS version (ijsgimpprint) instead.
+- No longer conflicts with foomatic for hpijs versioning.
+
+* 一 1月 12 2004 Tim Waugh <twaugh@redhat.com> 7.07-16
+- Split hpijs out into separate source package.
+
+* 四 1月 08 2004 Tim Waugh <twaugh@redhat.com>
+- Fix several mistakenly-used bitwise operations.
+
+* 二 1月 06 2004 Tim Waugh <twaugh@redhat.com> 7.07-15
+- Build for Fedora Core 1 printer drivers update.
+- Conflicts with foomatic before hpijs 1.5 data.
+- Make fontconfig optional.
+
+* 六 12月 13 2003 Tim Waugh <twaugh@redhat.com> 7.07-14
+- Disable unnecessary debug messages from fontconfig support.
+
+* 五 12月 05 2003 Tim Waugh <twaugh@redhat.com> 7.07-13
+- Add fontconfig support (bug #111412).
+
+* 四 11月 27 2003 Tim Waugh <twaugh@redhat.com>
+- Build requires libjpeg-devel (bug #110737).
+
+* 二 11月 11 2003 Tim Waugh <twaugh@redhat.com> 7.07-12
+- Updated hpijs to 1.5 (bug #109714).
+
+* 一 11月 10 2003 Tim Waugh <twaugh@redhat.com>
+- Updated lxm3200 patch (bug #109625).
+
+* 二 9月 30 2003 Tim Waugh <twaugh@redhat.com> 7.07-11
+- Updated gdevcups.c from CUPS 1.1.19.
+- Apply NOMEDIAATTRS patch from CUPS 1.1.19 (bug #105401).
+
+* 四 8月 28 2003 Tim Waugh <twaugh@redhat.com>
+- Fix lips4v driver (bug #92337).
+
+* 三 8月 20 2003 Tim Waugh <twaugh@redhat.com> 7.07-10
+- Fix compilation problems in hpijs.
+
+* 一 8月 04 2003 Tim Waugh <twaugh@redhat.com> 7.07-9
+- Further fix from bug #100685.
+
+* 四 7月 31 2003 Tim Waugh <twaugh@redhat.com> 7.07-8
+- Further fix from bug #100685.
+
+* 二 7月 29 2003 Tim Waugh <twaugh@redhat.com> 7.07-7
+- Further fix from bug #100685.
+
+* 五 7月 25 2003 Tim Waugh <twaugh@redhat.com> 7.07-6
+- Further fix from bug #100557.
+
+* 四 7月 24 2003 Tim Waugh <twaugh@redhat.com> 7.07-5
+- Further fix from bug #100557.
+- Fix bug #100685.
+
+* 三 7月 23 2003 Tim Waugh <twaugh@redhat.com> 7.07-4
+- Fix bug #100557.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com> 7.07-3
+- rebuilt
+
+* 二 5月 27 2003 Tim Waugh <twaugh@redhat.com>
+- Fix sed usage in ps2epsi (bug #89300).
+
+* 二 5月 20 2003 Tim Waugh <twaugh@redhat.com> 7.07-2
+- HPIJS 1.4 (bug #91219).
+
+* 日 5月 18 2003 Tim Waugh <twaugh@redhat.com> 7.07-1
+- 7.07.
+- Parametrize build_libgs.
+- Remove Omni requirement (bug #88177).
+- Fix ghostscript-gtk obsoletes: line (bug #88175).
+
+* 四 4月 03 2003 Tim Waugh <twaugh@redhat.com> 7.06-1
+- 7.06.
+- Updated config, vflib.fixup patches.
+- No longer need dx6, jpeg patches.
+- No longer need to add in missed GNU drivers.
+- Turn off dj970 driver (hpijs drives that).
+
+* 一 3月 31 2003 Tim Waugh <twaugh@redhat.com> 7.05-34
+- Apply fix for CJK font search method when the fonts are not available
+  (bug #83516).
+- The gb18030 patch no longer applies here.
+
+* 四 3月 27 2003 Tim Waugh <twaugh@redhat.com> 7.05-33
+- Add some missing font aliases (bug #73342).
+- Use the system jpeg library.
+- Update hpijs to 1.3.1.
+- Update gdevcups.c from cups-1.1.18.
+
+* 一 2月 24 2003 Elliot Lee <sopwith@redhat.com> 7.05-32
+- debuginfo rebuild
+
+* 五 2月 21 2003 Elliot Lee <sopwith@redhat.com> 7.05-31
+- Add ghostscript-7.05-oob-66421.patch to fix the segfault behind #66421
+
+* 四 1月 30 2003 Tim Waugh <twaugh@redhat.com> 7.05-30
+- Remove rss patch from hpijs (not needed).
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 7.05-29
+- rebuilt
+
+* 四 1月 16 2003 Tim Waugh <twaugh@redhat.com> 7.05-28
+- Add Korean font aliases to CIDFnmap CJK resource files (bug #81924).
+
+* 六 12月 14 2002 Tim Waugh <twaugh@redhat.com> 7.05-27
+- Obsolete ghostscript-gtk (bug #79585).
+- Omni 121002 patch.
+
+* 二 12月 10 2002 Tim Waugh <twaugh@redhat.com> 7.05-26
+- Don't ship the shared object yet (part of bug #79340).
+- Don't make the gtk package, since that needs the shared object.
+
+* 二 11月 26 2002 Tim Waugh <twaugh@redhat.com> 7.05-25
+- Fix level 1 PostScript output (bug #78450).
+- No need to carry gomni.c, since it comes from the patch.
+
+* 一 11月 11 2002 Tim Waugh <twaugh@redhat.com> 7.05-24
+- Omni 071902 patch.
+
+* 一 11月 11 2002 Tim Waugh <twaugh@redhat.com> 7.05-23
+- hpijs-1.3, with updated rss patch.
+- Fix XLIBDIRS.
+
+* 五 10月 25 2002 Tim Waugh <twaugh@redhat.com> 7.05-22
+- hpijs-rss 1.2.2.
+
+* 一 10月 14 2002 Tim Waugh <twaugh@redhat.com> 7.05-21
+- Set libdir when installing.
+
+* 四 8月 15 2002 Tim Waugh <twaugh@redhat.com> 7.05-20
+- Add cups device (bug #69573).
+
+* 一 8月 12 2002 Tim Waugh <twaugh@redhat.com> 7.05-19
+- Fix the gb18030 patch (bug #71135, bug #71303).
+
+* 六 8月 10 2002 Elliot Lee <sopwith@redhat.com> 7.05-18
+- rebuilt with gcc-3.2 (we hope)
+
+* 五 8月 09 2002 Tim Waugh <twaugh@redhat.com> 7.05-17
+- Add CIDnmap for GB18030 font (bug #71135).
+- Fix URL (bug #70734).
+
+* 二 7月 23 2002 Tim Waugh <twaugh@redhat.com> 7.05-16
+- Rebuild in new environment.
+
+* 二 7月 09 2002 Tim Waugh <twaugh@redhat.com> 7.05-15
+- Remove the chp2200 driver again, to fix cdj890 (bug #67578).
+
+* 五 7月 05 2002 Tim Waugh <twaugh@redhat.com> 7.05-14
+- For CJK font support, use CIDFnmap instead of CIDFont
+  resources (bug #68009).
+
+* 三 7月 03 2002 Tim Waugh <twaugh@redhat.com> 7.05-13
+- Build requires unzip and gtk+-devel (bug #67799).
+
+* 三 6月 26 2002 Tim Waugh <twaugh@redhat.com> 7.05-12
+- File list tweaking.
+- More file list tweaking.
+
+* 二 6月 25 2002 Tim Waugh <twaugh@redhat.com> 7.05-10
+- Rebuild for bootstrap.
+
+* 三 6月 19 2002 Tim Waugh <twaugh@redhat.com> 7.05-9
+- Omni 052902 patch.
+
+* 一 6月 10 2002 Tim Waugh <twaugh@redhat.com> 7.05-8
+- Requires recent version of patchutils (bug #65947).
+- Don't ship broken man page symlinks (bug #66238).
+
+* 三 5月 29 2002 Tim Waugh <twaugh@redhat.com> 7.05-7
+- Put gsx in its own package.
+
+* 二 5月 28 2002 Tim Waugh <twaugh@redhat.com> 7.05-6
+- New gomni.c from IBM to fix an A4 media size problem.
+- Use new Adobe CMaps (bug #65362).
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com> 7.05-5
+- automated rebuild
+
+* 三 5月 22 2002 Tim Waugh <twaugh@redhat.com> 7.05-4
+- New gomni.c from IBM to fix bug #65269 (again).
+
+* 二 5月 21 2002 Tim Waugh <twaugh@redhat.com> 7.05-2
+- Don't apply bogus parts of vflib patch (bug #65268).
+- Work around Omni -sPAPERSIZE=a4 problem (bug #65269).
+
+* 一 5月 20 2002 Tim Waugh <twaugh@redhat.com> 7.05-1
+- 7.05.
+- No longer need mkstemp, vflib.fixup, quoting, or PARANOIDSAFER
+  patches.
+- Don't apply CJK patches any more (no longer needed).
+- Updated Source15, Patch0, Patch10, Patch5, Patch24, Patch14, Patch12.
+- Made gdevdmpr.c compile again.
+- Move gimp-print to a separate package.
+- Ship the shared object too (and a .so file that is dlopened).
+- Update Omni patch.  No longer need Omni_path, Omni_quiet, Omni_glib patches.
+- Require Omni >= 0.6.1.
+- Add patch to fix gtk+ initial window size.
+- Add devel package with header files.
+- Turn on IJS support.
+- Update hpijs to 1.1.
+- Don't ship the hpijs binary in the ghostscript package.
+- Use -fPIC when building ijs.
+
+* 三 4月 03 2002 Tim Waugh <twaugh@redhat.com> 6.52-8
+- New CIDFonts (bug #61015).
+
+* 三 4月 03 2002 Tim Waugh <twaugh@redhat.com> 6.52-7
+- Fix release numbers of sub packages.
+- Handle info files, use ldconfig (bug #62574).
+
+* 二 3月 19 2002 Tim Waugh <twaugh@redhat.com> 6.52-6
+- Fix config patch so that gs --help displays the right thing.
+- Don't ship sysvlp.sh.
+- Fix some shell scripts.
+- Ship escputil man page (bug #58919).
+
+* 一 2月 11 2002 Tim Waugh <twaugh@redhat.com> 6.52-5
+- Add CHP2200 driver (bug #57516).
+- Fix gimp-print-4.2.0 so that it builds without cups-config.
+
+* 六 2月 02 2002 Bill Nottingham <notting@redhat.com> 6.52-4
+- do condrestart in %postun, not %post
+
+* 五 2月 01 2002 Bernhard Rosenkraenzer <bero@redhat.com> 6.52-3
+- Restart service cups after installing gimp-print-cups
+
+* 日 1月 27 2002 Bernhard Rosenkraenzer <bero@redhat.com> 6.52-2
+- hpijs is finally free - support it.
+- Add extra package for CUPS support
+
+* 一 1月 21 2002 Bernhard Rosenkraenzer <bero@redhat.com> 6.52-1
+- Updates:
+  - ghostscript 6.52
+  - hpdj 2.6 -> pcl3 3.3
+  - CJK Patchlevel 3, adobe-cmaps 200109
+  - gimp-print 4.2.0
+- Adapt patches
+- Fix various URLs
+- Begin cleaning up spec file
+- Fix bugs #21879 and #50923
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 10月 18 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-16
+- update the Omni driver, and patch it to seek in /usr/lib/Omni/ first
+- require Omni
+
+* 一 10月 01 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-15
+- change -dPARANOIDSAFER to punch a hole for OutputFile
+
+* 一 9月 17 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-14
+- add -dPARANOIDSAFER to let us breathe a little easier in the print spooler.
+
+* 四 9月 13 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-13
+- apply jakub's fix to ghostscript's jmp_buf problems; #49591
+
+* 三 9月 05 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-12
+- fix lprsetup.sh; #50925
+
+* 五 8月 24 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-11
+- added Epson's old eplaseren drivers,
+- pointed out by Till Kamppeter <till.kamppeter@gmx.net>
+
+* 二 8月 21 2001 Paul Howarth <paul@city-fan.org> 6.51-10
+- included Samsung GDI driver for ML-4500 printer support.
+
+* 日 8月 19 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-9
+- applied IBM's glib patches for Omni, which now works.
+- BE AWARE: we now link against libstdc++ and glib for this, and use a c++
+- link stage to do the dirty.
+- added glib-devel buildreq and glib req, I don't think we require everything
+- yet, I could pull in sasl.
+
+* 日 8月 19 2001 David Suffield <david_suffield@hp.com> 6.51-8
+- Added gs device hpijs and updated gdevhpij.c to hpijs 0.97
+
+* 三 8月 15 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-7
+- pull in ynakai's update to the cjk resources.
+
+* 四 8月 09 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-6
+- turn dmprt and cdj880 back on. for some reason, they work now.
+- voodoo, who knows.
+
+* 四 8月 09 2001 Yukihiro Nakai <ynakai@redhat.com> 6.51-5
+- Add cjk resources
+
+* 三 8月 01 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-4
+- applied drepper@redhat.com's patch for #50300
+- fixed build deps on zlib-devel and libpng-devel, #49853
+- made gs_init.ps a config file; #25096
+- O\^/nZ the daTa directorieZ now; #50693
+
+* 二 7月 24 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-3
+- wired up the Resource dir and the Font and CIDFont maps.
+
+* 一 7月 23 2001 Crutcher Dunnavant <crutcher@redhat.com> 6.51-2
+- luckily, I had a spare chicken. Thanks to some work by Nakai, and one last
+- desperate search through google, everything /seems/ to be working. I know
+- that there are going to be problems in the japanese code, and I need to turn
+- on the cjk font map from adobe, but it /works/ at the moment.
+
+* 四 6月 21 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- upgraded to 6.51, a major version upgrade
+- rewrote spec file, threw out some patches
+- turned on IBM's Omni print drivers interface
+- turned on HP's hpijs print drivers interface
+- turned on every driver that looked usable from linux
+- sacrificed a chicken to integrate the old Japanese drivers
+- - This didn't work. The japanese patches are turned off, pending review.
+- - I can do loops with C, but the bugs are in Postscript init files
+
+* 三 4月 11 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- added P. B. West's lx5000 driver
+
+* 二 2月 27 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- added xtt-fonts requirement (for VFlib)
+
+* 五 2月 09 2001 Adrian Havill <havill@redhat.com>
+- cmpskit removed as a build prereq
+
+* 四 2月 08 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- merged in some patches that got away:
+  * Fri Sep  1 2000 Mitsuo Hamada <mhamada@redhat.com>
+  - add support JIS B size
+  - fix the problem of reconverting GNUPLOT output
+
+* 四 2月 08 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- switched to japanese for everybody
+
+* 四 2月 08 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- tweaked time_.h to test for linux, and include the right
+- header
+
+* 三 2月 07 2001 Crutcher Dunnavnat <crutcher@redhat.com>
+- added the lxm3200 driver
+
+* 一 12月 11 2000 Crutcher Dunnavant <crutcher@redhat.com>
+- merged in the (accendental) branch that contained the mktemp
+- and LD_RUN_PATH bug fixes.
+
+* 二 10月 17 2000 Jeff Johnson <jbj@redhat.com>
+- tetex using xdvi with ghostscript patch (#19212).
+
+* 二 9月 12 2000 Michael Stefaniuc <mstefani@redhat.com>
+- expanded the gcc296 patch to fix a compilation issue with the new stp
+  driver
+
+* 一 9月 11 2000 Michael Stefaniuc <mstefani@redhat.com>
+- added the stp driver from the gimp-print project.
+  It supports high quality printing especialy with Epson Stylus Photo.
+
+* 三 8月 02 2000 Matt Wilson <msw@redhat.com>
+- rebuilt against new libpng
+
+* 三 8月 02 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up the cdj880 patch (Bug #14978)
+- Fix build with gcc 2.96
+
+* 五 7月 21 2000 Bill Nottingham <notting@redhat.com>
+- turn off japanese support
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 五 7月 07 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- fixed the broken inclusion of files in /usr/doc
+- Build requires freetype-devel
+
+* 五 6月 16 2000 Matt Wilson <msw@redhat.com>
+- build japanese support in main distribution
+- FHS manpage paths
+
+* 日 3月 26 2000 Chris Ding <cding@redhat.com>
+- enabled bmp16m driver
+
+* 四 3月 23 2000 Matt Wilson <msw@redhat.com>
+- added a boatload of Japanese printers
+
+* 四 3月 16 2000 Matt Wilson <msw@redhat.com>
+- add japanese support, enable_japanese macro
+
+* 一 2月 14 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 5.50 at last...
+- hpdj 2.6
+- Added 3rd party drivers:
+  - Lexmark 5700 (lxm5700m)
+  - Alps MD-* (md2k, md5k)
+  - Lexmark 2050, 3200, 5700 and 7000 (lex2050, lex3200, lex5700, lex7000)
+
+* 五 2月 04 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- rebuild to compress man page
+- fix gs.1 symlink
+
+* 三 1月 26 2000 Bill Nottingham <notting@redhat.com>
+- add stylus 740 uniprint files
+
+* 四 1月 13 2000 Preston Brown <pbrown@redhat.com>
+- add lq850 dot matrix driver (#6357)
+
+* 四 10月 28 1999 Bill Nottingham <notting@redhat.com>
+- oops, include oki182 driver.
+
+* 二 8月 24 1999 Bill Nottingham <notting@redhat.com>
+- don't optimize on Alpha. This way it works.
+
+* 四 7月 29 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added hpdj driver
+- changed build to use tar_cat so adding new drivers is sane
+
+* 四 7月 01 1999 Bill Nottingham <notting@redhat.com>
+- add OkiPage 4w+, HP 8xx drivers
+
+* 一 4月 05 1999 Bill Nottingham <notting@redhat.com>
+- fix typo in config patch.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com>
+- auto rebuild in the new build environment (release 6)
+
+* 一 3月 15 1999 Cristian Gafton <gafton@redhat.com>
+- added patch from rth to fix alignement problems on the alpha.
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 一 2月 08 1999 Bill Nottingham <notting@redhat.com>
+- add uniprint .upp files
+
+* 六 2月 06 1999 Preston Brown <pbrown@redhat.com>
+- fontpath update.
+
+* 三 12月 23 1998 Preston Brown <pbrown@redhat.com>
+- updates for ghostscript 5.10
+
+* 五 11月 13 1998 Preston Brown <pbrown@redhat.com>
+- updated to use shared urw-fonts package.
+
+* 一 11月 09 1998 Preston Brown <pbrown@redhat.com>
+- turned on truetype (ttf) font support.
+
+* 四 7月 02 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 4.03.
+
+* 二 5月 05 1998 Cristian Gafton <gafton@redhat.com>
+- enabled more printer drivers
+- buildroot
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 一 3月 03 1997 Erik Troan <ewt@redhat.com>
+- Made /usr/share/ghostscript/3.33/Fontmap a config file.
+

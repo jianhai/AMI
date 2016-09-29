@@ -1,0 +1,24 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libX11.so.6()(64bit)  
+libXrender.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.11)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcairo.so.2()(64bit)  
+libfontconfig.so.1()(64bit)  
+libfreetype.so.6()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libpixman-1.so.0()(64bit)  
+libpng12.so.0()(64bit)  
+libpng12.so.0(PNG12_0)(64bit)  
+libz.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

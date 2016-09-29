@@ -1,0 +1,12 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+# Reload .mount files:
+killall -USR1 gvfsd >&/dev/null || :
+# Update desktop files mime mappings:
+update-desktop-database &> /dev/null ||:
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+# Update desktop files mime mappings:
+update-desktop-database &> /dev/null ||:
+
+# Reload .mount files when single subpackage is installed:

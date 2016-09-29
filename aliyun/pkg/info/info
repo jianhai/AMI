@@ -1,0 +1,14 @@
+Name        : info                         Relocations: (not relocatable)
+Version     : 4.13a                             Vendor: Alibaba
+Release     : 8.4.alios6                    Build Date: 2014年07月28日 星期一 05时32分35秒
+Install Date: 2015年03月25日 星期三 10时59分26秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: texinfo-4.13a-8.4.alios6.src.rpm
+Size        : 329034                           License: GPLv3+
+Signature   : RSA/8, 2014年07月31日 星期四 16时45分28秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnu.org/software/texinfo/
+Summary     : A stand-alone TTY-based reader for GNU texinfo documentation
+Description :
+The GNU project uses the texinfo file format for much of its
+documentation. The info package provides a standalone TTY-based
+browser program for viewing texinfo files.

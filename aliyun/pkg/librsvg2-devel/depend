@@ -1,0 +1,17 @@
+/usr/bin/pkg-config  
+freetype-devel >= 2.0.1
+gtk2-devel >= 2.9.0
+libcroco-devel >= 0.6.1
+libgsf-devel >= 1.6.0
+librsvg-2.so.2()(64bit)  
+librsvg2 = 2.26.0-5.3.alios6.1
+libxml2-devel >= 2.4.12
+pkgconfig  
+pkgconfig(cairo)  
+pkgconfig(gdk-pixbuf-2.0)  
+pkgconfig(glib-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

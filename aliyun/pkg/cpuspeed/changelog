@@ -1,0 +1,257 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.5-15.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.5-15.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:1.5-15.1
+- rebuild for alios6
+
+* 二 7月 20 2010 Matthew Garrett <mjg@redhat.com> 1:1.5-15
+- Init scipt: Add support for loading the pcc-cpufreq driver
+- Resolves: rhbz#609659
+
+* 三 6月 30 2010 Petr Sabata <psabata@redhat.com> - 1:1.5-14
+- Init script: added the reload function
+- Init script: the service now stops when using p4-clockmod driver
+- Resolves: rhbz#607223
+
+* 五 11月 13 2009 Jarod Wilson <jarod@redhat.com> 1.5-13
+- Move startup prio so we start after syslog, so any notices during
+  system startup actually get logged
+
+* 二 8月 04 2009 Adam Jackson <ajax@redhat.com> 1.5-12
+- Move buildroot dir creation to %install
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.5-11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 6月 26 2009 Jarod Wilson <jarod@redhat.com> 1.5-10
+- Fix #505837 for real this time, even tested on an actual
+  p4-clockmod system, seems to DTRT
+
+* 一 6月 22 2009 Jarod Wilson <jarod@redhat.com> 1.5-9
+- Un-pooch fix for #505837 (caused #507216 and didn't work right
+  to begin with...)
+
+* 三 6月 17 2009 Jarod Wilson <jarod@redhat.com> 1.5-8
+- Let p4-clockmod users override defaults and set a governor,
+  even if its generally a Bad Idea... (#505837)
+
+* 三 6月 10 2009 Jarod Wilson <jarod@redhat.com> 1.5-7
+- Fix up lsb compliance a bit (#246895)
+- Correct a few more exit codes (rhel5 bz, #495049)
+
+* 二 3月 17 2009 Jarod Wilson <jarod@redhat.com> 1.5-6
+- Fix up prior fix-up so that status and stop actually do the right thing
+  on NON-p4-clockmod systems
+
+* 五 3月 06 2009 Jarod Wilson <jarod@redhat.com> 1.5-5
+- Fix up p4-clockmod support so start/stop/status actually report
+  something sane to the user
+
+* 一 3月 02 2009 Jarod Wilson <jarod@redhat.com> 1.5-4
+- Fix up ExclusiveArch, now that 32-bit x86 is built i586 for F11
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.5-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 11月 03 2008 Jarod Wilson <jarod@redhat.com> 1.5-2
+- Revive p4-clockmod support, for passive cooling only, when
+  all else fails on Intel boxes
+
+* 三 10月 08 2008 Jarod Wilson <jarod@redhat.com> 1.5-1
+- Update to v1.5 release
+
+* 五 9月 26 2008 Jarod Wilson <jarod@redhat.com> 1.2.1-9
+- backport proper multicore support for userspace governor
+  (cpuspeed daemon) case from v1.5 cpuspeed snapshot
+
+* 二 7月 15 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.2.1-8
+- fix license tag
+
+* 日 5月 11 2008 Dennis Gilmore <dennis@ausil.us> 1.2.1-7
+- add sparcv9 sparc64 to list of arches
+
+* 三 3月 12 2008 Jarod Wilson <jwilson@redhat.com> 1.2.1-6
+- Minor formatting and redirection fixups
+
+* 四 2月 14 2008 Jarod Wilson <jwilson@redhat.com> 1.2.1-5
+- Support for powernow-k8 as a kernel module
+
+* 二 2月 12 2008 Jarod Wilson <jwilson@redhat.com> 1.2.1-4
+- Fix up for gcc 4.3
+- Work around multi-core step detection problems (#392781)
+
+* 三 8月 29 2007 Jarod Wilson <jwilson@redhat.com> 1.2.1-3
+- Bump and rebuild, due to busted ppc32
+
+* 六 7月 07 2007 Jarod Wilson <jwilson@redhat.com> 1.2.1-2
+- Account for the cpuidle feature in rawhide kernels,
+  slated for release in kernel 2.6.23 (#247352)
+
+* 一 6月 11 2007 Jarod Wilson <jwilson@redhat.com>
+- Add e_powersaver (new Via C3 cpufreq driver) to list
+  of those which should use ondemand governor by default
+
+* 四 4月 26 2007 Jarod Wilson <jwilson@redhat.com>
+- Add a bit to the config file documentation
+- Use variable for program name
+- Fix up exit codes (#237942)
+
+* 一 3月 12 2007 Jarod Wilson <jwilson@redhat.com>
+- Try loading acpi-cpufreq even on machines that don't
+  report est flag (#231783, #216702)
+- Tighten up formatting in initscript
+
+* 三 2月 21 2007 Jarod Wilson <jwilson@redhat.com>
+- Default to ondemand governor w/acpi-cpufreq driver
+- Minor initscript output cleanup
+
+* 日 2月 04 2007 Jarod Wilson <jwilson@redhat.com>
+- Fix up compile flags and misc other fixes for
+  core/extras merge review (#225658)
+
+* 四 1月 11 2007 Jarod Wilson <jwilson@redhat.com>
+- Fix error-suppression for systems that report support
+  for est, but have it disabled in the bios (#220200)
+
+* 四 1月 11 2007 Jarod Wilson <jwilson@redhat.com>
+- Fix up documentation in config file (#219926)
+- Fall back cleanly to userspace governor on
+  non-centrino/powernow-k8/p4-clockmod systems
+- Update description to reflect support for
+  kernel-space freq scaling
+
+* 三 1月 10 2007 Jarod Wilson <jwilson@redhat.com>
+- Fix governor validation check
+- Use ondemand by default on p4-clockmod systems
+
+* 三 1月 10 2007 Jarod Wilson <jwilson@redhat.com>
+- Minor fix for cpuspeed daemon stop function
+
+* 二 1月 09 2007 Jarod Wilson <jwilson@redhat.com>
+- Turn on ia64 builds (#216702)
+- Fix status on xen kernels
+
+* 二 1月 09 2007 Jarod Wilson <jwilson@redhat.com>
+- Move config file to /etc/sysconfig/cpuspeed, more
+  appropriate for initscript configs (#152305)
+- Manify 'cpuspeed --help' along with other details (#172655)
+- Tweak cpuspeed default thresholds (#147565)
+
+* 一 1月 08 2007 Jarod Wilson <jwilson@redhat.com>
+- Let non-centrino/powernow-k8 systems also use other
+  validated governors (#219926)
+- Fix cpuspeed daemon options settings (#221829)
+
+* 五 1月 05 2007 Jarod Wilson <jwilson@redhat.com>
+- Fix status and condrestart for centrino/powernow-k8 (#219926)
+- Give feedback when loading/unloading a cpufreq governor
+- Rework config file and initscript to make it much easier
+  for end-users to adjust frequency scaling setup (#151761)
+- Log start/stop events with useful info
+- Don't start on xen kernels (freq scaling not supported)
+
+* 四 12月 14 2006 Jarod Wilson <jwilson@redhat.com>
+- Set lock file for centrino/powernow-k8 so status
+  indicates we do have scaling working
+- Fix up centrino/powernow-k8 stop function (#213999)
+
+* 三 11月 29 2006 Jarod Wilson <jwilson@redhat.com>
+- Fix busted config file sourcing
+
+* 一 11月 27 2006 Jarod Wilson <jwilson@redhat.com>
+- Spec tweaks to bring in line with Fedora packaging guidelines
+- Add docs to package
+- Mark config file as noreplace
+- Be sure to stop service before uninstall
+
+* 二 11月 21 2006 Dave Jones <davej@redhat.com>
+- Merge one more patch from Michal Jaegermann <michal@harddata.com> (#216816)
+
+* 一 11月 20 2006 Dave Jones <davej@redhat.com>
+- Merge patch from Michal Jaegermann <michal@harddata.com>
+  that solves the acpi-cpufreq problem in an improved
+  way and fixes several other nits.
+
+* 六 10月 28 2006 Dave Jones <davej@redhat.com>
+- Only load acpi-cpufreq on speedstep capable machines.
+- Unload acpi-cpufreq if BIOS tables didn't exist or
+  other acpi-cpufreq failures occured.
+
+* 六 7月 29 2006 Dave Jones <davej@redhat.com>
+- Don't try to load acpi-cpufreq on non-ACPI machines. (#196446)
+
+* 三 7月 26 2006 Dave Jones <davej@redhat.com>
+- Fix up retval & /var/lock/subsys/cpuspeed handling in initscript.
+
+* 四 7月 20 2006 Jim Paradis <jparadis@redhat.com>
+- Enable on-demand governor usage for powernow-k8 as well as centrino
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:1.2.1-1.35.alios6.1
+- rebuild
+
+* 六 7月 01 2006 Dave Jones <davej@redhat.com>
+- Fix sched_mc_power_savings warning on centrino laptops.
+
+* 三 6月 07 2006 Dave Jones <davej@redhat.com>
+- Remove a bunch of no-longer needed gunk from the initscript.
+- Use on-demand governor on centrino/core based systems for now,
+  as it seems to have a better effect.
+
+* 四 2月 23 2006 Dave Jones <davej@redhat.com>
+- Fix broken init script. (Alexandre Oliva) [#182691]
+  Taking ugly shell script to the next level.
+
+* 二 2月 21 2006 Dave Jones <davej@redhat.com>
+- Missed another occurance of the same problem I fixed yesterday.
+
+* 一 2月 20 2006 Dave Jones <davej@redhat.com>
+- Some ACPI BIOSes start counting CPUs at 0, some at 1. *sigh*  (#181673)
+
+* 六 2月 11 2006 Dave Jones <davej@redhat.com>
+- rebuild.
+
+* 四 2月 09 2006 Dave Jones <davej@redhat.com>
+- rebuild.
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 14 2005 Dave Jones <davej@redhat.com>
+- Don't try and load acpi-cpufreq if we have no throttling states.
+
+* 四 9月 29 2005 Dave Jones <davej@redhat.com>
+- On shutdown, restore speed to maximum before daemon exit.
+
+* 五 9月 23 2005 Dave Jones <davej@redhat.com>
+- Use ACPI as a fallback driver if possible, if one didn't get loaded. (#160788)
+
+* 一 5月 09 2005 Dave Jones <davej@redhat.com>
+- Fix debuginfo generation.
+
+* 三 4月 06 2005 Dave Jones <davej@redhat.com>
+- Don't count nice time as idle time. (#132383)
+
+* 二 3月 01 2005 Dave Jones <davej@redhat.com>
+- Rebuild for gcc4.
+
+* 二 2月 08 2005 Dave Jones <davej@redhat.com>
+- Rebuild with -D_FORTIFY_SOURCE=2
+
+* 五 2月 04 2005 Dave Jones <davej@redhat.com>
+- Enable builds for PPC (#147089)
+
+* 二 1月 11 2005 Dave Jones <davej@redhat.com>
+- Add missing Obsoletes: kernel-utils
+
+* 一 1月 10 2005 Dave Jones <davej@redhat.com>
+- Update to upstream 1.2.1 release.
+
+* 六 12月 18 2004 Dave Jones <davej@redhat.com>
+- Initial packaging, split out from kernel-utils.
+

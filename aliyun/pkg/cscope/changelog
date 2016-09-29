@@ -1,0 +1,100 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 15.6-6.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 15.6-6.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 15.6-6.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Neil Horman <nhorman@redhat.com> - 15.6-6
+- Update Source0 url for package wrangler
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 15.6-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 6月 12 2009 Neil Horman <nhorman@redhat.com>
+- Fix some buffer overflows (bz 505605)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 15.6-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 7月 08 2008 Neil Horman <nhorman@redhat.com> -15.6-2.dist
+- Grab upstream patch for -q rebuld (bz 436648)
+
+* 日 3月 25 2007 Neil Horman <nhorman@redhat.com> -15.6-1.dist
+- Rebase to version 15.6
+
+* 一 3月 05 2007 Neil Horman <nhorman@redhat.com> -15.5-15.4.dist
+- Make sigwinch handler only register for curses mode (bz 230862)
+
+* 一 2月 05 2007 Neil Horman <nhorman@redhat.com> -15.5-15.3.dist
+- Fixing dist label in release tag.
+
+* 四 2月 01 2007 Neil Horman <nhorman@redhat.com> -15.5-15.2.dist
+- Fixing changelog to not have macro in release
+
+* 三 8月 23 2006 Neil Horman <nhorman@redhat.com> -15.5-15.1
+- fixed overflows per bz 203651
+- start using {dist} tag to make release numbering easier
+
+* 一 7月 17 2006 Jesse Keating <jkeating@redhat.com> - 15.5-14
+- rebuild
+
+* 五 6月 23 2006 Neil Horman <nhorman@redhat.com>
+- Fix putstring overflow (bz 189666)
+
+* 五 6月 23 2006 Neil Horman <nhorman@redhat.com>
+- Fix putstring overflow (bz 189666)
+
+* 五 5月 05 2006 Neil Horman <nhorman@redhat.com>
+- Adding fix to put SYSDIR in right location (bz190580)
+
+* 五 4月 21 2006 Neil Horman <nhorman@redhat.com> - 15.5-13.4
+- adding inverted index overflow patch
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 15.5-13.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 15.5-13.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuild on new gcc
+
+* 二 11月 30 2004 Neil Horman <nhorman@redhat.com>
+- added tempsec patch to fix bz140764/140765
+
+* 一 11月 29 2004 Neil Horman <nhorman@redhat.com>
+- updated cscope resize patch to do less work in
+  signal handler and synced version nr. on dist.
+
+* 一 11月 22 2004 Neil Horman <nhorman@redhat.com>
+- added cscope-1.5.-resize patch to allow terminal
+  resizing while cscope is running
+
+* 二 10月 05 2004 Neil Horman <nhorman@redhat.com>
+- modified cscope-15.5.-inverted patch to be upstream
+  friendly
+
+* 二 9月 28 2004 Neil Horman <nhorman@redhat.com>
+- fixed inverted index bug (bz 133942)
+
+* 一 9月 13 2004 Frank Ch. Eigler <fche@redhat.com>
+- bumped release number to a plain "1"
+
+* 五 7月 16 2004 Neil Horman <nhorman@redhat.com>
+- Added cscope-indexer helper and xcscope lisp addon
+- Added man page for xcscope
+- Added triggers to add xcscope.el pkg to (x)emacs
+- Thanks to Ville, Michael and Jens for thier help :)
+
+* 五 7月 02 2004 Neil Horman <nhorman@redhat.com>
+- Added upstream ocs fix
+- Added feature to find symbol assignments
+- Changed default SYSDIR directory to /var/lib/cs
+- Incoproated M. Schwendt's fix for ocs -s
+
+* 五 6月 18 2004 Neil Horman <nhorman@redhat.com>
+- built the package
+

@@ -1,0 +1,17 @@
+Name        : psmisc                       Relocations: (not relocatable)
+Version     : 22.6                              Vendor: Alibaba
+Release     : 15.4.alios6.1                 Build Date: 2014年07月27日 星期日 18时38分51秒
+Install Date: 2015年03月25日 星期三 10时59分31秒      Build Host: x86-004.build.alibaba
+Group       : Applications/System           Source RPM: psmisc-22.6-15.4.alios6.1.src.rpm
+Size        : 222294                           License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 18时06分53秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sourceforge.net/projects/psmisc
+Summary     : Utilities for managing processes on your system
+Description :
+The psmisc package contains utilities for managing processes on your
+system: pstree, killall and fuser.  The pstree command displays a tree
+structure of all of the running processes on your system.  The killall
+command sends a specified signal (SIGTERM if nothing is specified) to
+processes identified by name.  The fuser command identifies the PIDs
+of processes that are using specified files or filesystems.

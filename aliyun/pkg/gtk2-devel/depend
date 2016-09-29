@@ -1,0 +1,73 @@
+/usr/bin/pkg-config  
+/usr/bin/python  
+atk-devel >= 1.29.4-2
+automake  
+cairo-devel >= 1.6.0-1
+glib2-devel >= 2.23.6-1
+gtk2 = 2.20.1-4.2.alios6
+libX11-devel  
+libX11.so.6()(64bit)  
+libXcomposite-devel  
+libXcomposite.so.1()(64bit)  
+libXcursor-devel  
+libXcursor.so.1()(64bit)  
+libXdamage.so.1()(64bit)  
+libXext-devel  
+libXext.so.6()(64bit)  
+libXfixes-devel  
+libXfixes.so.3()(64bit)  
+libXi-devel  
+libXi.so.6()(64bit)  
+libXinerama-devel  
+libXinerama.so.1()(64bit)  
+libXrandr-devel  
+libXrandr.so.2()(64bit)  
+libXrender.so.1()(64bit)  
+libatk-1.0.so.0()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcairo.so.2()(64bit)  
+libfontconfig.so.1()(64bit)  
+libfreetype.so.6()(64bit)  
+libgailutil.so.18()(64bit)  
+libgdk-x11-2.0.so.0()(64bit)  
+libgdk_pixbuf-2.0.so.0()(64bit)  
+libgdk_pixbuf_xlib-2.0.so.0()(64bit)  
+libgio-2.0.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libgtk-x11-2.0.so.0()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libpango-1.0.so.0()(64bit)  
+libpangocairo-1.0.so.0()(64bit)  
+libpangoft2-1.0.so.0()(64bit)  
+libpng-devel  
+libpng12.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+pango-devel >= 1.20.0-1
+pkgconfig  
+pkgconfig(atk)  
+pkgconfig(cairo)  
+pkgconfig(gdk-pixbuf-2.0)  
+pkgconfig(gdk-x11-2.0)  
+pkgconfig(gio-2.0)  
+pkgconfig(gmodule-no-export-2.0)  
+pkgconfig(gobject-2.0)  
+pkgconfig(gtk+-2.0)  
+pkgconfig(gtk+-x11-2.0)  
+pkgconfig(pango)  
+pkgconfig(pangocairo)  
+pkgconfig(pangoft2)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

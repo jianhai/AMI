@@ -1,0 +1,244 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.30-10.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.30-10.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.30-10.2
+- rebuild
+
+* 一 6月 16 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.30-10.1
+- rebuild for alios6
+
+* 三 9月 21 2011 James Antill <james.antill@redhat.com> - 1.1.30-10
+- Workaround update object post manual excludes, mostly.
+- Resolves: rhbz#734428
+
+* 三 9月 14 2011 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.30-9
+- Changed rhn_source_repos default to True.
+- Related: rhbz#710469
+
+* 五 9月 09 2011 Zdenek Pavlas <zpavlas@redhat.com> - 1.1.30-8
+- Check doUtilBuildTransaction return value.
+- Resolves: rhbz#709043
+- Force ASCII apostrophes in man page examples.
+- Resolves: rhbz#659740
+- Updated previous patch, adding RHN source repos.
+- Resolves: rhbz#732649
+- Related: rhbz#710469
+
+* 三 8月 10 2011 James Antill <james.antill@redhat.com> - 1.1.30-7
+- Fix some yum-security man page typos.
+- Resolves: rhbz#720967
+- Fix for repo setup in reposync, mainly for RHN repos.
+- Resolves: rhbz#713108
+- Add RHN source repos. patterns to yumdownloader and yum-builddep.
+- Resolves: rhbz#710469
+- Make yumdownloader exit with a failure when it fails to download.
+- Resolves: rhbz#699470
+- Fix yum-groups-manager to accept non-default config. files.
+- Resolves: rhbz#694188
+
+* 二 3月 22 2011 James Antill <james.antill@redhat.com> - 1.1.30-6
+- Fix yum-config-manager repo file saving error when in repo id is $basearch
+- Resolves: rhbz#679098
+
+* 二 3月 15 2011 James Antill <james.antill@redhat.com> - 1.1.30-5
+- Fix typo in the FS snapshot patch.
+- Resolves: rhbz#669178
+
+* 三 3月 02 2011 James Antill <james.antill@redhat.com> - 1.1.30-4
+- Fix typo in the FS snapshot patch.
+- Resolves: rhbz#669178
+- yumdownloader man page do not mention --archlist option
+- Resolves: rhbz#616408
+- Resolves: rhbz#659497
+
+* 二 2月 08 2011 James Antill <james.antill@redhat.com> - 1.1.30-3
+- Make FS snapshot fail, if the lvm snapshot fails.
+- Resolves: rhbz#659497
+- Resolves: rhbz#669178
+
+* 五 2月 04 2011 James Antill <james.antill@redhat.com> - 1.1.30-2
+- Fix aliases rebase to upstream 1.1.30.
+- Resolves: rhbz#659497
+- Resolves: rhzb#674584
+
+* 四 1月 13 2011 James Antill <james.antill@redhat.com> - 1.1.30-1
+- Rebase to upstream 1.1.30 for bugfixes and new features.
+- Resolves: rhbz#659497
+- Some of the changes included in the above are:
+- yum-plugin-verify reports small changes in mtime
+- Resolves: rhbz#604529
+- yumdownloader man page do not mention --archlist option
+- Resolves: rhbz#616408
+- deprecation warning messages in repomanage
+- Resolves: rhbz#620652
+- tsflags plugin is using deprecated function setConfigOption
+- Resolves: rhbz#627533
+- yum-debug-dump saves the output to a wrong file
+- Resolves: rhbz#641837
+- Update the "security" plugin for the new updateinfo data
+- Resolves: rhbz#662790
+
+* 三 7月 14 2010 James Antill <james.antill@redhat.com> - 1.1.26-11
+- Fix minor return code bugs in updateonboot initscript.
+- Resolves: rhbz#536770
+
+* 三 6月 09 2010 James Antill <james.antill@redhat.com> - 1.1.26-10
+- Don't traceback when repomanage is given a bad path.
+- Resolves: rhbz#587288
+
+* 三 5月 26 2010 James Antill <james.antill@redhat.com> - 1.1.26-9
+- Add yum-config-manager
+- Resolves: rhbz#536911
+
+* 四 5月 20 2010 James Antill <james.antill@redhat.com> - 1.1.26-8
+- Fix versionlock with follow_obsoletes=true
+- Resolves: rhbz#592206
+- Fix repodiff
+- Resolves: rhbz#592943
+
+* 六 4月 17 2010 James Antill <james.antill@redhat.com> - 1.1.26-7
+- Get lots of fixes from latest HEAD. Also:
+- --alldeps default in repoquery.
+- repoquery will now do a full provides version check.
+- Add repoclosure --group.
+- Big repodiff speedup.
+- Resolves: rhbz#576705
+
+* 三 2月 10 2010 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.26
+
+* 五 1月 29 2010 James Antill<james.antill@redhat.com> - 1.1.24-4
+- Remove refresh-updatesd
+- Resolves: rhbz#543948
+
+* 三 1月 27 2010 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.25
+- add touch /etc/yum.repos.d/_local.repo to install section
+- this need for for the ghost in files section of yum-plugin-local
+
+* 五 1月 08 2010 James Antill<james.antill@redhat.com> - 1.1.24-3
+- Get the latest yum-utils from git. Lots of fixes. Incl.
+- Resolves: rhbz#523574
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.1.24-2.1
+- Rebuilt for RHEL 6
+
+* 日 11月 08 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- remove basearchonly since all versions of yum for quite some time obsolete it
+- truncate changelog to last 2 years
+
+* 六 11月 07 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.24
+
+* 三 11月 04 2009 Seth Vidal <skvidal at fedoraproject.org>
+- add needs-restarting
+
+* 一 10月 12 2009 Seth Vidal <skvidal at fedoraproject.org>
+- add python compileall to all plugins so we get .pyc/.pyo files in them
+- fixes https://bugzilla.redhat.com/show_bug.cgi?id=493174
+
+* 三 9月 02 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.23
+
+* 二 5月 19 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.22
+
+* 一 5月 18 2009 Seth Vidal <skvidal at fedoraproject.org>
+- add show-leaves plugin from Ville Skyttä
+
+* 三 3月 25 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.21
+
+* 一 3月 02 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- set yum require to 3.2.21 (the 3.2.21 in rawhide is patched to yum head, so it matches the need yum 3.2.22 code)
+- Added versioned Provides: yum-<pluginname> to make rpm/yum happy.
+- yum-updateonboot is not renamed and dont need Obsoletes/Conflicts/Provides
+
+* 日 3月 01 2009 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.20
+- rename plugins from yum-name to yum-plugin-name
+
+* 三 2月 25 2009 Tim Lauridsen <timlau@fedoraproject.org> 
+- Remove yum-kernel-module & yum-fedorakmod plugins (no obsoleting yet)
+- Remove yum-skip-broken plugin leftovers
+
+* 二 2月 03 2009 James Antill <james@fedoraproject.org>
+- add auto-update-debuginfo plugin
+
+* 三 12月 17 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.19
+
+* 三 12月 10 2008 Seth Vidal <skvidal at fedoraproject.org>
+- add find-repos-of-install from James' stash of misc stuff
+
+* 三 10月 29 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.18
+
+* 一 10月 27 2008 Seth Vidal <skvidal at fedoraproject.org>
+- add rpm-warm-cache plugin
+
+* 五 9月 19 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- removed skip-broken plugin
+
+* 三 9月 17 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.17
+
+* 一 9月 08 2008 Seth Vidal <skvidal at fedoraproject.org>
+- add yum-remove-with-leaves plugin
+
+* 三 8月 27 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.16
+
+* 三 8月 20 2008 James Antill <james@fedoraproject.org>
+- add yum-groups-manager
+
+* 四 8月 07 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.15
+
+* 三 5月 21 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- add verifytree
+
+* 三 5月 21 2008 Tim Lauridsen <timlau@fedoraproject.org>
+Make yum-fastestmirror %files handle the fastestmirror-asyncore.py file
+
+* 三 5月 21 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.14
+
+* 四 4月 10 2008 James Antill <james@fedoraproject.org>
+- Add keys plugin
+
+* 一 3月 31 2008 James Antill <james@fedoraproject.org>
+- Add yum-aliases man page
+
+* 五 3月 21 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.13
+
+* 五 3月 21 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.12
+
+* 二 3月 18 2008 Shawn Starr <shawn.starr@rogers.com>
+- Add yum-utils.1 manual page
+- Rename yum-complete-transaction manual page to 8
+- Move yum-complete-transaction to /usr/sbin
+
+* 六 3月 01 2008 James Antill <james@fedoraproject.org>
+- Add verify plugin
+
+* 三 2月 20 2008 James Antill <james@fedoraproject.org>
+- Add empty versionlock file
+
+* 五 2月 01 2008 James Antill <james@fedoraproject.org>
+- Add filter-data plugin
+
+* 三 1月 30 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.11
+
+* 日 1月 13 2008 Seth Vidal <skvidal at fedoraproject.org>
+- add repodiff
+
+* 四 1月 03 2008 Tim Lauridsen <timlau@fedoraproject.org>
+- mark as 1.1.10
+

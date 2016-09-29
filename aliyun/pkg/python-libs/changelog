@@ -1,0 +1,1040 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.6.6-29.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.6.6-29.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.6.6-29.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.6.6-29.1
+- rebuild for alios6
+
+* 一 9月 12 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-29
+- protect GIL detection within gdb debug hooks against C stack frames that
+lack a name (source 1)
+Related: rhbz#711818
+Resolves: rhbz#736085
+
+* 一 8月 15 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-28
+- avoid truncating the compilation flags of extension modules that have CFLAGS
+set in their environment
+Resolves: rhbz#727364
+
+* 五 8月 12 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-27
+- update "py-bt" in gdb debug hooks to avoiding printing stray <function>
+frames on non-C functions
+Related: rhbz#711818
+
+* 五 8月 12 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-26
+- update patch 147 to cover the pwd and grp modules
+Related: rhbz#697470
+
+* 五 7月 22 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-25
+- remove -b from application of patch 147, to avoid adding files to payload
+Related: rhbz#697470
+
+* 五 7月 22 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-24
+- update uid/gid handling to avoid int overflows seen with uid/gid
+values >= 2^31 on 32-bit architectures
+Resolves: rhbz#697470
+
+* 四 7月 21 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-23
+- update gdb debug hooks, showing when a thread is waiting on the GIL, calls
+to C functions and methods, and garbage collections.  Also, better handle the
+case when "f" is optimized out within PyEval_EvalFrameEx, to at least give
+file and function name, even if the line number and locals won't be available
+Resolves: rhbz#711818
+
+* 五 7月 01 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-22
+- backport fix for failures seen with subprocess module when supplying stdin
+to short-lived subprocesses
+Resolves: rhbz#667431
+
+* 四 6月 30 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-21
+- backport fix for occasional failures in multiprocessing's Process.start()
+Resolves: rhbz#685234
+- port multiprocessing to use the "poll" syscall, rather than "select"
+Resolves: rhbz#713082
+- backport fix allowing getpass.getpass() to be interrupted with Ctrl-C
+or Ctrl-Z
+Resolves: rhbz#689794
+- backport memory leak fixes for the readline module
+Resolves: rhbz#699740
+
+* 一 4月 11 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-20
+Resolves: CVE-2010-3493
+
+* 五 4月 08 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-19
+Resolves: CVE-2011-1015
+
+* 四 4月 07 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-18
+Resolves: CVE-2011-1521
+
+* 五 3月 25 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-17
+- recompile against systemtap 1.4
+Related: rhbz#569695
+
+* 三 3月 23 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-16
+- recompile against systemtap 1.4
+Related: rhbz#569695
+
+* 三 3月 23 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-15
+- fix race condition that sometimes breaks the build with parallel make
+Resolves: rhbz#690315
+
+* 三 3月 23 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-14
+- backport pre-canned ways of salting a password to the "crypt" module
+Resolves: rhbz#681878
+
+* 一 3月 21 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-13
+- move lib2to3/tests to the python-test subpackage
+Related: rhbz#625395
+
+* 一 3月 21 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-12
+- fix a new test in 2.6.6 that was failing on 64-bit big-endian architectures
+Resolves: rhbz#677392
+
+* 一 3月 21 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-11
+- fix incompatibility between 2.6.6 and our non-standard M2Crypto.SSL.SSLTimeoutError
+Resolves: rhbz#681811
+
+* 一 3月 21 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-10
+- add workaround for bug in rhythmbox-0.12 exposed by python 2.6.6
+Resolves: rhbz#684991
+
+* 三 1月 19 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-9
+- prevent tracebacks for the "py-bt" gdb command on x86_64
+Resolves: rhbz#639392
+
+* 三 1月 19 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-8
+- fix a regression in 2.6.6 relative to 2.6.5 in urllib2
+Resolves: rhbz#669847
+
+* 三 1月 19 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-7
+- add an optional "timeout" argument to the subprocess module (patch 131)
+Resolves: rhbz#567229
+
+* 一 1月 17 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-6
+- prevent _sqlite3.so being built with a redundant RPATH of _libdir (patch 130)
+- remove DOS batch file "idle.bat"
+- remove shebang lines from .py files that aren't executable, and remove
+executability from .py files that don't have a shebang line
+Related: rhbz#634944
+- add "Obsoletes: python-ssl" to core package, as 2.6 contains the ssl module
+Resolves: rhbz#529274
+
+* 二 1月 11 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-5
+- allow the "no_proxy" environment variable to override "ftp_proxy" in
+urllib2 (patch 128)
+Resolves: rhbz#637895
+- make garbage-collection assertion failures more informative (patch 129)
+Resolves: rhbz#614680
+
+* 二 1月 11 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-4
+- backport subprocess fixes to use the "poll" system call, rather than "select"
+Resolves: rhbz#650588
+
+* 一 1月 10 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-3
+- use an ephemeral port for IDLE, enabling multiple instances to be run
+Resolves: rhbz#639222
+- add systemtap static markers, tapsets, and example scripts
+Resolves: rhbz#569695
+
+* 一 1月 10 2011 David Malcolm <dmalcolm@redhat.com> - 2.6.6-2
+- fix dbm.release on ppc64/s390x
+Resolves: rhbz#626756
+- fix missing lib2to3 test files
+Resolves: rhbz#625395
+- fix test.test_commands SELinux incompatibility
+Resolves: rhbz#625393
+- make "pydoc -k" more robust in the face of broken modules
+Resolves: rhbz#603073
+
+* 一 11月 29 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.6-1
+- rebase to 2.6.6: (which contains the big whitespace cleanup of r81031)
+  http://www.python.org/download/releases/2.6.6/
+  - fixup patch 102, patch 11, patch 52, patch 110
+  - drop upstreamed patches: patch 113 (CVE-2010-1634), patch 114
+  (CVE-2010-2089), patch 115 (CVE-2008-5983), patch 116 (rhbz598564),
+  patch 118 (rhbz540518)
+  - add fix for upstream bug in test_posix.py introduced in 2.6.6 (patch 120)
+Resolves: rhbz#627301
+
+* 三 7月 14 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.5-3
+- slightly rework patch 119 to fix the hashlib selftests in FIPS mode
+Resolves: rhbz#563986
+
+* 二 7月 13 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.5-2
+- support OpenSSL FIPS mode in _hashlib and hashlib
+Resolves: rhbz#563986
+- don't build the _md5 and _sha* modules: rely on _hashlib in hashlib
+
+* 一 7月 12 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.5-1
+- 2.6.5
+- remove upstream patch 53
+- fixup selinux patch to apply cleanly against 2.6.5 (patch 110)
+Resolves: rhbz#611607
+- remove commented-out, out-of-date patches
+
+* 二 6月 22 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-11
+- Stop python bailing out with an assertion failure when UnicodeDecodeErrors
+occur on very large buffers (patch 118, upstream issue 9058)
+Resolves: rhbz#540518
+
+* 一 6月 21 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-10
+- Fix an incompatibility between pyexpat and the system expat-2.0.1 that led to
+a segfault running test_pyexpat.py (patch 117)
+Resolves: rhbz#583931
+
+* 二 6月 08 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-9
+- cherrypick upstream fix for fatal error creating threads when memory is
+low (patch 116)
+Resolves: rhbz#598564
+
+* 四 6月 03 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-8
+- ensure that the compiler is invoked with "-fwrapv" (rhbz#594819)
+- CVE-2010-1634: fix various integer overflow checks in the audioop
+module (patch 113)
+- CVE-2010-2089: further checks within the audioop module (patch 114)
+- CVE-2008-5983: the new PySys_SetArgvEx entry point from r81399 (patch 115)
+
+* 三 5月 26 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-7
+- add flags for statvfs.f_flag to the constant list in posixmodule (i.e. "os")
+(patch 112)
+
+* 四 4月 29 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-6
+- add gdb hooks for easier debugging (rhbz:569696)
+- supply fourth parameter (default permissions) in all usage of "defattr" in
+subpackage manifests
+- remove trailing periods from package "Summary" fields
+- fix typo in the description of the "test" subpackage
+
+* 一 1月 25 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-5
+- update python-2.6.2-config.patch to remove downstream customization of build
+of pyexpat and elementtree modules
+- add patch adapted from upstream (patch 3) to add support for building against
+system expat; add --with-system-expat to "configure" invocation (patch 3)
+- remove embedded copy of expat from source tree during "prep"
+
+* 一 1月 25 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-4
+- introduce %{with_valgrind} macro, to only use the valgrind patch on archs
+where valgrind-devel is available
+
+* 二 1月 19 2010 David Malcolm <dmalcolm@redhat.com> - 2.6.2-3
+- replace usage of %define with %global
+- introduce macros for 3 directories, replacing expanded references throughout:
+%{pylibdir}, %{dynload_dir}, %{site_packages}
+- split up the "configure" invocation flags onto individual lines
+- move lib2to3 from -tools subpackage to main package (bug 556667)
+- "Makefile" and the config-32/64.h file are needed by distutils/sysconfig.py
+_init_posix(), so we include them in the core package, along with their parent
+directories (bug 531901)
+- fixup the build when __python_ver is set (Zach Sadecki; bug 533989); use
+pybasever in the files section
+- automatically disable arena allocator when run under valgrind (upstream
+issue 2422; patch 52)
+- fix Lib/SocketServer.py to avoid trying to use non-existant keyword args
+for os.waitpid (patch 53, rhbz:552404, Adrian Reber)
+- use the %{_isa} macro to ensure that the python-devel dependency on python
+is for the correct multilib arch (#555943)
+- patch Makefile.pre.in to avoid building static library (patch111, bug 556092)
+- delete bundled copies of libffi and zlib to make sure we use the system ones
+- replace references to /usr with %{_prefix}; replace references to
+/usr/include with %{_includedir}
+- change python-2.6.2-config.patch to remove our downstream change to curses
+configuration in Modules/Setup.dist, so that the curses modules are built using
+setup.py with the downstream default (linking against libncursesw.so, rather
+than libncurses.so), rather than within the Makefile; add a test to %install
+to verify the dso files that the curses module is linked against the correct
+DSO (bug 539917; changes _cursesmodule.so -> _curses.so)
+- explicitly list all lib-dynload files, rather than dynamically gathering the
+payload into a temporary text file, so that we can be sure what we are
+shipping; remove now-redundant testing for presence of certain .so files
+
+* 一 11月 23 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.6.2-2.1
+- Rebuilt for RHEL 6
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 2.6.2-2
+- rebuilt with new openssl
+
+* 一 7月 27 2009 James Antill <james.antill@redhat.com> - 2.6.2-1
+- Update to 2.6.2
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6-11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 7月 04 2009 Jonathan Steffan <jsteffan@fedoraproject.org> - 2.6-10
+- Move python-config to devel subpackage (#506153)
+- Update BuildRoot for new standard
+
+* 日 6月 28 2009 Jonathan Steffan <jsteffan@fedoraproject.org> - 2.6-9
+- Update python-tools description (#448940)
+
+* 三 4月 15 2009 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> 2.6-8
+- Replace python-hashlib and python-uuid (#484715)
+
+* 二 3月 17 2009 James Antill <james@fedoraproject.org> - 2.6-7
+- Use system libffi
+- Resolves: bug#490573
+- Fix SELinux execmem problems
+- Resolves: bug#488396
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 16 2009 Tomas Mraz <tmraz@redhat.com> - 2.6-4
+- rebuild with new openssl
+
+* 二 1月 06 2009 James Antill <james.antill@redhat.com> - 2.6-3
+- Fix distutils generated rpms.
+- Resolves: bug#236535
+
+* 三 12月 10 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.6-2
+- Enable -lcrypt for cryptmodule
+
+* 五 11月 28 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.6-1
+- Update to 2.6
+
+* 二 9月 30 2008 James Antill <james.antill@redhat.com> - 2.5.2-1
+- Move to 2.5.2
+- Fix CVE-2008-2316 hashlib overflow.
+
+* 四 7月 17 2008 Jeremy Katz <katzj@redhat.com> - 2.5.1-30
+- Fix up the build for new rpm
+- And actually build against db4-4.7 (#455170)
+
+* 四 7月 10 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 2.5.1-27
+- fix license tag
+- enable support for db4-4.7
+
+* 日 6月 15 2008 James Antill <jantill@redhat.com> - 2.5.1-26
+- Fix sporadic listdir problem
+- Resolves: bug#451494
+
+* 一 4月 07 2008 James Antill <jantill@redhat.com> - 2.5.1-25
+- Rebuild to re-gen autoconf file due to glibc change.
+- Resolves: bug#441003
+
+* 二 3月 25 2008 James Antill <jantill@redhat.com> - 2.5.1-24
+- Add more constants to socketmodule
+
+* 六 3月 08 2008 James Antill <jantill@redhat.com> - 2.5.1-22
+- Add constants to socketmodule
+- Resolves: bug#436560
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.5.1-22
+- Autorebuild for GCC 4.3
+
+* 日 1月 13 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 2.5.1-21
+- rebuild for new tk in rawhide
+
+* 一 1月 07 2008 James Antill <jantill@redhat.com> - 2.5.1-20
+- Add valgrind support files, as doc, to python-devel
+- Relates: rhbz#418621
+- Add new API from 2.6, set_wakeup_fd ... use at own risk, presumably won't
+- change but I have no control to guarantee that.
+- Resolves: rhbz#427794
+- Add gdbinit support file, as doc, to python-devel
+
+* 五 1月 04 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 2.5.1-19
+- rebuild for new tcl/tk in rawhide
+
+* 五 12月 07 2007 James Antill <jantill@redhat.com> - 2.5.1-18
+- Create a python-test sub-module, over 3MB of stuff noone wants.
+- Don't remove egginfo files, try this see what happens ... may revert.
+- Resolves: rhbz#414711
+
+* 一 12月 03 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-17
+- rebuild for new libssl
+
+* 五 11月 30 2007 James Antill <jantill@redhat.com> - 2.5.1-16
+- Fix pyconfig.h comment typo.
+- Add back test_support.py and the __init__.py file.
+- Resolves: rhbz#387401
+
+* 二 10月 30 2007 James Antill <jantill@redhat.com> - 2.5.1-15
+- Do codec lowercase in C Locale.
+- Resolves: 207134 191096
+- Fix stupid namespacing in pysqlite, minimal upgrade to 2.3.3 pysqlite
+- Resolves: 263221
+
+* 三 10月 24 2007 James Antill <jantill@redhat.com> - 2.5.1-14
+- Remove bintuils dep. for live CD ... add work around for ctypes
+
+* 一 10月 22 2007 James Antill <jantill@redhat.com> - 2.5.1-13
+- Add tix buildprereq
+- Add tkinter patch
+- Resolves: #281751
+- Fix ctypes loading of libraries, add requires on binutils
+- Resolves: #307221
+- Possible fix for CVE-2007-4965 possible exploitable integer overflow
+- Resolves: #295971
+
+* 二 10月 16 2007 Mike Bonnet <mikeb@redhat.com> - 2.5.1-12
+- fix marshalling of objects in xmlrpclib (python bug #1739842)
+
+* 五 9月 14 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-11
+- fix encoding of sqlite .py files to work around weird encoding problem 
+  in Turkish (#283331)
+
+* 一 9月 10 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-10
+- work around problems with multi-line plural specification (#252136)
+
+* 二 8月 28 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-9
+- rebuild against new expat
+
+* 二 8月 14 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-8
+- build against db4.6
+
+* 二 8月 14 2007 Dennis Gilmore <dennis@ausil.us> - 2.5.1-7
+- add sparc64 to the list of archs for _pyconfig64_h
+
+* 五 8月 10 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-6
+- fix ctypes again on some arches (Hans de Goede, #251637)
+
+* 五 7月 06 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-5
+- link curses modules with ncursesw (#246385)
+
+* 三 6月 27 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-4
+- fix _elementtree.so build (#245703)
+- ensure that extension modules we expect are actually built rather than 
+  having them silently fall out of the package
+
+* 二 6月 26 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-3
+- link with system expat (#245703)
+
+* 四 6月 21 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-2
+- rebuild to take advantage of hardlinking between identical pyc/pyo files
+
+* 四 5月 31 2007 Jeremy Katz <katzj@redhat.com> - 2.5.1-1
+- update to python 2.5.1
+
+* 一 3月 19 2007 Jeremy Katz <katzj@redhat.com> - 2.5.3-12
+- fix alpha build (#231961)
+
+* 二 2月 13 2007 Jeremy Katz <katzj@redhat.com> - 2.5.3-11
+- tcl/tk was reverted; rebuild again
+
+* 四 2月 01 2007 Jeremy Katz <katzj@redhat.com> - 2.5.3-10
+- rebuild for new tcl/tk
+
+* 二 1月 16 2007 Miroslav Lichvar <mlichvar@redhat.com> - 2.5.3-9
+- link with ncurses
+
+* 六 1月 06 2007 Jeremy Katz <katzj@redhat.com> - 2.5.3-8
+- fix extensions to use shared libpython (#219564)
+- all 64bit platforms need the regex fix (#122304)
+
+* 三 1月 03 2007 Jeremy Katz <katzj@redhat.com> - 2.5.3-7
+- fix ctypes to not require execstack (#220669)
+
+* 五 12月 15 2006 Jeremy Katz <katzj@redhat.com> - 2.5.3-6
+- don't link against compat-db (Robert Scheck)
+
+* 三 12月 13 2006 Jarod Wilson <jwilson@redhat.com> - 2.5.3-5
+- fix invalid assert in debug mode (upstream changeset 52622)
+
+* 二 12月 12 2006 Jeremy Katz <katzj@redhat.com> - 2.5.3-4
+- obsolete/provide python-ctypes (#219256)
+
+* 一 12月 11 2006 Jeremy Katz <katzj@redhat.com> - 2.5.3-3
+- fix atexit traceback with failed syslog logger (#218214)
+- split libpython into python-libs subpackage for multilib apps 
+  embedding python interpreters
+
+* 三 12月 06 2006 Jeremy Katz <katzj@redhat.com> - 2.5.3-2
+- disable installation of .egg-info files for now
+
+* 二 12月 05 2006 Jeremy Katz <katzj@redhat.com>
+- support db 4.5
+- obsolete python-elementtree; since it requires some code tweaks, don't 
+  provide it
+- obsolete old python-sqlite; provide the version that's actually included
+
+* 一 10月 30 2006 Jeremy Katz <katzj@redhat.com>
+- fix _md5 and _sha modules (Robert Sheck)
+- no longer provide optik compat; it's been a couple of years now
+- no longer provide the old shm module; if this is still needed, let's 
+  build it separately
+- no longer provide japanese codecs; should be a separate package
+
+* 一 10月 23 2006 Jeremy Katz <katzj@redhat.com> - 2.5-0
+- update to 2.5.0 final
+
+* 五 8月 18 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.99.c1
+- Updated to 2.5c1. Merged fixes from FC6 too:
+- Fixed bug #199373 (on some platforms CFLAGS is needed when linking)
+- Fixed bug #198971 (case conversion not locale safe in logging library)
+- Verified bug #201434 (distutils.sysconfig is confused by the change to make
+  python-devel multilib friendly) is fixed upstream
+
+* 日 7月 16 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.99.b2
+- Updated to 2.5b2 (which for comparison reasons is re-labeled 2.4.99.b2)
+
+* 五 6月 23 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.99.b1
+- Updated to 2.5b1 (which for comparison reasons is re-labeled 2.4.99.b1)
+
+* 二 6月 13 2006 Jeremy Katz <katzj@redhat.com> - 2.4.3-11.FC6
+- and fix it for real
+
+* 二 6月 13 2006 Jeremy Katz <katzj@redhat.com> - 2.4.3-10.FC6
+- fix python-devel on ia64
+
+* 二 6月 13 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-9
+- Fixed python-devel to be multilib friendly (bug #192747, #139911)
+
+* 二 6月 13 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-8
+- Only copying mkhowto from the Docs - we don't need perl dependencies from
+  python-tools.
+
+* 一 6月 12 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-7
+- Fixed bug #121198 (webbrowser.py should use the user's preferences first)
+
+* 一 6月 12 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-6
+- Fixed bug #192592 (too aggressive assertion fails) - SF#1257960
+- Fixed bug #167468 (Doc/tools not included) - added in the python-tools package
+
+* 四 6月 08 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-5
+- Fixed bug #193484 (added pydoc in the main package)
+
+* 一 6月 05 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-4
+- Added dist in the release
+
+* 一 5月 15 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-3
+- rebuilt to fix broken libX11 dependency
+
+* 三 4月 12 2006 Jeremy Katz <katzj@redhat.com> - 2.4.3-2
+- rebuild with new gcc to fix #188649
+
+* 四 4月 06 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-1
+- Updated to 2.4.3
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.4.2-3.2.1
+- bump again for double-long bug on ppc(64)
+
+* 五 2月 10 2006 Mihai Ibanescu <misa@redhat.com> - 2.4.3-3.2
+- rebuilt for newer tix
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.4.2-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 20 2006 Mihai Ibanescu <misa@redhat.com> 2.4.2-3
+- fixed #136654 for another instance of audiotest.au
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 六 11月 19 2005 Bill Nottingham <notting@redhat.com> 2.4.2-2
+- fix build for modular X, remove X11R6 path references
+
+* 二 11月 15 2005 Mihai Ibanescu <misa@redhat.com> 2.4.2-1
+- Upgraded to 2.4.2
+- BuildRequires autoconf
+
+* 三 11月 09 2005 Mihai Ibanescu <misa@redhat.com> 2.4.1-16
+- Rebuilding against newer openssl.
+- XFree86-devel no longer exists
+
+* 一 9月 26 2005 Peter Jones <pjones@redhat.com> 2.4.1-14
+- Once more -- this time, to fix -EPERM when you run it in a directory
+  you can't read from.
+
+* 一 9月 26 2005 Peter Jones <pjones@redhat.com> 2.4.1-13
+- So, 5 or 6 people have said it works for them with this patch...
+
+* 日 9月 25 2005 Peter Jones <pjones@redhat.com> 2.4.1-12
+- Fixed bug #169159 (check for argc>0 and argv[0] == NULL, not just
+    argv[0][0]='\0')
+  Reworked the patch from -8 a bit more.
+
+* 五 9月 23 2005 Mihai Ibanescu <misa@redhat.com> 2.4.1-10
+- Fixed bug #169159 (don't let python core dump if no arguments are passed in)
+  Reworked the patch from -8 a bit more.
+
+* 四 9月 22 2005 Peter Jones <pjones@redhat.com> 2.4.1-8
+- Fix bug #169046 more correctly.
+
+* 四 9月 22 2005 Mihai Ibanescu <misa@redhat.com> 2.4.1-7
+- Fixed bug #169046 (realpath is unsafe); thanks to 
+  Peter Jones <pjones@redhat.com> and Arjan van de Ven <arjanv@redhat.com> for
+  diagnosing and the patch.
+
+* 二 9月 20 2005 Mihai Ibanescu <misa@redhat.com> 2.4.1-4
+- Fixed bug #168655 (fixes for building as python24)
+
+* 二 7月 26 2005 Mihai Ibanescu <misa@redhat.com> 2.4.1-3
+- Fixed bug #163435 (pynche doesn't start))
+
+* 三 4月 20 2005 Mihai Ibanescu <misa@redhat.com> 2.4.1-2
+- Fixed bug #143667 (python should own /usr/lib/python* on 64-bit systems, for
+  noarch packages)
+- Fixed bug #143419 (BuildRequires db4 is not versioned)
+
+* 三 4月 06 2005 Mihai Ibanescu <misa@redhat.com> 2.4.1-1
+- updated to 2.4.1
+
+* 一 3月 14 2005 Mihai Ibanescu <misa@redhat.com> 2.4-6
+- building the docs from a different source rpm, to decouple bootstrapping
+  python from having tetex installed
+
+* 五 3月 11 2005 Dan Williams <dcbw@redhat.com> 2.4-5
+- Rebuild to pick up new libssl.so.5
+
+* 三 2月 02 2005 Mihai Ibanescu <misa@redhat.com> 2.4-4
+- Fixed security issue in SimpleXMLRPCServer.py (#146647)
+
+* 三 1月 12 2005 Tim Waugh <twaugh@redhat.com> 2.4-3
+- Rebuilt for new readline.
+
+* 一 12月 06 2004 Jeff Johnson <jbj@jbj.org> 2.4-2
+- db-4.3.21 returns DB_BUFFER_SMALL rather than ENOMEM (#141994).
+- add Provide: python(abi) = 2.4
+- include msgfmt/pygettext *.pyc and *.pyo from brp-python-bytecompile.
+
+* 五 12月 03 2004 Mihai Ibanescu <misa@redhat.com> 2.4-1
+- Python-2.4.tar.bz2 (final)
+
+* 五 11月 19 2004 Mihai Ibanescu <misa@redhat.com> 2.4-0.c1.1
+- Python-2.4c1.tar.bz2 (release candidate 1)
+
+* 四 11月 11 2004 Jeff Johnson <jbj@jbj.org> 2.4-0.b2.4
+- rebuild against db-4.3.21.
+
+* 一 11月 08 2004 Jeremy Katz <katzj@redhat.com> - 2.4-0.b2.3
+- fix the lib64 patch so that 64bit arches still look in /usr/lib/python...
+
+* 一 11月 08 2004 Jeremy Katz <katzj@redhat.com> - 2.4-0.b2.2
+- cryptmodule still needs -lcrypt (again)
+
+* 四 11月 04 2004 Mihai Ibanescu <misa@redhat.com> 2.4-0.b2.1
+- Updated to python 2.4b2 (and labeled it 2.4-0.b2.1 to avoid breaking rpm's
+  version comparison)
+
+* 四 11月 04 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-13
+- Fixed bug #138112 (python overflows stack buffer) - SF bug 105470
+
+* 二 11月 02 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-12
+- Fixed bugs #131439 #136023 #137863 (.pyc/.pyo files had the buildroot added)
+
+* 二 10月 26 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-11
+- Fixed bug #136654 (python has sketchy audio clip)
+
+* 二 8月 31 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-10
+- Fixed bug #77418 (Demo dir not packaged)
+- More tweaking on #19347 (Moved Tools/ under /usr/lib/python2.3/Tools)
+
+* 五 8月 13 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-8
+- Fixed bug #129769: Makefile in new python conflicts with older version found
+  in old python-devel
+- Reorganized the spec file to get rid of the aspython2 define; __python_ver
+  is more powerful.
+
+* 二 8月 03 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-7
+- Including html documentation for non-i386 arches
+- Fixed #125362 (python-doc html files have japanese character encoding)
+- Fixed #128923 (missing dependency between python and python-devel)
+
+* 五 7月 30 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-6
+- Fixed #128030 (help() not printing anything)
+- Fixed #125472 (distutils.sysconfig.get_python_lib() not returning the right
+  path on 64-bit systems)
+- Fixed #127357 (building python as a shared library)
+- Fixed  #19347 (including the contents of Tools/scripts/ in python-tools)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 08 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-3
+- Added an optik.py that provides the same interface from optparse for
+  backward compatibility; obsoleting python-optik
+
+* 一 6月 07 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-2
+- Patched bdist_rpm to allow for builds of multiple binary rpms (bug #123598)
+
+* 五 6月 04 2004 Mihai Ibanescu <misa@redhat.com> 2.3.4-1
+- Updated to 2.3.4-1 with Robert Scheck's help (bug #124764)
+- Added BuildRequires: tix-devel (bug #124918)
+
+* 五 5月 07 2004 Mihai Ibanescu <misa@redhat.com> 2.3.3-6
+- Correct fix for #122304 from upstream:
+  http://sourceforge.net/tracker/?func=detail&atid=105470&aid=931848&group_id=5470
+
+* 四 5月 06 2004 Mihai Ibanescu <misa@redhat.com> 2.3.3-4
+- Fix for bug #122304 : splitting the domain name fails on 64-bit arches
+- Fix for bug #120879 : including Makefile into the main package
+
+- Requires XFree86-devel instead of -libs (see bug #118442)
+
+* 二 3月 16 2004 Mihai Ibanescu <misa@redhat.com> 2.3.3-3
+- Requires XFree86-devel instead of -libs (see bug #118442)
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 12月 19 2003 Jeff Johnson <jbj@jbj.org> 2.3.3-1
+- upgrade to 2.3.3.
+
+* 六 12月 13 2003 Jeff Johnson <jbj@jbj.org> 2.3.2-9
+- rebuild against db-4.2.52.
+
+* 五 12月 12 2003 Jeremy Katz <katzj@redhat.com> 2.3.2-8
+- more rebuilding for new tcl/tk
+
+* 三 12月 03 2003 Jeff Johnson <jbj@jbj.org> 2.3.2-7.1
+- rebuild against db-4.2.42.
+
+* 五 11月 28 2003 Mihai Ibanescu <misa@redhat.com> 2.3.2-7
+- rebuilt against newer tcl/tk
+
+* 一 11月 24 2003 Mihai Ibanescu <misa@redhat.com> 2.3.2-6
+- added a Provides: python-abi
+
+* 三 11月 12 2003 Mihai Ibanescu <misa@redhat.com> 2.3.2-5
+- force CC (#109268)
+
+* 日 11月 09 2003 Jeremy Katz <katzj@redhat.com> 2.3.2-4
+- cryptmodule still needs -lcrypt
+
+* 三 11月 05 2003 Mihai Ibanescu <misa@redhat.com> 2.3.2-2
+- Added patch for missing mkhowto
+
+* 四 10月 16 2003 Mihai Ibanescu <misa@redhat.com> 2.3.2-1
+- Updated to 2.3.2
+
+* 四 9月 25 2003 Mihai Ibanescu <misa@redhat.com> 2.3.1-1
+- 2.3.1 final
+
+* 二 9月 23 2003 Mihai Ibanescu <misa@redhat.com> 2.3.1-0.8.RC1
+- Building the python 2.3.1 release candidate
+- Updated the lib64 patch
+
+* 三 7月 30 2003 Mihai Ibanescu <misa@redhat.com> 2.3-0.2
+- Building python 2.3
+- Added more BuildRequires
+- Updated the startup files for modulator and pynche; idle installs its own
+  now.
+
+* 四 7月 03 2003 Mihai Ibanescu <misa@redhat.com> 2.2.3-4
+- Rebuilt against newer db4 packages (bug #98539)
+
+* 一 6月 09 2003 Elliot Lee <sopwith@redhat.com> 2.2.3-3
+- rebuilt
+
+* 六 6月 07 2003 Mihai Ibanescu <misa@redhat.com> 2.2.3-2
+- Rebuilt
+
+* 五 6月 06 2003 Mihai Ibanescu <misa@redhat.com> 2.2.3-1
+- Upgraded to 2.2.3
+
+* 三 4月 02 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-28
+- Rebuilt
+
+* 三 4月 02 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-27
+- Modified the ftpuri patch conforming to http://ietf.org/rfc/rfc1738.txt
+
+* 一 2月 24 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 24 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-25
+- Fixed bug #84886: pydoc dies when run w/o arguments
+- Fixed bug #84205: add python shm module back (used to be shipped with 1.5.2)
+- Fixed bug #84966: path in byte-compiled code still wrong
+
+* 四 2月 20 2003 Jeremy Katz <katzj@redhat.com> 2.2.2-23
+- ftp uri's should be able to specify being rooted at the root instead of 
+  where you login via ftp (#84692)
+
+* 一 2月 10 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-22
+- Using newer Japanese codecs (1.4.9). Thanks to 
+  Peter Bowen <pzb@datastacks.com> for pointing this out.
+
+* 四 2月 06 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-21
+- Rebuild
+
+* 三 2月 05 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-20
+- Release number bumped really high: turning on UCS4 (ABI compatibility
+  breakage)
+
+* 五 1月 31 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-13
+- Attempt to look both in /usr/lib64 and /usr/lib/python2.2/site-packages/:
+  some work on python-2.2.2-lib64.patch
+
+* 四 1月 30 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-12
+- Rebuild to incorporate the removal of .lib64 and - files.
+
+* 四 1月 30 2003 Mihai Ibanescu <misa@redhat.com> 2.2.2-11.7.3
+- Fixed bug #82544: Errata removes most tools
+- Fixed bug #82435: Python 2.2.2 errata breaks redhat-config-users
+- Removed .lib64 and - files that get installed after we fix the multilib
+  .py files.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 1月 15 2003 Jens Petersen <petersen@redhat.com> 2.2.2-10
+- rebuild to update tkinter's tcltk deps
+- convert changelog to utf-8
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 2.2.2-9
+- rebuild
+
+* 五 1月 03 2003 Nalin Dahyabhai <nalin@redhat.com>
+- pick up OpenSSL cflags and ldflags from pkgconfig if available
+
+* 四 1月 02 2003 Jeremy Katz <katzj@redhat.com> 2.2.2-8
+- urllib2 didn't support non-anonymous ftp.  add support based on how 
+  urllib did it (#80676, #78168)
+
+* 一 12月 16 2002 Mihai Ibanescu <misa@redhat.com> 2.2.2-7
+- Fix bug #79647 (Rebuild of SRPM fails if python isn't installed)
+- Added a bunch of missing BuildRequires found while fixing the
+  above-mentioned bug
+
+* 二 12月 10 2002 Tim Powers <timp@redhat.com> 2.2.2-6
+- rebuild to fix broken tcltk deps for tkinter
+
+* 五 11月 22 2002 Mihai Ibanescu <misa@redhat.com>
+2.2.2-3.7.3
+- Recompiled for 7.3 (to fix the -lcrypt bug)
+- Fix for the spurious error message at the end of the build (build-requires
+  gets confused by executable files starting with """"): make the tests
+  non-executable.
+
+* 三 11月 20 2002 Mihai Ibanescu <misa@redhat.com>
+2.2.2-5
+- Fixed configuration patch to add -lcrypt when compiling cryptmodule.c
+
+2.2.2-4
+- Spec file change from Matt Wilson <msw@redhat.com> to disable linking 
+  with the C++ compiler.
+
+* 一 11月 11 2002 Mihai Ibanescu <misa@redhat.com>
+2.2.2-3.*
+- Merged patch from Karsten Hopp <karsten@redhat.de> from 2.2.1-17hammer to
+  use %{_libdir}
+- Added XFree86-libs as BuildRequires (because of tkinter)
+- Fixed duplicate listing of plat-linux2
+- Fixed exclusion of lib-dynload/japanese
+- Added lib64 patch for the japanese codecs
+- Use setup magic instead of using tar directly on JapaneseCodecs
+
+* 二 11月 05 2002 Mihai Ibanescu <misa@redhat.com>
+2.2.2-2
+- Fix #76912 (python-tools contains idle, which uses tkinter, but there is no
+  requirement of tkinter from python-tools).
+- Fix #74013 (rpm is missing the /usr/lib/python2.2/test directory)
+
+* 一 11月 04 2002 Mihai Ibanescu <misa@redhat.com>
+- builds as python2 require a different libdb
+- changed the buildroot name of python to match python2 builds
+
+* 五 11月 01 2002 Mihai Ibanescu <misa@redhat.com>
+- updated python to 2.2.2 and adjusted the patches accordingly
+
+* 一 10月 21 2002 Mihai Ibanescu <misa@redhat.com>
+- Fix #53930 (Python-2.2.1-buildroot-bytecode.patch)
+- Added BuildPrereq dependency on gcc-c++
+
+* 五 8月 30 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-17
+- security fix for _execvpe
+
+* 二 8月 13 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-16
+- Fix  #71011,#71134, #58157
+
+* 三 8月 07 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-15
+- Resurrect tkinter
+- Fix for distutils (#67671)
+- Fix #69962
+
+* 四 7月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-14
+- Obsolete tkinter/tkinter2 (#69838)
+
+* 二 7月 23 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-13
+- Doc fixes (#53951) - not on alpha at the momemt
+
+* 一 7月 08 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-12
+- fix pydoc (#68082)
+
+* 一 7月 08 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-11
+- Add db4-devel as a BuildPrereq
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 2.2.1-10
+- automated rebuild
+
+* 一 6月 17 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-9
+- Add Japanese codecs (#66352)
+
+* 二 6月 11 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-8
+- No more tkinter...
+
+* 三 5月 29 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-7
+- Rebuild
+
+* 二 5月 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-6
+- Add the email subcomponent (#65301)
+
+* 五 5月 10 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-5
+- Rebuild
+
+* 四 5月 02 2002 Than Ngo <than@redhat.com> 2.2.1-4
+- rebuild i new enviroment
+
+* 二 4月 23 2002 Trond Eivind Glomsrød <teg@redhat.com>
+- Use ucs2, not ucs4, to avoid breaking tkinter (#63965)
+
+* 一 4月 22 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-2
+- Make it use db4
+
+* 五 4月 12 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2.1-1
+- 2.2.1 - a bugfix-only release
+
+* 五 4月 12 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-16
+- the same, but in builddirs - this will remove them from the 
+  docs package, which doesn't look in the buildroot for files.
+
+* 五 4月 12 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-15
+- Get rid of temporary files and .cvsignores included 
+  in the tarball and make install
+
+* 五 4月 05 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-14
+- Don't own lib-tk in main package, only in tkinter (#62753)
+
+* 一 3月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-13
+- rebuild
+
+* 一 3月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-12
+- rebuild
+
+* 五 3月 01 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-11
+- Add a not to the Distutils obsoletes test (doh!)
+
+* 五 3月 01 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-10
+- Rebuild
+
+* 一 2月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-9
+- Only obsolete Distutils when built as python
+
+* 四 2月 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-8
+- Make files in /usr/bin install side by side with python 1.5 when
+- Drop explicit requirement of db4
+  built as python2
+
+* 四 1月 31 2002 Elliot Lee <sopwith@redhat.com> 2.2-7
+- Use version and pybasever macros to make updating easy
+- Use _smp_mflags macro
+
+* 二 1月 29 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-6
+- Add db4-devel to BuildPrereq
+
+* 五 1月 25 2002 Nalin Dahyabhai <nalin@redhat.com> 2.2-5
+- disable ndbm support, which is db2 in disguise (really interesting things
+  can happen when you mix db2 and db4 in a single application)
+
+* 四 1月 24 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-4
+- Obsolete subpackages if necesarry 
+- provide versioned python2
+- build with db4
+
+* 三 1月 16 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.2-3
+- Alpha toolchain broken. Disable build on alpha.
+- New openssl
+
+* 三 12月 26 2001 Trond Eivind Glomsrød <teg@redhat.com> 2.2-1
+- 2.2 final
+
+* 五 12月 14 2001 Trond Eivind Glomsrød <teg@redhat.com> 2.2-0.11c1
+- 2.2 RC 1
+- Don't include the _tkinter module in the main package - it's 
+  already in the tkiter packace
+- Turn off the mpzmodule, something broke in the buildroot
+
+* 三 11月 28 2001 Trond Eivind Glomsrød <teg@redhat.com> 2.2-0.10b2
+- Use -fPIC for OPT as well, in lack of a proper libpython.so
+
+* 一 11月 26 2001 Matt Wilson <msw@redhat.com> 2.2-0.9b2
+- changed DESTDIR to point to / so that distutils will install dynload
+  modules properly in the installroot
+
+* 五 11月 16 2001 Matt Wilson <msw@redhat.com> 2.2-0.8b2
+- 2.2b2
+
+* 五 10月 26 2001 Matt Wilson <msw@redhat.com> 2.2-0.7b1
+- python2ify
+
+* 五 10月 19 2001 Trond Eivind Glomsrød <teg@redhat.com> 2.2-0.5b1
+- 2.2b1
+
+* 日 9月 30 2001 Trond Eivind Glomsrød <teg@redhat.com> 2.2-0.4a4
+- 2.2a4
+- Enable UCS4 support
+- Enable IPv6
+- Provide distutils
+- Include msgfmt.py and pygettext.py
+
+* 五 9月 14 2001 Trond Eivind Glomsrød <teg@redhat.com> 2.2-0.3a3
+- Obsolete Distutils, which is now part of the main package
+- Obsolete python2
+
+* 四 9月 13 2001 Trond Eivind Glomsrød <teg@redhat.com> 2.2-0.2a3
+- Add docs, tools and tkinter subpackages, to match the 1.5 layout
+
+* 三 9月 12 2001 Trond Eivind Glomsrød <teg@redhat.com> 2.2-0.1a3
+- 2.2a3
+- don't build tix and blt extensions
+
+* 一 8月 13 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Add tk and tix to build dependencies
+
+* 六 7月 21 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- 2.1.1 bugfix release - with a GPL compatible license
+
+* 五 7月 20 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Add new build dependencies (#49753)
+
+* 二 6月 26 2001 Nalin Dahyabhai <nalin@redhat.com>
+- build with -fPIC
+
+* 五 6月 01 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- 2.1
+- reorganization of file includes
+
+* 三 12月 20 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- fix the "requires" clause, it lacked a space causing problems
+- use %{_tmppath}
+- don't define name, version etc
+- add the available patches from the Python home page
+
+* 五 12月 15 2000 Matt Wilson <msw@redhat.com>
+- added devel subpackage
+
+* 五 12月 15 2000 Matt Wilson <msw@redhat.com>
+- modify all files to use "python2.0" as the intrepter
+- don't build the Expat bindings
+- build against db1
+
+* 一 10月 16 2000 Jeremy Hylton <jeremy@beopen.com>
+- updated for 2.0 final
+
+* 一 10月 09 2000 Jeremy Hylton <jeremy@beopen.com>
+- updated for 2.0c1
+- build audioop, imageop, and rgbimg extension modules
+- include xml.parsers subpackage
+- add test.xml.out to files list
+
+* 四 10月 05 2000 Jeremy Hylton <jeremy@beopen.com>
+- added bin/python2.0 to files list (suggested by Martin v. L?)
+
+* 二 9月 26 2000 Jeremy Hylton <jeremy@beopen.com>
+- updated for release 1 of 2.0b2
+- use .bz2 version of Python source
+
+* 二 9月 12 2000 Jeremy Hylton <jeremy@beopen.com>
+- Version 2 of 2.0b1
+- Make the package relocatable.  Thanks to Suchandra Thapa.
+- Exclude Tkinter from main RPM.  If it is in a separate RPM, it is
+  easier to track Tk releases.
+

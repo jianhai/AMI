@@ -1,0 +1,665 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.19.7-26.3.2
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.19.7-26.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 7.19.7-26.1.2
+- do not exit  when make test (ipv6) failed,
+- rebuild for alios6
+
+* 三 8月 03 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-26.el6_1.2
+- add a new option CURLOPT_GSSAPI_DELEGATION (#727882)
+
+* 四 6月 23 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-26.el6_1.1
+- do not delegate GSSAPI credentials (CVE-2011-2192)
+
+* 四 4月 07 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-26
+- force NSS to ask for a new client certificate when connecting second time
+  to the same host (#694294)
+
+* 三 4月 06 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-25
+- fix SIGSEGV in CERT_VerifyCert (#690273)
+
+* 四 3月 17 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-24
+- make GSS authentication work when a curl handle is reused (#684892)
+
+* 三 3月 16 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-23
+- do not ignore value of CURLOPT_SSL_VERIFYPEER in certain cases (#678580)
+
+* 二 2月 22 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-22
+- do not ignore failure of SSL handshake (#669702)
+
+* 五 2月 18 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-21
+- avoid memory leaks on SSL connection failure (#678594)
+
+* 三 1月 19 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-20
+- avoid memory leaks and failure of NSS shutdown (#670802)
+
+* 二 1月 18 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-19
+- fix handling of CURLOPT_CAPATH in libcurl (#669702)
+
+* 四 1月 13 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-18
+- avoid build failure caused by a bug in libnih-devel (#669048)
+
+* 一 1月 10 2011 Kamil Dudka <kdudka@redhat.com> 7.19.7-17
+- avoid CURLE_OUT_OF_MEMORY given a file name without any slash (#623663)
+- proxy tunnel support for LDAP requests (#655134)
+- proxy with kerberos authentication for https (#625685)
+- improve handling of FTP server session timeout (#651592)
+
+* 三 6月 30 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-16
+- add support for NTLM authentication (#606819)
+
+* 四 6月 17 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-15
+- improve handling of proxy related environment variables (#589132)
+
+* 二 4月 27 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-14
+- do not ignore given timeout during SSL connection (#586355)
+
+* 三 4月 14 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-13
+- kerberos installation prefix has been changed
+
+* 三 4月 14 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-12
+- support for CRL loading from a PEM file (#581485)
+
+* 二 4月 06 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-11
+- eliminated a race condition in handling of SIGALRM (#579732)
+
+* 五 3月 26 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-10
+- throw CURLE_SSL_CERTPROBLEM in case peer rejects a certificate (#565972)
+- add change-log entries for patches applied upstream
+
+* 二 3月 23 2010 Kamil Dudka <kdudka@redhat.com> - 7.19.7-9
+- remove signal handler in case of DNS timeout (#575977)
+
+* 一 2月 22 2010 Kamil Dudka <kdudka@redhat.com> - 7.19.7-8
+- http://curl.haxx.se/docs/adv_20100209.html (#563236)
+
+* 二 2月 02 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-7
+- mention lack of IPv6, FTPS and LDAP support while using a socks proxy
+  (#559578)
+
+* 四 1月 07 2010 Kamil Dudka <kdudka@redhat.com> 7.19.7-6
+- fix incorrect SSL recv/send timeout handling, patch contributed
+  by Kevin Baughman
+- http://permalink.gmane.org/gmane.comp.web.curl.library/26302
+
+* 二 12月 15 2009 Kamil Dudka <kdudka@redhat.com> 7.19.7-5
+- use different port numbers for 32bit and 64bit builds
+- replace hard wired port numbers in the test suite
+
+* 二 12月 08 2009 Kamil Dudka <kdudka@redhat.com> 7.19.7-4
+- avoid use of uninitialized value in lib/nss.c
+- make it possible to run test241
+- suppress failure of test513 on s390
+- re-enable SCP/SFTP tests (#539444)
+
+* 二 12月 01 2009 Kamil Dudka <kdudka@redhat.com> 7.19.7-3
+- do not require valgrind on s390 and s390x
+- temporarily disabled SCP/SFTP test-suite (#539444)
+
+* 四 11月 26 2009 Kamil Dudka <kdudka@redhat.com> 7.19.7-2
+- workaround for broken TLS servers (#525496, #527771)
+
+* 四 11月 12 2009 Kamil Dudka <kdudka@redhat.com> 7.19.7-1
+- new upstream release, dropped applied patches
+- fix crash on doubly closed NSPR descriptor, patch contributed
+  by Kevin Baughman (#534176)
+
+* 日 9月 27 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-10
+- require libssh2>=1.2 properly (#525002)
+
+* 六 9月 26 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-9
+- let curl test-suite use valgrind
+- require libssh2>=1.2 (#525002)
+
+* 一 9月 21 2009 Chris Weyl <cweyl@alumni.drew.edu> - 7.19.6-8
+- rebuild for libssh2 1.2
+
+* 四 9月 17 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-7
+- make curl test-suite more verbose
+
+* 三 9月 16 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-6
+- update polling patch to the latest upstream version
+
+* 四 9月 03 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-5
+- cover ssh and stunnel support by the test-suite
+
+* 三 9月 02 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-4
+- use pkg-config to find nss and libssh2 if possible
+- better patch (not only) for SCP/SFTP polling
+- improve error message for not matching common name (#516056)
+
+* 五 8月 21 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-3
+- avoid tight loop during a sftp upload
+- http://permalink.gmane.org/gmane.comp.web.curl.library/24744
+
+* 二 8月 18 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-2
+- let curl package depend on the same version of libcurl
+
+* 五 8月 14 2009 Kamil Dudka <kdudka@redhat.com> 7.19.6-1
+- new upstream release, dropped applied patches
+- changed NSS code to not ignore the value of ssl.verifyhost and produce more
+  verbose error messages (#516056)
+
+* 三 8月 12 2009 Ville Skyttä <ville.skytta@iki.fi> - 7.19.5-10
+- Use lzma compressed upstream tarball.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.19.5-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Kamil Dudka <kdudka@redhat.com> 7.19.5-8
+- do not pre-login to all PKCS11 slots, it causes problems with HW tokens
+- try to select client certificate automatically when not specified, thanks
+  to Claes Jakobsson
+
+* 五 7月 10 2009 Kamil Dudka <kdudka@redhat.com> 7.19.5-7
+- fix SIGSEGV when using NSS client certificates, thanks to Claes Jakobsson
+
+* 日 7月 05 2009 Kamil Dudka <kdudka@redhat.com> 7.19.5-6
+- force test suite to use the just built libcurl, thanks to Paul Howarth
+
+* 四 7月 02 2009 Kamil Dudka <kdudka@redhat.com> 7.19.5-5
+- run test suite after build
+- enable built-in manual
+
+* 三 6月 24 2009 Kamil Dudka <kdudka@redhat.com> 7.19.5-4
+- fix bug introduced by the last build (#504857)
+
+* 三 6月 24 2009 Kamil Dudka <kdudka@redhat.com> 7.19.5-3
+- exclude curlbuild.h content from spec (#504857)
+
+* 三 6月 10 2009 Kamil Dudka <kdudka@redhat.com> 7.19.5-2
+- avoid unguarded comparison in the spec file, thanks to R P Herrold (#504857)
+
+* 二 5月 19 2009 Kamil Dudka <kdudka@redhat.com> 7.19.5-1
+- update to 7.19.5, dropped applied patches
+
+* 一 5月 11 2009 Kamil Dudka <kdudka@redhat.com> 7.19.4-11
+- fix infinite loop while loading a private key, thanks to Michael Cronenworth
+  (#453612)
+
+* 一 4月 27 2009 Kamil Dudka <kdudka@redhat.com> 7.19.4-10
+- fix curl/nss memory leaks while using client certificate (#453612, accepted
+  by upstream)
+
+* 三 4月 22 2009 Kamil Dudka <kdudka@redhat.com> 7.19.4-9
+- add missing BuildRequire for autoconf
+
+* 三 4月 22 2009 Kamil Dudka <kdudka@redhat.com> 7.19.4-8
+- fix configure.ac to not discard -g in CFLAGS (#496778)
+
+* 二 4月 21 2009 Debarshi Ray <rishi@fedoraproject.org> 7.19.4-7
+- Fixed configure to respect the environment's CFLAGS and CPPFLAGS settings.
+
+* 二 4月 14 2009 Kamil Dudka <kdudka@redhat.com> 7.19.4-6
+- upstream patch fixing memory leak in lib/nss.c (#453612)
+- remove redundant dependency of libcurl-devel on libssh2-devel
+
+* 三 3月 18 2009 Kamil Dudka <kdudka@redhat.com> 7.19.4-5
+- enable 6 additional crypto algorithms by default (#436781,
+  accepted by upstream)
+
+* 四 3月 12 2009 Kamil Dudka <kdudka@redhat.com> 7.19.4-4
+- fix memory leak in src/main.c (accepted by upstream)
+- avoid using %ifarch
+
+* 三 3月 11 2009 Kamil Dudka <kdudka@redhat.com> 7.19.4-3
+- make libcurl-devel multilib-ready (bug #488922)
+
+* 五 3月 06 2009 Jindrich Novy <jnovy@redhat.com> 7.19.4-2
+- drop .easy-leak patch, causes problems in pycurl (#488791)
+- fix libcurl-devel dependencies (#488895)
+
+* 二 3月 03 2009 Jindrich Novy <jnovy@redhat.com> 7.19.4-1
+- update to 7.19.4 (fixes CVE-2009-0037)
+- fix leak in curl_easy* functions, thanks to Kamil Dudka
+- drop nss-fix patch, applied upstream
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.19.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Kamil Dudka <kdudka@redhat.com> 7.19.3-1
+- update to 7.19.3, dropped applied nss patches
+- add patch fixing 7.19.3 curl/nss bugs
+
+* 一 12月 15 2008 Jindrich Novy <jnovy@redhat.com> 7.18.2-9
+- rebuild for f10/rawhide cvs tag clashes
+
+* 六 12月 06 2008 Jindrich Novy <jnovy@redhat.com> 7.18.2-8
+- use improved NSS patch, thanks to Rob Crittenden (#472489)
+
+* 二 9月 09 2008 Jindrich Novy <jnovy@redhat.com> 7.18.2-7
+- update the thread safety patch, thanks to Rob Crittenden (#462217)
+
+* 三 9月 03 2008 Warren Togami <wtogami@redhat.com> 7.18.2-6
+- add thread safety to libcurl NSS cleanup() functions (#459297)
+
+* 五 8月 22 2008 Tom "spot" Callaway <tcallawa@redhat.com> 7.18.2-5
+- undo mini libcurl.so.3
+
+* 一 8月 11 2008 Tom "spot" Callaway <tcallawa@redhat.com> 7.18.2-4
+- make miniature library for libcurl.so.3
+
+* 五 7月 04 2008 Jindrich Novy <jnovy@redhat.com> 7.18.2-3
+- enable support for libssh2 (#453958)
+
+* 三 6月 18 2008 Jindrich Novy <jnovy@redhat.com> 7.18.2-2
+- fix curl_multi_perform() over a proxy (#450140), thanks to
+  Rob Crittenden
+
+* 三 6月 04 2008 Jindrich Novy <jnovy@redhat.com> 7.18.2-1
+- update to 7.18.2
+
+* 三 5月 07 2008 Jindrich Novy <jnovy@redhat.com> 7.18.1-2
+- spec cleanup, thanks to Paul Howarth (#225671)
+  - drop BR: libtool
+  - convert CHANGES and README to UTF-8
+  - _GNU_SOURCE in CFLAGS is no more needed
+  - remove bogus rpath
+
+* 一 3月 31 2008 Jindrich Novy <jnovy@redhat.com> 7.18.1-1
+- update to curl 7.18.1 (fixes #397911)
+- add ABI docs for libcurl
+- remove --static-libs from curl-config
+- drop curl-config patch, obsoleted by @SSL_ENABLED@ autoconf
+  substitution (#432667)
+
+* 五 2月 15 2008 Jindrich Novy <jnovy@redhat.com> 7.18.0-2
+- define _GNU_SOURCE so that NI_MAXHOST gets defined from glibc
+
+* 一 1月 28 2008 Jindrich Novy <jnovy@redhat.com> 7.18.0-1
+- update to curl-7.18.0
+- drop sslgen patch -> applied upstream
+- fix typo in description
+
+* 二 1月 22 2008 Jindrich Novy <jnovy@redhat.com> 7.17.1-6
+- fix curl-devel obsoletes so that we don't break F8->F9 upgrade
+  path (#429612)
+
+* 二 1月 08 2008 Jindrich Novy <jnovy@redhat.com> 7.17.1-5
+- do not attempt to close a bad socket (#427966),
+  thanks to Caolan McNamara
+
+* 二 12月 04 2007 Jindrich Novy <jnovy@redhat.com> 7.17.1-4
+- rebuild because of the openldap soname bump
+- remove old nsspem patch
+
+* 五 11月 30 2007 Jindrich Novy <jnovy@redhat.com> 7.17.1-3
+- drop useless ldap library detection since curl doesn't
+  dlopen()s it but links to it -> BR: openldap-devel
+- enable LDAPS support (#225671), thanks to Paul Howarth
+- BR: krb5-devel to reenable GSSAPI support
+- simplify build process
+- update description
+
+* 三 11月 21 2007 Jindrich Novy <jnovy@redhat.com> 7.17.1-2
+- update description to contain complete supported servers list (#393861)
+
+* 六 11月 17 2007 Jindrich Novy <jnovy@redhat.com> 7.17.1-1
+- update to curl 7.17.1
+- include patch to enable SSL usage in NSS when a socket is opened
+  nonblocking, thanks to Rob Crittenden (rcritten@redhat.com)
+
+* 三 10月 24 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-10
+- correctly provide/obsolete curl-devel (#130251)
+
+* 三 10月 24 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-9
+- create libcurl and libcurl-devel subpackages (#130251)
+
+* 四 10月 11 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-8
+- list features correctly when curl is compiled against NSS (#316191)
+
+* 一 9月 17 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-7
+- add zlib-devel BR to enable gzip compressed transfers in curl (#292211)
+
+* 一 9月 10 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-6
+- provide webclient (#225671)
+
+* 四 9月 06 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-5
+- add support for the NSS PKCS#11 pem reader so the command-line is the
+  same for both OpenSSL and NSS by Rob Crittenden (rcritten@redhat.com)
+- switch to NSS again
+
+* 一 9月 03 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-4
+- revert back to use OpenSSL (#266021)
+
+* 一 8月 27 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-3
+- don't use openssl, use nss instead
+
+* 五 8月 10 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-2
+- fix anonymous ftp login (#251570), thanks to David Cantrell
+
+* 三 7月 11 2007 Jindrich Novy <jnovy@redhat.com> 7.16.4-1
+- update to 7.16.4
+
+* 一 6月 25 2007 Jindrich Novy <jnovy@redhat.com> 7.16.3-1
+- update to 7.16.3
+- drop .print patch, applied upstream
+- next series of merge review fixes by Paul Howarth
+- remove aclocal stuff, no more needed
+- simplify makefile arguments
+- don't reference standard library paths in libcurl.pc
+- include docs/CONTRIBUTE
+
+* 一 6月 18 2007 Jindrich Novy <jnovy@redhat.com> 7.16.2-5
+- don't print like crazy (#236981), backported from upstream CVS
+
+* 五 6月 15 2007 Jindrich Novy <jnovy@redhat.com> 7.16.2-4
+- another series of review fixes (#225671),
+  thanks to Paul Howarth
+- check version of ldap library automatically
+- don't use %makeinstall and preserve timestamps
+- drop useless patches
+
+* 五 5月 11 2007 Jindrich Novy <jnovy@redhat.com> 7.16.2-3
+- add automake BR to curl-devel to fix aclocal dir. ownership,
+  thanks to Patrice Dumas
+
+* 四 5月 10 2007 Jindrich Novy <jnovy@redhat.com> 7.16.2-2
+- package libcurl.m4 in curl-devel (#239664), thanks to Quy Tonthat
+
+* 三 4月 11 2007 Jindrich Novy <jnovy@redhat.com> 7.16.2-1
+- update to 7.16.2
+
+* 一 2月 19 2007 Jindrich Novy <jnovy@redhat.com> 7.16.1-3
+- don't create/ship static libraries (#225671)
+
+* 一 2月 05 2007 Jindrich Novy <jnovy@redhat.com> 7.16.1-2
+- merge review related spec fixes (#225671)
+
+* 一 1月 29 2007 Jindrich Novy <jnovy@redhat.com> 7.16.1-1
+- update to 7.16.1
+
+* 二 1月 16 2007 Jindrich Novy <jnovy@redhat.com> 7.16.0-5
+- don't package generated makefiles for docs/examples to avoid
+  multilib conflicts
+
+* 一 12月 18 2006 Jindrich Novy <jnovy@redhat.com> 7.16.0-4
+- convert spec to UTF-8
+- don't delete BuildRoot in %prep phase
+- rpmlint fixes
+
+* 四 11月 16 2006 Jindrich Novy <jnovy@redhat.com> -7.16.0-3
+- prevent curl from dlopen()ing missing ldap libraries so that
+  ldap:// requests work (#215928)
+
+* 二 10月 31 2006 Jindrich Novy <jnovy@redhat.com> - 7.16.0-2
+- fix BuildRoot
+- add Requires: pkgconfig for curl-devel
+- move LDFLAGS and LIBS to Libs.private in libcurl.pc.in (#213278)
+
+* 一 10月 30 2006 Jindrich Novy <jnovy@redhat.com> - 7.16.0-1
+- update to curl-7.16.0
+
+* 四 8月 24 2006 Jindrich Novy <jnovy@redhat.com> - 7.15.5-1.fc6
+- update to curl-7.15.5
+- use %{?dist}
+
+* 五 6月 30 2006 Ivana Varekova <varekova@redhat.com> - 7.15.4-1
+- update to 7.15.4
+
+* 一 3月 20 2006 Ivana Varekova <varekova@redhat.com> - 7.15.3-1
+- fix multilib problem using pkg-config
+- update to 7.15.3
+
+* 四 2月 23 2006 Ivana Varekova <varekova@redhat.com> - 7.15.1-2
+- fix multilib problem - #181290 - 
+  curl-devel.i386 not installable together with curl-devel.x86-64
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 7.15.1-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 7.15.1-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 12月 08 2005 Ivana Varekova <varekova@redhat.com> 7.15.1-1
+- update to 7.15.1 (bug 175191)
+
+* 三 11月 30 2005 Ivana Varekova <varekova@redhat.com> 7.15.0-3
+- fix curl-config bug 174556 - missing vernum value
+
+* 三 11月 09 2005 Ivana Varekova <varekova@redhat.com> 7.15.0-2
+- rebuilt
+
+* 二 10月 18 2005 Ivana Varekova <varekova@redhat.com> 7.15.0-1
+- update to 7.15.0
+
+* 四 10月 13 2005 Ivana Varekova <varekova@redhat.com> 7.14.1-1
+- update to 7.14.1
+
+* 四 6月 16 2005 Ivana Varekova <varekova@redhat.com> 7.14.0-1
+- rebuild new version
+
+* 二 5月 03 2005 Ivana Varekova <varekova@redhat.com> 7.13.1-3
+- fix bug 150768 - curl-7.12.3-2 breaks basic authentication
+  used Daniel Stenberg patch
+
+* 一 4月 25 2005 Joe Orton <jorton@redhat.com> 7.13.1-2
+- update to use ca-bundle in /etc/pki
+- mark License as MIT not MPL
+
+* 三 3月 09 2005 Ivana Varekova <varekova@redhat.com> 7.13.1-1
+- rebuilt (7.13.1)
+
+* 二 3月 01 2005 Tomas Mraz <tmraz@redhat.com> 7.13.0-2
+- rebuild with openssl-0.9.7e
+
+* 日 2月 13 2005 Florian La Roche <laroche@redhat.com>
+- 7.13.0
+
+* 三 2月 09 2005 Joe Orton <jorton@redhat.com> 7.12.3-3
+- don't pass /usr to --with-libidn to remove "-L/usr/lib" from
+  'curl-config --libs' output on x86_64.
+
+* 五 1月 28 2005 Adrian Havill <havill@redhat.com> 7.12.3-1
+- Upgrade to 7.12.3, which uses poll() for FDSETSIZE limit (#134794)
+- require libidn-devel for devel subpkg (#141341)
+- remove proftpd kludge; included upstream
+
+* 三 10月 06 2004 Adrian Havill <havill@redhat.com> 7.12.1-1
+- upgrade to 7.12.1
+- enable GSSAPI auth (#129353)
+- enable I18N domain names (#134595)
+- workaround for broken ProFTPD SSL auth (#134133). Thanks to
+  Aleksandar Milivojevic
+
+* 三 9月 29 2004 Adrian Havill <havill@redhat.com> 7.12.0-4
+- move new docs position so defattr gets applied
+
+* 一 9月 27 2004 Warren Togami <wtogami@redhat.com> 7.12.0-3
+- remove INSTALL, move libcurl docs to -devel
+
+* 一 7月 26 2004 Jindrich Novy <jnovy@redhat.com>
+- updated to 7.12.0
+- updated nousr patch
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 4月 07 2004 Adrian Havill <havill@redhat.com> 7.11.1-1
+- upgraded; updated nousr patch
+- added COPYING (#115956)
+-
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 1月 31 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 7.10.8
+- remove patch2, already upstream
+
+* 三 10月 15 2003 Adrian Havill <havill@redhat.com> 7.10.6-7
+- aclocal before libtoolize
+- move OpenLDAP license so it's present as a doc file, present in
+  both the source and binary as per conditions
+
+* 一 10月 13 2003 Adrian Havill <havill@redhat.com> 7.10.6-6
+- add OpenLDAP copyright notice for usage of code, add OpenLDAP
+  license for this code
+
+* 二 10月 07 2003 Adrian Havill <havill@redhat.com> 7.10.6-5
+- match serverAltName certs with SSL (#106168)
+
+* 二 9月 16 2003 Adrian Havill <havill@redhat.com> 7.10.6-4.1
+- bump n-v-r for RHEL
+
+* 二 9月 16 2003 Adrian Havill <havill@redhat.com> 7.10.6-4
+- restore ca cert bundle (#104400)
+- require openssl, we want to use its ca-cert bundle
+
+* 日 9月 07 2003 Joe Orton <jorton@redhat.com> 7.10.6-3
+- rebuild
+
+* 五 9月 05 2003 Joe Orton <jorton@redhat.com> 7.10.6-2.2
+- fix to include libcurl.so
+
+* 一 8月 25 2003 Adrian Havill <havill@redhat.com> 7.10.6-2.1
+- bump n-v-r for RHEL
+
+* 一 8月 25 2003 Adrian Havill <havill@redhat.com> 7.10.6-2
+- devel subpkg needs openssl-devel as a Require (#102963)
+
+* 一 7月 28 2003 Adrian Havill <havill@redhat.com> 7.10.6-1
+- bumped version
+
+* 二 7月 01 2003 Adrian Havill <havill@redhat.com> 7.10.5-1
+- bumped version
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 4月 12 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 7.10.4
+- adapt nousr patch
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 1月 21 2003 Joe Orton <jorton@redhat.com> 7.9.8-4
+- don't add -L/usr/lib to 'curl-config --libs' output
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 7.9.8-3
+- rebuild
+
+* 三 11月 06 2002 Joe Orton <jorton@redhat.com> 7.9.8-2
+- fix `curl-config --libs` output for libdir!=/usr/lib
+- remove docs/LIBCURL from docs list; remove unpackaged libcurl.la
+- libtoolize and reconf
+
+* 一 7月 22 2002 Trond Eivind Glomsrød <teg@redhat.com> 7.9.8-1
+- 7.9.8 (# 69473)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 16 2002 Trond Eivind Glomsrød <teg@redhat.com> 7.9.7-1
+- 7.9.7
+
+* 三 4月 24 2002 Trond Eivind Glomsrød <teg@redhat.com> 7.9.6-1
+- 7.9.6
+
+* 四 3月 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 7.9.5-2
+- Stop the curl-config script from printing -I/usr/include 
+  and -L/usr/lib (#59497)
+
+* 五 3月 08 2002 Trond Eivind Glomsrød <teg@redhat.com> 7.9.5-1
+- 7.9.5
+
+* 二 2月 26 2002 Trond Eivind Glomsrød <teg@redhat.com> 7.9.3-2
+- Rebuild
+
+* 三 1月 23 2002 Nalin Dahyabhai <nalin@redhat.com> 7.9.3-1
+- update to 7.9.3
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com> 7.9.2-2
+- automated rebuild
+
+* 三 1月 09 2002 Trond Eivind Glomsrød <teg@redhat.com> 7.9.2-1
+- 7.9.2
+
+* 五 8月 17 2001 Nalin Dahyabhai <nalin@redhat.com>
+- include curl-config in curl-devel
+- update to 7.8 to fix memory leak and strlcat() symbol pollution from libcurl
+
+* 三 7月 18 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- added openssl-devel build req
+
+* 一 5月 21 2001 Tim Powers <timp@redhat.com>
+- built for the distro
+
+* 二 4月 24 2001 Jeff Johnson <jbj@redhat.com>
+- upgrade to curl-7.7.2.
+- enable IPv6.
+
+* 五 3月 02 2001 Tim Powers <timp@redhat.com>
+- rebuilt against openssl-0.9.6-1
+
+* 四 1月 04 2001 Tim Powers <timp@redhat.com>
+- fixed mising ldconfigs
+- updated to 7.5.2, bug fixes
+
+* 一 12月 11 2000 Tim Powers <timp@redhat.com>
+- updated to 7.5.1
+
+* 一 11月 06 2000 Tim Powers <timp@redhat.com>
+- update to 7.4.1 to fix bug #20337, problems with curl -c
+- not using patch anymore, it's included in the new source. Keeping
+  for reference
+
+* 五 10月 20 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix bogus req in -devel package
+
+* 五 10月 20 2000 Tim Powers <timp@redhat.com> 
+- devel package needed defattr so that root owns the files
+
+* 一 10月 16 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 7.3
+- apply vsprintf/vsnprintf patch from Colin Phipps via Debian
+
+* 一 8月 21 2000 Nalin Dahyabhai <nalin@redhat.com>
+- enable SSL support
+- fix packager tag
+- move buildroot to %{_tmppath}
+
+* 二 8月 01 2000 Tim Powers <timp@redhat.com>
+- fixed vendor tag for bug #15028
+
+* 一 7月 24 2000 Prospector <prospector@redhat.com>
+- rebuilt
+
+* 二 7月 11 2000 Tim Powers <timp@redhat.com>
+- workaround alpha build problems with optimizations
+
+* 一 7月 10 2000 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 6月 05 2000 Tim Powers <timp@redhat.com>
+- put man pages in correct place
+- use %makeinstall
+
+* 一 4月 24 2000 Tim Powers <timp@redhat.com>
+- updated to 6.5.2
+
+* 三 11月 03 1999 Tim Powers <timp@redhat.com>
+- updated sources to 6.2
+- gzip man page
+
+* 一 8月 30 1999 Tim Powers <timp@redhat.com>
+- changed group
+
+* 四 8月 26 1999 Tim Powers <timp@redhat.com>
+- changelog started
+- general cleanups, changed prefix to /usr, added manpage to files section
+- including in Powertools
+

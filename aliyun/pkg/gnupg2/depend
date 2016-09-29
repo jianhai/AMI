@@ -1,0 +1,34 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/install-info  
+/sbin/install-info  
+config(gnupg2) = 2.0.14-4.3.alios6
+libbz2.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libcurl.so.4()(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+libgcrypt.so.11()(64bit)  
+libgcrypt.so.11(GCRYPT_1.2)(64bit)  
+libgpg-error.so.0()(64bit)  
+libldap-2.4.so.2()(64bit)  
+libnsl.so.1()(64bit)  
+libpth.so.20()(64bit)  
+libreadline.so.6()(64bit)  
+libresolv.so.2()(64bit)  
+libresolv.so.2(GLIBC_2.2.5)(64bit)  
+libz.so.1()(64bit)  
+pinentry  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

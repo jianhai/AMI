@@ -1,0 +1,2 @@
+/etc/selinux/semanage.conf
+/lib64/libsemanage.so.1

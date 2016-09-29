@@ -1,0 +1,566 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.6f-29.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.6f-29.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.6f-29.1
+- rebuild for alios6
+
+* 四 6月 24 2010 Ivana Hutarova Varekova <varekova at redhat.com> - 1.6f-29
+- Resolves: #607540
+  man-debuginfo incomplete
+
+* 二 2月 16 2010 Ivana Hutarova Varekova <varekova at redhat.com> - 1.6f-28
+- Resolves: #543948
+  fix attr stuf
+
+* 二 2月 16 2010 Ivana Hutarova Varekova <varekova at redhat.com> - 1.6f-27
+- Resolves: #543948
+  add patches description and documentation
+
+* 一 2月 01 2010 Ivana Hutarova Varekova <varekova at redhat.com> - 1.6f-26
+- Resolves: #560587
+  fix the variable name bug in makewhatis script
+
+* 二 1月 26 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 1.6f-25
+- Resolves: #558716
+  man needs to go through additional subpaths
+
+* 二 12月 01 2009 Ivana Varekova <varekova@redhat.com> - 1.6f-24
+- fix the problem: #542852 -  'man cut cut' throws an error
+
+* 一 10月 12 2009 Ivana Varekova <varekova@redhat.com> - 1.6f-23
+- fix man2html to enable to use longer suffixes (#526112)
+
+* 二 8月 11 2009 Ivana Varekova <varekova@redhat.com> - 1.6f-22
+- fix makewhatis format bug (#513553)
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6f-21
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 4月 21 2009 Lubomir Rintel <lkundrak@v3.sk> - 1.6f-20
+- Don't remove cache and whatis database on updates
+- Ghost whatis database
+
+* 二 4月 21 2009 Lubomir Rintel <lkundrak@v3.sk> - 1.6f-19
+- The daily cron job is not a configuration file
+
+* 日 4月 19 2009 Lubomir Rintel <lkundrak@v3.sk> - 1.6f-18
+- Get rid of slow weekly updates
+- Make daily updates reliable
+- Speed up initial indexation
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6f-17
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 12 2009 Ivana Varekova <varekova@redhat.com> - 1.6f-16
+- Resolves: #481650
+  makewhat fails if /usr is read-only
+
+* 四 2月 12 2009 Ivana Varekova <varekova@redhat.com> - 1.6f-15
+- Resolves: #485014
+  Do not use .mo suffix for gencat message catalogs
+
+* 五 11月 21 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-14
+- Resolves: #456162
+  locale settings problem
+
+* 四 11月 20 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-13
+- Resolves: #458042
+  makewhatis error on file name with shell meta-characters
+
+* 二 11月 18 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-12
+- Resolves: #471784
+  makewhatis problem with man-pages with dash in its name
+
+* 二 9月 16 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-11
+- Resolves: #460765
+  remove makewhatis patch which adds data from rpm database
+
+* 五 9月 12 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-10
+- Resolves: #461775
+  man needs lzma
+
+* 一 9月 01 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-9
+- update patches
+
+* 一 6月 09 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-8
+- Resolves: #449272 
+  Latest man behaves very strange for non-existing man pages
+- Resolves: #449275
+  Unowned directories where man package provides content for
+
+* 一 6月 02 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-7
+- Resolves: #448049
+  Error messages will exhibit when quit from mount man page
+
+* 三 5月 14 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-6
+- Resolves: #439314
+  move locale files
+- spec file cleanup
+
+* 三 4月 16 2008 Ivana Varekova <varekova@redhat.com> - 1.6f -5
+- Resolves: #442192
+  fix fr translation
+
+* 一 4月 07 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-4
+- Resolves: #441074
+  double UTF-8 conversion in German messages
+
+* 二 3月 25 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-3
+- Resolves 438742: 
+  makewhatis patch problem
+
+* 五 3月 21 2008 Ivana Varekova <varekova@redhat.com> - 1.6f-2
+- remove diffutils dependency (#431352)
+  thanks Ville Skyttä
+
+* 五 3月 14 2008 Jiri Moskovcak <jmoskovc@redhat.com> - 1.6f-1
+- new version
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.6e-4
+- Autorebuild for GCC 4.3
+
+* 一 3月 12 2007 Ivana Varekova <varekova@redhat.com> - 1.6e-3
+- incorporate the package review feedback
+
+* 二 1月 09 2007 Ivana Varekova <varekova@redhat.com> - 1.6e-2
+- Resolves: 221868
+  man use incorrect groff option
+- spec file cleanup
+
+* 一 12月 11 2006 Ivana Varekova <varekova@redhat.com> - 1.6e-1
+- update to 1.6e
+
+* 四 10月 26 2006 Ivana Varekova <varekova@redhat.com> - 1.6d-3
+- add MAKEWHATISDBUPDATES option (bug 210501)
+
+* 二 10月 24 2006 Ivana Varekova <varekova@redhat.com> - 1.6d-2
+- makewhatis overlooks man pages with two dashes in SH line
+  (bug 208216)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.6d-1.1
+- rebuild
+
+* 四 6月 22 2006 Ivana Varekova <varekova@redhat.com> - 1.6d-1
+- update to 1.6d
+
+* 四 6月 22 2006 Ivana Varekova <varekova@redhat.com> - 1.6c-4
+- add directories to file list (bug 192995)
+
+* 一 5月 01 2006 Ivana Varekova <varekova@redhat.com> - 1.6c-3
+- fix man displaying problem (bug 190287) - thanks JW
+
+* 一 2月 27 2006 Ivana Varekova <varekova@redhat.com> - 1.6c-2
+- fix the encoding of the Bulgarian translation
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.6c-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.6c-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Florian La Roche <laroche@redhat.com>
+- 1.6c
+
+* 二 12月 13 2005 Ivana Varekova <varekova@redhat.com> 1.6b-2
+- makewhatis change - add info about packages (bug 175595)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 11月 10 2005 Ivana Varekova <varekova@redhat.com> 1.6b-1
+- update to 1.6b
+
+* 一 10月 31 2005 Ivana Varekova <varekova@redhat.com> 1.5p-7
+- add ?x sections to MANSECT variable (bug 172002)
+
+* 二 5月 17 2005 Ivana Varekova <varekova@redhat.com> 1.5p-6
+- change patch 18 (less hard solution) and 
+  patch 13 (don't change exit number in one case)
+
+* 三 4月 13 2005 Ivana Varekova <varekova@redhat.com> 1.5p-5
+- fix bug 146849 - makewhatis from cron produce error message
+  "zcat: stdout: Broken pipe" (patch 18)
+- fix makewhatis problem with sections (patch 19)
+- delete strips
+
+* 二 3月 29 2005 Ivana Varekova <varekova@redhat.com> 1.5p-4
+- fix bug 140732 in man pages and the rest of bug 140207 change 
+   in man-pages again (patch 17)
+
+* 二 3月 22 2005 Ivana Varekova <varekova@redhat.com> 1.5p-3
+- fix bug 142673 - bugs in man2html
+
+* 三 3月 16 2005 Ivana Varekova <varekova@redhat.com> 1.5p-2
+- fix bug 140178 - correct one typo 
+- fix bug 140202 - problem with makewhatis exit (patch 13)
+- fix bug 140207 - problem with makewhatis -u  (patch 14)
+  the fixed version update information about man-pages which 
+  are less then one day old (it is used in day update)
+  (man-pages may be fixed)
+- fix bug 140729 - makewhatis removed to /usr/sbin  
+- fix bug 146631 - two-part locale dir-name is support (patch 15)
+- changed makewhatis version
+
+* 一 3月 07 2005 Ivana Varekova <varekova@redhat.com> 1.5p-1
+- rebuilt new version #147716
+
+* 五 3月 04 2005 Ivana Varekova <varekova@redhat.com> 1.5m2-13
+- rebuilt
+
+* 一 2月 14 2005 Adrian Havill <havill@redhat.com>
+- rebuilt
+
+* 三 10月 13 2004 Adrian Havill <havill@redhat.com> 1.5m2-9
+- make sure we touch Makefile timestamp so make doesn't get
+  confused and think we haven't run configure
+- replace russian messages (#134387) Thanks to Leonid Kanter
+
+* 日 8月 01 2004 Alan Cox <alan@redhat.com>
+- Fix requirements (#126601)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 3月 31 2004 Adrian Havill <havill@redhat.com> 1.5m2-6
+- reorder MANSECT so that normal pages (with translations) take
+  precedence over the English-only POSIX pages (#119554)
+
+* 三 3月 24 2004 Adrian Havill <havill@redhat.com> 1.5m2-5
+- force use of /usr/bin/gunzip and not /bin/gunzip for compatibility
+  with rescue environments (#118087)
+- add POSIX sections to MANSECT in man.config, giving preference to the
+  POSIX pages over the non-POSIX
+
+* 五 3月 12 2004 Adrian Havill <havill@redhat.com> 1.5m2-4
+- direct nroff stderr to /dev/null so no broken pipe err msgs appear
+  when the user quits an error page prior to the full display (#117463)
+- removed bogus whatis search-n-destroy trigger (#117961)
+- don't complain about no lang resource when lang is C/POSIX (#108934)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 09 2004 Adrian Havill <havill@redhat.com> 1.5m2-2
+- add all locale man pages
+- convert all msgs and manpages to utf-8
+- downconvert via transliteration C locale man pages just in case
+- patch #3, #8, #10, #17, #29, #31 no longer needed-- made it upstream
+- patch #9, #14 and #19 now superfluous-- strs already termed and len checked
+- disable patch #22: defer cat creation to existence of dir, not conf directive
+- patch #32 mostly merged upstream. Keep the "-a" in grep though so all
+  locales' grep see man pages as text not binary (patch 37)
+- iconv patch no longer needed now that utf-8-to-legacy conversion is not
+  needed
+- patch #52 and #53 not needed: CJK all point to nroff instead of groff, let
+  the nroff script decide, based on the charset of the environment and/or the
+  charset of the man page, as to what parameters to pass to groff (and
+  whether iconv preprocessing is necessary)
+- the string "NROFF_OLD_CHARSET", if present in the man.config for the NROFF
+  path, will now be replaced by the old character set so that nroff can figure
+  out what the character set/encoding is
+- fix man to reflect status codes returned by forked child processes (#115204)
+- lots of makewhatis changes: re-add custom rh client stuff (/usr/bin vs
+  /usr/sbin), -o option, /var/cache/man, utf-8 verification, convert the
+  encoding spaghetti in the makewhatis awk script to UTF-8, identify languages
+  in comments
+
+* 四 10月 09 2003 Adrian Havill <havill@redhat.com> 1.5k-12
+- restore russian locale (#81929)
+- force utf locale with jnroff (#105764)
+- don't let awk in makewhatis scan files that aren't man pages (#105594)
+
+* 三 10月 01 2003 Adrian Havill <havill@redhat.com> 1.5k-11
+- Use UTF-8 in makewhatis when searching for non-English versions of the
+  phrase "NAME" in man pages
+- add "-o" option to makeis to specify an alternate whatis db location
+- move makewhatis from /sbin to /usr/bin, chmod o+x it as the whatis db is
+  writable only by root anyway
+
+* 三 8月 20 2003 Adrian Havill <havill@redhat.com> 1.5k-10
+- added auto-detect for utf8 and conversion to allow gripes() and others
+  to correctly output to some charsets (#88605)
+
+* 五 8月 08 2003 Adrian Havill <havill@redhat.com> 1.5k-9
+- cleaned up apropos script bugs (#97006)
+- merged all apropos changes into one cleaner patch
+- fix the search/replace for man.conf
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 22 2003 Jeremy Katz <katzj@redhat.com> 1.5k-7
+- fix build with gcc 3.3
+
+* 一 2月 10 2003 Adrian Havill <havill@redhat.com> 1.5k-6
+- added patch for korean (#83934)
+
+* 四 2月 06 2003 Adrian Havill <havill@redhat.com> 1.5k-5
+- marked man.config as noreplace config (#82088)
+- moved man.config from /usr/share to /etc even though +fhs (#81964)
+- removed bad argcat patch which made bogus grep queries (#82684)
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 1月 13 2003 Adrian Havill <havill@redhat.com> 1.5k-2
+- bump version from j to k
+- adjust patches to reflect upstream integration
+
+* 三 1月 08 2003 Adrian Havill <havill@redhat.com> 1.5j-16
+- require groff 1.18 because prev vers don't have -c getopt (#77847)
+- added /usr/local/share/man to MANPATH (#65467)
+
+* 一 1月 06 2003 Adrian Havill <havill@redhat.com> 1.5j-14
+- don't run trojan sh cmd that have unsafe chars munged (#79289)
+- made apropos command more robust (#62606)
+
+* 二 12月 10 2002 Joe Orton <jorton@redhat.com> 1.5j-13
+- include makewhatis.8 (#65511)
+
+* 五 11月 22 2002 Tim Powers <timp@redhat.com>
+- remove unpackaged files from the buildroot
+
+* 二 9月 03 2002 Karsten Hopp <karsten@redhat.de> 1.5j-11
+- fix segfault when running  'man --' (#73212)
+
+* 一 9月 02 2002 Bill Nottingham <notting@redhat.com> 1.5j-10
+- use nroff -c
+
+* 五 7月 12 2002 Phil Knirsch <pknirsch@redhat.com> 1.5j-9
+- Changed output of groff to latin1 instead of utf8 as utf8 seems to be broken
+  ATM.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 1.5j-8
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com> 1.5j-7
+- automated rebuild
+
+* 一 3月 25 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.5j-6
+- Fix bugs #60676 and #61105
+- Add /usr/local/man and /usr/X11R6/man to makewhatis default paths
+
+* 二 2月 26 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.5j-5
+- Fix up filename quoting in makewhatis (#60289)
+
+* 一 2月 25 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.5j-3
+- Fix bugs #60131, #60088
+- Don't send makewhatis output to /dev/tty (#60285)
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 11月 22 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5j-1
+- Update to 1.5j
+
+* 五 8月 31 2001 Trond Eivind Glomsrød <teg@redhat.com> 1.5i2-6
+- set LC_CTYPE, not just LC_MESSAGES. That way, the messages 
+  requested can also be displayed (#52978)
+
+* 一 8月 20 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i2-5
+- Make sure the trigger exits cleanly (#51940)
+
+* 三 7月 18 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i2-4
+- Don't create warnings on fresh installs
+
+* 二 7月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i2-3
+- Restore /var/cache/man directories even if we've built without usecache.
+  This allows users to enable catman caching manually (#48762) and shuts
+  up tmpwatch (#47784 and its 1000 duplicates)
+
+* 二 7月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i2-2
+- Fix makewhatis interoperability with gawk 3.1.x (#46405)
+- Fix initial creation of whatis database if makewhatis is run with "-u"
+  even then (e.g. by cron) (#45646)
+- Fix #45827
+- Require current mktemp (#43134)
+- Fix #42915
+- Fix paths on old distributions (#42031)
+
+* 日 6月 24 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i2-1
+- 1.5i2
+
+* 四 6月 07 2001 Harald Hoyer <harald@redhat.de> 1.5i-9
+- Some fixes for secure pathnames
+- remove cache directories
+- remove sgid
+- fixed man.1 to refer to man.config(5)
+- fixed makewhatis
+
+* 四 5月 31 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i-8
+- Some fixes to legacy path support
+
+* 一 5月 28 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i-7
+- Fix up another buffer overrun (#42450)
+- Add "`" and "$(" to the list of illegal filename parts in makewhatis (#42450)
+- Add a define toggle to build 5.x and 6.x errata correctly (#42031, #42192)
+-
+
+* 四 5月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i-6
+- Fix up potential GID man -> root exploit (#41805)
+
+* 四 5月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i-5
+- Fix up support for UTF-8 locales (#39139)
+
+* 日 5月 13 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i-4
+- More workarounds for "detecting" stuff that isn't in the build roots
+
+* 日 5月 06 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i-3
+- Fix up makewhatis (#39217)
+
+* 一 4月 30 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i-2
+- break the configure script. We want man to use less even though it
+  can't be found at build time.
+
+* 二 4月 24 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.5i-1
+- 1.5i (Fixes #23258, #31805, #33276)
+- Fix apropos and whatis for pages that contain non-ascii characters (#21619)
+- Look for legacy whatis databases in $manpath (#33897)
+
+* 日 2月 04 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Require findutils for makewhatis (Bug #25615)
+
+* 五 1月 19 2001 Jeff Johnson <jbj@redhat.com>
+- Use PreReq: not Requires(post,preun).
+
+* 一 1月 08 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- s/Prereq/Requires(post,preun)/ (this should fix #22775)
+
+* 五 12月 29 2000 Bill Nottngham <notting@redhat.com>
+- tweak prereqs
+
+* 一 12月 18 2000 Yukihiro Nakai <ynakai@redhat.com>
+- Add Japanese patches.
+
+* 一 12月 11 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Requires(preun,post) fileutils
+
+* 四 10月 19 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix yet another security problem (MANSECT overrun), Bug #19351
+
+* 四 10月 12 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix trailing garbage when a man page doesn't end with a newline (Bug #9026)
+- Look for files in other man directories if the first match isn't
+  accessible (Bug #10254)
+
+* 一 10月 09 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Move whatis database to {cache}/whatis to allow read-only /usr
+  filesystems (Bug #18383)
+- Don't use predictable filenames in makewhatis (not reported, spotted while
+  fixing 18383)
+
+* 三 10月 04 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add internationalization support, based on patch from noa@noa.tm (Bug #7680)
+
+* 三 8月 23 2000 Tim Powers <timp@redhat.com>
+- fix bad man path for makewhatis in bug #16754
+
+* 二 8月 15 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up .so handling in some odd cases (Bug #16171)
+
+* 五 8月 04 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up the fix for #14278, this fixes #11621 as well.
+
+* 四 7月 27 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Get rid of random <AD>s (Bug #14278, thanks, Tim)
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 五 6月 30 2000 Bill Nottingham <notting@redhat.com>
+- makewhatis makes predicatable filenames in /tmp. Bad.
+
+* 一 6月 12 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- gzip the man pages manually - since file doesn't recognize them as
+  man pages, the build root policy doesn't do it (Bug #12015)
+
+* 二 5月 16 2000 Preston Brown <pbrown@redhat.com>
+- default man path is now {_mandir}.  /usr/man maintained for compat.
+- remove +sgid option to allow builds as a normal user.  SPEC file maintains
+  proper permissions.
+
+* 五 3月 03 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add kerberos man paths to man.config (Bug #11168 + extra fixes)
+
+* 二 2月 29 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.5h1 - this has a better fix for the security problems.
+- remove manpath patch (now in base)
+- remove loop patch (now in base)
+
+* 一 2月 28 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix security problems related to buffer overruns caused by oversized
+  enviroment variables
+
+* 四 2月 03 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- deal with rpm gziping man pages
+- fix file locking (Bug #8947)
+
+* 一 9月 13 1999 Bill Nottingham <notting@redhat.com>
+- strip man2html
+
+* 五 9月 10 1999 Cristian Gafton <gafton@redhat.com>
+- revert to latin1 instead of ascii
+
+* 三 6月 16 1999 Cristian Gafton <gafton@redhat.com>
+- fixed man2html loop on terminfo.5 (patrch from the author; #3316)
+
+* 一 5月 10 1999 Michael K. Johnson <johnsonm@redhat.com>
+- fixed #2532 by adding /usr/local/sbin as a MANPATH_MAP
+
+* 五 4月 09 1999 Michael K. Johnson <johnsonm@redhat.com>
+- cron.weekly rebuilds, cron.daily updates in minimal time
+
+* 五 4月 09 1999 Preston Brown <pbrown@redhat.com>
+- man 1.5g bugfix release
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 5)
+
+* 四 2月 18 1999 Jeff Johnson <jbj@redhat.com>
+- add manpath symlinks (#1138).
+
+* 五 2月 12 1999 Michael Maher <mike@redhat.com>
+- fixed bug #792
+- added man2html files
+
+* 二 12月 29 1998 Cristian Gafton <gafton@redhat.com>
+- build for 6.0
+- upgraded to 1.5e
+- properly buildrooted
+
+* 四 8月 13 1998 Jeff Johnson <jbj@redhat.com>
+- enable fsstnd organization
+- change /var/catman/X11 to X11R6
+- post/preun to clean up cat litter
+
+* 二 6月 02 1998 Prospector System <bugs@redhat.com>
+- translations modified for de
+
+* 二 6月 02 1998 Erik Troan <ewt@redhat.com>
+- you can't do free(malloc(10) + 4) <sigh>
+
+* 三 5月 06 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded to 1.5d
+
+* 五 4月 24 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 4月 10 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 1.5a
+
+* 日 10月 19 1997 Erik Troan <ewt@redhat.com>
+- uses a build root
+
+* 一 9月 22 1997 Erik Troan <ewt@redhat.com>
+- updated to man-1.4j, which fixes some security problems; release 1 is
+  for RH 4.2, release 2 is for glibc
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 二 3月 25 1997 Erik Troan <ewt@redhat.com>
+- Added /usr/lib/perl5/man to default manpath
+

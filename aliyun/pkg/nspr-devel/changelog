@@ -1,0 +1,226 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.10.2-1.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 4.10.2-1.1
+- rebuild for alios6-update
+
+* 三 11月 27 2013 Elio Maldonado <emaldona@redhat.com> - 4.10.0-2
+- Rebase to nspr-4.10.2
+- Resolves: rhbz#1032485 - CVE-2013-5607 (MFSA 2013-103) Avoid unsigned integer wrapping in PL_ArenaAllocate (MFSA 2013-103)
+
+* 六 9月 07 2013 Elio Maldonado <emaldona@redhat.com> - 4.10.0-1
+- Update Version to 4.10.0 to prevent Mozilla apps update problems as
+- reported and fixed on https://bugzilla.redhat.com/show_bug.cgi?id=981166
+- Resolves: rhbz#1002643 - Rebase RHEL 6 to NSPR 4.10 (for FF 24.x)
+
+* 四 9月 05 2013 Elio Maldonado <emaldona@redhat.com> - 4.9.5-4
+- Rebase to nspr-4.10
+- Resolves: rhbz#1002643 - Rebase RHEL 6 to NSPR 4.10 (for FF 24.x)
+
+* 五 8月 23 2013 Elio Maldonado <emaldona@redhat.com> - 4.9.5-3
+- Bump the release tag so it's higher than the one for rhel-6.4.z
+- Resolves: rhbz#919180 - Rebase to nspr-4.9.5
+
+* 五 3月 22 2013 Elio Maldonado <emaldona@redhat.com> - 4.9.5-2
+- Add upstream URL for an existing patch per packaging guidelines
+- Sync up the release tags
+
+* 五 3月 22 2013 Elio Maldonado <emaldona@redhat.com> - 4.9.5-1
+- Resolves: rhbz#919180 - Rebase to nspr-4.9.5
+
+* 五 10月 12 2012 Elio Maldonado <emaldona@redhat.com> - 4.9.2-1
+- Update to nspr-4.9.2
+- Related: rhbz#863286
+
+* 三 7月 11 2012 Elio Maldonado <emaldona@redhat.com> - 4.9.1-4
+- Related: rhbz#833149 - Update License to MPLv2.0
+
+* 五 6月 22 2012 Elio Maldonado <emaldona@redhat.com> - 4.9.1-3
+- Resolves: rhbz#833149 - Prevent multilib regressions
+
+* 四 6月 21 2012 Elio Maldonado <emaldona@redhat.com> - 4.9.1-2
+- Resolves: rhbz#833149 - remove unwanted changes to nspr.pc
+
+* 三 6月 20 2012 Elio Maldonado <emaldona@redhat.com> - 4.9.1-1
+- Resolves: rhbz#833149 - Update to NSPR_4_9_1_RTM
+
+* 四 3月 01 2012 Elio Maldonado <emaldona@redhat.com> - 4.9-1
+- Resolves: rhbz#799193 - Update to 4.9
+
+* 三 1月 18 2012 Elio Maldonado <emaldona@redhat.com> - 4.8.9-2
+- Related: Bug 744069 - Avoid %post/un shell invocations and dependencies.
+
+* 三 1月 18 2012 elio maldonado <emaldona@redhat.com> - 4.8.9-1
+- Resolves: Bug 744069 - Rebase nspr to 4.8.9 or higher
+
+* 五 7月 22 2011 Elio Maldonado <emaldona@redhat.com> - 4.8.8-3
+- Add partial RELRO support as a security enhancement
+
+* 一 7月 18 2011 Elio Maldonado <emaldona@redhat.com> - 4.8.8-2
+- Run the nspr test suite in the %check section
+
+* 一 7月 11 2011 Elio Maldonado <emaldona@redhat.com> - 4.8.8-1
+- Update to 4.8.8
+
+* 一 1月 17 2011 Elio Maldonado <emaldona@redhat.com> - 4.8.7-1
+- Update to 4.8.7
+
+* 二 8月 24 2010 Kai Engert <kaie@redhat.com> - 4.8.6-1
+- update to 4.8.6
+
+* 三 5月 12 2010 Elio Maldonado <emaldona@redhat.com> - 4.8.4-2
+- Don't call free when unloading the library on s390x
+
+* 二 2月 23 2010 Elio Maldonado <emaldona@redhat.com> - 4.8.4-1
+- Update to 4.8.4
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 4.8.2-1.1
+- Rebuilt for RHEL 6
+
+* 二 10月 13 2009 Kai Engert <kaie@redhat.com> - 4.8.2-1
+- update to 4.8.2
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 6月 30 2009 Christopher Aillon <caillon@redhat.com> 4.8-1
+- update to 4.8
+
+* 五 6月 05 2009 Kai Engert <kaie@redhat.com> - 4.7.4-2
+- update to 4.7.4
+
+* 三 3月 04 2009 Kai Engert <kaie@redhat.com> - 4.7.3-5
+- add a workaround for bug 487844
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.7.3-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 12月 03 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 4.7.3-3
+- Rebuild for pkgconfig
+
+* 三 11月 19 2008 Kai Engert <kaie@redhat.com> - 4.7.3-2
+- update to 4.7.3
+
+* 四 10月 23 2008 Kai Engert <kaie@redhat.com> - 4.7.2-2
+- update to 4.7.2
+
+* 四 10月 09 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4.7.1-5
+- forgot to cvs add patch... whoops. :/
+
+* 四 10月 09 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 4.7.1-4
+- properly handle sparc64 in nspr code
+
+* 二 9月 30 2008 Dennis Gilmore <dennis@ausil.us> - 4.7.1-3
+- add sparc64 to the list of 64 bit arches
+
+* 一 6月 02 2008 Kai Engert <kengert@redhat.com> - 4.7.1-2
+- Update to 4.7.1
+
+* 四 3月 20 2008 Jesse Keating <jkeating@redhat.com> - 4.7.0.99.2-2
+- Drop the old obsoletes/provides that aren't needed anymore.
+
+* 一 3月 17 2008 Kai Engert <kengert@redhat.com> - 4.7.0.99.2-1
+- Update to NSPR_4_7_1_BETA2
+
+* 二 2月 26 2008 Kai Engert <kengert@redhat.com> - 4.7.0.99.1-2
+- Addressed cosmetic review comments from bug 226202
+
+* 五 2月 22 2008 Kai Engert <kengert@redhat.com> - 4.7.0.99.1-1
+- Update to NSPR 4.7.1 Beta 1
+- Use /usr/lib{64} as devel libdir, create symbolic links.
+
+* 六 2月 09 2008 Kai Engert <kengert@redhat.com> - 4.7-1
+- Update to NSPR 4.7
+
+* 四 1月 24 2008 Kai Engert <kengert@redhat.com> - 4.6.99.3-1
+* NSPR 4.7 beta snapshot 20080120
+
+* 一 1月 07 2008 Kai Engert <kengert@redhat.com> - 4.6.99-2
+- move .so files to /lib
+
+* 三 11月 07 2007 Kai Engert <kengert@redhat.com> - 4.6.99-1
+- NSPR 4.7 alpha
+
+* 二 8月 28 2007 Kai Engert <kengert@redhat.com> - 4.6.7-3
+- Updated license tag
+
+* 五 7月 06 2007 Kai Engert <kengert@redhat.com> - 4.6.7-2
+- Update to 4.6.7
+
+* 五 7月 06 2007 Kai Engert <kengert@redhat.com> - 4.6.6-2
+- Update thread-cleanup patch to latest upstream version
+- Add upstream patch to support PR_STATIC_ASSERT
+
+* 三 3月 07 2007 Kai Engert <kengert@redhat.com> - 4.6.6-1
+- Update to 4.6.6
+- Adjust IPv6 patch to latest upstream version
+
+* 六 2月 24 2007 Kai Engert <kengert@redhat.com> - 4.6.5-2
+- Update to latest ipv6 upstream patch
+- Add upstream patch to fix a thread cleanup issue
+- Now requires pkgconfig
+
+* 一 1月 22 2007 Wan-Teh Chang <wtchang@redhat.com> - 4.6.5-1
+- Update to 4.6.5
+
+* 二 1月 16 2007 Kai Engert <kengert@redhat.com> - 4.6.4-2
+- Include upstream patch to fix ipv6 support (rhbz 222554)
+
+* 二 11月 21 2006 Kai Engert <kengert@redhat.com> - 4.6.4-1
+- Update to 4.6.4
+
+* 四 9月 14 2006 Kai Engert <kengert@redhat.com> - 4.6.3-1
+- Update to 4.6.3
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 4.6.2-1.1
+- rebuild
+
+* 五 5月 26 2006 Kai Engert <kengert@redhat.com> - 4.6.2-1
+- Update to 4.6.2
+- Tweak nspr-config to be identical on all platforms.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 4.6.1-2.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 4.6.1-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 1月 05 2006 Kai Engert <kengert@redhat.com> 4.6.1-2
+- Do not use -ansi when compiling, because of a compilation
+  problem with latest glibc and anonymous unions.
+  See also bugzilla.mozilla.org # 322427.
+
+* 三 1月 04 2006 Kai Engert <kengert@redhat.com>
+- Add an upstream patch to fix gcc visibility issues.
+
+* 二 1月 03 2006 Christopher Aillon <caillon@redhat.com>
+- Stop shipping static libraries; NSS and dependencies no longer
+  require static libraries to build.
+
+* 四 12月 15 2005 Christopher Aillon <caillon@redhat.com> 4.6.1-1
+- Update to 4.6.1
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 7月 15 2005 Christopher Aillon <caillon@redhat.com> 4.6-4
+- Use the NSPR version numbering scheme reported by NSPR,
+  which unfortunately is not exactly the same as the real
+  version (4.6 != 4.6.0 according to RPM and pkgconfig).
+
+* 五 7月 15 2005 Christopher Aillon <caillon@redhat.com> 4.6-3
+- Correct the CFLAGS reported by pkgconfig
+
+* 二 7月 12 2005 Christopher Aillon <caillon@redhat.com> 4.6-2
+- Temporarily include the static libraries allowing nss and 
+  its dependencies to build.
+
+* 二 7月 12 2005 Christopher Aillon <caillon@redhat.com> 4.6-1
+- Update to NSPR 4.6
+
+* 三 4月 20 2005 Christopher Aillon <caillon@redhat.com> 4.4.1-2
+- NSPR doesn't have make install, but it has make real_install.  Use it.
+
+* 四 4月 14 2005 Christopher Aillon <caillon@redhat.com> 4.4.1-1
+- Let's make an RPM.
+

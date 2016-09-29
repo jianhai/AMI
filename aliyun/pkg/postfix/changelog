@@ -1,0 +1,524 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:2.6.6-2.2.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:2.6.6-2.2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:2.6.6-2.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2:2.6.6-2.2.1
+- rebuild for alios6
+
+* 四 5月 12 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2:2.6.6-2.2
+- fix CVE-2011-1720 (#704136)
+  Resolves: rhbz#704136
+
+* 三 3月 09 2011 Jaroslav Škarvada <jskarvad@redhat.com> - 2:2.6.6-2.1
+- fix CVE-2011-0411 (#682978)
+
+* 三 5月 26 2010 Miroslav Lichvar <mlichvar@redhat.com> 2:2.6.6-2
+- compile with -fno-strict-aliasing (#594307)
+
+* 二 5月 04 2010 Miroslav Lichvar <mlichvar@redhat.com> 2:2.6.6-1
+- update to 2.6.6 (#588781)
+- move sasl config to /etc/sasl2 (#574439)
+- drop sasl v1 support
+- require Date::Calc for pflogsumm (#588726)
+
+* 三 1月 27 2010 Miroslav Lichvar <mlichvar@redhat.com> 2:2.6.5-5
+- fix init script LSB compliance (#557756)
+
+* 五 1月 08 2010 Miroslav Lichvar <mlichvar@redhat.com> 2:2.6.5-3
+- start service by default (#529686)
+
+* 三 9月 16 2009 Tomas Mraz <tmraz@redhat.com> - 2:2.6.5-2
+- use password-auth common PAM configuration instead of system-auth
+
+* 二 9月 01 2009 Miroslav Lichvar <mlichvar@redhat.com> 2:2.6.5-1
+- update to 2.6.5
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 2:2.6.2-3
+- rebuilt with new openssl
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:2.6.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 6月 18 2009 Miroslav Lichvar <mlichvar@redhat.com> 2:2.6.2-1
+- update to 2.6.2
+
+* 二 5月 26 2009 Miroslav Lichvar <mlichvar@redhat.com> 2:2.6.1-1
+- update to 2.6.1
+- move non-config files out of /etc/postfix (#490983)
+- fix multilib conflict in postfix-files (#502211)
+- run chroot-update script in init script (#483186)
+- package examples (#251677)
+- provide all alternatives files
+- suppress postfix output in post script
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:2.5.6-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 23 2009 Miroslav Lichvar <mlichvar@redhat.com> 2:2.5.6-2
+- rebuild for new mysql
+
+* 四 1月 22 2009 Miroslav Lichvar <mlichvar@redhat.com> 2:2.5.6-1
+- update to 2.5.6 (#479108)
+- rebuild /etc/aliases.db only when necessary (#327651)
+- convert doc files to UTF-8
+
+* 四 11月 20 2008 Miroslav Lichvar <mlichvar@redhat.com> 2:2.5.5-2
+- enable Large file support on 32-bit archs (#428996)
+- fix mailq(1) and newaliases(1) man pages (#429501)
+- move pflogsumm and qshape to -perl-scripts subpackage (#467529)
+- update pflogsumm to 1.1.1
+- fix large-fs patch
+- drop open_define patch
+- add -Wno-comment to CFLAGS
+
+* 三 9月 17 2008 Thomas Woerner <twoerner@redhat.com> 2:2.5.5-1
+- new version 2.5.5
+  fixes CVE-2008-2936, CVE-2008-2937 and CVE-2008-3889 (rhbz#459101)
+
+* 四 8月 28 2008 Tom "spot" Callaway <tcallawa@redhat.com> 2:2.5.1-4
+- fix license tag
+
+* 四 8月 14 2008 Thomas Woerner <twoerner@redhat.com> 2:2.5.1-3
+- fixed postfix privilege problem with symlinks in the mail spool directory
+  (CVE-2008-2936) (rhbz#459101)
+
+* 三 3月 12 2008 Thomas Woerner <twoerner@redhat.com> 2:2.5.1-2
+- fixed fix for enabling IPv6 support (rhbz#437024)
+- added new postfix data directory (rhbz#437042)
+
+* 四 2月 21 2008 Thomas Woerner <twoerner@redhat.com> 2:2.5.1-1
+- new verison 2.5.1
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2:2.4.6-3
+- Autorebuild for GCC 4.3
+
+* 四 12月 06 2007 Release Engineering <rel-eng at fedoraproject dot org> - 2.4.6-2
+- Rebuild for deps
+
+* 三 11月 28 2007 Thomas Woerner <twoerner@redhat.com> 2:2.4.6-1
+- new verison 2.4.6
+- added virtual server(smtp) provide (rhbz#380631)
+- enabling IPv6 support (rhbz#197105)
+- made the MYSQL and PGSQL defines overloadable as build argument
+
+* 三 11月 07 2007 Thomas Woerner <twoerner@redhat.com> 2:2.4.5-3
+- fixed multilib conflict for makedefs.out: rename to makedefs.out-x86_64
+  (rhbz#342941)
+- enabled mysql support
+
+* 四 10月 04 2007 Thomas Woerner <twoerner@redhat.com> 2:2.4.5-2
+- made init script lsb conform (#243286, rhbz#247025)
+- added link to postfix sasl readme into Postfix-SASL-RedHat readme
+
+* 一 8月 13 2007 Thomas Woerner <twoerner@redhat.com> 2:2.4.5-1
+- new version 2.4.5
+- fixed compile proplem with glibc-2.6.90+
+
+* 五 6月 15 2007 Thomas Woerner <twoerner@redhat.com> 2:2.4.3-3
+- added missing epoch in requirement of pflogsumm sub package
+
+* 四 6月 14 2007 Thomas Woerner <twoerner@redhat.com> 2:2.4.3-2
+- diabled mysql support again (rhbz#185515)
+- added support flag for PostgreSQL build (rhbz#180579)
+  Ben: Thanks for the patch
+- Fixed remaining rewiew problems (rhbz#226307)
+
+* 二 6月 05 2007 Thomas Woerner <twoerner@redhat.com> 2:2.4.3-1
+- allow to build without LDAP but SASL2 support (rhbz#216792)
+
+* 二 6月 05 2007 Thomas Woerner <twoerner@redhat.com> 2:2.4.3-1
+- new stable version 2.4.3
+- enabled mysql support (rhbz#185515)
+- dropped build requirements for gawk, ed and sed
+
+* 二 1月 23 2007 Thomas Woerner <twoerner@redhat.com> 2:2.3.6-1
+- new version 2.3.6
+- limiting SASL mechanisms to plain login for sasl with saslauthd (#175259)
+- dropped usage of ed in the install stage
+
+* 二 11月 07 2006 Thomas Woerner <twoerner@redhat.com> 2:2.3.4-1
+- new version 2.3.4
+
+* 五 9月 01 2006 Thomas Woerner <twoerner@redhat.com> 2:2.3.3-2
+- fixed upgrade procedure (#202357)
+
+* 五 9月 01 2006 Thomas Woerner <twoerner@redhat.com> 2:2.3.3-1
+- new version 2.3.3
+- fixed permissions of TLS_LICENSE file
+
+* 五 8月 18 2006 Jesse Keating <jkeating@redhat.com> - 2:2.3.2-2
+- rebuilt with latest binutils to pick up 64K -z commonpagesize on ppc*
+  (#203001)
+
+* 一 7月 31 2006 Thomas Woerner <twoerner@redhat.com> 2:2.3.2-1
+- new version 2.3.2 with major upstream fixes:
+  - corrupted queue file after a request to modify a short message header
+  - panic after spurious Milter request when a client was rejected
+  - maked the Milter more tolerant for redundant "data cleanup" requests
+- applying pflogsumm-conn-delays-dsn-patch from postfix tree to pflogsumm
+
+* 五 7月 28 2006 Thomas Woerner <twoerner@redhat.com> 2:2.3.1-1
+- new version 2.3.1
+- fixes problems with TLS and Milter support
+
+* 二 7月 25 2006 Thomas Woerner <twoerner@redhat.com> 2:2.3.0-2
+- fixed SASL build (#200079)
+  thanks to Kaj J. Niemi for the patch
+
+* 一 7月 24 2006 Thomas Woerner <twoerner@redhat.com> 2:2.3.0-1
+- new version 2.3.0
+- dropped hostname-fqdn patch
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2:2.2.10-2.1
+- rebuild
+
+* 三 5月 10 2006 Thomas Woerner <twoerner@redhat.com> 2:2.2.10-2
+- added RELRO security protection
+
+* 二 4月 11 2006 Thomas Woerner <twoerner@redhat.com> 2:2.2.10-1
+- new version 2.2.10
+- added option LDAP_DEPRECATED to support deprecated ldap functions for now
+- fixed build without pflogsumm support (#188470)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2:2.2.8-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2:2.2.8-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 24 2006 Florian Festi <ffesti@redhat.com> 2:2.2.8-1
+- new version 2.2.8
+
+* 二 12月 13 2005 Thomas Woerner <twoerner@redhat.com> 2:2.2.7-1
+- new version 2.2.7
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 11月 11 2005 Thomas Woerner <twoerner@redhat.com> 2:2.2.5-2.1
+- replaced postconf and postalias call in initscript with newaliases (#156358)
+- fixed initscripts messages (#155774)
+- fixed build problems when sasl is disabled (#164773)
+- fixed pre-definition of mailbox_transport lmtp socket path (#122910)
+
+* 四 11月 10 2005 Tomas Mraz <tmraz@redhat.com> 2:2.2.5-2
+- rebuilt against new openssl
+
+* 五 10月 07 2005 Tomas Mraz <tmraz@redhat.com>
+- use include instead of pam_stack in pam config
+
+* 四 9月 08 2005 Thomas Woerner <twoerner@redhat.com> 2:2.2.5-1
+- new version 2.2.5
+
+* 四 5月 12 2005 Thomas Woerner <twoerner@redhat.com> 2:2.2.3-1
+- new version 2.2.3
+- compiling all binaries PIE, dropped old pie patch
+
+* 三 4月 20 2005 Tomas Mraz <tmraz@redhat.com> 2:2.2.2-2
+- fix fsspace on large filesystems (>2G blocks)
+
+* 二 4月 12 2005 Thomas Woerner <twoerner@redhat.com> 2:2.2.2-1
+- new version 2.2.2
+
+* 五 3月 18 2005 Thomas Woerner <twoerner@redhat.com> 2:2.2.1-1
+- new version 2.2.1
+- allow to start postfix without alias_database (#149657)
+
+* 五 3月 11 2005 Thomas Woerner <twoerner@redhat.com> 2:2.2.0-1
+- new version 2.2.0
+- cleanup of spec file: removed external TLS and IPV6 patches, removed 
+  smtp_sasl_proto patch
+- dropped samples directory till there are good examples again (was TLS and
+  IPV6)
+- v2.2.0 fixes code problems: #132798 and #137858
+
+* 五 2月 11 2005 Thomas Woerner <twoerner@redhat.com> 2:2.1.5-5.1
+- fixed open relay bug in postfix ipv6 patch: new version 1.26 (#146731)
+- fixed permissions on doc directory (#147280)
+- integrated fixed fqdn patch from Joseph Dunn (#139983)
+
+* 二 11月 23 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.5-4.1
+- removed double quotes from postalias call, second fix for #138354
+
+* 四 11月 11 2004 Jeff Johnson <jbj@jbj.org> 2:2.1.5-4
+- rebuild against db-4.3.21.
+- remove Requires: db4, the soname linkage dependency is sufficient.
+
+* 四 11月 11 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.5-3.1
+- fixed problem with multiple alias maps (#138354)
+
+* 二 10月 26 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.5-3
+- fixed wrong path for cyrus-imapd (#137074)
+
+* 一 10月 18 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.5-2.2
+- automated postalias call in init script
+- removed postconf call from spec file: moved changes into patch
+
+* 五 10月 15 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.5-2.1
+- removed aliases from postfix-files (#135840)
+- fixed postalias call in init script
+
+* 四 10月 14 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.5-2
+- switched over to system aliases file and database in /etc/ (#117661)
+- new reuires and buildrequires for setup >= 2.5.36-1
+
+* 一 10月 04 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.5-1
+- new version 2.1.5
+- new ipv6 and tls+ipv6 patches: 1.25-pf-2.1.5
+
+* 四 8月 05 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.4-1
+- new version 2.1.4
+- new ipv6 and tls+ipv6 patches: 1.25-pf-2.1.4
+- new pfixtls-0.8.18-2.1.3-0.9.7d patch
+
+* 一 6月 21 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.1-3.1
+- fixed directory permissions in %doc (#125406)
+- fixed missing spool dirs (#125460)
+- fixed verify problem for aliases.db (#125461)
+- fixed bogus upgrade warning (#125628)
+- more spec file cleanup
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 6月 06 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- make sure pflog files have same permissions even if in multiple
+  sub-rpms
+
+* 五 6月 04 2004 Thomas Woerner <twoerner@redhat.com> 2:2.1.1-1
+- new version 2.1.1
+- compiling postfix PIE
+- new alternatives slave for /usr/lib/sendmail
+
+* 三 3月 31 2004 John Dennis <jdennis@redhat.com> 2:2.0.18-4
+- remove version from pflogsumm subpackage, it was resetting the
+  version used in the doc directory, fixes bug 119213
+
+* 二 3月 30 2004 Bill Nottingham <notting@redhat.com> 2:2.0.18-3
+- add %defattr for pflogsumm package
+
+* 二 3月 16 2004 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.18-2
+- fix sendmail man page (again), make pflogsumm a subpackage
+
+* 一 3月 15 2004 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.18-1
+- bring source up to upstream release 2.0.18
+- include pflogsumm, fixes bug #68799
+- include smtp-sink, smtp-source man pages, fixes bug #118163
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.16-14
+- fix bug 74553, make alternatives track sendmail man page
+
+* 二 2月 24 2004 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.16-13
+- remove /etc/sysconfig/saslauthd from rpm, fixes bug 113975
+
+* 三 2月 18 2004 John Dennis <jdennis@porkchop.devel.redhat.com>
+- set sasl back to v2 for mainline, this is good for fedora and beyond,
+  for RHEL3, we'll branch and set set sasl to v1 and turn off ipv6
+
+* 二 2月 17 2004 John Dennis <jdennis@porkchop.devel.redhat.com>
+- revert back to v1 of sasl because LDAP still links against v1 and we can't 
+- bump revision for build
+  have two different versions of the sasl library loaded in one load image at
+  the same time. How is that possible? Because the sasl libraries have different 
+  names (libsasl.so & libsasl2.so) but export the same symbols :-(
+  Fixes bugs 115249 and 111767
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 21 2004 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.16-7
+- fix bug 77216, support snapshot builds
+
+* 二 1月 20 2004 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.16-6
+- add support for IPv6 via Dean Strik's patches, fixes bug 112491
+
+* 二 1月 13 2004 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.16-4
+- remove mysqlclient prereq, fixes bug 101779
+- remove md5 verification override, this fixes bug 113370. Write parse-postfix-files
+  script to generate explicit list of all upstream files with ownership, modes, etc.
+  carefully add back in all other not upstream files, files list is hopefully
+  rock solid now.
+
+* 一 1月 12 2004 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.16-3
+- add zlib-devel build prereq, fixes bug 112822
+- remove copy of resolve.conf into chroot jail, fixes bug 111923
+
+* 二 12月 16 2003 John Dennis <jdennis@porkchop.devel.redhat.com>
+- bump release to build 3.0E errata update
+
+* 六 12月 13 2003 Jeff Johnson <jbj@jbj.org> 2:2.0.16-2
+- rebuild against db-4.2.52.
+
+* 一 11月 17 2003 John Dennis <jdennis@finch.boston.redhat.com> 2:2.0.16-1
+- sync up with current upstream release, 2.0.16, fixes bug #108960
+
+* 四 9月 25 2003 Jeff Johnson <jbj@jbj.org> 2.0.11-6
+- rebuild against db-4.2.42.
+
+* 二 7月 22 2003 Nalin Dahyabhai <nalin@redhat.com> 2.0.11-5
+- rebuild
+
+* 四 6月 26 2003 John Dennis <jdennis@finch.boston.redhat.com>
+- bug 98095, change rmail.postfix to rmail for uucp invocation in master.cf
+
+* 三 6月 25 2003 John Dennis <jdennis@finch.boston.redhat.com>
+- add missing dependency for db3/db4
+
+* 四 6月 19 2003 John Dennis <jdennis@finch.boston.redhat.com>
+- upgrade to new 2.0.11 upstream release
+- fix authentication problems
+- rewrite SASL documentation
+- upgrade to use SASL version 2
+- Fix bugs 75439, 81913 90412, 91225, 78020, 90891, 88131
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 3月 07 2003 John Dennis <jdennis@finch.boston.redhat.com>
+- upgrade to release 2.0.6
+- remove chroot as this is now the preferred installation according to Wietse Venema, the postfix author
+
+* 一 2月 24 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 18 2003 Bill Nottingham <notting@redhat.com> 2:1.1.11-10
+- don't copy winbind/wins nss modules, fixes #84553
+
+* 六 2月 01 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- sanitize rpm scripts a bit
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 六 1月 11 2003 Karsten Hopp <karsten@redhat.de> 2:1.1.11-8
+- rebuild to fix krb5.h issue
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 2:1.1.11-7
+- rebuild
+
+* 五 1月 03 2003 Nalin Dahyabhai <nalin@redhat.com>
+- if pkgconfig knows about openssl, use its cflags and linker flags
+
+* 四 12月 12 2002 Tim Powers <timp@redhat.com> 2:1.1.11-6
+- lib64'ize
+- build on all arches
+
+* 三 7月 24 2002 Karsten Hopp <karsten@redhat.de>
+- make aliases.db config(noreplace) (#69612)
+
+* 二 7月 23 2002 Karsten Hopp <karsten@redhat.de>
+- postfix has its own filelist, remove LICENSE entry from it (#69069)
+
+* 二 7月 16 2002 Karsten Hopp <karsten@redhat.de>
+- fix shell in /etc/passwd (#68373)
+- fix documentation in /etc/postfix (#65858)
+- Provides: /usr/bin/newaliases (#66746)
+- fix autorequires by changing /usr/local/bin/perl to /usr/bin/perl in a
+  script in %doc (#68852), although I don't think this is necessary anymore
+
+* 一 7月 15 2002 Phil Knirsch <pknirsch@redhat.com>
+- Fixed missing smtpd.conf file for SASL support and included SASL Postfix
+  Red Hat HOWTO (#62505).
+- Included SASL2 support patch (#68800).
+
+* 一 6月 24 2002 Karsten Hopp <karsten@redhat.de>
+- 1.1.11, TLS 0.8.11a
+- fix #66219 and #66233 (perl required for %post)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.10-1
+- 1.1.10, TLS 0.8.10
+- Build with db4
+- Enable SASL
+
+* 一 4月 15 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.7-2
+- Fix bugs #62358 and #62783
+- Make sure libdb-3.3.so is in the chroot jail (#62906)
+
+* 一 4月 08 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.7-1
+- 1.1.7, fixes 2 critical bugs
+- Make sure there's a resolv.conf in the chroot jail
+
+* 三 3月 27 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.5-3
+- Add Provides: lines for alternatives stuff (#60879)
+
+* 二 3月 26 2002 Nalin Dahyabhai <nalin@redhat.com> 1.1.5-2
+- rebuild
+
+* 二 3月 26 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.5-1
+- 1.1.5 (bugfix release)
+- Rebuild with current db
+
+* 四 3月 14 2002 Bill Nottingham <notting@redhat.com> 1.1.4-3
+- remove db trigger, it's both dangerous and pointless
+- clean up other triggers a little
+
+* 三 3月 13 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.4-2
+- Some trigger tweaks to make absolutely sure /etc/services is in the
+  chroot jail
+
+* 一 3月 11 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.4-1
+- 1.1.4
+- TLS 0.8.4
+- Move postalias run from %post to init script to work around
+  anaconda being broken.
+
+* 五 3月 08 2002 Bill Nottingham <notting@redhat.com> 1.1.3-5
+- use alternatives --initscript support
+
+* 四 2月 28 2002 Bill Nottingham <notting@redhat.com> 1.1.3-4
+- run alternatives --remove in %preun
+- add various prereqs
+
+* 四 2月 28 2002 Nalin Dahyabhai <nalin@redhat.com> 1.1.3-3
+- adjust the default postfix-files config file to match the alternatives setup
+  by altering the arguments passed to post-install in the %install phase
+  (otherwise, it might point to sendmail's binaries, breaking it rather rudely)
+- adjust the post-install script so that it silently uses paths which have been
+  modified for use with alternatives, for upgrade cases where the postfix-files
+  configuration file isn't overwritten
+- don't forcefully strip files -- that's a build root policy
+- remove hard requirement on openldap, library dependencies take care of it
+- redirect %postun to /dev/null
+- don't remove the postfix user and group when the package is removed
+
+* 三 2月 20 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.3-2
+- listen on 127.0.0.1 only by default (#60071)
+- Put config samples in %{_docdir}/%{name}-%{version} rather than
+  /etc/postfix (#60072)
+- Some spec file cleanups
+
+* 二 2月 19 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.3-1
+- 1.1.3, TLS 0.8.3
+- Fix updating
+- Don't run the statistics cron job
+- remove requirement on perl Date::Calc
+
+* 四 1月 31 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.2-3
+- Fix up alternatives stuff
+
+* 三 1月 30 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.2-2
+- Use alternatives
+
+* 日 1月 27 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.1.2-1
+- Initial Red Hat Linux packaging, based on spec file from
+  Simon J Mudd <sjmudd@pobox.com>
+- Changes from that:
+  - Set up chroot environment in triggers to make sure we catch glibc errata
+  - Remove some hacks to support building on all sorts of distributions at
+    the cost of specfile readability
+  - Remove postdrop group on deletion
+

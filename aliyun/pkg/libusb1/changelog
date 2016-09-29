@@ -1,0 +1,68 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.9-0.6.rc1.2
+- rebuild
+
+* 五 7月 18 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.9-0.6.rc1.1
+- rebuild for alios6-update
+
+* 三 8月 22 2012 Hans de Goede <hdegoede@redhat.com> - 1.0.9-0.6.rc1
+- Don't split bulk transfers unnecessary
+- Resolves: rhbz#830751
+- Don't let disconnect_kernel_driver detach the usbfs driver
+- Resolves: rhbz#820205
+
+* 三 3月 14 2012 Hans de Goede <hdegoede@redhat.com> - 1.0.9-0.5.rc1
+- Add some small error handling fixes
+- Related: rhbz#758094
+
+* 二 1月 17 2012 Hans de Goede <hdegoede@redhat.com> - 1.0.9-0.4.rc1
+- Fix previous changelog entry to refer to the right bug
+- Related: rhbz#758094
+
+* 三 1月 11 2012 Marc-Andre Lureau <marcandre.lureau@redhat.com> 1.0.9-0.3.rc1
+- update to 1.0.9rc1, sync with f16
+- Resolves: rhbz#758094
+
+* 一 9月 28 2009 Jindrich Novy <jnovy@redhat.com> 1.0.3-1
+- update to 1.0.3
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 15 2009 Jindrich Novy <jnovy@redhat.com> 1.0.2-1
+- update to 1.0.2
+
+* 三 5月 13 2009 Jindrich Novy <jnovy@redhat.com> 1.0.1-1
+- update to 1.0.1
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 12月 15 2008 - Bastien Nocera <bnocera@redhat.com> - 1.0.0-1
+- Update to 1.0.0
+
+* 五 11月 21 2008 - Bastien Nocera <bnocera@redhat.com> - 0.9.4-1
+- Update to 0.9.4
+
+* 二 9月 23 2008 Jindrich Novy <jnovy@redhat.com> 0.9.3-0.1
+- update to 0.9.3
+
+* 日 7月 06 2008 - Bastien Nocera <bnocera@redhat.com> - 0.9.1
+- Update to 0.9.1
+
+* 一 5月 26 2008 Jindrich Novy <jnovy@redhat.com> 0.9.0-0.4
+- update to official beta
+
+* 五 5月 23 2008 Jindrich Novy <jnovy@redhat.com> 0.9.0-0.3.gitbef33bb
+- update comment on how the tarball was created
+- use abbreviated git hash within package name to avoid conflicts
+- add to %description that libusb1 is incompatible with libsub-0.1
+
+* 四 5月 22 2008 Jindrich Novy <jnovy@redhat.com> 0.9.0-0.2.gitbef33bb
+- add info on how the snapshot tarball was created
+
+* 三 5月 21 2008 Jindrich Novy <jnovy@redhat.com> 0.9.0-0.1.gitbef33bb
+- use proper version to denote it is a git snapshot
+
+* 四 5月 15 2008 Jindrich Novy <jnovy@redhat.com> 0.9.0-0.1
+- initial packaging
+

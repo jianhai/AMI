@@ -1,0 +1,13 @@
+postinstall scriptlet (using /bin/sh):
+# Do this unconditionally to fix up the initscript's start priority.
+# Earlier versions had an incorrect dependency (bug #487250).
+/sbin/chkconfig --add portreserve
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+  /sbin/service portreserve stop >/dev/null 2>&1
+  /sbin/chkconfig --del portreserve
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+  /sbin/service portreserve condrestart >/dev/null 2>&1
+fi

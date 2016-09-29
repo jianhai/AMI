@@ -1,0 +1,4 @@
+/etc/rc.d/init.d/irqbalance
+/etc/sysconfig/irqbalance
+/usr/sbin/irqbalance
+/usr/share/man/man1/irqbalance.1.gz

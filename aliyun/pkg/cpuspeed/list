@@ -1,0 +1,12 @@
+/etc/rc.d/init.d/cpuspeed
+/etc/sysconfig/cpuspeed
+/usr/sbin/cpuspeed
+/usr/share/doc/cpuspeed-1.5
+/usr/share/doc/cpuspeed-1.5/CHANGES
+/usr/share/doc/cpuspeed-1.5/CONTRIBUTORS
+/usr/share/doc/cpuspeed-1.5/EXAMPLES
+/usr/share/doc/cpuspeed-1.5/FEATURES
+/usr/share/doc/cpuspeed-1.5/README
+/usr/share/doc/cpuspeed-1.5/USAGE
+/usr/share/doc/cpuspeed-1.5/license.txt
+/usr/share/man/man8/cpuspeed.8.gz

@@ -1,0 +1,17 @@
+device-mapper-libs = 1.02.66-6.4.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libdevmapper.so.1.02()(64bit)  
+libdevmapper.so.1.02(Base)(64bit)  
+libudev  
+libudev.so.0()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+udev >= 147-2.18
+util-linux-ng >= 2.15
+rpmlib(PayloadIsXz) <= 5.2-1

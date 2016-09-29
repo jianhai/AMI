@@ -1,0 +1,46 @@
+/bin/awk  
+/bin/bash  
+/bin/egrep  
+/bin/mount  
+/bin/sed  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/chkconfig  
+/sbin/chkconfig  
+/sbin/service  
+/usr/bin/diff  
+checkpolicy  
+config(policycoreutils) = 2.0.83-19.39.2.alios6
+coreutils  
+libaudit.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libdbus-1.so.3()(64bit)  
+libdbus-glib-1.so.2()(64bit)  
+libdl.so.2()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libpam.so.0()(64bit)  
+libpam.so.0(LIBPAM_1.0)(64bit)  
+libpam_misc.so.0()(64bit)  
+libpam_misc.so.0(LIBPAM_MISC_1.0)(64bit)  
+libselinux-utils >= 2.0.90-3
+libselinux.so.1()(64bit)  
+libsemanage.so.1()(64bit)  
+libsemanage.so.1(LIBSEMANAGE_1.0)(64bit)  
+libsepol >= 2.0.41-3
+libsepol.so.1()(64bit)  
+libutil.so.1()(64bit)  
+libutil.so.1(GLIBC_2.2.5)(64bit)  
+rpm  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

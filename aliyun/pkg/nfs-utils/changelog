@@ -1,0 +1,1070 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.2.3-15.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.2.3-15.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:1.2.3-15.1
+- rebuild for alios6
+
+* 五 10月 21 2011 Steve Dickson <steved@redhat.com> 1.2.3-15
+- mout.nfs: Don't roll back to IPv4 whe IPv6 fails (bz 744657)
+- rpcdebug: Added pNFS and FSCache debugging (bz 747400)
+
+* 三 10月 19 2011 Steve Dickson <steved@redhat.com> 1.2.3-14
+- mount.nfs: Backported how upstream handles the SIGXFSZ signal (bz 697981)
+
+* 二 10月 18 2011 Steve Dickson <steved@redhat.com> 1.2.3-13
+- mount.nfs: Reworked the code that deals with RLIMIT_FSIZE (bz 697981)
+
+* 一 9月 19 2011 Steve Dickson <steved@redhat.com> 1.2.3-12
+- Removed the stripping of debugging information from rpcdebug (bz 729001)
+
+* 五 9月 16 2011 Steve Dickson <steved@redhat.com> 1.2.3-11
+- mount.nfs: Fixed problem in mount error verbosity patch (bz 731693)
+
+* 四 9月 15 2011 Steve Dickson <steved@redhat.com> 1.2.3-10
+- mount.nfs: add error verbosity to invalid versions (bz 731693)
+
+* 二 9月 13 2011 Steve Dickson <steved@redhat.com> 1.2.3-9
+- umount.nfs: Got IPV6 unmounts working again (bz 732673)
+- mountd: return multiple hosts exporting the same directory (bz 726112) 
+- mount: Better error message for invalid version (bz 723780)
+
+* 四 8月 11 2011 Steve Dickson <steved@redhat.com> 1.2.3-8
+- initscripts: just try to mount rpc_pipefs always (bz 692702) 
+- Rely on crypto module autoloading in init scripts
+- svcgssd: Document "-n" for svcgssd (bz 697359)
+- mount.nfs: anticipate RLIMIT_FSIZE (bz 697981)
+- exportfs manpage: Ipv6 update (bz 715078)
+- mountd: Stop segfault in mtab code (bz 723438)
+- exportfs: wilcards in exports can lead to unintended mounts (bz 715391)
+- umount: allow spaces in unmount paths (bz 702273)
+- specfile: reordered how libgssglue is linked in (bz 720479)
+
+* 三 4月 20 2011 Steve Dickson <steved@redhat.com> 1.2.3-7
+- Fixed segfault in rpc.svcgssd (bz 698220)
+
+* 三 3月 30 2011 Steve Dickson <steved@redhat.com> 1.2.3-6
+- Added support for AD style kerberos to rpc.gssd (bz 671474)
+- Disabled the installing of the nfsidmap command
+
+* 二 3月 22 2011 Steve Dickson <steved@redhat.com> 1.2.3-5
+- Remove MOUNTD_NFS_V1 from nfs.sysconfig (bz 641291)
+
+* 一 1月 17 2011 Steve Dickson <steved@redhat.com> 1.2.3-4
+- Fixed type in groupadd args for rpcuser (bz 663153)
+
+* 五 1月 14 2011 Steve Dickson <steved@redhat.com> 1.2.3-3
+- Updated to latest upstream release: nfs-utils-1-2-4-rc5 (bz 625080)
+
+* 四 1月 13 2011 Steve Dickson <steved@redhat.com> 1.2.3-1
+- Initscripts changes needed to support NFS over RDMA (bz 631012)
+- Initscripts changes needed for NFS to shutdown cleanly (bz 636513)
+- Initscripts changes needed for rpcbind to be running 
+  when nfs is started (bz 641291)
+
+* 二 9月 28 2010 Steve Dickson <steved@redhat.com> 1.2.3-0
+- Updated to latest upstream release: 1.2.3 (bz 637198)
+
+* 三 8月 25 2010 Steve Dickson <steved@redhat.com> 1.2.2-7
+- When the nfs service is stopped, the RPC svcgssd shutdown fails (bz 627062)
+
+* 一 8月 02 2010 Steve Dickson <steved@redhat.com> 1.2.2-6
+- More initscripts improvement rpcgssd.init and rpcsvcgssd.init (bz 596095)
+
+* 四 7月 22 2010 Steve Dickson <steved@redhat.com> 1.2.2-5
+- Removed the inconsistent default anonuid/anongid values. (bz 566888)
+- Created the rpcuser group (bz 594206)
+
+* 四 6月 03 2010 Steve Dickson <steved@redhat.com> 1.2.2-4
+- Turned off root squashing on pseudo roots (bz 599198)
+
+* 二 5月 25 2010 Steve Dickson <steved@redhat.com> 1.2.2-3
+- Allow mountd to not listen for RPC calls when v2/v3 disabled (bz 538922)
+- Added portmap to init script dependencies (bz 583007)
+- Added in the mount.nfs4 and umount.nfs4 man pages (bz 528951)
+- Did some initscripts improvement (bz 596095)
+- Added error message for an invaild mount option value (bz 588886)
+- Added error message for an invaild proto option value (bz 588879)
+
+* 五 4月 16 2010 Steve Dickson <steved@redhat.com> 1.2.2-2
+- Updated to latest upstream RC release: 1.2.3-rc2 (bz 583137)
+
+* 五 4月 09 2010 Steve Dickson <steved@redhat.com> 1.2.2-1
+- Updated to latest upstream version: 1.2.2 (bz 580528)
+
+* 五 2月 12 2010 Steve Dickson <steved@redhat.com> 1.2.1-11
+- Removed the idmapd.conf man page which is now part
+  of nfs-utils-lib (bz 561504)
+
+* 四 1月 28 2010 Steve Dickson <steved@redhat.com> 1.2.1-10
+- Backed out patch of bz 557704
+
+* 三 1月 27 2010 Steve Dickson <steved@redhat.com> 1.2.1-9
+- mount.nfs: Don't fail mounts when /etc/netconfig is nonexistent
+  (bz 557704)
+
+* 一 1月 25 2010 Steve Dickson <steved@redhat.com> 1.2.1-8
+- statd: Teach nfs_compare_sockaddr() to handle NULL 
+  arguments (bz 558556)
+
+* 四 1月 21 2010 Steve Dickson <steved@redhat.com> 1.2.1-7
+- mount.nfs: Configuration file parser ignoring options
+- mount.nfs: Set the default family for lookups based on 
+    defaultproto= setting
+- Enabled ipv6  (bz 556484)
+
+* 日 1月 17 2010 Steve Dickson <steved@redhat.com> 1.2.1-6
+- Updated to latest upstream RC release: nfs-utils-1-2-2-rc8
+  which includes Ipv6 support for tcpwrapper (disabled by default).
+
+* 六 1月 16 2010 Steve Dickson <steved@redhat.com> 1.2.1-5
+- Updated to latest upstream RC release: nfs-utils-1-2-2-rc7
+  which includes Ipv6 support for statd (disabled by default).
+
+* 四 1月 14 2010 Steve Dickson <steved@redhat.com> 1.2.1-4
+- Updated to latest upstream RC release: nfs-utils-1-2-2-rc6
+  which fixes bz(479362) and contains the upstream pseudo 
+  root release.
+
+* 一 12月 07 2009 Steve Dickson <steved@redhat.com> 1.2.1-3
+- Updated to the latest pseudo root release (rel9).
+- mount.nfs: Retry v4 mounts with v3 on ENOENT error
+
+* 五 11月 20 2009 Steve Dickson <steved@redhat.com> 1.2.1-2
+- Fixed a bug in v4root code that was causing ESTALE mounts
+  (bz 538609)
+
+* 五 11月 13 2009 Steve Dickson <steved@redhat.com> 1.2.1-1
+- Updated to latest upstream release 1.2.1
+- Updated to the latest pseudo root release (rel8).
+- Stop rpc.nfsd from failing to startup when the network
+  is down (bz 532270)
+
+* 一 11月 02 2009 Steve Dickson <steved@redhat.com> 1.2.0-18
+- Reworked and remove some of the Default-Start/Stop stanzas
+  in the init scripts (bz 531425)
+
+* 四 10月 22 2009 Steve Dickson <steved@redhat.com> 1.2.0-17
+- Updated to the latest pseudo root release (rel7).
+- Added upstream 1.2.1-rc7 patch which fixes:
+   - Stop ignoring the -o v4 option (bz 529407)
+   - Allow network protocol roll backs when proto is set
+      in the config file (bz 529864)
+
+* 五 10月 02 2009 Steve Dickson <steved@redhat.com> 1.2.0-16
+- Fixed a whole where '-o v4' was not overriding the
+  version in the conf file.
+
+* 三 9月 30 2009 Steve Dickson <steved@redhat.com> 1.2.0-14
+- Change the nfsmount.conf file to define v3 as the default 
+  protocol version.
+- Make sure versions set on the command line override version
+  set in nfsmount.conf
+- Make version rollbacks still work when versions are set in
+  nfsmount.conf
+
+* 二 9月 29 2009 Steve Dickson <steved@redhat.com> 1.2.0-13
+- Added upstream 1.2.1-rc5 patch
+  - mount.nfs: Support negotiation between v4, v3, and v2
+  - mount.nfs: Keep server's address in nfsmount_info
+  - mount.nfs: Sandbox each mount attempt
+  - mount.nfs: Support negotiation between v4, v3, and v2
+
+* 三 9月 23 2009 Steve Dickson <steved@redhat.com> 1.2.0-12
+- Updated to the latest pseudo root release (rel6).
+
+* 二 9月 15 2009 Steve Dickson <steved@redhat.com> 1.2.0-11
+- Added upstream 1.2.1-rc5 patch
+  - Added --sort --list functionality to nfs-iostat.py
+  - Fixed event handler in idmapd
+  - Added -o v4 support
+  - Disabled IPv6 support in nfsd
+  - Don't give client an empty flavor list
+  - Fixed gssed so it does not blindly caches machine credentials
+
+* 一 8月 17 2009 Steve Dickson <steved@redhat.com> 1.2.0-10
+- Added upstream 1.2.1-rc4 patch
+  - Fix bug when both crossmnt
+  - nfs(5): Add description of lookupcache mount option
+  - nfs(5): Remove trailing blanks
+  - Added nfs41 support to nfssat
+  - Added support for mount to us a configuration file.
+
+* 五 8月 14 2009 Steve Dickson <steved@redhat.com> 1.2.0-9
+- Added upstream 1.2.1-rc3 patch
+  - Add IPv6 support to nfsd
+  - Allow nfssvc_setfds to properly deal with AF_INET6
+  - Convert nfssvc_setfds to use getaddrinfo
+  - Move check for active knfsd to helper function
+  - Declare a static common buffer for nfssvc.c routine
+  - Convert rpc.nfsd to use xlog() and add --debug and --syslog options
+
+* 二 7月 28 2009 Steve Dickson <steved@redhat.com> 1.2.0-8
+- Fixed 4.1 versioning problem (bz 512377)
+
+* 三 7月 15 2009 Steve Dickson <steved@redhat.com> 1.2.0-7
+- Added upstream 1.2.1-rc2 patch
+  - A large number of mount command changes.
+
+* 一 7月 13 2009 Steve Dickson <steved@redhat.com> 1.2.0-6
+- Added NFSD v4 dynamic pseudo root patch which allows
+  NFS v3 exports to be mounted by v4 clients.
+
+* 一 6月 29 2009 Steve Dickson <steved@redhat.com> 1.2.0-5
+- Stopped rpc.idmapd from spinning (bz 508221)
+
+* 一 6月 22 2009 Steve Dickson <steved@redhat.com> 1.2.0-4
+- Added upstream 1.2.1-rc1 patch 
+  - Fix to check in closeall()
+  - Make --enable-tirpc the default
+  - Set all verbose types in gssd daemons
+  - Retry exports if getfh() fails
+
+* 三 6月 10 2009 Steve Dickson <steved@redhat.com> 1.2.0-3
+- Updated init scripts to add dependencies
+  on other system facilities (bz 475133)
+
+* 三 6月 10 2009 Steve Dickson <steved@redhat.com> 1.2.0-2
+- nfsnobody gid is wrong (bz 485379)
+
+* 二 6月 02 2009 Steve Dickson <steved@redhat.com> 1.2.0-1
+- Updated to latest upstream release: 1.2.0
+
+* 二 5月 19 2009 Tom "spot" Callaway <tcallawa@redhat.com> 1.1.6-4
+- Replace the Sun RPC license with the BSD license, with the explicit permission of Sun Microsystems
+
+* 一 5月 18 2009 Steve Dickson <steved@redhat.com> 1.1.6-3
+- Added upstream 1.1.7-rc1 patch 
+  - utils/nfsd: add support for minorvers4
+  - sm-notify: Don't orphan addrinfo structs
+  - sm-notify: Failed DNS lookups should be retried
+  - mount: remove legacy version of nfs_name_to_address()
+  - compiling error in rpcgen
+  - nfs-utils: Fix IPv6 support in support/nfs/rpc_socket.c
+  - umount.nfs: Harden umount.nfs error reportin
+
+* 一 4月 27 2009 Steve Dickson <steved@redhat.com> 1.1.6-2
+- nfslock.init: options not correctly parsed (bz 459591)
+
+* 一 4月 20 2009 Steve Dickson <steved@redhat.com> 1.1.6-1
+- Updated to latest upstream release: 1.1.6
+
+* 一 3月 23 2009 Steve Dickson <steved@redhat.com> 1.1.5-4
+- Added upstream rc3 patch
+  - gssd: initialize fakeseed in prepare_krb5_rfc1964_buffer
+  - gssd: NULL-terminate buffer after read in read_service_info (try #2)
+  - gssd: free buffer allocated by gssd_k5_err_msg
+  - gssd: fix potential double-frees in gssd
+  - Removed a number of warn_unused_result warnings
+
+* 一 3月 16 2009 Steve Dickson <steved@redhat.com> 1.1.5-3
+- Added upstream rc2 patch
+
+* 五 3月 06 2009 Steve Dickson <steved@redhat.com> 1.1.5-2
+- Fixed lockd not using settings in sysconfig/nfs (bz 461043)
+- Fixed some lost externs in the tcpwrapper code
+
+* 四 3月 05 2009 Steve Dickson <steved@redhat.com> 1.1.5-1
+- Updated to latest upstream version: 1.1.5
+
+* 三 3月 04 2009 Steve Dickson <steved@redhat.com> 1.1.4-21
+- configure: fix AC_CACHE_VAL warnings
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.1.4-20
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 18 2009 Steve Dickson <steved@redhat.com> 1.1.4-19
+- Exportfs and rpc.mountd optimalization (bz 76643)
+
+* 二 2月 17 2009 Steve Dickson <steved@redhat.com> 1.1.4-18
+- umount.nfs command: Add an AF_INET6-capable version of nfs_call_unmount()
+- umount.nfs command: Support AF_INET6 server addresses
+- umount command: remove do_nfs_umount23 function
+
+* 二 2月 17 2009 Steve Dickson <steved@redhat.com> 1.1.4-17
+- Integrated the upstream fix for bz 483375
+- mount: segmentation faults on UDP mounts (bz 485448)
+
+* 六 1月 31 2009 Steve Dickson <steved@redhat.com> 1.1.4-16
+- Fixed typo in -mount-textbased.patch (bz 483375)
+
+* 六 1月 31 2009 Steve Dickson <steved@redhat.com> 1.1.4-15
+- Reworked tcp wrapper code to correctly use API (bz 480223)
+- General clean up of tcp wrapper code.
+
+* 二 1月 27 2009 Steve Dickson <steved@redhat.com> 1.1.4-14
+- text-based mount command: make po_rightmost() work for N options
+- text-based mount command: Function to stuff "struct pmap" from mount options
+- text-based mount options: Use new pmap stuffer when	rewriting mount options
+- text-based mount command: fix mount option rewriting logic
+- text-based mount command: support AF_INET6 in rewrite_mount_options()
+
+* 二 1月 20 2009 Steve Dickson <steved@redhat.com> 1.1.4-13
+- mountd: Don't do tcp wrapper check when there are no rules (bz 448898)
+
+* 三 1月 07 2009 Steve Dickson <steved@redhat.com> 1.1.4-12
+- configure: Remove inet_ntop(3) check from configure.ac
+- configure: Add new build option "--enable-tirpc"
+- showmount command: Quiesce warning when TI-RPC is disabled
+
+* 六 1月 03 2009 Steve Dickson <steved@redhat.com> 1.1.4-11
+- Added warnings to tcp wrapper code when mounts are 
+  denied due to misconfigured DNS configurations.
+- gssd: By default, don't spam syslog when users' credentials expire
+- mount: revert recent fix for build problems on old systems
+- mount: use gethostbyname(3) when building on old systems
+- mount: getport: don't use getaddrinfo(3) on old systems
+- mount: Random clean up
+- configure: use "--disable-uuid" instead of	"--without-uuid"
+
+* 五 12月 19 2008 Steve Dickson <steved@redhat.com> 1.1.4-10
+- Re-enabled and fixed/enhanced tcp wrappers.
+
+* 三 12月 17 2008 Steve Dickson <steved@redhat.com> 1.1.4-9
+- text-based mount command: add function to parse numeric mount options
+- text-based mount command: use po_get_numeric() for handling retry
+- sm-notify command: fix a use-after-free bug
+- statd: not unlinking host files
+
+* 四 12月 11 2008 Steve Dickson <steved@redhat.com> 1.1.4-8
+- mount command: AF_INET6 support for probe_bothports()
+- mount command: support AF_INET6 in probe_nfsport() and probe_mntport()
+- mount command: full support for AF_INET6 addresses in probe_port()
+- gssd/svcgssd: add support to retrieve actual context expiration
+- svcgssd: use the actual context expiration for cache
+
+* 六 12月 06 2008 Steve Dickson <steved@redhat.com> 1.1.4-7
+- sm-notify: always exiting without any notification.
+
+* 二 12月 02 2008 Steve Dickson <steved@redhat.com> 1.1.4-6
+- mount command: remove local getport() implementation
+- mount command: Replace clnt_ping() and getport() calls in probe_port()
+- mount command: Use nfs_error() instead of perror()
+- mount command: Use nfs_pmap_getport() in probe_statd()
+
+* 一 12月 01 2008 Steve Dickson <steved@redhat.com> 1.1.4-5
+- Make sure /proc/fs/nfsd exists when the nfs init script
+  does the exports (bz 473396)
+- Fixed typo in nfs init script that caused rpc.rquotad daemons
+  to be started but not stoppped (bz 473929)
+
+* 三 11月 26 2008 Steve Dickson <steved@redhat.com> 1.1.4-4
+- gssd: unblock DNOTIFY_SIGNAL in case it was blocked
+- Ensure statd gets started if required when non-root
+  user mounts an NFS filesystem
+
+* 二 11月 25 2008 Steve Dickson <steved@redhat.com> 1.1.4-3
+- Give showmount support for querying via rpcbindv3/v4
+
+* 二 11月 18 2008 Steve Dickson <steved@redhat.com> 1.1.4-2
+- Add AF_INET6-capable API to acquire an RPC CLIENT
+- Introduce rpcbind client utility functions
+
+* 六 10月 18 2008 Steve Dickson <steved@redhat.com> 1.1.4-1
+- Updated to latest upstream version: 1.1.4
+
+* 二 10月 14 2008 Steve Dickson <steved@redhat.com> 1.1.3-6
+- sm-notify exists when there are no hosts to notify
+
+* 四 9月 18 2008 Steve Dickson <steved@redhat.com> 1.1.3-5
+- Reworked init scripts so service will be able to
+  stop when some of the checks fail. (bz 462508)
+- Pre-load nfsd when args to rpc.nfsd are given (bz 441983)
+
+* 四 8月 28 2008 Steve Dickson <steved@redhat.com> 1.1.3-4
+- Added in a number of up upstream patches (101 thru 110).
+
+* 一 8月 11 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.1.3-3
+- fix license tag
+
+* 四 7月 31 2008 Steve Dickson <steved@redhat.com> 1.1.3-2
+- Mount command did not compile against older glibc versions.
+
+* 一 7月 28 2008 Steve Dickson <steved@redhat.com> 1.1.3-1
+- Updated to latest upstream version: 1.1.3
+
+* 三 7月 02 2008 Steve Dickson <steved@redhat.com> 1.1.2-12
+- Changed the default directories for sm-notify (bz 435480)
+- Added 'condstop' to init scripts so service are not
+  started when nfs-utils is removed.
+
+* 一 6月 30 2008 Dennis Gilmore <dennis@ausil.us> 1.1.2-11
+- add sparc arch handling
+
+* 一 6月 30 2008 Steve Dickson <steved@redhat.com>  1.1.2-10
+- Rebuild for the updated libevent lib.
+
+* 五 6月 27 2008 Steve Dickson <steved@redhat.com>  1.1.2-9
+- Removed the nfslock service start/stop from %post section 
+  (bz 453046)
+
+* 三 6月 25 2008 Steve Dickson <steved@redhat.com>  1.1.2-8
+- FQDNs in the rmtab causes exportfs to seg fault (bz 444275)
+
+* 一 6月 23 2008 Steve Dickson <steved@redhat.com>  1.1.2-7
+- Added -D_FILE_OFFSET_BITS=64 to CFLAGS
+- make nfsstat read and print stats as unsigned integers
+- Added (but not installed) the mountstats and nfs-iostat
+  python scripts.
+
+* 五 6月 06 2008 Steve Dickson <steved@redhat.com>  1.1.2-6
+- Added 5 (111 thru 115) upstream patches that fixed
+  things mostly in the text mounting code.
+
+* 四 5月 08 2008 Steve Dickson <steved@redhat.com>  1.1.2-5
+- Added 10 (101 thru 110) upstream patches that fixed
+  things mostly in the mount and gssd code.
+
+* 三 5月 07 2008 Steve Dickson <steved@redhat.com>  1.1.2-4
+- Added ppc arch to the all_32bit_archs list (bz 442847)
+
+* 三 4月 23 2008 Steve Dickson <steved@redhat.com>  1.1.2-3
+- Documented how to turn off/on protocol support for
+  rpc.nfsd in /etc/sysconfig/nfs (bz443625)
+- Corrected the nfslock initscript 'status' return code (bz 441605)
+- Removed obsolete code from the nfslock initscript (bz 441604)
+
+* 一 4月 14 2008 Steve Dickson <steved@redhat.com>  1.1.2-2
+- Make EACCES a non fatal error (bz 439807)
+
+* 二 3月 25 2008 Steve Dickson <steved@redhat.com>  1.1.2-1
+- Upgrade to nfs-utils-1.1.2
+
+* 一 3月 03 2008 Steve Dickson <steved@redhat.com>  1.1.1-5
+- Stopped mountd from incorrectly logging an error
+  (commit 9dd9b68c4c44f0d9102eb85ee2fa36a8b7f638e3)
+- Stop gssd from ignoring the machine credential caches
+  (commit 46d439b17f22216ce8f9257a982c6ade5d1c5931)
+- Fixed typo in the nfsstat command line arugments.
+  (commit acf95d32a44fd8357c24e8a04ec53fc6900bfc58)
+- Added test to stop buffer overflow in idmapd
+  (commit bcd0fcaf0966c546da5043be700587f73174ae25)
+
+* 六 2月 09 2008 Steve Dickson <steved@redhat.com>  1.1.1-4
+- Cleaned up some typos that were found in the various
+  places in the mountd code
+
+* 四 1月 24 2008 Steve Dickson <steved@redhat.com>  1.1.1-3
+- Added in relatime mount option so mount.nfs stays
+  compatible with the mount command in util-linux-ng (bz 274301)
+
+* 二 1月 22 2008 Steve Dickson <steved@redhat.com>  1.1.1-2
+- Added -S/--since to the nfsstat(1) manpage
+- The wording in the exportfs man page can be a bit confusing, implying
+  that "exportfs -u :/foo" will unexport /foo from all hosts, which it won't
+- Removed nfsprog option since the kernel no longer supports it.
+- Removed mountprog option since the kernel no longer supports it.
+- Stop segfaults on amd64 during warnings messages.
+- Fix bug when both crossmnt and fsid are set.
+
+* 六 1月 05 2008 Steve Dickson <steved@redhat.com>  1.1.1-1
+- Updated to latest upstream release, nfs-utils-1.1.1
+- Added the removal of sm-notify.pid to nfslock init script.
+- Changed spec file to use condrestart instead of condstop
+  when calling init scripts.
+- Fixed typo in rpc.mountd man page 
+- Turn on 'nohide' automatically for all refer exports (bz 313561)
+
+* 二 12月 04 2007 Release Engineering <rel-eng at fedoraproject dot org> - 1.1.0-7
+- Rebuild for openldap bump
+
+* 三 10月 17 2007 Steve Dickson <steved@redhat.com>  1.1.0-6
+- Switch the libgssapi dependency to libgssglue
+
+* 五 9月 14 2007 Steve Dickson <steved@redhat.com>  1.1.0-5
+- Changed the default paths in sm-notify to 
+  /var/lib/nfs/statd (bz 258461)
+- Updated exportfs manpage (bz 262861)
+
+* 三 8月 15 2007 Steve Dickson <steved@redhat.com>  1.1.0-4
+- Make sure the open() system calling in exportfs uses
+  mode bits when creating the etab file (bz 252440).
+
+* 一 8月 13 2007 Steve Dickson <steved@redhat.com>  1.1.0-3
+- Added nosharecache mount option which re-enables
+  rw/ro mounts to the same server (bz 243913).
+
+* 四 8月 02 2007 Steve Dickson <steved@redhat.com>  1.1.0-2
+- Make sure the gss and idmap daemons remove thier lock
+  files when they are stopped.
+
+* 六 7月 28 2007 Steve Dickson <steved@redhat.com>  1.1.0-1
+- Upgraded to the latest upstream version (nfs-utils-1.1.0)
+
+* 四 5月 24 2007 Steve Dickson <steved@redhat.com> 1.0.10-7
+- Fixed typo in mount.nfs4 that causes a segfault during
+  error processing (bz 241190)
+
+* 二 5月 22 2007 Steve Dickson <steved@redhat.com> 1.0.10-6
+- Make sure the condrestarts exit with a zero value (bz 240225)
+- Stopped /etc/sysconfig/nfs from being overwritten on updates (bz 234543)
+- Added -o nordirplus mount option to disable READDIRPLUS (bz 240357)
+- Disabled the FSCache patch, for now...
+
+* 四 5月 10 2007 Steve Dickson <steved@redhat.com> 1.0.12-5
+- Fix mount.nfs4 to display correct error message (bz 227212)
+- Updated mountd and showmount reverse lookup flags (bz 220772)
+- Eliminate timeout on nfsd shutdowns (bz 222001)
+- Eliminate memory leak in mountd (bz 239536)
+- Make sure statd uses correct uid/gid by chowning
+  the /var/lib/nfs/statd with the rpcuser id. (bz 235216)
+- Correct some sanity checking in rpc.nfsd. (bz 220887) 
+- Added missing unlock_mtab() call in moutnd
+- Have mountd hold open etab file to force inode number to change (bz 236823)
+- Create a /etc/sysconfig/nfs with all the possible init script
+  variables (bz 234543)
+- Changed nfs initscript to exit with correct value (bz 221874)
+
+* 二 4月 03 2007 Steve Dickson <steved@redhat.com> 1.0.12-4
+- Replace portmap dependency with an rpcbind dependency (bz 228894)
+
+* 一 3月 12 2007 Steve Dickson <steved@redhat.com> 1.0.12-3
+- Incorporated Merge Review comments (bz 226198)
+
+* 五 3月 09 2007 Steve Dickson <steved@redhat.com> 1.0.12-2
+- Added condstop to all the initscripts (bz 196934)
+- Made no_subtree_check a default export option (bz 212218)
+
+* 二 3月 06 2007 Steve Dickson <steved@redhat.com> 1.0.12-1
+- Upgraded to 1.0.12 
+- Fixed typo in Summary.
+
+* 四 3月 01 2007 Karel Zak <kzak@redhat.com>  1.0.11-2
+- Fixed mount.nfs -f (fake) option (bz 227988)
+
+* 四 2月 22 2007 Steve Dickson <steved@redhat.com> 1.0.11-1
+- Upgraded to 1.0.11
+
+* 三 2月 21 2007 Steve Dickson <steved@redhat.com> 1.0.10-7
+- Added FS_Location support
+
+* 一 12月 18 2006 Karel Zak <kzak@redhat.com> 1.0.10-6
+- add support for mount options that contain commas (bz 219645)
+
+* 三 12月 13 2006 Steve Dickson <steved@redhat.com> 1.0.10-5
+- Stopped v4 umounts from ping rpc.mountd (bz 215553)
+
+* 二 11月 28 2006 Steve Dickson <steved@redhat.com> 1.0.10-4
+- Doing a connect on UDP sockets causes the linux network
+  stack to reject UDP patches from multi-home server with
+  nic on the same subnet. (bz 212471)
+
+* 三 11月 15 2006 Steve Dickson <steved@redhat.com> 1.0.10-3
+- Removed some old mounting versioning code that was
+  stopping tcp mount from working (bz 212471)
+
+* 二 10月 31 2006 Steve Dickson <steved@redhat.com> 1.0.10-2
+- Fixed -o remount (bz 210346)
+- fix memory leak in rpc.idmapd (bz 212547)
+- fix use after free bug in dirscancb (bz 212547)
+- Made no_subtree_check a default export option (bz 212218)
+
+* 三 10月 25 2006 Steve Dickson <steved@redhat.com> 1.0.10-1
+- Upgraded to 1.0.10
+
+* 一 10月 16 2006 Steve Dickson <steved@redhat.com> 1.0.9-10
+- Fixed typo in nfs man page (bz 210864).
+
+* 五 10月 13 2006 Steve Dickson <steved@redhat.com> 1.0.9-9
+- Unable to mount NFS V3 share where sec=none is specified (bz 210644)
+
+* 二 9月 26 2006 Steve Dickson <steved@redhat.com> 1.0.9-8
+- mount.nfs was not returning a non-zero exit value 
+  on failed mounts (bz 206705)
+
+* 三 9月 20 2006 Karel Zak <kzak@redhat.com> 1.0.9-7
+- Added support for the mount -s (sloppy) option (#205038)
+- Added nfs.5 man page from util-linux
+- Added info about [u]mount.nfs to the package description
+
+* 一 9月 11 2006 <SteveD@RedHat.com> 1.0.9-6
+- Removed the compiling of getiversion and getkversion since
+  UTS_RELEASE is no longer defined and these binary are
+  not installed.
+
+* 五 8月 18 2006 <SteveD@RedHat.com> 1.0.9-5
+- Changed gssd daemons to cache things in memory
+  instead of /tmp which makes selinux much happier.
+  (bz 203078)
+
+* 三 8月 16 2006 <SteveD@RedHat.com> 1.0.9-4
+- Allow variable for HA callout program in /etc/init.d/nfslock
+  (bz 202790)
+
+* 三 8月 02 2006 <wtogami@redhatcom> 1.0.9-3
+- add epoch (#196359)
+
+* 五 7月 28 2006 <SteveD@RedHat.com> 1.0.9-2
+- Enabled the creating of mount.nfs and umount.nfs binaries
+- Added mount option fixes suggested by upstream.
+- Fix lazy umounts (bz 169299)
+- Added -o fsc mount option.
+
+* 一 7月 24 2006 <SteveD@RedHat.com> 1.0.9-1
+- Updated to 1.0.9 release
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:1.0.8-5.1
+- rebuild
+
+* 日 7月 02 2006 <jkeating@redhat.com> 1:1.0.8-5
+- Introduce epoch to fix upgrade path
+
+* 六 7月 01 2006 <SteveD@RedHat.com> 1.0.8-3
+- Fixed typos in /etc/rc.d/init.d/nfs file (bz 184486)
+
+* 五 6月 30 2006 <SteveD@RedHat.com> 1.0.8-3
+- Split the controlling of nfs version, ports, and protocol 
+  into two different patches
+- Fixed and added debugging statements to rpc.mountd.
+- Fixed -p arg to work with priviledged ports (bz 156655)
+- Changed nfslock initscript to set LOCKD_TCPPORT and
+  LOCKD_UDPPORT (bz 162133)
+- Added MOUNTD_NFS_V1 variable to version 1 of the
+  mount protocol can be turned off. (bz 175729)
+- Fixed gssd to handel mixed case characters in
+  the domainname. (bz 186069)
+
+* 三 6月 21 2006 <SteveD@RedHat.com> 1.0.8-2
+- Updated to nfs-utils-1.0.8
+
+* 四 6月 08 2006 <SteveD@RedHat.com> 1.0.8.rc4-1
+- Upgraded to the upstream 1.0.8.rc4 version
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.8.rc2-4.FC5.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.0.8.rc2-4.FC5.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 20 2006 Steve Dickson <SteveD@RedHat.com> 1.0.8.rc2-4.FC5
+- Added new libnfsidmap call, nfs4_set_debug(), to rpc.idmapd
+  which turns on debugging in the libarary.
+
+* 一 1月 16 2006 Steve Dickson <SteveD@RedHat.com> 1.0.8.rc2-3.FC5
+- Added innetgr patch that changes configure scripts to 
+  check for the innetgr function. (bz 177899)
+
+* 三 1月 11 2006 Peter Jones <pjones@redhat.com> 1.0.8.rc2-2.FC5
+- Fix lockfile naming in the initscripts so they're stopped correctly.
+
+* 一 1月 09 2006 Steve Dickson <SteveD@RedHat.com> 1.0.8.rc2-1.FC5
+- Updated to 1.0.8-rc2 release
+- Broke out libgssapi into its own rpm
+- Move librpcsecgss and libnfsidmap in the new nfs-utils-lib rpm
+- Removed libevent code; Required to be installed.
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 日 10月 23 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-19
+- Updated to latest code in SourceForge CVS
+- Updated to latest CITI patches (1.0.7-4)
+- Fix bug in nfsdreopen by compiling in server defaults
+
+* 四 9月 22 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-18
+- Updated libnfsidmap to 0.11
+- Updated libgssapi to 0.5
+- Made sure the gss daemons and new libs are
+  all using the same include files.
+- Removed code from the tree that is no longer used.
+- Add ctlbits patch that introduced the -N -T and -U
+  command line flags to rpc.nfsd.
+
+* 日 9月 18 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-17
+- Updated to latest nfs-utils code in upstream CVS tree
+- Updated libevent from 1.0b to 1.1a
+- Added libgssapi-0.4 and librpcsecgss-0.6 libs from CITI
+
+* 四 9月 08 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-16
+- Reworked the nfslock init script so if lockd is running
+  it will be killed which is what the HA community needs. (bz 162446)
+- Stopped rpcidmapd.init from doing extra echoing when
+  condstart-ed.
+
+* 三 8月 24 2005 Peter Jones <pjones@redhat.com> - 1.0.7-15
+- don't strip during "make install", so debuginfo packages are generated right
+
+* 四 8月 18 2005 Florian La Roche <laroche@redhat.com>
+- no need to still keep a requirement for kernel-2.2 or newer
+
+* 二 8月 16 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-13
+- Changed mountd to use stat64() (bz 165062)
+
+* 二 8月 02 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-12
+- Changed useradd to use new -l flag (bz149407)
+- 64bit fix in gssd code (bz 163139)
+- updated broken dependencies
+- updated rquotad to compile with latest
+  quota version.
+
+* 四 5月 26 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-8
+- Fixed subscripting problem in idmapd (bz 158188)
+
+* 四 5月 19 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-7
+- Fixed buffer overflow in rpc.svcgssd (bz 114288)
+
+* 三 4月 13 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-6
+- Fixed misformated output from nfslock script (bz 154648)
+
+* 二 3月 29 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-4
+- Fixed a compile error on x86_64 machines in the gss code.
+- Updated the statd-notify-hostname.patch to eliminate 
+  a segmentation fault in rpc.statd when an network 
+  interface was down. (bz 151828)
+
+* 六 3月 19 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-3
+- Changed xlog to use LOG_INFO instead of LOG_DEBUG
+  so debug messages will appear w/out any config
+  changes to syslog.conf.
+- Reworked how /etc/exports is setup (bz 151389)
+
+* 三 3月 02 2005 Steve Dickson <SteveD@RedHat.com> 1.0.7-2
+- Tied the rpcsecgss debugging in with gssd and
+  svcgssd debugging
+
+* 一 2月 14 2005 Steve Dickson <SteveD@RedHat.com>
+- Added support to rpcgssd.init and rpcsvcgssd.init scripts
+  to insmod security modules.
+- Changed the nfs.init script to bring rpc.svcgssd up and down,
+  since rpc.svcgssd is only needed with the NFS server is running.
+
+* 二 12月 14 2004 Steve Dickson <SteveD@RedHat.com>
+- Fix problem in idmapd that was causing "xdr error 10008"
+  errors (bz 142813)
+- make sure the correct hostname is used in the SM_NOTIFY
+  message that is sent from a rebooted server which has 
+  multiple network interfaces. (bz 139101)
+
+- Changed nfslock to send lockd a -KILL signal
+  when coming down. (bz 125257)
+
+* 四 11月 11 2004 Steve Dickson <SteveD@RedHat.com>
+- Replaced a memcopy with explicit assignments
+  in getquotainfo() of rquotad to fix potential overflow
+  that can occur on 64bit machines. (bz 138068)
+
+* 一 11月 08 2004 Steve Dickson <SteveD@RedHat.com>
+- Updated to latest sourceforge code
+- Updated to latest CITIT nfs4 patches
+
+* 日 10月 17 2004 Steve Dickson <SteveD@RedHat.com>
+- Changed nfs.init to bring down rquotad correctly
+  (bz# 136041)
+
+* 四 10月 14 2004 Steve Dickson <SteveD@RedHat.com>
+- Added "$RQUOTAD_PORT" variable to nfs.init which
+  allows the rpc.rquotad to use a predefined port
+  (bz# 124676)
+
+* 五 10月 01 2004 <SteveD@RedHat.com
+- Incorporate some clean up code from Ulrich Drepper (bz# 134025)
+- Fixed the chkconfig number in the rpcgssd, rpcidmapd, and 
+  rpcsvcgssd initscrpts (bz# 132284)
+
+* 五 9月 24 2004 <SteveD@RedHat.com>
+- Make sure the uid/gid of nfsnobody is the
+  correct value for all archs (bz# 123900)
+- Fixed some security issues found by SGI (bz# 133556)
+
+* 一 8月 30 2004 Steve Dickson <SteveD@RedHat.com>
+- Major clean up. 
+- Removed all unused/old patches
+- Rename and condensed a number of patches
+- Updated to CITI's nfs-utils-1.0.6-13 patches
+
+* 二 8月 10 2004 Bill Nottingham <notting@redhat.com>
+- move if..fi condrestart stanza to %postun (#127914, #128601)
+
+* 三 6月 16 2004 <SteveD@RedHat.com>
+- nfslock stop is now done on package removals
+- Eliminate 3 syslog messages that are logged for
+  successful events.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 6月 14 2004 <SteveD@RedHat.com>
+- Fixed syntax error in nfs initscripts when
+  NETWORKING is not defined
+- Removed sync warning on readonly exports.
+- Changed run levels in rpc initscripts.
+- Replaced modinfo with lsmod when checking
+  for loaded modules.
+
+* 二 6月 01 2004 <SteveD@RedHat.com>
+- Changed the rpcgssd init script to ensure the 
+  rpcsec_gss_krb5 module is loaded
+
+* 二 5月 18 2004 <SteveD@RedHat.com>
+- Removed the auto option from MOUNTD_NFS_V2 and
+  MOUNTD_NFS_V3 variables. Since v2 and v3 are on
+  by default, there only needs to be away of 
+  turning them off.
+
+* 一 5月 10 2004 <SteveD@RedHat.com>
+- Rebuilt
+
+* 四 4月 15 2004 <SteveD@RedHat.com>
+- Changed the permission on idmapd.conf to 644
+- Added mydaemon code to svcgssd
+- Updated the add_gssd.patch from upstream
+
+* 三 4月 14 2004 <SteveD@RedHat.com>
+- Created a pipe between the parent and child so 
+  the parent process can report the correct exit
+  status to the init scripts
+- Added SIGHUP processing to rpc.idmapd and the 
+  rpcidmapd init script.
+
+* 一 3月 22 2004 <SteveD@RedHat.com>
+- Make sure check_new_cache() is looking in the right place
+
+* 三 3月 17 2004 <SteveD@RedHat.com>
+- Changed the v4 initscripts to use $prog for the
+  arugment to daemon
+
+* 二 3月 16 2004 <SteveD@RedHat.com>
+- Made the nfs4 daemons initscripts work better when 
+  sunrpc is not a module
+- added more checks to see if modules are being used.
+
+* 一 3月 15 2004 <SteveD@RedHat.com>
+- Add patch that sets up gssapi_mech.conf correctly
+
+* 五 3月 12 2004 <SteveD@RedHat.com>
+- Added the shutting down of the rpc v4 daemons.
+- Updated the Red Hat only patch with some init script changes.
+
+* 四 3月 11 2004 Bill Nottingham <notting@redhat.com>
+- rpc_pipefs mounting and aliases are now in modutils; require that
+
+* 四 3月 11 2004 <SteveD@RedHat.com>
+- Updated the gssd patch.
+
+* 日 3月 07 2004 <SteveD@RedHat.com>
+- Added the addition and deletion of rpc_pipefs to /etc/fstab
+- Added the addition and deletion of module aliases to /etc/modules.conf
+
+* 一 3月 01 2004 <SteveD@RedHat.com>
+- Removed gssd tarball and old nfsv4 patch.
+- Added new nfsv4 patches that include both the
+   gssd and idmapd daemons
+- Added redhat-only v4 patch that reduces the
+   static librpc.a to only contain gss rpc related
+   routines (I would rather have gssd use the glibc 
+   rpc routines)
+-Changed the gssd svcgssd init scripts to only
+   start up if SECURE_NFS is set to 'yes' in
+   /etc/sysconfig/nfs
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 12 2004 Thomas Woerner <twoerner@redhat.com>
+- make rpc.lockd, rpc.statd, rpc.mountd and rpc.nfsd pie
+
+* 三 1月 28 2004 Steve Dickson <SteveD@RedHat.com>
+- Added the NFSv4 bits
+
+* 一 12月 29 2003 Steve Dickson <SteveD@RedHat.com>
+- Added the -z flag to nfsstat
+
+* 三 12月 24 2003 Steve Dickson <SteveD@RedHat.com>
+- Fixed lockd port setting in nfs.int script
+
+* 三 10月 22 2003 Steve Dickson <SteveD@RedHat.com>
+- Upgrated to 1.0.6
+- Commented out the acl path for fedora
+
+* 三 8月 27 2003 Steve Dickson <SteveD@RedHat.com>
+- Added the setting of lockd ports via sysclt interface
+- Removed queue setting code since its no longer needed
+
+* 四 8月 07 2003 Steve Dickson <SteveD@RedHat.com>
+- Added back the acl patch Taroon b2
+
+* 三 7月 23 2003 Steve Dickson <SteveD@RedHat.com>
+- Commented out the acl patch (for now)
+
+* 一 7月 21 2003 Steve Dickson <SteveD@RedHat.com>
+- Upgrated to 1.0.5
+
+* 三 6月 18 2003 Steve Dickson <SteveD@RedHat.com>
+- Added security update
+- Fixed the drop-privs.patch which means the chroot
+patch could be removed.
+
+* 一 6月 09 2003 Steve Dickson <SteveD@RedHat.com>
+- Defined the differ kinds of debugging avaliable for mountd in
+the mountd man page.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 03 2003 Steve Dickson <SteveD@RedHat.com>
+- Upgraded to 1.0.3 
+- Fixed numerous bugs in init scrips
+- Added nfsstat overflow patch
+
+* 四 1月 23 2003 Tim Powers <timp@redhat.com> 1.0.1-2.9
+- rebuild
+
+* 五 12月 13 2002 Daniel J Walsh <dwalsh@redhat.com>
+- change init script to not start rpc.lock if already running
+
+* 三 12月 11 2002 Daniel J Walsh <dwalsh@redhat.com>
+- Moved access code to be after dropping privs
+
+* 一 11月 18 2002 Stephen C. Tweedie <sct@redhat.com>
+- Build with %configure
+- Add nhfsgraph, nhfsnums and nhfsrun to the files list
+
+* 一 11月 11 2002 Stephen C. Tweedie <sct@redhat.com>
+- Don't drop privs until we've bound the notification socket
+
+* 四 11月 07 2002 Stephen C. Tweedie <sct@redhat.com>
+- Ignore SIGPIPE in rpc.mountd
+
+* 四 8月 01 2002 Bob Matthews <bmatthews@redhat.com>
+- Add Sean O'Connell's <sean@ee.duke.edu> nfs control tweaks
+- to nfs init script.
+
+* 一 7月 22 2002 Bob Matthews <bmatthews@redhat.com>
+- Move to nfs-utils-1.0.1
+
+* 一 2月 18 2002 Bob Matthews <bmatthews@redhat.com>
+- "service nfs restart" should start services even if currently 
+-   not running (#59469)
+- bump version to 0.3.3-4
+
+* 三 10月 03 2001 Bob Matthews <bmatthews@redhat.com>
+- Move to nfs-utils-0.3.3
+- Make nfsnobody a system account (#54221)
+
+* 二 8月 21 2001 Bob Matthews <bmatthews@redhat.com>
+- if UID 65534 is unassigned, add user nfsnobody (#22685)
+
+* 一 8月 20 2001 Bob Matthews <bmatthews@redhat.com>
+- fix typo in nfs init script which prevented MOUNTD_PORT from working (#52113)
+
+* 二 8月 07 2001 Bob Matthews <bmatthews@redhat.com>
+- nfs init script shouldn't fail if /etc/exports doesn't exist (#46432)
+
+* 五 7月 13 2001 Bob Matthews <bmatthews@redhat.com>
+- Make %pre useradd consistent with other Red Hat packages.
+
+* 二 7月 03 2001 Michael K. Johnson <johnsonm@redhat.com>
+- Added sh-utils dependency for uname -r in nfs init script
+
+* 二 6月 12 2001 Bob Matthews <bmatthews@redhat.com>
+- make non RH kernel release strings scan correctly in 
+-   nfslock init script (#44186)
+
+* 一 6月 11 2001 Bob Matthews <bmatthews@redhat.com>
+- don't install any rquota pages in _mandir: (#39707, #44119)
+- don't try to manipulate rpc.rquotad in init scripts 
+-   unless said program actually exists: (#43340)
+
+* 二 4月 10 2001 Preston Brown <pbrown@redhat.com>
+- don't translate initscripts for 6.x
+
+* 二 4月 10 2001 Michael K. Johnson <johnsonm@redhat.com>
+- do not start lockd on kernel 2.2.18 or higher (done automatically)
+
+* 五 3月 30 2001 Preston Brown <pbrown@redhat.com>
+- don't use rquotad from here now; quota package contains a version that 
+  works with 2.4 (#33738)
+
+* 一 3月 12 2001 Bob Matthews <bmatthews@redhat.com>
+- Statd logs at LOG_DAEMON rather than LOG_LOCAL5
+- s/nfs/\$0/ where appropriate in init scripts
+
+* 二 3月 06 2001 Jeff Johnson <jbj@redhat.com>
+- Move to nfs-utils-0.3.1
+
+* 三 2月 14 2001 Bob Matthews <bmatthews@redhat.com>
+- #include <time.h> patch
+
+* 一 2月 12 2001 Bob Matthews <bmatthews@redhat.com>
+- Really enable netgroups
+
+* 一 2月 05 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- i18nize initscripts
+
+* 五 1月 19 2001 Bob Matthews <bmatthews@redhat.com>
+- Increased {s,r}blen in rpcmisc.c:makesock to accommodate eepro100
+
+* 二 1月 16 2001 Bob Matthews <bmatthews@redhat.com>
+- Hackish fix in build section to enable netgroups
+
+* 三 1月 03 2001 Bob Matthews <bmatthews@redhat.com>
+- Fix incorrect file specifications in statd manpage.
+- Require gawk 'cause it's used in nfslock init script.
+
+* 三 12月 13 2000 Bob Matthews <bmatthews@redhat.com>
+- Require sed because it's used in nfs init script
+
+* 二 12月 12 2000 Bob Matthews <bmatthews@redhat.com>
+- Don't do a chroot(2) after dropping privs, in statd.
+
+* 一 12月 11 2000 Bob Matthews <bmatthews@redhat.com>
+- NFSv3 if kernel >= 2.2.18, detected in init script
+
+* 四 11月 23 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 0.2.1
+
+* 二 11月 14 2000 Bill Nottingham <notting@redhat.com>
+- don't start lockd on 2.4 kernels; it's unnecessary
+
+* 二 9月 05 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- more portable fix for mandir
+
+* 日 9月 03 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- update to 0.2-release
+
+* 五 9月 01 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- fix reload script
+
+* 四 8月 31 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- update to 0.2 from CVS
+- adjust statd-drop-privs patch
+- disable tcp_wrapper support
+
+* 三 8月 02 2000 Bill Nottingham <notting@redhat.com>
+- fix stop priority of nfslock
+
+* 二 8月 01 2000 Bill Nottingham <notting@redhat.com>
+- um, actually *include and apply* the statd-drop-privs patch
+
+* 一 7月 24 2000 Bill Nottingham <notting@redhat.com>
+- fix init script ordering (#14502)
+
+* 六 7月 22 2000 Bill Nottingham <notting@redhat.com>
+- run statd chrooted and as non-root
+- add prereqs
+
+* 二 7月 18 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- use "License", not "Copyright"
+- use %{_tmppath} and %{_mandir}
+
+* 一 7月 17 2000 Matt Wilson <msw@redhat.com>
+- built for next release
+
+* 一 7月 17 2000 Matt Wilson <msw@redhat.com>
+- 0.1.9.1
+- remove patch0, has been integrated upstream
+
+* 三 2月 09 2000 Bill Nottingham <notting@redhat.com>
+- the wonderful thing about triggers, is triggers are wonderful things...
+
+* 四 2月 03 2000 Cristian Gafton <gafton@redhat.com>
+- switch to nfs-utils as the base tree
+- fix the statfs patch for the new code base
+- single package that obsoletes everything we had before (if I am to keep
+  some traces of my sanity with me...)
+
+* 一 1月 17 2000 Preston Brown <pbrown@redhat.com>
+- use statfs syscall instead of stat to determinal optimal blksize
+

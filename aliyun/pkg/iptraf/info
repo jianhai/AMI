@@ -1,0 +1,27 @@
+Name        : iptraf                       Relocations: (not relocatable)
+Version     : 3.0.1                             Vendor: Alibaba
+Release     : 13.3.alios6                   Build Date: 2014年07月26日 星期六 08时31分39秒
+Install Date: 2015年03月25日 星期三 11时02分48秒      Build Host: x86-004.build.alibaba
+Group       : Applications/System           Source RPM: iptraf-3.0.1-13.3.alios6.src.rpm
+Size        : 699605                           License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时46分13秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.penguin.cz/~fojtik/iptraf/
+Summary     : A console-based network monitoring utility
+Description :
+IPTraf is a console-based network monitoring utility.  IPTraf gathers
+data like TCP connection packet and byte counts, interface statistics
+and activity indicators, TCP/UDP traffic breakdowns, and LAN station
+packet and byte counts.  IPTraf features include an IP traffic monitor
+which shows TCP flag information, packet and byte counts, ICMP
+details, OSPF packet types, and oversized IP packet warnings;
+interface statistics showing IP, TCP, UDP, ICMP, non-IP and other IP
+packet counts, IP checksum errors, interface activity and packet size
+counts; a TCP and UDP service monitor showing counts of incoming and
+outgoing packets for common TCP and UDP application ports, a LAN
+statistics module that discovers active hosts and displays statistics
+about their activity; TCP, UDP and other protocol display filters so
+you can view just the traffic you want; logging; support for Ethernet,
+FDDI, ISDN, SLIP, PPP, and loopback interfaces; and utilization of the
+built-in raw socket interface of the Linux kernel, so it can be used
+on a wide variety of supported network cards.

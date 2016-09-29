@@ -1,0 +1,165 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.17-9.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.17-9.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.17-9.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:1.17-9.1
+- rebuild for alios6
+
+* 三 10月 05 2011 Anton Arapov <anton@redhat.com> - 1:1.17-9
+- Update to microcode-20110915.dat
+- Resolves: rhbz#696582
+
+* 四 7月 21 2011 Anton Arapov <anton@redhat.com> - 1:1.17-8
+- Revert: Minor fix of the udev rule
+- Relates: rhbz#682668
+
+* 三 7月 20 2011 Anton Arapov <anton@redhat.com> - 1:1.17-7
+- Minor fix of the udev rule
+- Include microcode update for AMD cpus
+- Resolves: rhbz#682668
+
+* 三 7月 20 2011 Anton Arapov <anton@redhat.com> - 1:1.17-6
+- Update to microcode-20110428.dat
+- Resolves: rhbz#696582
+
+* 四 3月 24 2011 Anton Arapov <anton@redhat.com> - 1:1.17-5
+- fix memory leak.
+- Resolves: rhbz#684009
+
+* 三 11月 24 2010 Anton Arapov <anton@redhat.com> - 1:1.17-4
+- Update to microcode-20101123.dat
+- Make microcode_ctl event driven
+- Resolves: rhbz#578107
+
+* 二 2月 23 2010 Anton Arapov <anton@redhat.com> - 1:1.17-3
+- Update to microcode-20100209.dat [488319]
+
+* 五 2月 19 2010 Kyle McMartin <kyle@redhat.com> - 1:1.17-2
+- Don't use a CVS release for RHEL, otherwise it'll always be a branch
+  and irritating.
+- Fix syntax error in microcode_ctl.init.
+- Resolves: rhbz#552246.
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1:1.17-1.41.1
+- Rebuilt for RHEL 6
+
+* 三 9月 30 2009 Dave Jones <davej@redhat.com>
+- Update to microcode-20090927.dat
+
+* 五 9月 11 2009 Dave Jones <davej@redhat.com>
+- Remove some unnecessary code from the init script.
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.17-1.52.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 6月 25 2009 Dave Jones <davej@redhat.com>
+- Shorten sleep time during init.
+  This really needs to be replaced with proper udev hooks, but this is
+  a quick interim fix.
+
+* 三 6月 03 2009 Kyle McMartin <kyle@redhat.com> 1:1.17-1.50
+- Change ExclusiveArch to i586 instead of i386. Resolves rhbz#497711.
+
+* 三 5月 13 2009 Dave Jones <davej@redhat.com>
+- update to microcode 20090330
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.17-1.46.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 9月 12 2008 Dave Jones <davej@redhat.com>
+- update to microcode 20080910
+
+* 二 4月 01 2008 Jarod Wilson <jwilson@redhat.com>
+- Update to microcode 20080401
+
+* 六 3月 29 2008 Dave Jones <davej@redhat.com>
+- Update to microcode 20080220
+- Fix rpmlint warnings in specfile.
+
+* 一 3月 17 2008 Dave Jones <davej@redhat.com>
+- specfile cleanups.
+
+* 五 2月 22 2008 Jarod Wilson <jwilson@redhat.com>
+- Use /lib/firmware instead of /etc/firmware
+
+* 三 2月 13 2008 Jarod Wilson <jwilson@redhat.com>
+- Fix permissions on microcode.dat
+
+* 四 2月 07 2008 Jarod Wilson <jwilson@redhat.com>
+- Spec cleanup and macro standardization.
+- Update license
+- Update microcode data file to 20080131 revision.
+
+* 一 7月 02 2007 Dave Jones <davej@redhat.com>
+- Update to upstream 1.17
+
+* 四 10月 12 2006 Jon Masters <jcm@redhat.com>
+- BZ209455 fixes.
+
+* 一 7月 17 2006 Jesse Keating <jkeating@redhat.com>
+- rebuild
+
+* 五 6月 16 2006 Bill Nottingham <notting@redhat.com>
+- remove kudzu requirement
+- add prereq for coreutils, awk, grep
+
+* 四 2月 09 2006 Dave Jones <davej@redhat.com>
+- rebuild.
+
+* 五 1月 27 2006 Dave Jones <davej@redhat.com>
+- Update to upstream 1.13
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 14 2005 Dave Jones <davej@redhat.com>
+- initscript tweaks.
+
+* 二 9月 13 2005 Dave Jones <davej@redhat.com>
+- Update to upstream 1.12
+
+* 三 8月 17 2005 Dave Jones <davej@redhat.com>
+- Check for device node *after* loading the module. (#157672)
+
+* 二 3月 01 2005 Dave Jones <davej@redhat.com>
+- Rebuild for gcc4
+
+* 四 2月 17 2005 Dave Jones <davej@redhat.com>
+- s/Serial/Epoch/
+
+* 二 1月 25 2005 Dave Jones <davej@redhat.com>
+- Drop the node creation/deletion change from previous release.
+  It'll cause grief with selinux, and was a hack to get around
+  a udev shortcoming that should be fixed properly.
+
+* 五 1月 21 2005 Dave Jones <davej@redhat.com>
+- Create/remove the /dev/cpu/microcode dev node as needed.
+- Use correct path again for the microcode.dat.
+- Remove some no longer needed tests in the init script.
+
+* 五 1月 14 2005 Dave Jones <davej@redhat.com>
+- Only enable microcode_ctl service if the CPU is capable.
+- Prevent microcode_ctl getting restarted multiple times on initlevel change (#141581)
+- Make restart/reload work properly
+- Do nothing if not started by root.
+
+* 三 1月 12 2005 Dave Jones <davej@redhat.com>
+- Adjust dev node location. (#144963)
+
+* 二 1月 11 2005 Dave Jones <davej@redhat.com>
+- Load/Remove microcode module in initscript.
+
+* 一 1月 10 2005 Dave Jones <davej@redhat.com>
+- Update to upstream 1.11 release.
+
+* 六 12月 18 2004 Dave Jones <davej@redhat.com>
+- Initial packaging, based upon kernel-utils.
+

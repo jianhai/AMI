@@ -1,0 +1,428 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.9.21-13.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.9.21-13.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.9.21-13.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.9.21-13.1
+- rebuild for alios6
+
+* 三 8月 11 2010 Lennart Poettering <lennart@poettering.net> - 0.9.21-13
+- add missing patch to CVS
+- Resolves: rhbz#575687
+
+* 三 8月 11 2010 Lennart Poettering <lennart@poettering.net> - 0.9.21-12
+- Add Gujarati translation from 575687
+- Resolves: rhbz#575687
+
+* 一 5月 24 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-11
+- Fix version screwup
+- Resolves: rhbz#575687
+- Resolves: rhbz#561772
+
+* 一 5月 24 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-10
+- Forgot patch
+- Resolves: rhbz#575687
+- Resolves: rhbz#561772
+
+* 五 5月 14 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-9
+- Add translations
+- Resolves: rhbz#575687
+- Resolves: rhbz#561772
+
+* 一 3月 22 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-8
+- Port over fixes from F-12
+- Related: rhbz#566327
+- Related: rhbz#571815
+
+* 日 1月 17 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-7
+- backport another fix from upstream
+- Related: rhbz#543948
+
+* 五 1月 15 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-6
+- backport 31 fixes from upstream git
+- sync spec file with f12
+- Related: rhbz#543948
+
+* 五 1月 15 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-5
+- Don't build bluetooth stuff on s390 (#529866)
+
+* 二 1月 12 2010 Matthias Clasen <mclasen@redhat.com> - 0.9.21-4
+- Don't require vala (#554749)
+
+* 五 1月 08 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-3
+- Fix date of changelog entry
+- Related: rhbz#543948
+
+* 五 1月 08 2010 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-2
+- Do not build against lirc on RHEL
+- Related: rhbz#543948
+
+* 五 12月 04 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.9.21-1.1
+- Do not build against jack on RHEL
+
+* 一 11月 23 2009 Lennart Poettering <lpoetter@redhat.com> - 0.9.21-1
+- New release
+
+* 三 11月 11 2009 Lennart Poettering <lpoetter@redhat.com> - 0.9.20-1
+- New release
+
+* 三 11月 04 2009 Warren Togami <wtogami@redhat.com> - 0.9.19-2
+- Bug #532583 gdm should not require pulseaudio
+
+* 三 9月 30 2009 Lennart Poettering <lpoetter@redhat.com> - 0.9.19-1
+- New release
+
+* 六 9月 19 2009 Lennart Poettering <lpoetter@redhat.com> - 0.9.18-1
+- New release
+
+* 五 9月 11 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.17-1
+- Final release
+
+* 四 9月 10 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-14
+- Final release
+
+* 四 9月 03 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-13.test7
+- Fix build for ppc
+
+* 四 9月 03 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-12.test7
+- New test release
+
+* 四 8月 27 2009 Tomas Mraz <tmraz@redhat.com> - 0.9.16-11.test6
+- rebuilt with new openssl
+
+* 一 8月 24 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-10.test6
+- Fix build for ppc
+
+* 一 8月 24 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-9.test6
+- New test release
+
+* 四 8月 20 2009 Matthias Clasen <mclasen@redhat.com> - 0.9.16-7.test5
+- Fix install ordering between gdm and pulseaudio-gdm-hooks
+
+* 三 8月 19 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-6.test5
+- New test release
+
+* 三 8月 05 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-5.test4
+- New test release
+
+* 二 7月 28 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-4.test3
+- New test release
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.16-3.test2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 02 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-2.test2
+- New test release
+
+* 二 6月 23 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-1.test1
+- Fix endianess build
+
+* 二 6月 23 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.16-0.test1
+- First 0.9.16 test release
+
+* 三 4月 22 2009 Warren Togami <wtogami@redhat.com> 0.9.15-11
+- Bug #497214
+  Do not start pulseaudio daemon if PULSE_SERVER directs pulse elsewhere.
+
+* 一 4月 13 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-10
+- Final 0.9.15 release
+
+* 四 4月 09 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-9.test8
+- New test release
+
+* 三 4月 01 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-8.test7
+- Only load bt modules when installed
+
+* 三 4月 01 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-7.test7
+- New test release
+
+* 三 4月 01 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-6.test6
+- Fix mistag
+
+* 三 4月 01 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-5.test6
+- Fix tarball name
+
+* 三 4月 01 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-4.test6
+- New test release
+
+* 四 3月 05 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-3.test5
+- New test release
+
+* 四 3月 05 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-3.test4
+- New test release
+
+* 五 2月 27 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-3.test3
+- Steal patch from git master to fix .so dependencies
+
+* 三 2月 25 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-2.test3
+- Add more missing X11 dependencies
+
+* 三 2月 25 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-1.test3
+- Add missing dependency on XTEST
+
+* 二 2月 24 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-0.test3
+- New test release
+
+* 四 2月 12 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.15-0.test2
+- New test release
+
+* 二 1月 13 2009 Adel Gadllah <adel.gadllah@gmail.com> 0.9.14-2
+- Prefer mixer controls with volumes over switches
+
+* 二 1月 13 2009 Lennart Poettering <lpoetter@redhat.com> 0.9.14-1
+- New release
+
+* 四 11月 13 2008 Matthias Clasen <mclasen@redhat.com> 0.9.13-7
+- Rebuild
+
+* 六 11月 01 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.13-6
+- Backport another two fixes from current git master
+
+* 二 10月 28 2008 Matthias Clasen <mclasen@redhat.com> 0.9.13-5
+- Require new enough speex-devel
+
+* 五 10月 24 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.13-4
+- Backport another fix from current git master
+
+* 四 10月 23 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.13-3
+- Backport a couple of fixes from current git master
+
+* 四 10月 09 2008 Matthhias Clasen <mclasen@redhat.com> 0.9.13-2
+- Handle locales properly
+
+* 一 10月 06 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.13-1
+- New release
+
+* 一 9月 15 2008 Matthias Clasen <mclasen@redhat.com> 0.9.12-6
+- Survive a missing ~/.pulse (#462407)
+
+* 四 9月 11 2008 - Bastien Nocera <bnocera@redhat.com> 0.9.12-5
+- Rebuild
+
+* 二 9月 09 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.12-4
+- Ship /var/lib/pulse in the RPM
+
+* 二 9月 09 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.12-3
+- Don't remove pulse users/groups on package removal
+
+* 二 9月 09 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.12-2
+- Add intltool to deps
+
+* 二 9月 09 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.12-1
+- Release 0.9.12
+
+* 四 7月 24 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.11-1
+- Final release 0.9.11
+
+* 二 7月 22 2008 Jon McCann <jmccann@redhat.com> 0.9.11-0.7.git20080626
+- Fix for CK API changes
+
+* 四 6月 26 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.11-0.6.git20080626
+- New GIT snapshot
+
+* 日 6月 22 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.11-0.5.svn20080622
+- New GIT snapshot
+
+* 三 6月 18 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.11-0.4.svn20080618
+- New SVN snapshot
+
+* 五 5月 30 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.11-0.3.svn20080529
+- Fix snapshot versioning
+
+* 四 5月 29 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.11-0.0.svn20080529
+- New SVN snapshot
+
+* 二 5月 20 2008 Matthias Clasen <mclasen@redhat.com> 0.9.11-0.2.svn20080516
+- Actually apply the patch
+
+* 六 5月 17 2008 Matthias Clasen <mclasen@redhat.com> 0.9.11-0.1.svn20080516
+- Fix a wrong assertion in module-default-device-restore
+
+* 五 5月 16 2008 Matthias Clasen <mclasen@redhat.com> 0.9.11-0.0.svn20080516
+- Update to an svn snapshot of the 'glitch-free' rewrite of pulseaudio
+
+* 日 3月 30 2008 Lennart Poettering <lpoetter@redhat.com> 0.9.10-1
+- Update to PulseAudio 0.9.10
+- drop all patches, since they have been integrated upstream
+
+* 四 3月 27 2008 Lubomir Kundrak <lkundrak@redhat.com> 0.9.8-13
+- Abort on CPU time comsumption, so we can get core
+
+* 四 3月 13 2008 Lubomir Kundrak <lkundrak@redhat.com> 0.9.8-12
+- Own /usr/libexec/pulse (#437228)
+
+* 三 3月 12 2008 Adam Jackson <ajax@redhat.com> 0.9.8-11
+- pulseaudio-0.9.8-disable-realtime.patch: Don't ask PolicyKit for increased
+  scheduling mojo for now.  It's not clear that it's a win; and if it is,
+  the policy should just be fixed to always allow it.
+
+* 三 3月 12 2008 Lubomir Kundrak <lkundrak@redhat.com> 0.9.8-10
+- Build the manual pages with xmltoman
+
+* 五 2月 29 2008 Lubomir Kundrak <lkundrak@redhat.com> 0.9.8-9
+- Fix the fix.
+
+* 五 2月 29 2008 Lubomir Kundrak <lkundrak@redhat.com> 0.9.8-8
+- Fix multilib issue (#228383)
+- Prevent dumping core if exiting sooner that ltdl initializaion (#427962)
+
+* 四 2月 21 2008 Adam Tkac <atkac redhat com> 0.9.8-7
+- really rebuild against new libcap
+
+* 日 2月 17 2008 Adam Tkac <atkac redhat com> 0.9.8-6
+- rebuild against new libcap
+
+* 三 1月 23 2008 Lubomir Kundrak <lkundrak@redhat.com> 0.9.8-5
+- Fix CVE-2008-0008 security issue (#425481)
+
+* 日 1月 13 2008 Lubomir Kundrak <lkundrak@redhat.com> 0.9.8-4.1
+- Actually add content to pulseaudio-0.9.8-create-dot-pulse.patch
+- Make the Source0 tag point to URL instead of a local file
+- Drop the nochown patch; it's not applied at all and no longer needed
+
+* 四 11月 29 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.8-4
+- add missing dependency on pulseaudio-utils for pulseaudio-module-x11
+
+* 四 11月 29 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.8-3
+- Create ~/.pulse/ if not existant
+
+* 四 11月 29 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.8-2
+- Add missing dependency on jack-audio-connection-kit-devel
+
+* 三 11月 28 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.8-1
+- Upgrade to current upstream
+
+* 三 10月 17 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.16.svn20071017
+- Another SVN snapshot, fixing another round of bugs (#330541)
+- Split libpulscore into a seperate package to work around multilib limitation (#335011)
+
+* 一 10月 01 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.15.svn20071001
+- Another SVN snapshot, fixing another round of bugs
+
+* 六 9月 29 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.14.svn20070929
+- Another SVN snapshot, fixing a couple of subtle bugs
+
+* 二 9月 25 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.13.svn20070925
+- Remove libpulsecore.so symlink from pulseaudio-libs-devel to avoid multilib issues
+
+* 二 9月 25 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.12.svn20070925
+- New SVN snapshot
+- Split off libflashsupport again
+- Rename "-lib" packages to "-libs", like all other packages do it.
+- Provide esound
+
+* 五 9月 07 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.11.svn20070907
+- Update SVN snapshot, don't link libpulsecore.so statically anymore
+
+* 三 9月 05 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.10.svn20070905
+- Update SVN snapshot
+
+* 二 9月 04 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.9.svn20070904
+- Update SVN snapshot
+- ship libflashsupport in our package
+- drop pulseaudio-devel since libpulsecore is not linked statically
+
+* 四 8月 23 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.8.svn20070823
+- Update SVN snapshot
+
+* 四 8月 16 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.7.svn20070816
+- Update SVN snapshot
+
+* 四 8月 16 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.6.svn20070816
+- Update SVN snapshot
+
+* 二 8月 14 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.5.svn20070814
+- Forgot to upload tarball
+
+* 二 8月 14 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.4.svn20070814
+- Update snapshot. Install file into /etc/xdg/autostart/ to load module-x11-smp
+  only after login
+
+* 日 8月 12 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.3.svn20070812
+- Depend on tcp_wrappers-devel instead of tcp_wrappers, to make sure we
+  actually get the headers installed.
+
+* 日 8月 12 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.2.svn20070812
+- Update snapshot, contains 64 bit build fixes, and disables module-x11-xsmp by
+  default to avoid deadlock when PA is started from gnome-session
+
+* 日 8月 12 2007 Lennart Poettering <lpoetter@redhat.com> 0.9.7-0.1.svn20070812
+- Take snapshot from SVN
+
+* 二 5月 29 2007 Pierre Ossman <drzeus@drzeus.cx> 0.9.6-2
+- Add libatomic_ops-devel as a build requirement.
+
+* 二 5月 29 2007 Pierre Ossman <drzeus@drzeus.cx> 0.9.6-1
+- Upgrade to 0.9.6.
+
+* 五 3月 02 2007 Pierre Ossman <drzeus@drzeus.cx> 0.9.5-5
+- Fix merge problems with patch.
+
+* 五 3月 02 2007 Pierre Ossman <drzeus@drzeus.cx> 0.9.5-4
+- Add patch to handle ALSA changing the frame size (bug 230211).
+- Add patch for suspended ALSA devices (bug 228205).
+
+* 一 2月 05 2007 Pierre Ossman <drzeus@drzeus.cx> 0.9.5-3
+- Add esound-compat subpackage that allows PulseAudio to be a drop-in
+  replacement for esd (based on patch by Matthias Clasen).
+- Backport patch allows startup to continue even when the users'
+  config cannot be read.
+
+* 一 10月 23 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.5-2
+- Create user and groups for daemon.
+
+* 一 8月 28 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.5-1
+- Upgrade to 0.9.5.
+
+* 三 8月 23 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.4-3
+- Make sure JACK modules are built and packaged.
+
+* 二 8月 22 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.4-2
+- Merge the ALSA modules into the main package as ALSA is the
+  standard API.
+
+* 日 8月 20 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.4-1
+- Update to 0.9.4.
+- Remove fix for rpath as it is merged upstream.
+
+* 五 7月 21 2006 Toshio Kuratomi <toshio@tiki-lounge.com> 0.9.3-2
+- Remove static libraries.
+- Fix for rpath issues.
+
+* 五 7月 21 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.3-1
+- Update to 0.9.3
+- GLib 1.2 bindings dropped.
+- Howl compat dropped as Avahi is supported natively.
+- Added fix for pc files on x86_64.
+
+* 六 7月 08 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.2-1
+- Update to 0.9.2.
+- Added Avahi HOWL compat dependencies.
+
+* 四 6月 08 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.1-1
+- Update to 0.9.1.
+
+* 一 5月 29 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.0-2
+- Build and package doxygen docs
+- Call ldconfig for relevant subpackages.
+
+* 一 5月 29 2006 Pierre Ossman <drzeus@drzeus.cx> 0.9.0-1
+- Update to 0.9.0
+
+* 二 5月 09 2006 Pierre Ossman <drzeus@drzeus.cx> 0.8.1-1
+- Update to 0.8.1
+- Split into more packages
+- Remove the modules' static libs as those shouldn't be used (they shouldn't
+  even be installed)
+
+* 五 2月 24 2006 Tom "spot" Callaway <tcallawa@redhat.com> 0.7-2
+- dance around with perms so we don't strip the binary
+- add missing BR
+
+* 一 11月 28 2005 Tom "spot" Callaway <tcallawa@redhat.com> 0.7-1
+- Initial package for Fedora Extras
+

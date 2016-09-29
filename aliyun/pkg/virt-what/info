@@ -1,0 +1,38 @@
+Name        : virt-what                    Relocations: (not relocatable)
+Version     : 1.11                              Vendor: Alibaba
+Release     : 1.1.5.alios6                  Build Date: 2014年08月21日 星期四 20时34分47秒
+Install Date: 2015年03月25日 星期三 11时02分21秒      Build Host: x86-004.build.alibaba
+Group       : Applications/Emulators        Source RPM: virt-what-1.11-1.1.5.alios6.src.rpm
+Size        : 37234                            License: GPLv2+
+Signature   : RSA/8, 2014年08月25日 星期一 23时30分44秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://people.redhat.com/~rjones/virt-what/
+Summary     : Detect if we are running in a virtual machine
+Description :
+virt-what is a shell script which can be used to detect if the program
+is running in a virtual machine.
+
+The program prints out a list of "facts" about the virtual machine,
+derived from heuristics.  One fact is printed per line.
+
+If nothing is printed and the script exits with code 0 (no error),
+then it can mean either that the program is running on bare-metal or
+the program is running inside a type of virtual machine which we don't
+know about or cannot detect.
+
+Current types of virtualization detected:
+
+ - hyperv       Microsoft Hyper-V
+ - kvm          Linux Kernel Virtual Machine (KVM)
+ - openvz       OpenVZ or Virtuozzo
+ - powervm_lx86 IBM PowerVM Lx86 Linux/x86 emulator
+ - qemu         QEMU (unaccelerated)
+ - uml          User-Mode Linux (UML)
+ - virtage      Hitachi Virtualization Manager (HVM) Virtage LPAR
+ - virtualbox   VirtualBox
+ - virtualpc    Microsoft VirtualPC
+ - vmware       VMware
+ - xen          Xen
+ - xen-dom0     Xen dom0 (privileged domain)
+ - xen-domU     Xen domU (paravirtualized guest domain)
+ - xen-hvm      Xen guest fully virtualized (HVM)

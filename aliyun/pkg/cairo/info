@@ -1,0 +1,19 @@
+Name        : cairo                        Relocations: (not relocatable)
+Version     : 1.8.8                             Vendor: Alibaba
+Release     : 3.1.3.alios6                  Build Date: 2014年07月26日 星期六 01时38分26秒
+Install Date: 2015年03月25日 星期三 11时00分41秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: cairo-1.8.8-3.1.3.alios6.src.rpm
+Size        : 797873                           License: LGPLv2 or MPLv1.1
+Signature   : RSA/8, 2014年07月31日 星期四 16时15分52秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://cairographics.org
+Summary     : A 2D graphics library
+Description :
+Cairo is a 2D graphics library designed to provide high-quality display
+and print output. Currently supported output targets include the X Window
+System, OpenGL (via glitz), in-memory image buffers, and image files (PDF,
+PostScript, and SVG).
+
+Cairo is designed to produce consistent output on all output media while
+taking advantage of display hardware acceleration when available (e.g.
+through the X Render Extension or OpenGL).

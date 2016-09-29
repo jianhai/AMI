@@ -1,0 +1,921 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.0.4-1.3.1
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.0.4-1.2.1
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 4.0.4-1.1.1
+- rebuild for alios6
+
+* 二 7月 26 2011 Tim Waugh <twaugh@redhat.com> - 4.0.4-1:.1
+- Applied patch to fix improper sanitization of command line options
+  (CVE-2011-2697, bug #721001).
+
+* 四 3月 18 2010 Tim Waugh <twaugh@redhat.com> - 4.0.4-1
+- Updated to 4.0.4 (bug #570234).  No longer buildrequires
+  ghostscript-devel (but requires ghostscript) or
+  foomatic-filters-int-options patch.
+
+* 三 3月 03 2010 Tim Waugh <twaugh@redhat.com> - 4.0.3-10
+- Removed old explicit provides for perl(Foomatic::GrovePath).
+- Fixed macro in changelog.
+- Avoid mixed spaces and tabs.
+- Ship COPYING files.
+- Added comments for sources.
+- Use Requires not PreReq (bug #225768).
+
+* 二 1月 19 2010 Tim Waugh <twaugh@redhat.com> - 4.0.3-9
+- Fix for handling integer options (bug #556871).
+
+* 二 12月 15 2009 Tim Waugh <twaugh@redhat.com> - 4.0.3-8
+- Really fixed installation path for perl module (bug #547702).
+
+* 五 12月 04 2009 Tim Waugh <twaugh@redhat.com> - 4.0.3-7
+- Fixed installation path for perl module.
+
+* 五 12月 04 2009 Stepan Kasal <skasal@redhat.com> - 4.0.3-6
+- rebuild against perl 5.10.1
+
+* 二 11月 10 2009 Tim Waugh <twaugh@redhat.com> 4.0.3-5
+- Build requires cups.
+
+* 二 11月 10 2009 Tim Waugh <twaugh@redhat.com> 4.0.3-4
+- Require cups and don't own its directories (bug #534051).
+
+* 日 11月 08 2009 Tim Waugh <twaugh@redhat.com> 4.0.3-3
+- Revert last change.
+
+* 四 11月 05 2009 Tim Waugh <twaugh@redhat.com> 4.0.3-2
+- Correctly build foomatic custom commands (bug #531278).
+
+* 二 9月 01 2009 Tim Waugh <twaugh@redhat.com> 4.0.3-1
+- 4.0.3.
+
+* 二 8月 18 2009 Tim Waugh <twaugh@redhat.com> 4.0.2-6
+- Split out foomatic-db into separate source package (bug #461234).
+
+* 二 8月 04 2009 Tim Waugh <twaugh@redhat.com> 4.0.2-5
+- Use stcolor driver for Epson Stylus Color 200 (bug #513676).
+- Don't ship 3-distribution symlink as CUPS already searches
+  /usr/share/ppd (bug #514244).
+- Remove non-PPD files from PPD directory (bug #514242).
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.0.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 02 2009 Tim Waugh <twaugh@redhat.com> 4.0.2-3
+- Removed '-O0' compiler option for foomatic-filters, which had been
+  used for debugging purposes.
+
+* 四 7月 02 2009 Tim Waugh <twaugh@redhat.com> 4.0.2-1
+- Updated db-engine to 4.0.2 (bug #503188).
+- Updated foomatic-filters to 4.0.2 (bug #496521).
+- Updated db-hpijs to 20090701.
+- Updated db to 4.0-20090702.
+- This package obsoletes oki4linux (bug #491489).
+- Don't ship ChangeLog/README/USAGE for each of the 4 packages as it
+  comes to more than 1MB (bug #492449).
+- Don't use mktemp in foomatic-rip.
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 15 2009 Tim Waugh <twaugh@redhat.com> 4.0.0-1
+- 4.0.0.
+
+* 一 1月 12 2009 Tim Waugh <twaugh@redhat.com> 3.0.2-70
+- Major gutenprint version is 5.2.
+
+* 六 1月 10 2009 Tim Waugh <twaugh@redhat.com> 3.0.2-69
+- Updated db-hpijs to 20090110.
+- Updated db to 20090110.
+- Updated filters to 3.0-20090110.
+- Updated db-engine to 3.0-20090110.
+
+* 三 12月 03 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-68
+- Updated db-hpijs to 20081124.
+- Updated db to 20081124.
+- Updated filters to 3.0-20081124.
+- Updated db-engine to 3.0-20081124.
+- Better build root.
+- Fixed summary.
+
+* 四 10月 02 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-67
+- Rebuilt (bug #465298).
+
+* 五 9月 05 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-66
+- Fixed filename handling in foomatic-rip (bug #457679).
+
+* 四 9月 04 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-65
+- Removed ampathxml and xml-cflags patches.
+- Updated db-hpijs to 20080904.
+- Updated db to 20080904.
+- Updated filters to 3.0-20080904.
+- Updated db-engine to 3.0-20080904.
+
+* 三 9月 03 2008 Tim Waugh <twaugh@redhat.com>
+- Finally remove ppdload.
+
+* 二 9月 02 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-64
+- Fixed typo in HP-Color_LaserJet_9500_MFP.xml.
+
+* 二 9月 02 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-63
+- Avoid busy-looping when trying to shorten long PPD nicknames.
+
+* 二 9月 02 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-62
+- Removed patch fuzz.
+- Fixed PPD generation for HP LaserJet 4345 MFP (bug #459847).
+
+* 四 7月 10 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-61
+- Updated db-hpijs to 20080710.
+- Updated db to 20080710.
+- Updated filters to 3.0-20080710.
+- Updated db-engine to 3.0-20080710.
+- Ship a defaultspooler file to avoid the need for spooler
+  auto-detection (bug #454684).
+
+* 四 5月 08 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-60
+- Updated filters to 3.0-20080507.
+
+* 三 5月 07 2008 Tim Waugh <twaugh@redhat.com>
+- Avoid busy-looping when the CUPS backend stops (bug #445555).
+
+* 二 4月 01 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-59
+- More foo2zjs printers removed (bug #438319).
+
+* 四 3月 13 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-58
+- Applied patch from upstream to make foomatic-rip clean up correctly when
+  a job is cancelled.
+
+* 一 3月 03 2008 Tom "spot" Callaway <tcallawa@redhat.com> 3.0.2-57
+- rebuild for new perl (again)
+
+* 三 2月 13 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-56
+- Updated filters to 3.0-20080211.
+- Updated db-hpijs to 20080211.
+- Updated db-engine to 3.0-20080211.
+- Updated db to 3.0-20080211.
+
+* 六 2月 02 2008 Tom "spot" Callaway <tcallawa@redhat.com> 3.0.2-55
+- rebuild for new perl
+
+* 四 1月 10 2008 Tom "spot" Callaway <tcallawa@redhat.com> 3.0.2-54
+- rebuild for new perl
+- correct license tag
+
+* 三 1月 09 2008 Tim Waugh <twaugh@redhat.com> 3.0.2-53
+- Updated db-hpijs to 20071218.
+- Updated db to 3.0-20071218.
+- Updated db-engine to 3.0-20071218.
+- Updated filters to 3.0-20071218 (bug #416881).
+
+* 一 1月 07 2008 Tim Waugh <twaugh@redhat.com>
+- Removed foo2qpdl drivers and printers (bug #208851).
+
+* 五 10月 12 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-52
+- Removed use of printconf hooks.
+- Don't restart CUPS on upgrade.
+
+* 五 9月 21 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-51
+- Build requires perl(ExtUtils::MakeMaker).
+- Updated filters to 3.0-20070919.
+- Updated db to 20070919.
+
+* 三 8月 15 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-50
+- Removed references to unshipped drivers:
+  * drv_x125
+  * ml85p
+  * pbm2lxwl
+  * pbmtozjs
+  * bjc800j
+
+* 四 6月 14 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-49
+- Safe default margins for PPDs (bug #244161).
+- Added missing IEEE 1284 ID for HP Photosmart 380 (bug #241352).
+
+* 四 6月 14 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-48
+- Updated db to 3.0-20070614.
+- Updated db-engine to 3.0-20070614.
+- Updated db-hpijs to 20070614.
+- Updated filters to 3.0-20070614.
+
+* 一 4月 16 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-47
+- Fixed %prep (bug #208851).
+- Removed now-unused with_omni code.
+
+* 五 3月 30 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-46
+- Don't ship old gimp-print data (bug #234388).
+
+* 四 1月 11 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-45
+- Leave gutenprint-recommended printers alone, rather than pointing them
+  to gimp-print as before.
+
+* 二 1月 09 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-44
+- Removed m2300w files (bug #203381).
+
+* 五 1月 05 2007 Tim Waugh <twaugh@redhat.com> 3.0.2-43
+- Updated db to 3.0-20070105 (bug #214037, bug #191661, bug #198999,
+  bug #191504, bug #187387, bug #188762, bug #170373, bug #221121,
+  bug #214801).
+
+* 四 11月 30 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-42
+- Updated db to 3.0-20061130.
+
+* 五 11月 10 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-41
+- Updated db-engine to 3.0-20061109 (bug #197331).
+
+* 二 11月 07 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-40
+- Clean up gimp-print-ijs/gutenprint recommended drivers.
+- Updated db-hpijs to 20061031.
+
+* 五 11月 03 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-39
+- Updated db-engine to 3.0-20061031.
+- Updated db to 3.0-20061031.
+- Remove references to foo2zjs and foo2oak (bug #208851).
+
+* 四 8月 03 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-38
+- Change a2ps requirement to mpage.
+- Make CUPS driver work with drivers containing '-' in their names
+  (bug #201398).
+
+* 四 7月 13 2006 Karsten Hopp <karsten@redhat.de> 3.0.2-37
+- buildrequires autoconf, automake
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.0.2-36.1
+- rebuild
+
+* 一 5月 22 2006 Karsten Hopp <karsten@redhat.de> 3.0.2-36
+- add buildrequires ghostscript-devel so that /usr/lib/cups/driver/foomatic
+  gets built
+
+* 五 5月 19 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-35
+- Define CUPS_PPDS for configure (bug #192375).
+
+* 五 4月 21 2006 Tim Waugh <twaugh@redhat.com>
+- Updated db-engine to 3.0-20060421.
+
+* 五 3月 24 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-34
+- Always use /usr/lib/cups/{backend,filter}.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.0.2-33.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.0.2-33.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 1月 18 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-33
+- Make build self-hosting.
+
+* 二 1月 17 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-32
+- Fix foomatic-cleanupdrivers.
+- Updated db-engine to 3.0-20060117.
+- Handle PPDs with default option values of '0'.
+
+* 一 1月 16 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-31
+- Fix tag mismatch in db.
+- Updated db to 3.0-20060116.
+
+* 二 1月 10 2006 Tim Waugh <twaugh@redhat.com>
+- Don't remove the cache directory, only its contents (bug #177266).
+
+* 二 1月 03 2006 Tim Waugh <twaugh@redhat.com> 3.0.2-30
+- Updated db to 3.0-20060103.
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 09 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-29
+- Updated db-engine to 3.0-20051209.
+- Updated db-hpijs to 1.5-20051209.
+- Updated filters to 3.0-20051209.  No longer need rip-cvs patch.
+- Updated db to 3.0-20051209.
+
+* 二 9月 13 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-28
+- Remove explicit perl module package dependencies.  These should be
+  picked up by the RPM during the build process automatically anyway.
+  Fixes bug #167997.
+
+* 一 9月 12 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-27
+- Own %{_datadir}/foomatic/db/source/PPD/Custom and %{_var}/cache/foomatic
+  (bug #168085).
+
+* 三 9月 07 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-26
+- Updated db-engine to 3.0-20050907.
+- Updated db to 3.0-20050907.
+
+* 一 9月 05 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-25
+- Add IEEE 1284 ID for HP LaserJet 4200 (bug #166638).
+- Add IEEE 1284 ID for HP LaserJet 5000 (bug #167154).
+
+* 四 8月 04 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-24
+- Updated db to 3.0-20050804.
+- No longer need hplj5 patch.
+- Conflicts with system-config-printer before the parser bug was fixed.
+
+* 二 7月 26 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-23
+- Updated db to 3.0-20050726.
+- No longer need ieee1284 patch.
+
+* 一 7月 25 2005 Tim Waugh <twaugh@redhat.com>
+- Fix IEEE 1284 ID for HP Photosmart 7260 (bug #162915).
+
+* 一 7月 18 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-22
+- Updated db to 20050718.
+
+* 日 7月 03 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-21
+- Updated db to 20050703.
+
+* 一 6月 13 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-20
+- Updated db-hpijs to 1.5-20050613.
+- Updated db to 20050613.
+
+* 五 6月 10 2005 Tim Waugh <twaugh@redhat.com>
+- Add IEEE 1284 ID for Epson Stylus Photo 915 (bug #160030).
+- Add IEEE 1284 ID for Ricoh Aficio 2228C PS (bug #160036).
+
+* 二 6月 07 2005 Tim Waugh <twaugh@redhat.com>
+- Add IEEE 1284 ID for Epson Stylus Photo 870 (bug #159717).
+
+* 三 5月 25 2005 Tim Waugh <twaugh@redhat.com>
+- Add IEEE 1284 ID for HP LaserJet 4250 (bug #157883).
+
+* 四 5月 19 2005 Tim Waugh <twaugh@redhat.com>
+- Add IEEE 1284 ID for HP DeskJet 3845 (bug #157760).
+
+* 二 5月 03 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-19
+- Add IEEE 1284 ID for Epson Stylus CX5400 (bug #156661).
+
+* 二 4月 12 2005 Tim Waugh <twaugh@redhat.com>
+- Fix Postscript driver (bug #151645).
+- Add IEEE 1284 ID for HP DeskJet 5150 (bug #154518).
+- Add IEEE 1284 ID for HP LaserJet 2420 (bug #114191).
+
+* 四 3月 24 2005 Tim Waugh <twaugh@redhat.com>
+- Add a hook to remove any foomatic data cached by system-config-printer.
+
+* 四 3月 10 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-18
+- Updated db to 20050310.
+
+* 三 3月 09 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-17
+- Make Omni optional.
+- ... and disable it.
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-16
+- Rebuild for new GCC.
+
+* 五 2月 25 2005 Tim Waugh <twaugh@redhat.com>
+- Add IEEE 1284 information for Lexmark Optra R+ (bug #149498).
+
+* 四 2月 17 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-15
+- Fixed warning patch.
+
+* 三 2月 16 2005 Tim Waugh <twaugh@redhat.com>
+- Don't ship backup files.
+
+* 三 2月 16 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-14
+- Updated db to 20050216.
+
+* 四 2月 10 2005 Tim Waugh <twaugh@redhat.com>
+- Added IEEE 1284 information for HP Color LaserJet 4600 (bug #147648).
+
+* 二 2月 08 2005 Tim Waugh <twaugh@redhat.com>
+- Corrected IEEE 1284 information for HP DeskJet 6540 (bug #147288).
+- Added IEEE 1284 information for Epson Stylus C82 (bug #147230).
+
+* 一 1月 24 2005 Tim Waugh <twaugh@redhat.com>
+- Fixed last change.
+
+* 五 1月 21 2005 Tim Waugh <twaugh@redhat.com>
+- Prevent a warning from DB.pm (bug #145605).
+
+* 二 1月 18 2005 Tim Waugh <twaugh@redhat.com> 3.0.2-13
+- Updated db to 20050118.
+
+* 一 1月 10 2005 Tim Waugh <twaugh@redhat.com>
+- Added IEEE 1284 information for Epson Stylus Photo R200 (bug #144631).
+
+* 二 1月 04 2005 Tim Waugh <twaugh@redhat.com>
+- Added IEEE 1284 information for Okidata Okipage 6ex (bug #143964).
+- Added IEEE 1284 information for Epson Stylus Photo R300 (bug #143939).
+
+* 一 12月 20 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-12
+- Added IEEE 1284 information for Epson Stylus CX3200 (bug #143343).
+
+* 一 12月 06 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-11
+- Updated db to 20041206.
+
+* 四 12月 02 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-10
+- Added IEEE 1284 information for HP-Color_Inkjet_Printer_CP1700 (bug #141594).
+- Added IEEE 1284 information for Samsung-ML-1710 (bug #141163).
+- Added IEEE 1284 information for HP-OfficeJet_G95 (bug #141057).
+
+* 三 11月 24 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-9
+- Updated db to 20041124.
+- Updated hpijs-db to 1.5-20041124.
+- No longer need HP DJ 6122 patch.
+- No longer need ieee1284 patch.
+- Updated Omni-printers to 0.9.2.
+
+* 三 11月 24 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-8
+- Minor PPD.pm fix for PPD import (bug #132625).
+
+* 一 11月 22 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-7
+- Applied some foomatic-rip fixes from CVS.
+
+* 四 11月 18 2004 Tim Waugh <twaugh@redhat.com>
+- Add autodetect information for HP Color LaserJet 4550 (bug #139799).
+
+* 三 11月 17 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-6
+- Add autodetect information for HP LaserJet 8150 (bug #139683).
+- Add autodetect information for Epson Stylus Color 777 (bug #139629).
+
+* 二 11月 16 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-5
+- Ship data as non-executable (bug #139271).
+- Corrected autodetect information for HP Business InkJet 1100 (bug #139258).
+
+* 一 11月 15 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-4
+- Add autodetect information for HP Business InkJet 1100 (bug #139258).
+- Add autodetect information for Epson Stylus Photo 790 (bug #139266).
+- Add autodetect information for HP DJ 3820 (bug #139271).
+
+* 三 10月 13 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-3
+- Revert change for bug #133647.
+
+* 一 10月 11 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-2
+- Use gimp-print driver for HP 2000C (bug #133647).
+- Add autodetect information for Lexmark Z52 (bug #135178).
+
+* 四 10月 07 2004 Tim Waugh <twaugh@redhat.com>
+- Add autodetect information for HP DJ 640C (bug #134912).
+
+* 五 9月 24 2004 Tim Waugh <twaugh@redhat.com> 3.0.2-1
+- Updated filters to 3.0.2.
+- Updated db-engine to 3.0.2.
+- No longer need Omni PageSize patch or lvalue patch.
+
+* 二 8月 31 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-11
+- Add autodetect information for Brother HL-5050 (bug #131220).
+
+* 五 8月 13 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-10
+- Add autodetect information for HP LJ 2200 (bug #129732).
+
+* 四 8月 05 2004 Tim Waugh <twaugh@redhat.com>
+- Add autodetect information for HP DJ 1220.
+
+* 二 7月 27 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-9
+- Rebuilt.
+
+* 三 7月 21 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-8
+- Add autodetect information for HP DJ 6122 (bug #124629).
+
+* 二 7月 20 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-7
+- Updated gimp-print data to 4.2.7.
+
+* 一 7月 12 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-6
+- Updated db to 20040712.
+- HPLJ4300 data is upstream now.
+
+* 四 6月 24 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-5
+- SNMP/IEEE 1284 data for HPLJ4300.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 01 2004 Tim Waugh <twaugh@redhat.com>
+- Build requires a2ps, because foomatic-filters checks for a conversion
+  utility (bug #124931).
+
+* 一 4月 19 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-3
+- Require appropriate perl(:MODULE_COMPAT_...) symbol (bug #121131).
+
+* 三 3月 10 2004 Tim Waugh <twaugh@redhat.com>
+- Fix deprecated cast-as-lvalues.
+
+* 四 3月 04 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-2
+- Fix Omni PageSize problem (bug #115586).
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 19 2004 Tim Waugh <twaugh@redhat.com> 3.0.1-1
+- Upgrade db to 20040219.
+- Upgrade hpijs to 1.5-20040219.
+- Upgrade engine to 3.0.1.
+- Upgrade filters to 3.0.1.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 09 2004 Tim Waugh <twaugh@redhat.com> 3.0.0-23
+- Fix up HP Color Inkjet CP1700 support.
+- Remove PrintoutMode option from gimp-print driver to avoid breaking it.
+- Update filters to 3.0.1rc3.
+- Update engine to 3.0.1rc2
+- No long need symlink patch.
+
+* 一 1月 12 2004 Tim Waugh <twaugh@redhat.com> 3.0.0-22
+- Updated Omni printers to 0.9.1 again.
+
+* 一 1月 12 2004 Tim Waugh <twaugh@redhat.com> 3.0.0-21
+- Build for Fedora Core 1 printer drivers update.
+- Revert Omni update temporarily.
+- Downgrade engine to 20031217 to stick to the stable branch.
+
+* 一 1月 12 2004 Tim Waugh <twaugh@redhat.com> 3.0.0-20
+- Updated Omni printers to 0.9.1.
+
+* 一 1月 12 2004 Tim Waugh <twaugh@redhat.com> 3.0.0-19
+- Build for Fedora Core 1 printer drivers update.
+- No longer need symlink patch.
+- Updated fontpath patch.
+- Updated engine to 20040112.
+- Updated db to 20040112.
+- Updated gimp-print data to 4.2.6.
+
+* 二 1月 06 2004 Tim Waugh <twaugh@redhat.com> 3.0.0-18
+- Build for Fedora Core 1 printer drivers update.
+- Explicitly state conflict with hpijs < 1.5.
+- Make foomatic-ppdfile accept '-t type' like foomatic-datafile used to.
+
+* 二 12月 23 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-17
+- Fix up gimp-print XML (bug #112574).
+
+* 五 12月 19 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-16
+- Need the ppd driver too.
+
+* 五 12月 19 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-15
+- Reinstate ppdload long enough for me to work around its disappearance.
+
+* 四 12月 18 2003 Tim Waugh <twaugh@redhat.com>
+- Updated db to 20031218.
+- No longer need hpdj656, dell, mc3100 patches.
+
+* 三 12月 17 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-14
+- Updated db to 20031217.
+- Updated engine to 20031217.
+- Updated hpijs to 1.5-20031217.
+- Use relative symlinks.
+
+* 五 12月 12 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-13
+- Add Minolta magicolor 3100.
+
+* 二 12月 02 2003 Tim Waugh <twaugh@redhat.com>
+- Don't ship backup files.
+
+* 六 11月 29 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-12
+- Undo over-zealous percent escaping in PostScript.xml
+- Build requires libxml2-devel (bug #110589).
+- Use relative, not absolute, symlink for CUPS filter.
+
+* 五 11月 07 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-11
+- Add pxlmono driver for HP LaserJet 5 (bug #109378).
+
+* 三 11月 05 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-10
+- Updated db to 20031105.
+- Drop filters path patch.
+- Updated fontpath patch, both libdir patches.
+- Updated engine and filters to 3.0-20031105.
+- Updated hpijs db to 1.4-1.
+
+* 一 10月 27 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-9
+- Recommend omni-compiled for Omni drivers (bug #107965).
+
+* 一 9月 29 2003 Tim Waugh <twaugh@redhat.com>
+- No longer requires Date::Manip (bug #105696).
+
+* 四 9月 04 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-8
+- Build requires latest perl (bug #103630).
+
+* 二 8月 05 2003 Elliot Lee <sopwith@redhat.com> 3.0.0-7
+- Fix install to find perl modules
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 03 2003 Jeff Johnson <jbj@redhat.com>
+- add explicit epoch's where needed.
+
+* 二 6月 03 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-5
+- Add some Dell printers.
+- Updated foomatic-db to 20030603.
+- Updated missing UPP list for ghostscript 7.07.
+
+* 三 5月 21 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-4
+- Fix some printer models whose recommended driver is not shipped
+  (bug #89455).
+
+* 一 5月 19 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-3
+- Relax perl requirement.  Rebuild for perl 5.8.0.
+
+* 一 5月 19 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-2
+- Disable the xmltest during configure (it hangs on ppc).
+- Requires newer perl (bug #91129).
+
+* 三 4月 30 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-1
+- 3.0.0.
+
+* 五 4月 04 2003 Tim Waugh <twaugh@redhat.com>
+- Update Omni printers to 0.9.0.
+
+* 三 4月 02 2003 Tim Waugh <twaugh@redhat.com> 3.0.0-0.beta2.1
+- 3.0.0beta2.
+- Updated path patch.
+- No longer need FOOMATIC_LIBDIR, generic PS, ids, postscript-duplex,
+  hpijs13, psc2210, duplex184 patches.
+- Add hpijs support back in.
+- Fix up references to old printer IDs.
+
+* 三 3月 26 2003 Tim Waugh <twaugh@redhat.com> 2.0.2-18
+- Fix PS/PJL conflicts in Duplex options (bug #86510).
+
+* 五 3月 21 2003 Tim Waugh <twaugh@redhat.com> 2.0.2-17
+- Update Omni printers to 0.7.3.
+
+* 三 3月 19 2003 Tim Waugh <twaugh@redhat.com> 2.0.2-16
+- Add autodetect info for HP PSC 2210.
+
+* 二 2月 04 2003 Tim Waugh <twaugh@redhat.com> 2.0.2-15
+- Update data-generators to CVS.
+
+* 四 1月 30 2003 Tim Waugh <twaugh@redhat.com> 2.0.2-14
+- Use hpijs, not hpijs-rss (we don't ship the RSS patch now).
+
+* 四 1月 23 2003 Tim Waugh <twaugh@redhat.com> 2.0.2-13
+- Pacify printers that don't understand duplex (bug #82385).
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 2.0.2-12
+- rebuilt
+
+* 二 1月 21 2003 Tim Waugh <twaugh@redhat.com> 2.0.2-11
+- Add autodetect info for HP DeskJet 656C.  It doesn't really do
+  IEEE 1284 IDs, but since it's a USB device we can figure out its
+  manufacturer and model anyway.
+
+* 四 1月 09 2003 Tim Waugh <twaugh@redhat.com> 2.0.2-10
+- Set GS_FONTPATH in gs wrapper (bug #81410).
+
+* 六 1月 04 2003 Jeff Johnson <jbj@redhat.com> 2.0.2-9
+- use internal dep generator.
+
+* 日 12月 15 2002 Tim Waugh <twaugh@redhat.com> 2.0.2-8
+- Add several device IDs.
+
+* 六 12月 14 2002 Tim Waugh <twaugh@redhat.com> 2.0.2-7
+- Update Omni printers to 0.7.2.
+- No longer need Omni badxml patch.
+
+* 六 12月 14 2002 Tim Powers <timp@redhat.com> 2.0.2-6
+- don't use rpms internal dep generator
+
+* 五 12月 06 2002 Tim Waugh <twaugh@redhat.com> 2.0.2-5
+- Omni XML wasn't well-formed.
+
+* 三 11月 20 2002 Tim Waugh <twaugh@redhat.com> 2.0.2-4
+- Update gimp-print data.
+- Add 'generic postscript' model.
+
+* 一 11月 11 2002 Tim Waugh <twaugh@redhat.com> 2.0.2-3
+- Update Omni printers to 0.7.1.
+
+* 二 10月 22 2002 Tim Waugh <twaugh@redhat.com> 2.0.2-2
+- Fix file manifest for perl modules.
+- Add autodetect information for HP DeskJet 990C.
+
+* 一 10月 21 2002 Tim Waugh <twaugh@redhat.com> 2.0.2-1
+- 2.0.2.
+- No longer need 67973, 970c patches.
+- Remove cups-drivers-* packages (no longer needed).
+- Remove files not shipped.  Ship filter.conf.
+- Conditionally restart cups.
+- Use libdir.
+- Don't put things in site_perl; use vendor_perl instead (bug #73528).
+
+* 五 8月 09 2002 Tim Waugh <twaugh@redhat.com> 1.9-1.20020617.6
+- Fix autodetect information for HPDJ970C.
+
+* 四 8月 08 2002 Tim Waugh <twaugh@redhat.com> 1.9-1.20020617.5
+- For gimp-print, use the Ghostscript stp driver in preference to the
+  IJS interface.
+
+* 四 7月 25 2002 Tim Waugh <twaugh@redhat.com> 1.9-1.20020617.4
+- Quieten scriptlets.
+
+* 五 7月 05 2002 Tim Waugh <twaugh@redhat.com> 1.9-1.20020617.3
+- Fix autodetect information for HPLJ2100/2100M.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 1.9-1.20020617.2
+- automated rebuild
+
+* 三 6月 19 2002 Tim Waugh <twaugh@redhat.com> 1.9-0.20020617.2
+- Omni 0.7.0 printers.
+
+* 一 6月 17 2002 Tim Waugh <twaugh@redhat.com> 1.9-0.20020617.1
+- Update to CVS.
+- Remove some more explicit perl dependencies that are picked up
+  automatically.
+
+* 三 5月 29 2002 Tim Waugh <twaugh@redhat.com> 1.9-0.20020517.3
+- Remove explicit perl-Storable dependency; it should be perl(Storable),
+  and that is picked up automatically.
+
+* 二 5月 28 2002 Tim Waugh <twaugh@redhat.com> 1.9-0.20020517.2
+- Fix release number.
+- Drop gen-ppds from the file manifest---use foomatic-compiledb instead
+  (bug #63622).
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Waugh <twaugh@redhat.com> 1.9-0.20020517.1
+- Remove ghostscript UPP drivers that are gone in 7.05.
+
+* 六 5月 18 2002 Tim Waugh <twaugh@redhat.com> 1.9-0.20020517.0.1
+- Update to CVS.
+- Updated requirements.
+- Updated path and libdir patches.
+- Drop hpijs 1.0.2 patch.
+- foomatic-datafile has moved to %{_bindir}.
+- Update gimp-print data to 4.2.1.
+- Update Omni printer data to 0.6.1.
+
+* 四 4月 04 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020313.3
+- Fix the hpijs option data too (bug #62587).
+
+* 三 4月 03 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020313.2
+- Back off to 1.0.2 for hpijs driver data (bug #62587).
+
+* 四 3月 14 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020313.1
+- Update to CVS.
+
+* 三 3月 06 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020306.1
+- Update to CVS.
+- Patches no longer needed: conffile, sys, cachedir, fd0.
+- Adapted path patch.
+
+* 二 3月 05 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.10
+- Fix bug #58319.
+- Drop dbg patch.
+
+* 一 2月 25 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.9
+- Fix file lists.
+
+* 一 2月 25 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.8
+- Fix %post scriplet bug (bug #59942).
+
+* 四 2月 21 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.7
+- Rebuild in new environment.
+
+* 三 2月 13 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.6
+- Merge cups-drivers.  No epoch needed.
+- Require perl-URI.
+
+* 三 2月 06 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.5
+- Cache fix.
+
+* 一 2月 04 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.4
+- Don't ship backup files.
+
+* 一 2月 04 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.3
+- Rebuild to pick up new perl installsitelib.
+
+* 四 1月 31 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.2
+- Fix a thinko in DB.pl.
+
+* 三 1月 30 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020130.1
+- Update to CVS.
+- No longer need the cachedir patch.
+- Fix config file path.
+- Look in /usr/local/bin last, not first, in lpdomatic (bug #57915).
+
+* 二 1月 29 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020129.1
+- Update to CVS.
+- Patches no longer needed: prepend, fd3.
+- Use RPM_OPT_FLAGS.
+- Allow non-root users to use foomatic-datafile (bug #58956).
+
+* 六 1月 26 2002 Jeff Johnson <jbj@redhat.com> 1.1-0.20020124.2
+- added Provides: perl(Foomatic::GrovePath)
+
+* 四 1月 24 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20020124.1
+- Update to CVS.
+- Updated Omni printers to those in Omni 0.5.1.
+- Updated patches: prepend, fd3.
+- Patches no longer needed: utf8, lpdomatic.
+- Added gimp-print (formerly stp) foomatic db info, and removed the old
+  stp.xml file.
+- Conflict with ghostscript if it doesn't have gimp-print-4.2.0 yet.
+
+* 五 1月 18 2002 Tim Waugh <twaugh@redhat.com> 1.1-0.20011218.2
+- REALLY fix PCL fixup code (bug #55909, others).
+- PreReq fileutils, initscripts (bug #56984).
+- Fix prepends in lpdomatic (bug #57371).
+- Run foomatic-cleanupdrivers during install, to remove driver entries
+  with no command line.
+- Put lpdomatic in /usr/sbin again.
+- Fix foomatic-gswrapper's file descriptor manipulations (bug #56871).
+
+* 一 12月 17 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011218.1
+- re-imported from upstream to fix some perl fixup code on pcl printers.
+
+* 一 12月 17 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011217.2
+- fix the rest of the quoting issues with foomatic-combo-xml with the patch
+- foomatic-1.1-20011217-quotes.patch. This has been sent upstream.
+
+* 一 12月 17 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011217.1
+- respin to pull in latest foomatic database, fixes:
+  - properly use the cache in relation to foomatic-combo-xml's output
+  - fix _some_ of the quoting issues with calling foomatic-combo-xml
+
+* 三 12月 05 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011205.1
+- respin to pull in latest foomatic database, fixes:
+  - droping half of a large job
+  - -Mutf8 added to the upstream filters
+  - miscelaneous printer db updates
+
+* 四 11月 29 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011018.8
+- added Requires: fileutils for the 'rm' in post
+
+* 一 11月 26 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011018.7
+- /var/chache => /var/cache, doh!
+
+* 五 11月 16 2001 Nalin Dahyabhai <nalin@redhat.com> 1.1-0.20011018.6
+- fix %post scriptlet
+
+* 二 11月 13 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011018.5
+- changed the patch to use the -Mutf8 command line option,
+- and to restart the printserver, after rebuilding the settings.
+
+* 五 11月 09 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011018.4
+- grumble. Some drivers use inline perl scripts, and need the 'use utf8;'
+- pragma. Without it, they break on _some_ of their options.
+
+* 三 10月 31 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011018.3
+- patched lpdomatic to prepend PostScript options in the _right_ place.
+
+* 四 10月 25 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011018.2
+- zap the foomatic cache on install
+
+* 四 10月 18 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011018.1
+- rolled to pull in latest information.
+- added Omni printers to the printer list.
+
+* 五 10月 05 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011005.1
+- rolled to pull in an ia64 fix to foomatic-combo-xml.c
+
+* 一 10月 01 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20011001.1
+- rolled to pull in foomatic fixes to foomatic-combo-xml.c
+
+* 三 9月 05 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20010905.1
+- upgraded to latest foomatic, we now have fast overview generation!
+- this means that there is no prebuilt overview file.
+
+* 二 8月 28 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20010828.1
+- WOW! The latest foomatic uses Till Kamppeter's C based combo compiler.
+- It is now fast enough that there is no real benifit to precompiling.
+- NOTE: this forces the package to stop being noarched.
+
+* 一 8月 27 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20010827.1
+- fresh pull, maybe it fixes the build errors.
+
+* 六 8月 25 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20010825.1
+- did a fresh database pull, which contains the old japanese printers as well.
+- removed japanese hack.
+
+* 二 8月 14 2001 Akira TAGOH <tagoh@redhat.com> 1.1-0.20010717.5
+- Add Japanese printer entry.
+
+* 一 8月 06 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20010717.4
+- move the cache back to /var, sigh.
+
+* 一 7月 23 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20010717.2
+- made foomatic pre-compute its db
+
+* 三 7月 18 2001 Crutcher Dunnavant <crutcher@redhat.com> 1.1-0.20010717.1
+- imported from mandrake.
+
+* 二 7月 17 2001 Till Kamppeter <till@mandrakesoft.com> 1.1-0.20010717mdk
+- Added job listing/removal/manipulation and queue control to
+  foomatic-printjob
+- Support for printing multiple copies with PDQ
+
+* 六 7月 14 2001 Till Kamppeter <till@mandrakesoft.com> 1.1-0.20010714mdk
+- Included the cupsomatic filter script
+- When a queue is set up, default options can be set now
+- Help messages of foomatic-configure and foomatic-printjob cleaned up.
+
+* 五 7月 13 2001 Till Kamppeter <till@mandrakesoft.com> 1.1-0.20010713mdk
+- Many bugfixes in "foomatic-printjob".
+- "foomatic-configure" adds the Foomatic config file directory automatically
+  to the search paths of PDQ.
+- Printing a help page under PDQ was broken.
+
+* 四 7月 12 2001 Stefan van der Eijk <stefan@eijk.nu> 1.1-0.20010712mdk
+- BuildRequires: perl-devel
+
+* 三 7月 11 2001 Till Kamppeter <till@mandrakesoft.com> 1.1-0.20010711mdk
+- initial release.
+- Deleted the obsolete drivers "stp", "cZ11", and "hpdj".
+- Patch applied which flushes the memory cache regularly, otherwise
+  foomatic-configure would hang when the Foomatic data of GIMP-Print is
+  installed.
+

@@ -1,0 +1,220 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.1.5-17.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.1.5-17.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.1.5-17.1
+- rebuild for alios6
+
+* 五 4月 09 2010 Kamil Dudka <kdudka@redhat.com> 2.1.5-17
+- mention the option -i in eject(1) man page (#580895)
+
+* 二 12月 15 2009 Kamil Dudka <kdudka@redhat.com> 2.1.5-16
+- honor merge review comments (#225720)
+- remove invalid URL of source tarball
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.1.5-15.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.5-15
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 3月 31 2009 Zdenek Prikryl <zprikryl@redhat.com> 2.1.5-14
+- Fixed space replacing in mount points (#492524)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.5-13
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 7月 17 2008 Tom "spot" Callaway <tcallawa@redhat.com> 2.1.5-12
+- fix license tag
+
+* 三 4月 02 2008 Zdenek Prikryl <zprikryl@redhat.com> 2.1.5-11
+- Added check if device is hotpluggable
+- Resolves #438610
+
+* 四 3月 20 2008 Jesse Keating <jkeating@redhat.com> - 2.1.5-10
+- Fix the patch again now that sysfs makes things in /sys/block symlinks.
+
+* 一 3月 17 2008 Zdenek Prikryl <zprikryl@redhat.com> 2.1.5-9
+- Rewriten patch for removable flag
+- Resolves #437362
+
+* 三 3月 12 2008 Zdenek Prikryl <zprikryl@redhat.com> 2.1.5-8.1
+- Added dist tag
+
+* 三 3月 12 2008 Zdenek Prikryl <zprikryl@redhat.com> 2.1.5-8
+- Added check for a removable flag
+- Resolves: #432187
+
+* 四 2月 28 2008 Zdenek Prikryl <zprikryl@redhat.com> 2.1.5-7
+- Added lock functionality, patch from upstream.
+- Resolves: #145843
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.1.5-6
+- Autorebuild for GCC 4.3
+
+* 一 10月 30 2006 Than Ngo <than@redhat.com> 2.1.5-5
+- apply upstream patch to fix #212467
+
+* 一 8月 28 2006 Than Ngo <than@redhat.com> 2.1.5-4
+- fix #204222, Password error window popuped by calling "eject" command from remote
+
+* 二 8月 22 2006 Than Ngo <than@redhat.com> 2.1.5-3
+- made eject use pam
+
+* 一 8月 07 2006 Than Ngo <than@redhat.com> 2.1.5-2
+- apply patch to fix timeout issue
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.1.5-1.1
+- rebuild
+
+* 六 6月 10 2006 Than Ngo <than@redhat.com> 2.1.5-1
+- 2.1.5
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.1.2-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.1.2-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 8月 25 2005 Than Ngo <than@redhat.com> 2.1.2-1
+- update to 2.1.2
+- drop several patches, which included in new upstream
+
+* 三 8月 24 2005 Than Ngo <than@redhat.com> 2.1.1-1
+- update to 2.1.1
+- remove eject-2.0.13-scsi.patch, which included in new upstream
+
+* 四 5月 12 2005 Than Ngo <than@redhat.com> 2.0.13-15
+- add better translation for zh_TW #157519,
+  thanks to Wei-Lun Chao
+
+* 四 3月 03 2005 Than Ngo <than@redhat.com> 2.0.13-14
+- rebuilt
+
+* 三 12月 01 2004 Than Ngo <than@redhat.com> 2.0.13-13
+- add patch to remove deprecated SCSI ioctl
+
+* 二 11月 02 2004 Than Ngo <than@redhat.com> 2.0.13-12
+- rebuilt
+
+* 二 11月 02 2004 Than Ngo <than@redhat.com> 2.0.13-11
+- fix Invalid argument error, bug #131959
+
+* 二 9月 07 2004 Than Ngo <than@redhat.com> 2.0.13-10
+- Added patch to find name in /media
+
+* 日 8月 08 2004 Alan Cox <alan@redhat.com>
+- Fix build dependancies (#125317) - Steve Grubb
+
+* 四 6月 24 2004 Alan Cox <alan@redhat.com>
+- Added Chris Woods patches as requested by Al Viro to handle modern
+  namespace mounting and unmount by mount point not device
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 25 2004 Than Ngo <than@redhat.com> 2.0.13-5
+- don't use kernel headers directly, #116613
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 12月 20 2002 Than Ngo <than@redhat.com> 2.0.13-1
+- update to 2.0.13
+
+* 五 11月 08 2002 Than Ngo <than@redhat.com> 2.0.12-8
+- Added missing mo files
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 4月 28 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- do not build on mainframe
+
+* 二 2月 26 2002 Than Ngo <than@redhat.com> 2.0.12-4
+- rebuild in new enviroment
+
+* 二 2月 05 2002 Than Ngo <than@redhat.com> 2.0.12-3
+- fix autoclose bug (stssppnn@yahoo.com, #59326)
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 11月 14 2001 Than Ngo <than@redhat.com> 2.0.12-1
+- update to 2.0.12
+
+* 四 9月 20 2001 Than Ngo <than@redhat.com> 2.0.11-1
+- update to 2.0.11 (bug #53828)
+
+* 一 5月 21 2001 Than Ngo <than@redhat.com>
+- update to 2.0.8
+- remove eject-2.0.4-ignorecomments.patch, 2.0.8 has it
+
+* 一 5月 14 2001 Than Ngo <than@redhat.com>
+- update to 2.0.6, fixed buffer overrun
+
+* 二 5月 01 2001 Than Ngo <than@redhat.com>
+- update to 2.0.4
+
+* 二 4月 24 2001 Than Ngo <than@redhat.com>
+- update to 2.0.3, supports devfs available in 2.4.x kernels and fixes
+  a number of small problems
+
+* 二 4月 03 2001 Preston Brown <pbrown@redhat.com>
+- ignore commented out entries in /etc/fstab (#33734)
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 12 2000 Preston Brown <pbrown@redhat.com>
+- FHS paths
+
+* 四 2月 03 2000 Preston Brown <pbrown@redhat.com>
+- gzip man page.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 3)
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 二 2月 16 1999 Preston Brown <pbrown@redhat.com>
+- solved a lot of problems by finding eject 2.0.2. :)
+
+* 二 2月 09 1999 Preston Brown <pbrown@redhat.com>
+- patch to improve symlink handling folded into linux-2.2 patch
+
+* 五 12月 18 1998 Preston Brown <pbrown@redhat.com>
+- bumped spec number for initial rh 6.0 build
+
+* 二 8月 04 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 三 7月 15 1998 Donnie Barnes <djb@redhat.com>
+- added small patch to 1.5 for longer device names
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 三 10月 15 1997 Donnie Barnes <djb@redhat.com>
+- upgraded to 1.5
+- various spec file clean ups
+- eject rocks!
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

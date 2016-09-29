@@ -1,0 +1,26 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/ldconfig  
+chkconfig  
+chkconfig  
+config(iptables) = 1.4.7-4.3.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+libip4tc.so.0()(64bit)  
+libip6tc.so.0()(64bit)  
+libipq.so.0()(64bit)  
+libiptc.so.0()(64bit)  
+libm.so.6()(64bit)  
+libxtables.so.4()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

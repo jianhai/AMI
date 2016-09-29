@@ -1,0 +1,10 @@
+postinstall scriptlet (using /bin/sh):
+if [ -f /usr/share/info/mtools.info ]; then
+    /sbin/install-info /usr/share/info/mtools.info /usr/share/info/dir || :;
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" -eq 0 ]; then
+    if [ -f /usr/share/info/mtools.info ]; then
+        /sbin/install-info --delete /usr/share/info/mtools.info /usr/share/info/dir || :;
+    fi
+fi

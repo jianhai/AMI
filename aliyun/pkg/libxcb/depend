@@ -1,0 +1,35 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libXau.so.6()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.2)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libxcb-composite.so.0()(64bit)  
+libxcb-damage.so.0()(64bit)  
+libxcb-dpms.so.0()(64bit)  
+libxcb-dri2.so.0()(64bit)  
+libxcb-glx.so.0()(64bit)  
+libxcb-randr.so.0()(64bit)  
+libxcb-record.so.0()(64bit)  
+libxcb-render.so.0()(64bit)  
+libxcb-res.so.0()(64bit)  
+libxcb-screensaver.so.0()(64bit)  
+libxcb-shape.so.0()(64bit)  
+libxcb-shm.so.0()(64bit)  
+libxcb-sync.so.0()(64bit)  
+libxcb-xevie.so.0()(64bit)  
+libxcb-xf86dri.so.0()(64bit)  
+libxcb-xfixes.so.0()(64bit)  
+libxcb-xinerama.so.0()(64bit)  
+libxcb-xselinux.so.0()(64bit)  
+libxcb-xtest.so.0()(64bit)  
+libxcb-xv.so.0()(64bit)  
+libxcb-xvmc.so.0()(64bit)  
+libxcb.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,13 @@
+/etc/modprobe.d/blacklist.conf
+/usr/share/doc/hwdata-0.233
+/usr/share/doc/hwdata-0.233/COPYING
+/usr/share/doc/hwdata-0.233/LICENSE
+/usr/share/hwdata
+/usr/share/hwdata/MonitorsDB
+/usr/share/hwdata/oui.txt
+/usr/share/hwdata/pci.ids
+/usr/share/hwdata/pnp.ids
+/usr/share/hwdata/upgradelist
+/usr/share/hwdata/usb.ids
+/usr/share/hwdata/videoaliases
+/usr/share/hwdata/videodrivers

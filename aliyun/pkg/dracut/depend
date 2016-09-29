@@ -1,0 +1,29 @@
+/bin/bash  
+/bin/sh  
+bash  
+bzip2  
+config(dracut) = 004-256.5.alios6
+coreutils  
+cpio  
+dash  
+filesystem >= 2.1.0
+findutils  
+grep  
+gzip  
+initscripts >= 8.63-1
+kbd  
+mktemp >= 1.5-5
+module-init-tools >= 3.7-9
+mount  
+plymouth >= 0.8.0-0.2009.29.09.19.1
+plymouth-scripts  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+sed  
+tar  
+udev  
+util-linux-ng >= 2.16
+which  
+rpmlib(PayloadIsXz) <= 5.2-1

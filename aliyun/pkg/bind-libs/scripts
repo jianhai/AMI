@@ -1,0 +1,5 @@
+postinstall program: /sbin/ldconfig
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+
+# Automatically update configuration from "dnssec-conf-based" to "BIND-based"

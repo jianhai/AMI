@@ -1,0 +1,245 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.0.12-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.0.12-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 4.0.12-1.1
+- rebuild for alios6
+
+* 二 11月 10 2009 Adam Tkac <atkac redhat com> 4.0.12-1
+- update to 4.0.12
+
+* 二 9月 01 2009 Adam Tkac <atkac redhat com> 4.0.11-1
+- update to 4.0.11
+
+* 二 8月 11 2009 Adam Tkac <atkac redhat com> 4.0.10-4
+- fix installation with --excludedocs (#515932)
+
+* 二 8月 11 2009 Adam Tkac <atkac redhat com> 4.0.10-3
+- correct source URL
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.0.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 4月 04 2009 Adam Tkac <atkac redhat com> 4.0.10-1
+- update to 4.0.10
+
+* 一 3月 09 2009 Adam Tkac <atkac redhat com> 4.0.9-1
+- updated to 4.0.9
+- merged mtools-3.9.7-bigdisk.patch to config patch
+- mtools400-rh480112.patch merged to upstream
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.0.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 1月 21 2009 Adam Tkac <atkac redhat com> 4.0.0-3
+- fixed off-by-two error in unix_name function (#480112)
+
+* 一 1月 12 2009 Adam Tkac <atkac redhat com> 4.0.0-2
+- don't ship infodir/dir.gz (#478322)
+
+* 一 12月 01 2008 Adam Tkac <atkac redhat com> 4.0.0-1
+- updated to 4.0.0
+
+* 三 11月 19 2008 Adam Tkac <atkac redhat com> 4.0.0-0.1.pre2
+- updated to 4.0.0_pre2
+
+* 二 11月 11 2008 Adam Tkac <atkac redhat com> 4.0.0-0.1.pre1
+- updated to 4.0.0_pre1
+
+* 五 10月 03 2008 Adam Tkac <atkac redhat com> 3.9.11-5
+- mtools-3.9.9-noargs.patch and mtools-3.9.6-paths.patch are not needed
+- rebuild (#465040)
+
+* 二 2月 19 2008 Adam Tkac <atkac redhat com> 3.9.11-4
+- fixed building on x86_64 (build with --disable-floppyd)
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 3.9.11-3.1
+- Autorebuild for GCC 4.3
+
+* 一 1月 14 2008 Adam Tkac <atkac redhat com> 3.9.11-2.1
+- corrected post and preun sections (#428478)
+- fix rpmlint errors
+- start use autoreconf
+
+* 三 8月 22 2007 Adam Tkac <atkac redhat com> 3.9.11-2
+- rebuild (BuildID feature)
+- change license to GPLv2+
+
+* 四 5月 31 2007 Adam Tkac <atkac redhat com> 3.9.11-1
+- updated to latest upstream (3.9.11)
+
+* 五 5月 11 2007 Adam Tkac <atkac redhat com> 3.9.10-7
+- in the end script has been completely rewriten by <skasal@redhat.com>
+
+* 五 5月 11 2007 Adam Tkac <atkac redhat com> 3.9.10-6
+- some minor changes in sh patch (changed sh to bash)
+
+* 五 5月 11 2007 Adam Tkac <atkac redhat com> 3.9.10-5
+- patch to #239741 by Matej Cepl <mcepl@redhat.com>
+  (rewrites /usr/bin/amuFormat.sh to /bin/sh)
+
+* 一 2月 05 2007 Adam Tkac <atkac redhat com> 3.9.10-4
+- fixed some unstandard statements in spec file (#226162)
+
+* 一 1月 22 2007 Adam Tkac <atkac redhat com> 3.9.10-3
+- Resolves: #223712
+- applied Ville Skytta's (ville.skytta "antispam" iki.fi) patch
+  (install-info scriptlet failures)
+
+* 三 8月 09 2006 Jitka Kudrnacova <jkudrnac@redhat.com> - 3.9.10-2
+- rebuilt to prevent corruption on the 13th character (#195528)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.9.10-1.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.9.10-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.9.10-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 10月 19 2005 Tim Waugh <twaugh@redhat.com> 3.9.10-1
+- 3.9.10.
+
+* 一 3月 21 2005 Tim Waugh <twaugh@redhat.com> 3.9.9-13
+- Fixed memset() usage bug.
+
+* 二 3月 15 2005 Tim Waugh <twaugh@redhat.com> 3.9.9-12
+- Fix build (bug #151135).
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 3.9.9-11
+- Rebuild for new GCC.
+
+* 五 12月 10 2004 Tim Waugh <twaugh@redhat.com> 3.9.9-10
+- Fixed mpartition --help output (bug #65293).
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 1月 08 2004 Tim Waugh <twaugh@redhat.com> 3.9.9-7
+- Fix mistaken use of '&' instead of '&&'.
+
+* 二 12月 09 2003 Tim Waugh <twaugh@redhat.com> 3.9.9-6
+- Remove last (incorrect) change.
+
+* 二 12月 09 2003 Tim Waugh <twaugh@redhat.com> 3.9.9-5
+- Fix mistaken variable assignment in comparison (bug #110823).
+
+* 四 11月 27 2003 Tim Waugh <twaugh@redhat.com>
+- Build requires texinfo (bug #111000).
+
+* 六 10月 25 2003 Tim Waugh <twaugh@redhat.com> 3.9.9-4
+- Rebuilt.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 22 2003 Tim Waugh <twaugh@redhat.com> 3.9.9-2
+- Fix mcomp with no arguments (bug #91372).
+
+* 二 3月 18 2003 Tim Waugh <twaugh@redhat.com> 3.9.9-1
+- 3.9.9.
+- Add config lines for hpoj photo-card access on drive P:.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 11月 20 2002 Tim Powers <timp@redhat.com>
+- rebuilt in current collinst
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 6月 24 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.9.8-2
+- Add patch from maintainer
+
+* 一 5月 28 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.9.8-1
+- 3.9.8 final
+
+* 一 5月 21 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.9.8-0.pre1.0
+- 3.9.8pre1
+
+* 三 5月 16 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.9.7-6
+- Fix support for disks > 1.44 MB (#40857)
+
+* 二 5月 08 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.9.7-5
+- Update to 20010507
+
+* 三 1月 10 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Apply the author's current patches, fixes among other things
+  ZIP drive support and doesn't crash when trying to access a BSD disk
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 六 6月 17 2000 Trond Eivind Glomsrod <teg@redhat.com>
+- specify ownership
+
+* 三 6月 07 2000 Trond Eivind Glomsrod <teg@redhat.com>
+- Version 3.9.7
+- use %{_mandir}, %{_makeinstall}, %configure, %makeinstall
+  and %{_tmppath}
+
+* 三 2月 09 2000 Cristian Gafton <gafton@redhat.com>
+- get rid of mtools.texi as a doc file (we have the info file)
+- fix config file so mtools work (#9264)
+- fix references to the config file to be /etc/mtools.conf
+
+* 五 2月 04 2000 Bill Nottingham <notting@redhat.com>
+- expunge floppyd
+
+* 四 2月 03 2000 Cristian Gafton <gafton@redhat.com>
+- man pages are compressed
+- fix description
+- version 3.9.6
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 5)
+
+* 四 3月 18 1999 Cristian Gafton <gafton@redhat.com>
+- patch to make the texi sources compile
+- fix the spec file group and description
+- fixed floppy drive sizes
+
+* 二 12月 29 1998 Cristian Gafton <gafton@redhat.com>
+- build for 6.0
+- fixed invalid SAMPLE_FILE configuration file
+
+* 三 9月 02 1998 Michael Maher <mike@redhat.com>
+- Built package for 5.2.
+- Updated Source to 3.9.1.
+- Cleaned up spec file.
+
+* 五 4月 24 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 4月 10 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 3.8
+
+* 二 10月 21 1997 Otto Hammersmith
+- changed buildroot to /var/tmp, rather than /tmp
+- use install-info
+
+* 一 7月 21 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 四 4月 17 1997 Erik Troan <ewt@redhat.com>
+- Changed sysconfdir to be /etc
+
+* 一 4月 14 1997 Michael Fulbright <msf@redhat.com>
+- Updated to 3.6
+

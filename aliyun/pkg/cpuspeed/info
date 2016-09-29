@@ -1,0 +1,19 @@
+Name        : cpuspeed                     Relocations: (not relocatable)
+Version     : 1.5                               Vendor: Alibaba
+Release     : 15.3.alios6                   Build Date: 2014年07月26日 星期六 02时12分55秒
+Install Date: 2015年03月25日 星期三 11时02分21秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: cpuspeed-1.5-15.3.alios6.src.rpm
+Size        : 65153                            License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时19分16秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://carlthompson.net/Software/CPUSpeed
+Summary     : CPU frequency adjusting daemon
+Description :
+cpuspeed is a daemon that dynamically changes the speed
+of your processor(s) depending upon its current workload
+if it is capable (needs Intel Speedstep, AMD PowerNow!,
+or similar support).
+
+This package also supports enabling cpu frequency scaling
+via in-kernel governors on Intel Centrino and AMD
+Athlon64/Opteron platforms.

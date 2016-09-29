@@ -1,0 +1,10 @@
+/etc/pki/nssdb
+/etc/pki/nssdb/cert8.db
+/etc/pki/nssdb/key3.db
+/etc/pki/nssdb/secmod.db
+/usr/lib64/libnss3.so
+/usr/lib64/libnssckbi.so
+/usr/lib64/libnsspem.so
+/usr/lib64/libsmime3.so
+/usr/lib64/libssl3.so
+/usr/lib64/nss/libnssckbi.so

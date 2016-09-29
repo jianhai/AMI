@@ -1,0 +1,535 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.8.0-37.7
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.8.0-37.5
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 4.8.0-37.1
+- rebuild for alios6-update
+
+* 四 9月 12 2013 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-37
+- Fix thinko in the non-root python byte-compilation fix
+
+* 二 8月 13 2013 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-36
+- Byte-compile versioned python libdirs in non-root prefix too (#868332)
+
+* 三 8月 07 2013 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-35
+- Fix segfault on rpmdb addition when header unload fails (#706935)
+
+* 二 8月 06 2013 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-34
+- Add a compat mode for enabling legacy rpm scriptlet error behavior (#963724)
+
+* 一 8月 05 2013 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-33
+- Fix build-time double-free on file capability processing (#904818)
+- Fix include-directive getting processed on false branch (#920190)
+
+* 四 11月 15 2012 Florian Festi <ffesti@redhat.com> - 4.8.0-32
+- Bring back --fileid in the man page with description of the id
+  (#804049)
+
+* 三 10月 31 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.1-31
+- Fix missing error on --import on bogus key file (#869667)
+
+* 一 10月 15 2012 Florian Festi <ffesti@redhat.com> - 4.8.0-30
+- Add DWARF 4 support to debugedit (#858731)
+- Add better error handling to patch for bug
+
+* 一 10月 15 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-29
+- Fix memory corruption on multikey PGP packets/armors (#829621)
+
+* 日 10月 14 2012 Florian Festi <ffesti@redhat.com> - 4.8.0-28
+- Handle identical binaries for debug-info (#727872)
+- Fix typos in Japanese rpm man page (#845065)
+- Document -D and -E options in man page (#845063)
+- Add --setperms and --setuids to the man page (#839126)
+- Update man page that SHA256 is also used for file digest (#804049)
+- Remove --fileid from man page to get rid of md5
+- Remove -s from patch calls (#773503)
+- Force _host_vendor to redhat to better match toolchain (#743229)
+- Backport reloadConfig for Python API (#825147)
+- Support for dpkg-style sorting of tilde in version/release (#825087)
+- Fix explicit directory %attr() when %defattr() is active (#730473)
+- Don't load keyring if signature checking is disabled (#664696)
+- Retry read() to fix rpm2cpio with pipe as stdin (#802839)
+
+* 三 4月 04 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-27
+- Permit obsoletion across colors (#799317)
+
+* 一 3月 05 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-26
+- Include package architecture in -qa --last format (#768516)
+
+* 五 3月 02 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-25
+- Fix Lua script current directory behavior (#746190)
+- Copy rpmpkgs "log" into place instead of moving (#746637)
+
+* 四 3月 01 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-24
+- Backport python accessor for spec source header (#664427)
+
+* 三 2月 29 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-23
+- Remap device numbers too to permit cross-fs package contents (#714678)
+
+* 一 2月 27 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-22
+- Proper region tag validation on package/header read (CVE-2012-0060)
+- Double-check region size against header size (CVE-2012-0061)
+- Validate negated offsets too in headerVerifyInfo() (CVE-2012-0815)
+
+* 五 2月 17 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-21
+- Remap inode numbers to 32bit integer space at build (#714678)
+
+* 三 2月 15 2012 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-20
+- -D is for --define, not --predefine (#785236)
+- Add runtime detection for /usr move (#761000)
+- Fix brace matching on multiline constructs in perl.req (#752119)
+- Make pretrans scriptlet failure fail the package installation (#736960)
+
+* 二 10月 04 2011 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-19
+- Fix crash on malformed OpenPGP packet (#742499)
+
+* 四 9月 29 2011 Jindrich Novy <jnovy@redhat.com> - 4.8.0-18
+- fix CVE-2011-3378 (#742155)
+
+* 四 8月 11 2011 Florian Festi <ffesti@redhat.com> - 4.8.0-17
+- Allow self conflicts (#651951)
+- Add support for xz compression in rpm2cpio.sh (#674348)
+- Don't error out on already imported GPG keys (#680889)
+- Fix file conflict handling for uncolored files (#705115)
+- Fix file attribute handling with %defattr(-) (#705993)
+- Don't error out when trying to add the same signature again (#707449)
+- Fix signature checking (#721363)
+
+* 三 3月 09 2011 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-16
+- Erase preferred color packages last, fixing colored file removal (#680261)
+
+* 五 3月 04 2011 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-15
+- Fix verifyscript getting run twice (#668629)
+
+* 一 1月 31 2011 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-14
+- Fix signature comparison on package resigning (#608608)
+- Let error messages from gpg through on passphrase checking (#607222)
+- Only enforce default umask during transaction (#565843)
+
+* 二 1月 25 2011 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-13
+- Require matching arch for freshen on colored transactions (#553108, #479608)
+- Verify that generated signature can be used by rpm (#608599)
+- Fix broken pipe on font provide generation + better error message (#609117)
+- Fix find-debuginfo.sh behavior on cross-directory hardlinks (#618428)
+- Generate gdb index for debuginfos (#652787)
+- Fix verifyscript return code on failure (#668629)
+
+* 五 7月 09 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-12
+- Skip past any initial comments in pubkey files
+
+* 五 7月 02 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-11
+- Support multiple pubkeys in a single file on --import (#586827)
+
+* 二 6月 29 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-10
+- Fix empty reply from server on url retrieve (#598988)
+- Drop suid/sgid bits and capabilities on upgrade/erase (#598832)
+
+* 二 6月 01 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-9
+- Handle non-existent dependency sets correctly in python (#593621)
+- Permit DOS-style line-endings in PGP armor headers (#532992)
+
+* 二 5月 18 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-8
+- Fix return from chroot on verify (#590588)
+
+* 一 5月 17 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-7
+- Only recompute build-id when DWARF-data is changed (#590947)
+
+* 二 5月 04 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-6
+- Permit em64t architecture in query/erasure too (#547341)
+- Avoid accessing unrelated mount points in disk space checking (#495623)
+- Fix disk space reporting with erasures present in transaction (#561160)
+- Teach python bindings about RPMTRANS_FLAG_NOCONTEXTS (related to #573111)
+- Fix python match iterator regression wrt boolean representation
+- Support parallel python versions in python dependency extractor (#532118)
+- Python byte-compilation fixes + improvements (#538101)
+- Preserve empty lines in spec prep section (#573339)
+- Fix nosrc package generation regression
+- Avoid owning localized man directories through find_lang (#569536)
+- Lose useless symlink to berkeley_db_svc
+
+* 四 1月 21 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-5
+- fix segfault on failed url retrieval (#557118)
+- fix verification error code depending on verbosity level (#557101)
+
+* 二 1月 12 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-4
+- fix source URL pointing to wrong directory on rpm.org
+
+* 五 1月 08 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-3
+- Treat em64t architecture as an alias for x86_64 (#547341)
+
+* 五 1月 08 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-2
+- put disttag back, accidentally nuked in 4.8.0 final update
+
+* 五 1月 08 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-1
+- update to 4.8.0 final (http://rpm.org/wiki/Releases/4.8.0)
+
+* 四 1月 07 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-0.beta1.6
+- pull out macro scoping "fix" for now, it breaks font package macros
+
+* 一 1月 04 2010 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-0.beta1.5
+- always clear locally defined macros when they go out of scope
+
+* 四 12月 17 2009 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-0.beta1.4
+- permit unexpanded macros when parsing spec (#547997)
+
+* 三 12月 09 2009 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-0.beta1.3
+- fix a bunch of python refcount-errors causing major memory leaks
+
+* 一 12月 07 2009 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-0.beta1.2
+- fix noise from python bytecompile on non-python packages (#539635)
+- make all our -devel [build]requires isa-specific
+- trim out superfluous -devel dependencies from rpm-devel
+
+* 一 12月 07 2009 Panu Matilainen <pmatilai@redhat.com> - 4.8.0-0.beta1.1
+- update to 4.8.0-beta1 (http://rpm.org/wiki/Releases/4.8.0)
+- rpm-build conflicts with current ocaml-runtime
+
+* 五 12月 04 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.2-2
+- missing error exit code from signing password checking (#496754)
+- dont fail build on unrecognized data files (#532489)
+- dont try to parse subkeys and secret keys (#436812)
+- fix chmod test on selinux, breaking %{_fixperms} macro (#543035)
+
+* 三 11月 25 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.2-1
+- update to 4.7.2 (http://rpm.org/wiki/Releases/4.7.2)
+- fixes #464750, #529214
+
+* 三 11月 18 2009 Jindrich Novy <jnovy@redhat.com> - 4.7.1-10
+- rebuild against BDB-4.8.24
+
+* 三 11月 18 2009 Jindrich Novy <jnovy@redhat.com> - 4.7.1-9
+- drop versioned dependency to BDB
+
+* 三 10月 28 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.1-8
+- support multiple python implementations in brp-python-bytecompile (#531117)
+- make disk space problem reporting a bit saner (#517418)
+
+* 二 10月 06 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.1-7
+- fix build with BDB 4.8.x by removing XA "support" from BDB backend 
+- perl dep extractor heredoc parsing improvements (#524929)
+
+* 一 9月 21 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.1-6
+- use relative paths within db environment (related to #507309, #507309...)
+- remove db environment on close in chrooted operation (related to above)
+- initialize rpmlib earlier in rpm2cpio (#523260)
+- fix file dependency tag extension formatting (#523282)
+
+* 二 9月 15 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.1-5
+- fix duplicate dependency filtering on build (#490378)
+- permit absolute paths in file lists again (#521760)
+- use permissions 444 for all .debug files (#522194)
+- add support for optional bugurl tag (#512774)
+
+* 五 8月 14 2009 Jesse Keating <jkeating@redhat.com> - 4.7.1-4
+- Patch to make geode appear as i686 (#517475)
+
+* 四 8月 06 2009 Jindrich Novy <jnovy@redhat.com> - 4.7.1-3
+- rebuild because of the new xz
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 4.7.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 21 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.1-1
+- update to 4.7.1 ((http://rpm.org/wiki/Releases/4.7.1)
+- fix source url
+
+* 一 7月 20 2009 Bill Nottingham <notting@redhat.com> - 4.7.0-9
+- enable XZ support
+
+* 四 6月 18 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-8
+- updated OSGi dependency extractor (#506471)
+- fix segfault in symlink fingerprinting (#505777)
+- fix invalid memory access causing bogus file dependency errors (#506323)
+
+* 二 6月 16 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-7
+- add dwarf-3 support to debugedit (#505774)
+
+* 五 6月 12 2009 Stepan Kasal <skasal@redhat.com> - 4.7.0-6
+- require libcap >= 2.16 (#505596)
+
+* 三 6月 03 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-5
+- don't mess up problem altNEVR in python ts.check() (#501068)
+- fix hardlink size calculation on build (#503020)
+
+* 四 5月 14 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-4
+- split cron-job into a sub-package to avoid silly deps on core rpm (#500722)
+- rpm requires coreutils but not in %post
+- build with libcap and libacl
+- fix pgp pubkey signature tag parsing
+
+* 二 4月 21 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-3
+- couple of merge-review fixes (#226377)
+  - eliminate bogus leftover rpm:rpm rpmdb ownership
+  - unescaped macro in changelog
+- fix find-lang --with-kde with KDE3 (#466009)
+- switch back to default file digest algorithm
+
+* 五 4月 17 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-2
+- file classification tweaks for text files (#494817)
+  - disable libmagic text token checks, it's way too error-prone
+  - consistently classify all text as such and include description
+
+* 四 4月 16 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-1
+- update to 4.7.0 final (http://rpm.org/wiki/Releases/4.7.0)
+- fixes #494049, #495429
+- dont permit test-suite failure anymore
+
+* 四 4月 09 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.rc1.1
+- update to 4.7.0-rc1
+- fixes #493157, #493777, #493696, #491388, #487597, #493162
+
+* 五 4月 03 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.beta1.9
+- fix recorded file state of otherwise skipped files (#492947)
+- compress ChangeLog, drop old CHANGES file (#492440)
+
+* 四 4月 02 2009 Tom "spot" Callaway <tcallawa@redhat.com> - 4.7.0-0.beta1.8
+- Fix sparcv9v and sparc64v targets
+
+* 二 3月 24 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.beta1.7
+- prefer more specific types over generic "text" in classification (#491349)
+
+* 一 3月 23 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.beta1.6
+- with the fd leak gone, let libmagic look into compressed files again (#491596)
+
+* 一 3月 23 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.beta1.5
+- fix font provide generation on filenames with whitespace (#491597)
+
+* 四 3月 12 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.beta1.4
+- handle RSA V4 signatures (#436812)
+- add alpha arch ISA-bits
+- enable internal testsuite on build
+
+* 一 3月 09 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.beta1.3
+- fix _install_langs behavior (#489235)
+- fix recording of file states into rpmdb on install
+
+* 日 3月 08 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.beta1.2
+- load macros before creating directories on src.rpm install (#489104)
+
+* 五 3月 06 2009 Panu Matilainen <pmatilai@redhat.com> - 4.7.0-0.beta1.1
+- update to 4.7.0-beta1 (http://rpm.org/wiki/Releases/4.7.0)
+
+* 五 2月 27 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-11
+- build rpm itself with md5 file digests for now to ensure upgradability
+
+* 四 2月 26 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-10
+- handle NULL passed as EVR in rpmdsSingle() again (#485616)
+
+* 三 2月 25 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-9
+- pull out python byte-compile syntax check for now
+
+* 一 2月 23 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-8
+- make -apidocs sub-package noarch
+- fix source URL
+
+* 六 2月 21 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-7
+- loosen up restrictions on dependency names (#455119)
+- handle inter-dependent pkg-config files for requires too (#473814)
+- error/warn on elf binaries in noarch package in build
+
+* 五 2月 20 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-6
+- error out on uncompilable python code (Tim Waugh)
+
+* 二 2月 17 2009 Jindrich Novy <jnovy@redhat.com> - 4.6.0-5
+- remove two offending hunks from anyarch patch causing that
+  RPMTAG_BUILDARCHS isn't written to SRPMs
+
+* 一 2月 16 2009 Jindrich Novy <jnovy@redhat.com> - 4.6.0-4
+- inherit group tag from the main package (#470714)
+- ignore BuildArch tags for anyarch actions (#442105)
+- don't check package BuildRequires when doing --rmsource (#452477)
+- don't fail because of missing sources when only spec removal
+  is requested (#472427)
+
+* 一 2月 16 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-3
+- updated fontconfig provide script - fc-query does all the hard work now
+
+* 一 2月 09 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-2
+- build against db 4.7.x
+
+* 五 2月 06 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-1
+- update to 4.6.0 final
+- revert libmagic looking into compressed files for now, breaks ooffice build
+
+* 五 2月 06 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-0.rc4.5
+- enable fontconfig provides generation
+
+* 四 2月 05 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-0.rc4.4
+- fixup rpm translation lookup to match Fedora specspo (#436941)
+
+* 三 2月 04 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-0.rc4.3
+- extract mimehandler provides from .desktop files
+- preliminaries for extracting font provides (not enabled yet)
+- dont classify font metrics data as fonts
+- only run script dep extraction once per file, duh
+
+* 六 1月 31 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-0.rc4.2
+- change platform sharedstatedir to something more sensible (#185862)
+- add rpmdb_foo links to db utils for documentation compatibility
+
+* 五 1月 30 2009 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-0.rc4.1
+- update to 4.6.0-rc4
+- fixes #475582, #478907, #476737, #479869, #476201
+
+* 五 12月 12 2008 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-0.rc3.2
+- add back defaultdocdir patch which hadn't been applied on 4.6.x branch yet
+
+* 五 12月 12 2008 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-0.rc3.1
+- add dist-tag, rebuild
+
+* 二 12月 09 2008 Panu Matilainen <pmatilai@redhat.com> - 4.6.0-0.rc3.1
+- update to rpm 4.6.0-rc3
+- fixes #475214, #474550, #473239
+
+* 三 12月 03 2008 Jeremy Katz <katzj@redhat.com> - 4.6.0-0.rc2.9
+- I built into the wrong place
+
+* 三 12月 03 2008 Jeremy Katz <katzj@redhat.com> - 4.6.0-0.rc2.8
+- python 2.6 rebuild again
+
+* 三 12月 03 2008 Panu Matilainen <pmatilai@redhat.com>
+- make rpm-build require pkgconfig (#473978)
+
+* 二 12月 02 2008 Panu Matilainen <pmatilai@redhat.com>
+- fix pkg-config provide generation when pc's depend on each other (#473814)
+
+* 一 12月 01 2008 Jindrich Novy <jnovy@redhat.com>
+- include rpmfileutil.h from rpmmacro.h, unbreaks
+  net-snmp (#473420)
+
+* 日 11月 30 2008 Panu Matilainen <pmatilai@redhat.com>
+- rebuild for python 2.6
+
+* 六 11月 29 2008 Panu Matilainen <pmatilai@redhat.com>
+- update to 4.6.0-rc2
+- fixes #471820, #473167, #469355, #468319, #472507, #247374, #426672, #444661
+- enable automatic generation of pkg-config and libtool dependencies #465377
+
+* 五 10月 31 2008 Panu Matilainen <pmatilai@redhat.com>
+- adjust find-debuginfo for "file" output change (#468129)
+
+* 二 10月 28 2008 Panu Matilainen <pmatilai@redhat.com>
+- Florian's improved fingerprinting hash algorithm from upstream
+
+* 六 10月 25 2008 Panu Matilainen <pmatilai@redhat.com>
+- Make noarch sub-packages actually work
+- Fix defaultdocdir logic in installplatform to avoid hardwiring mandir
+
+* 五 10月 24 2008 Jindrich Novy <jnovy@redhat.com>
+- update compat-db dependencies (#459710)
+
+* 三 10月 22 2008 Panu Matilainen <pmatilai@redhat.com>
+- never add identical NEVRA to transaction more than once (#467822)
+
+* 日 10月 19 2008 Panu Matilainen <pmatilai@redhat.com>
+- permit tab as macro argument separator (#467567)
+
+* 四 10月 16 2008 Panu Matilainen <pmatilai@redhat.com>
+- update to 4.6.0-rc1 
+- fixes #465586, #466597, #465409, #216221, #466503, #466009, #463447...
+- avoid using %configure macro for now, it has unwanted side-effects on rpm
+
+* 三 10月 01 2008 Panu Matilainen <pmatilai@redhat.com>
+- update to official 4.5.90 alpha tarball 
+- a big pile of misc bugfixes + translation updates
+- isa-macro generation fix for ppc (#464754)
+- avoid pulling in pile of perl dependencies for an unused script
+- handle both "invalid argument" and clear env version mismatch on posttrans
+
+* 四 9月 25 2008 Jindrich Novy <jnovy@redhat.com>
+- don't treat %patch numberless if -P parameter is present (#463942)
+
+* 四 9月 11 2008 Panu Matilainen <pmatilai@redhat.com>
+- add hack to support extracting gstreamer plugin provides (#438225)
+- fix another macro argument handling regression (#461180)
+
+* 四 9月 11 2008 Jindrich Novy <jnovy@redhat.com>
+- create directory structure for rpmbuild prior to build if it doesn't exist (#455387)
+- create _topdir if it doesn't exist when installing SRPM
+- don't generate broken cpio in case of hardlink pointing on softlink,
+  thanks to pixel@mandriva.com
+
+* 六 9月 06 2008 Jindrich Novy <jnovy@redhat.com>
+- fail hard if patch isn't found (#461347)
+
+* 一 9月 01 2008 Jindrich Novy <jnovy@redhat.com>
+- fix parsing of boolean expressions in spec (#456103)
+  (unbreaks pam, jpilot and maybe other builds)
+
+* 二 8月 26 2008 Jindrich Novy <jnovy@redhat.com>
+- add support for noarch subpackages
+- fix segfault in case of insufficient disk space detected (#460146)
+
+* 三 8月 13 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8461.2
+- fix archivesize tag generation on ppc (#458817)
+
+* 五 8月 08 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8461.1
+- new snapshot from upstream
+- fixes #68290, #455972, #446202, #453364, #456708, #456103, #456321, #456913,
+  - partial fix for #457360
+
+* 四 7月 31 2008 Florian Festi <ffesti@redhat.com>
+- 4.5.90-0.git8427.1
+- new snapshot from upstream
+
+* 四 7月 31 2008 Florian Festi <ffesti@redhat.com>
+- 4.5.90-0.git8426.10
+- rpm-4.5.90-posttrans.patch
+- use header from rpmdb in posttrans to make anaconda happy
+
+* 六 7月 19 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8426.9
+- fix regression in patch number handling (#455872)
+
+* 二 7月 15 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8426.8
+- fix regression in macro argument handling (#455333)
+
+* 一 7月 14 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8426.7
+- fix mono dependency extraction (adjust for libmagic string change)
+
+* 六 7月 12 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8426.6
+- fix type mismatch causing funky breakage on ppc64
+
+* 五 7月 11 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8426.5
+- flip back to external bdb
+- fix tab vs spaces complaints from rpmlint
+- add dep for lzma and require unzip instead of zip in build (#310694)
+- add pkgconfig dependency to rpm-devel
+- drop ISA-dependencies for initial introduction
+- new snapshot from upstream for documentation fixes
+
+* 四 7月 10 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8424.4
+- handle int vs external db in posttrans too
+
+* 二 7月 08 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8424.3
+- require curl as external url helper
+
+* 二 7月 08 2008 Panu Matilainen <pmatilai@redhat.com>
+- 4.5.90-0.git8424.2
+- add support for building with or without internal db
+
+* 二 7月 08 2008 Panu Matilainen <pmatilai@redhat.com>
+- rpm 4.5.90-0.git8424.1 (alpha snapshot)
+- adjust to build against Berkeley DB 4.5.20 from compat-db for now
+- add posttrans to clean up db environment mismatch after upgrade
+- forward-port devel autodeps patch
+
+* 二 7月 08 2008 Panu Matilainen <pmatilai@redhat.com>
+- adjust for rpmdb index name change
+- drop unnecessary vendor-macro patch for real
+- add ISA-dependencies among rpm subpackages
+- make lzma and sqlite deps conditional and disabled by default for now
+
+* 五 2月 01 2008 Panu Matilainen <pmatilai@redhat.com>
+- spec largely rewritten, truncating changelog
+

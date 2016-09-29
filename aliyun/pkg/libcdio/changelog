@@ -1,0 +1,122 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.81-3.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.81-3.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.81-3.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.81-3.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.81-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.81-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 10月 07 2008 Adrian Reber <adrian@lisas.de> - 0.81-1
+- updated to 0.81
+- license changed to GPLv3+
+- fixed #477288 (libcdio-devel multilib conflict)
+- applied patch to fix endless loop in mock
+
+* 二 10月 07 2008 Adrian Reber <adrian@lisas.de> - 0.80-5
+- fixed #462125 (Multilib conflict) - really, really, really
+  (also remove architecture information from man pages)
+
+* 四 10月 02 2008 Adrian Reber <adrian@lisas.de> - 0.80-4
+- fixed #462125 (Multilib conflict) - this time for real
+
+* 五 9月 12 2008 Adrian Reber <adrian@lisas.de> - 0.80-3
+- fixed #462125 (Multilib conflict)
+
+* 三 6月 04 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.80-2
+- added patch enabling libcdio_paranoia.pc
+
+* 四 5月 29 2008 Adrian Reber <adrian@lisas.de> - 0.80-1
+- updated to 0.80
+- removed upstreamed patches
+- last GPLv2+ release
+
+* 四 2月 14 2008 Adrian Reber <adrian@lisas.de> - 0.79-3
+- added patch to compile with gcc43
+
+* 五 1月 04 2008 Adrian Reber <adrian@lisas.de> - 0.79-2
+- fixed security fix (was off by two)
+
+* 三 1月 02 2008 Adrian Reber <adrian@lisas.de> - 0.79-1
+- updated to 0.79
+- fixes #427197 (Long Joliet file name overflows cdio's buffer)
+- fixes #341981 (multiarch conflicts in libcdio)
+
+* 五 8月 24 2007 Adrian Reber <adrian@lisas.de> - 0.78.2-3
+- rebuilt
+
+* 一 7月 23 2007 Adrian Reber <adrian@lisas.de> - 0.78.2-2
+- updated to 0.78.2 (#221359) (this time for real)
+
+* 四 1月 04 2007 Adrian Reber <adrian@lisas.de> - 0.78.2-1
+- updated to 0.78.2 (#221359)
+
+* 四 10月 05 2006 Adrian Reber <adrian@lisas.de> - 0.77-3
+- disabled iso9660 test case (fails for some reason with date problems)
+  this seems to be a known problem according to the ChangeLog
+
+* 四 10月 05 2006 Christian Iseli <Christian.Iseli@licr.org> 0.77-2
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 五 9月 22 2006 Adrian Reber <adrian@lisas.de> - 0.77-1
+- Updated to 0.77
+
+* 一 9月 18 2006 Adrian Reber <adrian@lisas.de> - 0.76-3
+- Rebuilt
+
+* 一 9月 26 2005 Adrian Reber <adrian@lisas.de> - 0.76-2
+- Rebuilt
+
+* 一 9月 26 2005 Adrian Reber <adrian@lisas.de> - 0.76-1
+- Updated to 0.76.
+- Included doxygen generated documentation into -devel
+- Included examples into -devel
+
+* 一 8月 01 2005 Adrian Reber <adrian@lisas.de> - 0.75-4
+- disable test accessing local CDROM drive (#164266)
+
+* 三 7月 27 2005 Adrian Reber <adrian@lisas.de> - 0.75-3
+- Rebuilt without libcddb dependency (#164270)
+
+* 二 7月 26 2005 Adrian Reber <adrian@lisas.de> - 0.75-2
+- Rebuilt
+
+* 四 7月 14 2005 Adrian Reber <adrian@lisas.de> - 0.75-1
+- Updated to 0.75.
+
+* 五 6月 03 2005 Adrian Reber <adrian@lisas.de> - 0.74-2
+- Updated to 0.74.
+
+* 日 4月 24 2005 Ville Skyttä <ville.skytta at iki.fi> - 0.73-2
+- BuildRequire ncurses-devel (for cdda-player and cd-paranoia).
+- Run test suite during build.
+- Install Japanese man pages.
+
+* 日 4月 24 2005 Adrian Reber <adrian@lisas.de> - 0.73-1
+- Updated to 0.73.
+
+* 五 3月 18 2005 Ville Skyttä <ville.skytta at iki.fi> - 0.70-2
+- Fix FC4 build (#151468).
+- Build with dependency tracking disabled.
+
+* 日 9月 05 2004 Marius L. Jøhndal <mariuslj at ifi.uio.no> - 0:0.70-0.fdr.1
+- Updated to 0.70.
+
+* 六 7月 17 2004 Marius L. Jøhndal <mariuslj at ifi.uio.no> - 0:0.69-0.fdr.1
+- Updated to 0.69.
+- Removed broken iso-read.
+- Split Requires(pre,post).
+- Added BuildReq pkgconfig.
+
+* 一 3月 29 2004 Marius L. Jøhndal <mariuslj at ifi.uio.no> - 0:0.68-0.fdr.1
+- Initial RPM release.
+

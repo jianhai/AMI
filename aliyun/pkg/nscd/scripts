@@ -1,0 +1,19 @@
+preinstall scriptlet (using /bin/sh):
+getent group nscd >/dev/null || /usr/sbin/groupadd -g 28 -r nscd
+getent passwd nscd >/dev/null ||
+  /usr/sbin/useradd -M -o -r -d / -s /sbin/nologin \
+		    -c "NSCD Daemon" -u 28 -g nscd nscd
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add nscd
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ] ; then
+  service nscd stop > /dev/null 2>&1
+  /sbin/chkconfig --del nscd
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ] ; then
+  /usr/sbin/userdel nscd > /dev/null 2>&1 || :
+fi
+if [ "$1" -ge "1" ]; then
+  service nscd condrestart > /dev/null 2>&1 || :
+fi

@@ -1,0 +1,583 @@
+* 四 8月 21 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.8-21.5
+- fix alios
+
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.8-21.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.8-21.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.8-21.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.2.8-21.1
+- rebuild for alios6
+
+* 四 9月 15 2011 Jaromir Capik <jcapik@redhat.com> 3.2.8-21
+- fix #736023 - Common realloc mistake: 'screen' nulled but not freed upon failure
+- Resolves: rhbz#736023
+
+* 二 8月 02 2011 Jaromir Capik <jcapik@redhat.com> 3.2.8-20
+- fix #701710 - vmstat does not print out correct free page count on 8TB SGI system
+- Resolves: rhbz#701710
+
+* 六 7月 02 2011 Jaromir Capik <jcapik@redhat.com> 3.2.8-19
+- fix #697935 - [RFE] Restore support for partial sysctl keys
+- Resolves: rhbz#697935
+
+* 四 6月 23 2011 Jan Görig <jgorig@redhat.com> 3.2.8-18
+- fix #692397 - wrong formatting of ps man page
+- fix #709684 - procps/top SWAP statistics makes no sense
+  patch by KOSAKI Motohiro
+- fix #690078 - replace dlopen with build time linking
+  - dropped procps-3.2.7-libselinux.patch and procps-3.2.7-ps-libselinux.patch
+- fix #690078 - nullifying variables in procps-3.2.8-pmap-smaps.patch
+
+* 四 3月 17 2011 Jan Görig <jgorig@redhat.com> 3.2.8-17
+- fixed bugs in procps-3.2.7-ps-cgroup.patch and procps-3.2.8-pmap-smaps.patch
+- fixed memory leaks in vmstat
+- Resolves: rhbz#684031
+
+* 三 12月 08 2010 Jan Görig <jgorig@redhat.com> 3.2.8-16
+- updated patch for #596948
+
+* 一 11月 29 2010 Jan Görig <jgorig@redhat.com> 3.2.8-15
+- fix #622389 - The sysctl command's man page doesn't describe the option -A correctly
+- minor changelog fix
+
+* 三 6月 30 2010 Jan Kaluza <jkaluza@redhat.com> 3.2.8-14
+- fix #574413 - set max cpu usage in top command according
+  to number of threads used by process
+
+* 二 6月 22 2010 Jan Görig <jgorig@redhat.com> 3.2.8-13
+- fixes sorting in ps command (patch created by Jan Kaluža)
+
+* 二 6月 01 2010 Jan Görig <jgorig@redhat.com> 3.2.8-12
+- #598054 - add descriptions of columns to pmap(1) man page
+
+* 五 5月 28 2010 Jan Görig <jgorig@redhat.com> 3.2.8-11
+- fix #596948 - vmstat disk device field is not long enough
+
+* 一 4月 26 2010 Daniel Novotny <dnovotny@redhat.com> 3.2.8-10
+- fix #585938 - [abrt] crash in procps-3.2.8-3.fc12
+
+* 二 4月 20 2010 Daniel Novotny <dnovotny@redhat.com> 3.2.8-9
+- fix #581547 - add vmstat -w option for wider output
+- fix #583629 - pmap does not display RSS values for a pid
+- fix #583625 - document that usernames exceeding column width are substituted with user ID
+
+* 五 4月 09 2010 Daniel Novotny <dnovotny@redhat.com> 3.2.8-8
+- fix #580877 - negative ETIME field in ps
+
+* 四 4月 01 2010 Daniel Novotny <dnovotny@redhat.com> 3.2.8-7
+- fix #578799 - vmstat -SM doesn't work but vmstat -S M does
+
+* 四 2月 25 2010 Daniel Novotny <dnovotny@redhat.com> 3.2.8-6
+- added COPYING and COPYING.LIB to doc
+
+* 一 2月 22 2010 Daniel Novotny <dnovotny@redhat.com> 3.2.8-5
+- fix #564371 -  Enhance top to display in MB vs KB
+- fix #565971 -  double free or corruption in ps
+
+* 三 1月 13 2010 Daniel Novotny <dnovotny@redhat.com> 3.2.8-4
+- fix #554674 -  vmstat command with -n and -m does not display header even once
+- fix #554721 -  procps states a bug is hit when receiving a signal
+- fix #479703 -  [RFE] Additional option for 'top'
+
+* 一 11月 16 2009 Daniel Novotny <dnovotny@redhat.com> 3.2.8-3
+- patch for enabling core file generation (we don't trap the signal anymore)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.2.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 5月 11 2009 Daniel Novotny <dnovotny@redhat.com> 3.2.8-1
+- new upstream version; rebase patches and drop upstreamed patches
+
+* 三 4月 29 2009 Daniel Novotny <dnovotny@redhat.com> 3.2.7-28
+- fix #498182 -  procps string size issue
+
+* 二 2月 24 2009 Daniel Novotny <dnovotny@redhat.com> 3.2.7-27
+- included -l option in free man page
+
+* 一 2月 23 2009 Daniel Novotny <dnovotny@redhat.com> 3.2.7-26
+- fix requested writes display in partition statistics
+  for big-endian machines
+
+* 一 2月 16 2009 Daniel Novotny <dnovotny@redhat.com> 3.2.7-25
+- added cgroup support to ps (Ivana Varekova)
+
+* 二 2月 03 2009 Daniel Novotny <dnovotny@redhat.com> 3.2.7-24
+- slabtop -o should display the info once and then exit (RHEL bug #475963)
+- added timestamp to vmstat with new option -t (#476134)
+
+* 三 1月 07 2009 Adam Jackson <ajax@redhat.com> 3.2.7-23
+- procps-3.2.7-vmstat-header.patch: Fix vmstat header to fit on a single line.
+
+* 四 12月 04 2008 Daniel Novotny <dnovotny@redhat.com> 3.2.7-22
+- fix #472783 vmstat -p <partition name> not working
+- extended diskstat parameters to unsigned long to avoid overflow
+
+* 一 9月 01 2008 Tomas Smetana <tsmetana@redhat.com> 3.2.7-21
+- rebase patches
+- clear screen in top when switching windows
+- fix #435453 - errors with man -t formatting of ps man page
+
+* 二 2月 12 2008 Tomas Smetana <tsmetana@redhat.com> 3.2.7-20
+- rebuild (gcc-4.3)
+
+* 四 1月 24 2008 Tomas Smetana <tsmetana@redhat.com> 3.2.7-19.2
+- install slabtop again: kernel was fixed
+
+* 五 1月 18 2008 Tomas Smetana <tsmetana@redhat.com> 3.2.7-19.1
+- rebuild because of errors on x86_64
+
+* 五 1月 18 2008 Tomas Smetana <tsmetana@redhat.com> 3.2.7-19
+- fix #296471 - update top man page
+- fix #226319 - merge review
+
+* 五 1月 11 2008 Tomas Smetana <tsmetana@redhat.com> 3.2.7-18
+- fix displaying the CPU column as integer (related #354001)
+- don't install slabtop -- there's no /proc/slabinfo
+
+* 三 9月 12 2007 Tomas Smetana <tsmetana@redhat.com> 3.2.7-17
+- fix #185994 - top "Cpu0" line never updates when using
+  "Single Cpu = Off" option on single processor machine
+
+* 一 8月 27 2007 Tomas Smetana <tsmetana@redhat.com> 3.2.7-16.1
+- bump release
+
+* 一 8月 27 2007 Tomas Smetana <tsmetana@redhat.com> 3.2.7-16
+- fix #255441 - ps requires libselinux-devel to display security contexts
+
+* 四 8月 23 2007 Tomas Smetana <tsmetana@redhat.com> 3.2.7-15.1
+- rebuild
+
+* 一 8月 20 2007 Tomas Smetana <tsmetana@redhat.com> 3.2.7-15
+- fix #244960 - ps manpage formatted incorrectly
+- update license tag
+
+* 一 6月 18 2007 Tomas Smetana <tsmetana@redhat.com> 3.2.7-14
+- fix #244152 ps truncates eip and esp to 32-bit values on 64-bit systems
+
+* 二 5月 22 2007 Tomas Smetana <tsmetana@redhat.com> 3.2.7-13
+- fix #208217 - ps does not accept '+' in sort specifier
+
+* 三 4月 25 2007 Tomas Smetana <tsmetana@redhat.com> 3.2.7-12
+- fix #183029 - watch ignores multibyte characters
+- fix #222251 - STIME column can jitter
+- fix array overflow in sysctl
+
+* 二 4月 03 2007 Karel Zak <kzak@redhat.com> 3.2.7-11
+- fix #234546 - 'w' doesn't give correct information about what's being run.
+- fix #228870 - process `sysctl' is using deprecated sysctl
+- cleanup spec file
+
+* 一 2月 05 2007 Karel Zak <kzak@redhat.com> 3.2.7-10
+- fix #212637 - sysctl using deprecated syscall
+- fix #140975 - top corrupts screen when sorting on first column
+
+* 二 1月 30 2007 Karel Zak <kzak@redhat.com> 3.2.7-9
+- fix procps_version in FAQ patch (thanks to Ian Kent)
+
+* 三 9月 27 2006 Karel Zak <kzak@redhat.com> 3.2.7-8
+- remove zombie patch (needs more investigation)
+- fix #208100 - top command with '-c' option become not to display list of tasks
+- fix #199174 - top returns with exit code 1 even if no error occurs
+
+* 二 9月 19 2006 Karel Zak <kzak@redhat.com> 3.2.7-7
+- fix #206551 - top fails to convert to cpu single mode when hit '1'
+
+* 二 9月 05 2006 Karel Zak <kzak@redhat.com> 3.2.7-6
+- fix minor bug in procps-3.2.6-top-env-cpuloop.patch
+
+* 一 8月 07 2006 Karel Zak <kzak@redhat.com> - 3.2.7-5
+- fix #189349 - 32bit vmstat on 64bit kernel
+
+* 四 8月 03 2006 Karel Zak <kzak@redhat.com> - 3.2.7-4
+- fix #139827 - ps(1) outputs a multi-threads process as a defunct process.
+
+* 三 7月 19 2006 Karel Zak <kzak@redhat.com> - 3.2.7-3
+- spec file cleanup
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.2.7-2.1
+- rebuild
+
+* 一 7月 10 2006 Karel Zak <kzak@redhat.com> 3.2.7-2
+- fix #134516 - ps ignores /proc/#/cmdline if contents 2047 bytes
+
+* 一 7月 10 2006 Karel Zak <kzak@redhat.com> 3.2.7-1
+- upgrade to 3.2.7 (and sync patches)
+
+* 四 6月 01 2006 Karel Zak <kzak@redhat.com> 3.2.6-4
+- fix #191493 - watch -n doesn't handle large integers properly
+- fix #186017 - top "Cpu0" line never updates on single processor machine
+                (bugfix added to the 'remcpu' patch)
+- fix #168444 - memory usage conflicts with /proc/meminfo
+- fix #174619 - top reports wrong values for CPU(s) in batch mode
+- fix #185299 - cpu steal time support
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.2.6-3.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.2.6-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 12月 13 2005 Dan Walsh <dwalsh@redhat.com> 3.2.6-3
+- Translate context
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 11月 08 2005 Karel Zak <kzak@redhat.com> 3.2.6-2
+- fix #157725 - sysctl -A returns an error
+
+* 一 10月 31 2005 Karel Zak <kzak@redhat.com> 3.2.6-1
+- update to new upstream release
+
+* 三 10月 12 2005 Karel Zak <kzak@redhat.com> 3.2.5-8
+- fix #170083 - Top showing bad cpu usage numbers
+
+* 二 9月 06 2005 Karel Zak <kzak@redhat.com> 3.2.5-7
+- improve procps-3.2.5-sysctl-writeonly.patch
+- fix #161449 - "top" ignores user and system toprc
+- fix #161559 - top segfaults when resizing console
+- fix #160796 - vmstat crashes when accessing LVM partition
+- fix #161303 - 'top' failed when remove cpus
+
+* 二 5月 10 2005 Karel Zak <kzak@redhat.com> 3.2.5-6
+- fix permissions in the spec install section
+
+* 二 5月 10 2005 Karel Zak <kzak@redhat.com> 3.2.5-5
+- fix debuginfo
+
+* 二 4月 26 2005 Karel Zak <kzak@redhat.com> 3.2.5-4
+- fix #144459 - sysctl reports error: unknown error <...> reading key '<key>'
+  (now sysctl doesn't read data from write-only /proc/sys files)
+
+* 四 3月 17 2005 Karel Zak <kzak@redhat.com> 3.2.5-3
+- fix top crashes when terminal window is resized (#149319)
+
+* 六 3月 05 2005 Karel Zak <kzak@redhat.com> 3.2.5-2
+- rebuilt
+
+* 二 2月 01 2005 Karel Zak <kzak@redhat.com> 3.2.5-1
+- update to new upstream 3.2.5
+- recreate selinux patch
+- remove errno, slabinfo21 and fullpath patches -- all fixed by upstream
+
+* 二 1月 25 2005 Karel Zak <kzak@redhat.com> 3.2.4-4
+- pmap truncates filenames of mappings (#142751)
+
+* 一 1月 24 2005 Karel Zak <kzak@redhat.com> 3.2.4-3
+- add support for /proc/slabinfo 2.1 (#145369)
+
+* 五 1月 07 2005 Karel Zak <kzak@redhat.com> 3.2.4-2
+- fix sysctl errno usage (#144459)
+
+* 三 12月 01 2004 Karel Zak <kzak@redhat.com> 3.2.4-1
+- update to new upstream release
+
+* 一 11月 01 2004 Karel Zak <kzak@redhat.com> 3.2.3-6
+- update FAQ
+- update spec description
+- fix text in .noproc patch
+- fix segv fault if cpu number exceeding 38 (#137159)
+
+* 二 9月 28 2004 Dan Walsh <dwalsh@redhat.com> 3.2.3-5
+- Fix terminal handling when /proc is not available.
+- Patch provided by Karel Zak
+
+* 四 9月 16 2004 Dan Walsh <dwalsh@redhat.com> 3.2.3-4
+- Fix spec file to use makefile
+
+* 一 8月 30 2004 Dan Walsh <dwalsh@redhat.com> 3.2.3-3
+- Fix batch mode to use dumb terminal
+
+* 二 8月 17 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- fix building as non-root, patch from Steve G <linux_4ever@yahoo.com>
+
+* 二 8月 10 2004 Dan Walsh <dwalsh@redhat.com> 3.2.3-1
+- Latest from Upstream
+
+* 二 7月 20 2004 Dan Walsh <dwalsh@redhat.com> 3.2.2-2
+- Reformat ps man page
+
+* 一 7月 19 2004 Dan Walsh <dwalsh@redhat.com> 3.2.2-1
+- Update to upstream version.
+
+* 六 6月 26 2004 Dan Walsh <dwalsh@redhat.com> 3.2.1-7
+- Add patch to display vm_size when STATSIZE env set
+
+* 二 6月 15 2004 Alan Cox <alan@redhat.com> 3.2.1-6
+- Removed broken SELinux patch to w
+- Added a better alternative whereby we get less data but don't fall for
+  vanished processes when SELinux is running
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 6月 14 2004 Dan Walsh <dwalsh@redhat.com> 3.2.1-5
+- Fix FAQ Line
+
+* 五 4月 09 2004 Colin Walters <walters@redhat.com> 3.2.1-4
+- Add little patch to make w/who work when getattr access
+  to /proc/<pid> for the user's login process is denied
+
+* 日 3月 28 2004 Dan Walsh <dwalsh@redhat.com> 3.2.1-3
+- bump for alios3
+
+* 日 3月 28 2004 Dan Walsh <dwalsh@redhat.com> 3.2.1-2
+- Removed addtask patch, very buggy,
+- Added FAQ to docdir
+
+* 日 3月 28 2004 Dan Walsh <dwalsh@redhat.com> 3.2.1-1
+- Update to latest from upstream
+
+* 四 3月 25 2004 Dan Walsh <dwalsh@redhat.com> 3.2.0-3
+- Add addtask patch to total all threads times.
+
+* 三 3月 17 2004 Dan Walsh <dwalsh@redhat.com>
+- Clean up spec file.
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 Dan Walsh <dwalsh@redhat.com> 3.2.0-1
+- New version from upstream
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 1月 22 2004 Dan Walsh <dwalsh@redhat.com> 3.1.15-3
+- Match -Z to --context
+
+* 三 1月 21 2004 Dan Walsh <dwalsh@redhat.com> 3.1.15-2
+- Add back in -Z support
+
+* 三 1月 21 2004 Alexander Larsson <alexl@redhat.com> 3.1.15-1
+- upgrade to procps3
+- Some regressions, see bug #114012
+
+* 二 1月 20 2004 Dan Walsh <dwalsh@redhat.com> 2.0.17-7
+- Remove LIBCURSES from skill and sysctl
+
+* 三 12月 10 2003 Dan Walsh <dwalsh@redhat.com> 2.0.17-6
+- Turn on SELinux
+
+* 一 12月 08 2003 Alexander Larsson <alexl@redhat.com> 2.0.17-5
+- Fix top total percentages (#109484)
+
+* 三 10月 15 2003 Dan Walsh <dwalsh@redhat.com> 2.0.17-4
+- Turn off selinux
+
+* 三 10月 15 2003 Dan Walsh <dwalsh@redhat.com> 2.0.17-3.sel
+- Fix help message
+
+* 四 10月 09 2003 Dan Walsh <dwalsh@redhat.com> 2.0.17-2.sel
+- Turn on selinux
+
+* 五 10月 03 2003 Alexander Larsson <alexl@redhat.com> 2.0.17-1
+- Update to 2.0.17, drop upstream patches, forward port remaining patches
+
+* 五 9月 05 2003 Dan Walsh <dwalsh@redhat.com> 2.0.13-11
+- Turn off selinux
+
+* 四 8月 28 2003 Dan Walsh <dwalsh@redhat.com> 2.0.13-10.sel
+- Add -Z switch for SELinux
+
+* 日 8月 17 2003 Doug Ledford <dledford@redhat.com> 2.0.13-9E
+- Add patch to recognize irq and softirq time accounting in kernels that
+  support this feature
+
+* 一 8月 11 2003 Alexander Larsson <alexl@redhat.com> 2.0.13-8
+- rebuild
+
+* 一 8月 11 2003 Alexander Larsson <alexl@redhat.com> 2.0.13-7E
+- Add swapped patch from rik van riel
+
+* 三 8月 06 2003 Alexander Larsson <alexl@redhat.com> 2.0.13-6
+- rebuild
+
+* 三 8月 06 2003 Alexander Larsson <alexl@redhat.com> 2.0.13-5E
+- Update iowait patch (#101657)
+- Add wchan 64bit patch from Mark DeWandel
+
+* 一 7月 28 2003 Dan Walsh <dwalsh@redhat.com> 2.0.13-4E
+- Add SELinux patch
+
+* 三 7月 16 2003 Matt Wilson <msw@redhat.com> 2.0.13-3E
+- display iowait with procps-2.0.13-iowait.patch (#99061)
+
+* 五 7月 11 2003 Alexander Larsson <alexl@redhat.com> 2.0.13-2E
+- Disable linuxthreads thread hack
+
+* 一 7月 07 2003 Alexander Larsson <alexl@redhat.com> 2.0.13-1E
+- rebuild
+
+* 五 7月 04 2003 Alexander Larsson <alexl@redhat.com> 2.0.13-1
+- update to 2.0.13
+- Re-merged ntpl patch
+- Add hertz fix from Ernie Petrides <petrides@redhat.com>
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 5月 23 2003 Alexander Larsson <alexl@redhat.com> 2.0.12-1
+- Update to 2.0.12
+- Add patch to fix segfault on ps axl (#91453)
+
+* 五 3月 14 2003 Alexander Larsson <alexl@redhat.com> 2.0.11-7
+- Add patch that fixes negative priorities in top.
+
+* 四 2月 20 2003 Alexander Larsson <alexl@redhat.com> 2.0.11-6
+- New NPTL patch:
+- Added skipthreads optimization to top
+- Don't read threads in 'w'
+
+* 四 2月 20 2003 Alexander Larsson <alexl@redhat.com> 2.0.11-5
+- Update the NPTL patch since the kernel /proc was fixed
+- For kernels >= 2.4.20-2.50
+
+* 一 2月 17 2003 Alexander Larsson <alexl@redhat.com> 2.0.11-4
+- Update nptl patch to new /proc layout.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 2.0.11-3
+- rebuilt
+
+* 三 1月 22 2003 Alexander Larsson <alexl@redhat.com> 2.0.11-2
+- Created nptl patch after discussion with ingo and arjan
+
+* 二 1月 21 2003 Alexander Larsson <alexl@redhat.com> 2.0.11-1
+- Update to 2.0.11
+
+* 一 12月 16 2002 Elliot Lee <sopwith@redhat.com> 2.0.10-4
+- Fix %install in changelog
+
+* 二 11月 19 2002 Jakub Jelinek <jakub@redhat.com> 2.0.10-3
+- Fix for Hammer
+
+* 三 10月 23 2002 Alexander Larsson <alexl@redhat.com> 2.0.10-2
+- Remove uninstalled files in %install. Add pmap to %files
+
+* 二 10月 08 2002 Alexander Larsson <alexl@redhat.com> 2.0.10-1
+- Update to 2.0.10
+- Removed applied patches.
+
+* 一 8月 12 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-25
+- Add patch to protect against idle ticks going backwards. Fixes #71237
+
+* 四 8月 08 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-24
+- Fix saving of sort, fixes #32757
+- Fix printing size, fixes #48224
+- Fix float decimal point input #58163
+
+* 四 8月 08 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-23
+- Fix unsigned/signed bug. Closes #60998.
+- Update threadbadhack to correctly propagate process time to the main thread.
+
+* 三 8月 07 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-22
+- Don't strip binaries
+
+* 五 7月 12 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-21
+- Remove the X11 subpackage
+
+* 一 7月 01 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-19
+- Added patch that fixes #35174
+
+* 三 6月 26 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-18
+- New thread badhack patch. Fixes a segfault.
+
+* 一 6月 24 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-16
+- New thread badhack. Now enabled by default.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 6月 20 2002 Alexander Larsson <alexl@redhat.com> 2.0.7-14
+- Added badhack to support hiding threads
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 4月 15 2002 Bill Nottingham <notting@redhat.com> 2.0.7-12
+- add ldconfig in postun section
+
+* 一 8月 27 2001 Trond Eivind Glomsrod <teg@redhat.com> 2.0.7-11
+- Add ncurses-devel as a build dependency (#49562)
+
+* 六 7月 21 2001 Tim Powers <timp@redhat.com>
+- removed applnk entry, one of the things that's cluttering our menus
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 四 4月 05 2001 Jakub Jelinek <jakub@redhat.com>
+- fix AIX style user defined formats (#34833)
+
+* 四 3月 22 2001 Bill Nottingham <notting@redhat.com>
+- add a '-e' to sysctl to ignore errors (#31852)
+
+* 一 3月 05 2001 Preston Brown <pbrown@redhat.com>
+- bigger buffer for reading /proc/stat fixes segfault (#27840)
+
+* 四 2月 01 2001 Preston Brown <pbrown@redhat.com>
+- make sysctl return a value when errors occur (#18820).
+- support big UIDs (#22683)
+
+* 一 1月 22 2001 Helge Deller <hdeller@redhat.com>
+- work-around for negative CPU output (Bug #18380)
+
+* 四 8月 17 2000 Than Ngo <than@redhat.com>
+- fix failing in RPM post script (Bug #16226)
+
+* 三 7月 26 2000 Michael K. Johnson <johnsonm@redhat.com>
+- Added Jakub's locale patch
+
+* 五 7月 14 2000 Michael K. Johnson <johnsonm@redhat.com>
+- procps-2.0.7
+- integrated all patches except for signames patch, which is broken
+  and unnecessary
+- See NEWS for changes between 2.0.6 and 2.0.7
+- Added patch to correctly install desktop file.  Oops.
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 7月 03 2000 Preston Brown <pbrown@redhat.com>
+- larger buffers for reading /proc/stat
+
+* 二 6月 13 2000 Preston Brown <pbrown@redhat.com>
+- FHS paths
+
+* 二 5月 30 2000 Preston Brown <pbrown@redhat.com>
+- add smp, signal name patches from VA Linux.  Thanks guys.
+
+* 一 5月 22 2000 Harald Hoyer <harald@redhat.com>
+- added sysctl.conf (5) man page
+
+* 三 5月 10 2000 Bill Nottingham <notting@redhat.com>
+- fix PAGE_SIZE mismatch on ia64
+
+* 日 5月 07 2000 Bill Nottingham <notting@redhat.com>
+- rebuild with different optimizations for ia64
+
+* 五 3月 24 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- rebuild with current ncurses
+
+* 二 3月 07 2000 Bill Nottingham <notting@redhat.com>
+- fix end-of-file behavior in sysctl
+
+* 一 2月 07 2000 Preston Brown <pbrown@redhat.com>
+- wmconfig -> desktop
+
+* 一 2月 07 2000 Jakub Jelinek <jakub@redhat.com>
+- don't try to load System.map (and spit error messages if it does not
+  exist) if ps or top are not going to use it, both to speed things up
+  and remove the ugly messages when they don't make sense.
+- in top, print the possible error messages using standard top SHOWMESSAGE
+  (because it will be now printed out when already in terminal mode).
+
+* 四 2月 03 2000 Matt Wilson <msw@redhat.com>
+- added patch to prevent divide by zero on UltraSparc
+- gzip man pages
+

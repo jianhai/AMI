@@ -1,0 +1,194 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.18-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.18-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.18-2.1
+- rebuild for alios6
+
+* 二 3月 30 2010 Joe Orton <jorton@redhat.com> - 1.18-2
+- add GFDL to License
+
+* 一 3月 29 2010 Joe Orton <jorton@redhat.com> - 1.18-1
+- update to 1.18
+- fix Source0 to reference gnu.org repository
+
+* 五 1月 29 2010 Joe Orton <jorton@redhat.com> - 1.16-1
+- update to 1.16
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.9-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 3月 10 2009 Joe Orton <jorton@redhat.com> 1.9-4
+- update to 1.9 (#302111)
+- update License to reflect GPLv3+ binaries, LGPLv2+ library
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.14-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 12月 29 2008 Kedar Sovani <kedars@marvell.com> 0.6.14-9
+- fix the problem with #include_next
+
+* 二 6月 10 2008 Joe Orton <jorton@redhat.com> 0.6.14-8
+- fix build with latest autoconf (#449440)
+
+* 一 3月 31 2008 Joe Orton <jorton@redhat.com> 0.6.14-7
+- fix libidn.pc for correct libdir (#439549)
+
+* 五 3月 07 2008 Joe Orton <jorton@redhat.com> 0.6.14-6
+- drop libidn.a
+- move shared library to /lib{,64} (#283651)
+
+* 四 2月 07 2008 Joe Orton <jorton@redhat.com> 0.6.14-5
+- fix DT_RPATH in /usr/bin/idn
+- convert libidn.iconv to UTF-8 (Jon Ciesla, #226029)
+- fix BuildRoot tag (Jon Ciesla, #226029)
+
+* 二 8月 21 2007 Joe Orton <jorton@redhat.com> 0.6.14-4
+- drop contrib directory from docs
+
+* 一 8月 20 2007 Joe Orton <jorton@redhat.com> 0.6.14-3
+- fix License
+
+* 一 6月 18 2007 Joe Orton <jorton@redhat.com> 0.6.14-2
+- update to 0.6.14
+
+* 一 1月 29 2007 Joe Orton <jorton@redhat.com> 0.6.9-2
+- update to 0.6.9
+- make install-info use failsafe (Ville Skyttä, #223707)
+
+* 三 11月 15 2006 Joe Orton <jorton@redhat.com> 0.6.8-4
+- use non-GNU section in info directory (#209491)
+
+* 三 11月 15 2006 Joe Orton <jorton@redhat.com> 0.6.8-3
+- update to 0.6.8
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.6.5-1.1
+- rebuild
+
+* 五 7月 07 2006 Joe Orton <jorton@redhat.com> 0.6.5-1
+- update to 0.6.5
+
+* 五 7月 07 2006 Joe Orton <jorton@redhat.com> 0.6.4-1
+- update to 0.6.4
+
+* 四 6月 01 2006 Joe Orton <jorton@redhat.com> 0.6.3-1
+- update to 0.6.3
+- fix some places where gettext() was not getting used
+
+* 四 6月 01 2006 Joe Orton <jorton@redhat.com> 0.6.2-4
+- remove the libidn.la (#172639)
+
+* 四 5月 11 2006 Joe Orton <jorton@redhat.com> 0.6.2-3
+- make idn-int.h multilib-safe
+
+* 三 2月 22 2006 Joe Orton <jorton@redhat.com> 0.6.2-2
+- disable C# support (#182393)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.6.2-1.1
+- bump again for double-long bug on ppc(64)
+
+* 一 2月 06 2006 Florian La Roche <laroche@redhat.com>
+- 0.6.1
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 日 12月 04 2005 Joe Orton <jorton@redhat.com> 0.6.0-1
+- update to 0.6.0
+
+* 一 10月 24 2005 Joe Orton <jorton@redhat.com> 0.5.20-1
+- update to 0.5.20
+
+* 一 9月 19 2005 Joe Orton <jorton@redhat.com> 0.5.19-1
+- update to 0.5.19
+
+* 五 5月 27 2005 Joe Orton <jorton@redhat.com> 0.5.17-1
+- update to 0.5.17
+
+* 五 5月 06 2005 Joe Orton <jorton@redhat.com> 0.5.16-1
+- update to 0.5.16
+
+* 四 5月 05 2005 Joe Orton <jorton@redhat.com> 0.5.15-2
+- constify data tables in pr29.c
+- clean up pre/post/postun requires
+
+* 日 3月 20 2005 Joe Orton <jorton@redhat.com> 0.5.15-1
+- update to 0.5.15
+
+* 五 3月 04 2005 Joe Orton <jorton@redhat.com> 0.5.13-2
+- rebuild
+
+* 一 1月 31 2005 Joe Orton <jorton@redhat.com> 0.5.13-1
+- update to 0.5.13
+
+* 日 12月 05 2004 Joe Orton <jorton@redhat.com> 0.5.12-1
+- update to 0.5.12
+
+* 一 11月 29 2004 Joe Orton <jorton@redhat.com> 0.5.11-1
+- update to 0.5.11 (#141094)
+
+* 二 11月 09 2004 Joe Orton <jorton@redhat.com> 0.5.10-1
+- update to 0.5.10
+- buildroot cleanup fix (Robert Scheck)
+
+* 一 11月 08 2004 Joe Orton <jorton@redhat.com> 0.5.9-1
+- update to 0.5.9 (#138296)
+
+* 四 10月 07 2004 Joe Orton <jorton@redhat.com> 0.5.6-1
+- update to 0.5.6 (#134343)
+
+* 四 9月 30 2004 Miloslav Trmac <mitr@redhat.com> - 0.5.4-3
+- Fix Group: (#134068)
+
+* 二 8月 31 2004 Joe Orton <jorton@redhat.com> 0.5.4-2
+- move ldconfig from preun to postun (#131280)
+
+* 日 8月 08 2004 Joe Orton <jorton@redhat.com> 0.5.4-1
+- update to 0.5.4 (#129341)
+
+* 四 7月 15 2004 Robert Scheck <redhat@linuxnetz.de> 0.5.2-1
+- upgrade to 0.5.2, enabled i18n support and info files (#127906)
+
+* 五 7月 09 2004 Joe Orton <jorton@redhat.com> 0.5.1-1
+- update to 0.5.1 (#127496)
+
+* 一 6月 28 2004 Joe Orton <jorton@redhat.com> 0.5.0-1
+- update to 0.5.0 (#126836)
+
+* 二 6月 22 2004 Than Ngo <than@redhat.com> 0.4.9-2
+- add prereq: /sbin/ldconfig
+- move la file in main package
+
+* 二 6月 15 2004 Robert Scheck <redhat@linuxnetz.de> 0.4.9-1
+- upgrade to 0.4.9 (#126353)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 4月 29 2004 Joe Orton <jorton@redhat.com> 0.4.4-1
+- update to 0.4.4; remove contrib from -devel docs
+
+* 四 4月 29 2004 Joe Orton <jorton@redhat.com> 0.4.3-1
+- update to 0.4.3, remove -rpath patch
+
+* 二 1月 27 2004 Joe Orton <jorton@redhat.com> 0.3.7-1
+- update to 0.3.7, simplify
+
+* 三 1月 07 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.3.6-1mdk
+- 0.3.6
+
+* 一 12月 15 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 0.3.5-1mdk
+- 0.3.5
+
+* 日 10月 19 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 0.3.3-2mdk
+- drop the "soname fix" and use the correct way...
+
+* 六 10月 18 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 0.3.3-1mdk
+- 0.3.3
+
+* 一 10月 13 2003 Oden Eriksson <oden.eriksson@kvikkjokk.net> 0.3.2-1mdk
+- initial cooker contrib
+- used the package from PLD as a start point
+

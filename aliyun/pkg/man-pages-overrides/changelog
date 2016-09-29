@@ -1,0 +1,147 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.2.3-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.2.3-2.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 6.2.3-2.1
+- rebuild for alios6
+
+* 二 10月 18 2011 Peter Schiffer <pschiffe@redhat.com> 6.2.3-2
+- related: #694860
+  Rewritten patch for nsswitch.conf man page
+
+* 四 10月 13 2011 Peter Schiffer <pschiffe@redhat.com> 6.2.3-1
+- resolves: #740670
+  vsftpd: documentation for 'max_per_ip' default setting is wrong
+- resolves: #717770
+  Need single-request-reopen option documented for resolv.conf
+- resolves: #742098
+  Update description of timeo in nfs(5) manpage
+- resolves: #694860
+  No mention of sssd in nsswitch.conf man page
+- resolves: #723791
+  Lack of UMOUNT_NOFOLLOW flag description in umount(2)
+- resolves: #728416
+  [RFE] net: backport sendmmsg syscall [Manpage request]
+
+* 三 9月 14 2011 Peter Schiffer <pschiffe@redhat.com> 6.2.2-1
+- resolves: #727526
+  Typo in man curl manpage
+- resolves: #730042
+  Add missing man page for cpufreq-aperf and fixed cpufreq-set man page
+- resolves: #602228
+  bridge-utils missing documentation in manpage for RFE 574461
+- resolves: #731690
+  Man ecryptfs contains invalid link in SEE ALSO section
+- resolves: #734836
+  Document that realtime clock functions need to link with -lrt
+- resolves: #656245
+  Fixed incorrect link from previous release
+- resolves: #690187
+  Added license file for man pages from man-pages package
+  Removed bug fixed in original component: #659740
+  Added license file for man page from x86info package
+
+* 五 7月 08 2011 Ivana Hutarova Varekova <varekova@redhat.com> 6.2.1-1
+- resolves: #698151
+  Remove documentation for "order" keyword in /etc/host.conf manpage
+- resolves: #688543
+  Several lsvpd tools options not documented in man page
+- resolves: #674423
+  man page for recvmmsg added
+- resolves: #656245
+  add fattach.2 link to uninplemented
+- resolves: #719902
+  Remove bug fixed in original component: #674870
+  Remove bug fixed in original component: #674878
+  Remove bug fixed in original component: #677541
+  Remove bug fixed in original component: #677542
+  Remove bug fixed in original component: #690801
+  Remove bug fixed in original component: #674883
+
+* 五 7月 08 2011 Ivana Hutarova Varekova <varekova@redhat.com> 6.2.0-1
+- resolves: #712256
+  Typo in volume_key manpage
+- resolves: #709274
+  ntpq(8) manpage fixes
+- resolves: #709058
+  ntp-keygen(8) manpage fixes
+- resolves: #615897
+  Added missing man page for/usr/sbin/lsmsr in x86info package
+- resolves: #690187
+  New man pages for cciss + hpsa modules
+
+* 三 4月 13 2011 Ivana Hutarova Varekova <varekova@redhat.com> 2.5-1
+- related: #676483
+  remove the man pages, they are already fixed in nss-pam-ldap package
+
+* 二 4月 12 2011 Ivana Hutarova Varekova <varekova@redhat.com> 2.4-1
+- related: #604626
+  add forgotten patch
+- related: #632081
+  fix the encoding
+- related: #644308
+  fix the typo
+- related: #650162
+  fix the patch text
+- related: #676483
+
+* 四 3月 31 2011 Ivana Hutarova Varekova <varekova@redhat.com> 2.3-1
+- resolves: #676483
+  nss-pam-ldapd: troff syntax error in the man page of nslcd
+
+* 五 3月 25 2011 Ivana Hutarova Varekova <varekova@redhat.com> 2.2-1
+- resolves: #675223
+  locate(1) manpage fixes
+- resolves: #676540
+  magic(5) manpage fixes
+
+* 四 2月 10 2011 Ivana Hutarova Varekova <varekova@redhat.com> 2.1-1
+- resolves: #615873
+  Man w3m is stating incorrect program version (package w3m)
+- resolves: #675213
+  userpasswd(1) manpage fix (package usermode)
+- resolves: #675688
+  pcretest(1) manpage fixes (package pcre)
+- resolves: #675682
+  pcregrep(1) manpage fixes (package pcre)
+- resolves: #636785
+  "semanage module" is not mentioned in semanage man page (package policycoreutils)
+- resolves: #540492
+  8 options are not described in semanage man page (package policycoreutils)
+
+* 二 2月 08 2011 Ivana Hutarova Varekova <varekova@redhat.com> 2.0-1
+- resolves: #658734
+  setacl(1) man page bug (package acl)
+- resolves: #651120
+  setfattr(1) man page bug (package attr)
+- resolves: #615905
+  ospfclient(8) and watchquagga(8) man pages added (package quagga)
+- resolves: #633701
+  expect(1) man page is bad formatted (package expect)
+- resolves: #650162
+  useradd(8) man page bug (package shadow-utils)
+- resolves: #657563
+  Manual page corrections for find(1) (package findutils)
+- resolves: #632081
+  man(1) for Japanese manual page contains duplicated lines in PAGER explanation
+  (package man)
+- resolves: #604626
+  yum-verify man page uses 'pretty' quotes in examples (package yum-utils)
+- resolves: #622451
+  Author info is wrong in man page (package logrotate)
+- resolves: #638625
+  Ambiguity in logrotate man page (package logrotate)
+- resolves: #644308
+  manpage not in sync with options logrotate actually recognizes (package logrotate)
+- resolves: #613979
+  dftest and randpkt does not have a man page (package wireshark)
+- resolves: #619779
+  lftp(1) option xfer:auto-rename not documented (package lftp)
+- resolves: #673968
+  logrotate(8) manpage typo patch (package logrotate)
+
+* 一 10月 19 2009 Ivana Varekova <varekova@redhat.com> 1.0-1
+- made a initial package
+

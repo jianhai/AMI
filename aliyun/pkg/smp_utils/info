@@ -1,0 +1,22 @@
+Name        : smp_utils                    Relocations: (not relocatable)
+Version     : 0.94                              Vendor: Alibaba
+Release     : 4.4.alios6                    Build Date: 2014年07月28日 星期一 04时42分04秒
+Install Date: 2015年03月25日 星期三 11时00分40秒      Build Host: x86-004.build.alibaba
+Group       : Applications/System           Source RPM: smp_utils-0.94-4.4.alios6.src.rpm
+Size        : 483959                           License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 18时45分54秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sg.danny.cz/sg/smp_utils.html
+Summary     : Utilities for SAS management protocol (SMP)
+Description :
+This is a package of utilities. Each utility sends a Serial Attached
+SCSI (SAS) Management Protocol (SMP) request to a SMP target.
+If the request fails then the error is decoded. If the request succeeds
+then the response is either decoded, printed out in hexadecimal or
+output in binary. This package supports multiple interfaces since
+SMP passthroughs are not mature. This package supports the linux
+2.4 and 2.6 series and should be easy to port to other operating
+systems.
+
+Warning: Some of these tools access the internals of your system
+and the incorrect usage of them may render your system inoperable.

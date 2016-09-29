@@ -1,0 +1,12 @@
+postinstall scriptlet (using /bin/sh):
+if [ -f /etc/sysconfig/kernel ]
+then
+    . /etc/sysconfig/kernel || exit $?
+fi
+if [ "$HARDLINK" != "no" -a -x /usr/sbin/hardlink ]
+then
+    (cd /usr/src/kernels/2.6.32-220.23.2.al.ali1.1.alios6.x86_64 &&
+     /usr/bin/find . -type f | while read f; do
+       hardlink -c /usr/src/kernels/*.fc*.*/$f $f
+     done)
+fi

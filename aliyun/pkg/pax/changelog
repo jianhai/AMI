@@ -1,0 +1,112 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.4-10.1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.4-10.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.4-10.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.4-10.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 3.4-10.1
+- Rebuilt for RHEL 6
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.4-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.4-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 1月 19 2009 Ondrej Vasik <ovasik@redhat.com> - 3.4-8
+- Merge review #226235: fix use of %makeinstall as well
+
+* 一 1月 19 2009 Ondrej Vasik <ovasik@redhat.com> - 3.4-7
+- Merge review #226235: do ship doc files,
+  do comment patches, use better buildroot and
+  defaults for attributes, allow parallel builds
+
+* 五 8月 29 2008 Ondrej Vasik <ovasik@redhat.com> - 3.4-6
+- removed duplicate Source0
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 3.4-5
+- Autorebuild for GCC 4.3
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 3.4-4
+- Rebuild for selinux ppc32 issue.
+
+* 一 7月 16 2007 Radek Brich <rbrich@redhat.com> - 3.4-3
+- do not truncate file names when extracting (#205324)
+
+* 三 6月 20 2007 Radek Brich <rbrich@redhat.com> - 3.4-2
+- applied patch for #239000 (pax fails creation of ustar
+  if an absolute name is exactly 100 characters long)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.4-1.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.4-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.4-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 8月 15 2005 Peter Vrabec <pvrabec@redhat.com> 3.4-1
+- upgrade 3.4
+
+* 五 3月 18 2005 Peter Vrabec <pvrabec@redhat.com> 3.0-11
+- rebuilt
+
+* 四 10月 21 2004 Peter Vrabec <pvrabec@redhat.com>
+- fix PAXPATHLEN (#132857)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 12 2002 Tim Powers <timp@redhat.com> 3.0-5
+- rebuild on all arches
+
+* 三 7月 03 2002 Karsten Hopp <karsten@redhat.de>
+- fix documentation (#63671)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 3月 05 2002 Matt Wilson <msw@redhat.com>
+- pull PAX source tarball from the SuSE package (which is based off
+  this one yet claims copyright on the spec file)
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 五 2月 23 2001 Jakub Jelinek <jakub@redhat.com>
+- make it build under glibc 2.2.2
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 五 6月 30 2000 Preston Brown <pbrown@redhat.com>
+- debian version, which is a port from OpenBSD's latest.
+
+* 二 6月 13 2000 Preston Brown <pbrown@redhat.com>
+- FHS paths
+
+* 二 5月 30 2000 Preston Brown <pbrown@redhat.com>
+- adopted for Winston.
+

@@ -1,0 +1,27 @@
+/bin/sh  
+/etc/pam.d/system-auth  
+config(sudo) = 1.7.4p5-7.5.alios6
+libaudit.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.11)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libdl.so.2()(64bit)  
+liblber-2.4.so.2()(64bit)  
+libldap-2.4.so.2()(64bit)  
+libpam.so.0()(64bit)  
+libpam.so.0(LIBPAM_1.0)(64bit)  
+libselinux.so.1()(64bit)  
+libutil.so.1()(64bit)  
+libutil.so.1(GLIBC_2.2.5)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+vim-minimal  
+rpmlib(PayloadIsXz) <= 5.2-1

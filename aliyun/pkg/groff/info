@@ -1,0 +1,21 @@
+Name        : groff                        Relocations: (not relocatable)
+Version     : 1.18.1.4                          Vendor: Alibaba
+Release     : 21.4.alios6                   Build Date: 2014年07月29日 星期二 21时24分39秒
+Install Date: 2015年03月25日 星期三 10时59分45秒      Build Host: x86-001.build.alibaba
+Group       : Applications/Publishing       Source RPM: groff-1.18.1.4-21.4.alios6.src.rpm
+Size        : 5316136                          License: GPLv2 and GFDL
+Signature   : RSA/8, 2014年07月31日 星期四 16时37分37秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://groff.ffii.org
+Summary     : A document formatting system
+Description :
+Groff is a document formatting system. Groff takes standard text and
+formatting commands as input and produces formatted output. The
+created documents can be shown on a display or printed on a printer.
+Groff's formatting commands allow you to specify font type and size,
+bold type, italic type, the number and size of columns on a page, and
+more.
+
+Groff can also be used to format man pages. If you are going to use
+groff with the X Window System, you will also need to install the
+groff-gxditview package.

@@ -1,0 +1,53 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/install-info  
+/sbin/install-info  
+/usr/bin/perl  
+autoconf >= 2.62
+perl >= 0:5.000
+perl >= 0:5.005
+perl >= 0:5.005_03
+perl >= 0:5.006
+perl(Automake::ChannelDefs)  
+perl(Automake::Channels)  
+perl(Automake::Condition)  
+perl(Automake::Config)  
+perl(Automake::Configure_ac)  
+perl(Automake::DisjConditions)  
+perl(Automake::FileUtils)  
+perl(Automake::General)  
+perl(Automake::Item)  
+perl(Automake::ItemDef)  
+perl(Automake::Location)  
+perl(Automake::Options)  
+perl(Automake::Rule)  
+perl(Automake::RuleDef)  
+perl(Automake::Struct)  
+perl(Automake::VarDef)  
+perl(Automake::Variable)  
+perl(Automake::Version)  
+perl(Automake::Wrap)  
+perl(Automake::XFile)  
+perl(Carp)  
+perl(Cwd)  
+perl(DynaLoader)  
+perl(Errno)  
+perl(Exporter)  
+perl(File::Basename)  
+perl(File::Compare)  
+perl(File::Copy)  
+perl(File::Spec)  
+perl(File::stat)  
+perl(Getopt::Long)  
+perl(IO::File)  
+perl(POSIX)  
+perl(constant)  
+perl(strict)  
+perl(vars)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

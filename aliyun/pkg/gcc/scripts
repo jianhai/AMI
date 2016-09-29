@@ -1,0 +1,10 @@
+postinstall scriptlet (using /bin/sh):
+if [ -f /usr/share/info/gcc.info.gz ]; then
+  /sbin/install-info \
+    --info-dir=/usr/share/info /usr/share/info/gcc.info.gz || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 -a -f /usr/share/info/gcc.info.gz ]; then
+  /sbin/install-info --delete \
+    --info-dir=/usr/share/info /usr/share/info/gcc.info.gz || :
+fi

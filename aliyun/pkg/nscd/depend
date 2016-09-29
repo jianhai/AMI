@@ -1,0 +1,38 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/chkconfig  
+/usr/sbin/useradd  
+/usr/sbin/userdel  
+audit-libs >= 1.1.3
+config(nscd) = 2.12-1.166.alios6.7
+glibc = 2.12-1.166.alios6.7
+libaudit.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.10)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.2)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libc.so.6(GLIBC_2.9)(64bit)  
+libcap.so.2()(64bit)  
+libnsl.so.1()(64bit)  
+libnsl.so.1(GLIBC_2.2.5)(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpthread.so.0(GLIBC_2.3.2)(64bit)  
+libpthread.so.0(GLIBC_2.3.3)(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+libselinux >= 1.17.10-1
+libselinux.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+sh-utils  
+rpmlib(PayloadIsXz) <= 5.2-1

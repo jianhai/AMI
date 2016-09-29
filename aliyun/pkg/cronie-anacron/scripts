@@ -1,0 +1,4 @@
+postinstall scriptlet (using /bin/sh):
+[ -e /var/spool/anacron/cron.daily ] || touch /var/spool/anacron/cron.daily
+[ -e /var/spool/anacron/cron.weekly ] || touch /var/spool/anacron/cron.weekly
+[ -e /var/spool/anacron/cron.monthly ] || touch /var/spool/anacron/cron.monthly

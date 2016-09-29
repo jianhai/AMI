@@ -1,0 +1,138 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.1-6.1.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.1-6.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.1-6.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.2.1-6.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.2.1-6.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.1-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.1-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 3月 17 2008 Miroslav Lichvar <mlichvar@redhat.com> 1.2.1-4
+- speed up decoding
+- CFLAGS cleanup
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.2.1-3
+- Autorebuild for GCC 4.3
+
+* 二 1月 29 2008 Miroslav Lichvar <mlichvar@redhat.com> 1.2.1-2
+- fix building with gcc-4.3 
+- reenable some assembly optimizations
+- hide private libFLAC symbols (#285961)
+- update license tag
+- add %check
+- remove -maltivec from CFLAGS
+
+* 一 9月 17 2007 - Bastien Nocera <bnocera@redhat.com> - 1.2.1-1
+- Update to 1.2.1
+
+* 三 9月 12 2007 - Bastien Nocera <bnocera@redhat.com> - 1.2.0-3
+- Make a few functions hidden, to try and avoid textrels
+- Disable optimisations on x86 for the same reason
+  (#285961)
+
+* 二 9月 11 2007 - Bastien Nocera <bnocera@redhat.com> - 1.2.0-2
+- Update GNU stack patch to cover all the NASM sources used
+
+* 一 9月 10 2007 - Bastien Nocera <bnocera@redhat.com> - 1.2.0-1
+- Update for 1.20 and drop obsolete patches (#285161)
+
+* 五 8月 24 2007 Adam Jackson <ajax@redhat.com> - 1.1.4-5
+- Rebuild for build ID
+
+* 四 4月 12 2007 - Bastien Nocera <bnocera@redhat.com> - 1.1.4-4
+- The byteSwap symbol shouldn't be global, reported by Joe Orton
+  <jorton@redhat.com> (#215920)
+
+* 三 2月 14 2007 - Bastien Nocera <bnocera@redhat.com> - 1.1.4-3
+- Also include the new pkgconfig files
+
+* 三 2月 14 2007 - Bastien Nocera <bnocera@redhat.com> - 1.1.4-2
+- Update link-ogg patch for 1.1.4
+
+* 三 2月 14 2007 - Bastien Nocera <bnocera@redhat.com> - 1.1.4-1
+- Update to upstream 1.1.4
+
+* 二 2月 13 2007 - Bastien Nocera <bnocera@redhat.com> - 1.1.3-2
+- A few fixes from the the Fedora merge review
+- Remove the static library
+
+* 二 2月 13 2007 - Bastien Nocera <bnocera@redhat.com> - 1.1.3-1
+- Update with work from Matthias Clasen <mclasen@redhat.com> up
+  to upstream 1.1.3 (#229462)
+- Remove xmmx-flac Obsolete, as we don't ship the xmms plugin
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.1.2-27
+- rebuild
+- Try building w/ glib2-devel
+
+* 三 6月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.1.2-26
+- rebuild for -devel deps
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.1.2-25.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.1.2-25.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 4月 21 2005 Warren Togami <wtogami@redhat.com> - 1.1.2-25
+- Fix buildreqs  (#154649 thias)
+- obsolete older xmms-flac
+
+* 一 4月 04 2005 Elliot Lee <sopwith@redhat.com> - 1.1.2-24
+- Removed xmms-flac subpackage
+
+* 二 3月 29 2005 John (J5) Palmieri <johnp@redhat.com> 1.1.2-2
+- Rebuild (flac picked up a dependancy on it's older version)
+
+* 一 3月 28 2005 John (J5) Palmieri <johnp@redhat.com> 1.1.2-1
+- Update to upstream version 1.1.2
+- Replace flac-1.1.0-libtool.patch with flac-1.1.2-libtool.patch
+
+* 三 3月 02 2005 John (J5) Palmieri <johnp@redhat.com> 1.1.0-9
+- rebuild for gcc 4.0
+
+* 三 2月 23 2005 Colin Walters <walters@redhat.com> 1.1.0-8
+- New patch flac-1.1.0-gnu-stack.patch from Ulrich Drepper to mark asm
+  as not requiring an executable stack
+
+* 四 7月 15 2004 Tim Waugh <twaugh@redhat.com> 1.1.0-7
+- Fixed warnings in shipped m4 file.
+
+* 一 6月 21 2004 Colin Walters <walters@redhat.com> 1.1.0-6
+- BuildRequire glib-devel for xmms plugin
+- BuildRequire nasm
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 4月 04 2004 Warren Togami <wtogami@redhat.com> 1.1.0-4
+- #119551 flac-xmms -> xmms-flac to match fedora.us and freshrpms.net
+- Obsoletes flac-libs to upgrade smoothly from fedora.us
+
+* 四 3月 11 2004 Bill Nottingham <notting@redhat.com> 1.1.0-3
+- fix x86_64 linkage (#117893)
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 8月 06 2003 Bill Nottingham <notting@redhat.com> 1.1.0-1
+- initial build
+

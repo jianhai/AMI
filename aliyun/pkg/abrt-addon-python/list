@@ -1,0 +1,8 @@
+/etc/abrt/plugins/python.conf
+/etc/libreport/events.d/python_event.conf
+/usr/bin/abrt-action-analyze-python
+/usr/lib64/python2.6/site-packages/abrt.pth
+/usr/lib64/python2.6/site-packages/abrt_exception_handler.py
+/usr/lib64/python2.6/site-packages/abrt_exception_handler.pyc
+/usr/lib64/python2.6/site-packages/abrt_exception_handler.pyo
+/usr/share/man/man1/abrt-action-analyze-python.1.gz

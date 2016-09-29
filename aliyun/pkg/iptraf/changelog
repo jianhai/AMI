@@ -1,0 +1,218 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.0.1-13.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.0.1-13.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.0.1-13.1
+- rebuild for alios6
+
+* 四 5月 27 2010 Nikola Pajkovsky <npajkovs@redhat.com> - 3.0.1-13
+- add patch iptraf-3.0.1-strict-aliasing.patch
+- Resolves: #596173 - RPMdiff run failed for package iptraf-3.0.1-11.el6
+
+* 二 5月 25 2010 Nikola Pajkovsky <npajkovs@redhat.com> - 3.0.1-12
+- add patch 0001-fix-strcpy-overlap-memory.patch
+- Resolves: 595454  - Doesn't detect any ethernet interface
+
+* 四 2月 25 2010 Nikola Pajkovsky <npajkovs@redhat.com> - 3.0.1-11
+- remove empty hidden file(Documentation/stylesheet-images/.eps)
+
+* 二 1月 05 2010 Nikola Pajkovsky <npajkovs@redhat.com> - 3.0.1-10
+- fix url. Changed form original upstream because its dead.
+
+* 一 1月 04 2010 Nikola Pajkovsky <npajkovs@redhat.com> - 3.0.1-9
+- fix #549745 - "iptraf -s lo" makes iptraf crash
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 3.0.1-8.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.1-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.1-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 9月 02 2008 Zdenek Prikryl <zprikryl@redhat.com> - 3.0.1-6
+- Minor fixes in patches ipv6, incltypes and ifname
+
+* 四 6月 05 2008 Zdenek Prikryl <zprikryl@redhat.com> - 3.0.1-5
+- Added support for ipv6 (#200503)
+- Fixed vlan support (#219772)
+- Added support for bond interfaces
+
+* 二 4月 15 2008 Zdenek Prikryl <zprikryl@redhat.com> - 3.0.1-4
+- Length of iface name is increased
+- Resolves #439201
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 3.0.1-3
+- Autorebuild for GCC 4.3
+
+* 二 1月 15 2008 Marcela Maslanova <mmaslano@redhat.com> - 3.0.1-2
+- logratate now rotate only *.log files, not all of them #428683
+
+* 五 11月 02 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.0.1-1
+- upgrade iptraf-3.0.1
+
+* 五 8月 24 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.0.0-7
+- rebuilt for mass rebuilt
+- check license
+
+* 三 4月 04 2007 Marcela Maslanova <mmaslano@redhat.com> - 3.0.0-6
+- merge review, add logrotate file
+- rhbz#225907
+
+* 一 12月 11 2006 Marcela Maslanova <mmaslano@redhat.com> - 3.0.0-5
+- input traffic
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.0.0-4.1
+- rebuild
+
+* 二 6月 06 2006 Marcela Maslanova <mmaslano@redhat.com> 3.0.0-4
+- fix compile (#192510)
+
+* 三 4月 05 2006 Miroslav Lichvar <mlichvar@redhat.com> 3.0.0-2
+- fix crash when parsing long network interface name (#187937)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.0.0-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.0.0-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 2月 03 2006 Miroslav Lichvar <mlichvar@redhat.com> 3.0.0-1
+- update to release 3.0.0
+- spec cleanup
+- drop cfgpath patch
+- fix bad display of frames on linux console (#140698)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 5月 17 2005 Karsten Hopp <karsten@redhat.de> 2.7.0-15
+- move config file to %{_sysconfdir}/iptraf.cfg to prevent deletion at bootup (#157794)
+
+* 二 5月 10 2005 Karsten Hopp <karsten@redhat.de> 2.7.0-14
+- enable debuginfo
+
+* 三 3月 02 2005 Karsten Hopp <karsten@redhat.de> 2.7.0-13
+- - build with gcc-4
+
+* 二 12月 21 2004 Karsten Hopp <karsten@redhat.de> 2.7.0-12
+- add some ethernet interface names (#143477)
+
+* 一 8月 09 2004 Karsten Hopp <karsten@redhat.de> 2.7.0-11 
+- add patch from Robert Scheck to fix filenames/paths in manpages
+  (#128476)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 17 2003 Karsten Hopp <karsten@redhat.de> 2.7.0-8
+- #97513, iptraf executable is 0700
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 六 12月 21 2002 Karsten Hopp <karsten@redhat.de>
+- new URL
+
+* 二 11月 19 2002 Tim Powers <timp@redhat.com>
+- rebuild on all arches
+
+* 一 7月 15 2002 Karsten Hopp <karsten@redhat.de> 2.7.0-3
+- add missingok for /var/run/iptraf/ files (#68780)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 6月 21 2002 Karsten Hopp <karsten@redhat.de> 2.7.0-1
+- update to fix stale locks when IPTraf did not start due to an
+  improper terminal size.
+- this update adds support for wireless LAN interfaces (wlan*, wvlan*).
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 2月 22 2002 Karsten Hopp <karsten@redhat.de>
+- build with gcc-3x
+
+* 五 2月 22 2002 Karsten Hopp <karsten@redhat.de>
+- added missing define
+- rebuild in new environment
+
+* 三 1月 23 2002 Karsten Hopp <karsten@redhat.de> (2.5.0-2)
+- fix #55243 (unable to tag this process)
+
+* 二 1月 22 2002 Karsten Hopp <karsten@redhat.de>
+- Update to 2.5.0
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 7月 24 2001 Karsten Hopp <karsten@redhat.de>
+- fix #49503 (BuildRequires)
+
+* 六 7月 07 2001 Karsten Hopp <karsten@redhat.de>
+- Copyright -> License
+
+* 一 5月 28 2001 Karsten Hopp <karsten@redhat.de>
+- really fix #42514
+
+* 一 5月 28 2001 Karsten Hopp <karsten@redhat.de>
+- fix #42514 (executables had wrong permissions)
+
+* 一 5月 21 2001 Tim Powers <timp@redhat.com>
+- updated to 2.4.0
+- built for distro
+
+* 一 1月 22 2001 Karsten Hopp <karsten@redhat.de>
+- update to 2.3.1 which fixes these bugs:
+- segfault in IP Traffic Monitor
+- segfault in promiscuous mode management
+- failure of filters when source or dest is 255.255.255.255
+- statistics logging bug
+- small buffer overrun in TCP timeout log
+- unrecognized IP display and filter code
+- segfault bug when sorting an empty TCP window
+
+* 一 7月 24 2000 Prospector <prospector@redhat.com>
+- rebuilt
+
+* 四 7月 13 2000 Karsten Hopp <karsten@redhat.de>
+- rebuilt
+
+* 三 6月 28 2000 Karsten Hopp <karsten@redhat.de>
+- fixed mandir
+- changed install routine to allow building as non-root
+
+* 一 5月 15 2000 Tim Powers <timp@redhat.com>
+- updated to 2.2.0
+
+* 五 11月 12 1999 Tim Powers <timp@redhat.com>
+- updated to 2.1.0
+- gzip man pages
+
+* 三 7月 28 1999 Tim Powers <timp@redhat.com>
+- updated to version 2.0.2
+- new patch added to that the spec file isn't out of control
+  in the install section
+- general spec cleanups
+- built for 6.1
+
+* 日 4月 18 1999 Michael Maher <mike@redhat.com>
+- built package for 6.0
+
+* 六 1月 16 1999 Anders Semb Hermansen <ahermans@vf.telia.no>
+- Updated to version 1.4.2
+- Used name and version variables in source field
+
+* 三 1月 06 1999 Anders Semb Hermansen <ahermans@vf.telia.no>
+- Maintainer for RHCN: Anders Semb Hermansen
+

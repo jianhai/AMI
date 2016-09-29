@@ -1,0 +1,17 @@
+Name        : gnome-vfs2                   Relocations: (not relocatable)
+Version     : 2.24.2                            Vendor: Alibaba
+Release     : 6.3.alios6                    Build Date: 2014年07月26日 星期六 05时52分54秒
+Install Date: 2015年03月25日 星期三 11时01分33秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: gnome-vfs2-2.24.2-6.3.alios6.src.rpm
+Size        : 3588493                          License: LGPLv2+ and GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时36分20秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnome.org/
+Summary     : The GNOME virtual file-system libraries
+Description :
+GNOME VFS is the GNOME virtual file system. It is the foundation of
+the Nautilus file manager. It provides a modular architecture and
+ships with several modules that implement support for file systems,
+http, ftp, and others. It provides a URI-based API, backend
+supporting asynchronous file operations, a MIME type manipulation
+library, and other features.

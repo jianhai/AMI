@@ -1,0 +1,34 @@
+preinstall scriptlet (using /bin/sh):
+getent group avahi >/dev/null 2>&1 || groupadd \
+        -r \
+        -g 70 \
+        avahi
+getent passwd avahi >/dev/null 2>&1 || useradd \
+        -r -l \
+        -u 70 \
+        -g avahi \
+        -d /var/run/avahi-daemon \
+        -s /sbin/nologin \
+        -c "Avahi mDNS/DNS-SD Stack" \
+        avahi
+:;
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+dbus-send --system --type=method_call --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig >/dev/null 2>&1 || :
+# Run avahi-daemon by default:
+/sbin/chkconfig --add avahi-daemon >/dev/null 2>&1 || :
+if [ "$1" -eq 1 ]; then
+   if [ -s /etc/localtime ]; then
+        cp -cfp /etc/localtime /etc/avahi/etc/localtime || :
+   fi
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" -eq 0 ]; then
+    /sbin/service avahi-daemon stop > /dev/null 2>&1 || :
+    /sbin/chkconfig --del avahi-daemon
+fi
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig || :
+if [ "$1" -ge "1" ]; then
+   /sbin/service avahi-daemon condrestart >/dev/null 2>&1 || :
+fi

@@ -1,0 +1,11 @@
+/usr/bin/desktop-file-install
+/usr/bin/desktop-file-validate
+/usr/bin/update-desktop-database
+/usr/share/doc/desktop-file-utils-0.15
+/usr/share/doc/desktop-file-utils-0.15/AUTHORS
+/usr/share/doc/desktop-file-utils-0.15/COPYING
+/usr/share/doc/desktop-file-utils-0.15/NEWS
+/usr/share/doc/desktop-file-utils-0.15/README
+/usr/share/emacs/site-lisp
+/usr/share/emacs/site-lisp/desktop-entry-mode.el
+/usr/share/emacs/site-lisp/desktop-entry-mode.elc

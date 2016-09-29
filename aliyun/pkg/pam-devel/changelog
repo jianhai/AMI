@@ -1,0 +1,1487 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.1-10.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.1-10.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.1.1-10.1
+- rebuild for alios6
+
+* 一 8月 15 2011 Tomas Mraz <tmraz@redhat.com> 1.1.1-10
+- add relro to LDFLAGS and link setuid binaries
+  with full relro (#727286)
+
+* 四 2月 24 2011 Tomas Mraz <tmraz@redhat.com> 1.1.1-8
+- fix wrong auditing in pam_selinux and more small memory
+  leaks in this module
+
+* 二 2月 22 2011 Tomas Mraz <tmraz@redhat.com> 1.1.1-7
+- fix a few memory leaks in error paths and other mistakes
+  found by a code review
+- add rhost and tty to auditing data in modules (#677664)
+
+* 二 1月 25 2011 Tomas Mraz <tmraz@redhat.com> 1.1.1-6
+- do not overwrite /var/log/tallylog on package update (#614766)
+- add support for uid and gid ranges in limits.conf (#622847)
+- add new pam_faillock module (#644971)
+
+* 三 10月 20 2010 Tomas Mraz <tmraz@redhat.com> 1.1.1-5
+- fix insecure dropping of priviledges in pam_xauth, pam_env,
+  and pam_mail - CVE-2010-3316 (#637898), CVE-2010-3435 (#641335)
+- fix insecure executing of scripts with user supplied environment
+  variables in pam_namespace - CVE-2010-3853 (#643043)
+
+* 一 2月 15 2010 Tomas Mraz <tmraz@redhat.com> 1.1.1-4
+- change the default password hash to sha512
+
+* 五 1月 22 2010 Tomas Mraz <tmraz@redhat.com> 1.1.1-3
+- fix wrong prompt when pam_get_authtok is used for new password
+
+* 一 1月 18 2010 Tomas Mraz <tmraz@redhat.com> 1.1.1-2
+- fix build with disabled audit and SELinux (#556211, #556212)
+
+* 四 12月 17 2009 Tomas Mraz <tmraz@redhat.com> 1.1.1-1
+- new upstream version with minor changes
+
+* 一 11月 02 2009 Tomas Mraz <tmraz@redhat.com> 1.1.0-7
+- pam_console: fix memory corruption when executing handlers (patch by
+  Stas Sergeev) and a few more fixes in the handler execution code (#532302)
+
+* 四 10月 29 2009 Tomas Mraz <tmraz@redhat.com> 1.1.0-6
+- pam_xauth: set the approprate context when creating .xauth files (#531530)
+
+* 二 9月 01 2009 Tomas Mraz <tmraz@redhat.com> 1.1.0-5
+- do not change permissions with pam_console_apply
+- drop obsolete pam_tally module and the faillog file (#461258)
+
+* 三 8月 19 2009 Tomas Mraz <tmraz@redhat.com> 1.1.0-4
+- rebuild with new libaudit
+
+* 一 7月 27 2009 Tomas Mraz <tmraz@redhat.com> 1.1.0-3
+- fix for pam_cracklib from upstream
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 6月 23 2009 Tomas Mraz <tmraz@redhat.com> 1.1.0-1
+- update to new upstream version
+
+* 三 5月 13 2009 Tomas Mraz <tmraz@redhat.com> 1.0.92-1
+- update to new upstream version
+
+* 五 4月 10 2009 Tomas Mraz <tmraz@redhat.com> 1.0.91-6
+- add password-auth, fingerprint-auth, and smartcard-auth
+  for applications which can use them namely gdm (#494874)
+  patch by Ray Strode
+
+* 四 3月 26 2009 Tomas Mraz <tmraz@redhat.com> 1.0.91-5
+- replace also other std descriptors (#491471)
+
+* 一 3月 16 2009 Tomas Mraz <tmraz@redhat.com> 1.0.91-3
+- we must replace the stdin when execing the helper (#490644)
+
+* 一 3月 16 2009 Tomas Mraz <tmraz@redhat.com> 1.0.91-2
+- do not close stdout/err when execing the helpers (#488147)
+
+* 一 3月 09 2009 Tomas Mraz <tmraz@redhat.com> 1.0.91-1
+- upgrade to new upstream release
+
+* 五 2月 27 2009 Tomas Mraz <tmraz@redhat.com> 1.0.90-4
+- fix parsing of config files containing non-ASCII characters
+- fix CVE-2009-0579 (mininimum days for password change ignored) (#487216)
+- pam_access: improve handling of hostname resolution
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.90-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 1月 19 2009 Tomas Mraz <tmraz@redhat.com> 1.0.90-2
+- add helper to pam_mkhomedir for proper SELinux confinement (#476784)
+
+* 二 12月 16 2008 Tomas Mraz <tmraz@redhat.com> 1.0.90-1
+- upgrade to new upstream release
+- add --disable-prelude (#466242)
+
+* 二 9月 23 2008 Tomas Mraz <tmraz@redhat.com> 1.0.2-2
+- new password quality checks in pam_cracklib
+- report failed logins from btmp in pam_lastlog
+- allow larger groups in modutil functions
+- fix leaked file descriptor in pam_tally
+
+* 一 9月 08 2008 Tomas Mraz <tmraz@redhat.com> 1.0.2-1
+- pam_loginuid: uids are unsigned (#460241)
+- new minor upstream release
+- use external db4
+- drop tests for not pulling in libpthread (as NPTL should
+  be safe)
+
+* 三 7月 09 2008 Tomas Mraz <tmraz@redhat.com> 1.0.1-5
+- update internal db4
+
+* 三 5月 21 2008 Tomas Mraz <tmraz@redhat.com> 1.0.1-4
+- pam_namespace: allow safe creation of directories owned by user (#437116)
+- pam_unix: fix multiple error prompts on password change (#443872)
+
+* 二 5月 20 2008 Tomas Mraz <tmraz@redhat.com> 1.0.1-3
+- pam_selinux: add env_params option which will be used by OpenSSH
+- fix build with new autoconf
+
+* 二 4月 22 2008 Tomas Mraz <tmraz@redhat.com> 1.0.1-2
+- pam_selinux: restore execcon properly (#443667)
+
+* 五 4月 18 2008 Tomas Mraz <tmraz@redhat.com> 1.0.1-1
+- upgrade to new upstream release (one bugfix only)
+- fix pam_sepermit use in screensavers
+
+* 一 4月 07 2008 Tomas Mraz <tmraz@redhat.com> 1.0.0-2
+- fix regression in pam_set_item
+
+* 五 4月 04 2008 Tomas Mraz <tmraz@redhat.com> 1.0.0-1
+- upgrade to new upstream release (bugfix only)
+
+* 四 3月 20 2008 Tomas Mraz <tmraz@redhat.com> 0.99.10.0-4
+- pam_namespace: fix problem with level polyinst (#438264)
+- pam_namespace: improve override checking for umount
+- pam_selinux: fix syslogging a context after free() (#438338)
+
+* 四 2月 28 2008 Tomas Mraz <tmraz@redhat.com> 0.99.10.0-3
+- update pam-redhat module tarball
+- update internal db4
+
+* 五 2月 22 2008 Tomas Mraz <tmraz@redhat.com> 0.99.10.0-2
+- if shadow is readable for an user do not prevent him from
+  authenticating any user with unix_chkpwd (#433459)
+- call audit from unix_chkpwd when appropriate
+
+* 五 2月 15 2008 Tomas Mraz <tmraz@redhat.com> 0.99.10.0-1
+- new upstream release
+- add default soft limit for nproc of 1024 to prevent
+  accidental fork bombs (#432903)
+
+* 一 2月 04 2008 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-18
+- allow the package to build without SELinux and audit support (#431415)
+- macro usage cleanup
+
+* 一 1月 28 2008 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-17
+- test for setkeycreatecon correctly
+- add exclusive login mode of operation to pam_selinux_permit (original
+  patch by Dan Walsh)
+
+* 二 1月 22 2008 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-16
+- add auditing to pam_access, pam_limits, and pam_time
+- moved sanity testing code to check script
+
+* 一 1月 14 2008 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-15
+- merge review fixes (#226228)
+
+* 二 1月 08 2008 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-14
+- support for sha256 and sha512 password hashes
+- account expiry checks moved to unix_chkpwd helper
+
+* 三 1月 02 2008 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-13
+- wildcard match support in pam_tty_audit (by Miloslav Trmač)
+
+* 四 11月 29 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-12
+- add pam_tty_audit module (#244352) - written by Miloslav Trmač
+
+* 三 11月 07 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-11
+- add substack support
+
+* 二 9月 25 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-10
+- update db4 to 4.6.19 (#274661)
+
+* 五 9月 21 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-9
+- do not preserve contexts when copying skel and other namespace.init
+  fixes (#298941)
+- do not free memory sent to putenv (#231698)
+
+* 三 9月 19 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-8
+- add pam_selinux_permit module
+- pam_succeed_if: fix in operator (#295151)
+
+* 二 9月 18 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-7
+- when SELinux enabled always run the helper binary instead of
+  direct shadow access (#293181)
+
+* 五 8月 24 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-6
+- do not ask for blank password when SELinux confined (#254044)
+- initialize homedirs in namespace init script (original patch by dwalsh)
+
+* 三 8月 22 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-5
+- most devices are now handled by HAL and not pam_console (patch by davidz)
+- license tag fix
+- multifunction scanner device support (#251468)
+
+* 一 8月 13 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-4
+- fix auth regression when uid != 0 from previous build (#251804)
+
+* 一 8月 06 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-3
+- updated db4 to 4.6.18 (#249740)
+- added user and new instance parameters to namespace init
+- document the new features of pam_namespace
+- do not log an audit error when uid != 0 (#249870)
+
+* 三 7月 25 2007 Jeremy Katz <katzj@redhat.com> - 0.99.8.1-2
+- rebuild for toolchain bug
+
+* 一 7月 23 2007 Tomas Mraz <tmraz@redhat.com> 0.99.8.1-1
+- upgrade to latest upstream version
+- add some firewire devices to default console perms (#240770)
+
+* 四 4月 26 2007 Tomas Mraz <tmraz@redhat.com> 0.99.7.1-6
+- pam_namespace: better document behavior on failure (#237249)
+- pam_unix: split out passwd change to a new helper binary (#236316)
+- pam_namespace: add support for temporary logons (#241226)
+
+* 五 4月 13 2007 Tomas Mraz <tmraz@redhat.com> 0.99.7.1-5
+- pam_selinux: improve context change auditing (#234781)
+- pam_namespace: fix parsing config file with unknown users (#234513)
+
+* 五 3月 23 2007 Tomas Mraz <tmraz@redhat.com> 0.99.7.1-4
+- pam_console: always decrement use count (#230823)
+- pam_namespace: use raw context for poly dir name (#227345)
+- pam_namespace: truncate long poly dir name (append hash) (#230120)
+- we don't patch any po files anymore
+
+* 三 2月 21 2007 Tomas Mraz <tmraz@redhat.com> 0.99.7.1-3
+- correctly relabel tty in the default case (#229542)
+- pam_unix: cleanup of bigcrypt support
+- pam_unix: allow modification of '*' passwords to root
+
+* 二 2月 06 2007 Tomas Mraz <tmraz@redhat.com> 0.99.7.1-2
+- more X displays as consoles (#227462)
+
+* 三 1月 24 2007 Tomas Mraz <tmraz@redhat.com> 0.99.7.1-1
+- upgrade to new upstream version resolving CVE-2007-0003
+- pam_namespace: unmount poly dir for override users
+
+* 一 1月 22 2007 Tomas Mraz <tmraz@redhat.com> 0.99.7.0-2
+- add back min salt length requirement which was erroneously removed
+  upstream (CVE-2007-0003)
+
+* 五 1月 19 2007 Tomas Mraz <tmraz@redhat.com> 0.99.7.0-1
+- upgrade to new upstream version
+- drop pam_stack module as it is obsolete
+- some changes to silence rpmlint
+
+* 二 1月 16 2007 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-8
+- properly include /var/log/faillog and tallylog as ghosts
+  and create them in post script (#209646)
+- update gmo files as we patch some po files (#218271)
+- add use_current_range option to pam_selinux (#220487)
+- improve the role selection in pam_selinux
+- remove shortcut on Password: in ja locale (#218271)
+- revert to old euid and not ruid when setting euid in pam_keyinit (#219486)
+- rename selinux-namespace patch to namespace-level
+
+* 五 12月 01 2006 Dan Walsh <dwalsh@redhat.com> 0.99.6.2-7
+- fix selection of role
+
+* 五 12月 01 2006 Dan Walsh <dwalsh@redhat.com> 0.99.6.2-6
+- add possibility to pam_namespace to only change MLS component
+- Resolves: Bug #216184
+
+* 四 11月 30 2006 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-5
+- add select-context option to pam_selinux (#213812)
+- autoreconf won't work with autoconf-2.61 as configure.in is not yet adjusted
+  for it
+
+* 一 11月 13 2006 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-4
+- update internal db4 to 4.5.20 version
+- move setgid before setuid in pam_keyinit (#212329)
+- make username check in pam_unix consistent with useradd (#212153)
+
+* 二 10月 24 2006 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-3.3
+- don't overflow a buffer in pam_namespace (#211989)
+
+* 一 10月 16 2006 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-3.2
+- /var/log/faillog and tallylog must be config(noreplace)
+
+* 五 10月 13 2006 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-3.1
+- preserve effective uid in namespace.init script (LSPP for newrole)
+- include /var/log/faillog and tallylog to filelist (#209646)
+- add ids to .xml docs so the generated html is always the same (#210569)
+
+* 四 9月 28 2006 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-3
+- add pam_namespace option no_unmount_on_close, required for newrole
+
+* 一 9月 04 2006 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-2
+- silence pam_succeed_if in default system-auth (#205067)
+- round the pam_timestamp_check sleep up to wake up at the start of the
+  wallclock second (#205068)
+
+* 四 8月 31 2006 Tomas Mraz <tmraz@redhat.com> 0.99.6.2-1
+- upgrade to new upstream version, as there are mostly bugfixes except
+  improved documentation
+- add support for session and password service for pam_access and
+  pam_succeed_if
+- system-auth: skip session pam_unix for crond service
+
+* 四 8月 10 2006 Dan Walsh <dwalsh@redhat.com> 0.99.5.0-8
+- Add new setkeycreatecon call to pam_selinux to make sure keyring has correct context
+
+* 四 8月 10 2006 Tomas Mraz <tmraz@redhat.com> 0.99.5.0-7
+- revoke keyrings properly when pam_keyinit called as root (#201048)
+- pam_succeed_if should return PAM_USER_UNKNOWN when getpwnam fails (#197748)
+
+* 三 8月 02 2006 Tomas Mraz <tmraz@redhat.com> 0.99.5.0-6
+- revoke keyrings properly when pam_keyinit called more than once (#201048)
+  patch by David Howells
+
+* 五 7月 21 2006 Tomas Mraz <tmraz@redhat.com> 0.99.5.0-5
+- don't log pam_keyinit debug messages by default (#199783)
+
+* 五 7月 21 2006 Tomas Mraz <tmraz@redhat.com> 0.99.5.0-4
+- drop ainit from console.handlers (#199561)
+
+* 一 7月 17 2006 Tomas Mraz <tmraz@redhat.com> 0.99.5.0-3
+- don't report error in pam_selinux for nonexistent tty (#188722)
+- add pam_keyinit to the default system-auth file (#198623)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.99.5.0-2.1
+- rebuild
+
+* 一 7月 03 2006 Tomas Mraz <tmraz@redhat.com> 0.99.5.0-2
+- fixed network match in pam_access (patch by Dan Yefimov)
+
+* 五 6月 30 2006 Tomas Mraz <tmraz@redhat.com> 0.99.5.0-1
+- updated to a new upstream release
+- added service as value to be matched and list matching to
+  pam_succeed_if
+- namespace.init was missing from EXTRA_DIST
+
+* 四 6月 08 2006 Tomas Mraz <tmraz@redhat.com> 0.99.4.0-5
+- updated pam_namespace with latest patch by Janak Desai
+- merged pam_namespace patches
+- added buildrequires libtool
+- fixed a few rpmlint warnings
+
+* 三 5月 24 2006 Tomas Mraz <tmraz@redhat.com> 0.99.4.0-4
+- actually don't link to libssl as it is not used (#191915)
+
+* 三 5月 17 2006 Tomas Mraz <tmraz@redhat.com> 0.99.4.0-3
+- use md5 implementation from pam_unix in pam_namespace
+- pam_namespace should call setexeccon only when selinux is enabled
+
+* 二 5月 16 2006 Tomas Mraz <tmraz@redhat.com> 0.99.4.0-2
+- pam_console_apply shouldn't access /var when called with -r (#191401)
+- actually apply the large-uid patch
+- don't build hmactest in pam_timestamp so openssl-devel is not required
+- add missing buildrequires (#191915)
+
+* 三 5月 10 2006 Tomas Mraz <tmraz@redhat.com> 0.99.4.0-1
+- upgrade to new upstream version
+- make pam_console_apply not dependent on glib
+- support large uids in pam_tally, pam_tally2
+
+* 四 5月 04 2006 Tomas Mraz <tmraz@redhat.com> 0.99.3.0-5
+- the namespace instance init script is now in /etc/security (#190148)
+- pam_namespace: added missing braces (#190026)
+- pam_tally(2): never call fclose twice on the same FILE (from upstream)
+
+* 三 4月 26 2006 Tomas Mraz <tmraz@redhat.com> 0.99.3.0-4
+- fixed console device class for irda (#189966)
+- make pam_console_apply fail gracefully when a class is missing
+
+* 二 4月 25 2006 Tomas Mraz <tmraz@redhat.com> 0.99.3.0-3
+- added pam_namespace module written by Janak Desai (per-user /tmp
+support)
+- new pam-redhat modules version
+
+* 五 2月 24 2006 Tomas Mraz <tmraz@redhat.com> 0.99.3.0-2
+- added try_first_pass option to pam_cracklib
+- use try_first_pass for pam_unix and pam_cracklib in
+  system-auth (#182350)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.99.3.0-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.99.3.0-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 2月 03 2006 Tomas Mraz <tmraz@redhat.com> 0.99.3.0-1
+- new upstream version
+- updated db4 to 4.3.29
+- added module pam_tally2 with auditing support
+- added manual pages for system-auth and config-util (#179584)
+
+* 二 1月 03 2006 Tomas Mraz <tmraz@redhat.com> 0.99.2.1-3
+- remove 'initscripts' dependency (#176508)
+- update pam-redhat modules, merged patches
+
+* 五 12月 16 2005 Tomas Mraz <tmraz@redhat.com> 0.99.2.1-2
+- fix dangling symlinks in -devel (#175929)
+- link libaudit only where necessary
+- actually compile in audit support
+
+* 四 12月 15 2005 Tomas Mraz <tmraz@redhat.com> 0.99.2.1-1
+- support netgroup matching in pam_succeed_if
+- upgrade to new release
+- drop pam_pwdb as it was obsolete long ago
+- we don't build static libraries anymore
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 11月 15 2005 Tomas Mraz <tmraz@redhat.com> 0.80-14
+- pam_stack is deprecated - log its usage
+
+* 三 10月 26 2005 Tomas Mraz <tmraz@redhat.com> 0.80-13
+- fixed CAN-2005-2977 unix_chkpwd should skip user verification only if
+  run as root (#168181)
+- link pam_loginuid to libaudit
+- support no tty in pam_access (#170467)
+- updated audit patch (by Steve Grubb)
+- the previous pam_selinux change was not applied properly
+- pam_xauth: look for the xauth binary in multiple directories (#171164)
+
+* 三 10月 26 2005 Dan Walsh <dwalsh@redhat.com> 0.80-12
+- Eliminate multiple in pam_selinux
+
+* 五 10月 14 2005 Dan Walsh <dwalsh@redhat.com> 0.80-11
+- Eliminate fail over for getseuserbyname call
+
+* 四 10月 13 2005 Dan Walsh <dwalsh@redhat.com> 0.80-10
+- Add getseuserbyname call for SELinux MCS/MLS policy
+
+* 二 10月 04 2005 Tomas Mraz <tmraz@redhat.com>
+- pam_console manpage fixes (#169373)
+
+* 五 9月 30 2005 Tomas Mraz <tmraz@redhat.com> 0.80-9
+- don't include ps and pdf docs (#168823)
+- new common config file for configuration utilities
+- remove glib2 dependency (#166979)
+
+* 二 9月 20 2005 Tomas Mraz <tmraz@redhat.com> 0.80-8
+- process limit values other than RLIMIT_NICE correctly (#168790)
+- pam_unix: always honor nis flag on password change (by Aaron Hope)
+
+* 三 8月 24 2005 Tomas Mraz <tmraz@redhat.com> 0.80-7
+- don't fail in audit code when audit is not compiled in 
+  on the newest kernels (#166422)
+
+* 一 8月 01 2005 Tomas Mraz <tmraz@redhat.com> 0.80-6
+- add option to pam_loginuid to require auditd
+
+* 五 7月 29 2005 Tomas Mraz <tmraz@redhat.com> 0.80-5
+- fix NULL dereference in pam_userdb (#164418)
+
+* 二 7月 26 2005 Tomas Mraz <tmraz@redhat.com> 0.80-4
+- fix 64bit bug in pam_pwdb
+- don't crash in pam_unix if pam_get_data fail
+
+* 五 7月 22 2005 Tomas Mraz <tmraz@redhat.com> 0.80-3
+- more pam_selinux permissive fixes (Dan Walsh)
+- make binaries PIE (#158938)
+
+* 一 7月 18 2005 Tomas Mraz <tmraz@redhat.com> 0.80-2
+- fixed module tests so the pam doesn't require itself to build (#163502)
+- added buildprereq for building the documentation (#163503)
+- relaxed permissions of binaries (u+w)
+
+* 四 7月 14 2005 Tomas Mraz <tmraz@redhat.com> 0.80-1
+- upgrade to new upstream sources
+- removed obsolete patches
+- pam_selinux module shouldn't fail on broken configs unless
+  policy is set to enforcing (Dan Walsh)
+
+* 二 6月 21 2005 Tomas Mraz <tmraz@redhat.com> 0.79-11
+- update pam audit patch
+- add support for new limits in kernel-2.6.12 (#157050)
+
+* 四 6月 09 2005 Tomas Mraz <tmraz@redhat.com> 0.79-10
+- add the Requires dependency on audit-libs (#159885)
+- pam_loginuid shouldn't report error when /proc/self/loginuid
+  is missing (#159974)
+
+* 五 5月 20 2005 Tomas Mraz <tmraz@redhat.com> 0.79-9
+- update the pam audit patch to support newest audit library,
+  audit also pam_setcred calls (Steve Grubb)
+- don't use the audit_fd as global static variable
+- don't unset the XAUTHORITY when target user is root
+
+* 一 5月 02 2005 Tomas Mraz <tmraz@redhat.com> 0.79-8
+- pam_console: support loading .perms files in the console.perms.d (#156069)
+
+* 二 4月 26 2005 Tomas Mraz <tmraz@redhat.com> 0.79-7
+- pam_xauth: unset the XAUTHORITY variable on error, fix
+  potential memory leaks
+- modify path to IDE floppy devices in console.perms (#155560)
+
+* 六 4月 16 2005 Steve Grubb <sgrubb@redhat.com> 0.79-6
+- Adjusted pam audit patch to make exception for ECONNREFUSED
+
+* 二 4月 12 2005 Tomas Mraz <tmraz@redhat.com> 0.79-5
+- added auditing patch by Steve Grubb
+- added cleanup patches for bugs found by Steve Grubb
+- don't clear the shadow option of pam_unix if nis option used
+
+* 五 4月 08 2005 Tomas Mraz <tmraz@redhat.com> 0.79-4
+- #150537 - flush input first then write the prompt
+
+* 四 4月 07 2005 Tomas Mraz <tmraz@redhat.com> 0.79-3
+- make pam_unix LSB 2.0 compliant even when SELinux enabled
+- #88127 - change both local and NIS passwords to keep them in sync,
+  also fix a regression in passwd functionality on NIS master server
+
+* 二 4月 05 2005 Tomas Mraz <tmraz@redhat.com>
+- #153711 fix wrong logging in pam_selinux when restoring tty label
+
+* 日 4月 03 2005 Tomas Mraz <tmraz@redhat.com> 0.79-2
+- fix NULL deref in pam_tally when it's used in account phase
+
+* 四 3月 31 2005 Tomas Mraz <tmraz@redhat.com> 0.79-1
+- upgrade to the new upstream release
+- moved pam_loginuid to pam-redhat repository
+
+* 三 3月 23 2005 Tomas Mraz <tmraz@redhat.com> 0.78-9
+- fix wrong logging in pam_console handlers
+- add executing ainit handler for alsa sound dmix
+- #147879, #112777 - change permissions for dri devices
+
+* 五 3月 18 2005 Tomas Mraz <tmraz@redhat.com> 0.78-8
+- remove ownership and permissions handling from pam_console call
+  pam_console_apply as a handler instead
+
+* 一 3月 14 2005 Tomas Mraz <tmraz@redhat.com> 0.78-7
+- add pam_loginuid module for setting the the login uid for auditing purposes
+  (by Steve Grubb)
+
+* 四 3月 10 2005 Tomas Mraz <tmraz@redhat.com> 0.78-6
+- add functionality for running handler executables from pam_console
+  when console lock was obtained/lost
+- removed patches merged to pam-redhat
+
+* 二 3月 01 2005 Tomas Mraz <tmraz@redhat.com> 0.78-5
+- echo why tests failed when rebuilding
+- fixed some warnings and errors in pam_console for gcc4 build
+- improved parsing pam_console config file
+
+* 一 2月 21 2005 Tomas Mraz <tmraz@redhat.com>
+- don't log garbage in pam_console_apply (#147879)
+
+* 二 1月 18 2005 Tomas Mraz <tmraz@redhat.com>
+- don't require exact db4 version only conflict with incompatible one
+
+* 三 1月 12 2005 Tomas Mraz <tmraz@redhat.com> 0.78-4
+- updated pam-redhat from elvis CVS
+- removed obsolete patches
+
+* 一 1月 03 2005 Jeff Johnson <jbj@redhat.com> 0.78-3
+- depend on db-4.3.27, not db-4.3.21.
+
+* 四 11月 25 2004 Tomas Mraz <tmraz@redhat.com> 0.78-2
+- add argument to pam_console_apply to restrict its work to specified files
+
+* 二 11月 23 2004 Tomas Mraz <tmraz@redhat.com> 0.78-1
+- update to Linux-PAM-0.78
+- #140451 parse passwd entries correctly and test for failure
+- #137802 allow using pam_console for authentication
+
+* 五 11月 12 2004 Jeff Johnson <jbj@jbj.org> 0.77-67
+- rebuild against db-4.3.21.
+
+* 四 11月 11 2004 Tomas Mraz <tmraz@redhat.com> 0.77-66
+- #77646 log failures when renaming the files when changing password
+- Log failure on missing /etc/security/opasswd when remember option is present
+
+* 三 11月 10 2004 Tomas Mraz <tmraz@redhat.com>
+- #87628 pam_timestamp remembers authorization after logout
+- #116956 fixed memory leaks in pam_stack
+
+* 三 10月 20 2004 Tomas Mraz <tmraz@redhat.com> 0.77-65
+- #74062 modify the pwd-lock patch to remove NIS passwd changing deadlock
+
+* 三 10月 20 2004 Tomas Mraz <tmraz@redhat.com> 0.77-64
+- #134941 pam_console should check X11 socket only on login
+
+* 二 10月 19 2004 Tomas Mraz <tmraz@redhat.com> 0.77-63
+- Fix checking of group %group syntax in pam_limits
+- Drop fencepost patch as it was already fixed 
+  by upstream change from 0.75 to 0.77
+- Fix brokenshadow patch
+
+* 一 10月 11 2004 Tomas Mraz <tmraz@redhat.com> 0.77-62
+- Added bluetooth, raw1394 and flash to console.perms
+- pam_console manpage fix
+
+* 一 10月 11 2004 Tomas Mraz <tmraz@redhat.com> 0.77-61
+- #129328 pam_env shouldn't abort on missing /etc/environment
+- #126985 pam_stack should always copy the conversation function 
+- #127524 add /etc/security/opasswd to files
+
+* 二 9月 28 2004 Phil Knirsch <pknirsch@redhat.com> 0.77-60
+- Drop last patch again, fixed now correctly elsewhere
+
+* 四 9月 23 2004 Phil Knirsch <pknirsch@redhat.com> 0.77-59
+- Fixed bug in pam_env where wrong initializer was used
+
+* 五 9月 17 2004 Dan Walsh <dwalsh@redhat.com> 0.77-58
+- rebuild selinux patch using checkPasswdAccess
+
+* 一 9月 13 2004 Jindrich Novy <jnovy@redhat.com>
+- rebuilt
+
+* 一 9月 13 2004 Tomas Mraz <tmraz@redhat.com> 0.77-56
+- #75454 fixed locking when changing password
+- #127054 
+- #125653 removed unnecessary getgrouplist call
+- #124979 added quiet option to pam_succeed_if
+
+* 一 8月 30 2004 Warren Togami <wtogami@redhat.com> 0.77-55
+- #126024 /dev/pmu console perms
+
+* 三 8月 04 2004 Dan Walsh <dwalsh@redhat.com> 0.77-54
+- Move pam_console.lock to /var/run/console/
+
+* 四 7月 29 2004 Dan Walsh <dwalsh@redhat.com> 0.77-53
+- Close fd[1] before pam_modutilread so that unix_verify will complete
+
+* 二 7月 27 2004 Alan Cox <alan@redhat.com> 0.77-52
+- First chunk of Steve Grubb's resource leak and other fixes
+
+* 二 7月 27 2004 Alan Cox <alan@redhat.com> 0.77-51
+- Fixed build testing of modules
+- Fixed dependancies
+
+* 二 7月 20 2004 Dan Walsh <dwalsh@redhat.com> 0.77-50
+- Change unix_chkpwd to return pam error codes
+
+* 六 7月 10 2004 Alan Cox <alan@redhat.com>
+- Fixed the pam glib2 dependancy issue
+
+* 一 6月 21 2004 Alan Cox <alan@redhat.com>
+- Fixed the pam_limits fencepost error (#79989) since nobody seems to
+  be doing it
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 09 2004 Dan Walsh <dwalsh@redhat.com> 0.77-45
+- Add requires libselinux > 1.8
+
+* 四 6月 03 2004 Dan Walsh <dwalsh@redhat.com> 0.77-44
+- Add MLS Support to selinux patch
+
+* 三 6月 02 2004 Dan Walsh <dwalsh@redhat.com> 0.77-43
+- Modify pam_selinux to use open and close param
+
+* 五 5月 28 2004 Dan Walsh <dwalsh@redhat.com> 0.77-42
+- Split pam module into two parts open and close
+
+* 二 5月 18 2004 Phil Knirsch <pknirsch@redhat.com> 0.77-41
+- Fixed 64bit segfault in pam_succeed_if module.
+
+* 三 4月 14 2004 Dan Walsh <dwalsh@redhat.com> 0.77-40
+- Apply changes from audit.
+
+* 一 4月 12 2004 Dan Walsh <dwalsh@redhat.com> 0.77-39
+- Change to only report failure on relabel if debug
+
+* 三 3月 03 2004 Dan Walsh <dwalsh@redhat.com> 0.77-38
+- Fix error handling of pam_unix
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 26 2004 Dan Walsh <dwalsh@redhat.com> 0.77-36
+- fix tty handling
+
+* 四 2月 26 2004 Dan Walsh <dwalsh@redhat.com> 0.77-35
+- remove tty closing and opening from pam_selinux, it does not work.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 12 2004 Nalin Dahyabhai <nalin@redhat.com>
+- pam_unix: also log successful password changes when using shadowed passwords
+
+* 二 2月 10 2004 Dan Walsh <dwalsh@redhat.com> 0.77-33
+- close and reopen terminal after changing context.
+
+* 四 2月 05 2004 Dan Walsh <dwalsh@redhat.com> 0.77-32
+- Check for valid tty
+
+* 二 2月 03 2004 Dan Walsh <dwalsh@redhat.com> 0.77-31
+- Check for multiple > 1
+
+* 一 2月 02 2004 Dan Walsh <dwalsh@redhat.com> 0.77-30
+- fix is_selinux_enabled call for pam_rootok
+
+* 三 1月 28 2004 Dan Walsh <dwalsh@redhat.com> 0.77-29
+- More fixes to pam_selinux,pam_rootok
+
+* 三 1月 28 2004 Dan Walsh <dwalsh@redhat.com> 0.77-28
+- turn on selinux
+
+* 三 1月 28 2004 Dan Walsh <dwalsh@redhat.com> 0.77-27
+- Fix rootok check.
+
+* 一 1月 26 2004 Dan Walsh <dwalsh@redhat.com> 0.77-26
+- fix is_selinux_enabled call
+
+* 日 1月 25 2004 Dan Walsh <dwalsh@redhat.com> 0.77-25
+- Check if ROOTOK for SELinux
+
+* 四 1月 15 2004 Dan Walsh <dwalsh@redhat.com> 0.77-24
+- Fix tty handling for pts in pam_selinux
+
+* 四 1月 15 2004 Dan Walsh <dwalsh@redhat.com> 0.77-23
+- Need to add qualifier context for sudo situation
+
+* 四 1月 15 2004 Dan Walsh <dwalsh@redhat.com> 0.77-22
+- Fix pam_selinux to use prevcon instead of pam_user so it will work for su.
+
+* 五 12月 12 2003 Bill Nottingham <notting@redhat.com> 0.77-21.sel
+- add alsa devs to console.perms
+
+* 四 12月 11 2003 Jeff Johnson <jbj@jbj.org> 0.77-20.sel
+- rebuild with db-4.2.52.
+- build db4 in build_unix, not dist.
+
+* 三 11月 26 2003 Dan Walsh <dwalsh@redhat.com> 0.77-19.sel
+- Change unix_chkpwd to handle unix_passwd and unix_acct
+- This eliminates the need for pam modules to have read/write access to /etc/shadow.
+
+* 四 11月 20 2003 Dan Walsh <dwalsh@redhat.com> 0.77-18.sel
+- Cleanup unix_chkpwd
+
+* 一 11月 03 2003 Dan Walsh <dwalsh@redhat.com> 0.77-17.sel
+- Fix tty handling 
+- Add back multiple handling
+
+* 一 10月 27 2003 Dan Walsh <dwalsh@redhat.com> 0.77-16.sel
+- Remove Multiple from man page of pam_selinux
+
+* 四 10月 23 2003 Nalin Dahyabhai <nalin@redhat.com> 0.77-15
+- don't install _pam_aconf.h -- apps don't use it, other PAM headers which
+  are installed don't use it, and its contents may be different for arches
+  on a multilib system
+- check for linkage problems in modules at %install-time (kill #107093 dead)
+- add buildprereq on flex (#101563)
+
+* 三 10月 22 2003 Nalin Dahyabhai <nalin@redhat.com>
+- make pam_pwdb.so link with libnsl again so that it loads (#107093)
+- remove now-bogus buildprereq on db4-devel (we use a bundled copy for
+  pam_userdb to avoid symbol collisions with other db libraries in apps)
+
+* 一 10月 20 2003 Dan Walsh <dwalsh@redhat.com> 0.77-14.sel
+- Add Russell Coker patch to handle /dev/pty
+
+* 五 10月 17 2003 Dan Walsh <dwalsh@redhat.com> 0.77-13.sel
+- Turn on Selinux
+
+* 五 10月 17 2003 Dan Walsh <dwalsh@redhat.com> 0.77-12
+- Fix pam_timestamp to work when 0 seconds have elapsed
+
+* 一 10月 06 2003 Dan Walsh <dwalsh@redhat.com> 0.77-11
+- Turn off selinux
+
+* 四 9月 25 2003 Dan Walsh <dwalsh@redhat.com> 0.77-10.sel
+- Turn on Selinux and remove multiple choice of context.
+
+* 三 9月 24 2003 Dan Walsh <dwalsh@redhat.com> 0.77-10
+- Turn off selinux
+
+* 三 9月 24 2003 Dan Walsh <dwalsh@redhat.com> 0.77-9.sel
+- Add Russell's patch to check password
+
+* 三 9月 17 2003 Dan Walsh <dwalsh@redhat.com> 0.77-8.sel
+- handle ttys correctly in pam_selinux
+
+* 五 9月 05 2003 Dan Walsh <dwalsh@redhat.com> 0.77-7.sel
+- Clean up memory problems and fix tty handling.
+
+* 一 7月 28 2003 Dan Walsh <dwalsh@redhat.com> 0.77-6
+- Add manual context selection to pam_selinux
+
+* 一 7月 28 2003 Dan Walsh <dwalsh@redhat.com> 0.77-5
+- Add pam_selinux
+
+* 一 7月 28 2003 Dan Walsh <dwalsh@redhat.com> 0.77-4
+- Add SELinux support
+
+* 四 7月 24 2003 Nalin Dahyabhai <nalin@redhat.com> 0.77-3
+- pam_postgresok: add
+- pam_xauth: add "targetuser" argument
+
+* 二 7月 22 2003 Nalin Dahyabhai <nalin@redhat.com>
+- pam_succeed_if: fix thinko in argument parsing which would walk past the
+  end of the argument list
+
+* 三 7月 09 2003 Nalin Dahyabhai <nalin@redhat.com> 0.77-2
+- reapply:
+  - set handler for SIGCHLD to SIG_DFL around *_chkpwd, not SIG_IGN
+
+* 一 7月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 0.77-1
+- pam_timestamp: fail if the key file doesn't contain enough data
+
+* 四 7月 03 2003 Nalin Dahyabhai <nalin@redhat.com> 0.77-0
+- update to 0.77 upstream release
+  - pam_limits: limits now affect root as well
+  - pam_nologin: returns PAM_IGNORE instead of PAM_SUCCESS unless "successok"
+    is given as an argument
+  - pam_userdb: correctly return PAM_AUTH_ERR instead of PAM_USER_UNKNOWN when
+    invoked with the "key_only" argument and the database has an entry of the
+    form "user-<wrongpassword>"
+- use a bundled libdb for pam_userdb.so because the system copy uses threads,
+  and demand-loading a shared library which uses threads into an application
+  which doesn't is a Very Bad Idea
+
+* 四 7月 03 2003 Nalin Dahyabhai <nalin@redhat.com>
+- pam_timestamp: use a message authentication code to validate timestamp files
+
+* 一 6月 30 2003 Nalin Dahyabhai <nalin@redhat.com> 0.75-48.1
+- rebuild
+
+* 一 6月 09 2003 Nalin Dahyabhai <nalin@redhat.com> 0.75-49
+- modify calls to getlogin() to check the directory of the current TTY before
+  searching for an entry in the utmp/utmpx file (#98020, #98826, CAN-2003-0388)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 10 2003 Bill Nottingham <notting@redhat.com> 0.75-48
+- set handler for SIGCHLD to SIG_DFL around *_chkpwd, not SIG_IGN
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 0.75-47
+- rebuilt
+
+* 二 12月 17 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-46
+- pam_xauth: reintroduce ACL support, per the original white paper
+- pam_xauth: default root's export ACL to none instead of everyone
+
+* 一 12月 02 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-45
+- create /lib/security, even if it isn't /%{_lib}/security, because we
+  can't locate /lib/security/$ISA without it (noted by Arnd Bergmann)
+- clear out the duplicate docs directory created during %install
+
+* 四 11月 21 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-44
+- fix syntax errors in pam_console's yacc parser which newer bison chokes on
+- forcibly set FAKEROOT at make install time
+
+* 二 10月 22 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-43
+- patch to interpret $ISA in case the fist module load attempt fails
+- use $ISA in default configs
+
+* 五 10月 04 2002 Elliot Lee <sopwith@redhat.com> 0.75-42
+- Since cracklib-dicts location will not be correctly detected without 
+  that package being installed, add buildreq for cracklib-dicts.
+- Add patch57: makes configure use $LIBNAME when searching for cracklib 
+  dicts, and error out if not found.
+
+* 四 9月 12 2002 Than Ngo <than@redhat.com> 0.75-41.1
+- Fixed pam config files
+
+* 三 9月 11 2002 Than Ngo <than@redhat.com> 0.75-41
+- Added fix to install libs in correct directory on 64bit machine
+
+* 五 8月 02 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-40
+- pam_timestamp_check: check that stdio descriptors are open before we're
+  invoked
+- add missing chroot.conf
+
+* 一 7月 29 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-39
+- pam_timestamp: sundry fixes, use "unknown" as the tty when none is found
+
+* 四 6月 27 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-38
+- pam_timestamp_check: be as smart about figuring out the tty as the module is
+
+* 三 6月 19 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-37
+- pam_timestamp_check: remove extra unlink() call spotted by Havoc
+
+* 一 6月 17 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-36
+- pam_timestamp: chown intermediate directories when creating them
+- pam_timestamp_check: add -d flag to poll
+
+* 四 5月 23 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-35
+- pam_timestamp: add some sanity checks
+- pam_timestamp_check: add
+
+* 三 5月 22 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-34
+- pam_timestamp: add a 'verbose' option
+
+* 四 5月 16 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-33
+- rebuild with db4
+- just bundle install-sh into the source package
+
+* 二 4月 09 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-32
+- pam_unix: be more compatible with AIX-style shadowing (#19236)
+
+* 四 3月 28 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-31
+- libpam_misc: fix possible infinite loop in misc_conv (#62195)
+- pam_xauth: fix cases where DISPLAY is "localhost:screen" and the xauth
+  key is actually stored using the system's hostname (#61524)
+
+* 一 3月 25 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-30
+- rebuild
+
+* 一 3月 25 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-29
+- rebuild
+
+* 一 3月 11 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-28
+- include the pwdb config file
+
+* 五 3月 01 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-27
+- adjust the pwdb-static patch to build pam_radius correctly (#59408)
+
+* 五 3月 01 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-26
+- change the db4-devel build dependency to db3-devel
+
+* 四 2月 21 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-25
+- rebuild
+
+* 五 2月 08 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-24
+- pam_unix: log successful password changes
+- remove pam_timestamp
+
+* 四 2月 07 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-23
+- fix pwdb embedding
+- add pam_timestamp
+
+* 四 1月 31 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-22
+- swallow up pwdb 0.61.1 for building pam_pwdb
+
+* 三 1月 23 2002 Nalin Dahyabhai <nalin@redhat.com> 0.75-21
+- pam_userdb: build with db4 instead of db3
+
+* 四 11月 22 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-20
+- pam_stack: fix some memory leaks (reported by Fernando Trias)
+- pam_chroot: integrate Owl patch to report the more common causes of failures
+
+* 五 11月 09 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-19
+- fix a bug in the getpwnam_r wrapper which sometimes resulted in false
+  positives for non-existent users
+
+* 三 11月 07 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-18
+- include libpamc in the pam package (#55651)
+
+* 五 11月 02 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-17
+- pam_xauth: don't free a string after passing it to putenv()
+
+* 三 10月 24 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-16
+- pam_xauth: always return PAM_SUCCESS or PAM_SESSION_ERR instead of PAM_IGNORE,
+  matching the previous behavior (libpam treats PAM_IGNORE from a single module
+  in a stack as a session error, leading to false error messages if we just
+  return PAM_IGNORE for all cases)
+
+* 一 10月 22 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-15
+- reorder patches so that the reentrancy patch is applied last -- we never
+  came to a consensus on how to guard against the bugs in calling applications
+  which this sort of change addresses, and having them last allows for dropping
+  in a better strategy for addressing this later on
+
+* 一 10月 15 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_rhosts: allow "+hostname" as a synonym for "hostname" to jive better
+  with the hosts.equiv(5) man page
+- use the automake install-sh instead of the autoconf install-sh, which
+  disappeared somewhere between 2.50 and now
+
+* 一 10月 08 2001 Nalin Dahyabhai <nalin@redhat.com>
+- add pwdb as a buildprereq
+
+* 五 10月 05 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_tally: don't try to read past the end of faillog -- it probably contains
+  garbage, which if written into the file later on will confuse /usr/bin/faillog
+
+* 四 10月 04 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_limits: don't just return if the user is root -- we'll want to set the
+  priority (it could be negative to elevate root's sessions)
+- pam_issue: fix off-by-one error allocating space for the prompt string
+
+* 三 10月 03 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_mkhomedir: recurse into subdirectories properly
+- pam_mkhomedir: handle symlinks
+- pam_mkhomedir: skip over special items in the skeleton directory
+
+* 二 10月 02 2001 Nalin Dahyabhai <nalin@redhat.com>
+- add cracklib as a buildprereq
+- pam_wheel: don't ignore out if the user is attempting to switch to a
+  unprivileged user (this lets pam_wheel do its thing when users attempt
+  to get to system accounts or accounts of other unprivileged users)
+
+* 五 9月 28 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_xauth: close a possible DoS due to use of dotlock-style locking in
+  world-writable directories by relocating the temporary file to the target
+  user's home directory
+- general: include headers local to this tree using relative paths so that
+  system headers for PAM won't be pulled in, in case include paths don't
+  take care of it
+
+* 四 9月 27 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_xauth: rewrite to skip refcounting and just use a temporary file
+  created using mkstemp() in /tmp
+
+* 二 9月 25 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_userdb: fix the key_only flag so that the null-terminator of the
+  user-password string isn't expected to be part of the key in the db file,
+  matching the behavior of db_load 3.2.9
+
+* 一 9月 24 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_unix: use crypt() instead of bigcrypt() when salted field is less than
+  the critical size which lets us know it was generated with bigcrypt()
+- use a wrapper to handle ERANGE errors when calling get....._r functions:
+  defining PAM_GETPWNAM_R and such (for getpwnam, getpwuid, getgrnam,
+  getgrgid, and getspnam) before including _pam_macros.h will cause them
+  to be implemented as static functions, similar to how defining PAM_SM_xxx
+  is used to control whether or not PAM declares prototypes for certain
+  functions
+
+* 一 9月 24 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-14
+- pam_unix: argh, compare entire pruned salt string with crypted result, always
+
+* 六 9月 08 2001 Bill Nottingham <notting@redhat.com> 0.75-13
+- ship /lib/lib{pam,pam_misc}.so for legacy package builds
+
+* 四 9月 06 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-12
+- noreplace configuration files in /etc/security
+- pam_console: update pam_console_apply and man pages to reflect
+  /var/lock -> /var/run move
+
+* 三 9月 05 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-11
+- pam_unix: fix the fix for #42394
+
+* 二 9月 04 2001 Nalin Dahyabhai <nalin@redhat.com>
+- modules: use getpwnam_r and friends instead of non-reentrant versions
+- pam_console: clear generated .c and .h files in "clean" makefile target
+
+* 四 8月 30 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_stack: perform deep copy of conversation structures
+- include the static libpam in the -devel subpackage (#52321)
+- move development .so and .a files to %{_libdir}
+- pam_unix: don't barf on empty passwords (#51846)
+- pam_unix: redo compatibility with "hash,age" data wrt bigcrypt (#42394)
+- console.perms: add usb camera, scanner, and rio devices (#15528)
+- pam_cracklib: initialize all options properly (#49613)
+
+* 三 8月 22 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_limits: don't rule out negative priorities
+
+* 一 8月 13 2001 Nalin Dahyabhai <nalin@redhat.com> 0.75-10
+- pam_xauth: fix errors due to uninitialized data structure (fix from Tse Huong
+  Choo)
+- pam_xauth: random cleanups
+- pam_console: use /var/run/console instead of /var/lock/console at install-time
+- pam_unix: fix preserving of permissions on files which are manipulated
+
+* 五 8月 10 2001 Bill Nottingham <notting@redhat.com>
+- fix segfault in pam_securetty
+
+* 四 8月 09 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_console: use /var/run/console instead of /var/lock/console for lock files
+- pam_issue: read the right number of bytes from the file
+
+* 一 7月 09 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_wheel: don't error out if the group has no members, but is the user's
+  primary GID (reported by David Vos)
+- pam_unix: preserve permissions on files which are manipulated (#43706)
+- pam_securetty: check if the user is the superuser before checking the tty,
+  thereby allowing regular users access to services which don't set the
+  PAM_TTY item (#39247)
+- pam_access: define NIS and link with libnsl (#36864)
+
+* 四 7月 05 2001 Nalin Dahyabhai <nalin@redhat.com>
+- link libpam_misc against libpam
+
+* 二 7月 03 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_chroot: chdir() before chroot()
+
+* 五 6月 29 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_console: fix logic bug when changing permissions on single
+  file and/or lists of files
+- pam_console: return the proper error code (reported and patches
+  for both from Frederic Crozat)
+- change deprecated Copyright: tag in .spec file to License:
+
+* 一 6月 25 2001 Nalin Dahyabhai <nalin@redhat.com>
+- console.perms: change js* to js[0-9]*
+- include pam_aconf.h in more modules (patches from Harald Welte)
+
+* 四 5月 24 2001 Nalin Dahyabhai <nalin@redhat.com>
+- console.perms: add apm_bios to the list of devices the console owner can use
+- console.perms: add beep to the list of sound devices
+
+* 一 5月 07 2001 Nalin Dahyabhai <nalin@redhat.com>
+- link pam_console_apply statically with libglib (#38891)
+
+* 一 4月 30 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_access: compare IP addresses with the terminating ".", as documented
+  (patch from Carlo Marcelo Arenas Belon, I think) (#16505)
+
+* 一 4月 23 2001 Nalin Dahyabhai <nalin@redhat.com>
+- merge up to 0.75
+- pam_unix: temporarily ignore SIGCHLD while running the helper
+- pam_pwdb: temporarily ignore SIGCHLD while running the helper
+- pam_dispatch: default to uncached behavior if the cached chain is empty
+
+* 五 4月 06 2001 Nalin Dahyabhai <nalin@redhat.com>
+- correct speling errors in various debug messages and doc files (#33494)
+
+* 四 4月 05 2001 Nalin Dahyabhai <nalin@redhat.com>
+- prereq sed, fileutils (used in %post)
+
+* 三 4月 04 2001 Nalin Dahyabhai <nalin@redhat.com>
+- remove /dev/dri from console.perms -- XFree86 munges it, so it's outside of
+  our control (reminder from Daryll Strauss)
+- add /dev/3dfx to console.perms
+
+* 五 3月 23 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_wheel: make 'trust' and 'deny' work together correctly
+- pam_wheel: also check the user's primary gid
+- pam_group: also initialize groups when called with PAM_REINITIALIZE_CRED
+
+* 二 3月 20 2001 Nalin Dahyabhai <nalin@redhat.com>
+- mention pam_console_apply in the see also section of the pam_console man pages
+
+* 五 3月 16 2001 Nalin Dahyabhai <nalin@redhat.com>
+- console.perms: /dev/vc/* should be a regexp, not a glob (thanks to
+  Charles Lopes)
+
+* 一 3月 12 2001 Nalin Dahyabhai <nalin@redhat.com>
+- console.perms: /dev/cdroms/* should belong to the user, from Douglas
+  Gilbert via Tim Waugh
+
+* 四 3月 08 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_console_apply: muck with devices even if the mount point doesn't exist
+
+* 三 3月 07 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_console: error out on undefined classes in pam_console config file
+- console.perms: actually change the permissions on the new device classes
+- pam_console: add an fstab= argument, and -f and -c flags to pam_console_apply
+- pam_console: use g_log instead of g_critical when bailing out
+- console.perms: logins on /dev/vc/* are also console logins, from Douglas
+  Gilbert via Tim Waugh
+
+* 二 3月 06 2001 Nalin Dahyabhai <nalin@redhat.com>
+- add pam_console_apply
+- /dev/pilot's usually a serial port (or a USB serial port), so revert its
+  group to 'uucp' instead of 'tty' in console.perms
+- change pam_console's behavior wrt directories -- directories which are
+  mount points according to /etc/fstab are taken to be synonymous with
+  their device special nodes, and directories which are not mount points
+  are ignored
+
+* 二 2月 27 2001 Nalin Dahyabhai <nalin@redhat.com>
+- handle errors fork()ing in pam_xauth
+- make the "other" config noreplace
+
+* 一 2月 26 2001 Nalin Dahyabhai <nalin@redhat.com>
+- user should own the /dev/video directory, not the non-existent /dev/v4l
+- tweak pam_limits doc
+
+* 三 2月 21 2001 Nalin Dahyabhai <nalin@redhat.com>
+- own /etc/security
+- be more descriptive when logging messages from pam_limits
+- pam_listfile: remove some debugging code (#28346)
+
+* 一 2月 19 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_lastlog: don't pass NULL to logwtmp()
+
+* 五 2月 16 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_listfile: fix argument parser (#27773)
+- pam_lastlog: link to libutil
+
+* 二 2月 13 2001 Nalin Dahyabhai <nalin@redhat.com>
+- pam_limits: change the documented default config file to reflect the defaults
+- pam_limits: you should be able to log in a total of maxlogins times, not
+  (maxlogins - 1)
+- handle group limits on maxlogins correctly (#25690)
+
+* 一 2月 12 2001 Nalin Dahyabhai <nalin@redhat.com>
+- change the pam_xauth default maximum "system user" ID from 499 to 99 (#26343)
+
+* 三 2月 07 2001 Nalin Dahyabhai <nalin@redhat.com>
+- refresh the default system-auth file, pam_access is out
+
+* 一 2月 05 2001 Nalin Dahyabhai <nalin@redhat.com>
+- actually time out when attempting to lckpwdf() (#25889)
+- include time.h in pam_issue (#25923)
+- update the default system-auth to the one generated by authconfig 4.1.1
+- handle getpw??? and getgr??? failures more gracefully (#26115)
+- get rid of some extraneous {set,end}{pw,gr}ent() calls
+
+* 二 1月 30 2001 Nalin Dahyabhai <nalin@redhat.com>
+- overhaul pam_stack to account for abstraction libpam now provides
+
+* 二 1月 23 2001 Nalin Dahyabhai <nalin@redhat.com>
+- remove pam_radius at request of author
+
+* 一 1月 22 2001 Nalin Dahyabhai <nalin@redhat.com>
+- merge to 0.74
+- make console.perms match perms set by MAKEDEV, and add some devfs device names
+- add 'sed' to the buildprereq list (#24666)
+
+* 日 1月 21 2001 Matt Wilson <msw@redhat.com>
+- added "exit 0" to the end of the pre script
+
+* 五 1月 19 2001 Nalin Dahyabhai <nalin@redhat.com>
+- self-hosting fix from Guy Streeter
+
+* 三 1月 17 2001 Nalin Dahyabhai <nalin@redhat.com>
+- use gcc for LD_L to pull in intrinsic stuff on ia64
+
+* 五 1月 12 2001 Nalin Dahyabhai <nalin@redhat.com>
+- take another whack at compatibility with "hash,age" data in pam_unix (#21603)
+
+* 三 1月 10 2001 Nalin Dahyabhai <nalin@redhat.com>
+- make the -devel subpackage unconditional
+
+* 二 1月 09 2001 Nalin Dahyabhai <nalin@redhat.com>
+- merge/update to 0.73
+
+* 一 12月 18 2000 Nalin Dahyabhai <nalin@redhat.com>
+- refresh from CVS -- some weird stuff crept into pam_unix
+
+* 二 12月 12 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix handling of "nis" when changing passwords by adding the checks for the
+  data source to the password-updating module in pam_unix
+- add the original copyright for pam_access (fix from Michael Gerdts)
+
+* 四 11月 30 2000 Nalin Dahyabhai <nalin@redhat.com>
+- redo similar() using a distance algorithm and drop the default dif_ok to 5
+- readd -devel
+
+* 三 11月 29 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix similar() function in pam_cracklib (#14740)
+- fix example in access.conf (#21467)
+- add conditional compilation for building for 6.2 (for pam_userdb)
+- tweak post to not use USESHADOW any more
+
+* 二 11月 28 2000 Nalin Dahyabhai <nalin@redhat.com>
+- make EINVAL setting lock limits in pam_limits non-fatal, because it's a 2.4ism
+
+* 二 11月 21 2000 Nalin Dahyabhai <nalin@redhat.com>
+- revert to DB 3.1, which is what we were supposed to be using from the get-go
+
+* 一 11月 20 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add RLIMIT_LOCKS to pam_limits (patch from Jes Sorensen) (#20542)
+- link pam_userdb to Berkeley DB 2.x to match 6.2's setup correctly
+
+* 一 11月 06 2000 Matt Wilson <msw@redhat.com>
+- remove prereq on sh-utils, test ([) is built in to bash
+
+* 四 10月 19 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix the pam_userdb module breaking
+
+* 三 10月 18 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix pam_unix likeauth argument for authenticate(),setcred(),setcred()
+
+* 二 10月 17 2000 Nalin Dahyabhai <nalin@redhat.com>
+- tweak pre script to be called in all upgrade cases
+- get pam_unix to only care about the significant pieces of passwords it checks
+- add /usr/include/db1/db.h as a build prereq to pull in the right include
+  files, no matter whether they're in glibc-devel or db1-devel
+- pam_userdb.c: include db1/db.h instead of db.h
+
+* 三 10月 11 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add BuildPrereq for bison (suggested by Bryan Stillwell)
+
+* 五 10月 06 2000 Nalin Dahyabhai <nalin@redhat.com>
+- patch from Dmitry V. Levin to have pam_stack propagate the PAM fail_delay
+- roll back the README for pam_xauth to actually be the right one
+- tweak pam_stack to use the parent's service name when calling the substack
+
+* 三 10月 04 2000 Nalin Dahyabhai <nalin@redhat.com>
+- create /etc/sysconfig/authconfig at install-time if upgrading
+
+* 一 10月 02 2000 Nalin Dahyabhai <nalin@redhat.com>
+- modify the files list to make sure #16456 stays fixed
+- make pam_stack track PAM_AUTHTOK and PAM_OLDAUTHTOK items
+- add pam_chroot module
+- self-hosting fixes from the -devel split
+- update generated docs in the tree
+
+* 二 9月 12 2000 Nalin Dahyabhai <nalin@redhat.com>
+- split off a -devel subpackage
+- install the developer man pages
+
+* 日 9月 10 2000 Bill Nottingham <notting@redhat.com>
+- build libraries before modules
+
+* 三 9月 06 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix problems when looking for headers in /usr/include (#17236)
+- clean up a couple of compile warnings
+
+* 二 8月 22 2000 Nalin Dahyabhai <nalin@redhat.com>
+- give users /dev/cdrom* instead of /dev/cdrom in console.perms (#16768)
+- add nvidia control files to console.perms
+
+* 二 8月 22 2000 Bill Nottingham <notting@redhat.com>
+- add DRI devices to console.perms (#16731)
+
+* 四 8月 17 2000 Nalin Dahyabhai <nalin@redhat.com>
+- move pam_filter modules to /lib/security/pam_filter (#16111)
+- add pam_tally's application to allow counts to be reset (#16456)
+- move README files to the txts subdirectory
+
+* 一 8月 14 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add a postun that runs ldconfig
+- clean up logging in pam_xauth
+
+* 五 8月 04 2000 Nalin Dahyabhai <nalin@redhat.com>
+- make the tarball include the release number in its name
+
+* 一 7月 31 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add a broken_shadow option to pam_unix
+- add all module README files to the documentation list (#16456)
+
+* 二 7月 25 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix pam_stack debug and losing-track-of-the-result bug
+
+* 一 7月 24 2000 Nalin Dahyabhai <nalin@redhat.com>
+- rework pam_console's usage of syslog to actually be sane (#14646)
+
+* 六 7月 22 2000 Nalin Dahyabhai <nalin@redhat.com>
+- take the LOG_ERR flag off of some of pam_console's new messages
+
+* 五 7月 21 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add pam_localuser
+
+* 三 7月 12 2000 Nalin Dahyabhai <nalin@redhat.com>
+- need to make pam_console's checking a little stronger
+- only pass data up from pam_stack if the parent didn't already define it
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 7月 11 2000 Nalin Dahyabhai <nalin@redhat.com>
+- make pam_console's extra checks disableable
+- simplify extra check to just check if the device owner is root
+- add a debug log when pam_stack comes across a NULL item
+- have pam_stack hand items up to the parent from the child
+
+* 一 7月 03 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix installation of pam_xauth man pages (#12417)
+- forcibly strip helpers (#12430)
+- try to make pam_console a little more discriminating
+
+* 一 6月 19 2000 Nalin Dahyabhai <nalin@redhat.com>
+- symlink libpam.so to libpam.so.%{version}, and likewise for libpam_misc
+- reverse order of checks in _unix_getpwnam for pam_unix
+
+* 三 6月 14 2000 Preston Brown <pbrown@redhat.com>
+- include gpmctl in pam_console
+
+* 一 6月 05 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add MANDIR definition and use it when installing man pages
+
+* 一 6月 05 2000 Preston Brown <pbrown@redhat.com>
+- handle scanner and cdwriter devices in pam_console
+
+* 六 6月 03 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add account management wrappers for pam_listfile, pam_nologin, pam_securetty,
+  pam_shells, and pam_wheel
+
+* 四 6月 01 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add system-auth control file
+- let gethostname() call in pam_access.c be implicitly declared to avoid
+  conflicting types if unistd.c declares it
+
+* 一 5月 15 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix problems compiling on Red Hat Linux 5.x (bug #11005)
+
+* 三 4月 26 2000 Bill Nottingham <notting@redhat.com>
+- fix size assumptions in pam_(pwdb|unix) md5 code
+
+* 一 3月 20 2000 Nalin Dahyabhai <nalin@redhat.com>
+- Add new pam_stack module.
+- Install pwdb_chkpwd and unix_chkpwd as the current user for non-root builds
+
+* 六 2月 05 2000 Nalin Dahyabhai <nalin@redhat.com>
+- Fix pam_xauth bug #6191.
+
+* 四 2月 03 2000 Elliot Lee <sopwith@redhat.com>
+- Add a patch to accept 'pts/N' in /etc/securetty as a match for tty '5'
+  (which is what other pieces of the system think it is). Fixes bug #7641.
+
+* 一 1月 31 2000 Nalin Dahyabhai <nalin@redhat.com>
+- argh, turn off gratuitous debugging
+
+* 三 1月 19 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 0.72
+- fix pam_unix password-changing bug
+- fix pam_unix's cracklib support
+- change package URL
+
+* 一 1月 03 2000 Cristian Gafton <gafton@redhat.com>
+- don't allow '/' on service_name
+
+* 四 10月 21 1999 Cristian Gafton <gafton@redhat.com>
+- enhance the pam_userdb module some more
+
+* 五 9月 24 1999 Cristian Gafton <gafton@redhat.com>
+- add documenatation
+
+* 二 9月 21 1999 Michael K. Johnson <johnsonm@redhat.com>
+- a tiny change to pam_console to make it not loose track of console users
+
+* 一 9月 20 1999 Michael K. Johnson <johnsonm@redhat.com>
+- a few fixes to pam_xauth to make it more robust
+
+* 三 7月 14 1999 Michael K. Johnson <johnsonm@redhat.com>
+- pam_console: added <xconsole> to manage /dev/console
+
+* 四 7月 01 1999 Michael K. Johnson <johnsonm@redhat.com>
+- pam_xauth: New refcounting implementation based on idea from Stephen Tweedie
+
+* 六 4月 17 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added video4linux devices to /etc/security/console.perms
+
+* 五 4月 16 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added joystick lines to /etc/security/console.perms
+
+* 四 4月 15 1999 Michael K. Johnson <johnsonm@redhat.com>
+- fixed a couple segfaults in pam_xauth uncovered by yesterday's fix...
+
+* 三 4月 14 1999 Cristian Gafton <gafton@redhat.com>
+- use gcc -shared to link the shared libs
+
+* 三 4月 14 1999 Michael K. Johnson <johnsonm@redhat.com>
+- many bug fixes in pam_xauth
+- pam_console can now handle broken applications that do not set
+  the PAM_TTY item.
+
+* 二 4月 13 1999 Michael K. Johnson <johnsonm@redhat.com>
+- fixed glob/regexp confusion in pam_console, added kbd and fixed fb devices
+- added pam_xauth module
+
+* 六 4月 10 1999 Cristian Gafton <gafton@redhat.com>
+- pam_lastlog does wtmp handling now
+
+* 四 4月 08 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added option parsing to pam_console
+- added framebuffer devices to default console.perms settings
+
+* 三 4月 07 1999 Cristian Gafton <gafton@redhat.com>
+- fixed empty passwd handling in pam_pwdb
+
+* 一 3月 29 1999 Michael K. Johnson <johnsonm@redhat.com>
+- changed /dev/cdrom default user permissions back to 0600 in console.perms
+  because some cdrom players open O_RDWR.
+
+* 五 3月 26 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added /dev/jaz and /dev/zip to console.perms
+
+* 四 3月 25 1999 Michael K. Johnson <johnsonm@redhat.com>
+- changed the default user permissions for /dev/cdrom to 0400 in console.perms
+
+* 五 3月 19 1999 Michael K. Johnson <johnsonm@redhat.com>
+- fixed a few bugs in pam_console
+
+* 四 3月 18 1999 Michael K. Johnson <johnsonm@redhat.com>
+- pam_console authentication working
+- added /etc/security/console.apps directory
+
+* 一 3月 15 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added pam_console files to filelist
+
+* 五 2月 12 1999 Cristian Gafton <gafton@redhat.com>
+- upgraded to 0.66, some source cleanups
+
+* 一 12月 28 1998 Cristian Gafton <gafton@redhat.com>
+- add patch from Savochkin Andrey Vladimirovich <saw@msu.ru> for umask
+  security risk
+
+* 五 12月 18 1998 Cristian Gafton <gafton@redhat.com>
+- upgrade to ver 0.65
+- build the package out of internal CVS server
+

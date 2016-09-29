@@ -1,0 +1,17 @@
+/usr/bin/pkg-config  
+dbus-devel >= 0.90
+dbus-glib-devel >= 0.70
+glib2-devel >= 2.2.2
+gtk2-devel >= 2.13.2
+libnotify = 0.5.0-1.3.alios6
+libnotify.so.1()(64bit)  
+pkgconfig  
+pkgconfig(dbus-1) >= 0.76
+pkgconfig(dbus-glib-1) >= 0.76
+pkgconfig(glib-2.0) >= 2.6
+pkgconfig(gtk+-2.0) >= 2.18
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

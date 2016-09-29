@@ -1,0 +1,10 @@
+/usr/lib64/perl5/File/GlobMapper.pm
+/usr/lib64/perl5/IO/Compress/Base
+/usr/lib64/perl5/IO/Compress/Base.pm
+/usr/lib64/perl5/IO/Compress/Base/Common.pm
+/usr/lib64/perl5/IO/Uncompress/AnyUncompress.pm
+/usr/lib64/perl5/IO/Uncompress/Base.pm
+/usr/share/man/man3/File::GlobMapper.3pm.gz
+/usr/share/man/man3/IO::Compress::Base.3pm.gz
+/usr/share/man/man3/IO::Uncompress::AnyUncompress.3pm.gz
+/usr/share/man/man3/IO::Uncompress::Base.3pm.gz

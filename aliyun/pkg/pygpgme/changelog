@@ -1,0 +1,72 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1-18.20090824bzr68.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1-18.20090824bzr68.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1-18.20090824bzr68.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.1-18.20090824bzr68.1
+- rebuild for alios6
+
+* 三 2月 03 2010 Miloslav Trmač <mitr@redhat.com> - 0.1-18.20090824bzr68
+- Classify pygpgme-examples.patch as Source, not a Patch, to silence rpmlint
+
+* 三 10月 28 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-17.20090824bzr68
+- Include tests and examples as documentation.
+
+* 一 8月 24 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-16.20090824bzr68
+- Rebase to new upstream snapshot
+- Patches merged upstream
+- Fixes deprecation warnings on py2.6/py3.0
+- Remove py2.3 patch -- only needed for EPEL-4
+
+* 二 7月 28 2009 Jesse Keating <jkeating@redhat.com> - 0.1-15.20090121bzr54
+- Add a second patch from mitr for symmetric_encryption_support
+
+* 二 7月 28 2009 Jesse Keating <jkeating@redhat.com> - 0.1-14.20090121bzr54
+- Patch from mitr for gpgme_ctx_set_engine_info
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-13.20090121bzr54
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-12.20090121bzr54
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 22 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-11.20090121bzr54
+- Add patch to cvs.
+
+* 三 1月 21 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-10.20090121bzr54
+- Update to upstream snapshot.
+
+* 五 11月 28 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.1-9
+- Rebuild for Python 2.6
+
+* 五 2月 08 2008 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-8
+- Rebuild for new gcc.
+
+* 四 1月 03 2008 Toshio Kuratomi <toshio@fedoraproject.org> - 0.1-7
+- Include egg-info files.
+
+* 五 5月 18 2007 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-6
+- Rebuild to pick up enhancements from gcc on F-8.
+- Update licensing to conform to new guidelines.
+
+* 五 5月 18 2007 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-5
+- Rebuild because of a bug in linking to an early version of the python-2.5
+  package,
+
+* 一 10月 23 2006 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-4
+- Bump and rebuild for python 2.5 on devel.
+
+* 一 10月 23 2006 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-3
+- Add a patch to work under Python 2.3.
+- Stop shipping the tests as they are useless to the end user.
+
+* 五 10月 13 2006 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-2
+- Change URL to cheeseshop
+
+* 日 10月 08 2006 Toshio Kuratomi <toshio@tiki-lounge.com> - 0.1-1
+- Initial build for Fedora Extras.
+

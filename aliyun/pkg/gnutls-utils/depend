@@ -1,0 +1,23 @@
+gnutls = 2.8.5-14.2.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libgcrypt.so.11()(64bit)  
+libgcrypt.so.11(GCRYPT_1.2)(64bit)  
+libgnutls-extra.so.26()(64bit)  
+libgnutls-extra.so.26(GNUTLS_1_4)(64bit)  
+libgnutls.so.26()(64bit)  
+libgnutls.so.26(GNUTLS_1_4)(64bit)  
+libgnutls.so.26(GNUTLS_2_10)(64bit)  
+libgnutls.so.26(GNUTLS_2_8)(64bit)  
+libgnutls.so.26(GNUTLS_PRIVATE)(64bit)  
+libreadline.so.6()(64bit)  
+libtasn1.so.3()(64bit)  
+libz.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

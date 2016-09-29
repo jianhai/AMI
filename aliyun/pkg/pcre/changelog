@@ -1,0 +1,159 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.8-3.1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.8-3.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 7.8-3.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 7.8-3.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 7.8-3.1
+- Rebuilt for RHEL 6
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.8-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 10月 01 2008 Lubomir Rintel <lkundrak@v3.sk> - 7.8-1
+- Update to 7.8, drop upstreamed patches
+- Fix destination of documentation (#427763)
+- Use buildroot macro consistently
+- Separate the static library, as per current Guidelines
+- Satisfy rpmlint
+
+* 五 7月 04 2008 Tomas Hoger <thoger@redhat.com> - 7.3-4
+- Apply Tavis Ormandy's patch for CVE-2008-2371.
+
+* 二 2月 12 2008 Tomas Hoger <thoger@redhat.com> - 7.3-3
+- Backport patch from upstream pcre 7.6 to address buffer overflow
+  caused by "a character class containing a very large number of
+  characters with codepoints greater than 255 (in UTF-8 mode)"
+  CVE-2008-0674, #431660
+- Try re-enabling make check again.
+
+* 五 11月 16 2007 Stepan Kasal <skasal@redhat.com> - 7.3-2
+- Remove obsolete ``reqs''
+- add dist tag
+- update BuildRoot
+
+* 一 9月 17 2007 Than Ngo <than@redhat.com> - 7.3-1
+- bz292501, update to 7.3
+
+* 一 1月 22 2007 Than Ngo <than@redhat.com> - 7.0-1
+- 7.0
+
+* 一 11月 27 2006 Than Ngo <than@redhat.com> - 6.7-1
+- update to 6.7
+- fix #217303, enable-unicode-properties
+- sane stack limit
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 6.6-1.1
+- rebuild
+
+* 二 5月 09 2006 Than Ngo <than@redhat.com> 6.6-1
+- update to 6.6
+- fix multilib problem
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 6.3-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 6.3-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 8月 24 2005 Than Ngo <than@redhat.com> 6.3-1
+- update to 6.3
+
+* 五 3月 04 2005 Joe Orton <jorton@redhat.com> 5.0-4
+- rebuild
+
+* 五 2月 11 2005 Joe Orton <jorton@redhat.com> 5.0-3
+- don't print $libdir in 'pcre-config --libs' output
+
+* 四 11月 18 2004 Joe Orton <jorton@redhat.com> 5.0-2
+- include LICENCE, AUTHORS in docdir
+- run make check
+- move %configure to %build
+
+* 四 11月 18 2004 Than Ngo <than@redhat.com> 5.0-1
+- update to 5.0
+- change License: BSD
+- fix header location #64248
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 23 2004 Than Ngo <than@redhat.com> 4.5-2
+- add the correct pcre license, #118781
+
+* 五 3月 12 2004 Than Ngo <than@redhat.com> 4.5-1
+- update to 4.5
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 9月 26 2003 Harald Hoyer <harald@redhat.de> 4.4-1
+- 4.4
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 07 2003 Than Ngo <than@redhat.com> 4.2-1
+- update to 4.2
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 1月 21 2003 Than Ngo <than@redhat.com> 3.9-9
+- build with utf8, bug #81504
+
+* 五 11月 22 2002 Elliot Lee <sopwith@redhat.com> 3.9-8
+- Really remove .la files
+
+* 五 10月 11 2002 Than Ngo <than@redhat.com> 3.9-7
+- remove .la
+
+* 四 10月 10 2002 Than Ngo <than@redhat.com> 3.9-7
+- Typo bug
+
+* 三 10月 09 2002 Than Ngo <than@redhat.com> 3.9-6
+- Added missing so symlink
+
+* 四 9月 19 2002 Than Ngo <than@redhat.com> 3.9-5.1
+- Fixed to build s390/s390x/x86_64
+
+* 四 6月 27 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.9-5
+- Fix #65009
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 3月 04 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.9-2
+- rebuild
+
+* 五 1月 11 2002 Bernhard Rosenkraenzer <bero@redhat.com> 3.9-1
+- Update to 3.9
+
+* 三 11月 14 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.7-1
+- Update to 3.7
+
+* 四 5月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com> 3.4-2
+- Move libpcre to /lib, grep uses it these days (#41104)
+
+* 三 4月 18 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Move this to a separate package, used to be in kdesupport, but it's
+  generally useful...
+

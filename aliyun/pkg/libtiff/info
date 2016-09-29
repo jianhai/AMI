@@ -1,0 +1,18 @@
+Name        : libtiff                      Relocations: (not relocatable)
+Version     : 3.9.4                             Vendor: Alibaba
+Release     : 10.2.alios6                   Build Date: 2014年07月28日 星期一 20时55分57秒
+Install Date: 2015年03月25日 星期三 11时09分28秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: libtiff-3.9.4-10.2.alios6.src.rpm
+Size        : 962171                           License: libtiff
+Signature   : RSA/8, 2014年08月01日 星期五 14时56分36秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.remotesensing.org/libtiff/
+Summary     : Library of functions for manipulating TIFF format image files
+Description :
+The libtiff package contains a library of functions for manipulating
+TIFF (Tagged Image File Format) image format files.  TIFF is a widely
+used file format for bitmapped images.  TIFF files usually end in the
+.tif extension and they are often quite large.
+
+The libtiff package should be installed if you need to manipulate TIFF
+format image files.

@@ -1,0 +1,32 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+config(alsa-utils) = 1.0.21-3.4.alios6
+libasound.so.2()(64bit)  
+libasound.so.2(ALSA_0.9)(64bit)  
+libasound.so.2(ALSA_0.9.0rc4)(64bit)  
+libasound.so.2(ALSA_0.9.0rc8)(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libdl.so.2()(64bit)  
+libformw.so.5()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libmenuw.so.5()(64bit)  
+libncursesw.so.5()(64bit)  
+libpanelw.so.5()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+libtinfo.so.5()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

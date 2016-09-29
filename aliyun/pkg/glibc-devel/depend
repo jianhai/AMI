@@ -1,0 +1,27 @@
+/bin/sh  
+/bin/sh  
+/sbin/install-info  
+glibc = 2.12-1.166.alios6.7
+glibc-headers  
+glibc-headers = 2.12-1.166.alios6.7
+libBrokenLocale.so.1()(64bit)  
+libanl.so.1()(64bit)  
+libcidn.so.1()(64bit)  
+libcrypt.so.1()(64bit)  
+libdl.so.2()(64bit)  
+libm.so.6()(64bit)  
+libnsl.so.1()(64bit)  
+libnss_compat.so.2()(64bit)  
+libnss_dns.so.2()(64bit)  
+libnss_files.so.2()(64bit)  
+libnss_hesiod.so.2()(64bit)  
+libnss_nis.so.2()(64bit)  
+libnss_nisplus.so.2()(64bit)  
+libresolv.so.2()(64bit)  
+librt.so.1()(64bit)  
+libthread_db.so.1()(64bit)  
+libutil.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

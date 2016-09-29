@@ -1,0 +1,197 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.9-12.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.9-12.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.9-12.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.6.9-12.1
+- rebuild for alios6
+
+* 四 1月 07 2010 Miroslav Lichvar <mlichvar@redhat.com> 0.6.9-12
+- fix source URL
+
+* 四 9月 24 2009 Miroslav Lichvar <mlichvar@redhat.com> 0.6.9-11
+- suppress install-info errors (#515995)
+- mark config as noreplace
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.9-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.9-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 9月 04 2008 Miroslav Lichvar <mlichvar@redhat.com> 0.6.9-8
+- modify default search path for info pages so that current
+  directory is searched last (#458633)
+
+* 二 4月 01 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0.6.9-7
+- drop symbolic links to avoid file conflict with perl-pmtools (bz 437612)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.6.9-6
+- Autorebuild for GCC 4.3
+
+* 三 10月 03 2007 Miroslav Lichvar <mlichvar@redhat.com> 0.6.9-5
+- use xdg-utils instead of htmlview (#312471)
+
+* 三 8月 22 2007 Miroslav Lichvar <mlichvar@redhat.com> 0.6.9-4
+- update license tag
+
+* 五 2月 23 2007 Miroslav Lichvar <mlichvar@redhat.com> 0.6.9-3
+- save section of first man page to history (#208738)
+- remove dot from summary
+
+* 五 1月 19 2007 Miroslav Lichvar <mlichvar@redhat.com> 0.6.9-2
+- use correct group when dropping group privileges (#221107)
+- open also files without .info suffix
+- make scriptlets safer
+- make sure readline support isn't compiled in
+
+* 二 9月 12 2006 Miroslav Lichvar <mlichvar@redhat.com> 0.6.9-1.fc6
+- update to 0.6.9
+- package locale files
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.6.8-11.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.6.8-11.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.6.8-11.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 4月 22 2005 Mike A. Harris <mharris@redhat.com> 0.6.8-11
+- Work around an idiotic bug in rpm (#118780) by using multiple Requires
+  lines instead of the Requires(foo,bar) syntax that rpm documentation
+  states is valid.  This fixes reported pinfo kickstart issue (#155700)
+
+* 四 3月 03 2005 Mike A. Harris <mharris@redhat.com> 0.6.8-10
+- Rebuilt with gcc 4 for FC4
+- Replaced Prereq: with Requires(post,preun)
+
+* 四 12月 23 2004 Mike A. Harris <mharris@redhat.com> 0.6.8-9
+- Replaced pinfo-0.6.0-mkstemp.patch with updated pinfo-0.6.8-mkstemp.patch
+  to fix an additional insecure tempnam() usage detected by our buildsystem
+
+* 四 12月 23 2004 Mike A. Harris <mharris@redhat.com> 0.6.8-8
+- Added pinfo-0.6.8.memcorruption.patch and pinfo-0.6.8.memleak.patch by
+  Sami Farin to fix a couple pinfo bugs reported in (#138770)
+
+* 日 9月 26 2004 Rik van Riel <riel@redhat.com> 0.6.8-7
+- use htmlviewer as the browser, since lynx might not be installed (bz #123349)
+
+* 三 9月 22 2004 Mike A. Harris <mharris@redhat.com> 0.6.8-6
+- Bump release and rebuild in rawhide for FC3
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 1月 10 2004 Mike A. Harris <mharris@redhat.com> 0.6.8-3
+- Added RPM_OPT_FLAGS to CFLAGS as it wasn't being used (#109197)
+
+* 五 10月 31 2003 Mike A. Harris <mharris@redhat.com> 0.6.8-2
+- Updated package URL to current project homepage (#101214)
+
+* 六 10月 25 2003 Florian La Roche <Florian.LaRoche@redhat.de> 0.6.8-1
+- Updated to 0.6.8
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 5月 18 2003 Mike A. Harris <mharris@redhat.com> 0.6.7-1
+- Updated to 0.6.7
+- Dropped already included patch pinfo-0.6.6-0.6.6p1.patch
+
+* 三 1月 22 2003 Mike A. Harris <mharris@redhat.com> 0.6.6-4
+- Added pinfo-0.6.6-0.6.6p1.patch to fix bug (#78504)
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 12月 11 2002 Karsten Hopp <karsten@redhat.de> 0.6.6-2
+- add missing Prereq
+
+* 二 11月 12 2002 Mike A. Harris <mharris@redhat.com> 0.6.6-1
+- Updated to 0.6.6
+- Corrected typos in description field
+
+* 二 11月 12 2002 Mike A. Harris <mharris@redhat.com> 0.6.4-9
+- Now how ironic is *this* one?...  The info documentation on pinfo has been
+  missing from our packages.  Mass rebuild tests caught this.  Fixed now.
+- Added post/preun scripts for updating info dir db with install-info
+
+* 六 10月 05 2002 Mike A. Harris <mharris@redhat.com> 0.6.4-8
+- All-arch rebuild
+- Added _sysconfdir where appropriate
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 0.6.4-7
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com> 0.6.4-6
+- automated rebuild
+
+* 三 5月 22 2002 Mike A. Harris <mharris@redhat.com> 0.6.4-5
+- Bumped release to rebuild in rawhide
+
+* 二 2月 26 2002 Mike A. Harris <mharris@redhat.com> 0.6.4-4
+- Bumped release to rebuild in rawhide
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com> 0.6.4-3
+- automated rebuild
+
+* 日 12月 23 2001 Mike A. Harris <mharris@redhat.com> 0.6.4-2
+- Bumped release to rebuild in rawhide
+
+* 日 12月 23 2001 Mike A. Harris <mharris@redhat.com> 0.6.4-1
+- Updated to 0.6.4
+
+* 三 11月 21 2001 Mike A. Harris <mharris@redhat.com> 0.6.3-1
+- Updated to 0.6.3
+
+* 六 7月 21 2001 Mike A. Harris <mharris@redhat.com> 0.6.1-2
+- Add buildprereq on ncurses-devel
+
+* 四 6月 21 2001 Mike A. Harris <mharris@redhat.com> 0.6.1-1
+- Updated to 0.6.1
+- s/Copyright/License/ spec tag
+
+* 三 8月 16 2000 Nalin Dahyabhai <nalin@redhat.com>
+- move to the same group as the info and man packages
+
+* 一 8月 07 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add pman(1) links, per documentation
+
+* 三 8月 02 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix possible crash due to use of tempnam()
+
+* 三 7月 19 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 0.6.0
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 27 2000 Nalin Dahyabhai <nalin@redhat.com>
+- spec file cleanups
+
+* 四 6月 08 2000 Nalin Dahyabhai <nalin@redhat.com>
+- rebuild for main distribution
+- use %makeinstall
+
+* 三 5月 17 2000 Tim Powers <timp@redhat.com>
+- updated to 0.5.9
+- use %configure and %{_prefix} where possible
+
+* 一 8月 30 1999 Tim Powers <timp@redhat.com>
+- changed group
+
+* 日 8月 08 1999 Tim Powers <timp@redhat.com>
+- rebuilt to be included in Powertools
+

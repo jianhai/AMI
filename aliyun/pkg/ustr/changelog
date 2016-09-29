@@ -1,0 +1,100 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.4-9.1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.4-9.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.4-9.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.4-9.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.0.4-9.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.4-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.4-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 6月 13 2008 James Antill <james@fedoraproject.org> - 1.0.4-7
+- Fix c99 inline problems, newer GCC
+
+* 日 3月 09 2008 James Antill <james@fedoraproject.org> - 1.0.4-6
+- Fix dir. ownership bug.
+- Resolves: rhbz#436711
+
+* 三 3月 05 2008 James Antill <james@fedoraproject.org> - 1.0.4-5
+- New new upstream: 1.0.4
+
+* 四 2月 21 2008 Dennis Gilmore <dennis@ausil.us> - 1.0.3-5
+- set broken_fed_dbg_opts to 0 its the recomended option upstream
+- this works around sparc GCC problems
+- add smpflags and cflags to make check
+
+* 三 2月 13 2008 James Antill <james@fedoraproject.org> - 1.0.3-4
+- Preserve timestamps for shared multilib. files.
+- Relates: bug#343351
+
+* 日 2月 10 2008 James Antill <james@fedoraproject.org> - 1.0.3-3
+- Add upstream multilib patch for ustr-import
+- Resolves: bug#343351
+
+* 一 1月 14 2008 James Antill <james@fedoraproject.org> - 1.0.3-2
+- Build new upstream in Fedora
+
+* 二 10月 30 2007 James Antill <james@and.org> - 1.0.2-2
+- Build new upstream in Fedora
+
+* 一 10月 29 2007 James Antill <james@and.org> - 1.0.2-1
+- New release
+
+* 二 8月 28 2007 James Antill <jantill@redhat.com> - 1.0.1-6
+- Add options for fedora policy brokeness, so it's easy to undo.
+- Rebuild for buildid.
+
+* 三 8月 08 2007 James Antill <james@and.org> - 1.0.1-5
+- Import fix for ustr-import, wrt. repl <=> replace
+
+* 日 8月 05 2007 James Antill <james@and.org> - 1.0.1-4
+- Patches for minor GIT HEAD documentation fixes.
+- Install mkdir_p and fgrep examples.
+
+* 六 8月 04 2007 James Antill <james@and.org> - 1.0.1-2
+- First upload to Fedora repos.
+
+* 五 8月 03 2007 James Antill <james@and.org> - 1.0.1-0.10.fc7
+- Re-fix dups in -devel and -debug file lists.
+- Change license to new format
+
+* 四 8月 02 2007 James Antill <james@and.org> - 1.0.1-0.9.fc7
+- Fix dups in -devel and -debug file lists.
+
+* 三 8月 01 2007 James Antill <james@and.org> - 1.0.1-0.8.fc7
+- Required to make DBG_ONLY_BAD_POLICIES_HAVE_THIS_EMPTY_CFLAGS empty
+- due to so called "review"
+
+* 五 7月 27 2007 James Antill <james@and.org> - 1.0.1-0.2.fc7
+- Next test release of 1.0.1, lots of fixes from Fedora review.
+
+* 三 7月 25 2007 James Antill <james@and.org> - 1.0.1-0
+- Test release of 1.0.1.
+
+* 三 7月 11 2007 James Antill <james@and.org> - 1.0.0-1
+- Upgrade to 1.0.0
+- Minor fixes on specfile
+
+* 日 6月 03 2007 James Antill <james@and.org> - 0.99.2-1
+- Upgrade to 0.99.2
+
+* 四 5月 24 2007 James Antill <james@and.org> - 0.99.1-2
+- Fix ver typo to be version.
+
+* 五 5月 18 2007 James Antill <james@and.org> - 0.99.1-1
+- Use all-shared to get GCC-ish specific shared libs.
+
+* 一 5月 14 2007 James Antill <james@and.org> - 0.98.1-0
+- Initial spec
+

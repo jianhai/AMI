@@ -1,0 +1,75 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.17-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.17-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.17-3.1
+- rebuild for alios6
+
+* 二 1月 12 2010 Matthias Clasen <mclasen@redhat.com> - 0.17-3
+- Don't require vala (#547784)
+
+* 三 12月 09 2009 Matthias Clasen <mclasen@redhat.com> - 0.17-2
+- Fix an unitialized variable that causes problems in udisks
+
+* 二 10月 27 2009 Lennart Poettering <lpoetter@redhat.com> 0.17-1
+- New upstream release
+- Fixes bug 491552
+
+* 二 9月 29 2009 Lennart Poettering <lpoetter@redhat.com> 0.16-1
+- New upstream release
+- Second try at fixing #515881
+
+* 五 9月 18 2009 Lennart Poettering <lpoetter@redhat.com> 0.15-1
+- New upstream release
+- Fixes #515881
+
+* 四 8月 06 2009 Lennart Poettering <lpoetter@redhat.com> 0.14-1
+- New upstream release
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.13-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 4月 22 2009 Lennart Poettering <lpoetter@redhat.com> 0.13-1
+- New upstream release
+
+* 三 4月 15 2009 Lennart Poettering <lpoetter@redhat.com> 0.12-1
+- New upstream release
+
+* 二 4月 14 2009 Lennart Poettering <lpoetter@redhat.com> 0.11-1
+- New upstream release
+
+* 一 4月 13 2009 Lennart Poettering <lpoetter@redhat.com> 0.10-1
+- New upstream release
+
+* 日 4月 12 2009 Lennart Poettering <lpoetter@redhat.com> 0.9-1
+- New upstream release
+
+* 五 4月 10 2009 Lennart Poettering <lpoetter@redhat.com> 0.8-1
+- New upstream release
+
+* 二 4月 07 2009 Lennart Poettering <lpoetter@redhat.com> 0.7-1
+- New upstream release
+
+* 日 4月 05 2009 Lennart Poettering <lpoetter@redhat.com> 0.6-1
+- New upstream release
+
+* 五 4月 03 2009 Lennart Poettering <lpoetter@redhat.com> 0.5-1
+- New upstream release
+
+* 四 4月 02 2009 Lennart Poettering <lpoetter@redhat.com> 0.4-1
+- New upstream release
+
+* 二 3月 24 2009 Lennart Poettering <lpoetter@redhat.com> 0.3-1
+- New upstream release
+
+* 四 3月 19 2009 Lennart Poettering <lpoetter@redhat.com> 0.2-1
+- New upstream release
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 7月 25 2008 Lennart Poettering <lpoetter@redhat.com> 0.1-1
+- Initial version
+

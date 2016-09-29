@@ -1,0 +1,17 @@
+Name        : lvm2                         Relocations: (not relocatable)
+Version     : 2.02.87                           Vendor: Alibaba
+Release     : 6.4.alios6                    Build Date: 2014年08月21日 星期四 19时50分18秒
+Install Date: 2015年03月25日 星期三 11时01分55秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: lvm2-2.02.87-6.4.alios6.src.rpm
+Size        : 1164480                          License: GPLv2
+Signature   : RSA/8, 2014年08月25日 星期一 23时23分17秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sources.redhat.com/lvm2
+Summary     : Userland logical volume management tools
+Description :
+LVM2 includes all of the support for handling read/write operations on
+physical volumes (hard disks, RAID-Systems, magneto optical, etc.,
+multiple devices (MD), see mdadd(8) or even loop devices, see
+losetup(8)), creating volume groups (kind of virtual disks) from one
+or more physical volumes and creating one or more logical volumes
+(kind of logical partitions) in volume groups.

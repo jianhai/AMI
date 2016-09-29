@@ -1,0 +1,505 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.3-12.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.3-12.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.4.3-12.1
+- rebuild for alios6
+
+* 三 1月 05 2011 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-12
+- Fix wrong description in gvfs-mkdir (#667367)
+
+* 二 1月 04 2011 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-11
+- archive: Fix crasher when archive is already mounted (#645630)
+
+* 一 12月 20 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-10
+- Fix emblem handling in trash (#616145)
+- Require new gnome-disk-utility (#636540)
+- Hide mounts having a path element starting with dot (#624795)
+- Fix SELinux while accessing a leaked /dev/ptmx file descriptor (#616838)
+
+* 四 6月 03 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-9
+- Build with -fno-strict-aliasing (#596799)
+
+* 四 5月 13 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-8
+- Translation updates (#589211)
+
+* 三 3月 10 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-7
+- Better support for LVM2 volumes (#567743)
+
+* 一 2月 15 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-6
+- SFTP: Fix crash on unmount
+- FTP: Backport several PASV/EPSV fixes from upstream (#542205, #555033)
+- AFC: Use new libimobiledevice library (#565567)
+
+* 三 2月 03 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-5
+- archive: fix assertion on finalize (#557545)
+
+* 四 1月 21 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-4
+- Don't build obexftp backend on s390 (#557209)
+
+* 二 1月 19 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-3
+- Avoid crash on race to mount gvfstrash (#555337)
+
+* 三 1月 13 2010 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-2
+- Nuke HAL volume monitor
+- Don't leak mount job operation (#552842)
+- Recognize gphoto2 cameras which don't implement get storageinfo (#552856)
+- ObexFTP: Use a private D-Bus connection for obex-data-server (#539347)
+
+* 二 12月 15 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.3-1
+- Update to 1.4.3
+
+* 二 12月 08 2009 David Zeuthen <davidz@redhat.com> - 1.4.2-3
+- Backport fixes from git
+- Correct wrong assumptions about how libgdu.so works
+- Make LUKS volumes work with new mount(8) behavior
+- Be more careful deciding what volumes to automatically mount
+
+* 二 12月 01 2009 Alexander Larsson <alexl@redhat.com> - 1.4.2-2
+- Backport fixes from git:
+- Don't leak metadata strings
+- Don't access uninitialized data in ftp backend
+
+* 一 11月 30 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.2-1
+- Update to 1.4.2
+
+* 一 11月 16 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.1-7
+- SMB: Fix free space calculation for Windows hosts
+
+* 四 11月 12 2009 Matthias Clasen <mclasen@redhat.com> 1.4.1-6
+- Add obsoletes for gnome-mount
+
+* 四 11月 12 2009 Bastien Nocera <bnocera@redhat.com> 1.4.1-5
+- Add obsoletes for gnome-vfs2-obexftp
+
+* 二 11月 10 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.1-4
+- SMB: Support querying filesystem size and free space
+
+* 二 11月 03 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.1-3
+- gdu-volume-monitor: don't crash on NULL devices (#529982)
+
+* 一 11月 02 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.1-2
+- Reload .mount files when single package is installed
+
+* 二 10月 20 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.1-1
+- Update to 1.4.1
+
+* 五 10月 16 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.0-7
+- HTTP: Support g_file_input_stream_query_info()
+- HTTP: Use libsoup header parsing function
+- Set correct MIME type for MTP music players
+
+* 三 10月 14 2009 Bastien Nocera <bnocera@redhat.com> 1.4.0-6
+- Fix crasher in ObexFTP (#528181)
+
+* 五 10月 09 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.0-5
+- Don't always overwrite on trash restore
+- Separate "Safely Remove Drive" from "Eject"
+- Don't advertise can_poll for drives not using removable media
+- Disallow mounting empty drives
+- Disallow ejecting empty drives
+- Silently drop eject error messages when detaching drive
+
+* 四 10月 08 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.0-4
+- Fix Nautilus not displaying friendly icons for SSH-connected system (#526892)
+- Actually apply the logical partitions patch
+
+* 四 10月 01 2009 Matthias Clasen <mclasen@redhat.com> - 1.4.0-3
+- Consider logical partitions when deciding if a drive should be ignored
+
+* 二 9月 29 2009 Matthias Clasen <mclasen@redhat.com> - 1.4.0-2
+- Fix the lack of icons in the http backend
+
+* 一 9月 21 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.4.0-1
+- Update to 1.4.0
+
+* 四 9月 17 2009 Peter Lemenkov <lemenkov@gmail.com> - 1.3.6-2
+- Rebuilt with new fuse
+
+* 一 9月 07 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.3.6-1
+- Update to 1.3.6
+
+* 三 8月 26 2009 Matthias Clasen <mclasen@redhat.com> - 1.3.5-2
+- Don't mount interactively during login
+
+* 一 8月 24 2009 Matthias Clasen <mclasen@redhat.com> - 1.3.5-1
+- Update to 1.3.5
+
+* 一 8月 17 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.3.4-7
+- Fix Nautilus can't create "untitled folder" on sftp mounts (#512611)
+
+* 五 8月 14 2009 Bastien Nocera <bnocera@redhat.com> 1.3.4-6
+- Update AFC patch
+
+* 四 8月 13 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.3.4-5
+- More complete fix for DAV mount path prefix issues
+
+* 二 8月 11 2009 Bastien Nocera <bnocera@redhat.com> 1.3.4-4
+- Fix crash on startup for the afc volume monitor
+
+* 二 8月 11 2009 Bastien Nocera <bnocera@redhat.com> 1.3.4-3
+- libgudev-devel is required for the gphoto2 monitor
+
+* 二 8月 11 2009 Bastien Nocera <bnocera@redhat.com> 1.3.4-2
+- Add AFC backend
+
+* 一 8月 10 2009 Matthias Clasen <mclasen@redhat.com> - 1.3.4-1
+- Update to 1.3.4
+
+* 五 8月 07 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.3.3-3
+- Fix bad mount prefix stripping (part of #509612)
+- Fix gvfsd-sftp segfault when asking a question
+- Enable tar+xz in the archive mounter
+
+* 二 8月 04 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.3.3-2
+- Fix gedit crashed with SEGV in strlen()
+- Fix SMB protocol not handled when opening from a bookmark (#509832)
+
+* 三 7月 29 2009 Matthias Clasen <mclasen@redhat.com> - 1.3.3-1
+- Update to 1.3.3
+
+* 一 7月 27 2009 Matthias Clasen <mclasen@redhat.com> - 1.3.2-3
+- Rebuild
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 13 2009 Matthias Clasen <mclasen@redhat.com> - 1.3.2-1
+- Update to 1.3.2
+- Drop upstreamed patches
+
+* 一 6月 22 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.3.1-2
+- Bump version requirements
+- Backport FTP and Computer backend patches from master
+
+* 一 6月 15 2009 Matthias Clasen <mclasen@redhat.com> - 1.3.1-1
+- Update to 1.3.1
+- Drop obsolete patches
+
+* 五 6月 12 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.2.3-3
+- Move bash-completion out of profile.d (#466883)
+
+* 一 6月 08 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.2.3-2
+- SFTP: Increase timeout (#504339)
+
+* 一 5月 18 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.2.3-1
+- Update to 1.2.3
+- Prevent deadlocks in dnssd resolver (#497631)
+
+* 二 5月 12 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.2.2-5
+- Require separate libtalloc to fix libsmbclient
+- Ref the infos in next_files_finish (gnome #582195)
+- FTP: parse file sizes > 4GB correctly (#499286)
+- CDDA: allow query well-formed filenames only (#499266)
+
+* 六 5月 02 2009 David Zeuthen <davidz@redhat.com> - 1.2.2-4
+- Don't show drives that are supposed to be hidden (#498649)
+- Only automount if media or drive was just inserted - this fixes
+  a problem with spurious automounts when partitioning/formatting
+
+* 三 4月 15 2009 David Zeuthen <davidz@redhat.com> - 1.2.2-3
+- Sync with the gdu-volume-monitor branch
+
+* 一 4月 13 2009 Alexander Larsson <alexl@redhat.com> - 1.2.2-2
+- Add ssh-auth-sock patch from svn
+
+* 一 4月 13 2009 Matthias Clasen <mclasen@redhat.com> - 1.2.2-1
+- Update to 1.2.2
+- Allow eject even on non-ejectable devices
+
+* 六 4月 11 2009 David Zeuthen <davidz@redhat.com> - 1.2.1-5
+- Don't show drives in computer:/// if media is available but
+  no volumes are recognized (#495152)
+
+* 六 4月 11 2009 Matthias Clasen <mclasen@redhat.com> - 1.2.1-4
+- No need for bash completion to be executable
+
+* 四 4月 09 2009 David Zeuthen <davidz@redhat.com> - 1.2.1-3
+- Clean up gdu patches and bump BR for gdu to 0.3
+- Avoiding showing volume for ignored mounts (#495033)
+
+* 四 4月 09 2009 David Zeuthen <davidz@redhat.com> - 1.2.1-2
+- Avoid automounting device-mapper devices and similar (#494144)
+
+* 四 4月 02 2009 Matthias Clasen <mclasen@redhat.com> - 1.2.1-1
+- Update to 1.2.1
+
+* 三 3月 18 2009 David Zeuthen <davidz@redhat.com> - 1.2.0-2
+- GNOME #575728 - crash in Open Folder: mounting a crypto volume
+
+* 一 3月 16 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.2.0-1
+- Update to 1.2.0
+
+* 三 3月 11 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.8-2
+- Fix 100% cpu usage when connecting to a ssh key and denying key access
+- Fix monitors leak
+
+* 二 3月 10 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.8-1
+- Update to 1.1.8
+
+* 一 3月 09 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.7-5
+- Expose device file attribute for all items in computer://
+
+* 五 3月 06 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.7-4
+- Fix volume lists not filled correctly
+
+* 三 3月 04 2009 David Zeuthen <davidz@redhat.com> - 1.1.7-3
+- Update GVfs gdu patch to fix mount detection confusion (#488399)
+
+* 一 3月 02 2009 Matthias Clasen <mclasen@redhat.com> - 1.1.7-2
+- Port to DeviceKit-disks
+
+* 一 3月 02 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.7-1
+- Update to 1.1.7
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 16 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.6-1
+- Update to 1.1.6
+
+* 一 2月 02 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.5-1
+- Update to 1.1.5
+
+* 三 1月 28 2009 - Bastien Nocera <bnocera@redhat.com> - 1.1.4-2
+- ObexFTP write support
+
+* 二 1月 20 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.4-1
+- Update to 1.1.4
+
+* 二 1月 13 2009 Adrian Reber <adrian@lisas.de> - 1.1.3-4
+- Rebuild for libcdio-0.81
+
+* 一 1月 12 2009 Matthias Clasen  <mclasen@redhat.com> - 1.1.3-3
+- Fix dav+sd.mount
+
+* 五 1月 09 2009 Matthias Clasen  <mclasen@redhat.com> - 1.1.3-2
+- Support moving files in the burn backend
+
+* 二 1月 06 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.1.3-1
+- Update to 1.1.3
+
+* 三 12月 17 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.1.2-2
+- Update the smb-browse auth patch
+
+* 二 12月 16 2008 Matthias Clasen  <mclasen@redhat.com> - 1.1.2-1
+- Update to 1.1.2
+
+* 五 12月 12 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.1.1-5
+- FTP: Fix PASV connections
+
+* 二 12月 09 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.1.1-4
+- Add support for .tar.lzma archives in archive mounter
+
+* 五 12月 05 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.1.1-3
+- Added experimental smb-browse auth patch
+
+* 三 12月 03 2008 Matthias Clasen <mclasen@redhat.com> - 1.1.1-2
+- Update file lists to include the dav+sd backend
+
+* 二 12月 02 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.1.1-1
+- Update to 1.1.1
+
+* 一 12月 01 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.0.3-1
+- Update to 1.0.3
+
+* 五 11月 07 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.0.2-4
+- SMB: timestamp setting support (#461505)
+
+* 二 11月 04 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.0.2-3
+- Return an empty array on success when no content type
+  matches (#468946)
+
+* 五 10月 24 2008 Alexander Larsson <alexl@redhat.com> - 1.0.2-2
+- Don't return generic fallback icons for files,
+  as this means custom mimetypes don't work (from svn)
+
+* 一 10月 20 2008 Tomas Bzatek <tbzatek@redhat.com> - 1.0.2-1
+- Update to 1.0.2
+
+* 二 10月 07 2008 Tomas Bzatek <tbzatek@redhat.com>  - 1.0.1-5
+- Don't make warnings fatal (resolves #465693)
+
+* 三 10月 01 2008 David Zeuthen <davidz@redhat.com>  - 1.0.1-4
+- Add patch for reverse mapping FUSE paths (bgo #530654)
+
+* 一 9月 29 2008 Matthias Clasen <mclasen@redhat.com>  - 1.0.1-3
+- Fix mounting
+
+* 一 9月 29 2008 - Bastien Nocera <bnocera@redhat.com> - 1.0.1-2
+- Update obexftp patch from upstream
+
+* 三 9月 24 2008 Matthias Clasen <mclasen@redhat.com>  - 1.0.1-1
+- Update to 1.0.1
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com>  - 1.0.0-2
+- Update to 1.0.0
+
+* 五 9月 19 2008 - Bastien Nocera <bnocera@redhat.com> - 0.99.8-6
+- Update patch for missing file
+
+* 五 9月 19 2008 - Bastien Nocera <bnocera@redhat.com> - 0.99.8-5
+- Updated patch, fixed deadlock whilst mounting
+
+* 三 9月 17 2008 Tomas Bzatek <tbzatek@redhat.com>  - 0.99.8-4
+- Actually apply the kerberos patch
+
+* 二 9月 16 2008 Tomas Bzatek <tbzatek@redhat.com>  - 0.99.8-3
+- SMB: Fix kerberos authentication
+
+* 一 9月 15 2008 Matthias Clasen <mclasen@redhat.com>  - 0.99.8-2
+- Update to 0.99.8
+
+* 一 9月 15 2008 - Bastien Nocera <bnocera@redhat.com> - 0.99.7.1-4
+- Update for BlueZ and obex-data-server D-Bus API changes
+
+* 四 9月 11 2008 Matthias Clasen <mclasen@redhat.com>  - 0.99.7.1-3
+- Rebuild
+
+* 二 9月 09 2008 - Bastien Nocera <bnocera@redhat.com> - 0.99.7.1-2
+- Somebody made the build system be obnoxious and point out my
+  errors in obvious ways
+
+* 二 9月 09 2008 - Bastien Nocera <bnocera@redhat.com> - 0.99.7.1-1
+- Update to 0.99.7.1
+
+* 二 9月 02 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.99.6-1
+- Update to 0.99.6
+
+* 四 8月 28 2008 Matthias Clasen <mclasen@redhat.com> - 0.99.5-3
+- Add a comma
+
+* 三 8月 27 2008 - Bastien Nocera <bnocera@redhat.com> - 0.99.5-2
+- Update some descriptions
+
+* 三 8月 20 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.99.5-1
+- Update to 0.99.5
+
+* 一 8月 04 2008 Matthias Clasen  <mclasen@redhat.com> - 0.99.4-1
+- Update to 0.99.4
+
+* 日 7月 27 2008 Matthias Clasen  <mclasen@redhat.com> - 0.99.3-2
+- Use standard icon names
+
+* 三 7月 23 2008 Matthias Clasen  <mclasen@redhat.com> - 0.99.3-1
+- Update to 0.99.3
+
+* 二 7月 22 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.99.2-1
+- Update to 0.99.2
+- Split out backends to separate packages
+
+* 二 6月 24 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.99.1-3
+- gvfsd-trash: Skip autofs mounts
+
+* 四 6月 12 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.99.1-2
+- Fix transfer of whole directories from FTP (#448560)
+
+* 二 6月 03 2008 Matthias Clasen <mclasen@redhat.com> - 0.99.1-1
+- Update to 0.99.1
+
+* 二 5月 27 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.2.4-1
+- Update to 0.2.4
+
+* 四 4月 24 2008 Matthias Clasen <mclasen@redhat.com> - 0.2.3-10
+- Add application/zip to the supported mime types for the archive
+  backend (launchpad #211697)
+
+* 六 4月 19 2008 David Zeuthen <davidz@redhat.com> - 0.2.3-9
+- Ensure archive mounts are read-only and turn on thumbnailing on them
+- Update fuse threading patch
+
+* 五 4月 18 2008 Matthias Clasen <mclasen@redhat.com> - 0.2.3-8
+- Fix thread-safety issues in gvfs-fuse-daemon
+- Prevent dbus from shutting us down unexpectedly
+
+* 四 4月 17 2008 David Zeuthen <davidz@redhat.com> - 0.2.3-7
+- Put X-Gnome-Vfs-System=gio into mount-archarive.desktop (See #442835)
+
+* 三 4月 16 2008 Matthias Clasen <mclasen@redhat.com> - 0.2.3-6
+- Reenable gphoto automounting 
+- Support unmounting all mounts for a scheme
+
+* 三 4月 16 2008 Matthias Clasen <mclasen@redhat.com> - 0.2.3-5
+- Fix hangs when unmounting gphoto mounts
+
+* 三 4月 16 2008 David Zeuthen <davidz@redhat.com> - 0.2.3-4
+- Only show mounts in /media and inside $HOME (#442189)
+
+* 一 4月 14 2008 Matthias Clasen <mclasen@redhat.com> - 0.2.3-3
+- Fix a bug that causes application crashes (#441084)
+
+* 五 4月 11 2008 Matthias Clasen <mclasen@redhat.com> - 0.2.3-2
+- Fix a crash of the fuse daemon on 64bit
+
+* 一 4月 07 2008 Matthias Clasen <mclasen@redhat.com> - 0.2.3-1
+- Update to 0.2.3
+
+* 五 3月 28 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.2.2-1
+- Update to 0.2.2
+
+* 二 3月 25 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.2.1-4
+- Moved fuse stuff to a dedicated package
+
+* 四 3月 20 2008 Alexander Larsson <alexl@redhat.com> - 0.2.1-3
+- Add patch with simple archive backend UI integration
+
+* 三 3月 19 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.2.1-2
+- Added libarchive dependency for archive backend
+- Require new libsmbclient in order to get smb backend working again
+
+* 二 3月 18 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.2.1-1
+- Update to 0.2.1 (archive backend temporarily disabled)
+
+* 一 3月 17 2008 Matthias Clasen  <mclasen@redhat.com> - 0.2.0.1-2
+- Silence %post
+
+* 一 3月 10 2008 Matthias Clasen  <mclasen@redhat.com> - 0.2.0.1-1
+- Update to 0.2.0.1
+
+* 四 3月 06 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.1.11-2
+- Add patch that fixes a deadlock when foreign volume is removed
+
+* 二 3月 04 2008 Matthias Clasen  <mclasen@redhat.com> - 0.1.11-1
+- Update to 0.1.11
+
+* 二 3月 04 2008 Tomas Bzatek <tbzatek@redhat.com> - 0.1.10-1
+- Update to 0.1.10
+
+* 一 2月 25 2008 Alexander Larsson <alexl@redhat.com> - 0.1.8-1
+- Update to 0.1.8
+
+* 四 2月 14 2008 Alexander Larsson <alexl@redhat.com> - 0.1.7-3
+- Add patch that fixes a smb bug that can cause short reads when copying files
+
+* 二 2月 12 2008 Alexander Larsson <alexl@redhat.com> - 0.1.7-2
+- Fix double free in hal volume monitor
+- Ensure gconf module is built by adding build dep
+
+* 一 2月 11 2008 Matthias Clasen <mclasen@redhat.com> - 0.1.7-1
+- Update to 0.1.7
+
+* 二 1月 29 2008 Matthias Clasen <mclasen@redhat.com> - 0.1.6-1
+- Update to 0.1.6
+
+* 一 1月 28 2008 Matthias Clasen <mclasen@redhat.com> - 0.1.5-1
+- Update to 0.1.5
+- Reenable http/dav
+
+* 一 1月 21 2008 Alexander Larsson <alexl@redhat.com> - 0.1.4-2 
+- Remove the http/dav stuff for now, as we don't have the latest libsoup
+
+* 一 1月 21 2008 Alexander Larsson <alexl@redhat.com> - 0.1.4-1
+- Update to 0.1.4
+- Send USR1 in post to reload config
+
+* 一 1月 14 2008 Matthias Clasen <mclasen@redhat.com> 0.1.2-1
+- Update to 0.1.2
+
+* 二 1月 08 2008 Matthias Clasen <mclasen@redhat.com> 0.1.1-1
+- Update to 0.1.1
+
+* 四 12月 20 2007 Matthias Clasen <mclasen@redhat.com> 0.1.0-1
+- Initial packaging
+

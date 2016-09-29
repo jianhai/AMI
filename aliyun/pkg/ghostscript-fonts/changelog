@@ -1,0 +1,124 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 5.50-23.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 5.50-23.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 5.50-23.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 5.50-23.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.50-23
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 10 2009 Tim Waugh <twaugh@redhat.com> 5.50-22
+- Further changes from package review (bug #225794):
+  - Don't use umask in scriptlet.
+  - Don't use 'which' in scriptlet.
+
+* 三 6月 10 2009 Tim Waugh <twaugh@redhat.com> 5.50-21
+- Changes from package review (bug #225794):
+  - Requires xorg-x11-font-utils, not mkfontscale/mkfontdir.
+  - Use macro for /etc.
+  - Don't own catalogue directory.
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.50-20
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 7月 21 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 5.50-19
+- fix license tag
+- add licensing information for fhirw* and fkarw* fonts
+
+* 五 8月 10 2007 Kristian Høgsberg <krh@redhat.com> - 5.50-18
+- Change link name to be default-ghostscript.
+
+* 二 6月 26 2007 Kristian Høgsberg <krh@redhat.com> - 5.50-17
+- Drop chkfontpath dependency and use the catalogue font path mechanism.
+
+* 三 2月 07 2007 Tim Waugh <twaugh@redhat.com> 5.50-16
+- Fixed URL again (bug #225794).
+- Fixed requires tags (bug #225794).
+- Preserve timestamps on installed files (bug #225794).
+- Added empty %build section (bug #225794).
+- Use FHS macros for file manifest (bug #225794).
+- Fixed summary (bug #225794).
+- Fixed description (bug #225794).
+- Fixed license (bug #225794).
+
+* 二 2月 06 2007 Tim Waugh <twaugh@redhat.com> 5.50-15
+- Fixed URL (bug #225794).
+- Fixed build root tag (bug #225794).
+- This package does not require ghostscript (bug #225794).
+
+* 五 12月 15 2006 Tim Waugh <twaugh@redhat.com> 5.50-14
+- Copied post/postun scriptlets from urw-fonts (bug #203369).
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 5.50-13.1.1
+- rebuild
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 9月 03 2004 Tim Waugh <twaugh@redhat.com> 5.50-13
+- Own /usr/share/fonts/default (bug #131650).
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 1月 22 2004 Tim Waugh <twaugh@redhat.com> 5.50-10
+- Rebuilt. (The 8.11 package which briefly appeared in rawhide should
+  not be used.)  Bug #99323, bug #113866.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 11月 20 2002 Tim Powers <timp@redhat.com>
+- rebuild in latest collinst
+
+* 一 9月 02 2002 Owen Taylor <otaylor@redhat.com>
+- Run /usr/bin/fc-cache in the %post
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 18 2000 Matt Wilson <msw@redhat.com>
+- rebuild for next release
+
+* 一 2月 14 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 5.50
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 3)
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 三 1月 13 1999 Preston Brown <pbrown@redhat.com>
+- renamed package to be consistent with new ghostscript.
+
+* 五 11月 13 1998 Preston Brown <pbrown@redhat.com>
+- removed the std fonts...now shared between X11 and gs with URW fonts pkg.
+
+* 四 7月 02 1998 Jeff Johnson <jbj@redhat.com>
+- update to 4.03.
+
+* 一 5月 04 1998 Erik Troan <ewt@redhat.com>
+- set the owner and group of all of the files to 0.0
+
+* 二 9月 23 1997 Erik Troan <ewt@redhat.com>
+- made a noarch package
+

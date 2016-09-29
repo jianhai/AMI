@@ -1,0 +1,11 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+touch --no-create /usr/share/icons/hicolor ||:
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+if [ $1 -eq 0 ] ; then
+touch --no-create /usr/share/icons/hicolor ||:
+gtk-update-icon-cache -q /usr/share/icons/hicolor 2> /dev/null ||:
+fi
+posttrans scriptlet (using /bin/sh):
+gtk-update-icon-cache -q /usr/share/icons/hicolor 2> /dev/null ||:

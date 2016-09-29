@@ -1,0 +1,22 @@
+perl(HTML::Tagset) >= 3.03
+perl(:MODULE_COMPAT_5.10.1)  
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+perl >= 0:5.004
+perl(Carp)  
+perl(Exporter)  
+perl(HTML::Entities)  
+perl(HTML::Parser)  
+perl(HTML::PullParser)  
+perl(HTML::Tagset)  
+perl(strict)  
+perl(vars)  
+perl(XSLoader)  
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,462 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.24.1-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.24.1-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.24.1-4.1
+- rebuild for alios6
+
+* 三 6月 23 2010 Matthias Clasen <mclasen@redhat.com> - 2.24.1-4
+- Updated translations
+Resolves: #589222
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.24.1-3.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Matthias Clasen <mclasen@redhat.com> - 2.24.1-3
+- Save some space
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.24.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 3月 16 2009 Matthias Clasen <mclasen@redhat.com> - 2.24.1-1
+- Update to 2.24.1
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.24.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 11月 25 2008 Matthias Clasen <mclasen@redhat.com> - 2.24.0-3
+- Reduce unneeded direct library deps
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.24.0-2
+- Update to 2.24.0
+
+* 六 9月 20 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.90-3
+- Plug a memory leak
+
+* 五 9月 19 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.90-2
+- Plug a memory leak
+
+* 五 8月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.90-1
+- Update to 2.23.90
+
+* 四 8月 14 2008 Lennart Poettering <lpoetter@redhat.com> - 2.23.4-2
+- Disable event sounds because we do them now with libcanberra
+
+* 二 6月 17 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.4-1
+- Update to 2.23.4
+
+* 三 6月 04 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.3-1
+- Update to 2.23.3
+
+* 一 5月 19 2008 - Bastien Nocera <bnocera@redhat.com> - 2.22.1-3
+- Add patch to fix ObexFTP crasher
+
+* 一 4月 14 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.1-2
+- Bump rev to make sure the NVR is newer than the previous one
+
+* 三 4月 09 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.1-1
+- Update to 2.22.1 (filechooser crash fixes)
+- Implement authentication support for the file chooser (Tomas Bzatek)
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.01-1
+- Update to 2.22.01
+
+* 一 3月 10 2008 - Bastien Nocera <bnocera@redhat.com> - 2.21.93-2
+- Add patch to avoid hang on error in the filechooser under EOG
+
+* 五 3月 07 2008 - Bastien Nocera <bnocera@redhat.com> - 2.21.93-1
+- Update to 2.21.93
+
+* 一 2月 25 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.92-1
+- Update to 2.21.92
+
+* 二 2月 19 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.91-2
+- Use gio for thumbnails
+
+* 二 2月 12 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.91-1
+- Update to 2.21.91
+
+* 二 1月 29 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.90-1
+- Update to 2.21.90
+
+* 一 1月 14 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.5-1
+- Update to 2.21.5
+
+* 六 12月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1.1-2
+- Add the gvfs filechooser backend
+
+* 三 10月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1.1-1
+- Update to 2.20.1.1 (fixes a crash in thumbnailing code)
+
+* 一 10月 15 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1-1
+- Update to 2.20.1 (translation updates, file chooser improvements)
+
+* 三 9月 19 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.0-1
+- Update to 2.20.0
+
+* 四 8月 23 2007 Adam Jackson <ajax@redhat.com> - 2.19.1-3
+- Rebuild for ppc toolchain bug
+
+* 二 8月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.1-2
+- Update the license field
+
+* 一 7月 30 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.1-1
+- Update to 2.19.1
+
+* 五 7月 20 2007 Jesse Keating <jkeating@redhat.com> 0 2.19.0-2
+- Don't require yelp (RH #249000)
+
+* 一 6月 18 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.0-1
+- Update to 2.19.0
+
+* 二 6月 12 2007 Ray Strode <rstrode@redhat.com> - 2.18.1-3
+- Require yelp
+
+* 二 4月 10 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.1-2
+- Add user-dirs support to the gnome-vfs filechooser backend
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.1-1
+- Update to 2.18.1
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.0-1
+- Update to 2.18.0
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.92-1
+- Update to 2.17.92
+
+* 二 2月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.91-1
+- Update to 2.17.91
+
+* 一 1月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.90-1
+- Update to 2.17.90
+
+* 六 1月 20 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.1-2
+- Drop explicit esound requirement in preparation for pulseaudio 
+- Clean up requires
+
+* 三 1月 10 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.1-1
+- Update to 2.17.1
+
+* 二 12月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.17.0-1
+- Update to 2.17.0
+
+* 六 10月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.1-1
+- Update to 2.16.1
+- Drop upstreamed patches
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 2.16.0-4
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 二 9月 26 2006 Matthew Barnes <mbarnes@redhat.com> - 2.16.0-3.fc6
+- Make the API documentation easier to navigate.
+
+* 一 9月 11 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-2
+- Fix a deadlock when destroying file choosers (#206058)
+
+* 一 9月 04 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-1.fc6
+- Update to 2.16.0
+- Require pkgconfig in the -devel package
+
+* 五 9月 01 2006 Matthew Barnes <mbarnes@redhat.com> - 2.15.91-2.fc6
+- Don't spawn bug-buddy when bug-buddy itself aborts (RH bug #204943).
+
+* 六 8月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.91-1.fc6
+- Update to 2.15.91
+
+* 四 8月 03 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.90-1.fc6
+- Update to 2.15.90
+
+* 三 7月 26 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.2-2
+- Make GnomeIconList work again
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.2-1
+- Update to 2.15.2
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.15.1-6.1
+- rebuild
+
+* 六 6月 10 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.1-6
+- More BuildRequires fixes
+
+* 一 6月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.1-5
+- Fix BuildRequires
+
+* 一 5月 08 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.1-4
+- Update to 2.15.1
+
+* 五 5月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.1.cvs20060505-2
+- Update to a cvs snapshot that supports the new GTK+ filechooser
+  backend API
+- Require GTK+ 2.9.0
+
+* 二 4月 11 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.1-2
+- Update to 2.14.1
+
+* 一 3月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.0-1
+- Update to 2.14.0
+
+* 一 2月 27 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.90-1
+- Update to 2.13.90
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.13.3-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.13.3-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 1月 26 2006 Matthias Clasen <mclasen@redhat.com>
+- Update to 2.13.3
+
+* 一 1月 16 2006 Matthias Clasen <mclasen@redhat.com>
+- Update to 2.13.2
+
+* 三 12月 14 2005 Matthias Clasen <mclasen@redhat.com>
+- Update to 2.13.0
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 28 2005 Ray Strode <rstrode@redhat.com> - 2.12.0-6
+- Add libSM-devel/libICE-devel requires for libgnomeui-devel 
+  (bug 173610)
+
+* 二 11月 08 2005 Matthias Clasen <mclasen@redhat.com> - 2.12.0-5
+- Remove static libs
+
+* 日 11月 06 2005 Matthias Clasen <mclasen@redhat.com> - 2.12.0-4
+- Switch requires to modular X
+
+* 一 9月 12 2005 Jeremy Katz <katzj@redhat.com> - 2.12.0-2
+- devel subpackage requires gnome-keyring-devel (noticed by Marc Maurer)
+
+* 四 9月 08 2005 Matthias Clasen <mclasen@redhat.com> - 2.12.0-1
+- Update to 2.12.0
+
+* 二 8月 16 2005 Warren Togami <wtogami@redhat.com> - 2.11.2-2
+- rebuild for new cairo
+
+* 二 8月 09 2005 Ray Strode <rstrode@redhat.com> - 2.11.2-1
+- Newer upstream version
+
+* 一 7月 11 2005 Matthias Clasen <mclasen@redhat.com> - 2.11.1-1
+- Newer upstream version
+
+* 五 4月 08 2005 Ray Strode <rstrode@redhat.com> - 2.10.0-1
+- Update to 2.10.0
+
+-* Thu Jan 27 2005 Matthias Clasen <mclasen@redhat.com> - 2.9.1-1
+- Update to 2.9.1
+- Drop upstreamed patches
+
+* 三 9月 22 2004 Alexander Larsson <alexl@redhat.com> - 2.8.0-1
+- update to 2.8.0
+
+* 五 9月 17 2004 Matthias Clasen <mclasen@redhat.com> 2.7.92-2
+- make the gnome-vfs file chooser backend work better with ftp:
+
+* 二 8月 31 2004 Alex Larsson <alexl@redhat.com> 2.7.92-1
+- update to 2.7.92
+
+* 三 8月 04 2004 Mark McLoughlin <markmc@redhat.com> 2.7.2-1
+- Update to 2.7.2
+- Remove patches - all upstream now.
+
+* 二 7月 27 2004 Colin Walters <walters@redhat.com> 2.6.0-6
+- Revert unneeded dep on newer gtk
+
+* 四 7月 22 2004 Colin Walters <walters@redhat.com> 2.6.0-5
+- Backport fileselector crash fix from HEAD
+- Remove unneeded calls to autotools
+- Remove BR on autotools
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 4月 16 2004 Alexander Larsson <alexl@redhat.com> 2.6.0-3
+- Backport fixes from cvs
+-  fix fileselector crashes
+-  fix auth callback threadsafeness
+-  fix auth callback modal dialog bug
+
+* 五 4月 02 2004 Mark McLoughlin <markmc@redhat.com> 2.6.0-2
+- Require libjpeg and BuildRequire libjpeg-devel for the thumbnailer (#111111)
+
+* 四 4月 01 2004 Alex Larsson <alexl@redhat.com> 2.6.0-1
+- update to 2.6.0
+
+* 三 3月 17 2004 Alex Larsson <alexl@redhat.com> 2.5.92-1
+- update to 2.5.92
+
+* 四 3月 11 2004 Alex Larsson <alexl@redhat.com> 2.5.91-2
+- enable gtk-doc
+
+* 三 3月 10 2004 Mark McLoughlin <markmc@redhat.com> 2.5.91-1
+- Update to 2.5.91
+
+* 四 3月 04 2004 Mark McLoughlin <markmc@redhat.com> 2.5.90.1-1
+- Update to 2.5.90.1
+- Package the gnome-vfs GtkFilesystem impl.
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 Alexander Larsson <alexl@redhat.com> 2.5.90-1
+- update to 2.5.90
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 1月 26 2004 Alexander Larsson <alexl@redhat.com> 2.5.3-2
+- require later gnome-vfs2
+
+* 五 1月 23 2004 Jonathan Blandford <jrb@redhat.com> 2.5.3-1
+- update to new version
+
+* 五 10月 03 2003 Alexander Larsson <alexl@redhat.com> 2.4.0.1-1
+- 2.4.0.1
+
+* 三 9月 03 2003 Alexander Larsson <alexl@redhat.com> 2.4.0-1
+- update to 2.4.0
+
+* 三 8月 13 2003 Alexander Larsson <alexl@redhat.com> 2.3.6-2
+- Remove bonobo-activation dependencies
+
+* 二 8月 12 2003 Jonathan Blandford <jrb@redhat.com>
+- new release for GNOME 2.4
+
+* 一 7月 28 2003 Havoc Pennington <hp@redhat.com> 2.2.1-3
+- rebuild, and libtoolize
+
+* 三 7月 23 2003 Nalin Dahyabhai <nalin@redhat.com> 2.2.1-2
+- remove apparently-unused source file for rebuild
+
+* 一 7月 07 2003 Havoc Pennington <hp@redhat.com> 2.2.1-1
+- 2.2.1
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 03 2003 Jeff Johnson <jbj@redhat.com>
+- add explicit epoch's where needed, hide epoch in esound_version.
+
+* 四 2月 13 2003 Tim Powers <timp@redhat.com> 2.2.0.1-5
+- fixed requires so that we no longer require Xft and Xft-devel, but
+  instead XFree86 and XFree86-devel >= 4.2.99
+
+* 二 2月 11 2003 Alexander Larsson <alexl@redhat.com> 2.2.0.1-4
+- Passs LIBTOOL=/usr/bin/libtool to make, should fix lib64 issue
+
+* 二 2月 11 2003 Bill Nottingham <notting@redhat.com> 2.2.0.1-3
+- fix esound req (#74566)
+
+* 五 1月 31 2003 Alexander Larsson <alexl@redhat.com> 2.2.0.1-2
+- Add patch to enable top-left text
+
+* 四 1月 23 2003 Alexander Larsson <alexl@redhat.com> 2.2.0.1-1
+- Update to 2.2.0.1
+- removed icon scale patch. Other patch is in upstream.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 1月 13 2003 Havoc Pennington <hp@redhat.com>
+- copy kdelibs by not scaling icons up more than 6 pixels. needs
+  syncing with icon theme spec
+
+* 日 1月 12 2003 Havoc Pennington <hp@redhat.com>
+- rebuild with newer requirements
+
+* 四 1月 09 2003 Alexander Larsson <alexl@redhat.com> 2.1.90-1
+- Update to 2.1.90
+
+* 一 11月 11 2002 Havoc Pennington <hp@redhat.com>
+- 2.1.2
+- comment out change-esound-startup patch, not sure about it, doesn't
+  apply anymore
+
+* 二 11月 05 2002 Bill Nottingham <notting@redhat.com> 2.0.3-4
+- rebuild for fixed pkgconfig paths
+
+* 四 8月 29 2002 Havoc Pennington <hp@redhat.com>
+- require new libtool and libtoolize to fix rpath bugs
+
+* 三 8月 21 2002 Elliot Lee <sopwith@redhat.com> 2.0.3-2
+- Don't always ensure an esd connection is available just because we
+  can do so.
+
+* 一 8月 12 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.3
+- fixups to file list and not-packaged files warnings
+
+* 三 6月 26 2002 Owen Taylor <otaylor@redhat.com>
+- Fix find_lang
+
+* 日 6月 16 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.1
+
+* 五 6月 07 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 三 6月 05 2002 Havoc Pennington <hp@redhat.com>
+- 1.117.2
+- remove zero-length AUTHORS/README
+- add post/postun ldconfig
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 20 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 一 5月 20 2002 Havoc Pennington <hp@redhat.com>
+- 1.117.1
+
+* 五 5月 03 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 五 5月 03 2002 Havoc Pennington <hp@redhat.com>
+- 1.116.1
+
+* 四 4月 04 2002 Jeremy Katz <katzj@redhat.com>
+- 1.114.0
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- 1.111.1
+
+* 三 1月 30 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.110.0
+
+* 一 1月 28 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in rawhide
+- --disable-gtk-doc
+
+* 一 1月 07 2002 Havoc Pennington <hp@redhat.com>
+- 1.108.0.90 snap, remove gconf stuff moved to libgnome
+
+* 二 11月 27 2001 Havoc Pennington <hp@redhat.com>
+- 1.106.0.90 snap, glib 1.3.11
+- add explicit-versioned requires on dependency libs
+- do gconftool stuff, put schemas in file list
+- use makeinstall instead of destdir to avoid broken makefiles
+
+* 一 10月 29 2001 Havoc Pennington <hp@redhat.com>
+- grumble, we require libglade 2 not libglade 1
+
+* 一 10月 29 2001 Havoc Pennington <hp@redhat.com>
+- add libglade module to file list
+- add libglade dependency
+
+* 日 10月 28 2001 Havoc Pennington <hp@redhat.com>
+- new snap, rebuild for glib 1.3.10
+
+* 五 10月 05 2001 Havoc Pennington <hp@redhat.com>
+- new tarball, rebuild for new glib, remove db1 dependency
+
+* 一 9月 24 2001 Havoc Pennington <hp@redhat.com>
+- new cvs snap
+
+* 二 9月 18 2001 Havoc Pennington <hp@redhat.com>
+- Initial build.
+

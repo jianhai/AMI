@@ -1,0 +1,13 @@
+/usr/bin/pkg-config  
+libX11-devel  
+libXrender = 0.9.5-1.3.alios6
+libXrender.so.1()(64bit)  
+pkgconfig(renderproto) >= 0.9
+pkgconfig(x11)  
+pkgconfig(xproto)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+xorg-x11-proto-devel  
+rpmlib(PayloadIsXz) <= 5.2-1

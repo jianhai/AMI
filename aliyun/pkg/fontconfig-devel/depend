@@ -1,0 +1,10 @@
+/usr/bin/pkg-config  
+fontconfig = 2.8.0-3.3.alios6
+freetype-devel >= 2.1.4
+libfontconfig.so.1()(64bit)  
+pkgconfig  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

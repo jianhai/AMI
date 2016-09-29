@@ -1,0 +1,24 @@
+Name        : e2fsprogs                    Relocations: (not relocatable)
+Version     : 1.41.12                           Vendor: Alibaba
+Release     : 11.4.alios6                   Build Date: 2014年08月21日 星期四 19时10分58秒
+Install Date: 2015年03月25日 星期三 11时00分28秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: e2fsprogs-1.41.12-11.4.alios6.src.rpm
+Size        : 2016030                          License: GPLv2
+Signature   : RSA/8, 2014年08月25日 星期一 23时15分29秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://e2fsprogs.sourceforge.net/
+Summary     : Utilities for managing ext2, ext3, and ext4 filesystems
+Description :
+The e2fsprogs package contains a number of utilities for creating,
+checking, modifying, and correcting any inconsistencies in second,
+third and fourth extended (ext2/ext3/ext4) filesystems. E2fsprogs
+contains e2fsck (used to repair filesystem inconsistencies after an
+unclean shutdown), mke2fs (used to initialize a partition to contain
+an empty ext2 filesystem), debugfs (used to examine the internal
+structure of a filesystem, to manually repair a corrupted
+filesystem, or to create test cases for e2fsck), tune2fs (used to
+modify filesystem parameters), and most of the other core ext2fs
+filesystem utilities.
+
+You should install the e2fsprogs package if you need to manage the
+performance of an ext2, ext3, or ext4 filesystem.

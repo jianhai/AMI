@@ -1,0 +1,14 @@
+Name        : libcgroup-devel              Relocations: (not relocatable)
+Version     : 0.37                              Vendor: Alibaba
+Release     : 3.3.alios6                    Build Date: 2014年07月26日 星期六 11时18分56秒
+Install Date: 2015年03月25日 星期三 11时01分53秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: libcgroup-0.37-3.3.alios6.src.rpm
+Size        : 80194                            License: LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时59分23秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://libcg.sourceforge.net/
+Summary     : Development libraries to develop applications that utilize control groups
+Description :
+It provides API to create/delete and modify control group nodes. It will also in
+the future allow creation of persistent configuration for control groups and
+provide scripts to manage that configuration.

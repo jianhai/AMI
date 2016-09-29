@@ -1,0 +1,28 @@
+postinstall scriptlet (using /bin/sh):
+
+if [ `uname -i` == "x86_64" -o `uname -i` == "i386" ] &&
+   [ -f /etc/sysconfig/kernel ]; then
+  /bin/sed -r -i -e 's/^DEFAULTKERNEL=(kernel-smp|kernel-xen)$/DEFAULTKERNEL=kernel/' /etc/sysconfig/kernel || exit $?
+fi
+
+/sbin/new-kernel-pkg --package kernel --install 2.6.32-220.23.2.al.ali1.1.alios6.x86_64 || exit $?
+preuninstall scriptlet (using /bin/sh):
+/sbin/new-kernel-pkg --rminitrd --rmmoddep --remove 2.6.32-220.23.2.al.ali1.1.alios6.x86_64 || exit $?
+if [ -x /sbin/weak-modules ]
+then
+    /sbin/weak-modules --remove-kernel 2.6.32-220.23.2.al.ali1.1.alios6.x86_64 || exit $?
+fi
+posttrans scriptlet (using /bin/sh):
+
+NEWKERNARGS=""
+(/sbin/grubby --info=`/sbin/grubby --default-kernel`) 2>/dev/null | grep -q crashkernel
+if [ $? -ne 0 ]
+then
+	NEWKERNARGS="--kernel-args="crashkernel=auto""
+fi
+/sbin/new-kernel-pkg --package kernel --mkinitrd --dracut --depmod --update 2.6.32-220.23.2.al.ali1.1.alios6.x86_64 $NEWKERNARGS || exit $?
+/sbin/new-kernel-pkg --package kernel --rpmposttrans 2.6.32-220.23.2.al.ali1.1.alios6.x86_64 || exit $?
+if [ -x /sbin/weak-modules ]
+then
+    /sbin/weak-modules --add-kernel 2.6.32-220.23.2.al.ali1.1.alios6.x86_64 || exit $?
+fi

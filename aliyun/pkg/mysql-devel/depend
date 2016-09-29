@@ -1,0 +1,8 @@
+libmysqlclient.so.16()(64bit)  
+libmysqlclient_r.so.16()(64bit)  
+mysql = 5.1.73-3.2.alios6
+openssl-devel  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

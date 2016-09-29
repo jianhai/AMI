@@ -1,0 +1,95 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.0.7-9.3.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.0.7-9.3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.0.7-9.3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.0.7-9.3.1
+- rebuild for alios6
+
+* 三 6月 16 2010 Andreas Schwab <schwab@redhat.com> - 2.0.7-9.3
+- Add .alios6 (#604531)
+
+* 一 4月 26 2010 Dennis Gregorovic <dgregor@redhat.com> - 2.0.7-9.2
+- Rebuilt for RHEL 6
+- Related: rhbz#566527
+
+* 一 4月 26 2010 Dennis Gregorovic <dgregor@redhat.com> - 2.0.7-9.1
+- Rebuilt for RHEL 6
+Related: rhbz#566527
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.7-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.7-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 5月 31 2008 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.7-7
+- Drop "|| :" from check section. It failed to build for mdomsch
+  in Rawhide today.
+
+* 五 2月 08 2008 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.7-6
+- rebuilt for GCC 4.3 as requested by Fedora Release Engineering
+
+* 日 10月 21 2007 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.7-5
+- Patch pth-config.
+  This shall fix the multiarch conflict in pth-devel (#342961).
+  It must not return -I/usr/include and -L/usr/{lib,lib64} either,
+  since these are default search paths already.
+- Replace the config.status CFLAGS sed expr with a patch.
+
+* 二 8月 21 2007 Michael Schwendt <mschwendt@fedoraproject.org>
+- rebuilt
+
+* 四 8月 02 2007 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.7-2
+- Clarify licence (LGPLv2+).
+
+* 六 11月 25 2006 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.7-1
+- Update to 2.0.7 (very minor maintenance updates only).
+
+* 一 8月 28 2006 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.6-3
+- rebuilt
+
+* 一 5月 22 2006 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.6-2
+- Insert -g into CFLAGS after configure script removes it.
+- Disable configure check for obsolete sigstack(), which segfaults.
+
+* 四 2月 16 2006 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.6-1
+- Update to 2.0.6.
+
+* 五 10月 07 2005 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.5-1
+- Update to 2.0.5.
+- Don't build static archive.
+
+* 五 5月 13 2005 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.4-3
+- rebuilt
+
+* 四 4月 07 2005 Michael Schwendt <mschwendt@fedoraproject.org> - 2.0.4-2
+- rebuilt
+
+* 四 2月 24 2005 Michael Schwendt <mschwendt@fedoraproject.org> - 0:2.0.4-1
+- Update to 2.0.4.
+- Remove ancient changelog entries which even pre-date Fedora.
+
+* 二 12月 14 2004 Michael Schwendt <mschwendt@fedoraproject.org> - 0:2.0.3-1
+- Update to 2.0.3, minor and common spec adjustments + LGPL, %check,
+  use URLs for official GNU companion sites.
+
+* 四 10月 07 2004 Adrian Reber <adrian@lisas.de> - 0:2.0.2-0.fdr.2
+- iconv-ing spec to utf8
+
+* 三 10月 06 2004 Adrian Reber <adrian@lisas.de> - 0:2.0.2-0.fdr.1
+- Update to 2.0.2 and current Fedora guidelines.
+- added workaround for make -j problem
+
+* 六 3月 22 2003 Ville Skyttä <ville.skytta at iki.fi> - 0:2.0.0-0.fdr.1
+- Update to 2.0.0 and current Fedora guidelines.
+- Exclude %{_libdir}/*.la
+
+* 五 2月 07 2003 Ville Skyttä <ville.skytta at iki.fi> - 1.4.1-1.fedora.1
+- First Fedora release, based on Ryan Weaver's work.
+- Move (most of) docs to main package.
+

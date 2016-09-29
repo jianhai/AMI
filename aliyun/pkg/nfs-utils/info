@@ -1,0 +1,21 @@
+Name        : nfs-utils                    Relocations: (not relocatable)
+Version     : 1.2.3                             Vendor: Alibaba
+Release     : 15.3.alios6                   Build Date: 2014年07月26日 星期六 21时08分38秒
+Install Date: 2015年03月25日 星期三 11时01分35秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Daemons    Source RPM: nfs-utils-1.2.3-15.3.alios6.src.rpm
+Size        : 829848                           License: MIT and GPLv2 and GPLv2+ and BSD
+Signature   : RSA/8, 2014年07月31日 星期四 17时35分48秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sourceforge.net/projects/nfs
+Summary     : NFS utilities and supporting clients and daemons for the kernel NFS server
+Description :
+The nfs-utils package provides a daemon for the kernel NFS server and
+related tools, which provides a much higher level of performance than the
+traditional Linux NFS server used by most users.
+
+This package also contains the showmount program.  Showmount queries the
+mount daemon on a remote host for information about the NFS (Network File
+System) server on the remote host.  For example, showmount can display the
+clients which are mounted on that host.
+
+This package also contains the mount.nfs and umount.nfs program.

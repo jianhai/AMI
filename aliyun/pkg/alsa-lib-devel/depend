@@ -1,0 +1,10 @@
+/usr/bin/perl  
+/usr/bin/pkg-config  
+alsa-lib = 1.0.22-3.3.alios6
+libasound.so.2()(64bit)  
+pkgconfig  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

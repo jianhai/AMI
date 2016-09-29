@@ -1,0 +1,188 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3.107-10.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3.107-10.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.3.107-10.1
+- rebuild for alios6
+
+* 二 2月 23 2010 Jeff Moyer <jmoyer@redhat.com> - 0.3.107-10
+- Fix up packaging guideline problems.
+- Resolves bz#567783
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.3.107-9.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.107-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.107-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 1月 20 2009 Jeff Moyer <jmoyer@redhat.com> - 0.3.107-7
+- Fix the install to / patch.
+
+* 三 10月 01 2008 Dennis Gilmore <dennis@ausil.us> - 0.3.107-6
+- add patch with sparc support
+
+* 三 10月 01 2008 Dennis Gilmore <dennis@ausil.us> - 0.3.107-5
+- remove ExclusiveArch line
+
+* 三 9月 03 2008 Jeff Moyer <jmoyer@redhat.com> - 0.3.107-4
+- Install to / instead of /usr for early users of libaio (Jeff Moyer)
+- Resolves: bz#459158
+
+* 二 8月 05 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0.3.107-3
+- fix license tag
+
+* 四 6月 05 2008 Jeff Moyer <jmoyer@redhat.com> - 0.3.107-2
+- Update to the latest upstream which adds eventfd support and fixes broken
+  test cases.  (Rusty Russell)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.3.106-4.2
+- Autorebuild for GCC 4.3
+
+* 一 7月 17 2006 Jeff Moyer <jmoyer@redhat.com> - 0.3.106-3.2
+- rebuild
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.3.106-3.1
+- rebuild
+
+* 三 6月 07 2006 Jeremy Katz <katzj@redhat.com> - 0.3.106-3
+- rebuild for -devel deps
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.3.106-2.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.3.106-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 1月 04 2006 Jeff Moyer <jmoyer@redhat.com> - 0.3.106-2
+- Update to the latest sources, which contain the following change:
+  Add a .proc directive for the ia64_aio_raw_syscall macro.  This sounds a lot
+  like the previous entry, but that one fixed the __ia64_raw_syscall macro,
+  located in syscall-ia64.h.  This macro is in raw_syscall.c, which pretty much
+  only exists for ia64.  This bug prevented the package from building with
+  newer version of gcc.
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 4月 01 2005 Jeff Moyer <jmoyer@redhat.com> - 0.3.104-2
+- Add Alpha architecture support.  (Sergey Tikhonov <tsv@solvo.ru>)
+
+* 三 3月 16 2005 Jeff Moyer <jmoyer@redhat.com> - 0.3.103-6
+- Rebuild with gcc 4.
+
+* 一 2月 14 2005 Jeff Moyer <jmoyer@redhat.com> - 0.3.103-4
+- Build the library twice.  Once with the old SONAME and once with the new
+  one.  This fixes the wrong SONAME problem by keeping a library around with
+  the wrong name (libaio.so.1.0.0) and generating a new one (libaio.so.1.0.1).
+
+* 四 10月 14 2004 Jeff Moyer <jmoyer@redhat.com> - 0.3.102-1
+- update to 102.  Fixes build errors on s390:
+  - S390 asm had a bug; I forgot to update the clobber list.  Lucky for me,
+    newer compilers complain about such things.
+  - Also update the s390 asm to look more like the new kernel variants.
+
+* 三 10月 13 2004 Jeff Moyer <jmoyer@redhat.com> - 0.3.101-1
+- update to 101.  Fixes bz 133253 -  libaio backwards compatibility severely
+  broken.
+
+* 二 9月 14 2004 Jeff Moyer <jmoyer@redhat.com> - 0.3.100-1
+- update to 100.  Fixes bz 129910.  Add pseries and iseries to
+  exclusivearch.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 30 2004 Jeff Moyer <jmoyer@redhat.com> - 0.3.99-2
+- Apparently the 0.3.93 patch was not meant for 0.3.96.  Backed it out.
+
+* 二 3月 30 2004 Jeff Moyer <jmoyer@redhat.com> - 0.3.99-1
+- Fix compat calls.
+- make library .so.1.0.0 and make symlinks properly.
+- Fix header file for inclusion in c++ code.
+
+* 四 2月 26 2004 Jeff Moyer <jmoyer@redhat.com> 0.3.98-2
+- bah.  fix version nr in changelog.
+
+* 四 2月 26 2004 Jeff Moyer <jmoyer@redhat.com> 0.3.98-1
+- fix compiler warnings.
+
+* 四 2月 26 2004 Jeff Moyer <jmoyer@redhat.com> 0.3.97-2
+- make srpm was using rpm to do a build.  changed that to use rpmbuild if
+  it exists, and fallback to rpm if it doesn't.
+
+* 二 2月 24 2004 Jeff Moyer <jmoyer@redhat.com> 0.3.97-1
+- Use libc syscall(2) instead of rolling our own calling mechanism.  This 
+  change is inspired due to a failure to build with newer gcc, since clobber 
+  lists were wrong.
+- Add -fpic to the CFLAGS for all architectures.  Should address bz #109457.
+- change a #include from <linux/types.h> to <sys/types.h>.  Fixes a build
+  issue on s390.
+
+* 一 7月 07 2003 Bill Nottingham <notting@redhat.com> 0.3.96-3
+- fix paths on lib64 arches
+
+* 三 6月 18 2003 Michael K. Johnson <johnsonm@redhat.com> 0.3.96-2
+- optimization in io_getevents from Arjan van de Ven in 0.3.96-1
+- deal with ia64 in 0.3.96-2
+
+* 三 5月 28 2003 Michael K. Johnson <johnsonm@redhat.com> 0.3.95-1
+- ppc bugfix from Julie DeWandel
+
+* 二 5月 20 2003 Michael K. Johnson <johnsonm@redhat.com> 0.3.94-1
+- symbol versioning fix from Ulrich Drepper
+
+* 一 1月 27 2003 Benjamin LaHaise <bcrl@redhat.com>
+- bump to 0.3.93-3 for rebuild.
+
+* 一 12月 16 2002 Benjamin LaHaise <bcrl@redhat.com>
+- libaio 0.3.93 test release
+- add powerpc support from Gianni Tedesco <gianni@ecsc.co.uk>
+- add s/390 support from Arnd Bergmann <arnd@bergmann-dalldorf.de>
+
+* 四 9月 12 2002 Benjamin LaHaise <bcrl@redhat.com>
+- libaio 0.3.92 test release
+- build on x86-64
+
+* 四 9月 12 2002 Benjamin LaHaise <bcrl@redhat.com>
+- libaio 0.3.91 test release
+- build on ia64
+- remove libredhat-kernel from the .spec file
+
+* 四 9月 05 2002 Benjamin LaHaise <bcrl@redhat.com>
+- libaio 0.3.90 test release
+
+* 一 4月 29 2002 Benjamin LaHaise <bcrl@redhat.com>
+- add requires initscripts >= 6.47-1 to get boot time libredhat-kernel 
+  linkage correct.
+- typo fix
+
+* 四 4月 25 2002 Benjamin LaHaise <bcrl@redhat.com>
+- make /usr/lib/libredhat-kernel.so point to /lib/libredhat-kernel.so.1.0.0
+
+* 一 4月 15 2002 Tim Powers <timp@redhat.com>
+- make the post scriptlet not use /bin/sh
+
+* 五 4月 12 2002 Benjamin LaHaise <bcrl@redhat.com>
+- add /lib/libredhat-kernel* to %files.
+
+* 五 4月 12 2002 Benjamin LaHaise <bcrl@redhat.com>
+- make the dummy install as /lib/libredhat-kernel.so.1.0.0 so 
+  that ldconfig will link against it if no other is installed.
+
+* 二 1月 22 2002 Benjamin LaHaise <bcrl@redhat.com>
+- add io_getevents
+
+* 二 1月 22 2002 Michael K. Johnson <johnsonm@redhat.com>
+- Make linker happy with /usr/lib symlink for libredhat-kernel.so
+
+* 一 1月 21 2002 Michael K. Johnson <johnsonm@redhat.com>
+- Added stub library
+
+* 日 1月 20 2002 Michael K. Johnson <johnsonm@redhat.com>
+- Initial packaging
+

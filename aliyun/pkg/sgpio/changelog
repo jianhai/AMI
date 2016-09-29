@@ -1,0 +1,32 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.0.10-5.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.0.10-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.0.10-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.2.0.10-5.1
+- rebuild for alios6
+
+* 三 2月 24 2010 Jiri Moskovcak <jmoskovc@redhat.com> - 1.2.0.10-5
+- added license file
+- Related: rhbz#543948
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.2.0.10-4.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.0.10-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 01 2009 Jiri Moskovcak <jmoskovc@redhat.com> 1.2.0.10-3
+- rebuild for F12
+
+* 二 4月 14 2009 Jiri Moskovcak <jmoskovc@redhat.com> 1.2.0.10-2
+- move the EOL conversion and the removal of 
+  executable bits from %install to %prep section
+
+* 三 12月 10 2008 Jiri Moskovcak <jmoskovc@redhat.com> 1.2.0_10-1
+- initial Fedora release
+

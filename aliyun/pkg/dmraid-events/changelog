@@ -1,0 +1,269 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.0.rc16-10.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.0.rc16-10.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.0.rc16-10.1
+- rebuild for alios6
+
+* 四 8月 05 2010 Zdenek Kabelac <zkabelac@redhat.com> - 1.0.0.rc16-10
+- Fix bad %postun script
+- Resolves: rhbz#615937
+
+* 三 7月 14 2010 Zdenek Kabelac <zkabelac@redhat.com> - 1.0.0.rc16-9
+- Adds pthread library for linking dmeventd plugin
+- Resolves: rhbz#582987
+
+* 一 3月 01 2010 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc16-8
+- Return an error when no disks are discovered
+- Resolves: rhbz#568868
+
+* 四 1月 21 2010 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc16-7
+- Create symlink from full versioned libdmraid dso files
+  to libdmraid.so.1 and libdmraid-events-isw.so.1
+  (ie. soname we use for linking)
+- Resolves: rhbz#557514
+
+* 二 1月 19 2010 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc16-6
+- change libdmraid version to 1
+- Resolves: rhbz#556860
+
+* 二 1月 12 2010 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc16-5
+- Resolves: rhbz#554698
+  SGPIO spare led is still in rebuilding state fix
+- Resolves rhbz#554700
+  switch to using /var/cache/logwatch/dmeventd/syslogpattern.txt;
+  explicitly claim logwatch files in dmraid-events-logwatch
+- Resolves rhbz#554708
+  gets size of Silicon Image JBOD set wrong fix
+- Resolves rhbz#554710
+  try to register non-existent dmeventd DSO fix
+
+* 五 10月 16 2009 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc16-4
+- bz526157: fix manual pages for dmraid.static and dm_dso_reg_tool
+- bz505562: ddf1 metadata format handler LSI persistent name fix
+- bz524168: fix pdc metadata format handler to report the correct number
+  of devices in a RAID10 subset
+- bz528097: move libraries to /lib* in order to avoid catch22
+  with unmountable /usr
+
+* 一 9月 21 2009 Hans de Goede <hdegoede@redhat.com> - 1.0.0.rc16-3
+- Add Obsoletes for dmraid-libs packages (merged into the main pkg, #524261)
+- Make -devel Require the main package now the dmraid-libs package is gone
+
+* 三 9月 16 2009 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc16
+- Update to version 1.0.0.rc16
+
+* 五 4月 17 2009 Hans de Goede <hdegoede@redhat.com> - 1.0.0.rc15-7
+- Fix activation of isw raid sets when the disks have serialnumber longer
+  then 16 characters (#490121)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.0.rc15-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 13 2009 Hans de Goede <hdegoede@redhat.com> - 1.0.0.rc15-5
+- Make --rm_partitions work with older kernels which return EINVAL when trying
+  to remove a partition with a number > 16
+- Document --rm_partitions in the man page
+
+* 四 2月 12 2009 Hans de Goede <hdegoede@redhat.com> - 1.0.0.rc15-4
+- Add patch adding --rm_partitions cmdline option and functionality (#484845)
+
+* 四 2月 05 2009 Hans de Goede <hdegoede@redhat.com> - 1.0.0.rc15-3
+- Fix mismatch between BIOS and dmraid's view of ISW raid 10 sets
+
+* 二 11月 18 2008 Bill Nottingham <notting@redhat.com> - 1.0.0.rc15-2
+- Re-add upstream whitespace removal patch (#468649, #470634)
+
+* 四 9月 25 2008 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc15-1
+- Update to version 1.0.0.rc15
+
+* 四 7月 03 2008 Alasdair Kergon <agk@redhat.com> - 1.0.0.rc14-8
+- Move library into libs subpackage.
+- Fix summary and licence tags.
+- Replace static build with symlink.
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0.0.rc14-7
+- Autorebuild for GCC 4.3
+
+* 三 11月 21 2007 Ian Kent <ikent@redhat.com> - 1.0.0.rc14-6
+- Bug 379911: dmraid needs to generate UUIDs for lib device-mapper
+  - add "DMRAID-" prefix to dmraid UUID string.
+
+* 三 11月 14 2007 Ian Kent <ikent@redhat.com> - 1.0.0.rc14-5
+- Bug 379911: dmraid needs to generate UUIDs for lib device-mapper
+- Bug 379951: dmraid needs to activate device-mapper mirror resynchronization error handling
+
+* 一 10月 22 2007 Ian Kent <ikent@redhat.com> - 1.0.0.rc14-4
+- Fix SEGV on "dmraid -r -E" (bz 236891).
+
+* 三 4月 18 2007 Peter Jones <pjones@redhat.com> - 1.0.0.rc14-3
+- Fix jmicron name parsing (#219058)
+
+* 一 2月 05 2007 Alasdair Kergon <agk@redhat.com> - 1.0.0.rc14-2
+- Add build dependency on new device-mapper-devel package.
+- Add dependency on device-mapper.
+- Add post and postun ldconfig.
+- Update BuildRoot and Summary.
+
+* 三 11月 08 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc14-1
+- asr.c: fixed Adaptec HostRAID DDF1 metadata discovery (bz#211016)
+- ddf1_crc.c: added crc() routine to avoid linking to zlib alltogether,
+              because Ubuntu had problems with this
+- dropped zlib build requirement
+
+* 四 10月 26 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc14-bz211016-1
+- ddf1.c: get_size() fixed (bz#211016)
+- ddf1_lib.c: ddf1_cr_off_maxpds_helper() fixed (bz#211016)
+
+* 三 10月 11 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc13-1
+- metadata.c: fixed bug returning wrang unified RAID type (bz#210085)
+- pdc.c: fixed magic number check
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 1.0.0.rc12-7
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 五 9月 22 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc12-1
+- sil.c: quorate() OBO fix
+- activate.c: handler() OBO fix
+- added SNIA DDF1 support
+- added reload functionality to devmapper.c
+- added log_zero_sectors() to various metadata format handlers
+- sil.[ch]: added JBOD support
+
+* 五 9月 01 2006 Peter Jones <pjones@redhat.com> - 1.0.0.rc11-4
+- Require kpartx, so initscripts doesn't have to if you're not using dmraid
+
+* 四 8月 17 2006 Jesse Keating <jkeating@redhat.com> - 1.0.0.rc11-3
+- Change Release to follow guidelines, and add dist tag.
+
+* 四 8月 17 2006 Peter Jones <pjones@redhat.com> - 1.0.0.rc11-FC6.3
+- No more excludearch for s390/s390x
+
+* 五 7月 28 2006 Peter Jones <pjones@redhat.com> - 1.0.0.rc11-FC6.2
+- Fix bounds checking on hpt37x error log
+- Only build the .so, not the .a
+- Fix asc.c duplication in makefile rule
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.0.0.rc11-FC6.1.1
+- rebuild
+
+* 五 7月 07 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc11-FC6.1
+- rebuilt for FC6 with dos partition discovery fix (#197573)
+
+* 二 5月 16 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc11-FC6
+- rebuilt for FC6 with better tag
+
+* 二 5月 16 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc11-FC5_7.2
+- rebuilt for FC5
+
+* 二 5月 16 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc11-FC5_7.1
+- jm.c: checksum() calculation
+- misc.c: support "%d" in p_fmt and fix segfault with wrong format identifier
+- nv.c: size fix in setup_rd()
+- activate.c:
+        o striped devices could end on non-chunk boundaries
+        o calc_region_size() calculated too small sizes causing large
+          dirty logs in memory
+- isw.c: set raid5 type to left asymmetric
+- toollib.c: fixed 'No RAID...' message
+- support selection of RAID5 allocation algorithm in metadata format handlers
+- build
+
+* 一 3月 27 2006 Milan Broz <mbroz@redhat.com> - 1.0.0.rc10-FC5_6.2
+- fixed /var/lock/dmraid in specfile (#168195)
+
+* 五 2月 17 2006 Heinz Mauelshagen <heinzm@redhat.com> - 1.0.0.rc10-FC5_6
+- add doc/dmraid_design.txt to %doc (#181885)
+- add --enable-libselinux --enable-libsepol to configure
+- rebuilt
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.0.rc9-FC5_5.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.0.0.rc9-FC5_5.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 日 1月 22 2006 Peter Jones <pjones@redhat.com> 1.0.0.rc9-FC5_5
+- Add selinux build deps
+- Don't set owner during make install
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com> 1.0.0.rc9-FC5_4.1
+- rebuilt
+
+* 六 12月 03 2005 Peter Jones <pjones@redhat.com> 1.0.0.rc9-FC5_4
+- rebuild for device-mapper-1.02.02-2
+
+* 五 12月 02 2005 Peter Jones <pjones@redhat.com> 1.0.0.rc9-FC5_3
+- rebuild for device-mapper-1.02.02-1
+
+* 四 11月 10 2005 Peter Jones <pjones@redhat.com> 1.0.0.rc9-FC5_2
+- update to 1.0.0.rc9
+- make "make install" do the right thing with the DSO
+- eliminate duplicate definitions in the headers
+- export more symbols in the DSO
+- add api calls to retrieve dm tables
+- fix DESTDIR for 'make install' 
+- add api calls to identify degraded devices
+- remove several arch excludes
+
+* 六 10月 15 2005 Florian La Roche <laroche@redhat.com>
+- add -lselinux -lsepol for new device-mapper deps
+
+* 五 5月 20 2005 Heinz Mauelshagen <heinzm@redhat.com> 1.0.0.rc8-FC4_2
+- specfile change to build static and dynamic binray into one package
+- rebuilt
+
+* 四 5月 19 2005 Heinz Mauelshagen <heinzm@redhat.com> 1.0.0.rc8-FC4_1
+- nv.c: fixed stripe size
+- sil.c: avoid incarnation_no in name creation, because the Windows
+         driver changes it every time
+- added --ignorelocking option to avoid taking out locks in early boot
+  where no read/write access to /var is given
+
+* 三 3月 16 2005 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 15 2005 Heinz Mauelshagen <heinzm@redhat.com> 1.0.0.rc6.1-4_FC4
+- VIA metadata format handler
+- added RAID10 to lsi metadata format handler
+- "dmraid -rD": file device size into {devicename}_{formatname}.size
+- "dmraid -tay": pretty print multi-line tables ala "dmsetup table"
+- "dmraid -l": display supported RAID levels + manual update
+- _sil_read() used LOG_NOTICE rather than LOG_INFO in order to
+  avoid messages about valid metadata areas being displayed
+  during "dmraid -vay".
+- isw, sil filed metadata offset on "-r -D" in sectors rather than in bytes.
+- isw needed dev_sort() to sort RAID devices in sets correctly.
+- pdc metadata format handler name creation. Lead to
+  wrong RAID set grouping logic in some configurations.
+- pdc RAID1 size calculation fixed (rc6.1)
+- dos.c: partition table code fixes by Paul Moore
+- _free_dev_pointers(): fixed potential OOB error
+- hpt37x_check: deal with raid_disks = 1 in mirror sets
+- pdc_check: status & 0x80 doesn't always show a failed device;
+  removed that check for now. Status definitions needed.
+- sil addition of RAID sets to global list of sets
+- sil spare device memory leak
+- group_set(): removal of RAID set in case of error
+- hpt37x: handle total_secs > device size
+- allow -p with -f
+- enhanced error message by checking target type against list of
+  registered target types
+
+* 五 1月 21 2005 Alasdair Kergon <agk@redhat.com> 1.0.0.rc5f-2
+- Rebuild to pick up new libdevmapper.
+
+* 五 11月 26 2004 Heinz Mauelshagen <heinzm@redhat.com> 1.0.0.rc5f
+- specfile cleanup
+
+* 五 8月 20 2004 Heinz Mauelshagen <heinzm@redhat.com> 1.0.0-rc4-pre1
+- Removed make flag after fixing make.tmpl.in
+
+* 三 8月 18 2004 Heinz Mauelshagen <heinzm@redhat.com> 1.0.0-rc3
+- Added make flag to prevent make 3.80 from looping infinitely
+
+* 四 6月 17 2004 Heinz Mauelshagen <heinzm@redhat.com> 1.0.0-pre1
+- Created
+

@@ -1,0 +1,19 @@
+Name        : libxml2-python               Relocations: (not relocatable)
+Version     : 2.7.6                             Vendor: Alibaba
+Release     : 14.2.alios6.2                 Build Date: 2014年07月28日 星期一 21时02分51秒
+Install Date: 2015年03月25日 星期三 11时11分02秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: libxml2-2.7.6-14.2.alios6.2.src.rpm
+Size        : 1976700                          License: MIT
+Signature   : RSA/8, 2014年08月01日 星期五 14时57分02秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://xmlsoft.org/
+Summary     : Python bindings for the libxml2 library
+Description :
+The libxml2-python package contains a module that permits applications
+written in the Python programming language to use the interface
+supplied by the libxml2 library to manipulate XML files.
+
+This library allows to manipulate XML files. It includes support
+to read, modify and write XML and HTML files. There is DTDs support
+this includes parsing and validation even with complex DTDs, either
+at parse time or later once the document has been modified.

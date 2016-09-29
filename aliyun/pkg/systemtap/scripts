@@ -1,0 +1,10 @@
+preinstall scriptlet (using /bin/sh):
+getent group stap-server >/dev/null || groupadd -g 155 -r stap-server || groupadd -r stap-server
+postinstall scriptlet (using /bin/sh):
+# Remove any previously-built uprobes.ko materials
+(make -C /usr/share/systemtap/runtime/uprobes clean) >/dev/null 2>&1 || true
+(/sbin/rmmod uprobes) >/dev/null 2>&1 || true
+preuninstall scriptlet (using /bin/sh):
+# Ditto
+(make -C /usr/share/systemtap/runtime/uprobes clean) >/dev/null 2>&1 || true
+(/sbin/rmmod uprobes) >/dev/null 2>&1 || true

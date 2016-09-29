@@ -1,0 +1,4 @@
+postinstall scriptlet (using /bin/sh):
+/bin/touch --no-create /usr/share/sounds/freedesktop /usr/share/sounds
+postuninstall scriptlet (using /bin/sh):
+/bin/touch --no-create /usr/share/sounds/freedesktop /usr/share/sounds

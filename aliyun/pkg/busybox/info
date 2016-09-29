@@ -1,0 +1,15 @@
+Name        : busybox                      Relocations: (not relocatable)
+Version     : 1.15.1                            Vendor: Alibaba
+Release     : 11.3.alios6                   Build Date: 2014年07月26日 星期六 01时33分24秒
+Install Date: 2015年03月25日 星期三 11时01分10秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Shells     Source RPM: busybox-1.15.1-11.3.alios6.src.rpm
+Size        : 1116013                          License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 16时15分07秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.busybox.net
+Summary     : Statically linked binary providing simplified versions of system commands
+Description :
+Busybox is a single binary which includes versions of a large number
+of system commands, including a shell.  This package can be very
+useful for recovering from certain types of system failures,
+particularly those involving broken shared libraries.

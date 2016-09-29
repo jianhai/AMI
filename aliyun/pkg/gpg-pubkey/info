@@ -1,0 +1,62 @@
+Name        : gpg-pubkey                   Relocations: (not relocatable)
+Version     : 96b4528d                          Vendor: (none)
+Release     : 53d9d2f9                      Build Date: 2015年03月25日 星期三 11时09分04秒
+Install Date: 2015年03月25日 星期三 11时09分04秒      Build Host: localhost
+Group       : Public Keys                   Source RPM: (none)
+Size        : 0                                License: pubkey
+Signature   : (none)
+Summary     : gpg(alios6release (AliOS6 Release) <xianpeng.lxp@alibaba-inc.com>)
+Description :
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: rpm-4.8.0 (NSS-3)
+
+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
+Ab5MOhjQHXxZ5X2kc57dhnTS3tZGLREW6LSFCw==
+=G6oA
+-----END PGP PUBLIC KEY BLOCK-----
+

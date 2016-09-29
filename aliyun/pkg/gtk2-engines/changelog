@@ -1,0 +1,472 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.18.4-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.18.4-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.18.4-5.1
+- rebuild for alios6
+
+* 五 6月 18 2010 Matthias Clasen <mclasen@redhat.com> - 2.18.4-5
+- Remove a bogus Requires
+Resolves: #605055
+
+* 五 10月 23 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.4-4
+- Make Clearlooks opt-in to new tooltips style
+
+* 三 10月 21 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.4-3
+- Tweak tooltip appearance
+
+* 二 10月 20 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.4-2
+- New tooltip appearance
+
+* 二 9月 29 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.4-1
+- Update to 2.18.4
+
+* 一 9月 21 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.3-1
+- Update to 2.18.3
+
+* 二 8月 25 2009 Ray Strode <rstrode@redhat.com> - 2.18.2-5
+- Change password asterisk character to be '•' instead of '●'
+
+* 日 8月 02 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.2-4
+- Drop pkgconfig dep from the main package
+
+* 三 7月 29 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.2-3
+- Fix the build
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.18.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 5月 20 2009 Ray Strode <rstrode@redhat.com> - 2.18.2-1
+- Update to 2.18.2
+- See http://download.gnome.org/sources/gtk-engines/2.18/gtk-engines-2.18.2.news
+
+* 一 4月 13 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.1-1
+- Update to 2.18.1
+- See http://download.gnome.org/sources/gtk-engines/2.18/gtk-engines-2.18.1.news
+
+* 一 3月 16 2009 Matthias Clasen <mclasen@redhat.com> - 2.18.0-1
+- Update to 2.18.0
+
+* 一 3月 02 2009 Matthias Clasen <mclasen@redhat.com> - 2.17.4-1
+- Update to 2.17.4
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.17.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Matthias Clasen <mclasen@redhat.com> - 2.17.3-1
+- Update to 2.17.3
+
+* 六 12月 13 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.2-1
+- Update to 2.17.2
+
+* 一 12月 08 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.1-2
+- Add a -devel package to trim excessive pkg-config autodeps
+
+* 三 12月 03 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.1-1
+- Update to 2.17.1
+
+* 三 11月 12 2008 Matthias Clasen <mclasen@redhat.com> - 2.17.0-1
+- Update to 2.17.0
+
+* 一 10月 20 2008 Matthias Clasen <mclasen@redhat.com> - 2.16.1-1
+- Update to 2.16.1
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.16.0-1
+- Update to 2.16.0
+
+* 二 9月 02 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.4-1
+- Update to 2.15.4
+
+* 五 8月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.3-1
+- Update to 2.15.3
+
+* 一 8月 04 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.2-1
+- Update to 2.15.2
+
+* 二 5月 13 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.1-1
+- Update to 2.15.1
+
+* 五 4月 25 2008 Matthias Clasen <mclasen@redhat.com> - 2.15.0-1
+- Update to 2.15.0
+
+* 一 4月 07 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.1-1
+- Update to 2.14.1
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.0-1
+- Update to 2.14.0
+
+* 一 2月 25 2008 Matthias Clasen <mclasen@redhat.com> - 2.13.6-1
+- Update to 2.13.6
+
+* 二 2月 12 2008 Matthias Clasen <mclasen@redhat.com> - 2.13.5-1
+- Update to 2.13.5
+
+* 一 1月 28 2008 Matthias Clasen <mclasen@redhat.com> - 2.13.4-1
+- Update to 2.13.4
+
+* 二 1月 08 2008 - Bastien Nocera <bnocera@redhat.com> - 2.13.3-1
+- Update to 2.13.3
+
+* 二 12月 18 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.2-1
+- Update to 2.13.2
+
+* 三 12月 05 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.1-1
+- Update to 2.13.1
+
+* 一 11月 12 2007 Matthias Clasen <mclasen@redhat.com> - 2.13.0-1
+- Update to 2.13.0
+
+* 一 10月 15 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.2-1
+- Update to 2.12.2 (bug fixes and translation updates)
+
+* 四 9月 20 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.0-2
+- Fix a typo in the Crux gtkrc
+
+* 一 9月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.12.0-1
+- Update to 2.12.0
+
+* 一 9月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.7-1
+- Update to 2.11.7
+
+* 四 8月 16 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.6-1
+- Update to 2.11.6
+
+* 一 8月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.5-1
+- Update to 2.11.5
+
+* 五 8月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.4-2
+- Update the license field
+
+* 一 7月 30 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.4-1
+- Update to 2.11.4
+
+* 二 7月 10 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.3-1
+- Update to 2.11.3
+
+* 四 6月 21 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.2-2
+- Make the new tooltip api yellow, too
+
+* 一 6月 18 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.2-1
+- Update to 2.11.2
+
+* 四 6月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.1-2
+- Keep the default tooltip color for Clearlooks
+- Fix up directory ownership
+
+* 一 6月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.1-1
+- Update to 2.11.1
+
+* 六 5月 19 2007 Matthias Clasen <mclasen@redhat.com> - 2.11.0-1
+- Update to 2.11.0
+- Drop obsolete patches
+
+* 二 5月 15 2007 Matthias Clasen <mclasen@redhat.com> - 2.10.0-3
+- Fix some memory corruption errors
+
+* 三 4月 25 2007 Matthias Clasen <mclasen@redhat.com> - 2.10.0-2
+- Remove and undefined macro (#237810)
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.10.0-1
+- Update to 2.10.0
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 2.9.4-2
+- Add a knob to Clearlooks to make scrollbars work better 
+  in dark themes, needed for the gdm theme
+
+* 一 2月 26 2007 Matthias Clasen <mclasen@redhat.com> - 2.9.4-1
+- Update to 2.9.4
+
+* 三 2月 21 2007 Matthias Clasen <mclasen@redhat.com> - 2.9.3-2
+- Fix the active checkbox drawing bug
+
+* 一 2月 12 2007 Matthias Clasen <mclasen@redhat.com> - 2.9.3-1
+- Update to 2.9.3
+
+* 一 1月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.9.2-1
+- Update to 2.9.2
+
+* 三 1月 10 2007 Matthias Clasen <mclasen@redhat.com> - 2.9.1-1
+- Update to 2.9.1
+
+* 二 12月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.0-1
+- Update to 2.9.0
+
+* 四 11月 16 2006 Matthias Clasen <mclasen@redhat.com> - 2.8.2-1
+- Update to 2.8.2
+
+* 六 10月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.8.1-1
+- Update to 2.8.1
+
+* 一 9月 04 2006 Matthias Clasen <mclasen@redhat.com> - 2.8.0-1.fc6
+- Update to 2.8.0
+
+* 一 8月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.7.8-1.fc6
+- Update to 2.7.8
+
+* 六 8月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.7.7-1.fc6
+- Update to 2.7.7
+
+* 三 8月 02 2006 Matthias Clasen <mclasen@redhat.com> - 2.7.6-1.fc6
+- Update to 2.7.6
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.7.5-1.1
+- rebuild
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.7.5-1
+- Update to 2.7.5
+
+* 五 5月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.7.4-4
+- Rebuild against GTK+ 2.9.0
+- Require GTK+ 2.9.0
+
+* 三 4月 19 2006 Soren Sandmann <sandmann@redhat.com> - 2.7.4-6
+- It was in fact a missing copy method. See gnome bug 338826.
+
+* 二 4月 18 2006 Kristian Høgsberg <krh@redhat.com> 2.7.4-5
+- Bump for fc5-blig repo build.
+
+* 一 4月 17 2006 Soren Sandmann <sandmann@redhat.com> - 2.7.4-4
+- Add missing clone method in the Clearlooks engine
+
+* 日 2月 26 2006 Matthias Clasen <mclasen@redhat.com> - 2.7.4-3
+- Fix memory leaks in the Clearlooks engine
+
+* 五 2月 24 2006 Matthias Clasen <mclasen@redhat.com> - 2.7.4-2
+- Backport patches to draw default buttons and
+  inconsistent checkboxes
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.7.4-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.7.4-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 30 2006 Matthias Clasen <mclasen@redhat.com> 2.7.4-1
+- Update to 2.7.4
+
+* 四 1月 19 2006 Matthias Clasen <mclasen@redhat.com> 2.7.3-1
+- Update to 2.7.3
+
+* 二 1月 10 2006 Ray Strode <rstrode@redhat.com> 2.7.2-2
+- fix handle drawing bugs from F-Spot and gnome-panel
+- change %makeinstall to make install DESTDIR=...
+
+* 二 1月 03 2006 Matthias Clasen <mclasen@redhat.com> 2.7.2-1
+- Update to 2.7.2
+
+* 三 12月 14 2005 Matthias Clasen <mclasen@redhat.com> 2.7.1-1
+- Update to 2.7.1
+
+* 日 12月 11 2005 Matthias Clasen <mclasen@redhat.com> 2.7.0-2
+- Backport some fixes from upstream
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 30 2005 Matthias Clasen <mclasen@redhat.com> 2.7.0-1
+- Update to 2.7.0
+
+* 三 9月 07 2005 Matthias Clasen <mclasen@redhat.com> 2.6.5-1
+- Update to 2.6.5
+
+* 二 8月 16 2005 Matthias Clasen <mclasen@redhat.com> 
+- Rebuilt
+
+* 四 8月 04 2005 Matthias Clasen <mclasen@redhat.com> 2.6.4-1
+- New upstream version
+
+* 二 6月 28 2005 Matthias Clasen <mclasen@redhat.com> 2.6.3-3
+- Update Clearlooks to 0.6.1
+
+* 五 5月 20 2005 Matthias Clasen <mclasen@redhat.com> 2.6.3-2
+- Don't ship Redmond
+
+* 二 4月 19 2005 Matthias Clasen <mclasen@redhat.com> 2.6.3-1
+- Update to 2.6.3
+- Clearlooks engine is now integrated
+
+* 日 4月 03 2005 Warren Togami <wtogami@redhat.com> 2.6.2-4
+- obsolete FE3 gnome-theme-clearlooks to ensure smooth upgrade
+
+* 二 3月 29 2005 Matthias Clasen <mclasen@redhat.com> 2.6.2-3
+- Update to Clearlooks 0.5
+
+* 四 3月 17 2005 Matthias Clasen <mclasen@redhat.com> 2.6.2-2
+- Include the Clearlooks engine, version 0.4
+
+* 一 3月 14 2005 Matthias Clasen <mclasen@redhat.com> 2.6.2-1
+- Update to 2.6.2
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com> 2.6.1-2
+- Rebuild with gcc4
+
+* 三 2月 09 2005 Matthias Clasen <mclasen@redhat.com> 2.6.1-1
+- Update to 2.6.1
+
+* 三 1月 26 2005 Matthias Clasen <mclasen@redhat.com> 2.6.0-1
+- update to 2.6.0
+
+* 二 12月 21 2004 Matthias Clasen <mclasen@redhat.com> 2.2.0-6
+- remove pixbuf engine which is integrated in gtk+ 2.6
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 3月 17 2004 Alex Larsson <alexl@redhat.com> 2.2.0-5
+- rebuilt to get new gtk binary age
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 1月 17 2003 Owen Taylor <otaylor@redhat.com>
+- Upgrade to 2.2.0 (Fixes #65985, #73475)
+- Add the .pc file to the package
+
+* 二 12月 17 2002 Owen Taylor <otaylor@redhat.com>
+- Rebuild for new GTK+
+
+* 一 12月 09 2002 Havoc Pennington <hp@redhat.com>
+- rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 02 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 四 4月 25 2002 Havoc Pennington <hp@redhat.com>
+- converted to gtk2-engines package
+
+* 一 4月 15 2002 Alex Larsson <alexl@redhat.com>
+- Added Adept-Raleigh theme
+
+* 四 4月 11 2002 Owen Taylor <otaylor@redhat.com>
+- Fix major pixmap leak that occurred with certain theme/app 
+  combinations (#59528)
+
+* 三 3月 13 2002 Owen Taylor <otaylor@redhat.com>
+- Add gtk-hicontrast theme
+- Un-automake-1.4
+
+* 四 1月 24 2002 Havoc Pennington <hp@redhat.com>
+- remove acinclude.m4 to avoid funky libtool crackrock
+
+* 二 1月 22 2002 Havoc Pennington <hp@redhat.com>
+- automake14
+
+* 四 8月 09 2001 Owen Taylor <otaylor@redhat.com>
+- Install /etc/skel/.gtkrc as /root/.gtkrc as well, or we 
+  don't get Raleigh for our nice config tools
+
+* 六 7月 21 2001 Owen Taylor <otaylor@redhat.com>
+- Add BuildPrereq on imlib-devel (#49478)
+
+* 二 7月 10 2001 Owen Taylor <otaylor@redhat.com>
+- Version 0.11
+- Install a /etc/skel/.gtkrc
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 六 2月 10 2001 Owen Taylor <otaylor@redhat.com>
+- New, slightly improved version of Raleigh
+
+* 日 2月 04 2001 Owen Taylor <otaylor@redhat.com>
+- Require as well as BuildPrereq a sufficiently new GTK+ package.
+
+* 三 1月 17 2001 Owen Taylor <otaylor@redhat.com>
+- remove references to /home/raster from a couple of themes
+
+* 二 11月 21 2000 Owen Taylor <otaylor@redhat.com>
+- Add 'Raleigh' theme
+
+* 五 8月 11 2000 Jonathan Blandford <jrb@redhat.com>
+- Up Epoch and release
+
+* 四 7月 13 2000 Owen Taylor <otaylor@redhat.com>
+- Go back to real gtk-engines-0.10.tar.gz instead of hosed
+  cvs snapshot that someone had inserted.
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 19 2000 Dave Mason <dcm@redhat.com>
+- Removed many themes to speed up control center and get rid of ugly themes
+
+* 六 6月 17 2000 Matt Wilson <msw@redhat.com>
+- defattr files 644 and dirs 755, list attr of 755 for libraries explicitly
+- use %makeinstall
+- remove spec file stupidism (defining docdir, using own prefix macro, rel, ver, etc)
+
+* 二 5月 16 2000 Dave Mason <dcm@redhat.com>
+- fixed Tiger, RatsTheme, OldWood, and LCD themes as they had no gtk subdirectory
+
+* 二 2月 22 2000 Bill Nottingham <notting@redhat.com>
+- sanitize various things (permissions, .xv thumbnails)
+
+* 四 2月 10 2000 Preston Brown <pbrown@redhat.com>
+- remove backup files from package
+
+* 二 1月 25 2000 Owen Taylor <otaylor@redhat.com>
+- Update to 0.10 (fixing problem with text in eventboxes
+  becoming garbled)
+
+* 三 9月 15 1999 Elliot Lee <sopwith@redhat.com>
+- Misc fixes from DrMike suggestions
+
+* 四 9月 09 1999 Elliot Lee <sopwith@redhat.com>
+- Update to 0.6, etc.
+
+* 三 4月 14 1999 Michael Fulbright <drmike@redhat.com>
+- removed Odo (has issues)
+
+* 五 4月 09 1999 The Rasterman <raster@redhat.com>
+- patched metal theme - fixed handlebox redraw.
+
+* 三 3月 31 1999 Michael Fulbright <drmike@redhat.com>
+- removed some themes that were misbehaving
+
+* 二 3月 16 1999 Michael Fulbright <drmike@redhat.com>
+- removed enlightened themes, seems to be defective
+
+* 四 3月 11 1999 Michael Fulbright <drmike@redhat.com>
+- removed Default theme data, this comes with gtk+ package
+
+* 三 3月 10 1999 Michael Fulbright <drmike@redhat.com>
+- added extra gtk themes
+
+* 四 3月 04 1999 Michael Fulbright <drmike@redhat.com>
+- version 0.5
+
+* 五 2月 12 1999 Michael Fulbright <drmike@redhat.com>
+- version 0.4
+
+* 三 2月 03 1999 Michael Fulbright <drmike@redhat.com>
+- version 0.3
+
+* 五 12月 18 1998 Michael Fulbright <drmike@redhat.com>
+- version 0.2
+
+* 三 12月 16 1998 Michael Fulbright <drmike@redhat.com>
+- rebuild because gtk+ version changed
+
+* 三 12月 16 1998 Michael Fulbright <drmike@redhat.com>
+- in preparation for GNOME freeze
+
+* 五 11月 20 1998 Michael Fulbright <drmike@redhat.com>
+- First try at a spec file
+

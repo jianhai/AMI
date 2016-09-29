@@ -1,0 +1,149 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.14.3-10.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.14.3-10.1
+- rebuild for alios6-update
+
+* 二 4月 01 2014 Elio Maldonado <emaldona@redhat.com> - 3.14.3-10
+- Skip calls to CHECK_FORK in {C & NSC}_GetFunctionList
+- Resolves: Bug 1082900 - Admin server segfault when configuration DS configured on SSL port
+- Add workaround to %check
+unset DISPLAY
+ section for RHEL-5 based build machines where kernel lacks support for hardware GCM
+
+* 二 9月 24 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-9
+- back out -fips package changes
+
+* 五 9月 20 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-8
+- Enable new packaging but don't apply nss-fips-post.patch
+- Related: rhbz#1008513 - Unable to login in fips mode
+
+* 四 9月 19 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-7
+- Fix the PR_Access stub to actually access the correct permissions
+- Resolves: rhbz#1008513 - Unable to login in fips mode
+- Run the lowhash tests
+- Require nspr-4.0.0 and nss-util-3.15.1
+
+* 四 9月 12 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-6
+- create -fips packages 
+- patch submitted by Bob Relyea <rrelyea@redhat.com>
+- fix the script that splits softoken off from nss
+- patch nss/cmd/lib/basicutil.c to build against nss-util-3.15.1
+- Resolves: rhbz#993441 - NSS needs to conform to new FIPS standard. [rhel-6.5.0]
+
+* 一 7月 29 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-5
+- Resolves: rhbz#976572 - Pick up various upstream GCM code fixes applied since nss-3.14.3 was released
+- Display cpuifo as part of the tests and make NSS_DISABLE_HW_GCM the environment variable to test for
+- When appling the patches use a backup file suffix that better describes the patch purpose
+
+* 四 5月 23 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-4
+- Enable ECC support for suite b and add upstream fixes for aec gcm
+- Use the unstripped upstream sources with ecc support
+- Limit the ECC support to suite b
+- Apply several upstream aes gcm fixes
+- Rename macros EC_MIN_KEY_BITS and EC_MAX_KEY_BITS per upstream
+- Resolves: rhbz#960208 - Enable ECC in nss-softoken
+- Related: rhbz#919172
+
+* 五 4月 26 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-3
+- Add patch to conditionally compile according to old or new sqlite api
+- new is used on rhel-6 while rhel-5 uses old but we need the same code for both
+- Resolves: rhbz#919172 - Rebase to nss-softokn 3.14.3 to fix the lucky-13 issue
+
+* 二 4月 09 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-2
+- Revert to using a code patch for relro support
+- Related: rhbz#919172
+
+* 日 3月 24 2013 Elio Maldonado <emaldona@redhat.com> - 3.14.3-1
+- Update to NSS_3_14_3_RTM
+- Resolves: rhbz#919172 - Rebase to nss-softokn 3.14.3 to fix the lucky-13 issue
+- Add export LD_LIBRARY_PATH=$RPM_BUILD_ROOT//usr/lib64 before the signing commands in __spec_install_post scriplet
+  to ensure signing tool links with in-tree freebl so verification uses same algorithm as in signing
+- Add %check section to run the upstream crypto reqression test suite as per packaging guidelines
+- Don't install sechash.h or secmodt.h which as per 3.14 are provided by nss-devel
+- Update the licence to MPLv2.0
+
+* 六 3月 23 2013 Elio Maldonado - 3.12.9-12
+- Bootstrapping of the builroot in preparation for rebase to 3.14.3
+- Remove hasht.h from the %files devel list to prevent update conflicts with nss-util
+- With 3.14.3 hasht.h will be provided by nss-util-devel
+- Related: rhbz#919172 - rebase nss-softokn to 3.14.3
+
+* 四 10月 27 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-11
+- Bug 748524 - On NSS_NoDB_Init don't try to open pkcs11.txt or secmod.db
+
+* 一 10月 24 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-10
+- Bug 747053 - FIPS changes for NSS, more DRBG tests
+
+* 二 9月 27 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-9
+- Add relro support for executables and shared libraries
+
+* 一 7月 25 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-8
+- Include the patch
+
+* 一 7月 25 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-7
+- Fix the tag
+
+* 五 7月 22 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-5
+- Add partial RELRO support as a security enhancement
+
+* 四 6月 23 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-5
+- Retagging to pick up latest patch - Resolves: rhbz#710298
+
+* 四 6月 23 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-4
+- Resolves: rhbz#710298 - fix intel optimized aes code to handle case where input and ouput are in the same buffer
+
+* 日 2月 27 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-3
+- Add requires nss-softokn-freebl-devel to devel
+
+* 五 2月 04 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-2
+- Add headers for nss-softokn-freebl-devel and expand the description
+
+* 一 1月 17 2011 Elio Maldonado <emaldona@redhat.com> - 3.12.9-1
+- Update to 3.12.9
+- Enable Intel AES Hardware optimizations
+
+* 五 10月 01 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.8-1
+- Update to 3.12.8
+
+* 四 8月 26 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.7-1.1
+- Retagging to remove an obsolete file
+
+* 四 8月 26 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.7-1
+- Update to 3.12.7
+
+* 四 8月 05 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.4-19
+- Turn off Intel AES optimizations
+
+* 二 6月 08 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.6-2.1
+- Don't enable FIPS when CONFIG_CRYPTO_FIPS=n
+- Fix typo in the package description
+- Fix capitalization error in prelink conflict statement
+- Require nspr 4.8.4
+
+* 三 4月 21 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.4-17
+- Updated prelink patch
+
+* 四 4月 15 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.4-16
+- allow prelink of softoken and freebl. Change the verify code to use
+  prelink -u if prelink is installed. Fix by Robert Relyea
+
+* 一 1月 18 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.4-11
+- Move libfreebl3.so and its .chk file to /lib{64} keeping
+- symbolic links to them in /usr/lib{64} so as not break others
+
+* 一 1月 18 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.4-10.3
+- fix broken global
+
+* 日 1月 17 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.4-10.2
+- rebuilt for RHEL-6-test-build
+
+* 五 1月 15 2010 Elio Maldonado <emaldona@redhat.com> - 3.12.4-10.1
+- Update to 3.12.4, reenable installing and pick up fixes from F-12
+
+* 三 8月 19 2009 Elio Maldonado <emaldona@redhat.com> 3.12.3.99.3-8.1
+- Disable installing until conflicts are relsoved
+
+* 三 8月 19 2009 Elio Maldonado <emaldona@redhat.com> 3.12.3.99.3-8
+- Initial build
+

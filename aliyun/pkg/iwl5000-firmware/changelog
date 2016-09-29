@@ -1,0 +1,45 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 8.83.5.1_1-1.3.1
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 8.83.5.1_1-1.2.1
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 8.83.5.1_1-1.1.1
+- rebuild for alios6
+
+* 三 6月 01 2011 John W. Linville <linville@redhat.com> - 8.83.5.1_1-1.el6_1.1
+- Bump NVR for RHEL-6.1.z branch
+
+* 一 2月 28 2011 John W. Linville <linville@redhat.com> - 8.83.5.1_1-1
+- Update for re-released 8.83.5.1 firmware
+
+* 一 2月 28 2011 John W. Linville <linville@redhat.com> - 8.83.5.1-2
+- Reinstate v2 firmware for use by older kernels
+
+* 五 2月 25 2011 John W. Linville <linville@redhat.com> - 8.83.5.1-1
+- Update for upstream version 8.83.5.1
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.24.2.12-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 1月 07 2010 John W. Linville <linville@redhat.com> - 8.24.2.12-3
+- Add dist tag
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.24.2.12-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 5月 20 2009 John W. Linville <linville@redhat.com> - 8.24.2.12-1
+- Add v2 firmware
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.4.A.11-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 9月 05 2008 kwizart < kwizart at gmail.com > - 5.4.A.11-3
+- Remove ppc/ppc64 from ExcludedArches
+
+* 一 7月 28 2008 kwizart < kwizart at gmail.com > - 5.4.A.11-2
+- Add LICENSE.iwlwifi-5000-ucode README.iwlwifi-5000-ucode as %doc
+
+* 五 7月 11 2008 kwizart < kwizart at gmail.com > - 5.4.A.11-1
+- Initial package
+

@@ -1,0 +1,28 @@
+/usr/bin/perl  
+perl >= 0:5.002
+perl >= 1:5.7.2
+perl = 4:5.10.1-119.4.alios6.1
+perl(Carp)  
+perl(Config)  
+perl(DynaLoader)  
+perl(Exporter)  
+perl(ExtUtils::Constant)  
+perl(ExtUtils::Installed)  
+perl(ExtUtils::MakeMaker)  
+perl(ExtUtils::ParseXS)  
+perl(File::Compare)  
+perl(File::Find)  
+perl(File::Path)  
+perl(File::Spec)  
+perl(Getopt::Long)  
+perl(Getopt::Std)  
+perl(IO::File)  
+perl(Text::Wrap)  
+perl(constant)  
+perl(strict)  
+perl(vars)  
+perl(warnings)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

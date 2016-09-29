@@ -1,0 +1,346 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.9.4-10.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.9.4-10.1
+- rebuild for alios6-update
+
+* 四 2月 13 2014 Petr Hracek <phracek@redhat.com> - 3.9.4-10
+- Resolves: #1063464. Several CVEs for libtiff
+
+* 四 12月 13 2012 Tom Lane <tgl@redhat.com> 3.9.4-9
+- Still more fixes to make test case for CVE-2012-5581 work on all platforms
+Resolves: #885311
+
+* 二 12月 11 2012 Tom Lane <tgl@redhat.com> 3.9.4-8
+- Fix incomplete patch for CVE-2012-3401
+- Add libtiff-tiffinfo-exif.patch so that our test case for CVE-2012-5581 works
+  with pre-4.0.2 libtiff
+Resolves: #885311
+
+* 一 12月 10 2012 Tom Lane <tgl@redhat.com> 3.9.4-7
+- Add fixes for CVE-2012-3401, CVE-2012-4447, CVE-2012-4564, CVE-2012-5581
+Resolves: #885311
+
+* 三 6月 27 2012 Tom Lane <tgl@redhat.com> 3.9.4-6
+- Add fixes for CVE-2012-2088, CVE-2012-2113
+Resolves: #835749
+
+* 一 4月 02 2012 Tom Lane <tgl@redhat.com> 3.9.4-5
+- Add fix for CVE-2012-1173
+Resolves: #CVE-2012-1173
+
+* 三 4月 13 2011 Tom Lane <tgl@redhat.com> 3.9.4-4
+- Add fix for CVE-2009-5022
+Resolves: #696144
+
+* 五 3月 18 2011 Tom Lane <tgl@redhat.com> 3.9.4-3
+- Fix incorrect fix for CVE-2011-0192
+Resolves: #688830
+- Add fix for CVE-2011-1167
+Resolves: #688743
+
+* 三 2月 23 2011 Tom Lane <tgl@redhat.com> 3.9.4-2
+- Add fix for CVE-2011-0192
+Resolves: #679299
+
+* 一 6月 28 2010 Tom Lane <tgl@redhat.com> 3.9.4-1
+- Update to libtiff 3.9.4, for numerous bug fixes including fixes for
+  CVE-2010-1411, CVE-2010-2065, CVE-2010-2067, CVE-2010-2233
+Resolves: #606708, #588784, #589034, #603024
+- Add fixes for multiple SIGSEGV problems
+Resolves: #603081, #603699, #603703
+
+* 二 1月 12 2010 Tom Lane <tgl@redhat.com> 3.9.2-3
+- Sync with F-12, including:
+- Update to libtiff 3.9.2; stop carrying a lot of old patches
+- Apply Warmerdam's partial fix for bug #460322 ... better than nothing.
+- Use build system's libtool instead of what package contains;
+  among other cleanup this gets rid of unwanted rpath specs in executables
+- add sparc/sparc64 to multilib header support
+- Apply Adam Goode's fix for Warmerdam's fix
+Resolves: #552360
+Resolves: #533353
+- Add some defenses to prevent tiffcmp from crashing on downsampled JPEG
+  images; this isn't enough to make it really work correctly though
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 3.8.2-15.1
+- Rebuilt for RHEL 6
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.8.2-15
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 13 2009 Tom Lane <tgl@redhat.com> 3.8.2-14
+- Fix buffer overrun risks caused by unchecked integer overflow (CVE-2009-2347)
+Related: #510041
+
+* 三 7月 01 2009 Tom Lane <tgl@redhat.com> 3.8.2-13
+- Fix some more LZW decoding vulnerabilities (CVE-2009-2285)
+Related: #507465
+- Update upstream URL
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.8.2-12
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 8月 26 2008 Tom Lane <tgl@redhat.com> 3.8.2-11
+- Fix LZW decoding vulnerabilities (CVE-2008-2327)
+Related: #458674
+- Use -fno-strict-aliasing per rpmdiff recommendation
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 3.8.2-10
+- Autorebuild for GCC 4.3
+
+* 三 8月 22 2007 Tom Lane <tgl@redhat.com> 3.8.2-9
+- Update License tag
+- Rebuild to fix Fedora toolchain issues
+
+* 四 7月 19 2007 Tom Lane <tgl@redhat.com> 3.8.2-8
+- Restore static library to distribution, in a separate -static subpackage
+Resolves: #219905
+- Don't apply multilib header hack to unrecognized architectures
+Resolves: #233091
+- Remove documentation for programs we don't ship
+Resolves: #205079
+Related: #185145
+
+* 二 1月 16 2007 Tom Lane <tgl@redhat.com> 3.8.2-7
+- Remove Makefiles from the shipped /usr/share/doc/html directories
+Resolves: bz #222729
+
+* 二 9月 05 2006 Jindrich Novy <jnovy@redhat.com> - 3.8.2-6
+- fix CVE-2006-2193, tiff2pdf buffer overflow (#194362)
+- fix typo in man page for tiffset (#186297)
+- use %{?dist}
+
+* 一 7月 24 2006 Matthias Clasen <mclasen@redhat.com>
+- Fix several vulnerabilities (CVE-2006-3460 CVE-2006-3461
+  CVE-2006-3462 CVE-2006-3463 CVE-2006-3464 CVE-2006-3465)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.8.2-4.1
+- rebuild
+
+* 五 6月 02 2006 Matthias Clasen <mclasen@redhat.com> - 3.8.2-3
+- Fix multilib conflict
+
+* 四 5月 25 2006 Matthias Clasen <mclasen@redhat.com> - 3.8.2-3
+- Fix overflows in tiffsplit
+
+* 三 4月 26 2006 Matthias Clasen <mclasen@redhat.com> - 3.8.2-2
+- Drop tiffgt to get rid of the libGL dependency (#190768)
+
+* 三 4月 26 2006 Matthias Clasen <mclasen@redhat.com> - 3.8.2-1
+- Update to 3.8.2
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.7.4-3.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.7.4-3.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 16 2005 Matthias Clasen <mclasen@redhat.com> 3.7.4-3
+- Don't ship static libs
+
+* 五 11月 11 2005 Matthias Saou <http://freshrpms.net/> 3.7.4-2
+- Remove useless explicit dependencies.
+- Minor spec file cleanups.
+- Move make check to %check.
+- Add _smp_mflags.
+
+* 四 9月 29 2005 Matthias Clasen <mclasen@redhat.com> - 3.7.4-1
+- Update to 3.7.4
+- Drop upstreamed patches
+
+* 三 6月 29 2005 Matthias Clasen <mclasen@redhat.com> - 3.7.2-1
+- Update to 3.7.2
+- Drop upstreamed patches
+
+* 五 5月 06 2005 Matthias Clasen <mclasen@redhat.com> - 3.7.1-6
+- Fix a stack overflow
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com> - 3.7.1-5
+- Don't use mktemp
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com> - 3.7.1-4
+- Rebuild with gcc4
+
+* 三 1月 05 2005 Matthias Clasen <mclasen@redhat.com> - 3.7.1-3
+- Drop the largefile patch again
+- Fix a problem with the handling of alpha channels
+- Fix an integer overflow in tiffdump (#143576)
+
+* 三 12月 22 2004 Matthias Clasen <mclasen@redhat.com> - 3.7.1-2
+- Readd the largefile patch (#143560)
+
+* 三 12月 22 2004 Matthias Clasen <mclasen@redhat.com> - 3.7.1-1
+- Upgrade to 3.7.1
+- Remove upstreamed patches
+- Remove specfile cruft
+- make check
+
+* 四 10月 14 2004 Matthias Clasen <mclasen@redhat.com> 3.6.1-7
+- fix some integer and buffer overflows (#134853, #134848)
+
+* 二 10月 12 2004 Matthias Clasen <mclasen@redhat.com> 3.6.1-6
+- fix http://bugzilla.remotesensing.org/show_bug.cgi?id=483
+
+* 一 9月 27 2004 Rik van Riel <riel@redhat.com> 3.6.1-4
+- compile using RPM_OPT_FLAGS (bz #133650)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 20 2004 Matthias Clasen <mclasen@redhat.com> 3.6.1-2
+- Fix and use the makeflags patch
+
+* 三 5月 19 2004 Matthias Clasen <mclasen@redhat.com> 3.6.1-1
+- Upgrade to 3.6.1
+- Adjust patches
+- Don't install tiffgt man page  (#104864)
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 2月 21 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- really add symlink to shared lib by running ldconfig at compile time
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 10月 09 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- link shared lib against -lm (Jakub Jelinek)
+
+* 四 9月 25 2003 Jeremy Katz <katzj@redhat.com> 3.5.7-13
+- rebuild to fix gzipped file md5sum (#91281)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 11 2003 Phil Knirsch <pknirsch@redhat.com> 3.5.7-11
+- Fixed rebuild problems.
+
+* 二 2月 04 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- add symlink to shared lib
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 12 2002 Tim Powers <timp@redhat.com> 3.5.7-8
+- rebuild on all arches
+
+* 一 8月 19 2002 Phil Knirsch <pknirsch@redhat.com> 3.5.7-7
+- Added LFS support (#71593)
+
+* 二 6月 25 2002 Phil Knirsch <pknirsch@redhat.com> 3.5.7-6
+- Fixed wrong exit code of tiffcp app (#67240)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 5月 15 2002 Phil Knirsch <pknirsch@redhat.com>
+- Fixed segfault in fax2tiff tool (#64708).
+
+* 一 2月 25 2002 Phil Knirsch <pknirsch@redhat.com>
+- Fixed problem with newer bash versions setting CDPATH (#59741)
+
+* 二 2月 19 2002 Phil Knirsch <pknirsch@redhat.com>
+- Update to current release 3.5.7
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 8月 28 2001 Phil Knirsch <phil@redhat.de>
+- Fixed ia64 problem with tiffinfo. Was general 64 bit arch problem where s390x
+  and ia64 were missing (#52129).
+
+* 二 6月 26 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Hopefully final symlink fix
+
+* 四 6月 21 2001 Than Ngo <than@redhat.com>
+- add missing libtiff symlink
+
+* 五 3月 16 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- killed tiff-to-ps.fpi filter
+
+* 三 2月 28 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed missing devel version dependancy.
+
+* 二 12月 19 2000 Philipp Knirsch <pknirsch@redhat.de>
+- rebuild
+
+* 一 8月 07 2000 Crutcher Dunnavant <crutcher@redhat.com>
+- added a tiff-to-ps.fpi filter for printing
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 四 7月 13 2000 Nalin Dahyabhai <nalin@redhat.com>
+- apply Peter Skarpetis's fix for the 32-bit conversion
+
+* 一 7月 03 2000 Nalin Dahyabhai <nalin@redhat.com>
+- make man pages non-executable (#12811)
+
+* 一 6月 12 2000 Nalin Dahyabhai <nalin@redhat.com>
+- remove CVS repo info from data directories
+
+* 四 5月 18 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix build rooting
+- fix syntax error in configure script
+- move man pages to {_mandir}
+
+* 三 5月 17 2000 Nalin Dahyabhai <nalin@redhat.com>
+- rebuild for an errata release
+
+* 三 3月 29 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 3.5.5, which integrates our fax2ps fixes and the glibc fix
+
+* 二 3月 28 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix fax2ps swapping height and width in the bounding box
+
+* 一 3月 27 2000 Nalin Dahyabhai <nalin@redhat.com>
+- move man pages from devel package to the regular one
+- integrate Frank Warmerdam's fixed .fax handling code (keep until next release
+  of libtiff)
+- fix fax2ps breakage (bug #8345)
+
+* 六 2月 05 2000 Nalin Dahyabhai <nalin@redhat.com>
+- set MANDIR=man3 to make multifunction man pages friendlier
+
+* 一 1月 31 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix URLs
+
+* 五 1月 28 2000 Nalin Dahyabhai <nalin@redhat.com>
+- link shared library against libjpeg and libz
+
+* 二 1月 18 2000 Nalin Dahyabhai <nalin@redhat.com>
+- enable zip and jpeg codecs
+- change defattr in normal package to 0755
+- add defattr to -devel package
+
+* 三 12月 22 1999 Bill Nottingham <notting@redhat.com>
+- update to 3.5.4
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com>
+- auto rebuild in the new build environment (release 6)
+
+* 三 1月 13 1999 Cristian Gafton <gafton@redhat.com>
+- build for glibc 2.1
+
+* 三 6月 10 1998 Prospector System <bugs@redhat.com>
+- translations modified for de
+
+* 三 6月 10 1998 Michael Fulbright <msf@redhat.com>
+- rebuilt against fixed jpeg libs (libjpeg-6b)
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 一 10月 13 1997 Donnie Barnes <djb@redhat.com>
+- new version to replace the one from libgr
+- patched for glibc
+- added shlib support
+

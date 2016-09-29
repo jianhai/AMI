@@ -1,0 +1,17 @@
+boost-date-time = 1.41.0-11.4.alios6.2
+boost-filesystem = 1.41.0-11.4.alios6.2
+boost-graph = 1.41.0-11.4.alios6.2
+boost-iostreams = 1.41.0-11.4.alios6.2
+boost-program-options = 1.41.0-11.4.alios6.2
+boost-python = 1.41.0-11.4.alios6.2
+boost-regex = 1.41.0-11.4.alios6.2
+boost-serialization = 1.41.0-11.4.alios6.2
+boost-signals = 1.41.0-11.4.alios6.2
+boost-system = 1.41.0-11.4.alios6.2
+boost-test = 1.41.0-11.4.alios6.2
+boost-thread = 1.41.0-11.4.alios6.2
+boost-wave = 1.41.0-11.4.alios6.2
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,149 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.2.0-8.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.2.0-8.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.2.0-8.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.2.0-8.1
+- rebuild for alios6
+
+* 一 8月 16 2010 Steve Dickson <steved@redhat.com> - 0.2.0-8
+- Moved caching files to /var/cache (bz 599705)
+
+* 四 7月 15 2010 Steve Dickson <steved@redhat.com> - 0.2.0-7
+- More initscript LSB compliant updates (bz 578415)
+
+* 二 7月 13 2010 Steve Dickson <steved@redhat.com> - 0.2.0-6
+- Made initscript LSB compliant (bz 578415)
+
+* 四 6月 03 2010 Jeff Layton <jlayton@redhat.com> - 0.2.0-5
+- set SO_REUSEADDR on NC_TPI_COTS sockets (bz 597356)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.2.0-4.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 06 2009 Adam Jackson <ajax@redhat.com> 0.2.0-3
+- Requires(pre): coreutils for cut(1).
+
+* 四 6月 25 2009 Steve Dickson <steved@redhat.com> - 0.2.0-2
+- Fixed pre scriptle failure during upgrades (bz 507364)
+- Corrected the usage info to match what the rpcbind man
+    page says. (bz 466332)
+- Correct package issues (bz 503508)
+
+* 五 5月 29 2009 Steve Dickson <steved@redhat.com> - 0.2.0-1
+- Updated to latest upstream release: 0.2.0
+
+* 二 5月 19 2009 Tom "spot" Callaway <tcallawa@redhat.com> - 0.1.7-3
+- Replace the Sun RPC license with the BSD license, with the explicit permission of Sun Microsystems
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 11月 19 2008 Steve Dickson <steved@redhat.com>  0.1.7-1
+- Update to latest upstream release: 0.1.7
+
+* 二 9月 30 2008 Steve Dickson <steved@redhat.com>  0.1.6-3
+- Fixed a typo in the rpcbind.init script that stop warm starts
+  from happening with conrestarts
+- Fixed scriptlet failure (bz 462533)
+
+* 二 9月 16 2008 Steve Dickson <steved@redhat.com> 0.1.6-2
+- Added usptream patches 01 thru 03 that do:
+    * Introduce helpers for ipprot/netid mapping
+    * Change how we decide on the netids to use for portmap
+    * Simplify port live check in pmap_svc.c
+
+* 三 7月 09 2008 Steve Dickson <steved@redhat.com> 0.1.6-1
+- Updated to latest upstream release 0.1.6
+
+* 三 7月 02 2008 Steve Dickson <steved@redhat.com> 0.1.5-5
+- Fixed SYNOPSIS section in the rpcinfo man page (bz 453729)
+
+* 五 6月 27 2008 Steve Dickson <steved@redhat.com> 0.1.5-4
+- Removed the documentation about the non-existent 
+  '-L' flag (bz 446915)
+
+* 五 6月 27 2008 Steve Dickson <steved@redhat.com> 0.1.5-3
+- Set password and service lookups to be local (bz 447092)
+
+* 一 6月 23 2008 Steve Dickson <steved@redhat.com> 0.1.5-2
+- rpcbind needs to downgrade to non-priviledgied group.
+
+* 一 6月 23 2008 Steve Dickson <steved@redhat.com> 0.1.5-1
+- Updated to latest upstream release 0.1.5
+
+* 一 2月 11 2008 Steve Dickson <steved@redhat.com> 0.1.4-14
+- Fixed a warning in pmap_svc.c
+- Cleaned up warmstarts so uid are longer needed, also
+  changed condrestarts to use warmstarts. (bz 428496)
+
+* 四 1月 24 2008 Steve Dickson <steved@redhat.com> 0.1.4-13
+- Fixed connectivity with Mac OS clients by making sure handle_reply()
+  sets the correct fromlen in its recvfrom() call (bz 244492)
+
+* 一 12月 17 2007 Steve Dickson <steved@redhat.com> 0.1.4-12
+- Changed is_loopback() and check_access() see if the calling
+  address is an address on a local interface, just not a loopback
+  address (bz 358621).
+
+* 三 10月 17 2007 Steve Dickson <steved@redhat.com> 0.1.4-11
+- Reworked logic in initscript so the correct exit is 
+  used when networking does not exist or is set up
+  incorrectly.
+
+* 二 10月 16 2007 Steve Dickson <steved@redhat.com> 0.1.4-10
+- Corrected a typo in the initscript from previous 
+  commit.
+
+* 一 10月 15 2007 Steve Dickson <steved@redhat.com> 0.1.4-9
+- Fixed typo in Summary (bz 331811)
+- Corrected init script (bz 247046)
+
+* 六 9月 15 2007 Steve Dickson <steved@redhat.com> 0.1.4-8
+- Fixed typo in init script (bz 248285)
+- Added autoconf rules to turn on secure host checking
+  via libwrap. Also turned on host check by default (bz 248284)
+- Changed init script to start service in runlevel 2 (bz 251568)
+- Added a couple missing Requires(pre) (bz 247134)
+
+* 五 5月 25 2007 Steve Dickson <steved@redhat.com> 0.1.4-7
+- Fixed condrestarts (bz 241332)
+
+* 二 5月 22 2007 Steve Dickson <steved@redhat.com> 0.1.4-6
+- Fixed an ipv6 related segfault on startup (bz 240873)
+
+* 三 4月 18 2007 Steve Dickson <steved@redhat.com> 0.1.4-5
+- Added dependency on setup which contains the correct
+  rpcbind /etc/service entry which in turns stops 
+  rpcbind from haning when NIS is enabled. (bz 236865)
+
+* 三 4月 11 2007 Jeremy Katz <katzj@redhat.com> - 0.1.4-4
+- change man-pages requires into a conflicts as we don't have to have 
+  man-pages installed, but if we do, we need the newer version
+
+* 五 4月 06 2007 Steve Dickson <steved@redhat.com> 0.1.4-3
+- Fixed the Provides and Obsoletes statments to correctly
+  obsolete the portmap package.
+
+* 二 4月 03 2007 Steve Dickson <steved@redhat.com> 0.1.4-2
+- Added dependency on glibc-common which allows the
+  rpcinfo command to be installed in the correct place.
+- Added dependency on man-pages so the rpcinfo man 
+  pages don't conflict.
+- Added the creation of /var/lib/rpcbind which will be
+  used to store state files.
+- Make rpcbind run with the 'rpc' uid/gid when it exists.
+
+* 三 2月 21 2007 Steve Dickson <steved@redhat.com> 0.1.4-1
+- Initial commit
+- Spec reviewed (bz 228894)
+- Added the Provides/Obsoletes which should
+  cause rpcbind to replace portmapper
+

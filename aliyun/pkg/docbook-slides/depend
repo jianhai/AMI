@@ -1,0 +1,14 @@
+/bin/sh  
+/bin/sh  
+config(docbook-slides) = 3.4.0-9.3.alios6
+docbook-dtds  
+docbook-simple  
+docbook-xsl  
+libxml2 >= 2.4.8
+libxml2 >= 2.4.8
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+sed  
+sgml-common  
+rpmlib(PayloadIsXz) <= 5.2-1

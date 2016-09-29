@@ -1,0 +1,21 @@
+Name        : mailcap                      Relocations: (not relocatable)
+Version     : 2.1.31                            Vendor: Alibaba
+Release     : 2.3.alios6                    Build Date: 2014年07月26日 星期六 16时27分50秒
+Install Date: 2015年03月25日 星期三 10时59分16秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Base       Source RPM: mailcap-2.1.31-2.3.alios6.src.rpm
+Size        : 52877                            License: Public Domain and MIT
+Signature   : RSA/8, 2014年07月31日 星期四 17时30分01秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://git.fedoraproject.org/git/mailcap.git
+Summary     : Helper application and MIME type associations for file types
+Description :
+The mailcap file is used by the metamail program.  Metamail reads the
+mailcap file to determine how it should display non-text or multimedia
+material.  Basically, mailcap associates a particular type of file
+with a particular program that a mail agent or other program can call
+in order to handle the file.  Mailcap should be installed to allow
+certain programs to be able to handle non-text files.
+
+Also included in this package is the mime.types file which contains a
+list of MIME types and their filename "extension" associations, used
+by several applications e.g. to determine MIME types for filenames.

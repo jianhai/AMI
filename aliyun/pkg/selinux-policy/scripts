@@ -1,0 +1,38 @@
+postinstall scriptlet (using /bin/sh):
+if [ ! -s /etc/selinux/config ]; then
+#
+#     New install so we will default to targeted policy
+#
+echo "
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=enforcing
+# SELINUXTYPE= can take one of these two values:
+#     targeted - Targeted processes are protected,
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted 
+
+" > /etc/selinux/config
+
+     ln -sf ../selinux/config /etc/sysconfig/selinux 
+     restorecon /etc/selinux/config 2> /dev/null || :
+else
+     . /etc/selinux/config
+     # if first time update booleans.local needs to be copied to sandbox
+     [ -f /etc/selinux/${SELINUXTYPE}/booleans.local ] && mv /etc/selinux/${SELINUXTYPE}/booleans.local /etc/selinux/targeted/modules/active/
+     [ -f /etc/selinux/${SELINUXTYPE}/seusers ] && cp -f /etc/selinux/${SELINUXTYPE}/seusers /etc/selinux/${SELINUXTYPE}/modules/active/seusers
+fi
+exit 0
+postuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+     setenforce 0 2> /dev/null
+     if [ ! -s /etc/selinux/config ]; then
+          echo "SELINUX=disabled" > /etc/selinux/config
+     else
+          sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config
+     fi
+fi
+exit 0

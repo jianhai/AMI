@@ -1,0 +1,12 @@
+postinstall scriptlet (using /bin/sh):
+{
+   mkfontscale /usr/share/fonts/default/ghostscript
+   mkfontdir /usr/share/fonts/default/ghostscript
+   fc-cache /usr/share/fonts
+} &> /dev/null || :
+postuninstall scriptlet (using /bin/sh):
+{
+   if [ "$1" = "0" ]; then
+      fc-cache /usr/share/fonts
+   fi
+} &> /dev/null || :

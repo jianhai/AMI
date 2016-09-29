@@ -1,0 +1,252 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0-3.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 6.0-3.1
+- rebuild for alios6
+
+* 二 8月 25 2009 Miroslav Lichvar <mlichvar@redhat.com> 6.0-3
+- include patch 004
+- suppress install-info errors (#515910)
+- remove dir* in infodir after install (#492097)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 6.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 14 2009 Miroslav Lichvar <mlichvar@redhat.com> 6.0-1
+- update to 6.0
+- include patches 001, 002, 003
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.2-14
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 3月 23 2008 Jan Kratochvil <jan.kratochvil@redhat.com> - 5.2-13
+- Fix the previous %changelog entry authorship.
+
+* 日 3月 23 2008 Jan Kratochvil <jan.kratochvil@redhat.com> - 5.2-12
+- Fix excessive prompts on CTRL-C abort while the prompt is being printed.
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 5.2-11
+- Autorebuild for GCC 4.3
+
+* 五 1月 18 2008 Miroslav Lichvar <mlichvar@redhat.com> 5.2-10
+- move libreadline to /lib
+
+* 四 1月 03 2008 Miroslav Lichvar <mlichvar@redhat.com> 5.2-9
+- include upstream patches 008-011
+
+* 一 11月 05 2007 Miroslav Lichvar <mlichvar@redhat.com> 5.2-8
+- fix cursor position when prompt has one invisible character (#358231)
+- merge review fixes (#226361)
+- fix source URL
+
+* 一 8月 27 2007 Miroslav Lichvar <mlichvar@redhat.com> 5.2-7
+- include patches 005, 006, 007
+
+* 三 8月 22 2007 Miroslav Lichvar <mlichvar@redhat.com> 5.2-6
+- update license tag
+
+* 二 5月 29 2007 Miroslav Lichvar <mlichvar@redhat.com> 5.2-5
+- include patches 5.2-003, 5.2-004
+
+* 四 3月 22 2007 Miroslav Lichvar <mlichvar@redhat.com> 5.2-4
+- apply 5.2-002 patch
+
+* 四 3月 15 2007 Miroslav Lichvar <mlichvar@redhat.com> 5.2-3
+- link libreadline with libtinfo (#232277)
+- include upstream 5.2-001 patch
+- move static libraries to -static subpackage, spec cleanup
+
+* 四 11月 30 2006 Miroslav Lichvar <mlichvar@redhat.com> 5.2-2
+- require ncurses-devel instead of libtermcap-devel
+
+* 一 11月 13 2006 Miroslav Lichvar <mlichvar@redhat.com> 5.2-1
+- update to 5.2 (#213795)
+- use CFLAGS when linking (#199374)
+- package docs and examples (#172497)
+- spec cleanup
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 5.1-1.1
+- rebuild
+
+* 一 7月 10 2006 Jindrich Novy <jnovy@redhat.com> 5.1-1
+- update to readline-5.1
+- apply new proposed upstream patches for 5.1 (001-004)
+- drop "read -e" patch, applied upstream
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 5.0-3.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 5.0-3.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 5.0-3
+- Rebuild for new GCC.
+
+* 二 1月 18 2005 Tim Waugh <twaugh@redhat.com> 5.0-2
+- Fix line-wrapping (bug #145329).
+- Apply "read -e" patch from bash package.
+
+* 三 1月 12 2005 Tim Waugh <twaugh@redhat.com> 5.0-1
+- 5.0 (bug #144835).
+
+* 一 11月 29 2004 Tim Waugh <twaugh@redhat.com> 4.3-14
+- Added URL tag (bug #141106).
+
+* 四 9月 02 2004 Jeremy Katz <katzj@redhat.com> - 4.3-13
+- rebuild so that static linking against readline will work on ppc64 
+  without dot symbols
+
+* 一 6月 28 2004 Tim Waugh <twaugh@redhat.com> 4.3-12
+- Build requires libtool (bug #126589).
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 11月 28 2003 Thomas Woerner <twoerner@redhat.com> 4.3-9
+- removed rpath
+
+* 四 11月 06 2003 Tim Waugh <twaugh@redhat.com> 4.3-8
+- Apply upstream patches (bug #109240 among others).
+
+* 三 6月 25 2003 Tim Waugh <twaugh@redhat.com>
+- devel package requires libtermcap-devel (bug #98015).
+
+* 三 6月 25 2003 Tim Waugh <twaugh@redhat.com> 4.3-7
+- Fixed recursion loop (bug #92372).
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 11月 20 2002 Tim Powers <timp@redhat.com>
+- rebuild in current collinst
+- BuildRequires autoconf only
+
+* 三 8月 07 2002 Phil Knirsch <pknirsch@redhat.com> 4.3-3
+- Fixed Esc-O-M stack overflow bug.
+
+* 一 7月 22 2002 Phil Knirsch <pknirsch@redhat.com> 4.3-1
+- Updated to latest readline release 4.3
+
+* 四 7月 11 2002 Phil Knirsch <pknirsch@redhat.com> 4.2a-7
+- Fixed problem with alpha build.
+
+* 三 7月 10 2002 Phil Knirsch <pknirsch@redhat.com>
+- Fixed utf8 problem (originally observed in bash).
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 4.2a-6
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com> 4.2a-5
+- automated rebuild
+
+* 三 3月 20 2002 Trond Eivind Glomsrød <teg@redhat.com> 4.2a-4
+- Use autoconf 2.53, not 2.52
+
+* 一 3月 04 2002 Bernhard Rosenkraenzer <bero@redhat.com> 4.2a-3
+- Rebuild
+
+* 一 11月 26 2001 Matt Wilson <msw@redhat.com> 4.2a-2
+- removed the manual symlinking of .so, readline handles this by itself
+- call only %makeinstall, not %makeinstall install install-shared as
+  this makes bogus .old files in the buildroot
+
+* 二 11月 20 2001 Bernhard Rosenkraenzer <bero@redhat.com> 4.2a-1
+- 4.2a
+
+* 二 10月 02 2001 Bernhard Rosenkraenzer <bero@redhat.com> 4.2-4
+- Work around autoconf bug
+
+* 一 10月 01 2001 Bernhard Rosenkraenzer <bero@redhat.com> 4.2-3
+- Don't use readline's internal re-implementation of strpbrk on systems
+  that have strpbrk - the system implementation is faster and better maintained.
+
+* 二 8月 07 2001 Bernhard Rosenkraenzer <bero@redhat.com> 4.2-2
+- Make sure headers can be included from C++ applications (#51131)
+  (Patch based on Debian's with the bugs removed ;) )
+
+* 三 5月 09 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 4.2 and adapt patches
+
+* 五 4月 06 2001 Nalin Dahyabhai <nalin@redhat.com>
+- change the paths listed for the header files in the man page to reflect
+  the location changes from previous versions (#35073)
+- note that "on" is acceptable instead of "On" in the man page (#21327)
+
+* 四 3月 08 2001 Preston Brown <pbrown@redhat.com>
+- fix reading of end key termcap value (@7 is correct, was kH) (#30884)
+
+* 二 1月 30 2001 Nalin Dahyabhai <nalin@redhat.com>
+- mark the man page as currently out-of-date (#25294)
+
+* 四 9月 07 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging (64bit systems need to use libdir).
+
+* 四 8月 17 2000 Jeff Johnson <jbj@redhat.com>
+- summaries from specspo.
+
+* 三 8月 02 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- use "rm -f" in specfile
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 05 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 二 3月 21 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 4.1
+
+* 四 2月 03 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 4.0
+
+* 五 4月 09 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added guard patch from Taneli Huuskonen <huuskone@cc.helsinki.fi>
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 日 7月 26 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 2.2.1
+
+* 三 5月 06 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 三 5月 06 1998 Cristian Gafton <gafton@redhat.com>
+- don't package /usr/info/dir
+
+* 四 4月 30 1998 Cristian Gafton <gafton@redhat.com>
+- devel package moved to Development/Libraries
+
+* 二 4月 21 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 2.2
+
+* 二 10月 14 1997 Donnie Barnes <djb@redhat.com>
+- spec file cleanups
+
+* 五 10月 10 1997 Erik Troan <ewt@redhat.com>
+- added proper sonames
+
+* 二 7月 08 1997 Erik Troan <ewt@redhat.com>
+- updated to readline 2.1
+
+* 二 6月 03 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

@@ -1,0 +1,11 @@
+/usr/bin/perl  
+openjade  
+perl(:MODULE_COMPAT_5.10.1)  
+perl(Carp)  
+perl(Exporter)  
+perl(SGMLS)  
+perl(SGMLS::Output)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

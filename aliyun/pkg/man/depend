@@ -1,0 +1,24 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+bzip2  
+config(man) = 1.6f-29.3.alios6
+coreutils  
+findutils  
+groff >= 1.18
+gzip  
+less  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+lzma  
+mktemp >= 1.5-2.1.5x
+nroff-i18n  
+rpm  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

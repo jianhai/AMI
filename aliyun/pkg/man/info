@@ -1,0 +1,20 @@
+Name        : man                          Relocations: (not relocatable)
+Version     : 1.6f                              Vendor: Alibaba
+Release     : 29.3.alios6                   Build Date: 2014年07月26日 星期六 16时54分38秒
+Install Date: 2015年03月25日 星期三 11时00分27秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Base       Source RPM: man-1.6f-29.3.alios6.src.rpm
+Size        : 398396                           License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 17时30分18秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://primates.ximian.com/~flucifredi/man/
+Summary     : A set of documentation tools: man, apropos and whatis
+Description :
+The man package includes three tools for finding information and/or
+documentation about your Linux system: man, apropos, and whatis. The
+man system formats and displays on-line manual pages about commands or
+functions on your system. Apropos searches the whatis database
+(containing short descriptions of system commands) for a string.
+Whatis searches its own database for a complete word.
+
+The man package should be installed on your system because it is the
+primary way to find documentation on a Linux system.

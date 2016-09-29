@@ -1,0 +1,37 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+ConsoleKit  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libdl.so.2()(64bit)  
+libfprint.so.0()(64bit)  
+libgdk_pixbuf-2.0.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libnspr4.so()(64bit)  
+libnss3.so()(64bit)  
+libnss3.so(NSS_3.2)(64bit)  
+libnss3.so(NSS_3.3)(64bit)  
+libnssutil3.so()(64bit)  
+libplc4.so()(64bit)  
+libplds4.so()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+libsmime3.so()(64bit)  
+libssl3.so()(64bit)  
+libusb-1.0.so.0()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,71 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3.0-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3.0-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.3.0-2.1
+- rebuild for alios6
+
+* 五 8月 27 2010 Jan Horak <jhorak@redhat.com> - 0.3.0-2
+- Rebuild against newer gecko
+
+* 四 9月 24 2009 kwizart < kwizart at gmail.com > - 0.3.0-1
+- Update to 0.3.0
+
+* 四 9月 17 2009 kwizart < kwizart at gmail.com > - 0.2.3-12
+- Remove Requirement of %{name}-pac virtual provides 
+  from the main package - #524043
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.3-11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 3月 09 2009 kwizart < kwizart at gmail.com > - 0.2.3-10
+- Rebuild for webkit
+- Raise requirement for xulrunner to 1.9.1
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.3-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 22 2009 kwizart < kwizart at gmail.com > - 0.2.3-8
+- Merge NetworkManager module into the main libproxy package
+- Main Requires the -python and -bin subpackage 
+ (splitted for multilibs compliance).
+
+* 五 10月 24 2008 kwizart < kwizart at gmail.com > - 0.2.3-7
+- Disable Gnome/KDE default support via builtin modules.
+ (it needs to be integrated via Gconf2/neon instead).
+
+* 二 10月 21 2008 kwizart < kwizart at gmail.com > - 0.2.3-6
+- Disable Obsoletes.
+- Requires ev instead of evr for optionnals sub-packages.
+
+* 二 10月 21 2008 kwizart < kwizart at gmail.com > - 0.2.3-5
+- Use conditionals build.
+
+* 一 9月 15 2008 kwizart < kwizart at gmail.com > - 0.2.3-4
+- Remove plugin- in the name of the packages
+
+* 一 8月 04 2008 kwizart < kwizart at gmail.com > - 0.2.3-3
+- Move proxy.h to libproxy/proxy.h
+  This will prevent it to be included in the default include path
+- Split main to libs and util and use libproxy to install all
+
+* 一 8月 04 2008 kwizart < kwizart at gmail.com > - 0.2.3-2
+- Rename binding-python to python
+- Add Requires: gecko-libs >= %{gecko_version}
+- Fix some descriptions
+- Add plugin-webkit package
+
+* 五 7月 11 2008 kwizart < kwizart at gmail.com > - 0.2.3-1
+- Convert to Fedora spec
+
+* 五 6月 06 2008 - dominique-rpm@leuenberger.net
+- Updated to version 0.2.3
+
+* 三 6月 04 2008 - dominique-rpm@leuenberger.net
+- Extended spec file to build all available plugins
+
+* 二 6月 03 2008 - dominique-rpm@leuenberger.net
+- Initial spec file for Version 0.2.2
+

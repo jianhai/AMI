@@ -1,0 +1,20 @@
+Name        : at                           Relocations: (not relocatable)
+Version     : 3.1.10                            Vendor: Alibaba
+Release     : 43.3.alios6                   Build Date: 2014年07月26日 星期六 00时34分12秒
+Install Date: 2015年03月25日 星期三 11时00分06秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Daemons    Source RPM: at-3.1.10-43.3.alios6.src.rpm
+Size        : 93908                            License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时10分09秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://ftp.debian.org/debian/pool/main/a/at
+Summary     : Job spooling tools
+Description :
+At and batch read commands from standard input or from a specified
+file. At allows you to specify that a command will be run at a
+particular time. Batch will execute commands when the system load
+levels drop to a particular level. Both commands use user's shell.
+
+You should install the at package if you need a utility for
+time-oriented job control. Note: If it is a recurring job that will
+need to be repeated at the same time every day/week, etc. you should
+use crontab instead.

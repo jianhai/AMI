@@ -1,0 +1,17 @@
+Name        : gawk                         Relocations: (not relocatable)
+Version     : 3.1.7                             Vendor: Alibaba
+Release     : 6.3.alios6                    Build Date: 2014年07月26日 星期六 04时37分06秒
+Install Date: 2015年03月25日 星期三 10时59分28秒      Build Host: x86-004.build.alibaba
+Group       : Applications/Text             Source RPM: gawk-3.1.7-6.3.alios6.src.rpm
+Size        : 2036440                          License: GPLv3+
+Signature   : RSA/8, 2014年07月31日 星期四 16时30分33秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnu.org/software/gawk/gawk.html
+Summary     : The GNU version of the awk text processing utility
+Description :
+The gawk package contains the GNU version of awk, a text processing
+utility. Awk interprets a special-purpose programming language to do
+quick and easy text pattern matching and reformatting jobs.
+
+Install the gawk package if you need a text processing utility. Gawk is
+considered to be a standard Linux tool for processing text.

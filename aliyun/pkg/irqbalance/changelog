@@ -1,0 +1,163 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:0.55-29.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:0.55-29.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2:0.55-29.1
+- rebuild for alios6
+
+* 二 9月 07 2010 Anton Arapov <aarapov@redhat.com> - 2:0.55-29
+- Add -fPIE to build to enable execshield support (bz 630023)
+
+* 一 8月 09 2010 Neil Horman <nhorman@redhat.com> - 2:0.55-27
+- Fix affinity hint initalization (bz 622560)
+
+* 一 8月 02 2010 Neil Horman <nhorman@redhat.com> - 2:0.55-26
+- Bump NR_CPUS to 4096 for RHEL6 (bz 617705)
+- Add affinity_hint support (bz 591515)
+
+* 三 9月 09 2009 Neil Horman <nhorman@redhat.com> - 2:0.55-25
+- Fixing BuildRequires
+
+* 五 9月 04 2009 Neil Horman <nhorman@redhat.com> - 2:0.55-24
+- Fixing irqbalance initscript (bz 521246)
+
+* 三 9月 02 2009 Neil Horman <nhorman@redhat.com> - 2:0.55-23
+- Fixing BuildRequires for new config script
+
+* 二 9月 01 2009 Neil Horman <nhorman@redhat.com> - 2:0.55-22
+- Fixing BuildRequires for new config script
+
+* 二 9月 01 2009 Neil Horman <nhorman@redhat.com> - 2:0.55-21
+- Fixing BuildRequires for new config script
+
+* 二 9月 01 2009 Neil Horman <nhorman@redhat.com> - 2:0.55-20
+- Fixing BuildRequires for new config script
+
+* 二 9月 01 2009 Neil Horman <nhorman@redhat.com> - 2:0.55-19
+- Incorporate capng (bz 520699)
+
+* 五 7月 31 2009 Peter Lemenkov <lemenkov@gmail.com> - 2:0.55-18
+- Added back accidentaly forgotten imake
+
+* 五 7月 31 2009 Peter Lemenkov <lemenkov@gmail.com> - 2:0.55-17
+- Cosmetic fixes in spec-file
+- Fixed rpmlint error in the init-script
+
+* 二 7月 28 2009 Peter Lemenkov <lemenkov@gmail.com> - 2:0.55-16
+- Many imrovements in spec-file
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:0.55-15
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 3月 06 2009 Neil Horman <nhorman@redhat.com>
+- Update spec file to build for i586 as per new build guidelines (bz 488849)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:0.55-13
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 12月 12 2008 Neil Norman <nhorman@redhat.com> - 2:0.55-12
+- Remove odd Netorking dependence from irqbalance (bz 476179)
+
+* 五 8月 01 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 2:0.55-11
+- fix license tag
+
+* 三 6月 04 2008 Neil Horman <nhorman@redhat.com> - 2:0.55-10
+- Update man page to explain why irqbalance exits on single cache (bz 449949)
+
+* 二 3月 18 2008 Neil Horman <nhorman@redhat.com> - 2:0.55-9
+- Rediff pid-file patch to not remove initial parse_cpu_tree (bz 433270)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2:0.55-8
+- Autorebuild for GCC 4.3
+
+* 四 11月 01 2007 Neil Horman <nhorman@redhat.com> - 2:0.55-7
+- Update to properly hadndle pid files (bz 355231)
+
+* 四 10月 04 2007 Neil Horman <nhorman@redhat.com> - 2:0.55-6
+- Fix irqbalance init script (bz 317219)
+
+* 五 9月 28 2007 Neil Horman <nhorman@redhat.com> - 2:0.55-5
+- Install pie patch
+- Grab Ulis cpuparse cleanup (bz 310821)
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 2:0.55-4
+- Rebuild for selinux ppc32 issue.
+
+* 四 7月 05 2007 Neil Horman <nhorman@redhat.com> - 0.55.3
+- Fixing LSB requirements (bz 246959)
+
+* 二 12月 12 2006 Neil Horman <nhorman@redhat.com> - 0.55-2
+- Fixing typos in spec file (bz 219301)
+
+* 二 12月 12 2006 Neil Horman <nhorman@redhat.com> - 0.55-1
+- Updating to version 0.55
+
+* 一 12月 11 2006 Neil Horman <nhorman@redhat.com> - 0.54-1
+- Update irqbalance to new version released at www.irqbalance.org
+
+* 三 11月 15 2006 Neil Horman <nhorman@redhat.com> - 1.13-8
+- Add ability to set default affinity mask (bz 211148)
+
+* 三 11月 08 2006 Neil Horman <nhorman@redhat.com> - 1.13-7
+- fix up irqbalance to detect multicore (not ht) (bz 211183)
+
+* 四 11月 02 2006 Neil Horman <nhorman@redhat.com> - 1.13-6
+- bumping up MAX_INTERRUPTS to support xen kernels
+- rediffing patch1 and patch3 to remove fuzz
+
+* 二 10月 17 2006 Neil Horman <nhorman@redhat.com> - 1.13-5
+- Making oneshot mean oneshot always (bz 211178)
+
+* 三 9月 13 2006 Peter Jones <pjones@redhat.com> - 1.13-4
+- Fix subsystem locking
+
+* 五 8月 18 2006 Jesse Keating <jkeating@redhat.com> - 1.13-2
+- rebuilt with latest binutils to pick up 64K -z commonpagesize on ppc*
+  (#203001)
+- Remove hack to use cvs checkin ID as release as it doesn't follow
+  packaging guidelines
+
+* 二 8月 01 2006 Neil Horman <nhorman@redhat.com>
+- Change license to GPL in version 0.13
+
+* 六 7月 29 2006 Dave Jones <davej@redhat.com>
+- identify a bunch more classes.
+
+* 五 7月 14 2006 Jesse Keating <jkeating@redhat.com>
+- rebuild
+
+* 二 7月 11 2006 Dave Jones <davej@redhat.com>
+- Further lazy rebalancing tweaks.
+
+* 日 2月 26 2006 Dave Jones <davej@redhat.com>
+- Don't rebalance IRQs where no interrupts have occured.
+
+* 日 2月 12 2006 Dave Jones <davej@redhat.com>
+- Build for ppc[64] too.
+
+* 四 2月 09 2006 Dave Jones <davej@redhat.com>
+- rebuild.
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 3月 01 2005 Dave Jones <davej@redhat.com>
+- Rebuild with gcc4
+
+* 二 2月 08 2005 Dave Jones <davej@redhat.com>
+- Build as pie, also -D_FORTIFY_SOURCE=2
+
+* 二 1月 11 2005 Dave Jones <davej@redhat.com>
+- Add missing Obsoletes: kernel-utils.
+
+* 一 1月 10 2005 Dave Jones <davej@redhat.com>
+- Start irqbalance in runlevel 2 too. (#102064)
+
+* 六 12月 18 2004 Dave Jones <davej@redhat.com>
+- Initial packaging, based on kernel-utils.
+

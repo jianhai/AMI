@@ -1,0 +1,118 @@
+* 三 7月 01 2015 Slavek Kabrda <bkabrda@redhat.com> - 7.1.0-1
+- Update to 7.1.0
+
+* 二 6月 30 2015 Ville Skyttä <ville.skytta@iki.fi> - 7.0.3-3
+- Install bash completion
+- Ship LICENSE.txt as %license where available
+
+* 四 6月 18 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.0.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
+
+* 四 6月 04 2015 Matej Stuchlik <mstuchli@redhat.com> - 7.0.3-1
+- Update to 7.0.3
+
+* 五 3月 06 2015 Matej Stuchlik <mstuchli@redhat.com> - 6.0.8-1
+- Update to 6.0.8
+
+* 四 12月 18 2014 Slavek Kabrda <bkabrda@redhat.com> - 1.5.6-5
+- Only enable tests on Fedora.
+
+* 一 12月 01 2014 Matej Stuchlik <mstuchli@redhat.com> - 1.5.6-4
+- Add tests
+- Add patch skipping tests requiring Internet access
+
+* 二 11月 18 2014 Matej Stuchlik <mstuchli@redhat.com> - 1.5.6-3
+- Added patch for local dos with predictable temp dictionary names
+  (http://seclists.org/oss-sec/2014/q4/655)
+
+* 六 6月 07 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
+* 日 5月 25 2014 Matej Stuchlik <mstuchli@redhat.com> - 1.5.6-1
+- Update to 1.5.6
+
+* 五 4月 25 2014 Matej Stuchlik <mstuchli@redhat.com> - 1.5.4-4
+- Rebuild as wheel for Python 3.4
+
+* 四 4月 24 2014 Matej Stuchlik <mstuchli@redhat.com> - 1.5.4-3
+- Disable build_wheel
+
+* 四 4月 24 2014 Matej Stuchlik <mstuchli@redhat.com> - 1.5.4-2
+- Rebuild as wheel for Python 3.4
+
+* 一 4月 07 2014 Matej Stuchlik <mstuchli@redhat.com> - 1.5.4-1
+- Updated to 1.5.4
+
+* 一 10月 14 2013 Tim Flink <tflink@fedoraproject.org> - 1.4.1-1
+- Removed patch for CVE 2013-2099 as it has been included in the upstream 1.4.1 release
+- Updated version to 1.4.1
+
+* 日 8月 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.1-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 二 7月 16 2013 Toshio Kuratomi <toshio@fedoraproject.org> - 1.3.1-4
+- Fix for CVE 2013-2099
+
+* 四 5月 23 2013 Tim Flink <tflink@fedoraproject.org> - 1.3.1-3
+- undo python2 executable rename to python-pip. fixes #958377
+- fix summary to match upstream
+
+* 一 5月 06 2013 Kevin Kofler <Kevin@tigcc.ticalc.org> - 1.3.1-2
+- Fix main package Summary, it's for Python 2, not 3 (#877401)
+
+* 五 4月 26 2013 Jon Ciesla <limburgher@gmail.com> - 1.3.1-1
+- Update to 1.3.1, fix for CVE-2013-1888.
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 二 10月 09 2012 Tim Flink <tflink@fedoraproject.org> - 1.2.1-2
+- Fixing files for python3-pip
+
+* 四 10月 04 2012 Tim Flink <tflink@fedoraproject.org> - 1.2.1-1
+- Update to upstream 1.2.1
+- Change binary from pip-python to python-pip (RHBZ#855495)
+- Add alias from python-pip to pip-python, to be removed at a later date
+
+* 二 5月 15 2012 Tim Flink <tflink@fedoraproject.org> - 1.1.0-1
+- Update to upstream 1.1.0
+
+* 六 1月 14 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 六 10月 22 2011 Tim Flink <tflink@fedoraproject.org> - 1.0.2-1
+- update to 1.0.2 and added python3 subpackage
+
+* 三 6月 22 2011 Tim Flink <tflink@fedoraproject.org> - 0.8.3-1
+- update to 0.8.3 and project home page
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.8.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 12月 20 2010 Luke Macken <lmacken@redhat.com> - 0.8.2-1
+- update to 0.8.2 of pip
+
+* 一 8月 30 2010 Peter Halliday <phalliday@excelsiorsystems.net> - 0.8-1
+- update to 0.8 of pip
+
+* 四 7月 22 2010 David Malcolm <dmalcolm@redhat.com> - 0.7.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Features/Python_2.7/MassRebuild
+
+* 三 7月 07 2010 Peter Halliday <phalliday@excelsiorsystems.net> - 0.7.2-1
+- update to 0.7.2 of pip
+
+* 日 5月 23 2010 Peter Halliday <phalliday@excelsiorsystems.net> - 0.7.1-1
+- update to 0.7.1 of pip
+
+* 五 1月 01 2010 Peter Halliday <phalliday@excelsiorsystems.net> - 0.6.1.4
+- fix dependency issue
+
+* 五 12月 18 2009 Peter Halliday <phalliday@excelsiorsystems.net> - 0.6.1-2
+- fix spec file
+
+* 四 12月 17 2009 Peter Halliday <phalliday@excelsiorsystems.net> - 0.6.1-1
+- upgrade to 0.6.1 of pip
+
+* 一 8月 31 2009 Peter Halliday <phalliday@excelsiorsystems.net> - 0.4-1
+- Initial package
+

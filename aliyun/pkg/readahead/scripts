@@ -1,0 +1,12 @@
+postinstall scriptlet (using /bin/sh):
+/etc/cron.monthly/readahead-monthly.cron
+:
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ] ; then
+ # for updating older packages with service files
+ /sbin/service readahead_later stop >/dev/null 2>&1
+ /sbin/chkconfig --del readahead_later  >/dev/null 2>&1
+ /sbin/service readahead_early stop >/dev/null 2>&1
+ /sbin/chkconfig --del readahead_early  >/dev/null 2>&1
+ :
+fi

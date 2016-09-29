@@ -1,0 +1,41 @@
+postinstall scriptlet (using /bin/sh):
+touch /etc/kdump.conf
+/sbin/chkconfig --add kdump
+# This portion of the script is temporary.  Its only here
+# to fix up broken boxes that require special settings 
+# in /etc/sysconfig/kdump.  It will be removed when 
+# These systems are fixed.
+
+if [ -d /proc/bus/mckinley ]
+then
+	# This is for HP zx1 machines
+	# They require machvec=dig on the kernel command line
+	sed -e's/\(^KDUMP_COMMANDLINE_APPEND.*\)\("$\)/\1 machvec=dig"/' \
+	/etc/sysconfig/kdump > /etc/sysconfig/kdump.new
+	mv /etc/sysconfig/kdump.new /etc/sysconfig/kdump
+elif [ -d /proc/sgi_sn ]
+then
+	# This is for SGI SN boxes
+	# They require the --noio option to kexec 
+	# since they don't support legacy io
+	sed -e's/\(^KEXEC_ARGS.*\)\("$\)/\1 --noio"/' \
+	/etc/sysconfig/kdump > /etc/sysconfig/kdump.new
+	mv /etc/sysconfig/kdump.new /etc/sysconfig/kdump
+fi
+
+if [ -f /sys/hypervisor/type ] && grep -q "xen" /sys/hypervisor/type
+then
+	# We need to put some garbage in the kdump.conf file
+	echo "Kdump_not_supported_on_Xen_domU_guest" >> /etc/kdump.conf 
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+	/sbin/service kdump stop > /dev/null 2>&1 || :
+	/sbin/chkconfig --del kdump
+fi
+exit 0
+postuninstall scriptlet (using /bin/sh):
+
+if [ "$1" -ge 1 ]; then
+	/sbin/service kdump condrestart > /dev/null 2>&1 || :
+fi

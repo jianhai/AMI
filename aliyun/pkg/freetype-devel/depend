@@ -1,0 +1,11 @@
+/bin/sh  
+/usr/bin/pkg-config  
+freetype = 2.3.11-14.2.alios6.1
+libfreetype.so.6()(64bit)  
+pkgconfig  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+zlib-devel  
+rpmlib(PayloadIsXz) <= 5.2-1

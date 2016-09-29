@@ -1,0 +1,54 @@
+preinstall scriptlet (using /bin/sh):
+# Add user and groups if necessary
+/usr/sbin/groupadd -g 90 -r postdrop 2>/dev/null
+/usr/sbin/groupadd -g 89 -r postfix 2>/dev/null
+/usr/sbin/groupadd -g 12 -r mail 2>/dev/null
+/usr/sbin/useradd -d /var/spool/postfix -s /sbin/nologin -g postfix -G mail -M -r -u 89 postfix 2>/dev/null
+exit 0
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add postfix
+
+# upgrade configuration files if necessary
+/usr/sbin/postfix set-permissions upgrade-configuration \
+	config_directory=/etc/postfix \
+	daemon_directory=/usr/libexec/postfix \
+	command_directory=/usr/sbin \
+	mail_owner=postfix \
+	setgid_group=postdrop \
+	manpage_directory=/usr/share/man \
+	sample_directory=/usr/share/doc/postfix-2.6.6/samples \
+	readme_directory=/usr/share/doc/postfix-2.6.6/README_FILES &> /dev/null
+
+/usr/sbin/alternatives --install /usr/sbin/sendmail mta /usr/sbin/sendmail.postfix 30 \
+        --slave /usr/bin/mailq mta-mailq /usr/bin/mailq.postfix \
+        --slave /usr/bin/newaliases mta-newaliases /usr/bin/newaliases.postfix \
+        --slave /etc/pam.d/smtp mta-pam /etc/pam.d/smtp.postfix \
+        --slave /usr/bin/rmail mta-rmail /usr/bin/rmail.postfix \
+	--slave /usr/lib/sendmail mta-sendmail /usr/lib/sendmail.postfix \
+        --slave /usr/share/man/man1/mailq.1.gz mta-mailqman /usr/share/man/man1/mailq.postfix.1.gz \
+        --slave /usr/share/man/man1/newaliases.1.gz mta-newaliasesman /usr/share/man/man1/newaliases.postfix.1.gz \
+        --slave /usr/share/man/man8/sendmail.8.gz mta-sendmailman /usr/share/man/man1/sendmail.postfix.1.gz \
+        --slave /usr/share/man/man5/aliases.5.gz mta-aliasesman /usr/share/man/man5/aliases.postfix.5.gz \
+	--initscript postfix
+
+# Move sasl config to new location
+if [ -f /usr/lib64/sasl2/smtpd.conf ]; then
+	mv -f /usr/lib64/sasl2/smtpd.conf /etc/sasl2/smtpd.conf
+	/sbin/restorecon /etc/sasl2/smtpd.conf 2> /dev/null
+fi
+
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+    # stop postfix silently, but only if it's running
+    /sbin/service postfix stop &>/dev/null
+    /sbin/chkconfig --del postfix
+    /usr/sbin/alternatives --remove mta /usr/sbin/sendmail.postfix
+fi
+
+exit 0
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" != 0 ]; then
+	/sbin/service postfix condrestart 2>&1 > /dev/null
+fi
+exit 0

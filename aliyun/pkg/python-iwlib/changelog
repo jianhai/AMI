@@ -1,0 +1,22 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1-1.2.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1-1.2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1-1.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.1-1.2.1
+- rebuild for alios6
+
+* 五 1月 15 2010 Harald Hoyer <harald@redhat.com> 0.1-1.2
+- built for s390/s390x (system-config-network needs it)
+- Related: rhbz#543948
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.1-1.1
+- Rebuilt for RHEL 6
+
+* 一 7月 27 2009 Jiri Popelka <jpopelka@redhat.com> - 0.1-1
+- Get iwlib code from rhpl 0.222-1
+

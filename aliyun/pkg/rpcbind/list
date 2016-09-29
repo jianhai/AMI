@@ -1,0 +1,10 @@
+/etc/rc.d/init.d/rpcbind
+/sbin/rpcbind
+/usr/sbin/rpcinfo
+/usr/share/doc/rpcbind-0.2.0
+/usr/share/doc/rpcbind-0.2.0/AUTHORS
+/usr/share/doc/rpcbind-0.2.0/ChangeLog
+/usr/share/doc/rpcbind-0.2.0/README
+/usr/share/man/man8/rpcbind.8.gz
+/usr/share/man/man8/rpcinfo.8.gz
+/var/cache/rpcbind

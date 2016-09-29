@@ -1,0 +1,57 @@
+/usr/bin/pkg-config  
+ORBit2-devel >= 2.5.1
+glib2-devel >= 2.2.0
+gtk2-devel >= 2.2.0
+libICE.so.6()(64bit)  
+libORBit-2.so.0()(64bit)  
+libSM.so.6()(64bit)  
+libX11.so.6()(64bit)  
+libart_lgpl-devel >= 2.3.8
+libart_lgpl_2.so.2()(64bit)  
+libatk-1.0.so.0()(64bit)  
+libbonobo-2.so.0()(64bit)  
+libbonobo-activation.so.4()(64bit)  
+libbonobo-devel >= 2.3.6
+libbonoboui = 2.24.2-3.3.alios6
+libbonoboui-2.so.0()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libcairo.so.2()(64bit)  
+libfontconfig.so.1()(64bit)  
+libfreetype.so.6()(64bit)  
+libgconf-2.so.4()(64bit)  
+libgdk-x11-2.0.so.0()(64bit)  
+libgdk_pixbuf-2.0.so.0()(64bit)  
+libgio-2.0.so.0()(64bit)  
+libglade2-devel >= 2.0.0
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgnome-2.so.0()(64bit)  
+libgnome-devel >= 2.13.7
+libgnomecanvas-2.so.0()(64bit)  
+libgnomecanvas-devel >= 2.0.1
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libgtk-x11-2.0.so.0()(64bit)  
+libpango-1.0.so.0()(64bit)  
+libpangocairo-1.0.so.0()(64bit)  
+libpangoft2-1.0.so.0()(64bit)  
+libpopt.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+librt.so.1()(64bit)  
+libxml2-devel >= 2.5
+libxml2.so.2()(64bit)  
+pkgconfig  
+pkgconfig(ORBit-2.0)  
+pkgconfig(glib-2.0)  
+pkgconfig(libbonobo-2.0)  
+pkgconfig(libgnome-2.0)  
+pkgconfig(libgnomecanvas-2.0)  
+pkgconfig(libxml-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

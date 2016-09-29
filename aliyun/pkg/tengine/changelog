@@ -1,0 +1,12 @@
+* 五 8月 01 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.0.2-1.2
+- rebuild for alios6-extras
+
+* 二 7月 22 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.0.2-1.1
+- rebuild for alios6-update
+
+* 四 4月 17 2014 weiyue <weiyue@taobao.com> - 1.2.0
+- change install diretory to /opt/taobao/tengine (symbolic link)
+- remove service
+- change default file privilleges
+- change beacon and tmd to dso modules
+

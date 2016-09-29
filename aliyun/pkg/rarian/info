@@ -1,0 +1,13 @@
+Name        : rarian                       Relocations: (not relocatable)
+Version     : 0.8.1                             Vendor: Alibaba
+Release     : 5.1.4.alios6                  Build Date: 2014年07月28日 星期一 03时13分35秒
+Install Date: 2015年03月25日 星期三 11时01分35秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: rarian-0.8.1-5.1.4.alios6.src.rpm
+Size        : 340260                           License: LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 18时39分38秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://rarian.freedesktop.org/
+Summary     : Documentation meta-data library
+Description :
+Rarian is a documentation meta-data library that allows access to documents,
+man pages and info pages.  It was designed as a replacement for scrollkeeper.

@@ -1,0 +1,12 @@
+postinstall scriptlet (using /bin/sh):
+touch --no-create /usr/share/icons/hicolor
+if [ -x /usr/bin/gtk-update-icon-cache ]; then
+  gtk-update-icon-cache -q /usr/share/icons/hicolor
+fi
+/sbin/ldconfig
+postuninstall scriptlet (using /bin/sh):
+touch --no-create /usr/share/icons/hicolor
+if [ -x /usr/bin/gtk-update-icon-cache ]; then
+  gtk-update-icon-cache -q /usr/share/icons/hicolor
+fi
+/sbin/ldconfig

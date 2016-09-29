@@ -1,0 +1,17 @@
+/usr/bin/intltool-extract
+/usr/bin/intltool-merge
+/usr/bin/intltool-prepare
+/usr/bin/intltool-update
+/usr/bin/intltoolize
+/usr/share/aclocal/intltool.m4
+/usr/share/doc/intltool-0.41.0
+/usr/share/doc/intltool-0.41.0/AUTHORS
+/usr/share/doc/intltool-0.41.0/COPYING
+/usr/share/doc/intltool-0.41.0/README
+/usr/share/intltool
+/usr/share/intltool/Makefile.in.in
+/usr/share/man/man8/intltool-extract.8.gz
+/usr/share/man/man8/intltool-merge.8.gz
+/usr/share/man/man8/intltool-prepare.8.gz
+/usr/share/man/man8/intltool-update.8.gz
+/usr/share/man/man8/intltoolize.8.gz

@@ -1,0 +1,18 @@
+Name        : bridge-utils                 Relocations: (not relocatable)
+Version     : 1.2                               Vendor: Alibaba
+Release     : 9.3.alios6                    Build Date: 2014年07月26日 星期六 01时11分08秒
+Install Date: 2015年03月25日 星期三 11时02分49秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Base       Source RPM: bridge-utils-1.2-9.3.alios6.src.rpm
+Size        : 58231                            License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时14分39秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://bridge.sourceforge.net/
+Summary     : Utilities for configuring the linux ethernet bridge
+Description :
+This package contains utilities for configuring the linux ethernet
+bridge. The linux ethernet bridge can be used for connecting multiple
+ethernet devices together. The connecting is fully transparent: hosts
+connected to one ethernet device see hosts connected to the other
+ethernet devices directly.
+
+Install bridge-utils if you want to use the linux ethernet bridge.

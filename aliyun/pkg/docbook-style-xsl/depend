@@ -1,0 +1,12 @@
+/bin/sh  
+/bin/sh  
+/usr/bin/env  
+docbook-dtd-xml  
+libxml2 >= 2.4.8
+libxml2 >= 2.4.8
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+xml-common >= 0.6.3-8
+rpmlib(PayloadIsXz) <= 5.2-1

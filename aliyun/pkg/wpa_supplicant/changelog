@@ -1,0 +1,316 @@
+* 四 8月 21 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:0.7.3-2.5
+- fix alios
+
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:0.7.3-2.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:0.7.3-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:0.7.3-2.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:0.7.3-2.1
+- rebuild for alios6
+
+* 二 11月 01 2011 Dan Williams <dcbw@redhat.com> - 1:0.7.3-2
+- Backport upstream SME patches for nl80211 roaming improvements (rh #713280)
+
+* 一 7月 25 2011 Jiří Klimeš <jklimes@redhat.com> - 1:0.7.3-1
+- Update to 0.7.3 - for nl80211 and background scanning (rh #713280)
+- Drop upstreamed and backported patches
+
+* 四 5月 13 2010 Dan Williams <dcbw@redhat.com> - 1:0.6.8-10
+- Remove prereq on chkconfig
+- Build GUI with qt4 for rawhide (rh #537105)
+
+* 四 5月 06 2010 Dan Williams <dcbw@redhat.com> - 1:0.6.8-9
+- Fix crash when interfaces are removed (like suspend/resume) (rh #589507)
+
+* 三 1月 06 2010 Dan Williams <dcbw@redhat.com> - 1:0.6.8-8
+- Fix handling of newer PKCS#12 files (rh #541924)
+
+* 日 11月 29 2009 Dan Williams <dcbw@redhat.com> - 1:0.6.8-7
+- Fix supplicant initscript return value (rh #521807)
+- Fix race when connecting to WPA-Enterprise/802.1x-enabled access points (rh #508509)
+- Don't double-scan when attempting to associate
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1:0.6.8-6
+- rebuilt with new openssl
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.6.8-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 5月 13 2009 Dan Williams <dcbw@redhat.com> - 1:0.6.8-4
+- Let D-Bus clients know when the supplicant is scanning
+
+* 二 5月 12 2009 Dan Williams <dcbw@redhat.com> - 1:0.6.8-3
+- Ensure the supplicant starts and ends with clean driver state
+- Handle driver disconnect spammage by forcibly clearing SSID
+- Don't switch access points unless the current association is dire (rh #493745)
+
+* 二 5月 12 2009 Dan Williams <dcbw@redhat.com> - 1:0.6.8-2
+- Avoid creating bogus Ad-Hoc networks when forcing the driver to disconnect (rh #497771)
+
+* 一 3月 09 2009 Dan Williams <dcbw@redhat.com> - 1:0.6.8-1
+- Update to latest upstream release
+
+* 三 2月 25 2009 Colin Walters <walters@verbum.org> - 1:0.6.7-4
+- Add patch from upstream to suppress unrequested replies, this
+  quiets a dbus warning.
+
+* 五 2月 06 2009 Dan Williams <dcbw@redhat.com> - 1:0.6.7-3
+- Fix scan result retrieval in very dense wifi environments
+
+* 五 2月 06 2009 Dan Williams <dcbw@redhat.com> - 1:0.6.7-2
+- Ensure that drivers don't retry association when they aren't supposed to
+
+* 五 1月 30 2009 Dan Williams <dcbw@redhat.com> - 1:0.6.7-1
+- Fix PEAP connections to Windows Server 2008 authenticators (rh #465022)
+- Stop supplicant on uninstall (rh #447843)
+- Suppress scan results message in logs (rh #466601)
+
+* 日 1月 18 2009 Tomas Mraz <tmraz@redhat.com> - 1:0.6.4-3
+- rebuild with new openssl
+
+* 三 10月 15 2008 Dan Williams <dcbw@redhat.com> - 1:0.6.4-2
+- Handle encryption keys correctly when switching 802.11 modes (rh #459399)
+- Better scanning behavior on resume from suspend/hibernate
+- Better interaction with newer kernels and drivers
+
+* 三 8月 27 2008 Dan Williams <dcbw@redhat.com> - 1:0.6.4-1
+- Update to 0.6.4
+- Remove 'hostap', 'madwifi', and 'prism54' drivers; use standard 'wext' instead
+- Drop upstreamed patches
+
+* 二 6月 10 2008 Dan Williams <dcbw@redhat.com> - 1:0.6.3-6
+- Fix 802.11a frequency bug
+- Always schedule specific SSID scans to help find hidden APs
+- Properly switch between modes on mac80211 drivers
+- Give adhoc connections more time to assocate
+
+* 一 3月 10 2008 Christopher Aillon <caillon@redhat.com> - 1:0.6.3-5
+- BuildRequires qt3-devel
+
+* 六 3月 08 2008 Dan Williams <dcbw@redhat.com> - 1:0.6.3-4
+- Fix log file path in service config file
+
+* 四 3月 06 2008 Dan Williams <dcbw@redhat.com> - 1:0.6.3-3
+- Don't start the supplicant by default when installed (rh #436380)
+
+* 二 3月 04 2008 Dan Williams <dcbw@redhat.com> - 1:0.6.3-2
+- Fix a potential use-after-free in the D-Bus byte array demarshalling code
+
+* 一 3月 03 2008 Dan Williams <dcbw@redhat.com> - 1:0.6.3-1
+- Update to latest development release; remove upstreamed patches
+
+* 五 2月 22 2008 Dan Williams <dcbw@redhat.com> 1:0.5.7-23
+- Fix gcc 4.3 rebuild issues
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1:0.5.7-22
+- Autorebuild for GCC 4.3
+
+* 二 12月 25 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-21
+- Backport 'frequency' option for Ad-Hoc network configs
+
+* 一 12月 24 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-20
+- Fix LSB initscript header to ensure 'messagebus' is started first (rh #244029)
+
+* 四 12月 06 2007 Dan Williams <dcbw@redhat.com> - 1:0.5.7-19
+- Fix two leaks when signalling state and scan results (rh #408141)
+- Add logrotate config file (rh #404181)
+- Add new LSB initscript header to initscript with correct deps (rh #244029)
+- Move other runtime arguments to /etc/sysconfig/wpa_supplicant
+- Start after messagebus service (rh #385191)
+- Fix initscript 'condrestart' command (rh #217281)
+
+* 二 12月 04 2007 Matthias Clasen <mclasen@redhat.com> - 1:0.5.7-18
+- Rebuild against new openssl
+
+* 二 12月 04 2007 Ville Skyttä <ville.skytta at iki.fi> - 1:0.5.7-17
+- Group: Application/System -> Applications/System in -gui.
+
+* 二 11月 13 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-16
+- Add IW_ENCODE_TEMP patch for airo driver and Dynamic WEP
+- Fix error in wpa_supplicant-0.5.7-ignore-dup-ca-cert-addition.patch that
+    caused the last error to not be printed
+- Fix wpa_supplicant-0.5.7-ignore-dup-ca-cert-addition.patch to ignore
+    duplicate cert additions for all certs and keys
+- Change license to BSD due to linkage against OpenSSL since there is no
+    OpenSSL exception in the GPLv2 license text that upstream ships
+
+* 日 10月 28 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-15
+- Fix Dynamic WEP associations with mac80211-based drivers
+
+* 日 10月 28 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-14
+- Don't error an association on duplicate CA cert additions
+
+* 三 10月 24 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-13
+- Correctly set the length of blobs added via the D-Bus interface
+
+* 三 10月 24 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-12
+- Fix conversion of byte arrays to strings by ensuring the buffer is NULL
+    terminated after conversion
+
+* 六 10月 20 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-11
+- Add BLOB support to the D-Bus interface
+- Fix D-Bus interface permissions so that only root can use the wpa_supplicant
+    D-Bus interface
+
+* 二 10月 09 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-10
+- Don't segfault with dbus control interface enabled and invalid network
+    interface (rh #310531)
+
+* 二 9月 25 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-9
+- Always allow explicit wireless scans triggered from a control interface
+
+* 四 9月 20 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-8
+- Change system bus activation file name to work around D-Bus bug that fails
+    to launch services unless their .service file is named the same as the
+    service itself
+
+* 五 8月 24 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-7
+- Make SIGUSR1 change debug level on-the-fly; useful in combination with
+    the -f switch to log output to /var/log/wpa_supplicant.log
+- Stop stripping binaries on install so we get debuginfo packages
+- Remove service start requirement for interfaces & devices from sysconfig file,
+    since wpa_supplicant's D-Bus interface is now turned on
+
+* 五 8月 17 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-6
+- Fix compilation with RPM_OPT_FLAGS (rh #249951)
+- Make debug output to logfile a runtime option
+
+* 五 8月 17 2007 Christopher Aillon <caillon@redhat.com> - 0.5.7-5
+- Update the license tag
+
+* 二 6月 19 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-4
+- Fix initscripts to use -Dwext by default, be more verbose on startup
+    (rh #244511)
+
+* 一 6月 04 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-3
+- Fix buffer overflow by removing syslog patch (#rh242455)
+
+* 一 4月 09 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-2
+- Add patch to send output to syslog
+
+* 四 3月 15 2007 Dan Williams <dcbw@redhat.com> - 0.5.7-1
+- Update to 0.5.7 stable release
+
+* 五 10月 27 2006 Dan Williams <dcbw@redhat.com> - 0.4.9-1
+- Update to 0.4.9 for WE-21 fixes, remove upstreamed patches
+- Don't package doc/ because they aren't actually wpa_supplicant user documentation,
+    and becuase it pulls in perl
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.4.8-10.1
+- rebuild
+
+* 四 4月 27 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-10
+- Add fix for madwifi and WEP (wpa_supplicant/hostap bud #140) (#rh190075#)
+- Fix up madwifi-ng private ioctl()s for r1331 and later
+- Update madwifi headers to r1475
+
+* 二 4月 25 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-9
+- Enable Wired driver, PKCS12, and Smartcard options (#rh189805#)
+
+* 二 4月 11 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-8
+- Fix control interface key obfuscation a bit
+
+* 日 4月 02 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-7
+- Work around older & incorrect drivers that return null-terminated SSIDs
+
+* 一 3月 27 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-6
+- Add patch to make orinoco happy with WEP keys
+- Enable Prism54-specific driver
+- Disable ipw-specific driver; ipw2x00 should be using WEXT instead
+
+* 五 3月 03 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-5
+- Increase association timeout, mainly for drivers that don't
+	fully support WPA ioctls yet
+
+* 五 3月 03 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-4
+- Add additional BuildRequires #rh181914#
+- Add prereq on chkconfig #rh182905# #rh182906#
+- Own /var/run/wpa_supplicant and /etc/wpa_supplicant #rh183696#
+
+* 三 3月 01 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-3
+- Install wpa_passphrase too #rh183480#
+
+* 一 2月 27 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-2
+- Don't expose private data on the control interface unless requested
+
+* 五 2月 24 2006 Dan Williams <dcbw@redhat.com> - 0.4.8-1
+- Downgrade to 0.4.8 stable release rather than a dev release
+
+* 日 2月 12 2006 Dan Williams <dcbw@redhat.com> - 0.5.1-3
+- Documentation cleanup (Terje Rosten <terje.rosten@ntnu.no>)
+
+* 日 2月 12 2006 Dan Williams <dcbw@redhat.com> - 0.5.1-2
+- Move initscript to /etc/rc.d/init.d
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.5.1-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.5.1-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 日 2月 05 2006 Dan Williams <dcbw@redhat.com> 0.5.1-1
+- Update to 0.5.1
+- Add WE auth fallback to actually work with older drivers
+
+* 四 1月 26 2006 Dan Williams <dcbw@redhat.com> 0.4.7-2
+- Bring package into Fedora Core
+- Add ap_scan control interface patch
+- Enable madwifi-ng driver
+
+* 日 1月 15 2006 Douglas E. Warner <silfreed@silfreed.net> 0.4.7-1
+- upgrade to 0.4.7
+- added package w/ wpa_gui in it
+
+* 一 11月 14 2005 Douglas E. Warner <silfreed@silfreed.net> 0.4.6-1
+- upgrade to 0.4.6
+- adding ctrl interface changes recommended 
+  by Hugo Paredes <hugo.paredes@e-know.org>
+
+* 日 10月 09 2005 Douglas E. Warner <silfreed@silfreed.net> 0.4.5-1
+- upgrade to 0.4.5
+- updated config file wpa_supplicant is built with
+  especially, the ipw2100 driver changed to just ipw
+  and enabled a bunch more EAP
+- disabled dist tag
+
+* 四 6月 30 2005 Douglas E. Warner <silfreed@silfreed.net> 0.4.2-3
+- fix typo in init script
+
+* 四 6月 30 2005 Douglas E. Warner <silfreed@silfreed.net> 0.4.2-2
+- fixing init script using fedora-extras' template
+- removing chkconfig default startup
+
+* 二 6月 21 2005 Douglas E. Warner <silfreed@silfreed.net> 0.4.2-1
+- upgrade to 0.4.2
+- new sample conf file that will use any unrestricted AP
+- make sysconfig config entry
+- new BuildRoot for Fedora Extras
+- adding dist tag to Release
+
+* 五 5月 06 2005 Douglas E. Warner <silfreed@silfreed.net> 0.3.8-1
+- upgrade to 0.3.8
+
+* 四 2月 10 2005 Douglas E. Warner <silfreed@silfreed.net> 0.3.6-2
+- compile ipw driver in
+
+* 三 2月 09 2005 Douglas E. Warner <silfreed@silfreed.net> 0.3.6-1
+- upgrade to 0.3.6
+
+* 四 12月 23 2004 Douglas E. Warner <silfreed@silfreed.net> 0.2.5-4
+- fixing init script
+
+* 一 12月 20 2004 Douglas E. Warner <silfreed@silfreed.net> 0.2.5-3
+- fixing init script
+- adding post/preun items to add/remove via chkconfig
+
+* 一 12月 20 2004 Douglas E. Warner <silfreed@silfreed.net> 0.2.5-2
+- adding sysV scripts
+
+* 一 12月 20 2004 Douglas E. Warner <silfreed@silfreed.net> 0.2.5-1
+- Initial RPM release.
+

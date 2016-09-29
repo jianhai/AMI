@@ -1,0 +1,39 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+libGL.so.1()(64bit)  
+libGLU.so.1()(64bit)  
+libQtCore.so.4()(64bit)  
+libQtDBus.so.4()(64bit)  
+libQtGui.so.4()(64bit)  
+libQtOpenGL.so.4()(64bit)  
+libQtXml.so.4()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libgcc_s.so.1()(64bit)  
+libgcc_s.so.1(GCC_3.0)(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgstaudio-0.10.so.0()(64bit)  
+libgstbase-0.10.so.0()(64bit)  
+libgstinterfaces-0.10.so.0()(64bit)  
+libgstreamer-0.10.so.0()(64bit)  
+libgstvideo-0.10.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libm.so.6()(64bit)  
+libphonon.so.4()(64bit)  
+libpthread.so.0()(64bit)  
+librt.so.1()(64bit)  
+libstdc++.so.6()(64bit)  
+libstdc++.so.6(CXXABI_1.3)(64bit)  
+libstdc++.so.6(GLIBCXX_3.4)(64bit)  
+libxml2.so.2()(64bit)  
+phonon(x86-64) >= 4.3
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

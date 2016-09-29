@@ -1,0 +1,32 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3-7.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.3-7.1
+- rebuild for alios6
+
+* 四 1月 07 2010 John W. Linville <linville@redhat.com> - 1.3-7
+- Add dist tag
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 12月 15 2007 kwizart < kwizart at gmail.com > - 1.3-4
+- Prevent timestamps changes.
+
+* 四 12月 13 2007 Ralf Corsépius <rc040203@freenet.de> - 1.3-3
+- Don't ship docs in /lib/firmware (BZ 420921).
+- Minor spec cleanups.
+- Bump %release to fix F7 -> F8 EVR breakage.
+
+* 一 8月 27 2007 kwizart < kwizart at gmail.com > - 1.3-2
+- Drop the dist tag for firmware
+
+* 一 3月 19 2007 kwizart < kwizart at gmail.com > - 1.3-1
+- Initial clean package
+

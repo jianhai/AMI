@@ -1,0 +1,17 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/chkconfig  
+/sbin/chkconfig  
+/sbin/service  
+config(cpuspeed) = 1:1.5-15.3.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

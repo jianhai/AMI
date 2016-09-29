@@ -1,0 +1,66 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.13-7.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.13-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.13-7.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.13-7.1
+- rebuild for alios6
+
+* 一 1月 11 2010 Panu Matilainen <pmatilai@redhat.com> - 1.13-7
+- Remove useless "api" documentation from -devel + related multilib hacks
+
+* 五 11月 13 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.13-6.1
+- Fix conditional for RHEL
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.13-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Robert Scheck <robert@fedoraproject.org> 1.13-5
+- Rebuilt against gcc 4.4 and rpm 4.6
+
+* 日 5月 25 2008 Robert Scheck <robert@fedoraproject.org> 1.13-4
+- Solved multilib problems at doxygen generated files (#342921)
+
+* 三 2月 20 2008 Robert Scheck <robert@fedoraproject.org> 1.13-3
+- Revert the broken bind_textdomain_codeset() patch (#433324)
+
+* 四 2月 14 2008 Robert Scheck <robert@fedoraproject.org> 1.13-2
+- Added patch to work around missing bind_textdomain_codeset()
+
+* 日 12月 30 2007 Robert Scheck <robert@fedoraproject.org> 1.13-1
+- Upgrade to 1.13 (#290531, #332201, #425803)
+- Solved multilib problems at doxygen generated files (#342921)
+
+* 四 8月 23 2007 Robert Scheck <robert@fedoraproject.org> 1.12-3
+- Added buildrequirement to graphviz (#249352)
+- Backported bugfixes from CVS (#102254, #135428 and #178413)
+
+* 日 8月 12 2007 Robert Scheck <robert@fedoraproject.org> 1.12-2
+- Move libpopt to /lib[64] (#249814)
+- Generate API documentation, added buildrequirement to doxygen
+
+* 一 7月 23 2007 Robert Scheck <robert@fedoraproject.org> 1.12-1
+- Changes to match with Fedora Packaging Guidelines (#249352)
+
+* 二 7月 10 2007 Jeff Johnson <jbj@rpm5.org>
+- release popt-1.12 through rpm5.org.
+
+* 六 6月 09 2007 Jeff Johnson <jbj@rpm5.org>
+- release popt-1.11 through rpm5.org.
+
+* 四 12月 10 1998 Michael Johnson <johnsonm@redhat.com>
+- released 1.2.2; see CHANGES
+
+* 二 11月 17 1998 Michael K. Johnson <johnsonm@redhat.com>
+- added man page to default install
+
+* 四 10月 22 1998 Erik Troan <ewt@redhat.com>
+- see CHANGES file for 1.2
+
+* 四 4月 09 1998 Erik Troan <ewt@redhat.com>
+- added ./configure step to spec file
+

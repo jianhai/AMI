@@ -1,0 +1,12 @@
+Name        : startup-notification-devel   Relocations: (not relocatable)
+Version     : 0.10                              Vendor: Alibaba
+Release     : 2.1.4.alios6                  Build Date: 2014年07月28日 星期一 04时58分27秒
+Install Date: 2015年03月25日 星期三 11时00分48秒      Build Host: x86-004.build.alibaba
+Group       : Development/Libraries         Source RPM: startup-notification-0.10-2.1.4.alios6.src.rpm
+Size        : 54637                            License: LGPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 18时52分29秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.freedesktop.org/software/startup-notification/
+Summary     : Development portions of startup-notification
+Description :
+Header files and static libraries for libstartup-notification.

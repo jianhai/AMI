@@ -1,0 +1,110 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 9.2-0.5.2.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 9.2-0.5.1.2
+- rebuild for alios6-update
+
+* 二 12月 03 2013 Dave Airlie <airlied@redhat.com> 9.2-0.5.2
+- further fix to the inversion fix (#987701)
+
+* 二 12月 03 2013 Dave Airlie <airlied@redhat.com> 9.2-0.5.1
+- fix glxinfo on Citrix and inverted swrast rendering (#1025714, #987701)
+
+* 四 9月 12 2013 Dave Airlie <airlied@redhat.com> 9.2-0.5
+- fix packaging tps test (#1000467)
+
+* 三 7月 10 2013 Jerome Glisse <ajax@redhat.com> 9.2-0.4
+- Fix egl backend flags for glamor
+
+* 三 7月 10 2013 Jerome Glisse <ajax@redhat.com> 9.2-0.3
+- Add libgbm subpackages for glamor
+
+* 三 6月 26 2013 Adam Jackson <ajax@redhat.com> 9.2-0.2
+- Add libEGL subpackages for glamor
+
+* 二 6月 25 2013 Adam Jackson <ajax@redhat.com> 9.2-0.1
+- Rebase to 9.2-pre
+
+* 四 5月 30 2013 Dave Airlie <airlied@redhat.com> 9.0-0.9
+- CVE-2013-1872: Updated patch from upstream (#963063)
+
+* 三 5月 22 2013 Dave Airlie <airlied@redhat.com< 9.0-0.8.1
+- CVE-2013-1872: Updated patch (#963063)
+
+* 一 5月 20 2013 Dave Airlie <airlied@redhat.com> 9.0-0.8
+- CVE-2013-1872: memory corruption oob read/write on intel (#963063)
+- CVE-2013-1993: interger overflows in protocol handling (#961613)
+
+* 五 1月 25 2013 Dave Airlie <airlied@redhat.com> 9.0-0.7
+- CVE-2012-5129: heap buffer overflow in glGetUniform* (#903933)
+
+* 四 1月 24 2013 Adam Jackson <ajax@redhat.com> 9.0-0.6
+- Quieten driver load failure messages when the display is possibly non-
+  local (#901627)
+
+* 三 12月 19 2012 Dave Airlie <airlied@redhat.com> 9.0-0.3
+- block intel msaa so kwin doesn't regress (#885882)
+
+* 二 10月 02 2012 Dave Airlie <airlied@redhat.com> 9.0-0.2
+- fix mesa-dri-filesystem requires.
+
+* 一 9月 24 2012 Dave Airlie <airlied@redhat.com> 9.0-0.1
+- realign with upstream version for rebase + glu
+
+* 六 9月 22 2012 Dave Airlie <airlied@redhat.com> 8.1-0.20
+- fix osmesa harder, noticed by rpmdiff
+
+* 五 9月 21 2012 Adam Jackson <ajax@redhat.com> 8.1-0.19
+- Fix pthread linkage of glapi and osmesa
+- Drop llvmpipe-related patches
+- Don't require mesa-dri1-drivers on s390{,x}
+
+* 五 9月 21 2012 Dave Airlie <airlied@redhat.com> 8.1-0.18
+- add mesa-dri1-drivers requires
+
+* 三 8月 22 2012 Dave Airlie <airlied@redhat.com> 8.1-0.17
+- bump for osmesa fixes
+
+* 三 8月 01 2012 Dave Airlie <airlied@redhat.com> 8.1-0.16
+- initial import of 8.1 snapshot from Fedora
+
+* 三 5月 16 2012 Dave Airlie <airlied@redhat.com> 7.11-5
+- Add missing Ivybridge server PCI ID. (#821873)
+
+* 三 2月 29 2012 Jerome Glisse <jglisse@redhat.com> 7.11-4
+- Resolves: rhbz#788168 (r600g add new pci ids)
+
+* 一 10月 17 2011 Adam Jackson <ajax@redhat.com> 7.11-3
+- Drop nouveau (#745686)
+
+* 四 10月 06 2011 Adam Jackson <ajax@redhat.com> 7.11-2
+- mesa-7.11-b9c7773e.patch: Sync with 7.11 branch
+- mesa-7.11-gen6-depth-stalls.patch: Fix GPU hangs on gen6+ in openarena
+  and others (#741806)
+- Drop tdfx_dri.so, as there's no glide3 package or drm support in el6.
+
+* 二 8月 09 2011 Adam Jackson <ajax@redhat.com> 7.11-1
+- Mesa 7.11 final plus stable backports
+
+* 五 7月 22 2011 Ben Skeggs <bskeggs@redhat.com> 7.11-0.6
+- fix mesa-libGL requires
+
+* 三 7月 20 2011 Adam Jackson <ajax@redhat.com> 7.11-0.5
+- Prov/Obs for -experimental
+
+* 三 7月 20 2011 Adam Jackson <ajax@redhat.com> 7.11-0.4
+- Today's 7.11 branch snapshot, 7.11-rc2 plus one
+- Drop (empty) -experimental subpackage
+
+* 一 7月 18 2011 Adam Jackson <ajax@redhat.com> 7.11-0.3
+- Today's 7.11 branch snapshot.
+
+* 三 7月 13 2011 Adam Jackson <ajax@redhat.com> 7.11-0.2
+- Mesa rebase: 7.11-rc1 plus updates through a20a9508 (#713772)
+
+* 五 1月 14 2011 Dave Airlie <airlied@redhat.com> 7.10-1
+- enable Intel Sandybridge support (#667563)
+
+* 一 4月 12 2010 Dave Airlie <airlied@redhat.com> 7.7-2
+- update to mesa 7.7.1 release
+

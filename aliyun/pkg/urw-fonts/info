@@ -1,0 +1,16 @@
+Name        : urw-fonts                    Relocations: (not relocatable)
+Version     : 2.4                               Vendor: Alibaba
+Release     : 10.4.alios6                   Build Date: 2014年07月28日 星期一 06时13分36秒
+Install Date: 2015年03月25日 星期三 11时00分04秒      Build Host: x86-004.build.alibaba
+Group       : User Interface/X              Source RPM: urw-fonts-2.4-10.4.alios6.src.rpm
+Size        : 4389400                          License: GPL+ with exceptions
+Signature   : RSA/8, 2014年07月31日 星期四 18时58分02秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://svn.ghostscript.com/ghostscript/tags/urw-fonts-1.0.7pre44/
+Summary     : Free versions of the 35 standard PostScript fonts
+Description :
+Free, good quality versions of the 35 standard PostScript(TM) fonts,
+donated under the GPL by URW++ Design and Development GmbH.
+
+Install the urw-fonts package if you need free versions of standard
+PostScript fonts.

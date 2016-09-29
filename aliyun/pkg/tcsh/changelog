@@ -1,0 +1,345 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.17-14.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.17-14.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.17-14.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 6.17-14.1
+- rebuild for alios6
+
+* 三 10月 19 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 6.17-14
+- Remove obsolete glob-automount patch; the issue should have been
+  resolved (and is now resolved) in glibc posix/glob.c (#684063)
+
+* 四 8月 11 2011 Jan Kaluza <jkaluza@redhat.com> - 6.17-13
+- Do not dereference null pointer in cwd
+  Resolves: #700309
+- Exit when child killed
+  Resolves: #690356
+- Do not allow variable names beginning with number
+  Resolves: #672592
+- Fix status of pipelined/backquoted/list of commands
+  Resolves: #658190
+- Fix unused res variable in sh.glob.c
+  Resolves: #684063
+
+* 一 1月 31 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 6.17-12
+- Remove extra fork when tcsh processes backquotes
+  Resolves: #673556
+
+* 五 1月 28 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 6.17-11
+- Modify verbose patch to match with upstream (don't print on history -S)
+  Resolves: #658171
+
+* 三 1月 26 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 6.17-10
+- Fix error message on exit
+  Resolves: #658171
+
+* 一 1月 24 2011 Vojtech Vitek (V-Teq) <vvitek@redhat.com> - 6.17-9
+- Don't set $REMOTEHOST on the local machine
+  Resolves: #669176
+- Don't print history in verbose mode
+  Resolves: #658171
+
+* 一 6月 21 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.17-8
+- Fix negative number of jobs with %j formatting parameter in prompt
+
+* 三 4月 14 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.17-7
+- Fix testsuite
+
+* 三 4月 07 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.17-6
+- Fix tcsh obeys printexitvalue for back-ticks
+
+* 一 3月 01 2010 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.17-5
+- Ship README file
+
+* 三 11月 04 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.17-4
+- Fix tcsh globbing causing bad automount
+
+* 三 8月 26 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.17-3
+- Add new colorls variable
+  Resolves: #518808
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 6.17-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 20 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.17-1
+- Update to tcsh-6.17.00
+
+* 四 4月 30 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.16-1
+- Update to tcsh-6.16.00
+- Merge Review (fix License, add BUGS and WishList to documentation, convert Fixes and
+  WishList to UTF-8, remove root checking from buildroot cleaning, preserve timestamps,
+  use smp_flags, remove unused patches, improve postun script and minor fix to %files)
+  Resolves: #226483
+
+* 一 3月 02 2009 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.15-8
+- Fix tcsh needs to know about new colorls variables
+  Resolves: #487783
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 6.15-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 9月 03 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.15-6
+- Fix UTF-8 Japanese character is garbled in tcsh script in
+  a certain situation
+  Related: #453785
+- Fix calculation order of operators description in tcsh manpage
+  Related: #442536
+- Fix strings which begin with '0' are not recognized as octal numbers
+  Related: #438109
+- Fix memoryuse description in tcsh manpage
+  Related: #437095
+- Fix tcsh scripts with multiple case statement with end keywords
+  break with error
+  Related: #436956
+- Fix description of builtin command 'set' in tcsh manpage
+  Related: #430459
+
+* 五 8月 29 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.15-5
+- Rediffed all patches to work with patch --fuzz=0
+- Let tcsh know 'ca' colorls variable
+  Resolves: #458716
+
+* 五 2月 29 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.15-4
+- Fix '\' can not be used to quote all delimiters
+  Related: #435421
+- Fix $name[selector] should fail when any number of 'selector' is out of range
+  Related: #435398
+
+* 一 2月 11 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.15-3
+- Fix Buildroot
+
+* 五 1月 18 2008 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.15-2
+- Rebuild
+
+* 一 8月 27 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.15-1
+- Update to tcsh-6.15.00
+- Fix license
+- Add gettext-devel to BuildRequires (AM_ICONV)
+
+* 三 4月 25 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 6.14-16
+- Fix floating exception in print_by_column() with unprintable characters
+  (#233525)
+
+* 一 2月 26 2007 Miloslav Trmac <mitr@redhat.com> - 6.14-15
+- Fix License:
+  Related: #226483.
+
+* 一 2月 12 2007 Miloslav Trmac <mitr@redhat.com> - 6.14-14
+- Link to libtinfo instead of libncurses
+
+* 四 11月 30 2006 Miloslav Trmac <mitr@redhat.com> - 6.14-13
+- Link to ncurses instead of libtermcap
+- Fix some rpmlint warnings
+
+* 二 9月 26 2006 Miloslav Trmac <mitr@redhat.com> - 6.14-12
+- Fix error handling in tcsh-6.14.00-wide-seeks.patch
+
+* 六 9月 09 2006 Miloslav Trmac <mitr@redhat.com> - 6.14-11
+- Fix an unlikely crash on startup (#188279)
+
+* 三 8月 16 2006 Miloslav Trmac <mitr@redhat.com> - 6.14-10
+- Fix an uninitialized variable causing stack corruption (#197968)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 6.14-9.1
+- rebuild
+
+* 一 7月 10 2006 Miloslav Trmac <mitr@redhat.com> - 6.14-9
+- Fix seeking over multibyte characters (#195972)
+- Don't ship obsolete eight-bit.txt
+
+* 四 3月 23 2006 Miloslav Trmac <mitr@redhat.com> - 6.14-8
+- Backport a patch to ignore LS_COLOR codes introduced in newer coreutils
+  (#186037)
+
+* 六 3月 18 2006 Miloslav Trmac <mitr@redhat.com> - 6.14-7
+- Fix a crash when reading scripts with multibyte characters (#183267)
+- Block SIGINT while waiting for children (#177366)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 6.14-5.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 6.14-5.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 8月 05 2005 Miloslav Trmac <mitr@redhat.com> - 6.14-5
+- Fix EOF handling in $< (#165095, patch by s_h_o_@hotmail.co.jp)
+
+* 四 7月 07 2005 Miloslav Trmac <mitr@redhat.com> - 6.14-3
+- Fix -n (#162187)
+
+* 一 6月 20 2005 Miloslav Trmac <mitr@redhat.com> - 6.14-2
+- Backport a column width calculation bugfix (#160760)
+
+* 五 3月 25 2005 Miloslav Trmac <mitr@redhat.com> - 6.14-1
+- Update to tcsh-6.14.00
+
+* 六 3月 05 2005 Miloslav Trmac <mitr@redhat.com> - 6.13-13
+- Rebuild with gcc 4
+
+* 五 2月 25 2005 Miloslav Trmac <mitr@redhat.com> - 6.13-12
+- Don't ship the HTML documentation (generated from the man page, contains
+  also a copy of the man page)
+
+* 日 1月 30 2005 Miloslav Trmac <mitr@redhat.com> - 6.13-11
+- Fix the previous patch, handle a missed case (#146330)
+
+* 六 1月 15 2005 Miloslav Trmac <mitr@redhat.com> - 6.13-10
+- Avoid reusing iconv_catgets' static buffer (#145177, #145195)
+
+* 二 9月 21 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-9
+- Fix invalid argument to xprintf () (#133129)
+
+* 三 9月 15 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-8
+- Fix $HOSTTYPE and $MACHTYPE for ppc64 and s390x, this time for sure
+
+* 三 9月 15 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-7
+- Define $HOSTTYPE and $MACHTYPE for ppc64 and s390 (#115531),
+  I hope that finally covers all architectures.
+
+* 三 9月 15 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-6
+- Define $HOSTTYPE and $MACHTYPE also on IA-64 and s390x (#115531)
+- Don't close sockets to avoid file descriptor conflits with nss_ldap (#112453)
+
+* 二 9月 14 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-5
+- Fix HTML documentation generation, second attempt (#60664)
+- Set dspmbyte using nl_langinfo(CODESET) if possible, should cover all
+  cases where lang.csh was correctly setting dspmbyte (#89549)
+
+* 三 9月 08 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-4
+- Remove unneeded patches
+
+* 四 8月 26 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-3
+- Check for SIGWINCH more often (from tcsh-6.13.01, #130941)
+
+* 三 8月 18 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-2
+- Make comparisons for ranges in bracket expressions symmetric (#59493)
+- Run perl2html with LC_ALL=C to workaround what seems to be a perl bug
+  (#60664)
+- Define $HOSTTYPE and $MACHTYPE on x86_64 (#115531)
+- Fix setting of O_LARGEFILE (#122558)
+
+* 二 8月 17 2004 Miloslav Trmac <mitr@redhat.com> - 6.13-1
+- Update to tcsh-6.13.00
+- Fix charset headers in some of the translations
+- Convert translated messages to LC_CTYPE locale
+- Fix automatic dspmbyte setting
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 10 2004 Nalin Dahyabhai <nalin@redhat.com> 6.12-7
+- remove declaration of setpgrp() which conflicts with libc's (#115185)
+
+* 五 11月 21 2003 Nalin Dahyabhai <nalin@redhat.com> 6.12-6
+- add missing buildprereqs on groff, libtermcap-devel (#110599)
+
+* 二 7月 08 2003 Nalin Dahyabhai <nalin@redhat.com>
+- update URL
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 05 2002 Elliot Lee <sopwith@redhat.com> 6.12-3
+- Merge changes from 8.0-hammer
+
+* 二 11月 19 2002 Nalin Dahyabhai <nalin@redhat.com> 6.12-3
+- rebuild
+
+* 四 8月 08 2002 Phil Knirsch <pknirsch@redhat.com> 6.12-2
+- Added csh.1 symlink to manpages.
+
+* 二 6月 04 2002 Nalin Dahyabhai <nalin@redhat.com> 6.11-1
+- update to 6.11
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 1月 31 2002 Bill Nottingham <notting@redhat.com>
+- rebuild in new env
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 三 3月 28 2001 Akira TAGOH <tagoh@redhat.com> 6.10-5
+- Fixed check locale.
+
+* 二 2月 06 2001 Adrian Havill <havill@redhat.com>
+- use <time.h> instead of <sys/time.h> for pickier lib (#25935)
+- allow arguments for login shells (#19926)
+
+* 四 11月 30 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 6.10.00 to fix here-script vulnerability
+
+* 一 9月 18 2000 Adrian Havill <havill@redhat.com>
+- fix catalog locale dirname for Japanese
+
+* 四 6月 15 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+- add locale support (#10345).
+
+* 二 3月 07 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild for sparc baud rates > 38400.
+
+* 一 1月 31 2000 Cristian Gafton <gafton@redhat.com>
+- rebuild to fix dependencies
+
+* 四 1月 27 2000 Jeff Johnson <jbj@redhat.com>
+- append entries to spanking new /etc/shells.
+
+* 一 1月 10 2000 Jeff Johnson <jbj@redhat.com>
+- update to 6.09.
+- fix strcoll oddness (#6000, #6244, #6398).
+
+* 六 9月 25 1999 Michael K. Johnson <johnsonm@redhat.com>
+- fix $shell by using --bindir
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 5)
+
+* 三 2月 24 1999 Cristian Gafton <gafton@redhat.com>
+- patch for using PATH_MAX instead of some silly internal #defines for
+  variables that handle filenames.
+
+* 五 11月 06 1998 Jeff Johnson <jbj@redhat.com>
+- update to 6.08.00.
+
+* 五 10月 02 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded to 6.07.09 from the freebsd
+- security fix
+
+* 三 8月 05 1998 Jeff Johnson <jbj@redhat.com>
+- use -ltermcap so that /bin/tcsh can be used in single user mode w/o /usr.
+- update url's
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 10月 21 1997 Cristian Gafton <gafton@redhat.com>
+- updated to 6.07; added BuildRoot
+- cleaned up the spec file; fixed source url
+
+* 三 9月 03 1997 Erik Troan <ewt@redhat.com>
+- added termios hacks for new glibc
+- added /bin/csh to file list
+
+* 五 6月 13 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 五 2月 07 1997 Erik Troan <ewt@redhat.com>
+- Provides csh, adds and removes /bin/csh from /etc/shells if csh package
+isn't installed.
+

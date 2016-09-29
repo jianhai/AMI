@@ -1,0 +1,14 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add ntpd
+:
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" -eq 0 ]; then
+	/sbin/service ntpd stop &> /dev/null
+	/sbin/chkconfig --del ntpd
+fi
+:
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge 1 ]; then
+	/sbin/service ntpd condrestart &> /dev/null
+fi
+:

@@ -1,0 +1,285 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.9.16-4.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.9.16-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.9.16-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.9.16-4.1
+- rebuild for alios6
+
+* 三 7月 27 2011 Miloslav Trmač <mitr@redhat.com> - 2.9.16-4
+- Don't report EACCES errors, they can be routinely returned on FUSE mounts
+  Resolves: #722856
+
+* 一 2月 01 2010 Miloslav Trmač <mitr@redhat.com> - 2.9.16-3
+- Ship COPYING
+  Resolves: #560690
+
+* 一 1月 04 2010 Miloslav Trmač <mitr@redhat.com> - 2.9.16-2
+- Fix handling of filenames starting with '-' with --fuser
+  Resolves: #552291
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.9.16-1.1
+- Rebuilt for RHEL 6
+
+* 四 10月 15 2009 Miloslav Trmač <mitr@redhat.com> - 2.9.16-1
+- Update to tmpwatch-2.9.16.
+- Exclude /tmp/hsperfdata_*.
+  Resolves: #527425
+- Preserve timestamps where possible.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.9.15-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 5月 22 2009 Miloslav Trmač <mitr@redhat.com> - 2.9.15-1
+- Update to tmpwatch-2.9.15.
+- Add a symlink to %{_bindir}.
+  Resolves: #494239
+
+* 一 3月 23 2009 Miloslav Trmač <mitr@redhat.com> - 2.9.14-1
+- Update to tmpwatch-2.9.14.
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.9.13-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 2月 23 2008 Miloslav Trmač <mitr@redhat.com> - 2.9.13-2
+- Package the new documentation files.
+
+* 六 2月 23 2008 Miloslav Trmač <mitr@redhat.com> - 2.9.13-1
+- New home page at https://fedorahosted.org/tmpwatch/ .
+- tmpwatch is now licensed under GPLv2.
+- Address issues from reviews by Adel Gadllah and Jason Tibbitts:
+  - Run (make) with %{?_smp_mflags}
+  - Add a comment describing the origin of the tarball to the spec file
+  - Use a better BuildRoot:
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.9.12-3
+- Autorebuild for GCC 4.3
+
+* 五 12月 14 2007 Miloslav Trmač <mitr@redhat.com> - 2.9.12-2
+- --atime is -u.  Doh.
+
+* 五 12月 14 2007 Miloslav Trmač <mitr@redhat.com> - 2.9.12-1
+- Fix --nosymlinks description in the man page
+- Use the maximum of atime, mtime and ctime when checking whether a file is
+  obsolete
+  Resolves: #373301
+
+* 二 10月 16 2007 Miloslav Trmač <mitr@redhat.com> - 2.9.11-2
+- Update License:
+
+* 六 3月 31 2007 Miloslav Trmac <mitr@redhat.com> - 2.9.11-1
+- Fix a misleading message in --test
+  Resolves: 234596
+- Compress the tarball using bzip2
+- Move the cron.daily script to a separate source file
+
+* 日 11月 05 2006 Miloslav Trmac <mitr@redhat.com> - 2.9.10-1
+- Reallow --exclude with nonexistent paths
+  Resolves: 214034
+
+* 四 11月 02 2006 Miloslav Trmac <mitr@redhat.com> - 2.9.9-1
+- Exclude aquota.group and aquota.user files
+  Resolves: 206258
+- Don't require the user-specified paths to be absolute
+
+* 三 11月 01 2006 Miloslav Trmac <mitr@redhat.com> - 2.9.8-1
+- Add optional unit suffix to the "hours" (now "time") parameter (original
+  patch by Alan J Rosenthal <flaps@dgp.toronto.edu>)
+- Fix some format string vs. arguments mismatches
+- Fix some rpmlint warnings
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.9.7-1.1
+- rebuild
+
+* 六 5月 06 2006 Miloslav Trmac <mitr@redhat.com> - 2.9.7-1
+- Add --nosymlinks (#190691)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.9.6-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.9.6-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 11月 29 2005 Miloslav Trmac <mitr@redhat.com> - 2.9.6-1
+- Add --exclude-user (original patch by Brett Pemberton)
+- Fix too long line in /etc/cron.daily/tmpwatch
+
+* 五 11月 11 2005 Miloslav Trmac <mitr@redhat.com> - 2.9.5-1
+- Fix GPL reference in usage message (#163531, patch by Ville Skyttä)
+- Convert changelog to UTF-8
+
+* 一 6月 20 2005 Miloslav Trmac <mitr@redhat.com> - 2.9.4-1
+- Add --dirmtime (#91096)
+- Handle fchdir () failures
+
+* 六 4月 16 2005 Miloslav Trmac <mitr@redhat.com> - 2.9.3-1
+- Silently ignore ENOENT if somebody removes files faster than us (#154960)
+- Handle failures to exec fuser
+- Fix check for negative grace periods
+
+* 六 3月 05 2005 Miloslav Trmac <mitr@redhat.com> - 2.9.2-2
+- Rebuild with gcc 4
+
+* 三 12月 22 2004 Miloslav Trmac <mitr@redhat.com> - 2.9.2-1
+- Mention skipping of lost+found in the man page (#143526)
+
+* 六 8月 14 2004 Miloslav Trmac <mitr@redhat.com> - 2.9.1-1
+- Add --exclude, use it to preserve X socket directories (#107069)
+- Allow multiple directory arguments with relative paths (#91097)
+- Don't manually strip the binary
+
+* 五 5月 30 2003 Mike A. Harris <mharris@redhat.com> 2.9.0-1
+- Added Solaris/HPUX support to tmpwatch via patch from Paul Gear (#71288)
+- Rebuild in rawhide as 2.9.0-1
+
+* 一 2月 10 2003 Nalin Dahyabhai <nalin@redhat.com> 2.8.4-5
+- rebuild
+
+* 五 2月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 2.8.4-2
+- rebuild
+
+* 二 10月 08 2002 Mike A. Harris <mharris@redhat.com> 2.8.4-4
+- All-arch rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 5月 21 2002 Mike A. Harris <mharris@redhat.com> 2.8.4-1
+- Bump release and rebuild in new environment
+
+* 六 4月 13 2002 Mike A. Harris <mharris@redhat.com> 2.8.3-1
+- Added support for large files with 64bit offsets by adding to CFLAGS
+  -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 bug (#56961)
+
+* 日 1月 27 2002 Mike A. Harris <mharris@redhat.com> 2.8.2-1
+- Added newlines to logfile messages as per bug #58912
+
+* 四 11月 08 2001 Preston Brown <pbrown@redhat.com>
+- define default SBINDIR in Makefile
+- incorrect boolean comparison fix
+
+* 三 8月 29 2001 Preston Brown <pbrown@redhat.com>
+- cron script fix (#52785)
+
+* 二 8月 28 2001 Preston Brown <pbrown@redhat.com>
+- rebuild for 5.x, 6.x, 7.x errata
+
+* 一 8月 27 2001 Preston Brown <pbrown@redhat.com>
+- noreplace /etc/cron.daily/tmpwatch
+
+* 一 8月 06 2001 Preston Brown <pbrown@redhat.com> 2.8-1
+- added a "nodirs" option which inhibits removal of empty directories.
+- Integrated race condition fixes from Martin Macok (#50148)
+- do not try to remove ext3 journal files (#50522)
+
+* 二 7月 03 2001 Preston Brown <pbrown@redhat.com> 2.7.4-1
+- fix typo in cron script
+
+* 一 7月 02 2001 Preston Brown <pbrown@redhat.com>
+- better checking for directory existence cleaning man cache dirs (#44117)
+
+* 五 5月 11 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Handle directories with large files
+- fix some warnings during compilation
+
+* 四 3月 29 2001 Preston Brown <pbrown@redhat.com>
+- fixed longstanding bug where directories removed while in test mode.
+
+* 五 3月 09 2001 Preston Brown <pbrown@redhat.com>
+- Patch from enrico.scholz@informatik.tu-chemnitz.de allows concurrent 
+  usage of mtime, ctime, and atime checking (#19550).
+
+* 五 1月 05 2001 Preston Brown <pbrown@redhat.com>
+- increased interval for removal to 30 days for /var/tmp per FHS (#19951)
+
+* 二 9月 12 2000 Nalin Dahyabhai <nalin@redhat.com>
+- use execle() instead of system() to get the correct return code, fixes from
+  Jeremy Katz <katzj@linuxpower.org>
+
+* 四 9月 07 2000 Nalin Dahyabhai <nalin@redhat.com>
+- rework to not have to fork() (#17286)
+- set utime() after we're done reading a directory
+
+* 六 6月 17 2000 Matt Wilson <msw@redhat.com>
+- defattr
+
+* 二 6月 13 2000 Preston Brown <pbrown@redhat.com>
+- FHS compliance
+
+* 四 5月 18 2000 Preston Brown <pbrown@redhat.com>
+- don't complain about failure to remove non-empty directories.
+- fix man page path
+
+* 三 5月 17 2000 Preston Brown <pbrown@redhat.com>
+- support /var/cache/man and /var/catman (FHS 2.1 compliance).
+
+* 五 5月 05 2000 Preston Brown <pbrown@redhat.com>
+- support for CTIME from jik@kamens.brookline.ma.us
+- fixes for fuser checks from Ian Burrell <iburrell@digital-integrity.com>.
+- remove directories when empty without --all flag, to be consistent w/docs.
+
+* 一 2月 14 2000 Preston Brown <pbrown@redhat.com>
+- option to use fuser to see if file in use before removing
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description
+- man pages are compressed
+
+* 二 1月 18 2000 Preston Brown <pbrown@redhat.com>
+- null terminal opt struct (#7836)
+- test flag implies verbose (#2383)
+
+* 三 1月 12 2000 Paul Gear <paulgear@bigfoot.com>
+- HP-UX port (including doco update)
+- Tweaked Makefile to allow installation into different base directory
+- Got rid of GETOPT_... defines which didn't do anything, so that short
+  equivalents for all long options could be defined.
+- Fixed bug in message() where 'where' file handle was set but unused
+- Changed most fprintf() calls to message()
+
+* 一 8月 30 1999 Preston Brown <pbrown@redhat.com>
+- skip lost+found directories
+- option to use file's atime instead of mtime (# 4178)
+
+* 一 6月 07 1999 Jeff Johnson <jbj@redhat.com>
+- cleanup more man pages, this time adding in cvs (#224).
+
+* 四 4月 08 1999 Preston Brown <pbrown@redhat.com>
+- I am the new maintainer
+- fixed cleanup of directories
+- added --quiet flag
+- freshen manpage
+- nice patch from Kevin Vajk <kvajk@ricochet.net> integrated
+
+* 三 6月 10 1998 Erik Troan <ewt@redhat.com>
+- make /etc/cron.daily/tmpwatch executable
+
+* 二 1月 13 1998 Erik Troan <ewt@redhat.com>
+- version 1.5
+- fixed flags passing
+- cleaned up message()
+
+* 三 10月 22 1997 Erik Troan <ewt@redhat.com>
+- added man page to package
+- uses a buildroot and %attr
+- fixed error message generation for directories
+- fixed flag propagation
+
+* 一 3月 24 1997 Erik Troan <ewt@redhat.com>
+- Don't follow symlinks which are specified on the command line
+- Added a man page
+
+* 日 3月 09 1997 Erik Troan <ewt@redhat.com>
+- Rebuilt to get right permissions on the Alpha (though I have no idea
+  how they ended up wrong).
+

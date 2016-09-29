@@ -1,0 +1,82 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.9.17-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.9.17-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.9.17-4.1
+- rebuild for alios6
+
+* 一 12月 14 2009 John W. Linville <linville@redhat.com> - 0.9.17-4
+- Correct license tag from BSD to ISC
+
+* 一 12月 14 2009 John W. Linville <linville@redhat.com> - 0.9.17-3.3
+- Change BuildRequires from kernel-devel to kernel-headers
+- Drop ExcludeArch altogether
+
+* 一 12月 14 2009 John W. Linville <linville@redhat.com> - 0.9.17-3.2
+- Exclude ppc, s390, and s390x architectures
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.9.17-3.1
+- Bump for rebuild
+
+* 四 10月 01 2009 John W. Linville <linville@redhat.com> 0.9.17-3
+- Install in /sbin
+
+* 五 9月 04 2009 John W. Linville <linville@redhat.com> 0.9.17-2
+- Revert "separate commands into sections", section type conflicts on ppc64
+
+* 五 9月 04 2009 John W. Linville <linville@redhat.com> 0.9.17-1
+- Update to 0.9.17
+
+* 一 8月 17 2009 Adel Gadllah <adel.gadllah@gmail.com> 0.9.16-1
+- Update to 0.9.16
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.15-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 7月 11 2009 Adel Gadllah <adel.gadllah@gmail.com> 0.9.15-1
+- Update to 0.9.15
+
+* 三 5月 13 2009 Adel Gadllah <adel.gadllah@gmail.com> 0.9.14-1
+- Update to 0.9.14
+
+* 六 5月 02 2009 John W. Linville <linville@redhat.com> 0.9.13-1
+- Update to 0.9.13
+
+* 三 4月 15 2009 John W. Linville <linville@redhat.com> 0.9.12-1
+- Update to 0.9.12
+
+* 一 4月 06 2009 John W. Linville <linville@redhat.com> 0.9.11-1
+- Update to 0.9.11
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.9.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 1月 10 2009 Adel Gadllah <adel.gadllah@gmail.com> 0.9.7-1
+- Update to 0.9.7
+
+* 日 10月 26 2008 Adel Gadllah <adel.gadllah@gmail.com> 0.9.6-1
+- Update to 0.9.6
+
+* 日 9月 28 2008 Adel Gadllah <adel.gadllah@gmail.com> 0.9.5-3
+- Use offical tarball
+
+* 日 9月 28 2008 Adel Gadllah <adel.gadllah@gmail.com> 0.9.5-2
+- Fix BuildRequires
+
+* 日 9月 28 2008 Adel Gadllah <adel.gadllah@gmail.com> 0.9.5-1
+- Update to 0.9.5
+
+* 二 7月 22 2008 Adel Gadllah <adel.gadllah@gmail.com> 0.0-0.3.20080703gitf6fc7dc
+- Add commitid to version
+- Use versioned buildrequires for kernel-devel
+
+* 四 7月 03 2008 Adel Gadllah <adel.gadllah@gmail.com> 0.0-0.2.20080703git
+- Add tarball instructions
+- Fix install
+- Fix changelog
+
+* 四 7月 03 2008 Adel Gadllah <adel.gadllah@gmail.com> 0.0-0.1.20080703git
+- Initial build
+

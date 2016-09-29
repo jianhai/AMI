@@ -1,0 +1,701 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.2-8.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.2-8.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.28.2-8.1
+- rebuild for alios6
+
+* 日 2月 20 2011 Karanbir Singh <kbsingh@centos.org> 2.28.2-8.el6.centos
+- Roll in CentOS Branding to the spec file (#4627, fpee)
+
+* 四 7月 08 2010 Ray Strode <rstrode@redhat.com> 2.28.2-8
+- Fix XError problem in previous patch
+  Resolves: #610239
+
+* 二 6月 08 2010 Ray Strode <rstrode@redhat.com> 2.28.2-7
+- Hide randr events from "Detect Displays" button from g-s-d's
+  autoconfiguration logic
+  Resolves: #582564
+
+* 一 5月 10 2010 Matthias Clasen <mclasen@redhat.com> 2.28.2-6
+- Updated translations
+Resolve: #589200
+
+* 三 4月 21 2010 Matthias Clasen <mclasen@redhat.com> 2.28.2-5
+- Fix a typo that can cause huge memory allocations
+Resolves: #584494
+
+* 三 2月 17 2010 Ray Strode <rstrode@redhat.com> 2.28.2-4
+Resolves: #565886
+- Drop dep on desktop-backgrounds
+
+* 二 2月 16 2010 Matthias Clasen <mclasen@redhat.com> - 2.28.2-3
+- Fix a crash in the display capplet
+
+* 二 1月 12 2010 Matthias Clasen <mclasen@redhat.com> - 2.28.2-2
+- Fix gnome-settings-daemon crashes (#554944, #554945)
+
+* 一 1月 04 2010 Matthias Clasen <mclasne@redhat.com> - 2.28.2-1
+- Update to 2.28.2
+
+* 一 11月 23 2009 Ray Strode <rstrode@redhat.com> - 2.28.1-1
+Resolves: #547731
+- Update to 2.28.1 with latest patches
+
+* 一 11月 23 2009 Ray Strode <rstrode@redhat.com> - 2.26.3-1
+- Update to 2.26.3
+
+* 五 8月 28 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.26.1-6
+- Bump for rebuild
+
+* 五 5月 29 2009 Ray Strode <rstrode@redhat.com> 2.26.1-5
+- Update default background requires
+
+* 三 4月 29 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.1-4
+- Remove debug spew
+
+* 三 4月 29 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.1-3
+- Fix needle/haystack confusion causing most monitors to be 'Unknown'
+
+* 二 4月 28 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.1-2
+- Fix a case of disappearing rotations (#497515)
+
+* 一 4月 13 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.1-1
+- Update to 2.26.1
+- See http://download.gnome.org/sources/gnome-desktop/2.26/gnome-desktop-2.26.1.news
+
+* 一 3月 16 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.0-1
+- Update to 2.26.0
+
+* 二 3月 10 2009 Ray Strode <rstrode@redhat.com> - 2.25.92-1
+- Change default backgrounds to leonidas ones
+
+* 二 3月 03 2009 Matthias Clasen <mclasen@redhat.com> - 2.25.92-1
+- Update to 2.25.92
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.25.91-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 19 2009 Matthias Clasen <mclasen@redhat.com> - 2.25.91-2
+- Fix the Detect Monitors button
+
+* 四 2月 19 2009 Matthias Clasen <mclasen@redhat.com> - 2.25.91-1
+- Update to 2.25.91
+
+* 二 2月 03 2009 Matthias Clasen <mclasen@redhat.com> - 2.25.90-1
+- Update to 2.25.90
+
+* 一 1月 19 2009 Ray Strode <rstrode@redhat.com> - 2.25.5-2
+- Rebuild so i can chain-build
+
+* 一 1月 19 2009 Ray Strode <rstrode@redhat.com> - 2.25.5-1
+- Update to 2.25.5
+
+* 二 1月 06 2009 Matthias Clasen <mclasen@redhat.com> - 2.25.4-1
+- Update to 2.25.4
+
+* 二 1月 06 2009 Ray Strode <rstrode@redhat.com> - 2.25.3-3
+- Stop cross fade before freeing pixmaps in finalize instead
+  of after.
+
+* 二 12月 16 2008 Matthias Clasen <mclasen@redhat.com> - 2.25.3-2
+- Update to 2.25.3
+
+* 五 12月 05 2008 Ray Strode <rstrode@redhat.com> - 2.25.2-4
+- Fix leak in previous update (bug 468339)
+
+* 四 12月 04 2008 Ray Strode <rstrode@redhat.com> - 2.25.2-3
+- Rebase fade-in patch to latest from upstream report
+
+* 四 12月 04 2008 Matthias Clasen <mclasen@redhat.com> - 2.25.2-2
+- Update to 2.25.2
+
+* 四 11月 13 2008 Matthias Clasen <mclasen@redhat.com> - 2.25.1.1-4
+- Install gnome-bg-crossfade.h
+
+* 四 11月 13 2008 Matthias Clasen <mclasen@redhat.com> - 2.25.1.1-3
+- Update to 2.25.1.1
+
+* 四 11月 06 2008 Matthias Clasen <mclasen@redhat.com> - 2.24.1-5
+- Require gnome-python2-gnome (#469938)
+
+* 二 10月 28 2008 Ray Strode <rstrode@redhat.com> - 2.24.1-4
+- Take Requires: solar-backgrounds from libgnome so KDE
+  spin doesn't pull it in (Requested by Rex).
+
+* 一 10月 27 2008 Ray Strode <rstrode@redhat.com> - 2.24.1-3
+- Don't leak memory when crossfading if nautilus is disabled
+  (bug 468339)
+
+* 五 10月 24 2008 Ray Strode <rstrode@redhat.com> - 2.24.1-2
+- properly initialize variable in gnome_bg_get_pixmap_from_root
+  (bug 460758)
+
+* 三 10月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.24.1-1
+- Update to 2.24.1
+
+* 一 10月 20 2008 Ray Strode <rstrode@redhat.com> - 2.24.0-9
+- Fix icon flicker at start of cross fade
+
+* 一 10月 20 2008 Ray Strode <rstrode@redhat.com> - 2.24.0-8
+- consoliate window repaint code to one place
+- Lengthen duration of animation if getting to the first frame
+  takes a long time.
+
+* 三 10月 15 2008 Ray Strode <rstrode@redhat.com> - 2.24.0-7
+- Add new api for getting the root window pixmap
+- Pass start window to crossfade "finished" signal
+
+* 二 10月 14 2008 Ray Strode <rstrode@redhat.com> - 2.24.0-6
+- Hold off on settings daemon cross fade if nautilus is going
+  to do it anyway.  Grab the server while getting the initial
+  pixmap source and target to prevent BadDrawable race
+
+* 日 10月 12 2008 Ray Strode <rstrode@redhat.com> - 2.24.0-5
+- Don't crossfade between frames on a slideshow
+
+* 五 10月 10 2008 Ray Strode <rstrode@redhat.com> - 2.24.0-4
+- Try to address bug 465699 by throttling animation frames
+  to X server.  May revert if it ends up making animation
+  choppy for a lot of people.
+
+* 三 9月 24 2008 Ray Strode <rstrode@redhat.com> - 2.24.0-3
+- make bg crossfade animation .75 seconds instead of .5
+
+* 三 9月 24 2008 Soren Sandmann <sandmann@redhat.com> - 2.24.0-2
+- Make clone-modes.patch work again
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.24.0-1
+- Update to 2.24.0
+
+* 一 9月 22 2008 Ray Strode <rstrode@redhat.com> - 2.23.92-5
+- s/animatins/animations/ yes there's deja vu here
+
+* 一 9月 22 2008 Ray Strode <rstrode@redhat.com> - 2.23.92-4
+- Add some flush calls to make transition smoother
+
+* 四 9月 18 2008 Ray Strode <rstrode@redhat.com> - 2.23.92-3
+- s/animatins/animations/
+
+* 四 9月 18 2008 Ray Strode <rstrode@redhat.com> - 2.23.92-2
+- Add new api for doing desktop background change transition
+
+* 一 9月 08 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.92-1
+- Update to 2.23.92
+
+* 四 9月 04 2008 Soren Sandmann <sandmann@redhat.com> - 2.23.91-4
+- Fix bug 461152
+
+* 三 9月 03 2008 Soren Sandmann <sandmann@redhat.com> - 2.23.91-3
+- Bump release number to make chain-build work
+
+* 三 9月 03 2008 Soren Sandmann <sandmann@redhat.com> - 2.23.91-2
+- Add patch to move clone mode enumeration to gnome-rr.c
+
+* 二 9月 02 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.91-1
+- Update to 2.23.91
+
+* 五 8月 29 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.90-5
+- Plug more memory leaks
+
+* 五 8月 29 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.90-4
+- Plug a memory leak
+
+* 一 8月 25 2008 Adam Jackson <ajax@redhat.com> 2.23.90-3
+- gnome-desktop-2.23.90-eedid.patch: Allow E-EDID blocks.
+
+* 六 8月 23 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.90-2
+- Require enough python to make gnome-about work
+
+* 五 8月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.90-1
+- Update to 2.23.90
+
+* 二 8月 05 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.6-2
+- Remove a long-obsolete patch
+
+* 二 8月 05 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.6-1
+- Update to 2.23.6
+
+* 二 7月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.5-1
+- Update to 2.23.5
+
+* 三 6月 18 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.4-1
+- Update to 2.23.4
+
+* 三 6月 04 2008 Tomas Bzatek <tbzatek@redhat.com> - 2.23.3-1
+- Update to 2.23.3
+- Removed patches that are upstream
+
+* 三 5月 14 2008 Jon McCann <jmccann@redhat.com> - 2.23.2-0.2008.05.14.1
+- Update to 2.23.2 snapshot
+
+* 五 4月 25 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.1-1
+- Update to 2.23.1
+
+* 二 4月 08 2008 Soren Sandmann <sandmann@redhat.com> - 2.22.1-2
+- Fix bug where the dpi of the screen got miscalculated
+
+* 一 4月 07 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.1-1
+- Update to 2.22.1
+
+* 六 4月 05 2008 Soren Sandmann <sandmann@redhat.com> - 2.22.0-6
+- Update randr code
+
+* 五 4月 04 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-5
+- Fix some logic errors wrt to caching of slideshows that
+  may cause nautilus crashes
+
+* 六 3月 29 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-4
+- Handle slideshow start times in the future correctly
+
+* 三 3月 26 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-3
+- Fix mistranslations that cause gnome-about to crash 
+  in some locales (el, mk)
+
+* 四 3月 20 2008 Soren Sandmann <sandmann@redhat.com> - 2.22.0-2
+- Update randr code
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-1
+- Update to 2.22.0
+
+* 日 3月 02 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.92-3
+- Update randr code with more display manufacturers.
+
+* 二 2月 26 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.92-2
+- Fix a bug in the multires patch
+
+* 二 2月 26 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.92-1
+- Update to 2.21.92
+
+* 日 2月 24 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.91-8
+- Support multi-resolution backgrounds
+
+* 三 2月 20 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.91-7
+* Update randr code
+
+* 二 2月 19 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.91-6
+- Fix a possible crash in the background code
+
+* 五 2月 15 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.91-5
+* Update randr code
+
+* 三 2月 13 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.91-4
+- Update randrwrap
+
+* 三 2月 13 2008 Ray Strode <rstrode@redhat.com> - 2.21.91-3
+- Get rid of gnome-vfs BuildRequires
+
+* 二 2月 12 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.91-2
+- Add monitor-db.[ch]
+
+* 二 2月 12 2008 Soren Sandmann <sandmann@redhat.com> 
+- Update randrwrap
+
+* 二 2月 12 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.91-1
+- Update to 2.21.91
+
+* 一 2月 04 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.90-5
+- Update randrwrap - add rotations.
+
+* 二 1月 29 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.90-3
+- Update randrwrap.
+
+* 二 1月 29 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.90-3
+- Update randrwrap.
+
+* 二 1月 29 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.5-2
+- uncomment stuff from gnome-common in configure.in
+
+* 二 1月 29 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.5-2
+- Don't buildrequire gtk-doc
+- Install randrwrap.h
+
+* 二 1月 29 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.5-2
+- Add randrwrap.[ch]
+
+* 二 1月 29 2008 Soren Sandmann <sandmann@redhat.com> - 2.21.5-2
+- BuildRequire gtk-doc >= 1.9
+
+* 一 1月 14 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.5-1
+- Update to 2.21.5
+
+* 二 12月 18 2007 Matthias Clasen <mclasen@redhat.com> - 2.21.4-1
+- Update to 2.21.4
+
+* 二 11月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.21.2-1
+- Update to 2.21.2
+
+* 一 10月 15 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1-1
+- Update to 2.20.1 (bug fixes and translation updates)
+
+* 四 9月 27 2007 Ray Strode <rstrode@redhat.com> - 2.20.0-3
+- remove seemingly unneccessary dep on redhat-artwork
+
+* 三 9月 26 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.0-2
+- Fix a memory leak
+
+* 一 9月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.0-1
+- Update to 2.20.0
+
+* 二 9月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.92-1
+- Update to 2.19.92 (translation updates)
+
+* 五 8月 31 2007 Soren Sandmann <sandmann@redhat.com> - 2.19.90-7
+- Plug a leak in the slideshow parser
+
+* 三 8月 29 2007 Soren Sandmann <sandmann@redhat.com> - 2.19.90-6
+- Delete cache on URI switch. Various cleanups.
+
+* 三 8月 29 2007 Soren Sandmann <sandmann@redhat.com> - 2.19.90-5
+- Fix unbounded caching. Bug 247943.
+
+* 二 8月 28 2007 Soren Sandmann <sandmann@redhat.com> - 2.19.90-4
+- Change starttime format to be timezone relative.
+
+* 五 8月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.90-3
+- Try harder to get size information
+
+* 五 8月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.90-2
+- Fix a problem with transitions in thumbnails of slideshows
+
+* 一 8月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.90-1
+- Update to 2.19.90
+
+* 二 8月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.6-3
+- Use %find_lang for help files
+
+* 五 8月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.6-2
+- Update license field
+
+* 一 7月 30 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.6-1
+- Update to 2.19.6
+
+* 日 7月 08 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.5-1
+- Update to 2.19.5
+
+* 日 6月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.4-1
+- Update to 2.19.4
+
+* 一 6月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.3.1-1
+- Update to 2.19.3.1
+
+* 一 6月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.3-1
+- Update to 2.19.3
+
+* 六 5月 19 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.2-1
+- Update to 2.19.2
+
+* 五 3月 23 2007 Soren Sandmann <sandmann@redhat.com> - 2.18.0-4
+- Remove debug spew - add file caching - delete totally_obscures function.
+
+* 二 3月 20 2007 Soren Sandmann <sandmann@redhat.com> - 2.18.0-3
+- Fix a bug where only parts of the background pixmap would be drawn.
+
+* 一 3月 19 2007 Soren Sandmann <sandmann@redhat.com> - 2.18.0-2
+- Add GnomeBG class.
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.0-1
+- Update to 2.18.0
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.92-1
+- Update to 2.17.92
+
+* 二 2月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.91-1
+- Update to 2.17.91
+
+* 日 1月 21 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.90-1
+- Update to 2.17.90
+- Drop some long-obsolete images
+- Clean up BuildRequires
+
+* 三 1月 10 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.5-1
+- Update to 2.17.5
+
+* 二 11月 07 2006 Matthias Clasen <mclasen@redhat.com> - 2.17.2-1
+- Update to 2.17.2
+
+* 六 10月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.1-1
+- Update to 2.16.1
+
+* 一 9月 04 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-1.fc6
+- Update to 2.16.0
+
+* 一 8月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.92-1.fc6
+- Update to 2.15.92
+- Require pkgconfig in the -devel package
+
+* 日 8月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.91-1.fc6
+- Update to 2.15.91
+
+* 四 8月 03 2006 Matthias Clasen <mclasen@redhat.com> - 2.15-90-1.fc6
+- Update to 2.15.90
+- Don't ship static libraries
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.4-1
+- Update to 2.15.4
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.15.2-1.1
+- rebuild
+
+* 三 5月 17 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.2-1
+- Update to 2.15.2
+
+* 二 5月 09 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.1-1
+- Update to 2.15.1
+
+* 二 4月 11 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.1.1-2
+- Update to 2.14.1.1
+
+* 一 4月 10 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.1-2
+- Update to 2.14.1
+
+* 二 3月 14 2006 Ray Strode <rstrode@redhat.com> - 2.14.0-1
+- Update to 2.14.0
+
+* 二 2月 28 2006 Karsten Hopp <karsten@redhat.de> 2.13.92-2
+- BuildRequires: gnome-doc-utils
+
+* 一 2月 27 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.92-1
+- Update to 2.13.92
+
+* 一 2月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.91-1
+- Update to 2.13.91
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.13.90-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.13.90-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 六 1月 28 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.90-1
+- Update to 2.13.90
+
+* 一 1月 16 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.5-1
+- Update to 2.13.5
+
+* 二 1月 03 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.4-1
+- Update to 2.13.4
+
+* 三 12月 14 2005 Matthias Clasen <mclasen@redhat.com> - 2.13.3-1
+- Update to 2.13.3
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 30 2005 Matthias Clasen <mclasen@redhat.com> - 2.13.2-1
+- Update to 2.13.2
+
+* 四 10月 06 2005 Matthias Clasen <mclasen@redhat.com> - 2.12.1-1
+- Update to 2.12.1
+
+* 四 9月 08 2005 Matthias Clasen <mclasen@redhat.com> - 2.12.0-1
+- Update to 2.12.0
+
+* 二 8月 16 2005 Warren Togami <wtogami@redhat.com> - 2.11.90-2
+- rebuild for new cairo
+
+* 五 8月 05 2005 Matthias Clasen <mclasen@redhat.com> - 2.11.90-1
+- Update to 2.11.90
+
+* 六 7月 09 2005 Matthias Clasen <mclasen@redhat.com> - 2.11.4-1
+- Update to 2.11.4
+
+* 一 5月 23 2005 Ray Strode <rstrode@redhat.com> - 2.10.0-5
+- Let's try this gettext patch one more time--maybe, just
+  maybe, I'll get it right this time (bug 155659).
+
+* 一 5月 16 2005 Ray Strode <rstrode@redhat.com> - 2.10.0-4
+- run gettext initialization routines on startup (bug 155659)
+  (use right patch).
+
+* 四 5月 05 2005 Ray Strode <rstrode@redhat.com> - 2.10.0-3
+- Revert previous patch--it was wrong(bug 155659).
+
+* 三 5月 04 2005 Ray Strode <rstrode@redhat.com> - 2.10.0-2
+- run gettext initialization routines on startup (bug 155659).
+
+* 四 3月 17 2005 Ray Strode <rstrode@redhat.com> - 2.10.0-1
+- Update to upstream version 2.10.0
+
+* 三 3月 02 2005 Mark McLoughlin <markmc@redhat.com> 2.9.91-3
+- Rebuild with gcc4
+
+* 一 2月 21 2005 Than Ngo <than@redhat.com> 2.9.91-2
+- gnome-about only in GNOME-menu
+
+* 三 2月 09 2005 Matthias Clasen <mclasen@redhat.com> 2.9.91-1
+- Update to 2.9.91
+
+* 五 2月 04 2005 Matthias Clasen <mclasen@redhat.com> 2.9.90.1-1
+- Update to 2.9.90.1
+
+* 二 10月 12 2004 Mark McLoughlin <markmc@redhat.com> 2.8.0-3
+- Add tamil translation
+
+* 三 9月 29 2004 Mark McLoughlin <markmc@redhat.com> 2.8.0-2
+- Add some new icons from upstream
+
+* 二 9月 21 2004 Mark McLoughlin <markmc@redhat.com> 2.8.0-1
+- Update to 2.8.0
+
+* 一 8月 30 2004 Mark McLoughlin <markmc@redhat.com> 2.7.92-1
+- Update to 2.7.92
+
+* 三 8月 18 2004 Mark McLoughlin <markmc@redhat.com> 2.7.91-1
+- Update to 2.7.91
+
+* 三 8月 04 2004 Mark McLoughlin <markmc@redhat.com> 2.7.90-1
+- Update to 2.7.90
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 4月 17 2004 Warren Togami <wtogami@redhat.com> 2.6.0.1-2
+- #111123 BR scrollkeeper gettext, some minor cleanups
+
+* 三 3月 31 2004 Mark McLoughlin <markmc@redhat.com> 2.6.0.1-1
+- Update to 2.6.0.1
+
+* 三 3月 10 2004 Mark McLoughlin <markmc@redhat.com> 2.5.91-1
+- Update to 2.5.91
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 Mark McLoughlin <markmc@redhat.com> 2.5.90-1
+- Update to 2.5.90
+- Remove hack to get rid of GNOME_COMPILE_WARNINGS and
+  use --disable-compile-warnings instead.
+- Package the (L)GPL/FDL and gnome-feedback docs
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 1月 26 2004 Alexander Larsson <alexl@redhat.com> 2.5.3-1
+- Update to 2.5.3
+
+* 三 9月 10 2003 Jonathan Blandford <jrb@redhat.com> 2.4.0-1
+- 2.4.0
+
+* 三 8月 27 2003 Alexander Larsson <alexl@redhat.com> 2.3.7-1
+- update to 2.3.7
+
+* 四 8月 14 2003 Alexander Larsson <alexl@redhat.com> 2.3.6.1-1
+- update to gnome 2.3
+
+* 一 7月 28 2003 Havoc Pennington <hp@redhat.com> 2.2.2-2
+- libtoolize
+- rebuild
+
+* 一 7月 07 2003 Havoc Pennington <hp@redhat.com> 2.2.2-1
+- 2.2.2
+- remove now-upstream patch
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 17 2003 Havoc Pennington <hp@redhat.com> 2.2.0.1-4
+- fix mem corruption #84361
+
+* 五 2月 14 2003 Havoc Pennington <hp@redhat.com> 2.2.0.1-3
+- nuke Xft buildreq
+
+* 三 2月 05 2003 Havoc Pennington <hp@redhat.com> 2.2.0.1-2
+- require startup-notification 0.5, just for paranoia
+
+* 三 2月 05 2003 Alexander Larsson <alexl@redhat.com>
+- 2.2.0.1
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 1月 15 2003 Jonathan Blandford <jrb@redhat.com>
+- require startup-notification
+
+* 二 1月 14 2003 Alexander Larsson <alexl@redhat.com> 2.1.90-2
+- Change the fallback kde theme name from hicolor to crystalsvg.
+
+* 四 1月 09 2003 Havoc Pennington <hp@redhat.com> 2.1.90-1
+- 2.1.90
+
+* 六 12月 14 2002 Havoc Pennington <hp@redhat.com>
+- 2.1.4
+
+* 二 12月 03 2002 Havoc Pennington <hp@redhat.com>
+- add gconftool-2 prereq
+
+* 一 12月 02 2002 Havoc Pennington <hp@redhat.com>
+- remove bad post (we no longer include a schemas file)
+
+* 一 12月 02 2002 Havoc Pennington <hp@redhat.com>
+- 2.1.3
+
+* 三 11月 13 2002 Havoc Pennington <hp@redhat.com>
+- 2.1.2
+
+* 三 9月 04 2002 Havoc Pennington <hp@redhat.com>
+- support a magic flag in icon theme to avoid using 
+  prescaled icons
+
+* 二 8月 13 2002 Havoc Pennington <hp@redhat.com>
+- put in a schema so we default the the right icon theme
+- fill in gnome-version.xml stuff #71445
+
+* 一 8月 12 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.6 final for gnome 2.0.1
+
+* 二 8月 06 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.5
+
+* 二 7月 23 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.3.90 cvs snap, should fix failure to launch symlink desktop
+  files
+
+* 三 6月 26 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.0.2, fix missing po files
+
+* 日 6月 16 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.0
+
+* 一 6月 10 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 一 6月 10 2002 Havoc Pennington <hp@redhat.com>
+- also obsolete gnome-core-devel
+- require redhat-artwork and redhat-menus
+- build require Xft/fontconfig
+
+* 五 6月 07 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 三 6月 05 2002 Havoc Pennington <hp@redhat.com>
+- add post/postun ldconfig
+
+* 三 6月 05 2002 Havoc Pennington <hp@redhat.com>
+- 1.5.22
+
+* 五 5月 31 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 五 5月 31 2002 Havoc Pennington <hp@redhat.com>
+- 1.5.21
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 5月 21 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+- build requires libgnome
+
+* 一 5月 20 2002 Havoc Pennington <hp@redhat.com>
+- 1.5.20
+- provides gnome-core
+
+* 五 5月 03 2002 Havoc Pennington <hp@redhat.com>
+- 1.5.18
+
+* 二 4月 16 2002 Havoc Pennington <hp@redhat.com>
+- Initial build.
+

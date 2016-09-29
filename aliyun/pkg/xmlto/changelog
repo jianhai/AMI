@@ -1,0 +1,269 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.0.23-3.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.0.23-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.0.23-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.0.23-3.1
+- rebuild for alios6
+
+* 五 6月 04 2010 Ondrej Vasik <ovasik@redhat.com> - 0.0.23-3
+- workaround passivetex limitation for chapter titles starting
+  with L(#599805)
+
+* 四 9月 24 2009 Ondrej Vasik <ovasik@redhat.com> - 0.0.23-2
+- ensure the default shell is /bin/bash instead of /bin/sh
+
+* 一 9月 21 2009 Ondrej Vasik <ovasik@redhat.com> - 0.0.23-1
+- New version 0.0.23
+- added autodetection for more common tools like
+  gnu cp or tail
+- added option --noautosize to prevent overriding
+  of user-defined or system-default paper size
+- use shell built-in 'type -t' instead of 'which'
+  utility for detection of file availability
+
+* 六 8月 01 2009 Ondrej Vasik <ovasik@redhat.com> - 0.0.22-3
+- make subpackages noarch, preserve timestamps - merge
+  review (#226568)
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.22-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 3月 25 2009 Ondrej Vasik <ovasik@redhat.com> - 0.0.22-1
+- New version 0.0.22
+- autodetection for tools/program paths, consolidated
+  error code handling, build warnings cleanup
+
+* 一 3月 16 2009 Ondrej Vasik <ovasik@redhat.com> - 0.0.21-9
+- reenable noent switch - bug is on lcdproc side
+- add xhtml support(subpackage) (#145140)
+
+* 一 3月 02 2009 Ondrej Vasik <ovasik@redhat.com> - 0.0.21-8
+- temporarily disable noent switch - blocks lcdproc doc build
+  (#488093)
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.0.21-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 1月 28 2009 Ondrej Vasik <ovasik@redhat.com> - 0.0.21-6
+- fix cleaning up of temporary files with libpaper(Debian)
+- fix xmllint postvalid (added noent option), use nonet
+  switch
+
+* 一 1月 05 2009 Ondrej Vasik <ovasik@redhat.com> - 0.0.21-5
+- fix stringparam option functionality
+
+* 二 12月 16 2008 Ondrej Vasik <ovasik@redhat.com> - 0.0.21-4
+- merge review(#226568)
+  correct doc filelist attributes, add License GPL+ for xmlif
+
+* 五 12月 12 2008 Ondrej Vasik <ovasik@redhat.com> - 0.0.21-3
+- merge review(#226568):
+  ship documentation files, fix license tag, use recommended
+  parallel make, make install instead of macro, require libxslt
+  instead of direct binary requirement
+
+* 五 7月 11 2008 Ondrej Vasik <ovasik@redhat.com> - 0.0.21-2
+- xmlto-tex subpackage to prevent requirements for
+  passivetex/tex for all backends(#454341)
+
+* 五 6月 20 2008 Ondrej Vasik <ovasik@redhat.com> - 0.0.21-1
+- new version 0.0.21
+
+* 二 5月 13 2008 Ondrej Vasik <ovasik@redhat.com> - 0.0.20-3
+- fixed errorneus handling of backend stylesheet(#446092)
+- removed unused patches
+
+* 一 2月 11 2008 Ondrej Vasik <ovasik@redhat.com> - 0.0.20-2
+- gcc4.3 rebuild
+
+* 四 1月 17 2008 Ondrej Vasik <ovasik@redhat.com> - 0.0.20-1
+- new version 0.0.20
+- added experimental fop support(additional output formats)
+- possibility to read stylesheet from STDIN, using recursive
+  cp in docbook formats, updated man pages
+
+* 三 11月 28 2007 Ondrej Vasik <ovasik@redhat.com> - 0.0.19-1
+- new version 0.0.19
+- added dist tag
+
+* 五 10月 12 2007 Ondrej Vasik <ovasik@redhat.com> - 0.0.18-17
+- generalized text-www-browser requirements(#174566)
+
+* 一 10月 08 2007 Ondrej Vasik <ovasik@redhat.com> - 0.0.18-16
+- fixed warning message from find in usage() display(#322121)
+
+* 三 9月 19 2007 Ondrej Vasik <ovasik@redhat.com> - 0.0.18-15
+- fixed wrong source URL
+
+* 四 8月 23 2007 Ondrej Vasik <ovasik@redhat.com> - 0.0.18-14
+- rebuilt for F8
+- changed License tag to GPLv2
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.0.18-13.1
+- rebuild
+
+* 四 6月 08 2006 Tim Waugh <twaugh@redhat.com> 0.0.18-13
+- Removed debugging.
+
+* 四 6月 08 2006 Tim Waugh <twaugh@redhat.com> 0.0.18-12
+- Debug build.
+
+* 四 6月 08 2006 Tim Waugh <twaugh@redhat.com> 0.0.18-11
+- Rebuilt.
+
+* 一 6月 05 2006 Tim Waugh <twaugh@redhat.com> 0.0.18-10
+- Rebuilt.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.0.18-9.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.0.18-9.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 8月 08 2005 Tim Waugh <twaugh@redhat.com> 0.0.18-9
+- Fixed quoting in scripts (bug #165338).
+
+* 一 8月 01 2005 Tim Waugh <twaugh@redhat.com> 0.0.18-8
+- Requires w3m (bug #164798).
+
+* 一 7月 25 2005 Tim Waugh <twaugh@redhat.com> 0.0.18-7
+- Rebuild for new man-pages stylesheet.
+
+* 一 4月 04 2005 Tim Waugh <twaugh@redhat.com>
+- Requires util-linux and flex, as does the build.
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 0.0.18-6
+- Rebuild for new GCC.
+
+* 三 2月 09 2005 Tim Waugh <twaugh@redhat.com> 0.0.18-5
+- Rebuilt.
+
+* 四 7月 01 2004 Tim Waugh <twaugh@redhat.com> 0.0.18-4
+- Magic encoding is enabled again (bug #126921).
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 21 2004 Tim Waugh <twaugh@redhat.com> 0.0.18-1
+- 0.0.18.
+
+* 一 12月 01 2003 Tim Waugh <twaugh@redhat.com> 0.0.17-1
+- 0.0.17.
+
+* 二 11月 18 2003 Tim Waugh <twaugh@redhat.com> 0.0.16-1
+- 0.0.16.
+
+* 二 10月 07 2003 Tim Waugh <twaugh@redhat.com> 0.0.15-1
+- 0.0.15.
+
+* 二 9月 23 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- allow compiling without tetex(passivetex) dependency
+
+* 二 6月 17 2003 Tim Waugh <twaugh@redhat.com> 0.0.14-3
+- Rebuilt.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 5月 23 2003 Tim Waugh <twaugh@redhat.com> 0.0.14-1
+- 0.0.14.
+
+* 日 5月 11 2003 Tim Waugh <twaugh@redhat.com> 0.0.13-1
+- 0.0.13.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 1月 03 2003 Tim Waugh <twaugh@redhat.com> 0.0.12-2
+- Disable magic encoding detection, since the stylesheets don't handle
+  it well at all (bug #80732).
+
+* 四 12月 12 2002 Tim Waugh <twaugh@redhat.com> 0.0.12-1
+- 0.0.12.
+
+* 三 10月 16 2002 Tim Waugh <twaugh@redhat.com> 0.0.11-1
+- 0.0.11.
+- xmlto.mak no longer needed.
+- CVS patch no longer needed.
+- Update docbook-xsl requirement.
+- Ship xmlif.
+- Run tests.
+- No longer a noarch package.
+
+* 二 7月 09 2002 Tim Waugh <twaugh@redhat.com> 0.0.10-4
+- Ship xmlto.mak.
+
+* 四 6月 27 2002 Tim Waugh <twaugh@redhat.com> 0.0.10-3
+- Some db2man improvements from CVS.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 0.0.10-2
+- automated rebuild
+
+* 二 6月 18 2002 Tim Waugh <twaugh@redhat.com> 0.0.10-1
+- 0.0.10.
+- No longer need texinputs patch.
+
+* 二 6月 18 2002 Tim Waugh <twaugh@redhat.com> 0.0.9-3
+- Fix TEXINPUTS problem with ps and dvi backends.
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com> 0.0.9-2
+- automated rebuild
+
+* 三 5月 01 2002 Tim Waugh <twaugh@redhat.com> 0.0.9-1
+- 0.0.9.
+- The nonet patch is no longer needed.
+
+* 五 4月 12 2002 Tim Waugh <twaugh@redhat.com> 0.0.8-3
+- Don't fetch entities over the network.
+
+* 四 2月 21 2002 Tim Waugh <twaugh@redhat.com> 0.0.8-2
+- Rebuild in new environment.
+
+* 二 2月 12 2002 Tim Waugh <twaugh@redhat.com> 0.0.8-1
+- 0.0.8.
+
+* 五 1月 25 2002 Tim Waugh <twaugh@redhat.com> 0.0.7-2
+- Require the DocBook DTDs.
+
+* 一 1月 21 2002 Tim Waugh <twaugh@redhat.com> 0.0.7-1
+- 0.0.7 (bug #58624, bug #58625).
+
+* 三 1月 16 2002 Tim Waugh <twaugh@redhat.com> 0.0.6-1
+- 0.0.6.
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com> 0.0.5-4
+- automated rebuild
+
+* 三 1月 09 2002 Tim Waugh <twaugh@redhat.com> 0.0.5-3
+- 0.0.6pre2.
+
+* 三 1月 09 2002 Tim Waugh <twaugh@redhat.com> 0.0.5-2
+- 0.0.6pre1.
+
+* 二 1月 08 2002 Tim Waugh <twaugh@redhat.com> 0.0.5-1
+- 0.0.5.
+
+* 一 12月 17 2001 Tim Waugh <twaugh@redhat.com> 0.0.4-2
+- 0.0.4.
+- Apply patch from CVS to fix silly typos.
+
+* 六 12月 08 2001 Tim Waugh <twaugh@redhat.com> 0.0.3-1
+- 0.0.3.
+
+* 三 12月 05 2001 Tim Waugh <twaugh@redhat.com>
+- Built for Red Hat Linux.
+
+* 五 11月 23 2001 Tim Waugh <twaugh@redhat.com>
+- Initial spec file.
+

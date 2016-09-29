@@ -1,0 +1,18 @@
+/bin/sh  
+/usr/bin/perl  
+docbook-dtds  
+docbook-style-dsssl >= 1.72
+gawk  
+grep  
+perl(Getopt::Long) >= 2.01
+perl(integer)  
+perl(strict)  
+perl(vars)  
+perl-SGMLSpm >= 1.03ii
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+text-www-browser  
+which  
+rpmlib(PayloadIsXz) <= 5.2-1

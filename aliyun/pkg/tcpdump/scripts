@@ -1,0 +1,5 @@
+preinstall scriptlet (using /bin/sh):
+/usr/sbin/groupadd -g 72 tcpdump 2> /dev/null
+/usr/sbin/useradd -u 72 -g 72 -s /sbin/nologin -M -r \
+	-d / tcpdump 2> /dev/null
+exit 0

@@ -1,0 +1,611 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.6.11-2.5.4
+- fix alios
+
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.6.11-2.4.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.6.11-2.3.4
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.6.11-2.2.4
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.6.11-2.1.4
+- rebuild for alios6
+
+* 二 5月 31 2011 Joe Orton <jorton@redhat.com> - 1.6.11-2.4
+- add security fixes for CVE-2011-1752, CVE-2011-1783, CVE-2011-1921 (#709220)
+
+* 二 3月 01 2011 Joe Orton <jorton@redhat.com> - 1.6.11-2.3
+- add security fix for CVE-2011-0715 (#681173)
+
+* 四 1月 27 2011 Joe Orton <jorton@redhat.com> - 1.6.11-2.2
+- add security fixes for CVE-2010-4644, CVE-2010-4539 (#672678)
+
+* 三 10月 13 2010 Joe Orton <jorton@redhat.com> - 1.6.11-2.1
+- add security fix for CVE-2010-3315 (#640322)
+
+* 五 9月 03 2010 Joe Orton <jorton@redhat.com> - 1.6.11-2
+- restore PIE support (#629940)
+- build using GCJ
+
+* 六 4月 17 2010 Joe Orton <jorton@redhat.com> - 1.6.11-1
+- update to 1.6.11 (#587588)
+- BR zip and unzip to fix JAR repacking (#587222)
+
+* 六 2月 13 2010 Joe Orton <jorton@redhat.com> - 1.6.9-2
+- fix detection of libkdecore
+
+* 一 2月 08 2010 Joe Orton <jorton@redhat.com> - 1.6.9-1
+- update to 1.6.9 (#561810)
+- fix comments in subversion.conf (#551484)
+- update to psvn.el r40299
+
+* 一 1月 25 2010 Ville Skyttä <ville.skytta@iki.fi> - 1.6.6-5
+- Include svn2cl and its man page only in the -svn2cl subpackage (#558598).
+- Do not include bash completion in docs, it's installed.
+
+* 一 12月 07 2009 Stepan Kasal <skasal@redhat.com> - 1.6.6-4
+- rebuild against perl 5.10.1
+
+* 四 11月 26 2009 Joe Orton <jorton@redhat.com> - 1.6.6-3
+- rebuild for new db4
+- trim libsvn_* from dependency_libs in *.la
+
+* 三 11月 25 2009 Kevin Kofler <Kevin@tigcc.ticalc.org> 1.6.6-2
+- rebuild for Qt 4.6.0 RC1 in F13 (was built against Beta 1 with unstable ABI)
+
+* 日 11月 08 2009 Joe Orton <jorton@redhat.com> - 1.6.6-1
+- update to 1.6.6
+
+* 一 11月 02 2009 Ville Skyttä <ville.skytta@iki.fi> - 1.6.5-3
+- Apply svn2cl upstream patch to fix newline issues with libxml2 2.7.4+,
+  see http://bugs.debian.org/546990 for details.
+
+* 六 9月 19 2009 Ville Skyttä <ville.skytta@iki.fi> - 1.6.5-2
+- Ship svn2cl and bash completion (#496456).
+- Add %defattr to -gnome and -kde.
+
+* 日 8月 23 2009 Joe Orton <jorton@redhat.com> 1.6.5-1
+- update to 1.6.5
+
+* 二 8月 18 2009 Joe Orton <jorton@redhat.com> 1.6.4-4
+- rebuild
+
+* 二 8月 11 2009 Ville Skyttä <ville.skytta@iki.fi> - 1.6.4-3
+- Use bzipped upstream tarball.
+
+* 五 8月 07 2009 Joe Orton <jorton@redhat.com> 1.6.4-2
+- update to 1.6.4
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.6.3-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 23 2009 Joe Orton <jorton@redhat.com> 1.6.3-2
+- remove -devel dependency on -gnome, -kde (#513313)
+
+* 二 6月 23 2009 Joe Orton <jorton@redhat.com> 1.6.3-1
+- update to 1.6.3
+
+* 日 6月 14 2009 Joe Orton <jorton@redhat.com> 1.6.2-3
+- add -gnome, -kde subpackages
+
+* 一 6月 01 2009 Joe Orton <jorton@redhat.com> 1.6.2-2
+- enable KWallet, gnome-keyring support
+
+* 五 5月 15 2009 Joe Orton <jorton@redhat.com> 1.6.2-1
+- update to 1.6.2
+
+* 三 4月 15 2009 Joe Orton <jorton@redhat.com> 1.6.1-4
+- really disable PIE
+
+* 二 4月 14 2009 Joe Orton <jorton@redhat.com> 1.6.1-3
+- update to 1.6.1; disable PIE patch for the time being
+
+* 二 3月 31 2009 Joe Orton <jorton@redhat.com> 1.6.0-3
+- BR sqlite-devel
+
+* 二 3月 31 2009 Joe Orton <jorton@redhat.com> 1.6.0-1
+- update to 1.6.0
+
+* 四 3月 12 2009 Dennis Gilmore <dennis@ausil.us> - 1.5.6-4
+- use -fPIE on sparc64
+
+* 一 3月 09 2009 Joe Orton <jorton@redhat.com> 1.5.6-3
+- update to 1.5.6
+- autoload psvn (#238491, Tom Tromey)
+- regenerate swig bindings (#480503)
+- fix build with libtool 2.2 (#469524)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.5-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 30 2009 Joe Orton <jorton@redhat.com> 1.5.5-5
+- update to 1.5.5
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 1.5.4-4
+- Rebuild for Python 2.6
+
+* 一 10月 27 2008 Joe Orton <jorton@redhat.com> 1.5.4-3
+- update to 1.5.4
+
+* 一 10月 13 2008 Joe Orton <jorton@redhat.com> 1.5.3-3
+- fix build
+
+* 一 10月 13 2008 Joe Orton <jorton@redhat.com> 1.5.3-2
+- update to 1.5.3 (#466674)
+- update psvn.el to r33557
+
+* 二 9月 30 2008 Joe Orton <jorton@redhat.com> 1.5.2-3
+- enable SASL support (#464267)
+
+* 五 9月 12 2008 Joe Orton <jorton@redhat.com> 1.5.2-2
+- update to 1.5.2
+
+* 一 7月 28 2008 Joe Orton <jorton@redhat.com> 1.5.1-2
+- update to 1.5.1
+- require suitable APR
+
+* 四 7月 10 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.5.0-8
+- rebuild against new db4-4.7
+
+* 四 7月 03 2008 Joe Orton <jorton@redhat.com> 1.5.0-7
+- add svnmerge and wcgrep to docdir (Edward Rudd, #451932)
+- drop neon version overrides
+
+* 三 7月 02 2008 Joe Orton <jorton@redhat.com> 1.5.0-6
+- build with OpenJDK
+
+* 三 7月 02 2008 Joe Orton <jorton@redhat.com> 1.5.0-5
+- fix files list
+
+* 三 7月 02 2008 Joe Orton <jorton@redhat.com> 1.5.0-4
+- swig-perl test suite fix for Perl 5.10 (upstream r31546)
+
+* 二 7月 01 2008 Joe Orton <jorton@redhat.com> 1.5.0-3
+- attempt build without java bits
+
+* 四 6月 26 2008 Joe Orton <jorton@redhat.com> 1.5.0-2
+- update to 1.5.0
+
+* 一 3月 03 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.4.6-7
+- tests are randomly failing, unrelated to new perl, disabled tests
+
+* 一 3月 03 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.4.6-6
+- rebuild for new perl (again)
+
+* 四 2月 21 2008 Lubomir Kundrak <lkundrak@redhat.com> 1.4.6-5
+- Correct install location of java stuff (#433295)
+
+* 三 2月 06 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.4.6-4
+- BR perl(ExtUtils::Embed)
+
+* 二 2月 05 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.4.6-3
+- rebuild for new perl
+
+* 五 12月 21 2007 Joe Orton <jorton@redhat.com> 1.4.6-2
+- update to 1.4.6
+
+* 一 12月 10 2007 Warren Togami <wtogami@redhat.com> 1.4.4-11
+- temporarily disable test suite
+
+* 四 12月 06 2007 Joe Orton <jorton@redhat.com> 1.4.4-10
+- fix build with swig 1.3.33 (patch by Torsten Landschoff)
+
+* 三 12月 05 2007 Joe Orton <jorton@redhat.com> 1.4.4-9
+- rebuild for OpenLDAP soname bump
+
+* 二 9月 04 2007 Joe Orton <jorton@redhat.com> 1.4.4-8
+- update to psvn.el r26383 from upstream
+
+* 日 9月 02 2007 Joe Orton <jorton@redhat.com> 1.4.4-7
+- rebuild for fixed 32-bit APR
+
+* 四 8月 30 2007 Joe Orton <jorton@redhat.com> 1.4.4-6
+- clarify License tag; re-enable test suite
+
+* 四 8月 23 2007 Joe Orton <jorton@redhat.com> 1.4.4-5
+- rebuild for neon 0.27
+
+* 三 8月 22 2007 Joe Orton <jorton@redhat.com> 1.4.4-4
+- trim dependencies from .la files
+- detabify spec file
+- test suite disabled to ease stress on builders
+
+* 三 8月 08 2007 Joe Orton <jorton@redhat.com> 1.4.4-3
+- fix build with new glibc open()-as-macro
+- build all swig code in %build, not %install
+- BuildRequire perl(Test::More), perl(ExtUtils::MakeMaker)
+
+* 二 7月 03 2007 Joe Orton <jorton@redhat.com> 1.4.4-2
+- update to 1.4.4
+- add Provides: svn (#245087)
+- fix without-java build (Lennert Buytenhek, #245467)
+
+* 三 4月 11 2007 Joe Orton <jorton@redhat.com> 1.4.3-5
+- fix version of apr/apr-util in BR (#216181)
+
+* 四 3月 29 2007 Joe Orton <jorton@redhat.com> 1.4.3-4
+- fix javahl compile failure
+
+* 一 1月 29 2007 Joe Orton <jorton@redhat.com> 1.4.3-3
+- update to 1.4.3 (#228691)
+- remove trailing dot from Summary
+- use current preferred standard BuildRoot
+- add post/postun ldconfig scriptlets for -ruby and -javahl
+
+* 五 12月 08 2006 Joe Orton <jorton@redhat.com> 1.4.2-5
+- fix use of python_sitearch
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.4.2-4
+- rebuild against python 2.5
+- follow python packaging guidelines
+
+* 三 11月 08 2006 Joe Orton <jorton@redhat.com> 1.4.2-3
+- update to 1.4.2
+
+* 一 9月 11 2006 Joe Orton <jorton@redhat.com> 1.4.0-2
+- update to 1.4.0
+
+* 四 7月 13 2006 Joe Orton <jorton@redhat.com> 1.3.2-6
+- fix ruby packaging (#191611)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> 1.3.2-5.1
+- rebuild
+
+* 三 6月 07 2006 Joe Orton <jorton@redhat.com> 1.3.2-5
+- disable test suite
+
+* 三 6月 07 2006 Joe Orton <jorton@redhat.com> 1.3.2-4
+- BR gettext
+
+* 五 6月 02 2006 Joe Orton <jorton@redhat.com> 1.3.2-3
+- re-enable test suite
+
+* 五 6月 02 2006 Joe Orton <jorton@redhat.com> 1.3.2-2
+- update to 1.3.2
+- fix Ruby sitelibdir (Garrick Staples, #191611)
+- own /etc/subversion (#189071)
+- update to psvn.el r19857
+
+* 四 4月 06 2006 Joe Orton <jorton@redhat.com> 1.3.1-4
+- move libsvn_swig_ruby* back to subversion-ruby
+
+* 二 4月 04 2006 Joe Orton <jorton@redhat.com> 1.3.1-3
+- update to 1.3.1
+- update to psvn.el r19138 (Stefan Reichoer)
+- build -java on s390 again
+
+* 四 2月 16 2006 Florian La Roche <laroche@redhat.com> - 1.3.0-5
+- do not package libs within subversion-ruby, these are already
+  available via the main package
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.3.0-4.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.3.0-4.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 31 2006 Joe Orton <jorton@redhat.com> 1.3.0-4
+- run check-swig-py in %check (#178448)
+- relax JDK requirement (Kenneth Porter, #177367)
+
+* 二 1月 31 2006 Joe Orton <jorton@redhat.com> 1.3.0-3
+- rebuild for neon 0.25
+
+* 三 1月 04 2006 Joe Orton <jorton@redhat.com> 1.3.0-2
+- update to 1.3.0 (#176833)
+- update to psvn.el r17921 Stefan Reichoer
+
+* 一 12月 12 2005 Joe Orton <jorton@redhat.com> 1.2.3-6
+- fix ownership of libsvnjavahl.* (#175289)
+- try building javahl on ia64/ppc64 again
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 02 2005 Joe Orton <jorton@redhat.com> 1.2.3-5
+- rebuild for httpd-2.2/apr-1.2/apr-util-1.2
+
+* 四 11月 10 2005 Tomas Mraz <tmraz@redhat.com> 1.2.3-4
+- rebuilt against new openssl
+
+* 四 9月 08 2005 Joe Orton <jorton@redhat.com> 1.2.3-3
+- update to 1.2.3
+- update to psvn.el r16070 from Stefan Reichoer
+- merge subversion.conf changes from RHEL4
+- merge filter-requires.sh changes from FC4 updates
+
+* 一 8月 08 2005 Joe Orton <jorton@redhat.com> 1.2.1-4
+- add BR for which (#161015)
+
+* 五 7月 22 2005 Joe Orton <jorton@redhat.com> 1.2.0-3
+- update to 1.2.1
+- fix BuildRequires for ruby and apr-util (#163126)
+- drop static library archives
+
+* 三 5月 25 2005 Joe Orton <jorton@redhat.com> 1.2.0-2
+- disable java on all but x86, x86_64, ppc (#158719)
+
+* 二 5月 24 2005 Joe Orton <jorton@redhat.com> 1.2.0-1
+- update to 1.2.0; add ruby subpackage
+
+* 三 4月 13 2005 Joe Orton <jorton@redhat.com> 1.1.4-3
+- enable java subpackage again
+- tweak subversion.conf comments
+
+* 日 4月 03 2005 Joe Orton <jorton@redhat.com> 1.1.4-2
+- update to 1.1.4
+
+* 二 3月 22 2005 Joe Orton <jorton@redhat.com> 1.1.3-8
+- further swig bindings fix (upstream via Max Bowsher, #151798)
+- fix perl File::Path dependency in filter-requires.sh
+
+* 二 3月 22 2005 Joe Orton <jorton@redhat.com> 1.1.3-7
+- restore swig bindings support (from upstream via Max Bowsher, #141343)
+- tweak SELinux commentary in default subversion.conf
+
+* 三 3月 09 2005 Joe Orton <jorton@redhat.com> 1.1.3-6
+- fix svn_load_dirs File::Path version requirement
+
+* 二 3月 08 2005 Joe Orton <jorton@redhat.com> 1.1.3-5
+- add -java subpackage for javahl libraries (Anthony Green, #116202)
+
+* 五 3月 04 2005 Joe Orton <jorton@redhat.com> 1.1.3-4
+- rebuild
+
+* 二 2月 15 2005 Joe Orton <jorton@redhat.com> 1.1.3-3
+- run test suite in C locale (#146125)
+- adjust -pie patch for build.conf naming upstream
+
+* 三 1月 19 2005 Joe Orton <jorton@redhat.com> 1.1.3-2
+- rebuild to pick up db-4.3 properly; don't ignore test failures
+
+* 日 1月 16 2005 Joe Orton <jorton@redhat.com> 1.1.3-1
+- update to 1.1.3 (#145236)
+- fix python bindings location on x86_64 (#143522)
+
+* 一 1月 10 2005 Joe Orton <jorton@redhat.com> 1.1.2-3
+- update to 1.1.2
+- disable swig bindings due to incompatible swig version
+
+* 三 11月 24 2004 Joe Orton <jorton@redhat.com> 1.1.1-5
+- update subversion.conf examples to be SELinux-friendly
+
+* 四 11月 11 2004 Jeff Johnson <jbj@jbj.org> 1.1.1-4
+- rebuild against db-4.3.21.
+- x86_64: don't fail "make check" while diagnosing db-4.3.21 upgrade.
+
+* 一 11月 08 2004 Jeremy Katz <katzj@redhat.com> - 1.1.1-3
+- rebuild against python 2.4
+
+* 一 10月 25 2004 Joe Orton <jorton@redhat.com> 1.1.1-2
+- update to 1.1.1
+- update -pie patch to address #134786
+
+* 一 10月 04 2004 Joe Orton <jorton@redhat.com> 1.1.0-5
+- use pure_vendor_install to fix Perl modules
+- use %find_lang to package translations (Axel Thimm)
+
+* 四 9月 30 2004 Joe Orton <jorton@redhat.com> 1.1.0-4
+- don't use parallel make for swig-py
+
+* 四 9月 30 2004 Joe Orton <jorton@redhat.com> 1.1.0-3
+- BuildRequire newest swig for "swig -ldflags" fix
+
+* 四 9月 30 2004 Joe Orton <jorton@redhat.com> 1.1.0-2
+- fix swig bindings build on x86_64
+
+* 四 9月 30 2004 Joe Orton <jorton@redhat.com> 1.1.0-1
+- update to 1.1.0
+
+* 四 9月 23 2004 Joe Orton <jorton@redhat.com> 1.0.8-2
+- update to 1.0.8
+- remove -neonver patch
+- update psvn.el to 11062
+
+* 一 8月 23 2004 Joe Orton <jorton@redhat.com> 1.0.6-3
+- add svn_load_dirs.pl to docdir (#128338)
+- add psvn.el (#128356)
+
+* 四 7月 22 2004 Joe Orton <jorton@redhat.com> 1.0.6-2
+- rebuild
+
+* 二 7月 20 2004 Joe Orton <jorton@redhat.com> 1.0.6-1
+- update to 1.0.6
+- allow build against neon 0.24.*
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 6月 10 2004 Joe Orton <jorton@redhat.com> 1.0.5-1
+- update to 1.0.5
+
+* 一 6月 07 2004 Joe Orton <jorton@redhat.com> 1.0.4-2
+- add ra_svn security fix for CVE CAN-2004-0413 (Ben Reser)
+
+* 五 5月 28 2004 Joe Orton <jorton@redhat.com> 1.0.4-1.1
+- rebuild for new swig
+
+* 六 5月 22 2004 Joe Orton <jorton@redhat.com> 1.0.4-1
+- update to 1.0.4
+
+* 五 5月 21 2004 Joe Orton <jorton@redhat.com> 1.0.3-2
+- build /usr/bin/* as PIEs
+- add fix for libsvn_client symbol namespace violation (r9608)
+
+* 三 5月 19 2004 Joe Orton <jorton@redhat.com> 1.0.3-1
+- update to 1.0.3
+
+* 日 5月 16 2004 Joe Orton <jorton@redhat.com> 1.0.2-3
+- add ldconfig invocations for -perl post/postun (Ville Skyttä)
+
+* 二 5月 04 2004 Joe Orton <jorton@redhat.com> 1.0.2-2
+- add perl MODULE_COMPAT requirement for -perl subpackage
+- move perl man pages into -perl subpackage
+- clean up -perl installation and dependencies (Ville Skyttä, #123045)
+
+* 一 4月 19 2004 Joe Orton <jorton@redhat.com> 1.0.2-1
+- update to 1.0.2
+
+* 五 3月 12 2004 Joe Orton <jorton@redhat.com> 1.0.1-1
+- update to 1.0.1; cvs2svn no longer included
+
+* 五 3月 12 2004 Joe Orton <jorton@redhat.com> 1.0.0-3
+- add -perl subpackage for Perl bindings (steve@silug.org)
+- include mod_authz_svn INSTALL file
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com> 1.0.0-2.1
+- rebuilt
+
+* 三 2月 25 2004 Joe Orton <jorton@redhat.com> 1.0.0-2
+- add fix for lack of apr_dir_read ordering guarantee (Philip Martin)
+- enable compression in ra_dav by default (Tobias Ringström)
+
+* 一 2月 23 2004 Joe Orton <jorton@redhat.com> 1.0.0-1
+- update to one-dot-oh
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> 0.37.0-2
+- rebuilt
+
+* 六 1月 24 2004 Joe Orton <jorton@redhat.com> 0.37.0-1
+- update to 0.37.0
+
+* 二 1月 13 2004 Joe Orton <jorton@redhat.com> 0.36.0-1
+- update to 0.36.0
+
+* 四 1月 08 2004 Joe Orton <jorton@redhat.com> 0.35.1-1
+- update to 0.35.1
+- fix shebang lines in hook scripts (#111498)
+
+* 六 12月 13 2003 Jeff Johnson <jbj@jbj.org> 0.34.0-3
+- rebuild against db-4.2.52.
+
+* 四 12月 04 2003 Joe Orton <jorton@redhat.com> 0.34.0-2
+- package all man pages
+
+* 四 12月 04 2003 Joe Orton <jorton@redhat.com> 0.34.0-1
+- update to 0.34.0
+
+* 四 11月 13 2003 Joe Orton <jorton@redhat.com> 0.32.1-3
+- remove workarounds for #109268 and #109267
+
+* 四 11月 06 2003 Joe Orton <jorton@redhat.com> 0.32.1-2
+- rebuild for Python 2.3.2
+- remove libtool workaround
+- add workarounds for #109268 and #109267
+
+* 五 10月 24 2003 Joe Orton <jorton@redhat.com> 0.32.1-1
+- update to 0.31.2
+- work around libtool/ppc64/db4 confusion
+
+* 一 10月 13 2003 Jeff Johnson <jbj@jbj.org> 0.31.0-2.1
+- rebuild against db-4.2.42.
+
+* 五 10月 10 2003 Joe Orton <jorton@redhat.com> 0.31.0-2
+- include The Book
+- don't add an RPATH for libdir to executables
+
+* 四 10月 09 2003 Joe Orton <jorton@redhat.com> 0.31.0-1
+- update to 0.31.0
+
+* 三 9月 24 2003 Joe Orton <jorton@redhat.com> 0.30.0-1
+- update to 0.30.0
+
+* 日 9月 07 2003 Joe Orton <jorton@redhat.com> 0.29.0-1
+- update to 0.29.0
+
+* 二 7月 22 2003 Nalin Dahyabhai <nalin@redhat.com> 0.25-2
+- rebuild
+
+* 二 7月 15 2003 Joe Orton <jorton@redhat.com> 0.25-1
+- update to 0.25
+
+* 一 7月 14 2003 Joe Orton <jorton@redhat.com> 0.24.2-4
+- rebuild
+
+* 二 6月 24 2003 Joe Orton <jorton@redhat.com> 0.24.2-3
+- rebuild
+
+* 二 6月 24 2003 Joe Orton <jorton@redhat.com> 0.24.2-2
+- don't use any LDFLAGS when building swig, fix for libdir=lib64
+
+* 二 6月 24 2003 Joe Orton <jorton@redhat.com> 0.24.2-1
+- update to 0.24.2; fix Python bindings
+
+* 二 6月 17 2003 Joe Orton <jorton@redhat.com> 0.24.1-1
+- update to 0.24.1; include mod_authz_svn
+- force use of CC=gcc CXX=g++
+
+* 一 6月 09 2003 Joe Orton <jorton@redhat.com> 0.23.0-2
+- add cvs2svn man page
+
+* 一 6月 09 2003 Joe Orton <jorton@redhat.com> 0.23.0-1
+- update to 0.23.0
+
+* 日 6月 08 2003 Joe Orton <jorton@redhat.com> 0.22.2-7
+- package cvs2svn to be usable outside docdir
+- remove unnecessary files
+
+* 四 6月 05 2003 Joe Orton <jorton@redhat.com> 0.22.2-6
+- add fix for unhandled deadlock errors in libsvn_fs
+- don't package the out-of-date info pages
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com> 0.22.2-5
+- rebuilt
+
+* 二 6月 03 2003 Joe Orton <jorton@redhat.com> 0.22.2-4
+- cleanups
+
+* 一 6月 02 2003 Elliot Lee <sopwith@redhat.com> 0.22.2-3
+- Add back in s390x, excludearch bad.
+
+* 二 5月 20 2003 Jeff Johnson <jbj@redhat.com> 0.22.2-2
+- use external neon-0.23.9-2 (i.e. with neon-config), drop internal neon.
+- use db-4.1.25, not db-4.0.14.
+- do "make check" (but ignore failure for now).
+- s390x knows not of httpd >= 2.0.45.
+
+* 四 5月 08 2003 Joe Orton <jorton@redhat.com> 0.22.2-1
+- update to 0.22.2; add mod_dav_svn subpackage
+- include Python bindings
+- neon: force use of expat, enable SSL
+- drop check for specific apr version added in -3
+
+* 四 5月 01 2003 Joe Orton <jorton@redhat.com> 0.20.1-6
+- filter out perl(Config::IniFiles) requirement
+
+* 四 5月 01 2003 Joe Orton <jorton@redhat.com> 0.20.1-5
+- fail early if apr-config is not 0.9.3
+
+* 三 4月 30 2003 Joe Orton <jorton@redhat.com> 0.20.1-4
+- fix workaround for non-lib64 platforms
+
+* 三 4月 30 2003 Joe Orton <jorton@redhat.com> 0.20.1-3
+- add workaround for libtool problem
+
+* 二 4月 29 2003 Joe Orton <jorton@redhat.com> 0.20.1-2
+- require and use system apr, apr-util libraries
+- use License not Copyright
+
+* 五 4月 04 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 0.20.1
+
+* 三 1月 22 2003 Jeff Johnson <jbj@redhat.com> 0.17.1-4503.0
+- upgrade to 0.17.1.
+
+* 三 12月 11 2002 Jeff Johnson <jbj@redhat.com> 0.16-3987.1
+- upgrade to 0.16.
+
+* 三 11月 13 2002 Jeff Johnson <jbj@redhat.com> 0.15-3687.2
+- don't mess with the info handbook install yet.
+
+* 日 11月 10 2002 Jeff Johnson <jbj@redhat.com> 0.15-3687.1
+- use libdir, build on x86_64 too.
+- avoid "perl(Config::IniFiles) >= 2.27" dependency.
+
+* 六 11月 09 2002 Jeff Johnson <jbj@redhat.com> 0.15-3687.0
+- first build from adapted spec file, only client and libraries for now.
+- internal apr/apr-utils/neon until incompatibilities sort themselves out.
+- avoid libdir issues on x86_64 for the moment.
+

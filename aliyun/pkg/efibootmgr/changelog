@@ -1,0 +1,48 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.5.4-9.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.5.4-9.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.5.4-9.1
+- rebuild for alios6
+
+* 五 1月 21 2011 Peter Jones <pjones@redhat.com> - 0.5.4-9
+- Add support for bootable devices with 4kB sectors.
+  Resolves: rhbz#612280
+
+* 三 4月 14 2010 Peter Jones <pjones@redhat.com> - 0.5.4-8
+- Make \EFI\redhat\grub.efi the default bootloader
+  Resolves: rhbz#579665
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.5.4-7.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.4-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 3月 06 2009 Matt Domsch <Matt_Domsch@dell.com> - 0.5.4-6
+- make ExclusiveArch %{ix86} now that packages are being built as .i586
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.4-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 4月 03 2008 Peter Jones <pjones@redhat.com> - 0.5.4-4
+- Revert changes in -3, they weren't finalized and we don't need
+  the feature at this time.
+
+* 四 3月 06 2008 Peter Jones <pjones@redhat.com> - 0.5.4-3
+- Add support for setting driver related variables.
+
+* 二 2月 05 2008 Matt Domsch <Matt_Domsch@dell.com> 0.5.4-2
+- rebuild with conflicts/obsoletes matching elilo
+
+* 四 1月 03 2008 Matt Domsch <Matt_Domsch@dell.com> 0.5.4-1
+- split efibootmgr into its own RPM for Fedora/RHEL.
+
+* 二 8月 24 2004 Matt Domsch <Matt_Domsch@dell.com>
+- new home linux.dell.com
+
+* 五 5月 18 2001 Matt Domsch <Matt_Domsch@dell.com>
+- See doc/ChangeLog
+

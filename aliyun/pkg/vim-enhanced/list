@@ -1,0 +1,10 @@
+/etc/profile.d/vim.csh
+/etc/profile.d/vim.sh
+/usr/bin/ex
+/usr/bin/rvim
+/usr/bin/vim
+/usr/bin/vimdiff
+/usr/bin/vimtutor
+/usr/share/man/man1/rvim.1.gz
+/usr/share/man/man1/vimdiff.1.gz
+/usr/share/man/man1/vimtutor.1.gz

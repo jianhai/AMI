@@ -1,0 +1,893 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.1-17.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.1-17.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.1-17.1
+- rebuild for alios6
+
+* 四 10月 20 2011 Brian C. Lane <bcl@redhat.com> 2.1-17
+- Disable t9020 (scsi_debug num_parts is broken)
+- Add a wait loop to t9030 when removing the partition
+- Remove size parameter from scsi_debug in t9030
+  Resolves: #746098
+
+* 二 9月 27 2011 Brian C. Lane <bcl@redhat.com> 2.1-16
+- Set the size of the test disk for t9020 which fails TPS on s390x
+  Related: #746098
+
+* 二 9月 27 2011 Brian C. Lane <bcl@redhat.com> 2.1-15
+- Add missing patch for scsi_debug race fix in tests
+  Related: #665496
+
+* 二 6月 21 2011 Brian C. Lane <bcl@redhat.com> 2.1-14
+- Fix scsi_debug race condition in tests
+- turn t9020 and t9030 tests back on
+- Add legacy_boot support to GPT disklabel (#711148)
+  Resolves: #711148
+- Remove asserts from CHS guessing code (#692562)
+  Resolves: #692562
+- Fix snap radius and don't allow values < 1 (#665496)
+  Resolves: #665496
+
+* 四 4月 07 2011 Brian C. Lane <bcl@redhat.com> 2.1-13
+- Double the buffer for fdasd_check_api_version
+  Resolves: #693852
+- Disable tests that fail when run as root
+
+* 一 12月 20 2010 Brian C. Lane <bcl@redhat.com> 2.1-11
+- Document the align-check command
+  Resolves: #642476
+- Default to 1MiB partition alignment
+  Resolves: #618255
+
+* 一 8月 16 2010 Hans de Goede <hdegoede@redhat.com> 2.1-10
+- Flush kernel cache of devicemapper devices when opening them (#623846)
+  Resolves: #623846
+
+* 二 7月 20 2010 Hans de Goede <hdegoede@redhat.com> 2.1-9
+- Recognize scsi disks with a high major as such (#611691)
+  Resolves: #611691
+
+* 四 5月 06 2010 Hans de Goede <hdegoede@redhat.com> 2.1-8
+- Also recognize recovery partitions with id 27 / on gpt (#589473)
+  Resolves: #589473
+
+* 五 4月 23 2010 Hans de Goede <hdegoede@redhat.com> 2.1-7
+- Properly check dm_task_run return value (#585158)
+  Resolves: #585158
+- Fix mkpartfs (ext2) on partitions >2TB (#585159)
+  Resolves: #585159
+- Add a flag for detecting diagnostics / recovery partitions
+
+* 二 4月 06 2010 Hans de Goede <hdegoede@redhat.com> 2.1-6
+- Parted should not canonicalize symlinks under /dev/mapper (#577824)
+  Resolves: #577824
+
+* 二 3月 30 2010 Hans de Goede <hdegoede@redhat.com> 2.1-5
+- Add descriptions of the patches to the spec file
+  Related: rhbz#555835
+
+* 四 2月 18 2010 Hans de Goede <hdegoede@redhat.com> 2.1-4
+- Copy needs_clobber value in ped_disk_duplicate() (#566181)
+  Resolves: #566181
+
+* 三 2月 10 2010 Hans de Goede <hdegoede@redhat.com> 2.1-3
+- Don't crash when reading a DASD disk with PV's on there (#563419)
+  Resolves: #563419
+- Don't overwrite the pmbr when merely printing a gpt table (#563211)
+  Resolves: #563211
+
+* 日 1月 31 2010 Hans de Goede <hdegoede@redhat.com> 2.1-2
+- Fix various memory leaks in error paths (#556012)
+- Add %check section to the specfile, invoking make check
+- If a drive does not have alignment information available default
+  to an alignment of 1MiB (#559639)
+  Resolves: #559639
+
+* 一 1月 11 2010 Hans de Goede <hdegoede@redhat.com> 2.1-1
+- New upstream release 2.1
+- Drop all our patches (all merged upstream)
+- This fixes the usage of disks with 4k logical sectors (#523954)
+  Resolves: #523954
+
+* 日 12月 20 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-25
+- Fix crash when partitioning loopback devices (#546622)
+  Resolves: #549075
+- Drop no-cylinder-align patch:
+  - its functionality is superseeded by the per disk flags
+  - its only user (pyparted) has been updated to use those
+  - this is not upstream so we don't want other programs to start using it
+
+* 五 12月 18 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-24
+- Allow partitioning of loopback devices (#546622)
+- Add libparted function to query maximum partition length and start
+  addresses for a given disk (#533417)
+- Add per disk flags functions from upstream, this is the way upstream
+  has implemented the disable cylinder alignment functionality
+- Add --align cmdline option to specify how to align new partitions
+  see the parted man page for details (#361951)
+- Make the default alignment for new partitions optimal (#361951)
+  Resolves: #361951
+- When cylinder alignment is disabled, allow use of the last (incomplete)
+  cylinder of the disk (#533328)
+- Don't crash when printing partition tables in Russian (#543029)
+- Make parted work correctly with new lvm (#525095)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.9.0-23.1
+- Rebuilt for RHEL 6
+
+* 三 11月 11 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-23
+- Fix parted not building on s390
+
+* 一 11月 09 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-22
+- Fix error when creating a fresh dasd disk on a dasd device
+  with a corrupted dasd label (#533808)
+
+* 五 11月 06 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-21
+- Fix a compiler warning which is causing build errors (#532425)
+
+* 二 11月 03 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-20
+- Fix error when creating a fresh dasd disk (#532425)
+- Rewrite dasd disk duplication patches, as the old old ones conflicted
+  with fixing creating a fresh dasd disk
+
+* 五 10月 30 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-19
+- Fix a segfault introduced by -18 when operating on plain files
+
+* 四 10月 29 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-18
+- Add functions to query device / partition table alignments (#528030)
+
+* 四 10月 08 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-17
+- Only change the partition type to 82 when setting the swap flag on dos
+  labels, not when resetting it
+
+* 二 10月 06 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-16
+- Correctly handle GPT labels on big endian machines
+
+* 二 10月 06 2009 Hans de Goede <hdegoede@redhat.com> 1.9.0-15
+- ped_partition_is_busy() should not throw exceptions (#527035)
+- msdos_partition_is_flag_available() should return 1 for swap flag (#513729)
+
+* 一 8月 31 2009 Joel Granados <jgranado@redhat.com> 1.9.0-14
+- Patchs for 'commit to os' for linux.  Thx to hansg.
+
+* 五 8月 28 2009 Karsten Hopp <karsten@redhat.com> 1.9.0-13
+- volkey is only 4 chars, don't overflow destination buffer with 84 chars
+
+* 五 8月 21 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-12
+- libuuid-devel is now valid for s390 builds.
+
+* 三 8月 12 2009 Ville Skyttä <ville.skytta@iki.fi> - 1.9.0-11
+- Use xz compressed upstream tarball.
+
+* 三 8月 12 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-10
+- Make install with exclude docs work without an error message.
+
+* 三 7月 29 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-9
+- Add parenthesis where needed (#511907)
+
+* 一 7月 27 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-8
+- Add the swap flag to the dos type labels
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.9.0-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 23 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-6
+- Rebuild usiing the official tar.gz at http://ftp.gnu.org/gnu/parted/parted-1.9.0.tar.gz
+
+* 三 7月 22 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-5.20090721git980c
+- Better handle a duplicate error.
+
+* 二 7月 21 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-4.20090721git980c
+- New snapshot.
+- Add patches to make dasd duplicate disk work.
+
+* 六 7月 18 2009 Lubomir Rintel <lkundrak@v3.sk> - 1.9.0-3.20090610git32dc
+- Fix a typo in the errno patch
+
+* 一 7月 13 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-2.20090610git32dc
+- Correctly number the snapshot.
+
+* 五 7月 10 2009 Joel Granados <jgranado@redhat.com> - 1.9.0-1
+- New version.
+
+* 四 3月 26 2009 Joel Granados <jgranado@redhat.com> - 1.8.8-15
+- Begin to identify virtio devices.
+- Actually change the partition type in msdos lables (dcantrell).
+
+* 一 3月 23 2009 Joel Granados <jgranado@redhat.com> - 1.8.8-14
+- Correct the behavior of upated_mode functions when the ASSERT fails (thx to hansg).
+
+* 四 2月 26 2009 Joel Granados <jgranado@redhat.com> - 1.8.8-13
+- Fix parted build for gcc-4.4
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.8.8-13
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 22 2009 Joel Granados <jgranado@redhat.com> - 1.8.8-12
+- Avoid the calling of stat for strings that don't begin with the "/" char (#353191).
+
+* 六 12月 13 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.8.8-11
+- fix typo in last patch
+
+* 六 12月 13 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.8.8-10
+- enable RAID partition types on sun disklabels for sparc
+
+* 四 11月 06 2008 Joel Granados <jgranado@redhat.com> - 1.8.8-9
+- Fix the build for the s390(x) archs (#470211).
+
+* 四 6月 05 2008 Peter Jones <pjones@redhat.com> - 1.8.8-8
+- Fix some of the atvrecv code (and the msftres code) so that the flags
+  actually stick.
+
+* 四 6月 05 2008 Peter Jones <pjones@redhat.com> - 1.8.8-7
+- Added "atvrecv" flag patch from atv-bootloader project.
+
+* 四 5月 29 2008 Joel Granados <jgranado@redhat.com> - 1.8.8-6
+- Do a better job at recognizing the dos partition. (#246423)
+
+* 四 4月 10 2008 David Cantrell <dcantrell@redhat.com> - 1.8.8-5
+- Allow RAID or LVM partition types on BSD disklabels.
+  (jay.estabrook AT hp.com, #427114)
+
+* 四 4月 10 2008 Peter Jones <pjones@redhat.com> - 1.8.8-4
+- Don't interactively ask to fix an AlternateGPT's location when not
+  at the end of the disk; this is so that disk images written to a
+  usb-key can work reasonably.
+
+* 一 2月 04 2008 David Cantrell <dcantrell@redhat.com> - 1.8.8-3
+- Fixes so parted compiles with gcc-4.3 (#431397)
+
+* 日 1月 13 2008 David Cantrell <dcantrell@redhat.com> - 1.8.8-2
+- Move libparted libraries to /lib (#428420)
+
+* 三 1月 02 2008 David Cantrell <dcantrell@redhat.com> - 1.8.8-1
+- Upgraded to GNU parted-1.8.8
+- License for GNU parted is now GPLv3+
+
+* 四 12月 13 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-13
+- Modify parted man page to indicate which flags are valid for which
+  disk labels (#242711)
+
+* 一 11月 05 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-12
+- Add KNOWN ISSUES section to parted(8) man page explaining that we cannot
+  currently do ext3 resizing inside parted (#367101)
+- Update the xvd patch to include 'xvd' in the string table that parted
+  uses when printing device types (#366971)
+- Do not install the linux.h or gnu.h headers
+
+* 二 10月 30 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-11
+- Do not install fdasd.h and vtoc.h header files
+
+* 四 10月 04 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-10
+- Do not install the testsuite tools
+
+* 四 10月 04 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-9
+- Always define PED_DEVICE_DM regardless of compile time options
+
+* 二 8月 21 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-8
+- Rebuild
+
+* 三 8月 08 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-7
+- Update License tag to GPLv2+
+
+* 二 8月 07 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-6
+- Detect Xen virtual block devices and set model name appropriately
+
+* 四 4月 19 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-5
+- Spec file cleanups for merge review (#226230)
+
+* 五 4月 13 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-4
+- Fix primary partition cylinder alignment error for DOS disk labels (#229745)
+- Do not build and package up libparted.a, only the shared library
+
+* 三 4月 11 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-3
+- Fix off-by-one bug in parted(8) when displaying disk label (#235901)
+
+* 三 3月 21 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-2
+- Do not translate partition name from disk label (#224182)
+
+* 二 3月 20 2007 David Cantrell <dcantrell@redhat.com> - 1.8.6-1
+- Upgrade to GNU parted-1.8.6, summary of major change(s):
+     a) Revert linux-swap(new) and linux-swap(old) fs types, it's
+        linux-swap for all swap types (#233085)
+
+* 二 3月 20 2007 David Cantrell <dcantrell@redhat.com> - 1.8.5-1
+- Upgrade to GNU parted-1.8.5 (added missing po files)
+
+* 五 3月 16 2007 David Cantrell <dcantrell@redhat.com> - 1.8.4-1
+- Upgrade to GNU parted-1.8.4, summary of major changes:
+     a) Update to use newest GNU developer tools
+     b) Use gnulib, the GNU portability library
+     c) HFS+ resize support
+     d) Windows Vista fixes
+     e) AIX disk label fixes
+     f) >512 byte logical sector read support on Linux
+- Spec file cleanups per Fedora packaging guidelines
+
+* 四 2月 08 2007 David Cantrell <dcantrell@redhat.com> - 1.8.2-5
+- Remove period from end of summary line (package review)
+- Use preferred BuildRoot (package review)
+- BR device-mapper-devel
+
+* 二 1月 30 2007 David Cantrell <dcantrell@redhat.com> - 1.8.2-4
+- Patched parted.8 man page to show partition names apply to GPT disklabels
+  as well as Mac and PC98 disklabels (#221600)
+
+* 一 1月 22 2007 David Cantrell <dcantrell@redhat.com> - 1.8.2-3
+- Remove BR for libtermcap-devel
+- Specifically preserve starting alignment of 0x800 on Windows Vista
+  (see http://support.microsoft.com/kb/923332 for details)
+- Fix incorrect sector parameter used to initialize a new PedAlignment
+
+* 四 1月 18 2007 David Cantrell <dcantrell@redhat.com> - 1.8.2-2
+- Preserve starting sector for primary NTFS 3.1 partitions (Windows
+  Vista) when modifying the DOS disk label.  NTFS 3.1 partitions do
+  not start on the 2nd head of the 1st cylinder at the beginning of
+  the drive.
+
+* 五 1月 12 2007 David Cantrell <dcantrell@redhat.com> - 1.8.2-1
+- Upgrade to GNU parted-1.8.2
+
+* 五 12月 15 2006 David Cantrell <dcantrell@redhat.com> - 1.8.1-2
+- Fix a segfault when initializing new volumes (pjones)
+
+* 一 12月 04 2006 David Cantrell <dcantrell@redhat.com> - 1.8.1-1
+- Upgrade to GNU parted-1.8.1
+
+* 五 11月 17 2006 David Cantrell <dcantrell@redhat.com> - 1.8.0-1
+- Upgrade to GNU parted-1.8.0
+
+* 四 11月 02 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-18
+- Detect Apple_Boot partition types correctly (#204714)
+
+* 四 10月 26 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-17
+- For init_generic() failures on user-mode Linux block devices, goto
+  error_free_arch_specific instead of error_free_dev.
+
+* 三 10月 04 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-16
+- Don't throw PED_EXCEPTION_ERROR in ped_geometry_read() if accessing
+  sectors outside of partition boundary, since returning false will
+  shift ped_geometry_check() to the correct sectors.
+
+* 三 8月 23 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-15
+- Fixed gpt patch (*asked_already -> asked_already, whoops)
+
+* 二 8月 22 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-14
+- Improve error message returned by _parse_header() on GPT-labeled disks
+  so users actually have an idea of how to correct the problem
+- Fix off-by-one error with LastUsableLBA and PartitionEntryLBA overlap
+  to prevent possible data corruption when using non-parted GPT editing
+  tools
+
+* 一 8月 21 2006 Peter Jones <pjones@redhat.com> - 1.7.1-13
+- Don't use the "volume name" as the device node name on dm device
+  partitions, it isn't really what we want at all.
+
+* 四 8月 17 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-12
+- Updated O_DIRECT patch to work around s390 problems
+- Update LastUsableLBA on GPT-labeled disks after LUN resize (#194238)
+- Fix exception when backup GPT table is not in the correction location
+  and parted tries to move it (#194238)
+
+* 二 8月 15 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-11
+- Expand error buffer to 8192 bytes in vtoc_error()
+- Do not apply O_DIRECT patch on S/390 or S/390x platforms
+
+* 一 8月 14 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-10
+- Removed bad header file patch (#200577)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.7.1-9.1
+- rebuild
+
+* 三 7月 05 2006 Peter Jones <pjones@redhat.com> - 1.7.1-9
+- add ped_exception_get_handler()
+
+* 一 6月 26 2006 Florian La Roche <laroche@redhat.com> - 1.7.1-8
+- remove info files in preun
+
+* 四 6月 22 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-7
+- PED_SECTOR_SIZE -> PED_SECTOR_SIZE_DEFAULT
+
+* 四 6月 22 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-6
+- Roll dasd patches together
+- Use O_DIRECT to prevent first partition corruption on GPT disks
+
+* 四 6月 15 2006 Jeremy Katz <katzj@redhat.com> - 1.7.1-5
+- fix segfaults with dasd devices
+
+* 三 6月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.7.1-4
+- move .so symlink to -devel subpackage
+
+* 日 5月 28 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-3
+- Rebuild
+
+* 日 5月 28 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-2
+- Removed mac-swraid patch (added upstream)
+- Updated device-mapper patch for parted-1.7.1
+
+* 六 5月 27 2006 David Cantrell <dcantrell@redhat.com> - 1.7.1-1
+- Upgraded to parted-1.7.1
+
+* 五 5月 19 2006 David Cantrell <dcantrell@redhat.com> - 1.7.0-1
+- Upgraded to parted-1.7.0
+
+* 四 4月 13 2006 David Cantrell <dcantrell@redhat.com> - 1.6.25.1-1
+- Upgraded to parted-1.6.25.1
+- BuildRequires libtool
+
+* 二 3月 14 2006 Jeremy Katz <katzj@redhat.com> - 1.6.25-8
+- fix ppc swraid
+- BR gettext-devel
+
+* 三 2月 22 2006 Peter Jones <pjones@redhat.com> - 1.6.25-7
+- close /proc/devices correctly
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.6.25-6.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Peter Jones <pjones@redhat.com> 1.6.25-6
+- Fix dm partition naming.
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> 1.6.25-5.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 02 2005 Peter Jones <pjones@redhat.com> 1.6.25-5
+- rebuild for new device-mapper
+
+* 四 12月 01 2005 Peter Jones <pjones@redhat.com> 1.6.25-4
+- change device-mapper code to call dm_task_update_nodes() after
+  tasks which change device nodes.
+
+* 三 11月 16 2005 Peter Jones <pjones@redhat.com> 1.6.25-3
+- fix /proc/devices parser bug
+
+* 二 11月 15 2005 Peter Jones <pjones@redhat.com> 1.6.25-2
+- add support for partitions on dm devices
+
+* 三 11月 09 2005 Chris Lumens <clumens@redhat.com> 1.6.25-1
+- Updated to 1.6.25.
+- Update DASD, iseries, and SX8 patches.
+
+* 二 8月 30 2005 Chris Lumens <clumens@redhat.com> 1.6.24-1
+- Updated to 1.6.24.
+
+* 一 7月 18 2005 Chris Lumens <clumens@redhat.com> 1.6.23-2
+- Add buildreq for texinfo.
+
+* 五 7月 08 2005 Chris Lumens <clumens@redhat.com> 1.6.23-1
+- Updated to 1.6.23.
+- Get rid of separate Mac patches that are now included in upstream.
+- Update DASD and AIX patches.
+
+* 二 6月 07 2005 Chris Lumens <clumens@redhat.com> 1.6.22-3
+- Modified Apple_Free patch to take care of the case where the partitions
+  are unnamed, causing many errors to be printed (#159047).
+
+* 四 5月 05 2005 Chris Lumens <clumens@redhat.com> 1.6.22-2
+- Added upstream patch to display certain Apple_Free partitions (#154479).
+
+* 三 3月 23 2005 Chris Lumens <clumens@redhat.com> 1.6.22-1
+- Updated to 1.6.22.
+- Get rid of separate gc4 patch that's now included upstream.
+- Take Mac LVM patch from parted CVS.
+
+* 一 3月 14 2005 Chris Lumens <clumens@redhat.com> 1.6.21-3
+- Include patches from parted CVS for new gcc4 warnings.
+
+* 日 2月 20 2005 Paul Nasrat <pnasrat@redhat.com> 1.6.21-2
+- Support lvm flags on mac partitions (#121266)
+
+* 五 1月 21 2005 Chris Lumens <clumens@redhat.com> 1.6.21-1 
+- Updated to 1.6.21
+
+* 三 1月 12 2005 Tim Waugh <twaugh@redhat.com> 1.6.20-2
+- Rebuilt for new readline.
+
+* 五 1月 07 2005 Chris Lumens <clumens@redhat.com> 1.6.20-1 
+- Updated to 1.6.20 (#139257, #142100).
+- Updated DASD and AIX patches for 1.6.20.
+
+* 二 12月 14 2004 Jeremy Katz <katzj@redhat.com> - 1.6.19-2
+- add support for Promise SX8 devices
+
+* 日 11月 28 2004 Jeremy Katz <katzj@redhat.com> - 1.6.19-1
+- update to 1.6.19 (#138419)
+
+* 日 11月 21 2004 Jeremy Katz <katzj@redhat.com> - 1.6.18-1
+- update to 1.6.18
+
+* 六 11月 20 2004 Miloslav Trmac <mitr@redhat.com> - 1.6.16-3
+- Convert pt_BR-parted.8 to UTF-8
+
+* 四 11月 11 2004 Jeremy Katz <katzj@redhat.com> - 1.6.16-2
+- add patch from Matt Domsch to fix consistency of GPT disk labels 
+  with the EFI specification for disks > 2TB (#138480)
+- understand the new Sun UFS partition ID
+- merge the new geometry probing from CVS to see if that helps the 
+  assertions people are seeing (#138419)
+
+* 一 11月 08 2004 Jeremy Katz <katzj@redhat.com> - 1.6.16-1
+- update to 1.6.16
+- rebuild for python 2.4
+
+* 一 10月 18 2004 Jeremy Katz <katzj@redhat.com> - 1.6.15-5
+- add patch from Matt Domsch to add a unique signature to new DOS labels 
+  so that we can later determine which BIOS disk is which (#106674)
+
+* 五 10月 15 2004 Phil Knirsch <pknirsch@redhat.com> 1.6.15-4
+- Fixed dasd patch (had some duplicate file patches in it)
+- Fixed problem with parted segfaulting on SCSI discs on s390 (#133997)
+
+* 二 10月 12 2004 Jeremy Katz <katzj@redhat.com> - 1.6.15-3
+- add patch from peterm to fix printing of the size of large devices (#135468)
+
+* 四 10月 07 2004 Phil Knirsch <pknirsch@redhat.com> 1.6.15-2
+- Fixed geometry calculation for bios_geo in dasd_init()
+
+* 一 9月 20 2004 Jeremy Katz <katzj@redhat.com> - 1.6.15-1
+- 1.6.15
+
+* 五 9月 10 2004 Jeremy Katz <katzj@redhat.com> - 1.6.14-1
+- update to 1.6.14
+
+* 二 8月 24 2004 Jeremy Katz <katzj@redhat.com> - 1.6.12-2
+- fix assertion error when checking flags on non-active partition (#130692)
+- buildrequires: gettext-devel
+
+* 一 8月 16 2004 Jeremy Katz <katzj@redhat.com> - 1.6.12-1
+- update to 1.6.12 with major changes to CHS handling to hopefully fix #115980
+- adjust dasd patch accordingly, drop some included patches
+
+* 一 7月 19 2004 Karsten Hopp <karsten@redhat.de> 1.6.11-4 
+- update dasd patch for dos-type partitions on mainframes (scsi disks)
+
+* 五 6月 25 2004 Jeremy Katz <katzj@redhat.com> - 1.6.11-3
+- install-info (#77687)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com> - 1.6.11-2
+- rebuilt
+
+* 二 6月 01 2004 Jeremy Katz <katzj@redhat.com>
+- -devel requires main package (#124938)
+
+* 四 5月 13 2004 Jeremy Katz <katzj@redhat.com> - 1.6.11-1
+- update to 1.6.11
+
+* 二 5月 11 2004 Jeremy Katz <katzj@redhat.com> - 1.6.9-4
+- add patch from Matt Domsch to not use the get/set last sector ioctls 
+  with a 2.6 kernel (#121455)
+
+* 四 4月 15 2004 David Woodhouse <dwmw2@redhat.com> - 1.6.9-3
+- Fix Mac partition detection to close #112937
+
+* 二 4月 13 2004 Jeremy Katz <katzj@redhat.com> - 1.6.9-2
+- another minor tweak for 2.6's lack of sane geometry handling
+
+* 一 4月 12 2004 Jeremy Katz <katzj@redhat.com> - 1.6.9-1
+- update to 1.6.9
+- need automake17
+- python-devel is superfluous with pyparted as a separate package
+- lose the fake-libtool stuff, 1.6.9 was disted with newer auto*
+
+* 一 3月 15 2004 Elliot Lee <sopwith@redhat.com> 1.6.6-2
+- Fix parted's "part-static" option to close #118183. Woohoo, a fake-libtool.sh :)
+
+* 五 3月 12 2004 Jeremy Katz <katzj@redhat.com> - 1.6.6-1
+- update to 1.6.6 
+- split dasd into a patch instead of included in the tarball
+- python module is now in the pyparted package (separate src.rpm)
+- ExcludeArch: ppc64 (#118183)
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 06 2004 Jeremy Katz <katzj@redhat.com>
+- add automake buildrequires (#115063)
+
+* 四 1月 22 2004 Jeremy Katz <katzj@redhat.com> 1.6.3-33
+- 2.6 removes the geometry fixups that used to be present for IDE disks.  
+  According to Andries, just follow what's in the partition table and don't 
+  worry about what Linux "detects"
+
+* 四 11月 06 2003 Jeremy Katz <katzj@redhat.com> 1.6.3-32
+- rebuild for python 2.3
+
+* 一 10月 27 2003 Jeremy Katz <katzj@redhat.com> 1.6.3-31
+- add patch from Michael Schwendt <mschwendt@users.sf.net> for segfault
+
+* 三 9月 17 2003 Jeremy Katz <katzj@redhat.com> 1.6.3-30
+- rebuild
+
+* 三 9月 17 2003 Jeremy Katz <katzj@redhat.com> 1.6.3-29
+- and don't barf on the old (broken) 1.02 gpt rev
+
+* 二 9月 16 2003 Jeremy Katz <katzj@redhat.com> 1.6.3-28
+- rebuild
+
+* 二 9月 16 2003 Jeremy Katz <katzj@redhat.com> 1.6.3-27
+- write out the correct gpt revision (#103664)
+- add buildrequires on ncurses-devel
+
+* 四 9月 04 2003 Bill Nottingham <notting@redhat.com> 1.6.3-26
+- rebuild
+
+* 四 9月 04 2003 Bill Nottingham <notting@redhat.com> 1.6.3-25
+- don't buildreq libunicode-devel
+
+* 四 8月 07 2003 Elliot Lee <sopwith@redhat.com> 1.6.3-24
+- Fix libtool
+
+* 三 7月 09 2003 Phil Knirsch <pknirsch@redhat.com> 1.6.3-23
+- Fixed dasd_write and dasd_read to support lvm and raid partitions.
+
+* 三 6月 18 2003 Phil Knirsch <pknirsch@redhat.com> 1.6.3-22
+- Fixed a small bug in VTOC fdasd_check_volume() (#97300).
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com> 1.6.3-21
+- rebuilt
+
+* 三 6月 04 2003 Matt Wilson <msw@redhat.com> 1.6.3-20
+- don't detect AIX physical volumes as msdos partition tables (#91748)
+- added stubbed code for manipulating AIX PVs, enough to clobber the
+  signature. (#91748)
+
+* 三 6月 04 2003 Phil Knirsch <pknirsch@redhat.com> 1.6.3-19
+- Added LDL disk layout support for s390(x).
+
+* 日 5月 18 2003 Matt Wilson <msw@redhat.com> 1.6.3-18
+- use metadata partitions to protect DASD VTOC
+- stash DASD specific data in disk specific areas, not arch specific
+  areas.
+
+* 五 5月 16 2003 Matt Wilson <msw@redhat.com> 1.6.3-18
+- recongnize iseries viodasd (#90449)
+
+* 四 5月 08 2003 Phil Knirsch <pknirsch@redhat.com> 1.6.3-17
+- Fixed problem with probing partitions on s390(x) with new partition code.
+
+* 一 5月 05 2003 Phil Knirsch <pknirsch@redhat.com> 1.6.3-16
+- Fixed partiton reread code for s390(x).
+
+* 五 5月 02 2003 Phil Knirsch <pknirsch@redhat.com> 1.6.3-15
+- Rewrote partition handling for s390(x) dasd devices. No more empty partitions.
+
+* 三 3月 12 2003 Phil Knirsch <pknirsch@redhat.com> 1.6.3-13
+- Finished updating vtoc and fdasd code to latest s390-utils version.
+
+* 四 3月 06 2003 Phil Knirsch <pknirsch@redhat.com> 1.6.3-12
+- Fixed vtoc handling on s390(x) dasd devices.
+
+* 四 2月 06 2003 Karsten Hopp <karsten@redhat.de> 1.6.3-11
+- use different define to enable DASD debugging
+  Otherwise we'll get a lot of dasd debug output because DEBUG is
+  always defined
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Karsten Hopp <karsten@redhat.de> 1.6.3-9
+- missed one debug message
+
+* 二 1月 21 2003 Karsten Hopp <karsten@redhat.de> 1.6.3-8
+- add patch from CVS to disable debug messages on s390
+
+* 二 1月 14 2003 Matt Wilson <msw@redhat.com> 1.6.3-7
+- updated to a new tarball of parted that includes a fs.probe_specific binding
+
+* 日 12月 01 2002 Matt Wilson <msw@redhat.com> 1.6.3-6
+- hack in partition.native_type (#78118)
+
+* 四 11月 07 2002 Matt Wilson <msw@redhat.com>
+- added a patch to avoid SIGFPE when fat sector size is 0
+
+* 二 11月 05 2002 Matt Wilson <msw@redhat.com>
+- use --disable-dynamic-loading
+
+* 一 11月 04 2002 Matt Wilson <msw@redhat.com>
+- add device.disk_new_fresh()
+
+* 五 11月 01 2002 Matt Wilson <msw@redhat.com>
+- 1.6.3
+
+* 五 10月 04 2002 Jeremy Katz <katzj@redhat.com> 1.4.24-7
+- use make LIBTOOL=/usr/bin/libtool instead of recreating everything
+- add patch from Jack Howarth <howarth@bromo.med.uc.edu> to self host properly
+- add patch to treat GPT structs as little-endian always and treat GUIDS 
+  as little-endian blobs
+- add patch to recognize hp service partitions
+
+* 三 9月 25 2002 Jeremy Katz <katzj@redhat.com> 1.4.24-6hammer
+- libtoolize, etc for x86_64
+- hack to get the python module in the right place until python.m4 
+  from automake is fixed
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 1.4.24-6
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com> 1.4.24-5
+- automated rebuild
+
+* 三 5月 22 2002 Jeremy Katz <katzj@redhat.com> 1.4.24-4
+- rebuild in new environment
+
+* 五 3月 22 2002 Matt Wilson <msw@redhat.com> 1.4.24-3
+- fixed the probe-with-open behavior (again)
+
+* 五 2月 22 2002 Matt Wilson <msw@redhat.com> 1.4.24-1
+- rebuild
+
+* 二 2月 12 2002 Matt Wilson <msw@redhat.com> 1.4.24-1
+- 1.4.24
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 1月 07 2002 Jeremy Katz <katzj@redhat.com> 1.4.20-4
+- build with final python 2.2
+
+* 三 12月 12 2001 Jeremy Katz <katzj@redhat.com> 1.4.20-3
+- update from CVS and rebuild in new environment
+
+* 四 10月 25 2001 Jeremy Katz <katzj@redhat.com> 1.4.20-2
+- build both python1.5 and python2 modules
+
+* 五 10月 19 2001 Matt Wilson <msw@redhat.com> 1.4.20-1
+- 1.4.20 final
+
+* 四 10月 11 2001 Matt Wilson <msw@redhat.com> 1.4.20-0.1pre3
+- new dist from CVS with new autoconf and automake
+- gpt is in 1.4.20, removed patch1 (gpt support)
+- partstatic is in 1.4.20, removed patch2 (partstatic patch)
+
+* 二 8月 28 2001 Matt Wilson <msw@redhat.com> 1.4.16-8
+- new dist from cvs with changes to the python binding: register
+  DEVICE_I20 and DEVICE_ATARAID, check to make sure that a partition
+  exists in the PedDisk when using it to find ped_disk_next_partition
+
+* 二 8月 21 2001 Matt Wilson <msw@redhat.com> 1.4.16-7
+- really disable pc98 support (SF #51632)
+
+* 五 8月 17 2001 Matt Wilson <msw@redhat.com> 1.4.16-6
+- added a patch (Patch1) to link the c library in dynamically, the
+  rest of the libs statically for the parted binary (MF #49358)
+
+* 二 8月 07 2001 Matt Wilson <msw@redhat.com>
+- made a new dist from CVS that includes binding for
+  disk.get_partition_by_sector and accessing the name of a disk type
+
+* 一 8月 06 2001 Matt Wilson <msw@redhat.com> 1.4.16-4
+- created a new dist from CVS that fixes ext3 detection when
+  _probe_with_open is needed (#50292)
+
+* 五 7月 20 2001 Matt Wilson <msw@redhat.com>
+- rewrite scsi id code (#49533)
+
+* 五 7月 20 2001 Matt Wilson <msw@redhat.com>
+- added build requires (#49549)
+
+* 二 7月 17 2001 Matt Wilson <msw@redhat.com>
+- 1.4.16
+- regenerated gpt patch against 1.4.16, incorporated
+  parted-1.4.15-pre1-gpt-printf.patch into the same patch, removed Patch1
+
+* 二 7月 10 2001 Matt Wilson <msw@redhat.com>
+- added a new dist tarball that contains python wrappers to get disk types
+
+* 二 7月 10 2001 Tim Powers <timp@redhat.com>
+- run ldconfig on un/install
+
+* 二 7月 10 2001 Matt Wilson <msw@redhat.com>
+- added a fix from clausen for border case when there is an extended
+  on the last cyl
+
+* 一 7月 09 2001 Matt Wilson <msw@redhat.com>
+- 1.4.15
+
+* 四 7月 05 2001 Matt Wilson <msw@redhat.com>
+- added patch from Arjan to enable ataraid support
+
+* 三 7月 04 2001 Matt Wilson <msw@redhat.com>
+- imported 1.4.15-pre2 into CVS and made a new dist tarball
+
+* 二 6月 26 2001 Matt Wilson <msw@redhat.com>
+- added a new dist tarball that contains a check in python code to
+  make sure that a partition exists within a disk before trying to
+  remove it from the disk
+- also changed _probe_with_open to make the first probed filesystem win
+
+* 二 6月 26 2001 Bill Nottingham <notting@redhat.com>
+- fix filesystem type reading on GPT disks
+
+* 二 6月 26 2001 Matt Wilson <msw@redhat.com>
+- added another fix for ext2/ext3
+- added Patch4 to move the crc32 function into its own namespace so
+  we don't colide with zlib when both are in the same executable space
+
+* 一 6月 25 2001 Matt Wilson <msw@redhat.com>
+- added a new dist tarball from CVS that includes
+  ext3 probing
+
+* 三 6月 06 2001 Matt Wilson <msw@redhat.com>
+- updated dist with binding for partition.geom.disk
+
+* 二 6月 05 2001 Matt Wilson <msw@redhat.com>
+- make a new dist tarball that has new python binding changes
+
+* 二 5月 29 2001 Bill Nottingham <notting@redhat.com>
+- add major numbers for cciss 
+- add libunicode-devel buildprereq
+
+* 日 5月 27 2001 Matthew Wilson <msw@redhat.com>
+- added type, heads, and sectors to the python binding for PedDevice
+
+* 五 5月 04 2001 Matt Wilson <msw@redhat.com>
+- added parted-1.4.11-gpt-pmbralign.patch from Matt Domsch
+
+* 三 5月 02 2001 Matt Wilson <msw@redhat.com>
+- include python binding
+- enable shared library (for python binding, we want fpic code)
+  with --enable-shared
+- build parted binary static with --enable-all-static
+- don't run libtoolize on this.
+
+* 三 5月 02 2001 Bill Nottingham <notting@redhat.com>
+- update to 1.4.11
+- add EFI GPT patch from Matt Domsch (<Matt_Domsch@dell.com>)
+- don't run autoconf, it relies on a newer non-released version
+  of autoconf...
+
+* 五 2月 23 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- langify
+
+* 三 1月 17 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.4.7
+
+* 四 12月 14 2000 Bill Nottingham <notting@redhat.com>
+- rebuild because of broken fileutils
+
+* 五 11月 03 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.2.12
+
+* 三 11月 01 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.2.11
+
+* 二 10月 17 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.2.10
+
+* 日 9月 10 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.2.9
+
+* 二 8月 29 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- fix bug when just hitting "return" with no user input
+
+* 日 8月 20 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- 1.2.8
+- blksize patch not needed anymore
+- move changelog to the end of the spec file
+
+* 三 8月 16 2000 Matt Wilson <msw@redhat.com>
+- 1.2.7
+- patched configure script to ignore the 2.4 blkpg.h header (fixes #15835).
+
+* 五 8月 04 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.2.6
+
+* 六 7月 22 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.2.5
+- add more docu
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 12 2000 Matt Wilson <msw@redhat.com>
+- initialization of spec file.
+

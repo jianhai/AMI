@@ -1,0 +1,2 @@
+postinstall program: /sbin/ldconfig
+postuninstall program: /sbin/ldconfig

@@ -1,0 +1,23 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.4-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.4-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.4-4.1
+- rebuild for alios6
+
+* 二 5月 04 2010 Ray Strode <rstrode@redhat.com> 0.4-4
+- Add obsoletes to add upgrade path
+  Resolves: #559765
+
+* 二 2月 16 2010 Benjamin Otte <otte@redhat.com> 0.4-3
+- Update to new snapshot
+- Change to new license CC-BY-SA
+
+* 二 2月 16 2010 Benjamin Otte <otte@redhat.com> 0.4-2
+- Correct source download information
+
+* 一 2月 15 2010 Benjamin Otte <otte@redhat.com> 0.4-1
+- Initial packaging
+

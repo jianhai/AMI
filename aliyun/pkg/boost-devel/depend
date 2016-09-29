@@ -1,0 +1,34 @@
+boost = 1.41.0-11.4.alios6.2
+libboost_date_time-mt.so.5()(64bit)  
+libboost_date_time.so.5()(64bit)  
+libboost_filesystem-mt.so.5()(64bit)  
+libboost_filesystem.so.5()(64bit)  
+libboost_graph-mt.so.5()(64bit)  
+libboost_graph.so.5()(64bit)  
+libboost_iostreams-mt.so.5()(64bit)  
+libboost_iostreams.so.5()(64bit)  
+libboost_prg_exec_monitor-mt.so.5()(64bit)  
+libboost_prg_exec_monitor.so.5()(64bit)  
+libboost_program_options-mt.so.5()(64bit)  
+libboost_program_options.so.5()(64bit)  
+libboost_python-mt.so.5()(64bit)  
+libboost_python.so.5()(64bit)  
+libboost_regex-mt.so.5()(64bit)  
+libboost_regex.so.5()(64bit)  
+libboost_serialization-mt.so.5()(64bit)  
+libboost_serialization.so.5()(64bit)  
+libboost_signals-mt.so.5()(64bit)  
+libboost_signals.so.5()(64bit)  
+libboost_system-mt.so.5()(64bit)  
+libboost_system.so.5()(64bit)  
+libboost_thread-mt.so.5()(64bit)  
+libboost_unit_test_framework-mt.so.5()(64bit)  
+libboost_unit_test_framework.so.5()(64bit)  
+libboost_wave-mt.so.5()(64bit)  
+libboost_wserialization-mt.so.5()(64bit)  
+libboost_wserialization.so.5()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

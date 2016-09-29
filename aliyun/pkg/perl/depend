@@ -1,0 +1,190 @@
+/usr/bin/perl  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.11)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.2)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcrypt.so.1()(64bit)  
+libdb-4.7.so()(64bit)  
+libdl.so.2()(64bit)  
+libgdbm.so.2()(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libnsl.so.1()(64bit)  
+libperl.so()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpthread.so.0(GLIBC_2.3.2)(64bit)  
+libresolv.so.2()(64bit)  
+libutil.so.1()(64bit)  
+perl >= 0:5.000
+perl >= 0:5.001
+perl >= 0:5.002
+perl >= 0:5.003
+perl >= 0:5.003_11
+perl >= 0:5.004
+perl >= 0:5.00404
+perl >= 0:5.005
+perl >= 0:5.00503
+perl >= 0:5.005_02
+perl >= 0:5.005_04
+perl >= 0:5.006
+perl >= 0:5.006002
+perl >= 0:5.006_001
+perl >= 0:5.007
+perl >= 0:5.007003
+perl >= 0:5.008
+perl >= 0:5.008001
+perl >= 0:5.009001
+perl >= 0:5.009004
+perl >= 0:5.009005
+perl >= 1:5
+perl >= 1:5.010001
+perl >= 1:5.8.0
+perl(AutoLoader)  
+perl(B)  
+perl(B::Concise)  
+perl(B::Terse)  
+perl(Carp)  
+perl(Class::Struct)  
+perl(Config)  
+perl(Cwd)  
+perl(Digest)  
+perl(DynaLoader)  
+perl(Encode)  
+perl(Encode::Alias)  
+perl(Encode::CJKConstants)  
+perl(Encode::CN::HZ)  
+perl(Encode::Config)  
+perl(Encode::JP::JIS7)  
+perl(Encode::KR::2022_KR)  
+perl(Encode::Unicode)  
+perl(Errno)  
+perl(Exporter)  
+perl(ExtUtils::Constant)  
+perl(ExtUtils::Constant::Base)  
+perl(ExtUtils::Constant::Utils)  
+perl(ExtUtils::Constant::XS)  
+perl(Fatal)  
+perl(Fcntl)  
+perl(Fcntl) >= 1.03
+perl(File::Basename)  
+perl(File::Compare)  
+perl(File::Copy)  
+perl(File::Find)  
+perl(File::Path)  
+perl(File::Spec)  
+perl(File::Spec) >= 0.8
+perl(File::Spec::Functions)  
+perl(File::Spec::Unix)  
+perl(File::Temp)  
+perl(File::stat)  
+perl(FileHandle)  
+perl(Filter::Util::Call)  
+perl(Getopt::Long)  
+perl(Getopt::Std)  
+perl(I18N::LangTags)  
+perl(I18N::LangTags) >= 0.30
+perl(IO)  
+perl(IO::File)  
+perl(IO::Handle)  
+perl(IO::Seekable)  
+perl(IO::Select)  
+perl(IO::Socket)  
+perl(IO::Socket::INET)  
+perl(IO::Socket::UNIX)  
+perl(IPC::Open2)  
+perl(IPC::Open3)  
+perl(IPC::SysV)  
+perl(List::Util)  
+perl(Locale::Constants)  
+perl(Locale::Maketext::GutsLoader)  
+perl(MIME::Base64)  
+perl(MIME::QuotedPrint)  
+perl(Math::BigFloat)  
+perl(Math::BigInt)  
+perl(Math::BigInt::Calc)  
+perl(Math::Complex)  
+perl(Module::Pluggable)  
+perl(NDBM_File)  
+perl(Net::Cmd)  
+perl(Net::Config)  
+perl(Net::Domain)  
+perl(Net::FTP::I)  
+perl(Net::FTP::dataconn)  
+perl(Opcode)  
+perl(Opcode) >= 1.01
+perl(POSIX)  
+perl(Pod::Checker)  
+perl(Pod::Find)  
+perl(Pod::Html)  
+perl(Pod::InputObjects)  
+perl(Pod::LaTeX)  
+perl(Pod::Man)  
+perl(Pod::ParseUtils)  
+perl(Pod::Parser)  
+perl(Pod::Parser) >= 1.04
+perl(Pod::Perldoc)  
+perl(Pod::Perldoc::GetOptsOO)  
+perl(Pod::Select)  
+perl(Pod::Simple)  
+perl(Pod::Text)  
+perl(Pod::Usage)  
+perl(SDBM_File)  
+perl(Scalar::Util)  
+perl(Scalar::Util) >= 1.10
+perl(Search::Dict) >= 1.02
+perl(SelectSaver)  
+perl(SelfLoader)  
+perl(Socket)  
+perl(Socket) >= 1.3
+perl(Storable)  
+perl(Symbol)  
+perl(Term::ANSIColor)  
+perl(Term::Cap)  
+perl(Text::Balanced)  
+perl(Text::Tabs)  
+perl(Text::Wrap)  
+perl(Tie::Array)  
+perl(Tie::Handle)  
+perl(Tie::Hash)  
+perl(Tie::RefHash)  
+perl(Tie::StdHandle)  
+perl(Time::Local)  
+perl(Time::tm)  
+perl(VMS::Filespec)  
+perl(VMS::Stdio)  
+perl(XSLoader)  
+perl(base)  
+perl(bigint)  
+perl(bigint.pl)  
+perl(bytes)  
+perl(constant)  
+perl(getopts.pl)  
+perl(if)  
+perl(integer)  
+perl(lib)  
+perl(locale)  
+perl(overload)  
+perl(re)  
+perl(strict)  
+perl(subs)  
+perl(threads)  
+perl(threads::shared)  
+perl(threads::shared) >= 1.21
+perl(utf8)  
+perl(vars)  
+perl(version)  
+perl(warnings)  
+perl(warnings::register)  
+perl-libs  
+perl-libs = 4:5.10.1-119.4.alios6.1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

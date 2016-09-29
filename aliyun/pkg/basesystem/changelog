@@ -1,0 +1,87 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 10.0-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 10.0-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 10.0-4.1
+- rebuild for alios6
+
+* 五 5月 21 2010 Ondrej Vasik <ovasik@redhat.com> - 10.0-4
+- remove reference to Fedora, add dist tag
+Related: rhbz#566527
+
+* 一 4月 26 2010 Dennis Gregorovic <dgregor@redhat.com> - 10.0-3.2
+- Rebuilt for RHEL 6
+Related: rhbz#566527
+
+* 一 4月 26 2010 Dennis Gregorovic <dgregor@redhat.com> - 10.0-3.1
+- Rebuilt for RHEL 6
+Related: rhbz#566527
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 10.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 10.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 10月 20 2008 Phil Knirsch <pknirsch@redhat.com> 10.0-1
+- Bump version and rebuild for Fedora 10 (#451289)
+
+* 五 3月 02 2007 Phil Knirsch <pknirsch@redhat.com> - 8.1-1
+- Cleanup per package review (#225608)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 8.0-5.1.1
+- rebuild
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 9月 22 2004 Bill Nottingham <notting@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 8月 21 2002 Bill Nottingham <notting@redhat.com>
+- bump rev
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 06 2000 Bill Nottingham <notting@redhat.com>
+- rebuild. Wheee.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 二 3月 16 1999 Cristian Gafton <gafton@redhat.com>
+- don't require rpm (breaks dependency chain)
+
+* 二 3月 16 1999 Erik Troan <ewt@redhat.com>
+- require rpm
+
+* 三 12月 30 1998 Cristian Gafton <gafton@redhat.com>
+- build for 6.0
+
+* 二 8月 11 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 9月 23 1997 Erik Troan <ewt@redhat.com>
+- made a noarch package
+

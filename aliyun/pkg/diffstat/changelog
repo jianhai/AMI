@@ -1,0 +1,151 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.51-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.51-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.51-2.1
+- rebuild for alios6
+
+* 三 3月 03 2010 Tim Waugh <twaugh@redhat.com> 1.51-2
+- Added comment for COPYING file.
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.51-1.1
+- Rebuilt for RHEL 6
+
+* 一 11月 09 2009 Tim Waugh <twaugh@redhat.com> 1.51-1
+- 1.51.
+
+* 六 10月 31 2009 Tim Waugh <twaugh@redhat.com> 1.50-1
+- 1.50 (bug #527702).
+- Ship CHANGES and README (bug #527703).
+- Build requires xz (bug #527708).
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.43-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.43-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 7月 16 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.43-8
+- fix license tag
+
+* 三 2月 13 2008 Tim Waugh <twaugh@redhat.com> 1.43-7
+- Rebuild for GCC 4.3.
+
+* 四 8月 23 2007 Tim Waugh <twaugh@redhat.com> 1.43-6
+- Rebuilt.
+
+* 五 3月 23 2007 Tim Waugh <twaugh@redhat.com> 1.43-5
+- Fixed description (bug #225695).
+
+* 一 3月 12 2007 Tim Waugh <twaugh@redhat.com> 1.43-4
+- Removed unnecessary comment (bug #225695).
+- Fixed license tag (bug #225695).
+
+* 二 3月 06 2007 Tim Waugh <twaugh@redhat.com> 1.43-3
+- Fixed source0 (bug #225695).
+- Added COPYING file, taken from diffstat.c.
+
+* 二 3月 06 2007 Tim Waugh <twaugh@redhat.com> 1.43-2
+- Fixed buildroot (bug #225695).
+- Build should not require gzip or bzip2 as these are exceptions (bug #225695).
+- Added SMP make flags (bug #225695).
+- Avoid makeinstall macro (bug #225695).
+- Better defattr (bug #225695).
+- Fixed summary (bug #225695).
+- Avoid macros in changelog (bug #225695).
+
+* 四 1月 11 2007 Tim Waugh <twaugh@redhat.com> 1.43-1
+- 1.43.  Fixes bug #187350.  No longer need compress patch.
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.41-1.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.41-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.41-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 02 2005 Tim Waugh <twaugh@redhat.com> 1.41-1
+- 1.41.
+- Corrected URL.
+
+* 三 8月 10 2005 Tim Waugh <twaugh@redhat.com> 1.38-4
+- Handle .Z files (bug #165507).
+
+* 二 7月 26 2005 Tim Waugh <twaugh@redhat.com> 1.38-3
+- Fixed man page location (bug #164296).
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 1.38-2
+- Rebuild for new GCC.
+
+* 三 2月 02 2005 Tim Waugh <twaugh@redhat.com> 1.38-1
+- 1.38 (bug #146857).
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 10月 17 2002 Tim Waugh <twaugh@redhat.com> 1.31-1
+- 1.31.  Fixes bug #74971.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 03 2001 Tim Waugh <twaugh@redhat.com>
+- Fix URL.
+- 1.28.  Makefile patch no longer needed.
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 06 2000 Than Ngo <than@redhat.de>
+- use rpm macros
+
+* 三 5月 31 2000 Ngo Than <than@redhat.de>
+- rebuild for 7.0
+- put man page in /usr/share/man/*
+- use %configure
+- fix makefile.in
+- cleanup specfile
+
+* 四 2月 03 2000 Preston Brown <pbrown@redhat.com>
+- gzip man page.
+
+* 五 8月 27 1999 Preston Brown <pbrown@redhat.com>
+- upgrade to 1.27, add URL tag.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 7)
+
+* 四 12月 17 1998 Cristian Gafton <gafton@redhat.com>
+- build for glibc 2.1
+
+* 二 8月 11 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 7月 10 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

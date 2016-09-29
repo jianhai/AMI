@@ -1,0 +1,534 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.1.23-13.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.1.23-13.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.1.23-13.1
+- rebuild for alios6
+
+* 三 8月 17 2011 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-13
+- saslauth now uses nonfixed uid anymore (#730242)
+
+* 三 8月 17 2011 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-12
+- saslauth now uses fixed uid and gid (#730242)
+
+* 二 8月 16 2011 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-11
+- resolve strict aliasing warnings (#730246)
+- repair ntlm support (#720451)
+
+* 一 8月 15 2011 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-10
+- recompile libraries with partial relro (#727274)
+
+* 一 4月 12 2010 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-8
+- Update init script to impeach pid file (#576209)
+
+* 一 3月 29 2010 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-7
+- solve race condition (#577770)
+
+* 二 3月 16 2010 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-6
+-  update pre, post, preun, postun (#572255)
+
+* 三 3月 10 2010 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-5
+- Rewrite spec file, make corect CFLAGS, CPPFLAGS and LDFLAGS,
+  update postun (#572255)
+
+* 五 2月 05 2010 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-4.3
+- Add man page to testtcpauthd (#562126)
+
+* 三 1月 27 2010 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-4.2
+- Repair the provide field in spec (#558900)
+
+* 五 12月 11 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.1.23-4.1
+- Rebuilt for RHEL 6
+
+* 四 9月 24 2009 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-4
+- Repair initscript to make condrestart working properly (#522103)
+
+* 三 9月 23 2009 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-3
+- Add possibility to run the saslauth without root privilegies (#185614)
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 2.1.23-2
+- rebuilt with new openssl
+
+* 五 8月 07 2009 Jan F. Chadima <jchadima@redhat.com> - 2.1.23-1
+- update to 2.1.23
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.22-25
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 5月 11 2009 Jan F. Chadima <jchadima@redhat.com> - 2.1.22-24
+- repair sasl_encode64 nul termination (#487251)
+
+* 四 4月 16 2009 Robert Scheck <robert@fedoraproject.org> - 2.1.22-23
+- Don't build the krb4 plugin as krb5 1.7 will drop it (#225974 #c6)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.1.22-22
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 06 2009 Tomas Mraz <tmraz@redhat.com> - 2.1.22-21
+- fix build with gcc-4.4
+
+* 五 1月 23 2009 Tomas Mraz <tmraz@redhat.com> - 2.1.22-20
+- set LDAP_OPT_TIMEOUT (#326452)
+- provide LSB compatible init script (#246900)
+
+* 五 9月 26 2008 Tomas Mraz <tmraz@redhat.com> - 2.1.22-19
+- always use the current external db4 when linking,
+  thanks to Dan Horak for the original patch (#464098)
+
+* 三 9月 10 2008 Tomas Mraz <tmraz@redhat.com> - 2.1.22-18
+- fix most critical build warnings (#433583)
+- use external db4
+
+* 五 8月 29 2008 Tomas Mraz <tmraz@redhat.com> - 2.1.22-17
+- always link against the internal db4 (#459163)
+- rediff patches for no fuzz
+
+* 三 7月 09 2008 Tomas Mraz <tmraz@redhat.com> - 2.1.22-16
+- update internal db4 (#449737)
+
+* 二 7月 01 2008 Tomas Mraz <tmraz@redhat.com> - 2.1.22-15
+- drop reload from initscript help (#448154)
+- fix hang in rimap auth method (#438533)
+- build the krb4 plugin (#154675)
+
+* 五 5月 23 2008 Dennis Gilmore <dennis@ausil.us> - 2.1.22-14
+- make it so that bootstrap actually works
+
+* 四 5月 22 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 2.1.22-13.1
+- minor release bump for sparc rebuild
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.1.22-13
+- Autorebuild for GCC 4.3
+
+* 四 2月 14 2008 Steve Conklin <sconklin@redhat.com> - 2.1.22-12
+- rebuild for gcc4.3
+
+* 五 1月 25 2008 Steve Conklin <sconklin@redhat.com> - 2.1.22-11
+- Cleanup after merge review bz #225673
+- no longer mark /etc/rc.d/init.d/saslauthd as config file
+- removed -x permissions on include files
+- added devel package dependency on cyrus-sasl
+- removed some remaining .la files that were being delivered
+
+* 三 12月 05 2007 Release Engineering <rel-eng at fedoraproject dot org> - 2.1.22-10
+- Rebuild for deps
+
+* 三 11月 07 2007 Steve Conklin <sconklin@redhat.com> - 2.1.22-9
+- Fixed a typo in the spec file
+
+* 三 11月 07 2007 Steve Conklin <sconklin@redhat.com> - 2.1.22-8
+- Removed srp plugin source and added dist to NVR
+
+* 二 9月 18 2007 Steve Conklin <sconklin@redhat.com> 2.1.22-7
+- use db4 version 4.6.19 bz#249737
+
+* 一 2月 26 2007 Nalin Dahyabhai <nalin@redhat.com> 2.1.22-6
+- install config files and init scripts using -p
+- pull in patch to build with current automake (#229010, Jacek Konieczny
+  and Robert Scheck)
+- remove prereq on ldconfig, RPM should pick it up based on the -libs
+  scriptlets
+- pull in patch to correctly detect gsskrb5_register_acceptor_identity
+  (#200892, Mirko Streckenbach)
+- move sasldb auxprop modules into the -lib subpackage, so that we'll pick
+  it up for multilib systems
+
+* 四 2月 22 2007 Nalin Dahyabhai <nalin@redhat.com>
+- pull CVS fix for not tripping over extra commas in digest-md5
+  challenges (#229640)
+
+* 五 2月 16 2007 Nalin Dahyabhai <nalin@redhat.com>
+- remove static build, which is no longer a useful option because not all of
+  our dependencies are available as static libraries
+- drop patches which were needed to keep static builds going
+- drop gssapi-generic patch due to lack of interest
+- update the bundled copy of db to 4.5.20 (#229012)
+- drop dbconverter-2, as we haven't bundled v1 libraries since FC4
+
+* 二 12月 05 2006 Nalin Dahyabhai <nalin@redhat.com> 2.1.22-5
+- rebuild
+- add 'authentication' or 'auxprop' to summaries for plugin packages to
+  better indicate what the plugin provides
+- switch from automake 1.9 to automake 1.7
+
+* 五 9月 29 2006 Nalin Dahyabhai <nalin@redhat.com> 2.1.22-4
+- rebuild without 'dlcompat' bits (#206119)
+
+* 一 7月 17 2006 Nalin Dahyabhai <nalin@redhat.com> 2.1.22-3
+- rebuild
+
+* 二 6月 20 2006 Nalin Dahyabhai <nalin@redhat.com> 2.1.22-2
+- fix a typo in sasl_client_start(3) (#196066)
+
+* 一 5月 22 2006 Nalin Dahyabhai <nalin@redhat.com> 2.1.22-1
+- update to 2.1.22, adding pluginviewer to %{_sbindir}
+
+* 二 5月 16 2006 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-12
+- add conditionalized build dependency on openldap-devel (#191855)
+- patch md5global.h to be the same on all architectures
+
+* 四 4月 27 2006 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-11
+- add unapplied patch which makes the DIGEST-MD5 plugin omit the realm
+  argument when the environment has $CYRUS_SASL_DIGEST_MD5_OMIT_REALM set to a
+  non-zero value, for testing purposes
+- add missing buildrequires on zlib-devel (#190113)
+
+* 一 2月 20 2006 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-10
+- add missing buildrequires on gdbm-devel (Karsten Hopp)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.1.21-9.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.1.21-9.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 12月 19 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-9
+- use --as-needed to avoid linking dbconverter-2 with SQL libraries, which
+  it doesn't use because it manipulates files directly (#173321)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 14 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-8
+- rebuild with new OpenLDAP, overriding the version checks to assume that
+  2.3.11 is acceptable
+- remove a lingering patch for 1.x which we no longer use
+
+* 六 11月 12 2005 Tom Lane <tgl@redhat.com> 2.1.21-7
+- Rebuild due to mysql update.
+
+* 二 11月 08 2005 Tomas Mraz <tmraz@redhat.com> 2.1.21-6
+- rebuilt with new openssl
+
+* 五 9月 09 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-5
+- add missing buildrequires: on groff (#163032)
+
+* 四 9月 01 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-4
+- move the ldapdb auxprop support into a subpackage (#167300)
+  (note: the ldap password check support in saslauthd doesn't use auxprop)
+
+* 二 8月 30 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-3
+- correct a use of uninitialized memory in the bundled libdb (Arjan van de Ven)
+
+* 一 8月 29 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-2
+- move the ANONYMOUS mech plugin to the -lib subpackage so that multilib
+  systems can use it without installing the main package
+- build the static libraries without sql auxprop support
+
+* 一 8月 29 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.21-1
+- update to 2.1.21
+- turn off compilation of libsasl v1 (finally)
+- explicitly disable sqlite to avoid the build warning
+- change the default mechanism which is set for saslauthd from "shadow" to
+  "pam" (#159194)
+- split the shared library up from saslauthd so that multilib systems don't
+  have to pull in every dependency of saslauthd for the compat arch (#166749)
+
+* 三 4月 13 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.20-5
+- rebuild with new deps
+
+* 二 3月 01 2005 Nalin Dahyabhai <nalin@redhat.com> 2.1.20-4
+- rebuild with new deps
+
+* 四 11月 11 2004 Jeff Johnson <jbj@jbj.org> 2.1.20-3
+- rebuild against db-4.3.21.
+
+* 四 11月 11 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.20-2
+- build with mysql-devel instead of mysqlclient10
+
+* 一 11月 01 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.20-1
+- build with mysqlclient10 instead of mysql-devel
+
+* 三 10月 27 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.20-0
+- update to 2.1.20, including the fix for CAN-2004-0884
+
+* 二 10月 05 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.19-3
+- use notting's fix for incorrect patch for CAN-2004-0884 for 1.5.28
+
+* 二 10月 05 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.19-2
+- don't trust the environment in setuid/setgid contexts (CAN-2004-0884, #134660)
+
+* 四 8月 19 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.19-1
+- rebuild (the 2.1.19 changelog for fixing a buffer overflow referred to a CVS
+  revision between 2.1.18 and 2.1.19)
+
+* 一 7月 19 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.19-0
+- update to 2.1.19, maybe for update
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 6月 07 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.18-4
+- enable sql auxprop support in a subpackage
+- include LDAP_SASLAUTHD documentation file (#124830)
+
+* 五 6月 04 2004 Nalin Dahyabhai <nalin@redhat.com>
+- turn on ntlm in a subpackage
+
+* 四 5月 13 2004 Thomas Woerner <twoerner@redhat.com> 2.1.18-3
+- removed rpath
+
+* 二 3月 16 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.18-2
+- turn on building of libsasl v1 again
+
+* 五 3月 12 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.18-1
+- update to 2.1.18
+- saslauthd's ldap code is no longer marked experimental, so we build it
+
+* 一 3月 08 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.17-4
+- rebuild
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 03 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.17-2
+- include default /etc/sysconfig/saslauthd configuration file for the init
+  script (#114868)
+
+* 四 1月 29 2004 Nalin Dahyabhai <nalin@redhat.com>
+- drop saslauthd_version patch for libsasl2
+
+* 四 1月 29 2004 Nalin Dahyabhai <nalin@redhat.com>
+- add a saslauthd_version option to libsasl's saslauthd client and teach it to
+  do the right thing
+- enable the saslauthd client code in libsasl version 1 (it's still going away!)
+- add saslauthd1-checkpass/saslauthd2-checkpass for testing the above change
+
+* 三 1月 07 2004 Nalin Dahyabhai <nalin@redhat.com> 2.1.17-1
+- forcibly disable otp and sql plugins at compile-time
+
+* 五 12月 19 2003 Nalin Dahyabhai <nalin@redhat.com>
+- update to 2.1.17, forcing the gssapi plugin to be shared now, as before
+- use a bundled libdb (#112215)
+- build static-with-all-plugins and normal-shared libsasl versions
+- add sasl2-{shared,static}-mechlist for very basic sanity checking
+- make inclusion of sasl1 stuffs conditional, because it's so going away
+
+* 六 12月 13 2003 Jeff Johnson <jbj@jbj.org> 2.1.15-7
+- rebuild against db-4.2.52.
+
+* 四 10月 23 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.15-6
+- use /dev/urandom instead of /dev/random for SASL2 (docs indicate that this is
+  safe if you aren't using OTP or SRP, and we build neither); SASL1 appears to
+  use it to seed the libc RNG only (#103378)
+
+* 一 10月 20 2003 Nalin Dahyabhai <nalin@redhat.com>
+- obey RPM_OPT_FLAGS again when krb5_prefix != %{_prefix}
+
+* 五 10月 17 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.15-5
+- install saslauthd's mdoc page instead of the pre-formatted man page, which
+  would get formatted again
+
+* 四 9月 25 2003 Jeff Johnson <jbj@jbj.org> 2.1.15-5
+- rebuild against db-4.2.42.
+
+* 一 9月 15 2003 Nalin Dahyabhai <nalin@redhat.com>
+- include testsaslauthd
+- note in the README that the saslauthd protocol is different for v1 and v2,
+  so v1's clients can't talk to the v2 server
+
+* 四 8月 21 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.15-4
+- rebuild
+
+* 四 8月 21 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.15-3
+- add logic to build with gssapi libs in either /usr or /usr/kerberos
+
+* 一 7月 21 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.15-2
+- rebuild
+
+* 二 7月 15 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.15-1
+- update to 2.1.15
+
+* 一 7月 14 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.14-1
+- update to 2.1.14
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 5月 09 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.13-3
+- change -m argument to saslauthd to be a directory instead of a path
+
+* 四 5月 08 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.13-2
+- link libsasl2 with -lpthread to ensure that the sasldb plug-in can always
+  be loaded
+
+* 二 4月 29 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.13-1
+- update to 2.1.13
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 2.1.10-3
+- rebuild
+
+* 四 12月 12 2002 Nalin Dahyabhai <nalin@redhat.com>
+- consider either des_cbc_encrypt or DES_cbc_encrypt to be sufficient when
+  searching for a DES implementation in libcrypto
+- pull in CPPFLAGS and LDFLAGS from openssl's pkg-config data, if it exists
+
+* 一 12月 09 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.10-2
+- rebuild
+
+* 一 12月 09 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.10-1
+- update to 2.1.10, fixing buffer overflows in libsasl2 noted by Timo Sirainen
+
+* 二 11月 12 2002 Tim Powers <timp@redhat.com> 2.1.7-5
+- remove files from $RPM_BUILD_ROOT that we don't intend to include
+
+* 三 10月 09 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.7-4
+- update to SASLv1 to final 1.5.28
+
+* 五 9月 13 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.7-3
+- rebuild, overriding sasldir when running make so that on multilib systems
+  applications will be able to load modules for the right arch
+
+* 一 9月 02 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.7-2
+- include dbconverter-2 (#68741)
+
+* 五 8月 09 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.7-1
+- update to 2.1.7, fixing a race condition in digest-md5
+
+* 三 7月 17 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.6-1
+- update to 2.1.6 and 1.5.28
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 6月 13 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.5-1
+- update to 2.1.5
+
+* 一 6月 10 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.4-1
+- update to 2.1.4
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 16 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.2-1
+- modify to build with db 4.x
+
+* 四 4月 18 2002 Nalin Dahyabhai <nalin@redhat.com>
+- update cyrus-sasl 2 to 2.1.2
+- change buildreq to db3-devel
+
+* 二 2月 12 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.1-3
+- suppress output to stdout/stderr in %postun
+
+* 日 2月 10 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.1-2
+- configure sasldb2 to use berkeley DB instead of gdbm
+
+* 三 2月 06 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.1-1
+- update to 2.1.1
+
+* 四 1月 31 2002 Nalin Dahyabhai <nalin@redhat.com> 2.1.0-1
+- marge 1.5.24 back in, making a note that it should be removed at some
+  point in the future
+
+* 三 1月 30 2002 Nalin Dahyabhai <nalin@redhat.com>
+- update to 2.1.0, which is designed to be installed in parallel with cyrus sasl
+  1.x, so fork the package and rename it to cyrus-sasl2
+- add the sasldb auxprop plugin to the main package
+- add disabled-by-default saslauthd init script
+- move the .la files for plugins into their respective packages -- they're
+  needed by the library
+
+* 三 1月 23 2002 Nalin Dahyabhai <nalin@redhat.com> 1.5.24-24
+- free ride through the build system
+
+* 五 11月 02 2001 Nalin Dahyabhai <nalin@redhat.com> 1.5.24-23
+- patch to fix possible syslog format-string vulnerability
+
+* 一 10月 29 2001 Nalin Dahyabhai <nalin@redhat.com> 1.5.24-22
+- add pam-devel as a buildprereq
+
+* 三 8月 29 2001 Nalin Dahyabhai <nalin@redhat.com> 1.5.24-21
+- include sample programs in the -devel subpackage, prefixing their names
+  with "sasl-" to reduce future potential naming conflicts
+
+* 二 8月 14 2001 Nalin Dahyabhai <nalin@redhat.com> 1.5.24-20
+- build without -ggdb
+
+* 五 8月 03 2001 Nalin Dahyabhai <nalin@redhat.com>
+- add gdbm-devel as a build dependency (#44990)
+- split off CRAM-MD5 and DIGEST-MD5 into a subpackage of their own (#43079,
+  and dialogs with David L. Parsley)
+
+* 五 4月 27 2001 Nalin Dahyabhai <nalin@redhat.com>
+- split out the PLAIN and LOGIN mechanisms into their own package (this allows
+  an administrator to disable them by simply removing the package)
+
+* 五 1月 19 2001 Nalin Dahyabhai <nalin@redhat.com>
+- rebuild in new environment
+
+* 三 12月 06 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix gssapi-over-tls
+
+* 五 10月 27 2000 Nalin Dahyabhai <nalin@redhat.com>
+- enable static libraries, but always build with -fPIC
+
+* 三 10月 25 2000 Nalin Dahyabhai <nalin@redhat.com>
+- make sure the version of 1.5.24 in the package matches the masters (#18968)
+
+* 一 10月 09 2000 Nalin Dahyabhai <nalin@redhat.com>
+- re-add the libsasl.so symlink to the -devel package (oops)
+
+* 五 10月 06 2000 Nalin Dahyabhai <nalin@redhat.com>
+- move .so files for modules to their respective packages -- they're not -devel
+  links meant for use by ld anyway
+
+* 四 10月 05 2000 Nalin Dahyabhai <nalin@redhat.com>
+- split off -devel subpackage
+- add a -gssapi subpackage for the gssapi plugins
+
+* 三 8月 16 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix the summary text
+
+* 日 8月 13 2000 Nalin Dahyabhai <nalin@redhat.com>
+- re-enable arcfour and CRAM
+
+* 五 8月 04 2000 Nalin Dahyabhai <nalin@redhat.com>
+- force use of gdbm for database files to avoid DB migration weirdness
+- enable login mechanism
+- disable gssapi until it can coexist peacefully with non-gssapi setups
+- actually do a make in the build section (#15410)
+
+* 五 7月 21 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 1.5.24
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 27 2000 Nalin Dahyabhai <nalin@redhat.com>
+- rebuild in new environment (release 3)
+
+* 一 6月 19 2000 Nalin Dahyabhai <nalin@redhat.com>
+- don't muck with syslogd in post
+- remove patch for db-3.0 wackiness, no longer needed
+
+* 四 6月 08 2000 Nalin Dahyabhai <nalin@redhat.com>
+- FHS cleanup
+- don't strip anything by default
+
+* 五 2月 11 2000 Tim Powers <timp@redhat.com>
+- fixed man pages not being gzipped
+
+* 二 11月 16 1999 Tim Powers <timp@redhat.com>
+- incorporated changes from Mads Kiilerich
+- release number is 1, not mk1
+
+* 三 11月 10 1999 Mads Kiilerich <mads@kiilerich.com>
+- updated to sasl 1.5.11
+- configure --disable-krb4 --without-rc4 --disable-cram 
+  because of missing libraries and pine having cram as default...
+- handle changing libsasl.so versions
+
+* 一 8月 30 1999 Tim Powers <timp@redhat.com>
+- changed group
+
+* 五 8月 13 1999 Tim Powers <timp@redhat.com>
+- first build for Powertools
+

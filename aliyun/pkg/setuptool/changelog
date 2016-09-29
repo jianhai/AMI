@@ -1,0 +1,237 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.19.9-3.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.19.9-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.19.9-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.19.9-3.1
+- rebuild for alios6
+
+* 三 5月 19 2010 Michal Hlavinka <mhlavink@redhat.com> 1.19.9-3
+- install man page
+
+* 一 11月 02 2009 Michal Hlavinka <mhlavink@redhat.com> 1.19.9-2
+- spec cleanup
+
+* 三 10月 21 2009 Michal Hlavinka <mhlavink@redhat.com> 1.19.9-1
+- update path of firewall configuration tool (#529794)
+- update translations
+
+* 一 10月 12 2009 Michal Hlavinka <mhlavink@redhat.com> 1.19.8-1
+- add setup.1 man page
+- update translations
+
+* 一 9月 14 2009 Michal Hlavinka <mhlavink@redhat.com> - 1.19.7-1
+- relase with updated translations
+
+* 二 8月 04 2009 Michal Hlavinka <mhlavink@redhat.com> - 1.19.6-1
+- updated to 1.19.6
+- don't display *_IN locale in /dev/tty/X it does not work (#511193)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.19.5-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 3月 09 2009 Michal Hlavinka <mhlavink@redhat.com> - 1.19.5-2
+- fix buildrequires
+
+* 一 3月 09 2009 Michal Hlavinka <mhlavink@redhat.com> - 1.19.5-1
+- new version (only translations updated)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.19.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.19.4-2
+- Autorebuild for GCC 4.3
+
+* 三 1月 23 2008 Nalin Dahyabhai <nalin@redhat.com> 1.19.4-1
+- drop system-config-printer-tui from the list of things we search for as
+  an option for printer configuration (#377401)
+
+* 一 1月 07 2008 Nalin Dahyabhai <nalin@redhat.com> 1.19.3-2
+- own $(pkgdatadir) (#427813)
+
+* 四 8月 16 2007 Nalin Dahyabhai <nalin@redhat.com> 1.19.3-1
+- packaging cleanups
+- add the ability to scan for pointers in $(pkgdatadir)/setuptool.d
+
+* 五 12月 01 2006 Nalin Dahyabhai <nalin@redhat.com> 1.19.2-2
+- rebuild
+
+* 四 11月 30 2006 Nalin Dahyabhai <nalin@redhat.com> 1.19.2-1
+- update more translations (#216494)
+
+* 四 11月 30 2006 Nalin Dahyabhai <nalin@redhat.com> 1.19.1-2
+- rebuild
+
+* 四 11月 30 2006 Nalin Dahyabhai <nalin@redhat.com> 1.19.1-1
+- update translations (#216494)
+
+* 三 10月 18 2006 Nalin Dahyabhai <nalin@redhat.com> 1.19-2
+- rebuild
+
+* 二 10月 17 2006 Nalin Dahyabhai <nalin@redhat.com> 1.19-1
+- fix crashers in cases when we find no configuration files (or malformed or
+  useless ones) under %{_sysconfdir}/setuptool.d (#211084)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.18.1-1.2.1
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.18.1-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.18.1-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 日 1月 29 2006 Nalin Dahyabhai <nalin@redhat.com> 1.18.1-1
+- add missing dependency on usermode (#179230)
+
+* 三 1月 18 2006 Nalin Dahyabhai <nalin@redhat.com> 1.18-1
+- fix sorting of multiple options so that precedence is determined
+  correctly (#178022)
+- prefer authconfig-tui to authconfig, because if we have both, then
+  authconfig is just a command-line app  (#178022)
+- actually include the README
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 10月 10 2005 Nalin Dahyabhai <nalin@redhat.com> 1.17.3-1
+- update PAM configuration to use "include" directive (#170265)
+- conflict with versions of the pam package (< 0.78) which don't
+  support the "include" directive
+
+* 一 10月 03 2005 Nalin Dahyabhai <nalin@redhat.com> 1.17.2-1
+- clean up a compiler warning
+- add a new config file so that the system-config-authentication-tui
+  shows up in the menu now that it's been moved
+
+* 三 3月 16 2005 Nalin Dahyabhai <nalin@redhat.com> 1.17.1-1
+- add a short README detailing the setuptool config file format
+
+* 五 10月 01 2004 Nalin Dahyabhai <nalin@redhat.com> 1.17-2
+- specify %{_bindir}/setup by name now instead of with a pattern
+
+* 五 10月 01 2004 Nalin Dahyabhai <nalin@redhat.com> 1.17-1
+- refresh translations
+
+* 三 9月 29 2004 Miloslav Trmac <mitr@redhat.com> - 1.16-1
+- Fix crash with LANG=ko_KR.UTF-8 (#128112)
+- Add missing BuildRequires (#124175, #126595)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 05 2004 Nalin Dahyabhai <nalin@redhat.com> 1.15-1
+- prefer system-config-keyboard to kbdconfig (#122575)
+- handle tools which require command-line arguments correctly
+
+* 二 4月 13 2004 Nalin Dahyabhai <nalin@redhat.com> 1.14-1
+- use control files to find things so that the source needn't be
+  revised so often
+- determine available translations at build-time (#102082)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> 1.13-2.1
+- rebuilt
+
+* 六 7月 12 2003 Nalin Dahyabhai <nalin@redhat.com> 1.13-2
+- rebuild
+
+* 六 7月 12 2003 Nalin Dahyabhai <nalin@redhat.com> 1.13-1
+- call bindtextdomain and textdomain with the right values (#74059)
+
+* 三 2月 19 2003 Nalin Dahyabhai <nalin@redhat.com> 1.12-1
+- setup complains if we're not root, set FALLBACK=false in the userhelper config
+
+* 一 1月 27 2003 Nalin Dahyabhai <nalin@redhat.com> 1.11-2
+- rebuild
+
+* 一 11月 11 2002 Bill Nottingham <notting@redhat.com> 1.11-1
+- kill hardcoded paths from pam config file
+
+* 二 9月 03 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.10-1
+- Update translations
+
+* 四 8月 15 2002 Bill Nottingham <notting@redhat.com> 1.9-2
+- build against new slang
+
+* 三 7月 24 2002 Nalin Dahyabhai <nalin@redhat.com> 1.9-1
+- nuke the .desktop file
+- add usermode bits
+
+* 三 7月 24 2002 Nalin Dahyabhai <nalin@redhat.com> 1.9-1
+- intltoolize, use desktop-file-install, autotools full pull
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 16 2002 Nalin Dahyabhai <nalin@redhat.com> 1.8-3
+- rebuild in new environment
+
+* 一 8月 06 2001 Nalin Dahyabhai <nalin@redhat.com>
+- add buildrequires on newt-devel (#49696)
+
+* 日 8月 05 2001 Nalin Dahyabhai <nalin@redhat.com>
+- add printconf-tui for printer configuration
+
+* 五 2月 23 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- langify
+
+* 三 1月 24 2001 Nalin Dahyabhai <nalin@redhat.com>
+- add lokkit for firewall configuration (#24854)
+
+* 二 1月 16 2001 Nalin Dahyabhai <nalin@redhat.com>
+- add netconfig (no, not netconf, and not netcfg, netconfig) (#23444)
+
+* 三 12月 20 2000 Bill Nottingham <notting@redhat.com>
+- ship the translations (oops)
+
+* 四 8月 24 2000 Erik Troan <ewt@redhat.com>
+- updated it/es translations
+
+* 六 8月 19 2000 Nalin Dahyabhai <nalin@redhat.com>
+- make the .desktop file root-only-readable, because only root can run
+  setuptool anyway (#16575)
+
+* 日 8月 06 2000 Bill Nottingham <notting@redhat.com>
+- don't bother running if they're not root (#15560)
+
+* 五 8月 04 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add sv translations for .desktop file (#15361)
+
+* 三 7月 26 2000 Matt Wilson <msw@redhat.com>
+- new translations for de fr it es
+
+* 三 6月 28 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add "archive" make target
+- size list box based on length of list
+
+* 日 6月 18 2000 Matt Wilson <msw@redhat.com>
+- rebuild for next release
+
+* 三 2月 09 2000 Preston Brown <pbrown@redhat.com>
+- wmconfig -> desktop
+
+* 四 2月 03 2000 Nalin Dahyabhai <nalin@redhat.com>
+- rebuilt in new environment
+
+* 一 8月 02 1999 Matt Wilson <msw@redhat.com>
+- rebuilt against newt 0.50
+
+* 一 4月 05 1999 Bill Nottingham <notting@redhat.com>
+- strip binary
+
+* 五 3月 26 1999 Bill Nottingham <notting@redhat.com>
+- port to C, so we can get python out of base component
+
+* 二 3月 16 1999 Bill Nottingham <notting@redhat.com>
+- add support for authconfig, remove cabaret
+
+* 三 11月 05 1997 Michael K. Johnson <johnsonm@redhat.com>
+- initial version
+

@@ -1,0 +1,5 @@
+preuninstall scriptlet (using /bin/sh):
+[ $1 = 0 ] || exit 0
+rm -f /var/cache/man/cat[123456789n]/* 2>/dev/null || :
+rm -f /var/cache/man/local/cat[123456789n]/* 2>/dev/null || :
+rm -f /var/cache/man/X11R6/cat[123456789n]/* 2>/dev/null || :

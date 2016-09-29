@@ -1,0 +1,289 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 22.6-15.4.1
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 22.6-15.3.1
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 22.6-15.2.1
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 22.6-15.1.1
+- rebuild for alios6
+
+* 三 1月 12 2011 Jan Görig <jgorig@redhat.com> 22.6-15.el6_0.1
+- Fixed SIGV in peekfd
+- Fixed unitialized memory in killall
+- Resolves: rhbz#668989, rhbz#668992
+
+* 三 5月 26 2010 Jan Görig <jgorig@redhat.com> 22.6-15
+- Fixed udp namespace problem in fuser
+- Resolves: rhbz#596055
+
+* 四 2月 25 2010 Daniel Novotny <dnovotny@redhat.com> 22.6-14
+- added docs (README etc.)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 22.6-13.1
+- Rebuilt for RHEL 6
+
+* 三 8月 05 2009 Lubomir Rintel <lkundrak@v3.sk> - 22.6-13
+- Fix a buffer overflow
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 22.6-12
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 5月 11 2009 Daniel Novotny <dnovotny@redhat.com> 22.6-11
+- merge review (#226322): a few .spec changes
+
+* 四 4月 23 2009 Daniel Novotny <dnovotny@redhat.com> - 22.6-10
+- fix #497303 -  fuser -m <dev> doesn't work after lazy unmount
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 22.6-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 8月 29 2008 Tom "spot" Callaway <tcallawa@redhat.com> 22.6-8
+- fix package so it builds again
+
+* 五 8月 29 2008 Tom "spot" Callaway <tcallawa@redhat.com> 22.6-7
+- fix license tag
+
+* 一 4月 14 2008 Tomas Smetana <tsmetana@redhat.com> 22.6-6
+- fix #441871 - pstree fails to show most processes;
+  patch by Emil Jerabek
+
+* 一 4月 07 2008 Tomas Smetana <tsmetana@redhat.com> 22.6-5
+- fix configure.ac to include all the required headers for peekfd
+- remove kernel-headers again -- not needed in rawhide
+
+* 一 4月 07 2008 Tomas Smetana <tsmetana@redhat.com> 22.6-4
+- fix #440762 - add kernel-headers to build reuqirements
+
+* 二 2月 12 2008 Tomas Smetana <tsmetana@redhat.com> 22.6-3
+- rebuild (gcc-4.3)
+
+* 一 12月 10 2007 Tomas Smetana <tsmetana@redhat.com> 22.6-2
+- fix #417801 - exclude peekfd on secondary architectures
+
+* 一 12月 03 2007 Tomas Smetana <tsmetana@redhat.com> 22.6-1
+- update to new upstream version
+
+* 三 8月 29 2007 Tomas Smetana <tsmetana@redhat.com> 22.5-2
+- rebuild (because of BuildID)
+
+* 四 6月 07 2007 Tomas Smetana <tsmetana@redhat.com> 22.5-1.2
+- exclude peekfd manpage on non-x86 archs
+
+* 四 6月 07 2007 Tomas Smetana <tsmetana@redhat.com> 22.5-1.1
+- rebuild
+
+* 三 6月 06 2007 Tomas Smetana <tsmetana@redhat.com> 22.5-1
+- update to new upstream version
+
+* 四 3月 01 2007 Karel Zak <kzak@redhat.com> 22.3-2
+- fix #214214 - killall <path> misbehavior (prelink, etc)
+
+* 四 3月 01 2007 Karel Zak <kzak@redhat.com> 22.3-1
+- update to upstream 22.3
+- backport ipv6 bugfix from upstream CVS
+- clean up spec file
+
+* 三 7月 19 2006 Karel Zak <kzak@redhat.com>  - 22.2-5
+- spec file cleanup & rebuild
+
+* 一 7月 17 2006 Jesse Keating <jkeating@redhat.com> - 22.2-4
+- rebuild
+
+* 三 5月 17 2006 Karel Zak <kzak@redhat.com> 22.2-2
+- add BuildRequires: gettext-devel
+- sync with upstream
+
+* 三 3月 22 2006 Karel Zak <kzak@redhat.com> 22.1.03072006cvs-1.1
+- rebuild
+
+* 二 3月 07 2006 Karel Zak <kzak@redhat.com> 22.1.03072006cvs-1
+- update to new upstream CVS version 
+- enable new fuser version
+- fix fuser return code 
+- fix #183897 - "pstree -a" call results in segmentation fault
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 21.8-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 21.8-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 30 2005 Karel Zak <kzak@redhat.com> 21.8-1
+- fix #174585 - killall crashes on long variable name
+- spec file cleanup
+
+* 三 10月 05 2005 Karel Zak <kzak@redhat.com> 21.7-1.cvs20051005
+- sync with upstream CVS
+- use old version of fuser
+
+* 四 9月 08 2005 Karel Zak <kzak@redhat.com> 21.6-1
+- sync with upstream release 21.6
+- cleanup selinux patch
+- fix #165167 - buffer overflow detected in fuser
+
+* 六 3月 05 2005 Karel Zak <kzak@redhat.com> 21.5-4
+- fixed problem with perl expression in the build .spec section
+
+* 六 3月 05 2005 Karel Zak <kzak@redhat.com> 21.5-3
+- rebuilt
+
+* 二 12月 14 2004 Karel Zak <kzak@redhat.com> 21.5-2
+- use other way for psmisc-21.5-term.patch
+
+* 一 12月 13 2004 Karel Zak <kzak@redhat.com> 21.5-1
+- Updated to new upstream version 21.5
+- Ported SELinux patch forward as psmisc-21.5-selinux.patch
+- Added psmisc-21.5-term.patch that fix termcap.h and term.h conflicts
+
+* 五 9月 24 2004 Mike A. Harris <mharris@redhat.com> 21.4-4
+- Added "BuildRequires: libselinux-devel" for WITH_SELINUX builds (#123754)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com> 21.4-3
+- rebuilt
+
+* 一 3月 15 2004 Mike A. Harris <mharris@redhat.com> 21.4-2
+- Re-enabled SELINUX support
+- Removed gcc33 patch, no longer needed it seems.
+
+* 一 3月 15 2004 Mike A. Harris <mharris@redhat.com> 21.4-1
+- Updated to new upstream version 21.4
+- Ported SELinux patch forward as psmisc-21.4-redhat-selinux-psmisc.patch,
+  but disabled SELINUX support temporarily until other build problems are
+  resolved
+- Remove MKINSTALLDIRS-./mkinstalldirs from "make install" as that causes the
+  build to fail when "./" changes.  If this option is ever added back, make
+  it relative to $RPM_BUILD_DIR instead of ./ so that things do not break
+- Added pstree.x11 to file list after rpm reported it present in buildroot but
+  not packaged
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> 21.3-8
+- rebuilt
+
+* 一 1月 26 2004 Dan Walsh <dwalsh@redhat.com> 21.3-7
+- fix is_selinux_enabled call
+
+* 五 9月 05 2003 Dan Walsh <dwalsh@redhat.com> 21.3-6.sel
+- turn on selinux
+- Hack to fix build problem on Fedora core
+
+* 五 9月 05 2003 Dan Walsh <dwalsh@redhat.com> 21.3-6
+- turn off selinux
+
+* 四 8月 28 2003 Dan Walsh <dwalsh@redhat.com> 21.3-5.sel
+- change flags to -Z and build for selinux
+
+* 一 7月 28 2003 Dan Walsh <dwalsh@redhat.com> 21.3-4
+- Remove -lsecure check from configure.
+
+* 一 7月 28 2003 Dan Walsh <dwalsh@redhat.com> 21.3-2
+- Added SELinux patches
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 29 2003 Mike A. Harris <mharris@redhat.com> 21.3-1.RHEL.0
+- Bump to 21.3-1.RHEL.0 and rebuild for Red Hat Enterprise Linux
+
+* 四 5月 29 2003 Mike A. Harris <mharris@redhat.com> 21.3-1
+- Updated to new upstream version 21.3
+- Removed dead script gensig.sh
+- Disabled psmisc-21.2-gcc33.patch as it is included in 21.3
+
+* 四 5月 22 2003 Jeremy Katz <katzj@redhat.com> 21.2-5
+- fix build with gcc 3.3
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 11月 13 2002 Mike A. Harris <mharris@redhat.com> 21.2-3
+- Remove pidof manpage from buildroot by adding with_pidof conditional
+- _bindir cleanup
+
+* 三 11月 13 2002 Mike A. Harris <mharris@redhat.com> 21.2-2
+- Updated to new upstream version 21.2
+- Updated Source: URL to sourceforge's current ftp area
+- Fixes fuser largefile bug (#66340)
+- Disable prep time sh %{SOURCE1} >src/signames.h as the 21.2 release
+  fixes this already now.
+
+* 二 10月 08 2002 Mike A. Harris <mharris@redhat.com> 20.2-7
+- All-arch rebuild
+- Updated spec file with _bindir et al. fixes.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 20.2-6
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com> 20.2-5
+- automated rebuild
+
+* 四 5月 16 2002 Bernhard Rosenkraenzer <bero@redhat.com> 20.2-4
+- Autogenerate the signal list from _includedir/bits/signum.h
+  to make sure it works on all arches and doesn't break again.
+
+* 三 5月 08 2002 Trond Eivind Glomsrod <teg@redhat.com> 20.2-3
+- Fix the signal list
+- Don't strip when linking
+- Use a %{_tmppath}
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 11月 20 2001 Bernhard Rosenkraenzer <bero@redhat.com> 20.2-1
+- 20.2
+- Add patch from bug report #56186; the problem is not reproducable,
+  but the patch can't hurt.
+
+* 六 7月 21 2001 Bernhard Rosenkraenzer <bero@redhat.com> 20.1-2
+- Add BuildRequires (#49562)
+- s/Copyright/License/
+- Fix license (it's actually dual-licensed BSD/GPL, not just "distributable")
+
+* 三 4月 25 2001 Bernhard Rosenkraenzer <bero@redhat.com> 20.1-1
+- 20.1
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 18 2000 Matt Wilson <msw@redhat.com>
+- FHS man paths
+- patch makefile to enable non-root builds
+
+* 六 2月 05 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Deal with compressed man pages
+
+* 日 11月 21 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- update to v19
+- handle RPM_OPT_FLAGS
+
+* 一 9月 27 1999 Bill Nottingham <notting@redhat.com>
+- move fuser to /sbin
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 2)
+
+* 六 3月 13 1999 Michael Maher <mike@redhat.com>
+- updated package
+
+* 五 5月 01 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 4月 30 1998 Cristian Gafton <gafton@redhat.com>
+- renamed the patch file .patch instead of .spec
+
+* 四 4月 09 1998 Erik Troan <ewt@redhat.com>
+- updated to psmisc version 17
+- buildrooted
+
+* 四 10月 23 1997 Donnie Barnes <djb@redhat.com>
+- updated from version 11 to version 16
+- spec file cleanups
+
+* 二 6月 17 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

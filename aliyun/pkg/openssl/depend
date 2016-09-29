@@ -1,0 +1,34 @@
+/bin/bash  
+/bin/sh  
+/sbin/ldconfig  
+/sbin/ldconfig  
+ca-certificates >= 2008-5
+config(openssl) = 1.0.1e-30.alios6.5
+coreutils  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libcom_err.so.2()(64bit)  
+libcrypto.so.10()(64bit)  
+libcrypto.so.10(OPENSSL_1.0.1)(64bit)  
+libcrypto.so.10(OPENSSL_1.0.1_EC)(64bit)  
+libcrypto.so.10(libcrypto.so.10)(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+libgssapi_krb5.so.2()(64bit)  
+libk5crypto.so.3()(64bit)  
+libk5crypto.so.3(k5crypto_3_MIT)(64bit)  
+libkrb5.so.3()(64bit)  
+libkrb5.so.3(krb5_3_MIT)(64bit)  
+libssl.so.10()(64bit)  
+libssl.so.10(libssl.so.10)(64bit)  
+libz.so.1()(64bit)  
+make  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

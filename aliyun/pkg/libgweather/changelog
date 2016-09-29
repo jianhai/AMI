@@ -1,0 +1,139 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.0-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.0-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.28.0-4.1
+- rebuild for alios6
+
+* 二 8月 03 2010 Matthias Clasen <mclasen@redhat.com> 2.28.0-4
+- Some more translation updates (Kannada)
+Resolves: #618495
+
+* 三 5月 12 2010 Matthias Clasen <mclasen@redhat.com> 2.28.0-3
+- Updated translations
+Resolves: #589225
+
+* 四 10月 15 2009 Matthias Clasen <mclasen@redhat.com> 2.28.0-2
+- Pick a better weather station for Montreal
+
+* 一 9月 21 2009 Matthias Clasen <mclasen@redhat.com> 2.28.0-1
+- Update to 2.28.0
+
+* 三 9月 09 2009 Matthias Clasen <mclasen@redhat.com> 2.27.92-1
+- Update to 2.27.92
+
+* 二 8月 25 2009 Matthias Clasen <mclasen@redhat.com> 2.27.91-1
+- Update to 2.27.91
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.26.1-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 20 2009 Matthias Clasen <mclasen@redhat.com> 2.26.1-5
+- Keep locations in gettext catalogs
+
+* 三 6月 10 2009 Matthias Clasen <mclasen@redhat.com> 2.26.1-3
+- Fix multilib parallel-installability (#477672)
+- Remove some old optimizations that are now no-ops
+
+* 一 4月 27 2009 Matthias Clasen <mclasen@redhat.com> 2.26.1-2
+- Don't drop schemas translations from po files
+
+* 一 4月 13 2009 Matthias Clasen <mclasen@redhat.com> 2.26.1-1
+- Update to 2.26.1
+- See http://download.gnome.org/sources/libgweather/2.26/libgweather-2.26.1.news
+
+* 一 3月 16 2009 Matthias Clasen <mclasen@redhat.com> 2.26.0-1
+- Update to 2.26.0
+
+* 二 3月 03 2009 Matthias Clasen <mclasen@redhat.com> 2.25.92-1
+- Update to 2.25.92
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.25.91-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 18 2009 Matthias Clasen <mclasen@redhat.com> 2.25.91-1
+- Update to 2.25.91
+
+* 二 1月 20 2009 Matthias Clasen <mclasen@redhat.com> 2.25.5-1
+- Upate to 2.25.5
+
+* 一 1月 05 2009 Matthew Barnes <mbarnes@redhat.com> 2.25.4-1
+- Update to 2.25.4
+
+* 二 12月 16 2008 Matthias Clasen <mclasen@redhat.com> 2.25.3-2
+- Update to 2.25.3
+
+* 三 12月 03 2008 Matthias Clasen <mclasen@redhat.com> 2.25.2-2
+- Update to 2.25.2
+
+* 三 10月 22 2008 Matthias Clasen <mclasen@redhat.com> 2.24.1-1
+- Update to 2.24.1
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> 2.24.0-2
+- Apply %lang tags to localized xml files
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> 2.24.0-1
+- Update to 2.24.0
+
+* 一 9月 08 2008 Matthias Clasen <mclasen@redhat.com> 2.23.92-1
+- Update to 2.23.92
+
+* 二 9月 02 2008 Matthias Clasen <mclasen@redhat.com> 2.23.91-1
+- Update to 2.23.91
+
+* 一 8月 04 2008 Matthias Clasen <mclasen@redhat.com> 2.23.6-1
+- Update to 2.23.6
+
+* 五 7月 25 2008 Matthias Clasen <mclasen@redhat.com> 2.23.5-2
+- Fix pending request accounting
+
+* 二 7月 22 2008 Matthias Clasen <mclasen@redhat.com> 2.23.5-1
+- Update to 2.23.5
+
+* 二 6月 17 2008 Matthias Clasen <mclasen@redhat.com> 2.23.4-1
+- Update to 2.23.4
+
+* 三 6月 04 2008 Matthias Clasen <mclasen@redhat.com> 2.23.3-1
+- Update to 2.23.3
+
+* 三 5月 14 2008 Matthias Clasen <mclasen@redhat.com> 2.23.2-1
+- Update to 2.23.2
+
+* 四 4月 24 2008 Matthias Clasen <mclasen@redhat.com> 2.23.1-1
+- Update to 2.23.1
+
+* 四 4月 17 2008 Matthias Clasen <mclasen@redhat.com> 2.22.1.1-2
+- Leave Cairo in Africa (#442793)
+
+* 一 4月 07 2008 Matthias Clasen <mclasen@redhat.com> 2.22.1.1-1
+- Update to 2.22.1.1
+
+* 二 3月 11 2008 Matthias Clasen <mclasen@redhat.com> 2.22.0-1
+- Update to 2.22.0
+
+* 二 2月 26 2008 Matthias Clasen <mclasen@redhat.com> 2.21.92-1
+- Update to 2.21.92
+
+* 一 2月 11 2008 Matthias Clasen <mclasen@redhat.com> 2.21.2-6
+- Remove obsolete translations
+
+* 六 2月 09 2008 Matthias Clasen <mclasen@redhat.com> 2.21.2-5
+- Rebuild for gcc 4.3
+
+* 三 1月 16 2008 Matthias Clasen <mclasen@redhat.com> 2.21.2-4
+- Add Obsoletes for gnome-applets-devel
+
+* 三 1月 16 2008 Matthias Clasen <mclasen@redhat.com> 2.21.2-3
+- Carry over space-saving hack from gnome-applets
+
+* 二 1月 15 2008 Matthias Clasen <mclasen@redhat.com> 2.21.2-2
+- Incorporate review feedback (#428739)
+
+* 一 1月 14 2008 Matthias Clasen <mclasen@redhat.com> 2.21.2-1
+- Update to 2.21.2
+
+* 四 1月 10 2008 Matthias Clasen <mclasen@redhat.com> 2.21.1-1
+- Initial packaging
+

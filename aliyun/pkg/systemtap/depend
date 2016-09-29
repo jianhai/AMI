@@ -1,0 +1,74 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/usr/bin/perl  
+/usr/bin/stap  
+coreutils  
+gcc  
+grep  
+kernel >= 2.6.9-11
+kernel-devel  
+libavahi-client.so.3()(64bit)  
+libavahi-common.so.3()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libdw.so.1()(64bit)  
+libdw.so.1(ELFUTILS_0.122)(64bit)  
+libdw.so.1(ELFUTILS_0.126)(64bit)  
+libdw.so.1(ELFUTILS_0.127)(64bit)  
+libdw.so.1(ELFUTILS_0.138)(64bit)  
+libdw.so.1(ELFUTILS_0.142)(64bit)  
+libdw.so.1(ELFUTILS_0.143)(64bit)  
+libdw.so.1(ELFUTILS_0.149)(64bit)  
+libelf.so.1()(64bit)  
+libelf.so.1(ELFUTILS_1.0)(64bit)  
+libelf.so.1(ELFUTILS_1.3)(64bit)  
+libelf.so.1(ELFUTILS_1.5)(64bit)  
+libgcc_s.so.1()(64bit)  
+libgcc_s.so.1(GCC_3.0)(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libnspr4.so()(64bit)  
+libnss3.so()(64bit)  
+libnss3.so(NSS_3.10)(64bit)  
+libnss3.so(NSS_3.2)(64bit)  
+libnss3.so(NSS_3.4)(64bit)  
+libnss3.so(NSS_3.5)(64bit)  
+libnss3.so(NSS_3.6)(64bit)  
+libnss3.so(NSS_3.7)(64bit)  
+libplc4.so()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librpm.so.1()(64bit)  
+librpmio.so.1()(64bit)  
+libsmime3.so()(64bit)  
+libsmime3.so(NSS_3.4)(64bit)  
+libsqlite3.so.0()(64bit)  
+libssl3.so()(64bit)  
+libssl3.so(NSS_3.2)(64bit)  
+libstdc++.so.6()(64bit)  
+libstdc++.so.6(CXXABI_1.3)(64bit)  
+libstdc++.so.6(CXXABI_1.3.1)(64bit)  
+libstdc++.so.6(GLIBCXX_3.4)(64bit)  
+libstdc++.so.6(GLIBCXX_3.4.10)(64bit)  
+libstdc++.so.6(GLIBCXX_3.4.11)(64bit)  
+libstdc++.so.6(GLIBCXX_3.4.9)(64bit)  
+make  
+openssh-clients  
+perl(Getopt::Std)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+sed  
+systemtap-runtime = 1.6-4.6.alios6
+unzip  
+zip  
+rpmlib(PayloadIsXz) <= 5.2-1

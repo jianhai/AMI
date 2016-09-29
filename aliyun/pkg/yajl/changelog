@@ -1,0 +1,21 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.7-3.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.7-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.7-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.7-3.1
+- rebuild for alios6
+
+* 一 1月 11 2010 Daniel P. Berrange <berrange@redhat.com> - 1.0.7-3
+- Fix ignoring of cflags (rhbz #547500)
+
+* 二 12月 08 2009 Daniel P. Berrange <berrange@redhat.com> - 1.0.7-2
+- Change use of 'define' to 'global'
+
+* 一 12月 07 2009 Daniel P. Berrange <berrange@redhat.com> - 1.0.7-1
+- Initial Fedora package
+

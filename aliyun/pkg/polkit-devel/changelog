@@ -1,0 +1,99 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.96-5.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.96-5.1
+- rebuild for alios6-update
+
+* 二 9月 17 2013 Miloslav Trmač <mitr@redhat.com> - 0.96-5
+- Actually apply the patch, and modify it to apply to 0.96
+- Resolves: #1006262
+
+* 五 9月 13 2013 Jan Lieskovsky <jlieskov@redhat.com> - 0.96-4.alios6
+- Include fix for CVE-2013-4288
+- Resolves: #1006262
+
+* 一 4月 11 2011 David Zeuthen <davidz@redhat.com> - 0.96-3.alios6
+- Include fixes for CVE-2011-1485
+- Resolves: #692942
+
+* 一 6月 21 2010 Matthias Clasen <mclasen@redhat.com> - 0.96-2
+- Fix a multilib problem
+Resolves: #605099
+
+* 五 1月 15 2010 David Zeuthen <davidz@redhat.com> - 0.96-1
+- Update to 0.96
+- Related: rhbz#543948
+
+* 三 1月 13 2010 David Zeuthen <davidz@redhat.com> - 0.95-4
+- Rebuild
+- Related: rhbz#543948
+
+* 三 1月 13 2010 David Zeuthen <davidz@redhat.com> - 0.95-3
+- Disable GObject Introspection
+- Related: rhbz#543948
+
+* 五 11月 13 2009 David Zeuthen <davidz@redhat.com> - 0.95-2
+- Rebuild
+
+* 五 11月 13 2009 David Zeuthen <davidz@redhat.com> - 0.95-1
+- Update to 0.95
+- Drop upstreamed patches
+
+* 二 10月 20 2009 Matthias Clasen <mclasen@redhat.com> - 0.95-0.git20090913.3
+- Fix a typo in pklocalauthority(8)
+
+* 一 9月 14 2009 David Zeuthen <davidz@redhat.com> - 0.95-0.git20090913.2
+- Refine how Obsolete: is used and also add Provides: (thanks Jesse
+  Keating and nim-nim)
+
+* 一 9月 14 2009 David Zeuthen <davidz@redhat.com> - 0.95-0.git20090913.1
+- Add bugfix for polkit_unix_process_new_full() (thanks Bastien Nocera)
+- Obsolete old PolicyKit packages
+
+* 日 9月 13 2009 David Zeuthen <davidz@redhat.com> - 0.95-0.git20090913
+- Update to git snapshot
+- Drop upstreamed patches
+- Turn on GObject introspection
+- Don't delete desktop_admin_r and desktop_user_r groups when
+  uninstalling polkit-desktop-policy
+
+* 五 9月 11 2009 David Zeuthen <davidz@redhat.com> - 0.94-4
+- Add some patches from git master
+- Sort pkaction(1) output
+- Bug 23867 – UnixProcess vs. SystemBusName aliasing
+
+* 四 8月 13 2009 David Zeuthen <davidz@redhat.com> - 0.94-3
+- Add desktop_admin_r and desktop_user_r groups along with a first cut
+  of default authorizations for users in these groups.
+
+* 三 8月 12 2009 David Zeuthen <davidz@redhat.com> - 0.94-2
+- Disable GObject Introspection for now as it breaks the build
+
+* 三 8月 12 2009 David Zeuthen <davidz@redhat.com> - 0.94-1
+- Update to upstream release 0.94
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.93-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 20 2009 David Zeuthen <davidz@redhat.com> - 0.93-2
+- Rebuild
+
+* 一 7月 20 2009 David Zeuthen <davidz@redhat.com> - 0.93-1
+- Update to 0.93
+
+* 二 6月 09 2009 David Zeuthen <davidz@redhat.com> - 0.92-3
+- Don't make docs noarch (I *heart* multilib)
+- Change license to LGPLv2+
+
+* 一 6月 08 2009 David Zeuthen <davidz@redhat.com> - 0.92-2
+- Rebuild
+
+* 一 6月 08 2009 David Zeuthen <davidz@redhat.com> - 0.92-1
+- Update to 0.92 release
+
+* 三 5月 27 2009 David Zeuthen <davidz@redhat.com> - 0.92-0.git20090527
+- Update to 0.92 snapshot
+
+* 一 2月 09 2009 David Zeuthen <davidz@redhat.com> - 0.91-1
+- Initial spec file.
+

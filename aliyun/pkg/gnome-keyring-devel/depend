@@ -1,0 +1,17 @@
+/usr/bin/pkg-config  
+glib2-devel  
+gnome-keyring = 2.28.2-6.3.alios6
+gtk-doc  
+libgcr.so.0()(64bit)  
+libgnome-keyring.so.0()(64bit)  
+libgp11.so.0()(64bit)  
+pkgconfig  
+pkgconfig(glib-2.0)  
+pkgconfig(gp11-0)  
+pkgconfig(gtk+-2.0)  
+pkgconfig(libtasn1)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

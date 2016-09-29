@@ -1,0 +1,11 @@
+postinstall scriptlet (using /bin/sh):
+
+/sbin/ldconfig
+/sbin/chkconfig --add libvirt-guests
+preuninstall scriptlet (using /bin/sh):
+
+if [ $1 = 0 ]; then
+    /sbin/chkconfig --del libvirt-guests
+    rm -f /var/lib/libvirt/libvirt-guests
+fi
+postuninstall program: /sbin/ldconfig

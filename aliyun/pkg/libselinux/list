@@ -1,0 +1,3 @@
+/lib64/libselinux.so.1
+/sbin/matchpathcon
+/var/run/setrans

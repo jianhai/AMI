@@ -1,0 +1,424 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.47-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.47-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.3.47-1.1
+- rebuild for alios6
+
+* 二 8月 10 2010 Bill Nottingham <notting@redhat.com> 1.3.47-1
+- Fix regression introduced in 1.3.45 (#622799)
+
+* 三 5月 05 2010 Bill Nottingham <notting@redhat.com> 1.3.46-1
+- translation updates: hu, kn, ko (#589187)
+
+* 四 3月 04 2010 Bill Nottingham <notting@redhat.com> 1.3.45-1
+- add support for Should-Start, Should-Stop (#98470, <iarnell@gmail.com>)
+- ntsysv: don't drop initscripts with '.' in the name (#556751)
+- translation updates: el, id
+
+* 二 9月 29 2009 Bill Nottingham <notting@redhat.com> 1.3.44-1
+- alternatives: update symlinks if they exist on installation (#104940)
+- alternatives: clarify error messages with more context (#441443)
+- alternatives: fix removal of manual links (#525021, <dtardon@redhat.com>)
+- translation updates: ml, mr, pl, ta, uk
+
+* 一 9月 14 2009 Bill Nottingham <notting@redhat.com> 1.3.43-1
+- ntsysv man page tweak (#516599)
+- another minor LSB tweak (#474223)
+- translation updates
+
+* 五 3月 06 2009 Bill Nottingham <notting@redhat.com> 1.3.42-1
+- further LSB fixes (#474223)
+- throw errors on various malformed init scripts (#481198)
+- man page updates re: LSB (#487979)
+- translation updates: mai, gu, pt_BR, ro, ca, pa, sr, fr, hu
+
+* 二 1月 20 2009 Bill Nottingham <notting@redhat.com> 1.3.41-1
+- restore return code & error on unconfigured services (#480805)
+
+* 五 12月 05 2008 Bill Nottingham <notting@redhat.com> 1.3.40-1
+- fix some overflows. (#176944)
+- add --type parameter to specify either xinetd or sysv services.
+  (#467863, <mschmidt@redhat.com>
+- do a permissions check before add/remove/on/off/resetpriorities. (#450254)
+- parse Short-Description correctly (#441813, <peter_e@gmx.net>)
+
+* 四 12月 04 2008 Bill Nottingham <notting@redhat.com> 1.3.39-1
+- fail if dependencies fail on add/remove in LSB mode (#474223)
+
+* 三 10月 29 2008 Bill Nottingham <notting@redhat.com> 1.3.38-1
+- Fix runlevel list in man page (#466739)
+- translation updates
+
+* 四 11月 08 2007 Bill Nottingham <notting@redhat.com> 1.3.37-1
+- make no options do --list (#290241, #176184)
+- sr@Latn -> sr@latin
+
+* 二 9月 25 2007 Bill Nottingham <notting@redhat.com> 1.3.36-1
+- buildreq popt-devel, link it dynamically (#279531)
+- translation updates: kn, ko, mr, ro
+
+* 五 8月 03 2007 Bill Nottingham <notting@redhat.com> 1.3.35-1
+- clarify licensing
+
+* 一 4月 16 2007 Bill Nottingham <notting@redhat.com> 1.3.34-1
+- translation updates: as, bg, bn_IN, bs, ca, de, fr, hi, hu, id, ja,
+  ka, ml, ms, nb, or, sk, sl
+- add resetpriorities to the man page (#197399)
+
+* 二 2月 06 2007 Bill Nottingham <notting@redhat.com> 1.3.33-1
+- various changes from review - support alternate %{_sbindir}, fix
+  summaries, add version to requires, assorted other bits
+
+* 五 2月 02 2007 Bill Nottingham <notting@redhat.com> 1.3.32-1
+- support overriding various defaults via /etc/chkconfig.d (<johnsonm@rpath.com>)
+
+* 四 2月 01 2007 Bill Nottingham <notting@redhat.com> 1.3.31-1
+- fix man page (#220558, <esr@thyrus.com>)
+- add some more verbiage in alternatives man page (#221089)
+- don't print usage message on a nonexstent service (#226804)
+
+* 五 12月 01 2006 Bill Nottingham <notting@redhat.com> 1.3.30.1-1
+- translation updates: as, ka, lv, ml, te (#216617)
+
+* 四 9月 07 2006 Bill Nottingham <notting@redhat.com> 1.3.30-1
+- license cleanup
+
+* 五 2月 24 2006 Bill Nottingham <notting@redhat.com> 1.3.29-1
+- fix accidental enabling of services on --add (#182729)
+
+* 一 2月 13 2006 Bill Nottingham <notting@redhat.com> 1.3.27-1
+- translation updates
+
+* 四 2月 02 2006 Bill Nottingham <notting@redhat.com> 1.3.26-1
+- add support for resetting priorities without on/off status (#178864)
+
+* 三 11月 30 2005 Bill Nottingham <notting@redhat.com> 1.3.25-1
+- return an error if changing services fails (#150235)
+
+* 五 11月 18 2005 Bill Nottingham <notting@redhat.com> 1.3.24-1
+- when removing alternatives links, check to make sure they're
+  actually links (#173685)
+
+* 五 11月 11 2005 Bill Nottingham <notting@redhat.com> 1.3.23-1
+- fix ntsysv (#172996)
+
+* 三 11月 09 2005 Bill Nottingham <notting@redhat.com>
+- fix doSetService call in frobOneDependencies
+
+* 二 11月 08 2005 Bill Nottingham <notting@redhat.com>
+- for LSB scripts, use any chkconfig: priorities as a basis,
+  instead of 50/50 (#172599)
+- fix LSB script dependency setting when no chkconfig: line
+  is present (#161870, <jean-francois.larvoire@hp.com>)
+- fix LSB script dependency setting when one of Required-Stop
+  or Required-Start: is missing (#168457)
+
+* 五 10月 07 2005 Bill Nottingham <notting@redhat.com>
+- fix segfault on directories in /etc/xinetd.d (#166385)
+- don't needlessly rewrite xinetd files (#81008)
+
+* 四 5月 05 2005 Bill Nottingham <notting@redhat.com> 1.3.20-1
+- fix deletion of orphaned slave links (#131496, <mitr@redhat.com>)
+
+* 五 4月 29 2005 Bill Nottingham <notting@redhat.com> 1.3.19-1
+- build with updated translations
+
+* 四 3月 03 2005 Bill Nottingham <notting@redhat.com> 1.3.18-1
+- actually return an error code if changing a service info fails
+
+* 二 2月 22 2005 Bill Nottingham <notting@redhat.com> 1.3.17-1
+- more chkconfig: vs. LSB fixes (#149066)
+
+* 四 2月 10 2005 Bill Nottingham <notting@redhat.com> 1.3.16-1
+- prefer chkconfig: start/stop priorities in LSB mode unless
+  Required-Start/Stop are used
+
+* 一 2月 07 2005 Bill Nottingham <notting@redhat.com> 1.3.15-1
+- print usage when various invalid args are passed (#147393)
+
+* 三 2月 02 2005 Bill Nottingham <notting@redhat.com> 1.3.14-1
+- resize reasonably with larger screens (#74156)
+- don't error out completely on bad symlink (#74324)
+- use ngettext (#106176)
+- error out on invalid start/stop values (#109858)
+- some man page updates
+- fix return code of chkconfig for xinetd services (#63123)
+- sort chkconfig --list display (#61576, <shishz@alum.rpi.edu>)
+
+* 二 1月 11 2005 Bill Nottingham <notting@redhat.com> 1.3.13-1
+- fix LSB comment parsing some more (#144739)
+
+* 四 10月 28 2004 Bill Nottingham <notting@redhat.com> 1.3.11.2-1
+- fix manpage reference (#137492)
+
+* 五 10月 01 2004 Bill Nottingham <notting@redhat.com> 1.3.11.1-1
+- rebuild with updated translations
+
+* 五 6月 04 2004 Bill Nottingham <notting@redhat.com> 1.3.11-1
+- fix LSB comment parsing (#85678)
+
+* 六 5月 29 2004 Bill Nottingham <notting@redhat.com> 1.3.10-1
+- mark alternatives help output for translation (#110526)
+
+* 三 10月 22 2003 Bill Nottingham <notting@redhat.com> 1.3.9-1
+- update translations
+
+* 一 7月 28 2003 Bill Nottingham <notting@redhat.com> 1.3.8-4
+- rebuild
+
+* 二 5月 13 2003 Dan Walsh <dwalsh@redhat.com> 1.3.8-3
+- Update for RHEL
+
+* 四 5月 08 2003 Dan Walsh <dwalsh@redhat.com> 1.3.8-2
+- Fix readXinetdServiceInfo to return error on not regular files
+- Fix chkconfig to not write messages if readXinetdServiceInfo gets an error
+
+* 五 1月 31 2003 Bill Nottingham <notting@redhat.com> 1.3.8-1
+- fix some wording in alternatives (#76213)
+- actually mark alternatives for translation
+
+* 四 12月 12 2002 Elliot Lee <sopwith@redhat.com> 1.3.7-1
+- Link to libpopt in a multilib-safe fashion.
+
+* 四 8月 29 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.3.6-3
+- bump
+
+* 四 8月 15 2002 Bill Nottingham <notting@redhat.com> 1.3.6-2
+- rebuild against new newt
+
+* 一 8月 12 2002 Bill Nottingham <notting@redhat.com> 1.3.6-1
+- make on and off handle runlevel 2 too (#70766)
+
+* 一 4月 15 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.3.5-3
+- Update translations
+
+* 一 4月 15 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.3.5-2
+- Update translations
+
+* 日 4月 07 2002 Jeremy Katz <katzj@redhat.com> 1.3.5-1
+- alternatives: handle default with --config properly (#62009)
+
+* 四 3月 14 2002 Bill Nottingham <notting@redhat.com> 1.3.4-1
+- don't apply the dependency logic to things that already have
+  start/stop priorities
+- fix silly display bug in --config
+
+* 二 3月 12 2002 Bill Nottingham <notting@redhat.com> 1.3.2-1
+- chkconfig: LSB support
+
+* 五 3月 08 2002 Bill Nottingham <notting@redhat.com>
+- alternatives: handle initscripts too; --initscript command-line option
+- chkconfig/ntsysv (and serviceconf, indirectly): services with
+   *no* links in /etc/rc*.d are no longer displayed with --list, or
+   available for configuration except via chkconfig command-line options
+- alternatives: fix trying to enable disable a null service
+
+* 二 3月 05 2002 Bill Nottingham <notting@redhat.com>
+- alternatives: handle things with different numbers of slave links
+
+* 一 3月 04 2002 Bill Nottingham <notting@redhat.com>
+- minor alternatives tweaks: don't install the same thing multiple times
+
+* 三 1月 30 2002 Bill Nottingham <notting@redhat.com>
+- actually, put the alternatives stuff back in /usr/sbin
+- ship /etc/alternatives dir
+- random alternatives fixes
+
+* 日 1月 27 2002 Erik Troan <ewt@redhat.com>
+- reimplemented update-alternatives as just alternatives
+
+* 五 1月 25 2002 Bill Nottingham <notting@redhat.com>
+- add in update-alternatives stuff (perl ATM)
+
+* 一 8月 27 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Update translations
+
+* 二 6月 12 2001 Bill Nottingham <notting@redhat.com>
+- don't segfault on files that are exactly the length of a page size
+  (#44199, <kmori@redhat.com>)
+
+* 日 3月 04 2001 Bill Nottingham <notting@redhat.com>
+- don't show xinetd services in ntsysv if xinetd doesn't appear to be
+  installed (#30565)
+
+* 三 2月 14 2001 Preston Brown <pbrown@redhat.com>
+- final translation update.
+
+* 二 2月 13 2001 Preston Brown <pbrown@redhat.com>
+- warn in ntsysv if not running as root.
+
+* 五 2月 02 2001 Preston Brown <pbrown@redhat.com>
+- use lang finder script
+
+* 五 2月 02 2001 Bill Nottingham <notting@redhat.com>
+- finally fix the bug Nalin keeps complaining about :)
+
+* 三 1月 24 2001 Preston Brown <pbrown@redhat.com>
+- final i18n update before Beta.
+
+* 三 10月 18 2000 Bill Nottingham <notting@redhat.com>
+- ignore .rpmnew files (#18915)
+- fix typo in error message (#17575)
+
+* 三 8月 30 2000 Nalin Dahyabhai <nalin@redhat.com>
+- make xinetd config files mode 0644, not 644
+
+* 四 8月 24 2000 Erik Troan <ewt@redhat.com>
+- updated it and es translations
+
+* 日 8月 20 2000 Bill Nottingham <notting@redhat.com>
+- get man pages in proper packages
+
+* 日 8月 20 2000 Matt Wilson <msw@redhat.com>
+- new translations
+
+* 三 8月 16 2000 Nalin Dahyabhai <nalin@redhat.com>
+- don't worry about extra whitespace on chkconfig: lines (#16150)
+
+* 四 8月 10 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- i18n merge
+
+* 三 7月 26 2000 Matt Wilson <msw@redhat.com>
+- new translations for de fr it es
+
+* 二 7月 25 2000 Bill Nottingham <notting@redhat.com>
+- change prereqs
+
+* 日 7月 23 2000 Bill Nottingham <notting@redhat.com>
+- fix ntsysv's handling of xinetd/init files with the same name
+
+* 五 7月 21 2000 Bill Nottingham <notting@redhat.com>
+- fix segv when reading malformed files
+
+* 三 7月 19 2000 Bill Nottingham <notting@redhat.com>
+- put links, rc[0-6].d dirs back, those are necessary
+
+* 二 7月 18 2000 Bill Nottingham <notting@redhat.com>
+- add quick hack support for reading descriptions from xinetd files
+
+* 一 7月 17 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- don't own the /etc/rc[0-6].d symlinks; they're owned by initscripts
+
+* 六 7月 15 2000 Matt Wilson <msw@redhat.com>
+- move back to old file layout
+
+* 四 7月 13 2000 Preston Brown <pbrown@redhat.com>
+- bump copyright date
+
+* 二 7月 11 2000 Bill Nottingham <notting@redhat.com>
+- no %pre today. Maybe tomorrow.
+
+* 四 7月 06 2000 Bill Nottingham <notting@redhat.com>
+- put initscripts %pre here too
+
+* 一 7月 03 2000 Bill Nottingham <notting@redhat.com>
+- oops, if we don't prereq initscripts, we *need* to own /etc/rc[0-6].d
+
+* 日 7月 02 2000 Bill Nottingham <notting@redhat.com>
+- add xinetd support
+
+* 二 6月 27 2000 Matt Wilson <msw@redhat.com>
+- changed Prereq: initscripts >= 5.18 to Conflicts: initscripts < 5.18
+- fixed sumary and description where a global string replace nuked them
+
+* 一 6月 26 2000 Matt Wilson <msw@redhat.com>
+- what Bill said, but actually build this version
+
+* 四 6月 15 2000 Bill Nottingham <notting@redhat.com>
+- don't own /etc/rc.*
+
+* 五 2月 11 2000 Bill Nottingham <notting@redhat.com>
+- typo in man page
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description
+
+* 三 1月 12 2000 Bill Nottingham <notting@redhat.com>
+- link chkconfig statically against popt
+
+* 一 10月 18 1999 Bill Nottingham <notting@redhat.com>
+- fix querying alternate levels
+
+* 一 8月 23 1999 Jeff Johnson <jbj@redhat.com>
+- don't use strchr to skip unwanted files, look at extension instead (#4166).
+
+* 四 8月 05 1999 Bill Nottingham <notting@redhat.com>
+- fix --help, --verson
+
+* 一 8月 02 1999 Matt Wilson <msw@redhat.com>
+- rebuilt ntsysv against newt 0.50
+
+* 一 8月 02 1999 Jeff Johnson <jbj@redhat.com>
+- fix i18n problem in usage message (#4233).
+- add --help and --version.
+
+* 一 4月 19 1999 Cristian Gafton <gafton@redhat.com>
+- release for Red Hat 6.0
+
+* 四 4月 08 1999 Matt Wilson <msw@redhat.com>
+- added support for a "hide: true" tag in initscripts that will make
+  services not appear in ntsysv when run with the "--hide" flag
+
+* 四 4月 01 1999 Matt Wilson <msw@redhat.com>
+- added --hide flag for ntsysv that allows you to hide a service from the
+  user.
+
+* 一 3月 22 1999 Bill Nottingham <notting@redhat.com>
+- fix glob, once and for all. Really. We mean it.
+
+* 四 3月 18 1999 Bill Nottingham <notting@redhat.com>
+- revert fix for services@levels, it's broken
+- change default to only edit the current runlevel
+
+* 一 3月 15 1999 Bill Nottingham <notting@redhat.com>
+- don't remove scripts that don't support chkconfig
+
+* 二 3月 09 1999 Erik Troan <ewt@redhat.com>
+- made glob a bit more specific so xinetd and inetd don't cause improper matches
+
+* 四 2月 18 1999 Matt Wilson <msw@redhat.com>
+- removed debugging output when starting ntsysv
+
+* 四 2月 18 1999 Preston Brown <pbrown@redhat.com>
+- fixed globbing error
+- fixed ntsysv running services not at their specified levels.
+
+* 二 2月 16 1999 Matt Wilson <msw@redhat.com>
+- print the value of errno on glob failures.
+
+* 日 1月 10 1999 Matt Wilson <msw@redhat.com>
+- rebuilt for newt 0.40 (ntsysv)
+
+* 二 12月 15 1998 Jeff Johnson <jbj@redhat.com>
+- add ru.po.
+
+* 四 10月 22 1998 Bill Nottingham <notting@redhat.com>
+- build for Raw Hide (slang-1.2.2)
+
+* 三 10月 14 1998 Cristian Gafton <gafton@redhat.com>
+- translation updates
+
+* 四 10月 08 1998 Cristian Gafton <gafton@redhat.com>
+- updated czech translation (and use cs instead of cz)
+
+* 二 9月 22 1998 Arnaldo Carvalho de Melo <acme@conectiva.com.br>
+- added pt_BR translations
+- added more translatable strings
+- support for i18n init.d scripts description
+
+* 日 8月 02 1998 Erik Troan <ewt@redhat.com>
+- built against newt 0.30
+- split ntsysv into a separate package
+
+* 四 5月 07 1998 Erik Troan <ewt@redhat.com>
+- added numerous translations
+
+* 一 3月 23 1998 Erik Troan <ewt@redhat.com>
+- added i18n support
+
+* 日 3月 22 1998 Erik Troan <ewt@redhat.com>
+- added --back
+

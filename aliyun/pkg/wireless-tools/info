@@ -1,0 +1,15 @@
+Name        : wireless-tools               Relocations: (not relocatable)
+Version     : 29                                Vendor: Alibaba
+Release     : 5.1.1.4.alios6                Build Date: 2014年07月27日 星期日 19时58分48秒
+Install Date: 2015年03月25日 星期三 11时01分30秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: wireless-tools-29-5.1.1.4.alios6.src.rpm
+Size        : 211787                           License: GPL+
+Signature   : RSA/8, 2014年07月31日 星期四 19时00分14秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
+Summary     : Wireless ethernet configuration tools
+Description :
+This package contain the Wireless tools, used to manipulate
+the Wireless Extensions. The Wireless Extension is an interface
+allowing you to set Wireless LAN specific parameters and get the
+specific stats for wireless networking equipment.

@@ -1,0 +1,2 @@
+postinstall scriptlet (using /bin/sh):
+touch /var/lib/prelink/force

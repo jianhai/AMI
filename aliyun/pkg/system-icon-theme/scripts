@@ -1,0 +1,10 @@
+postinstall scriptlet (using /bin/sh):
+touch --no-create /usr/share/icons/System
+if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    /usr/bin/gtk-update-icon-cache -f --quiet /usr/share/icons/System || :
+fi
+postuninstall scriptlet (using /bin/sh):
+touch --no-create /usr/share/icons/System
+if [ -x /usr/bin/gtk-update-icon-cache ]; then
+    /usr/bin/gtk-update-icon-cache -f --quiet /usr/share/icons/System || :
+fi

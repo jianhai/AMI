@@ -1,0 +1,11 @@
+/usr/bin/foomatic-rip  
+/usr/bin/gs  
+/usr/bin/lp  
+/usr/bin/lpr  
+libcups.so.2()(64bit)  
+libcupsimage.so.2()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,437 @@
+* 四 8月 21 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.41.0-11.4.2
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.41.0-11.3.2
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.41.0-11.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.41.0-11.1.2
+- rebuild for alios6
+
+* 三 7月 20 2011 Petr Machata <pmachata@redhat.com> - 1.41.0-11.2
+- Build with -fno-strict-aliasing due to the sheer amount of warnings
+  that we get.
+- Related: #723503
+
+* 三 7月 20 2011 Petr Machata <pmachata@redhat.com> - 1.41.0-11.1
+- Add an upstream patch that fixes computation of CRC in zlib streams.
+- Turn off mpich2 support on platforms where it's not shipped.
+- Resolves: #723503
+
+* 二 5月 25 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-11
+- ... and revert the soname change, because that's not the smartest
+  thing to do mid-release.
+- Resolves: #594146
+
+* 五 5月 21 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-10
+- Turn on OpenMPI support on non-s390 arches.  It was accidentally
+  turned off everywhere.
+- Move cmake files to libdir to avoid multilib conflicts.
+- Also install Boost.cmake, which is included by BoostConfig.cmake
+- Change soname selection to work on RHELs.
+- Resolves: #586204
+- Resolves: #592516
+- Resolves: #594146
+
+* 四 3月 18 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-9
+- Use a .gz archive instead of bz2, because that's what's hosted now.
+  Fill in the full URL.
+- Resolves: #571607
+
+* 二 3月 16 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-8
+- Import 1.41.1 with fixes from Fedora 13 to RHEL 6
+- Turn off OpenMPI support on s390*, which isn't available in RHEL 6
+- Resolves: #571607
+
+* 一 2月 22 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-7
+- Add a patch for serialization of shared pointers to non polymorphic
+  types
+
+* 二 2月 02 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-6
+- More subpackage interdependency adjustments
+  - boost doesn't bring in the MPI stuff.  Instead, $MPI-devel does.
+    It needs to, so that the symlinks don't dangle.
+  - boost-graph-$MPI depends on boost-$MPI so that boost-mpich2
+    doesn't satisfy the SONAME dependency of boost-graph-openmpi.
+
+* 一 2月 01 2010 Denis Arnaud <denis.arnaud_fedora@m4x.org> - 1.41.0-5
+- Various fixes on the specification
+
+* 五 1月 29 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-5
+- Introduce support for both OpenMPI and MPICH2
+
+* 一 1月 25 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-4
+- Add a patch to build mapnik
+
+* 二 1月 19 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-3
+- Generalize the soname selection
+
+* 一 1月 18 2010 Denis Arnaud <denis.arnaud_fedora@m4x.org> - 1.41.0-2.2
+- Further split the Boost.MPI sub-package into boost-mpi and
+  boost-mpi-python
+- Changed the description of Boost.MPI according to the actual
+  dependency (MPICH2 rather than OpenMPI)
+- Added a few details on the generation of the mpi.so library
+
+* 四 1月 14 2010 Petr Machata <pmachata@redhat.com> - 1.41.0-2
+- Replace a boost-math subpackage with a stub
+- Drop _cmake_lib_suffix and CMAKE_INSTALL_PREFIX magic, the rpm macro
+  does that for us
+- Drop LICENSE from the umbrella package
+- Drop obsolete Obsoletes: boost-python and boost-doc <= 1.30.2
+
+* 二 1月 12 2010 Benjamin Kosnik <bkoz@redhat.com> - 1.41.0-1
+- Don't package generated debug libs, even with 
+  (-DCMAKE_BUILD_TYPE=RelWithDebInfo | Release).
+- Update and include boost-cmake-soname.patch.
+- Uncomment ctest.
+- Fix up --with tests to run tests.
+
+* 六 12月 19 2009 Denis Arnaud <denis.arnaud_fedora@m4x.org> - 1.41.0-0.7
+- Switched off the delivery into a versioned sub-directory
+
+* 四 12月 17 2009 Denis Arnaud <denis.arnaud_fedora@m4x.org> - 1.41.0-0.6
+- Boost-CMake upstream integration
+
+* 三 12月 16 2009 Benjamin Kosnik <bkoz@redhat.com> - 1.41.0-0.5
+- Rebase to 1.41.0
+- Set build type to RelWithDebInfo
+
+* 一 11月 16 2009 Denis Arnaud <denis.arnaud_fedora@m4x.org> - 1.40.0-1
+- Add support for the Boost.MPI sub-package
+- Build with CMake (https://svn.boost.org/trac/boost/wiki/CMake)
+
+* 一 11月 16 2009 Petr Machata <pmachata@redhat.com> - 1.39.0-11
+- Move comment in Patch13 out of line
+
+* 一 11月 16 2009 Petr Machata <pmachata@redhat.com> - 1.39.0-10
+- translate_exception.hpp misses a include
+- Related: #537612
+
+* 四 10月 15 2009 Petr Machata <pmachata@redhat.com> - 1.39.0-9
+- Package index.html in the -doc subpackage
+- Resolves: #529030
+
+* 三 10月 14 2009 Petr Machata <pmachata@redhat.com> - 1.39.0-8
+- Several fixes to support PySide
+- Resolves: #520087
+- GCC 4.4 name resolution fixes for GIL
+- Resolves: #526834
+
+* 日 10月 11 2009 Jitesh Shah <jiteshs@marvell.com> 1.39.0-7
+- Disable long double support for ARM
+
+* 二 9月 08 2009 Karsten Hopp <karsten@redhat.com> 1.39.0-6
+- bump release and rebuild as the package was linked with an old libicu
+  during the mass rebuild on s390x
+
+* 三 8月 26 2009 Tomas Mraz <tmraz@redhat.com> - 1.39.0-5
+- Make it to be usable with openssl-1.0
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.39.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 02 2009 Petr Machata <pmachata@redhat.com> - 1.39.0-3
+- Drop file list for main "boost" package, which was inadvertently left in.
+- Add thread sub-package to capture omitted boost_thread.
+- Add upstream patch to make boost_filesystem compatible with C++0x.
+- Resolves: #496188
+- Resolves: #509250
+
+* 一 5月 11 2009 Benjamin Kosnik <bkoz@redhat.com> - 1.39.0-2
+- Apply patch from Caolan McNamara
+
+* 四 5月 07 2009 Benjamin Kosnik <bkoz@redhat.com> - 1.39.0-1
+- Update release.
+
+* 三 5月 06 2009 Benjamin Kosnik <bkoz@redhat.com> - 1.39.0-0.3
+- Fixes for rpmlint.
+
+* 三 5月 06 2009 Petr Machata <pmachata@redhat.com> - 1.39.0-0.2
+- Split up boost package to sub-packages per library
+- Resolves: #496188
+
+* 三 5月 06 2009 Benjamin Kosnik <bkoz@redhat.com> - 1.39.0-0.1
+- Rebase to 1.39.0.
+- Add --with docs_generated.
+- #225622: Substitute optflags at prep time instead of RPM_OPT_FLAGS.
+
+* 一 5月 04 2009 Benjamin Kosnik <bkoz@redhat.com> - 1.37.0-7
+- Rebuild for libicu bump.
+
+* 一 3月 23 2009 Petr Machata <pmachata@redhat.com> - 1.37.0-6
+- Apply a SMP patch from Stefan Ring
+- Apply a workaround for "cannot appear in a constant-expression" in
+  dynamic_bitset library.
+- Resolves: #491537
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.37.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 1月 12 2009 Petr Machata <pmachata@redhat.com> - 1.37.0-3
+- Apply a unneccessary_iostreams patch from Caolan McNamara
+- Fix soname patch so that it applies with fuzz=0.  Use fuzz=0 option
+  in spec file just like ordinary patches do.
+- Resolves: #479409
+
+* 五 12月 19 2008 Petr Machata <pmachata@redhat.com> - 1.37.0-2
+- Apply a function_template patch from Caolan McNamara
+- Resolves: #477131
+
+* 二 12月 16 2008 Benjamin Kosnik <bkoz@redhat.com> - 1.37.0-1
+- Fix rpmlint rpath errors.
+- Fix rpmlint warnings on tabs and spaces.
+- Bump SONAME to 4
+
+* 一 11月 17 2008 Benjamin Kosnik <bkoz@redhat.com> - 1.37.0-0.1
+- Rebase to 1.37.0.
+
+* 二 10月 21 2008 Benjamin Kosnik <bkoz@redhat.com> - 1.36.0-1
+- Rebase to 1.36.0.
+
+* 一 10月 06 2008 Petr Machata <pmachata@redhat.com> - 1.34.1-17
+- Fix gcc43 patch to apply cleanly under --fuzz=0
+- Resolves: #465003
+
+* 一 8月 11 2008 Petr Machata <pmachata@redhat.com> - 1.36.0-0.1.beta1
+- Rebase to 1.36.0.beta1
+  - Drop boost-regex.patch and portions of boost-gcc43.patch, port the rest
+  - Automate SONAME tracking and bump SONAME to 4
+  - Adjust boost-configure.patch to include threading=single,multi explicitly
+
+* 四 6月 12 2008 Petr Machata <pmachata@redhat.com> - 1.34.1-16
+- Fix "changes meaning of keywords" in boost date_time
+- Related: #450718
+
+* 四 5月 29 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.34.1-15
+- fix license tag
+
+* 四 3月 27 2008 Petr Machata <pmachata@redhat.com> - 1.34.1-14
+- Change devel-static back to static.
+- Related: #225622
+
+* 三 3月 26 2008 Petr Machata <pmachata@redhat.com> - 1.34.1-13
+- Install library doc files
+- Revamp %install phase to speed up overall build time
+- Some cleanups per merge review
+- Resolves: #437032
+
+* 四 2月 14 2008 Petr Machata <pmachata@redhat.com> - 1.34.1-12
+- Fix "changes meaning of keywords" in boost python
+- Resolves: #432694
+
+* 三 2月 13 2008 Petr Machata <pmachata@redhat.com> - 1.34.1-11
+- Fix "changes meaning of special_values_parser" in boost date_time
+- Resolves: #432433
+
+* 三 2月 06 2008 Petr Machata <pmachata@redhat.com> - 1.34.1-10
+- Fixes for GCC 4.3
+- Resolves: #431609
+
+* 一 1月 14 2008 Benjamin Kosnik <bkoz@redhat.com> 1.34.1-7
+- Fixes for boost.regex (rev 42674).
+
+* 三 9月 19 2007 Benjamin Kosnik <bkoz@redhat.com> 1.34.1-5
+- (#283771: Linking against boost libraries fails).
+
+* 二 8月 21 2007 Benjamin Kosnik <bkoz@redhat.com> 1.34.1-4
+- Rebuild.
+
+* 三 8月 08 2007 Benjamin Kosnik <bkoz@redhat.com> 1.34.1-3
+- Rebuild for icu 3.8 bump.
+
+* 四 8月 02 2007 Benjamin Kosnik <bkoz@redhat.com> 1.34.1-2
+- SONAME to 3.
+
+* 二 7月 31 2007 Benjamin Kosnik <bkoz@redhat.com> 1.34.1-1
+- Update to boost_1_34_1.
+- Source via http.
+- Philipp Thomas <pth.suse.de> fix for RPM_OPT_FLAGS
+- Philipp Thomas <pth.suse.de> fix for .so sym links.
+- (#225622) Patrice Dumas review comments.
+
+* 二 6月 26 2007 Benjamin Kosnik <bkoz@redhat.com> 1.34.1.rc1-0.1
+- Update to boost_1_34_1_RC1.
+
+* 一 4月 02 2007 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-13
+- (#225622: Merge Review: boost)
+  Change static to devel-static.
+
+* 一 3月 26 2007 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-12
+- (#233523: libboost_python needs rebuild against python 2.5)
+  Use patch.
+
+* 一 3月 26 2007 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-11
+- (#225622: Merge Review: boost)
+  Source to http.
+  BuildRoot to preferred value.
+  PreReq to post/postun -p
+  Clarified BSL as GPL-Compatible, Free Software License.
+  Remove Obsoletes.
+  Add Provides boost-python.
+  Remove mkdir -p $RPM_BUILD_ROOT%{_docdir}
+  Added periods for decription text.
+  Fix Group field.
+  Remove doc Requires boost.
+  Preserve timestamps on install.
+  Use %defattr(-, root, root, -)
+  Added static package for .a libs.
+  Install static libs with 0644 permissions.
+  Use %doc for doc files.
+
+* 一 1月 22 2007 Benjamin Kosnik <bkoz@redhat.com> 1.34.0-0.5
+- Update to boost.RC_1_34_0 snapshot as of 2007-01-19.
+- Modify build procedures for boost build v2.
+- Add *-mt variants for libraries, or at least variants that use
+  threads (regex and thread).
+
+* 四 11月 23 2006 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-10
+- (#182414: boost: put tests in %check section) via Rex Dieter
+- Fix EVR with %{?dist} tag via Gianluca Sforna
+
+* 三 11月 15 2006 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-9
+- (#154784: boost-debuginfo package is empty)
+
+* 二 11月 14 2006 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-8
+- (#205866: Revert scanner.hpp change.)
+
+* 一 11月 13 2006 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-7
+- (#205866: boost::spirit generates warnings with -Wshadow)
+- (#205863: serialization lib generates warnings)
+- (#204326: boost RPM missing dependencies)
+- (#193465: [SIGNAL/BIND] Regressions with GCC 4.1)
+- BUILD_FLAGS, add, to see actual compile line.
+- REGEX_FLAGS, add, to compile regex with ICU support.
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.33.1-6.1
+- rebuild
+
+* 二 5月 16 2006 Karsten Hopp <karsten@redhat.de> 1.33.1-6
+- buildrequire python-devel for Python.h
+
+* 四 2月 16 2006 Florian La Roche <laroche@redhat.com> - 1.33.1-5
+- use the real version number to point to the shared libs
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.33.1-4.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.33.1-4.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 1月 05 2006 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-4
+- Fix symbolic links.
+
+* 三 1月 04 2006 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-3
+- Update to boost-1.33.1.
+- (#176485: Missing BuildRequires)
+- (#169271: /usr/lib/libboost*.so.? links missing in package)
+
+* 四 12月 22 2005 Jesse Keating <jkeating@redhat.com> 1.33.1-2
+- rebuilt
+
+* 一 11月 14 2005 Benjamin Kosnik <bkoz@redhat.com> 1.33.1-1
+- Update to boost-1.33.1 beta.
+- Run testsuite, gather results.
+
+* 二 10月 11 2005 Nils Philippsen <nphilipp@redhat.com> 1.33.0-4
+- build require bzip2-devel and zlib-devel
+
+* 二 8月 23 2005 Benjamin Kosnik <bkoz@redhat.com> 1.33.0-3
+- Create doc package again.
+- Parts of the above by Neal Becker <ndbecker2@gmail.com>.
+
+* 五 8月 12 2005 Benjamin Kosnik <bkoz@redhat.com> 1.33.0-1
+- Update to boost-1.33.0, update SONAME to 2 due to ABI changes.
+- Simplified PYTHON_VERSION by Philipp Thomas <pth@suse.de>
+
+* 二 5月 24 2005 Benjamin Kosnik <bkoz@redhat.com> 1.32.0-6
+- (#153093: boost warns that gcc 4.0.0 is an unknown compiler)
+- (#152205: development .so symlinks should be in -devel subpackage)
+- (#154783: linker .so symlinks missing from boost-devel package)
+
+* 五 3月 18 2005 Benjamin Kosnik <bkoz@redhat.com> 1.32.0-5
+- Revert boost-base.patch to old behavior.
+- Use SONAMEVERSION instead of dllversion.
+
+* 三 3月 16 2005 Benjamin Kosnik <bkoz@redhat.com> 1.32.0-4
+- (#142612: Compiling Boost 1.32.0 Failed in RHEL 3.0 on Itanium2)
+- (#150069: libboost_python.so is missing)
+- (#141617: bad patch boost-base.patch)
+- (#122817: libboost_*.so symlinks missing)
+- Re-add boost-thread.patch.
+- Change boost-base.patch to show thread tags.
+- Change boost-gcc-tools.patch to use SOTAG, compile with dllversion.
+- Add symbolic links to files.
+- Sanity check can compile with gcc-3.3.x, gcc-3.4.2, gcc-4.0.x., gcc-4.1.x.
+
+* 四 12月 02 2004 Benjamin Kosnik <bkoz@redhat.com> 1.32.0-3
+- (#122817: libboost_*.so symlinks missing)
+- (#141574: half of the package is missing)
+- (#141617: bad patch boost-base.patch)
+
+* 三 12月 01 2004 Benjamin Kosnik <bkoz@redhat.com> 1.32.0-2
+- Remove bogus Obsoletes.
+
+* 一 11月 29 2004 Benjamin Kosnik <bkoz@redhat.com> 1.32.0-1
+- Update to 1.32.0
+
+* 三 9月 22 2004 Than Ngo <than@redhat.com> 1.31.0-9
+- cleanup specfile
+- fix multiarch problem
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 05 2004 Warren Togami <wtogami@redhat.com> 1.31.0-7
+- missing Obsoletes boost-python
+
+* 一 5月 03 2004 Benjamin Kosnik <bkoz@redhat.com>
+- (#121630: gcc34 patch needed)
+
+* 三 4月 21 2004 Warren Togami <wtogami@redhat.com>
+- #121415 FC2 BLOCKER: Obsoletes boost-python-devel, boost-doc
+- other cleanups
+
+* 二 3月 30 2004 Benjamin Kosnik <bkoz@redhat.com>
+- Remove bjam dependency. (via Graydon).
+- Fix installed library names.
+- Fix SONAMEs in shared libraries.
+- Fix installed header location.
+- Fix installed permissions.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 09 2004 Benjamin Kosnik <bkoz@redhat.com> 1.31.0-2
+- Update to boost-1.31.0
+
+* 四 1月 22 2004 Benjamin Kosnik <bkoz@redhat.com> 1.31.0-1
+- Update to boost-1.31.0.rc2
+- (#109307:  Compile Failure with boost libraries)
+- (#104831:  Compile errors in apps using Boost.Python...)
+- Unify into boost, boost-devel rpms.
+- Simplify installation using bjam and prefix install.
+
+* 二 9月 09 2003 Nalin Dahyabhai <nalin@redhat.com> 1.30.2-2
+- require boost-devel instead of devel in subpackages which require boost-devel
+- remove stray Prefix: tag
+
+* 一 9月 08 2003 Benjamin Kosnik <bkoz@redhat.com> 1.30.2-1
+- change license to Freely distributable
+- verify installation of libboost_thread
+- more boost-devel removals
+- deal with lack of _REENTRANT on ia64/s390
+- (#99458) rpm -e fixed via explict dir additions
+- (#103293) update to 1.30.2
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 13 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- remove packager, change to new Group:
+
+* 二 5月 06 2003 Tim Powers <timp@redhat.com> 1.30.0-3
+- add deffattr's so we don't have unknown users owning files
+

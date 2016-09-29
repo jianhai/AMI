@@ -1,0 +1,254 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.4-10.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.4-10.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.4-10.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.4-10.1
+- rebuild for alios6
+
+* 一 2月 22 2010 Than Ngo <than@redhat.com> - 2.4-10
+- add correct license
+
+* 三 12月 02 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.4-9.1
+- slow down the build to avoid raciness in rpmbuild's getOutputFrom()
+
+* 二 10月 27 2009 Than Ngo <than@redhat.com> - 2.4-9
+- fix #77314, invalid URL
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 9月 08 2008 Tom "spot" Callaway <tcallawa@redhat.com> 2.4-6
+- fix license tag
+
+* 一 2月 11 2008 Than Ngo <than@redhat.com> 2.4-5
+- fix description
+
+* 三 1月 09 2008 Than Ngo <than@redhat.com> 2.4-4
+- fix release conflict with f8
+
+* 二 1月 08 2008 Than Ngo <than@redhat.com> 2.4-2
+- update to 1.0.7pre44
+- fix #426245, removes two broken lines (two invalid glyph names)
+
+* 五 8月 10 2007 Than Ngo <than@redhat.com> - 2.4-1
+- update to 1.0.7pre43, changed Roman glyphs in all fonts back
+  to original metrics. bz#243180, bz#138896, bz#140584
+- cleanup BR, bz#227297
+- drop chkfontpath dependency and use the catalogue font path mechanism
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.3-6.1.1
+- rebuild
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 四 11月 17 2005 Warren Togami <wtogami@redhat.com> 2.3-6
+- post and postun on reqs
+
+* 四 11月 17 2005 Than Ngo <than@redhat.com> 2.3-5
+- fix the mkfontdir issue for modular X
+- remove unneeded -e option from mkfontdir
+- add Prereq on mkfontdir
+
+* 四 11月 17 2005 Warren Togami <wtogami@redhat.com> 2.3-4
+- req mkfontdir
+- better way to run mkfontdir
+
+* 四 11月 17 2005 Than Ngo <than@redhat.com> 2.3-3 
+- fix mkfontdir macro for modular X
+
+* 一 11月 07 2005 Jeremy Katz <katzj@redhat.com> - 2.3-2
+- require (virtual) mkfontscale instead of path to handle 
+  modular xorg (#172562)
+
+* 一 4月 04 2005 Than Ngo <than@redhat.com> 2.3-1
+- Bump for update to 1.0.7pre40
+
+* 四 2月 24 2005 Than Ngo <than@redhat.com> 2.2-8
+- update to 1.0.7pre40
+
+* 四 2月 24 2005 Than Ngo <than@redhat.com> 2.2-7
+- change descender/ascender in "NimbusMonL" #140584
+
+* 二 9月 21 2004 Than Ngo <than@redhat.com> 2.2-6
+- rebuilt
+
+* 一 9月 06 2004 Than Ngo <than@redhat.com> 2.2-5
+- remove fonts, which included in new upstream
+
+* 一 9月 06 2004 Than Ngo <than@redhat.com> 2.2-4
+- update to 1.0.7pre38
+
+* 五 9月 03 2004 Than Ngo <than@redhat.com> 2.2-3
+- own %{_datadir}/fonts/default #131648
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 11 2004 Than Ngo <than@redhat.com> 2.2-1
+- Upgrade to upstream version 1.0.7pre26, bug #122500
+- drop NimbusRomNo9L-Medi* fonts that are included in pre26
+
+* 四 4月 15 2004 Than Ngo <than@redhat.com> 2.1-7
+- fixed bug #119844
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 8月 29 2003 Owen Taylor <otaylor@redhat.com> 2.1-5.0
+- Add MediItal variant with fixed weight and some of the
+  missing baseline hints (for u,t)
+
+* 一 7月 21 2003 Owen Taylor <otaylor@redhat.com> 2.1-4.1
+- Bump for rebuild
+
+* 一 7月 21 2003 Owen Taylor <otaylor@redhat.com> 2.1-4.0
+- Replace the regular not italic bold font with the fixed copy
+
+* 三 7月 09 2003 Owen Taylor <otaylor@redhat.com> 2.1-3.1
+- Bump for rebuild
+
+* 三 7月 09 2003 Owen Taylor <otaylor@redhat.com> 2.1-3
+- Add some obvious missing hints that were resulting in 
+  very uneven baselines (#97271)
+
+* 五 6月 20 2003 Than Ngo <than@redhat.com> 2.1-2
+- fix Weight in Nimbus Roman No 9 L (bug #97683)
+
+* 二 6月 10 2003 Owen Taylor <otaylor@redhat.com> 2.1-1
+- Upgrade to upstream version 1.0.7pre22
+- Massive cleanups to fonts.dir/fonts.scale handling (use mkfontscale
+  instead of fonts.scale from the package, etc.)
+
+* 三 1月 29 2003 Than Ngo 2.0-29
+- rebuild
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 12月 11 2002 Tim Powers <timp@redhat.com> 2.0-27
+- rebuild
+
+* 五 8月 30 2002 Alexander Larsson <alexl@redhat.com> 2.0-26
+- Call fc-cache from %post, prereq fontconfig
+
+* 五 7月 12 2002 Owen Taylor <otaylor@redhat.com>
+- Didn't revert back far enough to fix hints last time; try again.
+
+* 三 7月 10 2002 Owen Taylor <otaylor@redhat.com>
+- Fix packaging error that lost most of the fonts
+
+* 一 7月 08 2002 Owen Taylor <otaylor@redhat.com>
+- Go back to 1.0 URW/cyrillic version to avoid hinting problems
+
+* 二 6月 25 2002 Owen Taylor <otaylor@redhat.com>
+- Newer upstream version
+- Fix accidental revert of urw-fontspecific => adobe-fontspecific change
+- Tweak hints in "Nimbus Sans Regular L" a bit.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 6月 12 2002 Than Ngo <than@redhat.com> 2.0-19
+- update urw fonts
+- add missing ZapfDingbats font (bug #65101, #65523)
+- fixed metric troubles (bug #65522)
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 2月 26 2002 Than Ngo <than@redhat.com> 2.0-17
+- rebuild
+
+* 二 1月 22 2002 Preston Brown <pbrown@redhat.com>
+- use adobe-fontspecific instead of urw-fontspecific encoding name for 
+  symbol font.  Fixes some java issues.
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 12月 13 2001 Than Ngo <than@redhat.com> 2.0-14
+- fixed bug #57306
+
+* 三 9月 26 2001 Than Ngo <than@redhat.com> 2.0-13
+- Added new fonts with cyrrilic glyphs
+  from ftp://ftp.gnome.ru/fonts/urw/ (bug #52772)
+
+* 四 11月 16 2000 Than Ngo <than@redhat.com>
+- zapf dingbats font works now, fixed (Bug #20352)
+
+* 一 10月 16 2000 Than Ngo <than@redhat.com>
+- added font aliases (Bug #17586)
+- added missing fonts.alias
+
+* 三 8月 30 2000 Preston Brown <pbrown@redhat.com>
+- enable latin2 encoding
+- alias the Nimbus/Courier font to be monospaced
+- include a Fontmap
+
+* 五 7月 14 2000 Preston Brown <pbrown@redhat.com>
+- renamed fonts from URW names to Adobe names for better compatibility
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 7月 09 2000 Than Ngo <than@redhat.de>
+- update gnu-gs-fonts-std-6.0
+- fix Url
+
+* 六 5月 27 2000 Ngo Than <than@redhat.de>
+- rebuild for 7.0
+
+* 三 3月 08 2000 Preston Brown <pbrown@redhat.com> 
+- argh! fonts.scale shouldn't have been symlinked to fonts.dir.  fixed.
+
+* 一 2月 28 2000 Preston Brown <pbrown@redhat.com>
+- noreplace the fonts.dir config file
+
+* 三 2月 16 2000 Bill Nottingham <notting@redhat.com>
+- need .pfb files too
+
+* 一 2月 14 2000 Preston Brown <pbrown@redhat.com>
+- new URW++ fonts that include extra glyphs.
+
+* 四 1月 13 2000 Preston Brown <pbrown@redhat.com>
+- remove vendor tag.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 8)
+
+* 二 3月 09 1999 Preston Brown <pbrown@redhat.com>
+- fixed up chkfontpath stuff
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 一 2月 15 1999 Preston Brown <pbrown@redhat.com>
+- added missing fonts.dir, fonts.scale, %post, %postun using chkfontpath
+- changed foundary from Adobe (which was a lie) to URW.
+
+* 六 2月 06 1999 Preston Brown <pbrown@redhat.com>
+- fonts now live in /usr/share/fonts/default/Type1
+
+* 五 11月 13 1998 Preston Brown <pbrown@redhat.com>
+- eliminated section that adds to XF86Config
+- changed fonts to reside in /usr/share/fonts/default/URW, so they can be
+  shared between X and Ghostscript (and other, future programs/applications)
+
+* 五 9月 11 1998 Preston Brown <pbrown@redhat.com>
+- integrate adding fontdir to XF86Config
+
+* 三 8月 12 1998 Jeff Johnson <jbj@redhat.com>
+- eliminate %post output
+
+* 三 7月 08 1998 Jeff Johnson <jbj@redhat.com>
+- create from Stefan Waldherr <swa@cs.cmu.edu> contrib package.
+

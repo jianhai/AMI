@@ -1,0 +1,58 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.0-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2.0-7.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.2.0-7.1
+- rebuild for alios6
+
+* 一 8月 15 2011 Tomas Mraz <tmraz@redhat.com> - 1.2.0-7
+- add relro to LDFLAGS (#727277)
+
+* 四 1月 20 2011 Tomas Mraz <tmraz@redhat.com> - 1.2.0-5
+- move library to /lib so the binaries needed when /usr might
+  not be mounted can link to it (#669077)
+
+* 二 11月 24 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.2.0-4.1
+- Rebuilt for RHEL 6
+
+* 二 10月 27 2009 Tomas Mraz <tmraz@redhat.com> - 1.2.0-4
+- ldconfig must be in the lib subpackage post(un)
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1.2.0-3
+- rebuilt with new openssl
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 5月 26 2009 Tomas Mraz - 1.2.0-1
+- add lib subpackage to avoid multilib on the base package
+- add ability to compute hmacs on multiple files at once
+- improved debugging with FIPSCHECK_DEBUG
+
+* 四 3月 19 2009 Tomas Mraz - 1.1.1-1
+- move binaries and libraries to /usr
+
+* 三 3月 18 2009 Tomas Mraz - 1.1.0-1
+- hmac check itself as required by FIPS
+
+* 一 2月 09 2009 Tomas Mraz - 1.0.4-1
+- add some docs to the README, require current openssl in Fedora
+
+* 五 10月 24 2008 Tomas Mraz - 1.0.3-1
+- use OpenSSL in FIPS mode to do the HMAC checksum instead of NSS
+
+* 二 9月 09 2008 Tomas Mraz - 1.0.2-1
+- fix test for prelink
+
+* 一 9月 08 2008 Tomas Mraz - 1.0.1-1
+- put binaries in /bin and libraries in /lib as fipscheck
+  will be used by modules in /lib
+
+* 一 9月 08 2008 Tomas Mraz - 1.0.0-2
+- minor fixes for package review
+
+* 三 9月 03 2008 Tomas Mraz - 1.0.0-1
+- Initial spec file
+

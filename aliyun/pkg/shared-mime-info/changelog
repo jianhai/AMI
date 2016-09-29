@@ -1,0 +1,247 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.70-4.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.70-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.70-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.70-4.1
+- rebuild for alios6
+
+* 二 6月 01 2010 Bastien Nocera <bnocera@redhat.com> 0.70-4
+- Update some OO.o defaults, patch from Caolan McNamara
+Related: rhbz#580232
+
+* 四 10月 08 2009 Bastien Nocera <bnocera@redhat.com> 0.70-2
+- Fix brasero desktop filenames
+
+* 二 10月 06 2009 Bastien Nocera <bnocera@redhat.com> 0.70-1
+- Update to 0.70
+
+* 四 9月 24 2009 - Caolán McNamara <caolanm@redhat.com> - 0.60-5
+- Resolves: rhbz#508559 openoffice.org desktop files changed name
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.60-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 3月 04 2009 - Bastien Nocera <bnocera@redhat.com> - 0.60-3
+- Remove Totem as handling Blu-ray and HD-DVD
+- Use brasero-ncb.desktop instead of nautilus-cd-burner for blank devices
+- Update media mime-types for Rhythmbox/Totem
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.60-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 2月 21 2009 - Bastien Nocera <bnocera@redhat.com> - 0.60-1
+- Update to 0.60
+
+* 一 12月 15 2008 - Bastien Nocera <bnocera@redhat.com> - 0.51-6
+- Update with comments from Orcan Ogetbil <orcanbahri@yahoo.com>
+
+* 三 11月 26 2008 - Julian Sikorski <belegdol[at]gmail[dot]com> - 0.51-5
+- Fix text/plain, gedit installs gedit.desktop and not gnome-gedit.desktop
+
+* 三 10月 29 2008 - Bastien Nocera <bnocera@redhat.com> - 0.51-4
+- Add patch to avoid picture CD being anything with a pictures directory
+  (#459365)
+
+* 四 10月 02 2008 - Bastien Nocera <bnocera@redhat.com> - 0.51-3
+- Use evince, not tetex-xdvi.desktop for DVI files (#465242)
+
+* 一 9月 01 2008 - Bastien Nocera <bnocera@redhat.com> - 0.51-2
+- Use Firefox and not redhat-web as the default app for HTML files (#452184)
+
+* 三 7月 23 2008 - Bastien Nocera <bnocera@redhat.com> - 0.51-1
+- Update to 0.51
+
+* 二 7月 22 2008 - Bastien Nocera <bnocera@redhat.com> - 0.50-1
+- Update to 0.50
+
+* 六 6月 14 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0.40-2
+- update license tag
+
+* 三 6月 11 2008 - Bastien Nocera <bnocera@redhat.com> - 0.40-1
+- Update to 0.40
+
+* 一 5月 12 2008 - Bastien Nocera <bnocera@redhat.com> - 0.30-1
+- Update to 0.30
+
+* 五 5月 02 2008 David Zeuthen <davidz@redhat.com> - 0.23-9
+- Fix defaults for x-content/image-dcf (#445032)
+
+* 四 4月 17 2008 Matthias Clasen <mclasen@redhat.com> - 0.23-8
+- Make mount-archive.desktop the default for iso images (#442960)
+
+* 二 4月 15 2008 Matthias Clasen <mclasen@redhat.com> - 0.23-7
+- Update the desktop file name for Gimp, too
+
+* 二 4月 15 2008 Matthias Clasen <mclasen@redhat.com> - 0.23-6
+- Change default for rpm to gpk-install-file (#442485)
+
+* 四 3月 27 2008 - Bastien Nocera <bnocera@redhat.com> - 0.23-5
+- Make Totem the default for the mime-types it handles (#366101)
+- And make sure Rhythmbox is the second default only for the mime-types
+  it handles
+
+* 四 3月 20 2008 Matthias Clasen <mclasen@redhat.com> - 0.23-4
+- Change default for rpm to pk-install-file
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.23-3
+- Autorebuild for GCC 4.3
+
+* 五 1月 18 2008 Matthias Clasen <mclasen@redhat.com> - 0.23-2
+- Add defaults for content types
+
+* 二 12月 18 2007 - Bastien Nocera <bnocera@redhat.com> - 0.23-1
+- Update to 0.23
+
+* 二 11月 13 2007 - Bastien Nocera <bnocera@redhat.com> - 0.22-5
+- Remove Totem as the default music/movie player, it will be the
+  default for movies, as only it handles them, and Rhythmbox can
+  handle missing plugins now
+
+* 一 11月 05 2007 - Bastien Nocera <bnocera@redhat.com> - 0.22-4
+- Make Totem the default for the mime-types it handles (#366101)
+
+* 五 8月 24 2007 Adam Jackson <ajax@redhat.com> - 0.22-3
+- Rebuild for PPC toolchain bug
+- BuildRequires: gawk
+
+* 二 8月 21 2007 - Bastien Nocera <bnocera@redhat.com> - 0.22-2
+- Don't say that webcal files are handled by evolution-2.0, it can't
+- Disable vCard mapping as well, as evolution doesn't handle it
+  (See http://bugzilla.gnome.org/show_bug.cgi?id=309073)
+
+* 一 7月 30 2007 - Bastien Nocera <bnocera@redhat.com> - 0.22-1
+- Update to 0.22
+
+* 二 4月 17 2007 - Bastien Nocera <bnocera@redhat.com> - 0.20-2
+- Fix the dia association (#194313)
+
+* 二 2月 06 2007 - Bastien Nocera <bnocera@redhat.com> - 0.20-1
+- Update to 0.20, and remove outdated patches
+
+* 五 11月 10 2006 Christopher Aillon <caillon@redhat.com> - 0.19-2
+- Alias image/pdf to application/pdf
+
+* 五 8月 25 2006 Christopher Aillon <caillon@redhat.com> - 0.19-1
+- Update to 0.19
+
+* 三 7月 26 2006 Matthias Clasen <mclasen@redhat.com> - 0.18-2
+- add an inode/directory entry to defaults.list (#187021)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.18-1.1
+- rebuild
+
+* 三 7月 05 2006 Kristian Høgsberg <krh@redhat.com> - 0.18-1
+- Update to 0.18 and drop backported patches.
+
+* 四 6月 29 2006 Kristian Høgsberg <krh@redhat.com> - 0.17-3
+- Adding PDF fix backported from CVS.
+
+* 三 3月 22 2006 Matthias Clasen <mclasen@redhat.com> - 0.17-2
+- Backport upstream change to fix postscript vs. matlab confusion
+
+* 四 3月 16 2006 Matthias Clasen <mclasen@redhat.com> - 0.17-1
+- Update to 0.17
+
+* 一 2月 13 2006 Ray Strode <rstrode@redhat.com> - 0.16.cvs20060212-3
+- add gthumb as fallback
+
+* 一 2月 13 2006 Ray Strode <rstrode@redhat.com> - 0.16.cvs20060212-2
+- make eog the default image viewer
+
+* 日 2月 12 2006 Christopher Aillon <caillon@redhat.com> - 0.16.cvs20060212-1
+- Newer CVS snapshot
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.16.cvs20051219-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 30 2006 Caolan McNamara <caolanm@redhat.com> - 0.16.cvs20051219-2
+- rh#179138# add openoffice.org as preferred app for oasis formats
+
+* 一 12月 19 2005 Matthias Clasen <mclasen@redhat.com> - 0.16.cvs20051219-1
+- Newer cvs snapshot
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 12月 01 2005 Matthias Clasen <mclasen@redhat.com> - 0.16.cvs20051201-1
+- Incorporate upstream changes
+
+* 三 11月 02 2005 John (J5) Palmieri <johnp@redhat.com> - 0.16.cvs20051018-2
+- Change all refs of eog to gthumb in defaults.list
+
+* 二 10月 18 2005 Matthias Clasen <mclasen@redhat.com> - 0.16.cvs20051018-1
+- Incorporate upstream changes
+
+* 三 10月 12 2005 Matthias Clasen <mclasen@redhat.com> - 0.16-6
+- Add glade to defaults.list
+
+* 一 10月 03 2005 Matthias Clasen <mclasen@redhat.com> - 0.16-5
+- Make sure Type1 fonts are recognized as such (#160909)
+
+* 五 6月 17 2005 David Zeuthen <davidz@redhat.com> - 0.16-4
+- Add MIME-types for .pcf Cisco VPN settings files (fdo #3560)
+
+* 五 5月 20 2005 Dan Williams <dcbw@redhat.com> - 0.16-3
+- Update OpenOffice.org desktop file names. #155353
+- WordPerfect default now OOo Writer, since Abiword is in Extras
+
+* 日 4月 03 2005 David Zeuthen <davidz@redhat.com> - 0.16-2
+- Make Evince the default for application/pdf and application/postscript
+- Remove remaining references to gnome-ggv (application/x-gzpostscript and
+  image/x-eps) as this is no longer in the distribution
+
+* 五 4月 01 2005 David Zeuthen <davidz@redhat.com> - 0.16-1
+- Update to upstream release 0.16
+- Drop all patches as they are in the new upstream release
+
+* 三 3月 09 2005 David Zeuthen <davidz@redhat.com> - 0.15-11
+- Add mimetypes for OOo2 (#150546)
+
+* 一 10月 18 2004 Alexander Larsson <alexl@redhat.com> - 0.15-10
+- Fix for mime sniffing on big-endian
+
+* 四 10月 14 2004 Colin Walters <walters@redhat.com> - 0.15-9
+- Handle renaming of hxplay.desktop to realplay.desktop
+
+* 三 10月 13 2004 Matthias Clasen <mclasen@redhat.com> - 0.15-8
+- Handle XUL files. #134122
+
+* 三 10月 13 2004 Colin Walters <walters@redhat.com> - 0.15-7
+- Make helix default for ogg and mp3, will switch wav/flac too 
+  when support is added
+
+* 三 10月 06 2004 Alexander Larsson <alexl@redhat.com> - 0.15-6
+- Change default pdf viewer to ggv
+
+* 二 9月 07 2004 Alexander Larsson <alexl@redhat.com> - 0.15-4
+- Fixed evo desktop file reference in defaults.list
+
+* 一 9月 06 2004 Caolan McNamara <caolanm@redhat.com> - 0.15-3
+- wpd can be opened in abiword, but not in openoffice.org (#114907)
+
+* 五 9月 03 2004 Alexander Larsson <alexl@redhat.com> - 0.15-2
+- Add list of default apps (#131643)
+
+* 一 8月 30 2004 Jonathan Blandford <jrb@redhat.com> 0.15-1
+- bump version
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 3月 22 2004 Alex Larsson <alexl@redhat.com> 0.14-1
+- update to 0.14
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 1月 26 2004 Alexander Larsson <alexl@redhat.com> 0.13-1
+- 0.13
+
+* 五 1月 16 2004 Alexander Larsson <alexl@redhat.com> mime-info
+- Initial build.
+

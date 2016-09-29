@@ -1,0 +1,15 @@
+Name        : hunspell                     Relocations: (not relocatable)
+Version     : 1.2.8                             Vendor: Alibaba
+Release     : 16.3.alios6                   Build Date: 2014年07月26日 星期六 06时53分19秒
+Install Date: 2015年03月25日 星期三 11时00分30秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: hunspell-1.2.8-16.3.alios6.src.rpm
+Size        : 428396                           License: (LGPLv2+ or GPLv2+ or MPLv1.1) and (LGPLv2+ or SISSL)
+Signature   : RSA/8, 2014年07月31日 星期四 16时41分03秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://hunspell.sourceforge.net/
+Summary     : A spell checker and morphological analyzer library
+Description :
+Hunspell is a spell checker and morphological analyzer library and program
+designed for languages with rich morphology and complex word compounding or
+character encoding. Hunspell interfaces: Ispell-like terminal interface using
+Curses library, Ispell pipe interface, OpenOffice.org UNO module.

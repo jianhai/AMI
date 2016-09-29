@@ -1,0 +1,3 @@
+postinstall scriptlet (using /bin/sh):
+/bin/rm -f /var/cache/foomatic/*
+exit 0

@@ -1,0 +1,13 @@
+Name        : nfs-utils-lib                Relocations: (not relocatable)
+Version     : 1.1.5                             Vendor: Alibaba
+Release     : 4.4.alios6                    Build Date: 2014年08月21日 星期四 19时48分04秒
+Install Date: 2015年03月25日 星期三 11时01分35秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: nfs-utils-lib-1.1.5-4.4.alios6.src.rpm
+Size        : 152918                           License: BSD
+Signature   : RSA/8, 2014年08月25日 星期一 23时24分05秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.citi.umich.edu/projects/nfsv4/linux/
+Summary     : Network File System Support Library
+Description :
+Support libraries that are needed by the commands and
+daemons the nfs-utils rpm.

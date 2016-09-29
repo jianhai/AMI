@@ -1,0 +1,11 @@
+preinstall scriptlet (using /bin/sh):
+# We renamed all the config files upstream so they now need to end in .conf
+# and live under /etc/modprobe.d. Anaconda now uses an anaconda.conf file,
+# all of which means /etc/modprobe.conf is very legacy. Rename it to
+# /etc/modprobe.d/local.conf and allow local hacks to go in there.
+if [ -e /etc/modprobe.conf ] && [ ! -e /etc/modprobe.d/local.conf ]
+then
+        mv /etc/modprobe.conf /etc/modprobe.d/local.conf
+fi
+postinstall scriptlet (using /bin/sh):
+# Removed 2.4 compatibility in post-F10 (in F11 onwards).

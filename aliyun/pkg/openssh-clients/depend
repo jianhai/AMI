@@ -1,0 +1,41 @@
+/bin/sh  
+config(openssh-clients) = 5.3p1-70.3.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.11)(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libcom_err.so.2()(64bit)  
+libcrypt.so.1()(64bit)  
+libcrypto.so.10()(64bit)  
+libedit.so.0()(64bit)  
+libfipscheck.so.1()(64bit)  
+libgssapi_krb5.so.2()(64bit)  
+libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit)  
+libk5crypto.so.3()(64bit)  
+libkrb5.so.3()(64bit)  
+libncurses.so.5()(64bit)  
+libnsl.so.1()(64bit)  
+libnss3.so()(64bit)  
+libnss3.so(NSS_3.2)(64bit)  
+libnss3.so(NSS_3.3)(64bit)  
+libnss3.so(NSS_3.4)(64bit)  
+libnss3.so(NSS_3.5)(64bit)  
+libnss3.so(NSS_3.6)(64bit)  
+libnss3.so(NSS_3.9)(64bit)  
+libnss3.so(NSS_3.9.2)(64bit)  
+libnss3.so(NSS_3.9.3)(64bit)  
+libplc4.so()(64bit)  
+libresolv.so.2()(64bit)  
+libresolv.so.2(GLIBC_2.2.5)(64bit)  
+libselinux.so.1()(64bit)  
+libutil.so.1()(64bit)  
+libz.so.1()(64bit)  
+openssh = 5.3p1-70.3.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

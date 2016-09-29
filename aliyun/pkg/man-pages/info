@@ -1,0 +1,13 @@
+Name        : man-pages                    Relocations: (not relocatable)
+Version     : 3.22                              Vendor: Alibaba
+Release     : 17.3.alios6                   Build Date: 2014年07月26日 星期六 17时08分05秒
+Install Date: 2015年03月25日 星期三 11时02分52秒      Build Host: x86-003.build.alibaba
+Group       : Documentation                 Source RPM: man-pages-3.22-17.3.alios6.src.rpm
+Size        : 4540379                          License: GPLv2+ and GPL+ and BSD and MIT and Copyright only and IEEE
+Signature   : RSA/8, 2014年07月31日 星期四 17时30分21秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.kernel.org/pub/linux/docs/manpages/
+Summary     : Man (manual) pages from the Linux Documentation Project
+Description :
+A large collection of man pages (documentation) from the Linux
+Documentation Project (LDP).

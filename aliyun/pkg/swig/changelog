@@ -1,0 +1,244 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.40-6.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.40-6.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.40-6.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.3.40-6.1
+- rebuild for alios6
+
+* 一 6月 27 2011 Adam Tkac <atkac redhat com> 1.3.40-6
+- use zend_error instead of zend_error_noreturn in PHP code (#679713)
+
+* 一 2月 22 2010 Adam Tkac <atkac redhat com> 1.3.40-5
+- s/LGPL/LGPLv2+
+
+* 四 2月 18 2010 Adam Tkac <atkac redhat com> 1.3.40-4
+- correct license field again
+
+* 四 2月 18 2010 Adam Tkac <atkac redhat com> 1.3.40-3
+- correct license field
+
+* 二 2月 09 2010 Adam Tkac <atkac redhat com> 1.3.40-2
+- package review related fixes (#226442)
+
+* 三 9月 02 2009 Adam Tkac <atkac redhat com> 1.3.40-1
+- update to 1.3.40
+
+* 二 8月 11 2009 Adam Tkac <atkac redhat com> 1.3.39-4
+- correct source URL
+
+* 一 8月 03 2009 Adam Tkac <atkac redhat com> 1.3.39-3
+- rebuilt
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.39-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 3月 30 2009 Adam Tkac <atkac redhat com> 1.3.39-1
+- update to 1.3.39
+- swig-1.3.38-rh485540.patch was merged
+- add Example/ to -doc again (#489077), filter provides correctly
+
+* 二 3月 10 2009 Adam Tkac <atkac redhat com> 1.3.38-5
+- revert #489077 enhancement due #489421
+
+* 一 3月 09 2009 Adam Tkac <atkac redhat com> 1.3.38-4
+- moved documentation to -doc subpackage and build it as noarch
+- added Example/ directory to -doc (#489077)
+- fixed build root
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.38-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 16 2009 Adam Tkac <atkac redhat com> 1.3.38-2
+- handle -co option gracefully (#485540)
+
+* 四 2月 12 2009 Adam Tkac <atkac redhat com> 1.3.38-1
+- updated to 1.3.38
+
+* 四 12月 04 2008 Adam Tkac <atkac redhat com> 1.3.36-2
+- #470811 is fixed => dropped workaround
+
+* 一 11月 10 2008 Adam Tkac <atkac redhat com> 1.3.36-1
+- updated to 1.3.36
+- finally dropped swig-arch.patch
+- temporary workaround rpm bug #470811
+
+* 五 5月 16 2008 Adam Tkac <atkac redhat com> 1.3.35-2
+- readded swig-arch.patch, will be kept downstream
+
+* 一 5月 05 2008 Adam Tkac <atkac redhat com> 1.3.35-1
+- updated to latest upstream release
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.3.33-2
+- Autorebuild for GCC 4.3
+
+* 四 11月 29 2007 Adam Tkac <atkac redhat com> 1.3.33-1
+- 1.3.33
+- removed swig-arch.patch because upstream will never accept
+  it ("swig is not low-level")
+
+* 三 8月 22 2007 Adam Tkac <atkac redhat com> 1.31.1-1
+- rebuild (BuildID feature)
+- BuildRequires gawk
+
+* 二 11月 28 2006 Adam Tkac <atkac redhat.com> 1.31.1-0
+- updated to 1.2.31 (#216991)
+
+* 二 11月 07 2006 Adam Tkac <atkac@redhat.com> 1.3.29-2
+- swig can determine architecture now (#211095)
+
+* 一 8月 28 2006 Jitka Kudrnacova <jkudrnac@redhat.com> -1.3.29-1
+-rebuilt
+
+* 二 7月 18 2006 Jitka Kudrnacova <jkudrnac@redhat.com> - 1.3.29-0.3
+- rebuilt
+
+* 五 6月 30 2006 Jitka Kudrnacova <jkudrnac@redhat.com> - 1.3.29-0.2 
+- Build requires autoconf, automake (bug #197132)
+
+* 三 4月 19 2006 Jitka Kudrnacova <jkudrnac@redhat.com> - 1.3.29-0.1
+- folder /usr/share/swig should be owned by swig package (bug #189145)
+
+* 二 3月 28 2006 Jitka Kudrnacova <jkudrnac@redhat.com> - 1.3.29-0
+- update to swig-1.2.29-0
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.3.24-2.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.3.24-2.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 3月 02 2005 Phil Knirsch <pknirsch@redhat.com> 1.3.24-2
+- bump release and rebuild with gcc 4
+
+* 四 2月 03 2005 Karsten Hopp <karsten@redhat.de> 1.3.24-1 
+- update
+
+* 三 12月 01 2004 Phil Knirsch <pknirsch@redhat.com> 1.3.23-2
+- rebuild
+
+* 二 11月 23 2004 Karsten Hopp <karsten@redhat.de> 1.3.23-1 
+- update
+- new pylib patch
+- remove destdir patch, swig.m4 is no longer included
+- remove ldconfig patch, swig now uses *-config to find out linker options
+
+* 一 11月 08 2004 Jeremy Katz <katzj@redhat.com> - 1.3.21-7
+- rebuild against python 2.4
+
+* 一 10月 11 2004 Tim Waugh <twaugh@redhat.com> 1.3.21-6
+- Build requires tcl-devel (bug #134788).
+
+* 四 9月 30 2004 Joe Orton <jorton@redhat.com> 1.3.21-5
+- don't output -L$libdir in -ldflags
+
+* 三 9月 22 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- add ldconfig calls to post/postun
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 19 2004 Joe Orton <jorton@redhat.com> 1.3.21-2
+- restore missing runtime libraries
+
+* 二 5月 04 2004 Phil Knirsch <pknirsch@redhat.com>
+- Update to swig-1.3.21
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 9月 23 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- allow compiling without tcl/guile
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 5月 18 2003 Joe Orton <jorton@redhat.com> 1.3.19-3
+- patch to pick up python libdir correctly
+
+* 日 5月 18 2003 Joe Orton <jorton@redhat.com> 1.3.19-2
+- add BuildPrereqs to ensure all bindings are built
+
+* 三 5月 14 2003 Phil Knirsch <pknirsch@redhat.com> 1.3.19-1
+- Update to swig-1.3.19
+- Major cleanup in specfile, too. :-)
+- New lib64 fix.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 11月 27 2002 Tim Powers <timp@redhat.com> 1.1p5-21
+- lib64'ize
+
+* 五 8月 30 2002 Phil Knirsch <pknirsch@redhat.com> 1.1p5-20
+- Patch by Lon Hohberger for ia64.
+
+* 三 8月 28 2002 Phil Knirsch <pknirsch@redhat.com> 1.1p5-19
+- Added multilib safe patch from arjan (#72523)
+
+* 二 8月 13 2002 Karsten Hopp <karsten@redhat.de>
+- rebuilt with gcc-3.2
+
+* 六 8月 10 2002 Elliot Lee <sopwith@redhat.com>
+- rebuilt with gcc-3.2 (we hope)
+
+* 一 7月 22 2002 Tim Powers <timp@redhat.com>
+- rebuild using gcc-3.2-0.1
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 2月 08 2002 Bill Nottingham <notting@redhat.com>
+- rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 4月 27 2001 Nalin Dahyabhai <nalin@redhat.com>
+- use %{_tmppath} instead of /var/tmp
+- remove the postscript docs (pdftops from the xpdf pkg converts them just fine)
+
+* 三 9月 13 2000 Tim Powers <timp@redhat.com>
+- rebuilt for 7.1
+
+* 一 7月 24 2000 Prospector <prospector@redhat.com>
+- rebuilt
+
+* 一 7月 17 2000 Tim Powers <timp@redhat.com>
+- for some reason defattr wasn't before the docs, fixed
+
+* 一 7月 10 2000 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 6月 02 2000 Tim Powers <timp@redhat.com>
+- spec file cleanups
+
+* 六 5月 20 2000 Tim Powers <timp@redhat.com>
+- rebuilt for 7.0
+- man pages in /usr/share/man
+
+* 三 1月 19 2000 Tim Powers <timp@redhat.com>
+- bzipped sources to conserve space
+
+* 四 7月 22 1999 Tim Powers <timp@redhat.com>
+- rebuilt for 6.1
+
+* 四 4月 15 1999 Michael Maher <mike@redhat.com>
+- built package for 6.0
+
+* 二 9月 15 1998 Michael Maher <mike@redhat.com>
+- built package
+

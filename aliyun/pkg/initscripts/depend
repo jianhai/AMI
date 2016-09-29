@@ -1,0 +1,49 @@
+/bin/awk  
+/bin/bash  
+/bin/find  
+/bin/grep  
+/bin/sed  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/etc/system-release  
+/sbin/arping  
+/sbin/blkid  
+/sbin/chkconfig  
+/sbin/chkconfig  
+/sbin/fuser  
+/sbin/ip  
+/sbin/pidof  
+/sbin/runuser  
+/sbin/sysctl  
+/usr/sbin/groupadd  
+bash >= 3.0
+config(initscripts) = 9.03.27-1.4.alios6
+coreutils  
+cpio  
+ethtool >= 1.8-2
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libglib-2.0.so.0()(64bit)  
+libpopt.so.0()(64bit)  
+libpopt.so.0(LIBPOPT_0)(64bit)  
+mingetty  
+mktemp  
+module-init-tools  
+net-tools  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+sysvinit-tools >= 2.87
+udev >= 125-1
+upstart >= 0.6.0
+util-linux-ng >= 2.16
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,103 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 12.4-6.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 12.4-6.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 12.4-6.1
+- rebuild for alios6
+
+* 二 2月 16 2010 Ivana Hutarova Varekova <varekova@redhat.com> - 12.4-6
+- Related: #543948
+  minor spec file changes
+
+* 一 12月 21 2009 Ivana Hutarova Varekova <varekova@redhat.com> - 12.4-5
+- Related: #548468
+  fix source tag
+
+* 五 12月 18 2009 Ivana Hutarova Varekova <varekova@redhat.com> - 12.4-4
+- Resolves: #548468
+  fix license tag
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 12.4-3.1
+- Rebuilt for RHEL 6
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 12.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 12.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 8月 11 2008 Dmitry Butskoy <Dmitry@Butskoy.name> - 12.4-1
+- update to 12.4
+
+* 二 7月 29 2008 Dmitry Butskoy <Dmitry@Butskoy.name> - 12.3-1
+- Place mailx to /bin/mailx, to avoid extra symlink in redhat-lsb package
+- /bin/mailx is now a base binary, another symlinked to it.
+
+* 四 6月 26 2008 Dmitry Butskoy <Dmitry@Butskoy.name>
+- add missed BR for krb5-devel
+- activate IPv6 support
+- change config to /etc/mail.rc for compatibility
+- add triggerpostun scriptlets against previous mailx and nail
+  to check and merge (when possible) their user config changes
+- use proper config filename in manuals
+- use "less" instead of non-provided "pg" for nobsdcompat mode
+
+* 三 6月 18 2008 Dmitry Butskoy <Dmitry@Butskoy.name> - 12.3-0
+- Change the name from "nail" to upstream's "mailx".
+  Merge with the ordinary "mailx" cvs tree for Fedora 10.
+  Now this stuff supersedes the old ancient mailx-8.x in Fedora.
+- Build with nss instead of openssl, for "Security Consolidation" process.
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 12.3-4
+- Autorebuild for GCC 4.3
+
+* 三 12月 05 2007 Release Engineering <rel-eng at fedoraproject dot org> - 12.3-3
+- Rebuild for deps
+
+* 二 8月 28 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 12.3-2
+- Rebuild for selinux ppc32 issue.
+
+* 五 8月 17 2007 Dmitry Butskoy <Dmitry@Butskoy.name>
+- Change License tag to "BSD with advertising"
+
+* 二 7月 24 2007 Dmitry Butskoy <Dmitry@Butskoy.name> - 12.3-1
+- update to 12.3
+
+* 五 1月 12 2007 Dmitry Butskoy <Dmitry@Butskoy.name> - 12.2-1
+- update to 12.2
+- spec file cleanups
+
+* 五 6月 16 2006 Dmitry Butskoy <Dmitry@Butskoy.name> - 12.1-1
+- update to 12.1
+
+* 三 3月 22 2006 Dmitry Butskoy <Dmitry@Butskoy.name> - 12.0-2
+- complete "mailx to nail" changes in the manual and config files
+- drop _smp_mflags: it caused make to work incorrectly.
+
+* 二 3月 21 2006 Dmitry Butskoy <Dmitry@Butskoy.name> - 12.0-1
+- upgrade to 12.0
+- change new upstream name "mailx" to the old name "nail" to avoid
+  conflicts with the Core mailx package.
+- drop Source1, use package's html file instead.
+
+* 一 10月 17 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 11.25-4
+- don't strip binaries on makeinstall (#170972)
+
+* 一 10月 03 2005 Dmitry Butskoy <Dmitry@Butskoy.name>
+- clear buildroot before install (Michael Schwendt)
+
+* 一 9月 26 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 11.25-3
+- more spec file cleanups
+- accepted for Fedora Extra
+  (review by Aurelien Bompard <gauret@free.fr>)
+
+* 一 8月 22 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 11.25-2
+- spec file cleanups (#166343)
+
+* 五 8月 19 2005 Dmitry Butskoy <Dmitry@Butskoy.name> - 11.25-1
+- initial release
+- add "set bsdcompat" to nail.rc as default
+- copy nail web page to doc
+

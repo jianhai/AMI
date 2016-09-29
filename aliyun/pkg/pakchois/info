@@ -1,0 +1,16 @@
+Name        : pakchois                     Relocations: (not relocatable)
+Version     : 0.4                               Vendor: Alibaba
+Release     : 3.2.3.alios6                  Build Date: 2014年07月26日 星期六 23时10分38秒
+Install Date: 2015年03月25日 星期三 11时00分39秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Libraries   Source RPM: pakchois-0.4-3.2.3.alios6.src.rpm
+Size        : 50156                            License: LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 17时51分50秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.manyfish.co.uk/pakchois/
+Summary     : A wrapper library for PKCS#11
+Description :
+pakchois is just another PKCS#11 wrapper library. pakchois aims to
+provide a thin wrapper over the PKCS#11 interface; offering a
+modern object-oriented C interface which does not hide any of the
+underlying interface, and avoids dependencies on any cryptography
+toolkit.

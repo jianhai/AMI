@@ -1,0 +1,39 @@
+/bin/bash  
+/bin/sh  
+/usr/bin/perl  
+config(foomatic) = 4.0.4-1.3.alios6.1
+cups  
+fileutils  
+foomatic-db  
+ghostscript  
+initscripts  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libm.so.6()(64bit)  
+libm.so.6(GLIBC_2.2.5)(64bit)  
+libxml2.so.2()(64bit)  
+libxml2.so.2(LIBXML2_2.4.30)(64bit)  
+libz.so.1()(64bit)  
+perl >= 3:5.8.1
+perl(:MODULE_COMPAT_5.10.1)  
+perl(Cwd)  
+perl(Data::Dumper)  
+perl(Encode)  
+perl(Exporter)  
+perl(FileHandle)  
+perl(Foomatic::DB)  
+perl(Foomatic::Defaults)  
+perl(Foomatic::UIElem)  
+perl(Getopt::Long)  
+perl(Getopt::Std)  
+perl(POSIX)  
+perl(strict)  
+perl(vars)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,12 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+if [ -f /usr/share/info/libgomp.info.gz ]; then
+  /sbin/install-info \
+    --info-dir=/usr/share/info /usr/share/info/libgomp.info.gz || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 -a -f /usr/share/info/libgomp.info.gz ]; then
+  /sbin/install-info --delete \
+    --info-dir=/usr/share/info /usr/share/info/libgomp.info.gz || :
+fi
+postuninstall program: /sbin/ldconfig

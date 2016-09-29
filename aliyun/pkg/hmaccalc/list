@@ -1,0 +1,16 @@
+/usr/bin/sha1hmac
+/usr/bin/sha256hmac
+/usr/bin/sha384hmac
+/usr/bin/sha512hmac
+/usr/lib64/hmaccalc
+/usr/lib64/hmaccalc/sha1hmac.hmac
+/usr/lib64/hmaccalc/sha256hmac.hmac
+/usr/lib64/hmaccalc/sha384hmac.hmac
+/usr/lib64/hmaccalc/sha512hmac.hmac
+/usr/share/doc/hmaccalc-0.9.12
+/usr/share/doc/hmaccalc-0.9.12/LICENSE
+/usr/share/doc/hmaccalc-0.9.12/README
+/usr/share/man/man8/sha1hmac.8.gz
+/usr/share/man/man8/sha256hmac.8.gz
+/usr/share/man/man8/sha384hmac.8.gz
+/usr/share/man/man8/sha512hmac.8.gz

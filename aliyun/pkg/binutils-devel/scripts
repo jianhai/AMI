@@ -1,0 +1,15 @@
+postinstall scriptlet (using /bin/sh):
+if [ -e /usr/share/info/bfd.info.gz ]
+then
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/bfd.info.gz
+fi
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]
+then
+  if [ -e /usr/share/info/bfd.info.gz ]
+  then
+    /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/bfd.info.gz
+  fi
+fi
+exit 0

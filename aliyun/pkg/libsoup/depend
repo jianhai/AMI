@@ -1,0 +1,29 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libgconf-2.so.4()(64bit)  
+libgcrypt.so.11()(64bit)  
+libgcrypt.so.11(GCRYPT_1.2)(64bit)  
+libgio-2.0.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgnome-keyring.so.0()(64bit)  
+libgnutls.so.26()(64bit)  
+libgnutls.so.26(GNUTLS_1_4)(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libproxy.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libsoup-2.4.so.1()(64bit)  
+libsoup-gnome-2.4.so.1()(64bit)  
+libsqlite3.so.0()(64bit)  
+libxml2.so.2()(64bit)  
+libxml2.so.2(LIBXML2_2.4.30)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

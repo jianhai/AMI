@@ -1,0 +1,162 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.0-1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.0-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.0-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.0-1.1
+- rebuild for alios6
+
+* 五 11月 13 2009 Karel Klic <kklic@redhat.com> - 3.0-1
+- New upstream version
+- Removed zip23.patch, because ZMEM is not used anyway
+- Removed zip-2.31-install.patch, problem solved in upstream
+- Removed zip23-umask.patch, upstream uses mkstemp which solves the problem
+- Removed zip-2.31-near-4GB.patch, because upstream version 
+  handles large files well
+- Removed zip-2.31-configure.patch, configure is better in the current version
+- Removed zip-2.3-sf.patch, the error message doesn't exist in upstream anymore
+- Removed zip-2.31-umask_mode.patch, which fixes also removed near-4GB patch
+- Updated zip-2.31-time.patch for zip 3.0
+- Updated exec-shield.patch for zip 3.0
+- Updated zip-2.3-currdir.patch for zip 3.0
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.31-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.31-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.31-6
+- Autorebuild for GCC 4.3
+
+* 三 11月 14 2007 Ivana Varekova <varekova@redhat.com> - 2.31-5
+- add S_IWOTH option
+
+* 一 11月 05 2007 Ivana Varekova <varekova@redhat.com> - 2.31-4
+- fix "zip does not honor umask setting when creating archives"
+- fix "zip segfaults by attempt to archive big file"
+- spec file cleanup
+
+* 三 2月 07 2007 Ivana Varekova <varekova@redhat.com> - 2.31-3
+- incorporate the next peckage review comment
+
+* 二 2月 06 2007 Ivana Varekova <varekova@redhat.com> - 2.31-2
+- incorporate the package review
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.31-1.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.31-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.31-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 11月 10 2005 Ivana Varekova <varekova@redhat.com> 2.31-1
+- update to 2.31
+
+* 一 3月 07 2005 Ivana Varekova <varekova@redhat.com> 2.3-30
+- rebuilt
+
+* 一 1月 17 2005 Ivana Varekova <varekova@redhat.com> 2.3-29
+- Fix bug #142237 - problem with -d and ./files containing archives
+
+* 一 6月 21 2004 Lon Hohberger <lhh@redhat.com> 2.3-24
+- Extend max file/archive size to 2^32-8193 (4294959103) bytes
+- Include better debugging output for configure script
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 3月 19 2004 Lon Hohberger <lhh@redhat.com> 2.3-22
+- Fix typos
+
+* 二 2月 17 2004 Lon Hohberger <lhh@redhat.com> 2.3-21
+- Include LICENSE file per bugzilla #116004
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 12月 22 2003 Lon Hohberger <lhh@redhat.com> 2.3-19
+- Make temp file have umask 0066 mode (#112516)
+
+* 五 10月 24 2003 Lon Hohberger <lhh@redhat.com> 2.3-18
+- Incorporate Arjan's exec-shield patch for i386
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 19 2002 Tim Powers <timp@redhat.com>
+- bump and rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 4月 02 2002 Trond Eivind Glomsrød <teg@redhat.com>
+- Don't strip explicitly
+
+* 三 3月 13 2002 Trond Eivind Glomsrød <teg@redhat.com> 2.3-11
+- Add URL
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 五 8月 25 2000 Bill Nottingham <notting@redhat.com>
+- add encryption code (#16878)
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 11 2000 Bill Nottingham <notting@redhat.com>
+- rebuild in new environment
+
+* 一 3月 13 2000 Bill Nottingham <notting@redhat.com>
+- spec file cleanups (#10143)
+
+* 一 2月 07 2000 Bill Nottingham <notting@redhat.com>
+- fix some perms
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description
+- man pages are compressed
+
+* 二 1月 11 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.3
+
+* 五 7月 30 1999 Bill Nottingham <notting@redhat.com>
+- update to 2.2
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 8)
+
+* 四 3月 18 1999 Cristian Gafton <gafton@redhat.com>
+- updated text in the spec file
+
+* 五 1月 15 1999 Cristian Gafton <gafton@redhat.com>
+- patch top build on the arm
+
+* 一 12月 21 1998 Michael Maher <mike@redhat.com>
+- built package for 6.0
+
+* 一 8月 10 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 五 5月 08 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 7月 10 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

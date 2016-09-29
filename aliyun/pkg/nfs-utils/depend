@@ -1,0 +1,56 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/chkconfig  
+/sbin/nologin  
+/usr/bin/env  
+/usr/bin/python  
+config(nfs-utils) = 1:1.2.3-15.3.alios6
+fileutils  
+gawk  
+grep  
+libblkid  
+libblkid.so.1()(64bit)  
+libblkid.so.1(BLKID_1.0)(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcap  
+libcap.so.2()(64bit)  
+libcom_err.so.2()(64bit)  
+libdl.so.2()(64bit)  
+libevent  
+libevent-1.4.so.2()(64bit)  
+libgssapi_krb5.so.2()(64bit)  
+libgssglue  
+libgssglue.so.1()(64bit)  
+libgssglue.so.1(libgssapi_CITI_2)(64bit)  
+libk5crypto.so.3()(64bit)  
+libkrb5.so.3()(64bit)  
+libkrb5.so.3(krb5_3_MIT)(64bit)  
+libnfsidmap.so.0()(64bit)  
+libnsl.so.1()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libtirpc  
+libtirpc.so.1()(64bit)  
+libwrap.so.0()(64bit)  
+modutils >= 2.4.26-9
+nfs-utils-lib >= 1.1.0-3
+rpcbind  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+sed  
+sh-utils  
+shadow-utils >= 4.0.3-25
+textutils  
+rpmlib(PayloadIsXz) <= 5.2-1

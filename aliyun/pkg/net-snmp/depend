@@ -1,0 +1,47 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/usr/bin/perl  
+chkconfig  
+chkconfig  
+config(net-snmp) = 1:5.5-37.4.alios6
+coreutils  
+initscripts  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcrypt.so.1()(64bit)  
+libcrypto.so.10()(64bit)  
+libdl.so.2()(64bit)  
+libm.so.6()(64bit)  
+libnetsnmp.so.20()(64bit)  
+libnetsnmpagent.so.20()(64bit)  
+libnetsnmphelpers.so.20()(64bit)  
+libnetsnmpmibs.so.20()(64bit)  
+libnetsnmptrapd.so.20()(64bit)  
+libnsl.so.1()(64bit)  
+libperl.so()(64bit)  
+libpopt.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libresolv.so.2()(64bit)  
+librpm.so.1()(64bit)  
+librpmio.so.1()(64bit)  
+libsensors.so.4()(64bit)  
+libutil.so.1()(64bit)  
+libwrap.so.0()(64bit)  
+libz.so.1()(64bit)  
+net-snmp-libs = 1:5.5-37.4.alios6
+perl(Data::Dumper)  
+perl(File::Copy)  
+perl(Getopt::Std)  
+perl(IO::File)  
+perl(Term::ReadLine)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

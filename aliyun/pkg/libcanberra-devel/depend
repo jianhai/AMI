@@ -1,0 +1,14 @@
+/usr/bin/pkg-config  
+gtk-doc  
+gtk2-devel  
+libcanberra = 0.22-1.3.alios6
+libcanberra-gtk.so.0()(64bit)  
+libcanberra.so.0()(64bit)  
+pkgconfig  
+pkgconfig(gtk+-2.0)  
+pkgconfig(libcanberra)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

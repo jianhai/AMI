@@ -1,0 +1,15 @@
+Name        : python-pycurl                Relocations: (not relocatable)
+Version     : 7.19.0                            Vendor: Alibaba
+Release     : 8.4.alios6                    Build Date: 2014年07月28日 星期一 02时08分30秒
+Install Date: 2015年03月25日 星期三 11时00分08秒      Build Host: x86-003.build.alibaba
+Group       : Development/Languages         Source RPM: python-pycurl-7.19.0-8.4.alios6.src.rpm
+Size        : 236939                           License: LGPLv2+ or MIT
+Signature   : RSA/8, 2014年07月31日 星期四 18时09分55秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://pycurl.sourceforge.net/
+Summary     : A Python interface to libcurl
+Description :
+PycURL is a Python interface to libcurl. PycURL can be used to fetch
+objects identified by a URL from a Python program, similar to the
+urllib Python module. PycURL is mature, very fast, and supports a lot
+of features.

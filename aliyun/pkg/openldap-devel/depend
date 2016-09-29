@@ -1,0 +1,13 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+cyrus-sasl-devel >= 2.1
+liblber-2.4.so.2()(64bit)  
+libldap-2.4.so.2()(64bit)  
+libldap_r-2.4.so.2()(64bit)  
+libldif-2.4.so.2()(64bit)  
+openldap = 2.4.23-20.5.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

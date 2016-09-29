@@ -1,0 +1,12 @@
+* 二 1月 06 2015 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 15.01-1.3.alios6
+- update AliCloud to Aliyun
+
+* 四 12月 25 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 15.01-1.2.alios6
+- update alios-version
+
+* 三 9月 03 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 14.07-1.1.alios6
+- add repo file;
+- add RPM-KEY for signing;
+- fix alios-release;
+- add debuginfo repo;
+

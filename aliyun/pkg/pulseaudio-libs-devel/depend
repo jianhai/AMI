@@ -1,0 +1,17 @@
+/usr/bin/pkg-config  
+glib2-devel  
+libpulse-browse.so.0()(64bit)  
+libpulse-mainloop-glib.so.0()(64bit)  
+libpulse-simple.so.0()(64bit)  
+libpulse.so.0()(64bit)  
+pkgconfig  
+pkgconfig(glib-2.0)  
+pkgconfig(libpulse)  
+pulseaudio-libs = 0.9.21-13.4.alios6
+pulseaudio-libs-glib2 = 0.9.21-13.4.alios6
+pulseaudio-libs-zeroconf = 0.9.21-13.4.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

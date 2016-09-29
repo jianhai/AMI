@@ -1,0 +1,94 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.03ii-21.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.03ii-21.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.03ii-21.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.03ii-21.1
+- rebuild for alios6
+
+* 一 12月 07 2009 Stepan Kasal <skasal@redhat.com> - 1.03ii-21
+- rebuild against perl 5.10.1
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.03ii-20
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.03ii-19
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 27 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.03ii-18
+- Rebuild for perl 5.10 (again)
+
+* 五 1月 25 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.03ii-17
+- rebuild for new perl
+
+* 五 10月 26 2007 Ondrej Vasik <ovasik@redhat.com> - 1.03ii-16.4
+- added base documentation
+- fixed indents
+
+* 一 10月 22 2007 Ondrej Vasik <ovasik@redhat.com> - 1.03ii-16.3
+- added dist tag
+- License to GPL+
+- spec file cleanup (all things from merge review by pnemade #226278)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.03ii-16.2.1
+- rebuild
+
+* 五 2月 03 2006 Jason Vas Dias <jvdias@redhat.com> - 1.03ii-16.2
+- rebuild for new perl-5.8.8
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcc
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 六 4月 30 2005 Jose Pedro Oliveira <jpo at di.uminho.pt> - 1.03ii-15
+- Specfile cleanup. (#156483)
+
+* 三 9月 22 2004 Than Ngo <than@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 28 2003 Tim Waugh <twaugh@redhat.com> 1.03ii-12
+- Use vendorlib not sitelib (bug #73493).
+- Own %{perldir}/SGMLS (bug #73922).
+
+* 二 1月 28 2003 Tim Waugh <twaugh@redhat.com> 1.03ii-11
+- Rebuilt.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 六 12月 14 2002 Tim Powers <timp@redhat.com> 
+- don't use rpms internal dep generator
+
+* 一 11月 25 2002 Tim Waugh <twaugh@redhat.com> 1.03ii-9
+- Fix URL (bug #71895).
+
+* 一 11月 25 2002 Tim Waugh <twaugh@redhat.com> 1.03ii-8
+- Rebuild to get automatic provides: right.
+
+* 三 11月 20 2002 Tim Powers <timp@redhat.com> 1.03ii-7
+- rebuild in current collinst
+
+* 一 6月 17 2002 Tim Waugh <twaugh@redhat.com> 1.03ii-6
+- Rebuild in new environment.
+
+* 日 1月 14 2001 Tim Waugh <twaugh@redhat.com> 1.03ii-5
+- Add defattr to files section.
+
+* 一 1月 08 2001 Tim Waugh <twaugh@redhat.com>
+- Change group.
+- rm before install.
+- Change Copyright: to License:.
+- Remove Packager: line.
+
+* 一 1月 08 2001 Tim Waugh <twaugh@redhat.com>
+- Based on Eric Bischoff's new-trials packages.
+

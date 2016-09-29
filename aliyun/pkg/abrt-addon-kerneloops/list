@@ -1,0 +1,5 @@
+/etc/libreport/events.d/koops_event.conf
+/etc/rc.d/init.d/abrt-oops
+/usr/bin/abrt-action-analyze-oops
+/usr/bin/abrt-dump-oops
+/usr/share/man/man1/abrt-action-analyze-oops.1.gz

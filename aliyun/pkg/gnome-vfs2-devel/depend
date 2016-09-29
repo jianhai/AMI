@@ -1,0 +1,17 @@
+/usr/bin/pkg-config  
+GConf2-devel >= 2.14
+dbus-devel >= 0.90
+dbus-glib-devel >= 0.70
+gnome-vfs2 = 2.24.2-6.3.alios6
+hal-devel >= 0.5.7
+libgnomevfs-2.so.0()(64bit)  
+pkgconfig  
+pkgconfig(gconf-2.0)  
+pkgconfig(gmodule-no-export-2.0)  
+pkgconfig(gobject-2.0)  
+pkgconfig(gthread-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,529 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.7-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.7-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.4.7-4.1
+- rebuild for alios6
+
+* 五 1月 07 2011 Thomas Woerner <twoerner@redhat.com> 1.4.7-4
+- added IPv6 transparent proxy support (rhbz#590186)
+- added auditing support (rhbz#642393)
+  Thanks to Thomas Graf for the patch
+- init: restore context for save and use /etc/sysconfig for temps (rhbz#644273)
+
+* 二 7月 13 2010 Thomas Woerner <twoerner@redhat.com> 1.4.7-3
+- added xt_CHECKSUM patch from Michael S. Tsirkin (rhbz#612587)
+
+* 二 6月 29 2010 Thomas Woerner <twoerner@redhat.com> 1.4.7-2
+- fixed initscript to be LSB compliant (rhbz#593228)
+  - added euid 0 check
+  - reload returns 3 (unimplemented feature)
+
+* 三 3月 24 2010 Thomas Woerner <twoerner@redhat.com> 1.4.7-1
+- rebase to version 1.4.7:
+  - libip4tc: Add static qualifier to dump_entry()
+  - libipq: build as shared library
+  - recent: reorder cases in code (cosmetic cleanup)
+  - several man page and documentation fixes
+  - policy: fix error message showing wrong option
+  - includes: header updates
+  - Lift restrictions on interface names
+- fixed license and moved iptables-xml into base package according to review
+- added default values for IPTABLES_STATUS_VERBOSE and
+  IPTABLES_STATUS_LINENUMBERS in init script
+
+* 五 2月 26 2010 Thomas Woerner <twoerner@redhat.com> 1.4.6-4
+- changed license to GPLv2
+- removed execution bits from iptables.init
+
+* 五 2月 26 2010 Thomas Woerner <twoerner@redhat.com> 1.4.6-3
+- fixes according to review:
+- fixed license
+- moved /bin/iptables-xml to iptables main package fixes dangling symlink in
+  ipv6 sub-package
+- added missing lsb keywords Required-Start and Required-Stop to init script
+
+* 三 1月 27 2010 Thomas Woerner <twoerner@redhat.com> 1.4.6-2
+- moved libip*tc and libxtables libs to /lib[64], added symlinks for .so libs
+  to /usr/lib[64] for compatibility (rhbz#558796)
+
+* 三 1月 13 2010 Thomas Woerner <twoerner@redhat.com> 1.4.6-1
+- new version 1.4.6 with support for all new features of 2.6.32
+  - several man page fixes
+  - Support for nommu arches
+  - realm: remove static initializations
+  - libiptc: remove unused functions
+  - libiptc: avoid strict-aliasing warnings
+  - iprange: do accept non-ranges for xt_iprange v1
+  - iprange: warn on reverse range
+  - iprange: roll address parsing into a loop
+  - iprange: do accept non-ranges for xt_iprange v1 (log)
+  - iprange: warn on reverse range (log)
+  - libiptc: fix wrong maptype of base chain counters on restore
+  - iptables: fix undersized deletion mask creation
+  - style: reduce indent in xtables_check_inverse
+  - libxtables: hand argv to xtables_check_inverse
+  - iptables/extensions: make bundled options work again
+  - CONNMARK: print mark rules with mask 0xffffffff as set instead of xset
+  - iptables: take masks into consideration for replace command
+  - doc: explain experienced --hitcount limit
+  - doc: name resolution clarification
+  - iptables: expose option to zero packet/byte counters for a specific rule
+  - build: restore --disable-ipv6 functionality on system w/o v6 headers
+  - MARK: print mark rules with mask 0xffffffff as --set-mark instead of --set-xmark
+  - DNAT: fix incorrect check during parsing
+  - extensions: add osf extension
+  - conntrack: fix --expires parsing
+
+* 四 12月 17 2009 Thomas Woerner <twoerner@redhat.com> 1.4.5-2
+- dropped nf_ext_init remains from cloexec patch
+
+* 四 9月 17 2009 Thomas Woerner <twoerner@redhat.com> 1.4.5-1
+- new version 1.4.5 with support for all new features of 2.6.31
+  - libxt_NFQUEUE: add new v1 version with queue-balance option
+  - xt_conntrack: revision 2 for enlarged state_mask member
+  - libxt_helper: fix invalid passed option to check_inverse
+  - libiptc: split v4 and v6
+  - extensions: collapse registration structures
+  - iptables: allow for parse-less extensions
+  - iptables: allow for help-less extensions
+  - extensions: remove empty help and parse functions
+  - xtables: add multi-registration functions
+  - extensions: collapse data variables to use multi-reg calls
+  - xtables: warn of missing version identifier in extensions
+  - multi binary: allow subcommand via argv[1]
+  - iptables: accept multiple IP address specifications for -s, -d
+  - several build fixes
+  - several man page fixes
+- fixed two leaked file descriptors on sockets (rhbz#521397)
+
+* 一 8月 24 2009 Thomas Woerner <twoerner@redhat.com> 1.4.4-1
+- new version 1.4.4 with support for all new features of 2.6.30
+  - several man page fixes
+  - iptables: replace open-coded sizeof by ARRAY_SIZE
+  - libip6t_policy: remove redundant functions
+  - policy: use direct xt_policy_info instead of ipt/ip6t
+  - policy: merge ipv6 and ipv4 variant
+  - extensions: add `cluster' match support
+  - extensions: add const qualifiers in print/save functions
+  - extensions: use NFPROTO_UNSPEC for .family field
+  - extensions: remove redundant casts
+  - iptables: close open file descriptors
+  - fix segfault if incorrect protocol name is used
+  - replace open-coded sizeof by ARRAY_SIZE
+  - do not include v4-only modules in ip6tables manpage
+  - use direct xt_policy_info instead of ipt/ip6t
+  - xtables: fix segfault if incorrect protocol name is used
+  - libxt_connlimit: initialize v6_mask
+  - SNAT/DNAT: add support for persistent multi-range NAT mappings
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.3.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 4月 15 2009 Thomas Woerner <twoerner@redhat.com> 1.4.3.2-1
+- new version 1.4.3.2
+- also install iptables/internal.h, needed for iptables.h and ip6tables.h
+
+* 一 3月 30 2009 Thomas Woerner <twoerner@redhat.com> 1.4.3.1-1
+- new version 1.4.3.1
+  - libiptc is now shared
+  - supports all new features of the 2.6.29 kernel
+- dropped typo_latter patch
+
+* 四 3月 05 2009 Thomas Woerner <twoerner@redhat.com> 1.4.2-3
+- still more review fixes (rhbz#225906)
+  - consistent macro usage
+  - use sed instead of perl for rpath removal
+  - use standard RPM CFLAGS, but also -fno-strict-aliasing (needed for libiptc*)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 20 2009 Thomas Woerner <twoerner@redhat.com> 1.4.2-1
+- new version 1.4.2
+- removed TOS value mask patch (upstream)
+- more review fixes (rhbz#225906)
+- install all header files (rhbz#462207)
+- dropped nf_ext_init (rhbz#472548)
+
+* 二 7月 22 2008 Thomas Woerner <twoerner@redhat.com> 1.4.1.1-2
+- fixed TOS value mask problem (rhbz#456244) (upstream patch)
+- two more cloexec fixes
+
+* 二 7月 01 2008 Thomas Woerner <twoerner@redhat.com> 1.4.1.1-1
+- upstream bug fix release 1.4.1.1
+- dropped extra patch for 1.4.1 - not needed anymore
+
+* 二 6月 10 2008 Thomas Woerner <twoerner@redhat.com> 1.4.1-1
+- new version 1.4.1 with new build environment
+- additional ipv6 network mask patch from Jan Engelhardt
+- spec file cleanup
+- removed old patches
+
+* 五 6月 06 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.4.0-5
+- use normal kernel headers, not linux/compiler.h
+- change BuildRequires: kernel-devel to kernel-headers
+- We need to do this to be able to build for both sparcv9 and sparc64 
+  (there is no kernel-devel.sparcv9)
+
+* 四 3月 20 2008 Thomas Woerner <twoerner@redhat.com> 1.4.0-4
+- use O_CLOEXEC for all opened files in all applications (rhbz#438189)
+
+* 一 3月 03 2008 Thomas Woerner <twoerner@redhat.com> 1.4.0-3
+- use the kernel headers from the build tree for iptables for now to be able to 
+  compile this package, but this makes the package more kernel dependant
+- use s6_addr32 instead of in6_u.u6_addr32
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.4.0-2
+- Autorebuild for GCC 4.3
+
+* 一 2月 11 2008 Thomas Woerner <twoerner@redhat.com> 1.4.0-1
+- new version 1.4.0
+- fixed condrestart (rhbz#428148)
+- report the module in rmmod_r if there is an error
+- use nf_ext_init instead of my_init for extension constructors
+
+* 一 11月 05 2007 Thomas Woerner <twoerner@redhat.com> 1.3.8-6
+- fixed leaked file descriptor before fork/exec (rhbz#312191)
+- blacklisting is not working, use "install X /bin/(true|false)" test instead
+- return private exit code 150 for disabled ipv6 support
+- use script name for output messages
+
+* 二 10月 16 2007 Thomas Woerner <twoerner@redhat.com> 1.3.8-5
+- fixed error code for stopping a already stopped firewall (rhbz#321751)
+- moved blacklist test into start
+
+* 三 9月 26 2007 Thomas Woerner <twoerner@redhat.com> 1.3.8-4.1
+- do not start ip6tables if ipv6 is blacklisted (rhbz#236888)
+- use simpler fix for (rhbz#295611)
+  Thanks to Linus Torvalds for the patch.
+
+* 一 9月 24 2007 Thomas Woerner <twoerner@redhat.com> 1.3.8-4
+- fixed IPv6 reject type (rhbz#295181)
+- fixed init script: start, stop and status
+- support netfilter compiled into kernel in init script (rhbz#295611)
+- dropped inversion for limit modules from man pages (rhbz#220780)
+- fixed typo in ip6tables man page (rhbz#236185)
+
+* 三 9月 19 2007 Thomas Woerner <twoerner@redhat.com> 1.3.8-3
+- do not depend on local_fs in lsb header - this delayes start after network
+- fixed exit code for initscript usage
+
+* 一 9月 17 2007 Thomas Woerner <twoerner@redhat.com> 1.3.8-2.1
+- do not use lock file for condrestart test
+
+* 四 8月 23 2007 Thomas Woerner <twoerner@redhat.com> 1.3.8-2
+- fixed initscript for LSB conformance (rhbz#246953, rhbz#242459)
+- provide iptc interface again, but unsupported (rhbz#216733)
+- compile all extension, which are supported by the kernel-headers package
+- review fixes (rhbz#225906)
+
+* 二 7月 31 2007 Thomas Woerner <twoerner@redhat.com>
+- reverted ipv6 fix, because it disables the ipv6 at all (rhbz#236888)
+
+* 五 7月 13 2007 Steve Conklin <sconklin@redhat.com> - 1.3.8-1
+- New version 1.3.8
+
+* 一 4月 23 2007 Jeremy Katz <katzj@redhat.com> - 1.3.7-2
+- fix error when ipv6 support isn't loaded in the kernel (#236888)
+
+* 三 1月 10 2007 Thomas Woerner <twoerner@redhat.com> 1.3.7-1.1
+- fixed installation of secmark modules
+
+* 二 1月 09 2007 Thomas Woerner <twoerner@redhat.com> 1.3.7-1
+- new verison 1.3.7
+- iptc is not a public interface and therefore not installed anymore
+- dropped upstream secmark patch
+
+* 二 9月 19 2006 Thomas Woerner <twoerner@redhat.com> 1.3.5-2
+- added secmark iptables patches (#201573)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.3.5-1.2.1
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.3.5-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.3.5-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Thomas Woerner <twoerner@redhat.com> 1.3.5-1
+- new version 1.3.5
+- fixed init script to set policy for raw tables, too (#179094)
+
+* 二 1月 24 2006 Thomas Woerner <twoerner@redhat.com> 1.3.4-3
+- added important iptables header files to devel package
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 11月 25 2005 Thomas Woerner <twoerner@redhat.com> 1.3.4-2
+- fix for plugin problem: link with "gcc -shared" instead of "ld -shared" and 
+  replace "_init" with "__attribute((constructor)) my_init"
+
+* 五 11月 25 2005 Thomas Woerner <twoerner@redhat.com> 1.3.4-1.1
+- rebuild due to unresolved symbols in shared libraries
+
+* 五 11月 18 2005 Thomas Woerner <twoerner@redhat.com> 1.3.4-1
+- new version 1.3.4
+- dropped free_opts patch (upstream fixed)
+- made libipq PIC (#158623)
+- additional configuration options for iptables startup script (#172929)
+  Thanks to Jan Gruenwald for the patch
+- spec file cleanup (dropped linux_header define and usage)
+
+* 一 7月 18 2005 Thomas Woerner <twoerner@redhat.com> 1.3.2-1
+- new version 1.3.2 with additional patch for the misplaced free_opts call
+  from Marcus Sundberg
+
+* 三 5月 11 2005 Thomas Woerner <twoerner@redhat.com> 1.3.1-1
+- new version 1.3.1
+
+* 五 3月 18 2005 Thomas Woerner <twoerner@redhat.com> 1.3.0-2
+- Remove unnecessary explicit kernel dep (#146142)
+- Fixed out of bounds accesses (#131848): Thanks to Steve Grubb
+  for the patch
+- Adapted iptables-config to reference to modprobe.conf (#150143)
+- Remove misleading message (#140154): Thanks to Ulrich Drepper
+  for the patch
+
+* 一 2月 21 2005 Thomas Woerner <twoerner@redhat.com> 1.3.0-1
+- new version 1.3.0
+
+* 四 11月 11 2004 Thomas Woerner <twoerner@redhat.com> 1.2.11-3.2
+- fixed autoload problem in iptables and ip6tables (CAN-2004-0986)
+
+* 五 9月 17 2004 Thomas Woerner <twoerner@redhat.com> 1.2.11-3.1
+- changed default behaviour for IPTABLES_STATUS_NUMERIC to "yes" (#129731)
+- modified config file to match this change and un-commented variables with
+  default values
+
+* 四 9月 16 2004 Thomas Woerner <twoerner@redhat.com> 1.2.11-3
+- applied second part of cleanup patch from (#131848): thanks to Steve Grubb
+  for the patch
+
+* 三 8月 25 2004 Thomas Woerner <twoerner@redhat.com> 1.2.11-2
+- fixed free bug in iptables (#128322)
+
+* 二 6月 22 2004 Thomas Woerner <twoerner@redhat.com> 1.2.11-1
+- new version 1.2.11
+
+* 四 6月 17 2004 Thomas Woerner <twoerner@redhat.com> 1.2.10-1
+- new version 1.2.10
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 26 2004 Thomas Woerner <twoerner@redhat.com> 1.2.9-2.3
+- fixed iptables-restore -c fault if there are no counters (#116421)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 1月 25 2004 Dan Walsh <dwalsh@redhat.com> 1.2.9-1.2
+- Close File descriptors to prevent SELinux error message
+
+* 三 1月 07 2004 Thomas Woerner <twoerner@redhat.com> 1.2.9-1.1
+- rebuild
+
+* 三 12月 17 2003 Thomas Woerner <twoerner@redhat.com> 1.2.9-1
+- vew version 1.2.9
+- new config options in ipXtables-config:
+  IPTABLES_MODULES_UNLOAD
+- more documentation in ipXtables-config
+- fix for netlink security issue in libipq (devel package)
+- print fix for libipt_icmp (#109546)
+
+* 四 10月 23 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-13
+- marked all messages in iptables init script for translation (#107462)
+- enabled devel package (#105884, #106101)
+- bumped build for fedora for libipt_recent.so (#106002)
+
+* 二 9月 23 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-12.1
+- fixed lost udp port range in ip6tables-save (#104484)
+- fixed non numeric multiport port output in ipXtables-savs
+
+* 一 9月 22 2003 Florian La Roche <Florian.LaRoche@redhat.de> 1.2.8-11
+- do not link against -lnsl
+
+* 三 9月 17 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-10
+- made variables in rmmod_r local
+
+* 二 7月 22 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-9
+- fixed permission for init script
+
+* 六 7月 19 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-8
+- fixed save when iptables file is missing and iptables-config permissions
+
+* 二 7月 08 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-7
+- fixes for ip6tables: module unloading, setting policy only for existing 
+  tables
+
+* 四 7月 03 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-6
+- IPTABLES_SAVE_COUNTER defaults to no, now
+- install config file in /etc/sysconfig
+- exchange unload of ip_tables and ip_conntrack
+- fixed start function
+
+* 三 7月 02 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-5
+- new config option IPTABLES_SAVE_ON_RESTART
+- init script: new status, save and restart
+- fixes #44905, #65389, #80785, #82860, #91040, #91560 and #91374
+
+* 一 6月 30 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-4
+- new config option IPTABLES_STATUS_NUMERIC
+- cleared IPTABLES_MODULES in iptables-config
+
+* 一 6月 30 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-3
+- new init scripts
+
+* 六 6月 28 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- remove check for very old kernel versions in init scripts
+- sync up both init scripts and remove some further ugly things
+- add some docu into rpm
+
+* 四 6月 26 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-2
+- rebuild
+
+* 一 6月 16 2003 Thomas Woerner <twoerner@redhat.com> 1.2.8-1
+- update to 1.2.8
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 1月 13 2003 Bill Nottingham <notting@redhat.com> 1.2.7a-1
+- update to 1.2.7a
+- add a plethora of bugfixes courtesy Michael Schwendt <mschewndt@yahoo.com>
+
+* 五 12月 13 2002 Elliot Lee <sopwith@redhat.com> 1.2.6a-3
+- Fix multilib
+
+* 三 8月 07 2002 Karsten Hopp <karsten@redhat.de>
+- fixed iptables and ip6tables initscript output, based on #70511
+- check return status of all iptables calls, not just the last one
+  in a 'for' loop.
+
+* 一 7月 29 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.6a-1
+- 1.2.6a (bugfix release, #69747)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 3月 04 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.5-3
+- Add some fixes from CVS, fixing bug #60465
+
+* 二 2月 12 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.5-2
+- Merge ip6tables improvements from Ian Prowell <iprowell@prowell.org>
+  - Update URL (#59354)
+- Use /sbin/chkconfig rather than chkconfig in %postun script
+
+* 五 1月 11 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.5-1
+- 1.2.5
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 11月 05 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.4-2
+- Fix %preun script
+
+* 二 10月 30 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.4-1
+- Update to 1.2.4 (various fixes, including security fixes; among others:
+  - Fix init script (#31133)
+
+* 一 9月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.3-1
+- 1.2.3 (5 security fixes, some other fixes)
+- Fix updating (#53032)
+
+* 一 8月 27 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.2-4
+- Fix #50990
+- Add some fixes from current CVS; should fix #52620
+
+* 一 7月 16 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.2-3
+- Add some fixes from the current CVS tree; fixes #49154 and some IPv6
+  issues
+
+* 二 6月 26 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.2-2
+- Fix iptables-save reject-with (#45632), Patch from Michael Schwendt
+  <mschwendt@yahoo.com>
+
+* 二 5月 08 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.2-1
+- 1.2.2
+
+* 三 3月 21 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.2.1a, fixes #28412, #31136, #31460, #31133
+
+* 四 3月 01 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Yet another initscript fix (#30173)
+- Fix the fixes; they fixed some issues but broke more important
+  stuff :/ (#30176)
+
+* 二 2月 27 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up initscript (#27962)
+- Add fixes from CVS to iptables-{restore,save}, fixing #28412
+
+* 五 2月 09 2001 Karsten Hopp <karsten@redhat.de>
+- create /etc/sysconfig/iptables mode 600 (same problem as #24245)
+
+* 一 2月 05 2001 Karsten Hopp <karsten@redhat.de>
+- fix bugzilla #25986 (initscript not marked as config file)
+- fix bugzilla #25962 (iptables-restore)
+- mv chkconfig --del from postun to preun
+
+* 四 2月 01 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Fix check for ipchains
+
+* 一 1月 29 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Some fixes to init scripts
+
+* 三 1月 24 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add some fixes from CVS, fixes among other things Bug #24732
+
+* 三 1月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Add missing man pages, fix up init script (Bug #17676)
+
+* 一 1月 15 2001 Bill Nottingham <notting@redhat.com>
+- add init script
+
+* 一 1月 15 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.2
+- fix up ipv6 split
+- add init script
+- Move the plugins from /usr/lib/iptables to /lib/iptables.
+  This needs to work before /usr is mounted...
+- Use -O1 on alpha (compiler bug)
+
+* 六 1月 06 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.1.2
+- Add IPv6 support (in separate package)
+
+* 四 8月 17 2000 Bill Nottingham <notting@redhat.com>
+- build everywhere
+
+* 二 7月 25 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.1.1
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 27 2000 Preston Brown <pbrown@redhat.com>
+- move iptables to /sbin.
+- excludearch alpha for now, not building there because of compiler bug(?)
+
+* 五 6月 09 2000 Bill Nottingham <notting@redhat.com>
+- don't obsolete ipchains either
+- update to 1.1.0
+
+* 日 6月 04 2000 Bill Nottingham <notting@redhat.com>
+- remove explicit kernel requirement
+
+* 二 5月 02 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- initial package
+

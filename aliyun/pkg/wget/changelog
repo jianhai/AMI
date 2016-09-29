@@ -1,0 +1,411 @@
+* 五 10月 24 2014 Tomas Hozza <thozza@redhat.com> - 1.12-5.1
+- Fix CVE-2014-4877 wget: FTP symlink arbitrary filesystem access (#1156133)
+
+* 三 4月 02 2014 Tomas Hozza <thozza@redhat.com> 1.12-5
+- Fix the parsing of weblink when doing recursive retrieving (#960137)
+- Fix errors found by static analysis of source code (#873216)
+
+* 二 4月 01 2014 Tomas Hozza <thozza@redhat.com> 1.12-4
+- Add SNI (Server Name Indication) support (#909604)
+
+* 四 2月 06 2014 Tomas Hozza <thozza@redhat.com> 1.12-3
+- Add --trust-server-names option to fix CVE-2010-2252 (#1062190)
+
+* 五 1月 31 2014 Tomas Hozza <thozza@redhat.com> 1.12-2
+- Fix wget to recognize certificates with alternative names (#736445)
+
+* 一 10月 01 2012 Tomas Hozza <thozza@redhat.com> 1.12-1.8
+- Fixed wget from fuzzed http ending with segmentation fault (#714893)
+
+* 四 9月 27 2012 Tomas Hozza <thozza@redhat.com> 1.12-1.7
+- Fixed timeout issue when using SSL and server doesn't answer (#814208)
+
+* 五 9月 21 2012 Tomas Hozza <thozza@redhat.com> 1.12-1.6
+- Added gcc flag -fno-strict-aliasing to solve Testsuite regressions
+
+* 五 9月 21 2012 Tomas Hozza <thozza@redhat.com> 1.12-1.5
+- Corrected upstream URL in SPEC file (#754168)
+
+* 一 5月 10 2010 Karsten Hopp <karsten@redhat.com> 1.12-1.4
+- rebuild to fix bad dwarf cfi expressions caused by an older gcc
+
+* 二 2月 23 2010 Karsten Hopp <karsten@redhat.com> 1.12-1.3
+- added GFDL to licenses
+
+* 三 11月 25 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.12-1.2
+- don't provide /usr/share/info/dir
+
+* 一 11月 23 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.12-1.1
+- Rebuilt for RHEL 6
+
+* 二 11月 17 2009 Karsten Hopp <karsten@redhat.com> 1.12-1
+- update to wget-1.12
+- fixes CVE-2009-3490 wget: incorrect verification of SSL certificate
+  with NUL in name
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1.11.4-5
+- rebuilt with new openssl
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.11.4-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.11.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 1月 18 2009 Tomas Mraz <tmraz@redhat.com> 1.11.4-2
+- rebuild with new openssl
+
+* 三 8月 13 2008 Karsten Hopp <karsten@redhat.com> 1.11.4-1
+- update
+
+* 三 6月 04 2008 Karsten Hopp <karsten@redhat.com> 1.11.3-1
+- wget-1.11.3, downgrades the combination of the -N and -O options
+  to a warning instead of an error
+
+* 五 5月 09 2008 Karsten Hopp <karsten@redhat.com> 1.11.2-1
+- wget-1.11.2, fixes #179962
+
+* 一 3月 31 2008 Karsten Hopp <karsten@redhat.com> 1.11.1-1
+- update to bugfix release 1.11.1, fixes p.e. #433606
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.11-2
+- Autorebuild for GCC 4.3
+
+* 二 12月 04 2007 Karsten Hopp <karsten@redhat.com> 1.10.2-17
+- rebuild to pick up new openssl SONAME
+
+* 一 8月 27 2007 Karsten Hopp <karsten@redhat.com> 1.10.2-16
+- fix license tag
+- rebuild
+
+* 一 2月 12 2007 Karsten Hopp <karsten@redhat.com> 1.10.2-15
+- fix discarding of expired cookies
+- escape non-printable characters
+- drop to11 patch for now (#223754, #227853, #227498)
+
+* 一 2月 05 2007 Karsten Hopp <karsten@redhat.com> 1.10.2-14
+- shut up rpmlint, even though xx isn't a macro
+
+* 一 2月 05 2007 Karsten Hopp <karsten@redhat.com> 1.10.2-13
+- merge review changes (#226538)
+  - use version/release/... in buildroot tag
+  - remove BR perl
+  - use SMP flags
+  - use make install instead of %makeinstall
+  - include copy of license
+  - use Requires(post)/Requires(preun)
+  - use optflags
+  - remove trailing dot from summary
+  - change tabs to spaces
+
+* 四 1月 18 2007 Karsten Hopp <karsten@redhat.com> 1.10.2-12
+- don't abort (un)install scriptlets when _excludedocs is set (Ville Skyttä)
+
+* 三 1月 10 2007 Karsten Hopp <karsten@redhat.com> 1.10.2-11
+- add fix for CVE-2006-6719
+
+* 五 12月 08 2006 Karsten Hopp <karsten@redhat.com> 1.10.2-10
+- fix repeated downloads (Tomas Heinrich, #186195)
+
+* 四 12月 07 2006 Karsten Hopp <karsten@redhat.com> 1.10.2-9
+- add distflag, rebuild
+
+* 四 12月 07 2006 Karsten Hopp <karsten@redhat.com> 1.10.2-8
+- Resolves: #218211
+  fix double free corruption
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 1.10.2-7
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 一 9月 25 2006 Karsten Hopp <karsten@redhat.de> 1.10.2-6
+- fix resumed downloads (#205723)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.10.2-5.1
+- rebuild
+
+* 四 6月 29 2006 Karsten Hopp <karsten@redhat.de> 1.10.2-5
+- updated german translations from Robert Scheck
+
+* 二 6月 27 2006 Karsten Hopp <karsten@redhat.de> 1.10.2-4
+- upstream patches
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.10.2-3.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.10.2-3.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 11月 10 2005 Tomas Mraz <tmraz@redhat.com> 1.10.2-3
+- rebuilt against new openssl
+
+* 二 10月 25 2005 Karsten Hopp <karsten@redhat.de> 1.10.2-2
+- use %{_sysconfdir} (#171555)
+
+* 六 10月 15 2005 Florian La Roche <laroche@redhat.com>
+- 1.10.2
+
+* 四 9月 08 2005 Karsten Hopp <karsten@redhat.de> 1.10.1-7
+- fix builtin help of --load-cookies / --save-cookies (#165408)
+
+* 三 9月 07 2005 Karsten Hopp <karsten@redhat.de> 1.10.1-6
+- convert changelog to UTF-8 (#159585)
+
+* 一 9月 05 2005 Karsten Hopp <karsten@redhat.de> 1.10.1-5
+- update
+- drop patches which are already in the upstream sources
+
+* 三 7月 13 2005 Karsten Hopp <karsten@redhat.de> 1.10-5
+- update german translation
+
+* 一 7月 11 2005 Karsten Hopp <karsten@redhat.de> 1.10-4
+- update german translation (Robert Scheck)
+
+* 二 7月 05 2005 Karsten Hopp <karsten@redhat.de> 1.10-3
+- fix minor documentation bug
+- fix --no-cookies crash
+
+* 一 7月 04 2005 Karsten Hopp <karsten@redhat.de> 1.10-2
+- update to wget-1.10
+  - drop passive-ftp patch, already in 1.10
+  - drop CVS patch
+  - drop LFS patch, similar fix in 1.10
+  - drop protdir patch, similar fix in 1.10
+  - drop actime patch, already in 1.10
+
+* 三 3月 02 2005 Karsten Hopp <karsten@redhat.de> 1.9.1-22
+- build with gcc-4
+
+* 三 2月 02 2005 Karsten Hopp <karsten@redhat.de> 1.9.1-21 
+- remove old copy of the manpage (#146875, #135597)
+- fix garbage in manpage (#117519)
+
+* 二 2月 01 2005 Karsten Hopp <karsten@redhat.de> 1.9.1-20 
+- texi2pod doesn't handle texinfo xref's. rewrite some lines so that
+  the man page doesn't have incomplete sentences anymore (#140470)
+
+* 一 1月 31 2005 Karsten Hopp <karsten@redhat.de> 1.9.1-19 
+- Don't set actime to access time of the remote file or tmpwatch might 
+  remove the file again (#146440).  Set it to the current time instead.
+  timestamping checks only modtime, so this should be ok.
+
+* 四 1月 20 2005 Karsten Hopp <karsten@redhat.de> 1.9.1-18
+- add support for --protocol-directories option as documented
+  in the man page (Ville Skyttä, #145571)
+
+* 三 9月 29 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-17 
+- additional LFS patch from Leonid Petrov to fix file lengths in 
+  http downloads
+
+* 四 9月 16 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-16 
+- more fixes
+
+* 二 9月 14 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-15 
+- added strtol fix from Leonid Petrov, reenable LFS
+
+* 二 9月 14 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-14
+- buildrequires gettext (#132519)
+
+* 三 9月 01 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-13
+- disable LFS patch for now, it breaks normal downloads (123524#c15)
+
+* 二 8月 31 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-12 
+- move largefile stuff inside the configure script, it didn't
+  get appended to CFLAGS
+
+* 二 8月 31 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-11
+- rebuild
+
+* 二 8月 31 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-10 
+- fix patch
+
+* 日 8月 29 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-9
+- more cleanups of the manpage (#117519)
+
+* 五 8月 27 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-8
+- rebuild
+
+* 五 8月 27 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-7 
+- clean up manpage (#117519)
+- buildrequire texinfo (#123780)
+- LFS patch, based on wget-LFS-20040630.patch from Leonid Petrov
+  (#123524, #124628, #115348)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 3月 11 2004 Karsten Hopp <karsten@redhat.de> 1.9.1-3 
+- fix documentation (#117517)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 11月 28 2003 Karsten Hopp <karsten@redhat.de> 1.9.1-3
+- update to -stable CVS
+- document the passive ftp default
+
+* 五 11月 28 2003 Karsten Hopp <karsten@redhat.de> 1.9.1-2
+- add patch from -stable CVS
+
+* 五 11月 28 2003 Karsten Hopp <karsten@redhat.de> 1.9.1-1
+- update to 1.9.1
+- remove obsolete patches
+
+* 一 8月 04 2003 Karsten Hopp <karsten@redhat.de> 1.8.2-15.3
+- fix variable usage
+
+* 二 7月 22 2003 Nalin Dahyabhai <nalin@redhat.com> 1.8.2-15.2
+- rebuild
+
+* 三 6月 25 2003 Karsten Hopp <karsten@redhat.de> 1.8.2-15.1
+- rebuilt
+
+* 三 6月 25 2003 Karsten Hopp <karsten@redhat.de> 1.8.2-15
+- default to passive-ftp (#97996)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Karsten Hopp <karsten@redhat.de> 1.8.2-13
+- rebuild
+
+* 三 6月 04 2003 Karsten Hopp <karsten@redhat.de> 1.8.2-12
+- merge debian patch for long URLs
+- cleanup filename patch
+
+* 日 5月 11 2003 Karsten Hopp <karsten@redhat.de> 1.8.2-11
+- rebuild
+
+* 日 5月 11 2003 Karsten Hopp <karsten@redhat.de> 1.8.2-10
+- upstream fix off-by-one error
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 1.8.2-8
+- rebuild
+
+* 五 12月 13 2002 Nalin Dahyabhai <nalin@redhat.com>
+- use openssl pkg-config data, if present
+- don't bomb out when building with newer openssl
+
+* 四 12月 12 2002 Tim Powers <timp@redhat.com> 1.8.2-7
+- rebuild on all arches
+
+* 二 11月 19 2002 Tim Powers <timp@redhat.com>
+- rebuild on all arches
+
+* 五 10月 04 2002 Karsten Hopp <karsten@redhat.de> 1.8.2-5
+- fix directory traversal bug
+
+* 三 7月 24 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.8.2-3
+- Don't segfault when downloading URLs A-B-A (A-A-B worked) #49859
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 5月 29 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.8.2 (bug-fix release)
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 4月 29 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- remove s390 patch, not needed anymore
+
+* 三 2月 27 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.8.1-4
+- Rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 12月 28 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add hack to not link against libmd5, even if available
+
+* 五 12月 28 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.8.1
+
+* 四 12月 13 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.8
+- also include md5global to get it compile
+
+* 日 11月 18 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.7.1
+
+* 三 9月 05 2001 Phil Knirsch <phil@redhat.de> 1.7-3
+- Added va_args patch required for S390.
+
+* 一 9月 03 2001 Trond Eivind Glomsrød <teg@redhat.com> 1.7-2
+- Configure with ssl support (duh - #53116)
+- s/Copyright/License/
+
+* 三 6月 06 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- 1.7
+- Require perl for building (to get man pages)
+- Don't include the Japanese po file, it's now included
+- Use %{_tmppath}
+- no patches necessary
+- Make /etc/wgetrc noreplace
+- More docs
+
+* 二 1月 30 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Norwegian isn't a iso-8859-2 locale, neither is Danish.
+  This fixes #15025.
+- langify
+
+* 六 1月 06 2001 Bill Nottingham <notting@redhat.com>
+- escape %xx characters before fnmatch (#23475, patch from alane@geeksrus.net)
+
+* 五 1月 05 2001 Bill Nottingham <notting@redhat.com>
+- update to 1.6, fix patches accordingly (#23412)
+- fix symlink patch (#23411)
+
+* 一 12月 18 2000 Yukihiro Nakai <ynakai@redhat.com>
+- Add Japanese and Korean Resources
+
+* 二 8月 01 2000 Bill Nottingham <notting@redhat.com>
+- setlocale for LC_CTYPE too, or else all the translations think their
+  characters are unprintable.
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 11 2000 Bill Nottingham <notting@redhat.com>
+- build in new environment
+
+* 一 6月 05 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- FHS compliance
+
+* 四 2月 03 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed man pages
+
+* 四 8月 26 1999 Jeff Johnson <jbj@redhat.com>
+- don't permit chmod 777 on symlinks (#4725).
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 五 12月 18 1998 Bill Nottingham <notting@redhat.com>
+- build for 6.0 tree
+- add Provides
+
+* 六 10月 10 1998 Cristian Gafton <gafton@redhat.com>
+- strip binaries
+- version 1.5.3
+
+* 六 6月 27 1998 Jeff Johnson <jbj@redhat.com>
+- updated to 1.5.2
+
+* 四 4月 30 1998 Cristian Gafton <gafton@redhat.com>
+- modified group to Applications/Networking
+
+* 三 4月 22 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded to 1.5.0
+- they removed the man page from the distribution (Duh!) and I added it back
+  from 1.4.5. Hey, removing the man page is DUMB!
+
+* 五 11月 14 1997 Cristian Gafton <gafton@redhat.com>
+- first build against glibc
+

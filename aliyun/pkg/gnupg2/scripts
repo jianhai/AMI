@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/install-info /usr/share/info/gnupg.info /usr/share/info/dir ||:
+preuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+  /sbin/install-info --delete /usr/share/info/gnupg.info /usr/share/info/dir ||:
+fi

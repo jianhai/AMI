@@ -1,0 +1,12 @@
+Name        : pygobject2-doc               Relocations: (not relocatable)
+Version     : 2.20.0                            Vendor: Alibaba
+Release     : 5.4.alios6                    Build Date: 2014年07月30日 星期三 15时59分00秒
+Install Date: 2015年03月25日 星期三 10时59分16秒      Build Host: x86-003.build.alibaba
+Group       : Development/Languages         Source RPM: pygobject2-2.20.0-5.4.alios6.src.rpm
+Size        : 1385679                          License: LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 18时07分40秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.pygtk.org/
+Summary     : Documentation files for pygobject2
+Description :
+This package contains documentation files for pygobject2.

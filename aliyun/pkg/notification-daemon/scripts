@@ -1,0 +1,16 @@
+preinstall scriptlet (using /bin/sh):
+if [ "$1" -gt 1 ]; then
+    export GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source`
+    gconftool-2 --makefile-uninstall-rule \
+      /etc/gconf/schemas/notification-daemon.schemas >/dev/null || :
+fi
+postinstall scriptlet (using /bin/sh):
+export GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source`
+gconftool-2 --makefile-install-rule \
+  /etc/gconf/schemas/notification-daemon.schemas > /dev/null || :
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" -eq 0 ]; then
+    export GCONF_CONFIG_SOURCE=`gconftool-2 --get-default-source`
+    gconftool-2 --makefile-uninstall-rule \
+      /etc/gconf/schemas/notification-daemon.schemas >/dev/null || :
+fi

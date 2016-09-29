@@ -1,0 +1,51 @@
+gnome-python2 = 2.28.0-3.3.alios6
+gnome-python2-gnomevfs = 2.28.0-3.3.alios6
+libICE.so.6()(64bit)  
+libORBit-2.so.0()(64bit)  
+libSM.so.6()(64bit)  
+libart_lgpl_2.so.2()(64bit)  
+libatk-1.0.so.0()(64bit)  
+libbonobo-2.so.0()(64bit)  
+libbonobo-activation.so.4()(64bit)  
+libbonoboui-2.so.0()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcairo.so.2()(64bit)  
+libdl.so.2()(64bit)  
+libfontconfig.so.1()(64bit)  
+libfreetype.so.6()(64bit)  
+libgconf-2.so.4()(64bit)  
+libgdk-x11-2.0.so.0()(64bit)  
+libgdk_pixbuf-2.0.so.0()(64bit)  
+libgio-2.0.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgnome >= 2.8.0
+libgnome-2.so.0()(64bit)  
+libgnomecanvas-2.so.0()(64bit)  
+libgnomeui >= 2.8.0
+libgnomeui-2.so.0()(64bit)  
+libgnomevfs-2.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libgtk-x11-2.0.so.0()(64bit)  
+libm.so.6()(64bit)  
+libpango-1.0.so.0()(64bit)  
+libpangocairo-1.0.so.0()(64bit)  
+libpangoft2-1.0.so.0()(64bit)  
+libpopt.so.0()(64bit)  
+libpopt.so.0(LIBPOPT_0)(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpython2.6.so.1.0()(64bit)  
+librt.so.1()(64bit)  
+libutil.so.1()(64bit)  
+python(abi) = 2.6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,112 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4-3.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.4-3.1
+- rebuild for alios6
+
+* 四 8月 11 2011 David Howells  <dhowells@redhat.com> - 1.4-3
+- Make the keyutils rpm depend on the same keyutils-libs rpm version [BZ 730002].
+
+* 二 8月 09 2011 David Howells  <dhowells@redhat.com> - 1.4-2
+- Pass -Wl,-z,relro to the linker as a security enhancement [BZ 727280].
+
+* 五 3月 19 2010 David Howells  <dhowells@redhat.com> - 1.4-1
+- Fix the library naming wrt the version.
+- Move the package to version to 1.4.
+
+* 五 3月 19 2010 David Howells  <dhowells@redhat.com> - 1.3-3
+- Fix spelling mistakes in manpages.
+- Add an index manpage for all the keyctl functions.
+
+* 四 3月 11 2010 David Howells  <dhowells@redhat.com> - 1.3-2
+- Fix rpmlint warnings.
+
+* 五 2月 26 2010 David Howells <dhowells@redhat.com> - 1.3-1
+- Fix compiler warnings in request-key.
+- Expose the kernel function to get a key's security context.
+- Expose the kernel function to set a processes keyring onto its parent.
+- Move libkeyutils library version to 1.3.
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.2-6.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 5月 22 2008 Todd Zullinger <tmz@pobox.com> - 1.2-4
+- fix license tag
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.2-3
+- Autorebuild for GCC 4.3
+
+* 二 8月 22 2006 David Howells <dhowells@redhat.com> - 1.2-1
+- Remove syscall manual pages (section 2) to man-pages package [BZ 203582]
+- Don't write to serial port in debugging script
+
+* 一 6月 05 2006 David Howells <dhowells@redhat.com> - 1.1-4
+- Call ldconfig during (un)installation.
+
+* 五 5月 05 2006 David Howells <dhowells@redhat.com> - 1.1-3
+- Don't include the release number in the shared library filename
+- Don't build static library
+
+* 五 5月 05 2006 David Howells <dhowells@redhat.com> - 1.1-2
+- More bug fixes from Fedora reviewer.
+
+* 四 5月 04 2006 David Howells <dhowells@redhat.com> - 1.1-1
+- Fix rpmlint errors
+
+* 一 12月 05 2005 David Howells <dhowells@redhat.com> - 1.0-2
+- Add build dependency on glibc-kernheaders with key management syscall numbers
+
+* 二 11月 29 2005 David Howells <dhowells@redhat.com> - 1.0-1
+- Add data pipe-in facility for keyctl request2
+
+* 一 11月 28 2005 David Howells <dhowells@redhat.com> - 1.0-1
+- Rename library and header file "keyutil" -> "keyutils" for consistency
+- Fix shared library version naming to same way as glibc.
+- Add versioning for shared library symbols
+- Create new keyutils-libs package and install library and main symlink there
+- Install base library symlink in /usr/lib and place in devel package
+- Added a keyutils archive library
+- Shorten displayed key permissions list to just those we actually have
+
+* 四 11月 24 2005 David Howells <dhowells@redhat.com> - 0.3-4
+- Add data pipe-in facilities for keyctl add, update and instantiate
+
+* 五 11月 18 2005 David Howells <dhowells@redhat.com> - 0.3-3
+- Added stdint.h inclusion in keyutils.h
+- Made request-key.c use request_key() rather than keyctl_search()
+- Added piping facility to request-key
+
+* 四 11月 17 2005 David Howells <dhowells@redhat.com> - 0.3-2
+- Added timeout keyctl option
+- request_key auth keys must now be assumed
+- Fix keyctl argument ordering for debug negate line in request-key.conf
+
+* 四 7月 28 2005 David Howells <dhowells@redhat.com> - 0.3-1
+- Must invoke initialisation from perror() override in libkeyutils
+- Minor UI changes
+
+* 三 7月 20 2005 David Howells <dhowells@redhat.com> - 0.2-2
+- Bump version to permit building in main repositories.
+
+* 二 7月 12 2005 David Howells <dhowells@redhat.com> - 0.2-1
+- Don't attempt to define the error codes in the header file.
+- Pass the release ID through to the makefile to affect the shared library name.
+
+* 二 7月 12 2005 David Howells <dhowells@redhat.com> - 0.1-3
+- Build in the perror() override to get the key error strings displayed.
+
+* 二 7月 12 2005 David Howells <dhowells@redhat.com> - 0.1-2
+- Need a defattr directive after each files directive.
+
+* 二 7月 12 2005 David Howells <dhowells@redhat.com> - 0.1-1
+- Package creation.
+

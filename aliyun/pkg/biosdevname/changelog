@@ -1,0 +1,141 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3.11-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3.11-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.3.11-1.1
+- rebuild for alios6
+
+* 五 9月 23 2011 Harald Hoyer <harald@redhat.com> 0.3.11-1
+- version 0.3.11
+Resolves: rhbz#736442
+Resolves: rhbz#696252 rhbz#696203 rhbz#700248
+
+* 二 9月 20 2011 Harald Hoyer <harald@redhat.com> 0.3.10-1
+- version 0.3.10
+Resolves: rhbz#736442
+Resolves: rhbz#696252 rhbz#696203 rhbz#700248
+
+* 一 7月 25 2011 Harald Hoyer <harald@redhat.com> 0.3.8-1
+- version 0.3.8
+Resolves: rhbz#696252 rhbz#696203 rhbz#700248
+
+* 二 4月 19 2011 Harald Hoyer <harald@redhat.com> 0.3.6-11
+- change names for PCI add-in interfaces from pciXpY to pXpY
+Resolves: rhbz#692820
+
+* 二 4月 12 2011 Harald Hoyer <harald@redhat.com> 0.3.6-10
+- name NPAR capable devices correctly
+Resolves: rhbz#692873
+
+* 四 3月 10 2011 Harald Hoyer <harald@redhat.com> 0.3.6-9
+- restrict biosdevname to SMBIOS >= 2.6
+Resolves: rhbz#653901
+
+* 二 3月 08 2011 Harald Hoyer <harald@redhat.com> 0.3.6-8
+- only honor smbios settings
+Resolves: rhbz#653901
+
+* 四 3月 03 2011 Harald Hoyer <harald@redhat.com> 0.3.6-7
+- fix "false positives with PCI domains"
+Resolves: rhbz#676932
+
+* 二 2月 15 2011 Harald Hoyer <harald@redhat.com> 0.3.6-6
+- whitelist all Dell systems
+Resolves: rhbz#653901
+
+* 二 2月 08 2011 Harald Hoyer <harald@redhat.com> 0.3.6-5
+- don't use '#' in names, use 'p' instead, by popular demand
+- fix segfault when BIOS advertises zero sized PIRQ Routing Table
+- don't build and include dump_pirq
+- add 'bonding' and 'openvswitch' to the virtual devices list
+- fix test for PIRQ table version
+Resolves: rhbz#653901
+
+* 五 1月 28 2011 Harald Hoyer <harald@redhat.com> 0.3.6-4
+- use the new IMPORT{cmdline} feature to get the biosdevname
+  kernel command line parameter
+Resolves: rhbz#653901
+
+* 三 1月 26 2011 Harald Hoyer <harald@redhat.com> 0.3.6-3
+- turn off biosdevname by default
+  can be turned on by: udevadm control --property=UDEV_BIOSDEVNAME=1
+  and retriggering the network devices
+Resolves: rhbz#653901
+
+* 三 1月 26 2011 Harald Hoyer <harald@redhat.com> 0.3.6-2
+- import into Red Hat Enterprise Linux
+Resolves: rhbz#653901
+
+* 二 1月 25 2011 Matt Domsch <Matt_Domsch@dell.com> - 0.3.6-1
+- drop biosdevnameS, it's unused and fails to build on F15
+
+* 二 1月 25 2011 Matt Domsch <Matt_Domsch@dell.com> - 0.3.5-1
+- install dump_pirq into /usr/sbin
+- fix udev rule, skip running if NAME is already set
+- move udev rule to /lib/udev/rules.d by default
+
+* 五 1月 14 2011 Harald Hoyer <harald@redhat.com> 0.3.4-2
+- import into Red Hat Enterprise Linux
+Resolves: rhbz#653901
+
+* 四 12月 16 2010 Matt Domsch <mdomsch@fedoraproject.org> - 0.3.4-1
+- drop unnecessary explicit version requirement on udev
+- bugfix: start indices at 1 not 0, to match Dell and HP server port designations
+- bugfix: don't assign names to unknown devices
+- bugfix: don't assign duplicate names
+
+* 四 12月 09 2010 Matt Domsch <Matt_Domsch@dell.com> - 0.3.3-1
+- add back in use of PCI IRQ Routing Table, if info is not provided by
+  sysfs or SMBIOS
+
+* 四 12月 02 2010 Matt Domsch <Matt_Domsch@dell.com> - 0.3.2-1
+- fix for multi-port cards with bridges
+- removal of code for seriously obsolete systems
+
+* 日 11月 28 2010 Matt Domsch <Matt_Domsch@dell.com> 0.3.1-1
+- remove all policies except 'physical' and 'all_ethN'
+- handle SR-IOV devices properly
+
+* 三 11月 10 2010 Matt Domsch <Matt_Domsch@dell.com> 0.3.0-1
+- add --policy=loms, make it default
+- read index and labels from sysfs if available
+
+* 一 7月 27 2009 Jordan Hargrave <Jordan_Hargrave@dell.com> 0.2.5-1
+- fix mmap error checking
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.4-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.2.4-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 5月 06 2008 Matt Domsch <Matt_Domsch@dell.com> 0.2.4-5
+- use policy=all_names to find breakage
+
+* 日 2月 10 2008 Matt Domsch <Matt_Domsch@dell.com> 0.2.4-4
+- rebuild for gcc43
+
+* 五 9月 21 2007 Matt Domsch <Matt_Domsch@dell.com> 0.2.4-3
+- fix manpage entry in files
+
+* 五 9月 21 2007 Matt Domsch <Matt_Domsch@dell.com> 0.2.4-2
+- rebuild with Requires: udev > 115-3.20070920git
+
+* 五 9月 21 2007 Matt Domsch <Matt_Domsch@dell.com> 0.2.4-1
+- coordinate udev rules usage with udev maintainer
+- fix crashes in pcmcia search, in_ethernet(), and incorrect command
+  line parsing.
+
+* 一 8月 27 2007 Matt Domsch <Matt_Domsch@dell.com> 0.2.3-1
+- eliminate libbiosdevname.*, pre and post scripts
+
+* 五 8月 24 2007 Matt Domsch <Matt_Domsch@dell.com> 0.2.2-1
+- ExclusiveArch those arches with SMBIOS and PCI IRQ Routing tables
+- eliminate libsysfs dependency, move app to / for use before /usr is mounted.
+- build static
+
+* 一 8月 20 2007 Matt Domsch <Matt_Domsch@dell.com> 0.2.1-1
+- initial release
+

@@ -1,0 +1,90 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.2-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.2-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.6.2-5.1
+- rebuild for alios6
+
+* 五 1月 08 2010 Owen Taylor <otaylor@redhat.com> - 0.6.2-5
+- Fix URL source URL not to be download/gnome.org
+  Related: rhbz 543948
+
+* 二 12月 08 2009 Matthias Clasen <mclasen@redhat.com> - 0.6.2-4
+- Add source url
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 04 2009 Matthias Clasen <mclasen@redhat.com> - 0.6.2-1
+- Update to 0.6.2
+
+* 二 4月 01 2008 Matthias Clasen <mclasen@redhat.com> - 0.6.1-5
+- Clean up dependencies
+
+* 五 2月 08 2008 Matthias Clasen <mclasen@redhat.com> - 0.6.1-4
+- Rebuild for gcc 4.3
+
+* 三 10月 10 2007 Matthias Clasen <mclasen@redhat.com> - 0.6.1-3
+- Rebuild
+- Update license tag
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.6.1-2.1
+- rebuild
+
+* 二 5月 23 2006 Matthias Clasen <mclasen@redhat.com> - 0.6.1-2
+- Make config script a pkg-config wrapper to fix multilib conflict
+
+* 一 3月 13 2006 Matthias Clasen <mclasen@redhat.com> - 0.6.1-1
+- Update to 0.6.1
+- Drop upstreamed patches
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.6.0-6.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.6.0-6.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 六 10月 15 2005 Florian La Roche <laroche@redhat.com>
+- link shared lib against -lglib-2.0 and -lxml2
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com> - 0.6.0-5
+- Rebuild with gcc4
+
+* 三 9月 22 2004 Matthias Clasen <mclasen@redhat.com> - 0.6.0-4
+- Move croco-config to the devel package
+
+* 一 9月 20 2004 Matthias Clasen <mclasen@redhat.com> - 0.6-3
+- Don't memset() stack variables
+
+* 二 8月 31 2004 Matthias Clasen <mclasen@redhat.com> - 0.6-2
+- Add missing ldconfig calls (#131279)
+
+* 五 7月 30 2004 Matthias Clasen <mclasen@redhat.com> - 0.6-1
+- Update to 0.6
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 4月 10 2004 Warren Togami <wtogami@redhat.com>
+- BR and -devel req libgnomeui-devel
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 1月 27 2004 Jonathan Blandford <jrb@redhat.com> 0.4.0-1
+- new version
+
+* 三 8月 13 2003 Jonathan Blandford <jrb@redhat.com> 0.3.0-1
+- initial import into the tree.  Based on the spec file in the package
+

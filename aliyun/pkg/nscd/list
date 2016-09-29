@@ -1,0 +1,16 @@
+/etc/nscd.conf
+/etc/rc.d/init.d/nscd
+/etc/sysconfig/nscd
+/usr/sbin/nscd
+/var/db/nscd
+/var/db/nscd/group
+/var/db/nscd/hosts
+/var/db/nscd/passwd
+/var/db/nscd/services
+/var/run/nscd
+/var/run/nscd/group
+/var/run/nscd/hosts
+/var/run/nscd/nscd.pid
+/var/run/nscd/passwd
+/var/run/nscd/services
+/var/run/nscd/socket

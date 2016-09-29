@@ -1,0 +1,14 @@
+Name        : yajl                         Relocations: (not relocatable)
+Version     : 1.0.7                             Vendor: Alibaba
+Release     : 3.4.alios6                    Build Date: 2014年07月28日 星期一 01时17分37秒
+Install Date: 2015年03月25日 星期三 11时00分39秒      Build Host: x86-004.build.alibaba
+Group       : Development/Libraries         Source RPM: yajl-1.0.7-3.4.alios6.src.rpm
+Size        : 91399                            License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 19时07分42秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://lloyd.github.com/yajl/
+Summary     : Yet Another JSON Library (YAJL)
+Description :
+Yet Another JSON Library. YAJL is a small event-driven
+(SAX-style) JSON parser written in ANSI C, and a small
+validating JSON generator.

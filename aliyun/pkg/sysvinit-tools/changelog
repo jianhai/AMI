@@ -1,0 +1,465 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.87-4.dsf.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.87-4.dsf.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.87-4.dsf.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.87-4.dsf.1
+- rebuild for alios6
+
+* 二 1月 18 2011 Petr Lautrbach <plautrba@redhat.com> 2.87-4.dsf
+- Fix counting MAXLINES in wall (#619658)
+- Raise limit for broadcast message (#668476)
+
+* 二 4月 27 2010 Petr Lautrbach <plautrba@redhat.com> 2.87-3.dsf
+- Add -w option to last command for wide output (#585907)
+- Changed IPv4 vs IPv6 heuristic in last command (#585880)
+
+* 一 3月 08 2010 Petr Lautrbach <plautrba@redhat.com> 2.87-2.dsf
+- fix using get_default_context_with_level (#568531)
+
+* 四 9月 17 2009 Ville Skyttä <ville.skytta@iki.fi> - 2.87-1.dsf
+- Avoid stripping binaries during build to fix -debuginfo.
+
+* 一 7月 27 2009 Bill Nottingham <notting@redhat.com> - 2.87-0.dsf
+- Update to new upstream release 2.87dsf
+-- remove many upstreamed/obsolete patches
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.86-28
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.86-27
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 12月 08 2008 Bill Nottingham <notting@redhat.com> - 2.86-26
+- document readlink() behavior in pidof (#201317)
+- fix potential issue in utmpdmp (#473485)
+
+* 三 10月 01 2008 Bill Nottingham <notting@redhat.com> - 2.86-25
+- rediff patches (#464940)
+- remove change_console, it's no longer needed with plymouth
+
+* 二 3月 11 2008 Bill Nottingham <notting@redhat.com> - 2.86-24
+- replace change_console with a script that does the proper upstart
+  machinations
+
+* 五 3月 07 2008 Bill Nottingham <notting@redhat.com> - 2.86-23
+- move mountpoint to -tools subpackage
+- don't build sysvinit package itself
+
+* 五 2月 29 2008 Bill Nottingham <notting@redhat.com> - 2.86-22
+- don't kill pid 1 with killall5
+
+* 五 2月 15 2008 Bill Nottingham <notting@redhat.com> - 2.86-21
+- split off a -tools subpackage to avoid upstart conflicts (#431110)
+
+* 五 2月 15 2008 Bill Nottingham <notting@redhat.com> - 2.86-20
+- don't abort if policy is already loaded (#431113)
+
+* 三 10月 10 2007 Bill Nottingham <notting@redhat.com> - 2.86-18
+- rebuild for buildid
+
+* 五 8月 03 2007 Bill Nottingham <notting@redhat.com>
+- tweak license tag
+
+* 五 5月 04 2007 Bill Nottingham <notting@redhat.com> - 2.86-17
+- rename to sysvinit to match upstream, do the usual
+  provides/obsoletes (#226475)
+
+* 一 4月 16 2007 Bill Nottingham <notting@redhat.com> - 2.86-16
+- pidof: ignore '-c' when called as non-root (#230829)
+
+* 二 2月 13 2007 Bill Nottingham <notting@redhat.com> - 2.86-15
+- spec cleanups; remove initunlvl part of %post, as that hasn't
+  been supported for nearly 4 years
+
+* 五 10月 13 2006 Bill Nottingham <notting@redhat.com> - 2.86-14
+- revert fix for #184340 (#210549, #209169)
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 2.86-13
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 四 9月 21 2006 Bill Nottingham <notting@redhat.com> - 2.86-12
+- set controlling tty for /etc/rc so that ctrl-c can be passed to hung
+  services (#184340)
+
+* 四 8月 10 2006 Bill Nottingham <notting@redhat.com> - 2.86-11
+- fix warning on SELinux policy load failure (#185603)
+- don't package /dev/initctl (#174652, #199939)
+- allow some time for failed console opens to resolve themselves (#181546)
+- add documentation of -f to last(1) (#192804)
+
+* 三 8月 09 2006 Bill Nottingham <notting@redhat.com> - 2.86-9
+- preserve 'WAITING' across re-exec (#143289, others)
+- actually apply quiet patch
+- don't write garbage to utmp on x86-64 (#176494)
+
+* 二 8月 08 2006 Bill Nottingham <notting@redhat.com> - 2.86-7
+- be slightly less verbose when booted with 'quiet'
+
+* 三 7月 19 2006 Bill Nottingham <notting@redhat.com> - 2.86-6
+- fix IPv6 patch (<mzazrive@redhat.com>)
+
+* 二 7月 18 2006 Bill Nottingham <notting@redhat.com> - 2.86-5
+- IPv6 support for last (<mzazrive@redhat.com>)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.86-4.1
+- rebuild
+
+* 三 5月 10 2006 Bill Nottingham <notting@redhat.com> - 2.86-3
+- fix potential under-copy of proc title (#188160, <kir@sacred.ru>)
+
+* 五 3月 17 2006 Bill Nottingham <notting@redhat.com> - 2.86-3
+- document that the kernel may sync even if reboot is called with -n (#180967)
+
+* 一 2月 13 2006 Bill Nottingham <notting@redhat.com> - 2.86-2.2.2
+- and again...
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.86-2.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.86-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 12月 21 2005 Bill Nottingham <notting@redhat.com> - 2.86-2
+- fix single user mode (#176348)
+
+* 一 12月 19 2005 Bill Nottingham <notting@redhat.com> - 2.86-1
+- update to upstream 2.86
+- adjust patches
+- install initreq.h (#119039)
+- allow halt/reboot to handle being called by login correctly (#104062, <worley@theworld.com>)
+- document pam_console usage for halt (#114970)
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 一 12月 05 2005 Dan Walsh <dwalsh@redhat.com> - 2.85-43
+- Use log(L_VB for SELinux error
+
+* 五 11月 18 2005 Bill Nottingham <notting@redhat.com>
+- clean up examples in inittab(5) (#173572)
+
+* 五 10月 14 2005 Dan Walsh <dwalsh@redhat.com> - 2.85-42
+- Fix patch
+
+* 五 10月 14 2005 Dan Walsh <dwalsh@redhat.com> - 2.85-41
+- replace load_policy with selinux_init_load_policy
+- add getseuserbyname to sulogin
+
+* 四 6月 30 2005 Bill Nottingham <notting@redhat.com> - 2.85-40
+- pidof: fix the fix for #85796, which broke the fix for #138788
+
+* 三 4月 27 2005 Bill Nottingham <notting@redhat.com> - 2.85-39
+- invoke single-user shell as a login shell (#105653)
+
+* 一 4月 25 2005 Bill Nottingham <notting@redhat.com> - 2.85-38
+- pidof: use readlink instead of stat to avoid NFS hangs (#138788, <constgq@yahoo.com))
+- pidof: fix handling of scripts (#85796)
+- pidof: add -c option for only matching processes with the same root (<twoerner@redhat.com>)
+
+* 三 2月 23 2005 Bill Nottingham <notting@redhat.com> - 2.85-37
+- add patch for SELinux user configs (<dwalsh@redhat.com>)
+- disable readlink patch while it's being fixed
+
+* 一 11月 15 2004 Bill Nottingham <notting@redhat.com> - 2.85-35
+- use readlink instead of stat to avoid NFS hangs (#138788, <constgq@yahoo.com>)
+
+* 四 10月 07 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- add patch from Steve Grubb to re-build as non-root, #131841
+
+* 五 9月 17 2004 Bill Nottingham <notting@redhat.com> 2.85-33
+- updated SELinux patch from Stephen Smalley
+
+* 三 8月 11 2004 Dan Walsh <dwalsh@redhat.com> 2.85-32
+- Read booleans file to setup booleans on reboot
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 08 2004 Dan Walsh <dwalsh@redhat.com> 2.85-30
+- Remove MLS Support from selinux patch, new design allows this for free
+
+* 四 6月 03 2004 Dan Walsh <dwalsh@redhat.com> 2.85-29
+- Add MLS Support to selinux patch
+
+* 四 6月 03 2004 Bill Nottingham <notting@redhat.com> 2.85-28
+- fix overrun of argv[0] (#125172, #124813, <alexl@redhat.com>)
+
+* 三 6月 02 2004 Bill Nottingham <notting@redhat.com> 2.85-27
+- cleanup logic some
+
+* 四 5月 27 2004 Dan Walsh <dwalsh@redhat.com> 2.85-26
+- Use selinux_getenforcemode
+
+* 二 5月 25 2004 Dan Walsh <dwalsh@redhat.com> 2.85-25
+- Change to use /etc/sysconfig/selinux to find policy file.
+
+* 四 4月 29 2004 Bill Nottingham <notting@redhat.com> 2.85-25
+- fix build warning on make install (#121977)
+- umount the SELinux filesystem on disabling it
+
+* 五 4月 23 2004 Dan Walsh <dwalsh@redhat.com> 2.85-24
+- Add security-disable, for disabling SELinux entirely
+
+* 一 4月 05 2004 Bill Nottingham <notting@redhat.com> 2.85-23
+- fix selinux=0 booting (#118826, #119037)
+
+* 二 3月 23 2004 Bill Nottingham <notting@redhat.com> 2.85-22
+- move /selinux to filesystem
+- print out warning if we're terminating because of enforcing + no policy
+- handle non-selinux kernels better (#118826)
+
+* 四 3月 18 2004 Bill Nottingham <notting@redhat.com> 2.85-21
+- fix parsing of /proc/cmdline
+
+* 二 3月 16 2004 Bill Nottingham <notting@redhat.com> 2.85-20
+- handle /etc/sysconfig/selinux
+
+* 二 3月 09 2004 Dan Walsh <dwalsh@redhat.com> 2.85-19
+- Add SELinux support to sulogin
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 10 2004 Dan Walsh <dwalsh@redhat.com> 2.85-17
+- Check for current policy and previous depending on how policy was written
+
+* 四 2月 05 2004 Jonathan Blandford <jrb@redhat.com> 2.85-15
+- rebuild w/o SELINUX for RHEL 3 U2
+
+* 一 12月 22 2003 Dan Walsh <dwalsh@redhat.com> 2.85-15
+- Change pidof to not call getsid since it does not use it
+- Eliminates SELinux access control.
+
+* 三 12月 17 2003 Dan Walsh <dwalsh@redhat.com> 2.85-14
+- set selinux-mnt so libraries will work.
+
+* 三 12月 17 2003 Dan Walsh <dwalsh@redhat.com> 2.85-13
+- Rollback
+
+* 三 12月 17 2003 Dan Walsh <dwalsh@redhat.com> 2.85-12
+- Fix protocol change via libselinux that broke sysinit.
+
+* 一 12月 01 2003 Dan Walsh <dwalsh@redhat.com> 2.85-11.sel
+- Don't umount /selinux, this is required for selinux to work correctly.
+
+* 五 10月 24 2003 Dan Walsh <dwalsh@redhat.com> 2.85-10.sel
+- Create /selinux mount point
+- Don't exit on non selinux kernel boot.
+
+* 五 10月 24 2003 Dan Walsh <dwalsh@redhat.com> 2.85-9.sel
+- close file descriptor
+
+* 二 10月 21 2003 Dan Walsh <dwalsh@redhat.com> 2.85-8.sel
+- Remove constants that were added to libselinux
+
+* 二 10月 21 2003 Dan Walsh <dwalsh@redhat.com> 2.85-7.sel
+- Fix error handling on enforcing kernels
+
+* 二 10月 21 2003 Dan Walsh <dwalsh@redhat.com> 2.85-7
+- Turn off selinux
+
+* 一 10月 20 2003 Dan Walsh <dwalsh@redhat.com> 2.85-6.sel
+- add selinux processing
+
+* 一 9月 22 2003 Bill Nottingham <notting@redhat.com> 2.85-5
+- add change_console, for changing console used by init
+
+* 三 6月 25 2003 Bill Nottingham <notting@redhat.com> 2.85-4
+- block signals when calling syslog() (#97534, <joden@lee.k12.nc.us>)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 5月 23 2003 Bill Nottingham <notting@redhat.com> 2.85-2
+- clean up killall5 some
+
+* 四 5月 22 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 2.85, remove already applied patches
+
+* 一 2月 10 2003 Bill Nottingham <notting@redhat.com> 2.84-13
+- fix s390x build
+- fix silly warning (#83943)
+
+* 一 2月 10 2003 Arjan van de Ven <arjanv@redhat.com>
+- fix wait() handling wrt setting SIGCHLD to SIG_IGN in shutdown
+- fix segfault in spawn() function in shutdown
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 05 2002 Elliot Lee <sopwith@redhat.com> 2.84-7
+- Pass __cc macro to build, to facilitate cross-compiling
+- _smp_mflags
+
+* 一 12月 02 2002 Bill Nottingham <notting@redhat.com> 2.84-6
+- rebuild on all arches
+- change sulogin message to be slightly more correct (#65828)
+
+* 四 7月 18 2002 Bill Nottingham <notting@redhat.com>
+- don't strip binaries
+- have wall not write to non-ttys (#65412)
+- update usage for halt/reboot (#57753)
+- allow '-t' argument to last for checking state at certain times (#56863)
+- make 'pidof /foo/bar' not match /baz/bar (#53918)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 3月 12 2002 Bill Nottingham <notting@redhat.com> 2.84-2
+- add patch to log messages on shutdown/reboot
+
+* 五 2月 22 2002 Bill Nottingham <notting@redhat.com> 2.84-1
+- update to 2.84
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 11月 09 2001 Bernhard Rosenkraenzer <bero@redhat.com> 2.79-2
+- Fix pidof -o (#55954)
+- Handle RPM_OPT_FLAGS
+- s/Copyright/License/
+
+* 一 9月 17 2001 Bill Nottingham <notting@redhat.com>
+- update to 2.79
+
+* 二 8月 28 2001 Bill Nottingham <notting@redhat.com>
+- unlink /.autofsck on shutdown -f
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 四 6月 21 2001 Bill Nottingham <notting@redhat.com>
+- update 'no logout' patch
+- fix setting of CREAD to work with 2.4.3+ kernels (#45284)
+
+* 二 6月 12 2001 Bill Nottingham <notting@redhat.com>
+- show users with no login pid but no logout record as gone (#42550,
+  <cwolf@starclass.com>)
+- fix sulogin to *always* work without a tty (#40934)
+
+* 二 4月 03 2001 Bill Nottingham <notting@redhat.com>
+- set umask 022 on startup
+- manpage tweaks (#21628, #27173)
+
+* 一 4月 02 2001 Bill Nottingham <notting@redhat.com>
+- fix dangling symlink in %doc (#34383)
+
+* 四 3月 15 2001 Bill Nottingham <notting@redhat.com>
+- don't run telinit u if we don't appear to be on the root fs
+
+* 五 2月 16 2001 Bill Nottingham <notting@redhat.com>
+- run telinit u on upgrade
+
+* 三 1月 31 2001 Bill Nottingham <notting@redhat.com>
+- document '-n' option to wall, make it root-only (#18672)
+- don't open files in sulogin unless they're really ttys (#21862)
+
+* 二 8月 08 2000 Bill Nottingham <notting@redhat.com>
+- set SHLVL in sulogin so /etc/profile.d stuff isn't run by default
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 四 6月 08 2000 Bill Nottingham <notting@redhat.com>
+- fix the md5 code (#11534)
+- rebuild for FHS & the like
+
+* 三 4月 19 2000 Bill Nottingham <notting@redhat.com>
+- ignore sigint in sulogin (#9803)
+- touch file in root directory if powering off (#7318)
+
+* 二 3月 07 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild for sparc baud rates > 38400.
+
+* 四 2月 24 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.78-final
+
+* 一 2月 07 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed manpages
+
+* 一 1月 31 2000 Cristian Gafton <gafton@redhat.com>
+- build to fix dependency problem
+
+* 一 1月 10 2000 Bill Nottingham <notting@redhat.com>
+- update to 2.78
+
+* 一 9月 06 1999 Jakub Jelinek <jj@ultra.linux.cz>
+- on big endian machines use a kludge for broken pam md5 passwords
+
+* 五 8月 27 1999 Bill Nottingham <notting@redhat.com>
+- update to 2.77
+
+* 二 7月 06 1999 Bill Nottingham <notting@redhat.com>
+- move pam_console stuff to usermode package
+
+* 五 7月 02 1999 Cristian Gafton <gafton@redhat.com>
+- requires usermode to express the dependency on /usr/bin/consolehelper
+(#2813)
+
+* 三 6月 23 1999 Bill Nottingham <notting@redhat.com>
+- make man page references to single-user mode consistent with RH usage
+
+* 六 4月 17 1999 Jeff Johnson <jbj@redhat.com>
+- remove /etc/initlvl compatibility symlink from file list (#2236).
+
+* 五 3月 26 1999 Michael Johnson <johnsonm@redhat.com>
+- pam.d files marked noreplace
+- added poweroff as a console application
+
+* 一 3月 22 1999 Michael Johnson <johnsonm@redhat.com>
+- marked config files as such in consolehelper part of filelist
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 8)
+
+* 五 3月 19 1999 Michael Johnson <johnsonm@redhat.com>
+- consolehelper support
+
+* 三 1月 06 1999 Cristian Gafton <gafton@redhat.com>
+- glibc 2.1
+
+* 日 8月 23 1998 Jeff Johnson <jbj@redhat.com>
+- poweroff symlink not included (problem #762)
+
+* 四 7月 09 1998 Chris Evans <chris@ferret.lmh.ox.ac.uk>
+- Fix a securelevel releated security hole. Go on, try and break append
+  only files + securelevel now ;-)
+
+* 三 7月 08 1998 Jeff Johnson <jbj@redhat.com>
+- remove /etc/nologin at end of shutdown.
+- compile around missing SIGPWR on sparc
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 三 4月 08 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded to 2.74
+- fixed the package source url... (yeah, it was wrong !)
+
+* 三 10月 01 1997 Cristian Gafton <gafton@redhat.com>
+- fixed the MD5 check in sulogin (128 hash bits encoded with base64 gives
+  22 bytes, not 24...). Fix in -md5.patch
+
+* 四 9月 11 1997 Christian 'Dr. Disk' Hechelmann <drdisk@ds9.au.s.shuttle.de>
+- /etc/initrunlvl gets linked to /tmp/init-root/var/run/initrunlvl which is
+  just plain wrong..
+- /usr/bin/utmpdump was missing in the files section, although it was
+  explicitly patched into PROGS.
+- added attr's to the files section.
+- various small fixes.
+
+* 二 6月 17 1997 Erik Troan <ewt@redhat.com>
+- updated to 2.71
+- built against glibc 2.0.4
+
+* 五 2月 07 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Added sulogin.8 man page to file list.
+

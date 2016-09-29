@@ -1,0 +1,54 @@
+postinstall scriptlet (using /bin/sh):
+ROOTCATALOG=/etc/xml/catalog
+if [ -w $ROOTCATALOG ]
+then
+  for v in 5.0
+  do
+  /usr/bin/xmlcatalog --noout --add "delegatePublic" \
+    "-//OASIS//DTD DocBook XML ${v}//EN" \
+    "file:///usr/share/xml/docbook5/schema/dtd/${v}/catalog.xml" \
+    $ROOTCATALOG
+  /usr/bin/xmlcatalog --noout --add "delegateSystem" \
+    "http://docbook.org/xml/${v}/dtd/" \
+    "file:///usr/share/xml/docbook5/schema/dtd/${v}/catalog.xml" \
+    $ROOTCATALOG
+  /usr/bin/xmlcatalog --noout --add "delegateURI" \
+    "http://docbook.org/xml/${v}/dtd/" \
+    "file:///usr/share/xml/docbook5/schema/dtd/${v}/catalog.xml" \
+    $ROOTCATALOG
+  /usr/bin/xmlcatalog --noout --add "delegateURI" \
+    "http://docbook.org/xml/${v}/rng/"  \
+    "file:///usr/share/xml/docbook5/schema/rng/${v}/catalog.xml" \
+    $ROOTCATALOG
+  /usr/bin/xmlcatalog --noout --add "delegateURI" \
+    "http://docbook.org/xml/${v}/sch/"  \
+    "file:///usr/share/xml/docbook5/schema/sch/${v}/catalog.xml" \
+    $ROOTCATALOG
+  /usr/bin/xmlcatalog --noout --add "delegateURI" \
+    "http://docbook.org/xml/${v}/xsd/"  \
+    "file:///usr/share/xml/docbook5/schema/xsd/${v}/catalog.xml" \
+    $ROOTCATALOG
+   done
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+  ROOTCATALOG=/etc/xml/catalog
+  if [ -w $ROOTCATALOG ]
+  then
+    for v in 5.0
+    do
+       /usr/bin/xmlcatalog --noout --del \
+       "file:///usr/share/xml/docbook5/schema/dtd/${v}/catalog.xml" \
+       $ROOTCATALOG
+       /usr/bin/xmlcatalog --noout --del \
+       "file:///usr/share/xml/docbook5/schema/rng/${v}/catalog.xml" \
+       $ROOTCATALOG
+       /usr/bin/xmlcatalog --noout --del \
+       "file:///usr/share/xml/docbook5/schema/sch/${v}/catalog.xml" \
+       $ROOTCATALOG
+       /usr/bin/xmlcatalog --noout --del \
+       "file:///usr/share/xml/docbook5/schema/xsd/${v}/catalog.xml" \
+       $ROOTCATALOG
+     done
+  fi
+fi

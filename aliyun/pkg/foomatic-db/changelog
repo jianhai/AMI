@@ -1,0 +1,37 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.0-7.20091126.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 4.0-7.20091126.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 4.0-7.20091126.1
+- rebuild for alios6
+
+* 四 11月 26 2009 Tim Waugh <twaugh@redhat.com> 4.0-7.20091126
+- Updated to foomatic-db-4.0-20091126 (bug #538994).
+
+* 四 8月 20 2009 Tim Waugh <twaugh@redhat.com> 4.0-6.20090819
+- Removed references to foo2slx and foo2hiperc (bug #518267).
+
+* 三 8月 19 2009 Tim Waugh <twaugh@redhat.com> 4.0-5.20090819
+- Updated to foomatic-db-4.0-20090819.
+- Removed deprecated foomatic-db-hpijs tarball.
+- Use buildroot macro throughout.
+
+* 二 8月 18 2009 Tim Waugh <twaugh@redhat.com> 4.0-4.20090702
+- Use stcolor driver for Epson Stylus Color 200 (bug #513676).
+
+* 一 8月 17 2009 Tim Waugh <twaugh@redhat.com> 4.0-3.20090702
+- License for ppds sub-package should include GPLv2+.
+- Ship COPYING file in main package.
+- Added filesystem sub-package for directory ownership.
+
+* 一 8月 03 2009 Tim Waugh <twaugh@redhat.com> 4.0-2.20090702
+- Move foomatic-db-ppds symlink to ppds sub-package.
+- Use sed instead of perl in raster PPDs (bug #512739).
+- Removed code to convert old-style printer IDs (there are none).
+- Ship README file.
+
+* 一 8月 03 2009 Tim Waugh <twaugh@redhat.com> 4.0-1.20090702
+- Split database out from main foomatic package.
+

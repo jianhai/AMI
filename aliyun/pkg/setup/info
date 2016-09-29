@@ -1,0 +1,13 @@
+Name        : setup                        Relocations: (not relocatable)
+Version     : 2.8.14                            Vendor: Alibaba
+Release     : 13.4.alios6                   Build Date: 2014年07月28日 星期一 04时28分07秒
+Install Date: 2015年03月25日 星期三 10时59分12秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: setup-2.8.14-13.4.alios6.src.rpm
+Size        : 665338                           License: Public Domain
+Signature   : RSA/8, 2014年07月31日 星期四 18时45分05秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : https://fedorahosted.org/setup/
+Summary     : A set of system configuration and setup files
+Description :
+The setup package contains a set of important system configuration and
+setup files, such as passwd, group, and profile.

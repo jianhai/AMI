@@ -1,0 +1,13 @@
+Name        : kernel-firmware              Relocations: (not relocatable)
+Version     : 2.6.32                            Vendor: Alibaba
+Release     : 220.23.2.al.ali1.1.alios6     Build Date: 2015年01月04日 星期日 15时18分40秒
+Install Date: 2015年03月25日 星期三 11时01分40秒      Build Host: x86-004.build.alibaba
+Group       : Development/System            Source RPM: kernel-2.6.32-220.23.2.al.ali1.1.alios6.src.rpm
+Size        : 9200890                          License: GPL+ and GPLv2+ and MIT and Redistributable, no modification permitted
+Signature   : RSA/8, 2015年01月06日 星期二 13时33分01秒, Key ID 320d98a196b4528d
+Packager    : gaoyang.zyh
+URL         : http://www.kernel.org/
+Summary     : Firmware files used by the Linux kernel
+Description :
+Kernel-firmware includes firmware files required for some devices to
+operate.

@@ -1,0 +1,18 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0.0-2.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0.0-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.0.0-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 6.0.0-2.1
+- rebuild for alios6
+
+* 二 5月 04 2010 Ray Strode <rstrode@redhat.com> 6.0.0-2
+- Add Obsoletes for fedora-icon-theme to ease upgrade pain
+
+* 二 5月 04 2010 Ray Strode <rstrode@redhat.com> 6.0.0-1
+- Add system icon theme package
+

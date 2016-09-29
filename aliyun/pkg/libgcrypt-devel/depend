@@ -1,0 +1,17 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/install-info  
+/sbin/install-info  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libgcrypt = 1.4.5-9.3.alios6
+libgcrypt.so.11()(64bit)  
+libgpg-error-devel  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

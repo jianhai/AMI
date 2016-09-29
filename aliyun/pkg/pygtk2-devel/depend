@@ -1,0 +1,13 @@
+/usr/bin/pkg-config  
+pkgconfig  
+pkgconfig(pygobject-2.0)  
+pycairo-devel  
+pygobject2-devel  
+pygtk2 = 2.16.0-3.4.alios6
+pygtk2-codegen = 2.16.0-3.4.alios6
+pygtk2-doc = 2.16.0-3.4.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

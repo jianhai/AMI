@@ -1,0 +1,209 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.7.6-14.2.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.7.6-14.1.2
+- rebuild for alios6-update
+
+* 三 6月 11 2014 Daniel Veillard <veillard@redhat.com> - libxml2-2.7.6-14.el6_5.2
+- Fix a set of regressions introduced in CVE-2014-0191 (rhbz#1108161)
+
+* 二 5月 06 2014 Daniel Veillard <veillard@redhat.com> - libxml2-2.7.6-14.el6_5.1
+- Improve handling of xmlStopParser(CVE-2013-2877)
+- Do not fetch external parameter entities (CVE-2014-0191)
+
+* 三 6月 05 2013 Daniel Veillard <veillard@redhat.com> - libxml2-2.7.6-14.el6
+- Fix a regression in 2.9.0 breaking validation while streaming (rhbz#863166)
+
+* 二 2月 19 2013 Daniel Veillard <veillard@redhat.com> - 2.7.6-13.el6
+- detect and stop excessive entities expansion upon replacement (rhbz#912575)
+
+* 四 11月 29 2012 Daniel Veillard <veillard@redhat.com> - 2.7.6-12.el6
+- fix out of range heap access (CVE-2012-5134)
+
+* 三 9月 05 2012 Daniel Veillard <veillard@redhat.com> - 2.7.6-11.el6
+- Change the XPath code to percolate allocation error (CVE-2011-1944)
+
+* 三 8月 22 2012 Daniel Veillard <veillard@redhat.com> - 2.7.6-10.el6
+- Fix an off by one pointer access (CVE-2011-3102)
+
+* 二 8月 21 2012 Daniel Veillard <veillard@redhat.com> - 2.7.6-9.el6
+- Fix a failure to report xmlreader parsing failures
+- Fix parser local buffers size problems (rhbz#843742)
+- Fix entities local buffers size problems (rhbz#843742)
+- Fix an error in previous commit (rhbz#843742)
+- Do not fetch external parsed entities
+- Impose a reasonable limit on attribute size (rhbz#843742)
+- Impose a reasonable limit on comment size (rhbz#843742)
+- Impose a reasonable limit on PI size (rhbz#843742)
+- Cleanups and new limit APIs for dictionaries (rhbz#843742)
+- Introduce some default parser limits (rhbz#843742)
+- Implement some default limits in the XPath module
+- Fixup limits parser (rhbz#843742)
+- Enforce XML_PARSER_EOF state handling through the parser
+- Avoid quadratic behaviour in some push parsing cases (rhbz#843742)
+- More avoid quadratic behaviour (rhbz#843742)
+- Strengthen behaviour of the push parser in problematic situations (rhbz#843742)
+- More fixups on the push parser behaviour (rhbz#843742)
+- Fix a segfault on XSD validation on pattern error
+- Fix an unimplemented part in RNG value validation
+
+* 三 2月 15 2012 Daniel Veillard <veillard@redhat.com> - 2.7.6-8.el6
+- remove chunk in patch related to configure.in as it breaks rebuild
+- Resolves: rhbz#788846
+
+* 一 2月 13 2012 Daniel Veillard <veillard@redhat.com> - 2.7.6-7.el6
+- fix previous build to force compilation of randomization code
+- Resolves: rhbz#788846
+
+* 五 2月 10 2012 Daniel Veillard <veillard@redhat.com> - 2.7.6-6.el6
+- adds randomization to hash and dict structures CVE-2012-0841
+- Resolves: rhbz#788846
+
+* 五 1月 06 2012 Daniel Veillard <veillard@redhat.com> - 2.7.6-5.el6
+- Make sure the parser returns when getting a Stop order CVE-2011-3905
+- Fix an allocation error when copying entities CVE-2011-3919
+- Resolves: rhbz#771910
+
+* 二 10月 11 2011 Daniel Veillard <veillard@redhat.com> - 2.7.6-4
+- Fixes another XPath problem CVE-2011-2834
+- Resolves: rhbz#732335
+
+* 一 8月 22 2011 Daniel Veillard <veillard@redhat.com> - 2.7.6-3
+- Fixes various other issues in 2.7.6 XPath evaluation
+- Resolves: rhbz#732335
+
+* 二 6月 28 2011 Daniel Veillard <veillard@redhat.com> - 2.7.6-2
+- Fix a potential crasher in XPath or XSLT, CVE-2011-1944
+- Resolves: rhbz#710397
+
+* 二 10月 06 2009 Daniel Veillard <veillard@redhat.com> - 2.7.6-1
+- Upstream release of 2.7.6
+- restore thread support off by default in 2.7.5
+
+* 四 9月 24 2009 Daniel Veillard <veillard@redhat.com> - 2.7.5-1
+- Upstream release of 2.7.5
+- fix a couple of Relax-NG validation problems
+- couple more fixes
+
+* 二 9月 15 2009 Daniel Veillard <veillard@redhat.com> - 2.7.4-2
+- fix a problem with little data at startup affecting inkscape #523002
+
+* 四 9月 10 2009 Daniel Veillard <veillard@redhat.com> - 2.7.4-1
+- upstream release 2.7.4
+- symbol versioning of libxml2 shared libs
+- very large number of bug fixes
+
+* 一 8月 10 2009 Daniel Veillard <veillard@redhat.com> - 2.7.3-4
+- two patches for parsing problems CVE-2009-2414 and CVE-2009-2416
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.7.3-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.7.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 1月 18 2009 Daniel Veillard <veillard@redhat.com> - 2.7.3-1
+- new release 2.7.3
+- limit default max size of text nodes
+- special parser mode for PHP
+- bug fixes and more compiler checks
+
+* 三 12月 03 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.7.2-7
+- Pull back into Python 2.6
+
+* 三 12月 03 2008 Caolán McNamara <caolanm@redhat.com> - 2.7.2-6
+- AutoProvides requires BuildRequires pkgconfig
+
+* 三 12月 03 2008 Caolán McNamara <caolanm@redhat.com> - 2.7.2-5
+- rebuild to get provides(libxml-2.0) into HEAD rawhide
+
+* 一 12月 01 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.7.2-4
+- Rebuild for pkgconfig logic
+
+* 五 11月 28 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.7.2-3
+- Rebuild for Python 2.6
+
+* 三 11月 12 2008 Daniel Veillard <veillard@redhat.com> - 2.7.2-2.fc11
+- two patches for size overflows problems CVE-2008-4225 and CVE-2008-4226
+
+* 五 10月 03 2008 Daniel Veillard <veillard@redhat.com> 2.7.2-1.fc10
+- new release 2.7.2
+- Fixes the known problems in 2.7.1
+- increase the set of options when saving documents
+
+* 四 10月 02 2008 Daniel Veillard <veillard@redhat.com> 2.7.1-2.fc10
+- fix a nasty bug in 2.7.x, http://bugzilla.gnome.org/show_bug.cgi?id=554660
+
+* 一 9月 01 2008 Daniel Veillard <veillard@redhat.com> 2.7.1-1.fc10
+- fix python serialization which was broken in 2.7.0
+- Resolve: rhbz#460774
+
+* 六 8月 30 2008 Daniel Veillard <veillard@redhat.com> 2.7.0-1.fc10
+- upstream release of 2.7.0
+- switch to XML 1.0 5th edition
+- switch to RFC 3986 for URI parsing
+- better entity handling
+- option to remove hardcoded limitations in the parser
+- more testing
+- a new API to allocate entity nodes
+- and lot of fixes and clanups
+
+* 一 8月 25 2008 Daniel Veillard <veillard@redhat.com> 2.6.32-4.fc10
+- fix for entities recursion problem
+- Resolve: rhbz#459714
+
+* 五 5月 30 2008 Daniel Veillard <veillard@redhat.com> 2.6.32-3.fc10
+- cleanup based on Fedora packaging guidelines, should fix #226079
+- separate a -static package
+
+* 四 5月 15 2008 Daniel Veillard <veillard@redhat.com> 2.6.32-2.fc10
+- try to fix multiarch problems like #440206
+
+* 二 4月 08 2008 Daniel Veillard <veillard@redhat.com> 2.6.32-1.fc9
+- upstream release 2.6.32 see http://xmlsoft.org/news.html
+- many bug fixed upstream
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.6.31-2
+- Autorebuild for GCC 4.3
+
+* 五 1月 11 2008 Daniel Veillard <veillard@redhat.com> 2.6.31-1.fc9
+- upstream release 2.6.31 see http://xmlsoft.org/news.html
+- many bug fixed upstream
+
+* 四 8月 23 2007 Daniel Veillard <veillard@redhat.com> 2.6.30-1
+- upstream release 2.6.30 see http://xmlsoft.org/news.html
+- many bug fixed upstream
+
+* 二 6月 12 2007 Daniel Veillard <veillard@redhat.com> 2.6.29-1
+- upstream release 2.6.29 see http://xmlsoft.org/news.html
+- many bug fixed upstream
+
+* 三 5月 16 2007 Matthias Clasen <mclasen@redhat.com> 2.6.28-2
+- Bump revision to fix N-V-R problem
+
+* 二 4月 17 2007 Daniel Veillard <veillard@redhat.com> 2.6.28-1
+- upstream release 2.6.28 see http://xmlsoft.org/news.html
+- many bug fixed upstream
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 2.6.27-2
+- rebuild against python 2.5
+
+* 三 10月 25 2006 Daniel Veillard <veillard@redhat.com> 2.6.27-1
+- upstream release 2.6.27 see http://xmlsoft.org/news.html
+- very large amount of bug fixes reported upstream
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.6.26-2.1.1
+- rebuild
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.6.26-2.1
+- rebuild
+
+* 三 6月 07 2006 Daniel Veillard <veillard@redhat.com> 2.6.26-2
+- fix bug #192873
+
+* 二 6月 06 2006 Daniel Veillard <veillard@redhat.com> 2.6.26-1
+- upstream release 2.6.26 see http://xmlsoft.org/news.html
+
+* 二 6月 06 2006 Daniel Veillard <veillard@redhat.com>
+- upstream release 2.6.25 broken, do not ship !
+

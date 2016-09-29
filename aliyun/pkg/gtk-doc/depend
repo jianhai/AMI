@@ -1,0 +1,26 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/usr/bin/cmp  
+/usr/bin/perl  
+/usr/bin/pkg-config  
+/usr/bin/python  
+automake  
+docbook-style-xsl  
+docbook-utils  
+jade  
+libxslt  
+perl(Cwd)  
+perl(Getopt::Long)  
+perl(bytes)  
+perl(strict)  
+pkgconfig  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+scrollkeeper  
+scrollkeeper  
+scrollkeeper  
+sgml-common  
+rpmlib(PayloadIsXz) <= 5.2-1

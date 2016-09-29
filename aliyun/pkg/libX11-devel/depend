@@ -1,0 +1,17 @@
+/usr/bin/pkg-config  
+libX11 = 1.3-2.3.alios6
+libX11-xcb.so.1()(64bit)  
+libX11.so.6()(64bit)  
+libXau-devel  
+libXdmcp-devel  
+pkgconfig  
+pkgconfig(kbproto)  
+pkgconfig(x11)  
+pkgconfig(xcb)  
+pkgconfig(xcb) >= 1.1.92
+pkgconfig(xproto)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

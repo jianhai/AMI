@@ -1,0 +1,136 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.0.3-9.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.0.3-9.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.0.3-9
+- rebuild for alios6
+
+* 四 6月 17 2010 Neil Horman <nhorman@redhat.com> - 2.0.3-9
+- Fix dist tag (bz 604556)
+
+* 四 4月 29 2010 Neil Horman <nhorman@redhat.com> - 2.0.3-7.1
+- fixed nodes_allowed.patch (bz 587211)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.0.3-7.1
+- Rebuilt for RHEL 6
+
+* 一 8月 10 2009 Neil Horman <nhorman@redhat.com> - 2.0.3-7
+- Add destructor to libnuma.so to free allocated memory (bz 516227)
+
+* 一 8月 10 2009 Neil Horman <nhorman@redhat.com> - 2.0.3-6
+- Fix obo in nodes_allowed_list strncpy (bz 516223)
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.3-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 6月 26 2009 Neil Horman <nhorman@redhat.com>
+- Update to full 2.0.3 version (bz 506795)
+
+* 三 6月 17 2009 Neil Horman <nhorman@redhat.com>
+- Fix silly libnuma warnings again (bz 499633)
+
+* 五 5月 08 2009 Neil Horman <nhorman@redhat.com>
+- Update to 2.0.3-rc3 (bz 499633)
+
+* 三 3月 25 2009 Mark McLoughlin <markmc@redhat.com> - 2.0.2-4
+- Remove warning from libnuma (bz 484552)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 9月 29 2008 Neil Horman <nhorman@redhat.com> - 2.0.2-2
+- Fix build break due to register selection in asm
+
+* 一 9月 29 2008 Neil Horman <nhorman@redhat.com> - 2.0.2-1
+- Update rawhide to version 2.0.2 of numactl
+
+* 五 4月 25 2008 Neil Horman <nhorman@redhat.com> - 1.0.2-6
+- Fix buffer size passing and arg sanity check for physcpubind (bz 442521)
+
+* 五 3月 14 2008 Neil Horman <nhorman@redhat.com> - 1.0.2-5
+- Fixing spec file to actually apply alpha patch :)
+
+* 五 3月 14 2008 Neil Horman <nhorman@redhat.com> - 1.0.2-4
+- Add alpha syscalls (bz 396361)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0.2-3
+- Autorebuild for GCC 4.3
+
+* 四 12月 20 2007 Neil Horman <nhorman@redhat.com> - 1.0.2-1
+- Update numactl to fix get_mempolicy signature (bz 418551)
+
+* 五 12月 14 2007 Neil Horman <nhorman@redhat.com> - 1.0.2-1
+- Update numactl to latest version (bz 425281)
+
+* 二 8月 07 2007 Neil Horman <nhorman@redhat.com> - 0.9.8-4
+- Fixing some remaining merge review issues (bz 226207)
+
+* 五 8月 03 2007 Neil Horman <nhorman@redhat.com> - 0.9.8-3
+- fixing up merge review (bz 226207)
+
+* 五 1月 12 2007 Neil Horman <nhorman@redhat.com> - 0.9.8-2
+- Properly fixed bz 221982
+- Updated revision string to include .alios6
+
+* 四 1月 11 2007 Neil Horman <nhorman@redhat.com> - 0.9.8-1.38
+- Fixed -devel to depend on base package so libnuma.so resolves
+
+* 四 9月 21 2006 Neil Horman <nhorman@redhat.com> - 0.9.8-1.36
+- adding nodebind patch for bz 207404
+
+* 五 8月 25 2006 Neil Horman <nhorman@redhat.com> - 0.9.8-1.35
+- moving over libnuma.so to -devel package as well
+
+* 五 8月 25 2006 Neil Horman <nhorman@redhat.com> - 0.9.8-1.34
+- split out headers/devel man pages to a devel subpackage
+
+* 二 8月 15 2006 Neil Horman <nhorman@redhat.com> - 0.9.8-1.32
+- add patch for broken cpu/nodebind output (bz 201906)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.9.8-1.31
+- rebuild
+
+* 二 6月 13 2006 Neil Horman <nhorman@redhat.com>
+- Rebased numactl to version 0.9.8 for FC6/RHEL5
+
+* 三 4月 26 2006 Neil Horman <nhorman@redhat.com>
+- Added patches for 64 bit overflows and cpu mask problem
+
+* 五 3月 10 2006 Bill Nottingham <notting@redhat.com>
+- rebuild for ppc TLS issue (#184446)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.6.4-1.25.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 7月 07 2005 Dave Jones <davej@redhat.com>
+- numactl doesn't own the manpage dirs. (#161547)
+
+* 二 3月 01 2005 Dave Jones <davej@redhat.com>
+- Rebuild for gcc4
+
+* 二 2月 08 2005 Dave Jones <davej@redhat.com>
+- rebuild with -D_FORTIFY_SOURCE=2
+
+* 三 11月 10 2004 David Woodhouse <dwmw2@redhat.com>
+- Fix build on x86_64
+
+* 四 10月 21 2004 David Woodhouse <dwmw2@redhat.com>
+- Add PPC support
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 6月 05 2004 Warren Togami <wtogami@redhat.com> 
+- spec cleanup
+
+* 六 6月 05 2004 Arjan van de Ven <arjanv@redhat.com>
+- initial packaging
+

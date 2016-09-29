@@ -1,0 +1,137 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.37-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.37-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.37-3.1
+- rebuild for alios6
+
+* 三 6月 29 2011 Jan Safranek <jsafrane@redhat.com> 0.37-3.el6
+- Fixed 'cgred' group not being created as system-group during installation
+  of the package.
+- Resolves: #715413
+
+* 二 3月 01 2011 Jan Safranek <jsafrane@redhat.com> 0.37-2.el6
+- Fixed buffer overflow when parsing cgexec command line parameters.
+- Added checking of source of netlink messages to cgrulesengd daemon.
+- Resolves: CVE-2011-1006 CVE-2011-1022
+
+* 二 12月 14 2010 Jan Safranek <jsafrane@redhat.com> 0.37-1.el6
+- Updated to 0.37
+  - added new 'cgsnapshot' tool to generate cgconfig.conf (#649195)
+  - fixed 'cgget' reading long variable values like devices.list (#626127)
+  - fixed reading list of mounted controllers on library init (#635984)
+  - fixed the library not to change current working directory when creating
+    groups (#628895)
+  - new user 'cgred' was added for better security - /bin/cgexec tool is no
+    longer SUID to root but SGID to the new 'cgred' user, which has write
+    access to /var/run/cgred.socket
+  - may other fixes an enhancements
+- Removed rpath from compiled binaries
+- Fixed spelling and rpmlint errors in the .spec file (#634939)
+- Fixed exit code of cgclassify tool (#667957)
+
+* 三 7月 14 2010 Ivana Hutarova Varekova <varekova@redhat.com> 0.36-6
+- Resolves: #609816
+  serivces of libcgroup not LSB-compliant
+
+* 二 6月 29 2010 Jan Safranek <jsafrane@redhat.com> 0.36-5
+- Relax the dependency on redhat-lsb package (#607537)
+- Fix installation of -devel libraries (#607538)
+
+* 二 6月 15 2010 Jan Safranek <jsafrane@redhat.com> 0.36-4
+- Fix libcgroup.so link to the right soname (#599367)
+- Fix segmentation fault in cgget tool (#601071)
+- Fix lscgroup commandline parsing (#601095)
+
+* 二 6月 01 2010 Ivana Hutarova Varekova <varekova@redhat.com> 0.36-3
+- Related: #594249
+  add three man pages
+
+* 三 5月 26 2010 Ivana Hutarova Varekova <varekova@redhat.com> 0.36-2
+- Resolves: #594249
+  add three man pages
+
+* 二 5月 25 2010 Jan Safranek <jsafrane@redhat.com> 0.36-1
+- Updated to 0.36.1 (#594703)
+
+* 四 4月 22 2010 Ivana Hutarova Varekova <varekova@redhat.com> 0.35-3
+- Resolves: #584681
+  fix man-pages problem
+
+* 三 4月 14 2010 Jan Safranek <jsafrane@redhat.com> 0.35-2
+- Fix parsing of command line options on ppc (#581044)
+
+* 二 3月 09 2010 Jan Safranek <jsafrane@redhat.com> 0.35-1
+- Update to 0.35.1
+- Separate pam module to its own subpackage
+
+* 一 1月 18 2010 Jan Safranek <jsafrane@redhat.com> - 0.34-4
+- Added README.RedHat to describe libcgroup integration into initscripts
+
+* 一 12月 21 2009 Jan Safranek <jsafrane@redhat.com> - 0.34-3
+- Change the default configuration to mount everything to /cgroup
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.34-2.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.34-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 07 2009 Jan Safranek <jsafrane@redhat.com> 0.34-1
+- Update to 0.34
+
+* 一 3月 09 2009 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.33-3
+- Add a workaround for rt cgroup controller.
+
+* 一 3月 09 2009 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.33-2
+- Change the cgconfig script to start earlier
+- Move the binaries to /bin and /sbin
+
+* 一 3月 02 2009 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.33-1
+- Update to latest upstream
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> 0.32.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 1月 05 2009 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.32.2-3
+- Fix redhat-lsb dependency
+
+* 一 12月 29 2008 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.32.2-2
+- Fix build dependencies
+
+* 一 12月 29 2008 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.32.2-1
+- Update to latest upstream
+
+* 四 10月 23 2008 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.32.1-1
+* Tue Feb 24 2009 Balbir Singh <balbir@linux.vnet.ibm.com> 0.33-1
+- Update to 0.33, spec file changes to add Makefiles and pam_cgroup module
+
+* 五 10月 10 2008 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.32-1
+- Update to latest upstream
+
+* 四 9月 11 2008 Dhaval Giani <dhaval@linux-vnet.ibm.com> 0.31-1
+- Update to latest upstream
+
+* 六 8月 02 2008 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.1c-3
+- Change release to fix broken upgrade path
+
+* 三 6月 11 2008 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.1c-1
+- Update to latest upstream version
+
+* 二 6月 03 2008 Balbir Singh <balbir@linux.vnet.ibm.com> 0.1b-3
+- Add post and postun. Also fix Requires for devel to depend on base n-v-r
+
+* 六 5月 31 2008 Balbir Singh <balbir@linux.vnet.ibm.com> 0.1b-2
+- Fix makeinstall, Source0 and URL (review comments from Tom)
+
+* 一 5月 26 2008 Balbir Singh <balbir@linux.vnet.ibm.com> 0.1b-1
+- Add a generatable spec file
+
+* 二 5月 20 2008 Balbir Singh <balbir@linux.vnet.ibm.com> 0.1-1
+- Get the spec file to work
+
+* 二 5月 20 2008 Dhaval Giani <dhaval@linux.vnet.ibm.com> 0.01-1
+- The first version of libcg
+

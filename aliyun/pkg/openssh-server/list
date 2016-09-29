@@ -1,0 +1,16 @@
+/etc/pam.d/ssh-keycat
+/etc/pam.d/sshd
+/etc/rc.d/init.d/sshd
+/etc/ssh/sshd_config
+/etc/sysconfig/sshd
+/usr/libexec/openssh/sftp-server
+/usr/libexec/openssh/ssh-keycat
+/usr/sbin/.sshd.hmac
+/usr/sbin/sshd
+/usr/share/doc/openssh-server-5.3p1
+/usr/share/doc/openssh-server-5.3p1/HOWTO.ssh-keycat
+/usr/share/man/man5/moduli.5.gz
+/usr/share/man/man5/sshd_config.5.gz
+/usr/share/man/man8/sftp-server.8.gz
+/usr/share/man/man8/sshd.8.gz
+/var/empty/sshd

@@ -1,0 +1,17 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcurl >= 7.19.7-26.el6_1.2
+libcurl.so.4()(64bit)  
+libxmlrpc.so.3()(64bit)  
+libxmlrpc_client.so.3()(64bit)  
+libxmlrpc_util.so.3()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+xmlrpc-c = 1.16.24-1200.1840.4.alios6.4
+rpmlib(PayloadIsXz) <= 5.2-1

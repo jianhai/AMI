@@ -1,0 +1,9 @@
+postinstall scriptlet (using /bin/sh):
+touch --no-create %{_kde4_iconsdir}/hicolor &> /dev/null ||:
+postuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ] ; then
+  touch --no-create %{_kde4_iconsdir}/hicolor &> /dev/null ||:
+  gtk-update-icon-cache %{_kde4_iconsdir}/hicolor &> /dev/null ||:
+fi
+posttrans scriptlet (using /bin/sh):
+gtk-update-icon-cache %{_kde4_iconsdir}/hicolor &> /dev/null ||:

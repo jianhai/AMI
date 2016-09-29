@@ -1,0 +1,7 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add smartd
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ] ; then
+ /sbin/service smartd stop >/dev/null 2>&1
+ /sbin/chkconfig --del smartd
+fi

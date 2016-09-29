@@ -1,0 +1,84 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2010.63-3.3.5
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2010.63-3.2.5
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2010.63-3.1.5
+- rebuild for alios6
+
+* 三 8月 31 2011 Joe Orton <jorton@redhat.com> - 2010.63-3.5
+- BR java-openjdk
+
+* 三 8月 31 2011 Joe Orton <jorton@redhat.com> - 2010.63-3.4
+- fix inclusion of code-signing-only certs in .trust.crt
+
+* 三 8月 31 2011 Joe Orton <jorton@redhat.com> - 2010.63-3.3
+- exclude blacklisted root from java keystore too
+
+* 三 8月 31 2011 Joe Orton <jorton@redhat.com> - 2010.63-3.2
+- fix BuildRequires
+
+* 三 8月 31 2011 Joe Orton <jorton@redhat.com> - 2010.63-3.1
+- remove trust from DigiNotar root (#734677)
+
+* 三 4月 07 2010 Joe Orton <jorton@redhat.com> - 2010.63-3
+- package /etc/ssl/certs symlink for third-party apps (#572725)
+
+* 三 4月 07 2010 Joe Orton <jorton@redhat.com> - 2010.63-2
+- rebuild
+
+* 三 4月 07 2010 Joe Orton <jorton@redhat.com> - 2010.63-1
+- update to certdata.txt r1.63
+- use upstream RCS version in Version
+
+* 五 3月 19 2010 Joe Orton <jorton@redhat.com> - 2010-4
+- fix ca-bundle.crt (#575111)
+
+* 四 3月 18 2010 Joe Orton <jorton@redhat.com> - 2010-3
+- update to certdata.txt r1.58
+- add /etc/pki/tls/certs/ca-bundle.trust.crt using 'TRUSTED CERTICATE' format
+- exclude ECC certs from the Java cacerts database
+- catch keytool failures
+- fail parsing certdata.txt on finding untrusted but not blacklisted cert
+
+* 五 1月 15 2010 Joe Orton <jorton@redhat.com> - 2010-2
+- fix Java cacert database generation: use Subject rather than Issuer
+  for alias name; add diagnostics; fix some alias names.
+
+* 一 1月 11 2010 Joe Orton <jorton@redhat.com> - 2010-1
+- adopt Python certdata.txt parsing script from Debian
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2009-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Joe Orton <jorton@redhat.com> 2009-1
+- update to certdata.txt r1.53
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2008-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 10月 14 2008 Joe Orton <jorton@redhat.com> 2008-7
+- update to certdata.txt r1.49
+
+* 三 6月 25 2008 Thomas Fitzsimmons <fitzsim@redhat.com> - 2008-6
+- Change generate-cacerts.pl to produce pretty aliases.
+
+* 一 6月 02 2008 Joe Orton <jorton@redhat.com> 2008-5
+- include /etc/pki/tls/cert.pem symlink to ca-bundle.crt
+
+* 二 5月 27 2008 Joe Orton <jorton@redhat.com> 2008-4
+- use package name for temp dir, recreate it in prep
+
+* 二 5月 27 2008 Joe Orton <jorton@redhat.com> 2008-3
+- fix source script perms
+- mark packaged files as config(noreplace)
+
+* 二 5月 27 2008 Joe Orton <jorton@redhat.com> 2008-2
+- add (but don't use) mkcabundle.pl
+- tweak description
+- use /usr/bin/keytool directly; BR java-openjdk
+
+* 二 5月 27 2008 Joe Orton <jorton@redhat.com> 2008-1
+- Initial build (#448497)
+

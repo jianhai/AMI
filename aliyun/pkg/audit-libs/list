@@ -1,0 +1,6 @@
+/etc/libaudit.conf
+/lib64/libaudit.so.1
+/lib64/libaudit.so.1.0.0
+/lib64/libauparse.so.0
+/lib64/libauparse.so.0.0.0
+/usr/share/man/man5/libaudit.conf.5.gz

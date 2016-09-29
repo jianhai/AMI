@@ -1,0 +1,6 @@
+/usr/include/X11/Xft
+/usr/include/X11/Xft/Xft.h
+/usr/include/X11/Xft/XftCompat.h
+/usr/lib64/libXft.so
+/usr/lib64/pkgconfig/xft.pc
+/usr/share/man/man3/Xft.3.gz

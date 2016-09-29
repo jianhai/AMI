@@ -1,0 +1,28 @@
+/bin/bash  
+/bin/gawk  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/chkconfig  
+/sbin/chkconfig  
+/sbin/service  
+/sbin/service  
+/usr/bin/ionice  
+config(readahead) = 1:1.5.6-1.4.alios6
+libaudit.so.1()(64bit)  
+libauparse.so.0()(64bit)  
+libblkid.so.1()(64bit)  
+libblkid.so.1(BLKID_1.0)(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libext2fs.so.2()(64bit)  
+procps  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+upstart  
+rpmlib(PayloadIsXz) <= 5.2-1

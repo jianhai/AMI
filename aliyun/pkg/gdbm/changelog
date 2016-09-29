@@ -1,0 +1,165 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.8.0-36.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.8.0-36.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.8.0-36.1
+- rebuild for alios6
+
+* 五 5月 28 2010 Karel Klic <kklic@redhat.com> - 1.8.0-36
+- Apply -shortread patch
+  Resolves: #596163
+
+* 一 4月 12 2010 Karel Klic <kklic@redhat.com> - 1.8.0-35
+- Use fcntl instead of flock for locking to make NFS safe
+  Resolves: #581524
+
+* 四 3月 11 2010 Karel Klic <kklic@redhat.com> - 1.8.0-34
+- -jbj patch replaced with -zeroheaders, which extends the header zeroing
+  and also zeroes the buckets (#572601)
+- Fixed a memory leak in gdbm_reorganize(gdb) (rhbz#572598)
+- Handle read() returning less data than it was asked for (rhbz#572900)
+- Remove static builds from the devel package (#556050)
+- Moved autotools reinitialization from %build to %prep section
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.8.0-33.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.8.0-33
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 4月 17 2009 Stepan Kasal <skasal@redhat.com> - 1.8.0-32
+- Clean up the spec, for merge review.
+
+* 五 2月 27 2009 Stepan Kasal <skasal@redhat.com> - 1.8.0-31
+- drop *-cflags.patch, move all makefile fixes to *-fhs.patch
+- propagate libdir to Makefile; no need to set it on cmdline
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.8.0-30
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 7月 21 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.8.0-29
+- fix license tag
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.8.0-28
+- Autorebuild for GCC 4.3
+
+* 二 4月 03 2007 Ondrej Dvoracek <odvorace@redhat.com> - 1.8.0-27
+- made install-info use in scriptlets safe (#223688)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.8.0-26.2.1
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.8.0-26.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.8.0-26.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 24 2006 Warren Togami <wtogami@redhat.com> 1.8.0-26
+- remove .la (#171535)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 六 4月 09 2005 Florian La Roche <laroche@redhat.com>
+- rebuild
+
+* 日 8月 08 2004 Alan Cox <alan@redhat.com> 1.8.0-24
+- Close bug #125319
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 10月 04 2002 Nalin Dahyabhai <nalin@redhat.com> 1.8.0-19
+- rebuild
+
+* 五 9月 13 2002 Nalin Dahyabhai <nalin@redhat.com> 1.8.0-18.1
+- run make with libdir overridden so that it has the value passed to configure
+  instead of $(prefix)/lib
+
+* 三 7月 24 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.8.0-18
+- Remove cflags for large database support - not compatible 
+  with databases without it
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 4月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.8.0-15
+- Use 64bit offset
+- Patch to make the above not break from downsj@downsj.com (#63980)
+
+* 二 2月 26 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.8.0-14
+- Rebuild
+
+* 五 1月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.8.0-13
+- Update location
+- auto* changes to make it build
+
+* 三 10月 17 2001 Trond Eivind Glomsrød <teg@redhat.com> 1.8.0-11
+- Add URL (# 54607)
+
+* 一 6月 25 2001 Nalin Dahyabhai <nalin@redhat.com>
+- s/Copyright:/License:/g
+- include text docs in binary package
+
+* 二 6月 12 2001 Than Ngo <than@redhat.com>
+- fix to build against new libtool
+
+* 一 3月 19 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Make it respect RPM_OPT_FLAGS/CFLAGS - #32242. 
+  Patch from dan@D00M.cmc.msu.ru
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 05 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 一 2月 07 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed manpages
+
+* 二 8月 10 1999 Jeff Johnson <jbj@redhat.com>
+- make sure created database header is initialized (#4457).
+
+* 二 6月 01 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.8.0.
+- repackage to include /usr/include/gdbm/*dbm.h compatibility includes.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 19)
+
+* 四 12月 17 1998 Cristian Gafton <gafton@redhat.com>
+- build against glibc 2.1
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 4月 30 1998 Cristian Gafton <gafton@redhat.com>
+- gdbm-devel moved to Development/Libraries
+
+* 三 4月 08 1998 Cristian Gafton <gafton@redhat.com>
+- buildroot and built for Manhattan
+
+* 二 10月 14 1997 Donnie Barnes <djb@redhat.com>
+- spec file cleanups
+
+* 四 6月 12 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

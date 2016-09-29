@@ -1,0 +1,12 @@
+/usr/bin/pkg-config  
+glib2-devel  
+pkgconfig  
+pkgconfig(gobject-2.0)  
+pygobject2 = 2.20.0-5.4.alios6
+pygobject2-codegen = 2.20.0-5.4.alios6
+pygobject2-doc = 2.20.0-5.4.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

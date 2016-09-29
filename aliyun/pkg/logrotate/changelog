@@ -1,0 +1,381 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.7.8-12.4.1
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.7.8-12.3.1
+- rebuild
+
+* 五 6月 20 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.7.8-12.2.1
+- fix logrotate.defautl
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.7.8-12.1.1
+- rebuild for alios6
+
+* 四 3月 17 2011 Jan Kaluza <jkaluza@redhat.com> 3.7.8-12.1
+- fix #688518 - fixed CVE-2011-1154, CVE-2011-1155
+  and CVE-2011-1098
+
+* 四 6月 24 2010 Jan Kaluza <jkaluza@redhat.com> 3.7.8-12
+- fix #604073 - stop rotation if there is an error when
+  renaming old logs
+
+* 四 6月 17 2010 Jan Kaluza <jkaluza@redhat.com> 3.7.8-11
+- fix #604981 - update manpage to reflect scripts changes
+
+* 四 6月 17 2010 Jan Kaluza <jkaluza@redhat.com> 3.7.8-10
+- fix #604686 - pass currently rotated file as argument to
+  postrotate/prerotate script in nosharedscripts mode
+
+* 二 6月 15 2010 Jan Kaluza <jkaluza@redhat.com> 3.7.8-9
+- fix #604073 - do not remove log if there is an error in
+  rotate process
+
+* 五 6月 11 2010 Jan Kaluza <jkaluza@redhat.com> 3.7.8-8
+- fix #602654 - fix integer overflow in size and minsize
+
+* 二 4月 06 2010 Daniel Novotny <dnovotny@redhat.com> 3.7.8-7
+- fix #578116 - missingok problem with globs
+
+* 三 2月 24 2010 Daniel Novotny <dnovotny@redhat.com> 3.7.8-6
+- added upstream URL
+
+* 四 11月 12 2009 Daniel Novotny <dnovotny@redhat.com> 3.7.8-5
+- fix #525659 (man page for logrotate.conf)
+
+* 四 9月 17 2009 Daniel Novotny <dnovotny@redhat.com> 3.7.8-4
+- fix #517321 (logrotate blocking anacron)
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.7.8-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.7.8-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 02 2009 Daniel Novotny <dnovotny@redhat.com> 3.7.8-1
+- new upstream version 3.7.8
+
+* 五 11月 21 2008 Daniel Novotny <dnovotny@redhat.com> 3.7.7-4
+- fix #468926 (segfault with very large /var/log/messages)
+
+* 四 11月 20 2008 Daniel Novotny <dnovotny@redhat.com> 3.7.7-3
+- less aggressive approach to the fix
+
+* 四 11月 20 2008 Daniel Novotny <dnovotny@redhat.com> 3.7.7-2
+- fix #471463 (selinux problems with logrotate)
+
+* 一 5月 19 2008 Tomas Smetana <tsmetana@redhat.com> 3.7.7-1
+- new upstream version
+
+* 三 4月 23 2008 Tomas Smetana <tsmetana@redhat.com> 3.7.6-4
+- improve patch for #432330
+- fix #437748 - don't forget to close log files
+
+* 一 2月 11 2008 Tomas Smetana <tsmetana@redhat.com> 3.7.6-3
+- fix #432330 segfault on corrupted status file
+
+* 一 1月 21 2008 Tomas Smetana <tsmetana@redhat.com> 3.7.6-2.2
+- fix #429454 - logrotate fails due to invalid pointer
+
+* 三 1月 09 2008 Tomas Smetana <tsmetana@redhat.com> 3.7.6-2.1
+- fix the selinux patch
+
+* 三 1月 09 2008 Tomas Smetana <tsmetana@redhat.com> 3.7.6-2
+- fix #427274 - logrotate fails to preserve SELinux file contexts
+- fix #427661 - SELinux stops vsftpd from working correctly
+
+* 四 9月 27 2007 Tomas Smetana <tsmetana@redhat.com> 3.7.6-1.3
+- popt-devel dependency was still missing
+
+* 四 9月 27 2007 Tomas Smetana <tsmetana@redhat.com> 3.7.6-1.2
+- add missing dependencies to spec file
+
+* 四 8月 23 2007 Tomas Smetana <tsmetana@redhat.com> 3.7.6-1.1
+- rebuild
+
+* 二 8月 07 2007 Tomas Smetana <tsmetana@redhat.com> 3.7.6-1
+- new upstream version
+- fix #248565 logrotate never rotates /var/log/btmp
+- fix compile warnings
+- tabooext accepts wildcards (related #247816)
+- fix minor errors and update man page (related #250059)
+- fix handling of size directive (related #247410)
+
+* 四 5月 31 2007 Tomas Smetana <tsmetana@redhat.com> 3.7.5-5
+- fix ignoring pre/postrotate arguments (related #241766)
+
+* 三 5月 23 2007 Tomas Smetana <tsmetana@redhat.com> 3.7.5-4
+- use dateext in the default config file (#240292)
+- add options to use shred for deleting files -- adapt patch sent by
+  Peter Eckersley <pde@eff.org> (#239934)
+- ignore .cfsaved files by default (#223476)
+
+* 六 3月 31 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.5-3
+- add error checking before running prerotate and postrotate scripts
+
+* 四 3月 29 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.5-2
+- fix error hadnling after prerotate, postrotate, firstaction 
+  script failure. (http://qa.mandriva.com/show_bug.cgi?id=29979)
+
+* 四 3月 01 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.5-1
+- new upstream release.
+
+* 五 2月 09 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.4-13
+- another spec file fixes (#226104)
+
+* 四 2月 08 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.4-12
+- fix problem with compress_options_list (#227706)
+- fix spec file to meet Fedora standards (#226104)
+
+* 二 1月 23 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.4-11
+- logrotate won't stop if there are some errors in configuration
+  or glob failures (#166510, #182062)
+
+* 三 1月 10 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.4-10
+- fix some rpmlint issues
+
+* 二 1月 09 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.4-9
+- allow multibyte characters in readPath() (#122145)
+
+* 五 1月 05 2007 Peter Vrabec <pvrabec@redhat.com> 3.7.4-8
+- "size" option was ignored in config files (#221341)
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 3.7.4-7
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 二 9月 26 2006 Peter Vrabec <pvrabec@redhat.com> 3.7.4-6
+- fix leaking file descriptor (#205072)
+
+* 三 8月 09 2006 Dan Walsh <dwalsh@redhat.com> 3.7.4-5
+- Use selinux raw functions
+
+* 一 7月 24 2006 Peter Vrabec <pvrabec@redhat.com> 3.7.4-4
+- make error message, about ignoring certain config files,
+  a debug message instead (#196052)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 3.7.4-3.1
+- rebuild
+
+* 二 6月 13 2006 Peter Vrabec <pvrabec@redhat.com> 3.7.4-3
+- rename ENOSUP to ENOTSUP
+
+* 二 6月 13 2006 Peter Vrabec <pvrabec@redhat.com> 3.7.4-2
+- clean up a couple of SELinux problems. Patch from Daniel J. Walsh.
+
+* 三 5月 17 2006 Peter Vrabec <pvrabec@redhat.com> 3.7.4-1
+- add new "minsize" option (#173088)
+
+* 二 3月 28 2006 Peter Vrabec <pvrabec@redhat.com> 3.7.3-3
+- correct man page "extension" option description  (#185318)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 3.7.3-2.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 3.7.3-2.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 日 11月 13 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.3-2
+- fix_free_segfaults (#172918)
+
+* 六 11月 12 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.3-1
+- new upstream release
+- indent sources
+
+* 五 11月 11 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-12
+- fix_free_segfaults (#172918)
+
+* 一 11月 07 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-11
+- man description for "nodateext" option (#171577)
+- remove not working "pattern" option (#171577)
+
+* 二 10月 25 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-10
+- some more clean up (#171587)
+
+* 四 10月 20 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-9
+- fix_free_segfaults (#171093)
+
+* 二 10月 18 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-8
+- fix leaks of tabooExts
+
+* 六 10月 15 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-7
+- fix_free_segfaults (#170904)
+
+* 三 10月 12 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-6
+- code clean up (#169885)
+
+* 一 10月 10 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-5
+- fix bug introduced in logrotate 3.7.2-3(#169858)
+- fix some memory leaks (#169888)
+
+* 五 9月 23 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-4
+- do not run compression program in debug mode (#166912)
+
+* 三 9月 07 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-3
+- even when sharedscript option used, do postrotate 
+  script before compress (#167575)
+
+* 三 8月 17 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-2
+- allow yearly rotations(#134612)
+
+* 一 8月 01 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.2-1
+- new upstream release
+
+* 二 7月 26 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.1-14
+- fix some "error running script" messages
+
+* 二 7月 26 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.1-13
+- fix man page (#163458,#163366)
+
+* 三 6月 22 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.1-12
+- enhance logrotate with "dateext", "maxage"
+
+* 四 3月 31 2005 Dan Walsh <dwalsh@redhat.com> 3.7.1-10
+- use security_getenforce() instead of selinux_getenforcemode
+
+* 四 3月 17 2005 Dan Walsh <dwalsh@redhat.com> 3.7.1-9
+- Add selinux_getenforce() calls to work when not in enforcing mode
+
+* 四 3月 17 2005 Peter Vrabec <pvrabec@redhat.com> 3.7.1-8
+- rebuild
+
+* 二 2月 22 2005 Peter Vrabec <pvrabec@redhat.com>
+- do not use tmpfile to run script anymore (#149270)
+
+* 五 2月 18 2005 Peter Vrabec <pvrabec@redhat.com>
+- remove logrotate-3.7.1-share.patch, it doesn't solve (#140353)
+
+* 一 12月 13 2004 Peter Vrabec <pvrabec@redhat.com> - 3.7.1-5
+- Add section to logrotate.conf for "/var/log/btmp" (#117844)
+
+* 一 12月 13 2004 Peter Vrabec <pvrabec@redhat.com> - 3.7.1-4
+- Typo and missing information in man page (#139346)
+
+* 一 12月 06 2004 Peter Vrabec <pvrabec@redhat.com> - 3.7.1-3
+- compressed logfiles and logrotate (#140353)
+
+* 二 10月 19 2004 Miloslav Trmac <mitr@redhat.com> - 3.7.1-2
+- Fix sending mails (#131583)
+- Preserve file attributes when compressing files (#121523, original patch by
+  Daniel Himler)
+
+* 五 7月 16 2004 Elliot Lee <sopwith@redhat.com> 3.7.1-1
+- Fix #126490 typo
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 1月 26 2004 Dan Walsh <dwalsh@redhat.com> 3.6.10-4
+- fix is_selinux_enabled call
+
+* 五 9月 05 2003 Dan Walsh <dwalsh@redhat.com> 3.6.10-3
+- Turn off selinux
+
+* 五 9月 05 2003 Dan Walsh <dwalsh@redhat.com> 3.6.10-2.sel
+- Turn on selinux
+
+* 三 8月 06 2003 Erik Troan <ewt@redhat.com>
+- always use compressext for the extension for compressed
+  files; before compresscmd and compressext had to agree
+- moved all compression to one code block
+- compression, scripts don't use system() anymore
+- compress and maillast didn't work together properly
+- delaycompress and mailfirst didn't work properly
+- don't use system() for mailing (or uncompressing) logs anymore
+- use "-s" for speciying the subjected of mailed logs
+
+* 四 7月 24 2003 Elliot Lee <sopwith@redhat.com> 3.6.10-1
+- Fix #100546, change selinux port.
+
+* 五 7月 18 2003 Dan Walsh <dwalsh@redhat.com> 3.6.9-2
+- Port to SELinux 2.5
+
+* 三 7月 09 2003 Elliot Lee <sopwith@redhat.com> 3.6.9-1
+- Fix #90229, #90274, #89458, #91408
+
+* 一 1月 20 2003 Elliot Lee <sopwith@redhat.com> 3.6.8-1
+- Old patch from pm@debian.org
+
+* 二 1月 14 2003 Elliot Lee <sopwith@redhat.com> 3.6.7-1
+- Fixes from bugzilla
+
+* 五 11月 15 2002 Elliot Lee <sopwith@redhat.com> 3.6.6-1
+- Commit patch from Fidelis Assis <fidelis@embratel.net.br>
+
+* 四 6月 20 2002 Elliot Lee <sopwith@redhat.com> 3.6.5-1
+- Commit fix for #65299
+
+* 一 4月 15 2002 Elliot Lee <sopwith@redhat.com> 3.6.4-1
+- Commit fix for #62560
+
+* 三 3月 13 2002 Elliot Lee <sopwith@redhat.com> 3.6.3-1
+- Apply various bugfix patches from the openwall people
+
+* 二 1月 29 2002 Elliot Lee <sopwith@redhat.com> 3.6.2-1
+- Fix bug #55809 (include logrotate.status in "files")
+- Fix bug #58328 (incorrect error detection when reading state file)
+- Allow 'G' size specifier from bug #57242
+
+* 一 12月 10 2001 Preston Brown <pbrown@redhat.com>
+- noreplace config file
+
+* 三 11月 28 2001 Preston Brown <pbrown@redhat.com> 3.6-1
+- patch from Alexander Kourakos <awk@awks.org> to stop the shared
+  postrotate/prerotate scripts from running if none of the log(s) need
+  rotating.  All log files are now checked for rotation in one batch,
+  rather than sequentially.
+- more fixes from Paul Martin <pm@debian.org>
+
+* 四 11月 08 2001 Preston Brown <pbrown@redhat.com> 3.5.10-1
+- fix from paul martin <pm@debian.org> for zero-length state files
+
+* 二 9月 04 2001 Preston Brown <pbrown@redhat.com>
+- fix segfault when logfile is in current directory.
+
+* 二 8月 21 2001 Preston Brown <pbrown@redhat.com>
+- fix URL for source location
+
+* 四 8月 02 2001 Preston Brown <pbrown@redhat.com>
+- man page cleanups, check for negative rotation counts
+
+* 一 7月 02 2001 Preston Brown <pbrown@redhat.com>
+- more minor manpage updates (#45625)
+
+* 四 6月 21 2001 Preston Brown <pbrown@redhat.com> 3.5.6-1
+- enable LFS support (debian bug #100810)
+- quote filenames for running compress commands or pre/postrotate cmds (#21348)
+- deprecate "errors" directive (see bug #16544 for explanation)
+- update man page
+- configurable compression command by Colm Buckley <colm@tuatha.org>
+
+* 五 6月 01 2001 Preston Brown <pbrown@redhat.com> 3.5.5-1
+- be less strict about whitespace near filenames.  Patch from Paul Martin <pm@debian.org>.
+
+* 四 1月 04 2001 Bill Nottingham <notting@redhat.com>
+- %defattr
+
+* 三 1月 03 2001 Preston Brown <pbrown@redhat.com>
+- see CHANGES
+
+* 二 8月 15 2000 Erik Troan <ewt@redhat.com>
+- see CHANGES
+
+* 日 7月 23 2000 Erik Troan <ewt@redhat.com>
+- see CHANGES
+
+* 二 7月 11 2000 Erik Troan <ewt@redhat.com>
+- support spaces in filenames
+- added sharedscripts
+
+* 日 6月 18 2000 Matt Wilson <msw@redhat.com>
+- use %{_mandir} for man pages
+
+* 四 2月 24 2000 Erik Troan <ewt@redhat.com>
+- don't rotate lastlog
+
+* 四 2月 03 2000 Erik Troan <ewt@redhat.com>
+- gzipped manpages
+

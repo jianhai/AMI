@@ -1,0 +1,35 @@
+perl >= 0:5.005
+perl >= 0:5.008
+perl >= 1:5
+perl = 4:5.10.1-119.4.alios6.1
+perl(Carp)  
+perl(Config)  
+perl(Cwd)  
+perl(Encode)  
+perl(File::Basename)  
+perl(File::Spec)  
+perl(Getopt::Long)  
+perl(Pod::Escapes) >= 1.04
+perl(Pod::Simple)  
+perl(Pod::Simple::BlackBox)  
+perl(Pod::Simple::HTML)  
+perl(Pod::Simple::LinkSection)  
+perl(Pod::Simple::Methody)  
+perl(Pod::Simple::PullParser)  
+perl(Pod::Simple::PullParserEndToken)  
+perl(Pod::Simple::PullParserStartToken)  
+perl(Pod::Simple::PullParserTextToken)  
+perl(Pod::Simple::PullParserToken)  
+perl(Pod::Simple::Search)  
+perl(Symbol)  
+perl(Text::Wrap) >= 98.112902
+perl(UNIVERSAL)  
+perl(integer)  
+perl(overload)  
+perl(strict)  
+perl(vars)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

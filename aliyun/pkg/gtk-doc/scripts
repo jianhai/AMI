@@ -1,0 +1,4 @@
+postinstall scriptlet (using /bin/sh):
+scrollkeeper-update -q
+postuninstall scriptlet (using /bin/sh):
+scrollkeeper-update -q

@@ -1,0 +1,30 @@
+/usr/bin/pkg-config  
+cairo-devel >= 1.7.6
+fontconfig-devel >= 2.6
+freetype-devel >= 2.1.3-3
+glib2-devel >= 2.17.3-1
+libX11-devel  
+libXext-devel  
+libXft-devel  
+libXrender-devel  
+libpango-1.0.so.0()(64bit)  
+libpangocairo-1.0.so.0()(64bit)  
+libpangoft2-1.0.so.0()(64bit)  
+libpangox-1.0.so.0()(64bit)  
+libpangoxft-1.0.so.0()(64bit)  
+pango = 1.28.1-3.3.alios6.5
+pkgconfig  
+pkgconfig(cairo)  
+pkgconfig(fontconfig)  
+pkgconfig(freetype2)  
+pkgconfig(glib-2.0)  
+pkgconfig(gmodule-no-export-2.0)  
+pkgconfig(gobject-2.0)  
+pkgconfig(pango)  
+pkgconfig(pangoft2)  
+pkgconfig(xft)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

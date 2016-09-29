@@ -1,0 +1,21 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 17.168.5.3-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 17.168.5.3-1.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 17.168.5.3-1.1
+- rebuild for alios6
+
+* 二 8月 09 2011 John W. Linville <linville@redhat.com> - 17.168.5.3-1
+- Update to version 17.168.5.3 from upstream
+
+* 一 2月 14 2011 John W. Linville <linville@redhat.com> - 17.168.5.2-1
+- Update to version 17.168.5.2 from upstream
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 17.168.5.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 四 12月 16 2010 John W. Linville <linville@redhat.com> - 17.168.5.1-1
+- Initial import
+

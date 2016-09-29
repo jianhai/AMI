@@ -1,0 +1,1107 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:5.5-37.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:5.5-37.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:5.5-37.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:5.5-37.1
+- rebuild for alios6
+
+* 一 9月 12 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-37
+- recompiled with relro in perl and python modules (#725657)
+
+* 一 9月 05 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-36
+- fixed crash in AgentX when closing subagent session (#729738)
+
+* 三 8月 24 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-35
+- fixed few QA complaints in bugs #681949, #708370 and #710667
+
+* 一 8月 15 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-34
+- another rebuild with updated SMUX to ensure ABI compatibility of
+  libsnmpagent.so
+
+* 一 8月 15 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-33
+- rebuilt with updated SMUX to ensure ABI compatibility of libsnmpagent.so
+
+* 五 8月 12 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-32
+- fixed varbind parsing in python netsnmp module (#711481)
+- fixed session initialization in python netsnmp module (#710667)
+- fixed crash when getting out-of-memory in inetNetToMediaTable (#708947)
+- added xfs and jfs filesystem support to hrStorageTable (#707912)
+- fixed snmpd to purge zombies resulted from pass_persist process exit
+  (#703682)
+- added a log message when snmpd detects two interfaces with the same
+  IP address and thus having only one ipTable entry for both (#702171)
+- added new snmpd.conf options 'interface_fadeout' and
+  'interface_replace_old' to controll snmpd behavior when more
+  interfaces get the same name (#702165)
+- fixed snmptrapd leaking memory when processing traps in embedded perl
+  (#678314)
+- fixed hrSystemDate timezone sign (#683680)
+- fixed snmp logging 'truncating integer value > 32 bits' for
+  UCD-SNMP-MIB::systemStats (#681949)
+- fixed rare race condition in hrSWRunTable (#683563)
+- recompiled with relro for better security (#725657)
+- snmpd should not change request-id when sending multiple SMUX messages
+  (#708370)
+
+* 四 2月 17 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-31
+* fixed BRIDGE-MIB implementation in /usr/bin/snmp-bridge-mib,
+  now it supports embedded perl and answers GETNEXT requests correctly
+  (#630157).
+
+* 一 2月 14 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-30
+- fixed snmpd crashing on registration of smux peer (#672595)
+
+* 五 2月 04 2011 Jan Safranek <jsafrane@redhat.com> - 1:5.5-29
+- fixed snmpd printing "looks like a 64bit wrap, but prev!=new" to syslog
+  (#674757)
+
+* 三 12月 01 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-28
+- fixed recompilation of the package on machine without IPv6 (#657835)
+- fixed SMUX getting stuck on big-endian platforms (#665053)
+- fixed OID comparsion in snmpwalk, now the output does not include
+  objects outside requested subtree (#636890)
+- fixed IPv4 address creation in ipAddressTable (#616764)
+- added IPv6 address creation to ipAddressTable (#616336)
+- fixed value of ipAddressPrefixAutonomousFlag OID (#625262)
+- fixed ipv6IfTable - new interfaces were not added there (#627564)
+- extended BRIDGE-MIB implementation to cover RFC 4363 (#630157)
+
+* 四 11月 11 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-27.1
+- fixed truncation of sysObjectID (#641113)
+- fixed assertions in calculating of statistics in IF-MIB (#621664)
+
+* 三 8月 04 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-27
+- removed APSL 1.1 licensed files from source tarball (#619906)
+
+* 三 7月 28 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-26
+- fixed gfs2 support in hrFSTable and hrStorageTable (#616496)
+
+* 二 7月 20 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-25
+- fixed temporary filename generation in snmptrapd (#560081)
+
+* 三 7月 14 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-24
+- further improved snmptranslate dysplaying ranges on 32-bit HW (#606874)
+
+* 五 6月 25 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-23
+- fixed segfault when parsing snmpd.conf with disman entries (#607080)
+- fixed value of IP-MIB::ipv6InterfaceForwarding (#607074)
+- fixed output of snmptranslate tool when displaying ranges of UNSIGNED
+  type (#606874)
+
+* 四 6月 03 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-22
+- fixed value of ipIfStatsTable.Ip6ReasmReqds (#597265)
+- added missing include files from util_funcs directory (#604636)
+
+* 二 5月 25 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-21
+- fixed hrFSTable and hrStorageTable to provide persistent table indexes
+  according to RFS 2790 (#595325)
+
+* 五 5月 14 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-20
+- fixed a memory leak in TCP-MIB and LM-SENSORS-MIB (#591005)
+
+* 五 4月 23 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-19
+- fixed exit code of snmp utilities when wrong argument to '-A' option
+  is specified (#574061)
+- fixed BER parsing of incoming packets - siletnly discard the invalid ones
+  according to RFC (#568651)
+
+* 三 4月 14 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-18
+- fixed the automated test suite running with udp6 and tcp6 transports
+  (#581873)
+
+* 二 4月 06 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-17
+- fixed snmpd running as different user using '-u' parameter (#578405)
+
+* 三 3月 31 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-16
+- added Perl implementation of BRIDGE-MIB, see man snmp-bridge-mib
+  (#532759)
+
+* 四 3月 04 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-15
+- remove net-snmp-gui subpackage, perl-Tk is being removed from
+  distro (#568786)
+- fix IF-MIB::ifSpeed of inactive interfaces (#561884)
+- correct the package license
+
+* 五 1月 29 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-14
+- store temporary files in /var/run/net-snmp instead of /tmp (SELinux does
+  not allow writing /tmp) (#560081)
+- fix filedescriptor leak in RMON-MIB and Etherlike-MIB (#562108)
+
+* 三 1月 20 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-13
+- fix minor typo in snmpnetstat man page (#556838)
+
+* 四 1月 14 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-12
+- fix memory leak in RMON-MIB and ETHERLIKE-MIB when there are aliased interfaces
+  (#555318)
+
+* 三 1月 13 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-11
+- fix additional memory leak in ipAddressPrefixTable, related to #518633
+
+* 二 1月 12 2010 Stepan Kasal <skasal@redhat.com> - 1:5.5-10
+- move the perl(:MODULE_COMPAT_5.10.x) require to net-snmp-libs
+
+* 二 1月 12 2010 Stepan Kasal <skasal@redhat.com> - 1:5.5-9
+- require perl(:MODULE_COMPAT_5.10.x) because the package links against
+  libperl.so
+
+* 一 1月 11 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-8
+- rebuild with new rpm
+- plug another leak as port from RHEL5
+
+* 二 1月 05 2010 Jan Safranek <jsafrane@redhat.com> - 1:5.5-7
+- fix invalid access to memory in tcpListenerTable (#551030)
+- fix crash with interfaces without broadcast addresses (like OpenVPN's tun0)
+  (#549390)
+- fix responding to broadcast SNMP requests (#549390)
+- port patches from RHEL-5 to avoid regressions
+
+* 二 12月 08 2009 Jan Safranek <jsafrane@redhat.com> - 1:5.5-6
+- fix compilation of the python module
+
+* 一 12月 07 2009 Stepan Kasal <skasal@redhat.com> - 1:5.5-5
+- rebuild against perl 5.10.1
+
+* 三 12月 02 2009 Jan Safranek <jsafrane@redhat.com> 1:5.5-4
+- fix udpTable indexes on big-endian systems (#543352)
+- fix snmptrapd init script to survive with empty /etc/sysconfig/snmptrapd
+- lower the default log level of snmpd to get rid of the debug messages
+
+* 三 11月 25 2009 Jan Safranek <jsafrane@redhat.com>  1:5.5-3
+- prepare the .spec file for review
+- run automatic regression suite after the compilation of the package
+  to check for obvious regressions
+- remove unnecessary package dependencies
+
+* 二 11月 24 2009 Jan Safranek <jsafrane@redhat.com>  1:5.5-2
+- introduce /etc/sysconfig/snmptrapd. Use it to specify snmptrapd command
+  line options.  /etc/snmp/snmptrapd.options is not used anymore (#540799)
+- build-in ipAddressPrefixTable, ipDefaultRouterTable, ipv6ScopeZoneIndexTable,
+  ipIfStatsTable, SCTP-MIB, RMON-MIB and Etherlike-MIBs
+- remove ucd5820stat helper script, it depends on get5820stats, which is not
+  available in Fedora
+- move sample services ipf-mod.pl to documentation
+- remove logrotate config, snmpd logs into syslog
+
+* 二 9月 29 2009 Jan Safranek Jan Safranek <jsafranek@redhat.com> 5.5-1
+- update to Net-SNMP 5.5
+- remove static libraries from -devel subpackage
+
+* 一 9月 14 2009 Jan Safranek <orion@cora.nwra.com> 1:5.4.2.1-17
+- implement force-reload command in initscripts (#523126)
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1:5.4.2.1-16
+- rebuilt with new openssl
+
+* 五 8月 14 2009 Orion Poplawski <orion@cora.nwra.com> 1:5.4.2.1-15
+- Prevent post script failure on fresh installs
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:5.4.2.1-14
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 01 2009 Jan Safranek <jsafranek@redhat.com> 5.4.2.1-13
+- package cleanup, remove unnecessary patches
+- move local state file from /var/net-snmp/ to /var/lib/net-snmp
+
+* 三 7月 01 2009 Jan Safranek <jsafranek@redhat.com> 5.4.2.1-12
+- make the default configuration less noisy, i.e. do not print "Connection from
+  UDP:" and "Received SNMP packet(s) from UDP:" messages on each connection.
+  (#509055)
+
+* 一 5月 18 2009 Jan Safranek <jsafranek@redhat.com> 5.4.2.1-11
+- fix divison-by-zero in cpu statistics (#501210)
+
+* 五 3月 06 2009 Jesse Keating <jkeating@redhat.com> - 5.4.2.1-10
+- Rebuild for new rpm
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:5.4.2.1-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 16 2009 Jan Safranek <jsafranek@redhat.com> 5.4.2.1-8
+- fix tcp_wrappers integration (CVE-2008-6123)
+
+* 五 1月 30 2009 Karsten Hopp <karsten@redhat.com> 5.4.2.1-7
+- fix build on s390x which has no libsensors
+
+* 六 1月 17 2009 Tomas Mraz <tmraz@redhat.com> 5.4.2.1-7
+- rebuild with new openssl
+
+* 三 12月 17 2008 Jan Safranek <jsafranek@redhat.com> 5.4.2.1-6
+- rebuilt for new python again...
+
+* 一 12月 01 2008 Jan Safranek <jsafranek@redhat.com> 5.4.2.1-5
+- fix rpm ownership of all created directories (#473582)
+
+* 一 12月 01 2008 Jan Safranek <jsafranek@redhat.com> 5.4.2.1-4
+- Rebuild for fixed rpm (#473420)
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 1:5.4.2.1-3
+- Rebuild for Python 2.6
+
+* 一 11月 03 2008 Jan Safranek <jsafranek@redhat.com> 5.4.2.1-1
+- explicitly require the right version and release of net-snmp and
+  net-snmp-libs
+- update to net-snmp-5.4.2.1 to fix CVE-2008-4309
+
+* 五 9月 26 2008 Jan Safranek <jsafranek@redhat.com> 5.4.2-3
+- further tune up the distribution of files among subpackages
+  and dependencies
+
+* 五 9月 26 2008 Jan Safranek <jsafranek@redhat.com> 5.4.2-2
+- redistribute the perl scripts to the net-snmp package,
+  net-snmp-utils doesn't depend on perl now (#462484)
+
+* 三 9月 17 2008 Jan Safranek <jsafranek@redhat.com> 5.4.2-1
+- update to net-snmp-5.4.2
+
+* 三 9月 10 2008 John A. Khvatov <ivaxer@fedoraproject.org> 5.4.1-22
+- add net-snmp-python
+
+* 二 7月 22 2008 Jan Safranek <jsafranek@redhat.com> 5.4.1-21
+- fix perl SNMP::Session::set (#452131)
+
+* 五 7月 11 2008 Jan Safranek <jsafranek@redhat.com> 5.4.1-20
+- prepare for new rpm version
+
+* 二 6月 10 2008 Jan Safranek <jsafranek@redhat.com> 5.4.1-19
+- fix various flaws (CVE-2008-2292 CVE-2008-0960)
+
+* 六 5月 31 2008 Dennis Gilmore <dennis@ausil.us> 5.4.1-18
+- fix sparc handling in /usr/bin/net-snmp-config
+
+* 四 5月 29 2008 Dennis Gilmore <dennis@ausil.us> 5.4.1-17
+- fix sparc handling in /usr/include/net-snmp/net-snmp-config-sparc.h
+
+* 日 5月 25 2008 Dennis Gilmore <dennis@ausil.us> 5.4.1-16
+-sparc multilib handling
+
+* 一 4月 21 2008 Jan Safranek <jsafranek@redhat.com> 5.4.1-15
+- explicitly require lm_sensor > 3 for build (#442718)
+- create multilib net-snmp-config on multilib architectures only
+
+* 二 3月 18 2008 Tom "spot" Callaway <tcallawa@redhat.com> 5.4.1-14
+- add Requires for versioned perl (libperl.so)
+- get rid of silly file Requires
+
+* 四 3月 06 2008 Tom "spot" Callaway <tcallawa@redhat.com> 5.4.1-13
+- BR: perl(ExtUtils::Embed)
+
+* 四 3月 06 2008 Tom "spot" Callaway <tcallawa@redhat.com> 5.4.1-12
+- rebuild for new perl
+
+* 四 2月 21 2008 Jan Safranek <jsafranek@redhat.com> 5.4.1-11
+- add openssl-devel to the list of netsnmp-devel deps
+
+* 四 2月 14 2008 Jan Safranek <jsafranek@redhat.com> 5.4.1-10
+- fixing ipNetToMediaNetAddress to show IP address (#432780)
+
+* 二 2月 12 2008 Jan Safranek <jsafranek@redhat.com> 5.4.1-9
+- introduce /etc/sysconfig/snmpd. Use it to specify snmpd command line options.
+  /etc/snmp/snmpd.options is not used anymore (#431391)
+
+* 一 1月 28 2008 Jan Safranek <jsafranek@redhat.com> 5.4.1-8
+- init scripts made LSB compliant
+
+* 三 12月 05 2007 Jan Safranek <jsafranek@redhat.com> 5.4.1-7
+- rebuild for openssl soname bump
+
+* 三 11月 14 2007 Jan Safranek <jsafranek@redhat.com> 5.4.1-6
+- add support of lm_sensors v3
+- added procps to build dependencies (#380321)
+- removed beecrypt from dependencies
+- fixed crash on reading xen interfaces (#386611)
+
+* 四 10月 25 2007 Jan Safranek <jsafranek@redhat.com> 5.4.1-5
+- move mib2c-update from net-snmp-utils to net-snmp-perl, where
+  mib2c is located
+- add tkmib to net-snmp-gui package (#167933)
+
+* 二 10月 16 2007 Jan Safranek <jsafranek@redhat.com> 5.4.1-4
+- License: field fixed to "BSD and CMU"
+
+* 四 8月 23 2007 Jan Safranek <jsafranek@redhat.com> 5.4.1-3
+- include these tables: ip-mib/ipv4InterfaceTable
+  ip-mib/ipv6InterfaceTable, ip-mib/ipAddressPrefixTable
+- fix Requires of net-snmp-devel to include lmsensors-devel on supported
+  architectures
+
+* 三 8月 22 2007 Jan Safranek <jsafranek@redhat.com> 5.4.1-2
+- gawk added to build dependencies
+
+* 二 8月 07 2007 Jan Safranek <jsafranek@redhat.com> 5.4.1-1
+- License: field changed to MIT
+- 5.4.1 integrated
+
+* 二 7月 31 2007 Jan Safranek <jsafranek@redhat.com> 5.4-16
+- supported lm_sensors on ppc64 (#249255)
+- snmpconf generates config files with proper selinux context
+  (#247462)
+- fix leak  in udp transport (#247771)
+- add alpha to supported archs in net-snmp-config (#246825)
+- fix hrSWInst (#250237)
+
+* 四 6月 28 2007 Jan Safranek <jsafranek@redhat.com> 5.4-15
+- fix default snmptrapd.conf
+
+* 四 5月 03 2007 Jan Safranek <jsafranek@redhat.com> 5.4-14
+- fix snmptrapd hostname logging (#238587)
+- fix udpEndpointProcess remote IP address (#236551)
+- fix -M option of net-snmp-utils (#244784)
+- default snmptrapd.conf added (#243536)
+- fix crash when multiple exec statements have the same name
+  (#243536)
+- fix ugly error message when more interfaces share
+  one IP address (#209861)
+
+* 一 3月 12 2007 Radek Vokál <rvokal@redhat.com> - 1:5.4-13
+- fix overly verbose log message (#221911)
+- few minor tweaks for review - still not perfect
+- fix linking with lcrypto (#231805)
+
+* 五 3月 09 2007 Radek Vokál <rvokal@redhat.com> - 5.4-12
+- lm_sensors-devel only where avaliable
+
+* 四 3月 01 2007 Radek Vokál <rvokal@redhat.com> - 5.4-11
+- fix lm_sensors-devel Requires (#229109)
+
+* 一 2月 26 2007 Vitezslav Crhonek <vcrhonek@redhat.com> - 5.4-10
+- fix net-snmp-config strange values for --libs (#228588)
+
+* 五 2月 23 2007 Radek Vokál <rvokal@redhat.com> - 5.4-9
+- fix dependency on lm_sensors-devel (#229109)
+- spec file cleanups
+
+* 二 1月 23 2007 Radek Vokál <rvokal@redhat.com> - 5.4-8
+- fix occasional segfaults when snmpd starts
+
+* 四 1月 11 2007 Radek Vokál <rvokal@redhat.com> - 5.4-7
+- fix ethtool extension (#222268)
+
+* 四 1月 11 2007 Radek Vokál <rvokal@redhat.com> - 5.4-6
+- swith to new disman implementation
+
+* 二 12月 12 2006 Radek Vokál <rvokal@redhat.com> - 5.4-5
+- fix memleaks in ip-addr and tcpConn
+
+* 四 12月 07 2006 Radek Vokál <rvokal@redhat.com> - 5.4-4
+- fix rtnetlink.h/if_addr.h
+
+* 四 12月 07 2006 Joe Orton <jorton@redhat.com> - 5.4-3
+- add Requires for tcp_wrappers-devel for -devel
+
+* 一 12月 04 2006 Radek Vokál <rvokal@redhat.com> - 5.4-2
+- rebuilt against tcp_wrappers-devel
+
+* 一 11月 27 2006 Radek Vokal <rvokal@redhat.com> - 5.4-1
+- upgrade to 5.4
+- patch cleanup
+- snmpd uses /var/run/snmpd.pid (#211264)
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 5.3.1-11
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 一 9月 25 2006 Radek Vokal <rvokal@redhat.com> 5.3.1-10
+- add mibII/mta_sendmail (#207909)
+
+* 五 9月 22 2006 Radek Vokal <rvokal@redhat.com> 5.3.1-9
+- fix deprecated syscall base_reachable_time (#207273)
+
+* 三 9月 13 2006 Radek Vokal <rvokal@redhat.com> 5.3.1-8
+- enable smux to listen only on LOCAL by default (#181667)
+- use correct answer adrress
+
+* 二 9月 05 2006 Radek Vokal <rvokal@redhat.com> 5.3.1-7
+- better upstream patch for byteorder
+- add epoch to corespond with upstream versioning
+
+* 三 8月 30 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.0-6
+- fix IPv4/IPv6 address presentation (#200255)
+
+* 三 8月 23 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.0-5
+- SMUX support is still needed .. will disappear later!
+- static libs should be in devel not libs (#203571)
+- fix lm_sensors issues
+
+* 二 8月 22 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.0-4
+- turn off SMUX support (#110931)
+- add dist tag
+
+* 四 8月 10 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.0-3
+- fix lib dirs in configure (#197684)
+
+* 四 8月 03 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.0-2
+- better patch for depreciated sysctl call
+
+* 一 7月 17 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.0-1
+- update to 5.3.1 final version, fix version number
+
+* 三 7月 12 2006 Radek Vokál <rvokal@redhat.com> 5.3.1.rc4-2
+- fix init script, read .options files from /etc/snmp (#195702)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 5.3.1.rc4-1.1
+- rebuild
+
+* 一 7月 10 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.rc4-1
+- update to release candidate 4
+- fix lib dependencies on 64bit archs
+- supress perl build
+
+* 二 6月 13 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.pre3-2
+- add tcp-mib (#194856)
+
+* 五 6月 02 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.pre3-1
+- update to another prerelease (fixes perl agents)
+
+* 五 5月 26 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.pre2-4
+- fix lib version
+
+* 四 5月 25 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.pre2-3
+- another multilib fix. Fix also net-snmp-config script
+
+* 三 5月 24 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.pre2-2
+- another attempt to fix multilib issue. Generate dummy net-snmp-config.h file
+
+* 二 5月 23 2006 Radek Vokal <rvokal@redhat.com> 5.3.1.pre2-1
+- update to 5.3.1.pre2
+- fix multilib issues (#192736)
+  On system with /usr/lib64 use net-snmp-config64 and net-snmp-config64.h
+
+* 六 4月 15 2006 Radek Vokál <rvokal@redhat.com> 5.3-8
+- fix missing IF-MIB::ifNumber.0 (#189007)
+
+* 三 4月 05 2006 Radek Vokál <rvokal@redhat.com> 5.3-7
+- fix parsing of /proc/diskstats
+- fix disman monitor crash
+- fix perl vendor name
+- fix OID lookup fail
+
+* 六 3月 25 2006 Radek Vokal <rvokal@redhat.com> 5.3-6
+- use net.ipv6.neigh.lo.retrans_time_ms (#186546)
+
+* 一 3月 20 2006 Radek Vokal <rvokal@redhat.com> 5.3-5
+- allow disman/event-mib
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 5.3-4.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 5.3-4.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Radek Vokál <rvokal@redhat.com> 5.3-4
+- fix crash on s390x and ppc64
+
+* 一 1月 30 2006 Radek Vokál <rvokal@redhat.com> 5.3-3
+- fix for lm_Senors, the max is no longer a fixed value
+- parsing fixed for /proc/net/if_inet6
+
+* 三 1月 18 2006 Radek Vokal <rvokal@redhat.com> 5.3-2
+-  Security fix. Bug granting write access to read-only users 
+   or communities which were configured  using the "rocommunity" 
+   or "rouser" snmpd.conf tokens fixed
+
+* 五 12月 30 2005 Radek Vokal <rvokal@redhat.com>
+- upgrade to 5.3
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 五 12月 16 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-4
+- check for header files in configure
+- patch for SNMPv3 traps / session user creation (net-snmp bz#1374087)
+
+* 五 12月 09 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-3
+- fix ipaddr return type on 64bit machines
+
+* 三 12月 07 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-2
+- fix read problem on stream sockets (net-snmp bz#1337534)
+
+* 二 11月 29 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-1
+- upgrade to 5.2.2 final
+
+* 一 11月 21 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-0.rc6.1
+- update to rc6, snmpnetstat changes due to license problems
+- persistent files in directory defined by snmp.conf persistentDir are 
+  loaded at startup
+
+* 二 11月 15 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-0.rc5.1
+- another release candidate
+
+* 二 11月 08 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-0.rc4.2
+- Remove .la file from net-snmp-libs (#172618)
+- grab new openssl
+
+* 一 11月 07 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-0.rc4.1
+- update to release candidate 4
+
+* 二 11月 01 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2-0.rc3.1
+- release candidate 3 of net-snmp-5.2.2
+
+* 二 10月 25 2005 Radek Vokal <rvokal@redhat.com> - 5.2.2.rc2-1
+- rc2 prebuilt
+
+* 二 9月 20 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1.2-3
+- fix endian issues for addresses
+
+* 五 8月 12 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1.2-2
+- fix for s390x counter32 overflow (sachinp@in.ibm.com)
+
+* 三 7月 13 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1.2-1
+- CAN-2005-2177 new upstream version fixing DoS (#162908)
+
+* 二 5月 31 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-13
+- CAN-2005-1740 net-snmp insecure temporary file usage (#158770)
+- patch from suse.de
+
+* 三 5月 18 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-12
+- session free fixed, agentx modules build fine (#157851)
+- fixed dependency for net-snmp libs (#156932)
+
+* 三 5月 04 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-11
+- report gigabit Ethernet speeds using Ethtool (#152480)
+
+* 二 4月 19 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-10
+- fixed missing requires for devel package (#155221)
+
+* 三 4月 06 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-9
+- switching to a different 64bit patch, hopefully 64bit problems are gone for a while
+
+* 一 4月 04 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-8
+- net-snmp properly deals with large partitions (#153101) <jryska@redhat.com>
+
+* 四 3月 31 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-7
+- agentx double free error fix <jp.fujitsu>
+
+* 四 3月 24 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-6
+- fixed unexpected length for type ASN_UNSIGNED (#151892)
+- fixed uptime problems on ia64
+
+* 三 3月 09 2005 Radek Vokal <rvokal@redhat.com> - 5.2.1-5
+- 64bit needed some changes, was causing timeouts on 64bit archs!? 
+- affects bugs #125432 and #132058
+
+* 二 3月 01 2005 Tomas Mraz <tmraz@redhat.com> - 5.2.1-4
+- rebuild with openssl-0.9.7e
+
+* 三 2月 23 2005 Radek Vokal <rvokal@redhat.com> - 5.1.2-3
+- patch from CVS - kill extra carriage return (#144917)
+- removed patch for interface indexing - doesn't show virtual interfaces
+
+* 二 2月 08 2005 Jeremy Katz <katzj@redhat.com> - 5.2.1-2
+- rebuild for new librpm
+
+* 一 1月 31 2005 Radek Vokal <rvokal@redhat.com> 5.2.1-1
+- new release, fixing several issues
+- pointer needs to be inicialized (#146417)
+
+* 一 12月 27 2004 Radek Vokal <rvokal@redhat.com> 5.2-2
+- patch adding ipv6 support to ip system stats
+
+* 二 11月 30 2004 Radek Vokal <rvokal@redhat.com> 5.2-1
+- net-snmp-5.2, patch clean-up
+
+* 一 11月 15 2004 Radek Vokal <rvokal@redhat.com> 5.1.2-12
+- snmpd crash with 'interfaces' directives in snmpd.conf fixed #139010
+- rather dirty patch fixing conf directory for net-snmp-config
+
+* 五 10月 15 2004 Radek Vokal <rvokal@redhat.com> 5.1.2-11
+- Logrotate support added (#125004)
+
+* 四 10月 14 2004 Phil Knirsch <pknirsch@redhat.com> 5.1.2-10
+- Extended the libwrap and bsdcompat patches
+
+* 一 10月 11 2004 Phil Knirsch <pknirsch@redhat.com> 5.1.2-9
+- Droped obsolete lm-sensors patch and enabled lmSensors module
+- Marked several patches to be removed for 5.1.3
+
+* 三 9月 29 2004 Warren Togami <wtogami@redhat.com> 5.1.2-8
+- remove README* that do not apply to Linux
+- trim massive ChangeLog
+
+* 三 9月 22 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- move ldconfig post/postun to libs subrpm
+
+* 三 9月 15 2004 Phil Knirsch <pknirsch@redhat.com> 5.1.2-6
+- Split out libs package for multilib compatibility
+
+* 三 9月 08 2004 Radek Vokal <rvokal@redhat.com> 5.1.2-4
+- New prereq for net-snmp-devel
+- lelf check removed from configure.in (#128748)
+- fixed snmpd coredump when sent SIGHUP (#127314)
+
+* 二 9月 07 2004 Radek Vokal <rvokal@redhat.com> 5.1.2-3
+- Agentx failed to send trap, fixed (#130752, #122338)
+
+* 一 9月 06 2004 Radek Vokal <rvokal@redhat.com> 5.1.2-2
+- Patch fixing uninitalized stack variable in smux_trap_process (#130179)
+
+* 三 8月 18 2004 Phil Knirsch <pknirsch@redhat.com> 5.1.2-1
+- Update to 5.1.2
+- Removed net-snmp-5.0.1-initializer patch, included upstream
+
+* 二 6月 15 2004 Phil Knirsch <pknirsch@redhat.com>
+- Fixed small bug in snmptrapd initscript (#126000).
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 06 2004 Phil Knirsch <pknirsch@redhat.com> 5.1.1-3
+- Reworked the perl filelist stuff (Thanks to marius feraru).
+
+* 四 4月 08 2004 Phil Knirsch <pknirsch@redhat.com> 5.1.1-2
+- Added Kaj J. Niemi that fixes ipAdEntIfIndex problem (#119106)
+- Added Kaj J. Niemi to shut up memshared message for 2.6 kernel (#119203)
+
+* 二 3月 23 2004 Phil Knirsch <pknirsch@redhat.com> 5.1.1-1
+- Update to latest upstream version 5.1.1
+- Included updated patches from Kaj J. Niemi (#118580).
+
+* 四 3月 18 2004 Phil Knirsch <pknirsch@redhat.com> 5.1-12
+- Hacked an ugly perl hack to get rid of perl RPATH problems.
+- Fixed 64bit patch and applied it. ;-)
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 04 2004 Phil Knirsch <pknirsch@redhat.com> 5.1-10
+- Included 64bit fix from Mark Langsdorf (#114645).
+
+* 二 2月 03 2004 Phil Knirsch <pknirsch@redhat.com> 5.1-9
+- Reverted removal of _includir redefiniton due to php-snmp dependancy.
+- Remove SO_BSDCOMPAT setsockopt() call, deprecated.
+
+* 四 1月 29 2004 Phil Knirsch <pknirsch@redhat.com> 5.1-8
+- Quite a bit of specfile cleanup from Marius FERARU.
+
+* 四 1月 22 2004 Thomas Woerner <twoerner@redhat.com> 5.1-7
+- enabled pie (snmpd, snmptrapd) - postponed for ia64
+- added --with-pic to configure call
+
+* 四 1月 15 2004 Phil Knirsch <pknirsch@redhat.com> 5.1-6
+- Fixed 64bit build problems when 32bit popt lib is installed.
+
+* 二 1月 13 2004 Phil Knirsch <pknirsch@redhat.com> 5.1-5
+- rebuilt
+
+* 日 1月 11 2004 Florian La Roche <Florian.LaRoche@redhat.de> 5.1-4
+- rebuild for new rpm
+
+* 三 12月 10 2003 Phil Knirsch <pknirsch@redhat.com> 5.1-3
+- Removed snmpcheck again, needs perl(Tk) which we don't ship (#111194).
+- Fixed getopt definition in include file (#111209).
+- Included Kaj J. Niemi's patch for broken perl module (#111319).
+- Included Kaj J. Niemi's patch for broken async getnext perl call (#111479).
+- Included Kaj J. Niemi's patch for broken hr_storage (#111502).
+
+* 三 11月 26 2003 Phil Knirsch <pknirsch@redhat.com> 5.1-2
+- Included BuildPrereq on lm_sensors-devel on x86 archs (#110616).
+- Fixed deprecated initscript options (#110618).
+
+* 三 11月 19 2003 Phil Knirsch <pknirsch@redhat.com> 5.1-1
+- Updated to latest net-snmp-5.1 upstream version.
+- Tons of specfile and patch cleanup.
+- Cleaned up perl stuff (mib2c etc, see #107707).
+- Added lm_sensors support patch for x86 archs from Kaj J. Niemi (#107618).
+- Added support for custom mib paths and mibs to snmptrapd initscript (#102762)
+
+* 一 10月 13 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.9-2
+- Due to rpm-devel we need elfutils-devel, too (#103982).
+
+* 一 9月 29 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.9-1
+- Updated to latest upstream version net-snmp-5.0.9
+- Added patch to fix net-snmp-perl problems (#105842).
+
+* 二 9月 23 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- allow compiling without tcp_wrappers
+
+* 三 9月 17 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-11.1
+- rebuilt
+
+* 三 9月 17 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-11
+- Fixed permission for net-snmp-config in net-snmp-devel
+
+* 一 9月 08 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-10.1
+- rebuilt
+
+* 一 9月 08 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-10
+- Moved net-snmp-config into devel package (#103927)
+
+* 五 8月 22 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-9.1
+- rebuilt
+
+* 四 8月 21 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-9
+- Added sample config to make net-snmp RFC 1213 compliant.
+
+* 五 8月 15 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-8
+- Fixed problem with perl option (#102420).
+- Added patch for libwrap fix (#77926).
+
+* 二 8月 12 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-7.1
+- rebuilt
+
+* 二 8月 12 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-7
+- Fixed build problems on ppc64
+- Fixed double packaged manpages (#102075).
+
+* 四 8月 07 2003 Phil Knirsch <pknirsch@redhat.com>
+- Fixed problem with new proc output (#98619, #89960).
+
+* 三 8月 06 2003 Phil Knirsch <pknirsch@redhat.com>
+- Fixed ro/rw problem with v2 and v3 request (#89612)
+
+* 二 8月 05 2003 Phil Knirsch <pknirsch@redhat.com>
+- Fixed permission problem for debuginfo (#101456)
+
+* 四 7月 31 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-6.1
+- Fixed file list for latest build.
+
+* 四 7月 31 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-6
+- Fixed build problems for net-snmp-perl.
+
+* 日 7月 27 2003 Florian La Roche <Florian.LaRoche@redhat.de> 5.0.8-5
+- actually apply ipv6 patch
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 4月 29 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-3
+- bumped release and rebuilt.
+
+* 二 4月 29 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-2
+- Hack to make it build on 64bit platforms with /usr/lib64 correctly.
+- Fixed bug #85071 (leak of open descriptors for ipv6).
+
+* 五 3月 28 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.8-1
+- Updated to latest upstream version 5.0.8 (bug #88580)
+
+* 四 2月 13 2003 Phil Knirsch <pknirsch@redhat.com>
+- Included generation of perl stuff. Thanks to Harald Hoyer.
+
+* 三 2月 12 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.7-1
+- Updated to net-snmp-5.0.7. Fixed especially the performance problem with
+  limited trees.
+
+* 二 2月 11 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.6-17
+- Fixed ucd-snmp.redhat.conf (#78391).
+- Fixed snmpwalk examples in config file.
+
+* 一 2月 10 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.6-15
+- Fixed invalid SMUX packet (#83487).
+
+* 四 2月 06 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.6-14
+- Fixed the libdir problem.
+
+* 三 2月 05 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.6-13
+- Updated the old libtool rpath patch.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 5.0.6-12
+- rebuilt
+
+* 二 1月 14 2003 Phil Knirsch <pknirsch@redhat.com> 5.0.6-11
+- Updated nolibelf patch and activated it again.
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 5.0.6-10
+- Rebuild
+
+* 二 12月 17 2002 Phil Knirsch <pknirsch@redhat.com> 5.0.6-9
+- Added bzip2-devel to BuildPreReq (#76086, #70199).
+
+* 四 11月 28 2002 Phil Knirsch <pknirsch@redhat.com> 5.0.6-8
+- Added patch to increase SMUXMAXSTRLEN.
+
+* 四 11月 07 2002 Tim Powers <timp@redhat.com> 5.0.6-6
+- rebuilt to fix broken deps
+- remove files from the buildroot that we don't want to ship
+
+* 四 11月 07 2002 Joe Orton <jorton@redhat.com> 5.0.6-5
+- add fix for -DUCD_COMPATIBLE (#77405)
+
+* 四 11月 07 2002 Phil Knirsch <pknirsch@redhat.com> 5.0.6-4
+- Another bump required. Some more specfile changes.
+
+* 三 11月 06 2002 Phil Knirsch <pknirsch@redhat.com> 5.0.6-3
+- Bumped release and rebuilt.
+- Removed all dbFOO cruft again.
+
+* 三 10月 09 2002 Phil Knirsch <pknirsch@redhat.com> 5.0.6-2
+- Updated to latest released version.
+
+* 六 8月 31 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- do not link against -lelf
+
+* 四 6月 27 2002 Phil Knirsch <pknirsch@redhat.com> 5.0.1-5
+- Added --enable-ucd-snmp-compatibility for compatibility with older version
+  and fixed installation thereof.
+- Got rid of the perl(Tk) dependancy by removing snmpcheck.
+- Include /usr/include/ucd-snmp in the filelist.
+- Fixed a problem with the ucd-snmp/version.h file.
+
+* 三 6月 26 2002 Phil Knirsch <pknirsch@redhat.com> 5.0.1-1
+- Updated to 5.0.1
+- Dropped --enable-reentrant as it's currently broken
+
+* 二 4月 23 2002 Phil Knirsch <pknirsch@redhat.com> 5.0-1
+- Switch to latest stable version, 5.0
+- Renamed the packate to net-snmp and obsoleted ucd-snmp.
+
+* 三 4月 17 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.4-3
+- Fixed problem with reload in initscript (#63526).
+
+* 一 4月 15 2002 Tim Powers <timp@redhat.com> 4.2.4-2
+- rebuilt in new environment
+
+* 一 4月 15 2002 Tim Powers <timp@redhat.com> 4.2.4-1
+- update to 4.2.4 final
+
+* 六 4月 13 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.4.pre3-5
+- Added some missing files to the %files section.
+
+* 二 4月 09 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.4.pre3-4
+- Hardcoded the ETC_MNTTAB to point to "/etc/mtab".
+
+* 一 4月 08 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.4.pre3-3
+- Removed the check for dbFOO as we don't want to add another requirement.
+
+* 五 4月 05 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.4.pre3-2
+- Added missing BuildPrereq to openssl-devel (#61525)
+
+* 四 4月 04 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.4.pre3-1
+- Added ucd5820stat to the files section.
+- Updated to latest version (4.2.4.pre3)
+
+* 一 3月 18 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.4.pre2-1
+- Updated to latest version (4.2.4.pre2)
+
+* 二 1月 29 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.3-4
+- Added the snmptrapd init script as per request (#49205)
+- Fixed the again broken rpm query stuff (#57444)
+- Removed all old and none-used db related stuff (libs and header checks/files)
+
+* 一 1月 07 2002 Phil Knirsch <pknirsch@redhat.com> 4.2.3-2
+- Included the Axioma Security Research fix for snmpnetstat from bugtraq.
+
+* 一 12月 03 2001 Phil Knirsch <phil@redhat.de> 4.2.3-1
+- Update to 4.2.3 final.
+- Fixed libtool/rpath buildroot pollution problem.
+- Fixed library naming problem.
+
+* 五 10月 05 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed a server segfault for snmpset operation (#53640). Thanks to Josh Giles
+  and Wes Hardaker for the patch.
+
+* 一 9月 10 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed problem with RUNTESTS script.
+
+* 二 9月 04 2001 Preston Brown <pbrown@redhat.com>
+- fixed patch related to bug #35016 (Dell)
+
+* 五 8月 24 2001 Philipp Knirsch <pknirsch@redhat.de> 4.2.1-6
+- Fixed snmpd description (#52366)
+
+* 三 8月 22 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Final bcm5820 fix. Last one was broken.
+- Fixed bugzilla bug (#51960) where the binaries contained rpath references.
+
+* 三 8月 15 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed a couple of security issues:
+  o /tmp race and setgroups() privilege problem
+  o Various buffer overflow and format string issues.
+  o One signedness problem in ASN handling.
+- Fixed an important RFE to support bcm5820 cards. (#51125)
+
+* 五 7月 20 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Removed tkmib from the package once again as we don't ship the Tk.pm CPAN
+  perl module required to run it (#49363)
+- Added missing Provides for the .so.0 libraries as rpm doesn't seem to find
+  those during the build anymore (it used to) (#46388)
+
+* 四 7月 19 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Enabled IPv6 support (RFE #47764)
+- Hopefully final fix of snmpwalk problem (#42153). Thanks to Douglas Warzecha
+  for the patch and Matt Domsch for reporting the problem.
+
+* 二 6月 26 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed smux compilation problems (#41452)
+- Fixed wrong paths displayed in manpages (#43053)
+
+* 一 6月 25 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Updated to 4.2.1. Removed 2 obsolete patches (fromcvs and #18153)
+- Include /usr/share/snmp/snmpconf in %files
+
+* 三 6月 13 2001 Than Ngo <than@redhat.com>
+- fix to use libwrap in distro
+- add buildprereq: tcp_wrappers
+
+* 五 6月 01 2001 Bill Nottingham <notting@redhat.com>
+- add a *new* patch for IP address return sizes
+
+* 五 4月 20 2001 Bill Nottingham <notting@redhat.com>
+- add patch so that only four bytes are returned for IP addresses on ia64 (#32244)
+
+* 三 4月 11 2001 Bill Nottingham <notting@redhat.com>
+- rebuild (missing alpha packages)
+
+* 五 4月 06 2001 Matt Wilson <msw@redhat.com>
+- added ucd-snmp-4.2-null.patch to correcly handle a NULL value (#35016)
+
+* 二 4月 03 2001 Preston Brown <pbrown@redhat.com>
+- clean up deinstallation (#34168)
+
+* 二 3月 27 2001 Matt Wilson <msw@redhat.com>
+- return a usable RETVAL when running "service snmpd status" (#33571)
+
+* 二 3月 13 2001 Matt Wilson <msw@redhat.com>
+- configure with --enable-reentrant and added "smux" and "agentx" to
+  --with-mib-modules= argument (#29626)
+
+* 五 3月 02 2001 Nalin Dahyabhai <nalin@redhat.com>
+- rebuild in new environment
+
+* 一 2月 26 2001 Tim Powers <timp@redhat.com>
+- fixed initscript, for reload and restart it was start then stop,
+  fixed. (#28477)
+
+* 五 2月 02 2001 Trond Eivind Glomsrod <teg@redhat.com>
+- i18nize initscript
+
+* 六 1月 06 2001 Jeff Johnson <jbj@redhat.com>
+- don't depend on /etc/init.d so that package will work with 6.2.
+- perl path fiddles no longer needed.
+- rely on brp-compress frpm rpm to compress man pages.
+- patch from ucd-snmp CVS (Wes Hardaker).
+- configure.in needs to check for rpm libraries correctly (#23033).
+- add simple logrotate script (#21399).
+- add options to create pidfile and log with syslog with addresses (#23476).
+
+* 六 12月 30 2000 Jeff Johnson <jbj@redhat.com>
+- package for Red Hat 7.1.
+
+* 四 12月 07 2000 Wes Hardaker <hardaker@users.sourceforge.net>
+- update for 4.2
+
+* 四 10月 12 2000 Jeff Johnson <jbj@redhat.com>
+- add explicit format for syslog call (#18153).
+
+* 四 7月 20 2000 Bill Nottingham <notting@redhat.com>
+- move initscript back
+
+* 四 7月 20 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild per Trond's request.
+
+* 二 7月 18 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix syntax error that crept in with condrestart
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 7月 10 2000 Preston Brown <pbrown@redhat.com>
+- move initscript and add condrestart magic
+
+* 六 6月 17 2000 Bill Nottingham <notting@redhat.com>
+- fix %attr on man pages
+
+* 一 6月 12 2000 Jeff Johnson <jbj@redhat.com>
+- tkmib doco had #!/usr/bin/perl55
+- include snmpcheck and tkmib again (still needs some CPAN module, however).
+
+* 二 6月 06 2000 Jeff Johnson <jbj@redhat.com>
+- update to 4.1.2.
+- FHS packaging.
+- patch for rpm 4.0.
+
+* 四 5月 18 2000 Trond Eivind Glomsrod <teg@redhat.com>
+- add version to buildroot
+- rebuilt with new libraries
+
+* 日 2月 27 2000 Jeff Johnson <jbj@redhat.com>
+- default config was broken (from Wes Hardaker) (#9752)
+
+* 日 2月 13 2000 Jeff Johnson <jbj@redhat.com>
+- compressed man pages.
+
+* 五 2月 11 2000 Wes Hardaker <wjhardaker@ucdavis.edu>
+- update to 4.1.1
+
+* 六 2月 05 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- change %postun to %preun
+
+* 四 2月 03 2000 Elliot Lee <sopwith@redhat.com>
+- Don't ship tkmib, since we don't ship the perl modules needed to run it.
+(Bug #4881)
+
+* 二 8月 31 1999 Jeff Johnson <jbj@redhat.com>
+- default config permits RO access to system group only (Wed Hardaker).
+
+* 日 8月 29 1999 Jeff Johnson <jbj@redhat.com>
+- implement suggestions from Wes Hardaker.
+
+* 五 8月 27 1999 Jeff Johnson <jbj@redhat.com>
+- stateless access to rpm database.
+
+* 三 8月 25 1999 Jeff Johnson <jbj@redhat.com>
+- update to 4.0.1.
+
+* 一 8月 16 1999 Bill Nottingham <notting@redhat.com>
+- initscript munging
+
+* 六 6月 12 1999 Jeff Johnson <jbj@redhat.com>
+- update to 3.6.2 (#3219,#3259).
+- add missing man pages (#3057).
+
+* 四 4月 08 1999 Wes Hardaker <wjhardaker@ucdavis.edu>
+- fix Source0 location.
+- fix the snmpd.conf file to use real community names.
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 3)
+
+* 五 3月 19 1999 Preston Brown <pbrown@redhat.com>
+- upgrade to 3.6.1, fix configuration file stuff.
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 二 2月 02 1999 Jeff Johnson <jbj@redhat.com>
+- restore host resources mib
+- simplified config file
+- rebuild for 6.0.
+
+* 二 12月 22 1998 Bill Nottingham <notting@redhat.com>
+- remove backup file to fix perl dependencies
+
+* 二 12月 08 1998 Jeff Johnson <jbj@redhat.com>
+- add all relevant rpm scalars to host resources mib.
+
+* 日 12月 06 1998 Jeff Johnson <jbj@redhat.com>
+- enable libwrap (#253)
+- enable host module (rpm queries over SNMP!).
+
+* 一 10月 12 1998 Cristian Gafton <gafton@redhat.com>
+- strip binaries
+
+* 五 10月 02 1998 Jeff Johnson <jbj@redhat.com>
+- update to 3.5.3.
+- don't include snmpcheck until perl-SNMP is packaged.
+
+* 四 8月 13 1998 Jeff Johnson <jbj@redhat.com>
+- ucd-snmpd.init: start daemon w/o -f.
+
+* 二 8月 04 1998 Jeff Johnson <jbj@redhat.com>
+- don't start snmpd unless requested
+- start snmpd after pcmcia.
+
+* 日 6月 21 1998 Jeff Johnson <jbj@redhat.com>
+- all but config (especially SNMPv2p) ready for prime time
+
+* 六 6月 20 1998 Jeff Johnson <jbj@redhat.com>
+- update to 3.5.
+
+* 二 12月 30 1997 Otto Hammersmith <otto@redhat.com>
+- created the package... possibly replace cmu-snmp with this.
+

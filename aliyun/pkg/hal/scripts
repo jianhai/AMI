@@ -1,0 +1,19 @@
+preinstall scriptlet (using /bin/sh):
+# Add the "haldaemon" user and group
+getent group haldaemon >/dev/null || groupadd -g 68 -r haldaemon
+getent passwd haldaemon >/dev/null || \
+	useradd -r -u 68 -g haldaemon -G haldaemon -d '/' -s /sbin/nologin \
+	-c "HAL daemon" haldaemon
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+/sbin/chkconfig --add haldaemon
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+    service haldaemon stop > /dev/null 2>&1
+    /sbin/chkconfig --del haldaemon
+fi
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+#if [ "$1" -ge "1" ]; then
+#  service haldaemon condrestart > /dev/null 2>&1
+#fi

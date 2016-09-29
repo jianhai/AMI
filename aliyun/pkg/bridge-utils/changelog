@@ -1,0 +1,122 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2-9.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2-9.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.2-9.1
+- rebuild for alios6
+
+* 四 4月 29 2010 Thomas Woerner <twoerner@redhat.com> - 1.2-9
+- Add IGMP snooping support (rhbz#574461)
+  Backported version of Herbert Xu's patch
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.2-8.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 7月 03 2008 David Woodhouse <david.woodhouse@intel.com> 1.2-6
+- Fix location of bridge parameters in sysfs
+
+* 三 3月 05 2008 David Woodhouse <dwmw2@redhat.com> 1.2-5
+- Fix handling of bridge named 'bridge' (#436120)
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.2-4
+- Autorebuild for GCC 4.3
+
+* 一 12月 10 2007 Patrick "Jima" Laughton <jima@beer.tclug.org> 1.2-3
+- Minor tweaks as recommended in merge review (BZ#225625)
+
+* 三 8月 22 2007 David Woodhouse <dwmw2@redhat.com> 1.2-2
+- Update licence
+
+* 三 8月 22 2007 David Woodhouse <dwmw2@redhat.com> 1.2-1
+- Update to 1.2
+
+* 六 9月 09 2006 David Woodhouse <dwmw2@redhat.com> 1.1-2
+- Fix setportprio command (#205810)
+- Other updates from bridge-utils git tree
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.1-1.1
+- rebuild
+
+* 三 6月 07 2006 David Woodhouse <dwmw2@redhat.com> 1.1-1
+- Update to 1.1
+- BR libsysfs-devel instead of sysfsutils-devel
+
+* 三 6月 07 2006 David Woodhouse <dwmw2@redhat.com> 1.0.6-2
+- Use sane kernel headers, drop -devel package
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.6-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.0.6-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 12月 21 2005 David Woodhouse <dwmw2@redhat.com> 1.0.6-1
+- Update to 1.0.6
+- Cleanups from Matthias Saou (#172774)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 3月 02 2005 David Woodhouse <dwmw2@redhat.com> 1.0.4-6
+- Rebuild with gcc 4
+
+* 二 2月 15 2005 David Woodhouse <dwmw2@redhat.com> 1.0.4-5
+- Rebuild
+
+* 四 8月 26 2004 David Woodhouse <dwmw2@redhat.com> 1.0.4-4
+- BuildRequires: sysfsutils-devel to make the horrid autoconf script magically
+  change the entire package's behaviour just because it happens to find 
+  slightly different header files lying around.
+- Include our own kernel-derived headers
+
+* 四 7月 01 2004 David Woodhouse <dwmw2@redhat.com>
+- Update to 1.0.4
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 10月 25 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- support change to call sysconf() to get HZ
+
+* 二 9月 16 2003 David Woodhouse <dwmw2@redhat.com> 0.9.6-1
+- Update to 0.9.6
+- Detect lack of kernel bridge support or EPERM and exit with appropriate code.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 12月 13 2002 Elliot Lee <sopwith@redhat.com> 0.9.3-7
+- Rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 3月 04 2002 Benjamin LaHaise <bcrl@redhat.com>
+- manual rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 11月 07 2001 Matthew Galgoci <mgalgoci@redhat.com>
+- initial cleanup of spec file from net release
+

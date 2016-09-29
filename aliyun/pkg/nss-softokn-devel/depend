@@ -1,0 +1,14 @@
+/bin/sh  
+/usr/bin/pkg-config  
+nspr-devel >= 4.10.0
+nss-softokn(x86-64) = 3.14.3-10.2.alios6
+nss-softokn-freebl-devel(x86-64) = 3.14.3-10.2.alios6
+nss-util-devel >= 3.15.1
+pkgconfig  
+pkgconfig(nspr) >= 4.10.0
+pkgconfig(nss-util) >= 3.15.1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

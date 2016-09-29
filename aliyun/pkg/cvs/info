@@ -1,0 +1,24 @@
+Name        : cvs                          Relocations: (not relocatable)
+Version     : 1.11.23                           Vendor: Alibaba
+Release     : 11.3.alios6.1                 Build Date: 2014年07月26日 星期六 02时47分21秒
+Install Date: 2015年03月25日 星期三 11时00分06秒      Build Host: x86-004.build.alibaba
+Group       : Development/Tools             Source RPM: cvs-1.11.23-11.3.alios6.1.src.rpm
+Size        : 1591062                          License: GPL+ and GPLv2+ and LGPL+
+Signature   : RSA/8, 2014年07月31日 星期四 16时20分25秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.cvshome.org/
+Summary     : A version control system
+Description :
+CVS (Concurrent Versions System) is a version control system that can
+record the history of your files (usually, but not always, source
+code). CVS only stores the differences between versions, instead of
+every version of every file you have ever created. CVS also keeps a log
+of who, when, and why changes occurred.
+
+CVS is very helpful for managing releases and controlling the
+concurrent editing of source files among multiple authors. Instead of
+providing version control for a collection of files in a single
+directory, CVS provides version control for a hierarchical collection
+of directories consisting of revision controlled files. These
+directories and files can then be combined together to form a software
+release.

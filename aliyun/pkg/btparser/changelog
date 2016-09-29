@@ -1,0 +1,27 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.17-2.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.17-2.1
+- rebuild for alios6-update
+
+* 一 6月 10 2013 Martin Milata <mmilata@redhat.com> - 0.17-2
+- Backport commit ec1bf395 that fixes several memory leaks
+- Backport abf036d5 that fixes a NULL dereference
+- Backport 6e0f49a3 that adds version to the manual page
+- Resolves: #803774, #903140, #905854
+
+* 三 8月 08 2012 Jiri Moskovcak <jmoskovc@redhat.com> - 0.17-1
+- New upstream release
+- Resolves: #846667
+
+* 一 5月 07 2012 Karel Klíč <kklic@redhat.com> - 0.16-3
+- Report correct crash_function in the crash sumary
+  Resolves: rhbz#811147
+
+* 三 2月 08 2012 Karel Klíč <kklic@redhat.com> - 0.16-1
+- New upstream release
+  Resolves: #768377
+
+* 一 5月 16 2011 Karel Klíč <kklic@redhat.com> - 0.13-1
+- Initial packaging
+

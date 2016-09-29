@@ -1,0 +1,8 @@
+elfutils-libelf-devel(x86-64) = 0.152-1.3.alios6
+elfutils-libs(x86-64) = 0.152-1.3.alios6
+libasm.so.1()(64bit)  
+libdw.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

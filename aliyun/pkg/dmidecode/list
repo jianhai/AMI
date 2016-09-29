@@ -1,0 +1,13 @@
+/usr/sbin/biosdecode
+/usr/sbin/dmidecode
+/usr/sbin/ownership
+/usr/sbin/vpddecode
+/usr/share/doc/dmidecode-2.11
+/usr/share/doc/dmidecode-2.11/AUTHORS
+/usr/share/doc/dmidecode-2.11/CHANGELOG
+/usr/share/doc/dmidecode-2.11/LICENSE
+/usr/share/doc/dmidecode-2.11/README
+/usr/share/man/man8/biosdecode.8.gz
+/usr/share/man/man8/dmidecode.8.gz
+/usr/share/man/man8/ownership.8.gz
+/usr/share/man/man8/vpddecode.8.gz

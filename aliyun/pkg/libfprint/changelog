@@ -1,0 +1,108 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1.0-19.pre2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1.0-19.pre2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.1.0-19.pre2.1
+- rebuild for alios6
+
+* 三 8月 25 2010 Bastien Nocera <bnocera@redhat.com> 0.1.0-19.pre2
+- Build against NSS, not OpenSSL
+Resolves: rhbz#627316
+
+* 四 7月 29 2010 Matthew Garrett <mjg@redhat.com> 0.1.0-18.pre2
+- Fix the udev rule generation properly
+Resolves: rhbz#573019
+
+* 三 6月 30 2010 Matthew Garrett <mjg@redhat.com> 0.1.0-16.pre3
+- Fix udev rules generation to avoid error on boot
+Resolves: rhbz#573019
+
+* 一 6月 21 2010 Bastien Nocera <bnocera@redhat.com> 0.1.0-16.pre2
+- Fix aes1610 patch to apply
+Resolves: rhbz#605072
+
+* 二 6月 01 2010 Bastien Nocera <bnocera@redhat.com> 0.1.0-15.pre2
+- Add README to package
+Related: rhbz#595769
+
+* 四 1月 07 2010 Bastien Nocera <bnocera@redhat.com> 0.1.0-14.pre2
+- Rebuild for new OpenSSL
+Related: rhbz#543948
+
+* 一 11月 30 2009 Bastien Nocera <bnocera@redhat.com> 0.1.0-13.pre2
+- Add aes1610 driver (#499732)
+
+* 四 10月 01 2009 Bastien Nocera <bnocera@redhat.com> 0.1.0-12.pre2
+- Update udev autosuspend rules and disable SGS Thomson reader
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 0.1.0-11.pre2
+- rebuilt with new openssl
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1.0-10.pre2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 21 2009 Bastien Nocera <bnocera@redhat.com> 0.1.0-9.pre2
+- Use gdk-pixbuf for image manipulation instead of ImageMagick (#472103)
+
+* 六 6月 20 2009 Bastien Nocera <bnocera@redhat.com> 0.1.0-8.pre2
+- Update to 0.1.0-pre2
+
+* 二 6月 09 2009 Matthew Garrett <mjg@redhat.com> 0.1.0-7.pre1
+- fprint-add-udev-rules.patch - build udev rules for autosuspend
+- move hal fdi into the main package rather than -devel
+- add autoreconf as a build depend while carrying the udev diff
+
+* 二 4月 21 2009 Karsten Hopp <karsten@redhat.com> 0.1.0-6.pre1.1
+- Excludearch s390 s390x, we don't have USB devices there and this package
+  doesn't build without USB support
+
+* 一 3月 09 2009 pingou <pingou@pingoured.fr> - 0.1.0-6.pre1
+- Rebuilt for rawhide
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1.0-5.pre1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 1月 17 2009 Tomas Mraz <tmraz@redhat.com> - 0.1.0-4.pre1
+- rebuild with new openssl
+
+* 二 11月 25 2008 - Bastien Nocera <bnocera@redhat.com> - 0.1.0-3.pre1
+- Fix possible crasher in libfprint when setting up the fds for polling
+
+* 一 11月 24 2008 - Bastien Nocera <bnocera@redhat.com> - 0.1.0-2.pre1
+- And add some API docs
+
+* 二 11月 18 2008 - Bastien Nocera <bnocera@redhat.com> - 0.1.0-1.pre1
+- Fix build
+
+* 二 11月 04 2008 - Bastien Nocera <bnocera@redhat.com> - 0.1.0-0.pre1
+- Update to 0.1.0-pre1
+
+* 二 5月 13 2008 Pingou <pingoufc4@yahoo.fr> 0.0.5-6
+- Correction on the Build Requires
+
+* 二 5月 13 2008 Pingou <pingoufc4@yahoo.fr> 0.0.5-5
+- Correction on the Build Requires
+
+* 二 5月 13 2008 Pingou <pingoufc4@yahoo.fr> 0.0.5-4
+- Update the Build Requires due to the change on ImageMagick
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.0.5-3
+- Autorebuild for GCC 4.3
+
+* 六 1月 05 2008 Pingou <pingoufc4@yahoo.fr> 0.0.5-2
+- Change on the BuildRequires
+
+* 六 1月 05 2008 Pingou <pingoufc4@yahoo.fr> 0.0.5-1
+- Update to version 0.0.5
+
+* 六 12月 01 2007 Pingou <pingoufc4@yahoo.fr> 0.0.4-3
+- Changes on the Requires
+
+* 日 11月 25 2007 Pingou <pingoufc4@yahoo.fr> 0.0.4-2
+- Changes on the Requires
+
+* 六 11月 24 2007 Pingou <pingoufc4@yahoo.fr> 0.0.4-1
+- First release
+

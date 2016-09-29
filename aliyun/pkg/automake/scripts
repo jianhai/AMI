@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/install-info /usr/share/info/automake.info.gz /usr/share/info/dir || :
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+    /sbin/install-info --delete /usr/share/info/automake.info.gz /usr/share/info/dir || :
+fi

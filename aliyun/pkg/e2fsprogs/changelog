@@ -1,0 +1,479 @@
+* 四 8月 21 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.41.12-11.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.41.12-11.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.41.12-11.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.41.12-11.1
+- rebuild for alios6
+
+* 三 9月 14 2011 Lukas Czerner <lczerner@redhat.com> 1.41.12-11
+- fix invalid lseek error detection in e2image (#732940)
+
+* 五 8月 12 2011 Eric Sandeen <sandeen@redhat.com> 1.41.12-10
+- build with partial relro support (#730083)
+
+* 三 6月 15 2011 Lukas Czerner <lczerner@redhat.com> 1.41.12-9
+- e2image: Add support for exporting image in qcow2 format (#713468)
+- mke2fs: Skip inode table initialization on some discardable devices (#713475)
+- mke2fs: Add -E discard/nodiscard options (#713475)
+- mke2fs: Allow to specify discard option in mke2fs.conf (#713475)
+- e2fsck: Allow to discard free data and inode blocks in e2fsck (#713475)
+- mke2fs: Show discard progress (#713475)
+- Don't attempt to discard flash device if -n option is given (#713475)
+
+* 一 5月 23 2011 Eric Sandeen <sandeen@redhat.com> 1.41.12-8
+- e2fsck: don't clone dup xattr blocks in fs without xattr feat (#676465)
+- Allow specification of default mntopts in superblock (#679892)
+- Handle devices with large physical blocksizes (#679931)
+- Fix some typos in man pages (#683906)
+
+* 四 3月 03 2011 Eric Sandeen <sandeen@redhat.com> 1.41.12-7
+- Add explicit dependencies between subpackages (#599338)
+
+* 三 12月 22 2010 Eric Sandeen <sandeen@redhat.com> 1.41.12-6
+- Fix 16T boundary conditions in resize2fs (#654093)
+
+* 三 12月 15 2010 Eric Sandeen <sandeen@redhat.com> 1.41.12-5
+- Fix incorrect filefrag counts (#653234)
+- Fix type punning warnings (#599338)
+
+* 二 10月 26 2010 Eric Sandeen <sandeen@redhat.com> 1.41.12-4
+- Fix badblocks device size check at 16T (#631593)
+- Fix mkfs.ext4 -G 2147483648 hang (#643390)
+
+* 二 7月 20 2010 Eric Sandeen <sandeen@redhat.com> 1.41.12-3
+- Relax resize2fs -P requirements (#614220)
+
+* 三 5月 19 2010 Eric Sandeen <sandeen@redhat.com> 1.41.12-2
+- Fix fsck thinko in 1.41.12 release (#593133)
+
+* 二 5月 18 2010 Eric Sandeen <sandeen@redhat.com> 1.41.12-1
+- New upstream (bugfix) release (#593133)
+
+* 一 4月 26 2010 Eric Sandeen <sandeen@redhat.com> 1.41.10-6
+- Don't trim intentional blocks past EOF (#586138)
+
+* 一 3月 15 2010 Eric Sandeen <sandeen@redhat.com> 1.41.10-5
+- Completely drop the misalignment question in mkfs (#573720)
+
+* 二 3月 02 2010 Eric Sandeen <sandeen@redhat.com> 1.41.10-4
+- Don't ask for confirmation of misaligned mkfs with -F (#569849)
+
+* 三 2月 24 2010 Eric Sandeen <sandeen@redhat.com> 1.41.10-3
+- Fix stray comment in %post
+
+* 三 2月 24 2010 Eric Sandeen <sandeen@redhat.com> 1.41.10-2
+- Fix potential corruption with e2fsck -fD (#568073)
+
+* 四 2月 11 2010 Eric Sandeen <sandeen@redhat.com> 1.41.10-1
+- New upstream release (#562936)
+
+* 二 1月 26 2010 Eric Sandeen <sandeen@redhat.com> 1.41.9-9
+- Turn make check back on
+- Fix ldopen issue in debugfs for newer readline
+- Fix resize2fs access past end of array
+
+* 二 11月 10 2009 Eric Sandeen <sandeen@redhat.com> 1.41.9-8
+- Fix up topology patch to build w/ new util-linux-ng
+- Fix endian swapping of backup journal blocks in sb
+
+* 二 11月 10 2009 Eric Sandeen <sandeen@redhat.com> 1.41.9-7
+- Re-enable "make check" during build
+
+* 三 10月 28 2009 Eric Sandeen <sandeen@redhat.com> 1.41.9-6
+- Add support for block discard (TRIM) at mkfs time
+- Add support for new blkid topology awareness
+
+* 一 10月 19 2009 Eric Sandeen <sandeen@redhat.com> 1.41.9-5
+- Allow superblock timestamp differences up to 24h (#522969)
+
+* 二 10月 06 2009 Eric Sandeen <sandeen@redhat.com> 1.41.9-4
+- Fix install with --excludedocs (#515987)
+
+* 一 9月 14 2009 Eric Sandeen <sandeen@redhat.com> 1.41.9-3
+- Drop defrag bits for now, not ready yet.
+
+* 四 9月 10 2009 Josef Bacik <josef@toxicpanda.com> 1.41.9-2
+- Fix resize -m bug with flexbg (#519131)
+
+* 日 8月 23 2009 Eric Sandeen <sandeen@redhat.com> 1.41.9-1
+- New upstream release
+
+* 三 8月 05 2009 Eric Sandeen <sandeen@redhat.com> 1.41.8-6
+- Fix filefrag in fallback case
+- Add e2freefrag & e4defrag (experimental)
+
+* 日 7月 26 2009 Karel Zak <kzak@redhat.com> 1.41.8-5
+- disable fsck (replaced by util-linux-ng)
+
+* 六 7月 25 2009 Karel Zak <kzak@redhat.com> 1.41.8-4
+- disable libuuid and uuidd (replaced by util-linux-ng)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.41.8-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 17 2009 Eric Sandeen <sandeen@redhat.com> 1.41.8-2
+- Address some package review concerns (#225714)
+
+* 日 7月 12 2009 Eric Sandeen <sandeen@redhat.com> 1.41.8-1
+- New upstream version, several resize fixes.
+
+* 二 6月 30 2009 Eric Sandeen <sandeen@redhat.com> 1.41.7-1
+- New upstream version
+
+* 五 6月 26 2009 Eric Sandeen <sandeen@redhat.com> 1.41.6-6
+- Split out sub-libraries (#225406)
+- Don't start uuidd by default
+
+* 四 6月 18 2009 Eric Sandeen <sandeen@redhat.com> 1.41.6-5
+- Update journal backup blocks in sb after resize (#505339)
+- Fix memory leak in extent handling functions
+- Fix bug in inode writing in extent code, clobbered i_extra_isize etc
+
+* 一 6月 08 2009 Karel Zak <kzak@redhat.com> 1.41.6-4
+- set BuildRequires: libblkid-devel (from util-linux-ng)
+
+* 一 6月 08 2009 Karel Zak <kzak@redhat.com> 1.41.6-3
+- temporary use BuildRequires: e2fsprogs-devel (we cannot install 
+  new util-linux-ng with libblkid to buildroots without new e2fsprogs 
+  without libblkid).
+
+* 四 6月 04 2009 Karel Zak <kzak@redhat.com> 1.41.6-2
+- disable libblkid (replaced by libblkid from util-linux-ng)
+
+* 六 5月 30 2009 Eric Sandeen <sandeen@redhat.com> 1.41.6-1
+- New upstream version
+
+* 五 4月 24 2009 Eric Sandeen <sandeen@redhat.com> 1.41.5-1
+- New upstream version
+
+* 三 4月 22 2009 Eric Sandeen <sandeen@redhat.com> 1.41.4-8
+- Fix support for external journals
+
+* 三 4月 22 2009 Eric Sandeen <sandeen@redhat.com> 1.41.4-7
+- Fix ext4 resize issues (#496982)
+
+* 六 4月 11 2009 Eric Sandeen <sandeen@redhat.com> 1.41.4-6
+- ignore differing NEEDS_RECOVERY flag on fsck post-resize (#471925)
+
+* 四 2月 26 2009 Eric Sandeen <sandeen@redhat.com> 1.41.4-5
+- fix a couple missed descriptions; obsolete e4fsprogs
+
+* 四 2月 26 2009 Eric Sandeen <sandeen@redhat.com> 1.41.4-4
+- Edit summary & description to include ext4 (#487469)
+- Fix blkid null ptr deref in initrd (#486997)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.41.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 1月 29 2009 Eric Sandeen <sandeen@redhat.com> 1.41.4-2
+- Fix debugfs "stat" segfault if no open fs (#482894)
+- Fix name of libext2fs info page (#481620)
+
+* 四 1月 29 2009 Eric Sandeen <sandeen@redhat.com> 1.41.4-1
+- New upstream release
+- Dropped btrfs & resize fixes, upstream now
+
+* 二 1月 20 2009 Eric Sandeen <sandeen@redhat.com> 1.41.3-4
+- resize2fs fixes, esp. for ext4
+
+* 六 1月 10 2009 Eric Sandeen <sandeen@redhat.com> 1.41.3-3
+- Remove conservative "don't change journal location" patch for F11
+- Add btrfs recognition to blkid
+
+* 五 10月 03 2008 Eric Sandeen <sandeen@redhat.com> 1.41.3-2
+- Bump to revision 2, f10 was behind f9, oops.
+
+* 五 10月 03 2008 Eric Sandeen <sandeen@redhat.com> 1.41.3-1
+- New upstream version (very minor fixes, ext4-related)
+
+* 四 10月 02 2008 Eric Sandeen <sandeen@redhat.com> 1.41.2-2
+- Fix blkid to recognize ext4dev filesystems as ext4-mountable
+
+* 四 10月 02 2008 Eric Sandeen <sandeen@redhat.com> 1.41.2-1
+- New upstream version
+- Updated default dir hash (half_md4) for better perf & fewer collisions
+- Fixed ext4 online resizing with flex_bg
+- ext4 journal now in extents format and in middle of filesystem
+- fix unreadable e2image files
+- fix file descriptor leak in libcom_err (#464689)
+
+* 六 8月 23 2008 Eric Sandeen <sandeen@redhat.com> 1.41.0-2
+- Don't check the group checksum when !GDT_CSUM (#459875)
+
+* 四 7月 10 2008 Eric Sandeen <sandeen@redhat.com> 1.41.0-1
+- New upstream version
+- ext4 capable
+
+* 一 7月 07 2008 Eric Sandeen <sandeen@redhat.com> 1.41-0.2.WIP.0707
+- Fix release macro snafu
+
+* 一 7月 07 2008 Eric Sandeen <sandeen@redhat.com> 1.41-0.1.WIP.0707
+- New upstream snapshot release
+
+* 五 6月 20 2008 Eric Sandeen <sandeen@redhat.com> 1.41-0.WIP.0617.1
+- Fix blkid -g segfault when clearing entries (#452333)
+
+* 三 6月 18 2008 Eric Sandeen <sandeen@redhat.com> 1.41-0.WIP.0617
+- New upstream snapshot release for ext4 capability
+
+* 三 6月 04 2008 Eric Sandeen <sandeen@redhat.com> 1.40.10-3
+- Tidy up multilib hack for non-multilib arches (#446016)
+- Fix up postun script (#449868)
+
+* 三 6月 04 2008 Dennis Gilmore <dennis@ausil.us> 1.40.10-2
+- setup header support for sparc
+
+* 五 5月 23 2008 Eric Sandeen <esandeen@redhat.com> 1.40.10-1
+- New upstream version
+- Fixes unprivileged blkid use problem (#448591)
+
+* 一 5月 12 2008 Eric Sandeen <esandeen@redhat.com> 1.40.9-2
+- Fix blkid swap recognition on big-endian boxes (#445786)
+
+* 日 4月 27 2008 Eric Sandeen <esandeen@redhat.com> 1.40.9-1
+- New upstream version
+
+* 五 3月 14 2008 Eric Sandeen <esandeen@redhat.com> 1.40.8-2
+- Update ext2fs_swap_inode_full() fix to match upstream
+- Check more of swapv1 header in blkid detection (#442937)
+
+* 五 3月 14 2008 Eric Sandeen <esandeen@redhat.com> 1.40.8-1
+- New upstream version
+
+* 一 3月 03 2008 Eric Sandeen <esandeen@redhat.com> 1.40.7-2
+- second try at fixing resize2fs vs. large inodes... (#434893)
+
+* 五 2月 29 2008 Eric Sandeen <esandeen@redhat.com> 1.40.7-1
+- New upstream version, special leap-day edition
+- Fix resize2fs losing inline xattrs when shrinking (#434893)
+  and add patch to fix swap_inode_full in this case
+- Allow mke2fs & tune2fs to manipulate large_file feature (#258381)
+- Handle lvm error conditions in libblkid (#433857)
+- Allow tune2fs to clear the resize_inode feature (#167816)
+- Teach blkid to detect LVM2 physical volumes (#409321)
+- Show "mostly printable" xattrs as text in debugfs (#430621)
+- Trimmed pre-1.38 rpm changelog entries
+
+* 日 2月 10 2008 Eric Sandeen <esandeen@redhat.com> 1.40.6-1
+- New upstream version
+
+* 五 2月 08 2008 Eric Sandeen <esandeen@redhat.com> 1.40.5-2
+- gcc-4.3 rebuild
+
+* 一 1月 28 2008 Eric Sandeen <esandeen@redhat.com> 1.40.5-1
+- New upstream version, drop several now-upstream patches.
+
+* 四 1月 24 2008 Eric Sandeen <sandeen@redhat.com> 1.40.4-7
+- Fix sb flag comparisons properly this time (#428893)
+- Make 256-byte inodes for the [default] mkfs case.
+  This will facilitate upgrades to ext4 later, and help xattr perf.
+
+* 三 1月 23 2008 Eric Sandeen <sandeen@redhat.com> 1.40.4-6
+- Completely clobber e2fsck.static build.
+
+* 三 1月 23 2008 Eric Sandeen <sandeen@redhat.com> 1.40.4-5
+- Ignore some primary/backup superblock flag differences (#428893)
+- Teach libblkid about ext4dev.
+
+* 四 1月 10 2008 Eric Sandeen <sandeen@redhat.com> 1.40.4-4
+- Build e2fsck as a dynamically linked binary.
+- Re-fix uidd manpage default paths.
+
+* 三 1月 09 2008 Eric Sandeen <sandeen@redhat.com> 1.40.4-3
+- New uuidd subpackage, and properly set up uuidd at install.
+
+* 二 1月 01 2008 Eric Sandeen <esandeen@redhat.com> 1.40.4-2
+- Add new uidd files to specfile
+
+* 二 1月 01 2008 Eric Sandeen <esandeen@redhat.com> 1.40.4-1
+- New upstream version, drop several now-upstream patches.
+
+* 二 1月 01 2008 Eric Sandeen <esandeen@redhat.com> 1.40.2-15
+- Drop resize_inode removal patch from tune2fs; ostensibly was
+  for old kernels which could not mount, but seems to be fine.
+- Drop pottcdate removal patch, and don't rebuild .po files,
+  causes multilib problems and we generally shouldn't rebuild.
+- Drop multilib patch; wrapper header should take care of this now.
+- Drop ->open rename, Fedora seems ok with this now.
+
+* 二 12月 11 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-14
+- Fix integer overflows (#414591 / CVE-2007-5497)
+
+* 二 12月 04 2007 Stepan Kasal <skasal@redhat.com> 1.40.2-13
+- The -devel package now requires device-mapper-devel, to match
+  the dependency in blkid.pc (#410791)
+
+* 二 11月 27 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-12
+- Use upstream patch for blkid fat detection, avoids div-by-zero
+  when encountering some BSD partitions (#398281)
+
+* 二 10月 23 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-11
+- Add arm to multilib header wrapper
+
+* 六 10月 20 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-10
+- Make (more) file timestamps match those in tarball for multilib tidiness 
+- Fix e2fsprogs-libs summary (shared libs not static)
+
+* 一 10月 15 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-9
+- Detect big-endian squashfs filesystems in libblkid (#305151)
+
+* 二 10月 02 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-8
+- Detect squashfs filesystems in libblkid (#305151)
+
+* 二 9月 18 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-7
+- Fix blkid fat probe when there is a real MBR (#290951)
+
+* 二 9月 18 2007 Oliver Falk <oliver@linux-kernel.at> 1.40.2-6
+- Add alpha to the header wrappers
+
+* 五 9月 07 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-5
+- wrap a couple headers to fix multilib issues (#270441)
+
+* 三 8月 29 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-4
+- add gawk to e2fsprogs-devel Requires, compile_et needs it (#265961)
+
+* 四 8月 23 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-3
+- Update license tags
+- Fix one open-create caller with no mode
+- Protect ->open ops from glibc open-create-mode-checker
+- Fix source URL
+- Add gawk to BuildRequires
+
+* 三 7月 18 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-2
+- Fix bug in ext2fs_swap_inode_full() on big-endian boxes
+
+* 二 7月 17 2007 Eric Sandeen <esandeen@redhat.com> 1.40.2-1
+- New version 1.40.2
+- Fix up warning in badblocks
+
+* 一 6月 25 2007 Eric Sandeen <esandeen@redhat.com> 1.39-15
+- Fix up .po files to remove timestamps; multilib issues (#245653)
+
+* 五 6月 22 2007 Eric Sandeen <esandeen@redhat.com> 1.39-14
+- Many coverity-found potential leaks, segfaults, etc (#239354)
+- Fix debugfs segfaults when no fs open (#208416, #209330)
+- Avoid recursive loops in logdump due to symlinks in /dev (#210371)
+- Don't write changes to the backup superblocks by default (#229561)
+- Correct byteswapping for fast symlinks with xattrs (#232663)
+- e2fsck: added sanity check for xattr validation (#230193)
+
+* 三 6月 20 2007 Eric Sandeen <esandeen@redhat.com> 1.39-13
+- add dist tag to release field
+
+* 三 6月 20 2007 Eric Sandeen <esandeen@redhat.com> 1.39-12
+- add LUKS support to libblkid (#242421)
+
+* 五 2月 23 2007 Karsten Hopp <karsten@redhat.com> 1.39-11
+- fix post/preun requirements
+- use smp flags
+
+* 一 2月 05 2007 Alasdair Kergon <agk@redhat.com> - 1.39-10
+- Add build dependency on new device-mapper-devel package.
+
+* 一 12月 25 2006 Thomas Woerner <twoerner@redhat.com> - 1.39-9
+- build fixes for new automake 1.10 (#220715)
+
+* 一 12月 18 2006 Thomas Woerner <twoerner@redhat.com> - 1.39-8
+- make uuid_generate_time generate unique uuids (#218606)
+
+* 三 9月 20 2006 Jarod Wilson <jwilson@redhat.com> - 1.39-7
+- 32-bit 16T fixups from esandeen (#202807)
+- Update summaries and descriptions
+
+* 日 9月 17 2006 Karel Zak <kzak@redhat.com> - 1.39-6
+- Fix problem with empty FAT label (#206656)
+
+* 二 9月 05 2006 Peter Jones <pjones@redhat.com> - 1.39-5
+- Fix memory leak in device probing.
+
+* 一 7月 24 2006 Thomas Woerner <twoerner@redhat.com> - 1.39-4
+- fixed multilib devel conflicts (#192665)
+
+* 四 7月 20 2006 Bill Nottingham <notting@redhat.com> - 1.39-3
+- prevent libblkid returning /dev/dm-X
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.39-2.1
+- rebuild
+
+* 一 7月 10 2006 Karel Zak <kzak@redhat.com> - 1.39-2
+- add GFS abd GFS2 support to libblkid
+
+* 四 7月 06 2006 Thomas Woerner <twoerner@redhat.com> - 1.39-1
+- new version 1.39
+- dropped ext2online, because resize2fs is now able to do online resize
+- spec file cleanup
+- enabled checks for build
+
+* 二 6月 13 2006 Bill Nottingham <notting@redhat.com> - 1.38-15
+- prevent libblkid returning /dev/dm-X
+- fix build
+
+* 二 3月 21 2006 Karel Zak <kzak@redhat.com> - 1.38-14
+- prevent error messages to stderr caused by libblkid calling libdevmapper
+
+* 一 3月 13 2006 Karel Zak <kzak@redhat.com>  - 1.38-13
+- used upstream version of the blkid-epoch patch (by Theodore Tso, #182188)
+
+* 三 3月 08 2006 Peter Jones <pjones@redhat.com> - 1.38-12
+- Move /etc/blkid.tab to /etc/blkid/blkid.tab
+
+* 二 3月 07 2006 David Cantrell <dcantrell@redhat.com> - 1.38-11
+- BuildRequires pkgconfig
+
+* 二 3月 07 2006 David Cantrell <dcantrell@redhat.com> - 1.38-10
+- Disable /etc/blkid.tab caching if time is set before epoch (#182188)
+
+* 五 2月 24 2006 Peter Jones <pjones@redhat.com> - 1.38-9
+- _don't_ handle selinux context on blkid.tab, dwalsh says this is a no-no.
+
+* 三 2月 22 2006 Peter Jones <pjones@redhat.com> - 1.38-8
+- handle selinux context on blkid.tab
+
+* 一 2月 20 2006 Karsten Hopp <karsten@redhat.de> 1.38-7
+- BuildRequires: gettext-devel
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.38-6.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.38-6.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 1月 11 2006 Karel Zak <kzak@redhat.com> 1.38-6
+- cleanup device-mapper patch
+- use pkg-config for device-mapper
+
+* 一 1月 09 2006 Peter Jones <pjones@redhat.com> 1.38-5
+- fix some more minor logic errors in dm probing
+
+* 三 1月 04 2006 Peter Jones <pjones@redhat.com> 1.38-4
+- fix a logic error in dm probing
+- add priority group for dm devices, so they'll be preferred
+
+* 二 1月 03 2006 Peter Jones <pjones@redhat.com> 1.38-3
+- added support for device-mapper devices
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 11月 10 2005 Thomas Woerner <twoerner@redhat.com> 1.38-2.1
+- fixed file conflicts between 32bit and 64bit packages (#168815)
+- fixed mklost+found crashes with buffer overflow (#157773)
+  Thanks to Arjan van de Ven for the patch
+
+* 三 11月 09 2005 Thomas Woerner <twoerner@redhat.com> 1.38-2
+- splitted up libs from main package, into a new e2fsprogs-libs package
+- fixed requires and prereqs
+
+* 四 9月 08 2005 Thomas Woerner <twoerner@redhat.com> 1.38-1
+- new version 1.38
+- Close File descriptor for unregognized devices (#159878)
+  Thanks to David Milburn for the patch.
+  Merged from RHEL-4
+- enable tune2fs to set and clear feature resize_inode (#167816)
+- removed outdated information from ext2online man page (#164383)
+

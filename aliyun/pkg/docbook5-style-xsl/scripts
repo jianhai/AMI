@@ -1,0 +1,21 @@
+postinstall scriptlet (using /bin/sh):
+CATALOG=/etc/xml/catalog
+/usr/bin/xmlcatalog --noout --add "rewriteSystem" \
+ "http://docbook.sourceforge.net/release/xsl-ns/1.75.2" \
+ "file:///usr/share/sgml/docbook/xsl-ns-stylesheets-1.75.2" $CATALOG
+/usr/bin/xmlcatalog --noout --add "rewriteURI" \
+ "http://docbook.sourceforge.net/release/xsl-ns/1.75.2" \
+ "file:///usr/share/sgml/docbook/xsl-ns-stylesheets-1.75.2" $CATALOG
+/usr/bin/xmlcatalog --noout --add "rewriteSystem" \
+ "http://docbook.sourceforge.net/release/xsl-ns/current" \
+ "file:///usr/share/sgml/docbook/xsl-ns-stylesheets-1.75.2" $CATALOG
+/usr/bin/xmlcatalog --noout --add "rewriteURI" \
+ "http://docbook.sourceforge.net/release/xsl-ns/current" \
+ "file:///usr/share/sgml/docbook/xsl-ns-stylesheets-1.75.2" $CATALOG
+postuninstall scriptlet (using /bin/sh):
+# remove entries only on removal of package
+if [ "$1" = 0 ]; then
+  CATALOG=/etc/xml/catalog
+  /usr/bin/xmlcatalog --noout --del \
+   "file:///usr/share/sgml/docbook/xsl-ns-stylesheets-1.75.2" $CATALOG
+fi

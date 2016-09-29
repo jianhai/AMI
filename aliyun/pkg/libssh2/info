@@ -1,0 +1,15 @@
+Name        : libssh2                      Relocations: (not relocatable)
+Version     : 1.2.2                             Vendor: Alibaba
+Release     : 7.3.alios6.1                  Build Date: 2014年07月26日 星期六 13时01分46秒
+Install Date: 2015年03月25日 星期三 10时59分55秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: libssh2-1.2.2-7.3.alios6.1.src.rpm
+Size        : 186986                           License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 17时19分09秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.libssh2.org/
+Summary     : A library implementing the SSH2 protocol
+Description :
+libssh2 is a library implementing the SSH2 protocol as defined by
+Internet Drafts: SECSH-TRANS(22), SECSH-USERAUTH(25),
+SECSH-CONNECTION(23), SECSH-ARCH(20), SECSH-FILEXFER(06)*,
+SECSH-DHGEX(04), and SECSH-NUMBERS(10).

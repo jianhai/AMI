@@ -1,0 +1,362 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.25-11.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.25-11.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.6.25-11.1
+- rebuild for alios6
+
+* 一 4月 04 2011 Lennart Poettering <lpoetter@redhat.com> - 0.6.25-11
+- Fix for CVE-2011-1002
+- Resolves: #684886
+- Actually apply the patch
+
+* 一 4月 04 2011 Lennart Poettering <lpoetter@redhat.com> - 0.6.25-10
+- Fix for CVE-2011-1002
+- Resolves: #684886
+
+* 二 2月 08 2011 Christopher Aillon <caillon@redhat.com> - 0.6.25-9
+- Don't stomp on rpm's default CFLAGS when building
+
+* 三 6月 30 2010 Soren Sandmann <ssp@redhat.com> - 0.6.25-8
+- Fix typo in the spec file: ldconfign->ldconfig
+  It breaks the build roots.
+- Related: #607296
+
+* 三 6月 30 2010 Lennart Poettering <lpoetter@redhat.com> - 0.6.25-7
+- Fix for CVE-2010-2244
+- Resolves: #607296
+- Resolves: #594405
+- Related 587761
+- Related 584761
+- Related 584766
+- Related 596151
+- Related 599435
+
+* 一 1月 25 2010 Lennart Poettering <lpoetter@redhat.com> - 0.6.25-6
+- Move avahi-discover from avahi-tools to avahi-ui-tools
+- Resolves: rhbz#554813
+
+* 五 11月 13 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.6.25-5.1
+- disable mono on RHEL
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.25-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 17 2009 Karsten Hopp <karsten@redhat.com> 0.6.25-4
+- Build *-sharp & *-ui-sharp for s390x
+
+* 四 6月 11 2009 Matthias Clasen <mclasen@redhat.com> - 0.6.25-4
+- Use %find_lang
+
+* 二 5月 26 2009 Michael Schwendt <mschwendt@fedoraproject.org> - 0.6.25-3
+- Create avahi-ui-sharp-devel package for pkgconfig dep-chain (#477308).
+
+* 一 5月 25 2009 Xavier Lamien <laxathom@fedoraproject.org> - 0.6.25-2
+- Build arch ppc64 for *-sharp & *-ui-sharp.
+
+* 一 4月 13 2009 Lennart Poettering <lpoetter@redhat.com> - 0.6.25-1
+- New upstream release
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.24-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 12月 12 2008 Lennart Poettering <lpoetter@redhat.com> - 0.6.24-1
+- New upstream release
+
+* 三 12月 03 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.6.22-13
+- Fix libtool errors
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.6.22-12
+- Rebuild for Python 2.6
+
+* 三 6月 04 2008 Rex Dieter <rdieter@fedoraproject.org> - 0.6.22-11
+- qt4 bindings (#446904)
+- devel: BR: pkgconfig
+- nuke rpaths
+
+* 四 3月 27 2008 Lennart Poettering <lpoetter@redhat.com> - 0.6.22-10
+- Add release part to package dependencies (Closed #311601)
+
+* 一 3月 10 2008 Christopher Aillon <caillon@redhat.com> - 0.6.22-9
+- The qt3 subpackage should (Build)Require: qt3
+
+* 一 3月 03 2008 Kevin Kofler <Kevin@tigcc.ticalc.org> - 0.6.22-8
+- updated (completed) German translation by Fabian Affolter (#427090)
+
+* 四 2月 21 2008 Adam Tkac <atkac redhat com> - 0.6.22-7
+- really rebuild against new libcap
+
+* 日 2月 17 2008 Adam Tkac <atkac redhat com> - 0.6.22-6
+- rebuild against new libcap
+
+* 六 2月 09 2008 Dennis Gilmore <dennis@ausil.us> - 0.6.22-5
+- sparc64 does not have mono
+
+* 二 12月 18 2007 Lubomir Kundrak <lkundrak@redhat.com> - 0.6.22-4
+- Make bvnc call vncviewer instead of xvncviewer
+- Let ui-tools depend on necessary packages
+
+* 一 12月 17 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.22-3
+- Add missing intltool dependency
+
+* 一 12月 17 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.22-2
+- Fix mistag
+
+* 一 12月 17 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.22-1
+- resolves #274731, #425491: New upstream version
+
+* 二 9月 25 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.21-6
+- resolves #279301: fix segfault when no domains are configured in resolv.conf (pulled from upstream SVN r1525)
+
+* 四 9月 06 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.21-5
+- resolves #249044: Update init script to use runlevel 96
+- resolves #251700: Fix assertion in libdns_sd-compat
+
+* 四 9月 06 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.21-4
+- Ship ssh static service file by default, don't ship ssh-sftp by default
+- resolves: #269741: split off avahi-ui-tools package
+- resolves: #253734: add missing dependency on avahi-glib-devel to avahi-ui-devel
+
+* 二 8月 28 2007 Martin Bacovsky <mbacovsk@redhat.com> - 0.6.21-3
+- resolves: #246875: Initscript Review
+
+* 日 8月 12 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.21-2
+- Fix avahi-browse --help output
+
+* 日 8月 12 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.21-1
+- New upstream release
+
+* 四 8月 09 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.20-7
+- Fix tagging borkage
+
+* 四 8月 09 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.20-6
+- fix avahi-autoipd corrupt packet bug
+- drop dependency on python for the main package
+
+* 三 7月 11 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.20-5
+- add two patches which are important to get RR updating work properly.
+  Will be part of upstream 0.6.21
+
+* 四 7月 05 2007 Dan Williams <dcbw@redhat.com> - 0.6.20-4
+- Add Requires(pre): shadow-utils for avahi-autoipd package
+
+* 一 6月 25 2007 Bill Nottingham <notting@redhat.com> - 0.6.20-3
+- fix %endif typo
+
+* 一 6月 25 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.20-2
+- add gtk-sharp2-devel to build deps
+
+* 五 6月 22 2007 Lennart Poettering <lpoetter@redhat.com> - 0.6.20-1
+- upgrade to new upstream 0.6.20
+- fix a few rpmlint warnings
+- create avahi-autoipd user
+- no longer create avahi user with a static uid, move to dynamic uids
+- drop a couple of patches merged upstream
+- Provide "howl" and "howl-devel"
+- Split off avahi-autoipd and avahi-dnsconfd
+- Introduce avahi-ui packages for the first time
+- Reload D-Bus config after installation using dbus-send
+- add a couple of missing ldconfig invocations
+
+* 一 3月 12 2007 Martin Bacovsky <mbacovsk@redhat.com> - 0.6.17-1
+- upgrade to new upstream 0.6.17
+- redundant patches removal
+- removed auto* stuff from specfile since that was no longer needed
+- Resolves: #232205: 'service {avahi-dnsconfd,avahi-daemon} status'
+  returns 0 when the service is stopped
+
+* 五 2月 02 2007 Christopher Aillon <cailloN@redhat.com> - 0.6.16-3
+- Remove bogus mono-libdir patches
+
+* 二 1月 23 2007 Jeremy Katz <katzj@redhat.com> - 0.6.16-2
+- nuke bogus avahi-sharp -> avahi-devel dep
+
+* 一 1月 22 2007 Martin Bacovsky <mbacovsk@redhat.com> - 0.6.16-1.fc7
+- Resolves: #221763: CVE-2006-6870 Maliciously crafted packed can DoS avahi daemon
+- upgrade to new upstream
+- patch revision
+- Resolves: #218140: avahi configuration file wants a non-existent group
+
+* 三 12月 06 2006 Jeremy Katz <katzj@redhat.com> - 0.6.15-4
+- rebuild against python 2.5
+
+* 一 11月 27 2006 Martin Bacovsky <mbacovsk@redhat.com> - 0.6.15-3
+- automake-1.10 required for building
+
+* 一 11月 27 2006 Martin Bacovsky <mbacovsk@redhat.com> - 0.6.15-2
+- automake-1.9 required for building
+
+* 五 11月 24 2006 Martin Bacovsky <mbacovsk@redhat.com> - 0.6.15-1
+- Upgrade to 0.6.15
+- patches revision
+
+* 一 9月 18 2006 Martin Stransky <stransky@redhat.com> - 0.6.11-6
+- added patch from #206445 - ia64: unaligned access errors seen
+  during startup of avahi-daemon
+- removed unused patches
+
+* 四 9月 07 2006 Dan Walsh <dwalsh@redhat.com> - 0.6.11-5
+- Maintain the security context on the localtime file
+
+* 三 8月 23 2006 Martin Stransky <stransky@redhat.com> - 0.6.11-4
+- fix for #204710 - /etc/init.d/avahi-dnsconfd missing line
+  continuation slash (\) in description
+
+* 三 8月 23 2006 Martin Stransky <stransky@redhat.com> - 0.6.11-3
+- added fix for #200767 - avahi-dnsconfd Segmentation fault
+  with invalid command line argument
+- added dist tag
+
+* 二 7月 18 2006 John (J5) Palmieri <johnp@redhat.com> - 0.6.11-2.fc6
+- add BR for dbus-glib-devel
+- fix deprecated functions
+
+* 一 7月 17 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.11-1.fc6
+- Upgrade to upstream version 0.6.11
+- fix bug 195674: set 'use-ipv6=yes' in avahi-daemon.conf
+- fix bug 197414: avahi-compat-howl and avahi-compat-dns-sd symlinks
+- fix bug 198282: avahi-compat-{howl-devel,dns-sd-devel} Requires:
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com>
+- rebuild
+
+* 二 6月 13 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.10-3.FC6
+- rebuild for broken mono deps
+
+* 二 6月 06 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.10-2.FC6
+- fix bug 194203: fix permissions on /var/run/avahi-daemon
+
+* 二 5月 30 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.10-1.FC6
+- Upgrade to upstream version 0.6.10
+- fix bug 192080: split avahi-compat-libdns_sd into separate package
+                  (same goes for avahi-compat-howl)
+
+* 二 5月 02 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.9-9.FC6
+- fix avahi-sharp issues for banshee - patches from caillon@redhat.com
+
+* 四 4月 20 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.9-9.FC6
+- fix bug 189427: correct avahi-resolve --help typo
+
+* 一 3月 20 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.9-8.FC6
+- fix bug 185972: remove ellipses in initscript
+- fix bug 185965: make chkconfigs unconditional
+
+* 四 3月 16 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.9-6
+- Fix bug 185692: install avahi-sharp into /usr/lib, not /usr/lib64
+
+* 四 3月 09 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.9-4
+- fix scriptlet error introduced by last fix:
+  if user has disabled avahi-daemon, do not enable it during %post
+
+* 三 3月 08 2006 Bill Nottingham <notting@redhat.com> - 0.6.9-2
+- fix scriplet error during installer
+- move service-types* to the tools package (avoids multilib conflicts)
+
+* 二 3月 07 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.9-1
+- Upgrade to upstream version 0.6.9
+
+* 四 2月 23 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.8-1
+- Upgrade to upstream version 0.6.8
+- fix bug 182462: +Requires(post): initscripts, chkconfig, ldconfig
+
+* 五 2月 17 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.7-1
+- Upgrade to upstream version 0.6.7
+
+* 五 2月 17 2006 Karsten Hopp <karsten@redhat.de> - 0.6.6-4
+- BuildRequires pygtk2
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.6.6-3.1
+- bump again for double-long bug on ppc(64)
+
+* 五 2月 10 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.6-3
+- rebuild for new gcc (again)
+- further fix for bug 178746: fix avahi-dnsconfd initscript
+
+* 二 2月 07 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.6-2
+- rebuild for new gcc, glibc, glibc-kernheaders
+
+* 三 2月 01 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.6-1
+- fix bug 179448: mis-alignment of input cmsghdr msg->msg_control buffer on ia64
+- Upgrade to 0.6.6
+
+* 四 1月 26 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.5-1
+- Upgrade to upstream version 0.6.5
+- Make /etc/avahi/etc and /etc/avahi/etc/localtime owned by avahi
+  package; copy system localtime into chroot in post
+
+* 一 1月 23 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.4-4
+- fix bug 178689: copy localtime to chroot
+- fix bug 178784: fix avahi-dnsconfd initscript
+
+* 五 1月 20 2006 Peter Jones <pjones@redhat.com> - 0.6.4-3
+- fix subsystem locking in the initscript
+
+* 四 1月 19 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.4-2
+- fix bug 178127: fully localize the initscript
+
+* 一 1月 16 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.4-1
+- Upgrade to upstream version 0.6.4
+
+* 四 1月 12 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.3-2
+- fix bug 177610: Enable mono support with new avahi-sharp package
+- fix bug 177609: add gdbm / gdbm-devel Requires for avahi-browse
+
+* 一 1月 09 2006 Jason Vas Dias <jvdias@redhat.com> - 0.6.3-1
+- Upgrade to upstream version 0.6.3
+- fix bug 177148: initscript start should not fail if avahi-daemon running
+
+* 四 12月 22 2005 Jason Vas Dias <jvdias@redhat.com> - 0.6.1-3
+- move initscripts from /etc/init.d to /etc/rc.d/init.d
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 09 2005 Jason Vas Dias<jvdias@redhat.com> - 0.6.1-2
+- fix bug 175352: Do not chkconfig --add avahi-daemon
+  if user has already configured it
+
+* 三 12月 07 2005 Jason Vas Dias<jvdias@redhat.com> - 0.6.1-1
+- Upgrade to 0.6.1
+
+* 一 12月 05 2005 Jason Vas Dias<jvdias@redhat.com> - 0.6-6
+- fix bug 174799 - fix .spec file \%files permissions
+
+* 五 12月 02 2005 Jason Vas Dias<jvdias@redhat.com> - 0.6-5
+- python-twisted has been removed from the FC-5 distribution - disable its use
+
+* 四 12月 01 2005 Jason Vas Dias<jvdias@redhat.com> - 0.6-4
+- Rebuild for dbus-0.6 - remove use of DBUS_NAME_FLAG_PROHIBIT_REPLACEMENT
+
+* 三 11月 30 2005 Jason Vas Dias<jvdias@redhat.com> - 0.6-3
+- fix bug 172047 - tools should require python-twisted
+- fix bug 173985 - docs directory permissions
+
+* 一 11月 21 2005 Jason Vas Dias<jvdias@redhat.com> - 0.6-1
+- Upgrade to upstream version 0.6 - now provides 'avahi-howl-compat'
+  libraries / includes.
+
+* 一 11月 14 2005 Jason Vas Dias<jvdias@redhat.com> - 0.5.2-7
+- fix bug 172034: fix ownership of /var/run/avahi-daemon/
+- fix bug 172772: .spec file improvements from matthias@rpmforge.net
+
+* 一 10月 31 2005 Jason Vas Dias<jvdias@redhat.com> - 0.5.2-6
+- put back avahi-devel Obsoletes: howl-devel
+
+* 一 10月 31 2005 Alexander Larsson <alexl@redhat.com> - 0.5.2-5
+- Obsoletes howl, howl-libs, as we want to get rid of them on updates
+- No provides yet, as the howl compat library is in Avahi 0.6.0.
+
+* 日 10月 30 2005 Florian La Roche <laroche@redhat.com>
+- disable the Obsoletes: howl until the transition is complete
+
+* 五 10月 28 2005 Jason Vas Dias<jvdias@redhat.com> - 0.5.2-3
+- change initscript to start avahi-daemon AFTER messagebus
+
+* 三 10月 26 2005 Karsten Hopp <karsten@redhat.de> 0.5.2-2
+- add buildrequires dbus-python
+
+* 五 10月 21 2005 Alexander Larsson <alexl@redhat.com> - 0.5.2-1
+- Initial package
+

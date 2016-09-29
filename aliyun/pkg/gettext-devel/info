@@ -1,0 +1,15 @@
+Name        : gettext-devel                Relocations: (not relocatable)
+Version     : 0.17                              Vendor: Alibaba
+Release     : 16.3.alios6                   Build Date: 2014年07月26日 星期六 05时29分38秒
+Install Date: 2015年03月25日 星期三 11时00分53秒      Build Host: x86-003.build.alibaba
+Group       : Development/Tools             Source RPM: gettext-0.17-16.3.alios6.src.rpm
+Size        : 635737                           License: LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时31分52秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnu.org/software/gettext/
+Summary     : Development files for gettext
+Description :
+This package contains all development related files necessary for
+developing or compiling applications/libraries that needs
+internationalization capability. You also need this package if you
+want to add gettext support for your project.

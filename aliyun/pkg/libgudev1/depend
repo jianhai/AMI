@@ -1,0 +1,16 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgudev-1.0.so.0()(64bit)  
+libudev >= 142
+libudev = 147-2.40.4.alios6
+libudev.so.0()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

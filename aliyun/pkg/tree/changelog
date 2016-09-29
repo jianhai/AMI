@@ -1,0 +1,177 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.5.3-2.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.5.3-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.5.3-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.5.3-2.1
+- rebuild for alios6
+
+* 三 3月 03 2010 Tim Waugh <twaugh@redhat.com> 1.5.3-2
+- Added comments to all patches.
+
+* 五 11月 27 2009 Tim Waugh <twaugh@redhat.com> 1.5.3-1
+- 1.5.3 (bug #517342, bug #541255).
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.2.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 10 2009 Tim Waugh <twaugh@redhat.com> 1.5.2.2-3
+- Reinstate no-color-by-default patch (bug #504245).
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.5.2.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 1月 27 2009 Tim Waugh <twaugh@redhat.com> 1.5.2.2-1
+- 1.5.2.2.
+
+* 一 11月 24 2008 Tim Waugh <twaugh@redhat.com> 1.5.2.1-2
+- Better summary.
+
+* 二 9月 02 2008 Tim Waugh <twaugh@redhat.com> 1.5.2.1-1
+- Removed patch fuzz.
+- 1.5.2.1.
+
+* 一 6月 16 2008 Tim Waugh <twaugh@redhat.com> 1.5.2-1
+- 1.5.2.
+- Dropped no-colour patch.
+
+* 四 6月 05 2008 Tim Waugh <twaugh@redhat.com> 1.5.1.2-1
+- 1.5.1.2.
+
+* 五 4月 25 2008 Tim Waugh <twaugh@redhat.com> 1.5.1.1-1
+- 1.5.1.1.
+
+* 一 2月 11 2008 Tim Waugh <twaugh@redhat.com> 1.5.0-9
+- Rebuild for GCC 4.3.
+
+* 三 8月 29 2007 Tim Waugh <twaugh@redhat.com> 1.5.0-8
+- More specific license tag.
+
+* 三 2月 07 2007 Tim Waugh <twaugh@redhat.com> 1.5.0-7
+- Current version no longer ships binary, so don't try removing
+  it (bug #226503).
+
+* 二 2月 06 2007 Tim Waugh <twaugh@redhat.com> 1.5.0-6
+- Preserve timestamps on install (bug #226503).
+- Added SMP flags (bug #226503).
+- Removed Prefix: tag (bug #226503).
+- Removed bogus mkdir call (bug #226503).
+- Ship the LICENSE file (bug #226503).
+- Fixed summary (bug #226503).
+
+* 五 12月 15 2006 Tim Waugh <twaugh@redhat.com> 1.5.0-5
+- Fixed '--charset' option (bug #188884).
+
+* 五 7月 14 2006 Jesse Keating <jkeating@redhat.com> - 1.5.0-4
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.5.0-3.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.5.0-3.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 1.5.0-3
+- Rebuild for new GCC.
+
+* 日 12月 05 2004 Florian La Roche <laroche@redhat.com>
+- add quotes around CPPFLAGS
+
+* 一 9月 13 2004 Tim Waugh <twaugh@redhat.com> 1.5.0-1
+- 1.5.0 (bug #131854).
+- No longer need utf8 or gcc34 patches.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 05 2004 Tim Waugh <twaugh@redhat.com> 1.4b3-2
+- Fixed compilation with GCC 3.4.
+
+* 三 8月 13 2003 Tim Waugh <twaugh@redhat.com> 1.4b3-1
+- Upgraded (bug #88525).
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 11月 08 2002 Tim Waugh <twaugh@redhat.com> 1.2-21
+- Assume -N except if -q is given (bug #77517).
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 4月 23 2002 Tim Waugh <twaugh@redhat.com> 1.2-18
+- Don't explicitly strip binaries (bug #62569).
+- Fix malloc/realloc problems (bug #56858).
+
+* 五 3月 22 2002 Tim Waugh <twaugh@redhat.com> 1.2-17
+- Large file support (bug #61456).
+
+* 三 2月 27 2002 Tim Waugh <twaugh@redhat.com> 1.2-16
+- Rebuild in new environment.
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 10月 05 2001 Tim Waugh <twaugh@redhat.com> 1.2-14
+- Fix size format (bug #54298).
+- Don't use colours by default (bug #25389).
+
+* 一 7月 30 2001 Tim Waugh <twaugh@redhat.com> 1.2-13
+- Change Copyright: to License:.
+- Don't dump core if LS_COLORS is too big (bug #50016).
+
+* 三 5月 30 2001 Tim Waugh <twaugh@redhat.com> 1.2-12
+- Sync description with specspo.
+
+* 二 10月 10 2000 Tim Waugh <twaugh@redhat.com> 1.2-11
+- Don't blabber about carrots in the man page (bug #18823)
+- Use RPM_OPT_FLAGS while building
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 11 2000 Bill Nottingham <notting@redhat.com>
+- rebuild, FHS stuff
+
+* 四 2月 03 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- remove executable bit from man page (Bug #9035)
+- deal with rpm compressing man pages
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 6)
+
+* 四 12月 17 1998 Michael Maher <mike@redhat.com>
+- built package for 6.0
+
+* 一 8月 10 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+
+* 二 5月 05 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 三 4月 29 1998 Cristian Gafton <gafton@redhat.com>
+- installing in /usr/bin
+
+* 一 10月 20 1997 Otto Hammersmith <otto@redhat.com>
+- updated version
+- fixed src url
+
+* 五 7月 18 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

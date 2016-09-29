@@ -1,0 +1,15 @@
+postinstall scriptlet (using /bin/sh):
+for centralized in /etc/sgml/*-docbook-*.cat
+do
+  /usr/bin/install-catalog --add $centralized \
+    /usr/share/sgml/docbook/dsssl-stylesheets-1.79/catalog \
+    > /dev/null 2>/dev/null
+done
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ]; then
+  for centralized in /etc/sgml/*-docbook-*.cat
+  do   
+    /usr/bin/install-catalog --remove $centralized /usr/share/sgml/docbook/dsssl-stylesheets-1.79/catalog > /dev/null 2>/dev/null
+  done
+fi
+exit 0

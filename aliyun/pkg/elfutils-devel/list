@@ -1,0 +1,11 @@
+/usr/include/dwarf.h
+/usr/include/elfutils
+/usr/include/elfutils/elf-knowledge.h
+/usr/include/elfutils/libasm.h
+/usr/include/elfutils/libdw.h
+/usr/include/elfutils/libdwfl.h
+/usr/include/elfutils/libebl.h
+/usr/include/elfutils/version.h
+/usr/lib64/libasm.so
+/usr/lib64/libdw.so
+/usr/lib64/libebl.a

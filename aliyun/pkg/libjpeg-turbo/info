@@ -1,0 +1,19 @@
+Name        : libjpeg-turbo                Relocations: (not relocatable)
+Version     : 1.2.1                             Vendor: Alibaba
+Release     : 3.3.alios6                    Build Date: 2014年07月26日 星期六 12时39分11秒
+Install Date: 2015年03月25日 星期三 10时59分28秒      Build Host: x86-001.build.alibaba
+Group       : System Environment/Libraries   Source RPM: libjpeg-turbo-1.2.1-3.3.alios6.src.rpm
+Size        : 476782                           License: wxWidgets
+Signature   : RSA/8, 2014年07月31日 星期四 17时04分29秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sourceforge.net/projects/libjpeg-turbo
+Summary     : A MMX/SSE2 accelerated library for manipulating JPEG image files
+Description :
+The libjpeg-turbo package contains a library of functions for manipulating
+JPEG images. It also contains simple client programs for
+accessing the libjpeg functions. It contains cjpeg, djpeg, jpegtran,
+rdjpgcom and wrjpgcom. Cjpeg compresses an image file into JPEG format.
+Djpeg decompresses a JPEG file into a regular image file. Jpegtran
+can perform various useful transformations on JPEG files. Rdjpgcom
+displays any text comments included in a JPEG file. Wrjpgcom inserts
+text comments into a JPEG file.

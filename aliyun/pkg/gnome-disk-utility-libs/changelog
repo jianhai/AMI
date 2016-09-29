@@ -1,0 +1,116 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.30.1-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.30.1-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.30.1-2.1
+- rebuild for alios6
+
+* 一 3月 22 2010 David Zeuthen <davidz@redhat.com> - 2.30.1-2.alios6
+- Rebuild
+- Related: rhbz#575890
+
+* 一 3月 22 2010 David Zeuthen <davidz@redhat.com> - 2.30.1-1.alios6
+- Update to 2.30.1
+- Related: rhbz#575890
+
+* 二 2月 23 2010 David Zeuthen <davidz@redhat.com> - 2.29.90-1.alios6
+- Update to new release for LVM2/Multipath support
+- Don't include support for connecting to remote udisks instances
+- Related: rhbz#548874
+- Related: rhbz#548870
+
+* 三 1月 20 2010 Tomas Bzatek <tbzatek@redhat.com> - 2.29.0-0.git20100115.4.alios6
+- Actually apply patch for the missing include
+- Resolves: #556542
+
+* 二 1月 19 2010 Tomas Bzatek <tbzatek@redhat.com> - 2.29.0-0.git20100115.3.alios6
+- Enable nautilus extension
+- Resolves: #556552
+
+* 一 1月 18 2010 Tomas Bzatek <tbzatek@redhat.com> - 2.29.0-0.git20100115.2.alios6
+- Install missing include
+- Resolves: #556542
+
+* 五 1月 15 2010 David Zeuthen <davidz@redhat.com> - 2.29.0-0.git20100115.1.alios6
+- BR avahi-ui-devel
+- Related: rhbz#543948
+
+* 五 1月 15 2010 David Zeuthen <davidz@redhat.com> - 2.29.0-0.git20100115.alios6
+- Update to git snapshot with LVM support (#548870)
+- Related: rhbz#543948
+
+* 五 12月 04 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.28.1-1.1
+- Rebuild without nautilus in order to break the dependency loop
+
+* 一 11月 02 2009 David Zeuthen <davidz@redhat.com> - 2.28.1-1.alios6
+- Update to 2.28.1
+
+* 二 10月 13 2009 Tomas Bzatek <tbzatek@redhat.com> - 2.28.0-5.alios6
+- Fix nautilus crashes by proper object referencing
+
+* 一 10月 05 2009 Matthias Clasen <mclasen@redhat.com> - 2.28.0-4.alios6
+- Incorporate fixes for translation issues from the stable upstream branch
+
+* 五 9月 18 2009 David Zeuthen <davidz@redhat.com> - 2.28.0-2.alios6
+- BR libatasmart-devel
+
+* 五 9月 18 2009 David Zeuthen <davidz@redhat.com> - 2.28.0-1.alios6
+- Update to upstream release 2.28.0
+- Compared to previous releases, this release should whine less about SMART
+
+* 一 8月 17 2009 David Zeuthen <davidz@redhat.com> - 0.5-3.alios6
+- Drop upstreamed patch
+
+* 一 8月 17 2009 David Zeuthen <davidz@redhat.com> - 0.5-2.alios6
+- Rebuild
+
+* 一 8月 17 2009 David Zeuthen <davidz@redhat.com> - 0.5-1.alios6
+- Update to release 0.5
+
+* 一 7月 27 2009 Matthias Clasen <mclasen@redhat.com> - 0.4-3.alios6
+- Drop PolicyKit from .pc files, too
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 6月 19 2009 David Zeuthen <davidz@redhat.com> - 0.4-1.alios6
+- Update to release 0.4
+
+* 五 5月 01 2009 David Zeuthen <davidz@redhat.com> - 0.3-1.alios6
+- Upstream release 0.3
+
+* 三 4月 15 2009 David Zeuthen <davidz@redhat.com> - 0.3-0.5.20090415git.alios6
+- New snapshot
+
+* 日 4月 12 2009 David Zeuthen <davidz@redhat.com> - 0.3-0.4.20090412git.alios6
+- New snapshot
+
+* 五 4月 10 2009 Matthias Clasen <mclasen@redhat.com> - 0.3-0.3.20090406git.alios6
+- Don't own directories that belong to hicolor-icon-theme
+
+* 三 4月 08 2009 David Zeuthen <davidz@redhat.com> - 0.3-0.2.20090406git.alios6
+- Fix bug in detecting when a PolicyKit error is returned (#494787)
+
+* 一 4月 06 2009 David Zeuthen <davidz@redhat.com> - 0.3-0.1.20090406git.alios6
+- New snapshot
+
+* 三 3月 04 2009 David Zeuthen <davidz@redhat.com> - 0.2-2.alios6
+- Don't crash when changing the LUKS passphrase on a device
+
+* 一 3月 02 2009 David Zeuthen <davidz@redhat.com> - 0.2-1.alios6
+- Update to version 0.2
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1-0.git20080720.2.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 1月 27 2009 Matthias Clasen <mclasen@redhat.com> 0.1-0.git20080720.2.alios6
+- Rebuild for pkgconfig provides
+
+* 日 11月 23 2008 Matthias Clasen <mclasen@redhat.com> 0.1-0.git20080720.1.alios6
+- Improve %summary and %description
+
+* 日 7月 20 2008 David Zeuthen <davidz@redhat.com> - 0.1-0.git20080720.alios6
+- Initial Packaging
+

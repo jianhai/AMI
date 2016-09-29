@@ -1,0 +1,8 @@
+libpam.so.0()(64bit)  
+libpam_misc.so.0()(64bit)  
+libpamc.so.0()(64bit)  
+pam = 1.1.1-10.3.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

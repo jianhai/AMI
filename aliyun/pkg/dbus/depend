@@ -1,0 +1,30 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/usr/sbin/useradd  
+chkconfig >= 1.3.26
+config(dbus) = 1:1.2.24-7.2.alios6
+dbus-libs = 1:1.2.24-7.2.alios6
+libaudit.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.9)(64bit)  
+libcap-ng.so.0()(64bit)  
+libdbus-1.so.3()(64bit)  
+libexpat.so.1()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpthread.so.0(GLIBC_2.3.2)(64bit)  
+libpthread.so.0(GLIBC_2.3.3)(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+libselinux >= 1.15.2
+libselinux.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,17 @@
+/usr/bin/pkg-config  
+gtk-doc  
+libgweather = 2.28.0-4.3.alios6
+libgweather.so.1()(64bit)  
+pkgconfig  
+pkgconfig(gconf-2.0)  
+pkgconfig(gdk-pixbuf-2.0)  
+pkgconfig(glib-2.0)  
+pkgconfig(gobject-2.0)  
+pkgconfig(gtk+-2.0)  
+pkgconfig(libsoup-2.4)  
+pkgconfig(libxml-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

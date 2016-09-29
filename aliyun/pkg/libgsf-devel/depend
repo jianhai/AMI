@@ -1,0 +1,25 @@
+/usr/bin/pkg-config  
+glib2-devel  
+libbz2.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libgio-2.0.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgsf = 1.14.15-5.3.alios6
+libgsf-1.so.114()(64bit)  
+libxml2-devel  
+libxml2.so.2()(64bit)  
+libz.so.1()(64bit)  
+pkgconfig  
+pkgconfig(glib-2.0)  
+pkgconfig(gobject-2.0)  
+pkgconfig(libxml-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

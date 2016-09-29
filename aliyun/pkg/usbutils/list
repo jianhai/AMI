@@ -1,0 +1,14 @@
+/usr/bin/lsusb
+/usr/bin/lsusb.py
+/usr/bin/usb-devices
+/usr/bin/usbhid-dump
+/usr/sbin/lsusb
+/usr/share/doc/usbutils-003
+/usr/share/doc/usbutils-003/AUTHORS
+/usr/share/doc/usbutils-003/COPYING
+/usr/share/doc/usbutils-003/ChangeLog
+/usr/share/doc/usbutils-003/NEWS
+/usr/share/doc/usbutils-003/README
+/usr/share/man/man1/usb-devices.1.gz
+/usr/share/man/man8/lsusb.8.gz
+/usr/share/pkgconfig/usbutils.pc

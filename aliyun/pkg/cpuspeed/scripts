@@ -1,0 +1,7 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add cpuspeed
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = "0" ] ; then
+  /sbin/service cpuspeed stop >/dev/null 2>&1 || :
+  /sbin/chkconfig --del cpuspeed
+fi

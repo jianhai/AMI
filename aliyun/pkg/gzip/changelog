@@ -1,0 +1,312 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.12-18.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.12-18.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.3.12-18.1
+- rebuild for alios6
+
+* 一 6月 28 2010 Karel Klic <kklic@redhat.com> - 1.3.12-18
+- Added a patch to fix CRC error on valid file
+  Resolves: #608787
+
+* 二 2月 23 2010 Karel Klic <kklic@redhat.com> - 1.3.12-17
+- Added a patch to disallow -S '' parameter in gunzip (noemptysuffix)
+  Resolves: #567586
+
+* 三 1月 20 2010 Karel Klic <kklic@redhat.com> - 1.3.12-16
+- Improved the patch fixing CVE-2009-2624: get "Bad table" output 
+  instead of "Unknown error" in gzip-1.3.12/unlzh.c:make_table()
+  Related: rhbz#555090
+
+* 四 1月 14 2010 Karel Klic <kklic@redhat.com> - 1.3.12-15
+- Added fix for CVE-2010-0001: (64 bit) Integer underflow by decompressing
+  LZW format files
+- Added fix for CVE-2009-2624: Missing input sanitation by decompressing 
+  dynamic Huffman code blocks
+  Resolves: rhbz#555090
+
+* 三 1月 06 2010 Karel Klic <kklic@redhat.com> - 1.3.12-14
+- Fixed license tag in the spec file
+
+* 一 11月 30 2009 Karel Klic <kklic@redhat.com> - 1.3.12-13
+- Fixed silent data loss due to unchecked close of stdout (rhbz#514562)
+
+* 五 10月 09 2009 Ivana Varekova <varekova@redhat.com> - 1.3.12-12
+- change the source tag
+
+* 二 8月 11 2009 Ivana Varekova <varekova redhat com> - 1.3.12-11
+- fix installation with --excludedocs option (#515975)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.12-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 3月 13 2009 Ivana Varekova <varekova@redhat.com> - 1.3.12-9
+- fix #484213 - zdiff shows no output
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.12-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 9月 01 2008 Ivana Varekova <varekova@redhat.com> - 1.3.12-7
+- update patches
+
+* 三 2月 20 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.3.12-6
+- Autorebuild for GCC 4.3
+
+* 五 1月 18 2008 Ivana Varekova <varekova@redhat.com> - 1.3.12-5
+- rebuild
+
+* 二 8月 28 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 1.3.12-4
+- Rebuild for selinux ppc32 issue.
+
+* 五 6月 15 2007 Ivana Varekova <varekova@redhat.com> - 1.3.12-3
+- remove useless patches (fixed in upstream version)
+
+* 一 6月 11 2007 Ivana Varekova <varekova@redhat.com> - 1.3.12-2
+- remove useless patches
+
+* 一 6月 04 2007 Ivana Varekova <varekova@redhat.com> - 1.3.12-1
+- update to 1.3.12
+
+* 一 3月 05 2007 Ivana Varekova <varekova@redhat.com> - 1.3.11-1
+- update to 1.3.11
+  remove uncompress
+
+* 二 2月 06 2007 Ivana Varekova <varekova@redhat.com> - 1.3.10-1
+- Resolves: 225878
+  update to 1.3.10
+  change BuildRoot
+
+* 一 1月 22 2007 Ivana Varekova <varekova@redhat.com> - 1.3.9-2
+- Resolves: 223702
+  fix non-failsafe install-info problem
+
+* 一 1月 15 2007 Ivana Varekova <varekova@redhat.com> - 1.3.9-1
+- rebuild to 1.3.9
+- spec cleanup
+
+* 三 11月 22 2006 Ivana Varekova <varekova@redhat.com> - 1.3.5-11
+- fix too strict uncompress function
+
+* 一 10月 23 2006 Ivana Varekova <varekova@redhat.com> - 1.3.5-10
+- fix package description (#208924)
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 1.3.5-9
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 三 9月 20 2006 Ivana Varekova <varekova@redhat.com> 1.3.5-8
+- fix bug 204676 (patches by Tavis Ormandy)
+  - cve-2006-4334 - null dereference problem
+  - cve-2006-4335 - buffer overflow problem
+  - cve-2006-4336 - buffer underflow problem
+  - cve-2006-4338 - infinite loop problem
+  - cve-2006-4337 - buffer overflow problem
+
+* 五 7月 14 2006 Karsten Hopp <karsten@redhat.de> 1.3.5-7
+- buildrequire texinfo, otherwise gzip.info will be empty
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.3.5-6.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.3.5-6.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.3.5-6.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 5月 02 2005 Ivana Varekova <varekova@redhat.com> 1.3.5-6
+- rebuilt
+
+* 五 4月 29 2005 Ivana Varekova <varekova@redhat.com> 1.3.5-5
+- fix bug 156269 - CAN-2005-1228 directory traversal bug
+ (using the patch from Ulf Harnhammar)
+
+* 二 4月 26 2005 Ivana Varekova <varekova@redhat.com> 1.3.5-4
+- fix bug 155746 - CAN-2005-0988 Race condition in gzip (patch9)
+
+* 三 3月 23 2005 Tomas Mraz <tmraz@redhat.com> 1.3.5-3
+- don't use the asm code again as it's slower than the gcc compiled one
+- convert the .spec to UTF-8
+
+* 二 3月 22 2005 Tomas Mraz <tmraz@redhat.com> 1.3.5-2
+- upstream 1.3.5
+- dropped long ago obsolete dirinfo patch
+- escape file names in zgrep (#123012)
+- make stack in match.S nonexecutable
+
+* 五 3月 04 2005 Jiri Ryska <jryska@redhat.com>
+- rebuilt
+
+* 一 12月 13 2004 Ivana Varekova <varekova@redhat.com>
+- fix patch - remove brackets
+
+* 一 12月 13 2004 Ivana Varekova <varekova@redhat.com>
+- fix bug #106551 problem with zmore which requires the suffix .gz in file name
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 10月 28 2003 Jeff Johnson <jbj@redhat.com> 1.3.3-11
+- rebuilt.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 31 2003 Jeff Johnson <jbj@redhat.com> 1.3.3-9
+- enlarge window buffer to avoid accessing beyond end-of-buffer (#78413,#83095).
+- re-enable rsync ready patch.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 11月 22 2002 Jeff Johnson <jbj@redhat.com> 1.3.3-7
+- workaround mis-compilation with gcc-3.2-4 on alpha for now (#78413).
+
+* 一 11月 18 2002 Tim Powers <timp@redhat.com>
+- rebuild on all arches
+- remove file from buildroot we aren't shipping
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 6月 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.3.3-4
+- Fix the reading of unitialized memory problem (#66913)
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 4月 25 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.3.3-2
+- Rebuild
+
+* 三 3月 13 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.3.3-1
+- 1.3.3
+
+* 日 3月 10 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- add rsyncable patch #58888
+
+* 四 2月 21 2002 Trond Eivind Glomsrød <teg@redhat.com> 1.3.2-3
+- Rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 11月 19 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.3.2-1
+- 1.3.2: no need for autoconf 2.5x hacks anymore
+
+* 六 11月 17 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- update to 1.3.1:
+- disable patch2
+
+* 五 10月 26 2001 Trond Eivind Glomsrød <teg@redhat.com> 1.3.0-16
+- replace tempfile patches with improved ones solar@openwall.com
+- Add less to the dependency chain - zless needs it
+
+* 四 8月 23 2001 Trond Eivind Glomsrød <teg@redhat.com> 1.3.0-15
+- Fix typo in comment in zgrep (#52465) 
+- Copyright -> License
+
+* 二 6月 05 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Patch various uses of $$ in the bundled scripts
+
+* 一 6月 04 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Fix the SIGPIPE patch to avoid blank lines (#43319)
+
+* 四 2月 08 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed buzilla bug #26680. Wrong skip value after mktemp patch and forced
+  overwrite for output file during decompression.
+
+* 二 1月 30 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- trap SIGPIPE in zgrep, so "zgrep | less" gets a happy ending
+  (#24104)
+
+* 日 12月 10 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- add HAVE_LSTAT define, to avoid it doing weird things to symlinks
+  instead of ignoring them as the docs say it should (#22045)
+
+* 五 12月 01 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- rebuild
+
+* 四 11月 09 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- patch all scripts so usage error messages are written to 
+  stderr (#20597)
+
+* 一 10月 30 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- disable assembly, as it is faster without it (bug #19910)
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 27 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- rebuild
+
+* 三 6月 07 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- Use %{_mandir}, %{_infodir},  %configure, %makeinstall
+  and %{_tmppath}
+
+* 五 5月 12 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- Add root as default owner of the files, permits building 
+  as non-root user
+
+* 三 5月 10 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- Build system handles stripping
+- Don't do thing the system does, like creating directories
+- use --bindir /bin
+- Added URL
+- skip unnecesarry sed step
+- Include THANKS, AUTHORS, ChangeLog, TODO
+
+* 一 3月 20 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.3
+- handle RPM_OPT_FLAGS
+
+* 二 2月 15 2000 Cristian Gafton <gafton@redhat.com>
+- handle compressed man pages even better
+
+* 二 2月 08 2000 Cristian Gafton <gafton@redhat.com>
+- adopt patch from Paul Eggert to fix detection of the improper tables in
+  inflate.c(huft_build)
+- the latest released version 1.2.4a, which provides documentation updates
+  only. But it lets us use small revision numbers again
+- add an dirinfo entry for gzip.info so we can get rid of the ugly --entry
+  args to install-info
+
+* 一 2月 07 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed manpages
+
+* 四 2月 03 2000 Elliot Lee <sopwith@redhat.com>
+- Fix bug #7970
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 14)
+
+* 四 12月 17 1998 Cristian Gafton <gafton@redhat.com>
+- built against gliibc 2.1
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 4月 09 1998 Cristian Gafton <gafton@redhat.com>
+- added /usr/bin/gzip and /usr/bin/gunzip symlinks as some programs are too
+  brain dead to figure out they should be at least trying to use $PATH
+- added BuildRoot
+
+* 三 1月 28 1998 Erik Troan <ewt@redhat.com>
+- fix /tmp races
+
+* 日 9月 14 1997 Erik Troan <ewt@redhat.com>
+- uses install-info
+- applied patch for gzexe
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 二 4月 22 1997 Marc Ewing <marc@redhat.com>
+- (Entry added for Marc by Erik) fixed gzexe to use /bin/gzip
+

@@ -1,0 +1,461 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.7.4p5-7.5
+- fix alios
+
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.7.4p5-7.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.7.4p5-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.7.4p5-7.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.7.4p5-7.1
+- rebuild for alios6
+
+* 四 7月 21 2011 Daniel Kopecek <dkopecek@redhat.com> - 1.7.4p5-7
+- set ldap configuration file to nslcd.conf
+  Resolves: rhbz#709235
+
+* 四 7月 14 2011 Daniel Kopecek <dkopecek@redhat.com> - 1.7.4p5-6
+- removed the --with-ldap-*conf options
+- added RELRO flags
+  Resolves: rhbz#709235
+  Resolves: rhbz#709859
+
+* 二 4月 19 2011 Daniel Kopecek <dkopecek@redhat.com> - 1.7.4p5-5
+- patch: log failed user role changes
+  Resolves: rhbz#665131
+
+* 三 3月 23 2011 Daniel Kopecek <dkopecek@redhat.com> - 1.7.4p5-4
+- added #includedir /etc/sudoers.d to sudoers
+  Resolves: rhbz#615087
+
+* 二 3月 22 2011 Daniel Kopecek <dkopecek@redhat.com> - 1.7.4p5-3
+- added !visiblepw option to sudoers
+  Resolves: rhbz#688640
+
+* 五 2月 04 2011 Daniel Kopecek <dkopecek@redhat.com> - 1.7.4p5-2
+- added patch for rhbz#665131
+  Resolves: rhbz#665131
+
+* 四 1月 13 2011 Daniel Kopecek <dkopecek@redhat.com> - 1.7.4p5-1
+- rebase to latest stable version
+- sudo now uses /var/db/sudo for timestamps
+- new command available: sudoreplay
+- use native audit support
+- sync configuration paths with the nss_ldap package
+  Resolves: rhbz#615087
+  Resolves: rhbz#652726
+  Resolves: rhbz#634159
+  Resolves: rhbz#603823
+
+* 三 9月 01 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-9
+- added patch for CVE-2010-2956 (#628628)
+  Resolves: rhbz#629054
+
+* 二 8月 03 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-8
+- sudoers change: always set $HOME to the target user home directory 
+  Resolves: rhbz#619293
+
+* 四 7月 15 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-7
+- move the sudo_end* calls before closefrom()
+- close audit_fd before exec
+- fixed typo in Makefile.in
+  Resolves: rhbz#569313
+
+* 二 6月 08 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-6
+- fixed segfault when #include directive is used in cycles
+  Resolves: rhbz#598363
+
+* 二 6月 01 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-5
+- added patch that fixes insufficient environment sanitization issue (#598154)
+  Resolves: rhbz#598383
+
+* 二 4月 13 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-4
+- added second patch for CVE-2010-0426 (#580441)
+  Resolves: rhbz#580527
+
+* 三 2月 24 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-3
+- added patch for CVE-2010-0426 (#567337)
+  Resolves: rhbz#567675
+
+* 三 1月 27 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-2
+- changed the License: value to ISC
+  Related: rhbz#543948
+
+* 三 1月 13 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.2p2-1
+- new upstream version
+  Resolves: rhbz#554321
+- drop *.pod man page duplicates from docs
+- commented out unused aliases in sudoers to make visudo happy (#550239)
+
+* 二 1月 12 2010 Daniel Kopecek <dkopecek@redhat.com> - 1.7.1-8
+- Rebuild for new libaudit
+  Related: rhbz#543948
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1.7.1-7
+- rebuilt with new audit
+
+* 四 8月 20 2009 Daniel Kopecek <dkopecek@redhat.com> 1.7.1-6
+- moved secure_path from compile-time option to sudoers file (#517428)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.7.1-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 09 2009 Daniel Kopecek <dkopecek@redhat.com> 1.7.1-4
+- moved the closefrom() call before audit_help_open() (sudo-1.7.1-auditfix.patch)
+- epoch number sync
+
+* 一 6月 22 2009 Daniel Kopecek <dkopecek@redhat.com> 1.7.1-1
+- updated sudo to version 1.7.1
+- fixed small bug in configure.in (sudo-1.7.1-conffix.patch)
+
+* 二 2月 24 2009 Daniel Kopecek <dkopecek@redhat.com> 1.6.9p17-6
+- fixed building with new libtool
+- fix for incorrect handling of groups in Runas_User
+- added /usr/local/sbin to secure-path
+
+* 二 1月 13 2009 Daniel Kopecek <dkopecek@redhat.com> 1.6.9p17-3
+- build with sendmail installed
+- Added /usr/local/bin to secure-path
+
+* 二 9月 02 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p17-2
+- adjust audit patch, do not scream when kernel is
+  compiled without audit netlink support (#401201)
+
+* 五 7月 04 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p17-1
+- upgrade
+
+* 三 6月 18 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p13-7
+- build with newer autoconf-2.62 (#449614)
+
+* 二 5月 13 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p13-6
+- compiled with secure path (#80215)
+
+* 一 5月 05 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p13-5
+- fix path to updatedb in /etc/sudoers (#445103)
+
+* 一 3月 31 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p13-4
+- include ldap files in rpm package (#439506)
+
+* 四 3月 13 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p13-3
+- include [sudo] in password prompt (#437092)
+
+* 二 3月 04 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p13-2
+- audit support improvement
+
+* 四 2月 21 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p13-1
+- upgrade to the latest upstream release
+
+* 三 2月 06 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p12-1
+- upgrade to the latest upstream release
+- add selinux support
+
+* 六 2月 02 2008 Dennis Gilmore <dennis@ausil.us> 1.6.9p4-6
+- sparc64 needs to be in the -fPIE list with s390
+
+* 一 1月 07 2008 Peter Vrabec <pvrabec@redhat.com> 1.6.9p4-5
+- fix complains about audit_log_user_command(): Connection 
+  refused (#401201)
+
+* 三 12月 05 2007 Release Engineering <rel-eng at fedoraproject dot org> - 1.6.9p4-4
+- Rebuild for deps
+
+* 三 12月 05 2007 Release Engineering <rel-eng at fedoraproject dot org> - 1.6.9p4-3
+- Rebuild for openssl bump
+
+* 四 8月 30 2007 Peter Vrabec <pvrabec@redhat.com> 1.6.9p4-2
+- fix autotools stuff and add audit support
+
+* 一 8月 20 2007 Peter Vrabec <pvrabec@redhat.com> 1.6.9p4-1
+- upgrade to upstream release
+
+* 四 4月 12 2007 Peter Vrabec <pvrabec@redhat.com> 1.6.8p12-14
+- also use getgrouplist() to determine group membership (#235915)
+
+* 一 2月 26 2007 Peter Vrabec <pvrabec@redhat.com> 1.6.8p12-13
+- fix some spec file issues
+
+* 四 12月 14 2006 Peter Vrabec <pvrabec@redhat.com> 1.6.8p12-12
+- fix rpmlint issue
+
+* 四 10月 26 2006 Peter Vrabec <pvrabec@redhat.com> 1.6.8p12-11
+- fix typo in sudoers file (#212308)
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 1.6.8p12-10
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 四 9月 21 2006 Peter Vrabec <pvrabec@redhat.com> 1.6.8p12-9
+- fix sudoers file, X apps didn't work (#206320)
+
+* 二 8月 08 2006 Peter Vrabec <pvrabec@redhat.com> 1.6.8p12-8
+- use Red Hat specific default sudoers file
+
+* 日 7月 16 2006 Karel Zak <kzak@redhat.com> 1.6.8p12-7
+- fix #198755 - make login processes (sudo -i) initialise session keyring
+  (thanks for PAM config files to David Howells)
+- add IPv6 support (patch by Milan Zazrivec)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.6.8p12-6.1
+- rebuild
+
+* 一 5月 29 2006 Karel Zak <kzak@redhat.com> 1.6.8p12-6
+- fix #190062 - "ssh localhost sudo su" will show the password in clear
+
+* 二 5月 23 2006 Karel Zak <kzak@redhat.com> 1.6.8p12-5
+- add LDAP support (#170848)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.6.8p12-4.1
+- bump again for double-long bug on ppc(64)
+
+* 三 2月 08 2006 Karel Zak <kzak@redhat.com> 1.6.8p12-4
+- reset env. by default
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.6.8p12-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 23 2006 Dan Walsh <dwalsh@redhat.com> 1.6.8p12-3
+- Remove selinux patch.  It has been decided that the SELinux patch for sudo is
+- no longer necessary.  In tageted policy it had no effect.  In strict/MLS policy
+- We require the person using sudo to execute newrole before using sudo.
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 11月 25 2005 Karel Zak <kzak@redhat.com> 1.6.8p12-1
+- new upstream version 1.6.8p12
+
+* 二 11月 08 2005 Karel Zak <kzak@redhat.com> 1.6.8p11-1
+- new upstream version 1.6.8p11
+
+* 四 10月 13 2005 Tomas Mraz <tmraz@redhat.com> 1.6.8p9-6
+- use include instead of pam_stack in pam config
+
+* 二 10月 11 2005 Karel Zak <kzak@redhat.com> 1.6.8p9-5
+- enable interfaces in selinux patch
+- merge sudo-1.6.8p8-sesh-stopsig.patch to selinux patch
+
+* 一 9月 19 2005 Karel Zak <kzak@redhat.com> 1.6.8p9-4
+- fix debuginfo
+
+* 一 9月 19 2005 Karel Zak <kzak@redhat.com> 1.6.8p9-3
+- fix #162623 - sesh hangs when child suspends
+
+* 一 8月 01 2005 Dan Walsh <dwalsh@redhat.com> 1.6.8p9-2
+- Add back in interfaces call, SELinux has been fixed to work around
+
+* 二 6月 21 2005 Karel Zak <kzak@redhat.com> 1.6.8p9-1
+- new version 1.6.8p9 (resolve #161116 - CAN-2005-1993 sudo trusted user arbitrary command execution)
+
+* 二 5月 24 2005 Karel Zak <kzak@redhat.com> 1.6.8p8-2
+- fix #154511 - sudo does not use limits.conf
+
+* 一 4月 04 2005 Thomas Woerner <twoerner@redhat.com> 1.6.8p8-1
+- new version 1.6.8p8: new sudoedit and sudo_noexec
+
+* 三 2月 09 2005 Thomas Woerner <twoerner@redhat.com> 1.6.7p5-31
+- rebuild
+
+* 一 10月 04 2004 Thomas Woerner <twoerner@redhat.com> 1.6.7p5-30.1
+- added missing BuildRequires for libselinux-devel (#132883)
+
+* 三 9月 29 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-30
+- Fix missing param error in sesh
+
+* 一 9月 27 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-29
+- Remove full patch check from sesh
+
+* 四 7月 08 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-28
+- Fix selinux patch to switch to root user
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 4月 13 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-26
+- Eliminate tty handling from selinux
+
+* 四 4月 01 2004 Thomas Woerner <twoerner@redhat.com> 1.6.7p5-25
+- fixed spec file: sesh in file section with selinux flag (#119682)
+
+* 二 3月 30 2004 Colin Walters <walters@redhat.com> 1.6.7p5-24
+- Enhance sesh.c to fork/exec children itself, to avoid
+  having sudo reap all domains.
+- Only reinstall default signal handlers immediately before
+  exec of child with SELinux patch
+
+* 四 3月 18 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-23
+- change to default to sysadm_r 
+- Fix tty handling
+
+* 四 3月 18 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-22
+- Add /bin/sesh to run selinux code.
+- replace /bin/bash -c with /bin/sesh
+
+* 二 3月 16 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-21
+- Hard code to use "/bin/bash -c" for selinux
+
+* 二 3月 16 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-20
+- Eliminate closing and reopening of terminals, to match su.
+
+* 一 3月 15 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-19
+- SELinux fixes to make transitions work properly
+
+* 五 3月 05 2004 Thomas Woerner <twoerner@redhat.com> 1.6.7p5-18
+- pied sudo
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 1月 27 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-16
+- Eliminate interfaces call, since this requires big SELinux privs
+- and it seems to be useless.
+
+* 二 1月 27 2004 Karsten Hopp <karsten@redhat.de> 1.6.7p5-15
+- visudo requires vim-minimal or setting EDITOR to something useful (#68605)
+
+* 一 1月 26 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-14
+- Fix is_selinux_enabled call
+
+* 二 1月 13 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-13
+- Clean up patch on failure
+
+* 二 1月 06 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-12
+- Remove sudo.te for now.
+
+* 五 1月 02 2004 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-11
+- Fix usage message
+
+* 一 12月 22 2003 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-10
+- Clean up sudo.te to not blow up if pam.te not present
+
+* 四 12月 18 2003 Thomas Woerner <twoerner@redhat.com>
+- added missing BuildRequires for groff
+
+* 二 12月 16 2003 Jeremy Katz <katzj@redhat.com> 1.6.7p5-9
+- remove left-over debugging code
+
+* 二 12月 16 2003 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-8
+- Fix terminal handling that caused Sudo to exit on non selinux machines.
+
+* 一 12月 15 2003 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-7
+- Remove sudo_var_run_t which is now pam_var_run_t
+
+* 五 12月 12 2003 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-6
+- Fix terminal handling and policy
+
+* 四 12月 11 2003 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-5
+- Fix policy
+
+* 四 11月 13 2003 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-4.sel
+- Turn on SELinux support
+
+* 二 7月 29 2003 Dan Walsh <dwalsh@redhat.com> 1.6.7p5-3
+- Add support for SELinux
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 5月 19 2003 Thomas Woerner <twoerner@redhat.com> 1.6.7p5-1
+* Wed Jan 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 11月 12 2002 Nalin Dahyabhai <nalin@redhat.com> 1.6.6-2
+- remove absolute path names from the PAM configuration, ensuring that the
+  right modules get used for whichever arch we're built for
+- don't try to install the FAQ, which isn't there any more
+
+* 四 6月 27 2002 Bill Nottingham <notting@redhat.com> 1.6.6-1
+- update to 1.6.6
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 4月 18 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.6.5p2-2
+- Fix bug #63768
+
+* 四 3月 14 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.6.5p2-1
+- 1.6.5p2
+
+* 五 1月 18 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.6.5p1-1
+- 1.6.5p1
+- Hope this "a new release per day" madness stops ;)
+
+* 四 1月 17 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.6.5-1
+- 1.6.5
+
+* 二 1月 15 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.6.4p1-1
+- 1.6.4p1
+
+* 一 1月 14 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.6.4-1
+- Update to 1.6.4
+
+* 一 7月 23 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.6.3p7-2
+- Add build requirements (#49706)
+- s/Copyright/License/
+- bzip2 source
+
+* 六 6月 16 2001 Than Ngo <than@redhat.com>
+- update to 1.6.3p7
+- use %{_tmppath}
+
+* 五 2月 23 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.6.3p6, fixes buffer overrun
+
+* 二 10月 10 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.6.3p5
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 06 2000 Karsten Hopp <karsten@redhat.de>
+- fixed owner of sudo and visudo
+
+* 四 6月 01 2000 Nalin Dahyabhai <nalin@redhat.com>
+- modify PAM setup to use system-auth
+- clean up buildrooting by using the makeinstall macro
+
+* 二 4月 11 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- initial build in main distrib
+- update to 1.6.3
+- deal with compressed man pages
+
+* 二 12月 14 1999 Preston Brown <pbrown@redhat.com>
+- updated to 1.6.1 for Powertools 6.2
+- config files are now noreplace.
+
+* 四 7月 22 1999 Tim Powers <timp@redhat.com>
+- updated to 1.5.9p2 for Powertools 6.1
+
+* 三 5月 12 1999 Bill Nottingham <notting@redhat.com>
+- sudo is configured with pam. There's no pam.d file. Oops.
+
+* 一 4月 26 1999 Preston Brown <pbrown@redhat.com>
+- upgraded to 1.59p1 for powertools 6.0
+
+* 二 10月 27 1998 Preston Brown <pbrown@redhat.com>
+- fixed so it doesn't find /usr/bin/vi first, but instead /bin/vi (always installed)
+
+* 四 10月 08 1998 Michael Maher <mike@redhat.com>
+- built package for 5.2
+
+* 一 5月 18 1998 Michael Maher <mike@redhat.com>
+- updated SPEC file
+
+* 四 1月 29 1998 Otto Hammersmith <otto@redhat.com>
+- updated to 1.5.4
+
+* 二 11月 18 1997 Otto Hammersmith <otto@redhat.com>
+- built for glibc, no problems
+
+* 五 4月 25 1997 Michael Fulbright <msf@redhat.com>
+- Fixed for 4.2 PowerTools 
+- Still need to be pamified
+- Still need to move stmp file to /var/log
+
+* 一 2月 17 1997 Michael Fulbright <msf@redhat.com>
+- First version for PowerCD.
+

@@ -1,0 +1,234 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.8.5-14.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.8.5-14.1
+- rebuild for alios6-update
+
+* 三 5月 28 2014 Nikos Mavrogiannopoulos <nmav@redhat.com> 2.8.5-14
+- fix session ID length check (#1102024)
+
+* 三 2月 26 2014 Nikos Mavrogiannopoulos <nmav@redhat.com> 2.8.5-13
+- fix CVE-2014-0092 (#1069890)
+
+* 一 5月 27 2013 Tomas Mraz <tmraz@redhat.com> 2.8.5-12
+- fix CVE-2013-2116 - fix DoS regression in CVE-2013-1619
+  upstream patch (#966754)
+
+* 四 2月 21 2013 Tomas Mraz <tmraz@redhat.com> 2.8.5-11
+- fix CVE-2013-1619 - fix TLS-CBC timing attack (#908238)
+
+* 一 10月 29 2012 Tomas Mraz <tmraz@redhat.com> 2.8.5-10
+- fix the build of the info manual
+
+* 三 10月 10 2012 Tomas Mraz <tmraz@redhat.com> 2.8.5-9
+- documentation fixes in gnutls_priority_init(3), gnutls-serv(1),
+  and gnutls-cli-debug(1) manual pages (#648297, #807746)
+- add fallback to import the private keys as PKCS#8 (#745242)
+- silence the strict aliasing warnings
+
+* 四 5月 03 2012 Tomas Mraz <tmraz@redhat.com> 2.8.5-7
+- more TLS-1.2 compatibility fixes (TLS-1.2 stays disabled by default)
+
+* 三 3月 21 2012 Tomas Mraz <tmraz@redhat.com> 2.8.5-5
+- fix CVE-2012-1573 - security issue in packet parsing (#805432)
+- fix CVE-2011-4128 - buffer overflow in gnutls_session_get_data() (#752308)
+- TLS-1.2 certificate request compatibility fix
+
+* 三 6月 02 2010 Tomas Mraz <tmraz@redhat.com> 2.8.5-4
+- add support for safe renegotiation CVE-2009-3555 (#533125)
+
+* 四 1月 28 2010 Tomas Mraz <tmraz@redhat.com> 2.8.5-3
+- drop superfluous rpath from binaries
+- do not call autoreconf during build
+- specify the license on utils subpackage
+- do not create static libraries (#556052)
+
+* 五 12月 18 2009 Tomas Mraz <tmraz@redhat.com> 2.8.5-2
+- disable experimental openssl compatibility code (#460310)
+
+* 四 12月 03 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.8.5-1.1
+- Rebuilt for RHEL 6
+
+* 一 11月 02 2009 Tomas Mraz <tmraz@redhat.com> 2.8.5-1
+- upgrade to a new upstream version
+
+* 三 9月 23 2009 Tomas Mraz <tmraz@redhat.com> 2.8.4-1
+- upgrade to a new upstream version
+
+* 五 8月 14 2009 Tomas Mraz <tmraz@redhat.com> 2.8.3-1
+- upgrade to a new upstream version
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.8.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 10 2009 Tomas Mraz <tmraz@redhat.com> 2.8.1-1
+- upgrade to a new upstream version
+
+* 三 6月 03 2009 Tomas Mraz <tmraz@redhat.com> 2.8.0-1
+- upgrade to a new upstream version
+
+* 一 5月 04 2009 Tomas Mraz <tmraz@redhat.com> 2.6.6-1
+- upgrade to a new upstream version - security fixes
+
+* 二 4月 14 2009 Tomas Mraz <tmraz@redhat.com> 2.6.5-1
+- upgrade to a new upstream version, minor bugfixes only
+
+* 五 3月 06 2009 Tomas Mraz <tmraz@redhat.com> 2.6.4-1
+- upgrade to a new upstream version
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 12月 15 2008 Tomas Mraz <tmraz@redhat.com> 2.6.3-1
+- upgrade to a new upstream version
+
+* 四 12月 04 2008 Tomas Mraz <tmraz@redhat.com> 2.6.2-1
+- upgrade to a new upstream version
+
+* 二 11月 11 2008 Tomas Mraz <tmraz@redhat.com> 2.4.2-3
+- fix chain verification issue CVE-2008-4989 (#470079)
+
+* 四 9月 25 2008 Tomas Mraz <tmraz@redhat.com> 2.4.2-2
+- add guile subpackage (#463735)
+- force new libtool through autoreconf to drop unnecessary rpaths
+
+* 二 9月 23 2008 Tomas Mraz <tmraz@redhat.com> 2.4.2-1
+- new upstream version
+
+* 二 7月 01 2008 Tomas Mraz <tmraz@redhat.com> 2.4.1-1
+- new upstream version
+- correct the license tag
+- explicit --with-included-opencdk not needed
+- use external lzo library, internal not included anymore
+
+* 二 6月 24 2008 Tomas Mraz <tmraz@redhat.com> 2.4.0-1
+- upgrade to latest upstream
+
+* 二 5月 20 2008 Tomas Mraz <tmraz@redhat.com> 2.0.4-3
+- fix three security issues in gnutls handshake - GNUTLS-SA-2008-1
+  (#447461, #447462, #447463)
+
+* 一 2月 04 2008 Joe Orton <jorton@redhat.com> 2.0.4-2
+- use system libtasn1
+
+* 二 12月 04 2007 Tomas Mraz <tmraz@redhat.com> 2.0.4-1
+- upgrade to latest upstream
+
+* 二 8月 21 2007 Tomas Mraz <tmraz@redhat.com> 1.6.3-2
+- license tag fix
+
+* 三 6月 06 2007 Tomas Mraz <tmraz@redhat.com> 1.6.3-1
+- upgrade to latest upstream (#232445)
+
+* 二 4月 10 2007 Tomas Mraz <tmraz@redhat.com> 1.4.5-2
+- properly require install-info (patch by Ville Skyttä)
+- standard buildroot and use dist tag
+- add COPYING and README to doc
+
+* 三 2月 07 2007 Tomas Mraz <tmraz@redhat.com> 1.4.5-1
+- new upstream version
+- drop libtermcap-devel from buildrequires
+
+* 四 9月 14 2006 Tomas Mraz <tmraz@redhat.com> 1.4.1-2
+- detect forged signatures - CVE-2006-4790 (#206411), patch
+  from upstream
+
+* 二 7月 18 2006 Tomas Mraz <tmraz@redhat.com> - 1.4.1-1
+- upgrade to new upstream version, only minor changes
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.4.0-1.1
+- rebuild
+
+* 三 6月 14 2006 Tomas Mraz <tmraz@redhat.com> - 1.4.0-1
+- upgrade to new upstream version (#192070), rebuild
+  of dependent packages required
+
+* 二 5月 16 2006 Tomas Mraz <tmraz@redhat.com> - 1.2.10-2
+- added missing buildrequires
+
+* 一 2月 13 2006 Tomas Mraz <tmraz@redhat.com> - 1.2.10-1
+- updated to new version (fixes CVE-2006-0645)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.2.9-3.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.2.9-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 03 2006 Jesse Keating <jkeating@redhat.com> 1.2.9-3
+- rebuilt
+
+* 五 12月 09 2005 Tomas Mraz <tmraz@redhat.com> 1.2.9-2
+- replaced *-config scripts with calls to pkg-config to
+  solve multilib conflicts
+
+* 三 11月 23 2005 Tomas Mraz <tmraz@redhat.com> 1.2.9-1
+- upgrade to newest upstream
+- removed .la files (#172635)
+
+* 日 8月 07 2005 Tomas Mraz <tmraz@redhat.com> 1.2.6-1
+- upgrade to newest upstream (rebuild of dependencies necessary)
+
+* 一 7月 04 2005 Tomas Mraz <tmraz@redhat.com> 1.0.25-2
+- split the command line tools to utils subpackage
+
+* 六 4月 30 2005 Tomas Mraz <tmraz@redhat.com> 1.0.25-1
+- new upstream version fixes potential DOS attack
+
+* 六 4月 23 2005 Tomas Mraz <tmraz@redhat.com> 1.0.24-2
+- readd the version script dropped by upstream
+
+* 五 4月 22 2005 Tomas Mraz <tmraz@redhat.com> 1.0.24-1
+- update to the latest upstream version on the 1.0 branch
+
+* 三 3月 02 2005 Warren Togami <wtogami@redhat.com> 1.0.20-6
+- gcc4 rebuild
+
+* 二 1月 04 2005 Ivana Varekova <varekova@redhat.com> 1.0.20-5
+- add gnutls Requires zlib-devel (#144069)
+
+* 一 11月 08 2004 Colin Walters <walters@redhat.com> 1.0.20-4
+- Make gnutls-devel Require libgcrypt-devel
+
+* 二 9月 21 2004 Jeff Johnson <jbj@redhat.com> 1.0.20-3
+- rebuild with release++, otherwise unchanged.
+
+* 二 9月 07 2004 Jeff Johnson <jbj@redhat.com> 1.0.20-2
+- patent tainted SRP code removed.
+
+* 日 9月 05 2004 Jeff Johnson <jbj@redhat.com> 1.0.20-1
+- update to 1.0.20.
+- add --with-included-opencdk --with-included-libtasn1
+- add --with-included-libcfg --with-included-lzo
+- add --disable-srp-authentication.
+- do "make check" after build.
+
+* 五 3月 21 2003 Jeff Johnson <jbj@redhat.com> 0.9.2-1
+- upgrade to 0.9.2
+
+* 二 6月 25 2002 Jeff Johnson <jbj@redhat.com> 0.4.4-1
+- update to 0.4.4.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 六 5月 25 2002 Jeff Johnson <jbj@redhat.com> 0.4.3-1
+- update to 0.4.3.
+
+* 二 5月 21 2002 Jeff Johnson <jbj@redhat.com> 0.4.2-1
+- update to 0.4.2.
+- change license to LGPL.
+- include splint annotations patch.
+
+* 二 4月 02 2002 Nalin Dahyabhai <nalin@redhat.com> 0.4.0-1
+- update to 0.4.0
+
+* 四 1月 17 2002 Nalin Dahyabhai <nalin@redhat.com> 0.3.2-1
+- update to 0.3.2
+
+* 四 1月 10 2002 Nalin Dahyabhai <nalin@redhat.com> 0.3.0-1
+- add a URL
+
+* 四 12月 20 2001 Nalin Dahyabhai <nalin@redhat.com>
+- initial package
+

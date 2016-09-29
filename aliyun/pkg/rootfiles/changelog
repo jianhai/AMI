@@ -1,0 +1,109 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 8.1-6.1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 8.1-6.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 8.1-6.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 8.1-6.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 8.1-6.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.1-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 3月 30 2009 Ondrej Vasik <ovasik@redhat.com> - 8.1-5
+- removed clear from dot-bash_logout (synchronized with bash,
+  related to #429406)
+- removed unset USERNAME from dot-bash_profile (synchronized with
+  bash, related to #196735)
+
+* 一 3月 23 2009 Phil Knirsch <pknirsch@redhat.com> - 8.1-4
+- Added the "we-are-upstream" comments according to Fedora review (#226376)
+- Added -p option to install to preserve timestamps (#226376)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 8.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 10月 31 2008 Ondrej Vasik <ovasik@redhat.com> - 8.1-2
+- Add dist tag, fix a few rpmlint issues, rebuild due to
+  wrong vendor (#451229)
+- Added ncurses requirement(#469390)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 8.1-1.1.1
+- rebuild
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 03 2004 Bill Nottingham <notting@redhat.com> 8.1-1
+- restore tcsh prompt into .tcshrc (#141782)
+
+* 三 9月 22 2004 Bill Nottingham <notting@redhat.com> 8-1
+- sync files with current /etc/skel stuff
+- remove Xresources (#75666)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 12月 11 2002 Tim Powers <timp@redhat.com> 7.2-5
+- rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 7月 05 2001 Preston Brown <pbrown@redhat.com> 7.2-1
+- /sbin stuff out of PATH, moved into /etc/profile
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 7月 11 2000 Preston Brown <pbrown@redhat.com>
+- fix .tcshrc
+
+* 一 7月 03 2000 Jakub Jelinek <jakub@redhat.com>
+- don't assume ASCII ordering in glob pattern
+
+* 六 6月 10 2000 Bill Nottingham <notting@redhat.com>
+- rebuild
+- fix some path stuff (#11191)
+
+* 二 4月 18 2000 Bill Nottingham <notting@redhat.com>
+- mv .Xdefaults -> .Xresources (#10623)
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com>
+- auto rebuild in the new build environment (release 5)
+
+* 二 1月 12 1999 Jeff Johnson <jbj@redhat.com>
+- add %clean (#719)
+
+* 二 12月 29 1998 Cristian Gafton <gafton@redhat.com>
+- build for 6.0
+
+* 五 10月 09 1998 Bill Nottingham <notting@redhat.com>
+- remove /root from %files (it's in filesystem)
+
+* 日 8月 23 1998 Jeff Johnson <jbj@redhat.com>
+- portability fix for .cshrc (problem #235)
+- change version to be same as release.
+
+* 二 9月 09 1997 Erik Troan <ewt@redhat.com>
+- made a noarch package
+
+* 四 3月 20 1997 Erik Troan <ewt@redhat.com>
+- Removed .Xclients and .Xsession from package, added %pre to back up old
+  .Xclients if necessary.
+

@@ -1,0 +1,29 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libgcc_s.so.1()(64bit)  
+libgcc_s.so.1(GCC_3.0)(64bit)  
+libgcc_s.so.1(GCC_3.3.1)(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libpthread.so.0(GLIBC_2.3.2)(64bit)  
+libxcb-atom.so.1()(64bit)  
+libxcb-aux.so.0()(64bit)  
+libxcb-event.so.1()(64bit)  
+libxcb-icccm.so.1()(64bit)  
+libxcb-image.so.0()(64bit)  
+libxcb-keysyms.so.1()(64bit)  
+libxcb-property.so.1()(64bit)  
+libxcb-render-util.so.0()(64bit)  
+libxcb-render.so.0()(64bit)  
+libxcb-reply.so.1()(64bit)  
+libxcb-shm.so.0()(64bit)  
+libxcb.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,75 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.8.11-12.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.8.11-12.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.8.11-12.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.8.11-12.1
+- rebuild for alios6
+
+* 四 8月 18 2011 Jan Safranek <jsafrane@redhat.com> - 1.8.11-11
+- fixed delloem powermonitor on bigendian systems (#731718)
+- fixed memory leak in Serial-over-Lan module (#731977)
+
+* 三 8月 10 2011 Jan Safranek <jsafrane@redhat.com> - 1.8.11-10
+- added -Y option for ipmitool to hide Kg key from cmdline (#698647)
+- added 'channel setkg' command to set Kg encryption key on remote machine
+  (#726390)
+
+* 四 8月 04 2011 Jan Safranek <jsafrane@redhat.com> - 1.8.11-10
+- updated 'delloem setled' command to indicate SES status and drive
+  activities for a PCI-e SSD (#727314)
+
+* 一 7月 25 2011 Jan Safranek <jsafrane@redhat.com> - 1.8.11-9
+- rebuilt for RHEL 6.2 Fastrack
+
+* 四 7月 14 2011 Jan Safranek <jsafrane@redhat.com> - 1.8.11-8
+- fixed 'ipmi sol' sending wrong packets due to miscalculation of SOL
+  payload size (#675975)
+
+* 一 2月 07 2011 Jan Safranek <jsafrane@redhat.com> - 1.8.11-7
+- added 'delloem' command for Dell-specific IPMI extensions (#631649, #63793)
+
+* 三 6月 02 2010 Jan Safranek <jsafrane@redhat.com> - 1.8.11-6
+- Changed ipmievd to use /var/run/ipmievd.pid file by default (#596809)
+
+* 三 3月 03 2010 Jan Safranek <jsafrane@redhat.com> - 1.8.11-5
+- Fixed exit code of ipmievd initscript with wrong arguments (#562186)
+
+* 五 12月 11 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.8.11-4.1
+- Rebuilt for RHEL 6
+
+* 一 11月 02 2009 Jan Safranek  <jsafrane@redhat.com> 1.8.11-4
+- fix ipmievd initscript 'condrestart' action (#532188)
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1.8.11-3
+- rebuilt with new openssl
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.8.11-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 2月 26 2009 Jan Safranek <jsafrane@redhat.com> 1.8.11-1
+- updated to new version
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.8.10-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 1月 17 2009 Tomas Mraz <tmraz@redhat.com> 1.8.10-3
+- rebuild with new openssl
+
+* 二 10月 14 2008 Jan Safranek <jsafrane@redhat.com> 1.8.10-2
+- fix issues found during package review:
+  - clear Default-Start: line in the init script, the service should be 
+    disabled by default
+  - added Obsoletes: OpenIPMI-tools
+  - compile with --disable-dependency-tracking to speed things up
+  - compile with --enable-file-security
+  - compile with --disable-intf-free, don't depend on FreeIPMI libraries
+    (FreeIPMI has its own ipmitool-like utility)
+
+* 一 10月 13 2008 Jan Safranek <jsafrane@redhat.com> 1.8.10-1
+- package created, based on upstream .spec file
+

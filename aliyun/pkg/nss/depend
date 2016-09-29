@@ -1,0 +1,53 @@
+/bin/sh  
+/bin/sh  
+/usr/sbin/update-alternatives  
+/usr/sbin/update-alternatives  
+config(nss) = 3.15.3-6.2.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libdl.so.2()(64bit)  
+libfreebl3.so()(64bit)  
+libnspr4.so()(64bit)  
+libnss3.so()(64bit)  
+libnss3.so(NSS_3.10)(64bit)  
+libnss3.so(NSS_3.11)(64bit)  
+libnss3.so(NSS_3.11.1)(64bit)  
+libnss3.so(NSS_3.11.2)(64bit)  
+libnss3.so(NSS_3.12)(64bit)  
+libnss3.so(NSS_3.12.6)(64bit)  
+libnss3.so(NSS_3.14)(64bit)  
+libnss3.so(NSS_3.14.3)(64bit)  
+libnss3.so(NSS_3.15)(64bit)  
+libnss3.so(NSS_3.2)(64bit)  
+libnss3.so(NSS_3.3)(64bit)  
+libnss3.so(NSS_3.3.1)(64bit)  
+libnss3.so(NSS_3.4)(64bit)  
+libnss3.so(NSS_3.6)(64bit)  
+libnss3.so(NSS_3.7)(64bit)  
+libnss3.so(NSS_3.8)(64bit)  
+libnss3.so(NSS_3.9)(64bit)  
+libnssutil3.so()(64bit)  
+libnssutil3.so(NSSUTIL_3.12)(64bit)  
+libnssutil3.so(NSSUTIL_3.12.3)(64bit)  
+libnssutil3.so(NSSUTIL_3.12.5)(64bit)  
+libnssutil3.so(NSSUTIL_3.13)(64bit)  
+libnssutil3.so(NSSUTIL_3.14)(64bit)  
+libnssutil3.so(NSSUTIL_3.15)(64bit)  
+libplc4.so()(64bit)  
+libplds4.so()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libsoftokn3.so()(64bit)  
+libz.so.1()(64bit)  
+nspr >= 4.10.2
+nss-softokn(x86-64) >= 3.14.3
+nss-system-init  
+nss-util >= 3.15.3
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

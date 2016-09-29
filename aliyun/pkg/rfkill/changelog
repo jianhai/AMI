@@ -1,0 +1,32 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3-4.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.3-4.1
+- rebuild for alios6
+
+* 四 2月 25 2010 John W. Linville <linville@redhat.com> 0.3-4
+- Correct license tag from BSD to ISC
+- Use correct email address in changelog entries -- oops..
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.3-3.1
+- Rebuilt for RHEL 6
+
+* 二 9月 29 2009 John W. Linville <linville@redhat.com> 0.3-3
+- Install binary into /sbin to enable use during boot
+
+* 二 9月 15 2009 John W. Linville <linville@redhat.com> 0.3-2
+- Change summary and description as suggested by Tomasz Torcz <zdzichu@irc.pl>
+
+* 四 9月 03 2009 John W. Linville <linville@redhat.com> 0.3-1
+- Update to upstream version 0.3
+- Use 'make install' and include man page in files section
+
+* 二 8月 25 2009 John W. Linville <linville@redhat.com> 0.1-1
+- Initial import
+

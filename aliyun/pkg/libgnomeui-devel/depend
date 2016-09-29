@@ -1,0 +1,33 @@
+/usr/bin/pkg-config  
+GConf2-devel >= 2.3.0
+glib2-devel >= 2.16.0
+gnome-keyring-devel >= 0.4
+gnome-vfs2-devel >= 2.7.3
+gtk2-devel >= 2.12.0
+libICE-devel  
+libSM-devel  
+libart_lgpl-devel >= 2.3.8
+libbonoboui-devel >= 2.13.1
+libglade2-devel >= 2.0.0
+libgnome-devel >= 2.13.7
+libgnomecanvas-devel >= 2.0.0
+libgnomeui = 2.24.1-4.3.alios6
+libgnomeui-2.so.0()(64bit)  
+libxml2-devel >= 2.5
+pango-devel >= 1.2.0
+pkgconfig  
+pkgconfig(gconf-2.0)  
+pkgconfig(gdk-pixbuf-2.0)  
+pkgconfig(gnome-keyring-1)  
+pkgconfig(gnome-vfs-2.0)  
+pkgconfig(gtk+-2.0)  
+pkgconfig(libart-2.0)  
+pkgconfig(libbonoboui-2.0)  
+pkgconfig(libgnome-2.0)  
+pkgconfig(libgnomecanvas-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+zlib-devel  
+rpmlib(PayloadIsXz) <= 5.2-1

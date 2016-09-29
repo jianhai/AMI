@@ -1,0 +1,76 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.1-6.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.1-6.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.1-6.1
+- rebuild for alios6
+
+* 三 9月 07 2011 Eric Sandeen <sandeen@redhat.com> - 1.0.1-6
+- Add FLUSH/FUA support (#736399)
+
+* 五 7月 22 2011 Eric Sandeen <sandeen@redhat.com> - 1.0.1-5
+- fix up incorrect pc write completion count (#705128)
+
+* 五 11月 05 2010 Edward Shishkin <edward@redhat.com> - 1.0.1-4
+- blktrace doesn't run when device name is duplicated (#583615)
+- blktrace prints incorrect usage when running w/o parameters (#619201)
+- btreplay cannot work for /dev/cciss/c0d0 device (#650229)
+- option -k doesn't kill running trace (#583624)
+- blkiomon prints nothing when blktrace works with logical volume (#650243)
+- blkparese exit with non-zero status when tracefile doesn't exist (#583695)
+- run time went but blktrace is still running (#595356)
+- inconsistencies in btrecord man page (#595413)
+- undocumented options in blkiomon (#595419)
+- undocumented options in blkparce (#595615)
+- undocumented options in blktrace (#595620)
+- undocumented options in btreplay (#595623)
+- undocumented options in btt (#595628)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.0.1-3.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 5月 11 2009 Eric Sandeen <sandeen@redhat.com> - 1.0.1-2
+- Upstream respun the release tarball to re-include top-level dir
+- drop exclude of bno_plot.py[co], not getting built now?
+
+* 一 5月 11 2009 Eric Sandeen <sandeen@redhat.com> - 1.0.1-1
+- New upstream version
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 17 2009 Eric Sandeen <sandeen@redhat.com> - 1.0.0-2
+- Build PDF documentation after all
+
+* 日 11月 02 2008 Eric Sandeen <sandeen@redhat.com> - 1.0.0-1
+- New upstream version (now with actual versioning!)
+
+* 五 2月 08 2008 Eric Sandeen <sandeen@redhat.com> - 0.0-0.9.20080103162505git
+- gcc-4.3 rebuild
+
+* 六 1月 26 2008 Eric Sandeen <sandeen@redhat.com> - 0.0-0.8.20080103162505git
+- New upstream version
+
+* 三 10月 24 2007 Eric Sandeen <sandeen@redhat.com> - 0.0-0.6.20071010202719git
+- Add libaio-devel to BuildRequires
+
+* 三 10月 24 2007 Eric Sandeen <sandeen@redhat.com> - 0.0-0.5.20071010202719git
+- New upstream version
+
+* 三 8月 15 2007 Eric Sandeen <sandeen@redhat.com> - 0.0-0.4.20070730162628git
+- Fix up btt/Makefile to accept rpm's CFLAGS
+
+* 二 8月 14 2007 Eric Sandeen <sandeen@redhat.com> - 0.0-0.3.20070730162628git
+- Just drop the pdf build, bloats the buildroot for such a simple tool
+
+* 三 8月 01 2007 Eric Sandeen <sandeen@redhat.com> - 0.0-0.2.20070730162628git
+- Add ghostscript to BuildRequires, use attr macro for man pages
+
+* 三 8月 01 2007 Eric Sandeen <sandeen@redhat.com> - 0.0-0.1.20070730162628git
+- New package, initial build.
+

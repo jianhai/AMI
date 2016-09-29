@@ -1,0 +1,62 @@
+* 二 8月 05 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.0.5-11.1
+- rebuild for alios6-extras
+
+* 五 1月 03 2014 Gabriel Somlo <somlo at cmu.edu> 2.0.5-11
+- patch to exit on port bind failure (#1047172, #1047569)
+
+* 日 12月 22 2013 Gabriel Somlo <somlo at cmu.edu> 2.0.5-10
+- added patch to build with format security enabled (#1037132)
+
+* 二 8月 06 2013 Gabriel Somlo <somlo at cmu.edu> 2.0.5-9
+- fix debuginfo regression (#925592)
+
+* 六 8月 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.5-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* 五 5月 10 2013 Gabriel Somlo <somlo at cmu.edu> 2.0.5-7
+- added autoconf step to support aarch64 (#925592)
+
+* 四 2月 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.5-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.5-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.5-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 一 11月 28 2011 Gabriel Somlo <somlo at cmu.edu> 2.0.5-3
+- include man page with build (BZ 756794)
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 六 8月 21 2010 Gabriel Somlo <somlo at cmu.edu> 2.0.5-1
+- update to 2.0.5
+
+* 二 12月 01 2009 Gabriel Somlo <somlo at cmu.edu> 2.0.4-4
+- patched to current svn trunk to address performance issues (#506884)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.0.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 1月 21 2009 Gabriel Somlo <somlo at cmu.edu> 2.0.4-1
+- update to 2.0.4
+- patch to avoid tcp/dualtest server from quitting (bugzilla #449796), also submitted to iperf sourceforge ticket tracker (#1983829)
+
+* 六 10月 27 2007 Gabriel Somlo <somlo at cmu.edu> 2.0.2-4
+- replace usleep with sched_yield to avoid hogging CPU (bugzilla #355211)
+
+* 一 1月 29 2007 Gabriel Somlo <somlo at cmu.edu> 2.0.2-3
+- patch to prevent removal of debug info by ville.sxytta(at)iki.fi
+
+* 五 9月 08 2006 Gabriel Somlo <somlo at cmu.edu> 2.0.2-2
+- rebuilt for FC6MassRebuild
+
+* 三 4月 19 2006 Gabriel Somlo <somlo at cmu.edu> 2.0.2-1
+- initial build for fedora extras (based on Dag Wieers SRPM)
+- fixed license tag: BSD (U. of IL / NCSA), not GPL
+

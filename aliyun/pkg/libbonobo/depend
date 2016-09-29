@@ -1,0 +1,28 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+config(libbonobo) = 2.24.2-4.3.alios6
+libORBit-2.so.0()(64bit)  
+libORBitCosNaming-2.so.0()(64bit)  
+libbonobo-2.so.0()(64bit)  
+libbonobo-activation.so.4()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libdbus-1.so.3()(64bit)  
+libdbus-glib-1.so.2()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+libxml2.so.2()(64bit)  
+libxml2.so.2(LIBXML2_2.4.30)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

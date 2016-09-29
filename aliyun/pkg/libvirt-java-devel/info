@@ -1,0 +1,14 @@
+Name        : libvirt-java-devel           Relocations: libvirt 
+Version     : 0.4.7                             Vendor: Alibaba
+Release     : 1.3.alios6                    Build Date: 2014年07月26日 星期六 13时19分56秒
+Install Date: 2015年03月25日 星期三 11时01分55秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: libvirt-java-0.4.7-1.3.alios6.src.rpm
+Size        : 14921                            License: LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 17时20分52秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://libvirt.org/
+Summary     : Compressed Java source files for libvirt-java
+Description :
+Libvirt-java is a base framework allowing to use libvirt, the virtualization
+API though the Java programming language. This is the development part needed
+to build applications with Libvirt-java.

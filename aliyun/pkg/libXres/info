@@ -1,0 +1,13 @@
+Name        : libXres                      Relocations: (not relocatable)
+Version     : 1.0.4                             Vendor: Alibaba
+Release     : 1.3.alios6                    Build Date: 2014年07月26日 星期六 13时52分04秒
+Install Date: 2015年03月25日 星期三 11时01分02秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: libXres-1.0.4-1.3.alios6.src.rpm
+Size        : 19691                            License: MIT
+Signature   : RSA/8, 2014年07月31日 星期四 16时57分40秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.x.org
+Summary     : X-Resource extension client library
+Description :
+X-Resource is an extension that allows a client to query
+the X server about its usage of various resources.

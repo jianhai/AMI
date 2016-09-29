@@ -1,0 +1,7 @@
+/etc/yum/pluginconf.d/security.conf
+/usr/lib/yum-plugins/security.py
+/usr/lib/yum-plugins/security.pyc
+/usr/lib/yum-plugins/security.pyo
+/usr/share/doc/yum-plugin-security-1.1.30
+/usr/share/doc/yum-plugin-security-1.1.30/COPYING
+/usr/share/man/man8/yum-security.8.gz

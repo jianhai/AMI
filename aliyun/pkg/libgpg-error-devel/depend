@@ -1,0 +1,7 @@
+/bin/sh  
+libgpg-error = 1.7-4.3.alios6
+libgpg-error.so.0()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

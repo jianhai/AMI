@@ -1,0 +1,10 @@
+/lib/firmware/amd-ucode
+/lib/firmware/amd-ucode/microcode_amd.bin
+/lib/firmware/microcode.dat
+/lib/udev/rules.d/89-microcode.rules
+/sbin/microcode_ctl
+/usr/share/doc/microcode_ctl-1.17
+/usr/share/doc/microcode_ctl-1.17/INSTALL.microcode_amd
+/usr/share/doc/microcode_ctl-1.17/LICENSE.microcode_amd
+/usr/share/doc/microcode_ctl-1.17/README.microcode_amd
+/usr/share/man/man8/microcode_ctl.8.gz

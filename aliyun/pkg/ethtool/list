@@ -1,0 +1,10 @@
+/sbin/ethtool
+/usr/sbin/ethtool
+/usr/share/doc/ethtool-2.6.33
+/usr/share/doc/ethtool-2.6.33/AUTHORS
+/usr/share/doc/ethtool-2.6.33/COPYING
+/usr/share/doc/ethtool-2.6.33/ChangeLog
+/usr/share/doc/ethtool-2.6.33/LICENSE
+/usr/share/doc/ethtool-2.6.33/NEWS
+/usr/share/doc/ethtool-2.6.33/README
+/usr/share/man/man8/ethtool.8.gz

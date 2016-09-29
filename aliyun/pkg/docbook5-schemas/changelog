@@ -1,0 +1,6 @@
+* 一 2月 02 2009 Ondrej Vasik <ovasik@redhat.com> 5.0-2
+- do own /usr/share/xml/docbook5 properly(#483341)
+
+* 四 11月 13 2008 Ondrej Vasik <ovasik@redhat.com> 5.0-1
+- Initial Fedora release
+

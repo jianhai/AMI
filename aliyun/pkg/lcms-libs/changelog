@@ -1,0 +1,129 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.19-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.19-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.19-1.1
+- rebuild for alios6
+
+* 二 12月 15 2009 Tomas Bzatek <tbzatek@redhat.com> - 1.19-1
+- Update to 1.19
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.18-3.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.18-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 4月 22 2009 kwizart < kwizart at gmail.com > - 1.18-2
+- Add lcms-CVE-2009-0793.patch from 1.18a
+
+* 一 3月 23 2009 kwizart < kwizart at gmail.com > - 1.18-1
+- Update to 1.18 (final)
+- Remove upstreamed patches
+- Disable autoreconf - patch libtool to prevent rpath issue
+
+* 五 3月 20 2009 kwizart < kwizart at gmail.com > - 1.18-0.1.beta2
+- Update to 1.18beta2
+ fix bug #487508: CVE-2009-0723 LittleCms integer overflow
+ fix bug #487512: CVE-2009-0733 LittleCms lack of upper-bounds check on sizes
+ fix bug #487509: CVE-2009-0581 LittleCms memory leak
+
+* 一 3月 02 2009 kwizart < kwizart at gmail.com > - 1.17-10
+- Fix circle dependency #452352
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.17-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 12月 04 2008 kwizart < kwizart at gmail.com > - 1.17-8
+- Fix autoreconf and missing auxiliary files.
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 1.17-7
+- Rebuild for Python 2.6
+
+* 二 10月 28 2008 kwizart < kwizart at gmail.com > - 1.17-6
+- Add lcms-fix_s390_lcms_h.patch - Fix #468245
+
+* 二 6月 03 2008 kwizart < kwizart at gmail.com > - 1.17-5
+- Fix Array indexing error in ReadCurve - #448066
+
+* 三 2月 13 2008 kwizart < kwizart at gmail.com > - 1.17-4
+- Fix packaging bug #432568 (multilib transition).
+
+* 一 2月 11 2008 kwizart < kwizart at gmail.com > - 1.17-3
+- Rebuild for gcc 4.3
+- Move libs to mutlilibs
+- Prevent timestramps change
+- Convert files-not-utf8
+
+* 三 8月 22 2007 kwizart < kwizart at gmail.com > - 1.17-2
+- Disable static for now.
+
+* 二 8月 21 2007 kwizart < kwizart at gmail.com > - 1.17-1
+- Update to 1.17
+- Ship -static for static linking
+
+* 四 2月 08 2007 Alexander Larsson <alexl@redhat.com> - 1.16-3.fc7
+- Remove requirement on python_sitearch dir (#225981)
+- Don't ship with executable .c/.h files
+
+* 一 2月 05 2007 Alexander Larsson <alexl@redhat.com> - 1.16-2
+- Run swig during build to fix warnings in generated code
+- Fix build on 64bit
+
+* 一 2月 05 2007 Alexander Larsson <alexl@redhat.com> - 1.16-1
+- Update to 1.16
+- Specfile cleanups (#225981)
+- Remove static libs
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.15-2
+- rebuild against python 2.5
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> 
+- rebuild
+
+* 一 2月 13 2006 Jesse Keating <jkeating@redhat.com> - 1.15-1.2.1
+- rebump for build order issues during double-long bump
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.15-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.15-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 09 2006 Alexander Larsson <alexl@redhat.com> - 1.15-1
+- Move from extras to core, update to 1.15
+
+* 日 5月 22 2005 Michael Schwendt <mschwendt[AT]users.sf.net> - 1.14-3
+- Fix FC4 build (#114146).
+
+* 四 4月 07 2005 Michael Schwendt <mschwendt[AT]users.sf.net>
+- rebuilt
+
+* 四 5月 20 2004 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.14-1
+- Update to 1.14.
+
+* 四 5月 20 2004 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.13-0.fdr.1
+- Updated to 1.13.
+
+* 一 2月 16 2004 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.12-0.fdr.2
+- Spec patch from Ville Skyttä.
+- New sub-package: python-lcms.
+
+* 日 12月 21 2003 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.12-0.fdr.1
+- Updated to 1.12.
+- BuildReq swig >=1.3.12.
+
+* 日 11月 09 2003 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.11-0.fdr.3
+- Fixed doc attributes.
+
+* 六 10月 11 2003 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.11-0.fdr.2
+- Renamed to lcms to match upstream.
+- Provides: littlecms.
+- Fixed doc attributes.
+- Excluding empty dir %{_libdir}/python2.2/
+
+* 四 10月 09 2003 Phillip Compton <pcompton[AT]proteinmedia.com> - 0:1.11-0.fdr.1
+- Initial RPM release.
+

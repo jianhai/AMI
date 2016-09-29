@@ -1,0 +1,543 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 5.04-11.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 5.04-11.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 5.04-11.1
+- rebuild for alios6
+
+* 一 9月 05 2011 Jan Kaluza <jkaluza@redhat.com> 5.04-11
+- fix #730336 - updated patch from upstream
+
+* 三 8月 17 2011 Jan Kaluza <jkaluza@redhat.com> 5.04-10
+- fix #730336 - parse all ELF headers
+
+* 三 6月 29 2011 Jan Kaluza <jkaluza@redhat.com> 5.04-9
+- fix #716665 - detect MP3 files properly
+
+* 三 6月 22 2011 Jan Kaluza <jkaluza@redhat.com> 5.04-8
+- fix #676045 - detect all RPM architectures
+- fix #712992 - detect noarch RPM packages
+- fix #688700 - detect s390 kernel
+- fix #692098 - do not try to get coredump informations from normal binary
+- fix #712988 - do not handle Python scripts as binary files
+- fix #690801 - fixed grammar mistakes in man page
+- fix #675691 - improve TeX recognition
+
+* 三 1月 26 2011 Jan Kaluza <jkaluza@redhat.com> 5.04-6
+- fix #637782 - identify the zip64 format correctly
+- fix #643046 - recognize volume_key escrow packets
+- fix #594083 - improve Python recognition
+- fix #608686 - mention return code in manpage
+- fix #610795 - recognize webm content
+- fix #670125 - don't identify GFS2 filesystems as GFS1 filesystems
+
+* 五 6月 11 2010 Jan Kaluza <jkaluza@redhat.com> 5.04-5
+- removed excessive HTML/SGML "magic patterns"
+  (#594605,#594624,#594636)
+
+* 四 4月 08 2010 Daniel Novotny <dnovotny@redhat.com> 5.04-4
+- fix #580490 - "file" may trim too much of command line from core file
+
+* 四 3月 25 2010 Daniel Novotny <dnovotny@redhat.com> 5.04-3
+- fix #576804 - pull "file" changes from Rawhide to Rhel6
+
+* 三 3月 24 2010 Daniel Novotny <dnovotny@redhat.com> 5.04-2
+- fix #575178 - file command does not print separator 
+  when --print0 option is used
+
+* 三 3月 10 2010 Daniel Novotny <dnovotny@redhat.com> 5.04-1
+- rebase to 5.04 (#572155)
+
+* 三 2月 24 2010 Daniel Novotny <dnovotny@redhat.com> 5.03-14
+- static library moved to new "-static" subpackage
+
+* 五 1月 22 2010 Daniel Novotny <dnovotny@redhat.com> 5.03-13
+- fix #557608 -  RFE: add detection of Python 3 bytecode
+
+* 一 11月 30 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-12
+- fix the patch for multilib (#515767) in Makefile.in
+
+* 二 11月 24 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-11
+- BuildRequires automake because of the Makefile.am patch
+
+* 五 11月 13 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-10
+- fix #537324 -  update spec conditional for alios
+
+* 二 8月 25 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-9
+- fix #515767 -  multilib: file /usr/share/misc/magic.mgc conflicts
+
+* 四 8月 06 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-8
+- rebuild for #515767 -  multilib: file /usr/share/misc/magic.mgc conflicts
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.03-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 23 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-6
+- fix #510429 -  file is confused by string "/* (if any) */" 
+       in C header and claims it "Lisp/Scheme program text"
+
+* 三 7月 22 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-5
+- #513079 -  RFE: file - recognize xfs metadump images
+
+* 五 7月 10 2009 Adam Jackson <ajax@redhat.com> 5.03-4
+- Clean up %description.
+
+* 二 6月 16 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-4
+- one more PostScript font magic added (#505762),
+  updated font patch
+
+* 二 6月 16 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-3
+- added magic for three font issues (PostScript fonts)
+  (#505758, #505759, #505765)
+
+* 四 5月 14 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-2
+- fix #500739 - Disorganized magic* file locations in file-libs
+
+* 一 5月 11 2009 Daniel Novotny <dnovotny@redhat.com> 5.03-1
+- new upstream version
+
+* 二 5月 05 2009 Daniel Novotny <dnovotny@redhat.com> 5.02-1
+- new upstream version; drop upstreamed patches; this fixes #497913
+
+* 三 4月 29 2009 Daniel Novotny <dnovotny@redhat.com> 5.00-8
+- fix #498036 - Elang JAM file definition breaks detection of postscript-files
+
+* 一 4月 20 2009 Daniel Novotny <dnovotny@redhat.com> 5.00-7
+- fix previous patch:
+  the name of the format is a bit different (MDUMP -> MDMP)
+
+* 五 4月 17 2009 Daniel Novotny <dnovotny@redhat.com> 5.00-6
+- fix #485835 (MDUMP files)
+
+* 一 3月 23 2009 Daniel Novotny <dnovotny@redhat.com> 5.00-5
+- added two font definitions (#491594, #491595)
+  and a fix for file descriptor leak when MAGIC_COMPRESS used (#491596)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 5.00-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 23 2009 Daniel Novotny <dnovotny@redhat.com> 5.00-3
+- fix #486105 -  file-5.00-2.fc11 fails to recognise a file 
+  (and makes rpmbuild fail)
+
+* 一 2月 16 2009 Daniel Novotny <dnovotny@redhat.com> 5.00-2
+- fix #485141 -  rpm failed while checking a French Word file
+
+* 一 2月 09 2009 Daniel Novotny <dnovotny@redhat.com> 5.00-1
+- upgrade to 5.00
+- drop upstreamed patches, rebase remaining patch
+
+* 三 1月 14 2009 Daniel Novotny <dnovotny@redhat.com> 4.26-9
+- fix #476655 detect JPEG-2000 Code Stream Bitmap
+
+* 一 1月 12 2009 Daniel Novotny <dnovotny@redhat.com> 4.26-8
+- fix #479300 - add btrfs filesystem magic
+
+* 一 12月 15 2008 Daniel Novotny <dnovotny@redhat.com> 4.26-7
+- fix the LaTex issue in bz#474156
+
+* 四 12月 04 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 4.26-6
+- Rebuild for Python 2.6
+
+* 四 12月 04 2008 Daniel Novotny <dnovotny@redhat.com> - 4.26-5
+- fix #470811 - Spurious perl auto-requires
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 4.26-4
+- Rebuild for Python 2.6
+
+* 四 10月 16 2008 Daniel Novotny <dnovotny@redhat.com> 4.26-3
+- fix #465994 file --mime-encoding seems broken
+
+* 二 10月 07 2008 Daniel Novotny <dnovotny@redhat.com> 4.26-2
+- fix #463809: rpmbuild rpmfcClassify: Assertion fails on some binary files
+  (false positive test on "DOS device driver" crashed file(1)
+   and rpmbuild(8) failed)
+
+* 一 9月 15 2008 Daniel Novotny <dnovotny@redhat.com> 4.26-1
+- new upstream version: fixes #462064
+
+* 一 7月 21 2008 Tomas Smetana <tsmetana@redhat.com> - 4.25-1
+- new upstream version; drop upstreamed patches
+
+* 五 6月 06 2008 Tomas Smetana <tsmetana@redhat.com> - 4.24-4
+- add GFS2 filesystem magic; thanks to Eric Sandeen
+- add LVM snapshots magic (#449755); thanks to Jason Farrell
+
+* 三 6月 04 2008 Tomas Smetana <tsmetana@redhat.com> - 4.24-3
+- drop patches that do nothing in recent build system
+- create the text magic file during installation
+
+* 二 6月 03 2008 Tomas Smetana <tsmetana@redhat.com> - 4.24-2
+- rebuild because of egg-info
+
+* 二 6月 03 2008 Tomas Smetana <tsmetana@redhat.com> - 4.24-1
+- new upstream version
+
+* 二 3月 11 2008 Tomas Smetana <tsmetana@redhat.com> - 4.23-5
+- fix EFI detection patch
+
+* 五 2月 01 2008 Tomas Smetana <tsmetana@redhat.com> - 4.23-4
+- fix mismatching gzip files and text files as animations
+
+* 五 2月 01 2008 Tomas Smetana <tsmetana@redhat.com> - 4.23-3
+- fix #430927 - detect ext4 filesystems
+
+* 四 1月 31 2008 Tomas Smetana <tsmetana@redhat.com> - 4.23-2
+- fix #430952 - wrong handling of ELF binaries
+
+* 二 1月 29 2008 Tomas Smetana <tsmetana@redhat.com> - 4.23-1
+- new upstream version; update patches; drop unused patches
+
+* 四 1月 24 2008 Tomas Smetana <tsmetana@redhat.com> - 4.21-5
+- build a separate python-magic package; thanks to Terje Rosten
+
+* 四 12月 06 2007 Tomas Smetana <tsmetana@redhat.com> - 4.21-4
+- add PE32/PE32+ magic
+
+* 三 8月 15 2007 Martin Bacovsky <mbacovsk@redhat.com> - 4.21-3
+- resolves: #172015: no longer reports filename of crashed app when run on core files.
+- resolves: #249578: Weird output from "file -i"
+- resolves: #234817: file reports wrong filetype for microsoft word file
+
+* 三 7月 04 2007 Martin Bacovsky <mbacovsk@redhat.com> - 4.21-2
+- resolves: #246700: RPM description isn't related to product
+- resolves: #238789: file-devel depends on %{version}
+  but not on %{version}-%{release}
+- resolves: #235267: for core files, file doesn't display the executable name
+
+* 二 5月 29 2007 Martin Bacovsky <mbacovsk@redhat.com> - 4.21-1
+- upgrade to new upstream 4.21
+- resolves: #241034: CVE-2007-2799 file integer overflow
+
+* 三 3月 07 2007 Martin Bacovsky <mbacovsk@redhat.com> - 4.20-1
+- upgrade to new upstream 4.20
+
+* 二 2月 20 2007 Martin Bacovsky <mbacovsk@redhat.com> - 4.19-4
+- rpath in file removal
+
+* 一 2月 19 2007 Martin Bacovsky <mbacovsk@redhat.com> - 4.19-3
+- Resolves: #225750 - Merge Review: file
+
+* 四 1月 25 2007 Martin Bacovsky <mbacovsk@redhat.com> - 4.19-2
+- Resolves: #223297 - file does not recognize OpenOffice "native" formats
+- Resolves: #224344 - Magic rules should be in file-libs
+
+* 二 1月 09 2007 Martin Bacovsky <mbacovsk@redhat.com> - 4.19-1
+- Resolves: #208880 - Pointless file(1) error message while detecting ELF 64-bit file
+    thanks to <jakub@redhat.com> for patch
+- Resolves: #214992 - file-devel should own %_includedir/* %_libdir/lib*.so
+- Resolves: #203548 - a -devel package should be split out for libmagic
+- upgrade to new upstream 4.19
+- patch revision and cleaning
+- split package to file, file-devel and file-libs
+
+* 三 8月 23 2006 Martin Bacovsky <mbacovsky@redhat.com> - 4.17-8
+- fix recognition of perl script with embed awk (#203610)
+
+* 五 8月 18 2006 Martin Bacovsky <mbacovsk@redhat.com> - 4.17-7
+- fix recognition of bash script with embed awk (#202185)
+
+* 四 8月 03 2006 Martin Bacovsky <mbacovsk@redhat.com> - 4.17-6
+- fix gziped empty file (#72986)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 4.17-5.1
+- rebuild
+
+* 一 7月 10 2006 Radek Vokal <rvokal@redhat.com> 4.17-5
+- fix powerpoint mine (#190373) <vonsch@gmail.com>
+
+* 三 5月 24 2006 Radek Vokal <rvokal@redhat.com> 4.17-4
+- /usr/share/file is owned by package (#192858)
+- fix magic for Clamav files (#192406)
+
+* 五 4月 21 2006 Radek Vokal <rvokal@redhat.com> 4.17-3
+- add support for OCFS or ASM (#189017)
+
+* 二 3月 14 2006 Radek Vokal <rvokal@redhat.com> 4.17-2
+- fix segfault when compiling magic
+- add check for wctype.h
+- fix for flac and mp3 files
+
+* 一 3月 13 2006 Radek Vokal <rvokal@redhat.com> 4.17-1
+- upgrade to file-4.17, patch clean-up
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 4.16-6.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 4.16-6.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 六 2月 04 2006 Radek Vokal <rvokal@redhat.com> 4.16-6
+- xen patch, recognizes Xen saved domain
+
+* 五 1月 13 2006 Radek Vokal <rvokal@redhat.com> 4.16-5
+- fix for 64bit arrays
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 11月 29 2005 Radek Vokal <rvokal@redhat.com> - 4.16-4
+- printf utf8 filenames and don't use isprint() (#174348)
+
+* 二 11月 08 2005 Radek Vokal <rvokal@redhat.com> - 4.16-3
+- remove .la files (#172633)
+
+* 一 10月 31 2005 Radek Vokal <rvokal@redhat.com> - 4.16-2
+- fix core files output, show "from" (#172015)
+
+* 二 10月 18 2005 Radek Vokal <rvokal@redhat.com> - 4.16-1
+- upgrade to upstream
+
+* 一 10月 03 2005 Radek Vokal <rvokal@redhat.com> - 4.15-4
+- file output for Berkeley DB gains Cracklib (#168917)
+
+* 一 9月 19 2005 Radek Vokal <rvokal@redhat.com> - 4.15-3
+- small fix in previously added patch, now it works for multiple params
+
+* 一 9月 19 2005 Radek Vokal <rvokal@redhat.com> - 4.15-2
+- print xxx-style only once (#168617)
+
+* 二 8月 09 2005 Radek Vokal <rvokal@redhat.com> - 4.15-1
+- upgrade to upstream
+
+* 二 8月 09 2005 Radek Vokal <rvokal@redhat.com> - 4.14-4
+- mime for mpeg and aac files fixed (#165323)
+
+* 五 8月 05 2005 Radek Vokal <rvokal@redhat.com> - 4.14-3
+- mime for 3ds files removed, conflicts with text files (#165165)
+
+* 五 7月 22 2005 Radek Vokal <rvokal@redhat.com> - 4.14-2
+- fixed mime types recognition (#163866) <mandriva.org>
+
+* 四 7月 14 2005 Radek Vokal <rvokal@redhat.com> - 4.14-1
+- sync with upstream, patch clean-up
+
+* 一 7月 04 2005 Radek Vokal <rvokal@redhat.com> - 4.13-5
+- fixed reiserfs check (#162378)
+
+* 一 4月 11 2005 Radek Vokal <rvokal@redhat.com> - 4.13-4
+- check Cyrus files before Apple Quicktime movies (#154342)
+
+* 一 3月 07 2005 Radek Vokal <rvokal@redhat.com> - 4.13-3
+- check for shared libs before fs dump files (#149868)
+
+* 五 3月 04 2005 Radek Vokal <rvokal@redhat.com> - 4.13-2
+- gcc4 rebuilt
+
+* 二 2月 15 2005 Radek Vokal <rvokal@redhat.com> - 4.13-1
+- new version, fixing few bugs, patch clean-up
+- consistent output for bzip files (#147440)
+
+* 一 1月 24 2005 Radek Vokal <rvokal@redhat.com> - 4.12-3
+- core64 patch fixing output on core files (#145354) <kzak@redhat.com>
+- minor change in magic patch
+
+* 一 1月 03 2005 Radek Vokal <rvokal@redhat.com> - 4.12-2
+- fixed crashes in threaded environment (#143871) <arjanv@redhat.com>
+
+* 四 12月 02 2004 Radek Vokal <rvokal@redhat.com> - 4.12-1
+- upgrade to file-4.12
+- removed Tim's patch, tuned magic patch
+
+* 六 11月 20 2004 Miloslav Trmac <mitr@redhat.com> - 4.10-4
+- Convert libmagic.3 to UTF-8
+
+* 四 11月 18 2004 Radek Vokal <rvokal@redhat.com> 4.10-3
+- set of patches from debian.org
+- new magic types (#128763)
+- zlib added to BuildReq (#125294)
+
+* 二 10月 12 2004 Tim Waugh <twaugh@redhat.com> 4.10-2
+- Fixed occasional segfault (bug #131892).
+
+* 三 8月 11 2004 Radek Vokal <rvokal@redhat.com>
+- zlib patch deleted, note patch deleted, rh patch updated, debian patch updated
+- upgrade to file-4.10
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 5月 10 2004 Jakub Jelinek <jakub@redhat.com>
+- fix ELF note handling (#109495)
+
+* 二 3月 23 2004 Karsten Hopp <karsten@redhat.de> 4.07-3 
+- add docs (#115966)
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 1月 18 2004 Jeff Johnson <jbj@jbj.org> 4.07-1
+- upgrade to 4.07.
+- deal gracefully with unreadable files (#113207).
+- detect PO files (from Debian).
+
+* 二 12月 16 2003 Jeff Johnson <jbj@jbj.org> 4.06-1
+- upgrade to file-4.06.
+
+* 一 11月 10 2003 Tim Waugh <twaugh@redhat.com> 4.02-4
+- Minimal fix for busy loop problem (bug #109495).
+
+* 一 10月 13 2003 Jeff Johnson <jbj@jbj.org> 4.05-1
+- upgrade to 4.05.
+
+* 四 10月 09 2003 Jeff Johnson <jbj@jbj.org> 4.02-3
+- use zlib rather than exec'ing gzip.
+
+-* Thu Aug 28 2003 Dan Walsh <dwalsh@redhat.com>
+-- Add Selinux support.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 六 5月 24 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- add ldconfig to post/postun
+
+* 一 4月 21 2003 Jeff Johnson <jbj@redhat.com> 4.02-1
+- upgrade to file-4.02.
+
+* 四 2月 27 2003 Jeff Johnson <jbj@redhat.com> 3.39-9
+- check size read from elf header (#85297).
+
+* 二 2月 18 2003 Matt Wilson <msw@redhat.com> 3.39-8
+- add FHS compatibility symlink from /usr/share/misc/magic -> ../magic
+  (#84509)
+
+* 五 2月 14 2003 Jeff Johnson <jbj@redhat.com> 3.39-7
+- the "real" fix to the vorbis/ogg magic details (#82810).
+
+* 一 1月 27 2003 Jeff Johnson <jbj@redhat.com> 3.39-6
+- avoid vorbis/ogg magic details (#82810).
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 3.39-5
+- rebuilt
+
+* 日 1月 12 2003 Nalin Dahyabhai <nalin@redhat.com> 3.39-4
+- PT_NOTE, take 3
+
+* 五 1月 10 2003 Nalin Dahyabhai <nalin@redhat.com> 3.39-3
+- don't barf in ELF headers with align = 0
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 3.39-2
+- don't get lost when looking at PT_NOTE sections
+
+* 六 10月 26 2002 Jeff Johnson <jbj@redhat.com> 3.39-1
+- update to 3.39.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 06 2002 Trond Eivind Glomsrød <teg@redhat.com> 3.37-6
+- Don't use an old magic.mime 
+- Add mng detection (#64229)
+
+* 二 2月 26 2002 Trond Eivind Glomsrød <teg@redhat.com> 3.37-5
+- Rebuild
+
+* 一 1月 14 2002 Trond Eivind Glomsrød <teg@redhat.com> 3.37-4
+- Fix missing include of <stdint.h> (#58209)
+
+* 二 12月 11 2001 Trond Eivind Glomsrød <teg@redhat.com> 3.37-2
+- Add CFLAGS to handle large files (#53576)
+
+* 一 12月 10 2001 Trond Eivind Glomsrød <teg@redhat.com> 3.37-1
+- 3.37
+- s/Copyright/License/
+- build with --enable-fsect-man5, drop patch
+- disable two old patches
+
+* 五 7月 06 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- revert a patch to Magdir/elf, which breaks many libtool scripts
+  in several rpm packages
+
+* 一 6月 25 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- iterate to 3.35
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 日 11月 26 2000 Jeff Johnson <jbj@redhat.com>
+- update to 3.33.
+
+* 一 8月 14 2000 Preston Brown <pbrown@redhat.com>
+- Bill made the patch but didn't apply it. :)
+
+* 一 8月 14 2000 Bill Nottingham <notting@redhat.com>
+- 'ASCII text', not 'ASCII test' (#16168)
+
+* 一 7月 31 2000 Jeff Johnson <jbj@redhat.com>
+- fix off-by-1 error when creating filename for use with -i.
+- include a copy of GNOME /etc/mime-types in %{_datadir}/magic.mime (#14741).
+
+* 六 7月 22 2000 Jeff Johnson <jbj@redhat.com>
+- install magic as man5/magic.5 with other formats (#11172).
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 三 6月 14 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 五 4月 14 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 3.30
+
+* 三 2月 16 2000 Cristian Gafton <gafton@redhat.com>
+- add ia64 patch from rth
+
+* 一 2月 07 2000 Bill Nottingham <notting@redhat.com>
+- handle compressed manpages
+- update to 3.28
+
+* 一 8月 23 1999 Jeff Johnson <jbj@redhat.com>
+- identify ELF stripped files correctly (#4665).
+- use SPARC (not sparc) consistently throughout (#4665).
+- add entries for MS Office files (#4665).
+
+* 四 8月 12 1999 Jeff Johnson <jbj@redhat.com>
+- diddle magic so that *.tfm files are identified correctly.
+
+* 二 7月 06 1999 Jeff Johnson <jbj@redhat.com>
+- update to 3.27.
+
+* 一 3月 22 1999 Preston Brown <pbrown@redhat.com>
+- experimental support for realmedia files added
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 5)
+
+* 五 3月 19 1999 Jeff Johnson <jbj@redhat.com>
+- strip binary.
+
+* 五 11月 27 1998 Jakub Jelinek <jj@ultra.linux.cz>
+- add SPARC V9 magic.
+
+* 二 11月 10 1998 Jeff Johnson <jbj@redhat.com>
+- update to 3.26.
+
+* 一 8月 24 1998 Jeff Johnson <jbj@redhat.com>
+- update to 3.25.
+- detect gimp XCF versions.
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 三 4月 08 1998 Erik Troan <ewt@redhat.com>
+- updated to 3.24
+- buildrooted
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 一 3月 31 1997 Erik Troan <ewt@redhat.com>
+- Fixed problems caused by 64 bit time_t.
+
+* 四 3月 06 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Improved recognition of Linux kernel images.
+

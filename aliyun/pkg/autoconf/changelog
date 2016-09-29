@@ -1,0 +1,285 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.63-5.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.63-5.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.63-5.1.1
+- rebuild for alios6
+
+* 二 2月 23 2010 Karsten Hopp <karsten@redhat.com> 2.63-5.1
+- fix license, fix some rpmlint warnings
+
+* 一 1月 25 2010 Peter Lemenkov <lemenkov@gmail.com> - 2.63-5
+- Fixed Erlang-related stuff
+
+* 二 8月 11 2009 Ville Skyttä <ville.skytta@iki.fi> - 2.63-4
+- Use lzma compressed upstream tarball.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.63-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.63-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 9月 17 2008 Stepan Kasal <skasal@redhat.com> 2.63-1
+- upstream bugfix release
+- all patches dropped, the issues are fixed upstream
+
+* 一 7月 07 2008 Karsten Hopp <karsten@redhat.com> 2.62-5
+- fix multiline variables (p.e. #449467)
+
+* 五 7月 04 2008 Stepan Kasal <skasal@redhat.com> 2.62-4
+- add a quick fix for #449944
+- remove Requires: mktemp, imake, grep; these are required by the generated
+  configure, but not by Autoconf.
+- switch on make check
+
+* 二 6月 24 2008 Karsten Hopp <karsten@redhat.com> 2.62-3
+- add fix for same line comments #449245 (Ralf Wildenhues)
+
+* 五 6月 06 2008 Karsten Hopp <karsten@redhat.com> 2.62-2
+- add upstream fix from Eric Blake for #449973, 
+  m4_if releated error message from autotest
+
+* 二 5月 13 2008 Karsten Hopp <karsten@redhat.com> 2.62-1
+- autoconf-2.62
+
+* 一 10月 29 2007 Stepan Kasal <skasal@redhat.com> 2.61-10
+- require m4 >= 1.4.7
+- Resolves: #236073
+
+* 三 8月 08 2007 Karsten Hopp <karsten@redhat.com> 2.61-9
+- update license tag
+
+* 二 2月 27 2007 Karsten Hopp <karsten@redhat.com> 2.61-8
+- own %{_datadir}/emacs/ (#225296)
+
+* 一 2月 26 2007 Karsten Hopp <karsten@redhat.com> 2.61-7
+- add Requires: grep
+
+* 四 2月 22 2007 Karsten Hopp <karsten@redhat.com> 2.61-6
+- drop gawk, sed requirements (#225296)
+- add some comments
+
+* 一 2月 19 2007 Karsten Hopp <karsten@redhat.com> 2.61-5
+- use ./configure
+- filter dependencies
+
+* 四 2月 15 2007 Karsten Hopp <karsten@redhat.com> 2.61-4
+- add disttag
+- replace  tabs with spaces
+- fix buildroot
+- use Requires(post), Requires(preun)
+- use make install DESTDIR=....
+- drop perl requirement as it gets pulled it automatically
+
+* 四 1月 18 2007 Karsten Hopp <karsten@redhat.com> 2.61-3
+- don't abort (un)install scriptlets when _excludedocs is set (Ville Skyttä)
+
+* 二 11月 21 2006 Karsten Hopp <karsten@redhat.com> 2.61-2
+- drop obsolete linkX11 patch
+
+* 二 11月 21 2006 Karsten Hopp <karsten@redhat.com> 2.61-1
+- autoconf-2.61
+
+* 四 11月 09 2006 Karsten Hopp <karsten@redhat.com> 2.60-4
+- autoconf-2.60
+
+* 五 10月 13 2006 Stepan Kasal <skasal@redhat.com> 2.59-12
+- Add autoconf-2.59-lock.patch to eliminate a perl warning (#210653).
+
+* 四 7月 27 2006 Karsten Hopp <karsten@redhat.de> 2.59-11
+- Requires imake for _AC_PATH_X
+
+* 四 7月 20 2006 Karsten Hopp <karsten@redhat.de> 2.59-10
+- rebuild
+
+* 三 7月 19 2006 Karsten Hopp <karsten@redhat.de> 2.59-9
+- rebuild
+
+* 二 5月 16 2006 Karsten Hopp <karsten@redhat.de> 2.59-8
+- try to link with libX11 instead of libXt
+
+* 三 2月 15 2006 Karsten Hopp <karsten@redhat.de> 2.59-7
+- XrmInitialize takes no argument (#181340)
+
+* 一 2月 06 2006 Karsten Hopp <karsten@redhat.de> 2.59-6
+- check for Xlib.h instead of Intrinsic.h to find X11 headers
+  (#176379)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 9月 21 2004 Daniel Reed <djr@redhat.com> - 2.59-5
+- rebuilt for dist-fc3
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 12月 18 2003 Jens Petersen <petersen@redhat.com> - 2.59-2
+- rebuild with perl-5.8.2 [Harald Hoyer]
+
+* 四 11月 13 2003 Jens Petersen <petersen@redhat.com> - 2.59-1
+- update to 2.59 bugfix release
+- remove autoconf-2.58-fix-ac_abs-109267.patch no longer needed
+
+* 五 11月 07 2003 Jens Petersen <petersen@redhat.com> - 2.58-2
+- fix problem with ac_abs_{build,src}dir (#109267) [reported by Joe Orton,
+  patch by Alexandre Duret-Lutz]
+
+* 三 11月 05 2003 Jens Petersen <petersen@redhat.com> - 2.58-1
+- 2.58 release
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 12月 12 2002 Elliot Lee <sopwith@redhat.com> 2.57-2
+- Fix missing/unpackaged file
+
+* 四 12月 05 2002 Jens Petersen <petersen@redhat.com> 2.57-1
+- update to 2.57 bugfix release
+- buildrequire emacs (#79031), sed and m4
+
+* 六 11月 23 2002 Jens Petersen <petersen@redhat.com> 2.56-2
+- add --without check build option to control whether "make check" run
+- don't gzip info files explicitly
+- use exclude for unwanted info files
+
+* 四 11月 21 2002 Jens Petersen <petersen@redhat.com>
+- no longer obsolete autoconf253
+
+* 一 11月 18 2002 Jens Petersen <petersen@redhat.com> 2.56-1
+- update to 2.56
+- obsolete autoheader-warn patch
+- no longer provide autoconf253
+- include site-lisp and man files
+- remove info dir which is not in the manifest
+- do not version suffix bin files for now
+
+* 一 8月 19 2002 Jens Petersen <petersen@redhat.com> 2.53-8
+- make check
+
+* 五 6月 28 2002 Jens Petersen <petersen@redhat.com> 2.53-7
+- update url (#66840)
+- added doc files
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 2.53-6
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com> 2.53-5
+- automated rebuild
+
+* 一 5月 20 2002 Bill Nottingham <notting@redhat.com> 2.53-4
+- provide autoconf253
+
+* 四 5月 16 2002 Bill Nottingham <notting@redhat.com> 2.53-3
+- obsolete autoconf253
+
+* 三 5月 08 2002 Jens Petersen <petersen@redhat.com> 2.53-2
+- patch autoheader so that --warnings=CATEGORY works (#64566)
+  [reported with fix by hjl@gnu.org]
+
+* 二 4月 23 2002 Jens Petersen <petersen@redhat.com> 2.53-1
+- update to autoconf-2.53
+- drop mawk patch again
+- version suffix bindir files and add symlinks to unversioned names
+
+* 五 2月 01 2002 Jens Petersen <petersen@redhat.com> 2.52-7
+- revert to 2.52 (also fixes #58210!)
+- remove relversion variable
+- bring back mawk -> gawk patch
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com> 2.52-6
+- automated rebuild
+
+* 四 12月 20 2001 Jens Petersen <petersen@redhat.com> 2.52-5
+- update to 2.52f
+- add URL
+- minor description improvements
+- define relversion to carry version number
+- mawk.patch no longer needed
+
+* 六 11月 17 2001 Florian La Roche <Florian.LaRoche@redhat.de> 2.52-4
+- rebuild
+
+* 三 9月 19 2001 Jens Petersen <petersen@redhat.com> 2.52-3
+- restore patch to prefer gawk to mawk
+
+* 二 9月 18 2001 Florian La Roche <Florian.LaRoche@redhat.de> 2.52-2
+- update to 2.52d
+
+* 一 9月 17 2001 Jens Petersen <petersen@redhat.com> 2.52-1
+- update to 2.52
+- remove obsolete patches, since already new version
+- dont install install-sh
+
+* 二 7月 10 2001 Jens Petersen <petersen@redhat.com>
+- add patch to include various standard C headers as needed
+  by various autoconf tests (#19114)
+- add patch to autoscan.pl to get a better choice of init
+  file (#42071), to test for CPP after CC (#42072) and to
+  detect C++ source and g++ (#42073).
+
+* 二 6月 26 2001 Jens Petersen <petersen@redhat.com>
+- Add a back-port of _AC_PROG_CXX_EXIT_DECLARATION
+  from version 2.50 to make detection of C++ exit()
+  declaration prototype platform independent.  The check is
+  done in AC_PROG_CXX with the result stored in "confdefs.h".
+  The exit() prototype in AC_TRY_RUN_NATIVE is no longer needed.
+  (fixes #18829)
+
+* 三 11月 29 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up interoperability with glibc 2.2 and gcc 2.96:
+  AC_TRY_RUN_NATIVE in C++ mode added a prototype for exit() to
+  the test code without throwing an exception, causing a conflict
+  with stdlib.h --> AC_TRY_RUN_NATIVE for C++ code including stdlib.h
+  always failed, returning wrong results
+
+* 五 7月 21 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add textutils as a dependency (#14439)
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 05 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 日 3月 26 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- fix preun
+
+* 五 3月 26 1999 Cristian Gafton <gafton@redhat.com>
+- add patch to help autoconf clean after itself and not leave /tmp clobbered
+  with acin.* and acout.* files (can you say annoying?)
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+- use gawk, not mawk
+
+* 四 3月 18 1999 Preston Brown <pbrown@redhat.com>
+- moved /usr/lib/autoconf to /usr/share/autoconf (with automake)
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 二 1月 12 1999 Jeff Johnson <jbj@redhat.com>
+- update to 2.13.
+
+* 五 12月 18 1998 Cristian Gafton <gafton@redhat.com>
+- build against glibc 2.1
+
+* 一 10月 05 1998 Cristian Gafton <gafton@redhat.com>
+- requires perl
+
+* 四 8月 27 1998 Cristian Gafton <gafton@redhat.com>
+- patch for fixing /tmp race conditions
+
+* 日 10月 19 1997 Erik Troan <ewt@redhat.com>
+- spec file cleanups
+- made a noarch package
+- uses autoconf
+- uses install-info
+
+* 四 7月 17 1997 Erik Troan <ewt@redhat.com>
+- built with glibc
+

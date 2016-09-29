@@ -1,0 +1,9 @@
+postinstall scriptlet (using /bin/sh):
+[ -f /usr/share/info/gcrypt.info.gz ] && \
+    /sbin/install-info /usr/share/info/gcrypt.info.gz /usr/share/info/dir
+exit 0
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 -a -f /usr/share/info/gcrypt.info.gz ]; then
+    /sbin/install-info --delete /usr/share/info/gcrypt.info.gz /usr/share/info/dir
+fi
+exit 0

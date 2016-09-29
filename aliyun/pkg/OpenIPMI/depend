@@ -1,0 +1,36 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+chkconfig  
+chkconfig  
+config(OpenIPMI) = 2.0.16-12.3.alios6
+libIPMIlanserv.so.0()(64bit)  
+libOpenIPMI.so.0()(64bit)  
+libOpenIPMIcmdlang.so.0()(64bit)  
+libOpenIPMIglib.so.0()(64bit)  
+libOpenIPMIposix.so.0()(64bit)  
+libOpenIPMIui.so.1()(64bit)  
+libOpenIPMIutils.so.0()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcrypto.so.10()(64bit)  
+libgdbm.so.2()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libncurses.so.5()(64bit)  
+libnetsnmp.so.20()(64bit)  
+libpopt.so.0()(64bit)  
+libpopt.so.0(LIBPOPT_0)(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+libtinfo.so.5()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

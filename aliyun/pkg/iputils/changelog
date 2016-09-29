@@ -1,0 +1,349 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 20071127-16.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 20071127-16.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 20071127-16.1
+- rebuild for alios6
+
+* 二 3月 22 2011 Jiri Skala <jskala@redhat.com> - 20071127-16
+- Resolves: #688332 - rdisc error message with two IP addresses on one dev
+
+* 二 1月 25 2011 Jiri Skala <jskala@redhat.com> - 20071127-15
+- Resolves: #671579 - tracepath6 fails to resolve target when using -n option
+
+* 一 9月 06 2010 Jiri Skala <jskala@redhat.com> - 20071127-14
+- Resolves: #630022 - [security audit] iputils lost PIE
+
+* 二 7月 27 2010 Ondrej Vasik <ovasik@redhat.com> - 20071127-13
+- Resolves: CVE-2010-2529 - prevent DoS vulnerability in ping
+
+* 三 5月 12 2010 Jiri Skala <jskala@redhat.com> - 20071127-12
+- Resolves: #586114 - ping6 does not support -F flowlabel and nexthop option
+
+* 二 3月 16 2010 Jiri Skala <jskala@redhat.com> - 20071127-11
+- Resolves: #574036 - arping ignores the deadline option
+
+* 三 1月 06 2010 Jiri Skala <jskala@redhat.com> - 20071127-10
+- Related: rhbz#543948
+- fixed license
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 20071127-9.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 20071127-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Jiri Skala <jskala@redhat.com> - 20071127-8
+- remake type conversions to gcc4.4 requirements
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 20071127-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 9月 26 2008 Jiri Skala <jskala@redhat.com> - 20071127-6
+- #455713 not accepted - suid is back
+
+* 五 8月 15 2008 Jiri Skala <jskala@redhat.com> - 20071127-5
+- removed a dependency on libsysfs library in arping
+
+* 三 8月 06 2008 Jiri Skala <jskala@redhat.com> - 20071127-4
+- Resolves: #455713 remove suid from ping
+- corrected typing error in man
+
+* 二 6月 03 2008 Martin Nagy <mnagy@redhat.com> - 20071127-3
+- major patch cleanup so it will be easier to get patches upstream
+- fix for #68212, previous fix actually didn't work for ping6
+- renewed the ia64 align patches
+- update README.bonding
+- clear up the code from warnings
+- spec file cleanup
+
+* 二 3月 25 2008 Martin Nagy <mnagy@redhat.com> - 20071127-2
+- fix inconsistent behaviour of ping (#360881)
+
+* 一 2月 25 2008 Martin Nagy <mnagy@redhat.com> - 20071127-1
+- update to new upstream version
+
+* 一 2月 18 2008 Martin Nagy <mnagy@redhat.com> - 20070202-9
+- rebuild
+
+* 一 2月 18 2008 Martin Nagy <mnagy@redhat.com> - 20070202-8
+- correctly fix the -w option and return code of arping (#387881)
+
+* 五 2月 01 2008 Martin Nagy <mnagy@redhat.com> - 20070202-7
+- fix -Q option of ping6 (#213544)
+
+* 一 1月 14 2008 Martin Nagy <mnagy@redhat.com> - 20070202-6
+- fix absolute symlinks and character encoding for RELNOTES (#225909)
+- preserve file timestamps (#225909)
+- use %{?_smp_mflags} (#225909)
+- fix service rdisc stop removing of lock file
+
+* 五 9月 14 2007 Martin Bacovsky <mbacovsk@redhat.com> - 20070202-5
+- rebuild
+
+* 五 8月 03 2007 Martin Bacovsky <mbacovsk@redhat.com> - 20070202-4
+- resolves: #236725: ping does not work for subsecond intervals for ordinary user
+- resolves: #243197: RFE: Please sync ifenslave with current kernel
+- resolves: #246954: Initscript Review
+- resolves: #251124: can't build rdisc - OPEN_MAX undeclared
+
+* 五 4月 06 2007 Martin Bacovsky <mbacovsk@redhat.com> - 20070202-3
+- resolves: #235374: Update of iputils starts rdisc, breaking connectivity
+
+* 二 3月 27 2007 Martin Bacovsky <mbacovsk@redhat.com> - 20070202-2
+- Resolves: #234060: [PATCH] IDN (umlaut domains) support for ping and ping6
+  patch provided by Robert Scheck <redhat@linuxnetz.de>
+
+* 四 3月 15 2007 Martin Bacovsky <mbacovsk@redhat.com> - 20070202-1
+- upgarde to new upstream iputils-s20070202
+- Resolves: #229995
+- Resolves: #225909 - Merge Review: iputils
+- patches revision
+
+* 四 2月 22 2007 Martin Bacovsky <mbacovsk@redhat.com>- 20020927-42
+- Resolves: #218706 - now defines the destination address along RFC3484
+- Resolves: #229630 - ifenslave(8) man page added
+- Resolves: #213716 - arping doesn't work on InfiniBand ipoib interfaces
+
+* 三 9月 13 2006 Radek Vokal <rvokal@redhat.com> - 20020927-41
+- new ifenslave/bonding documentation
+
+* 一 8月 21 2006 Martin Bacovsky <mbacovsk@redhat.com> - 20020927-40 
+- tracepath doesn't continue past destination host (#174032) 
+  previous patch replaced by new one provided by <mildew@gmail.com>
+  option -c added
+
+* 一 7月 17 2006 Radek Vokal <rvokal@redhat.com> - 20020927-39
+- rebuilt
+
+* 一 7月 10 2006 Radek Vokal <rvokal@redhat.com> - 20020927-38
+- tracepath doesn't continue past destination host (#174032) <mildew@gmail.com>
+
+* 三 3月 29 2006 Radek Vokál <rvokal@redhat.com> - 20020927-37
+- fix ifenslave, shows interface addresses
+- add RPM_OPT_FLAGS to ifenslave
+
+* 日 3月 12 2006 Radek Vokál <rvokal@redhat.com> - 20020927-36
+- fix ifenslave man page (#185223)
+
+* 五 2月 24 2006 Radek Vokál <rvokal@redhat.com> - 20020927-35
+- add PreReq: chkconfig (#182799,#182798)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 20020927-34.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 20020927-34.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 2月 06 2006 Radek Vokál <rvokal@redhat.com> 20020927-34
+- ping clean-up, added new ICMP warning messages
+
+* 三 1月 25 2006 Radek Vokál <rvokal@redhat.com> 20020927-33
+- gcc patch, warnings cleaned-up
+
+* 二 12月 13 2005 Radek Vokal <rvokal@redhat.com> 20020927-32
+- fix HOPLIMIT option for setsockopt() (#175471)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 12月 02 2005 Radek Vokal <rvokal@redhat.com> 20020927-31
+- ifenslave.8 from debian.org
+- separate ifenslave to its own tarball
+
+* 二 11月 08 2005 Radek Vokal <rvokal@redhat.com> 20020927-30
+- don't ship traceroute6, now part of traceroute package
+
+* 三 10月 05 2005 Radek Vokal <rvokal@redhat.com> 20020927-29
+- add ping6 and tracepath6 manpages, fix attributes.
+
+* 五 9月 30 2005 Radek Vokal <rvokal@redhat.com> 20020927-28
+- memset structure before using it (#168166)
+
+* 一 9月 26 2005 Radek Vokal <rvokal@redhat.com> 20020927-27
+- fixed ping -f, flooding works again (#134859,#169141)
+
+* 四 9月 08 2005 Radek Vokal <rvokal@redhat.com> 20020927-26
+- tracepath6 and tracepath fix, use getaddrinfo instead of gethostbyname(2) 
+  (#100778,#167735)
+
+* 五 8月 12 2005 Radek Vokal <rvokal@redhat.com> 20020927-25
+- fixed arping timeout (#165715)
+
+* 一 7月 18 2005 Radek Vokal <rvokal@redhat.com> 20020927-24
+- fixed arping buffer overflow (#163383)
+
+* 五 5月 27 2005 Radek Vokal <rvokal@redhat.com> 20020927-23
+- fixed un-initialized "device" (#158914)
+
+* 四 4月 07 2005 Radek Vokal <rvokal@redhat.com> 20020927-22
+- don't start rdisc as default (#154075)
+
+* 二 4月 05 2005 Radek Vokal <rvokal@redhat.com> 20020927-21
+- rdisc init script added (#151614)
+
+* 五 3月 04 2005 Radek Vokal <rvokal@redhat.com> 20020927-20
+- arping fix for infiniband (#150156)
+
+* 二 12月 07 2004 Radek Vokal <rvokal@redhat.com> 20020927-19
+- return values fixed - patch from suse.de
+
+* 一 10月 18 2004 Radek Vokal <rvokal@redhat.com>
+- ifenslave.c and README.bonding updated from kernel-2.6.8-1.521 (#136059)
+
+* 一 10月 11 2004 Radek Vokal <rvokal@redhat.com>
+- spec file updated, source fixed (#135193)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 12 2004 Phil Knirsch <pknirsch@redhat.com> 20020927-15
+- Updated rh patch to enable PIE build of binaries.
+
+* 四 4月 22 2004 Phil Knirsch <pknirsch@redhat.com> 20020927-14
+- Fixed bug with wrong return code check of inet_pton() in traceroute6 (#100684)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 10月 02 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-12
+- Fixed unaligned access problem on ia64 (#101417)
+
+* 三 9月 10 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-11
+- Don't use own headers, use glibc and kernheaders.
+
+* 四 9月 04 2003 Bill Nottingham <notting@redhat.com> 20020927-10
+- fix build with new glibc-kernheaders
+
+* 三 9月 03 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-9.1
+- rebuilt
+
+* 三 9月 03 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-9
+- Start icmp_seq from 0 instead of 1 (Conform with debian and Solaris #100609).
+
+* 四 7月 31 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-8
+- One more update to ifenslave.c
+
+* 一 6月 16 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-7
+- Updated ifenslave.c and README.bonding to latest version.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 15 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-5
+- Bumped release and rebuilt
+
+* 四 5月 15 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-4
+- Fixed DNS lookup problems (#68212).
+- Added warning if binding problem failed on subinterface (#81640).
+
+* 二 5月 13 2003 Phil Knirsch <pknirsch@redhat.com> 20020927-3
+- Removed bonding tarball and replaced it with ifenslave.c and README
+- FHS compliance for all tools, now to be found in /bin with compat symlinks to
+  old places.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 20020927-2
+- rebuilt
+
+* 五 11月 29 2002 Phil Knirsch <pknirsch@redhat.com> 20020927-1
+- Updated to latest upstream version.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 20020124-8
+- automated rebuild
+
+* 二 6月 18 2002 Phil Knirsch <pknirsch@redhat.com> 20020124-7
+- Added new BuildPreReqs for docbook-utils and perl-SGMLSpm (#66661)
+- Fixed ipv6 error printing problem (#66659).
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 5月 21 2002 Phil Knirsch <pknirsch@redhat.com>
+- Added a patch to activate the rdisc server (#64270).
+- Display the countermeasures warning only in verbose (#55236)
+
+* 四 4月 18 2002 Bill Nottingham <notting@redhat.com>
+- quit trying to build HTML versions of the man pages
+
+* 四 3月 14 2002 Phil Knirsch <pknirsch@redhat.com>
+- Added fix by Tom "spot" Callaway to fix buffer overflow problems in stats.
+
+* 三 2月 27 2002 Phil Knirsch <pknirsch@redhat.com>
+- Update to iputils-ss020124.
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 8月 27 2001 Philipp Knirsch <pknirsch@redhat.de> 20001110-6
+- Fixed buffer overflow problem in traceroute6.c (#51135)
+
+* 日 7月 01 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Made ping6 and traceroute6 setuid (safe as they drop it VERY early) (#46769)
+
+* 四 6月 28 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed ping statistics overflow bug (#43801)
+
+* 二 6月 26 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed a bunch of compiler warnings (#37131)
+- Fixed wrong exit code for no packets and deadline (#40323)
+- Moved arping to /sbin from /usr/sbin due to ifup call (#45785). Symlink from
+  /usr/sbin/ provided for backwards compatibility.
+
+* 一 4月 30 2001 Preston Brown <pbrown@redhat.com>
+- install in.rdisc.8c as rdisc.8
+
+* 二 1月 16 2001 Jeff Johnson <jbj@redhat.com>
+- update to ss001110
+- doco fixes (#23844).
+
+* 日 10月 08 2000 Jeff Johnson <jbj@redhat.com>
+- update to ss001007.
+
+* 二 8月 08 2000 Tim Waugh <twaugh@redhat.com>
+- fix spelling mistake (#15714).
+
+* 二 8月 08 2000 Tim Waugh <twaugh@redhat.com>
+- turn on -U on machines without TSC (#15223).
+
+* 二 8月 01 2000 Jeff Johnson <jbj@redhat.com>
+- better doco patch (#15050).
+
+* 二 7月 25 2000 Jakub Jelinek <jakub@redhat.com>
+- fix include-glibc/ to work with new glibc 2.2 resolver headers
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 18 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+- update to ss000418.
+- perform reverse DNS lookup only once for same input.
+
+* 日 3月 05 2000 Jeff Johnson <jbj@redhat.com>
+- include README.ifenslave doco.
+- "ping -i N" was broke for N >= 3 (#9929).
+- update to ss000121:
+-- clockdiff: preserve raw socket errno.
+-- ping: change error exit code to 1 (used to be 92,93, ...)
+-- ping,ping6: if -w specified, transmit until -c limit is reached.
+-- ping,ping6: exit code non-zero if some packets not received within deadline.
+
+* 二 2月 22 2000 Jeff Johnson <jbj@redhat.com>
+- man page corrections (#9690).
+
+* 三 2月 09 2000 Jeff Johnson <jbj@jbj.org>
+- add ifenslave.
+
+* 四 2月 03 2000 Elliot Lee <sopwith@redhat.com>
+- List /usr/sbin/rdisc in %files list.
+
+* 四 1月 27 2000 Jeff Johnson <jbj@redhat.com>
+- add remaining binaries.
+- casts to remove compilation warnings.
+- terminate if -w deadline is reached exactly (#8724).
+
+* 五 12月 24 1999 Jeff Johnson <jbj@redhat.com>
+- create (only ping for now, traceroute et al soon).
+

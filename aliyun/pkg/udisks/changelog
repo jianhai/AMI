@@ -1,0 +1,73 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.1-7.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.1-7.1
+- rebuild for alios6-update
+
+* 三 3月 12 2014 Huzaifa Sidhpurwala <huzaifas@redhat.com> - 1.0.1-7.alios6
+- Make sure doc subpackage is noarch
+
+* 二 3月 11 2014 Zeeshan Ali <zeenix@redhat.com> - 1.0.1-6.alios6
+- Put devel-docs in a separate package (related: rhbz#1070145) .
+
+* 一 3月 10 2014 Zeeshan Ali <zeenix@redhat.com> - 1.0.1-5.alios6
+- Related: rhbz#1070145.
+
+* 四 10月 13 2011 David Zeuthen <davidz@redhat.com> - 1.0.1-4.alios6
+- Rebuild
+- Related: rhbz#738479
+
+* 二 10月 11 2011 David Zeuthen <davidz@redhat.com> - 1.0.1-3.alios6
+- Remove watch rule for DM devices
+- Related: rhbz#738479
+
+* 二 9月 07 2010 Dennis Gregorovic <dgregor@redhat.com> - 1.0.1-2.alios6
+- Remove requirement on xfsprogs
+- Related: rhbz#630986
+
+* 五 4月 09 2010 David Zeuthen <davidz@redhat.com> - 1.0.1-1.alios6
+- Update to 1.0.1 (CVE-2010-1149, #580007)
+- Related: rhbz#580007
+
+* 一 3月 22 2010 David Zeuthen <davidz@redhat.com> - 1.0.0-2.alios6
+- Don't BR lvm2-devel, we only need device-mapper-devel for libdevmapper
+- Related: rhbz#575889
+
+* 一 3月 22 2010 David Zeuthen <davidz@redhat.com> - 1.0.0-1.alios6
+- Update to release 1.0.0
+- Build without LVM2 and Multipath support for now (#548870, #548874)
+- Related: rhbz#575889
+
+* 二 2月 23 2010 David Zeuthen <davidz@redhat.com> - 1.0.0-0.git20100223.1.alios6
+- Update to git snapshot for LVM2/Multipath support
+- Bump lvm2 version requirement to 2.02.61
+- Don't include compat devkit-disks symlinks
+- Don't advertise remote access support via Avahi
+- Related: rhbz#548874
+- Related: rhbz#548870
+
+* 五 2月 19 2010 David Zeuthen <davidz@redhat.com> - 1.0.0-0.git20100115.3.alios6
+- Rebuild without NTFS support
+- Related: rhbz#566737
+
+* 五 1月 15 2010 David Zeuthen <davidz@redhat.com> - 1.0.0-0.git20100115.2.alios6
+- Rebuild
+- Related: rhbz#543948
+
+* 五 1月 15 2010 David Zeuthen <davidz@redhat.com> - 1.0.0-0.git20100115.1.alios6
+- New git snapshot with LVM support (#548870)
+- Related: rhbz#543948
+
+* 二 1月 12 2010 David Zeuthen <davidz@redhat.com> - 1.0.0-0.git20091202.3.alios6
+- Rebuild
+- Related: rhbz#543948
+
+* 一 12月 07 2009 David Zeuthen <davidz@redhat.com> - 1.0.0-0.git20091202.2.alios6
+- Rebuild
+
+* 五 12月 04 2009 David Zeuthen <davidz@redhat.com> - 1.0.0-0.git20091202.1.alios6
+- Updated for package review (#543608)
+
+* 三 12月 02 2009 David Zeuthen <davidz@redhat.com> - 1.0.0-0.git20091202.alios6
+- Git snapshot for upcoming 1.0.0 release
+

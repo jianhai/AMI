@@ -1,0 +1,13 @@
+/usr/bin/pkg-config  
+libXcomposite = 0.4.1-2.3.alios6
+libXcomposite.so.1()(64bit)  
+pkgconfig(compositeproto) >= 0.4
+pkgconfig(x11)  
+pkgconfig(xext)  
+pkgconfig(xfixes)  
+pkgconfig(xproto)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

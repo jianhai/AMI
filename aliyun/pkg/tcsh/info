@@ -1,0 +1,17 @@
+Name        : tcsh                         Relocations: (not relocatable)
+Version     : 6.17                              Vendor: Alibaba
+Release     : 14.4.alios6                   Build Date: 2014年07月28日 星期一 05时31分10秒
+Install Date: 2015年03月25日 星期三 11时02分42秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Shells     Source RPM: tcsh-6.17-14.4.alios6.src.rpm
+Size        : 1200181                          License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 18时54分39秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.tcsh.org/
+Summary     : An enhanced version of csh, the C shell
+Description :
+Tcsh is an enhanced but completely compatible version of csh, the C
+shell.  Tcsh is a command language interpreter which can be used both
+as an interactive login shell and as a shell script command processor.
+Tcsh includes a command line editor, programmable word completion,
+spelling correction, a history mechanism, job control and a C language
+like syntax.

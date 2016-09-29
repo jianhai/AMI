@@ -1,0 +1,13 @@
+Name        : hal-info                     Relocations: (not relocatable)
+Version     : 20090716                          Vendor: Alibaba
+Release     : 3.1.3.alios6                  Build Date: 2014年07月26日 星期六 06时39分20秒
+Install Date: 2015年03月25日 星期三 11时01分30秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: hal-info-20090716-3.1.3.alios6.src.rpm
+Size        : 317340                           License: AFL or GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 16时40分05秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.freedesktop.org/Software/hal
+Summary     : Device information files for HAL
+Description :
+The hal-info package contains various device information files (also
+known as .fdi files) for the hal package.

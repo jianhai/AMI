@@ -1,0 +1,24 @@
+Name        : ipmitool                     Relocations: (not relocatable)
+Version     : 1.8.11                            Vendor: Alibaba
+Release     : 12.4.alios6                   Build Date: 2014年08月23日 星期六 20时11分08秒
+Install Date: 2015年03月25日 星期三 11时02分41秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: ipmitool-1.8.11-12.4.alios6.src.rpm
+Size        : 1032805                          License: BSD
+Signature   : RSA/8, 2014年08月25日 星期一 23时18分42秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://ipmitool.sourceforge.net/
+Summary     : Utility for IPMI control
+Description :
+This package contains a utility for interfacing with devices that support
+the Intelligent Platform Management Interface specification.  IPMI is
+an open standard for machine health, inventory, and remote power control.
+
+This utility can communicate with IPMI-enabled devices through either a
+kernel driver such as OpenIPMI or over the RMCP LAN protocol defined in
+the IPMI specification.  IPMIv2 adds support for encrypted LAN
+communications and remote Serial-over-LAN functionality.
+
+It provides commands for reading the Sensor Data Repository (SDR) and
+displaying sensor values, displaying the contents of the System Event
+Log (SEL), printing Field Replaceable Unit (FRU) information, reading and
+setting LAN configuration, and chassis power control.

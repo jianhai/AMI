@@ -1,0 +1,8 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/install-info /usr/share/info/time.info.gz /usr/share/info/dir \
+    --entry="* time: (time).        GNU time Utility" >/dev/null 2>&1 || :
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+    /sbin/install-info --delete /usr/share/info/time.info.gz /usr/share/info/dir \
+    --entry="* time: (time).        GNU time Utility" >/dev/null 2>&1 || :
+fi

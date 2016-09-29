@@ -1,0 +1,21 @@
+/bin/sh  
+/bin/sh  
+config(nss-sysinit) = 3.15.3-6.2.alios6
+coreutils  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libdl.so.2()(64bit)  
+libnspr4.so()(64bit)  
+libnssutil3.so()(64bit)  
+libnssutil3.so(NSSUTIL_3.12)(64bit)  
+libnssutil3.so(NSSUTIL_3.14)(64bit)  
+libplc4.so()(64bit)  
+libplds4.so()(64bit)  
+libpthread.so.0()(64bit)  
+nss = 3.15.3-6.2.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+sed  
+rpmlib(PayloadIsXz) <= 5.2-1

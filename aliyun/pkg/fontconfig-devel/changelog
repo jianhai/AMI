@@ -1,0 +1,565 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.8.0-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.8.0-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.8.0-3.1
+- rebuild for alios6
+
+* 二 6月 29 2010 Marek Kasik <mkasik@redhat.com> - 2.8.0-3
+- Modify Nepali orthography
+- Resolves: #586898
+
+* 五 6月 25 2010 Marek Kasik <mkasik@redhat.com> - 2.8.0-2
+- Substitute ZapfDingbats with Dingbats
+- Resolves: #566758
+
+* 四 12月 03 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.8.0-1
+- Update to 2.8.0
+
+* 二 9月 08 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.7.3-1
+- Update to 2.7.3
+
+* 一 8月 31 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.7.2-1
+- Update to 2.7.2
+
+* 一 7月 27 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.7.1-1
+- Update to 2.7.1
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.7.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 24 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.7.0
+- Update to 2.7.0
+
+* 一 6月 01 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.99.behdad.20090601-1
+- Update to 2.6.99.behdad.20090601
+
+* 五 5月 08 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.99.behdad.20090508-1
+- Update to 2.6.99.behdad.20090508
+- Resolves #497984
+
+* 三 3月 18 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.99.behdad.20090318-1
+- Update to 2.6.99.behdad.20090318
+- Resolves #490888
+
+* 二 3月 17 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.99.behdad.20090317-1
+- Update to 2.6.99.behdad.20090317
+- Resolves #485685
+
+* 六 3月 14 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.99.behdad-3
+- New tarball with version fixed in the header
+
+* 五 3月 13 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.99.behdad-2
+- Previous tarball was broken.  Rebuild with respinned ball.
+
+* 五 3月 13 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.99.behdad-1
+- Update to 2.6.99.behdad
+
+* 二 3月 10 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.98-1.gb39c36a
+- Update to 2.6.98-1.gb39c36a
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.6.97-5.g945d6a4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 23 2009 Nicolas Mailhot <nim at fedoraproject dot org>
+- 2.6.97-4.g945d6a4
+— global-ization
+
+* 一 2月 16 2009 Richard Hughes <rhughes@redhat.com> - 2.6.97-3.g945d6a4
+- Correct the rpm provide name to be font(), not Font().
+
+* 日 2月 15 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.97-2.g945d6a4
+- Another try.
+
+* 日 2月 15 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.97-1.g945d6a4
+- Update to 2.6.97-1.g945d6a4
+
+* 日 2月 15 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.96-1.g0b290a6
+- Update to 2.6.96-1.g0b290a6
+
+* 二 1月 27 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.95-1.git.66.gb162bfb
+- Update to 2.6.95-1.git.66.gb162bfb
+
+* 五 1月 23 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.94-1.git.65.g628ee83
+- Update to 2.6.94-1.git.65.g628ee83
+
+* 二 1月 20 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.93-1.git.64.g6aa4dce
+- Update to 2.6.93-1.git.64.g6aa4dce
+
+* 一 1月 19 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.92-1.git.64.g167bb82
+- Update to 2.6.92-1.git.64.g167bb82
+
+* 一 1月 19 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.91-1.git.64.g9feaf34
+- Update to 2.6.91-1.git.64.g9feaf34
+
+* 五 1月 16 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.90-3.git.63.g6bb4b9a
+- Install fc-scan and fc-query
+
+* 五 1月 16 2009 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.90-2.git.63.g6bb4b9a
+- Update to 2.6.90-1.git.63.g6bb4b9a
+- Remove upstreamed patch
+
+* 一 10月 20 2008 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.0-3
+- Add fontconfig-2.6.0-indic.patch
+- Resolves: #464470
+
+* 日 6月 01 2008 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.0-2
+- Fix build.
+
+* 六 5月 31 2008 Behdad Esfahbod <besfahbo@redhat.com> - 2.6.0-1
+- Update to 2.6.0.
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.5.0-2
+- Autorebuild for GCC 4.3
+
+* 二 11月 13 2007 Behdad Esfahbod <besfahbo@redhat.com> - 2.5.0-1
+- Update to 2.5.0.
+
+* 二 11月 06 2007 Behdad Esfahbod <besfahbo@redhat.com> - 2.4.92-1
+- Update to 2.4.92.
+- Mark /etc/fonts/conf.d/* as config(noreplace).
+- Remove most of our conf file, all upstreamed except for
+  75-blacklist-fedora.conf that I'm happily dropping.  Who has
+  Hershey fonts these days...
+- ln upstream'ed 25-unhint-nonlatin.conf from conf.avail in conf.d
+- Add 25-no-bitmap-fedora.conf which is the tiny remaining bit
+  of conf that didn't end up upstream.  Can get rid of it in the
+  future, but not just yet.
+
+* 四 10月 25 2007 Behdad Esfahbod <besfahbo@redhat.com> - 2.4.91-1
+- Update to 2.4.91.
+- Add /usr/local/share/fonts to default config. (#147004)
+- Don't rebuild docs, to fix multilib conflicts. (#313011)
+- Remove docbook and elinks BuildRequires and stuff as we don't
+  rebuild docs.
+
+* 三 8月 22 2007 Adam Jackson <ajax@redhat.com> - 2.4.2-5
+- Rebuild for PPC toolchain bug
+- Add BuildRequires: gawk
+
+* 日 6月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.4.2-4
+- /etc/fonts/conf.d is now owned by filesystem
+
+* 五 5月 11 2007 Matthias Clasen <mclasen@redhat.com> - 2.4.2-3
+- Add Liberation fonts to 30-aliases-fedora.conf
+
+* 五 1月 12 2007 Behdad Esfahbod <besfahbo@redhat.com> - 2.4.2-2
+- Change /usr/share/X11/fonts/OTF to /usr/share/X11/fonts/TTF
+- Resolves: #220809
+
+* 二 12月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.4.2-1
+- Update to 2.4.2
+
+* 三 10月 04 2006 Matthias Clasen <mclasen@redhat.com> - 2.4.1-4
+- Fix a multilib upgrade problem (#208151)
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 2.4.1-3
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 五 9月 22 2006 Behdad Esfahbod <besfahbo@redhat.com> - 2.4.1-2
+- Update 30-aliases-fedora.conf to correctly alias MS and StarOffice
+  fonts. (#207460)
+
+* 五 9月 15 2006 Behdad Esfahbod <besfahbo@redhat.com> - 2.4.1-1
+- Update to 2.4.1, a public API was dropped from 2.4.0
+- Remove upstreamed patch
+
+* 一 9月 11 2006 Behdad Esfahbod <besfahbo@redhat.com> - 2.4.0-1
+- Update to 2.4.0
+- Rename/order our configuration stuff to match the new scheme.
+  Breaks expected :-(
+
+* 四 9月 07 2006 Behdad Esfahbod <besfahbo@redhat.com> - 2.3.97-3
+- Add missing file.  Previous update didn't go through
+
+* 四 9月 07 2006 Behdad Esfahbod <besfahbo@redhat.com> - 2.3.97-2
+- Add fontconfig-2.3.97-ppc64.patch, for ppc64 arch signature
+
+* 四 9月 07 2006 Behdad Esfahbod <besfahbo@redhat.com> - 2.3.97-1
+- update to 2.3.97
+- Drop upstreamed patches
+- Regenerate defaultconfig patch
+- Don't touch stamp as it was not ever needed
+
+* 四 8月 17 2006 Behdad Esfahbod <besfahbo@redhat.com> - 2.3.95-11
+- inclusion of zhong yi font and rearranged font prefer list. (bug# 201300)
+
+* 五 8月 11 2006 Ray Strode <rstrode@redhat.com> - 2.3.95-10
+- use "%5x" instead of " %4x" to support 64k instead of
+  clamping.  Idea from Behdad.
+
+* 五 8月 11 2006 Ray Strode <rstrode@redhat.com> - 2.3.95-9
+- tweak last patch to give a more reasonable page size
+  value if 64k page size is in effect.
+
+* 五 8月 11 2006 Ray Strode <rstrode@redhat.com> - 2.3.95-8
+- maybe fix buffer overflow (bug 202152).
+
+* 五 8月 11 2006 Ray Strode <rstrode@redhat.com> - 2.3.95-7
+- Update configs to provide better openoffice/staroffice
+  compatibility (bug 200723)
+
+* 四 7月 27 2006 Behdad Esfahbod <besfahbo@redhat.com> - 2.3.95-6
+- Do umask 0022 in post
+- Update configs to reflect addition of new Indic fonts (#200381, #200397)
+
+* 二 7月 18 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.95-5
+- Plug a small memory leak
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.3.95-4.1.1
+- rebuild
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.3.95-4.1
+- rebuild
+
+* 五 6月 02 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.95-4
+- Fix the handling of TTF font collections
+
+* 四 5月 18 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.95-3
+- Apply a patch by David Turner to speed up cache generation
+
+* 三 4月 26 2006 Bill Nottingham <notting@redhat.com> - 2.3.95-2
+- fix fonts.conf typo
+
+* 三 4月 26 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.95-1
+- Update to 2.3.95
+
+* 五 2月 24 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.94-1
+- Update to 2.3.94
+
+* 六 2月 11 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.93.cvs20060211-1
+- Newer cvs snapshot
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.3.93.cvs20060208-1.1
+- bump again for double-long bug on ppc(64)
+
+* 三 2月 08 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.93.cvs20060208-1
+- Newer cvs snapshot
+
+* 二 2月 07 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.93.cvs20060207-1
+- Newer cvs snapshot
+- Drop upstreamed patches, pick up some new ones
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.3.93.cvs20060131-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Ray Strode <rstrode@redhat.com> - 2.3.93.cvs20060131-3
+- Move user cache to a subdirectory (bug 160275)
+
+* 四 2月 02 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.93.cvs20060131-2
+- Accumulated patches
+
+* 二 1月 31 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.93.cvs20060131-1
+- Newer cvs snapshot
+
+* 二 1月 24 2006 Matthias Clasen <mclasen@redhat.com> - 2.3.93.cvs20060124-1
+- Newer cvs snapshot
+
+* 二 1月 17 2006 Ray Strode <rstrode@redhat.com> - 2.3.93-4
+- apply patch from Tim Mayberry to correct aliasing and disable
+  hinting for the two Chinese font names AR PL ShanHeiSun Uni 
+  and AR PL Zenkai Uni
+
+* 二 1月 10 2006 Bill Nottingham <notting@redhat.com> - 2.3.93-3
+- prereq coreutils for mkdir/touch in %post
+
+* 三 12月 21 2005 Carl Worth <cworth@redhat.com> - 2.3.93-2
+- Fix to create /var/cache/fontconfig/stamp in the post install stage.
+
+* 三 12月 21 2005 Carl Worth <cworth@redhat.com> - 2.3.93-1
+- New upstream version.
+
+* 二 12月 13 2005 Carl Worth <cworth@redhat.com> - 2.3.92.cvs20051129-3
+- Disable hinting for Lohit Gujarati
+
+* 五 12月 09 2005 Carl Worth <cworth@redhat.com> - 2.3.92.cvs20051129-2
+- Add two new Chinese font names to the default fonts.conf file:
+  	AR PL ShanHeiSun Uni
+  	AR PL Zenkai Uni
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 28 2005 Matthias Clasen <mclasen@redhat.com> - 2.3.92.cvs20051129-1
+- Update to a newer cvs snapshot
+
+* 六 11月 19 2005 Matthias Clasen <mclasen@redhat.com> - 2.3.92.cvs20051119-1
+- Update to a newer cvs snapshot
+
+* 三 11月 16 2005 Bill Nottingham <notting@redhat.com> - 2.3.93-3
+- modular X moved fonts from /usr/X11R6/lib/X11/fonts to
+  /usr/share/X11/fonts, adjust %configure accordingly and 
+  conflict with older font packages
+
+* 三 11月 09 2005 Carl Worth <cworth@redhat.com> - 2.3.92-2
+- Remove inadvertent rejection of Luxi Mono from 40-blacklist-fonts.conf.
+  Fixes #172437
+
+* 五 11月 04 2005 Matthias Clasen <mclasen@redhat.com> - 2.3.92-1
+- Update to 2.3.92
+
+* 一 10月 31 2005 Matthias Clasen <mclasen@redhat.com> - 2.3.91.cvs20051031-1
+- Update to a newer cvs snapshot
+- Add a patch which should help to understand broken cache problems
+
+* 五 10月 21 2005 Matthias Clasen <mclasen@redhat.com> - 2.3.91.cvs20051017-2
+- Add new Chinese fonts
+- Fix the 40-blacklist-fonts.conf file to use the documented
+  fonts.conf syntax, and exclude the Hershey fonts by family
+  name.
+
+* 五 10月 14 2005 Matthias Clasen <mclasen@redhat.com> - 2.3.91.cvs20051017-1
+- Update to the mmap branch of fontconfig
+
+* 五 7月 22 2005 Kristian Høgsberg <krh@redhat.com> - 2.3.2-1
+- Update to fontconfig-2.3.2.  Drop
+
+	fontconfig-2.1-slighthint.patch,
+	fontconfig-2.2.3-timestamp.patch,
+	fontconfig-2.2.3-names.patch,
+	fontconfig-2.2.3-ta-pa-orth.patch, and
+	fontconfig-2.2.3-timestamp.patch,
+
+  as they are now merged upstream.
+
+- Fold fontconfig-2.2.3-add-sazanami.patch into
+  fontconfig-2.3.2-defaultconfig.patch and split rules to disable CJK
+  hinting out into /etc/fonts/conf.d/50-no-hint-fonts.conf.
+
+- Drop fontconfig-0.0.1.020826.1330-blacklist.patch and use the new
+  rejectfont directive to reject those fonts in 40-blacklist-fonts.conf.
+
+- Add fontconfig-2.3.2-only-parse-conf-files.patch to avoid parsing
+  .rpmsave files.
+
+- Renable s390 documentation now that #97079 has been fixed and add
+  BuildRequires: for docbook-utils and docbook-utils-pdf.
+
+- Drop code to iconv and custom install man pages, upstream does the
+  right thing now.
+
+- Add workaround from hell to make elinks cooperate so we can build
+  txt documentation.
+
+* 二 4月 19 2005 David Zeuthen <davidz@redhat.com> - 2.2.3-13
+- Add another font family name Sazanami Gothic/Mincho (#148748)
+
+* 五 3月 04 2005 David Zeuthen <davidz@redhat.com> - 2.2.3-12
+- Rebuild
+
+* 五 3月 04 2005 David Zeuthen <davidz@redhat.com> - 2.2.3-11
+- Rebuild
+
+* 五 3月 04 2005 David Zeuthen <davidz@redhat.com> - 2.2.3-10
+- Rebuild
+
+* 五 3月 04 2005 David Zeuthen <davidz@redhat.com> - 2.2.3-9
+- Disable docs for s390 for now
+
+* 五 3月 04 2005 David Zeuthen <davidz@redhat.com> - 2.2.3-8
+- Rebuild
+
+* 三 12月 01 2004 Owen Taylor <otaylor@redhat.com> - 2.2.3-6
+- Sleep a second before the exit of fc-cache to fix problems with fast 
+  serial installs of fonts (#140335)
+- Turn off hinting for Lohit Hindi/Bengali/Punjabi (#139816)
+
+* 二 10月 19 2004 Owen Taylor <otaylor@redhat.com> - 2.2.3-5
+- Add Lohit fonts for Indic languages (#134492)
+- Add Punjabi converage, fix Tamil coverage
+
+* 三 9月 22 2004 Owen Taylor <otaylor@redhat.com> - 2.2.3-4
+- Update fonts-hebrew names to include CLM suffix
+
+* 四 9月 02 2004 Owen Taylor <otaylor@redhat.com> - 2.2.3-3
+- Backport code from head branch of fontconfig CVS to parse names 
+  for postscript fonts (fixes #127500, J. J. Ramsey)
+- Own /usr/share/fonts (#110956, David K. Levine)
+- Add KacstQura to serif/sans-serif/monospace aliases (#101182)
+
+* 一 8月 16 2004 Owen Taylor <otaylor@redhat.com> - 2.2.3-2
+- Don't run fc-cache if the binary isn't there (#128072, tracked
+  down by Jay Turner)
+
+* 二 8月 03 2004 Owen Taylor <otaylor@redhat.com> - 2.2.3-1
+- Upgrade to 2.2.3
+- Convert man pages to UTF-8 (#108730, Peter van Egdom)
+- Renable docs on s390
+
+* 一 7月 26 2004 Owen Taylor <otaylor@redhat.com> - 2.2.1-12
+- Rebuild for RHEL
+- Back freetype required version down to 2.1.4
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 4月 19 2004 Owen Taylor <otaylor@redhat.com> 2.2.1-10
+- Require recent freetype (#109592, Peter Oliver)
+- Remove fonts.conf timestamp to fix multiarch conflict (#118182)
+- Disable hinting for Mukti Narrow (#120915, Sayamindu Dasgupta)
+
+* 三 3月 10 2004 Owen Taylor <otaylor@redhat.com> 2.2.1-8.1
+- Rebuild
+
+* 三 3月 10 2004 Owen Taylor <otaylor@redhat.com> 2.2.1-8.0
+- Add Albany/Cumberland/Thorndale as fallbacks for Microsoft core fonts and 
+  as non-preferred alternatives for Sans/Serif/Monospace
+- Fix FreeType includes for recent FreeType
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 9月 22 2003 Owen Taylor <otaylor@redhat.com> 2.2.1-6.0
+- Should have been passing --with-add-fonts, not --with-add-dirs to 
+  configure ... caused wrong version of Luxi to be used. (#100862)
+
+* 五 9月 19 2003 Owen Taylor <otaylor@redhat.com> 2.2.1-5.0
+- Tweak fonts.conf to get right hinting for CJK fonts (#97337)
+
+* 二 6月 17 2003 Bill Nottingham <notting@redhat.com> 2.2.1-3
+- handle null config->cache correctly
+
+* 四 6月 12 2003 Owen Taylor <otaylor@redhat.com> 2.2.1-2
+- Update default config to include Hebrew fonts (#90501, Dov Grobgeld)
+
+* 二 6月 10 2003 Owen Taylor <otaylor@redhat.com> 2.2.1-2
+- As a workaround disable doc builds on s390
+
+* 一 6月 09 2003 Owen Taylor <otaylor@redhat.com> 2.2.1-1
+- Version 2.2.1
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 24 2003 Elliot Lee <sopwith@redhat.com>
+- debuginfo rebuild
+
+* 一 2月 24 2003 Owen Taylor <otaylor@redhat.com> 2.1-8
+- Fix segfault in fc-cache from .dircache patch
+
+* 一 2月 24 2003 Owen Taylor <otaylor@redhat.com>
+- Back out patch that wrote fonts.conf entries that crash RH-8.0 
+  gnome-terminal, go with patch from fontconfig CVS instead.
+  (#84863)
+
+* 二 2月 11 2003 Owen Taylor <otaylor@redhat.com>
+- Move fontconfig man page to main package, since it contains non-devel 
+  information (#76189)
+- Look in the OTF subdirectory of /usr/X11R6/lib/fonts as well
+  so we find Syriac fonts (#82627)
+
+* 四 2月 06 2003 Matt Wilson <msw@redhat.com> 2.1-5
+- modified fontconfig-0.0.1.020626.1517-fontdir.patch to hard code
+  /usr/X11R6/lib/X11/fonts instead of using $(X_FONT_DIR).  This is
+  because on lib64 machines, fonts are not in /usr/X11R6/lib64/....
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 1月 15 2003 Owen Taylor <otaylor@redhat.com>
+- Try a different tack when fixing cache problem
+
+* 二 1月 14 2003 Owen Taylor <otaylor@redhat.com>
+- Try to fix bug where empty cache entries would be found in 
+  ~/.fonts.cache-1 during scanning (#81335)
+
+* 四 11月 21 2002 Mike A. Harris <mharris@redhat.com> 2.1-1
+- Updated to version 2.1
+- Updated slighthint patch to fontconfig-2.1-slighthint.patch
+- Updated freetype version required to 2.1.2-7
+
+* 一 9月 02 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.0
+- Correct capitalization/spacing for ZYSong18030 name (#73272)
+
+* 五 8月 30 2002 Owen Taylor <otaylor@redhat.com>
+- Blacklist fonts from ghostscript-fonts that don't render correctly
+
+* 一 8月 26 2002 Owen Taylor <otaylor@redhat.com>
+- Upgrade to fcpackage rc3
+- Fix bug in comparisons for xx_XX language tags
+- Compensate for a minor config file change in rc3
+
+* 三 8月 21 2002 Owen Taylor <otaylor@redhat.com>
+- Add an explicit PreReq for freetype
+- Move fonts we don't ship to the end of the fonts.conf aliases so
+  installing them doesn't change the look.
+
+* 三 8月 21 2002 Owen Taylor <otaylor@redhat.com>
+- Memory leak fix when parsing config files
+- Set rh_prefer_bitmaps for .ja fonts to key off of in Xft
+- Fix some groff warnings for fontconfig.man (#72138)
+
+* 四 8月 15 2002 Owen Taylor <otaylor@redhat.com>
+- Try once more to get the right default Sans-serif font :-(
+- Switch the Sans/Monospace aliases for Korean to Gulim, not Dotum
+
+* 三 8月 14 2002 Owen Taylor <otaylor@redhat.com>
+- Fix %post
+
+* 二 8月 13 2002 Owen Taylor <otaylor@redhat.com>
+- Fix lost Luxi Sans default
+
+* 一 8月 12 2002 Owen Taylor <otaylor@redhat.com>
+- Upgrade to rc2
+- Turn off hinting for all CJK fonts
+- Fix typo in %post
+- Remove the custom language tag stuff in favor of Keith's standard 
+  solution.
+
+* 一 7月 15 2002 Owen Taylor <otaylor@redhat.com>
+- Prefer Luxi Sans to Nimbus Sans again
+
+* 五 7月 12 2002 Owen Taylor <otaylor@redhat.com>
+- Add FC_HINT_STYLE to FcBaseObjectTypes
+- Switch Chinese fonts to always using Sung-ti / Ming-ti, and never Kai-ti
+- Add ZYSong18030 to aliases (#68428)
+
+* 三 7月 10 2002 Owen Taylor <otaylor@redhat.com>
+- Fix a typo in the langtag patch (caught by Erik van der Poel)
+
+* 三 7月 03 2002 Owen Taylor <otaylor@redhat.com>
+- Add FC_HINT_STYLE tag
+
+* 四 6月 27 2002 Owen Taylor <otaylor@redhat.com>
+- New upstream version, with fix for problems with
+  ghostscript-fonts (Fonts don't work for Qt+CJK,
+  etc.)
+
+* 三 6月 26 2002 Owen Taylor <otaylor@redhat.com>
+- New upstream version, fixing locale problem
+
+* 一 6月 24 2002 Owen Taylor <otaylor@redhat.com>
+- Add a hack where we set the "language" fontconfig property based on the locale, then 
+  we conditionalize base on that in the fonts.conf file.
+
+* 日 6月 23 2002 Owen Taylor <otaylor@redhat.com>
+- New upstream version
+
+* 二 6月 18 2002 Owen Taylor <otaylor@redhat.com>
+- Fix crash from FcObjectSetAdd
+
+* 二 6月 11 2002 Owen Taylor <otaylor@redhat.com>
+- make fonts.conf %config, not %config(noreplace)
+- Another try at the CJK aliases
+- Add some CJK fonts to the config
+- Prefer Luxi Mono to Nimbus Mono
+
+* 一 6月 10 2002 Owen Taylor <otaylor@redhat.com>
+- New upstream version
+- Fix matching for bitmap fonts
+
+* 一 6月 03 2002 Owen Taylor <otaylor@redhat.com>
+- New version, new upstream mega-tarball
+
+* 二 5月 28 2002 Owen Taylor <otaylor@redhat.com>
+- Fix problem with FcConfigSort
+
+* 五 5月 24 2002 Owen Taylor <otaylor@redhat.com>
+- Initial specfile
+

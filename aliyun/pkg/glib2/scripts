@@ -1,0 +1,7 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+gio-querymodules-64 /usr/lib64/gio/modules
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+[ ! -x /usr/bin/gio-querymodules-64 ] || \
+gio-querymodules-64 /usr/lib64/gio/modules

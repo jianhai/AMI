@@ -1,0 +1,27 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 60.0.2-1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 60.0.2-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 60.0.2-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 60.0.2-1.1
+- rebuild for alios6
+
+* 二 7月 20 2010 Ray Strode <rstrode@redhat.com> 60.0.2-1
+- Update gtkrc to use Slider too
+  Resolves: #611864
+
+* 二 7月 13 2010 Jon McCann <jmccann@redhat.com> 60.0.1-1
+- Use Slider theme by default
+  Resolves: #611864
+
+* 二 5月 04 2010 Ray Strode <rstrode@redhat.com> 60.0.0-2
+- Add Obsoletes to ease upgrade path
+  Resolves: #566368
+
+* 二 5月 04 2010 Ray Strode <rstrode@redhat.com> 60.0.0-1
+- New system-gnome-theme
+

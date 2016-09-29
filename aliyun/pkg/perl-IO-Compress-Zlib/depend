@@ -1,0 +1,31 @@
+perl >= 0:5.004
+perl = 4:5.10.1-119.4.alios6.1
+perl(Compress::Raw::Zlib) >= 2.020
+perl(Exporter)  
+perl(IO::Compress::Adapter::Deflate) >= 2.020
+perl(IO::Compress::Adapter::Identity) >= 2.020
+perl(IO::Compress::Base) >= 2.020
+perl(IO::Compress::Base::Common) >= 2.020
+perl(IO::Compress::Gzip::Constants) >= 2.020
+perl(IO::Compress::RawDeflate) >= 2.020
+perl(IO::Compress::Zip::Constants) >= 2.020
+perl(IO::Compress::Zlib::Constants) >= 2.020
+perl(IO::Compress::Zlib::Extra) >= 2.020
+perl(IO::Seekable)  
+perl(IO::Uncompress::Adapter::Identity) >= 2.020
+perl(IO::Uncompress::Adapter::Inflate) >= 2.020
+perl(IO::Uncompress::Base) >= 2.020
+perl(IO::Uncompress::Gunzip) >= 2.020
+perl(IO::Uncompress::Inflate) >= 2.020
+perl(IO::Uncompress::RawInflate) >= 2.020
+perl(IO::Uncompress::Unzip) >= 2.020
+perl(POSIX)  
+perl(bytes)  
+perl(constant)  
+perl(strict)  
+perl(warnings)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

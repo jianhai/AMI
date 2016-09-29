@@ -1,0 +1,14 @@
+Name        : perl-Pod-Simple              Relocations: (not relocatable)
+Version     : 3.13                              Vendor: Alibaba
+Release     : 119.4.alios6.1                Build Date: 2014年07月27日 星期日 16时45分03秒
+Install Date: 2015年03月25日 星期三 10时59分33秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: perl-5.10.1-119.4.alios6.1.src.rpm
+Size        : 476783                           License: GPL+ or Artistic
+Signature   : RSA/8, 2014年07月31日 星期四 17时56分49秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.perl.org/
+Summary     : Framework for parsing POD documentation
+Description :
+Pod::Simple is a Perl library for parsing text in the Pod ("plain old
+documentation") markup language that is typically used for writing
+documentation for Perl and for Perl modules.

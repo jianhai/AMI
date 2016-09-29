@@ -1,0 +1,31 @@
+Name        : cpp                          Relocations: (not relocatable)
+Version     : 4.4.6                             Vendor: Alibaba
+Release     : 3.5.alios6                    Build Date: 2015年01月04日 星期日 12时46分10秒
+Install Date: 2015年03月25日 星期三 11时00分12秒      Build Host: x86-003.build.alibaba
+Group       : Development/Languages         Source RPM: gcc-4.4.6-3.5.alios6.src.rpm
+Size        : 9996162                          License: GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions
+Signature   : RSA/8, 2015年01月06日 星期二 13时35分56秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://gcc.gnu.org
+Summary     : The C Preprocessor
+Description :
+Cpp is the GNU C-Compatible Compiler Preprocessor.
+Cpp is a macro processor which is used automatically
+by the C compiler to transform your program before actual
+compilation. It is called a macro processor because it allows
+you to define macros, abbreviations for longer
+constructs.
+
+The C preprocessor provides four separate functionalities: the
+inclusion of header files (files of declarations that can be
+substituted into your program); macro expansion (you can define macros,
+and the C preprocessor will replace the macros with their definitions
+throughout the program); conditional compilation (using special
+preprocessing directives, you can include or exclude parts of the
+program according to various conditions); and line control (if you use
+a program to combine or rearrange source files into an intermediate
+file which is then compiled, you can use line control to inform the
+compiler about where each source line originated).
+
+You should install this package if you are a C programmer and you use
+macros.

@@ -1,0 +1,187 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1-3.3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1-3.3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.1-3.3.1
+- rebuild for alios6
+
+* 一 3月 01 2010 Karsten Hopp <karsten@redhat.com> 1.1-3.3
+- add symlink for missing red manpage
+
+* 四 2月 25 2010 Karsten Hopp <karsten@redhat.com> 1.1-3.2
+- add GFDL to licenses
+- convert AUTHORS to UTF-8
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.1-3.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 10月 29 2008 Karsten Hopp <karsten@redhat.com> 1.1-1
+- update to lastest version, fixes CVE-2008-3916
+
+* 二 6月 24 2008 Karsten Hopp <karsten@redhat.com> 0.9-1
+- version 0.9
+
+* 日 3月 23 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0.8-3
+- fix license tag
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.8-2
+- Autorebuild for GCC 4.3
+
+* 三 8月 22 2007 Karsten Hopp <karsten@redhat.com> 0.8-1
+- update to 0.8
+
+* 三 8月 22 2007 Karsten Hopp <karsten@redhat.com> 0.7-2
+- update license tags
+
+* 一 7月 23 2007 Karsten Hopp <karsten@redhat.com> 0.7-1
+- update to 0.7 to fix an endless loop (#234689)
+- add disttag
+
+* 一 7月 02 2007 Karsten Hopp <karsten@redhat.com> 0.6-1
+- update to 0.6
+
+* 三 3月 14 2007 Karsten Hopp <karsten@redhat.com> 0.5-1
+- version 0.5, fixes #228329
+
+* 一 2月 05 2007 Karsten Hopp <karsten@redhat.com> 0.4-3
+- clean up spec file for merge review (#225717)
+
+* 三 1月 31 2007 Karsten Hopp <karsten@redhat.com> 0.4-2
+- use RPM_OPT_FLAGS, this fixes debuginfo
+
+* 二 1月 23 2007 Karsten Hopp <karsten@redhat.com> 0.4-1
+- new upstream version
+
+* 四 1月 18 2007 Karsten Hopp <karsten@redhat.com> 0.3-3
+- don't abort (un)install scriptlets when _excludedocs is set (Ville Skyttä)
+
+* 四 1月 18 2007 Karsten Hopp <karsten@redhat.com> 0.3-2
+- fix man page permissions (#222581)
+
+* 一 11月 13 2006 Karsten Hopp <karsten@redhat.com> 0.3-1
+- update to ed-0.3
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.2-38.2.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.2-38.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.2-38.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 3月 02 2005 Karsten Hopp <karsten@redhat.de> 0.2-38
+- build with gcc-4
+
+* 一 1月 03 2005 Karsten Hopp <karsten@redhat.de> 0.2-37
+- spec file fix from Marcin Garski (#143723)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 17 2003 Karsten Hopp <karsten@redhat.de> 0.2-34
+- rebuild
+
+* 二 6月 17 2003 Karsten Hopp <karsten@redhat.de> 0.2-33
+- rebuild to fix crt*.o problems
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 12月 17 2002 Karsten Hopp <karsten@redhat.de>č
+- remove regex, use glibc's regex (#79132)
+
+* 四 12月 12 2002 Tim Powers <timp@redhat.com> 0.2-29
+- rebuild on all arches
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 06 2002 Bernhard Rosenkraenzer <bero@redhat.com> 0.2-26
+- Fix build with current toolchain
+
+* 三 4月 03 2002 Karsten Hopp <karsten@redhat.de>
+- don't use gcc -s
+
+* 五 2月 22 2002 Karsten Hopp <karsten@redhat.de>
+- bump version
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 10月 15 2001 Karsten Hopp <karsten@redhat.de>
+- add home page (#54602)
+
+* 六 7月 07 2001 Karsten Hopp <karsten@redhat.de>
+- Copyright -> License
+- fix URL
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 一 12月 04 2000 Karsten Hopp <karsten@redhat.de>
+- back out fixes for compiler warnings
+
+* 三 11月 29 2000 Karsten Hopp <karsten@redhat.de>
+- Security bugfix (mkstemp instead of mktemp) Bugzilla #21470
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 日 6月 18 2000 Than Ngo <than@redhat.de>
+- fix typo
+
+* 六 6月 17 2000 Than Ngo <than@redhat.de>
+- add %defattr
+- clean up specfile
+
+* 六 5月 20 2000 Ngo Than <than@redhat.de>
+- rebuild for 7.0
+- put man pages and infos in right place
+
+* 四 2月 03 2000 Preston Brown <pbrown@redhat.com>
+- rebuild to gzip man pages.
+
+* 二 3月 23 1999 Jeff Johnson <jbj@redhat.com>
+- fix %post syntax error (#1689).
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 11)
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 五 12月 18 1998 Preston Brown <pbrown@redhat.com>
+- bumped spec number for initial rh 6.0 build
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 10月 17 1997 Donnie Barnes <djb@redhat.com>
+- added install-info support
+- added BuildRoot
+- correct URL in Source line
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

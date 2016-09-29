@@ -1,0 +1,16 @@
+Name        : grep                         Relocations: (not relocatable)
+Version     : 2.6.3                             Vendor: Alibaba
+Release     : 2.3.alios6                    Build Date: 2014年07月26日 星期六 06时08分23秒
+Install Date: 2015年03月25日 星期三 10时59分39秒      Build Host: x86-004.build.alibaba
+Group       : Applications/Text             Source RPM: grep-2.6.3-2.3.alios6.src.rpm
+Size        : 802605                           License: GPLv3+
+Signature   : RSA/8, 2014年07月31日 星期四 16时37分34秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnu.org/software/grep/
+Summary     : Pattern matching utilities
+Description :
+The GNU versions of commonly used grep utilities. Grep searches through
+textual input for lines which contain a match to a specified pattern and then
+prints the matching lines. GNU's grep utilities include grep, egrep and fgrep.
+
+GNU grep is needed by many scripts, so it shall be installed on every system.

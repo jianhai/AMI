@@ -1,0 +1,14 @@
+Name        : gnome-keyring                Relocations: (not relocatable)
+Version     : 2.28.2                            Vendor: Alibaba
+Release     : 6.3.alios6                    Build Date: 2014年07月26日 星期六 05时24分06秒
+Install Date: 2015年03月25日 星期三 11时00分44秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: gnome-keyring-2.28.2-6.3.alios6.src.rpm
+Size        : 4766283                          License: GPLv2+ and LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 16时33分52秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnome.org
+Summary     : Framework for managing passwords and other secrets
+Description :
+The gnome-keyring session daemon manages passwords and other types of
+secrets for the user, storing them encrypted with a main password.
+Applications can use the gnome-keyring library to integrate with the keyring.

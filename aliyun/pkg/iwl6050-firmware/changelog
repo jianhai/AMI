@@ -1,0 +1,22 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 41.28.5.1-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 41.28.5.1-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 41.28.5.1-2.1
+- rebuild for alios6
+
+* 一 1月 03 2011 John W. Linville <linville@tuxdriver.com> - 41.28.5.1-2
+- need to keep old firmware version available for kernels that need it
+- use available macros for standard packaging-related commands
+
+* 四 12月 16 2010 John W. Linville <linville@tuxdriver.com> - 41.28.5.1-1
+- Update for firmware release 41.28.5.1
+
+* 二 6月 08 2010 John W. Linville <linville@tuxdriver.com> - 9.201.4.1-2
+- Cleanse permissions of extracted files
+
+* 二 6月 08 2010 John W. Linville <linville@tuxdriver.com> - 9.201.4.1-1
+- Initial import
+

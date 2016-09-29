@@ -1,0 +1,314 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.10.2-11.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.10.2-11.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.10.2-11.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.10.2-11.1
+- rebuild for alios6
+
+* 三 6月 23 2010 Ondrej Vasik <ovasik@redhat.com> - 0.10.2-11
+- build java subpackage only on ix86/x86_64 (java 1.6.0 is required)
+  (#606859)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.10.2-10.1
+- Rebuilt for RHEL 6
+
+* 五 9月 11 2009 Caolán McNamara <caolanm@redhat.com> - 0.10.2-10
+- Resolves: rhbz#521588 stick pl include before Yap include to stop 
+  configure-time misdetection to resolve FTBFS
+
+* 三 8月 19 2009 Roberto Bagnara <bagnara@cs.unipr.it> - 0.10.2-9
+- Force rebuild.
+
+* 五 8月 14 2009 Roberto Bagnara <bagnara@cs.unipr.it> - 0.10.2-8
+- Force rebuild.
+
+* 五 8月 14 2009 Roberto Bagnara <bagnara@cs.unipr.it> - 0.10.2-7
+- Force rebuild.
+
+* 二 8月 11 2009 Ville Skyttä <ville.skytta@iki.fi> - 0.10.2-6
+- Use bzipped upstream tarball.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 日 7月 12 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10.2-4
+- Force rebuild.
+
+* 五 6月 19 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10.2-3
+- The `gprolog' and `yap' packages are not available on the sparc64 and
+  sparcv9 architectures: so do `ppl-gprolog', `ppl-gprolog-static' and
+  `ppl-yap'.
+
+* 六 4月 18 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10.2-2
+- Force rebuild.
+
+* 六 4月 18 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10.2-1
+- Updated for PPL 0.10.2.
+
+* 二 4月 14 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10.1-1
+- Updated for PPL 0.10.1.
+
+* 日 3月 29 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-11
+- Moved changelogs and PostScript and PDF versions of the GPL to the
+  `docs' subpackages. This saves considerable space on the live media.
+
+* 二 3月 24 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-10
+- There are no GNU Prolog packages available on ia64: disable the GNU Prolog
+  interface also on those platforms (besides ppc64, s390 and s390x).
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild.
+
+* 三 2月 18 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-8
+- Install the documentation according to the Fedora packaging conventions.
+
+* 二 2月 17 2009 Karsten Hopp <karsten@redhat.comt> 0.10-7
+- There are no GNU Prolog packages available on s390 and s390x: disable
+  the GNU Prolog interface also on those platforms (besides ppc64).
+
+* 三 2月 04 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-6
+- Better workaround for the bug affecting PPL 0.10 on big-endian
+  architectures.
+
+* 二 2月 03 2009 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-5
+- Work around the bug affecting PPL 0.10 on big-endian architectures.
+
+* 五 12月 05 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-4
+- Added `%dir %{_datadir}/doc/pwl' to the `%files' section
+  of the `ppl-pwl' package.
+
+* 二 11月 04 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-3
+- Fixed the requirements of the `ppl-java' package.
+
+* 二 11月 04 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-2
+- Added m4 >= 1.4.8 to build requirements.
+
+* 二 11月 04 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.10-1
+- Updated and extended for PPL 0.10.  In particular, the `ppl-config'
+  program, being useful also for non-development activities, has been
+  brought back to the main package.
+
+* 二 9月 30 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-25
+- The `swiprolog' package now requires pl >= 5.6.57-2.
+
+* 一 9月 08 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-24
+- Changed ppl-0.9-swiprolog.patch so as to invoke `plld' with
+  the `-v' option.
+
+* 一 9月 08 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-23
+- Fixed ppl-0.9-swiprolog.patch.
+
+* 一 9月 08 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-22
+- Implemented a workaround to cope with the new location of SWI-Prolog.h.
+
+* 一 9月 08 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-21
+- Fixed the SWI-Prolog interface dependencies.
+
+* 一 5月 19 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-20
+- Added Requires /sbin/ldconfig.
+
+* 三 2月 13 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-19
+- Include a patch to supply a missing inclusions of <cstdlib>.
+
+* 三 1月 09 2008 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-18
+- Avoid multiarch conflicts when installed for multiple architectures.
+
+* 日 12月 23 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-17
+- The SWI-Prolog `pl' package is temporarily not available on the ppc64
+  architecture: temporarily disabled `ppl-swiprolog' and
+  `ppl-swiprolog-static' on that architecture.
+
+* 六 9月 29 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-16
+- The value of the `License' tag is now `GPLv2+'.
+- `ppl-swiprolog' dependency on `readline-devel' removed (again).
+
+* 一 9月 24 2007 Jesse Keating <jkeating@redhat.com> 0.9-15
+- Rebuild for new libgmpxx.
+
+* 二 8月 28 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> 0.9-14
+- Rebuild for selinux ppc32 issue.
+
+* 五 7月 06 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-13
+- Bug 246815 had been fixed: YAP support enabled again.
+
+* 四 7月 05 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-12
+- Disable YAP support until bug 246815 is fixed.
+- Bug 243084 has been fixed: `ppl-swiprolog' dependency on `readline-devel'
+  removed.
+
+* 四 7月 05 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-11
+- The `gprolog' package is not available on the ppc64 architecture:
+  so do `ppl-gprolog' and `ppl-gprolog-static'.
+
+* 二 7月 03 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-10
+- Use `%{buildroot}' consistently, instead of  `$RPM_BUILD_ROOT'.
+
+* 一 7月 02 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-9
+- Patch NEWS, TODO and doc/definitions.dox so as to use the
+  UTF-8 encoding instead of ISO-8859.
+
+* 二 6月 12 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-8
+- Patch the `libtool' script after `%configure' so as to fix
+  the rpath issue.
+- Revised the description of the `devel' package.
+- Include also the `TODO' file in the documentation of the main package.
+
+* 四 6月 07 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-7
+- `%install' commands revised.
+
+* 四 6月 07 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-6
+- All the static archives are now in `*-static' packages.
+- Packages `ppl-gprolog-devel', `ppl-swiprolog-devel' and `ppl-yap-devel'
+  renamed `ppl-gprolog', `ppl-swiprolog' and `ppl-yap',
+  respectively.
+- As a workaround for a bug in the `pl' package (Bugzilla Bug 243084),
+  `ppl-swiprolog' is now dependent on `readline-devel'.
+- Added `%dir %{_datadir}/doc/%{name}'.
+- The `ppl-user-0.9-html' documentation directory is now properly listed.
+- Remove installed *.la files.
+- Added a `ppl-0.9-configure.patch' to avoid overriding CFLAGS and CXXFLAGS.
+
+* 三 6月 06 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-5
+- Use `%{_includedir}' and `%{_libdir}' instead of `/usr/include'
+  and `/usr/lib', respectively.
+- Use `%{_datadir}/doc/%{name}' instead of `/usr/share/doc/ppl'.
+- Replaced `%defattr(-,root,root)' with `%defattr(-,root,root,-)'.
+
+* 五 2月 23 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-4
+- The user manual (in various formats) is now in the `docs' package.
+
+* 四 2月 22 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-3
+- Dependencies for YAP fixed.
+- Make sure the header files of GNU Prolog and YAP are found.
+
+* 三 2月 21 2007 Roberto Bagnara <bagnara@cs.unipr.it>
+- Added missing dependencies.
+
+* 日 2月 18 2007 Roberto Bagnara <bagnara@cs.unipr.it>
+- `%doc' tags corrected for the Prolog interfaces.
+- Tabs used consistently instead of spaces.
+
+* 六 2月 17 2007 Roberto Bagnara <bagnara@cs.unipr.it>
+- Make `swiprolog-devel' depend on `pl' (at leat 5.6); documentation added.
+- The `yap' package has been renamed `yap-devel' and completed.
+- The `gprolog' package has been renamed `gprolog-devel' and completed.
+- The `ppl_lcdd' and `ppl_lpsol' programs are now in a new `utils' package.
+- The `ppl-config' program is now in the `devel' package.
+- Modified the configuration command so that the `glpk-devel' include files
+  are found.
+
+* 日 2月 11 2007 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-2
+- The `%_libdir/ppl' is no longer orphaned.
+- Use `make %{?_smp_mflags}' for building.
+- The `swi' package has been renamed `swiprolog-devel'.
+
+* 六 2月 10 2007 Roberto Bagnara <bagnara@cs.unipr.it>
+- Added the `%changelog' section.
+- `Release' set to 2.
+- `Packager' and `Vendor' tags removed.
+- `Summary' fields are no longer ended with a dot.
+- The value of the `License' tag is now `GPL'.
+- Removed unused definition of `builddir'.
+- The `Name', `Version' and `Release' tags are now directly defined.
+- Commented out the efinitions of the `Require' and `Prefix' tags.
+- Set the `BuildRequires' tag to `gmp-devel'.
+- Exploit the features of `%setup', `%configure', `%install',
+  `%post' and `%postun'.
+- Mixed use of spaces and tabs avoided.
+- Do configure with the --disable-rpath option so as to avoid
+  hardcoding the path to search libraries.
+- Do not include libtool archive files.
+- Packages reorganized.
+
+* 一 1月 16 2006 Roberto Bagnara <bagnara@cs.unipr.it> 0.9-1
+- Install gzipped man pages.
+- The `Copyright' tag is no longer supported: use `License' instead.
+
+* 三 1月 11 2006 Roberto Bagnara <bagnara@cs.unipr.it>
+- Include `ppl-config' in `%{_bindir}' and the man pages in
+  `%{_mandir}/man1'.
+
+* 二 1月 10 2006 Roberto Bagnara <bagnara@cs.unipr.it>
+- Require gcc-c++ to be at least 4.0.2.
+- Distribute also `ppl_lpsol'.
+
+* 二 3月 01 2005 Roberto Bagnara <bagnara@cs.unipr.it>
+- Wrong dependency fixed.
+
+* 一 2月 28 2005 Roberto Bagnara <bagnara@cs.unipr.it>
+- URL for the source fixed.
+
+* 五 12月 24 2004 Roberto Bagnara <bagnara@cs.unipr.it>
+- Sentence fixed.
+
+* 四 12月 23 2004 Roberto Bagnara <bagnara@cs.unipr.it>
+- The file doc/README has been renamed README.doc so as not to conflict
+  with the library's main README file.
+- Require gcc-c++ to be exactly version 3.4.1.
+- `Summary' updated to reflect the fact that the library now provides
+  numerical abstractions other than convex polyhedra.
+
+* 三 8月 18 2004 Roberto Bagnara <bagnara@cs.unipr.it>
+- Distribute more documentation.
+
+* 一 8月 16 2004 Roberto Bagnara <bagnara@cs.unipr.it>
+- Added the `ppl_lcdd' program to the main package.
+- Require gcc-c++ to be exactly version 3.4.1.
+- We require gmp at least 4.1.3.
+
+* 三 7月 30 2003 Roberto Bagnara <bagnara@cs.unipr.it>
+- Build an RPM package also for the PWL.
+- The Prolog interfaces depend on the PWL.
+
+* 二 3月 04 2003 Roberto Bagnara <bagnara@cs.unipr.it>
+- We require gmp at least 4.1.2.
+
+* 五 10月 04 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- Require gcc-c++ 3.2 or later version.
+- Require gmp 4.1 or later version.
+
+* 日 6月 30 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- Mention not necessarily closed convex polyhedra in the main `%description'.
+
+* 二 6月 25 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- `%files' section for gprolog package fixed.
+
+* 一 6月 24 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- `%files' section fixed for the yap package.
+- The `%files' sections of each package are now complete.
+
+* 三 6月 12 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- Added file list for package gprolog.
+- Updated file list for package swi.
+
+* 四 6月 06 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- The `swi' package has now its `%files' section.
+
+* 三 6月 05 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- We will build several RPM packages out of our source tree.
+
+* 一 3月 04 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- Require gcc-c++ 3.0.4 or later version.
+- Require gmp 4.0.1 or later version.
+
+* 日 1月 27 2002 Roberto Bagnara <bagnara@cs.unipr.it>
+- The move to libtool is complete: we can now build and distribute
+  (with, e.g., RPM) static and dynamic versions of the library.
+
+* 二 10月 16 2001 Roberto Bagnara <bagnara@cs.unipr.it>
+- Changed `Summary'.
+- Changed `Packager' in view of PGP signatures.
+- Changed `Group' to `Development/Libraries'.
+- Require gcc-c++ 2.96-85 or later version.
+
+* 一 10月 15 2001 Roberto Bagnara <bagnara@cs.unipr.it>
+- Now we build a relocatable package.
+
+* 一 10月 15 2001 Roberto Bagnara <bagnara@cs.unipr.it>
+- A first cut at a working RPM spec file.
+

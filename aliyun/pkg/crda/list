@@ -1,0 +1,17 @@
+/lib/crda
+/lib/crda/pubkeys
+/lib/crda/pubkeys/key.pub.pem
+/lib/crda/pubkeys/linville.key.pub.pem
+/lib/crda/regulatory.bin
+/lib/udev/rules.d/85-regulatory.rules
+/sbin/crda
+/sbin/regdbdump
+/sbin/setregdomain
+/usr/share/doc/crda-1.1.1_2010.11.22
+/usr/share/doc/crda-1.1.1_2010.11.22/LICENSE
+/usr/share/doc/crda-1.1.1_2010.11.22/README.crda
+/usr/share/doc/crda-1.1.1_2010.11.22/README.wireless-regdb
+/usr/share/man/man1/setregdomain.1.gz
+/usr/share/man/man5/regulatory.bin.5.gz
+/usr/share/man/man8/crda.8.gz
+/usr/share/man/man8/regdbdump.8.gz

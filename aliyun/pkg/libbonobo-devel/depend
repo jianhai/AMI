@@ -1,0 +1,17 @@
+/usr/bin/pkg-config  
+ORBit2-devel >= 2.7.5
+libbonobo = 2.24.2-4.3.alios6
+libbonobo-2.so.0()(64bit)  
+libbonobo-activation.so.4()(64bit)  
+libxml2-devel >= 2.4.21
+pkgconfig  
+pkgconfig(ORBit-2.0)  
+pkgconfig(bonobo-activation-2.0)  
+pkgconfig(glib-2.0)  
+pkgconfig(gmodule-no-export-2.0)  
+popt-devel  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

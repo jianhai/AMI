@@ -1,0 +1,17 @@
+Name        : subversion                   Relocations: (not relocatable)
+Version     : 1.6.11                            Vendor: Alibaba
+Release     : 2.5.alios6.4                  Build Date: 2014年08月22日 星期五 23时26分11秒
+Install Date: 2015年03月25日 星期三 11时02分25秒      Build Host: x86-004.build.alibaba
+Group       : Development/Tools             Source RPM: subversion-1.6.11-2.5.alios6.4.src.rpm
+Size        : 12102486                         License: ASL 1.1
+Signature   : RSA/8, 2014年08月25日 星期一 23时29分08秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://subversion.apache.org/
+Summary     : A Modern Concurrent Version Control System
+Description :
+Subversion is a concurrent version control system which enables one
+or more users to collaborate in developing and maintaining a
+hierarchy of files and directories while keeping a history of all
+changes.  Subversion only stores the differences between versions,
+instead of every complete file.  Subversion is intended to be a
+compelling replacement for CVS.

@@ -1,0 +1,93 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:2.11-2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:2.11-2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:2.11-2.1
+- rebuild for alios6
+
+* 五 6月 24 2011 Anton Arapov <aarapov@redhat.com> - 1:2.11-2
+- Update to version 2.11, smbios v2.7.0 [654833]
+- Update smbios to v2.7.1
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1:2.10-1.29.1
+- Rebuilt for RHEL 6
+
+* 五 8月 28 2009 Jarod Wilson <jarod@redhat.com> - 1:2.10-1.39
+- Fix cache associativity mapping (was missing some commas)
+
+* 一 8月 24 2009 Jarod Wilson <jarod@redhat.com> - 1:2.10-1.38
+- Add support for newer sockets, processors and pcie slot types
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:2.10-1.36.2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 2月 27 2009 Matthias Clasen <mclasen@redhat.com>
+- Build for i586
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:2.10-1.34.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 09 2009 Prarit Bhargava <prarit@redhat.com> 1:2.10
+- rebuild with version 2.10
+
+* 三 1月 28 2009 Prarit Bhargava <prarit@redhat.com> 1:2.9-1.32
+- fix Summary field (BZ 225698)
+
+* 三 7月 16 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1:2.9-1.30
+- fix license tag
+
+* 五 3月 14 2008 Doug Chapman <doug.chapman@hp.com> 1:2.9-1.29.1
+- Do not package vpddecode, ownership and biosdecode on ia64 since those are x86 only
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1:2.9-1.27.1
+- Autorebuild for GCC 4.3
+
+* 一 10月 22 2007 Prarit Bhargava <prarit@redhat.com> - 1:2.9
+- rebuild with version 2.9
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:2.7-1.25.1
+- rebuild
+
+* 四 2月 09 2006 Dave Jones <davej@redhat.com>
+- rebuild.
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 28 2005 Dave Jones <davej@redhat.com>
+- Integrate several specfile cleanups from Robert Scheck. (#172543)
+
+* 六 9月 24 2005 Dave Jones <davej@redhat.com>
+- Revert yesterdays patch, its unneeded in 2.7
+
+* 五 9月 23 2005 Dave Jones <davej@redhat.com>
+- Don't try to modify areas mmap'd read-only.
+- Don't build on ia64 any more.
+  (It breaks on some boxes very badly, and works on very few).
+
+* 一 9月 12 2005 Dave Jones <davej@redhat.com>
+- Update to upstream 2.7
+
+* 五 4月 15 2005 Florian La Roche <laroche@redhat.com>
+- remove empty scripts
+
+* 三 3月 02 2005 Dave Jones <davej@redhat.com>
+- Update to upstream 2.6
+
+* 二 3月 01 2005 Dave Jones <davej@redhat.com>
+- Rebuild for gcc4
+
+* 二 2月 08 2005 Dave Jones <davej@redhat.com>
+- Rebuild with -D_FORTIFY_SOURCE=2
+
+* 二 1月 11 2005 Dave Jones <davej@redhat.com>
+- Add missing Obsoletes: kernel-utils
+
+* 一 1月 10 2005 Dave Jones <davej@redhat.com>
+- Update to upstream 2.5 release.
+
+* 六 12月 18 2004 Dave Jones <davej@redhat.com>
+- Initial packaging, based upon kernel-utils package.
+

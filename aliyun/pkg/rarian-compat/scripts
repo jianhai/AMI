@@ -1,0 +1,19 @@
+postinstall scriptlet (using /bin/sh):
+/usr/bin/rarian-sk-update
+
+# Add OMF DTD to XML catalog.
+CATALOG=/etc/xml/catalog
+/usr/bin/xmlcatalog --noout --add "rewriteSystem" \
+  "http://scrollkeeper.sourceforge.net/dtds/scrollkeeper-omf-1.0/scrollkeeper-omf.dtd" \
+  "/usr/share/xml/scrollkeeper/dtds/scrollkeeper-omf.dtd" $CATALOG >& /dev/null || :
+/usr/bin/xmlcatalog --noout --add "rewriteURI" \
+  "http://scrollkeeper.sourceforge.net/dtds/scrollkeeper-omf-1.0/scrollkeeper-omf.dtd" \
+  "/usr/share/xml/scrollkeeper/dtds/scrollkeeper-omf.dtd" $CATALOG >& /dev/null || :
+postuninstall scriptlet (using /bin/sh):
+
+# Delete OMF DTD from XML catalog.
+if [ $1 = 0 ]; then
+  CATALOG=/etc/xml/catalog
+  /usr/bin/xmlcatalog --noout --del \
+    "/usr/share/xml/scrollkeeper/dtds/scrollkeeper-omf.dtd" $CATALOG >& /dev/null || :
+fi

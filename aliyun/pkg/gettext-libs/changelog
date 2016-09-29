@@ -1,0 +1,467 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.17-16.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.17-16.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.17-16.1
+- rebuild for alios6
+
+* 五 11月 27 2009 Jens Petersen <petersen@redhat.com> - 0.17-16
+- fix FTBFS by removing openmp.m4 which conflicts with recent autoconf (#539211)
+- cleanup gettext-0.17-rpathFix.patch
+  - separate gl_AC_TYPE_LONG_LONG replacement to another patch
+  - use trailing ':' for tests LD_LIBRARY_PATH
+- run autogen.sh with --quick and --skip-gnulib
+
+* 二 9月 01 2009 Jens Petersen <petersen@redhat.com> - 0.17-15
+- bring back autopoint requires cvs (#517361)
+- requires info rather than /sbin/install-info
+- drop install_info and remove_install_info macros
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.17-14
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 24 2009 Jens Petersen <petersen@redhat.com> - 0.17-13
+- buildrequire automake (#507275)
+- run autogen
+
+* 一 6月 22 2009 Jens Petersen <petersen@redhat.com> - 0.17-12
+- move intl/ and po/ to base package for gettextize
+  (reported by Serge Pavlovsky, #496902)
+
+* 五 5月 22 2009 Jens Petersen <petersen@redhat.com> - 0.17-11
+- use bcond's for build switches
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.17-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 12 2009 Jens Petersen <petersen@redhat.com> - 0.17-9
+- add buildjava switch to allow turning off the java bits completely
+- add buildcheck to allow turning off make check
+- drop cvs requires for autopoint (Karl Lattimer, #469555)
+- add upstream gettext-xgettext-python-unicode-surrogate-473946.patch by
+  Bruno Haible to fix xgettext handling of utf16 surrogates in python (#473946)
+
+* 五 8月 29 2008 Ding-Yi Chen <dchen at redhat dot com> - 0.17-8
+- Fix the build failure with koji.
+
+* 五 8月 29 2008 Ding-Yi Chen <dchen at redhat dot com> - 0.17-7
+- Remove the gettext-libs docs, as they are talking about autoconf, libtool, 
+  which are not directly related to the gettext-libs.
+- Remove unused definition and trailing space.
+- Fix the build failure with mock .
+
+* 二 8月 19 2008 Ding-Yi Chen <dchen at redhat dot com> - 0.17-6
+- Fixed Bug 456666 msghack doesn't check for mandatory cmd line params 
+  by adding checking statements and display usage (msghack.py modified)
+- rpath patch for binary-or-shlib-defines-rpath in x86_64.
+
+* 四 4月 24 2008 Jens Petersen <petersen@redhat.com> - 0.17-5
+- fix autopoint messing up CVS files with upstream patch (#441481)
+
+* 一 2月 18 2008 Jens Petersen <petersen@redhat.com> - 0.17-4
+- if %buildjar is off make sure libintl.jar does not get installed (#433210)
+
+* 一 2月 18 2008 Jens Petersen <petersen@redhat.com> - 0.17-3
+- turn on building of libintl.jar now that we have gcc43
+
+* 四 2月 14 2008 Jens Petersen <petersen@redhat.com> - 0.17-2
+- rebuild with gcc43
+
+* 四 1月 24 2008 Jens Petersen <petersen@redhat.com> - 0.17-1
+- update to 0.17 release
+  - update License field to GPLv3
+  - add gettext-0.17-open-args.patch to fix build from upstream
+  - gettext-tools-tests-lang-gawk-fail.patch, gettext-php-headers.patch,
+    gettext-php-prinf-output-237241.patch, and
+    gettext-xglade-define-xml-major-version-285701.patch are no longer needed
+- drop superfluous po-mode-init.el source
+- no need to run autoconf and autoheader when building
+- pass -findirect-dispatch to gcj to make java binaries ABI independent
+  (jakub,#427796)
+- move autopoint, gettextize, and {_datadir}/{name}/ to main package
+- force removal of emacs/ so install does not fail when no emacs
+
+* 五 9月 21 2007 Jens Petersen <petersen@redhat.com> - 0.16.1-12
+- add a libs subpackage (suggested by Dwayne Bailey, #294891)
+- move preloadable_libintl.so to the devel subpackage
+
+* 五 9月 14 2007 Nils Philippsen <nphilipp@redhat.com> - 0.16.1-11
+- remove gettext-xglade-include-expat-285701.patch, add
+  gettext-xglade-define-xml-major-version-285701.patch to determine
+  XML_MAJOR_VERSION from expat.h and define it in config.h (#285701)
+
+* 三 9月 12 2007 Jens Petersen <petersen@redhat.com> - 0.16.1-10
+- buildrequire expat-devel
+- add gettext-xglade-include-expat-285701.patch to include expat.h
+  to get xgettext to dl the right libexpat (Nils Philippsen, #285701)
+
+* 四 8月 16 2007 Jens Petersen <petersen@redhat.com>
+- specify license is GPL and LGPL version 2 or later
+
+* 三 8月 01 2007 Jens Petersen <petersen@redhat.com> - 0.16.1-9
+- fix encoding of msghack script (Dwayne Bailey, #250248)
+
+* 一 4月 30 2007 Jens Petersen <petersen@redhat.com> - 0.16.1-8
+- add gettext-php-prinf-output-237241.patch to workaround php test failure
+  (#237241)
+- add gettext-php-headers.patch to correct php test headers
+  (Robert Scheck, #232832)
+
+* 四 3月 15 2007 Jens Petersen <petersen@redhat.com> - 0.16.1-7
+- set preloadable_libintl.so executable in %install so it gets stripped
+- force removal of infodir/dir since it is not there when /sbin is not in path
+
+* 二 3月 13 2007 Jens Petersen <petersen@redhat.com> - 0.16.1-6
+- add buildjar switch for building of libintl.jar
+- lots of spec file cleanup (Mamoru Tasaka, #225791):
+- preserve timestamps of installed files
+- disable building of static library
+- use %find_lang for .mo files
+- remove examples from -devel package
+- do not own en@*quot locale dirs
+- set preloadable_libintl.so executable
+- add ChangeLog to -devel package
+- add %check to run make check
+- add gettext-tools-tests-lang-gawk-fail.patch to work around gawk test failure
+
+* 五 2月 23 2007 Karsten Hopp <karsten@redhat.com> 0.16.1-5
+- rebuild to pick up dependency on libgcj.so.8rh instead libgcj.so.7rh
+
+* 四 2月 01 2007 Jens Petersen <petersen@redhat.com> - 0.16.1-4
+- protect install-info in devel %post and %preun too (Ville Skyttä, #223689)
+- forward port fix to reset of timestamp of examples ChangeLog for
+  brp-java-repack-jars libintl.jar multilib conflict (#205207)
+
+* 一 1月 22 2007 Jens Petersen <petersen@redhat.com> - 0.16.1-3
+- protect install-info in %post and %preun (Ville Skyttä, #223689)
+
+* 五 12月 22 2006 Jens Petersen <petersen@redhat.com> - 0.16.1-1
+- update to 0.16.1
+
+* 一 11月 27 2006 Jens Petersen <petersen@redhat.com> - 0.16-2
+- re-enable openmp on ia64
+
+* 四 11月 23 2006 Jens Petersen <petersen@redhat.com> - 0.16-1
+- update to 0.16 release
+- disable openmp on ia64 (#216988)
+
+* 五 10月 27 2006 Jens Petersen <petersen@redhat.com> - 0.15-1
+- update to 0.15 release
+- mkinstalldirs and libintl.jar are gone
+- javaversion.class added
+
+* 一 10月 02 2006 Jens Petersen <petersen@redhat.com> - 0.14.6-3
+- buildrequire zip and unzip to fix libintl.jar multilib conflict (#205207)
+
+* 五 8月 25 2006 Jens Petersen <petersen@redhat.com> - 0.14.6-2
+- move libgettext*.so devel files to devel package (Patrice Dumas, #203622)
+
+* 一 8月 07 2006 Jens Petersen <petersen@redhat.com> - 0.14.6-1
+- update to 0.14.6
+- include preloadable_libintl.so again (Roozbeh Pournader, #149809)
+- remove .la files (Kjartan Maraas, #172624)
+- cleanup spec file
+
+* 二 7月 25 2006 Thomas Fitzsimmons <fitzsim@redhat.com> - 0.14.5-4
+- Bump release number.
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.14.5-3.1
+- rebuild
+
+* 三 2月 22 2006 Karsten Hopp <karsten@redhat.de> 0.14.5-3
+- --disable-csharp, otherwise it'll build a dll when mono is 
+  installed in the buildroot.
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.14.5-2.2.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.14.5-2.2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 03 2006 Jesse Keating <jkeating@redhat.com> 0.14.5-2.2
+- rebuilt again
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 9月 28 2005 Jindrich Novy <jnovy@redhat.com> 0.14.5-2
+- convert spec to UTF-8
+- remove old tarballs from sources
+
+* 四 8月 11 2005 Leon Ho <llch@redhat.com>
+- updated to 0.14.5
+- Add cvs as Requires for gettext-devel
+
+* 一 3月 21 2005 Leon Ho <llch@redhat.com>
+- updated to 0.14.3
+- fixed compiling problem on gcc4 (#150992)
+- fixed Group for -devel (#138303)
+- moved gettextize and autopoint to -devel (#137542, #145768)
+- moved some of the man pages
+
+* 二 3月 01 2005 Jakub Jelinek <jakub@redhat.com>
+- rebuilt with gcc 4.0
+
+* 三 12月 01 2004 Leon Ho <llch@redhat.com>
+- Add env var to redirect use fastjar instead of jar
+- BuildRequires fastjar and libgcj
+
+* 一 11月 01 2004 Leon Ho <llch@redhat.com>
+- fix call on phase0_getc()
+- fix temp file issue (#136323 - CAN-2004-0966 - mjc)
+
+* 日 10月 03 2004 Leon Ho <llch@redhat.com>
+- fixed typo on %preun on -devel
+
+* 五 10月 01 2004 Leon Ho <llch@redhat.com>
+- fix install_info
+- add gcc-java build requirement
+
+* 一 9月 13 2004 Leon Ho <llch@redhat.com>
+- move java stuff to gettext-devel (#132239)
+- add BuildRequires: gcc-c++ (#132518)
+- add some missing install-info and ldconfig (#131272)
+- fix dir ownership (#133696)
+- run autotools for 1.9
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 08 2004 Leon Ho <llch@redhat.com>
+- use --without-included-gettext to avoid the need of libintl.so (#125497)
+- remove preloadable_libintl.so
+
+* 日 6月 06 2004 Leon Ho <llch@redhat.com>
+- moved some of the shared lib to main pkg
+- added more build requires
+
+* 四 6月 03 2004 Leon Ho <llch@redhat.com>
+- add conditionals for patch and requires auto* (#125216)
+
+* 三 6月 02 2004 Leon Ho <llch@redhat.com>
+- packaged lib files for devel
+- moved some of the files to different sub-pkg
+- fix problem on x86_64 build
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 02 2004 Leon Ho <llch@redhat.com>
+- rebuilt to 0.14.1
+
+* 五 9月 19 2003 Leon Ho <llch@redhat.com>
+- rebuilt 0.12.1
+- fix including files and excludes some patches
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 14 2003 Leon Ho <llch@redhat.com>
+- 0.11.5
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 四 1月 16 2003 Leon Ho <llch@redhat.com> 0.11.4-6
+- add online help for msghack replacement
+
+* 四 12月 05 2002 Leon Ho <llch@redhat.com> 0.11.4-5
+- add patch to fix gettextize (#78720)
+
+* 三 11月 27 2002 Tim Powers <timp@redhat.com> 0.11.4-4
+- remove unpackaged files from the buildroot
+
+* 三 8月 28 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.11.4-3
+- Use %{_libdir} instead of /usr/lib (#72524)
+
+* 五 8月 02 2002 Nalin Dahyabhai <nalin@redhat.com> 0.11.4-2
+- install ulonglong.m4, which is required by uintmax_t.m4, which is already
+  being installed
+
+* 日 7月 28 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.11.4-1
+- 0.11.4
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 5月 14 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.11.2-1
+- 0.11.2
+- include some new files
+
+* 五 4月 05 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.11.1-2
+- Add patch to make it compile with C99 compilers (#62313)
+
+* 三 3月 13 2002 Trond Eivind Glomsrød <teg@redhat.com> 0.11.1-1
+- 0.11.1
+
+* 日 2月 17 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- update gettext to 0.11
+- disable patch4
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 12月 05 2001 Trond Eivind Glomsrød <teg@redhat.com> 0.10.40-3
+- improve automake handling
+
+* 三 11月 14 2001 Trond Eivind Glomsrød <teg@redhat.com> 0.10.40-2
+- Add URL
+- Add automake workaround (#56081)
+
+* 日 9月 16 2001 Trond Eivind Glomsrød <teg@redhat.com> 0.10.40-1
+- 0.10.40 - libintl is now LGPLed (it was GPLed). Note that RHL
+  uses the glibc version, and don't include libintl from gettext.
+- include new man pages
+- don't include the elisp mode - bundle it into the main emacs package,
+  like we do for XEmacs.
+- README-alpha no longer exists, so don't list it as a doc file
+
+* 五 8月 24 2001 Trond Eivind Glomsrød <teg@redhat.com> 0.10.38-7
+- Rebuild - this should fix #52463
+
+* 三 8月 22 2001 Trond Eivind Glomsrød <teg@redhat.com> 0.10.38-6
+- Fix handling of multiline entries (rest of #50065)
+- don't use the references of the last entry in a po file
+- remove duplicates when inverting
+- Own the en@quot and en@boldquot locale dirs (#52164)
+- Handle entries with a first line of "" as identical to those
+  without
+
+* 四 8月 09 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Added "--append" and "-o" to msghack, which should address 
+  initial concerns in #50065
+
+* 四 7月 19 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- New msghack - from scratch, in python
+
+* 二 7月 17 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- msghack is back
+
+* 一 6月 04 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Include some docfiles
+
+* 日 6月 03 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- 0.10.38
+- do not include charset.alias
+
+* 三 5月 02 2001 Nalin Dahyabhai <nalin@redhat.com>
+- Build statically.
+
+* 一 4月 30 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- 0.10.37
+- Disable all but two patches
+
+* 日 2月 25 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Initialize proper fonts when entering po-mode (#29152)
+
+* 一 2月 12 2001 Yukihiro Nakai <ynakai@redhat.com>
+- More fix about msgmerge.
+
+* 一 2月 12 2001 Yukihiro Nakai <ynakai@redhat.com>
+- Fix for msgmerge not to break multibyte strings
+  at Japanese locale.
+
+* 三 1月 24 2001 Matt Wilson <msw@redhat.com>
+- fixed the %lang generator to not have "./" in the lang
+
+* 日 1月 14 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- add an init file for the emacs po-mode
+- update source URL
+
+* 四 1月 11 2001 Bill Nottingham <notting@redhat.com>
+- put gettext in /bin for initscripts use
+- %langify
+
+* 五 12月 29 2000 Bill Nottingham <notting@redhat.com>
+- prereq /sbin/install-info
+
+* 三 8月 23 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- Added patch from Ulrich Drepper
+
+* 五 8月 04 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- update DESTDIR patch (#12072)
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 7月 10 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- fix problems wrt to DESTDIR (#12072)
+
+* 四 6月 22 2000 Preston Brown <pbrown@redhat.com>
+- use FHS paths
+- add buildroot patch for .../intl/Makefile.in, was using abs. install path
+
+* 五 4月 28 2000 Bill Nottingham <notting@redhat.com>
+- minor configure tweaks for ia64
+
+* 日 2月 27 2000 Cristian Gafton <gafton@redhat.com>
+- add --comments to msghack
+
+* 四 2月 10 2000 Cristian Gafton <gafton@redhat.com>
+- fix bug #9240 - gettextize has the right aclocal patch
+
+* 三 1月 12 2000 Cristian Gafton <gafton@redhat.com>
+- add the --diff and --dummy options
+
+* 三 10月 06 1999 Cristian Gafton <gafton@redhat.com>
+- add the --missing option to msghack
+
+* 三 9月 22 1999 Cristian Gafton <gafton@redhat.com>
+- updated msghack not to merge in fuzzies in the master catalogs
+
+* 四 8月 26 1999 Cristian Gafton <gafton@redhat.com>
+- updated msghack to understand --append
+
+* 三 8月 11 1999 Cristian Gafton <gafton@redhat.com>
+- updated msghack to correctly deal with sorting files
+
+* 四 5月 06 1999 Cristian Gafton <gafton@redhat.com>
+- msghack updates
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 8)
+
+* 一 3月 08 1999 Cristian Gafton <gafton@redhat.com>
+- added patch for misc hacks to facilitate rpm translations
+
+* 四 12月 03 1998 Cristian Gafton <gafton@redhat.com>
+- patch to allow to build on ARM
+
+* 三 9月 30 1998 Jeff Johnson <jbj@redhat.com>
+- add Emacs po-mode.el files.
+
+* 日 9月 13 1998 Cristian Gafton <gafton@redhat.com>
+- include the aclocal support files
+
+* 四 9月 03 1998 Bill Nottingham <notting@redhat.com>
+- remove devel package (functionality is in glibc)
+
+* 二 9月 01 1998 Jeff Johnson <jbj@redhat.com>
+- update to 0.10.35.
+
+* 一 6月 29 1998 Jeff Johnson <jbj@redhat.com>
+- add gettextize.
+- create devel package for libintl.a and libgettext.h.
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 日 11月 02 1997 Cristian Gafton <gafton@redhat.com>
+- added info handling
+- added misc-patch (skip emacs-lisp modofications)
+
+* 六 11月 01 1997 Erik Troan <ewt@redhat.com>
+- removed locale.aliases as we get it from glibc now
+- uses a buildroot
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- Built against glibc
+

@@ -1,0 +1,12 @@
+Name        : centos-indexhtml             Relocations: (not relocatable)
+Version     : 6                                 Vendor: Alibaba
+Release     : 1.3.alios6                    Build Date: 2014年07月26日 星期六 01时36分49秒
+Install Date: 2015年03月25日 星期三 11时00分40秒      Build Host: x86-003.build.alibaba
+Group       : Documentation                 Source RPM: centos-indexhtml-6-1.3.alios6.src.rpm
+Size        : 70748                            License: Distributable
+Signature   : RSA/8, 2014年07月31日 星期四 16时16分31秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+Summary     : Browser default start page for CentOS
+Description :
+The indexhtml package contains the welcome page shown by your Web browser,
+which you'll see after you've successfully installed CentOS Linux

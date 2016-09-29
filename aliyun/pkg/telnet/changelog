@@ -1,0 +1,264 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:0.17-47.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:0.17-47.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:0.17-47.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:0.17-47.1
+- rebuild for alios6
+
+* 二 6月 28 2011 Adam Tkac <atkac redhat com> 1:0.17-47
+- telnetd: store "from" address in sockaddr_storage (#678324)
+
+* 二 2月 09 2010 Adam Tkac <atkac redhat com> 1:0.17-46
+- changes related package review (#226484)
+- remove unused patches
+  - telnet-0.17-linemode.patch
+  - telnet-0.17-env-5x.patch
+
+* 三 9月 02 2009 Adam Tkac <atkac redhat com> 1:0.17-45
+- add new option -N to disable DNS lookups (#490242)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.17-44
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:0.17-43
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1:0.17-42
+- Autorebuild for GCC 4.3
+
+* 二 9月 25 2007 Adam Tkac <atkac redhat com> 1:0.17-41
+- rebased "nodns" patch with patch from Bryn M. Reeves
+
+* 四 9月 20 2007 Adam Tkac <atkac redhat com> 1:0.17-40
+- improved patch to #274991
+
+* 三 8月 22 2007 Harald Hoyer <harald@redhat.com> - 1:0.17-39
+- added patch to prevent a rare loop in the client
+
+* 五 4月 13 2007 Adam Tkac <atkac redhat com> - 1:0.17-38.fc7
+- added -c option which disables reverse dns checking (#223448)
+- added smp_mflags to make
+- start using dist macro
+
+* 五 7月 14 2006 Harald Hoyer <harald@redhat.com> - 1:0.17-37
+- added netkit-telnet-0.17-ipv6.diff from Marek Grác, 
+  which adds IPv6 support to telnetd
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:0.17-36.1
+- rebuild
+
+* 一 5月 08 2006 Harald Hoyer <harald@redhat.com> - 1:0.17-36
+- patch to remove gethostbyname() (bug #190296)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1:0.17-35.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1:0.17-35.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 3月 17 2005 Harald Hoyer <harald@redhat.com> - 1:0.17-35
+- fixed CAN-2005-468 and CAN-2005-469
+
+* 三 3月 02 2005 Harald Hoyer <harald@redhat.com> 
+- rebuilt
+
+* 五 1月 21 2005 Harald Hoyer <harald@redhat.com> - 1:0.17-33
+- added patch telnetd-0.17-pty_read.patch, which fixes 145636
+
+* 四 1月 13 2005 Jason Vas Dias <jvdias@redhat.com> - 1:0.17-31
+- bug 143929 / 145004 : fix race condition in telnetd on wtmp lock 
+- when cleanup() is entered from main process and in signal
+- handler
+
+* 一 6月 28 2004 Harald Hoyer <harald@redhat.com> - 1:0.17-30
+- fixed 126858: Too long /proc/X/cmdline: bad ps output when 
+                piped to less/more
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 05 2004 Harald Hoyer <harald@redhat.com> - 1:0.17-27
+- added PIE compile flags
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 28 2003 Harald Hoyer <harald@redhat.de> 1:0.17-26
+- cleanup of spec file
+- 8bit binary patch #91023
+
+* 三 1月 29 2003 Harald Hoyer <harald@redhat.de> 0.17-25
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 11月 11 2002 Harald Hoyer <harald@redhat.de> 0.17-24
+- changed description
+- removed unused .desktop files
+
+* 二 7月 23 2002 Harald Hoyer <harald@redhat.de> 0.17-23
+- removed prestripping
+
+* 二 7月 09 2002 Harald Hoyer <harald@redhat.de>
+- removed x86 -O gcc-2.96 hack (#59514)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 6月 06 2002 Tim Powers <timp@redhat.com>
+- bump release number and rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 9月 06 2001 Harald Hoyer <harald@redhat.de> 0.17-20
+- hopefully fixed #52817, #52224
+
+* 四 8月 16 2001 Bill Nottingham <notting@redhat.com>
+- bump version for 7.2
+
+* 三 8月 15 2001 Bill Nottingham <notting@redhat.com>
+- fix versioning
+
+* 二 7月 31 2001 Harald Hoyer <harald@redhat.de>
+- fixed security issues (#50335)
+- patched the patches to fit the 5x version
+- one world -> one spec file for all versions ;)
+
+* 六 7月 21 2001 Tim Powers <timp@redhat.com>
+- no applnk file, it's clutrtering the menus
+
+* 二 7月 17 2001 Bill Nottingham <notting@redhat.com>
+- apply the patch, duh (and fix it while we're here)
+
+* 二 7月 10 2001 Bill Nottingham <notting@redhat.com>
+- make /etc/issue.net parsing match the various gettys
+
+* 一 6月 18 2001 Harald Hoyer <harald@redhat.de>
+- merged Jakubs and Pekka's patches
+
+* 三 4月 04 2001 Jakub Jelinek <jakub@redhat.com>
+- don't let configure to guess compiler, it can pick up egcs
+
+* 五 3月 09 2001 Pekka Savola <pekkas@netcore.fi>
+- update to 0.17
+- apply latest changes from CVS to telnet client, enable IPv6
+- BuildPreReq ncurses-devel
+
+* 一 1月 22 2001 Helge Deller <hdeller@redhat.com>
+- added swedish & german translation to .desktop-file (#15332)
+
+* 六 12月 30 2000 Nalin Dahyabhai <nalin@redhat.com>
+- mark the xinetd config file as config(noreplace)
+
+* 五 12月 01 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- make sure the server is turned off by default
+
+* 二 7月 18 2000 Bill Nottingham <notting@redhat.com>
+- add description & default to xinetd file
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 19 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+- update to 0.17-pre20000412.
+
+* 二 5月 23 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- moved the xinet entry to the server
+
+* 一 5月 22 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- add an entry to /etc/xinetd.d
+
+* 二 5月 16 2000 Jeff Johnson <jbj@redhat.com>
+- permit telnet queries only for exported variables.
+
+* 五 3月 24 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 0.17
+
+* 二 3月 07 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild for sparc baud rates > 38400.
+
+* 五 2月 11 2000 Bill Nottingham <notting@redhat.com>
+- fix description
+
+* 一 2月 07 2000 Preston Brown <pbrown@redhat.com>
+- wmconfig gone
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- man pages are compressed
+- fix description
+
+* 二 1月 04 2000 Bill Nottingham <notting@redhat.com>
+- split client and server
+
+* 二 12月 21 1999 Jeff Johnson <jbj@redhat.com>
+- update to 0.16.
+
+* 日 10月 10 1999 Matt Wilson <msw@redhat.com>
+- corrected the Terminal setting of the .desktop (needs to be 'true' not '1')
+
+* 五 9月 24 1999 Preston Brown <pbrown@redhat.com>
+- red hat .desktop entry
+
+* 六 8月 21 1999 Jeff Johnson <jbj@redhat.com>
+- rebuild for 6.1.
+
+* 三 8月 18 1999 Bill Nottingham <notting@redhat.com>
+- don't trust random TERM variables in telnetd (#4560)
+
+* 三 6月 02 1999 Jeff Johnson <jbj@redhat.com>
+- fix (#3098).
+
+* 四 5月 27 1999 Antti Andreimann <Antti.Andreimann@mail.ee>
+- fixed the problem with escape character (it could not be disabled)
+- changed the spec file to use %setup macro for unpacking telnet-client
+
+* 四 4月 15 1999 Jeff Johnson <jbj@redhat.com>
+- use glibc utmp routines.
+
+* 四 4月 08 1999 Jeff Johnson <jbj@redhat.com>
+- fix the fix (wrong way memcpy).
+
+* 三 4月 07 1999 Jeff Johnson <jbj@redhat.com>
+- fix "telnet localhost" bus error on sparc64 (alpha?).
+
+* 二 4月 06 1999 Jeff Johnson <jbj@redhat.com>
+- use OpenBSD telnet client (and fix minor core dump with .telnetrc #247)
+
+* 四 3月 25 1999 Erik Troan <ewt@redhat.com>
+- use openpty in telnetd
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 22)
+
+* 一 3月 15 1999 Jeff Johnson <jbj@redhat.com>
+- compile for 6.0.
+
+* 五 4月 24 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 4月 24 1998 Cristian Gafton <gafton@redhat.com>
+- compile C++ code using egcs
+
+* 二 4月 14 1998 Erik Troan <ewt@redhat.com>
+- built against new ncurses
+
+* 三 10月 29 1997 Donnie Barnes <djb@redhat.com>
+- added wmconfig entry
+
+* 二 7月 15 1997 Erik Troan <ewt@redhat.com>
+- initial build
+

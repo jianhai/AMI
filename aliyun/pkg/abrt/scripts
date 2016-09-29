@@ -1,0 +1,18 @@
+preinstall scriptlet (using /bin/sh):
+#uidgid pair 173:173 reserved in setup rhbz#670231
+getent group abrt >/dev/null || groupadd -f -g 173 --system abrt
+getent passwd abrt >/dev/null || useradd --system -g abrt -u 173 -d /etc/abrt -s /sbin/nologin abrt
+exit 0
+postinstall scriptlet (using /bin/sh):
+# $1 == 1 if install; 2 if upgrade
+if [ $1 -eq 1 ]; then
+    /sbin/chkconfig --add abrtd
+fi
+/usr/libexec/abrt1-to-abrt2 || :
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" -eq "0" ] ; then
+    service abrtd stop >/dev/null 2>&1
+    /sbin/chkconfig --del abrtd
+fi
+posttrans scriptlet (using /bin/sh):
+service abrtd condrestart >/dev/null 2>&1 || :

@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add ip6tables
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+	/sbin/chkconfig --del ip6tables
+fi

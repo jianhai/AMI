@@ -1,0 +1,496 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 14:4.0.0-3.20090921gitdf3cb4.1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 14:4.0.0-3.20090921gitdf3cb4.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 14:4.0.0-3.20090921gitdf3cb4.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 14:4.0.0-3.20090921gitdf3cb4.1.1
+- rebuild for alios6
+
+* 五 12月 11 2009 Dennis Gregorovic <dgregor@redhat.com> - 14:4.0.0-3.20090921gitdf3cb4.1
+- Rebuilt for RHEL 6
+
+* 三 9月 23 2009 Miroslav Lichvar <mlichvar@redhat.com> - 14:4.0.0-3.20090921gitdf3cb4
+- update to snapshot 20090921gitdf3cb4
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 14:4.0.0-2.20090818git832d2c
+- rebuilt with new openssl
+
+* 四 8月 20 2009 Miroslav Lichvar <mlichvar@redhat.com> - 14:4.0.0-1.20090818git832d2c
+- update to post 4.0.0 git snapshot 20090818git832d2c
+- print retrans and reachable times in ICMPv6 as milliseconds (#474264)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 14:3.9.8-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 14:3.9.8-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 1月 20 2009 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.8-7
+- rebuild for new openssl
+- convert CREDITS to UTF-8 (#226481)
+
+* 五 8月 29 2008 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.8-6
+- rediff patches with fuzz
+- add -fno-strict-aliasing to CFLAGS
+
+* 一 6月 02 2008 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.8-5
+- update config.{guess,sub} when building tcpslice
+- remove -D_GNU_SOURCE from CFLAGS
+- disable libsmi check in configure
+
+* 三 2月 13 2008 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.8-4
+- fix building with new glibc headers
+
+* 四 12月 06 2007 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.8-3
+- update IKEv2 support
+
+* 四 12月 06 2007 Jeremy Katz <katzj@redhat.com> - 14:3.9.8-2
+- rebuild for new openssl
+
+* 三 10月 24 2007 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.8-1
+- update to 3.9.8
+- don't use gethostbyaddr
+- fix default user in man page
+
+* 二 9月 18 2007 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.7-5
+- support decoding IKEv2 packets
+
+* 三 8月 22 2007 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.7-4
+- rebuild
+
+* 四 8月 09 2007 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.7-3
+- enable crypto support on 64-bit architectures
+- update license tag
+
+* 三 7月 25 2007 Jeremy Katz <katzj@redhat.com> - 14:3.9.7-2
+- rebuild for toolchain bug
+
+* 二 7月 24 2007 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.7-1
+- update to 3.9.7
+- with -C option, drop root privileges before opening first savefile (#244860)
+- update tcpslice to 1.2a3
+- include time patch from Debian to fix tcpslice on 64-bit architectures
+
+* 四 3月 15 2007 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.5-3
+- fix buffer overflow in 802.11 printer (#232349, CVE-2007-1218)
+- spec cleanup (#226481)
+
+* 二 12月 12 2006 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.5-2
+- use tcpdump user, fix scriptlet (#219268)
+
+* 三 11月 29 2006 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.5-1
+- split off libpcap and arpwatch (#193657)
+- update to 3.9.5
+- force linking with system libpcap
+
+* 五 11月 17 2006 Miroslav Lichvar <mlichvar@redhat.com> - 14:3.9.4-9
+- fix processing of Prism and AVS headers (#206686)
+- fix arp2ethers script
+- update ethercodes.dat
+- move pcap man page to devel package
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 14:3.9.4-8.1
+- rebuild
+
+* 四 6月 22 2006 Martin Stransky <stransky@redhat.com> - 14:3.9.4-8
+- more ipv6 flags
+
+* 日 6月 04 2006 Jeremy Katz <katzj@redhat.com> - 14:3.9.4-7
+- fix libpcap-devel inclusion of .so and its deps (#193189)
+
+* 四 6月 01 2006 Martin Stransky <stransky@redhat.com> - 14:3.9.4-6
+- added release to arpwatch package name
+
+* 三 5月 31 2006 Martin Stransky <stransky@redhat.com> - 14:3.9.4-5
+- removed libpcap-devel dependency from libpcap
+
+* 一 5月 29 2006 Martin Stransky <stransky@redhat.com> - 14:3.9.4-4
+- added libpcap-devel package (#193189)
+
+* 二 3月 28 2006 Martin Stransky <stransky@redhat.com> - 14:3.9.4-3
+- updated ethernet codes (#186633)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 14:3.9.4-2.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 14:3.9.4-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 12月 20 2005 Martin Stransky <stransky@redhat.com> - 14:3.9.4-2
+- fix for #176010 - file owner problem when using 'ring buffer
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 11月 10 2005 Martin Stransky <stransky@redhat.com> - 14:3.9.4-1
+- new upstream
+
+* 四 11月 10 2005 Tomas Mraz <tmraz@redhat.com> - 14:3.9.3-5
+- rebuilt against new openssl
+
+* 三 11月 09 2005 Martin Stransky <stransky@redhat.com> - 14:3.9.3-4
+- rebuilt
+
+* 二 8月 09 2005 Jeremy Katz <katzj@redhat.com> - 14:3.9.3-3
+- remove explicit kernel dep for libpcap too
+
+* 二 7月 26 2005 Martin Stransky <stransky@redhat.com> - 14:3.9.3-2
+- fixed typo in last patch
+
+* 二 7月 26 2005 Martin Stransky <stransky@redhat.com> - 14:3.9.3-1
+- New upstream version - 3.9.3
+- fix for #164227 (buffer overflow)
+- fix for #164230 (missing debug info)
+
+* 四 7月 14 2005 Martin Stransky <stransky@redhat.com> - 14:3.9.1-1
+- New upstream version
+
+* 二 6月 21 2005 Martin Stransky <stransky@redhat.com> - 14:3.8.2-14
+- add shadow-utils to Prereq (#160643)
+
+* 二 6月 07 2005 Martin Stransky <stransky@redhat.com> - 14:3.8.2-13
+- fix for CAN-2005-1267 - BGP DoS, #159209
+
+* 四 4月 28 2005 Martin Stransky <stransky@redhat.com> - 14:3.8.2-12
+- fix for CAN-2005-1280 Multiple DoS issues in tcpdump 
+  (CAN-2005-1279 CAN-2005-1278), #156041
+
+* 一 3月 07 2005 Martin Stransky <stransky@redhat.com>
+- rebuilt
+
+* 一 2月 14 2005 Martin Stransky <stransky@redhat.com> - 14:3.8.2-10
+- remove explicit kernel dependecy (#146165)
+- support for files larger than 2GB (#147840)
+
+* 五 2月 11 2005 Ivana Varekova <varekova@redhat.com> - 14:3.8.2-9
+- added arpsnmp options to specify sender and recipient 
+  and corrected arpwatch and arpsnmp man pages (#70386)
+
+* 四 2月 10 2005 Ivana Varekova <varekova@redhat.com> - 14:3.8.2-8
+- rebuilt
+
+* 二 10月 12 2004 Harald Hoyer <harald@redhat.com> - 14:3.8.2-7
+- fixed nfs protocol parsing for 64 bit architectures (bug 132781)
+
+* 三 9月 15 2004 Harald Hoyer <harald@redhat.com> - 14:3.8.2-6
+- added libpcap-0.8.3-ppp.patch for ppp (bug 128053)
+
+* 三 6月 23 2004 Elliot Lee <sopwith@redhat.com>
+- added flex to BuildRequires
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 5月 30 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- simplify rpm scripts
+
+* 二 4月 06 2004 Harald Hoyer <harald@redhat.com> - 14:3.8.2-3
+- added LICENSE files
+
+* 三 3月 31 2004 Harald Hoyer <harald@redhat.com> - 14:3.8.2-2
+- update to libpcap-0.8.3 (tcpdump-3.8.3 seems to be older that 3.8.2!!)
+
+* 二 3月 30 2004 Harald Hoyer <harald@redhat.com> - 14:3.8.2-1
+- update to tcpdump-3.8.2, libpcap-0.8.2, arpwatch-2.1a13
+- patched tcpdump configure for gcc34 optimizations
+- removed obsolete patches
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 23 2004 Harald Hoyer <harald@redhat.de> 14:3.8.1-4/17
+- fixed arpwatch version
+- fixed libpcap library version
+- fixed tcpdump droproot
+
+* 二 1月 20 2004 Harald Hoyer <harald@redhat.de> 14:3.8.1-3
+- corrected tcpslice (bpf.h issue)
+
+* 二 1月 13 2004 Harald Hoyer <harald@redhat.de> 14:3.8.1-2
+- more security issues (patch 18)
+
+* 五 1月 09 2004 Phil Knirsch <pknirsch@redhat.com> 14:3.8.1-1
+- Updated to latest version because of security issue
+
+* 五 8月 29 2003 Harald Hoyer <harald@redhat.de> 14:3.7.2-7
+- build libpcap shared library with gcc and not ld
+
+* 二 7月 22 2003 Phil Knirsch <pknirsch@redhat.com> 14:3.7.2-6.1
+- rebuilt
+
+* 一 7月 21 2003 Phil Knirsch <pknirsch@redhat.com> 14:3.7.2-6
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 5月 21 2003 Harald Hoyer <harald@redhat.de> 14:3.7.2-5
+- add proper attributes for arp.dat, ethercodes
+
+* 二 5月 20 2003 Harald Hoyer <harald@redhat.de> 14:3.7.2-4
+- take ethercodes.dat from the arpwatch package now
+
+* 二 5月 06 2003 Harald Hoyer <harald@redhat.de> 14:3.7.2-3
+- compile tcpdump with autoheader #90208
+
+* 四 5月 01 2003 Elliot Lee <sopwith@redhat.com> 14:3.7.2-2
+- Add sctpdef patch to fix ppc64 builds
+
+* 四 2月 27 2003 Phil Knirsch <pknirsch@redhat.com> 14:3.7.2-1
+- Update to upstream version 3.7.2
+
+* 六 2月 01 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- sanitized rpm scripts
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 12:3.6.3-20
+- rebuilt
+
+* 二 1月 07 2003 Nalin Dahyabhai <nalin@redhat.com> 12:3.6.3-19/0.6.2-19/2.1a11-19
+- rebuild
+
+* 六 1月 04 2003 Jeff Johnson <jbj@redhat.com> 12:3.6.3-18/0.6.2-18/2.1a11-18
+- set execute bits on library so that requires are generated.
+
+* 三 12月 11 2002 Harald Hoyer <harald@redhat.de> 12:3.6.3-17/0.6.2-17/2.1a11-17
+- common release no. across all subpackages
+
+* 三 12月 11 2002 Harald Hoyer <harald@redhat.de> 12:3.6.3-5/0.6.2-16/2.1a11-16
+- print_bgp security fix
+
+* 一 11月 18 2002 Tim Powers <timp@redhat.com>
+- rebuild on all arches
+
+* 五 8月 02 2002 Harald Hoyer <harald@redhat.de> 12:3.6.3-3/0.6.2-16/2.1a11-16
+- added man page descriptions for the new parameters
+
+* 四 8月 01 2002 Harald Hoyer <harald@redhat.de> 12:3.6.3-2
+- added arpwatch options to specify sender and recipient (#70386)
+
+* 二 7月 23 2002 Harald Hoyer <harald@redhat.de> 12:3.6.3-1
+- removed prestripping
+
+* 四 5月 16 2002 Harald Hoyer <harald@redhat.de> 12:3.6.2-13
+- added official 3.6.3 fix
+- fixed 6.2 compat #63113
+
+* 三 1月 23 2002 Harald Hoyer <harald@redhat.de> 12:3.6.2-12
+- tcpdump-3.6.2-snaplen.patch added to fix #55145
+
+* 二 12月 18 2001 Harald Hoyer <harald@redhat.de> 12:3.6.2-10
+- took old purge patch for filters
+- fixed #54225,#58346
+- drop root by default #49635
+- fixed #54593
+- fixed #57711
+
+* 五 8月 31 2001 Harald Hoyer <harald@redhat.de> 12:3.6.2-9
+- took better fix for #52654 from tcpdump cvs
+
+* 四 8月 30 2001 Harald Hoyer <harald@redhat.de> 11:3.6.2-8
+- fixed #52654
+
+* 四 7月 19 2001 Harald Hoyer <harald@redhat.de> 10:3.6.2-7
+- added shared library to libpcap (#47174)
+- afs printing security patch (#49294)
+
+* 三 6月 20 2001 Harald Hoyer <harald@redhat.de>
+- use initgroups, instead of setgroups
+
+* 一 6月 18 2001 Harald Hoyer <harald@redhat.de>
+- added dropgroup patches (#44563)
+
+* 一 5月 07 2001 Harald Hoyer <harald@redhat.de>
+- switched to Pekka's tcpdump-3.6.2 package
+- incremented epoch
+
+* 六 4月 14 2001 Pekka Savola <pekkas@netcore.fi>
+- fix building of tcpslice on glibc 2.2.2 (time.h)
+- disable /etc/init.d requirement and fix %post scripts in arpwatch
+
+* 三 2月 14 2001 Harald Hoyer <harald@redhat.de>
+- glibc sys/time -> time include patch
+
+* 三 2月 07 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Add space to this check
+
+* 三 2月 07 2001 Harald Hoyer <harald@redhat.com>
+- added check for presence of /etc/sysconfig/arpwatch (#23172)
+
+* 三 2月 07 2001 Pekka Savola <pekkas@netcore.fi>
+- update to 3.6.2, 0.6.2 and new CVS of tcpslice.
+- i18n'ize arpwatch init script
+
+* 五 2月 02 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- i18nize initscript
+
+* 一 1月 29 2001 Harald Hoyer <harald@redhat.com>
+- fixed EINTR stopping for e.g. SIGSTOP. (#22008)
+- added -u option for tcpdump (#20231)
+- new arpwatch version (#23172)
+- added "all" and "one" interface for -i (#20907)
+- added arpwatch sysconfig (#23172)
+
+* 一 1月 22 2001 Harald Hoyer <harald@redhat.com>
+- more (potential) overflows in libpcap. #21373
+- documentation fix for #20906
+
+* 日 1月 14 2001 Pekka Savola <pekkas@netcore.fi>
+- use --enable-ipv6
+- Add two patches from CVS to enhance 802.2 printing, and more importantly,
+  to be able to specify 'no stp'
+
+* 六 1月 13 2001 Pekka Savola <pekkas@netcore.fi>
+- Make SMB printing output a lot more quiet unless in verbose mode.
+- Make -n resolve port/protocol numbers but not hostnames, -nn for no
+  resolving at all
+- Separate droproot patch from a more generic man/usage fix one
+- Add non-promiscuous mode -by default patch, but don't apply it by default
+
+* 四 1月 11 2001 Pekka Savola <pekkas@netcore.fi>
+- Update to tcpdump 3.6.1 and libpcap 0.6.1 releases.
+
+* 一 1月 08 2001 Pekka Savola <pekkas@netcore.fi>
+- Update to 20010108 CVS, disable some upstreamed patches.
+- Change some additional .1 pages to .8.
+- Add droproot patch, some --usage and man page fixes.
+
+* 一 1月 01 2001 Pekka Savola <pekkas@netcore.fi>
+- Initial packaging with latest tcpdump.org CVS tcpdump-3.6 and libpcap-0.6.
+- add earlier print-domain.c, the latest is segfaulting
+- don't unnecesessarily include snprintf.o, it didn't compile with gcc 2.96 anyway
+- don't use savestr, require openssl, tweak tweak tweak
+- add tcpslice, patch it a bit for egcs detection
+
+* 日 12月 31 2000 Pekka Savola <pekkas@netcore.fi>
+- tcpdump: spice up the manpage about interfaces
+- tcpdump: add 'all' and 'any' keywords to -i, saner default behaviour.
+- upgrade arpwatch to 2.1a10
+
+* 日 11月 26 2000 Jeff Johnson <jbj@redhat.com>
+- more (potential) overflows in libpcap.
+
+* 日 11月 12 2000 Jeff Johnson <jbj@redhat.com>
+- eliminate still more buffer overflows (from FreeBSD) (#20069).
+
+* 四 11月 02 2000 Jeff Johnson <jbj@redhat.com>
+- eliminate more buffer overflows (from FreeBSD) (#20069).
+- 802.1q ether type incorrect (#19850).
+- add -u flag to drop arpwatch privs (#19696).
+
+* 日 10月 15 2000 Jeff Johnson <jbj@redhat.com>
+- updated ethercodes.dat
+
+* 四 10月 12 2000 Jeff Johnson <jbj@redhat.com>
+- fix arpwatch tmp race (#18943).
+
+* 五 8月 11 2000 Bill Nottingham <notting@redhat.com>
+- fix condrestart
+
+* 五 8月 11 2000 Jeff Johnson <jbj@redhat.com>
+- correct arpsnmp man pages (#15442).
+- don't print harmless ENOPROTOOPT message (#13518).
+
+* 五 8月 04 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild with final kernel headers (#13518).
+
+* 六 7月 22 2000 Jeff Johnson <jbj@redhat.com>
+- add STP patch (#14112).
+
+* 五 7月 14 2000 Matt Wilson <msw@redhat.com>
+- source /etc/init.d/functions
+- back out /etc/init.d/arpwatch, place file in /etc/rc.d
+- move initscript to /etc/init.d
+- changed initscript to use start() and stop() functions
+- added condrestart to init script
+- added %post %preun %postun scripts to register arpwatch script
+- added Prereq: for all things needed in post/preun/postun
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 7月 11 2000 Jeff Johnson <jbj@redhat.com>
+- updated man page and help (pekkas@netcore.fi) (#10739 et al).
+
+* 日 6月 18 2000 Jeff Johnson <jbj@redhat/com>
+- FHS packaging.
+
+* 二 5月 09 2000 Bill Nottingham <notting@redhat.com>
+- minor tweaks for ia64 (prototypes)
+
+* 四 2月 17 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Compile shared libpcap with -fPIC (Bug #6342)
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix descriptions
+- man pages are compressed
+
+* 三 12月 22 1999 Jeff Johnson <jbj@redhat.com>
+- remove sparc64 SIOCGIFNAME hack, not needed with (at least) kernel 2.2.12-40.
+- upgrade to ANK ss991030 snapshot with pcap magic fix (#6773).
+- add getprotobyname lookup (#6725).
+- getservbyname port lookup appears functional (#7569).
+- remove uid 2090 backdoor (sorry Dave) (#7116).
+
+* 四 9月 09 1999 Cristian Gafton <gafton@redhat.com>
+- fox the pcap.h header
+
+* 五 8月 20 1999 Jeff Johnson <jbj@redhat.com>
+- prevent segfault on obscure spoofed ip header (#4634).
+
+* 三 8月 18 1999 Jeff Johnson <jbj@redhat.com>
+- add defattr to arpwatch (#4591).
+
+* 一 8月 16 1999 Bill Nottingham <notting@redhat.com>
+- initscript munging
+
+* 日 8月 08 1999 Jeff Johnson <jbj@redhat.com>
+- add -DWORDS_BIGINDIAN to tcpdump compile on sparc sparc61.
+
+* 二 8月 03 1999 Jeff Johnson <jbj@redhat.com>
+- include A. Kuznetsov's patches to libpcap/tcpdump.
+- added arpsnmp to package (#3258).
+- arp2ethers written for different of awk (#4326).
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 10)
+
+* 五 3月 19 1999 Jeff Johnson <jbj@redhat.com>
+- strip binaries.
+
+* 三 1月 13 1999 Bill Nottingham <notting@redhat.com>
+- autoconf fixes for arm
+
+* 二 9月 29 1998 Jeff Johnson <jbj@redhat.com>
+- libpcap description typo.
+
+* 六 9月 19 1998 Jeff Johnson <jbj@redhat.com>
+- fix arpwatch summary line.
+
+* 一 8月 17 1998 Jeff Johnson <jbj@redhat.com>
+- enable arpwatch
+
+* 一 8月 03 1998 Jeff Johnson <jbj@redhat.com>
+- separate package for libpcap.
+- update tcpdump to 3.4, libpcap to 0.4.
+- added arpwatch (but disabled for now)
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 六 5月 02 1998 Alan Cox <alan@rehat.com>
+- Added the SACK printing fix so you can dump Linux 2.1+.
+
+* 二 10月 21 1997 Erik Troan <ewt@redhat.com>
+- updated to release 3.4a5
+- uses a buildroot and %attr
+
+* 四 7月 17 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

@@ -1,0 +1,21 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 9.221.4.1-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 9.221.4.1-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 9.221.4.1-1.1
+- rebuild for alios6
+
+* 一 6月 21 2010 John W. Linville <linville@tuxdriver.com> - 9.221.4.1-1
+- Update for upstream version 9.221.4.1
+
+* 三 2月 24 2010 John W. Linville <linville@tuxdriver.com> - 9.193.4.1-1
+- Update for upstream version 9.193.4.1
+
+* 二 11月 10 2009 John W. Linville <linville@tuxdriver.com> - 9.176.4.1-2
+- Add Requires for udev
+
+* 一 11月 09 2009 John W. Linville <linville@tuxdriver.com> - 9.176.4.1-1
+- Initial import
+

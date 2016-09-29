@@ -1,0 +1,32 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.1-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.1-7.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.1-7.1
+- rebuild for alios6
+
+* 二 8月 09 2011 Petr Lautrbach <plautrba@redhat.com> 1.0.1-7
+- use -Wl,-z,relro flags
+
+* 五 2月 26 2010 Petr Lautrbach <plautrba@redhat.com> 1.0.1-6
+- Add "make check" with "--with check" option
+
+* 五 2月 19 2010 Casey Dahlin <cdahlin@redhat.com> - 1.0.1-5
+- Remove libtool patch as it is no longer necessary
+
+* 三 2月 10 2010 Casey Dahlin <cdahlin@redhat.com> - 1.0.1-4
+- Fix explicit path issue
+- Fix unused shlib dependency issue
+
+* 日 2月 07 2010 Casey Dahlin <cdahlin@redhat.com> - 1.0.1-3
+- Require pkgconfig for -devel
+- Fill out buildrequires
+
+* 六 2月 06 2010 Casey Dahlin <cdahlin@redhat.com> - 1.0.1-2
+- Move library to /lib
+
+* 五 2月 05 2010 Casey Dahlin <cdahlin@redhat.com> - 1.0.1-1
+- Initial packaging
+

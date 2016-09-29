@@ -1,0 +1,12 @@
+Name        : dbus-libs                    Relocations: (not relocatable)
+Version     : 1.2.24                            Vendor: Alibaba
+Release     : 7.2.alios6                    Build Date: 2014年07月28日 星期一 20时50分53秒
+Install Date: 2015年03月25日 星期三 11时09分21秒      Build Host: x86-004.build.alibaba
+Group       : Development/Libraries         Source RPM: dbus-1.2.24-7.2.alios6.src.rpm
+Size        : 265728                           License: GPLv2+ or AFL
+Signature   : RSA/8, 2014年08月01日 星期五 14时54分31秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.freedesktop.org/software/dbus/
+Summary     : Libraries for accessing D-BUS
+Description :
+This package contains lowlevel libraries for accessing D-BUS.

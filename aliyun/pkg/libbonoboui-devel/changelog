@@ -1,0 +1,319 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.24.2-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.24.2-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.24.2-3.1
+- rebuild for alios6
+
+* 一 6月 21 2010 Matthias Clasen <mclasen@redhat.com> - 2.24.2-3
+- Updated translations
+Resolves: #589216
+
+* 六 10月 17 2009 Matthias Clasen <mclasen@redhat.com> - 2.24.2-2
+- Fix a possible infinite loop
+
+* 三 9月 23 2009 Matthias Clasen <mclasen@redhat.com> - 2.24.2-1
+- Update to 2.24.2
+
+* 四 7月 30 2009 Matthias Clasen <mclasen@redhat.com> - 2.24.1-2
+-  Rebuild
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.24.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 3月 16 2009 Matthias Clasen <mclasen@redhat.com> - 2.24.1-1
+- Update to 2.24.1
+
+* 五 2月 27 2009 Ray Strode <rstrode@redhat.com> - 2.24.0-2
+- Remove some libtool fu
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.24.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.24.0-1
+- Update to 2.24.0
+
+* 二 8月 05 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.5-1
+- Update to 2.23.5
+
+* 二 6月 17 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.4-1
+- Update to 2.23.4
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-1
+- Update to 2.22.0-1
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.21.90-2
+- Autorebuild for GCC 4.3
+
+* 二 1月 29 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.90-1
+- Update to 2.21.90
+
+* 一 9月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.0-1
+- Update to 2.20.0
+
+* 六 9月 08 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.6-4
+- Display a dialog if help cannot be found
+
+* 四 8月 23 2007 Adam Jackson <ajax@redhat.com> - 2.19.6-3
+- Rebuild for ppc toolchain bug
+
+* 二 8月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.6-2
+- Update license field
+
+* 一 7月 30 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.6-1
+- Update to 2.19.6
+
+* 六 7月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.4-2
+- Fix directory ownership
+
+* 二 6月 19 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.4-1
+- Update to 2.19.4
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.0-1
+- Update to 2.18.0
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.94-1
+- Update to 2.17.94
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.92-1
+- Update to 2.17.92
+
+* 二 2月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.91-1
+- Update to 2.17.91
+
+* 一 1月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.90-1
+- Update to 2.17.90
+
+* 三 1月 10 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.0-1
+- Update to 2.17.0
+
+* 一 9月 04 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-1.fc6
+- Update to 2.16.0
+
+* 五 9月 01 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.1-1.fc6
+- Update to 2.15.1
+- Require pkgconfig in the -devel package
+
+* 六 8月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.0-1.fc6
+- Update to 2.15.0
+- Don't ship static libraries and .la files
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.14.0-3.1
+- rebuild
+
+* 六 6月 10 2006 Matthias Clasen <mclasen@redhat.com> 2.14.0-3
+- More missing BuildRequires
+
+* 日 5月 21 2006 Matthias Clasen <mclasen@redhat.com> 2.14.0-2
+- Add missing BuildRequires (#129104)
+
+* 二 3月 14 2006 Ray Strode <rstrode@redhat.com> 2.14.0-1
+- Update to 2.14.0
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.13.1-4.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.13.1-4.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 1月 19 2006 Ray Strode <rstrode@redhat.com> 2.13.1-4
+- change sed -ie to sed -i -e
+
+* 四 1月 19 2006 Ray Strode <rstrode@redhat.com>
+- s/$(LIB)/$LIB/g
+
+* 四 1月 19 2006 Ray Strode <rstrode@redhat.com>
+- fix shlib multilib bonobo issue (bug 156982)
+
+* 一 1月 16 2006 Matthias Clasen <mclasen@redhat.com>
+- Update to 2.13.1
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 四 12月 01 2005 Matthias Clasen <mclasen@redhat.com> - 2.13.0-1
+- Update to 2.13.0
+
+* 四 9月 08 2005 Matthias Clasen <mclasen@redhat.com> - 2.10.1-1
+- Update to 2.10.1
+
+* 二 8月 16 2005 Warren Togami <wtogami@redhat.com> - 2.10.0-2
+- rebuild for new cairo
+
+* 五 8月 05 2005 Matthias Clasen <mclasen@redhat.com> 2.10.0-1
+- New upstream version
+
+* 三 4月 27 2005 Ray Strode <rstrode@redhat.com> 2.8.1-4
+- Add fixed tamil translation (bug 135354).
+
+* 五 4月 15 2005 Ray Strode <rstrode@redhat.com> 2.8.1-3
+- Remove bonobo-browser from menus (bug 154827).
+
+* 三 3月 09 2005 Than Ngo <than@redhat.com> 2.8.1-2
+- add OnlyShowIn=GNOME;
+
+* 三 2月 09 2005 Matthias Clasen <mclasen@redhat.com> - 2.8.1-1
+- Update to 2.8.1
+
+* 三 9月 29 2004 Matthias Clasen <mclasen@redhat.com> - 2.8.0.99cvs20040929-2
+- add libtoolize to make it build
+
+* 三 9月 29 2004 Matthias Clasen <mclasen@redhat.com> - 2.8.0.99cvs20040929-1
+- fix a few issues after the merge from Monday.
+
+* 一 9月 27 2004 Matthias Clasen <mclasen@redhat.com> - 2.8.0.99cvs20040927-1
+- incorporate the fix for #132988
+
+* 三 9月 22 2004 Alexander Larsson <alexl@redhat.com> - 2.8.0-1
+- update to 2.8.0
+
+* 三 8月 04 2004 Mark McLoughlin <markmc@redhat.com> 2.6.1-1
+- Update to 2.6.1
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 4月 01 2004 Alex Larsson <alexl@redhat.com> 2.6.0-1
+- update to 2.6.0
+
+* 四 3月 11 2004 Alex Larsson <alexl@redhat.com> 2.5.4-2
+- enable gtk-doc
+
+* 三 3月 10 2004 Mark McLoughlin <markmc@redhat.com> 2.5.4-1
+- Update to 2.5.4
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 Mark McLoughlin <markmc@redhat.com> 2.5.3-1
+- Update to 2.5.3
+- Remove unused bonoboui-fixed-ltmain.sh
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 1月 20 2004 Alexander Larsson <alexl@redhat.com> 2.5.2-1
+- update to 2.5.2
+
+* 三 1月 14 2004 Jeremy Katz <katzj@redhat.com> 2.4.3-1
+- update to 2.4.3
+
+* 三 9月 03 2003 Alexander Larsson <alexl@redhat.com> 2.4.0-1
+- Update to 2.4.0
+
+* 二 8月 12 2003 Alexander Larsson <alexl@redhat.com> 2.3.6-2
+- update for gnome 2.3
+
+* 三 7月 23 2003 Havoc Pennington <hp@redhat.com> 2.2.2-2
+- remove LIBTOOL=/usr/bin/libtool
+- automated rebuild
+
+* 三 7月 09 2003 Havoc Pennington <hp@redhat.com> 2.2.2-1
+- 2.2.2
+
+* 四 6月 26 2003 Havoc Pennington <hp@redhat.com> 2.2.0-3
+- rebuild
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 05 2003 Alexander Larsson <alexl@redhat.com> 2.2.0-1
+- 2.2.0
+
+* 二 1月 28 2003 Matt Wilson <msw@redhat.com> 2.1.2-3
+- use LIBTOOL=/usr/bin/libtool
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 日 1月 12 2003 Havoc Pennington <hp@redhat.com>
+- 2.1.2
+
+* 一 12月 02 2002 Havoc Pennington <hp@redhat.com>
+- 2.1.1
+- remove lib64 hackaround, upstream looks fixed
+
+* 一 11月 11 2002 Havoc Pennington <hp@redhat.com>
+- 2.1.0
+- force-move some stuff from prefix/lib to libdir
+
+* 四 8月 29 2002 Havoc Pennington <hp@redhat.com>
+- libtoolize with our latest libtool to try fixing rpaths
+
+* 一 8月 12 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.1
+
+* 三 6月 26 2002 Owen Taylor <otaylor@redhat.com>
+- Fix find_lang
+
+* 日 6月 16 2002 Havoc Pennington <hp@redhat.com>
+- 2.0.0
+- include sample server in libdir
+- remove .a files from glade module dir
+
+* 五 6月 07 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 三 6月 05 2002 Havoc Pennington <hp@redhat.com>
+- 1.118.0
+- remove empty AUTHORS file
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 20 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 一 5月 20 2002 Havoc Pennington <hp@redhat.com>
+- 1.117.0
+
+* 五 5月 03 2002 Havoc Pennington <hp@redhat.com>
+- 1.116.0
+
+* 四 4月 04 2002 Jeremy Katz <katzj@redhat.com>
+- 1.113.0
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- 1.111.0
+
+* 三 1月 30 2002 Owen Taylor <otaylor@redhat.com>
+- Version 1.110.0
+- Reintoolize to fix DBM problems
+
+* 一 1月 28 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in rawhide
+
+* 一 1月 07 2002 Havoc Pennington <hp@redhat.com>
+- 1.108.1.90 cvs snap
+
+* 二 11月 27 2001 Havoc Pennington <hp@redhat.com>
+- 1.107.0.90 snap, explicit requires lines for dependencies
+- add libtool hack to avoid relinking
+
+* 一 10月 29 2001 Havoc Pennington <hp@redhat.com>
+- add glade dependency, add glade module to file list
+
+* 日 10月 28 2001 Havoc Pennington <hp@redhat.com>
+- rebuild with glib 1.3.10, new cvs snap
+
+* 一 10月 15 2001 Havoc Pennington <hp@redhat.com>
+- rebuild, hoping build root is fixed
+
+* 一 10月 15 2001 Havoc Pennington <hp@redhat.com>
+- grumble, build require newer gtk
+- require libart_lgpl-devel not the non-devel package
+
+* 一 10月 15 2001 Havoc Pennington <hp@redhat.com>
+- cvs snap with menu stuff fixed so gnome-terminal works
+
+* 五 10月 05 2001 Havoc Pennington <hp@redhat.com>
+- new tarball, rebuild for new glib
+
+* 一 9月 24 2001 Havoc Pennington <hp@redhat.com>
+- new cvs snap, fix up prereqs/requires a bit
+
+* 二 9月 18 2001 Havoc Pennington <hp@redhat.com>
+- Initial build.
+

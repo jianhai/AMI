@@ -1,0 +1,8 @@
+postinstall scriptlet (using /bin/sh):
+for dir in /usr/share/icons/*; do
+  if test -d "$dir"; then
+    if test -f "$dir/index.theme"; then
+      /usr/bin/gtk-update-icon-cache --quiet "$dir" || :
+    fi
+  fi
+done

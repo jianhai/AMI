@@ -1,0 +1,12 @@
+Name        : mesa-dri-filesystem          Relocations: (not relocatable)
+Version     : 9.2                               Vendor: Alibaba
+Release     : 0.5.3.alios6.2                Build Date: 2014年07月28日 星期一 23时30分50秒
+Install Date: 2015年03月25日 星期三 11时09分24秒      Build Host: x86-001.build.alibaba
+Group       : User Interface/X Hardware Support   Source RPM: mesa-9.2-0.5.3.alios6.2.src.rpm
+Size        : 25493                            License: MIT
+Signature   : RSA/8, 2014年08月01日 星期五 14时57分15秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.mesa3d.org
+Summary     : Mesa DRI driver filesystem
+Description :
+Mesa DRI driver filesystem

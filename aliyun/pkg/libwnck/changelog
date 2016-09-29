@@ -1,0 +1,435 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.0-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.0-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.28.0-3.1
+- rebuild for alios6
+
+* 四 3月 03 2011 Ray Strode <rstrode@redhat.com> 2.28.0-3
+- Add new api for adjusting sort policy of windows in groups.
+  Resolves: #673231
+
+* 二 7月 27 2010 Soren Sandmann <ssp@redhat.com> - 2.28.0-2
+- Translation updates
+
+* 一 9月 21 2009 Matthias Clasen <mclasen@redhat.com> - 2.28.0-1
+- Update to 2.28.0
+
+* 三 9月 09 2009 Matthias Clasen <mclasen@redhat.com> - 2.27.92-1
+- Update to 2.27.92
+
+* 二 7月 28 2009 Matthias Clasen <mclasen@redhat.com> - 2.27.5-1
+- Update to 2.27.5
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.27.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 15 2009 Matthias Clasen <mclasen@redhat.com> - 2.27.4-1
+- Update to 2.27.4
+
+* 一 4月 13 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.1-1
+- Update to 2.26.1
+- See http://download.gnome.org/sources/libwnck/2.26/libwnck-2.26.1.news
+
+* 一 3月 16 2009 Matthias Clasen <mclasen@redhat.com> - 2.26.0-1
+- Update to 2.26.0
+
+* 二 2月 24 2009 Warren Togami <wtogami@redhat.com> - 2.25.91-2
+- libwnck-devel Requires libxRes-devel (#485957)
+
+* 二 2月 17 2009 Matthias Clasen <mclasen@redhat.com> - 2.25.91-1
+- Update to 2.25.91
+
+* 二 1月 20 2009 Matthias Clasen <mclasen@redhat.com> - 2.25.5-1
+- Update to 2.25.5
+
+* 二 12月 16 2008 Matthias Clasen <mclasen@redhat.com> - 2.25.3-1
+- Update to 2.25.3
+
+* 三 10月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.24.1-1
+- Update to 2.24.1
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.24.0-1
+- Update to 2.24.0
+
+* 一 9月 08 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.92-1
+- Update to 2.23.92
+
+* 二 9月 02 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.91-1
+- Update to 2.23.91
+
+* 一 8月 04 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.6-1
+- Update to 2.23.6
+
+* 二 6月 17 2008 Matthias Clasen <mclasen@redhat.com> - 2.23.4-1
+- Update to 2.23.4
+
+* 一 4月 07 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.1-1
+- Update to 2.22.1
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.0-1
+- Update to 2.22.0
+
+* 二 2月 26 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.92-1
+- Update to 2.21.92
+
+* 二 2月 12 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.91-1
+- Update to 2.21.91
+
+* 一 1月 28 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.90-1
+- Update to 2.21.90
+
+* 一 1月 14 2008 Matthias Clasen <mclasen@redhat.com> - 2.21.5-1
+- Update to 2.21.5
+
+* 二 11月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.21.2.1-1
+- Update to 2.21.2.1
+
+* 一 11月 12 2007 Matthias Clasen <mclasen@redhat.com> - 2.21.2-1
+- Update to 2.21.2
+- Drop upstreamed patch
+
+* 一 10月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1-3
+- Fix a small oversight in the previous patch
+
+* 一 10月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1-2
+- Don't crash if the X resource extension is missing (#343881)
+
+* 一 10月 15 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.1-1
+- Update to 2.20.1 (crash fixes, translation updates)
+
+* 一 9月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.20.0-1
+- Update to 2.20.0
+
+* 二 9月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.92-1
+- Update to 2.19.92 (translations)
+
+* 二 8月 21 2007 Adam Jackson <ajax@redhat.com> - 2.19.90-2
+- Rebuild for build id
+
+* 一 8月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.90-1
+- Update to 2.19.90
+
+* 五 8月 03 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.6-2
+- Upate the license field
+
+* 一 7月 30 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.6-1
+- Update to 2.19.6
+
+* 三 7月 25 2007 Jesse Keating <jkeating@redhat.com> - 2.19.5-3
+- Rebuild for RH #249435
+
+* 二 7月 24 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.5-2
+- Fix a crash on shutdown in the wnck-applet
+
+* 日 7月 08 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.5-1
+- Update to 2.19.5
+
+* 一 6月 18 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.4-1
+- Update to 2.19.4
+
+* 二 6月 05 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.3.1-1
+- Update to 2.19.3.1
+
+* 一 6月 04 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.3-2
+- Require startup-notification-devel in the -devel package
+
+* 一 6月 04 2007 - Bastien Nocera <bnocera@redhat.com> - 2.19.3-1
+- Update to 2.19.3
+- Update viewport patch
+
+* 六 5月 19 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.2-1
+- Update to 2.19.2
+- Update patches
+
+* 二 4月 10 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.0-3
+- Plug a small memory leak
+
+* 三 3月 28 2007 Kristian Høgsberg <krh@redhat.com> - 2.18.0-2
+- Add compiz integration patches from GNOME #352383:
+   - libwnck-2.18.0-appearance.patch
+   - libwnck-2.18.0-viewport.patch
+   - libwnck-2.18.0-above.patch
+
+* 二 3月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.0-1
+- Update to 2.18.0
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.92-1
+- Update to 2.17.92
+
+* 二 2月 13 2007 Matthias Clasen <mclasen@redhat.com> - 2.17.91-1
+- Update to 2.17.91
+
+* 二 12月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.2-1
+- Update to 2.16.2
+
+* 六 10月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.1-1
+- Update to 2.16.1
+
+* 日 10月 01 2006 Jesse Keating <jkeating@redhat.com> - 2.16.0-4
+- rebuilt for unwind info generation, broken in gcc-4.1.1-21
+
+* 一 9月 25 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-3
+- Make the pager visible when using compiz
+
+* 一 9月 11 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-2
+- Avoid excessive icon geometry updates
+
+* 一 9月 04 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-1.fc6
+- Update to 2.16.0
+
+* 一 8月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.92-1.fc6
+- Update to 2.15.92
+- Require pkgconfig in the -devel package
+
+* 六 8月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.91-1.fc6
+- Update to 2.15.91
+- Don't ship static libraries
+
+* 四 8月 10 2006 Kristian Høgsberg <krh@redhat.com> - 2.15.90-1.fc5.aiglx
+- Build for fc5 aiglx repo.
+
+* 四 8月 03 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.90-1.fc6
+- Update to 2.15.90
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.4-1
+- Update to 2.15.4
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.15.3-1.1
+- rebuild
+
+* 二 6月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.3-1
+- Update to 2.15.3
+
+* 六 6月 10 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.2-3
+- More BuildRequires
+
+* 六 5月 20 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.2-2
+- Fix missing BuildRequires (#129340)
+
+* 三 5月 17 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.2-1
+- Update to 2.15.2
+
+* 一 4月 10 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.1-2
+- Update to 2.14.1
+
+* 一 3月 13 2006 Ray Strode <rstrode@redhat.com> - 2.14.0-1
+- Update to 2.14.0
+
+* 一 2月 27 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.92-1
+- Update to 2.13.92
+
+* 一 2月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.91-1
+- Update to 2.13.91
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.13.90-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.13.90-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 30 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.90-1
+- Update to 2.13.90
+
+* 一 1月 16 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.5-1
+- Update to 2.13.5
+
+* 二 1月 03 2006 Matthias Clasen <mclasen@redhat.com> - 2.13.4-1
+- Update to 2.13.4
+
+* 三 12月 14 2005 Matthias Clasen <mclasen@redhat.com> - 2.13.3-1
+- Update to 2.13.3
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 30 2005 Matthias Clasen <mclasen@redhat.com> - 2.13.2-1
+- Update to 2.13.2
+
+* 四 10月 06 2005 Matthias Clasen <mclasen@redhat.com> - 2.12.1-1
+- Update to 2.12.1
+
+* 四 9月 08 2005 Matthias Clasen <mclasen@redhat.com> - 2.12.0-1
+- Update to 2.12.0
+
+* 二 8月 16 2005 Warren Togami <wtogami@redhat.com> - 2.11.91-2
+- rebuild for new cairo
+
+* 二 8月 09 2005 Ray Strode <rstrode@redhat.com> 2.11.91-1
+- New upstream version
+
+* 一 7月 11 2005 Matthias Clasen <mclasen@redhat.com> 2.11.4-1
+- New upstream version
+
+* 一 5月 30 2005 Elijah Newren  <newren@gamil.com> 2.10.0-4
+- add support for urgent hint (#157271)
+
+* 二 5月 10 2005 Ray Strode <rstrode@redhat.com> 2.10.0-3
+- fix some rendering issues with the last patch
+
+* 二 5月 10 2005 Ray Strode <rstrode@redhat.com> 2.10.0-2
+- add noticable glowing effect to task bar to counteract
+  focus stealing prevention (bug #157285)
+
+* 一 3月 14 2005 Matthias Clasen <mclasen@redhat.com> 2.10.0-1
+- Update to 2.10.0
+
+* 三 3月 02 2005 Mark McLoughlin <markmc@redhat.com> 2.9.91-2
+- Rebuild with gcc4
+
+* 三 2月 09 2005 Matthias Clasen <mclasen@redhat.com> 2.9.91-1
+- Update to 2.9.91
+
+* 五 1月 28 2005 Matthias Clasen <mclasen@redhat.com> 2.9.90-1
+- Update to 2.9.90
+
+* 二 10月 12 2004 Mark McLoughlin <markmc@redhat.com> 2.8.1-1
+- Update to 2.8.1
+
+* 二 9月 28 2004 Mark McLoughlin <markmc@redhat.com> 2.8.0.1-1
+- Update to 2.8.0.1
+
+* 二 9月 21 2004 Mark McLoughlin <markmc@redhat.com> - 2.8.0-2
+- Add patch to fix runtime warning spew - bug #132921
+
+* 二 9月 21 2004 Mark McLoughlin <markmc@redhat.com> 2.8.0-1
+- Update to 2.8.0
+
+* 一 8月 30 2004 Mark McLoughlin <markmc@redhat.com> 2.7.92-1
+- Update to 2.7.92
+- Include API docs
+
+* 三 8月 18 2004 Mark McLoughlin <markmc@redhat.com> 2.7.91-1
+- Update to 2.7.91
+
+* 三 8月 04 2004 Mark McLoughlin <markmc@redhat.com> 2.7.90-1
+- Update to 2.7.90
+
+* 二 7月 27 2004 Mark McLoughlin <markmc@redhat.com> 2.6.0.1-4
+- Rebuilt
+
+* 二 7月 27 2004 Mark McLoughlin <markmc@redhat.com> 2.6.0.1-3
+- Patch from upstream which fixes a nasty viewport issue obvious when
+  using it with sawfish (#120652)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 3月 31 2004 Mark McLoughlin <markmc@redhat.com> 2.6.0.1-1
+- Update to 2.6.0.1
+
+* 一 3月 22 2004 Mark McLoughlin <markmc@redhat.com>
+- Don't explicitly require startup-notification in the .pc file - bug #111091
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 24 2004 Mark McLoughlin <markmc@redhat.com> 2.5.90-1
+- Update to 2.5.90
+
+* 二 2月 17 2004 Alexander Larsson <alexl@redhat.com> 2.5.1-3
+- Link to Xres now that it is PIC
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 1月 26 2004 Alexander Larsson <alexl@redhat.com> 2.5.1-1
+- Upgrade to 2.5.1
+- Disable XRes usage due to #114292
+
+* 五 10月 03 2003 Alexander Larsson <alexl@redhat.com> 2.4.0.1-1
+- 2.4.0.1
+
+* 二 9月 09 2003 Alexander Larsson <alexl@redhat.com> 2.4.0-1
+- update to 2.4.0
+
+* 四 8月 14 2003 Alexander Larsson <alexl@redhat.com> 2.3.1-1
+- update for gnome 2.3
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Havoc Pennington <hp@redhat.com> 2.2.2-1
+- 2.2.2
+
+* 四 4月 03 2003 Matt Wilson <msw@redhat.com> 2.2.1-3
+- make sure that _NET_DECKTOP_LAYOUT is only 4 elements.  Using
+  "sizeof (data) / 4" results in 8 elements being set on 64 bit
+  platforms.  Just use "4" instead. (#87951)
+
+* 五 2月 14 2003 Havoc Pennington <hp@redhat.com> 2.2.1-2
+- remove Xft buildreq
+
+* 三 2月 05 2003 Havoc Pennington <hp@redhat.com> 2.2.1-1
+- 2.2.1 adds StartupWMClass to tasklist
+- require startup-notification 0.5
+
+* 三 2月 05 2003 Alexander Larsson <alexl@redhat.com>
+- 2.2.0
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 1月 10 2003 Havoc Pennington <hp@redhat.com>
+- 2.1.90
+
+* 一 12月 02 2002 Havoc Pennington <hp@redhat.com>
+- 2.1.5
+
+* 五 11月 08 2002 Havoc Pennington <hp@redhat.com>
+- 2.1.3
+
+* 四 10月 31 2002 Havoc Pennington <hp@redhat.com>
+- 0.18 that displays standalone dialogs in task list
+
+* 日 8月 25 2002 Havoc Pennington <hp@redhat.com>
+- 0.17 allows clicking a task to minimize it, and DND over a task to
+  switch to it, adds translations, and fixes a couple crash things in
+  the accessibility stuff.
+
+* 四 8月 08 2002 Havoc Pennington <hp@redhat.com>
+- 0.16 with some tasklist fixes and 
+  pager fixes
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 6月 16 2002 Havoc Pennington <hp@redhat.com>
+- remove empty NEWS
+
+* 日 6月 16 2002 Havoc Pennington <hp@redhat.com>
+- 0.14
+
+* 四 6月 06 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 二 6月 04 2002 Havoc Pennington <hp@redhat.com>
+- 0.13
+- add ldconfig to post/postun
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 5月 20 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 五 5月 17 2002 Havoc Pennington <hp@redhat.com>
+- 0.12
+
+* 四 5月 02 2002 Havoc Pennington <hp@redhat.com>
+- 0.9
+
+* 三 4月 17 2002 Havoc Pennington <hp@redhat.com>
+- 0.8
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- 0.3
+
+* 三 1月 30 2002 Owen Taylor <otaylor@redhat.com>
+- Rebuild with new glib and gtk+
+
+* 三 1月 23 2002 Havoc Pennington <hp@redhat.com>
+- Initial build
+

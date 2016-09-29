@@ -1,0 +1,62 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0:0.9.94-0.8.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0:0.9.94-0.8.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0:0.9.94-0.8.1
+- rebuild for alios6
+
+* 二 1月 26 2010 Deepak Bhole <dbhole@redhat.com> 0.9.94-0.7
+- Fix switch that was causing test failure
+
+* 二 1月 05 2010 Andrew Overholt <overholt@redhat.com> 0.9.94-0.7
+- Really build with ant.
+
+* 一 12月 14 2009 Andrew Overholt <overholt@redhat.com> 0.9.94-0.6
+- Build with ant.
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0:0.9.94-0.5
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:0.9.94-0.4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:0.9.94-0.3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 7月 09 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0:9.94-0.2
+- drop repotag
+
+* 一 3月 24 2008 Matt Wringe <mwringe@redhat.com> - 0:9.94-0jpp.1
+- Update to 0.9.94 (BZ #436204)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0:0.9.9-2jpp.1
+- Autorebuild for GCC 4.3
+
+* 二 3月 06 2007 Matt Wringe <mwringe@redhat.com> - 0:0.9.9-1jpp.1
+- Add option to build with ant.
+- Fix various rpmlint issues
+- Specify proper license
+
+* 四 5月 04 2006 Alexander Kurtakov <akurtkov at gmail.com> - 0:0.9.9-1jpp
+- Upgrade to 0.9.9
+
+* 四 5月 04 2006 Ralph Apel <r.apel at r-apel.de> - 0:0.9.5-1jpp
+- Upgrade to 0.9.5
+- First JPP-1.7 release
+
+* 一 4月 25 2005 Fernando Nasser <fnasser@redhat.com> - 0:0.9.1-1jpp
+- Upgrade to 0.9.1
+- Disable attempt to include external jars
+
+* 一 4月 25 2005 Fernando Nasser <fnasser@redhat.com> - 0:0.8.1-3jpp
+- Changes to use locally installed DTDs
+- Do not try and access sun site for linking javadoc
+
+* 一 8月 23 2004 Randy Watler <rwatler at finali.com> - 0:0.8.1-2jpp
+- Rebuild with ant-1.6.2
+
+* 一 1月 26 2004 David Walluck <david@anti-microsoft.org> 0:0.8.1-1jpp
+- release
+

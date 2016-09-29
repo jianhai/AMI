@@ -1,0 +1,52 @@
+/sbin/ldconfig  
+/usr/sbin/glibc_post_upgrade.x86_64  
+basesystem  
+config(glibc) = 2.12-1.166.alios6.7
+glibc-common = 2.12-1.166.alios6.7
+ld-linux-x86-64.so.2()(64bit)  
+ld-linux-x86-64.so.2(GLIBC_2.2.5)(64bit)  
+ld-linux-x86-64.so.2(GLIBC_2.3)(64bit)  
+libBrokenLocale.so.1()(64bit)  
+libCNS.so()(64bit)  
+libGB.so()(64bit)  
+libISOIR165.so()(64bit)  
+libJIS.so()(64bit)  
+libJISX0213.so()(64bit)  
+libKSC.so()(64bit)  
+libanl.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.2)(64bit)  
+libc.so.6(GLIBC_2.3.3)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libcidn.so.1()(64bit)  
+libcrypt.so.1()(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+libfreebl3.so()(64bit)  
+libfreebl3.so(NSSRAWHASH_3.12.3)(64bit)  
+libgcc  
+libm.so.6()(64bit)  
+libnsl.so.1()(64bit)  
+libnsl.so.1(GLIBC_2.2.5)(64bit)  
+libnss_compat.so.2()(64bit)  
+libnss_dns.so.2()(64bit)  
+libnss_files.so.2()(64bit)  
+libnss_hesiod.so.2()(64bit)  
+libnss_nis.so.2()(64bit)  
+libnss_nisplus.so.2()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+libresolv.so.2()(64bit)  
+libresolv.so.2(GLIBC_2.2.5)(64bit)  
+libresolv.so.2(GLIBC_2.9)(64bit)  
+librt.so.1()(64bit)  
+libthread_db.so.1()(64bit)  
+libutil.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

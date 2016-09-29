@@ -1,0 +1,65 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:20080701-20.2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:20080701-20.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2:20080701-20.2.1
+- rebuild for alios6
+
+* 一 4月 26 2010 Dennis Gregorovic <dgregor@redhat.com> - 2:20080701-20.2
+- Rebuilt for RHEL 6
+- Related: rhbz#566527
+
+* 一 4月 26 2010 Dennis Gregorovic <dgregor@redhat.com> - 2:20080701-20.1
+- Rebuilt for RHEL 6
+Related: rhbz#566527
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:20080701-20
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:20080701-19
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 8月 24 2008 Axel Thimm <Axel.Thimm@ATrpms.net> - 2:20080701-18
+- Update to 20080701.
+
+* 三 3月 05 2008 Axel Thimm <Axel.Thimm@ATrpms.net> - 2:20070217-17
+- Many fixes by Jarod Wilson.
+- Rip out legacy support.
+
+* 六 2月 02 2008 Axel Thimm <Axel.Thimm@ATrpms.net> - 2:20070217-16
+- Place licenses next to firmware images.
+
+* 六 12月 22 2007 Axel Thimm <Axel.Thimm@ATrpms.net> - 2:20070217-15.1
+- Own directories from legacy paths.
+
+* 三 10月 24 2007 Axel Thimm <Axel.Thimm@ATrpms.net> - 2:20070217-15
+- Add v4l-cx2341x-init.mpg as a pseudo-firmware.
+
+* 三 2月 28 2007 Axel Thimm <Axel.Thimm@ATrpms.net> - 2:20070217-13
+- Modify versioning to follow date.
+
+* 一 5月 29 2006 Axel Thimm <Axel.Thimm@ATrpms.net>
+- Update firmwares to recommended versions.
+- Merge in audio firmware.
+
+* 二 1月 04 2005 Axel Thimm <Axel.Thimm@ATrpms.net>
+- Initial build for audio firmware.
+
+* 四 10月 28 2004 Axel Thimm <Axel.Thimm@ATrpms.net>
+- Update firmware to 1.8a.
+- split package into enc/dec firmwares.
+- version acording to origin, note that the two firmwares have
+  different versions, so none is really suitable for the main package.
+
+* 三 3月 03 2004 Axel Thimm <Axel.Thimm@ATrpms.net>
+- Change versioning (previous was based on Windows driver).
+- need to bump epoch for that :(
+
+* 六 2月 28 2004 Axel Thimm <Axel.Thimm@ATrpms.net>
+- Update to 1.8 (22035).
+
+* 一 12月 29 2003 Axel Thimm <Axel.Thimm@ATrpms.net>
+- Initial build.
+

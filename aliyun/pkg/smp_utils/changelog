@@ -1,0 +1,45 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.94-4.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.94-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.94-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.94-4.1
+- rebuild for alios6
+
+* 三 6月 30 2010 Dan Horák <dhorak@redhat.com> 0.94-4
+- rebuilt with -fno-strict-aliasing (#605115)
+- Resolves: #605115
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.94-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 3月 09 2009 Dan Horák <dan[at]danny.cz> 0.94-2
+- update BuildRoot
+
+* 一 2月 02 2009 Dan Horák <dan[at]danny.cz> 0.94-1
+- update for Fedora compliance
+
+* 一 12月 29 2008 - dgilbert at interlog dot com
+- adjust sgv4 for lk 2.6.27, sync with sas2r15
+  * smp_utils-0.94
+
+* 日 1月 06 2008 - dgilbert at interlog dot com
+- sync with sas2r13, add 'sgv4' interface
+  * smp_utils-0.93
+
+* 五 12月 08 2006 - dgilbert at interlog dot com
+- sync against sas2r07, add smp_conf_general
+  * smp_utils-0.92
+
+* 二 8月 22 2006 - dgilbert at interlog dot com
+- add smp_phy_test and smp_discover_list, uniform exit status values
+  * smp_utils-0.91
+
+* 日 6月 11 2006 - dgilbert at interlog dot com
+- add smp_read_gpio, smp_conf_route_info and smp_write_gpio
+  * smp_utils-0.90
+

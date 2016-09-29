@@ -1,0 +1,7 @@
+gvfs = 1.4.3-12.3.alios6
+libgvfscommon-dnssd.so.0()(64bit)  
+libgvfscommon.so.0()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(PayloadIsXz) <= 5.2-1

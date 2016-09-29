@@ -1,0 +1,146 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.13.1-2.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.13.1-2.1
+- rebuild for alios6-update
+
+* 四 7月 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.13.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 二 4月 10 2012 Adam Jackson <ajax@redhat.com> 0.13.1-1
+- libpciaccess 0.13.1
+
+* 三 3月 28 2012 Adam Jackson <ajax@redhat.com> 0.13-2
+- libpciaccess-macros.patch: Fix out* macros again
+
+* 三 3月 28 2012 Adam Jackson <ajax@redhat.com> 0.13-1
+- libpciaccess 0.13
+
+* 三 2月 29 2012 Dan Horák <dan[at]danny.cz> - 0.12.902-6
+- fix the out[bwl] compatibility macros
+
+* 四 2月 16 2012 Peter Robinson <pbrobinson@fedoraproject.org> - 0.12.902-5
+- Add ARM arch to libpciaccess-lol-dev-port patch
+
+* 三 2月 08 2012 Adam Jackson <ajax@redhat.com> 0.12.902-4
+- libpciaccess-lol-dev-port.patch: Don't use /dev/port since the kernel insists
+  that it remain unusably broken.
+
+* 五 1月 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.12.902-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 一 11月 28 2011 Daniel Drake <dsd@laptop.org> 0.12.902-2
+- Add upstream patch to fix ios deletion; fixes X crash on OLPC XO-1.5
+
+* 三 11月 09 2011 Adam Jackson <ajax@redhat.com> 0.12.902-1
+- libpciaccess 0.12.902
+
+* 三 11月 09 2011 Peter Hutterer <peter.hutterer@redhat.com> 0.12.901-1
+- Today's git snapshot
+
+* 三 2月 09 2011 Adam Jackson <ajax@redhat.com> 0.12.1-1
+- libpciaccess 0.12.1
+
+* 二 2月 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.12.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 三 7月 21 2010 Dave Airlie <airlied@redhat.com> 0.12.0-1
+- libpciaccess 0.12
+
+* 二 3月 16 2010 Adam Jackson <ajax@redhat.com> 0.11.0-1
+- libpciaccess 0.11
+
+* 三 12月 09 2009 Adam Jackson <ajax@redhat.com> 0.10.9-2.20091209
+- New git snapshot
+- Drop the fd cache patch
+
+* 五 9月 25 2009 Dave Airlie <airlied@redhat.com> 0.10.9-1
+- rebase to latest upstream release - drop patches
+
+* 四 8月 06 2009 Dave Airlie <airlied@redhat.com> 0.10.6-7
+- disable rom reading fallbacks
+
+* 三 8月 05 2009 Adam Jackson <ajax@redhat.com> 0.10.6-6
+- D'oh.  Fix obvious sense inversion in the previous patch.
+
+* 三 8月 05 2009 Adam Jackson <ajax@redhat.com> 0.10.6-5
+- libpciaccess-0.10.6-rom-sanity.patch: If we hit the /dev/mem path for
+  reading a device's ROM, verify that it looks like it at least might belong
+  to the device in question by checking vendor and device ID match.  Fixes
+  vbetool post hanging forever (and thus blocking boot) on some dual-gpu
+  laptops.
+
+* 一 8月 03 2009 Dave Airlie <airlied@redhat.com> 0.10.6-4
+- Add support for default vga arb device selection
+- Update libpciaccess VGA arb code for newer kernel API
+
+* 五 7月 31 2009 Dave Airlie <airlied@redhat.com> 0.10.6-3
+- enable autoreconf to rebuild configure properly
+
+* 五 7月 31 2009 Dave Airlie <airlied@redhat.com> 0.10.6-2
+- libpciaccess-vga-arbiter.patch: add vga arbiter support to libpciaccess
+
+* 一 7月 27 2009 Dave Airlie <airlied@redhat.com> 0.10.6-1
+- rebase to latest release (will do release with VGA bits later)
+- libpciaccess-boot-vga.patch: add boot vga patch from upstream
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 4月 21 2009 Adam Jackson <ajax@redhat.com> 0.10.5-1
+- libpciaccess 0.10.5
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.3-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 2月 15 2009 Kristian Høgsberg <krh@redhat.com> - 0.10.3-5
+- Unbreak the rom-size patch.
+
+* 日 2月 15 2009 Kristian Høgsberg <krh@redhat.com> - 0.10.3-4
+- Don't read more than the advertised rom_size.
+
+* 四 8月 28 2008 Adam Jackson <ajax@redhat.com> 0.10.3-3
+- Rediff for --fuzz=0
+
+* 三 7月 02 2008 Adam Jackson <ajax@redhat.com> 0.10.3-2
+- Fix file access mode in config fd cache. (#452910)
+
+* 二 7月 01 2008 Adam Jackson <ajax@redhat.com> 0.10.3-1
+- libpciaccess 0.10.3
+
+* 二 5月 20 2008 Adam Jackson <ajax@redhat.com> 0.10-3
+- libpciaccess-no-pci-fix.patch: Fix init when /sys/bus/pci is empty or
+  nonexistent.
+
+* 一 4月 21 2008 Dave Airlie <airlied@redhat.com> 0.10-2
+- fix major problem with libpciaccess and write combining.
+
+* 四 3月 06 2008 Adam Jackson <ajax@redhat.com> 0.10-1
+- libpciaccess 0.10
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.9.1-4.20071031
+- Autorebuild for GCC 4.3
+
+* 三 1月 23 2008 Adam Jackson <ajax@redhat.com> 0.9.1-3.20071031
+- libpciaccess-fd-cache.patch: Cache sysfs PCI config space file
+  descriptors for great boot speed justice.
+
+* 三 10月 31 2007 Kristian Høgsberg <krh@redhat.com> 0.9.1-2.20071031
+- New snapshot, git revision e392082abb5696c8837224da86cc0af4f21d7010.
+- Pick up new .so file.
+
+* 一 9月 24 2007 Adam Jackson <ajax@redhat.com> 0.9.1-1
+- libpciaccess 0.9.1
+
+* 一 8月 27 2007 Adam Jackson <ajax@redhat.com> 0.8-0.4.20070827git
+- New snapshot.
+
+* 五 8月 24 2007 Adam Jackson <ajax@redhat.com> 0.8-0.3.20070712git
+- Rebuild for PPC toolchain bug
+
+* 四 7月 12 2007 Adam Jackson <ajax@redhat.com> 0.8-0.2.20070712git
+- New snapshot.  Adds VGA ROM support.
+
+* 四 5月 24 2007 Adam Jackson <ajax@redhat.com> 0.8-0.1.20070524git
+- Initial revision.
+

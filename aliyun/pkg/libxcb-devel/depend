@@ -1,0 +1,37 @@
+/usr/bin/pkg-config  
+libxcb = 1.8.1-1.2.alios6
+libxcb-composite.so.0()(64bit)  
+libxcb-damage.so.0()(64bit)  
+libxcb-dpms.so.0()(64bit)  
+libxcb-dri2.so.0()(64bit)  
+libxcb-glx.so.0()(64bit)  
+libxcb-randr.so.0()(64bit)  
+libxcb-record.so.0()(64bit)  
+libxcb-render.so.0()(64bit)  
+libxcb-res.so.0()(64bit)  
+libxcb-screensaver.so.0()(64bit)  
+libxcb-shape.so.0()(64bit)  
+libxcb-shm.so.0()(64bit)  
+libxcb-sync.so.0()(64bit)  
+libxcb-xevie.so.0()(64bit)  
+libxcb-xf86dri.so.0()(64bit)  
+libxcb-xfixes.so.0()(64bit)  
+libxcb-xinerama.so.0()(64bit)  
+libxcb-xselinux.so.0()(64bit)  
+libxcb-xtest.so.0()(64bit)  
+libxcb-xv.so.0()(64bit)  
+libxcb-xvmc.so.0()(64bit)  
+libxcb.so.1()(64bit)  
+pkgconfig  
+pkgconfig(xau) >= 0.99.2
+pkgconfig(xcb)  
+pkgconfig(xcb-render)  
+pkgconfig(xcb-shape)  
+pkgconfig(xcb-shm)  
+pkgconfig(xcb-xfixes)  
+pkgconfig(xcb-xv)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

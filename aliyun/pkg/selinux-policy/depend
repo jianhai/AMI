@@ -1,0 +1,17 @@
+/bin/awk  
+/bin/mktemp  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/usr/bin/bunzip2  
+checkpolicy >= 2.0.21-1
+config(selinux-policy) = 3.7.19-231.2.alios6.3
+libsemanage >= 2.0.14-3
+m4  
+policycoreutils >= 2.0.78-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

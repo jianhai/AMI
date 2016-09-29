@@ -1,0 +1,308 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.10.29-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.10.29-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.10.29-1.1
+- rebuild for alios6
+
+* 四 6月 17 2010 Benjamin Otte <otte@redhat.com> 0.10.29-1
+- Update to 0.10.29
+- Sync with Fedora
+Resolves: rhbz#603105
+
+* 日 6月 06 2010 Benjamin Otte <otte@redhat.com> 0.10.26-3
+- Get rid of tabs - use spaces instead.
+Resolves: rhbz#600981
+
+* 五 4月 30 2010 Benjamin Otte <otte@redhat.com> 0.10.26-2
+- Make a noarch devel-docs subpackage to avoid conflicts
+Resolves: rhbz#587261
+
+* 五 2月 12 2010 Bastien Nocera <bnocera@redhat.com> 0.10.26-1
+- Update to 0.10.26
+Related: rhbz#564325
+
+* 三 1月 13 2010 Adam Jackson <ajax@redhat.com> 0.10.25.1-2.1
+- rtsp-include-fix.patch: Don't declare h_errno, that's netdb.h's job.
+- Sync with F-12 updates
+
+* 一 11月 30 2009 Bastien Nocera <bnocera@redhat.com> 0.10.25.1-2
+- Fix theoradec bug with timestamps for Empathy video calls (#537170)
+- Fix text subtitle display regression (#537559)
+
+* 三 11月 11 2009 Bastien Nocera <bnocera@redhat.com> 0.10.25.1-1
+- Update to snapshot
+- Fix text subtitles causing hangs on startup
+- Fix missing plugins installation requiring a restart
+- Queue2 element moved to gstreamer core
+
+* 二 11月 03 2009 Bastien Nocera <bnocera@redhat.com> 0.10.25-5
+- Update volume notification patch
+
+* 四 10月 29 2009 Bastien Nocera <bnocera@redhat.com> 0.10.25-4
+- Make playbin push volume changes to the front-end
+
+* 二 10月 27 2009 Bastien Nocera <bnocera@redhat.com> 0.10.25-3
+- Fix audio disappearing with newer pulsesink
+
+* 二 10月 13 2009 Bastien Nocera <bnocera@redhat.com> 0.10.25-2
+- Add patches to fix some playbin2 bugs (#518880)
+
+* 一 10月 05 2009 Bastien Nocera <bnocera@redhat.com> 0.10.25-1
+- Update to 0.10.25
+
+* 三 8月 26 2009 Adam Jackson <ajax@redhat.com> 0.10.24-2
+- avf-support.patch: Add AVF file recognition (gnome #593117)
+
+* 三 8月 05 2009 Bastien Nocera <bnocera@redhat.com> 0.10.24-1
+- Update to 0.10.24
+
+* 二 7月 28 2009 Bastien Nocera <bnocera@redhat.com> 0.10.23.4-1
+- Update to 0.10.23.4
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.23.3-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 21 2009 Bastien Nocera <bnocera@redhat.com> 0.10.23.3-2
+- Remove old patches (the input-selector has been moved to be
+  an internal playbin2 plugin)
+
+* 二 7月 21 2009 Bastien Nocera <bnocera@redhat.com> 0.10.23.3-1
+- Udpate to 0.10.23.3
+
+* 四 7月 16 2009 Bastien Nocera <bnocera@redhat.com> 0.10.23.2-1
+- Update to 0.10.23.2
+
+* 五 6月 19 2009 Bastien Nocera <bnocera@redhat.com> 0.10.23-2
+- Move input-selector plugin from -bad to -base (#506767)
+
+* 一 5月 11 2009 Bastien Nocera <bnocera@redhat.com> 0.10.23-1
+- Update to 0.10.23
+
+* 六 5月 09 2009 Bastien Nocera <bnocera@redhat.com> 0.10.22.6-1
+- Update to 0.10.22.6
+
+* 五 5月 08 2009 Bastien Nocera <bnocera@redhat.com> 0.10.22.5-1
+- Update to 0.10.22.5
+
+* 三 5月 06 2009 Bastien Nocera <bnocera@redhat.com> 0.10.22.4-1
+- Update to 0.10.22.4
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.10.22-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 1月 20 2009 - Bastien Nocera <bnocera@redhat.com> - 0.10.22-1
+- Update to 0.10.22
+- Remove upstreamed patches
+
+* 二 1月 13 2009 - Bastien Nocera <bnocera@redhat.com> - 0.10.21-4
+- Avoid deadlocks when PulseAudio disappears
+
+* 四 1月 01 2009 - Rex Dieter <rdieter@fedoraproject.org> - 0.10.21-3
+- rebuild for pkgconfig deps (#478577)
+
+* 五 10月 03 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.21-2
+- Update the gstreamer requirement
+- Add a gtk2-devel BR, so that the test-colorkey program will be built
+
+* 五 10月 03 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.21-1
+- Update to 0.10.21
+
+* 三 9月 24 2008 Jeremy Katz <katzj@redhat.com> - 0.10.20-6
+- gst-visualize is just a test program that we don't really need to include 
+  and having it means that perl gets pulled into small images (#462620)
+
+* 五 9月 12 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.20-4
+- Another rebuild
+
+* 四 9月 11 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.20-3
+- Rebuild for new RPM provides
+
+* 六 8月 23 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.20-2
+- Fix useless codeina popup when playing recent ogg files (#458404)
+
+* 三 6月 18 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.20-1
+- Update to 0.10.20
+
+* 三 6月 11 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.19-6
+- Add patch full of gio fixes
+
+* 一 6月 02 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.19-5
+- Let the package build its own documentation
+
+* 六 5月 24 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.19-4
+- Remove the gnome-vfs plugin, and see what breaks
+
+* 三 5月 21 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0.10.19-3
+- fix license tag
+
+* 五 4月 18 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.19-2
+- Add patch to avoid sync problems in the ALSA sink when a specific
+  track has both playback and record flags
+
+* 五 4月 04 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.19-1
+- Update to 0.10.19
+
+* 二 3月 25 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.18-1
+- Update to 0.10.18
+- Re-enable the libvisual plugins
+
+* 日 3月 09 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.17.2-4
+- Disable libvisual for now (#435771)
+
+* 二 3月 04 2008 Adam Jackson <ajax@redhat.com> 0.10.17.2-3
+- gstpb-0.10.15-cd-speed.patch: Set default CD read speed to something
+  sensible. (#431178)
+- s/Fedora Core/Fedora/
+- Don't even bother building static libs.
+
+* 二 3月 04 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.17.2-2
+- Enable the GIO plugin
+
+* 二 3月 04 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.17.2-1
+- Update to 0.10.17.2 pre-release
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.10.17-2
+- Autorebuild for GCC 4.3
+
+* 三 1月 30 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.17-1
+- Update to 0.10.17
+
+* 二 1月 29 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.16-1
+- Update to 0.10.16
+
+* 日 1月 20 2008 Matthias Clasen  <mclasen@redhat.com> - 0.10.15-3
+- Fix upgrade path
+
+* 一 1月 07 2008 - Bastien Nocera <bnocera@redhat.com> - 0.10.15-2
+- Add upstream patch to fix default track selection on Thinkpads
+  (#344911)
+
+* 六 11月 17 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.15-1
+- Update to 0.10.15
+
+* 四 10月 18 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.14-6
+- Add patch to fix playback of short Ogg Vorbis files (#328851)
+
+* 三 8月 29 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.14-5
+- Add patch to avoid critical warning when getting information about
+  missing codecs
+- Up liboil requirement
+
+* 二 8月 28 2007 Adam Jackson <ajax@redhat.com> 0.10.14-4
+- BuildReq on libvisual and add the plugin. (#253491)
+
+* 三 8月 15 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.14-3
+- Up requirement for liboil for PPC machines (#252179)
+
+* 六 8月 04 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.14-2
+- Update to 0.10.14
+- Add RTSP and SDP helper libraries
+
+* 二 6月 05 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.13-2
+- Add missing files
+
+* 二 6月 05 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.13-1
+- Update to 0.10.13
+
+* 五 5月 18 2007 Adam Jackson <ajax@redhat.com> 0.10.12-3
+- Add directory ownership claims to %files devel. (#240238)
+
+* 四 3月 08 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.12-2
+- Remove the patch to disable docs, install the docs by hand instead
+  Add libgstpbutils to the files
+
+* 四 3月 08 2007 - Bastien Nocera <bnocera@redhat.com> - 0.10.12-1
+- Update to 0.10.12
+
+* 三 1月 24 2007 Adam Jackson <ajax@redhat.com>
+- Minor spec cleanups (#186550)
+
+* 二 12月 12 2006 Matthias Clasen <mclasen@redhat.com> - 0.10.11-1
+- Update to 0.10.11
+
+* 一 10月 23 2006 Matthias Clasen <mclasen@redhat.com> - 0.10.10-1
+- Update to 0.10.10
+
+* 五 7月 28 2006 Matthias Clasen <mclasen@redhat.com> - 0.10.9-3
+- Re-add docs
+
+* 四 7月 27 2006 Matthias Clasen <mclasen@redhat.com> - 0.10.9-2
+- Disable gtk-doc to fix multilib conflicts
+
+* 四 7月 20 2006 John (J5) Palmieri <johnp@redhat.com> - 0.10.9-1
+- Update to 0.10.9
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - sh: line 0: fg: no job control
+- rebuild
+
+* 一 5月 22 2006 Matthias Clasen <mclasen@redhat.com> 0.10.7-1
+- Update to 0.10.7
+
+* 三 3月 01 2006 Karsten Hopp <karsten@redhat.de> 0.10.3-3
+- really add BuildRequires: cdparanoia-devel (#179034)
+
+* 一 2月 20 2006 John (J5) Palmieri <johnp@redhat.com> - 0.10.3-2
+- Obsolete gstreamer-plugins (Bug #182098)
+
+* 五 2月 10 2006 Christopher Aillon <caillon@redhat.com> - 0.10.3-1
+- Update to 0.10.3
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.10.2-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 2月 02 2006 Warren Togami <wtogami@redhat.com> - 0.10.2-2
+- buildreq cdparanoia-devel (#179034 thias)
+
+* 三 1月 18 2006 John (J5) Palmieri <johnp@redhat.com> - 0.10.2-1
+- Upgrade to 0.10.2
+- Require gstreamer-0.10.2
+- Add libgstcdda and libcdparanoia to the %files section
+
+* 五 1月 06 2006 John (J5) Palmieri <johnp@redhat.com> - 0.10.1-1
+- New upstream version
+- gst-launch removed from upstream
+
+* 六 12月 17 2005 Thomas Vander Stichele <thomas at apestaart dot org>
+- 0.10.0-1
+- Fedora Development build
+
+* 三 12月 14 2005 Thomas Vander Stichele <thomas at apestaart dot org>
+- 0.10.0-0.gst.2
+- new glib build
+
+* 一 12月 05 2005 Thomas Vander Stichele <thomas at apestaart dot org>
+- 0.10.0-0.gst.1
+- new release
+
+* 四 12月 01 2005 Thomas Vander Stichele <thomas at apestaart dot org>
+- 0.9.7-0.gst.1
+- new release with 0.10 majorminor
+- remove sinesrc
+- replace ximage with ximagesink
+- update libs
+
+* 六 11月 12 2005 Thomas Vander Stichele <thomas at apestaart dot org>
+- 0.9.5-0.gst.1
+- new release
+
+* 一 10月 24 2005 Thomas Vander Stichele <thomas at apestaart dot org>
+- 0.9.4-0.gst.1
+- added audiotestsrc plugin
+- new release
+
+* 一 10月 03 2005 Thomas Vander Stichele <thomas at apestaart dot org>
+- 0.9.3-0.gst.1
+- new release
+
+* 五 9月 02 2005 Thomas Vander Stichele <thomas at apestaart dot org>
+- clean up a little
+
+* 五 5月 06 2005 Christian Schaller <christian at fluendo dot com>
+- Added libgstaudiorate and libgstsubparse to spec file
+
+* 四 5月 05 2005 Christian Schaller <christian at fluendo dot com>
+- first attempt at spec file for gst-plugins-base
+

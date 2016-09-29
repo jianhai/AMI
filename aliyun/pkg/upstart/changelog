@@ -1,0 +1,154 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.5-10.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.5-10.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.5-10.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.6.5-10.1
+- rebuild for alios6
+
+* 二 2月 15 2011 Petr Lautrbach <plautrba@redhat.com> 0.6.5-10
+- fix C compiler flags
+
+* 一 2月 14 2011 Petr Lautrbach <plautrba@redhat.com> 0.6.5-9
+- set PIE and RELRO flags (#676002)
+
+* 一 12月 13 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-8
+- send close fd command to shell first (#618995)
+- avoid assertion for telinit u on ppc64 (#648431)
+
+* 二 9月 21 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-7
+- don't rewind utmp file pointer, remember ut_id (#633216)
+
+* 三 6月 30 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-6.1
+- print error message and remove /etc/nologin when sysvinit shutdown fails
+
+* 三 6月 30 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-6
+- shutdown exits with nonzero exitcode when sysvinit shutdown fails (#608569)
+
+* 五 5月 07 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-5
+- re-add SIGTERM handler so restart on shutdown works, avoiding dirty inodes (#588929)
+
+* 二 5月 04 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-4
+- set DEAD_PROCESS for died proccess with pid in utmp table (#556731)
+
+* 二 3月 23 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-3.2
+- removed upstart-dont-close-console.patch (#568418)
+
+* 五 3月 12 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-3.1
+- don't reopen std* from /dev/console to /dev/null (#568418)
+
+* 三 2月 24 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-3
+- run "make check" only with --with check
+
+* 五 2月 19 2010 Casey Dahlin <cdahlin@redhat.com> 0.6.5-2
+- be more specific about which libnih we need.
+
+* 三 2月 17 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.5-1
+- upgrade to 0.6.5
+
+* 五 1月 29 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.3-7
+- add SIGUSR1 handler and init-system-dbus.conf (#559660)
+
+* 日 1月 17 2010 Dennis Gilmore <dennis@ausil.us> - 0.6.3-6
+- add patch from upstream fixing sparc alignment issues
+
+* 一 1月 11 2010 Petr Lautrbach <plautrba@redhat.com> 0.6.3-5
+- License changed to GPLv2 and LGPLv2+
+
+* 三 12月 16 2009 Petr Lautrbach <plautrba@redhat.com> 0.6.3-4
+- audit events patch rebased for 0.6 (#470661, #554474)
+
+* 四 12月 03 2009 Bill Nottingham <notting@redhat.com> 0.6.3-3
+- make 'telinit u' a no-op, temporarily
+
+* 五 11月 27 2009 Petr Lautrbach <plautrba@redhat.com> 0.6.3-2
+- Removed tests which fail in koji
+
+* 五 11月 20 2009 Casey Dahlin <cdahlin@redhat.com> - 0.6.3-1
+- Upgrade to 0.6.3
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 0.3.11-3
+- rebuilt with new audit
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.11-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 22 2009 Petr Lautrbach <plautrba@redhat.com> - 0.3.11-1
+- Update to 0.3.11
+
+* 一 4月 27 2009 Bill Nottingham <notting@redhat.com> - 0.3.9-24
+- Apply the audit patch correctly (#470661)
+
+* 五 4月 03 2009 Casey Dahlin <cdahlin@redhat.com> - 0.3.9-23
+- Add audit events patch from Steve Grubb <sgrubb@redhat.com> (Bug #470661)
+
+* 五 1月 23 2009 Casey Dahlin <cdahlin@redhat.com> - 0.3.9-22
+- Re-add 'telinit u' support along with patch to fix it (#450488). Patch due to
+  <pspencer@fields.utoronto.ca>
+
+* 一 1月 12 2009 Bill Nottingham <notting@redhat.com> - 0.3.9-21
+- Remove 'telinit u' support as it is broken (#450488, <cjdahlin@ncsu.edu>)
+
+* 五 4月 25 2008 Bill Nottingham <notting@redhat.com> - 0.3.9-19
+- with the merge of event-compat-sysv, move the sysvinit obsoletes/provides here
+
+* 四 4月 24 2008 Bill Nottingham <notting@redhat.com> - 0.3.9-18
+- fix some man page typos (#444008, <archimerged@gmail.com>)
+
+* 三 4月 09 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-17
+- Added list of stock events to events(5)
+
+* 二 4月 08 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-16
+- Add telinit u support
+
+* 五 4月 04 2008 Bill Nottingham <notting@redhat.com> - 0.3.9-15
+- Add a events(5) manpage that describes event syntax
+
+* 四 4月 03 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-14
+- Change bug report email address to fedora-devel-list@redhat.com
+
+* 五 3月 14 2008 Bill Nottingham <notting@redhat.com> - 0.3.9-13
+- Ignore rpm temporary files of the foo;<somehex> format
+- Make ignores of .rpm{new,orig,save} match only at the end of the name
+
+* 四 3月 13 2008 Bill Nottingham <notting@redhat.com> - 0.3.9-12
+- forgot about rpmorig too (ugh)
+
+* 四 3月 13 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-11
+- Make logd a noreplace
+
+* 四 3月 13 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-10
+- Add patch to ignore .rpm{new,save} files
+
+* 一 3月 03 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-9
+- Remove automake dependency, build Makefile.in changes into patch
+
+* 一 3月 03 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-8
+- Run automake after patching
+
+* 一 3月 03 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-7
+- Added BuildRequires: automake
+
+* 一 3月 03 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-6
+- Added patch to allow runtime tty changes
+
+* 五 2月 15 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-5
+- Added patch to imply --force on runlevels 0 and 6
+
+* 三 2月 06 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-4
+- Patched for GCC 4.3
+
+* 四 1月 31 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-3
+- Added AUTHORS, COPYING, etc.
+- Made config --libdir option relative
+
+* 一 1月 21 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-2
+- Remove libnih and libupstart
+
+* 日 1月 13 2008 Casey Dahlin <cjdahlin@ncsu.edu> - 0.3.9-1
+- Initial packaging
+

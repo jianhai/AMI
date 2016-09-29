@@ -1,0 +1,18 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/install-info  
+/sbin/install-info  
+/usr/bin/pkg-config  
+gnutls = 2.8.5-14.2.alios6
+libgcrypt-devel  
+libgnutls-extra.so.26()(64bit)  
+libgnutls.so.26()(64bit)  
+libgnutlsxx.so.26()(64bit)  
+pkgconfig  
+pkgconfig(gnutls)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

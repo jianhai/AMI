@@ -1,0 +1,32 @@
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libcom_err.so.2()(64bit)  
+libcurl = 7.19.7-26.3.alios6.2
+libcurl.so.4()(64bit)  
+libdl.so.2()(64bit)  
+libgssapi_krb5.so.2()(64bit)  
+libidn.so.11()(64bit)  
+libk5crypto.so.3()(64bit)  
+libkrb5.so.3()(64bit)  
+libldap-2.4.so.2()(64bit)  
+libnspr4.so()(64bit)  
+libnss3.so()(64bit)  
+libnssutil3.so()(64bit)  
+libplc4.so()(64bit)  
+libplds4.so()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+librt.so.1(GLIBC_2.2.5)(64bit)  
+libsmime3.so()(64bit)  
+libssh2.so.1()(64bit)  
+libssl3.so()(64bit)  
+libz.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

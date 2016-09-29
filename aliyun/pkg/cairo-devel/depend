@@ -1,0 +1,22 @@
+/usr/bin/pkg-config  
+cairo = 1.8.8-3.1.3.alios6
+fontconfig-devel >= 2.0
+freetype-devel >= 2.1.9
+libXrender-devel  
+libcairo.so.2()(64bit)  
+libpng-devel  
+pixman-devel >= 0.12.0
+pkgconfig  
+pkgconfig(cairo)  
+pkgconfig(cairo-xlib)  
+pkgconfig(fontconfig)  
+pkgconfig(freetype2) >= 9.7.3
+pkgconfig(libpng12)  
+pkgconfig(pixman-1) >= 0.12.0
+pkgconfig(x11)  
+pkgconfig(xrender) >= 0.6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

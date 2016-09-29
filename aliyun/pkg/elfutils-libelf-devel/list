@@ -1,0 +1,4 @@
+/usr/include/gelf.h
+/usr/include/libelf.h
+/usr/include/nlist.h
+/usr/lib64/libelf.so

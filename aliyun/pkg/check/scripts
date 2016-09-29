@@ -1,0 +1,12 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+if [ -e /usr/share/info/check.info* ]; then
+  /sbin/install-info \
+    --entry='* Check: (check).               A unit testing framework for C.' \
+    /usr/share/info/check.info /usr/share/info/dir || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 -a -e /usr/share/info/check.info* ]; then
+  /sbin/install-info --delete /usr/share/info/check.info /usr/share/info/dir || :
+fi
+postuninstall program: /sbin/ldconfig

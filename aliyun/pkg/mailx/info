@@ -1,0 +1,27 @@
+Name        : mailx                        Relocations: (not relocatable)
+Version     : 12.4                              Vendor: Alibaba
+Release     : 6.3.alios6                    Build Date: 2014年07月26日 星期六 17时02分18秒
+Install Date: 2015年03月25日 星期三 11时00分08秒      Build Host: x86-001.build.alibaba
+Group       : Applications/Internet         Source RPM: mailx-12.4-6.3.alios6.src.rpm
+Size        : 462212                           License: BSD with advertising and MPLv1.1
+Signature   : RSA/8, 2014年07月31日 星期四 17时30分05秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://heirloom.sourceforge.net/mailx.html
+Summary     : Enhanced implementation of the mailx command
+Description :
+Mailx is an enhanced mail command, which provides the functionality
+of the POSIX mailx command, as well as SysV mail and Berkeley Mail
+(from which it is derived).
+
+Additionally to the POSIX features, mailx can work with Maildir/ e-mail
+storage format (as well as mailboxes), supports IMAP, POP3 and SMTP
+procotols (including over SSL) to operate with remote hosts, handles mime
+types and different charsets. There are a lot of other useful features,
+see mailx(1).
+
+And as its ancient analogues, mailx can be used as a mail script language,
+both for sending and receiving mail.
+
+Besides the "mailx" command, this package provides "mail" and "Mail"
+(which should be compatible with its predecessors from the mailx-8.x source),
+as well as "nail" (the initial name of this project).

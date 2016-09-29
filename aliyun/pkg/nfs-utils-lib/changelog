@@ -1,0 +1,131 @@
+* 四 8月 21 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.5-4.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.5-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.5-4.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.1.5-4.1
+- rebuild for alios6
+
+* 二 8月 23 2011 Steve Dickson <steved@redhat.com>  1.1.5-4
+- Added in "config.h" to enable ldap support (bz 711210)
+
+* 三 2月 02 2011 Steve Dickson <steved@redhat.com>  1.1.5-3
+- Removed more warnings in the RPMdiff run (bz 594279)
+
+* 五 1月 14 2011 Steve Dickson <steved@redhat.com>  1.1.5-2
+- Updated to latest upstream release: libnfsidmap-0.24-rc1 (bz 650970)
+- Reset default values in /etc/idmap.conf (bz 650997)
+- Remove some warnings in the RPMdiff run (bz 594279)
+
+* 五 2月 12 2010 Steve Dickson <steved@redhat.com>  1.1.5-1
+- Updated to latest upstream release: libnfsidmap-0.23 (bz 561504)
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.1.4-8.1
+- Rebuilt for RHEL 6
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.4-8
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 6月 05 2009 Steve Dickson <steved@redhat.com> 1.1.4-7
+- Added a debug line to log when the local realm is not found
+
+* 二 5月 19 2009 Tom "spot" Callaway <tcallawa@redhat.com> 1.1.4-6
+- Replace the Sun RPC license with the BSD license, with the explicit permission of Sun Microsystems
+
+* 一 4月 13 2009 Steve Dickson <steved@redhat.com> 1.1.4-5
+- Moved the .pc files into the -devel rpm (bz 489173)
+
+* 三 4月 01 2009 Michael Schwendt <mschwendt@fedoraproject.org> - 1.1.4-4
+- Fix unowned header directories (#483464).
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 10月 24 2008 Steve Dickson <steved@redhat.com> 1.1.4-2
+- Incorporated from upstream as to how  how nss deals 
+  with Local Realms
+
+* 六 10月 18 2008 Steve Dickson <steved@redhat.com> 1.1.4-1
+- Fixed a bad assumtion in nss code.
+
+* 三 8月 27 2008 Steve Dickson <steved@redhat.com> 1.1.3-2
+- Upgraded librpcsecgss to latest upstream version: 0.18
+
+* 三 8月 27 2008 Steve Dickson <steved@redhat.com> 1.1.3-1
+- Upgraded libnfsidmap to latest upstream version: 0.21
+
+* 五 6月 27 2008 Steve Dickson <steved@redhat.com> 1.1.1-4
+- In idmapd.conf, commented out 'Domain' so DNS will be
+  used to define the domainname. (bz 447237)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.1.1-3
+- Autorebuild for GCC 4.3
+
+* 四 1月 24 2008 Steve Dickson <steved@redhat.com> 1.1.1-2
+- Changed the file mode on documentation files (bz 427827)
+- Chagned how the doc directories are created so they
+  are owned by the package. (bz 211001)
+
+* 四 1月 24 2008 Steve Dickson <steved@redhat.com> 1.1.1-1
+- Updated librpcsecgss to the 0.17 release
+
+* 二 12月 04 2007 Release Engineering <rel-eng at fedoraproject dot org> - 1.1.0-4
+- Rebuild for openldap bump
+
+* 二 10月 16 2007 Steve Dickson <steved@redhat.com> 1.1.0-3
+- Switch the libgssapi dependency to libgssglue
+- Updated  librpcsecgss to the 0.16 release
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 1.1.0-2
+- Rebuild for selinux ppc32 issue.
+
+* 六 7月 28 2007 Steve Dickson <steved@redhat.com> 1.1.0-1
+- Updated libnfsidmap to the 0.20 release
+- Added rules to install/remove /etc/idmap.conf
+
+* 一 3月 12 2007 Steve Dickson <steved@redhat.com> 1.0.8-9
+- Removed the --prefix=$RPM_BUILD_ROOT from the %configure (bz 213152)
+
+* 二 2月 20 2007 Steve Dickson <steved@redhat.com> 1.0.8-8
+- Updated libnfsidmap to the 0.19 release
+
+* 五 12月 01 2006 Steve Dickson <steved@redhat.com> 1.0.8-7.3
+- Fixed typo in the package description (bz 189652)
+
+* 三 8月 30 2006 Steve Dickson <steved@redhat.com> 1.0.8-7.2
+- added automake to BuildRequires:
+
+* 三 8月 30 2006 Steve Dickson <steved@redhat.com> 1.0.8-7.1
+- rebuild
+
+* 三 8月 02 2006 Steve Dickson <steved@redhat.com> 1.0.8-7
+- Updated librpcsecgss to -0.14
+
+* 三 7月 26 2006 Steve Dickson <steved@redhat.com> 1.0.8-6
+- Added GSSLIBS to the linking of librpcsecgss (bz 198238)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.0.8-5.1
+- rebuild
+
+* 二 6月 20 2006 Steve Dickson <steved@redhat.com> 1.0.8-3.1
+- Updated libnfsidmap and  librpcsecgss to latest upstream version
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.0.8-3.1
+- bump again for double-long bug on ppc(64)
+
+* 四 2月 09 2006 Florian La Roche <laroche@redhat.com> 1.0.8-3
+- remove empty scripts
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.0.8-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 四 1月 19 2006 Steve Dickson <steved@redhat.com> 1.0.8-2
+- Added debugging routines to libnfsidmap
+
+* 五 1月 06 2006 Steve Dickson <steved@redhat.com> 1.0.8-1
+- Initial commit
+

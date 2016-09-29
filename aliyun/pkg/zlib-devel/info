@@ -1,0 +1,14 @@
+Name        : zlib-devel                   Relocations: (not relocatable)
+Version     : 1.2.3                             Vendor: Alibaba
+Release     : 27.4.alios6                   Build Date: 2014年07月28日 星期一 01时44分31秒
+Install Date: 2015年03月25日 星期三 10时59分30秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: zlib-1.2.3-27.4.alios6.src.rpm
+Size        : 117496                           License: zlib and Boost
+Signature   : RSA/8, 2014年07月31日 星期四 19时08分24秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gzip.org/zlib/
+Summary     : Header files and libraries for Zlib development
+Description :
+The zlib-devel package contains the header files and libraries needed
+to develop programs that use the zlib compression and decompression
+library.

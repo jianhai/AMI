@@ -1,0 +1,78 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.4.0-9.1.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.4.0-9.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.4.0-9.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.4.0-9.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.4.0-9.1
+- Rebuilt for RHEL 6
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.0-9
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 3月 07 2009 Caolán McNamara <caolanm@redhat.com> - 0.4.0-8
+- defining inline causes problems trying to build against libvisual headers, 
+  e.g. libvisual-plugins
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.4.0-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 3月 11 2008 - Bastien Nocera <bnocera@redhat.com> - 0.4.0-6
+- Better Altivec detection, code from David Woodhouse
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.4.0-5
+- Autorebuild for GCC 4.3
+
+* 日 8月 26 2007 Aurelien Bompard <abompard@fedoraproject.org> 0.4.0-4
+- fix license tag
+
+* 三 8月 30 2006 Aurelien Bompard <abompard@fedoraproject.org> 0.4.0-3
+- rebuild
+
+* 六 7月 08 2006 Aurelien Bompard <abompard@fedoraproject.org> 0.4.0-2
+- bump release
+
+* 四 7月 06 2006 Aurelien Bompard <abompard@fedoraproject.org> 0.4.0-1
+- version 0.4.0
+- drop Patch0 (applied upstream)
+
+* 二 2月 21 2006 Aurelien Bompard <gauret[AT]free.fr> 0.2.0-8
+- fix dependency for modular X
+
+* 二 2月 21 2006 Aurelien Bompard <gauret[AT]free.fr> 0.2.0-7
+- rebuild for FC5
+
+* 三 6月 15 2005 Aurelien Bompard <gauret[AT]free.fr> 0.2.0-6
+- rebuild
+
+* 三 6月 15 2005 Aurelien Bompard <gauret[AT]free.fr> 0.2.0-5
+- fix build for GCC4
+
+* 四 6月 09 2005 Michael Schwendt <mschwendt[AT]users.sf.net> 0.2.0-4
+- use dist tag for all-arch-rebuild
+
+* 四 4月 07 2005 Michael Schwendt <mschwendt[AT]users.sf.net> 0.2.0-3
+- rebuilt
+
+* 一 2月 14 2005 David Woodhouse <dwmw2@infradead.org> 0.2.0-2
+- Fix bogus #if where #ifdef was meant
+
+* 四 2月 10 2005 Aurelien Bompard <gauret[AT]free.fr> 0.2.0-1
+- version 0.2.0
+- drop patch
+
+* 六 11月 27 2004 Aurelien Bompard <gauret[AT]free.fr> 0:0.1.7-0.fdr.1
+- version 0.1.7
+
+* 四 10月 21 2004 Aurelien Bompard <gauret[AT]free.fr> 0:0.1.6-0.fdr.2
+- Apply Adrian Reber's suggestions in bug 2182
+
+* 二 9月 28 2004 Aurelien Bompard <gauret[AT]free.fr> 0:0.1.6-0.fdr.1
+- Initial RPM release.
+

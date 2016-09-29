@@ -1,0 +1,48 @@
+* 五 12月 26 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.23.0-2
+- rebuild
+
+* 五 5月 23 2014 Kyle McMartin <kmcmarti@redhat.com> - 3.2.23.0-2
+- fix LICENSE permissions.
+
+* 五 5月 23 2014 Kyle McMartin <kmcmarti@redhat.com> - 3.2.23.0-1
+- update to 3.2.3.0
+  Resolves: rhbz#1054467
+
+* 五 9月 27 2013 Kyle McMartin <kmcmarti@redhat.com> - 3.2.21.1-2
+- update to 3.2.1.1
+  Resolves: rhbz#1002770
+
+* 二 5月 21 2013 Kyle McMartin <kmcmarti@redhat.com> - 3.2.21.1-1
+- update to 3.2.21.1, linked to 3.2.1.0 based on Brocade's submission
+  for 3.11 ( http://marc.info/?l=linux-scsi&m=136843872927453&w=2 )
+  Resolves: rhbz#928990
+
+* 五 1月 11 2013 Kyle McMartin <kmcmarti@redhat.com> 3.1.2.1-1
+- update to 3.1.2.1
+- add some shell functions to make life easier for multi-versioned firmware
+  filenames that are now upstream
+
+* 四 9月 06 2012 Tom Callaway <spot@fedoraproject.org> 3.0.3.1-1
+- update to 3.0.3.1
+
+* 三 7月 18 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.0.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* 四 1月 12 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.0.0.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* 三 9月 07 2011 Tom Callaway <spot@fedoraproject.org> 3.0.0.0-1
+- update to 3.0.0.0
+
+* 一 2月 07 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.3.2.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 一 1月 03 2011 Tom Callaway <spot@fedoraproject.org> 2.3.2.3-1
+- update to 2.3.2.3
+
+* 一 3月 08 2010 Tom "spot" Callaway <tcallawa@redhat.com> 2.1.2.1-2
+- Add missing Requires: udev
+
+* 五 1月 29 2010 Tom "spot" Callaway <tcallawa@redhat.com> 2.1.2.1-1
+- Initial package for Fedora
+

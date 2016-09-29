@@ -1,0 +1,13 @@
+Name        : pciutils-libs                Relocations: (not relocatable)
+Version     : 3.1.4                             Vendor: Alibaba
+Release     : 11.5.alios6                   Build Date: 2014年08月21日 星期四 19时56分39秒
+Install Date: 2015年03月25日 星期三 10时59分37秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: pciutils-3.1.4-11.5.alios6.src.rpm
+Size        : 48992                            License: GPLv2+
+Signature   : RSA/8, 2014年08月25日 星期一 23时25分31秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
+Summary     : Linux PCI library
+Description :
+This package contains a library for inspecting and setting
+devices connected to the PCI bus.

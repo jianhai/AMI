@@ -1,0 +1,22 @@
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libexpat.so.1()(64bit)  
+perl >= 0:5.004
+perl(:MODULE_COMPAT_5.10.1)  
+perl(Carp)  
+perl(DynaLoader)  
+perl(LWP)  
+perl(LWP)  
+perl(URI)  
+perl(URI)  
+perl(URI::file)  
+perl(overload)  
+perl(strict)  
+perl(vars)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

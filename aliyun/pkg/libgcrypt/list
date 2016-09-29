@@ -1,0 +1,9 @@
+/etc/gcrypt
+/lib64/.libgcrypt.so.11.hmac
+/lib64/libgcrypt.so.11
+/lib64/libgcrypt.so.11.5.3
+/usr/share/doc/libgcrypt-1.4.5
+/usr/share/doc/libgcrypt-1.4.5/AUTHORS
+/usr/share/doc/libgcrypt-1.4.5/COPYING.LIB
+/usr/share/doc/libgcrypt-1.4.5/NEWS
+/usr/share/doc/libgcrypt-1.4.5/THANKS

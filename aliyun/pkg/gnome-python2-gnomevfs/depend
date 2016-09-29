@@ -1,0 +1,27 @@
+/usr/bin/env  
+gnome-python2 = 2.28.0-3.3.alios6
+gnome-vfs2 >= 2.14.0
+libORBit-2.so.0()(64bit)  
+libbonobo >= 2.8.0
+libbonobo-activation.so.4()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libdl.so.2()(64bit)  
+libgconf-2.so.4()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgnomevfs-2.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libm.so.6()(64bit)  
+libpthread.so.0()(64bit)  
+libpython2.6.so.1.0()(64bit)  
+librt.so.1()(64bit)  
+libutil.so.1()(64bit)  
+python(abi) = 2.6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

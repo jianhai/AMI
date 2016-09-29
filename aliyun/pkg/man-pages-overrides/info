@@ -1,0 +1,13 @@
+Name        : man-pages-overrides          Relocations: (not relocatable)
+Version     : 6.2.3                             Vendor: Alibaba
+Release     : 2.3.alios6                    Build Date: 2014年07月26日 星期六 17时15分39秒
+Install Date: 2015年03月25日 星期三 11时02分32秒      Build Host: x86-003.build.alibaba
+Group       : Documentation                 Source RPM: man-pages-overrides-6.2.3-2.3.alios6.src.rpm
+Size        : 573612                           License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 17时30分29秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+Summary     : Complementary and updated manual pages
+Description :
+A collection of manual ("man") pages to complement other packages or update
+those contained therein. Always have the latest version of this package
+installed.

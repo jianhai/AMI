@@ -1,0 +1,14 @@
+/bin/sh  
+/usr/bin/pkg-config  
+glib2-devel >= 2.0
+libcroco = 0.6.2
+libcroco-0.6.so.3()(64bit)  
+libxml2-devel >= 2.4.23
+pkgconfig >= 0.8
+pkgconfig(glib-2.0)  
+pkgconfig(libxml-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,4 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig

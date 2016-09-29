@@ -1,0 +1,11 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add ipmievd
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+   service ipmievd stop >/dev/null 2>&1
+   /sbin/chkconfig --del ipmievd
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+    service ipmievd condrestart >/dev/null 2>&1 || :
+fi

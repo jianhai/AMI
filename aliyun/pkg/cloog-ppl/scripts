@@ -1,0 +1,11 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+test -f /usr/share/info/cloog.info \
+     && /sbin/install-info /usr/share/info/cloog.info /usr/share/info/dir || :
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ] ; then
+  test -f /usr/share/info/cloog.info && \
+      /sbin/install-info \
+          --delete /usr/share/info/cloog.info /usr/share/info/dir || :
+fi
+postuninstall program: /sbin/ldconfig

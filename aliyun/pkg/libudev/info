@@ -1,0 +1,13 @@
+Name        : libudev                      Relocations: (not relocatable)
+Version     : 147                               Vendor: Alibaba
+Release     : 2.40.4.alios6                 Build Date: 2014年07月28日 星期一 06时09分38秒
+Install Date: 2015年03月25日 星期三 10时59分30秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: udev-147-2.40.4.alios6.src.rpm
+Size        : 77179                            License: LGPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 17时20分09秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev.html
+Summary     : Dynamic library to access udev device information
+Description :
+This package contains the dynamic library libudev, which provides access
+to udev device information, and an interface to search devices in sysfs.

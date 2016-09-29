@@ -1,0 +1,542 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.60-109.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.60-109.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.60-109.1
+- rebuild for alios6
+
+* 四 8月 25 2011 Jiri Popelka <jpopelka@redhat.com> - 1.60-109
+- Improved netstat_stop_trim.patch to not truncate IPV6 UDP sockets (#732984)
+
+* 二 7月 26 2011 Jiri Popelka <jpopelka@redhat.com> - 1.60-108
+- patch netstat to separate basename of -p only if it is absolute
+  path (in order to make argv[0]="sshd pty/0" display as sshd, and not as /0).
+  (#725348)
+
+* 四 7月 21 2011 Jiri Popelka <jpopelka@redhat.com> - 1.60-107
+- Fix again the description of the "mss M" option in route(8) (#680837)
+
+* 三 6月 15 2011 Jiri Popelka <jpopelka@redhat.com> - 1.60-106
+- Improve route(8) man page saying that 'route mss' actually sets MTU (#680837)
+- plipconfig man page and usage output fixes (#694766)
+- Add -A,--all-fqdns and -I,--all-ip-addresses options to hostname (#705110)
+- Use ?_rawbuild macro required for Coverity to scan defects
+  in downstream patches separately (#708538)
+
+* 二 3月 15 2011 Jiri Popelka <jpopelka@redhat.com> - 1.60-105
+- Fix mii-tool/mii-diag/ether-wake to not default to eth0 because
+  since RHEL-6.1 network devices can have arbitrary names (#682368)
+
+* 二 1月 25 2011 Jiri Popelka <jpopelka@redhat.com> - 1.60-104
+- revert HFI support commit (#633506)
+
+* 二 11月 23 2010 Jiri Popelka <jpopelka@redhat.com> - 1.60-103
+- improved statistics-doubleword.patch (Bug #580054)
+- improved netstat(8) man page (#614931)
+- HFI support (#633506)
+- fixed memory leak in netstat when run with -c option (#634539)
+
+* 三 4月 07 2010 Jiri Popelka <jpopelka@redhat.com> - 1.60-102
+- fixed statistics.c to use unsigned long long (instead of int) to handle 64 bit integers (Bug #580054)
+- fixed typo in statistics.c
+- interface slip: cast keepalive/outfill to unsigned long to fix warnings on 64bit hosts
+- interface: fix IPv6 parsing of interfaces with large indexes (> 255)
+
+* 一 2月 22 2010 Jiri Popelka <jpopelka@redhat.com> - 1.60-101
+- ifconfig interface:0 del <IP> will remove the Aliased IP on IA64 (#567272)
+
+* 二 1月 12 2010 Jiri Popelka <jpopelka@redhat.com> - 1.60-100
+- fixed overflow patch (#554695)
+
+* 四 12月 03 2009 Jiri Popelka <jpopelka@redhat.com> - 1.60-99
+- return defining of BuildRoot even it's no longer necessary
+  (https://fedoraproject.org/wiki/Packaging:Guidelines#BuildRoot_tag)
+  to silent rpmlint false warning
+
+* 三 11月 04 2009 Jiri Popelka <jpopelka@redhat.com> - 1.60-98
+- in mii-tool.c use <linux/mii.h> instead of "mii.h" and fix Bug #491358
+
+* 四 10月 29 2009 Jiri Popelka <jpopelka@redhat.com> - 1.60-97
+- Make "hostname -s" display host name cut at the first dot (no
+  matter if the host name resolves or not) (bug #531702)
+
+* 三 9月 30 2009 Jiri Popelka <jpopelka@redhat.com> - 1.60-96
+- netplug moved to separate package
+- #319981 and #322901 - minor man pages changes
+- applied changes from berlios cvs, which fix: Berlios #16232, Gentoo #283759 and polish Makefile and slattach
+
+* 二 9月 01 2009 Jiri Popelka <jpopelka@redhat.com> - 1.60-95
+- netstat - avoid name resolution for listening or established sockets (-l) by return fast. 
+- netstat - --continuous should flush stdout
+- added missing man pages (iptunnel, ipmaddr, netplug, netplug.d, netplugd.conf)
+- added note about obsolete commands to existing man pages 
+- let the user know that ifconfig can correctly show only first 8 bytes of Infiniband hw address
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.60-94
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 08 2009 Jiri Popelka <jpopelka@redhat.com> - 1.60-93
+- scanf format length fix (non exploitable?) from Fabian Hugelshofer <hugelshofer2006@gmx.ch>
+- URL tag changed to http://net-tools.berlios.de/
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.60-92
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 10月 16 2008 Zdenek Prikryl <zprikryl@redhat.com> - 1.60-91
+- fixed tcp timers info in netstat (#466845)
+
+* 四 9月 25 2008 Zdenek Prikryl <zprikryl@redhat.com> - 1.60-90
+- fixed ifconfig's man page (#454271, #432328)
+
+* 二 7月 15 2008 Zdenek Prikryl <zprikryl@redhat.com> - 1.60-89
+- fixed man pages for arp (#446195)
+- fixed netstat --interfaces option (#446187)
+- fixed clearing flags in ifconfig (#450252)
+
+* 二 7月 08 2008 Radek Vokál <rvokal@redhat.com> - 1.60-88
+- netstat displays correct sctp statistics (#445535) <zprikryl@redhat.com>
+
+* 二 3月 04 2008 Radek Vokál <rvokal@redhat.com> - 1.60-87
+- fix buffer for newer kernels (#435554)
+
+* 一 2月 25 2008 Radek Vokal <rvokal@redhat.com> - 1.60-86
+- fix for GCC 4.3
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.60-85
+- Autorebuild for GCC 4.3
+
+* 四 8月 23 2007 Radek Vokál <rvokal@redhat.com> - 1.60-84
+- rebuilt
+
+* 五 6月 08 2007 Radek Vokál <rvokal@redhat.com> - 1.60-83
+- fix netplugd init script (#242919)
+
+* 二 5月 22 2007 Radek Vokál <rvokal@redhat.com> - 1.60-82
+- better SELinux patch by <dwalsh@redhat.com>
+
+* 二 3月 27 2007 Radek Vokál <rvokal@redhat.com> - 1.60-81
+- fix segfault for empty interface (#234045)
+
+* 四 3月 15 2007 Radek Vokál <rvokal@redhat.com> - 1.60-80
+- we don't have -n/--node option (#225554)
+
+* 四 2月 22 2007 Radek Vokál <rvokal@redhat.com> - 1.60-79
+- quiet sctp (#229232)
+
+* 一 2月 19 2007 Radek Vokál <rvokal@redhat.com> - 1.60-78
+- spec file cleanup (#226193)
+
+* 二 1月 30 2007 Radek Vokál <rvokal@redhat.com> - 1.60-77
+- touch /etc/ethers (#225381)
+
+* 三 12月 27 2006 Radek Vokál <rvokal@redhat.com> - 1.60-76
+- fix arp unaligned access (#220438)
+
+* 三 10月 04 2006 Radek Vokal <rvokal@redhat.com> - 1.60-75
+- fix nameif crash for 16char long interface names (#209120)
+
+* 一 10月 02 2006 Radek Vokal <rvokal@redhat.com> - 1.60-74
+- fix -I option for nestat, works as -I=eth0 again.
+- add dist tag
+
+* 一 8月 07 2006 Radek Vokal <rvokal@redhat.com> - 1.60-73
+- directory entries . and .. should be skipped
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.60-72.1
+- rebuild
+
+* 三 6月 07 2006 Radek Vokal <rvokal@redhat.com> - 1.60-72
+- switch --trim to --notrim .. make it less confusing
+
+* 五 5月 19 2006 Radek Vokal <rvokal@redhat.com> - 1.60-71
+- BuildRequires: libselinux-devel (#191737)
+
+* 二 5月 09 2006 Radek Vokál <rvokal@redhat.com> - 1.60-70
+- add netdevice.h, fix x25
+- fix ifconfig crash when interface name is too long (#190703)
+
+* 二 5月 02 2006 Radek Vokál <rvokal@redhat.com> - 1.60-69
+- fix arp man page to correspond to man ethers (#190425)
+
+* 五 4月 14 2006 Radek Vokál <rvokal@redhat.com> - 1.60-68
+- display sctp connections using netstat -S <jbj@redhat.com>
+
+* 四 4月 13 2006 Radek Vokál <rvokal@redhat.com> - 1.60-67
+- fix wrong definition of _PATH_PROCNET_X25_ROUTE (#188786)
+
+* 四 4月 06 2006 Radek Vokál <rvokal@redhat.com> - 1.60-66
+- add note about -T to netstat
+
+* 四 3月 30 2006 Radek Vokál <rvokal@redhat.com> - 1.60-65
+- add note to ifconfig(8) about supported format for IPv4 addresses (#176661)
+
+* 四 3月 16 2006 Radek Vokál <rvokal@redhat.com> - 1.60-64
+- remove duplicate arp entries (#185604)
+
+* 四 2月 23 2006 Radek Vokál <rvokal@redhat.com> - 1.60-63
+- show inodes in netstat (#180974)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.60-62.1
+- bump again for double-long bug on ppc(64)
+
+* 五 2月 10 2006 Radek Vokál <rvokal@redhat.com> - 1.60-62
+- new option for netstat - -T stops trimming remote and local addresses (#176465)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.60-61.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 2月 06 2006 Radek Vokál <rvokal@redhat.com> 1.60-61
+- mii-tool manpage fixed (#180055)
+
+* 二 1月 17 2006 Radek Vokal <rvokal@redhat.com> 1.60-60
+- forget to enable the new selinux option :( - config.make changed
+
+* 二 1月 17 2006 Radek Vokal <rvokal@redhat.com> 1.60-59
+- new option for nestat, -Z shows selinux context. Patch by <dwalsh@redhat.com>
+
+* 一 1月 02 2006 Radek Vokal <rvokal@redhat.com> 1.60-58
+- clear static buffers in interface.c by <drepper@redhat.com> (#176714)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 六 10月 15 2005 Radek Vokal <rvokal@redhat.com> 1.60-57
+- add note to hostname man page about gethostbyname() (#166581)
+- don't ship any rarp man page (#170537)
+
+* 三 8月 03 2005 Radek Vokal <rvokal@redhat.com> 1.60-56
+- fixed buffer overflow in arp (#164695)
+
+* 三 7月 20 2005 Radek Vokal <rvokal@redhat.com> 1.60-55
+- ifconfig - fixed virtual interface dropping (#162888)
+
+* 三 6月 22 2005 Radek Vokal <rvokal@redhat.com> 1.60-54
+- fr man pages are back (#159702)
+
+* 一 6月 06 2005 Radek Vokal <rvokal@redhat.com> 1.60-53
+- etherwake man page changed to ether-wake (#159156)
+
+* 二 4月 26 2005 Radek Vokal <rvokal@redhat.com> 1.60-52
+- don't show "duplicate line" warning (#143933)
+- netstat has new statistcs (#133032)
+- /etc/neplug is owned by net-tools (#130621)
+
+* 二 4月 05 2005 Radek Vokal <rvokal@redhat.com> 1.60-51
+- flush output in mii-tool (#152568)
+
+* 三 3月 30 2005 Radek Vokal <rvokal@redhat.com> 1.60-50
+- added mii-diag tool
+- added newer ether-wake
+- remove useless -i option from ifconfig
+- stop trimming interface names (#152457)
+
+* 三 3月 16 2005 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 01 2005 Radek Vokal <rvokal@redhat.com> 1.60-48
+- behaviour of netstat -i option changed (#115987)
+- netstat -i shows all interface, -I<Iface> only one
+
+* 一 2月 28 2005 Radek Vokal <rvokal@redhat.com> 1.60-47
+- added RPM_OPT_FLAGS
+- execshield patch for netplug <t8m@redhat.com>
+
+* 三 2月 16 2005 Radek Vokal <rvokal@redhat.com> 1.60-46
+- small typo in german translation (#148775)
+
+* 三 2月 09 2005 Radek Vokal <rvokal@redhat.com> 1.60-45
+- included infiniband support (#147396) <tduffy@sun.com>
+- added etherwake man page
+
+* 一 2月 07 2005 Radek Vokal <rvokal@redhat.com> 1.60-44
+- net-plug-1.2.9 - no changes, upstream included Red Hat patches
+- ether-wake-1.08 - few changes in implementation (#145718)
+
+* 一 1月 10 2005 Radek Vokal <rvokal@redhat.com> 1.60-43
+- don't report statistics for virtual devices (#143981) <kzak@redhat.com>
+- fixing translation headers - content type format
+- kill bitkeeper warning messages
+
+* 五 12月 03 2004 Radek Vokal <rvokal@redhat.com> 1.60-42
+- filter out duplicate tcp entries (#139407)
+
+* 四 11月 25 2004 Radek Vokal <rvokal@redhat.com> 1.60-41
+- added note to hostname(1) (#140239)
+- fixed --num-ports option for netstat (#115100)
+
+* 四 11月 11 2004 Radek Vokal <rvokal@redhat.com> 1.60-40
+- mii-tool(8) fixed, labeled as obsolete, added info (#138687)
+- netstat crashing on i64 fixed (#138804) Patch by <Andreas.Hirstius@cern.ch>
+
+* 四 11月 04 2004 Radek Vokal <rvokal@redhat.com> 1.60-39
+- IBM patch for netstat -s returning negative values on 64bit arch (#144064)
+- broadcast calulated if only netmask provided (#60509)
+
+* 二 11月 02 2004 Radek Vokal <rvokal@redhat.com> 1.60-38
+- fixed fail to assign the specified netmask before adress is assigned
+- patch by Malita, Florin <florin.malita@glenayre.com>
+
+* 三 9月 29 2004 Radek Vokal <rvokal@redhat.com> 1.60-37
+- spec file updated, added conversion for french and portugal man pages to UTF-8
+
+* 一 9月 06 2004 Radek Vokal <rvokal@redhat.com> 1.60-36
+- parse error fixed (#131539)
+
+* 五 9月 03 2004 Radek Vokal <rvokal@redhat.com> 1.60-35
+- The return value of nameif was wrong (#129032) - patch from Fujitsu QA
+
+* 一 8月 30 2004 Radek Vokal <rvokal@redhat.com> 1.60-34
+- Trunc patch added (#128359)
+
+* 一 8月 30 2004 Radek Vokal <rvokal@redhat.com> 1.60-33
+- Added patch for SI units by Tom "spot" Callaway <tcallawa@redhat.com> #118006
+
+* 二 8月 17 2004 Phil Knirsch <pknirsch@redhat.com> 1.60-32
+- Fix installopts for netplug.
+
+* 日 8月 08 2004 Alan Cox <alan@redhat.com> 1.60-31
+- Build requires gettext.
+
+* 一 8月 02 2004 Phil Knirsch <pknirsch@redhat.com> 1.60-30
+- Update to latest netplugd version.
+
+* 一 7月 12 2004 Phil Knirsch <pknirsch@redhat.com> 1.60-29
+- Fixed initscript patch for netplug (#127351)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 5月 14 2004 Phil Knirsch <pknirsch@redhat.com> 1.60-27
+- Fixed compiler warning/error in netplug.
+- Updated to netplug-1.2.6 for security update and fixes.
+
+* 四 5月 06 2004 Phil Knirsch <pknirsch@redhat.com> 1.60-26
+- Updated netplugd to latest upstream version.
+- Fixed execshield problem in main.c of netplugd.
+
+* 四 4月 15 2004 Phil Knirsch <pknirsch@redhat.com> 1.60-25
+- Fixed several possible buffer overflows (#120343)
+
+* 二 3月 30 2004 Harald Hoyer <harald@redhat.com> - 1.60-24
+- fixed compilation with gcc34
+
+* 二 3月 23 2004 Karsten Hopp <karsten@redhat.de> 1.60-23 
+- add chkconfig call in post and preun, fix init script (#116555)
+
+* 四 2月 19 2004 Phil Knirsch <pknirsch@redhat.com>
+- Added netplug-1.2.1 to net-tools (FR #103419).
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 8月 25 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-20.1
+-rebuilt
+
+* 一 8月 25 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-20
+- interface option now works as described in the man page (#61113).
+
+* 二 8月 19 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-19.1
+- rebuilt
+
+* 二 8月 19 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-19
+- Fixed trailing blank bug in hostname output (#101263).
+- Remove -O2 fir alpha (#78955).
+- Updated netstat statistic output, was still broken.
+
+* 二 6月 17 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-18.1
+- rebuilt
+
+* 二 6月 17 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-18
+- fix ether-wake.c build with gcc 3.3
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-16.1
+- Bumped release and rebuilt
+
+* 五 5月 23 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-16
+- Fixed ether-wake usage output (#55801).
+
+* 四 5月 22 2003 Jeremy Katz <katzj@redhat.com> 1.60-15
+- fix build with gcc 3.3
+
+* 四 5月 22 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-14
+- Fixed wrong manpage (#55473).
+
+* 三 5月 21 2003 Phil Knirsch <pknirsch@redhat.com>
+- Added inet6-lookup patch from John van Krieken (#84108).
+- Fixed outdated link in ifconfig manpage (#91287).
+
+* 二 5月 20 2003 Phil Knirsch <pknirsch@redhat.com>
+- Fixed incorrect address display for ipx (#46434).
+- Fixed wrongly installed manpage dirs (#50664).
+
+* 三 3月 19 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-13
+- Fixed nameif problem (#85748).
+
+* 五 2月 07 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-12
+- Fixed -s parameter.
+- Fix /proc statistics for -nic operation.
+- Fixed -i operation in general.
+
+* 一 1月 27 2003 Phil Knirsch <pknirsch@redhat.com> 1.60-11
+- Disable smp build.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 1.60-10
+- rebuilt
+
+* 二 12月 17 2002 Phil Knirsch <pknirsch@redhat.com> 1.60-9
+- Rebuild
+- Copyright -> License.
+
+* 四 12月 05 2002 Elliot Lee <sopwith@redhat.com> 1.60-8
+- Rebuild
+
+* 二 8月 06 2002 Phil Knirsch <pknirsch@redhat.com> 
+- Added patch from Norm for a corrected output.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 4月 12 2002 Jeremy Katz <katzj@redhat.com>
+- fix nstrcmp() to be correct in the case where there are many devices 
+  of the same type, eg, "eth10" > "eth1"  (#61436)
+
+* 二 7月 31 2001 Bill Nottingham <notting@redhat.com>
+- do *not* use SIOCDEVPRIVATE for MII ioctls
+
+* 五 6月 01 2001 Preston Brown <pbrown@redhat.com>
+- include wake-on-lan wakeup utility, ether-wake by Donald Becker
+
+* 三 4月 18 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- itterate to 1.60
+
+* 日 4月 08 2001 Preston Brown <pbrown@redhat.com>
+- use find_lang macro
+- less specific locale dirs for man pages
+
+* 一 4月 02 2001 Preston Brown <pbrown@redhat.com>
+- don't use this version of rarp, doesn't work with our 2.4.
+
+* 二 2月 06 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- fixed man page typo, closing bug #25921
+
+* 四 2月 01 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- applied twaugh's patch to close bug #25474
+- which was a buffer length bug.
+
+* 三 12月 27 2000 Jeff Johnson <jbj@redhat.com>
+- locales not initialized correctly (#20570).
+- arp: document -e option (#22040).
+
+* 六 10月 07 2000 Jeff Johnson <jbj@redhat.com>
+- update to 1.57.
+- MTU (and other) option(s) not parsed correctly (#9215).
+- allow more granularity iwth --numeric (#9129).
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 06 2000 Jeff Johnson <jbj@redhat.com>
+- update to 1.56.
+- FHS packaging.
+
+* 六 4月 15 2000 Jeff Johnson <jbj@redhat.com>
+- update to 1.55.
+
+* 二 3月 07 2000 Jeff Johnson <jbj@redhat.com>
+- rebuild for sparc baud rates > 38400.
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description
+
+* 五 1月 14 2000 Jeff Johnson <jbj@redhat.com>
+- fix "netstat -ci" (#6904).
+- document more netstat options (#7429).
+
+* 四 1月 13 2000 Jeff Johnson <jbj@redhat.com>
+- update to 1.54.
+- enable "everything but DECnet" including IPv6.
+
+* 日 8月 29 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.53.
+
+* 三 7月 28 1999 Jeff Johnson <jbj@redhat.com>
+- plug "netstat -c" fd leak (#3620).
+
+* 四 6月 17 1999 Jeff Johnson <jbj@redhat.com>
+- plug potential buffer overruns.
+
+* 六 6月 12 1999 John Hardin <jhardin@wolfenet.com>
+- patch to recognize ESP and GRE protocols for VPN masquerade
+
+* 五 4月 23 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.52.
+
+* 四 3月 25 1999 Jeff Johnson <jbj@redhat.com>
+- update interface statistics continuously (#1323)
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 2)
+
+* 五 3月 19 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.51.
+- strip binaries.
+
+* 二 2月 02 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.50.
+- added slattach/plipconfig/ipmaddr/iptunnel commands.
+- enabled translated man pages.
+
+* 二 12月 15 1998 Jakub Jelinek <jj@ultra.linux.cz>
+- update to 1.49.
+
+* 六 12月 05 1998 Jeff Johnson <jbj@redhat.com>
+- update to 1.48.
+
+* 四 11月 12 1998 Jeff Johnson <jbj@redhat.com>
+- update to 1.47.
+
+* 三 9月 02 1998 Jeff Johnson <jbj@redhat.com>
+- update to 1.46
+
+* 四 7月 09 1998 Jeff Johnson <jbj@redhat.com>
+- build root
+- include ethers.5
+
+* 四 6月 11 1998 Aron Griffis <agriffis@coat.com>
+- upgraded to 1.45
+- patched hostname.c to initialize buffer
+- patched ax25.c to use kernel headers
+
+* 五 5月 01 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 五 2月 27 1998 Jason Spangler <jasons@usemail.com>
+- added config patch
+
+* 五 2月 27 1998 Jason Spangler <jasons@usemail.com>
+- changed to net-tools 1.432
+- removed old glibc 2.1 patch
+
+* 三 10月 22 1997 Erik Troan <ewt@redhat.com>
+- added extra patches for glibc 2.1
+
+* 二 10月 21 1997 Erik Troan <ewt@redhat.com>
+- included complete set of network protocols (some were removed for
+  initial glibc work)
+
+* 三 9月 03 1997 Erik Troan <ewt@redhat.com>
+- updated glibc patch for glibc 2.0.5
+
+* 四 6月 19 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+- updated to 1.33
+

@@ -1,0 +1,14 @@
+/usr/sbin/safe_finger
+/usr/sbin/tcpd
+/usr/sbin/try-from
+/usr/share/doc/tcp_wrappers-7.6
+/usr/share/doc/tcp_wrappers-7.6/BLURB
+/usr/share/doc/tcp_wrappers-7.6/Banners.Makefile
+/usr/share/doc/tcp_wrappers-7.6/CHANGES
+/usr/share/doc/tcp_wrappers-7.6/DISCLAIMER
+/usr/share/doc/tcp_wrappers-7.6/README
+/usr/share/doc/tcp_wrappers-7.6/README.IRIX
+/usr/share/doc/tcp_wrappers-7.6/README.NIS
+/usr/share/man/man8/safe_finger.8.gz
+/usr/share/man/man8/tcpd.8.gz
+/usr/share/man/man8/try-from.8.gz

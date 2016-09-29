@@ -1,0 +1,568 @@
+* 二 8月 05 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.29-22.6
+- fix config.py
+
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.29-22.5
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.29-22.4
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.29-22.3
+- rebuild
+
+* 五 6月 20 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 3.2.29-22.2
+- fix yum.conf.alios
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 3.2.29-22.1
+- rebuild for alios6
+
+* 三 12月 07 2011 Karanbir Singh <kbsingh@centos.org> - 3.2.29-22.el6.centos
+- Roll in CentOS Branding
+- Add a Requires for fastestmirror
+
+* 三 9月 21 2011 James Antill <james.antill@redhat.com> - 3.2.29-22
+- Fix storing of the history data on RHEL-6 sqlite.
+- Resolves: rhbz#662243
+
+* 一 9月 12 2011 Zdenek Pavlas <zpavlas@redhat.com> - 3.2.29-21
+- Don't issue bug report warning on rpm depsolve check errors
+- Resolves: rhbz#694401
+- Do not cache updateinfo for too long
+- Resolves: rhbz#733391
+
+* 五 9月 09 2011 Nils Philippsen <nils@redhat.com> - 3.2.29-21
+- change default of history_list_view back to "users"
+- Resolves: rhbz#662243
+
+* 二 8月 23 2011 James Antill <james.antill@redhat.com> - 3.2.29-20
+- Fix bugs in the history store patch (unicode and yumdb write fail).
+- Resolves: rhbz#730365
+- history nows stores and display rpmdb/yumdb information (Eg. from_repo).
+- Relates: rhbz#662243
+
+* 二 8月 16 2011 Florian Festi <ffesti@redhat.com> - 3.2.29-19
+- Removed locking changes from history store and display repo information.
+- Resolves: rhbz#730291
+- Relates: rhbz#662243
+
+* 四 8月 11 2011 James Antill <james.antill@redhat.com> - 3.2.29-18
+- Deal with pre scripts errors better.
+- Resolves: rhbz#661962
+- history nows stores and display rpmdb/yumdb information (Eg. from_repo).
+- Resolves: rhbz#662243
+- No bug report warning on depsolve check errors.
+- Resolves: rhbz#694401
+- Don't display baseurl in repolist for non-mirrors.
+- Resolves: rhbz#697885
+- Workaround  rpm-python big size problems.
+- Resolves: rhbz#704600
+- Fix false installroot config opt. warning.
+- Resolves: rhbz#707358
+- Fix retrieve gpg syntax bug.
+- Resolves: rhbz#709311
+- Fix for pulp repostorage API usage.
+- Resolves: rhbz#727574
+- Fix stale metadata cache checking.
+- Resolves: rhbz#727586
+- Make -q history info load-ts compatible.
+- Resolves: rhbz#728253
+- Changes needed for createrepo --update with sqlite.
+- Relates: rhbz#716235
+- Add upgrade-to.
+- Resolves: rhbz#728526
+
+* 四 4月 28 2011 James Antill <james.antill@redhat.com> - 3.2.29-17
+- Turn off repo. checking as rhnplugin uncached repos. aren't setup in init.
+- Resolves: rhbz#700035
+
+* 四 4月 14 2011 James Antill <james.antill@redhat.com> - 3.2.29-16
+- Running reinstall makes bad post trans. cache drops, breaking rpmdbv.
+- Resolves: rhbz#696720
+
+* 一 4月 11 2011 James Antill <james.antill@redhat.com> - 3.2.29-15
+- Check, and warn, about matching basenames in repo ssl certificates.
+- Resolves: rhbz#695427
+
+* 四 4月 07 2011 James Antill <james.antill@redhat.com> - 3.2.29-14
+- Fix for first pass option parsing fix.
+- Resolves: rhbz#692866
+
+* 五 4月 01 2011 James Antill <james.antill@redhat.com> - 3.2.29-13
+- Fix for first pass option parsing. --version prints warning etc.
+- Resolves: rhbz#692866
+
+* 二 3月 29 2011 James Antill <james.antill@redhat.com> - 3.2.29-12
+- Better warning for "empty" groups install.
+- Resolves: rhbz#655281
+- Disable translation part of self-test, as we don't use it in RHEL.
+- Resolves: rhbz#633255
+
+* 五 3月 25 2011 James Antill <james.antill@redhat.com> - 3.2.29-11
+- Catch rpmdb changes on warn checks.
+- Resolves: rhbz#634595
+
+* 一 3月 14 2011 James Antill <james.antill@redhat.com> - 3.2.29-10
+- localupdate shouldn't install multilib packages of the same version.
+- Resolves: rhbz#683946
+
+* 五 3月 11 2011 James Antill <james.antill@redhat.com> - 3.2.29-9
+- Remove Conflict with old PK, due to fix in -6 update.
+
+* 二 2月 22 2011 James Antill <james.antill@redhat.com> - 3.2.29-7
+- RFE: Allow importing of some gpg keys, atm. we die if the user says no to
+- anything.
+- Resolves: rhbz#606644
+
+* 一 2月 21 2011 James Antill <james.antill@redhat.com> - 3.2.29-6
+- Allow 32bit to checksum 2GB files.
+- Relates: rhbz#612409
+- Fix overloaded setup recursion with rhnplugin and some API calls.
+- Resolves: rhbz#678043
+- Turn off download sig. checking so we don't hold the rpmdb ts lock.
+- Resolves: rhbz#677410
+
+* 四 2月 10 2011 James Antill <james.antill@redhat.com> - 3.2.29-5
+- Another fix for updateinfo being broken.
+- Resolves: rhbz#663378
+
+* 二 1月 25 2011 James Antill <james.antill@redhat.com> - 3.2.29-3
+- Rebase yum to 3.2.29-3
+- Resolves: rhbz#659494
+- Fix some bugs with rebase:
+- Locking for non-root when using cache:
+- Resolves: rhbz#590675
+- GPG CA keys auto. import, if already seen:
+- Resolves: rhbz#662712
+- Anaconda no ts_file, 670784 and 670257.
+- Resolves: rhbz#670784
+- Conflict with old PK
+- Relates: rhbz#670163
+
+* 四 1月 13 2011 James Antill <james.antill@redhat.com> - 3.2.29-2
+- Rebase yum to 3.2.29, for many features bugfixes see:
+- http://yum.baseurl.org/wiki/whatsnew/3.2.29
+- Resolves: rhbz#659494
+- Some of the changes are:
+- yum downgrade for x86_64 package installs i686 packages (dep
+- Resolves: rhbz#584262
+- Lock yum for non-root users, so multiple simultaneous runs d
+- Resolves: rhbz#590675
+- Include yum-cron in RHEL
+- Resolves: rhbz#602149
+- repo file saving error when in repo id is $basearch
+- Resolves: rhbz#604973
+- yum history crashes displaying transaction done by user with
+- Resolves: rhbz#605039
+- RFE: Allow importing of some gpg keys, atm. we die if the us
+- Resolves: rhbz#606644
+- yum localinstall drpms/foo.drpm leads to Traceback
+- Resolves: rhbz#607258
+- reinstall of provides causes traceback, if the package isn't
+- Resolves: rhbz#612201
+- rpmdb open failed exception changed (rpm.error vs. TypeError
+- Resolves: rhbz#614023
+- Change the default bugtracker_url (patch from RHEL-5)
+- Resolves: rhbz#615447
+- reinstall gets confused when run twice on one package
+- Resolves: rhbz#623553
+- yum should treat epoch "None" as epoch "0"
+- Resolves: rhbz#627290
+- Z-stream needed on yum installonly kernel-modules handling
+- Resolves: rhbz#628151
+- yum not working properly with yum-plugin-versionlock
+- Resolves: rhbz#630983
+- /var/cache/yum periodically filling up
+- Resolves: rhbz#632391
+- yum self-test fails
+- Resolves: rhbz#633255
+- yum cannot handle channel with sha384 checksum
+- Resolves: rhbz#633270
+- RFE: parse enhanced updateinfo metadata
+- Resolves: rhbz#634117
+- yum traceback when running concurrent yum and rpm transactio
+- Resolves: rhbz#634595
+- yum group's "installation" is confusing for groups with only
+- Resolves: rhbz#655281
+- RFE: GPG CA keys
+- Resolves: rhbz#662712
+- yum --changelog update traceback
+- Resolves: rhbz#663378
+
+* 四 9月 16 2010 James Antill <james.antill@redhat.com> - 3.2.27-15
+- Remove kernel-modules from installonly configuration.
+- Resolves: rhbz#628151
+- Handle generated .sqlite files, for unique .xml MD.
+- Resolves: rhbz#632391
+
+* 二 8月 24 2010 Seth Vidal <svidal@redhat.com> - 3.2.27-14
+- fixed 588911 patch to be correct patch
+- add patch file for 572770 to take the old date from the wrong patch from 588911
+
+* 二 7月 27 2010 James Antill <james.antill@redhat.com> - 3.2.27-13
+- Don't traceback when proc isn't mounted.
+- Resolves: rhbz#614496
+- Own the /etc/yum/vars dir.
+- Resolves: rhbz#611906
+
+* 三 6月 16 2010 James Antill <james.antill@redhat.com> - 3.2.27-12
+- Stop allowing installation of obsoleted, only by installed.
+- Resolves: rhbz#604080
+
+* 五 6月 11 2010 James Antill <james.antill@redhat.com> - 3.2.27-10
+- Stop downgrade dep. chain removals
+- Resolves: rhbz#584262
+- Fix for rpm bindings api change
+- Resolves: rhbz#598639
+- Add plugin hooks for verify transaction pre/post.
+- Resolves: rhbz#602354
+- Fix groupremove_leaf_only when it empties the transaction.
+- Resolves: rhbz#603002
+
+* 二 5月 25 2010 James Antill <james.antill@redhat.com> - 3.2.27-9
+- Fix installs of obsoleted multiarch packages.
+- Resolves: rhbz#593522
+- Create a defense against akmod style postinst install hacks.
+- Resolves: rhbz#595553
+
+* 二 5月 11 2010 James Antill <james.antill@redhat.com> - 3.2.27-8
+- Move rpmdb cache/indexes to /var/lib
+- Resolves: rhbz#590340
+- Fix old missing recheck in depsolve
+- Resolves: rhbz#590339
+
+* 二 5月 04 2010 James Antill <james.antill@redhat.com> - 3.2.27-7
+- A few minor bugfixes from upstream
+- yum.log perms
+- Resolves: rhbz#588911
+- installroot double prefixing, on anaconda/kickstart install
+- Resolves: rhbz#577627
+- Add nocontexts flag to tsflags, if available.
+- Resolves: rhbz#588910
+- Speedup many install/update of same pkg.
+- Resolves: rhbz#588908
+- Correct os.path.link => os.path.islink typo, for dynamic yum vars.
+- Resolves: rhbz#588907
+
+* 五 4月 16 2010 James Antill <james.antill@redhat.com> - 3.2.27-4
+- A few minor bugfixes from upstream
+- Add dynamic FS based yumvars
+- Resolves: rhbz#576703
+
+* 五 3月 26 2010 James Antill <james.antill@redhat.com> - 3.2.27-3
+- 3.2.27 from Fedora, and a couple of minor patches
+- Resolves: rhbz#576703
+
+* 四 3月 18 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.27-1
+- 3.2.27 from upstream (more or less the same as 3.2.26-6 but with a new number
+
+* 四 3月 11 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-6
+- should be the final HEAD update before 3.2.27
+
+* 三 2月 24 2010 James Antill <james@fedoraproject.org> - 3.2.26-5
+- new HEAD, minor features and speed.
+
+* 三 2月 17 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-4
+- new HEAD to fix the fix to the fix
+
+* 二 2月 16 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-3
+- latest head - including fixes to searchPrcos
+
+* 三 2月 10 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-2
+- grumble.
+
+* 二 2月 09 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.26-1
+- final 3.2.26
+
+* 一 2月 08 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-14
+- $uuid, pkgtags searching, latest HEAD patch - pre 3.2.26
+
+* 四 1月 28 2010 James Antill <james at fedoraproject.org> - 3.2.25-13
+- A couple of bugfixes, most notably:
+-  you can now install gpg keys again!
+-  bad installed file requires don't get cached.
+
+* 五 1月 22 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-12
+- someone forgot to push their changes
+
+* 五 1月 22 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-11
+- more fixes, more fun
+
+* 五 1月 15 2010 James Antill <james at fedoraproject.org> - 3.2.25-10
+- latest head
+- Fixes for pungi, rpmdb caching and kernel-PAE-devel duplicates finding
+- among others.
+
+* 一 1月 04 2010 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-8
+- latest head
+
+* 四 12月 10 2009 James Antill <james at fedoraproject.org> - 3.2.25-7
+- Fixes the mash bug, lookup in the tsInfo too. :(
+- And fix the txmbr/po confusion ... third build the charm.
+
+* 五 12月 04 2009 James Antill <james at fedoraproject.org> - 3.2.25-4
+- Fixes for yum clean all, BZ 544173
+- Also allow "yum clean rpmdb" to work, bad tester, bad.
+
+* 四 12月 03 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-2
+- rebuild yum with latest HEAD patch
+- add rpmdb caching patch james wrote to see if it breaks everyone :)
+
+* 三 10月 14 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.25-1
+- 3.2.25
+
+* 三 9月 30 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-9
+- revert yum. import patch b/c it breaks a bunch of things
+
+* 三 9月 30 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-8
+- fix up broken build b/c of version-groups.conf file
+
+* 二 9月 29 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-7
+- fixes for odd outputs from ts.run and logs for what we store in history
+
+* 三 9月 23 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-6
+- new head patch - fixes some issues with history and chroots
+
+* 一 9月 21 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-5
+- latest head patch - includes yum history feature.
+
+* 二 9月 15 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-4
+- new head patch - translation updates and a few bug fixes
+
+* 三 9月 09 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-3
+- add geode arch patch for https://bugzilla.redhat.com/show_bug.cgi?id=518415
+
+* 四 9月 03 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-2
+- modify cachedir to include variables
+
+* 四 9月 03 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.24-1
+- 3.2.24
+
+* 三 9月 02 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-16
+- fix globbing issue 520810
+
+* 一 8月 31 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-15
+- one more head update - fixes some fairly ugly but kind of minor bugs
+
+* 二 8月 18 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-14
+- update to latest head pre 3.2.24
+- add requirement on python-urlgrabber 3.9.0 and up
+
+* 三 8月 05 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-13
+- latest head - right after freeze
+
+* 二 8月 04 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-12
+- latest head - right before freeze :)
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.2.23-11
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-10
+- remove exactarchlist by request for rawhide
+
+* 四 7月 02 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-9
+- update to latest head - make livecd creation work again in rawhide
+- disable one of the man page patches until after 3.2.24 is released b/c
+  of the changes to the man page in the head patch
+
+* 一 6月 22 2009 James Antill <james at fedoraproject.org> - 3.2.23-8
+- Update to latest head:
+- Fix old recursion bug, found by new code.
+- Resolves: bug#507220
+
+* 日 6月 21 2009 James Antill <james at fedoraproject.org> - 3.2.23-6
+- Update to latest head:
+- Unbreak delPackage() excludes.
+- Other fixes/etc.
+
+* 五 6月 19 2009 James Antill <james at fedoraproject.org> - 3.2.23-5
+- Actually apply the HEAD patch included yesterday :).
+
+* 四 6月 18 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-4
+- update to latest head
+
+* 一 6月 08 2009 Seth Vidal <skvidal at fedoraproject.org>
+- truncate changelog
+
+* 三 5月 20 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-2
+- add patch to close rpmdb completely
+
+* 二 5月 19 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.23-1
+- 3.2.23
+
+* 一 5月 11 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.22-5
+- jump up to almost 3.2.23. 
+- had to move patch0 around a bit until we rebase to 3.2.23
+
+* 四 4月 09 2009 James Antill <james at fedoraproject.org> - 3.2.22-4
+- fix typo for yum-complete-transaction message.
+
+* 三 4月 08 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.22-3
+- fix for file:// urls which makes things in pungi/mash work
+
+* 二 4月 07 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.22-2
+- yum-HEAD minus the yumdb patches
+
+* 二 3月 24 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.22-1
+- 3.2.22 - 3 patches beyond 3.2.21-16
+
+* 一 3月 16 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-16
+- fix for 490490
+
+* 五 3月 13 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-15
+- update to upstream git to fix conditionals problem on anaconda installs
+
+* 四 3月 12 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-14
+- latest HEAD
+
+* 二 3月 10 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-13
+- f11beta build
+
+* 三 3月 04 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-12
+- second verse, same as the first
+
+* 五 2月 27 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-10
+- merge up a lot of fixes from latest HEAD
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 3.2.21-10
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 10 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-9
+- merge up to latest yum head - sort of a pre 3.2.22
+
+* 三 2月 04 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-8
+- fix for YumHeaderPackages so it plays nicely w/createrepo and mergerepo, etc
+
+* 四 1月 29 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-7
+- update HEAD patch to fix repodiff (and EVR comparisons in certain cases)
+
+* 二 1月 27 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-6
+- patch to keep anaconda (and other callers) happy
+- remove old 6hr patch which is now upstream
+
+* 一 1月 26 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-4
+- patch to latest HEAD to test a number of fixes for alpha
+
+* 二 1月 20 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-3
+- add a small patch to make things play a bit nicer with the logging module
+  in 2.6
+
+* 三 1月 07 2009 Seth Vidal <skvidal at fedoraproject.org> - 3.2.21-1
+- bump to 3.2.21
+
+* 四 12月 18 2008 James Antill <james@fedoraproject.org> - 3.2.20-8
+- merge latest from upstream
+- move to 6hr metadata
+
+* 一 12月 08 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.20-7
+- merge patch from upstream and remove now old obsoletes patch
+
+* 四 12月 04 2008 Jesse Keating <jkeating@redhat.com> - 3.2.20-6
+- Add patch from upstream to fix cases where obsoletes are disabled. (jantill)
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 3.2.20-5
+- Rebuild for Python 2.6
+
+* 三 11月 26 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.20-4
+- update head patch
+
+* 三 10月 29 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.20-3
+- full patch against HEAD for skipbroken fixes (among others)
+
+* 一 10月 27 2008 James Antill <james@fedoraproject.org> - 3.2.20-2
+- Fix listTransaction for skipped packages.
+
+* 一 10月 27 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.20-1
+- 3.2.20
+
+* 四 10月 23 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.19-6
+- update HEAD patch
+
+* 三 10月 15 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.19-5
+- rebase against 3.2.X HEAD
+
+* 二 10月 14 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.19-4
+- pull patch from git to bring us up to current(ish)
+
+* 三 9月 03 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.19-3
+- add patch to fix yum install name.arch matching
+
+* 四 8月 28 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.19-2
+- add patch to fix mash's parser use.
+
+* 三 8月 27 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.19-1
+- 3.2.19
+
+* 四 8月 07 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.18-1
+- 3.2.18
+
+* 四 7月 10 2008 Seth Vidal <skvidal@fedoraproject.org> - 3.2.17-2
+- add patch from upstream for bug in compare_providers
+
+* 三 7月 09 2008 Seth Vidal <skvidal@fedoraproject.org> - 3.2.17-1
+- 3.2.17
+
+* 二 6月 24 2008 Jesse Keating <jkeating@redhat.com> - 3.2.16-4
+- Add a couple more upstream patches for even more multilib fixes
+
+* 二 6月 24 2008 Jesse Keating <jkeating@redhat.com> - 3.2.16-3
+- Add another patch from upstream for multilib policy and noarch
+
+* 日 5月 18 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.16-2
+- stupid, stupid, stupid
+
+* 五 5月 16 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.16-1
+- 3.2.16
+
+* 二 4月 15 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.14-9
+- nine is the luckiest number that there will ever be
+
+* 二 4月 15 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.14-8
+- after many tries - this one fixes translations AND pungi
+
+* 四 4月 10 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.14-5
+- once more, with feeling
+
+* 四 4月 10 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.14-4
+- another big-head-patch
+
+* 三 4月 09 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.14-3
+- apply patch to bring this up to where HEAD is now.
+
+* 二 4月 08 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.14-1
+- remove committed patch
+- obsoletes yum-basearchonly
+
+* 二 4月 01 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.13-2
+- fix minor typo in comps.py for jkeating
+
+* 四 3月 20 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.13-1
+- 3.2.13
+
+* 一 3月 17 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.12-5
+- update manpage patch to close bug 437703. Thakns to Kulbir Saini for the patch
+
+* 五 3月 14 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.12-4
+- multilib_policy=best is  now the default
+
+* 四 3月 13 2008 Seth Vidal <skvidal at fedoraproject.org> 
+- add jeff sheltren's patch to close rh bug 428825
+
+* 二 3月 04 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.12-3
+- set failovermethod to 'priority' to make jkeating happy
+
+* 二 3月 04 2008 Seth Vidal <skvidal at fedoraproject.org> 3.2.12-2
+- fix mutually obsoleting providers (like glibc!)
+
+* 一 3月 03 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.12-1
+- 3.2.12
+
+* 五 2月 08 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.11-1
+- 3.2.11
+
+* 日 1月 27 2008 James Bowes <jbowes@redhat.com> 3.2.10-3
+- Remove yumupd.py
+
+* 五 1月 25 2008 Seth Vidal <skvidal at fedoraproject.org> - 3.2.10-1
+- 3.2.10
+- add pygpgme dep
+

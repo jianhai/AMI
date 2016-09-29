@@ -1,0 +1,2918 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 9.03.27-1.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 9.03.27-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 9.03.27-1.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 9.03.27-1.1
+- rebuild for alios6
+
+* 三 12月 07 2011 Karanbir Singh <kbsingh@centos.org> 9.03.27-1.el6.centos
+- Roll in CentOS Branding
+
+* 五 10月 07 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.27-1
+- use restorecon -F for /dev and /dev/pts (#743222)
+
+* 二 9月 20 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.26-1
+- add 'emergency' mode (#681357)
+- kexec - free reservation memory only for crashkernel=auto (#734987)
+
+* 二 8月 16 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.25-1
+- use /bin/plymouth (#702814)
+
+* 一 8月 15 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.24-1
+- add support for sysctl.d (#680527)
+- log network messages via syslog (#653630, #672202)
+- document NM_CONTROLLED (#692123)
+- don't explictly disallow IPv6 aliases (#692240)
+- make sure the bond exists when we bring up the slaves. (#694501)
+- properly add and remove arp_ip_target's (#675079)
+- load static arp entries from ethers file (#696788)
+- fix logic error in rc.sysinit (#698520, <jlau@redhat.com>)
+- handle IPADDRx correctly for static addresses (#700184)
+- don't match filesystem types in hostnames (#703210, <jmueller@data-tronics.com>)
+- check for VLAN interfaces is being slave first (#703475)
+- override NETMASK from PREFIX where specified (#705367, <mpoole@redhat.com>)
+- allow multiple ETHTOOL_OPTS option types (#692410, #693583)
+- don't mount gfs2 in netfs (#689593)
+- fix pid file usage for IPv6. (#729292, <daveg@dgit.ndo.co.uk>)
+
+* 二 4月 19 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.23-1
+- netfs: don't print errors if mdadm isn't installed. (#696110)
+
+* 一 3月 21 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.22-1
+- init.d/functions: fix mishandled argument to fstab-decode (#682879)
+- network-functions: fix check for unmanaged devices (#670154)
+
+* 四 3月 10 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.21-1
+- remove network device naming requirement from VLAN devices (#676708, <Matt_Domsch@dell.com>)
+
+* 四 3月 10 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.20-1
+- Don't do force/lazy umount for the first nfs umount. (#676851, <jlayton@redhat.com>)
+
+* 五 2月 04 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.19-1
+- sys-unconfig(8) manpage fix (#674397)
+- set default shmmax and shmall for certain architectures (#660036)
+
+* 五 1月 14 2011 Petr Lautrbach <plautrba@redhat.com> 9.03.18-1
+- don't use the ipv6_exec_ip wrapper
+- don't accidentally cause sit module to be loaded on shutdown. (#654098, <ejsheldrake@gmail.com>)
+- simplify various string match constructs. (#558575, <ville.skytta@iki.fi>)
+- explicitly pass both device and dir when remounting read-only (#620461, <phr@doc.ic.ac.uk>)
+- add infiniband mapping (#648524, <monis@voltaire.com>)
+- fix ifdown calling nmcli for NM-managed devices (#612934, <jklimes@redhat.com>)
+- allow 0 as a vlan tag. (#635360)
+- support multiple IP addreses via IPADDRn, PREFIXn (or NETMASKn) (#633984)
+- stop tty and serial also on runlevel 's' (#629257)
+- system z optimized sysctl settings per default (#633323)
+- don't run kexec-disable for runlevels [S016] (#658138)
+- add # as a valid character in network device names (<Matt_Domsch@dell.com>)
+- use SYSCTLDEVICE without . (#667211, <notting@redhat.com>)
+- handle 'MASTER' being quoted. (#651450, <gfidente@redhat.com>)
+- test if there is /dev/rtc before syncing hardware clock (#598850)
+
+* 三 9月 01 2010 Harald Hoyer <harald@redhat.com> 9.03.17-1
+- enable syncookies again (#629259)
+
+* 二 8月 24 2010 Bill Nottingham <notting@redhat.com> - 9.03.16-1
+- actually, don't touch loglevel at all (#621257, #626572)
+
+* 一 8月 09 2010 Bill Nottingham <notting@redhat.com> - 9.03.15-1
+- set default loglevel to match RHEL 5 behavior (#621257)
+
+* 二 8月 03 2010 Bill Nottingham <notting@redhat.com> - 9.03.14-1
+- free kexec-reserved memory when necessary (#613578)
+
+* 一 7月 26 2010 Bill Nottingham <notting@redhat.com> - 9.03.13-1
+- rename_device - handle quoted 'DEVICE' (#614943, <harald@redhat.com>)
+- rename_device - fix handling of s390 subchannels (#614739, <harald@redhat.com>)
+
+* 四 7月 01 2010 Bill Nottingham <notting@redhat.com> - 9.03.12-1
+- fix interactive hotkey to work with plymouth (#605016)
+
+* 二 6月 29 2010 Bill Nottingham <notting@redhat.com> - 9.03.11-1
+- init/rcS-sulogin.conf: don't directly execute bash, re: selinux (#540216, #585053)
+
+* 四 6月 24 2010 Bill Nottingham <notting@redhat.com> - 9.03.10-1
+- ifup-eth: check for dhclient configuration in /etc/dhcp as well (#607766)
+- network-functions: handle quoted SUBCHANNELS (#607481)
+- netfs: allow for encrypted network block devices (#605600)
+
+* 三 6月 09 2010 Bill Nottingham <notting@redhat.com> - 9.03.9-1
+- check NM_CONTROLLED before deciding to use NM for a connection. (#600454)
+- always reboot on autorelabel. (#599879)
+- correct the fix for not clearing  environment with runuser. (#564105)
+- properly handle permission denied on pid file (#595597)
+
+* 三 5月 19 2010 Bill Nottingham <notting@redhat.com> - 9.03.8-1
+- clean up plymouth shtudown splash (#590103, <rstrode@redhat.com>)
+- rc.sysinit: use lvm2 --sysinit option (#588777)
+- network-functions: behave sanely in the absence of $DEVICE (#592108)
+- sysconfig/debug: export debug variables (#592102)
+- netfs: check for NM to be connected, not just running (#592095)
+- rcS*.conf: check if /etc/inittab exists (#590706, <plautrba@redhat.com>)
+- port vlan code to /sbin/ip (#566485, <plautrba@redhat.com>)
+
+* 三 5月 05 2010 Bill Nottingham <notting@redhat.com> - 9.03.7-1
+- updates for new NetworkManager commandline syntax
+
+* 二 5月 04 2010 Bill Nottingham <notting@redhat.com> - 9.03.6-1
+- fix plymouth startup/shutdown (#586040)
+- fstab-decode.8: tweak manpage so it formats correctly (#586476)
+- init.d/functions: handle being unable to read a specified pid file. (#584575)
+- ifup-eth: run dhclient -6 similar to dhclient -4. (#585047)
+
+* 五 4月 09 2010 Bill Nottingham <notting@redhat.com> - 9.03.5-1
+- network-scripts: integrate with NetworkManager (#550154)
+- clean up obsolete package requirements
+- RAID fixes (<dledford@redhat.com>)
+- network: only blacklist the original loopback interface. (#579829, <evgsyr@gmail.com>)
+- rc.sysinit: check dmraid's return code, to catch 'no raid sets' error. (#568869)
+- po/*: fix mistranslated checks for user input. (#566791)
+
+* 一 2月 15 2010 Bill Nottingham <notting@redhat.com> - 9.03.4-1
+- move ccw_init, ccw udev rules to s390utils (#539491)
+- network-functions: clean up device checks (#564505)
+
+* 四 2月 11 2010 Bill Nottingham <notting@redhat.com> - 9.03.3-1
+- pass -m to runuser to not clear environment (#564105)
+- don't use deprecated udev syntax in clock rules (#560801)
+- don't quote regex argument to bash's =~ (#558575, <ville.skytta@iki.fi>)
+- if HWADDR is set and DEVICE is not, use HWADDR to determine DEVICE. (#557941)
+- don't HUP init when messagebus starts (#557821)
+- setsysfont: use UNIMAP rather than SYSFONTACM when calling /bin/unicode_start. (#557173)
+
+* 五 1月 15 2010 Bill Nottingham <notting@redhat.com> - 9.03.2-1
+- ifup-eth: use dhclient's -H option instead of munging dhclient config files
+- rc.sysinit: move mdadm after dmraid (#554423)
+- ifup-eth: use dhclient -6, not the no-longer-included dhcp6c (#553019, <dcantrell@redhat.com>)
+- add more man pages (#529328, <plautrba@redhat.com>)
+- remove useless echo (#552785)
+- move is_wireless after MACADDR/MTU setting (#552641)
+- serial.conf: respawn correctly. (#552611, <zing@fastmail.fm>)
+- network-functions: use sysfs for wireless check (#552381, <adel.gadllah@gmail.com>)
+- reload init on started messagebus (<plautrba@redhat.com>)
+- honor HOTPLUG in ifdown (#547737)
+
+* 二 12月 15 2009 Bill Nottingham <notting@redhat.com> - 9.03.1-1
+- re-enable network service (#545255)
+- ifdown: honor HOTPLUG (#547737)
+- silence any erros from bonding adds (#516569)
+- remove assorted configurations we don't support the tools for
+  (ipsec-tools ipsec, cipe, IPX)
+
+* 三 12月 09 2009 Bill Nottingham <notting@redhat.com> - 9.03-1
+- migrate to upstart 0.6.x (<notting@redhat.com>, <plautrba@redhat.com>)
+-- jobs move to /etc/init
+-- collapse rcX and ttyX jobs into single job definitions
+-- jobs are no longer %config
+- remove obsolete doexec command
+- rc.sysinit: handle yet another random return string from dmraid
+- remove never-used 'sulogin' upstart event
+- fix time-setting udev rules for old-style RTC devices (#537595)
+- init.d/network: keep error codes limited to '1'. (#537841)
+- add initial ifup/ifdown man pages. (#529328, <plautrba@redhat.com>)
+
+* 二 10月 27 2009 Bill Nottingham <notting@redhat.com> - 9.02-1
+- remove long-since deprecated initlog
+- remove IUCV support (#507217)
+- halt: put a wrapper around killall5 to account for retval 2 not being an error (#526539, <hdegoede@redhat.com>)
+- ifup-eth: honor DEFROUTE=yes|no for 'all' connection types. (#528822)
+- network-functions: load bonding driver if BONDING_OPTS is defined. (#516569)
+- rc.sysinit: put /dev/shm in mtab too, as dracut now mounts it. (#528667)
+
+* 五 10月 09 2009 Bill Nottingham <notting@redhat.com> - 9.01-1
+- rc.sysinit: fix handling of dmraid output to avoid error messages (#527726, <mschmidt@redhat.com>)
+- rwtab: add /var/lib/xend (#526046)
+- translation updates: fi, nb, pl
+
+* 五 10月 02 2009 Bill Nottingham <notting@redhat.com> - 9.00-1
+- halt: wrap /sbin/killall5 to catch some return codes (#526539)
+- netfs, netconsle, network: fix return codes to match LSB spec (#524489, #524480, #524486)
+- handle kernels compiled both with and without CONFIG_RTC_HCTOSYS
+- halt: use killall5's return code to avoid unncesssary sleeping (#524359, <hdegoede@redhat.com>)
+- halt: don't kill mdmon on shutdown. (#524357, <hdegoede@redhat.com>)
+- rc.sysinit: do not try and activate ISW raidsets, unless noiswmd is passed. (#524355, <hdegoede@redhat.com>)
+- translation updates: ca, cs, da, mai, po, sv, uk
+
+* 一 9月 14 2009 Bill Nottingham <notting@redhat.com> - 8.99-1
+- init.d/functions: add a '-l' option to status to pass lock file name (#521772)
+- tweak kernel conflict
+- translation updates: as, bn_IN, de, fr, hi, it, hu, kn, mr, or, pa, pt, ru, te
+
+* 三 9月 02 2009 Bill Nottingham <notting@redhat.com> - 8.98-1
+- sysconfig.txt: doucment DHCP_HOSTNAME (#498052)
+- 88-clock.rules: Use --systz instead of --hctosys. (#517886, #489494)
+- Support rwtab and state passed from dracut initrd (#515771, <wtogami@redhat.com>)
+- restore context of *tmp files (#519748)
+- halt: don't try and save mixer settings if it's not writable. (#515771)
+- rwtab: add /var/spool, /var/lib/dbus, others (#494973, #515771)
+- sysconfig.txt: clarify docs (#518614)
+- rc.sysinit: don't pretend /selinux is configurable (#518164)
+- assorted ipv6 redundant code deletion
+- translation updates: bn, ca, de, es, fi, fr, gu, hi, it, ja, ko, ml, nb, nl, pl, pt, pt_BR, ru, sr, ta, zh_CN, zh_TW
+
+* 一 8月 10 2009 Bill Nottingham <notting@redhat.com> - 8.97-1
+- ipcalc: fix IPv6 address checking (#516319)
+- ifup-aliases: fix syntax error from earlier cleanups. (#515612, <jik@kamens.brookline.ma.us>)
+- translation updates: nb
+- rc.sysinit: remove useless call to pam_console_apply
+
+* 一 8月 03 2009 Bill Nottingham <notting@redhat.com> - 8.96-1
+- fix up upstart rules for s390(x). (#515222)
+- leave ChangeLog in the tarball only. (#515012)
+- disable netfilter on bridged interfaces. (#512206)
+- assorted shell-related cleanups to ipv6 and other code (<victor.lowther@gmail.com>)
+- use resolv.conf from dracut netboot before setting hostname. (#514801, <wtogami@redhat.com>)
+- ipcalc updates (<victor.lowther@gmail.com>)
+- only use ethtool for link checking; no more mii-tool
+- require /sbin/blkid directly, as it moves between packages (#508413)
+- redirect bash errors on 'unset' to /dev/null. (#482888)
+- fix dmraid partition naming (#501476, <hdegoede@redhat.com>)
+- don't quote upstart signals. (#501155)
+- translation updates: bn_IN, da, es, sk
+
+* 五 5月 01 2009 Bill Nottingham <notting@redhat.com> - 8.95-1
+- don't kill runlevel events on subsequent entering of the same runlevel (#498514)
+- lang.*sh: handle spaces in $HOME (#498482)
+- network-functions: explicitly source from the proper directory. (#496233)
+- remove persistent names on sys-unconfig. (#448322)
+- init.d/functions: cgexec has moved to /bin (#495715)
+- allow changing of VLAN type even if the module is already loaded. (#495053, <pietro@bertera.it>)
+- translation updates: fr, ml, pt
+
+* 二 4月 07 2009 Bill Nottingham <notting@redhat.com> - 8.94-1
+- prefdm: add simple fallbacks, sort rpmdb query for consistency (#494461)
+- translation updates; bn, de, pt, ru, te
+
+* 四 4月 02 2009 Bill Nottingham <notting@redhat.com> - 8.93-1
+- rc.sysinit: add a disk synchronization point with scsi_wait_scan post-udev (#481470)
+- netfs: drop smbfs support, we don't even ship the module or tools any more
+- setsysfont: honor LC_CTYPE (#487133, <skasal@redhat.com>)
+- prefdm: do fallbacks based on provides of 'service(graphical-login)' (#485751)
+- rc.sysinit: handle multiple IP addresses without choking in the stateless code (#443945)
+- rc.sysinit: catch the right error code from checking for passphrases (#483269, <vladis.kletnieks@vt.edu>)
+- prefdm: handle empty /etc/sysconfig/desktop correctly (#480113)
+- ifup-ipsec: allow use of either ESP only or AH only (#251494, <stijn.tintel@x-tend.be>)
+- ifup-eth: allow passing of arguments to dhcp6c (#437949, <pekkas@netcore.fi>)
+- ifup-eth: fix dhcpv6 when there is no IPv4 configuration (#486507)
+- ifup-ppp: avoid spurious SIGCHLD to pppd (#448881)
+- ifup-eth: add support for creating TUN/TAP devices on the fly (#453973, <scott@zahna.com>)
+- stop plymouth when starting single-user mode. (#491062)
+- add plymouth shutdown script (#473237, <jmccann@redhat.com>)
+- fix lang.sh/lang.sh/consoletype for execution with '-e'
+- ifdown-eth: remove arp_ip_target on ifdown for bonding devices. (#483711)
+- add vlan support for s390 HSI interfaces. (#490584)
+- ipcalc: support IPv6 (#464268, <dcantrell@redhat.com>)
+- translation updates: all
+
+* 一 3月 16 2009 Bill Nottingham <notting@redhat.com> - 8.91-1
+- fix DHCP reading of options from ifcfg-XXX (#483257)
+- ifdown-eth: clean up bridges on ifdown (#463325, <sean@bruenor.org>)
+- support MD on iSCSI (#480627)
+- remove support for 'ifcfg-foo-bar' configurations that inherit from 'ifcfg-foo'
+- remove slip support
+- translation updates: es, pl, ca, sr, de, sv, pa, pt_BR
+
+* 一 3月 09 2009 Bill Nottingham <notting@redhat.com> - 8.90-1
+- init.d/functions: cgroup support (<jsafrane@redhat.com>)
+- fix various issues with dmraid handling (#485895, <hdegoede@redhat.com>)
+- rc.sysinit: fix typo. (#487926)
+- console_init: loadkeys has a -q option for silent running. Use it.
+- ifup-tunnel: add compatiblity for openNHRP tunnels (#486559, <claude.tompers@ieee.lu>)
+- ccw_init: don't re-init an existing device, it causes errors. (#484411, <jpayne@redhat.com>)
+- netfs: use same kpartx arguments as rc.sysinit
+- don't list mtab in rwtab (#457941)
+- translation updates: fi, de, mai
+
+* 三 1月 28 2009 Bill Nottingham <notting@redhat.com> - 8.89-1
+- use a leading path when sourcing files (#482826)
+- netfs: don't unmount nfsd filesystem by accident (#481794, <sprabhu@redhat.com>)
+- bring up ipsec interfaces last (#481733)
+- ifdown-eth: fix bridge + vlan (#481557, <danken@redhat.com>)
+
+* 二 1月 20 2009 Bill Nottingham <notting@redhat.com> - 8.88-1
+- init.d/network: return success/failure correctly (#480677)
+- init.d/halt: fix typo (#480799)
+
+* 一 1月 19 2009 Bill Nottingham <notting@redhat.com> - 8.87-1
+- rename_device: be much faster in the presence of many devices (#480687, <danms@us.ibm.com>)
+- fix switching from targeted to MLS policy (#479054, <dwalsh@redhat.com>)
+- rc.sysinit: don't set $(uname -r) or $(uname -m); they're not used
+- network-functions-ipv6: set MTU correctly for 6to4. (#477976, <ackistler@yahoo.com>)
+- add more entries to rwtab (#476799, <harald@redhat.com>)
+- net.hotplug: Bail out sooner if the network service isn't running
+- init.d/halt: determine reboot/halt via existing INIT_HALT environment variable. (#475227)
+- event.d/serial: add some docs
+- init.d/functions: __pids_var_run: Handle multi-line pid files correctly (#473287)
+- remove support for no longer existing 'brctl setgcint' command. (#360471)
+- add %config back for ifcfg-lo (#472761)
+- rcS/rcS-sulogin: don't match commented lines when finding runlevel (#472717)
+- updated translations: de, sk
+
+* 二 11月 11 2008 Bill Nottingham <notting@redhat.com> - 8.86-1
+- stop plymouth before stopping the runlevel (#467207)
+- fix get_config_by_subchannel (#459044, <harald@redhat.com>)
+- use blkid -l to pick a single most appropriate device (#470027)
+- don't mkswap on halt, as it breaks swap-by-label/UUID (#469823)
+
+* 五 10月 31 2008 Bill Nottingham <notting@redhat.com> - 8.85-1
+- add some error handling/hiding to netfs NM dispatcher script (#469197)
+- halt: fix code that causes a syntax error on multiple sound cards (#469156)
+- require a new enough udev version to handle where we put the rules
+- exit 0 in /etc/rc.d/rc (#469050)
+- don't set up encrypted devices that have already been set up under different
+  names (#462371, <wwoods@redhat.com>)
+- accept either the '+<addr>', or comma-separated addresses for arp_ip_target. (#467954,
+  <darcy.sherwood@gmail.com>)
+- translation updates: hu, kn, ko, ml, sr, sr@latin
+
+* 二 10月 14 2008 Bill Nottingham <notting@redhat.com> - 8.84-1
+- override Arabic, Persian, and Hebrew on the console (<alsadi@ojuba.org>)
+- explicitly run mdadm on boot to catch degraded arrays. (<dledford@redhat.com>)
+- fix setting of console font/map (#458362, <ak@sensi.org>)
+- translations updates: hi, kn, nb, sk, sv, ta
+
+* 二 9月 30 2008 Bill Nottingham <notting@redhat.com> - 8.83-1
+- various merge review fixes (#225900)
+  Notably: init scripts/network scripts are no longer %config
+- remove some extraneous device-mapper initialization
+- use pidfile in status before calling pidof (#463205)
+- use plymouth directly, not the rhgb-client wrapper
+- move bridging after bonding (#449950, <djuran@redhat.com>)
+- use alsactl to save sound settings. (#462677, <jkysela@redhat.com>)
+- quit plymouth differently (<rstrode@redhat.com>)
+- make sure we don't try and spawn a repair shell when there's no
+  tty (#463161)
+- move udev rules to /lib
+- stateless updates (#433702, <harald@redhat.com>)
+- call logger with a full path (#447928, <harald@redhat.com>)
+- translation updates: as, bn_IN, ca, cz, de, es, fi, fr, gu, it, ja,
+  lv, mr, nl, or, pa, pl, pt_BR, ru, te, zh_TW
+
+* 三 9月 10 2008 Bill Nottingham <notting@redhat.com> - 8.82-1
+- refresh translation strings
+- plymouth updates. (#460702, <rstrode@redhat.com>)
+- translation updates: fi, lv, no
+- remove duplicate dependency (#465182)
+- ifup-eth: Change how we set the zeroconf route. (#239609)
+- ifup*: Use 0.0.0.0/0, not 0/0. (#460580)
+
+* 五 8月 29 2008 Bill Nottingham <notting@redhat.com> - 8.81-1
+- rc.sysinit: Don't use -L in find (#458652, #458504, CVE-2008-3524)
+- ifup: kill more code from loopback bringup
+
+* 二 7月 29 2008 Bill Nottingham <notting@redhat.com> - 8.80-1
+- Fix translation typo (#455804, <ruslanpisarev@gmail.com>)
+- Turn off syncookies
+- Cleanups for proper plymouth support
+- Move the mcheck code to a debugmode package, make it more generic
+
+* 一 7月 14 2008 Bill Nottingham <notting@redhat.com> - 8.79-1
+- fix mcheck stuff to be installed correctly
+- don't do an arping check for loopback interfaces
+- console_init: don't wait (<arjan@infradead.org>)
+- rc: clean up extraneous set -x noise
+- remove references to static dmraid/multipath binaries (#453987)
+- translation updates: lv
+
+* 五 6月 20 2008 Bill Nottingham <notting@redhat.com> - 8.78-1
+- fix mounting of /dev/pts
+
+* 四 6月 19 2008 Bill Nottingham <notting@redhat.com> - 8.77-1
+- NMDispatcher/05-netfs: fix check for default route (#445509)
+- service: don't set $LANG, rely on it to inherit from system locales (#422141)
+- init.d/functions: fix resolve_dm_raid() for older dmraid configs
+- Don't unmount sysfs in halt. (#446292)
+- rc.sysinit: don't try to startup crypto if we can't find the device
+- rc.sysinit: don't echo crypto stuff unless we're actually *doing* something
+- ifup: don't try to rename devices - udev rules are the way to go
+- rc.sysinit: fix typo, and don't restorecon on swap, etc. partitions (#448886)
+- set MALLOC_CHECK_ & MALLOC_PERTURB_ if configured (<pjones@redhat.com>)
+- console_init: support SYSFONTACM correctly, and support UNIMAP (#448704,
+  <vvv+fedora@colocall.net>)
+- don't export GRAPHICAL - plymouth is for all modes. also, don't start rhgb
+- fix clock rules to properly handle old-style RTC devices (#447019)
+- translation updates: ko, or, pl
+
+* 五 5月 02 2008 Bill Nottingham <notting@redhat.com> - 8.76-1
+- fix tcsh syntax error (#444998)
+- remove debugging cruft from rcS-sulogin
+
+* 二 4月 29 2008 Bill Nottingham <notting@redhat.com> - 8.74-1
+- use full path to /sbin/ip in NetworkManagerDispatcher script (#444378)
+- lang.{sh,csh}: read only user customization if LANG is already set (#372151)
+
+* 五 4月 25 2008 Bill Nottingham <notting@redhat.com> - 8.73-1
+- move event-compat-sysv events here, obsolete it
+- fix ctrl-alt-del during rc.sysinit (#444050)
+- fix 'telinit X' from single-user mode (#444001)
+
+* 四 4月 24 2008 Bill Nottingham <notting@redhat.com> - 8.72-1
+- don't have a S99single when using upstart (#444001, indirectly)
+
+* 三 4月 23 2008 Bill Nottingham <notting@redhat.com> - 8.71-1
+- adjust to gdm using LANG instead of GDM_LANG (#372151, <rstrode@redhat.com>)
+- rework netfs' check for networking availability to properly handle both network
+  and NetworkManager
+
+* 二 4月 15 2008 Bill Nottingham <notting@redhat.com> - 8.70-1
+- find is now in /bin. Use it. (#192991, #239914, #244941, #442178)
+- require event-compat-sysv for now (#442291)
+- fix serial event to wait properly
+- handle encrypted LVs properly (#441728)
+- add a sit tunnel type (#441635)
+- translation updates: ru
+
+* 二 4月 08 2008 Bill Nottingham <notting@redhat.com> - 8.69-1
+- Bring up lo whenever it shows up, not just in network/NM
+- fix shutdown-related oddities (#438444)
+- translation updates: el, sr, sr@latin, sv
+
+* 五 4月 04 2008 Bill Nottingham <notting@redhat.com> - 8.68-1
+- netfs: umount 'ncp' filesystems as well (#437117)
+- improve performance of s390 ccw rules (#437110, <mernst@de.ibm.com>)
+- fix consoletype environment leak (#439546)
+- ifdown-eth: make sure NEWCONFIG exists before grepping for it (#390271, continued)
+- console_check: always open with NONBLOCK, clear the serial structs first,
+  handle non-16550 ports (<dwmw2@infradead.org>)
+- halt: don't use /etc/sysconfig/clock (#438337)
+- ifup: don't attempt to re-enslave already-enslaved devices (#440077)
+- netfs: run as a NetworkManagerDispatcher script (#439242)
+- netfs: remove $local_fs from the list of provides (making it implicitly provided
+  by booting)
+- serial: add a crude hack to wait for runlevels to finish (#437379)
+- serial: frob /etc/securetty when necessary (#437381)
+- add a upstart-specific inittab
+- translation updates: as, bn_IN, cs, de, es, fi, fr, gu, hi, it, ja, kn, ml, mr, nb,
+  nl, pa, pl, pt_BR, ru, sk, sr, ta, te, zh_CN
+
+* 二 3月 11 2008 Bill Nottingham <notting@redhat.com> - 8.67-1
+- actually, don't
+
+* 二 3月 11 2008 Bill Nottingham <notting@redhat.com> - 8.66-1
+- use upstart to start rhgb (#433156, <cdahlin@ncsu.edu>)
+
+* 一 3月 10 2008 Bill Nottingham <notting@redhat.com> - 8.65-1
+- Add a serial console udev/upstart handler (#434764, indirectly)
+- Add some upstart notification for sysv scripts (modified from <cjdahlin@ncsu.edu>, #431231)
+- Handle _rnetdev correctly (#435358, <pjones@redhat.com>)
+- various minor speedups (<arjan@infradead.org>)
+- translation updates: el, fr
+- disable network by default, in favor of NetworkManager
+
+* 二 2月 26 2008 Bill Nottingham <notting@redhat.com> - 8.64-1
+- Add a console_init udev helper to do console initialization
+- add /sbin/pidof requirement (#434863)
+
+* 五 2月 01 2008 Bill Nottingham <notting@redhat.com> - 8.63-1
+- don't start RAID arrays in rc.sysinit, that's done by udev (corollary of #429604)
+- add a NetworkManager-dispatcher script that does netreport on interface changes
+- use udev rules to set the clock, avoiding issues with modular rtcs (#290731)
+
+* 一 1月 21 2008 Bill Nottingham <notting@redhat.com> - 8.62-1
+- rc.d/rc.sysinit: fix syntax error (#429556)
+- migrate sr@Latn -> sr@latin (<kmilos@gmail.com>)
+
+* 五 1月 18 2008 Bill Nottingham <notting@redhat.com> - 8.61-1
+- use lvm, not lvm.static (#429222)
+- ifup-eth: don't do something odd if we find a mac address that
+  matches the user-set MACADDR (#251415)
+- rc.sysinit: fix root fs check to catch 'rw,ordered,noatime,etc.' properly
+  (#334171)
+- rc.sysinit: Use proper invocations for authconfig, system-config-network
+  (#426372, #428202)
+- service: handle unreadable scripts (#427767)
+- initscripts.spec: add requirements for stateless
+- fix perms on /etc/profile.d (#407531, <ville.skytta@iki.fi>)
+- rename_device: handle quoted HWADDR, etc. in ifcfg scripts (#351291)
+- minor stateless fixes
+- Makefile cleanups (from OLPC, <cscott@cscott.net>)
+- translation updates: fr, ru, nb
+- don't endelessly loop on ifdown (#390271)
+- rc.sysinit: - fix encrypted swap partitions with random key
+  (<harald@redhat.com>)
+
+* 二 10月 09 2007 Bill Nottingham <notting@redhat.com> - 8.60-1
+- don't chvt with rhgb - just kill it when needed
+
+* 一 10月 08 2007 Bill Nottingham <notting@redhat.com> - 8.59-1
+- rc.sysinit: fix rhgb check
+- prefdm: add wdm section (#248087)
+- init.d/functions, halt: clean up some extraneous delays (#219816)
+- ifup-wireless: set mode before bringing link up (#254046, <linville@redhat.com>)
+- translation updates: pt_BR, hr
+
+* 五 10月 05 2007 Bill Nottingham <notting@redhat.com> - 8.58-1
+- revert kernel conflict so that xen can still work (#319401)
+- rename_device, 60-net.rules: only suggest an interface name (part of #264901)
+- require newer udev for persistent net rules (part of #264901)
+- don't hang if someone puts a dangling pipe in /etc/rhgb/temp (#251219)
+- genhostid: fix for 64-bit systems (#306811)
+- more bash matching fixes (#220087)
+- translation updates: is, nb
+
+* 二 9月 25 2007 Bill Nottingham <notting@redhat.com> - 8.57-1
+- work around upstream bash changes (#220087, modified from <nvigier@mandriva.com>)
+- init.d/network: add Should-Start for firewall services
+- ifup-eth: handle arp_ip_target separately (#288151, <agospoda@redhat.com>)
+- rc.sysinit: remove rc.serial support - should be udev rules
+- rc.sysinit: remove acpi module loading - now supported by the kernel automatically
+- fix en_GB translation (#271201)
+- translation updates: as, bn_IN, bg, ca, cs, de, el, es, fi, gu, hi, it, ja, ko, kn, ml,
+  mr, nb, nl, pa, pl, pt, pt_BR, ro, sl, sr, sr@Latn, sv, ta, te, zh_CN
+
+* 三 8月 29 2007 Bill Nottingham <notting@redhat.com> - 8.56-1
+- rename_device: fix open() call
+- rc.sysinit: optimize out some excess greps (<harald@redhat.com>)
+- halt: support newer nut syntax, conflict with old versions (#252973, <tsmetana@redhat.com>)
+- fix buildreq from popt -> popt-devel
+ - newer popt is in /lib|/lib64 - require it, and link dynamically
+- rc.sysinit: added support for cryptsetup-uuids (bug #242078, <harald@redhat.com>)
+- netconsole: fix status(), assorted other cleanups
+- translation updates: fr, ro, sk
+
+* 五 7月 27 2007 Bill Nottingham <notting@redhat.com>
+- add /etc/networks (#239602)
+- rc.sysinit: fix quotacheck, remove obsolete convertquota (#249003, <tometzky@batory.org.pl>)
+- rc.sysinit: add gfs2 to the 'don't mount here' list (#248985)
+- netfs: check for rpcbind, not portmap (#245595)
+- ifup-eth: set 'primary' later for bonding devices (#236897, <agospoda@redhat.com>)
+- translation updates: cy, en_GB, mk, ml, ms, pl, sk, ta, zh_CN
+
+* 二 7月 17 2007 Nils Philippsen <nphilipp@redhat.com>
+- avoid calling unicode_start unnecessarily often during startup/shutdown which
+  causes certain monitor/video card combos to flicker heavily (#237839)
+
+* 二 5月 15 2007 Bill Nottingham <notting@redhat.com> 8.54-1
+- translation updates: as, bg, cs, ja, ms
+- redirect bogus errors from cryptsetup to /dev/null <karsten@redhat.com>
+
+* 四 4月 19 2007 Bill Nottingham <notting@redhat.com> 8.53-1
+- init.d/halt: use sound saving wrapper from alsa-utils, conflict with
+  older versions (#236916)
+- usernetctl: drop user gid (#229372)
+- translation updates: ta, pt_BR, nb, as, hi, de
+
+* 一 4月 16 2007 Bill Nottingham <notting@redhat.com> 8.52-1
+- lang.sh: fix locales where SYSFONT is not the default (#229996)
+- ifup-wireless: properly quote arguments (#234756)
+- readonly-root: add options for mounting state (#234916)
+- rwtab: updates (#219339, <law@redhat.com>)
+- add netconsole init script (#235952)
+- disable link checking when PERSISTENT_DHCLIENT is set (#234075)
+- restore file context on /etc/resolv.conf (#230776, <dwalsh@redhat.com>)
+- ifup-post: only use the first address (#230157, <michal@harddata.com>)
+- ifup-ipsec: allow overriding of my_identifier (#229343, <cmadams@hiwaay.net>)
+- ifup-wireless: set link up before itweaking wireless parameters (#228253)
+- rc.sysinit: restorecon on mount points when relabeling (#220322)
+- init.ipv6-global: cleanup & optimize sysctl usage (#217595)
+- ifup-eth: support ETHTOOL_OPTS on bridge devices (#208043, <bbaetz@acm.org>)
+- network-functions-ipv6: as we don't use NETWORKING_IPV6, silence errors (#195845)
+- fix description (#229919)
+- translation updates
+
+* 五 2月 23 2007 Bill Nottingham <notting@redhat.com> 8.51-1
+- fix 'Fedora Fedora' in rc.sysinit
+- halt: use kexec -x to not shut down network (#223932, <mchristi@redhat.com>)
+- network_functions: fix is_bonding_device logic (#229643)
+- translation updates: nb
+
+* 一 2月 19 2007 Bill Nottingham <notting@redhat.com> 8.50-1
+- lang.csh, lang.sh: if $LANG is set, don't override it (#229102)
+- initlog.1: fix man page formatting (<esr@thyrsus.com>)
+- network-functions: simplify bonding test (#215887, <herbert.xu@redhat.com>)
+- fix ifup-post when lookup fails (#220318, <hiroshi.fujishima+alios@gmail.com>)
+- add bridging docs (#221412, <markmc@redhat.com>)
+- release bonding slaves properly (#220525)
+- fix ppp-watch with ONBOOT=yes (#216749)
+- support VLAN_PLUS_VID_NO_PAD (#222975, #223011)
+- remove NETWORKING_IPV6; to disable, use a modprobe rule
+- translation updates: ms, de, el, pt_BR, fi, bs, sr, it, ko
+
+* 二 12月 19 2006 Bill Nottingham <notting@redhat.com> 8.49-1
+- rc.sysinit: remove raidautorn (#219226)
+- ifup-eth: set MACADDR, MTU before initializing bonding slaves, etc (#218792)
+- translation updates: mr, ms, hi, te, ml
+
+* 二 11月 28 2006 Bill Nottingham <notting@redhat.com> 8.48-1
+- add a step to rename any temporarily renamed devices (#208740, #214817)
+- make sure network modules don't get accidentally reloaded (#211474)
+- rc.sysinit: fix dmraid test (#216334)
+- init.d/halt: don't unmount network filesystems
+- ipsec: Add a way to manually manage racoon.conf (#159343, <mitr@redhat.com>)
+- sysconfig.txt: Document ~/.i18n (#199323, <mitr@redhat.com>)
+- some translation updates
+
+* 一 11月 06 2006 Bill Nottingham <notting@redhat.com> 8.47-1
+- lang.{sh,csh}: handle sinhalese as well in CJKI clauses (#212438)
+- rc.sysinit: add '--auto=yes' to mdadm invocation (#213671)
+- rename_device: fix incorrect handling of .bak files
+- mount tmpfs with -n (#213132)
+- various SUBCHANNELS related s390 fixage (#204803)
+- lang.{sh,csh}: support iso-8859-8 (#212738, <matan@svgalib.org>)
+
+* 五 10月 27 2006 Bill Nottingham <notting@redhat.com> 8.46-1
+- ifup-eth: restorecon on moved lease file
+- rc.sysinit: handle "nodmraid" and "nompath" command line options (#209377, <pjones@redhat.com>)
+- revert early-login support (#210836, essentially)
+- blacklist CJKI on the virtual console (#120819)
+- rc.sysinit: use dmraid.static (#211297)
+- use sysfs interface for bonding (#202443, <agospoda@redhat.com>)
+- use /etc/statetab, /etc/statetab.d for local state (#211839, <markmc@redhat.com>)
+- fix or_IN and similar locales (#212219)
+- use SUBCHANNELS as the primary key for s390 network devices (#204803)
+- translation updates
+
+* 五 10月 06 2006 Bill Nottingham <notting@redhat.com> 8.45-1
+- lang.csh/lang.sh - do *not* stty iutf8; too much chaos with SIGTTOU
+  (reverts: #186961; fixes #209469)
+- translation updates: ms
+
+* 三 10月 04 2006 Bill Nottingham <notting@redhat.com> 8.44-1
+- separate tmpfs-usage for state from readonly-root
+- set keymap correctly in non-utf8 locale (#167363)
+- setsysfont: run unicode_stop if in non-unicode locale
+- lang.csh/lang.sh: set iutf8 if appropriate (#186961)
+- lang.csh/lang.sh: handle non-utf8 locales correctly (#200100)
+- rc.sysinit: redirect stderr from setsysfont (#209204, indirectly)
+- rwtab: fix iscsi file location (#208864)
+- translation updates: el, da, as, or
+- fix stateless updates (#206331, <law@redhat.com>)
+
+* 三 9月 27 2006 Bill Nottingham <notting@redhat.com> 8.43-1
+- move ccwgroup initialization to a udev rule (should fix #199139,
+  - init.d/functions: don't write to gdmfifo
+- remove unused-since-RHL-7 consolechars code, update docs (#206106)
+- stateless updates (#206331, <law@redhat.com>)
+- translation updates (el, ms, hr, sl)
+
+* 四 9月 21 2006 Bill Nottingham <notting@redhat.com> 8.42-1
+- run rc.sysinit, /etc/rc in monitor mode (part of #184340)
+- use a better check for 'native' services (#190989, #110761, adapted
+  from <matthias@rpmforge.net>)
+
+* 二 9月 19 2006 Bill Nottingham <notting@redhat.com> 8.41-1
+- fix network ipv6 hang (#207137, others)
+- rc.sysinit: change blkid.tab path to /etc/blkid/blkid.tab
+- rename_device: reset DEVPATH also when renaming (#206884, <phil@fifi.org>)
+- sysconfig.txt: clarify onboot/onparent usage
+
+* 五 9月 15 2006 Bill Nottingham <notting@redhat.com> 8.40-1
+- translation updates
+- rename_device: use '__tmpXXXX' instead of 'devXXXX' as a temporary device
+  name to avoid any realistic namespace clashes
+- rc.sysinit: set default affinity if specified on commandline (#203359)
+- always pass path to '.' (#206035)
+- run setsysfont, loadkeys always when /dev/tty{0,1} exist (#150769)
+- allow going to a shell when system is shut down cleanly (from <dwalsh@redhat.com>)
+
+* 二 9月 05 2006 Bill Nottingham <notting@redhat.com> 8.39-1
+- translation updates
+- Handle partitions on multipath/dmraid better (<pjones@redhat.com>)
+- make /dev/mapper/control ourselves (<pjones@redhat.com>)
+- init.d/network: simplify 'status' call
+- fix actual 169.254 networks (#203591)
+- rc.sysinit: don't run vgscan (#191879)
+- init.d/halt: don't umount /dev/root<foo> (<oblin@mandriva.com>)
+- rc.sysinit: catch more dmraid errors (#200683)
+- support 'tmp' option in /etc/crypttab (#201382, <mitr@redhat.com>,
+  <lv@lekv.de>)
+- IPv6 updates (<pb@bieringer.de>, includes a fix for #143452)
+
+* 二 8月 01 2006 Bill Nottingham <notting@redhat.com> 8.38-1
+- translation updates
+- bring down bonding slaves on ifdown (#199706)
+- support LINKDELAY for dhcp (#191137)
+- netfs: run multipath on netdev devices (#180977)
+- halt: use /proc/mounts instead of /etc/mtab (#198426, <mitr@redhat.com>)
+- rc.sysinit: fix getkey race (#191453, <mitr@redhat.com>)
+- spec cleanups (#188614, <kloczek@rudy.mif.pg.gda.pl>)
+- support aliases on vlan (#193133, <mitr@redhat.com>)
+- clean up ifcfg file handling (<mitr@redhat.com>, <michal@harddata.com>)
+- GRE and IPIP tunnel support (#168990, <mitr@redhat.com>,
+  <razvan.vilt@linux360.ro>, <aaron.hope@unh.edu>, <sean@enertronllc.com>)
+- rc.sysinit: don't format encrypted swap always (#127378)
+- don't try to add routes to alias devices (#199825, #195656)
+
+* 五 7月 21 2006 Bill Nottingham <notting@redhat.com> 8.37-1
+- update translations
+
+* 五 7月 21 2006 Bill Nottingham <notting@redhat.com> 8.36-1
+- rework automatic swapon - only run if AUTOSWAP=yes, and fix errors
+  (#198695, #196179, #196208)
+- redo single so it starts last in runlevel 1, and doesn't kill/start
+  services itself
+- add configurable delay for killproc() (#198429, <jorton@redhat.com>)
+- fix loop in rename_device (#199242, <markmc@redhat.com>)
+- rc.sysinit: stateless updates (#197972, <law@redhat.com>)
+- support for copying dhcp leases from initramfs (#198601, <markmc@redhat.com>)
+- readonly-root: SELinux works now in the kernel, allow it
+- init.d/network: don't bring down network if root is on a network device
+- init.d/halt: don't use -i to halt; causes problems with iscsi
+- add support for routing rule-$device (#132252, <mitr@redhat.com>)
+- fix rhgb output (#192604, <tonynelson@georgeanelson.com>)
+- fix crypttab options for LUKS (#197656, <mitr@redhat.com>)
+- ipsec: various fixes & new features (#150682, #168972, <mitr@redhat.com>, <alex@milivojevic.org>)
+- ipsec: add check for IKE_METHOD (#197576, <john_smyth@mail.ru>)
+- rename_device: ignore alias devices, fix race (#186355)
+- ifup/ifdown: don't mark as %config
+- rwtab: some additions/cleanup
+
+* 一 6月 12 2006 Bill Nottingham <notting@redhat.com> 8.35-1
+- readonly root enhancments (modified from <law@redhat.com>, #193164)
+- encrypted swap, non-root filesystem support (#127378, <mitr@redhat.com, <alios@flyn.org>)
+- clarify killproc usage (#193711, <mitr@redhat.com>)
+- document BRIDGE= (#192576, <mitr@redhat.com>)
+- rc.sysinit: allow for sulogin instead of automatic relabeling (<dwalsh@rehdat.com>)
+
+* 二 5月 23 2006 Bill Nottingham <notting@redhat.com> 8.34-1
+- link glib2 dynamically now that it's in /lib, conflict with older
+  versions
+- handle cups specially when cleaning /var (#189168)
+- remove ifdown-aliases (<mitr@redhat.com>)
+- ifup-ipsec: fix key handling when only one of AH or ESP is used
+  (#166257, <mituc@iasi.rdsnet.ro>)
+- IPv6 updates, including RFC 3041 support (<pb@bieringer.de>)
+- routing fixes, add METRIC support for default routes (#124045, <mitr@redhat.com>)
+- fix handling of mount points with white space (#186713, <mitr@redhat.com>)
+
+* 四 4月 20 2006 Bill Nottingham <notting@redhat.com> 8.33-1
+- support for readonly root
+- rc.sysinit: remove call to zfcpconf.sh - that should be udev rules
+- ifup*: add NETWORKDELAY and LINKDELAY (#176851, <mitr@redhat.com>)
+- rc.sysinit: remove obsolete initrd code (<pjones@redhat.com>)
+
+* 一 4月 10 2006 Bill Nottingham <notting@redhat.com> 8.32-1
+- netfs: fix redirect (#187505)
+- rc.sysinit add forcequotacheck (#168118, <mitr@redhat.com>)
+- functions/pidof: various fixes (#182623, others <mitr@redhat.com>)
+- add support for DHCP on bridges (#125259, <mitr@redhat.com>,
+  anders@kaseorg.com>)
+- rc.sysinit: use pidof, not killall (#185429, <pjones@redhat.com>)
+- ppp fixes (#129195, #163950, #92023, <mitr@redhat.com>, <avi@argo.co.il>)
+- ifup/ifdown: unset $WINDOW (#174336, <mitr@redhat.com>)
+
+* 五 3月 17 2006 Bill Nottingham <notting@redhat.com> 8.31.2-1
+- add udev helper to rename network devices on device creation
+
+* 二 3月 14 2006 Bill Nottingham <notting@redhat.com> 8.31.1-1
+- fix context of /dev/pts (#185436)
+- translation updates
+
+* 日 3月 05 2006 Bill Nottingham <notting@redhat.com> 8.31-1
+- fix kexec support (<jmoyer@redhat.com>)
+- translation updates
+
+* 二 2月 28 2006 Bill Nottingham <notting@redhat.com> 8.30-1
+- hotplug: don't cause modules to be reloaded on ifdown/rmmod (#179809)
+- fix endless loops in ifup/ifdown (#177792, #182466)
+- fix enabling of enforcing SELinux mode after relabel (#181893)
+- remove debugging code from ifup-bnep
+- add /proc, /sys mounting back to rc.sysinit
+  Note: booting without an initrd is deprecated
+- translation updates
+
+* 二 2月 14 2006 Peter Jones <pjones@redhat.com> 8.29-1
+- scrub another possible error message from dmraid output
+
+* 一 2月 13 2006 Bill Nottingham <notting@redhat.com> 8.28-1
+- kill nash-hotplug before starting udev (<pjones@redhat.com>)
+- silence warnings on /dev/pts remount (<pjones@redhat.com>)
+- more translation updates
+
+* 一 2月 13 2006 Bill Nottingham <notting@redhat.com> 8.27-1
+- translation updates
+- lang.sh: revert fix for #176832, it's broken
+- ifup-aliases fixes (<pjones@redhat.com>,<mitr@redhat.com>)
+
+* 二 2月 07 2006 Bill Nottingham <notting@redhat.com> 8.26-1
+- revert "rc.sysinit: don't mount usbfs, libusb no longer uses it" change
+- add some ugly hacks to make sure net hotplug doesn't run after unclean
+  shutdown (#177795)
+- don't mount /sys and /proc in rc.sysinit - the initrd already does
+  (<pjones@redhat.com>)
+- halt: try to unmount tmpfs filesystems before swapoff (#174000,
+  <mitr@redhat.com>)
+
+* 四 2月 02 2006 Bill Nottingham <notting@redhat.com> 8.25-1
+- ifup: don't run the arping check if the address is already on the device
+
+* 三 2月 01 2006 Bill Nottingham <notting@redhat.com> 8.24-1
+- init.d/functions: fix sendmail startup
+- sysconfig.txt: fix typos (<mitr@redhat.com>)
+
+* 二 1月 31 2006 Peter Jones <pjones@redhat.com> 8.23-1
+- rc.sysinit: do a better job of not activating already active dmraids
+
+* 二 1月 31 2006 Bill Nottingham <notting@redhat.com> 8.22-1
+- remove references to /usr/X11R6/bin (#177938)
+- rc.sysinit: fix SELinux message formatting (#178532)
+- rc.sysinit: clean cvs as well (#178539, <ville.skytta@iki.fi>)
+- init.d/halt: move halt.local so that it runs before /  is remounted r/o (#179314)
+- rc.sysinit: don't activate already active dmraids (<pjones@redhat.com>)
+- rc.sysinit: don't mount usbfs, libusb no longer uses it
+- init.d/functions: Add -p to status() (#134363, <mitr@redhat.com>)
+- init.d/functions: Separate /var/run/*.pid handling and pidof calls
+  to private functions (#63440, <mitr@redhat.com>)
+- init.d/functions: update for current LSB, including -p pidfile
+  (#99325, #134363, <mitr@redhat.com>, <tobias.burnus@physik.fu-berlin.de>)
+- getkey: various cleanups, add man page (#54481, <mitr@redhat.com>)
+- lang.sh: don't always call consoletype (<laroche@redhat.com>)
+
+* 五 1月 20 2006 Bill Nottingham <notting@redhat.com> 8.21-1
+- move handling of network hotplug events here, add appropriate udev
+  rules, obsolete hotplug
+- get rid of some path lookups (#178321, <mclasen@redhat.com>)
+- get hwaddrs from sysfs as opposed to ip | sed
+- translation updates
+- lang.sh: don't run unicode_start for subshells (#176832)
+- halt: ignore sysfs but not /sys<otherstuff> (#177612, <bnocera@redhat.com>)
+- add service(8) man page (#44857) <mitr@redhat.com>
+
+* 三 12月 21 2005 Bill Nottingham <notting@redhat.com> 8.20-1
+- remove kmodule. udev handles module loading now
+- require appropriate udev
+
+* 四 12月 15 2005 Bill Nottingham <notting@redhat.com> 8.19-1
+- Require syslog, for alternate implementations thereof (#172885)
+- Fix fsck invocation for weeding out netdev devices (#175803)
+
+* 五 12月 02 2005 Bill Nottingham <notting@redhat.com> 8.18-1
+- use new dhclient file paths, add appropriate conflict (#169164)
+
+* 三 10月 05 2005 Bill Nottingham <notting@redhat.com> 8.17-1
+- make sure corefile limiting works for user processes as well
+  (#166511, <ville.skytta@iki.fi>)
+- ifup-routes: handle no EOF in the route file (#156972)
+- rc.sysinit: tweak mesage (#156972)
+- ifdown-eth: clean up error message (#135167)
+- rc.sysinit: call kpartx on multipath devices (#160227)
+- ifup-eth: move wireless options before bridge options (#122801)
+- ifup-wireless: silence error (#90601)
+- init.d/functions: change translated string (#54682)
+
+* 二 9月 27 2005 Than Ngo <than@redhat.com> 8.16-1
+- fix typo bug
+
+* 一 9月 26 2005 Than Ngo <than@redhat.com> 8.15-1
+- support proper dial-in configuration, thanks to Peter Bieringer (#158380)
+
+* 四 9月 22 2005 Bill Nottingham <notting@redhat.com>
+- kmodule: don't probe for uninteresting devices. speeds things up
+- network-functions: deal with broken networks better (#168947)
+- rc.sysinit: automatically reboot if labels are really out of date
+  (<dwalsh@redhat.com>)
+- network-functions: throw out nameif error messages
+- rc.sysinit: use multipath.static (#168321)
+- rc.sysinit: use ignorelocking (#168195)
+
+* 一 9月 12 2005 Bill Nottingham <notting@redhat.com> 8.14-1
+- fix usage of the module blacklist (#168020)
+
+* 五 9月 09 2005 Bill Nottingham <notting@redhat.com> 8.13-1
+- fix on-boot relabelling (<dwalsh@redhat.com>)
+
+* 一 8月 22 2005 Bill Nottingham <notting@redhat.com> 8.12-1
+- ifup-eth: fix interface renaming (#158774)
+- rc.sysinit: use modprobe, not insmod (#159120, <tmus@tmus.dk>)
+- remove workaround for the fonts-not-initialized-on-secondary-consoles
+  problem (fixed in 2.6.12-rc4 and later)
+- setsysfont: correctly bracket systfontacm (#159706)
+- rc.sysinit: always use udevsend, even if no modules (#160987)
+- ifdown-aliases: add 'cd' to the proper dir (#161170)
+- add diskdump restore support (<tuchida@redhat.com>),
+  conflict with appropriate diskdumputils
+- rc.sysinit: dmraid/multipath support
+  - remove LVM1 support
+- init.d/functions: handle odd quoting in args (#161316, <stransky@redhat.com>)
+- ifup-wireless: set rate in quotes (#163123)
+- handle lvm & fsck for network block devices (#148764,
+  <alewis@redhat.com>)
+- initlog: fix invalid free calls,  (#165033), (#163973,<dwalsh@redhat.com>)
+- sysconfig.txt: remove hdparm docs, since the code isn't there (#162962)
+- updated translations: ms, ja, ko, et, zh_CN, zh_TW, sr, ar
+
+* 二 5月 10 2005 Bill Nottingham <notting@redhat.com> 8.11-1
+- fix mis-bringup of interfaces due to accidentally matched HWADDR
+  (a.k.a. ONBOOT=no not working) (#153669, #157252)
+- support automatic relabeling later if rebooted w/o SELinux
+  (<dwalsh@redhat.com>)
+- rc.sysinit: fix fixfiles invocation (#157182)
+- btmp should be 0600 (#156900)
+- translation updates: fr, bg, ru, mk, pa, es
+
+* 五 4月 29 2005 Bill Nottingham <notting@redhat.com> 8.10-1
+- fix hang on stale GDM sockets (#156355)
+
+* 三 4月 27 2005 Bill Nottingham <notting@redhat.com> 8.09-1
+- rc.sysinit: clean up screen sockets (#155969)
+- functions: use pidof -c in various functions
+- ifup-ppp: fix static routes with ppp demand dialing (#20142,
+  <ohrn+alios@chalmers.se>)
+- add btmp support (#155537)
+- don't send dhcp hostname (revert of fix for #149667)
+- more early-login modifications (<mclasen@redhat.com>)
+- functions: fix echo (#155270)
+
+* 一 4月 18 2005 Karsten Hopp <karsten@alios.de> 8.08-3
+- fix ifup-routes script (#155195)
+
+* 一 4月 18 2005 Florian La Roche <laroche@redhat.com>
+- fix strstr call in rc.sysinit
+
+* 五 4月 15 2005 Bill Nottingham <notting@redhat.com> 8.08-1
+- update translation base
+- automatically send hostname for DHCP if it's available and not
+  overridden (#149667)
+- load user-defined module scripts from /etc/sysconfig/modules at
+  boot (#123927)
+- halt: reverse sort the mount list, avoiding errors
+  (#147254, <jamesodhunt@hotmail.com>)
+- ifup-wireless: add SECURITYMODE (#145407)
+- network-functions: don't error out if hotplug doesn't exist (#140008)
+- ifup: always return errors on trying to bring up nonexistent devices (#131461)
+- ifup: fix error message (#143674)
+- rc.sysinit: add a autorelabel boot target (#154496)
+- prefdm: if something else is specified as $DISPLAYMANAGER, try that (#147304)
+- remove support for the old firewall type
+- network: optimize some (#138557, <drepper@redhat.com>)
+- prefdm: fix prefdm arg handling (#154312, <khc@pm.waw.pl>)
+- gdm early-login support (adapted from <rstrode@redhat.com>)
+- ifup-routes: make sure commented lines are handled correctly (#154353,
+  - some sysconfig.txt updates (<link@pobox.com>, <jvdias@redhat.com>)
+- rc.sysinit: fix restorecon invocation (#153100)
+- initlog: free some of the more egregious memory leaks (#85935)
+- initlog: fix potential memory overread (#153685, <in-alios@baka.org>)
+- remove some conflicts, %post scripts, etc. that were only relelvant
+  for upgrades from pre-7.0
+- other minor fixes, see ChangeLog
+
+* 四 3月 31 2005 Bill Nottingham <notting@redhat.com> 8.07-1
+- bring back initlog for third-party scripts until a new framework is
+  in place
+
+* 三 3月 30 2005 Bill Nottingham <notting@redhat.com> 8.06-1
+- handle alternate VLAN naming schemes (#115001, <kas@informatics.muni.cz>)
+- ifup-ipsec: handle non-ascii keys (#150552)
+- add proper ipsec route (#146169, #140654)
+- add a restorecon for /tmp to rc.sysinit
+- document ONHOTPLUG in sysconfig.txt
+- fix mistranslation (#151120)
+- don't return 1 for stopping a process if it isn't running at all
+- don't explicitly set fwd polices for ipsec traffic. Let setkey
+  handle it.
+
+* 一 3月 07 2005 Bill Nottingham <notting@redhat.com> 8.05-1
+- ipv6 cleanups (<pb@bieringer.de>)
+- rc.sysinit: fix rngd check (#130350)
+  ... then turn it off entirely
+- rc.sysinit: get rid of duplicate date printout (#149795)
+- ifdown: handle being called on down devices better
+- handle saved resolv.conf on all device types
+- fix network-functions cleanup
+- netfs: fix _netdev unmounting (#147610, <alewis@redhat.com>)
+- dhcp release cleanups (<jvdias@redhat.com>)
+- ifup-bnep: bluetooth update <dwmw2@infradead.org>
+- more ipsec stuff (#147001, <ckjohnson@gwi.net>)
+
+* 三 1月 19 2005 Bill Nottingham <notting@redhat.com> 8.04-1
+- split out ifup/ifdown general case to ifup/ifdown-eth;
+  add ifup/ifdown-bnep (<dwmw2@redhat.com>)
+- ifup-ipsec: add fwd policies (#145507)
+- fix multiple scsi_hostadapter loads (#145432)
+- enable syncookies in sysctl.conf (#145201)
+
+* 三 1月 12 2005 Bill Nottingham <notting@redhat.com> 8.03-1
+- use udevsend to handle hotplug events (requires recent udev)
+- remove pump, dhcpcd support
+- fix ONxxx (#136531, <cww@redhat.com>)
+- fix various fgreps to not catch commented lines (#136531, expanded
+  from <cww@redhat.com>)
+- set ETHTOOL_OPTS on addressless devices (#144682, <mpoole@redhat.com>)
+- kill dhcp client even if BOOTOPROTO is now static (#127726, others)
+- replace the use of route/ifconfig with ip in IPv6 code, remove support
+  for ipv6calc (<pb@bierenger.de>, <pekkas@netcore.fi>)
+- fix quoting in daemon() (#144634)
+- make sysctl be silent (#144483)
+
+* 一 1月 03 2005 Bill Nottingham <notting@redhat.com> 8.02-1
+- remove initlog, minilogd
+- add a flag to kmodule for use with kudzu's socket mode, use it
+- change setting of IPv6 default route (#142308, <pb@bieringer.de>)
+- netfs: don't unmount NFS root FS (#142169)
+
+* 一 12月 06 2004 Bill Nottingham <notting@redhat.com> 8.01-1
+- further bootup noise reductions
+- rc.d/rc.sysinit: do implicit unicode conversion on keymap
+
+* 一 11月 29 2004 Bill Nottingham <notting@redhat.com> 8.00-1
+- fix previous fix (#139656)
+
+* 三 11月 24 2004 Bill Nottingham <notting@redhat.com> 7.99-1
+- clear and repopulate mtab before mounting other filesystems (#139656)
+- remove more devfs compat
+
+* 二 11月 23 2004 Bill Nottingham <notting@redhat.com> 7.98-1
+- various kmodule speedups
+- rc.d/init.d/netfs: don't mount GFS (#140281)
+- fix various minilogd bogosities (#106338)
+
+* 一 11月 15 2004 Karsten Hopp <karsten@alios.de> 7.97-1
+- configure CTC protocol if CTCPROT is set (#133088)
+
+* 一 11月 15 2004 Bill Nottingham <notting@redhat.com>
+- fix check_link_down to still check negotiation if link is
+  listed as "up" on entering (#110164, <dbaron@dbaron.org>)
+
+* 四 11月 11 2004 Karsten Hopp <karsten@alios.de> 7.96-1
+- parse OPTIONS for QETH, CTC, LCS interfaces (#136256, mainframe)
+
+* 二 11月 09 2004 Bill Nottingham <notting@redhat.com>
+- fix typo (#134787, <bnocera@redhat.com>)
+
+* 日 11月 07 2004 Bill Nottingham <notting@redhat.com> 7.95-1
+- various translation updates
+
+* 二 11月 02 2004 Bill Nottingham <notting@redhat.com>
+- take an axe to rc.sysinit:
+  - remove delay on unclean startup
+  - remove hdparm code
+  - remove LVM1 code
+  - remove old raidtab code in favor of mdadm
+  - remove support for old isapnp tools
+  - move all block device mangling before fsck. run fsck *once*, not twice
+  - some more LC_ALL=C stuff
+
+* 日 10月 31 2004 Florian La Roche <laroche@redhat.com>
+- /etc/rc.d/rc: use "LC_ALL=C grep" for small speedup
+- /etc/rc.d/rc.sysinit:
+  - do not read udev.conf, this seems to be all in the start_udev script
+  - fix detection of "nomodules" kernel command line option
+  - read /proc/cmdline earlier and convert rhgb to use that, too
+  - load_module(): change redirection to /dev/null
+  - some checks for RHGB_STARTED="" looked strange
+- /etc/sysconfig/network-scripts/ifup-ppp:
+  - remove a call to basename with shell builtins
+- /etc/sysconfig/network-scripts/network-functions:
+  - remove some calls to basename/sed with shell builtins
+
+* 三 10月 27 2004 Bill Nottingham <notting@redhat.com> 7.93.2-1
+- fix prefdm fallback to installed display managers (#137274)
+- fix incorrect rhgb temporary path (#137391)
+
+* 一 10月 18 2004 Bill Nottingham <notting@redhat.com> 7.93-1
+- translation updates
+- fix handling of GATEWAYDEV (#133575, <pekkas@netcore.fi>)
+
+* 日 10月 17 2004 Bill Nottingham <notting@redhat.com> 7.91-1
+- rc.d/rc.sysinit: remove devlabel call
+- mdadm support, now that raidtools is gone (#126636, #88785)
+- call ipv6to4 scripts in /etc/ppp/(ip-up|ip-down) (#124390, <dwmw2@redhat.com>)
+- cleanup a couple of nits that could affect bug #134754
+- make sure we return to rhgb after fsck (#133966, #112839, #134449)
+- automatically reboot when fsck calls for it, instead of requiring
+  manual intervention (#117641 and duplicates)
+- ifup-wireless: fix key for open vs. restricted (#135235, <dax@gurulabs.com>)
+- translation updates
+
+* 五 10月 08 2004 Karsten Hopp <karsten@alios.de> 7.90-1
+- fix portname for LCS devices
+
+* 五 10月 08 2004 Bill Nottingham <notting@redhat.com>
+- remove sysconfig/rawdevices, as initscript is removed
+
+* 四 10月 07 2004 Florian La Roche <Florian.LaRoche@alios.de>
+- change /etc/sysctl.conf to not allow source routed packets per default
+
+* 三 10月 06 2004 Bill Nottingham <notting@redhat.com> - 7.88-1
+- fix requires
+
+* 二 10月 05 2004 Dan Walsh <dwalsh@redhat.com> - 7.87-1
+- Change SELinux relabel to not remount /
+
+* 一 10月 04 2004 Bill Nottingham <notting@redhat.com>
+- use runuser instead of su; require it
+- init.d/halt: use right file name for random seed (#134432)
+
+* 五 10月 01 2004 Bill Nottingham <notting@redhat.com> - 7.86-1
+- use /etc/hotplug/blacklist to blacklist modules in hardware init (#132719)
+- filter indic locales on the console (#134198)
+
+* 三 9月 29 2004 Bill Nottingham <notting@redhat.com> - 7.85-1
+- ifup, network-functions: fix worked-by-accident shell quoting
+- lang.csh: remove setting of dspmbyte (#89549, <mitr@redhat.com>)
+- SELinux fixes
+- clean up prefdm
+- init.d/functions: export LC_MESSAGES (#133786)
+- allow daemon to coredump if requested (#130175)
+- network-functions: be more liberal in what we accept for link types (#90602, #127984)
+- fix overzealousness with -range aliases (#65415)
+- rc.sysinit: use s-c-keyboard, not kbdconfig (#133929)
+- fix checkpid logic, clean up potential errors (#134030)
+- translation updates
+
+* 三 9月 22 2004 Bill Nottingham <notting@redhat.com> - 7.84-1
+- only start udev once
+
+* 三 9月 22 2004 Jeremy Katz <katzj@redhat.com> - 7.83-1
+- conflict with old udev
+- use udev if it's present
+
+* 二 9月 21 2004 Bill Nottingham <notting@redhat.com>
+- don't mount usbfs without usb. also, at least be consistent in filesystem type
+
+* 五 9月 17 2004 Bill Nottingham <notting@redhat.com> - 7.82-1
+- fix handling of nonexistent devices (#132839)
+- rhgb enhancements (<veillard@redhat.com>, #132665)
+- initscripts.spec: require nash (#132513)
+- translation updates
+
+* 二 9月 14 2004 Karsten Hopp <karsten@alios.de> 7.81-1
+- load iucv device config after /etc/sysconfig/network so that
+  GATEWAY doesn't get overwritten
+
+* 五 9月 10 2004 Bill Nottingham <notting@redhat.com> - 7.80-1
+- fix IPv6 6to4 & NAT (#118928, <pb@bieringer.de>, <pekkas@netcore.fi>)
+
+* 五 9月 10 2004 Karsten Hopp <karsten@redhat.com> - 7.79-1
+- load ctc device config after /etc/sysconfig/network so that
+  GATEWAY doesn't get overwritten
+
+* 三 9月 08 2004 Dan Walsh <dwalshg@redhat.com> - 7.78-2
+- fix setting SELinux contexts on udev-created-in-initrd devices
+- Let restorecon check if selinux is enabled.
+
+* 三 9月 08 2004 Bill Nottingham <notting@redhat.com> - 7.78-1
+- set SELinux contexts on udev-created-in-initrd devices, if necessary
+
+* 三 9月 01 2004 Bill Nottingham <notting@redhat.com> - 7.77-1
+- mount usbfs (#131347)
+- start any automatic raid devices
+- remove triggers for ancient releases, bulletproof remaining ones (#131356)
+
+* 三 9月 01 2004 Jeremy Katz <katzj@redhat.com> - 7.76-1
+- udev uses UDEV_TMPFS now
+
+* 三 9月 01 2004 Karsten Hopp <karsten@alios.de> 7.75-1
+- fix sysfs configuration of qeth and lcs network interfaces
+  (eth, tr, hsi)
+
+* 一 8月 30 2004 Karsten Hopp <karsten@alios.de> 7.74-1
+- fix support for LCS portnumbers (mainframe)
+
+* 五 8月 27 2004 Jason Vas Dias  <jvdias@redhat.com> 7.73-1
+- Add support for running the DHCPv6 client to ifup
+- (new DHCPV6C=yes/no ifcfg-${IF} variable) + update sysconfig.txt
+
+* 五 8月 27 2004 Bill Nottingham <notting@redhat.com> 7.72-1
+- flip the kernel conflict to a Requires:
+
+* 四 8月 26 2004 Karsten Hopp <karsten@alios.de> 7.71-1
+- ifcfg-iucv/ctc: drop REMIP and use GATEWAY instead
+
+* 四 8月 26 2004 Bill Nottingham <notting@redhat.com> 7.70-1
+- autoload hardware modules on startup
+- minor fsck cleanup (#115028, <leonard-rh-bugzilla@den.ottolander.nl>)
+- ifup: support STP bridging (#123324)
+- rc.sysinit: do a SELinux relabel if forced
+- rc.sysinit: remove devfs compat and the remaining 2.4 compat
+- ifup-wireless: support multiple keys (#127957)
+- fix firmware loading (#129155, <bnocera@redhat.com>)
+
+* 二 8月 24 2004 Karsten Hopp <karsten@alios.de> 7.68-1
+- execute zfcfconf.sh if available (mainframe)
+
+* 五 8月 20 2004 Jason Vas Dias <jvdias@redhat.com> 7.67-1
+- fix change_resolv_conf: if pre-existing /etc/resolv.conf
+- non-existent or empty, replace with new file contents.
+
+* 五 8月 20 2004 Jason Vas Dias <jvdias@redhat.com> 7.66-1
+- Allow users to use generic /etc/dhclient.conf if per-device
+- /etc/dhclient-${DEVICE}.conf is non-existent or empty
+
+* 五 8月 20 2004 Jason Vas Dias <jvdias@redhat.com> 7.66-1
+- Preserve "options" settings in resolv.conf (bug 125712)
+
+* 五 8月 20 2004 Jeremy Katz <katzj@redhat.com> - 7.65-1
+- look at /etc/udev/udev.conf, not /etc/sysconfig/udev (#130431)
+
+* 五 8月 20 2004 Bill Nottingham <notting@redhat.com> 7.64-1
+- rc.d/rc.sysinit: check for dev file too (#130350)
+
+* 四 8月 19 2004 Than Ngo <than@redhat.com> 7.63-1
+- allow CBCP with own number (#125710)
+
+* 四 8月 19 2004 Bill Nottingham <notting@redhat.com> 7.62-1
+- fix up resolv.conf munging (#129921)
+- use rngd if available
+- run start_udev if necessary (#120605)
+- readonly root updates (#129893, <markmc@redhat.com>)
+- ifup-wireless: quote key (#129930)
+- remove rawdevices (#130048)
+- handle binfmt_misc in rc.sysinit for the case where it's built in (#129954)
+- remove mkkerneldoth
+- don't remove linguas in lang.* (part of #9733)
+- fix nfs unmounting (#129765)
+- fix URL (#129433)
+
+* 三 8月 11 2004 Jason Vas Dias <jvdias@redhat.com> 7.61-1
+- fix for bug 120093: add PERSISTENT_DHCLIENT option to ifcfg files
+
+* 二 8月 03 2004 Karsten Hopp <karsten@alios.de> 7.60-1
+- write peerid into sysfs for IUCV devices (mainframe)
+
+* 二 8月 03 2004 Bill Nottingham <notting@redhat.com>
+- don't remove /dev/mapper/control - nash will do it if it has to (#127115)
+
+* 五 7月 30 2004 Jason Vas Dias <jvdias@redhat.com> 7.60-1
+- fix for bug 125712: add 'change_resolv.conf' function
+
+* 二 7月 27 2004 Bill Nottingham <notting@redhat.com>
+- rc.d/init.d/network: don't bring interfaces down twice (#127487)
+
+* 三 7月 14 2004 Bill Nottingham <notting@redhat.com>
+- fix bonding + no IP (#127285)
+- wrap second LVM initialization in vgscan check to avoid extraneous messages (#127639)
+
+* 三 7月 07 2004 Bill Nottingham <notting@redhat.com>
+- move random stuff to rc.sysinit/halt; move all swap to after this.
+  prereq of bug #123278
+
+* 五 7月 02 2004 Bill Nottingham <notting@redhat.com> 7.59-1
+- set context on ICE directory after making it (#127099, <concert@europe.com>)
+- don't mount GFS filesystems in rc.sysinit
+
+* 二 6月 29 2004 Bill Nottingham <notting@redhat.com> 7.58-1
+- rc.d/rc.sysinit: hack: make ICE directory on boot (#86480)
+- set devicetype for xDSL (#126194)
+- ignore locking failures when starting lvm volumes (#126192, <radu@primit.ro>)
+- unset LC_MESSAGES for rhgb (#126020, <ynakai@redhat.com>)
+- bonding fixes
+- setsysfont: remove error (#100559)
+- remove duplicate setting of network routes (#125450)
+- vlan fixes (#107504, <hrunting@texas.net>)
+- ifup-aliases: remove bogus route setting (#120908)
+
+* 二 5月 25 2004 Bill Nottingham <notting@redhat.com> 7.57-1
+- readonly root fixes (<alexl@redhat.com>)
+
+* 二 5月 25 2004 Karsten Hopp <karsten@alios.de> 7.56-1
+- special TYPE for qeth devices to differenciate them from ethX
+
+* 一 5月 24 2004 Bill Nottingham <notting@redhat.com>
+- fix pppd vs. ppp typo in conflicts (#123680)
+
+* 五 5月 21 2004 Bill Nottingham <notting@redhat.com>
+- fix bridging confusing module order (#122848, <luto@myrealbox.com>)
+- rc.d/rc.sysinit: don't mount cifs (#122501)
+
+* 二 5月 18 2004 Karsten Hopp <karsten@alios.de> 7.55-1
+- add support for ccwgroup devices on mainframe
+
+* 四 5月 13 2004 Than Ngo <than@redhat.com> 7.54-1
+- add patch to enable PIE build of usernetctl
+
+* 五 5月 07 2004 Jeremy Katz <katzj@redhat.com> - 7.53-1
+- little lvm tweak (#121963)
+
+* 二 5月 04 2004 Bill Nottingham <notting@redhat.com> 7.52-1
+- ipv4 addresses are ints, not longs (#122479)
+
+* 二 5月 04 2004 Bill Nottingham <notting@redhat.com> 7.51-1
+- get rid of LVM error when no volumes are defined (#121197)
+- fix selinux short-circuit test (#121143, <michal@harddata.com>)
+- /dev/mapper/control is a special file, check it accordingly (#121963)
+- support ETHTOOL_OPTS on bonding slaves (#119430, <hrunting@texas.net>)
+- handle multiple spaces correctly in rc.sysinit, network-functions
+  (#118583, <pallas@kadan.cz>)
+- cleanup fd leaks, mem leaks, other bogosities
+  (#119987, <linux_4ever@yahoo.com>)
+- rc.d/init.d/network: remove ipv6 bogosity (#114128)
+- translation updates
+
+* 五 4月 16 2004 Bill Nottingham <notting@redhat.com> 7.50-1
+- fix LVM issues in rc.sysinit (#120458, #119975)
+- deal with fixed racoon parser
+- translation updates from translators
+- fix USB loading (#120911)
+
+* 五 3月 26 2004 Bill Nottingham <notting@redhat.com> 7.49-1
+- use alsa for mixer saving in halt
+- don't umount /proc in halt (#118880)
+- various translation updates from translators
+
+* 三 3月 17 2004 Bill Nottingham <notting@redhat.com> 7.48-1
+- disable enforcing in emergency mode for now, relabel some commonly
+  mislabeled files on boot
+
+* 三 3月 17 2004 Bill Nottingham <notting@redhat.com> 7.47-1
+- translation: catch more input strings (#106285, <mitr@volny.cz>)
+- remove autologin from prefdm (#108969)
+- return to rhgb after ./unconfigured (#109807, <jkeating@j2solutions.net>)
+- handle iso15 in setsysfont (#110243)
+- clean up samba & vmware in rc.sysinit (#113104)
+- some sysconfig.txt documentation (#110427, #118063)
+- fix bug in umount-on-halt (#113088, <giardina@airlab.elet.polimi.it>)
+- handle CIFS in netfs (#115691)
+- make sure hotplug isn't stuck unset (#116666, <aoliva@redhat.com>)
+- handle network fs better in rc.sysinit (#111290)
+- nomodules applies to usb/firewire too (#113278)
+- ipsec fix (#116922, <felipe_alfaro@linuxmail.org>)
+- make sure rc exits cleanly (#117827, <enrico.scholz@informatik.tu-chemnitz.de>)
+- fsck root FS from initrd, for dynamic majors (#117575, <sct@redhat.com>)
+
+* 一 2月 23 2004 Tim Waugh <twaugh@redhat.com>
+- Use ':' instead of '.' as separator for chown.
+
+* 一 2月 02 2004 Bill Nottingham <notting@redhat.com> 7.46-1
+- some more rc.sysinit tweaks and refactoring
+
+* 五 1月 30 2004 Bill Nottingham <notting@redhat.com> 7.45-1
+- fix rc.sysinit typo
+- rc.d/init.d/network: clear out environment (#113937, #111584)
+
+* 三 1月 28 2004 Bill Nottingham <notting@redhat.com> 7.44-1
+- NFSv4 support (<chucklever@bigfoot.com>, <steved@redhat.com>)
+- handle 2.6-style 'install ethX ...' lines correctly
+- mount sysfs by default
+- time to clean up the cruft. remove:
+  - boot-time depmod
+  - linking of /boot/System.map to /boot/System.map-`uname -r`
+  - /var/log/ksyms.X
+  - libalios-kernel support
+
+* 五 1月 16 2004 Dan Walsh <dwalsh@redhat.com> 7.43-2
+- Remove selinux run_init code from service script.  It is no longer needed.
+
+* 五 12月 05 2003 Jeremy Katz <katzj@redhat.com> 7.43-1
+- basic lvm2 support
+
+* 二 10月 28 2003 Bill Nottingham <notting@redhat.com> 7.42-1
+- show rhgb details on service failures
+
+* 三 10月 22 2003 Bill Nottingham <notting@redhat.com> 7.41-1
+- tweak some rhgb interactions (#100894, #107725)
+- fix dvorak keymap loading (#106854)
+
+* 三 10月 22 2003 Than Ngo <than@redhat.com> 7.40-1
+- add better fix to support nickname (#105785)
+
+* 三 10月 22 2003 Than Ngo <than@redhat.com> 7.39-1
+- add support nickname (#105785)
+
+* 五 10月 17 2003 Bill Nottingham <notting@redhat.com> 7.38-1
+- rhgb updates, now pass 'rhgb' to use it, instead of passing 'nogui'
+  to disable it
+
+* 五 10月 10 2003 Bill Nottingham <notting@redhat.com> 7.37-1
+- bridging updates (#104421, <dwmw2@redhat.com>)
+
+* 三 10月 08 2003 Bill Nottingham <notting@redhat.com> 7.36-1
+- mount /dev/pts before starting rhgb
+
+* 三 10月 01 2003 Bill Nottingham <notting@redhat.com> 7.35-1
+- load acpi modules on startup if necessary
+- fix typo in ipsec comments & sysconfig.txt
+
+* 一 9月 15 2003 Than Ngo <than@redhat.com> 7.34-1
+- use upsdrvctl to start the shutdown process
+
+* 一 9月 15 2003 Bill Nottingham <notting@redhat.com> 7.33-1
+- ipsec fixes (#104227, <harald@redhat.com>)
+- ppp fixes (#104128, #97845, #85447)
+
+* 四 9月 11 2003 Bill Nottingham <notting@redhat.com> 7.32-1
+- fix ip calls for some device names (#104187)
+- ipsec fixes
+
+* 五 9月 05 2003 Bill Nottingham <notting@redhat.com> 7.31-1
+- fix bonding + dhcp (#91399)
+- fix typo (#103781)
+- sysconfig/network-scripts/ifup: fix use of local
+
+- fix shutdown with NFS root (#100556, <Julian.Blake@cern.ch>)
+- remove /var/run/confirm when done with /etc/rc (#100898)
+- ipcalc: fix some memory handling (#85478, <miked@ed.ac.uk>)
+- handle sorting > 10 network devices (#98209)
+- unset ONPARENT after use (#101384)
+- random other fixes
+- bridging support (<dwmw2@redhat.com>)
+
+* 五 8月 15 2003 Bill Nottingham <notting@redhat.com> 7.30-1
+- IPv6 updates (#86210, #91375, <pekkas@netcore.fi>)
+
+* 五 8月 08 2003 Bill Nottingham <notting@redhat.com> 7.29-1
+- setsysfont: don't echo to /dev/console (#102004)
+- fix ethernet device renaming deadlock (#101566)
+- consoletype: don't return 'vt' on vioconsole (#90465)
+- ifup: fix short-circuit (#101445)
+
+* 五 7月 18 2003 Nalin Dahyabhai <nalin@redhat.com>
+- ifup-routes: pass the interface name to handle_file() so that we don't try
+  to use the routes file's name as an interface name
+
+* 三 7月 09 2003 Bill Nottingham <notting@redhat.com> 7.28-1
+- switch from $CONFIG.keys to keys-$CONFIG
+
+* 二 7月 08 2003 Bill Nottingham <notting@redhat.com> 7.27-1
+- add a check to consoletype for the current foreground console
+- use it when running unicode_start (#98753)
+
+* 三 7月 02 2003 Bill Nottingham <notting@redhat.com> 7.26-1
+- ipsec support (see sysconfig.txt, ifup-ipsec)
+- read $CONFIG.keys, for non-world-readable keys
+- allow default window size for routes to be set with WINDOW= (#98112)
+- support setting device options with ethtool opts
+- fix s390 bootup spew (#98078)
+- support renaming interfaces with nameif based on hwaddr
+
+* 一 6月 23 2003 Bill Nottingham <notting@redhat.com> 7.25-1
+- fix DNS punching in the case of other rules for the DNS server
+  (#97686, <martin@zepler.org>)
+- initlog, ppp-watch, and usernetctl tweaks (<linux_4ever@yahoo.com>)
+- fix grep for mingetty (#97188)
+- fix rhgb-client bad syntax
+- change network device searching, use correct naming, fix route issues
+  (<harald@redhat.com>)
+- other random tweaks
+
+* 五 5月 23 2003 Bill Nottingham <notting@redhat.com> 7.24-1
+- now even still yet more tweaks for graphical boot
+
+* 四 5月 22 2003 Bill Nottingham <notting@redhat.com> 7.23-1
+- even still yet more tweaks for graphical boot
+
+* 二 5月 20 2003 Bill Nottingham <notting@redhat.com> 7.22-1
+- still yet more tweaks for graphical boot
+
+* 二 5月 20 2003 Bill Nottingham <notting@redhat.com> 7.21-1
+- yet more tweaks for graphical boot
+
+* 五 5月 02 2003 Bill Nottingham <notting@redhat.com> 7.20-1
+- more tweaks for graphical boot
+
+* 三 4月 30 2003 Bill Nottingham <notting@redhat.com> 7.18-1
+- some tweaks for graphical boot
+
+* 一 4月 21 2003 Florian La Roche <Florian.LaRoche@alios.de>
+- initscripts-s390.patch: remove not needed parts about PNP=
+- inittab.390: sync with normal version
+- rc.sysinit: remove two further calls to /sbin/consoletype with $CONSOLETYPE
+
+* 五 4月 18 2003 Florian La Roche <Florian.LaRoche@alios.de>
+- sysconfig/init.s390: set LOGLEVEL=3 as for other archs
+- rc.d/init.d/network, rc.d/rc: change confirmation mode to
+  not use an environment variable
+- rc.d/init.d/functions: make strstr() even shorter, remove old
+  "case" version that has been already commented out
+- rc.d/rc.sysinit:
+  - no need to set NETWORKING=no, it is not used/exported
+  - do not export BOOTUP
+  - delete two "sleep 1" calls that wants to add time to go
+    into confirmation mode. There is enough time to press a
+    key anyway or use "confirm" in /proc/cmdline.
+  - read /proc/cmdline into a variable
+  - use strstr() to search in /proc/cmdline
+  - add "forcefsck" as possible option in /proc/cmdline
+  - while removing lock files, no need to call `basename`
+  - add unamer=`uname -r` and reduce number of forks
+  - do not fork new bash to create /var/log/ksyms.0
+
+* 四 4月 03 2003 Karsten Hopp <karsten@alios.de> 7.15-1
+- Mainframe has no /dev/ttyX devices and no mingetty, don't
+  initialize them. This gave error messages during startup
+
+* 一 3月 17 2003 Nalin Dahyabhai <nalin@redhat.com>
+- init.d/network: don't advertise "probe: true" in the header if we don't
+  recognize "probe" as an argument
+
+* 三 3月 12 2003 Bill Nottingham <notting@redhat.com> 7.14-1
+* - do not handle changed chain name; change was reverted
+
+* 二 2月 25 2003 Bill Nottingham <notting@redhat.com> 7.13-1
+- handle 7.x SYSFONTACM settings in setsysfont (#84183)
+
+* 一 2月 24 2003 Bill Nottingham <notting@redhat.com> 7.12-1
+- handle changed chain name
+- init vts used in all cases
+
+* 五 2月 21 2003 Bill Nottingham <notting@redhat.com> 7.10-1
+- handle LANGUAGE specially for zh_CN.GB18030 and gdm (#84773)
+
+* 四 2月 20 2003 Bill Nottingham <notting@redhat.com> 7.09-1
+- initialize two ttys past # of mingettys (for GDM)
+- fix zeroconf route
+- alios-config-network writes $NAME.route for some static routes
+  (e.g., ppp); handle that (#84193)
+
+* 二 2月 18 2003 Bill Nottingham <notting@redhat.com> 7.08-1
+- load keybdev & mousedev even if hid is already loaded/static
+- run fewer scripts through action (#49670, #75279, #81531)
+
+* 一 2月 10 2003 Bill Nottingham <notting@redhat.com> 7.07-1
+- fix nicknames & profiles (#82246)
+- fix check_device_down (#83780, <pzb@datstacks.com>)
+- vlan fixes (<tis@foobar.fi>)
+- fix groff macros (#83531, <tsekine@sdri.co.jp>)
+- various updated translations
+- fix checkpid for multiple pids (#83401)
+
+* 五 1月 31 2003 Bill Nottingham <notting@redhat.com> 7.06-1
+- 802.1Q VLAN support (<tis@foobar.fi>, #82593)
+- update translations
+
+* 四 1月 30 2003 Bill Nottingham <notting@redhat.com> 7.05-1
+- fix syntax error in rc.sysinit when there are fsck errors
+- fix zh_TW display on console (#82235)
+
+* 三 1月 15 2003 Bill Nottingham <notting@redhat.com> 7.04-1
+- tweak some translatable strings
+- fix for rc.sysinit on machines that pass arguments to mingetty
+  (<nalin@redhat.com>)
+
+* 二 1月 14 2003 Bill Nottingham <notting@redhat.com> 7.03-1
+- move system font setting sooner (<milan.kerslager@pslib.cz>)
+- fix link checking for dhcp, use both ethtool and mii-tool
+- fix CJK text on the console, and locale-archive held open
+  on shutdown
+- IPv6 updates <pekkas@netcore.fi>, <pb@bieringer.de>
+- speedup tweaks (<drepper@redhat.com>)
+- use glib2 for ppp-watch (#78690, <kisch@mindless.com>)
+- add zeroconf route (#81738)
+- fix ifup-ppp for dial-on-demand, and onboot (<goeran@uddeborg.pp.se>)
+- tweak raidtab parsing, don't worry about not-in-fstab RAID devices
+  (#71087, #78467, <aja@mit.edu>)
+- don't automatically bring up aliases if 'ONPARENT=no' is set (#78992)
+- getkey cleanups/tweaks (#76071, <ben@enchantedforest.org>)
+- rework halt_get_remaining (#76831, <michal@harddata.com>)
+- ipcalc: fix calculation of /32 addresses (#76646)
+- various other tweaks and fixes
+
+* 五 12月 20 2002 Bill Nottingham <notting@redhat.com> 7.01-1
+- %config(noreplace) inittab
+
+* 二 12月 17 2002 Nalin Dahyabhai <nalin@redhat.com>
+- add a "nofirewire" option to /etc/rc.sysinit, analogous to "nousb"
+
+* 二 12月 17 2002 Bill Nottingham <notting@redhat.com> 7.00-1
+- tweaks for potential GUI bootup
+- loop checking for network link state, don't unilterally wait five
+  seconds
+
+* 六 12月 14 2002 Karsten Hopp <karsten@alios.de> 6.99-1
+- remove call to /sbin/update for S/390, too
+
+* 三 12月 11 2002 Bill Nottingham <notting@redhat.com> 6.98-1
+- remove call to /sbin/update
+- fix netprofile
+
+* 一 12月 02 2002 Bill Nottingham <notting@redhat.com> 6.97-1
+- IPv6 update (<pekkas@netcore.fi>, <pb@bieringer.de>)
+- devlabel support (<Gary_Lerhaupt@Dell.com>)
+- do lazy NFS umounts
+
+* 二 11月 19 2002 Florian La Roche <Florian.LaRoche@alios.de>
+- correctly remove non-packaged files for mainframe
+
+* 二 11月 12 2002 Bill Nottingham <notting@redhat.com> 6.96-1
+- fix various static-routes brokeness (#74317, #74318, #74320, #76619,
+  - fix handling of SYSFONTACM in setsysfont (#75662)
+- fix lang.csh for CJK (#76908, <ynakai@redhat.com>)
+- IPv6 update (<pekkas@netcore.fi>, <pb@bieringer.de>)
+- other minor tweaks
+
+* 一 9月 16 2002 Than Ngo <than@redhat.com>
+- owns directory /etc/ppp/peers (bug #74037)
+
+* 三 9月 04 2002 Bill Nottingham <notting@redhat.com> 6.95-1
+- fix syntax error in duplicate route removal section of ifup
+
+* 三 9月 04 2002 Nalin Dahyabhai <nalin@redhat.com> 6.94-1
+- fix syntax error calling unicode_start when SYSFONTACM isn't set
+
+* 一 9月 02 2002 Bill Nottingham <notting@redhat.com>
+- fix calling of unicode_start in lang.{sh,csh}
+- ipv6 tweak
+
+* 三 8月 28 2002 Bill Nottingham <notting@redhat.com>
+- don't infinite loop on ifdown
+- remove disabling of DMA; this can cause problems
+- move swap startup to after LVM (#66588)
+
+* 二 8月 20 2002 Bill Nottingham <notting@redhat.com>
+- don't cycle through eth0-eth9 on dhcp link check (#68127)
+- don't retry indefinitely on ppp startup
+- activate network profile passed on kernel commandline via netprofile=
+- fix iptables invocations again
+- translation refresh
+
+* 三 8月 14 2002 Bill Nottingham <notting@redhat.com>
+- fix silly typo in rc.sysinit
+- increase timeout for link to 5 seconds (#70545)
+
+* 二 8月 13 2002 Bill Nottingham <notting@redhat.com>
+- require /etc/alios-release (#68903)
+- fix tty2-tty6 (sort of)
+- fix iptables invocations (#70807, #71201, #68368)
+- other minor tweaks
+
+* 三 7月 24 2002 Bill Nottingham <notting@redhat.com>
+- fix unicode checks in rc.sysinit, lang.{sh,csh} to handle UTF-8@euro
+
+* 二 7月 16 2002 Bill Nottingham <notting@redhat.com>
+- use iptables, not ipchains
+
+* 二 7月 16 2002 Florian La Roche <Florian.LaRoche@alios.de>
+- /sbin/service: set PATH before calling startup scripts
+  HOME and TERM are also set during bootup, but they should not make
+  a difference for well-written daemons.
+
+* 一 7月 15 2002 Bill Nottingham <notting@redhat.com>
+- fix boot-time cleanup of /var
+- update po files
+
+* 四 7月 11 2002 Florian La Roche <Florian.LaRoche@alios.de>
+- /etc/init.d/functions:
+  daemon(): avoid starting another bash
+  killproc(): avoid starting another bash for the default case
+- do not call "insmod -p" before loading the "st" module
+
+* 二 7月 09 2002 Florian La Roche <Florian.LaRoche@alios.de>
+- allow an option for ups poweroff  #68123
+- change grep for ONBOOT=  #63903
+- allow building with a cross-compiler  #64362,#64255
+- faster check in network-functions:check_default_route()
+- better checks for backup files
+- drastically reduce the number of consoletype invocations
+- do not export "GATEWAY" in network-functions
+- code cleanups in rc.sysinit
+
+* 五 7月 05 2002 Florian La Roche <Florian.LaRoche@alios.de>
+- rc.sysinit: do not load raid modules unless /etc/raidtab exists
+- many cleanups for more consistent shell programming and also
+  many smaller speedups within network scripts, no un-necessary sourcing
+  of files etc
+- nearly re-code /etc/rc.d/rc
+
+* 四 6月 27 2002 Bill Nottingham <notting@redhat.com>
+- a couple minor unicode tweaks in rc.sysinit
+
+* 三 6月 26 2002 Bill Nottingham <notting@redhat.com>
+- move /proc/bus/usb mount, in case USB is in the initrd
+
+* 三 6月 26 2002 Preston Brown <pbrown@redhat.com>
+- don't try to set wireless freq/channel when in Managed mode
+
+* 三 6月 26 2002 Florian La Roche <Florian.LaRoche@alios.de>
+- start some sh coding cleanups
+- change to /etc/init.d/functions
+- eliminate some un-necessary PATH settings
+- eliminate some TEXTDOMAIN settings
+
+* 三 6月 12 2002 Bill Nottingham <notting@redhat.com> 6.78-1
+- fix UTF-8 checks
+
+* 三 6月 05 2002 Than Ngo <than@redhat.com> 6.77-1
+- fixed a bug in setting defaultgateway
+
+* 四 5月 30 2002 Bill Nottingham <notting@redhat.com> 6.76-1
+- call unicode_start in lang.{sh,csh}, setsysfont when necessary
+
+* 二 5月 28 2002 Bill Nottingham <notting@redhat.com> 6.75-1
+- add check for link for dhcp back in
+
+* 五 4月 19 2002 Bill Nottingham <notting@redhat.com> 6.67-1
+- fix silly cut&paste bug in hdparm settings in initscripts
+
+* 一 4月 15 2002 Trond Eivind Glomsrød <teg@redhat.com> 6.65-1
+- Update translations
+
+* 日 4月 14 2002 Bill Nottingham <notting@redhat.com> 6.64-1
+- make sure chatdbg is set before using it (#63448, <Bertil@Askelid.com>)
+- allow tweaking of more devices with hdparm (#53511), and
+  tweak non-disk devices iff they explicitly have a config file
+  for that device (#56575, #63415)
+- some translation updates
+
+* 五 4月 12 2002 Bill Nottingham <notting@redhat.com> 6.63-1
+- ipcalc cleanups (#58410)
+- quit stripping binaries
+- do LVM init after RAID init too (#63238)
+- export all locale variables (#56142)
+- run sysctl -p after network init as well
+
+* 二 4月 09 2002 Bill Nottingham <notting@redhat.com> 6.62-1
+- delete X/VNC locks on startup (#63035)
+- shut up DMA disabling, move it to after ide-scsi (#62873, #62956)
+- use full path to /sbin/ifconfig (#59457)
+- /sbin/service: change to root directory before staring/stopping;
+  also sanitize environment
+
+* 二 4月 02 2002 Bill Nottingham <notting@redhat.com> 6.61-1
+- when disabling DMA, don't use things in /usr
+
+* 四 3月 28 2002 Bill Nottingham <notting@redhat.com> 6.60-1
+- disable DMA on CD-ROMs at bootup
+
+* 三 3月 27 2002 Bill Nottingham <notting@redhat.com> 6.59-1
+- add local hook to halt
+
+* 五 3月 15 2002 Than Ngo <than@redhat.com> 6.58-1
+- fix usernetctl for working with neat
+
+* 四 3月 14 2002 Bill Nottingham <notting@redhat.com> 6.57-1
+- update translations
+
+* 二 3月 12 2002 Bill Nottingham <notting@redhat.com> 6.56-1
+- use nameif for interfaces where we don't agree on HWADDR with the
+  config file (<harald@redhat.com>)
+- LSB support tweaks
+
+* 二 3月 12 2002 Mike A. Harris  <mharris@redhat.com> 6.55-1
+- Removed process accounting stuff from rc.sysinit and halt scripts as it is
+  now handled by the psacct initscript in the psacct package
+
+* 四 2月 28 2002 Bill Nottingham <notting@redhat.com>
+- conflict with older psacct
+
+* 五 2月 22 2002 Bill Nottingham <notting@redhat.com>
+- fix invocation of need_hostname (#58946), a couple other minor tweaks
+
+* 二 2月 12 2002 Mike A. Harris  <mharris@redhat.com>
+- rc.sysinit: changed /var/log/pacct to /var/account/pacct for FHS 2.2 compliance
+
+* 三 1月 30 2002 Bill Nottingham <notting@redhat.com>
+- run /bin/setfont, not /usr/bin/setfont (kbd)
+- lots-o-random bugfixes/tweaks (see ChangeLog)
+
+* 四 1月 17 2002 Michael K. Johnson <johnsonm@redhat.com>
+- Added support for libalios-kernel.so.* symlink handling
+
+* 三 11月 07 2001 Than Ngo <than@redhat.com>
+- fix bug in setting netmask on s390/s390x (bug #55421)
+  nmbd daemon works now ;-)
+
+* 五 11月 02 2001 Than Ngo <than@redhat.com>
+- fixed typo bug ifup-ippp
+
+* 一 10月 29 2001 Than Ngo <than@redhat.com>
+- fix bug in channel bundling if MSN is missed
+- support DEBUG option
+
+* 三 9月 19 2001 Than Ngo <than@redhat.com>
+- don't show user name by DSL connection
+
+* 六 9月 08 2001 Bill Nottingham <notting@redhat.com>
+- don't run hwclock --adjust on a read-only filesystem
+
+* 四 9月 06 2001 Than Ngo <than@redhat.com>
+* update initscripts-s390.patch for s390/s390x
+
+* 三 9月 05 2001 Bill Nottingham <notting@redhat.com>
+- translation updates
+- quota and hwclock tweaks (<pbrown@redhat.com>)
+
+* 一 9月 03 2001 Bill Nottingham <notting@redhat.com>
+- fix severe alias problems (#52882)
+
+* 一 9月 03 2001 Than Ngo <than@redhat.com>
+- don't start pppbind if encapsulation is rawip (bug #52491)
+
+* 日 9月 02 2001 Than Ngo <than@redhat.com>
+- add ISDN patches from pekkas@netcore.fi and pb@bieringer.de (bug #52491)
+- fix handling of ISDN LSZ Compresssion
+
+* 四 8月 30 2001 Than Ngo <than@redhat.com>
+- po/de.po: fix typo bug, lo instead 1o
+
+* 三 8月 29 2001 David Sainty <dsainty@redhat.com>
+- fix ifdown for multiple dhcpcd interfaces
+
+* 三 8月 29 2001 Than Ngo <than@redhat.com>
+- fix ISDN dial on demand bug
+- fix typo bug in network-functions
+
+* 二 8月 28 2001 Nalin Dahyabhai <nalin@redhat.com>
+- document /etc/sysconfig/authconfig
+
+* 二 8月 28 2001 Bill Nottingham <notting@redhat.com> 6.31-1
+- message un-tweaks (<johnsonm@redhat.com>)
+- make getkey more useful, fix some of the autofsck stuff (<johnsonm@redhat.com>)
+
+* 一 8月 27 2001 Bill Nottingham <notting@redhat.com>
+- autofsck support, archive modules/symbol info (<johnsonm@redhat.com>)
+
+* 一 8月 27 2001 Than Ngo <than@redhat.com>
+- fix some typo bugs in ifup-ippp <ubeck@c3pdm.com>
+
+* 五 8月 24 2001 Bill Nottingham <notting@redhat.com>
+- sort output of halt_get_remaining (#52180)
+- fix bad translation (#52503)
+
+* 三 8月 22 2001 Bill Nottingham <notting@redhat.com>
+- fix ifup-wireless (#52135)
+
+* 三 8月 22 2001 Than Ngo <than@redhat.com>
+- fix return code of isdnctrl (bug #52225)
+
+* 二 8月 21 2001 Than Ngo <than@redhat.com>
+- fix Bringing up isdn device again. It works now correct.
+
+* 二 8月 21 2001 Than Ngo <than@redhat.com>
+- fix shutdown/Bringing up isdn device
+
+* 一 8月 20 2001 Nalin Dahyabhai <nalin@redhat.com>
+- fix syntax error in lang.csh
+- set codeset by echoing to /dev/tty instead of /proc/self/fd/15
+
+* 日 8月 19 2001 Bill Nottingham <notting@redhat.com>
+- fix a broken call to check_device_down
+- make all loopback addresses have host scope, not global scope.
+  Fixes #49374, possibly others
+
+* 三 8月 15 2001 Bill Nottingham <notting@redhat.com>
+- add is_available() network function, use it; cleans up ugly modprobe
+  error messages
+- update translation info
+- fix #51787
+
+* 三 8月 15 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- adjust s390 patch
+- fix up ifup-ctc and mkkerneldoth.s390 (both are s390 specific)
+
+* 一 8月 13 2001 Yukihiro Nakai <ynakai@redhat.com>
+- don't display Chinese Korean if we aren't on a pty
+
+* 六 8月 11 2001 Florian La Roche <Florian.LaRoche@alios.de>
+- adjust s390 patches to current sources
+
+* 五 8月 10 2001 Bill Nottingham <notting@redhat.com>
+- use GDM_LANG if it's set in lang.sh/lang.csh (#51432, <otaylor@redhat.com>)
+
+* 五 8月 10 2001 Than Ngo <than@redhat.com>
+- don't set MSN if it' empty (it's now optional)
+- don't give login name as a cmdline-option (Bug #23066)
+- remove peer device file if ppp connection is down
+- fix channel bundling
+
+* 四 8月 09 2001 Bill Nottingham <notting@redhat.com>
+- require SysVinit (#51335)
+
+* 三 8月 08 2001 Bill Nottingham <notting@redhat.com>
+- tweak raittab grep slightly (#51231)
+- allow resetting of default route for DHCP addresses (#48994)
+- save resolv.conf in ifup-ppp for restoration by ifdown-post (#50759)
+- when munging firewall rules for dns, only allow dest ports 1025-65535 (#44038, #40833)
+- allow shell characters in ppp names (#43719)
+- allow setting DHCP arguments, just kill dhcpcd instead of using -k (#46492)
+- behave sanely if ifup called when dhcpcd is running (#49392, #51038)
+
+* 一 8月 06 2001 Bill Nottingham <notting@redhat.com>
+- honor HOTPLUG=no if running under hotplug (#47483)
+- use awk, not grep, for modprobe -c checks (#49616)
+- don't print ugly messages for the case where the device doesn't exist,
+  and there is no alias (i.e., PCMCIA ONBOOT=yes (#various))
+- run kbdconfig in /.unconfigured mode (#43941)
+- use a bigger buffer size argument to dmesg (#44024)
+- detach loopback devices on shutdown (#43919, #45826)
+
+* 四 8月 02 2001 Bill Nottingham <notting@redhat.com>
+- fix halt_get_remaining() (#50720)
+
+* 二 7月 31 2001 Bill Nottingham <notting@redhat.com>
+- mount all FS types r/o at halt (#50461)
+- don't use mii-tool at all (#various)
+
+* 四 7月 26 2001 Bill Nottingham <notting@redhat.com>
+- don't use kbd commands in setsysfont now that we've switched back to
+  console-tools (#50075)
+- sleep in check_link_down; some devices require it
+- only bring link down if check_link_down fails
+
+* 三 7月 25 2001 Bill Nottingham <notting@redhat.com>
+- set link up before checking with mii-tool (#49949)
+
+* 二 7月 24 2001 Bill Nottingham <notting@redhat.com>
+- update netdev stuff to use _netdev
+- IPv6 updates (<pekkas@netcore.fi>)
+- fix downing of devices with static IPs (#49777, #49783)
+- put ifcfg-lo back in the package
+
+* 五 7月 20 2001 Preston Brown <pbrown@redhat.com> 6.06
+- updates for quota
+
+* 二 7月 17 2001 Bill Nottingham <notting@redhat.com>
+- own some more directories
+- use -O nonetdev, require mount package that understands this
+- fix do_netreport when called as non-root
+- remove ip addresses from interfaces on ifdown
+- oops, fix ifup/ifdown
+
+* 一 7月 16 2001 Than Ngo <than@redhat.com>
+- fix country_code for ISDN
+
+* 一 7月 09 2001 Bill Nottingham <notting@redhat.com>
+- fix '--check'
+- prereq sh-utils (#43065)
+- fix some invocations of reboot/halt (#45966)
+- fix typo in ifup-wireless
+- don't muck with /etc/issue each boot
+- big IPv6 update (<pekkas@netcore.fi>)
+
+* 五 7月 06 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Add new directories required by new network tool
+
+* 四 7月 05 2001 Karsten Hopp <karsten@alios.de>
+- disable hwclock on S390 (no such executable)
+- Fix up kernel versioning on binary-only modules (S390)
+- don't use newt scripts on S390 console
+
+* 日 7月 01 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- reenable pump, but make sure dhcpcd is the default. This
+  way, upgrades of systems without dhcpcd has a better chance at
+  working.
+
+* 四 6月 28 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- Disable pump completely
+
+* 三 6月 27 2001 Than Ngo <than@redhat.com>
+- fix pap/chap authentication for syncppp
+- support ippp options
+
+* 一 6月 25 2001 Bill Nottingham <notting@redhat.com>
+- add ifup-wireless
+
+* 五 6月 22 2001 Than Ngo <than@redhat.com>
+- add support xDSL
+
+* 四 6月 21 2001 Bill Nottingham <notting@redhat.com>
+- more networking script fixes (#45364)
+- add stuff for unmounting /initrd
+
+* 四 6月 21 2001 Than Ngo <than@redhat.com>
+- add support ISDN
+
+* 三 6月 20 2001 Bill Nottingham <notting@redhat.com>
+- fix extremely broken new network scripts
+
+* 三 6月 20 2001 Bill Nottingham <notting@redhat.com>
+- bump version to 5.89
+- make it build
+
+* 四 5月 17 2001 Bill Nottingham <notting@redhat.com>
+- don't run ifup ppp0 if ppp-watch gets SIGINT (#40585, ak@cave.hop.stu.neva.ru)
+- fix do_netreport (#37716, #39603 <crlf@aeiou.pt>)
+
+* 三 5月 16 2001 Nalin Dahyabhai <nalin@redhat.com>
+- copyright: GPL -> license: GPL
+- fix a syntax error in lang.csh
+- skip commented-out i18n configuration lines in lang.csh
+
+* 五 5月 11 2001 Preston Brown <pbrown@redhat.com>
+- new network-scripts infrastructure; ifcfg-lo moved to /etc/sysconfig/networking
+
+* 三 5月 02 2001 Bernhard Rosenkraenzer <bero@redhat.com> 5.86-1
+- support kbd in setsysfont
+- bzip2 source
+
+* 三 4月 25 2001 Florian La Roche <Florian.LaRoche@alios.de>
+- add further s390 changes:
+  - ifup-iucv
+  - mkkerneldoth.s390
+
+* 二 4月 24 2001 Than Ngo <than@redhat.com>
+- add shutdown UPS into halt (bug #34312)
+
+* 六 4月 07 2001 Preston Brown <pbrown@redhat.com>
+- broke out kernel.h updater from rc.sysinit into /sbin/mkkerneldoth
+
+* 五 4月 06 2001 Bill Nottingham <notting@redhat.com>
+- be a little more careful in do_netreport (#34933)
+
+* 二 4月 03 2001 Bill Nottingham <notting@redhat.com>
+- set umask explicitly to 022 in /etc/init.d/functions
+
+* 一 4月 02 2001 Bill Nottingham <notting@redhat.com>
+- fix segfault in usernetctl (#34353)
+
+* 一 3月 26 2001 Bill Nottingham <notting@redhat.com>
+- don't print errors in /etc/init.d/network if kernel.hotplug doesn't exist
+
+* 四 3月 22 2001 Erik Troan <ewt@redhat.com>
+- take advantage of new swapon behaviors
+
+* 三 3月 14 2001 Bill Nottingham <notting@redhat.com>
+- add cipe interfaces last (#31597)
+
+* 二 3月 13 2001 Bill Nottingham <notting@redhat.com>
+- fix typo in ifup (#31627)
+- update translation source
+
+* 二 3月 13 2001 Nalin Dahyabhai <nalin@redhat.com>
+- fix typo in rc.sysinit
+- fix ifup-routes not setting DEVICE properly
+
+* 一 3月 12 2001 Preston Brown <pbrown@redhat.com>
+- Work properly with new quota utilities
+
+* 一 3月 05 2001 Bill Nottingham <notting@redhat.com>
+- IPv6 fixes (#30506)
+- make static-routes handling more sane and consistent (#29500, #29549)
+- handle multiple USB controllers *correctly*
+
+* 三 2月 28 2001 Nalin Dahyabhai <nalin@redhat.com>
+- usernetctl, ppp-watch: cleanups
+- netreport: use O_NOFOLLOW
+- ifup-ppp: let ppp-watch watch over demand-dialed connections (#28927)
+
+* 二 2月 27 2001 Bill Nottingham <notting@redhat.com>
+- don't run isapnp on isapnp-enabled 2.4 kernels (part of #29450)
+- disable hotplug during network initscript
+- don't munge wireless keys in ifup; that will be done with the
+  PCMCIA wireless stuff
+- run sndconfig --mungepnp for non-native-isapnp soundcards
+- don't explicitly kill things in init.d/single, init will do it
+- don't explicitly load usb-storage; mount the usbdevfs before initializing
+  host controller modules
+
+* 三 2月 21 2001 Bill Nottingham <notting@redhat.com>
+- initialize multiple USB controllers if necessary
+
+* 三 2月 21 2001 Nalin Dahyabhai <nalin@redhat.com>
+- close extra file descriptors before exec()ing commands in initlog
+
+* 一 2月 19 2001 Bill Nottingham <notting@redhat.com>
+- fix some substitions in init.d/functions (fixes various killproc issues)
+- make sure ipv6 module alias is available if configured
+- fix initlog segfaults in popt when called with bogus stuff (#28140)
+
+* 四 2月 15 2001 Nalin Dahyabhai <nalin@redhat.com>
+- make pidofproc() and killproc() try to use the PID associated with the full
+  pathname first before killing the daemon by its basename (for daemons that
+  share the same basename, i.e. "master" in postfix and cyrus-imapd) (#19016)
+- fix status() as well
+
+* 三 2月 14 2001 Bill Nottingham <notting@redhat.com>
+- fix init.d/single to work around possible kernel problem
+
+* 二 2月 13 2001 Bill Nottingham <notting@redhat.com>
+- fix unmounting of loopback stuff (#26439, #14672)
+
+* 一 2月 12 2001 Bill Nottingham <notting@redhat.com>
+- fix ifup-post so that it will work right when not called from ifup
+
+* 六 2月 10 2001 Florian La Roche <Florian.LaRoche@alios.de>
+- add all save changes for s390 s390x that won't break anything
+  patches are from Oliver Paukstadt @ millenux.com
+
+* 五 2月 09 2001 Bill Nottingham <notting@redhat.com>
+- muck with the font in lang.csh/lang.sh, but don't spit out errors (#26903)
+
+* 三 2月 07 2001 Bill Nottingham <notting@redhat.com>
+- ipv6 sync ups (#26502, #25775)
+- fix hangs at shutdown (#25744)
+- fix ifup-ppp (#26323)
+
+* 二 2月 06 2001 Bill Nottingham <notting@redhat.com>
+- modify firewall on ifup to allow any new DNS servers through (#25951)
+- don't muck with the font in lang.csh/lang.sh (#26349)
+- don't display Japanese if we aren't on a pty (#25041)
+- load ide-scsi if passed on /proc/cmdline
+
+* 一 2月 05 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- i18n updates
+
+* 五 2月 02 2001 Bill Nottingham <notting@redhat.com>
+- actually *ship* the ipv6 (and plusb) files
+
+* 四 2月 01 2001 Trond Eivind Glomsrød <teg@redhat.com>
+- i18n updates
+
+* 二 1月 30 2001 Bill Nottingham <notting@redhat.com>
+- various init.d/functions cleanups (#10761, from <mjt@tls.msk.ru>)
+- in daemon(), only look at pidfile to determine if process is running
+  (#17244, others)
+- ifup-ppp enhancements (#17388, from <ayn2@cornell.edu>)
+- ipv6 support (#23576, originally by Peter Bieringer <pb@bieringer.de>)
+- lots of other minor fixes (see ChangeLog)
+
+* 一 1月 29 2001 Bill Nottingham <notting@redhat.com>
+- add plusb support (#18892, patch from <eric.ayers@compgen.com>)
+- don't ignore RETRYTIMEOUT when we never connect (#14071, patch from
+  <ak@cave.hop.stu.neva.ru>)
+
+* 三 1月 24 2001 Bill Nottingham <notting@redhat.com>
+- quiet LVM setup (#24841)
+- fix inability to shutdown cleanly (#24889)
+
+* 二 1月 23 2001 Bill Nottingham <notting@redhat.com>
+- new i18n mechanism
+
+* 二 1月 23 2001 Matt Wilson <msw@redhat.com>
+- fixed typo in init.d/network - missing | in pipeline
+
+* 一 1月 22 2001 Bill Nottingham <notting@redhat.com>
+- do LVM setup through normal initscripts mechanisms
+- ignore backup files in /etc/sysconfig/network-scripts
+- lots of .po file updates
+
+* 二 1月 02 2001 Bill Nottingham <notting@redhat.com>
+- initial i18n support - originally from Conectiva
+
+* 一 12月 11 2000 Bill Nottingham <notting@redhat.com>
+- only load sound if persistent DMA buffers are necessary
+- fix lots of bugs: #18619, #21187, #21283, #12097
+- integrate MAXFAIL option for ppp-watch
+- don't load keymaps/fonts on a serial console
+
+* 二 11月 21 2000 Karsten Hopp <karsten@alios.de>
+- changed hdparm section in rc.sysinit to allow different
+  parameters for each disk (if needed) by copying
+  /etc/sysconfig/harddisks to /etc/sysconfig/harddiskhda (hdb,hdc..)
+- fix RFE #20967
+
+* 二 10月 31 2000 Than Ngo <than@redhat.com>
+- fix the adding default route if GATEWAY=0.0.0.0
+
+* 二 10月 10 2000 Nalin Dahyabhai <nalin@redhat.com>
+- handle "gw x.x.x.x" as the last pair of flags in ifup-routes (#18804)
+- fix top-level makefile install target
+- make usernetctl just fall-through if getuid() == 0
+
+* 日 9月 03 2000 Florian La Roche <Florian.LaRoche@redhat.com>
+- /etc/init.d is already provided by chkconfig
+
+* 三 8月 23 2000 Nalin Dahyabhai <nalin@redhat.com>
+- set "holdoff ${RETRYTIMEOUT} ktune" for demand-dialed PPP links
+
+* 二 8月 22 2000 Bill Nottingham <notting@redhat.com>
+- update documentation (#15475)
+
+* 二 8月 22 2000 Than Ngo <than@alios.de>
+- add KDE2 support to prefdm
+
+* 一 8月 21 2000 Bill Nottingham <notting@redhat.com>
+- add usleep after kill -KILL in pidofproc, works around lockd issues (#14847)
+- add some fallback logic to prefdm (#16464)
+
+* 五 8月 18 2000 Bill Nottingham <notting@redhat.com>
+- don't load usb drivers if they're compiled statically
+- don't call ifdown-post twice for ppp (#15285)
+
+* 三 8月 16 2000 Bill Nottingham <notting@redhat.com>
+- fix /boot/kernel.h generation (#16236, #16250)
+
+* 二 8月 15 2000 Nalin Dahyabhai <nalin@redhat.com>
+- be more careful about creating files in netreport (#16164)
+
+* 五 8月 11 2000 Nalin Dahyabhai <nalin@redhat.com>
+- move documentation for the DEMAND and IDLETIMEOUT values to the right
+  section of sysconfig.txt
+
+* 三 8月 09 2000 Bill Nottingham <notting@redhat.com>
+- load agpgart if necessary (hack)
+- fix /boot/kernel.h stuff (jakub)
+
+* 一 8月 07 2000 Bill Nottingham <notting@redhat.com>
+- remove console-tools requirement
+- in netfs, start portmap if needed
+- cosmetic cleanups, minor tweaks
+- don't probe USB controllers
+
+* 一 8月 07 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix demand-dialing support for PPP devices
+- change updetach back to nodetach
+
+* 日 8月 06 2000 Bill Nottingham <notting@redhat.com>
+- add RETRYCONNECT option for ifcfg-pppX files (kenn@linux.ie)
+
+* 三 7月 26 2000 Bill Nottingham <notting@redhat.com>
+- fix unclean shutdown
+
+* 二 7月 25 2000 Nalin Dahyabhai <nalin@redhat.com>
+- s/nill/null/g
+
+* 二 7月 25 2000 Bill Nottingham <notting@redhat.com>
+- unmount usb filesystem on halt
+- run /sbin/ifup-pre-local if it exists
+
+* 二 7月 18 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- add "nousb" command line parameter
+- fix some warnings when mounting /proc/bus/usb
+
+* 六 7月 15 2000 Matt Wilson <msw@redhat.com>
+- kill all the PreTransaction stuff
+- directory ownership cleanups, add more LSB symlinks
+- move all the stuff back in to /etc/rc.d/
+
+* 四 7月 13 2000 Bill Nottingham <notting@redhat.com>
+- fix == tests in rc.sysinit
+- more %pretrans tweaks
+
+* 四 7月 13 2000 Jeff Johnson <jbj@redhat.com>
+- test if /etc/rc.d is a symlink already in pre-transaction syscalls.
+
+* 二 7月 11 2000 Bill Nottingham <notting@redhat.com>
+- implement the %pre with RPM Magic(tm)
+
+* 六 7月 08 2000 Bill Nottingham <notting@redhat.com>
+- fix it to not follow /etc/rc.d
+
+* 五 7月 07 2000 Bill Nottingham <notting@redhat.com>
+- fix %pre, again
+
+* 四 7月 06 2000 Bill Nottingham <notting@redhat.com>
+- tweak %pre back to a mv (rpm is fun!)
+- do USB initialization before fsck, so keyboard works if it fails
+
+* 一 7月 03 2000 Bill Nottingham <notting@redhat.com>
+- rebuild; allow 'fastboot' kernel command line option to skip fsck
+
+* 一 7月 03 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix demand-dialing with PPP
+
+* 日 7月 02 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- don't use tail
+
+* 三 6月 28 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- add support for USB controllers and HID devices
+  (mice, keyboards)
+
+* 二 6月 27 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- add support for EIDE optimization
+
+* 一 6月 26 2000 Bill Nottingham <notting@redhat.com>
+- tweak %pre
+
+* 三 6月 21 2000 Preston Brown <pbrown@redhat.com>
+- noreplace for adjtime file
+
+* 五 6月 16 2000 Nalin Dahyabhai <nalin@redhat.com>
+- ifup-ppp: add hooks for demand-dialing PPP
+- functions: use basename of process when looking for its PID file
+
+* 四 6月 15 2000 Bill Nottingham <notting@redhat.com>
+- move from /etc/rc.d/init.d -> /etc/init.d
+
+* 二 6月 13 2000 Bill Nottingham <notting@redhat.com>
+- set soft limit, not hard, in daemon function
+- /var/shm -> /dev/shm
+
+* 四 6月 08 2000 Preston Brown <pbrown@redhat.com>
+- use dhcpcd if pump fails.
+- use depmod -A (faster)
+
+* 日 6月 04 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- add autologin support to prefdm
+
+* 四 6月 01 2000 Bill Nottingham <notting@redhat.com>
+- random networking fixes (alias routes, others)
+- conf.modules -> modules.conf
+
+* 四 5月 11 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix incorrect grep invocation in rc.sysinit (bug #11267)
+
+* 三 4月 19 2000 Bill Nottingham <notting@redhat.com>
+- fix lang.csh, again (oops)
+- use /poweroff, /halt to determine whether to poweroff
+
+* 五 4月 14 2000 Bill Nottingham <notting@redhat.com>
+- fix testing of RESOLV_MODS (which shouldn't be used anyways)
+
+* 二 4月 04 2000 Ngo Than <than@alios.de>
+- fix overwrite problem of resolv.conf on ippp/ppp/slip connections
+
+* 一 4月 03 2000 Bill Nottingham <notting@redhat.com>
+- fix typo in functions file
+- explicitly set --localtime when calling hwclock if necessary
+
+* 五 3月 31 2000 Bill Nottingham <notting@redhat.com>
+- fix typo in /etc/rc.d/init.d/network that broke linuxconf (#10472)
+
+* 一 3月 27 2000 Bill Nottingham <notting@redhat.com>
+- remove compatiblity chkconfig links
+- run 'netfs stop' on 'network stop' if necessary
+
+* 二 3月 21 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Mount /var/shm if required (2.3.99, 2.4)
+
+* 一 3月 20 2000 Bill Nottingham <notting@redhat.com>
+- don't create resolv.conf 0600
+- don't run ps as much (speed issues)
+- allow setting of MTU
+- other minor fixes
+
+* 日 3月 19 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Start devfsd if installed and needed (Kernel 2.4...)
+
+* 三 3月 08 2000 Bill Nottingham <notting@redhat.com>
+- check that network devices are up before bringing them down
+
+* 三 3月 08 2000 Jakub Jelinek <jakub@redhat.com>
+- update sysconfig.txt
+
+* 二 3月 07 2000 Bill Nottingham <notting@redhat.com>
+- rerun sysctl on network start (for restarts)
+
+* 一 2月 28 2000 Bill Nottingham <notting@redhat.com>
+- don't read commented raid devices
+
+* 一 2月 21 2000 Bill Nottingham <notting@redhat.com>
+- fix typo in resolv.conf munging
+
+* 四 2月 17 2000 Bill Nottingham <notting@redhat.com>
+- sanitize repair prompt
+- initial support for isdn-config stuff
+
+* 一 2月 14 2000 Nalin Dahyabhai <nalin@redhat.com>
+- add which as a package dependency (bug #9416)
+
+* 二 2月 08 2000 Bill Nottingham <notting@redhat.com>
+- fixes for sound module loading
+
+* 一 2月 07 2000 Nalin Dahyabhai <nalin@redhat.com>
+- check that LC_ALL/LINGUAS and LANG are set before referencing them in lang.csh
+- fix check for /var/*/news, work around for bug #9140
+
+* 五 2月 04 2000 Nalin Dahyabhai <nalin@redhat.com>
+- fix bug #9102
+
+* 五 2月 04 2000 Bill Nottingham <notting@redhat.com>
+- if LC_ALL/LINGUAS == LANG, don't set them
+
+* 三 2月 02 2000 Bill Nottingham <notting@redhat.com>
+- fix problems with linuxconf static routes
+
+* 二 2月 01 2000 Nalin Dahyabhai <nalin@redhat.com>
+- shvar cleaning
+- fix wrong default route ip in network-functions
+
+* 一 1月 31 2000 Nalin Dahyabhai <nalin@redhat.com>
+- attempt to restore default route if PPP takes it over
+- man page fix for ipcalc
+- shvar cleaning
+- automate maintaining /boot/System.map symlinks
+
+* 一 1月 31 2000 Bill Nottingham <notting@redhat.com>
+- fix hanging ppp-watch
+- fix issues with cleaning of /var/{run,lock}
+
+* 五 1月 21 2000 Bill Nottingham <notting@redhat.com>
+- fix pidof calls in pidofproc
+
+* 三 1月 19 2000 Bill Nottingham <notting@redhat.com>
+- fix ifup-ipx, don't munge resolv.conf if $DNS1 is already in it
+
+* 四 1月 13 2000 Bill Nottingham <notting@redhat.com>
+- link popt statically
+
+* 一 1月 10 2000 Bill Nottingham <notting@redhat.com>
+- don't try to umount /loopfs
+
+* 一 12月 27 1999 Bill Nottingham <notting@redhat.com>
+- switch to using sysctl
+
+* 一 12月 13 1999 Bill Nottingham <notting@redhat.com>
+- umount /proc *after* trying to turn off raid
+
+* 一 12月 06 1999 Michael K. Johnson <johnsonm@redhat.com>
+- improvements in clone device handling
+- better signal handling in ppp-watch
+- yet another attempt to fix those rare PAP/CHAP problems
+
+* 日 11月 28 1999 Bill Nottingham <notting@redhat.com>
+- impressive. Three new features, three new bugs.
+
+* 一 11月 22 1999 Michael K. Johnson <johnsonm@redhat.com>
+- fix more possible failed CHAP authentication (with chat scripts)
+- fix ppp default route problem
+- added ppp-watch man page, fixed usernetctl man page
+- make ifup-ppp work again when called from netcfg and linuxconf
+- try to keep ppp-watch from filling up logs by respawning pppd too fast
+- handle all linuxconf-style alias files with linuxconf
+
+* 一 11月 22 1999 Bill Nottingham <notting@redhat.com>
+- load mixer settings for monolithic sound
+- man page for ppp-watch
+- add ARP variable for ifup
+- some i18n fixes
+
+* 三 11月 10 1999 Bill Nottingham <notting@redhat.com>
+- control stop-a separately from sysrq
+
+* 一 11月 08 1999 Michael K. Johnson <johnsonm@redhat.com>
+- fix some failed CHAP authentication
+- fix extremely unlikely, but slightly possible kill-random-process
+  bug in ppp-watch
+- allow DNS{1,2} in any ifcfg-* file, not just PPP, and
+  add nameserver entries, don't just replace them
+- don't use /tmp/confirm, use /var/run/confirm instead
+
+* 二 11月 02 1999 Bill Nottingham <notting@redhat.com>
+- fix lang.csh /tmp race oops
+
+* 三 10月 27 1999 Bill Nottingham <notting@redhat.com>
+- we now ship hwclock on alpha.
+
+* 一 10月 25 1999 Jakub Jelinek <jakub@redhat.com>
+- fix check for serial console, don't use -C argument to fsck
+  on serial console.
+
+* 一 10月 18 1999 Bill Nottingham <notting@redhat.com>
+- do something useful with linuxconf 'any' static routes.
+
+* 二 10月 12 1999 Matt Wilson <msw@redhat.com>
+- added patch from Owen to source i18n configuration before starting prefdm
+
+* 一 10月 11 1999 Bill Nottingham <notting@redhat.com>
+- support for linuxconf alias files
+- add support for Jensen clocks.
+
+* 二 10月 05 1999 Bill Nottingham <notting@redhat.com>
+- assorted brown paper bag fixes
+- check for programs/files before executing/sourcing them
+- control stop-a like magic sysrq
+
+* 四 9月 30 1999 Bill Nottingham <notting@redhat.com>
+- req. e2fsprogs >= 1.15
+
+* 五 9月 24 1999 Bill Nottingham <notting@redhat.com>
+- munge C locale definitions to en_US
+- use fsck's completion bar
+
+* 四 9月 23 1999 Michael K. Johnson <johnsonm@redhat.com>
+- ppp-watch now always kills pppd pgrp to make sure dialers are dead,
+  and tries to hang up the modem
+
+* 二 9月 21 1999 Bill Nottingham <notting@redhat.com>
+- add a DEFRAG_IPV4 option
+
+* 一 9月 20 1999 Michael K. Johnson <johnsonm@redhat.com>
+- changed to more modern defaults for PPP connections
+
+* 一 9月 20 1999 Bill Nottingham <notting@redhat.com>
+- kill processes for umount in halt, too.
+- fixes to remove /usr dependencies
+
+* 五 9月 17 1999 Bill Nottingham <notting@redhat.com>
+- load/save mixer settings in rc.sysinit, halt
+
+* 一 9月 13 1999 Michael K. Johnson <johnsonm@redhat.com>
+- add --remotename option to wvdial code
+- make sure we do not have an earlier version of wvdial that doesn't
+  know how handle --remotename
+- make ppp-watch background itself after 30 seconds even if
+  connection does not come up, at boot time only, so that a
+  non-functional PPP connection cannot hang boot.
+
+* 日 9月 12 1999 Bill Nottingham <notting@redhat.com>
+- a couple of /bin/sh -> /bin/bash fixes
+- fix swapoff silliness
+
+* 五 9月 10 1999 Bill Nottingham <notting@redhat.com>
+- chkconfig --del in %preun, not %postun
+- use killall5 in halt
+- swapoff non-/etc/fstab swap
+
+* 三 9月 08 1999 Michael K. Johnson <johnsonm@redhat.com>
+- ifdown now synchronous (modulo timeouts)
+- several unrelated cleanups, primarily in ifdown
+
+* 二 9月 07 1999 Bill Nottingham <notting@redhat.com>
+- add an 'unconfigure' sort of thing
+
+* 一 9月 06 1999 Michael K. Johnson <johnsonm@redhat.com>
+- added ppp-watch to make "ifup ppp*" synchronous
+
+* 五 9月 03 1999 Bill Nottingham <notting@redhat.com>
+- require lsof
+
+* 三 9月 01 1999 Bill Nottingham <notting@redhat.com>
+- add interactive prompt
+
+* 二 8月 31 1999 Bill Nottingham <notting@redhat.com>
+- disable magic sysrq by default
+
+* 一 8月 30 1999 Bill Nottingham <notting@redhat.com>
+- new NFS unmounting from Bill Rugolsky <rugolsky@ead.dsa.com>
+- fix ifup-sl/dip confusion
+- more raid startup cleanup
+- make utmp group 22
+
+* 五 8月 20 1999 Bill Nottingham <notting@redhat.com>
+- pass hostname to pump
+- add lang.csh
+
+* 四 8月 19 1999 Bill Nottingham <notting@redhat.com>
+- more wvdial updates
+- fix a *stupid* bug in process reading
+
+* 五 8月 13 1999 Bill Nottingham <notting@redhat.com>
+- add new /boot/kernel.h boot kernel version file
+- new RAID startup
+
+* 五 8月 13 1999 Michael K. Johnson <johnsonm@redhat.com>
+- use new linkname argument to pppd to make if{up,down}-ppp
+  reliable -- requires ppp-2.3.9 or higher
+
+* 一 8月 02 1999 Bill Nottingham <notting@redhat.com>
+- fix typo.
+- add 'make check'
+
+* 三 7月 28 1999 Michael K. Johnson <johnsonm@redhat.com>
+- simple wvdial support for ppp connections
+
+* 一 7月 26 1999 Bill Nottingham <notting@redhat.com>
+- stability fixes for initlog
+- initlog now has a config file
+- add alias speedup from dharris@drh.net
+- move netfs links
+- usleep updates
+
+* 四 7月 08 1999 Bill Nottingham <notting@redhat.com>
+- remove timeconfig dependency
+- i18n fixes from nkbj@image.dk
+- move inputrc to setup package
+
+* 二 7月 06 1999 Bill Nottingham <notting@redhat.com>
+- fix killall links, some syntax errors
+
+* 五 6月 25 1999 Bill Nottingham <notting@redhat.com>
+- don't make module-info, System.map links
+- handle utmpx/wtmpx
+- fix lots of bugs in 4.21 release :)
+
+* 四 6月 17 1999 Bill Nottingham <notting@redhat.com>
+- set clock as soon as possible
+- use INITLOG_ARGS everywhere
+- other random fixes in networking
+
+* 一 6月 14 1999 Bill Nottingham <notting@redhat.com>
+- oops, don't create /var/run/utmp and then remove it.
+- stomp RAID bugs flat. Sort of.
+
+* 一 5月 24 1999 Bill Nottingham <notting@redhat.com>
+- clean out /var better
+- let everyone read /var/run/ppp*.dev
+- fix network startup so it doesn't depend on /usr
+
+* 二 5月 11 1999 Bill Nottingham <notting@redhat.com>
+- various fixes to rc.sysinit
+- fix raid startup
+- allow for multi-processor /etc/issues
+
+* 日 4月 18 1999 Matt Wilson <msw@redhat.com>
+- fixed typo - "Determing" to "Determining"
+
+* 五 4月 16 1999 Preston Brown <pbrown@redhat.com>
+- updated inputrc so that home/end/del work on console, not just X
+
+* 四 4月 08 1999 Bill Nottingham <notting@redhat.com>
+- fix more logic in initlog
+- fix for kernel versions in ifup-aliases
+- log to /var/log/boot.log
+
+* 三 4月 07 1999 Bill Nottingham <notting@redhat.com>
+- fix daemon() function so you can specify pid to look for
+
+* 三 4月 07 1999 Erik Troan <ewt@redhat.com>
+- changed utmp,wtmp to be group writeable and owned by group utmp
+
+* 二 4月 06 1999 Bill Nottingham <notting@redhat.com>
+- fix loading of consolefonts/keymaps
+- three changelogs. three developers. one day. Woohoo!
+
+* 二 4月 06 1999 Michael K. Johnson <johnsonm@redhat.com>
+- fixed ifup-ipx mix-up over . and _
+
+* 二 4月 06 1999 Erik Troan <ewt@redhat.com>
+- run /sbin/ifup-local after bringing up an interface (if that file exists)
+
+* 一 4月 05 1999 Bill Nottingham <notting@redhat.com>
+- load keymaps & console font early
+- fixes for channel bonding, strange messages with non-boot network interfaces
+
+* 六 3月 27 1999 Cristian Gafton <gafton@redhat.com>
+- added sysvinitfiles as a documenattaion file
+
+* 五 3月 26 1999 Bill Nottingham <notting@redhat.com>
+- nfsfs -> netfs
+
+* 一 3月 22 1999 Bill Nottingham <notting@redhat.com>
+- don't source /etc/sysconfig/init if $BOOTUP is already set
+
+* 五 3月 19 1999 Bill Nottingham <notting@redhat.com>
+- don't run linuxconf if /usr isn't mounted
+- set macaddr before bootp
+- zero in the /var/run/utmpx file (gafton)
+- don't set hostname on ppp/slip (kills X)
+
+* 三 3月 17 1999 Bill Nottingham <notting@redhat.com>
+- exit ifup if pump fails
+- fix stupid errors in reading commands from subprocess
+
+* 二 3月 16 1999 Bill Nottingham <notting@redhat.com>
+- fix ROFS logging
+- make fsck produce more happy output
+- fix killproc logic
+
+* 一 3月 15 1999 Bill Nottingham <notting@redhat.com>
+- doc updates
+- support for SYSFONTACM, other console-tools stuff
+- add net route for interface if it isn't there.
+- fix for a bash/bash2 issue
+
+* 一 3月 15 1999 Michael K. Johnson <johnsonm@redhat.com>
+- pam_console lockfile cleanup added to rc.sysinit
+
+* 日 3月 14 1999 Bill Nottingham <notting@redhat.com>
+- fixes in functions for 'action'
+- fixes for pump
+
+* 三 3月 10 1999 Bill Nottingham <notting@redhat.com>
+- Mmm. Must always remove debugging code. before release. *thwap*
+- pump support
+- mount -a after mount -a -t nfs
+
+* 四 2月 25 1999 Bill Nottingham <notting@redhat.com>
+- put preferred support back in
+
+* 四 2月 18 1999 Bill Nottingham <notting@redhat.com>
+- fix single-user mode (source functions, close if)
+
+* 三 2月 10 1999 Bill Nottingham <notting@redhat.com>
+- turn off xdm in runlevel 5 (now a separate service)
+
+* 四 2月 04 1999 Bill Nottingham <notting@redhat.com>
+- bugfixes (ifup-ppp, kill -TERM, force fsck, hwclock --adjust, setsysfont)
+- add initlog support. Now everything is logged (and bootup looks different)
+
+* 四 11月 12 1998 Preston Brown <pbrown@redhat.com>
+- halt now passed the '-i' flag so that network interfaces disabled
+
+* 二 11月 10 1998 Michael K. Johnson <johnsonm@redhat.com>
+- handle new linuxconf output for ipaliases
+
+* 四 10月 15 1998 Erik Troan <ewt@redhat.com>
+- fixed raid start stuff
+- added raidstop to halt
+
+* 一 10月 12 1998 Cristian Gafton <gafton@redhat.com>
+- handle LC_ALL
+
+* 一 10月 12 1998 Preston Brown <pbrown@redhat.com>
+- adjusted setsysfont to always run setfont, even if only w/default font
+
+* 二 10月 06 1998 Cristian Gafton <gafton@redhat.com>
+- rc.sysvinit should be working with all kernel versions now
+- requires e2fsprogs (for fsck)
+- set INPUTRC and LESSCHARSET on linux-lat
+
+* 三 9月 16 1998 Jeff Johnson <jbj@redhat.com>
+- /etc/rc.d/rc: don't run /etc/rc.d/rcN.d/[KS]??foo.{rpmsave,rpmorig} scripts.
+- /etc/rc.d/rc.sysinit: raid startup (Nigel.Metheringham@theplanet.net).
+- /sbin/setsysfont: permit unicode fonts.
+
+* 一 8月 17 1998 Erik Troan <ewt@redhat.com>
+- don't add 'Red Hat Linux' to /etc/issue; use /etc/alios-release as is
+
+* 日 8月 16 1998 Jeff Johnson <jbj@redhat.com>
+- paranoia improvements to .rhkmvtag
+- if psacct with /sbin/accton, than turn off accounting
+
+* 二 7月 07 1998 Jeff Johnson <jbj@redhat.com>
+- start/stop run levels changed.
+- ipx_configure/ipx_internal_net moved to /sbin.
+
+* 三 7月 01 1998 Erik Troan <ewt@redhat.com>
+- usernetctl didn't understand "" around USERCTL attribute
+
+* 三 7月 01 1998 Jeff Johnson <jbj@redhat.com>
+- Use /proc/version to find preferred modules.
+- Numerous buglets fixed.
+
+* 日 6月 07 1998 Erik Troan <ewt@redhat.com>
+- rc.sysinit looks for bootfile= as well as BOOT_IMAGE to set
+  /lib/modules/preferred symlink
+
+* 一 6月 01 1998 Erik Troan <ewt@redhat.com>
+- ipcalc should *never* have been setgid anything
+- depmod isn't run properly for non-serial numbered kernels
+
+* 三 5月 06 1998 Donnie Barnes <djb@redhat.com>
+- added system font and language setting
+
+* 一 5月 04 1998 Michael K. Johnson <johnsonm@redhat.com>
+- Added missing files to packagelist.
+
+* 六 5月 02 1998 Michael K. Johnson <johnsonm@redhat.com>
+- Added lots of linuxconf support.  Should still work on systems that
+  do not have linuxconf installed, but linuxconf gives enhanced support.
+- In concert with linuxconf, added IPX support.  Updated docs to reflect it.
+
+* 五 5月 01 1998 Erik Troan <ewt@redhat.com>
+- rc.sysinit uses preferred directory
+
+* 日 4月 05 1998 Erik Troan <ewt@redhat.com>
+- updated rc.sysinit to deal with kernel versions with release numbers
+
+* 日 3月 22 1998 Erik Troan <ewt@redhat.com>
+- use ipcalc to calculate the netmask if one isn't specified
+
+* 二 3月 10 1998 Erik Troan <ewt@redhat.com>
+- added and made use of ipcalc
+
+* 二 3月 10 1998 Erik Troan <ewt@redhat.com>
+- removed unnecessary dhcp log from /tmp
+
+* 一 3月 09 1998 Erik Troan <ewt@redhat.com>
+- if bootpc fails, take down the device
+
+* 一 3月 09 1998 Erik Troan <ewt@redhat.com>
+- added check for mktemp failure
+
+* 四 2月 05 1998 Erik Troan <ewt@redhat.com>
+- fixed support for user manageable cloned devices
+
+* 一 1月 12 1998 Michael K. Johnson <johnsonm@redhat.com>
+- /sbin/ isn't always in $PATH, so call /sbin/route in ifup-routes
+
+* 三 12月 31 1997 Erik Troan <ewt@redhat.com>
+- touch /var/lock/subsys/kerneld after cleaning out /var/lock/subsys
+- the logic for when  /var/lock/subsys/kerneld is touched was backwards
+
+* 二 12月 30 1997 Erik Troan <ewt@redhat.com>
+- tried to get /proc stuff right one more time (uses -t nonfs,proc now)
+- added support for /fsckoptions
+- changed 'yse' to 'yes' in KERNELD= line
+
+* 二 12月 09 1997 Erik Troan <ewt@redhat.com>
+- set domainname to "" if none is specified in /etc/sysconfig/network
+- fix /proc mounting to get it in /etc/mtab
+
+* 一 12月 08 1997 Michael K. Johnson <johnsonm@redhat.com>
+- fixed inheritance for clone devices
+
+* 五 11月 07 1997 Erik Troan <ewt@redhat.com>
+- added sound support to rc.sysinit
+
+* 五 11月 07 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Added missing "then" clause
+
+* 四 11月 06 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Fixed DEBUG option in ifup-ppp
+- Fixed PPP persistance
+- Only change IP forwarding if necessary
+
+* 二 10月 28 1997 Donnie Barnes <djb@redhat.com>
+- removed the skeleton init script
+- added the ability to 'nice' daemons
+
+* 二 10月 28 1997 Erik Troan <ewt@redhat.com>
+- touch /var/lock/subsys/kerneld if it's running, and after mounting /var
+- applied dhcp fix
+
+* 四 10月 23 1997 Donnie Barnes <djb@redhat.com>
+- added status|restart to init scripts
+
+* 四 10月 23 1997 Michael K. Johnson <johnsonm@redhat.com>
+- touch random seed file before chmod'ing it.
+
+* 三 10月 15 1997 Erik Troan <ewt@redhat.com>
+- run domainname if NISDOMAIN is set
+
+* 三 10月 15 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Make the random seed file mode 600.
+
+* 二 10月 14 1997 Michael K. Johnson <johnsonm@redhat.com>
+- bring down ppp devices if ifdown-ppp is called while ifup-ppp is sleeping.
+
+* 一 10月 13 1997 Erik Troan <ewt@redhat.com>
+- moved to new chkconfig conventions
+
+* 六 10月 11 1997 Erik Troan <ewt@redhat.com>
+- fixed rc.sysinit for hwclock compatibility
+
+* 四 10月 09 1997 Erik Troan <ewt@redhat.com>
+- run 'ulimit -c 0' before running scripts in daemon function
+
+* 三 10月 08 1997 Donnie Barnes <djb@redhat.com>
+- added chkconfig support
+- made all rc*.d symlinks have missingok flag
+
+* 一 10月 06 1997 Erik Troan <ewt@redhat.com>
+- fixed network-scripts to allow full pathnames as config files
+- removed some old 3.0.3 pcmcia device handling
+
+* 三 10月 01 1997 Michael K. Johnson <johnsonm@redhat.com>
+- /var/run/netreport needs to be group-writable now that /sbin/netreport
+  is setguid instead of setuid.
+
+* 二 9月 30 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Added network-functions to spec file.
+- Added report functionality to usernetctl.
+- Fixed bugs I introduced into usernetctl while adding clone device support.
+- Clean up entire RPM_BUILD_ROOT directory in %clean.
+
+* 一 9月 29 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Clone device support in network scripts, rc scripts, and usernetctl.
+- Disassociate from controlling tty in PPP and SLIP startup scripts,
+  since they act as daemons.
+- Spec file now provides start/stop symlinks, since they don't fit in
+  the CVS archive.
+
+* 二 9月 23 1997 Donnie Barnes <djb@redhat.com>
+- added mktemp support to ifup
+
+* 四 9月 18 1997 Donnie Barnes <djb@redhat.com>
+- fixed some init.d/functions bugs for stopping httpd
+
+* 二 9月 16 1997 Donnie Barnes <djb@redhat.com>
+- reworked status() to adjust for processes that change their argv[0] in
+  the process table.  The process must still have it's "name" in the argv[0]
+  string (ala sendmail: blah blah).
+
+* 一 9月 15 1997 Erik Troan <ewt@redhat.com>
+- fixed bug in FORWARD_IPV4 support
+
+* 日 9月 14 1997 Erik Troan <ewt@redhat.com>
+- added support for FORWARD_IPV4 variable
+
+* 四 9月 11 1997 Donald Barnes <djb@redhat.com>
+- added status function to functions along with better killproc
+  handling.
+- added /sbin/usleep binary (written by me) and man page
+- changed BuildRoot to /var/tmp instead of /tmp
+
+* 二 6月 10 1997 Michael K. Johnson <johnsonm@redhat.com>
+- /sbin/netreport sgid rather than suid.
+- /var/run/netreport writable by group root.
+
+- /etc/ppp/ip-{up|down} no longer exec their local versions, so
+  now ifup-post and ifdown-post will be called even if ip-up.local
+  and ip-down.local exist.
+
+* 二 6月 03 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Added missing -f to [ invocation in ksyms check.
+
+* 五 5月 23 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Support for net event notification:
+  Call /sbin/netreport to request that SIGIO be sent to you whenever
+  a network interface changes status (won't work for brining up SLIP
+  devices).
+  Call /sbin/netreport -r to remove the notification request.
+- Added ifdown-post, and made all the ifdown scrips call it, and
+  added /etc/ppp/ip-down script that calls /etc/ppp/ip-down.local
+  if it exists, then calls ifdown-post.
+- Moved ifup and ifdown to /sbin
+
+* 二 4月 15 1997 Michael K. Johnson <johnsonm@redhat.com>
+- usernetctl put back in ifdown
+- support for slaved interfaces
+
+* 三 4月 02 1997 Erik Troan <ewt@redhat.com>
+- Created ifup-post from old ifup
+- PPP, PLIP, and generic ifup use ifup-post
+
+* 五 3月 28 1997 Erik Troan <ewt@redhat.com>
+- Added DHCP support
+- Set hostname via reverse name lookup after configuring a networking
+  device if the current hostname is (none) or localhost
+
+* 二 3月 18 1997 Erik Troan <ewt@redhat.com>
+- Got rid of xargs dependency in halt script
+- Don't mount /proc twice (unmount it in between)
+- sulogin and filesystem unmounting only happened for a corrupt root
+  filesystem -- it now happens when other filesystems are corrupt as well
+
+* 二 3月 04 1997 Michael K. Johnson <johnsonm@redhat.com>
+- PPP fixes and additions
+
+* 一 3月 03 1997 Erik Troan <ewt@redhat.com>
+- Mount proc before trying to start kerneld so we can test for /proc/ksyms
+  properly.
+
+* 三 2月 26 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Added MTU for PPP.
+- Put PPPOPTIONS at the end of the options string instead of at the
+  beginning so that they override other options.  Gives users more rope...
+- Don't do module-based stuff on non-module systems.  Ignore errors if
+  st module isn't there and we try to load it.
+
+* 二 2月 25 1997 Michael K. Johnson <johnsonm@redhat.com>
+- Changed ifup-ppp and ifdown-ppp not to use doexec, because the argv[0]
+  provided by doexec goes away when pppd gets swapped out.
+- ifup-ppp now sets remotename to the logical name of the device.
+  This will BREAK current PAP setups on netcfg-managed interfaces,
+  but we needed to do this to add a reasonable interface-specific
+  PAP editor to netcfg.
+
+* 五 2月 07 1997 Erik Troan <ewt@redhat.com>
+- Added usernetctl wrapper for user mode ifup and ifdown's and man page
+- Rewrote ppp and slip kill and retry code
+- Added doexec and man page
+

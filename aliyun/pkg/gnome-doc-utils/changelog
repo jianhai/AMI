@@ -1,0 +1,192 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.18.1-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.18.1-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.18.1-1.1
+- rebuild for alios6
+
+* 日 12月 20 2009 Matthew Barnes <mbarnes@redhat.com> - 0.18.1-1
+- Update to 0.18.1
+
+* 一 9月 21 2009 Matthias Clasen <mclasen@redhat.com> - 0.18.0-1
+- Update to 0.18.0
+
+* 一 9月 07 2009 Matthias Clasen <mclasen@redhat.com> - 0.17.5-1
+- Update to 0.17.5
+
+* 一 8月 24 2009 Matthias Clasen <mclasen@redhat.com> - 0.17.4-1
+- Update to 0.17.4
+
+* 二 7月 28 2009 Matthias Clasen <mclasen@redhat.com> - 0.17.3-1
+- Update to 0.17.3
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.17.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 29 2009 Matthew Barnes <mbarnes@redhat.com> - 0.17.2-1
+- Update to 0.17.2
+- Require libxml2-python for building.
+
+* 一 6月 15 2009 Matthias Clasen <mclasen@redhat.com> - 0.17.1-1
+- Update to 0.17.1
+
+* 二 4月 14 2009 Matthias Clasen <mclasen@redhat.com> - 0.16.1-1
+- Update to 0.16.1
+
+* 一 3月 16 2009 Matthias Clasen <mclasen@redhat.com> - 0.16.0-1
+- Update to 0.16.0
+
+* 一 3月 02 2009 Matthew Barnes <mbarnes@redhat.com> - 0.15.2-1
+- Update to 0.15.2
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.15.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 03 2009 Matthias Clasen <mclasen@redhat.com> - 0.15.1-2
+- Update to 0.15.1
+
+* 日 1月 11 2009 Matthias Clasen <mclasen@redhat.com> - 0.14.2-1
+- Update to 0.14.2
+
+* 三 12月 17 2008 Matthias Clasen <mclasen@redhat.com> - 0.14.1-1
+- Update to 0.14.1
+
+* 一 12月 08 2008 Matthias Clasen <mclasen@redhat.com> - 0.14.0-7
+- Fight pkg-config-induced dependency bloat
+
+* 一 12月 01 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.14.0-4
+- Rebuild for Python 2.6
+
+* 六 11月 29 2008 Matthew Barnes <mbarnes@redhat.com> - 0.14.0-3
+- Add patch for RH bug #438638 (monospace <package> elements).
+
+* 日 11月 23 2008 Matthias Clasen <mclasen@redhat.com> - 0.14.0-2
+- Tweak %summary and %description
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 0.14.0-1
+- Update to 0.14.0
+
+* 二 9月 02 2008 Matthias Clasen <mclasen@redhat.com> - 0.13.1-1
+- Update to 0.13.1
+
+* 一 3月 10 2008 Matthias Clasen <mclasen@redhat.com> - 0.12.2-1
+- Update to 0.12.2
+
+* 一 2月 18 2008 Matthew Barnes <mbarnes@redhat.com> - 0.12.1-2
+- Package review corrections (RH bug #225816).
+
+* 二 2月 12 2008 Matthew Barnes <mbarnes@redhat.com> - 0.12.1-1
+- Update to 0.12.1
+
+* 一 9月 17 2007 Matthias Clasen  <mclasen@redhat.com> - 0.12.0-1
+- Update to 0.12.0
+
+* 一 9月 03 2007 Matthias Clasen  <mclasen@redhat.com> - 0.11.2-1
+- Update to 0.11.2
+
+* 四 8月 02 2007 Matthias Clasen  <mclasen@redhat.com> - 0.11.1-2
+- Update the license field
+
+* 一 7月 30 2007 Matthias Clasen  <mclasen@redhat.com> - 0.11.1-1
+- Update to 0.11.1
+
+* 一 7月 23 2007 Matthias Clasen  <mclasen@redhat.com> - 0.10.3-4
+- Split out stylesheets as subpackage to avoid pulling automake
+  in the live CD
+
+* 五 7月 20 2007 Jesse Keating <jkeating@redhat.com> - 0.10.3-3
+- Don't require yelp for now
+
+* 日 6月 17 2007 Matthias Clasen <mclasen@redhat.com> - 0.10.3-2
+- Fix up Requires and BuildRequires
+
+* 一 4月 09 2007 Matthew Barnes <mbarnes@redhat.com> - 0.10.3-1.fc7
+- Update to 0.10.3
+
+* 一 3月 12 2007 Matthew Barnes <mbarnes@redhat.com> - 0.10.1-1.fc7
+- Update to 0.10.1
+
+* 三 1月 31 2007 Matthias Clasen <mclasen@redhat.com> - 0.9.2-1
+- Update to 0.9.2
+
+* 六 12月 09 2006 Matthew Barnes <mbarnes@redhat.com> - 0.8.0-3
+- Add patch for GNOME bug #355521 (look for local m4 files).
+
+* 五 9月 08 2006 Matthias Clasen <mclasen@redhat.com> - 0.8.0-2
+- Fix some directory ownership issues  (#205677)
+
+* 一 9月 04 2006 Matthias Clasen <mclasen@redhat.com> - 0.8.0-1.fc6
+- Update to 0.8.0
+
+* 六 8月 12 2006 Matthias Clasen <mclasen@redhat.com> - 0.7.2-1.fc6
+- Update to 0.7.2
+
+* 二 6月 13 2006 Matthias Clasen <mclasen@redhat.com> - 0.7.1-1
+- Update to 0.7.1
+
+* 二 6月 06 2006 Matthias Clasen <mclasen@redhat.com> - 0.6.0-3
+- Add a BuildRequires for perl-XML-Parser
+
+* 二 4月 11 2006 Matthias Clasen <mclasen@redhat.com> - 0.6.0-2
+- Add a missing Requires
+
+* 日 3月 12 2006 Ray Strode <rstrode@redhat.com> - 0.6.0-1
+- Update to 0.6.0
+
+* 一 2月 27 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.7-1
+- Update to 0.5.7
+
+* 一 2月 20 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.6-1
+- Update to 0.5.6
+
+* 日 2月 12 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.5-1
+- Update to 0.5.5
+
+* 一 1月 30 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.4-1
+- Update to 0.5.4
+
+* 五 1月 13 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.3-1
+- Update to 0.5.3
+
+* 二 12月 20 2005 Matthias Clasen <mclasen@redhat.com> - 0.5.2-1
+- Update to 0.5.2
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 30 2005 Matthias Clasen <mclasen@redhat.com> - 0.5.1-1
+- Update to 0.5.1
+
+* 二 10月 25 2005 Matthias Clasen <mclasen@redhat.com> - 0.4.3-1
+- Update to 0.4.3
+
+* 四 9月 29 2005 Matthias Clasen <mclasen@redhat.com> - 0.4.2-1
+- Update to 0.4.2
+
+* 四 9月 08 2005 Matthias Clasen <mclasen@redhat.com> - 0.4.0-1
+- Update to 0.4.0
+
+* 三 7月 27 2005 Christopher Aillon <caillon@redhat.com> - 0.3.2-1
+- Update to 0.3.2
+
+* 三 7月 13 2005 Matthias Clasen <mclasen@redhat.com> - 0.3.1-1
+- Newer upstream version
+
+* 二 4月 26 2005 Ray Strode <rstrode@redhat.com> - 0.2.0-2
+- Add patch that might fix yelp links (bug 146862)
+
+* 五 4月 08 2005 Ray Strode <rstrode@redhat.com> - 0.2.0-1
+- Update to upstream version 0.2.0
+
+* 四 3月 17 2005 Ray Strode <rstrode@redhat.com> - 0.1.3-1
+- Update to upstream version 0.1.3
+
+* 三 2月 02 2005 Nalin Dahyabhai <nalin@redhat.com> - 0.1.2-2
+- remove explicit libxml dependency (should have been libxml2)
+- add libxml2-devel and libxslt-devel as buildprereqs
+
+* 五 1月 28 2005 Matthias Clasen <mclasen@redhat.com> - 0.1.2-1
+- Initial build.
+

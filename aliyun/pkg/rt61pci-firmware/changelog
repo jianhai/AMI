@@ -1,0 +1,37 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2-7.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.2-7.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.2-7.1
+- rebuild for alios6
+
+* 四 1月 07 2010 John W. Linville <linville@redhat.com> - 1.2-7
+- Add dist tag
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 9月 17 2007 kwizart < kwizart at gmail.com > - 1.2-4
+- Disable dist tag
+- Preserve timestamp
+- Add license from Ralink
+- Improved summary and description
+
+* 一 3月 19 2007 kwizart < kwizart at gmail.com > - 1.2-3
+- Update Source url (uses .com.tw instead of .com)
+- Fix License field
+
+* 一 2月 26 2007 kwizart < kwizat at gmail.com > - 1.2-2
+- Update the download link
+
+* 三 9月 13 2006 kwizart < kwizart at gmail.com > - 1.2-1_FC5
+- inital release.
+

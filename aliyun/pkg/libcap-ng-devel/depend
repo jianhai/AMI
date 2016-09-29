@@ -1,0 +1,10 @@
+/usr/bin/pkg-config  
+kernel-headers >= 2.6.11
+libcap-ng = 0.6.4-3.3.alios6.1
+libcap-ng.so.0()(64bit)  
+pkgconfig  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

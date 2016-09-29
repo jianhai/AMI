@@ -1,0 +1,4 @@
+preinstall scriptlet (using /bin/sh):
+getent group stapdev >/dev/null || groupadd -r stapdev
+getent group stapusr >/dev/null || groupadd -r stapusr
+exit 0

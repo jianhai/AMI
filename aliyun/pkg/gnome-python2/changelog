@@ -1,0 +1,344 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.0-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.28.0-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.28.0-3.1
+- rebuild for alios6
+
+* 五 7月 02 2010 Ray Strode <rstrode@redhat.com> 2.28.0-3
+- rebuild
+  Resolves: #609758
+
+* 四 1月 14 2010 Matthew Barnes <mbarnes@redhat.com> - 2.28.0-2.el6
+- Fix rpmlint warnings.
+
+* 一 9月 21 2009 Matthew Barnes <mbarnes@redhat.com> - 2.28.0-1.fc12
+- Update to 2.28.0
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.27.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 17 2009 Matthew Barnes <mbarnes@redhat.com> - 2.27.1-3.fc12
+- Improve summary (RH bug #506526).
+
+* 日 6月 14 2009 Matthias Clasen <mclasen@redhat.com> - 2.27.1-2.fc12
+- Minor directory ownership cleanup
+
+* 六 5月 02 2009 Matthew Barnes <mbarnes@redhat.com> - 2.27.1-1.fc12
+- Update to 2.27.1
+
+* 日 4月 12 2009 Matthew Barnes <mbarnes@redhat.com> - 2.26.1-1.fc11
+- Update to 2.26.1
+
+* 六 3月 14 2009 Matthew Barnes <mbarnes@redhat.com> - 2.26.0-1.fc11
+- Update to 2.26.0
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.25.90-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 20 2009 Matthew Barnes <mbarnes@redhat.com> - 2.25.90-2.fc11
+- gnome-python2-gnome requires gnome-python2-gnomevfs (RH bug #486387).
+
+* 日 2月 01 2009 Matthew Barnes <mbarnes@redhat.com> - 2.25.90-1.fc11
+- Update to 2.25.90
+
+* 一 1月 19 2009 Matthew Barnes <mbarnes@redhat.com> - 2.25.1-1.fc11
+- Update to 2.25.1
+
+* 日 12月 21 2008 Matthew Barnes <mbarnes@redhat.com> - 2.22.3-4.fc11
+- Don't require devel packages in a non-devel subpackage.
+- gnome-python2 doesn't need gome-python2-gnomevfs (RH bug #477494).
+
+* 五 12月 19 2008 Matthew Barnes <mbarnes@redhat.com> - 2.22.3-3.fc11
+- Add libgnome[ui] requirements to gnome subpackage.
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.22.3-2
+- Rebuild for Python 2.6
+
+* 一 9月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.22.3-1
+- Update to 2.22.3
+
+* 日 9月 21 2008 Matthew Barnes <mbarnes@redhat.com> - 2.22.2-1.fc10
+- Update to 2.22.2
+
+* 一 8月 25 2008 Daniel Drake <dsd@laptop.org> - 2.22.1-3.fc10
+- Split libgnome bindings into their own package (RH bug #456122).
+- Remove gnome-python2 dependency on gnome-python2-bonobo.
+
+* 二 6月 17 2008 Matthew Barnes <mbarnes@redhat.com> - 2.22.1-2.fc10
+- Fix directory ownership (RH bug #451754).
+
+* 一 6月 16 2008 Matthew Barnes <mbarnes@redhat.com> - 2.22.1-1.fc10
+- Update to 2.22.1
+
+* 一 4月 07 2008 Matthew Barnes <mbarnes@redhat.com> - 2.22.0-2.fc9
+- Require pygtk2 explicitly (RH bug #441228).
+
+* 日 3月 09 2008 Matthew Barnes <mbarnes@redhat.com> - 2.22.0-1.fc9
+- Update to 2.22.0
+
+* 六 2月 23 2008 Matthew Barnes <mbarnes@redhat.com> - 2.21.0-3.fc9
+- Update to 2.21.1
+
+* 日 2月 17 2008 Matthew Barnes <mbarnes@redhat.com> - 2.21.0-2.fc9
+- Rebuild with GCC 4.3
+
+* 一 12月 03 2007 Matthew Barnes <mbarnes@redhat.com> - 2.21.0-1.fc9
+- Update to 2.21.0
+
+* 六 11月 24 2007 Matthew Barnes <mbarnes@redhat.com> - 2.20.1-1.fc9
+- Update to 2.20.1
+
+* 日 9月 16 2007 Matthew Barnes <mbarnes@redhat.com> - 2.20.0-1.fc8
+- Update to 2.20.0
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 2.19.2-3
+- Rebuild for selinux ppc32 issue.
+
+* 二 8月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.19.2-2
+- Update the license field
+
+* 一 7月 30 2007 Matthew Barnes <mbarnes@redhat.com> - 2.19.2-1.fc8
+- Update to 2.19.2
+
+* 六 7月 07 2007 Matthew Barnes <mbarnes@redhat.com> - 2.19.1-1.fc8
+- Update to 2.19.1
+- Update versions of required packages.
+- Remove the zvt subpackage, which was removed upstream long ago.
+
+* 日 5月 20 2007 Matthias Clasen <mclasen@redhat.com> - 2.18.2-1
+- Update to 2.18.2
+
+* 一 4月 09 2007 Matthew Barnes <mbarnes@redhat.com> - 2.18.1-1.fc7
+- Update to 2.18.1
+
+* 一 3月 12 2007 Matthew Barnes <mbarnes@redhat.com> - 2.18.0-1.fc7
+- Update to 2.18.0
+
+* 一 2月 26 2007 Matthew Barnes <mbarnes@redhat.com> - 2.17.92-2.fc7
+- Rebuild
+
+* 日 2月 25 2007 Matthew Barnes <mbarnes@redhat.com> - 2.17.92-1.fc7
+- Update to 2.17.92
+
+* 一 2月 05 2007 Matthew Barnes <mbarnes@redhat.com> - 2.17.2-2
+- Rename spec file to gnome-python2.spec (RH bug #225834).
+
+* 一 1月 08 2007 Matthew Barnes <mbarnes@redhat.com> - 2.17.2-1
+- Update to 2.17.2
+
+* 日 1月 07 2007 Matthew Barnes <mbarnes@redhat.com> - 2.17.1-1
+- Update to 2.17.1
+
+* 日 12月 31 2006 Matthew Barnes <mbarnes@redhat.com> - 2.16.2-5
+- Bonobo subpackage requires pyorbit >= 2.0.1, not 2.0.l (RH bug #150885).
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 2.16.2-4
+- rebuild for python 2.5
+
+* 一 11月 27 2006 Matthew Barnes <mbarnes@redhat.com> - 2.16.2-3.fc7
+- More packaging tweaks based on suggestions by Patrice Dumas.
+- No longer need BuildRequires for autoconf, automake, libtool.
+
+* 五 11月 17 2006 Matthew Barnes <mbarnes@redhat.com> - 2.16.2-2.fc7
+- Fix some minor packaging bugs (RH bug #203532).
+
+* 日 11月 05 2006 Matthew Barnes <mbarnes@redhat.com> - 2.16.2-1.fc7
+- Update to 2.16.2
+
+* 日 10月 29 2006 Matthew Barnes <mbarnes@redhat.com> - 2.16.0-2.fc6
+- Clean up spec file.
+- Remove unused patches.
+- Add subpackage gnome-python2-devel (bug #203532).
+
+* 二 9月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.16.0-1.fc6
+- Update to 2.16.0
+
+* 一 8月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.91-1.fc6
+- Update to 2.15.91
+
+* 五 8月 04 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.90-1.fc6
+- Update to 2.15.90
+
+* 五 7月 14 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.4-2
+- Fix gnome-vfs dependencies
+
+* 四 7月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.4-1
+- Update to 2.15.4
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.15.2-1.1
+- rebuild
+
+* 二 6月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.15.2-1
+- Update to 2.15.2
+
+* 一 3月 13 2006 Ray Strode <rstrode@redhat.com> - 2.12.4-1
+- Update to 2.12.4
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.12.3-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.12.3-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 2月 06 2006 John (J5) Palmieri <johnp@redhat.com> - 2.12.3-1
+- Update to 2.12.3
+
+* 二 12月 20 2005 Jesse Keating <jkeating@redhat.com> - 2.12.1-1.2
+- rebuilt for new libgtop
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com> - 2.12.1-1.1
+- rebuilt
+
+* 三 11月 09 2005 John (J5) Palmieri <johnp@redhat.com> - 2.12.1-1
+- Update to 2.12.1
+
+* 四 8月 18 2005 John (J5) Palmieri <johnp@redhat.com> - 2.11.3-2
+- Bump and rebuild for cairo ABI change
+
+* 一 7月 18 2005 John (J5) Palmieri <johnp@redhat.com> - 2.11.3
+- update to upstream 2.11.3
+
+* 五 3月 11 2005 John (J5) Palmieri <johnp@redhat.com> - 2.10.0
+- update to 2.10.0
+- add a Requires line for gnome-python2-gnomevfs
+
+* 一 3月 07 2005 Jeremy Katz <katzj@redhat.com> - 2.9.5-1
+- update to 2.9.5
+
+* 一 2月 07 2005 Matthias Clasen <mclasen@redhat.com> - 2.9.4-2
+- Remove unnecessary BuildRequires
+
+* 一 2月 07 2005 Matthias Clasen <mclasen@redhat.com> - 2.9.4-1
+- Update to 2.9.4
+- Move some subpackages to gnome-python2-extra
+- Obsolete gnome-python2-nautilus
+
+* 三 1月 19 2005 Mark McLoughlin <markmc@redhat.com> - 2.6.0-5
+- Backport wrapping for GConfEngine from upstream CVS
+
+* 日 11月 07 2004 Jeremy Katz <katzj@redhat.com> - 2.6.0-4
+- rebuild against python 2.4
+
+* 日 10月 10 2004 Warren Togami <wtogami@redhat.com> - 2.6.0-3 
+- #111008 fixes
+  Fixes from Ville Skyttä
+    Bad file permissions
+    Unknown directories
+    %doc fixes
+  Fixes from Toshio Kuratomi
+    Update the BuildRequires
+    Changed BuildRequires on gnome-panel to gnome-panel-devel
+    Add Requires for python-abi
+
+* 一 10月 04 2004 GNOME <jrb@redhat.com> - 2.6.0-2
+- fix gtkhtml2 to work in a lot of cases, #147404
+
+* 一 10月 04 2004 GNOME <jrb@redhat.com> - 2.6.0-1
+- new version
+
+* 三 7月 14 2004 Jeremy Katz <katzj@redhat.com> - 2.0.2-1
+- update to 2.0.2
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 12月 11 2003 Matt Wilson <msw@redhat.com> 2.0.0-3
+- added BuildRequries: pyorbit-devel (#108566)
+
+* 四 11月 06 2003 Jeremy Katz <katzj@redhat.com> 2.0.0-3
+- python 2.3
+
+* 日 10月 19 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- add a %clean specfile target
+
+* 四 10月 02 2003 Matt Wilson <msw@redhat.com> 2.0.0-2
+- fix segv in gnome.ui.About() (#104396)
+
+* 四 9月 04 2003 Jeremy Katz <katzj@redhat.com> 2.0.0-1
+- 2.0.0
+
+* 三 8月 20 2003 Jeremy Katz <katzj@redhat.com> 1.99.16-1
+- update to 1.99.16
+- add gnomeprint subpackage
+- don't double include the gnome-vfs module (#102074)
+
+* 二 8月 05 2003 Elliot Lee <sopwith@redhat.com> 1.99.14-7
+- Fix libtool
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 06 2003 Matt Wilson <msw@redhat.com> 1.99.14-5
+- added a trigger to remove left-over bonobo .pyc and .pyo files (#79652)
+
+* 四 2月 06 2003 Mihai Ibanescu <misa@redhat.com> 1.99.14-4
+- rebuilt against new python
+
+* 二 1月 28 2003 Jeremy Katz <katzj@redhat.com> 1.99.14-3
+- libdir-ify
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 12月 27 2002 Jeremy Katz <katzj@redhat.com> 1.99.14-1
+- update to 1.99.14
+
+* 五 12月 13 2002 Jeremy Katz <katzj@redhat.com>
+- update to 1.99.13
+- add gnomevfs subpackage
+
+* 四 10月 31 2002 Matt Wilson <msw@redhat.com>
+- use %configure
+
+* 三 10月 30 2002 Matt Wilson <msw@redhat.com>
+- add gnome-python-2.0.pc to file list
+
+* 三 8月 28 2002 Matt Wilson <msw@redhat.com>
+- bind gnome_client_set_*_command
+
+* 三 8月 28 2002 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 二 8月 20 2002 Matt Wilson <msw@redhat.com>
+- obsolete pygtk-applet (#69830)
+
+* 四 8月 01 2002 Jonathan Blandford <jrb@redhat.com>
+- make the GnomeDruid's fields accessible from python
+
+* 二 7月 30 2002 Matt Wilson <msw@redhat.com>
+- official 1.99.11 release
+
+* 四 5月 30 2002 Matt Wilson <msw@redhat.com>
+- s/Gconf/GConf/
+
+* 四 5月 30 2002 Jeremy Katz <katzj@redhat.com>
+- add gtkhtml2 and gconf subpackages
+
+* 三 5月 29 2002 Bill Nottingham <notting@redhat.com>
+- add some defattrs
+
+* 五 5月 24 2002 Matt Wilson <msw@redhat.com>
+- added bonobo, nautilus subpackages.  re-enabled applet subpackage
+
+* 一 11月 26 2001 Matt Wilson <msw@redhat.com>
+- subpackages will need __init__ included in them
+
+* 四 10月 18 2001 Matt Wilson <msw@redhat.com>
+- doesn't obsolete pygnome - it can be installed side-by-side
+- added _gnomemodule.so to base package filelist
+
+* 一 10月 15 2001 Matt Wilson <msw@redhat.com>
+- added __init__ files to gnome-python main package
+
+* 一 10月 08 2001 Matt Wilson <msw@redhat.com>
+- new gnome-python package based on old pygtk package.
+

@@ -1,0 +1,202 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.2.3-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:1.2.3-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:1.2.3-4.1
+- rebuild for alios6
+
+* 一 11月 23 2009 Adam Jackson <ajax@redhat.com> 1.2.3-4
+- Fix doc subpackage build (#540634)
+
+* 一 11月 02 2009 Jindrich Novy <jnovy@redhat.com> 1.2.3-3
+- backport patches to fix CVE-2009-3379 (#531765) from upstream
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.2.3-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 13 2009 Adam Jackson <ajax@redhat.com> 1.2.3-1
+- libvorbis 1.2.3
+
+* 三 7月 08 2009 Adam Jackson <ajax@redhat.com> 1.2.2-2
+- libvorbis-1.2.2-svn16228.patch: Backport a fix from pre-1.2.3 to hopefully
+  fix small sound file playback. (#505610)
+
+* 四 7月 02 2009 Adam Jackson <ajax@redhat.com> 1.2.2-1
+- libvorbis 1.2.2
+
+* 三 6月 03 2009 Adam Jackson <ajax@redhat.com> 1.2.2-0.1.rc1
+- libvorbis 1.2.2rc1
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.2.0-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 12 2009 Caolán McNamara <caolanm@redhat.com> -1:1.2.0-6
+- rebuild to get provides pkgconfig(vorbisenc)
+
+* 日 9月 07 2008 Hans de Goede <hdegoede@redhat.com> -1:1.2.0-5
+- Fix patch fuzz build failure
+
+* 三 5月 14 2008 Jindrich Novy <jnovy@redhat.com> - 1:1.2.0-4
+- fix CVE-2008-1420, CVE-2008-1419, CVE-2008-1423 (#446344)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1:1.2.0-3
+- Autorebuild for GCC 4.3
+
+* 日 10月 21 2007 Hans de Goede <j.w.r.degoede@hhs.nl> - 1:1.2.0-2
+- Don't include Makefile's in %doc, avoiding a multilib conflict (bz 342481)
+
+* 一 10月 15 2007 Behdad Esfahbod <besfahbo@redhat.com> - 1:1.2.0-1
+- Update to 1.2.0
+- Resolves: #250115
+
+* 四 8月 23 2007 Adam Jackson <ajax@redhat.com> - 1:1.1.2-4
+- Rebuild for build ID
+
+* 一 6月 25 2007 Matthias Clasen <mclasen@redhat.com> - 1:1.1.2-3
+- Fix typos in %description (#245471)
+
+* 四 2月 08 2007 Matthias Clasen <mclasen@redhat.com> - 1:1.1.2-2
+- Package review cleanups
+- Don't ship static libraries
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:1.1.2-1.2.1
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1:1.1.2-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1:1.1.2-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 1月 18 2006 John (J5) Palmieri <johnp@redhat.com> 1:1.1.2-1
+- Update to 1.1.2
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 3月 02 2005 John (J5) Palmieri <johnp@redhat.com> 1:1.1.1-1
+- Update to 1.1.1
+
+* 三 3月 02 2005 John (J5) Palmieri <johnp@redhat.com> 1:1.1.0-2
+- rebuild with gcc 4.0
+
+* 三 9月 29 2004 Colin Walters <walters@redhat.com> 1:1.1.0-1
+- Update to 1.1.0
+- Remove upstreamed patch libvorbis-underquoted.patch
+
+* 三 9月 29 2004 Warren Togami <wtogami@redhat.com> 1:1.0.1-5
+- link to .pdf spec rather than ship redundant copy
+- spec cleanups
+
+* 四 7月 15 2004 Tim Waugh <twaugh@redhat.com> 1:1.0.1-4
+- Fixed warnings in shipped m4 file.
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 12月 11 2003 Bill Nottingham <notting@redhat.com> 1:1.0.1-1
+- update to 1.0.1
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 24 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 21 2003 Elliot lee <sopwith@redhat.com> 1:1.0-6
+- Fix #81026 by updating libvorbis-1.0-m4.patch
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 12月 11 2002 Bill Nottingham <notting@redhat.com> 1:1.0-4
+- add epochs to dependencies, to avoid 1.0rc3 >= 1.0 miscomparisons
+  (#79374)
+- fix vorbis.m4
+
+* 五 11月 29 2002 Tim Powers <timp@redhat.com> 1:1.0-2
+- remove unpackaged files from the buildroot
+- tell configure where ogg libs are
+- lib64'ize
+
+* 四 7月 18 2002 Bill Nottingham <notting@redhat.com>
+- one-dot-oh
+- libtool strikes again (#66110)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 1月 01 2002 Bill Nottingham <notting@redhat.com>
+- update to 1.0rc3
+
+* 四 8月 16 2001 Bill Nottingham <notting@redhat.com>
+- fix bug in floor backend (<michael@stroucken.org>)
+
+* 一 8月 13 2001 Bill Nottingham <notting@redhat.com>
+- update to 1.0rc2
+
+* 五 7月 20 2001 Bill Nottingham <notting@redhat.com>
+- split out from the main vorbis package
+
+* 二 7月 10 2001 Bill Nottingham <notting@redhat.com>
+- own %{_libdir}/ao
+- I love libtool
+
+* 二 6月 26 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add links from library major version numbers in rpms
+
+* 二 6月 19 2001 Bill Nottingham <notting@redhat.com>
+- update to rc1
+
+* 五 5月 04 2001 Oliver Paukstadt <oliver.paukstadt@millenux.com>
+- fixed perl line in spec file to set optims correctly
+
+* 二 3月 20 2001 Bill Nottingham <notting@redhat.com>
+- fix alpha/ia64, again
+- use optflags, not -O20 -ffast-math (especially on alpha...)
+
+* 一 2月 26 2001 Bill Nottingham <notting@redhat.com>
+- fix license tag
+
+* 一 2月 26 2001 Bill Nottingham <notting@redhat.com>
+- beta4
+
+* 五 2月 09 2001 Bill Nottingham <notting@redhat.com>
+- fix alpha/ia64
+
+* 四 2月 08 2001 Bill Nottingham <notting@redhat.com>
+- update CVS in prep for beta4
+
+* 三 2月 07 2001 Philipp Knirsch <pknirsch@redhat.de>
+- Fixed bugzilla bug #25391. ogg123 now usses the OSS driver by default if
+  none was specified.
+
+* 二 1月 09 2001 Bill Nottingham <notting@redhat.com>
+- update CVS, grab aRts backend for libao
+
+* 三 12月 27 2000 Bill Nottingham <notting@redhat.com>
+- update CVS
+
+* 五 12月 01 2000 Bill Nottingham <notting@redhat.com>
+- rebuild because of broken fileutils
+
+* 一 11月 13 2000 Bill Nottingham <notting@redhat.com>
+- hack up specfile some, merge some packages
+
+* 六 10月 21 2000 Jack Moffitt <jack@icecast.org>
+- initial spec file created
+

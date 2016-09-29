@@ -1,0 +1,27 @@
+Name        : btparser                     Relocations: (not relocatable)
+Version     : 0.17                              Vendor: Alibaba
+Release     : 2.2.alios6                    Build Date: 2014年07月28日 星期一 20时47分12秒
+Install Date: 2015年03月25日 星期三 11时09分21秒      Build Host: x86-003.build.alibaba
+Group       : Development/Libraries         Source RPM: btparser-0.17-2.2.alios6.src.rpm
+Size        : 135364                           License: GPLv2+
+Signature   : RSA/8, 2014年08月01日 星期五 14时54分19秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://fedorahosted.org/btparser
+Summary     : Parser and analyzer for backtraces produced by GDB
+Description :
+Btparser is a backtrace parser and analyzer, which works with
+backtraces produced by the GNU Project Debugger. It can parse a text
+file with a backtrace to a tree of C structures, allowing to analyze
+the threads and frames of the backtrace and work with them.
+
+Btparser also contains some backtrace manipulation and extraction
+routines:
+- it can find a frame in the crash-time backtrace where the program
+  most likely crashed (a chance is that the function described in that
+  frame is buggy)
+- it can produce a duplication hash of the backtrace, which helps to
+  discover that two crash-time backtraces are duplicates, triggered by
+  the same flaw of the code
+- it can "rate" the backtrace quality, which depends on the number of
+  frames with and without the function name known (missing function
+  name is caused by missing debugging symbols)

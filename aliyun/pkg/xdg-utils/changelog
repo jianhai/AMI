@@ -1,0 +1,115 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.2-17.20091016cvs.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.2-17.20091016cvs.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.2-17.20091016cvs.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.2-17.20091016cvs.1
+- rebuild for alios6
+
+* 四 8月 18 2011 Tomas Bzatek <tbzatek@redhat.com> - 1.0.2-17.20091016cvs
+- More tweaks for Thunderbird 5 (#659782,#659786)
+
+* 四 7月 28 2011 Tomas Bzatek <tbzatek@redhat.com> - 1.0.2-16.20091016cvs
+- Fix e-mail attachements support with Thunderbird3 (#659782)
+- Fix xdg-email fails to supply To address for Thunderbird (#659786)
+
+* 一 6月 14 2010 Matthias Clasen <mclasen@redhat.com> - 1.0.2-15.20091016cvs
+- Fix xdg-email to call the correct gconf utility
+Resolves: #598063
+
+* 五 10月 16 2009 Rex Dieter <rdieter@fedoraproject.org> - 1.0.2-14.20091016cvs
+- prefer gvfs-open over gnome-open (#529287)
+- DE=gnome, if org.gnome.SessionManager exists on dbus (#529287)
+
+* 一 9月 28 2009 Rex Dieter <rdieter@fedoraproject.org> - 1.0.2-13.20090928cvs
+- xdg-open: use kde-open
+
+* 一 9月 21 2009 Rex Dieter <rdieter@fedoraproject.org> - 1.0.2-12.20090921cvs
+- suppress stderr from kde-config (#524724)
+
+* 日 9月 13 2009 Rex Dieter <rdieter@fedoraproject.org> - 1.0.2-11.20090913cvs
+- 20090913cvs snapshot
+- xdg-open in xdg-utils expects xprop to be available (#506857)
+
+* 一 8月 24 2009 Rex Dieter <rdieter@fedoraproject.org> - 1.0.2-10.20090824cvs
+- 20090824cvs snapshot
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.2-9.20081121cvs
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 4月 09 2009 Rex Dieter <rdieter@fedoraproject.org> - 1.0.2-8.20081121cvs
+- revert.  kfmclient openURL is largely useless
+
+* 三 4月 08 2009 Rex Dieter <rdieter@fedoraproject.org> - 1.0.2-7.20081121cvs
+- xdg-open: s/kfmclient exec/kfmclient openURL/ (CVE-2009-0068, rh#472010, fdo#19377)
+
+* 四 2月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.2-6.20081121cvs
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 11月 21 2008 Rex Dieter <rdieter@fedoraproject.org> 1.0.2-5.20081121cvs
+- upstreamed a few more patches, rebase to cvs snapshot
+
+* 五 1月 25 2008 Lubomir Kundrak <lkundrak@redhat.com> 1.0.2-4
+- Fix for CVE-2008-0386 (#429513)
+
+* 五 1月 18 2008 Rex Dieter <rdieter[AT]fedoraproject.org> 1.0.2-3
+- fix mimeopen support (#429280)
+- spec cosmetics: cleanup macro usage
+
+* 三 10月 03 2007 Rex Dieter <rdieter[AT]fedoraproject.org> 1.0.2-2
+- Requires: which (#312601)
+
+* 日 6月 24 2007 Rex Dieter <rdieter[AT]fedoraproject.org> 1.0.2-1
+- xdg-utils-1.0.2
+
+* 一 4月 23 2007 Rex Dieter <rdieter[AT]fedoraproject.org> 1.0.1-3
+- add htmlview,links to browser fallbacks
+
+* 二 12月 19 2006 Rex Dieter <rdieter[AT]fedoraproject.org> 1.0.1-2
+- fix typo in xdg-icon-resource manpage
+
+* 一 11月 06 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0.1-1
+- xdg-utils-1.0.1
+
+* 二 10月 24 2006 Rex Dieter <rexdieter[AT]users.sf.net 1.0-3
+- actually *use* mimeopen patch (#210797)
+
+* 二 10月 24 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-2
+- prefer mimeopen as generic default (#210797)
+
+* 二 10月 10 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-1
+- 1.0(final)
+
+* 一 10月 02 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.9.rc1
+- update %description (#208926)
+
+* 三 9月 20 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.8.rc1
+- 1.0rc1
+
+* 五 9月 15 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.7.beta4
+- 1.0beta4
+
+* 一 8月 21 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.6.beta3
+- 1.0beta3
+
+* 四 7月 27 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.5.20060721
+- Release: append/use %{?dist}
+
+* 三 7月 26 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.4.20060721
+- specfile cosmetics, tabs -> spaces
+- %makeinstall -> make install DESTDIR=...
+
+* 一 7月 24 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.3.20060721
+- 20060721 snapshot
+- optgnome.patch
+
+* 一 7月 24 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.2.beta1
+- Requires: desktop-file-utils
+
+* 一 7月 24 2006 Rex Dieter <rexdieter[AT]users.sf.net> 1.0-0.1.beta1
+- 1.0beta1
+

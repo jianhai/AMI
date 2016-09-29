@@ -1,0 +1,11 @@
+/etc/pcmcia
+/etc/pcmcia/config.opts
+/etc/udev/rules.d/60-pcmcia.rules
+/lib/udev/pcmcia-check-broken-cis
+/lib/udev/pcmcia-socket-startup
+/sbin/lspcmcia
+/sbin/pccardctl
+/usr/share/doc/pcmciautils-015
+/usr/share/doc/pcmciautils-015/COPYING
+/usr/share/man/man8/lspcmcia.8.gz
+/usr/share/man/man8/pccardctl.8.gz

@@ -1,0 +1,12 @@
+/usr/include/ansidecl.h
+/usr/include/bfd.h
+/usr/include/bfdlink.h
+/usr/include/dis-asm.h
+/usr/include/libiberty.h
+/usr/include/symcat.h
+/usr/lib64/libbfd.a
+/usr/lib64/libbfd.so
+/usr/lib64/libiberty.a
+/usr/lib64/libopcodes.a
+/usr/lib64/libopcodes.so
+/usr/share/info/bfd.info.gz

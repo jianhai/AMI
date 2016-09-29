@@ -1,0 +1,485 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:1.23-3.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:1.23-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:1.23-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2:1.23-3.1
+- rebuild for alios6
+
+* 四 7月 08 2010 Ondrej Vasik <ovasik@redhat.com> 2:1.23-3
+- recognize old-archive/portability options(#594044)
+
+* 二 6月 01 2010 Ondrej Vasik <ovasik@redhat.com> 2:1.23-2
+- allow storing of extended attributes for fifo and block
+  or character devices files(#598456)
+
+* 一 3月 15 2010 Ondrej Vasik <ovasik@redhat.com> 2:1.23-1
+- new upstream release 1.23(#573662), remove applied patches
+- update help2maned manpage
+
+* 四 3月 11 2010 Ondrej Vasik <ovasik@redhat.com> 2:1.22-15
+- CVE-2010-0624 tar, cpio: Heap-based buffer overflow
+  by expanding a specially-crafted archive (#571842)
+- realloc within check_exclusion_tags() caused invalid write
+  (#571523)
+- not closing file descriptors for excluded files/dirs with
+  exlude-tag... options could cause descriptor exhaustion
+  (#571523)
+- support for "lustre.*" extended attributes (#572442)
+- allow build without SELinux support
+
+* 四 2月 04 2010 Ondrej Vasik <ovasik@redhat.com> 2:1.22-14
+- fix segfault with corrupted metadata in code_ns_fraction
+  (#531441)
+
+* 二 1月 05 2010 Ondrej Vasik <ovasik@redhat.com> 2:1.22-13
+- do not fail with POSIX 2008 glibc futimens()
+- temporarily disable fix for #531441, causing stack smashing
+  with newer glibc
+
+* 五 12月 18 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-12
+- use Requires instead of Prereq to silence rpmlint
+
+* 二 12月 08 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-11
+- fix segfault with corrupted metadata in code_ns_fraction
+  (#531441)
+- commented patches and sources
+
+* 五 11月 27 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-10
+- store xattrs for symlinks (#525992) - by Kamil Dudka
+- update tar(1) manpage (#539787)
+- fix memory leak in xheader (#518079)
+
+* 三 11月 18 2009 Kamil Dudka <kdudka@redhat.com> 2:1.22-9
+- store SELinux context for symlinks (#525992)
+
+* 四 8月 27 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-8
+- provide symlink manpage for gtar
+
+* 四 8月 06 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-7
+- do process install-info only without --excludedocs(#515923)
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:1.22-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 四 7月 16 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-5
+- Fix restoring of directory default acls(#511145)
+- Do not patch generated autotools files
+
+* 四 6月 25 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-4
+- Report record size only if the archive refers to a device
+  (#487760)
+- Do not sigabrt with new gcc/glibc because of writing to
+  struct members of gnutar header at once via strcpy
+
+* 五 5月 15 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-3
+- ignore errors from setting utime() for source file
+  on read-only filesystem (#500742)
+
+* 五 3月 06 2009 Kamil Dudka <kdudka@redhat.com> 2:1.22-2
+- improve tar-1.14-loneZeroWarning.patch (#487315)
+
+* 一 3月 02 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.22-1
+- New upstream release 1.22, removed applied patch
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:1.21-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 1月 05 2009 Ondrej Vasik <ovasik@redhat.com> 2:1.21-1
+- New upstream release 1.21, removed applied patches
+- add support for -I option, fix testsuite failure
+
+* 四 12月 11 2008 Ondrej Vasik <ovasik@redhat.com> 2:1.20-6
+- add BuildRequires for rsh (#475950)
+
+* 五 11月 21 2008 Ondrej Vasik <ovasik@redhat.com> 2:1.20-5
+- fix off-by-one errors in xattrs patch (#472355)
+
+* 一 11月 10 2008 Kamil Dudka <kdudka@redhat.com> 2:1.20-4
+- fixed bug #465803: labels with --multi-volume (upstream patch)
+
+* 五 10月 10 2008 Ondrej Vasik <ovasik@redhat.com> 2:1.20-3
+- Fixed wrong documentation for xattrs options (#466517)
+- fixed bug with null file terminator and change dirs
+  (upstream)
+
+* 五 8月 29 2008 Ondrej Vasik <ovasik@redhat.com> 2:1.20-2
+- patch fuzz clean up
+
+* 一 5月 26 2008 Ondrej Vasik <ovasik@redhat.com> 2:1.20-1
+- new upstream release 1.20 (lzma support, few new options
+  and bugfixes)
+- heavily modified xattrs patches(as tar-1.20 now uses automake
+  1.10.1)
+
+* 二 2月 12 2008 Radek Brich <rbrich@redhat.com> 2:1.19-3
+- do not print getfilecon/setfilecon warnings when SELinux is disabled
+  or SELinux data are not available (bz#431879)
+- fix for GCC 4.3
+
+* 一 1月 21 2008 Radek Brich <rbrich@redhat.com> 2:1.19-2
+- fix errors in man page
+  * fix definition of --occurrence (bz#416661, patch by Jonathan Wakely)
+  * update meaning of -l: it has changed from --one-filesystem
+    to --check-links (bz#426717)
+- update license tag, tar 1.19 is GPLv3+
+
+* 一 12月 17 2007 Radek Brich <rbrich@redhat.com> 2:1.19-1
+- upgrade to 1.19
+- updated xattrs patch, removed 3 upstream patches
+
+* 三 12月 12 2007 Radek Brich <rbrich@redhat.com> 2:1.17-5
+- fix (non)detection of xattrs
+- move configure stuff from -xattrs patch to -xattrs-conf,
+  so the original patch could be easily read
+- fix -xattrs patch to work with zero length files and show
+  warnings when xattrs not available (fixes by James Antill)
+- possible corruption (#408621) - add warning to man page
+  for now, may be actually fixed later, depending on upstream
+
+* 二 10月 23 2007 Radek Brich <rbrich@redhat.com> 2:1.17-4
+- upstream patch for CVE-2007-4476
+  (tar stack crashing in safer_name_suffix)
+
+* 二 8月 28 2007 Radek Brich <rbrich@redhat.com> 2:1.17-3
+- gawk build dependency
+
+* 二 8月 28 2007 Radek Brich <rbrich@redhat.com> 2:1.17-2
+- updated license tag
+- fixed CVE-2007-4131 tar directory traversal vulnerability (#251921)
+
+* 四 6月 28 2007 Radek Brich <rbrich@redhat.com> 2:1.17-1
+- new upstream version
+- patch for wildcards (#206841), restoring old behavior
+- patch for testsuite
+- update -xattrs patch
+- drop 13 obsolete patches
+
+* 二 2月 06 2007 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-26
+- fix spec file to meet Fedora standards (#226478)
+
+* 三 1月 03 2007 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-25
+- fix non-failsafe install-info use in scriptlets (#223718)
+
+* 三 1月 03 2007 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-24
+- supply tar man page (#219375)
+
+* 二 12月 12 2006 Florian La Roche <laroche@redhat.com> 2:1.15.1-23
+- fix CVE-2006-6097 GNU tar directory traversal (#216937)
+
+* 日 12月 10 2006 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-22
+- fix some rpmlint spec file issues
+
+* 三 10月 25 2006 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-21
+- build with dist-tag
+
+* 一 10月 09 2006 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-20
+- another fix of tar-1.15.1-xattrs.patch from James Antill
+
+* 三 10月 04 2006 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-19
+- another fix of tar-1.15.1-xattrs.patch from James Antill
+
+* 日 10月 01 2006 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-18
+- fix tar-1.15.1-xattrs.patch (#208701)
+
+* 二 9月 19 2006 Peter Vrabec <pvrabec@redhat.com> 2:1.15.1-17
+- start new epoch, downgrade to solid stable 1.15.1-16 (#206979), 
+- all patches are backported
+
+* 二 9月 19 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.91-2
+- apply patches, which were forgotten during upgrade
+
+* 三 9月 13 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.91-1
+- upgrade, which also fix incremental backup (#206121)
+
+* 五 9月 08 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.90-7
+- fix tar-debuginfo package (#205615)
+
+* 四 8月 10 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.90-6
+- add xattr support (#200925), patch from james.antill@redhat.com
+
+* 一 7月 24 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.90-5
+- fix incompatibilities in appending files to the end 
+  of an archive (#199515)
+
+* 二 7月 18 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.90-4
+- fix problem with unpacking archives in a directory for which 
+  one has write permission but does not own (such as /tmp) (#149686)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.15.90-3.1
+- rebuild
+
+* 四 6月 29 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.90-3
+- fix typo in tar.1 man page
+
+* 二 4月 25 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.90-2
+- exclude listed02.at from testsuite again, because it 
+  still fails on s390
+
+* 二 4月 25 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.90-1
+- upgrade
+
+* 一 4月 24 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.1-16
+- fix problem when options at the end of command line were 
+  not recognized (#188707)
+
+* 四 4月 13 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.1-15
+- fix segmentation faul introduced with hugeSparse.patch
+
+* 三 3月 22 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.1-14
+- fix problems with extracting large sparse archive members (#185460)
+
+* 五 2月 17 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.1-13
+- fix heap overlfow bug CVE-2006-0300 (#181773)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.15.1-12.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.15.1-12.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 2月 06 2006 Peter Vrabec <pvrabec@redhat.com> 1.15.1-12
+- fix extracting sparse files to a filesystem like vfat,
+  when ftruncate may fail to grow the size of a file.(#179507)
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 11月 04 2005 Peter Vrabec <pvrabec@redhat.com> 1.15.1-11
+- correctly pad archive members that shrunk during archiving (#172373)
+
+* 二 9月 06 2005 Peter Vrabec <pvrabec@redhat.com> 1.15.1-10
+- provide man page (#163709, #54243, #56041)
+
+* 一 8月 15 2005 Peter Vrabec <pvrabec@redhat.com> 1.15.1-9
+- silence newer option (#164902)
+
+* 三 7月 27 2005 Peter Vrabec <pvrabec@redhat.com> 1.15.1-8
+- A file is dumpable if it is sparse and both --sparse
+  and --totals are specified (#154882)
+
+* 二 7月 26 2005 Peter Vrabec <pvrabec@redhat.com> 1.15.1-7
+- exclude listed02.at from testsuite
+
+* 五 7月 22 2005 Peter Vrabec <pvrabec@redhat.com> 1.15.1-6
+- remove tar-1.14-err.patch, not needed (158743)
+
+* 五 4月 15 2005 Peter Vrabec <pvrabec@redhat.com> 1.15.1-5
+- extract sparse files even if the output fd is not seekable.(#154882)
+- (sparse_scan_file): Bugfix. offset had incorrect type.
+
+* 一 3月 14 2005 Peter Vrabec <pvrabec@redhat.com>
+- gcc4 fix (#150993) 1.15.1-4
+
+* 一 1月 31 2005 Peter Vrabec <pvrabec@redhat.com>
+- rebuild 1.15.1-3
+
+* 一 1月 17 2005 Peter Vrabec <pvrabec@redhat.com>
+- fix tests/testsuite
+
+* 五 1月 07 2005 Peter Vrabec <pvrabec@redhat.com>
+- upgrade to 1.15.1
+
+* 一 10月 11 2004 Peter Vrabec <pvrabec@redhat.com>
+- patch to stop issuing lone zero block warnings
+- rebuilt
+
+* 一 10月 11 2004 Peter Vrabec <pvrabec@redhat.com>
+- URL added to spec file
+- spec file clean up
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 6月 07 2004 Jeff Johnson <jbj@jbj.org> 1.14-1
+- upgrade to 1.14.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 17 2003 Jeff Johnson <jbj@redhat.com> 1.13.25-13
+- rebuilt because of crt breakage on ppc64.
+- dump automake15 requirement.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 11月 29 2002 Tim Powers <timp@redhat.com> 1.13.25-10
+- fix broken buildrquires on autoconf253
+
+* 四 11月 07 2002 Jeff Johnson <jbj@redhat.com> 1.13.25-9
+- rebuild from CVS.
+
+* 五 8月 23 2002 Phil Knirsch <pknirsch@redhat.com> 1.13.25-8
+- Included security patch from errata release.
+
+* 一 7月 01 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.13.25-7
+- Fix argv NULL termination (#64869)
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 4月 09 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.13.25-4
+- Fix build with autoconf253 (LIBOBJ change; autoconf252 worked)
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 10月 23 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.13.25-2
+- Don't include hardlinks to sockets in a tar file (#54827)
+
+* 四 9月 27 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.13.25-1
+- 1.13.25
+
+* 二 9月 18 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.13.22-1
+- Update to 1.13.22, adapt patches
+
+* 一 8月 27 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.13.19-6
+- Fix #52084
+
+* 四 5月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.13.19-5
+- Fix build with current autoconf (stricter checking on AC_DEFINE)
+- Fix segfault when tarring directories without having read permissions
+  (#40802)
+
+* 二 3月 06 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Don't depend on librt.
+
+* 五 2月 23 2001 Trond Eivind Glomsröd <teg@redhat.com>
+- langify
+
+* 四 2月 22 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix up the man page (#28915)
+
+* 三 2月 21 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.3.19, nukes -I and fixes up -N
+- Add -I back in as an alias to -j with a nice loud warning
+
+* 一 10月 30 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.3.18
+- Update man page to reflect changes
+
+* 四 10月 05 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Fix the "ignore failed read" option (Bug #8330)
+
+* 一 9月 25 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- fix hang on tar tvzf - <something.tar.gz, introduced by
+  exit code fix (Bug #15448), Patch from Tim Waugh <twaugh@redhat.com>
+
+* 五 8月 18 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- really fix exit code (Bug #15448)
+
+* 一 8月 07 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- fix exit code (Bug #15448), patch from Tim Waugh <twaugh@redhat.com>
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 19 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- FHSify
+
+* 五 4月 28 2000 Bill Nottingham <notting@redhat.com>
+- fix for ia64
+
+* 三 2月 09 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- Fix the exclude bug (#9201)
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- man pages are compressed
+- fix description
+- fix fnmatch build problems
+
+* 日 1月 09 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- 1.13.17
+- remove dotbug patch (fixed in base)
+- update download URL
+
+* 五 1月 07 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- Fix a severe bug (tar xf any_package_containing_. would delete the
+  current directory)
+
+* 三 1月 05 2000 Bernhard Rosenkränzer <bero@redhat.com>
+- 1.3.16
+- unset LINGUAS before running configure
+
+* 二 11月 09 1999 Bernhard Rosenkränzer <bero@redhat.com>
+- 1.13.14
+- Update man page to know about -I / --bzip
+- Remove dependancy on rmt - tar can be used for anything local
+  without it.
+
+* 五 8月 27 1999 Preston Brown <pbrown@redhat.com>
+- upgrade to 1.13.11.
+
+* 三 8月 18 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.13.9.
+
+* 四 8月 12 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.13.6.
+- support -y --bzip2 options for bzip2 compression (#2415).
+
+* 五 7月 23 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.13.5.
+
+* 二 7月 13 1999 Bill Nottingham <notting@redhat.com>
+- update to 1.13
+
+* 六 6月 26 1999 Jeff Johnson <jbj@redhat.com>
+- update to 1.12.64014.
+- pipe patch corrected for remote tars now merged in.
+
+* 日 6月 20 1999 Jeff Johnson <jbj@redhat.com>
+- update to tar-1.12.64013.
+- subtract (and reopen #2415) bzip2 support using -y.
+- move gtar to /bin.
+
+* 二 6月 15 1999 Jeff Johnson <jbj@redhat.com>
+- upgrade to tar-1.12.64011 to
+-   add bzip2 support (#2415)
+-   fix filename bug (#3479)
+
+* 一 3月 29 1999 Jeff Johnson <jbj@redhat.com>
+- fix suspended tar with compression over pipe produces error (#390).
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 8)
+
+* 一 3月 08 1999 Michael Maher <mike@redhat.com>
+- added patch for bad name cache. 
+- FIXES BUG 320
+
+* 三 2月 24 1999 Preston Brown <pbrown@redhat.com>
+- Injected new description and group.
+
+* 五 12月 18 1998 Preston Brown <pbrown@redhat.com>
+- bumped spec number for initial rh 6.0 build
+
+* 二 8月 04 1998 Jeff Johnson <jbj@redhat.com>
+- add /usr/bin/gtar symlink (change #421)
+
+* 二 7月 14 1998 Jeff Johnson <jbj@redhat.com>
+- Fiddle bindir/libexecdir to get RH install correct.
+- Don't include /sbin/rmt -- use the rmt from dump.
+- Turn on nls.
+
+* 一 4月 27 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 10月 16 1997 Donnie Barnes <djb@redhat.com>
+- updated from 1.11.8 to 1.12
+- various spec file cleanups
+- /sbin/install-info support
+
+* 四 6月 19 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 四 5月 29 1997 Michael Fulbright <msf@redhat.com>
+- Fixed to include rmt
+

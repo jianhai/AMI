@@ -1,0 +1,31 @@
+/bin/sh  
+/usr/bin/perl  
+/usr/bin/pkg-config  
+/usr/bin/python  
+glib2 = 2.26.1-7.2.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libgio-2.0.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+perl(File::Basename)  
+perl(Safe)  
+pkgconfig >= 1:0.14
+pkgconfig(gio-2.0)  
+pkgconfig(glib-2.0)  
+pkgconfig(gmodule-no-export-2.0)  
+pkgconfig(gobject-2.0)  
+pkgconfig(gthread-2.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

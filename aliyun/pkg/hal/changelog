@@ -1,0 +1,822 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.5.14-11.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.5.14-11.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.5.14-11.1
+- rebuild for alios6
+
+* 五 4月 01 2011 Richard Hughes <rhughes@redhat.com> - 0.5.14-11
+- Fix error message if a property is accessed on a non-existant UDI
+- Resolves: #676618
+
+* 二 3月 29 2011 Richard Hughes <rhughes@redhat.com> - 0.5.14-10
+- Modify /etc/init.d/haldaemon to parse the /etc/sysconfig/haldaemon
+  config file in for extra parameters. This fixes the patch from -9.
+- Resolves: #576048
+
+* 二 2月 01 2011 Richard Hughes <rhughes@redhat.com> - 0.5.14-9
+- Modify /etc/init.d/haldaemon to parse the /etc/sysconfig/haldaemon
+  config file in for extra parameters.
+- Resolves: #576048
+
+* 三 7月 28 2010 Richard Hughes <rhughes@redhat.com> 0.5.14-8
+- Ignore internal DM devices with new DM udev rules.
+- Resolves: #613982
+
+* 二 7月 13 2010 Richard Hughes <rhughes@redhat.com> 0.5.14-7
+- Make the initscript more LSB compliant.
+- Resolves: #560631
+
+* 四 6月 17 2010 Richard Hughes <rhughes@redhat.com> 0.5.14-6
+- Split out storage-related files in order to avoid unnecessary polling
+- Resolves: #571482
+
+* 一 6月 07 2010 Richard Hughes <rhughes@redhat.com> - 0.5.14-5
+- Properly add the haldaemon user this time.
+- Resolves: #594305
+
+* 一 6月 07 2010 Richard Hughes <rhughes@redhat.com> - 0.5.14-4
+- Create a haldaemon group in the spec file as shadow-utils has been updated
+  and no longer automatically creates a private group for UIDs < 200.
+- Resolves: #594305
+
+* 二 5月 04 2010 Richard Hughes <rhughes@redhat.com> - 0.5.14-3
+- Do not crash if hald-probe-input is run on a device with an unknown type.
+- Resolves: #561838
+
+* 四 2月 25 2010 Richard Hughes <rhughes@redhat.com> - 0.5.14-2
+- Use the correct array length to fix a bug when using realpath()
+- Resolves: #566709
+
+* 五 12月 04 2009 Richard Hughes <rhughes@redhat.com> - 0.5.14-1
+- New release.
+- See http://lists.freedesktop.org/archives/hal/2009-November/013671.html
+
+* 三 11月 18 2009 Adam Jackson <ajax@redhat.com> 0.5.13-10
+- hal-0.5.13-touchpad.patch: Make the logic for input.touchpad match the
+  logic in the synaptics driver.
+
+* 一 10月 19 2009 Peter Hutterer <peter.hutterer@redhat.com> 0.5.13-9
+- hal-xen-unignore-axes.patch: force evdev to allow rel+abs axes on the Xen
+  Virtual Pointer device (#523914)
+
+* 二 8月 11 2009 Ville Skyttä <ville.skytta@iki.fi> - 0.5.13-8
+- Use bzipped upstream tarball.
+
+* 三 7月 29 2009 Matthias Clasen <mclasen@redhat.com> - 0.5.13-7
+- Grant root access to devices
+
+* 三 7月 29 2009 Richard Hughes <rhughes@redhat.com> - 0.5.13-6
+- Don't compile with csr, ibm or cpufreq options, this functionality is
+  obsolete.
+
+* 二 7月 28 2009 Richard Hughes <rhughes@redhat.com> - 0.5.13-5
+- Apply a patch to fix mdraid devices.
+- Fixes #507782
+
+* 二 7月 28 2009 Richard Hughes <rhughes@redhat.com> - 0.5.13-4
+- Fix build harder
+
+* 二 7月 28 2009 Richard Hughes <rhughes@redhat.com> - 0.5.13-3
+- Fix file lists to fix build
+
+* 二 7月 28 2009 Richard Hughes <rhughes@redhat.com> - 0.5.13-2
+- Drop upstreamed patches to fix build
+
+* 一 7月 27 2009 Richard Hughes <rhughes@redhat.com> - 0.5.13-1
+- Use the release tarball, we did have a release against all the odds.
+
+* 六 7月 25 2009 Peter Hutterer <peter.hutterer@redhat.com> - 0.5.12-28.20090226git.4
+- hal-HDAPS-blacklist.patch: blacklist Thinkpad HDAPS accelerometer device,
+  it screws with X (FDO #22442).
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.12-27.20090226git.4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 David Zeuthen <davidz@redhat.com> - 0.5.12-26.20090226git.4
+- Disable ConsoleKit+PolicyKit support and lock down most interfaces with at_console
+- Disable ACL management, this is now handled by udev >= 145
+
+* 日 6月 14 2009 Matthias Clasen <mclasen@redhat.com> - 0.5.12-26.20090226git.3
+- Should not own /etc/dbus-1/system.d
+
+* 三 6月 10 2009 Rex Dieter <rdieter@fedoraproject.org> - 0.5.12-26.20090226git.2
+- drop Req: libvolume_id dep too
+
+* 二 6月 09 2009 Matthias Clasen <mclasen@redhat.com> - 0.5.12-26.20090226git.1
+- Rebuild against new util-linux-ng
+- Drop libvolume_id dep, use libbklkid
+
+* 五 3月 27 2009 Peter Hutterer <peter.hutterer@redhat.com> - 0.5.12-26.20090226git
+- hal-KVM-evdev.patch: force the evdev driver for American Megatrends KVM
+  (#484776)
+
+* 六 3月 14 2009 - Matthew Garrett <mjg@redhat.com> - 0.5.12-25.20090226git
+- Fully disable smbios support - backlight control is in-kernel on Dells now.
+
+* 五 3月 06 2009 - Matthew Garrett <mjg@redhat.com> - 0.5.12-24.20090226git
+- Remove Toshiba hotkey support. toshiba_acpi can handle them now.
+
+* 二 3月 03 2009 - Bastien Nocera <bnocera@redhat.com> - 0.5.12-23.20090226git
+- Remove Dell killswitches support, they're handled through the kernel's
+  dell_laptop module instead now (#488177), removes requires for smbios-utils
+
+* 二 3月 03 2009 Peter Hutterer <peter.hutterer@redhat.com>
+- purge hal-tablet.patch: fixed upstream in a different manner, see b0a2575f1.
+
+* 六 2月 28 2009 Richard Hughes <rhughes@redhat.com> - 0.5.12-22.20090226git
+- Fix the udev install path, as upstream hal is broken
+
+* 四 2月 26 2009 Richard Hughes <rhughes@redhat.com> - 0.5.12-21.20090226git
+- Update to git snapshot 20090226git
+- Remove upstreamed patches
+- Disable a patch that should be upstream and no longer applies
+- Use the correct loaction for udev rules.d
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.5.12-20.20081219git
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 12月 22 2008 Peter Hutterer <peter.hutterer@redhat.com> - 0.5.12-19.20081219git
+- hal-joystick.patch: init bitmask before checking it
+- Add hal-tablet.patch: move tablet check out of questionable axis check
+- Add hal-tablet-evdev.patch: if it's a tablet, use evdev
+
+* 五 12月 19 2008 Colin Walters <walters@verbum.org> - 0.5.12-18.20081219git
+- Update dbus permissions patch to include KillSwitch which NetworkManager needs
+
+* 五 12月 19 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-17.20081219git
+- Don't run autoreconf in the build-phase, it breaks libtool
+
+* 五 12月 19 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-16.20081219git
+- Update to git snapshot 20081219git
+
+* 二 12月 09 2008 Colin Walters <walters@verbum.org> - 0.5.12-15
+- Add introspection allow
+
+* 一 12月 01 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-14
+- Update to 0.5.12 release candidate 1.
+
+* 一 11月 24 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-13.20081027git
+- For OLPC, set system.firmware.version to the main system firmware version,
+  rather than the version of the embedded controller microcode.
+  Thanks to Mitch Bradley for the pointer.
+
+* 三 11月 05 2008 Jeremy Katz <katzj@redhat.com> - 0.5.12-12.20081027git
+- Fix up OLPC detection with regard to what's in the upstream kernel
+
+* 三 11月 05 2008 Matthew Garrett <mjg@redhat.com> - 0.5.12-11.20081027git
+- Add support for the memstick bus
+
+* 三 11月 05 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-10.20081027git
+- Add a small FDI file to match OLPC devices so we can remap the keyboard.
+
+* 二 10月 28 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-9.20081027git
+- Remove the newly added BDI devices to fix #468850
+
+* 一 10月 27 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-8.20081027git
+- Update to git snapshot 20081027git to fix #468692
+
+* 三 10月 22 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-7.20081022git
+- Upload correct sources...
+
+* 三 10月 22 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-6.20081022git
+- Update to git snapshot 20081022git
+
+* 二 10月 21 2008 Matthew Garrett <mjg@redhat.com> - 0.5.12-5.20081013git
+- Fix input.joystick handling
+
+* 一 10月 20 2008 Matthew Garrett <mjg@redhat.com> - 0.5.12-4.20081013git
+- Add input.keys capability to appropriate button devices
+
+* 一 10月 13 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-3.20081013git
+- Update to git snapshot 20081013git
+
+* 三 10月 08 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-2.20081001git
+- Add a patch from the mailing list to fix rh#466150
+
+* 一 10月 06 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-1.20081001git
+- Add a patch from the mailing list to try and fix rh#442457
+
+* 三 10月 01 2008 Richard Hughes <rhughes@redhat.com> - 0.5.12-0.20081001git
+- Update to git snapshot 20081001git
+
+* 二 9月 02 2008 Richard Hughes <rhughes@redhat.com> - 0.5.11-4
+- Rebuild for new udev (libvolume_id)
+
+* 二 7月 22 2008 Jon McCann  <jmccann@redhat.com> - 0.5.11-3
+- Fix for CK API changes
+
+* 四 6月 12 2008 Richard Hughes <rhughes@redhat.com> - 0.5.11-2
+- Fix unmounting of USB drives when using SELinux due to a leaking file
+  descriptor (#447195)
+
+* 五 5月 09 2008 Richard Hughes <rhughes@redhat.com> - 0.5.11-1
+- Update to latest upstream release
+
+* 二 4月 29 2008 David Zeuthen <davidz@redhat.com> - 0.5.11-0.7.rc2
+- Fix addon input cpu eating habits (#437500)
+
+* 四 4月 17 2008 Bill Nottingham <notting@redhat.com> - 0.5.11-0.6.rc2
+- Adjust start/stop priority earlier for use by NetworkManager (#441658)
+
+* 一 4月 07 2008 David Zeuthen <davidz@redhat.com> - 0.5.11-0.5.rc2
+- Rebuild
+
+* 一 4月 07 2008 David Zeuthen <davidz@redhat.com> - 0.5.11-0.4.rc2
+- Add deprecated keys back to avoid things like gphoto2 fdi file breakage
+
+* 一 4月 07 2008 David Zeuthen <davidz@redhat.com> - 0.5.11-0.3.rc2
+- Avoid using at_console since that breaks g-p-m running under gdm
+
+* 二 3月 18 2008 Jeremy Katz <katzj@redhat.com> - 0.5.11-0.2.rc2
+- Fix build errors
+
+* 二 3月 18 2008 Jeremy Katz <katzj@redhat.com> - 0.5.11-0.1.rc2
+- Update to 0.5.11rc2
+
+* 六 3月 15 2008 Lubomir Kundrak <lkundrak@redhat.com> 0.5.11-0.1.rc1
+- hal-0.5.11rc1
+- Move acl list from older versions to proper place
+- Fix license tag
+- Fix macro use in changelog
+- Drop the vio patch
+- Nuke rpaths
+- Parallel build
+
+* 一 3月 10 2008 Adam Jackson <ajax@redhat.com> 0.5.11-0.git20080304.4
+- hal-0.5.10-set-property-direct.patch: Add --direct option to
+  hal-set-property(1).
+
+* 三 3月 05 2008 David Zeuthen <davidz@redhat.com> - 0.5.11-0.git20080304.3.alios6
+- vio support (#431045, thanks dwmw2)
+
+* 二 3月 04 2008 David Zeuthen <davidz@redhat.com> - 0.5.11-0.git20080304.2.alios6
+- Another git snapshot
+
+* 二 3月 04 2008 David Zeuthen <davidz@redhat.com> - 0.5.11-0.git20080304.alios6
+- Drop patches as they were committed upstream
+- Ship a git snapshot that should fix a number of issues
+  - ps3, virtio, iscsi support
+  - ACL's are not always restored
+  - multiple batteries are shown (and other battery related bugs)
+  - /sbin/umount.hal is always returning 1
+  - other general bugfixes
+
+* 一 3月 03 2008 - Bastien Nocera <bnocera@redhat.com> - 0.5.10-5.alios6
+- Require smbios-utils, not libsmbios-bin
+
+* 四 2月 14 2008 Adam Tkac <atkac redhat com> - 0.5.10-5.alios6
+- rebuild against new libsmbios
+
+* 二 1月 08 2008 David Zeuthen <davidz@redhat.com> - 0.5.10-4.alios6
+- Backport some upstream patches that fixes crashers with fdi files
+
+* 四 12月 06 2007 David Zeuthen <davidz@redhat.com> - 0.5.10-3.alios6
+- Grant user 'haldaemon' an authorization to read authorizations of other users
+
+* 二 10月 23 2007 Matthias Clasen <mclasen@redhat.com> - 0.5.10-2
+- Rebuild against new dbus-glib
+
+* 四 10月 11 2007 David Zeuthen <davidz@redhat.com> - 0.5.10-1.alios6
+- Update to latest upstream release
+
+* 二 9月 25 2007 - David Zeuthen <davidz@redhat.com> - 0.5.10-0.git20070925.alios6
+- Update to git snapshot
+
+* 五 8月 31 2007 - David Zeuthen <davidz@redhat.com> - 0.5.10-0.git20070831.alios6
+- Update to upstream 0.5.10rc2 release
+- Drop patches that are upstream already
+
+* 二 8月 14 2007 - David Zeuthen <davidz@redhat.com> - 0.5.10-0.git20070731.alios6.2
+- Require libsmbios-bin on x86 and x86_64
+
+* 四 8月 09 2007 - David Zeuthen <davidz@redhat.com> - 0.5.10-0.git20070731.alios6.1
+- Set the correct mode when using open(3p) (Joe Orton)
+- Fix bug in implementation of libhal_psi_has_more()
+
+* 二 7月 31 2007 - David Zeuthen <davidz@redhat.com> - 0.5.10-0.git20070731.alios6
+- Update to RC1 git snapshot; include PolicyKit support
+- Obsolete hal-gnome package as that is dropped upstream (eventually the
+  functionality will be replaced by a gnome-device-manager package)
+- Drop all patches as they are upstream
+- Drop 99-redhat-storage-policy-fixed-drives.fdi; this is now
+  controlled by PolicyKit
+- Drop use of find_lang; upstream dropped all translations
+
+* 五 5月 18 2007 - Bastien Nocera <bnocera@redhat.com> - 0.5.9-8
+- Really add libsmbios-devel to the BRs not the Requires
+
+* 五 5月 18 2007 - Bastien Nocera <bnocera@redhat.com> - 0.5.9-7
+- Add libsmbios-devel to the BRs so we get Dell backlight support (#239225)
+
+* 三 4月 25 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-6
+- Pick up the latest fixes from 0.5.9 stable branch
+- Drop firewire prober patch as this is already in the 0.5.9 stable branch
+- Resolves: #237871 (pass correct quirks)
+
+* 三 4月 18 2007 Kristian Høgsberg <krh@redhat.com> - 0.5.9-5
+- Update firewire prober to use correct ioctl codes.
+
+* 二 4月 17 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-4
+- Rebuild without hal-info bits and Require new package hal-info (#230707)
+
+* 四 4月 12 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-3
+- Add patches from 0.5.9 stable branch
+
+* 二 4月 03 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-2
+- Fix a bug with how LUKS interacts with locking
+- Obsolete older HAL packages to provide an upgrade path for multilib
+
+* 一 4月 02 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-1
+- Update to upstream release 0.5.9 and hal-info 20070402
+
+* 一 4月 02 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-0.git20070401.2
+- Split hal package into hal and hal-libs (#231200)
+- Fix hal-device-manager ownership (#234696)
+
+* 日 4月 01 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-0.git20070401.1
+- Rebuild
+
+* 日 4月 01 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-0.git20070401
+- Update to hal 0.5.9rc3 and hal-info-20070401
+- Drop Fedora eject patch in favor of new --with-eject build option
+- Man pages and new tools; notably hal-lock(1) and hal-disable-polling(1)
+
+* 一 3月 26 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-0.git20070326
+- Update to hal 0.5.9rc2 and hal-info-20070326
+- Bring back Fedora eject patch (#231459)
+- Build docs and put them in new subpackage hal-docs
+
+* 日 3月 25 2007 Matthias Clasen <mclasen@redhat.com> - 0.5.9-0.git20070304.fc7.1
+- Fix directory ownership issues (#233840)
+
+* 日 3月 04 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-0.git20070304
+- Update to 0.5.9rc1; notable user visible changes:
+- New /sbin/umount.hal helper (#188193)
+- Slow down polling if no session is non-idle (#204969)
+- Refuse to eject busy devices (#207177)
+- Don't mount noexec unless requested
+- Use inotify to watch for new fdi files
+- Support for new Firewire stack
+- BT killswitch for Sony laptops (hadess)
+- Pass suspend quirks to pm-utils (need new pm-utils release to use it)
+
+* 日 2月 18 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-0.git20070218.alios6
+- Update to git snapshot (will require SELinux policy changes)
+- HAL will now add/remove ACL's for local sessions (needed for f-u-s)
+- Add require on acl package for setfacl(1)
+- Clean up spec file + incorporate comments from merge review (#225880)
+
+* 二 2月 06 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-0.git20070206.1.alios6
+- Make sure /var/cache/hald exists and has right mode / permissions (notting)
+
+* 二 2月 06 2007 David Zeuthen <davidz@redhat.com> - 0.5.9-0.git20070206.alios6
+- Update to git snapshot
+- Drop upstreamed patches
+- Include hal-info snapshot in this SRPM for now (will be moved to it's 
+  own SRPM eventually)
+- Require ConsoleKit as this release denies some service to callers
+  not originating from an active desktop session (f-u-s requirement)
+
+* 六 2月 03 2007 Matthias Clasen <mclasen@redhat.com> - 0.5.8.1-8
+- Incorporate more feedback from package review
+
+* 六 2月 03 2007 Matthias Clasen <mclasen@redhat.com> - 0.5.8.1-7
+- Use %find_lang (#161548)
+- Correct BuildRoot
+
+* 二 11月 14 2006 David Zeuthen <davidz@redhat.com> - 0.5.8.1-6.alios6
+- Rebuild
+
+* 二 11月 14 2006 David Zeuthen <davidz@redhat.com> - 0.5.8.1-5.alios6
+- Alignment fixes on ia64; Add patch fixing to work with D-Bus 1.0
+
+* 三 10月 04 2006 David Zeuthen <davidz@redhat.com> - 0.5.8.1-4.alios6
+- Make a patch actually apply
+
+* 三 10月 04 2006 David Zeuthen <davidz@redhat.com> - 0.5.8.1-3.alios6
+- Fix whether some PPC boxes can suspend, fixes #208388
+- Use /usr/sbin/eject rather than /usr/bin/eject, fixes #208979
+- Fix a crasher in partition table probing code, should fix #206669
+
+* 二 9月 26 2006 David Zeuthen <davidz@redhat.com> - 0.5.8.1-2.alios6
+- BuildRequire pciutils-devel
+
+* 二 9月 26 2006 David Zeuthen <davidz@redhat.com> - 0.5.8.1-1.alios6
+- upgrade to upstream release 0.5.8.1
+- helpers have moved to %libdir/hal/scripts
+- require gtk-doc instead of Doxygen
+- drop upstreamed patches
+- patch for correctly detecting FUSE mounts (e.g. ntfs-fuse)
+- patch for not crashing on optical drives w/o write capabilities
+- include devhelp gtk-doc's for libhal, libhal-storage in -devel package
+- Require kernel >= 2.6.17, udev >= 089, libvolume_id >= 089
+- Build require libvolume_id-devel >= 089
+- Should fix #202316, #206669, #207715, #198573, #206732, #208027
+
+* 三 8月 30 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.7.1-3.alios6
+- Add a .desktop file for hal-device-manager
+
+* 三 7月 26 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7.1-2.alios6
+- Bump and rebuild
+
+* 三 7月 26 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7.1-1
+- Point release from upstream that fixes HAL with new kernels
+- Up minimum kernel version to 2.6.15
+
+* 一 7月 24 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-14
+- Add patch to handle longer sysfs names
+- add dist tag to release
+
+* 二 7月 18 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-13
+- BR dbus-glib-devel
+- Fix a deprecated function
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.5.7-12.1
+- rebuild
+
+* 六 6月 10 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.7-12
+- Add missing BuildRequires
+
+* 三 5月 24 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-11
+- Updated autofs fix
+
+* 五 5月 19 2006 David Zeuthen <davidz@redhat.com> - 0.5.7-10
+- Make PCMCIA card readers work again (#185557)
+
+* 三 5月 17 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-9
+- Add patch that makes hald not stat nfs and autofs mounts
+
+* 一 5月 15 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-8
+- Patch from Brian Pepple <bdpepple@ameritech.net> Add BR for dbus-glib
+
+* 一 5月 08 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-7
+- Removed typo from spec
+
+* 五 5月 05 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-6
+- Add fix so gnome-power-manager handles lid opens correctly now
+
+* 一 4月 24 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-5
+- ifnarch the pm-utils requires for s390 and s390x
+
+* 三 4月 19 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.7-4
+- Add Requires on pm-utils >= 0.10-1 (#185134, Andrew Overholt)
+
+* 五 3月 03 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-3
+- Fix fstab clearing script to not strip whitespace
+
+* 四 3月 02 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.7-2
+- clear out fstab of all fstab-sync entries if previous hal < 0.5.7-2
+
+* 五 2月 24 2006 David Zeuthen <davidz@redhat.com> - 0.5.7-1
+- New upstream version 0.5.7 with several bug fixes
+- Don't restart hald on package upgrade
+- Pull in dmidecode on x86-ish and x86_64 architectures
+- Don't let HAL's Mount() method circumvent system policy (#182352)
+- Patch to use new pm-utils's new pm-powersave util properly
+
+* 四 2月 16 2006 Matthias Clasen <mclasen@redhat.com> - 0.5.7-0.cvs20060213.2
+- fix directory ownership
+- don't ship static libraries
+
+* 一 2月 13 2006 Jesse Keating <jkeating@redhat.com> - 0.5.7-0.cvs20060213.1.1
+- rebump for build order issues during double-long bump
+
+* 一 2月 13 2006 David Zeuthen <davidz@redhat.com> - 0.5.7-0.cvs20060213.1
+- fix build
+
+* 一 2月 13 2006 David Zeuthen <davidz@redhat.com> - 0.5.7-0.cvs20060213
+- Upstream CVS snapshot. Drop a patch that is upstream. Switch to using
+  udev rules instead of hotplug helpers for udev->hald channel.
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.5.6-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 三 1月 18 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.6-3
+- Patch storage-method policy so that the eject method is available
+  to audio cd's
+
+* 三 1月 18 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.6-2
+- Add policy file to ignore fixed disks.  This is a temporary solution
+  until upstream comes up with a more flexable option
+
+* 二 1月 17 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.6
+- New upstream release
+- Remove match on capabilities patch (upstream already)
+
+* 三 1月 11 2006 Christopher Aillon <caillon@redhat.com> - 0.5.5.1.cvs20060111-1
+- Update to an even newer CVS snapshot, to fix privelege escalation issue
+- Remove mount options patch (upstreamed already)
+
+* 一 1月 09 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.5.1.cvs20060109-2
+- Add patch to escape mount options
+
+* 一 1月 09 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.5.1.cvs20060109-1
+- Update to a new CVS snapshot
+
+* 四 1月 05 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.5.1.cvs20060105-2
+- readd the hotplug script
+
+* 四 1月 05 2006 John (J5) Palmieri <johnp@redhat.com> - 0.5.5.1.cvs20060105-1
+- Build CVS version of HAL which gives us the new mount support
+- disable fstab-sync
+- scripts have been moved from /usr/sbin to /usr/share/hal/scripts
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com> - 0.5.5.1-2.1
+- rebuilt
+
+* 四 12月 01 2005 John (J5) Palmieri <johnp@redhat.com> - 0.5.5.1-2
+- Rebuild for dbus 0.60
+
+* 三 11月 16 2005 John (J5) Palmieri <johnp@redhat.com> - 0.5.5.1-1
+- Update to latest upstream version
+
+* 五 11月 11 2005 John (J5) Palmieri <johnp@redhat.com> - 0.5.4.cvs2005111-1
+- Update to CVS HEAD
+
+* 二 11月 08 2005 John (J5) Palmieri <johnp@redhat.com> - 0.5.4-4
+- Add patch to fix storage policy fdi to match on the storage
+  capability and not category.
+
+* 一 10月 03 2005 Matthias Clasen <mclasen@redhat.com>
+- Fix a typo in description
+
+* 二 8月 30 2005 David Zeuthen <davidz@redhat.com> - 0.5.4-3
+- Rebuild
+
+* 二 8月 30 2005 David Zeuthen <davidz@redhat.com> - 0.5.4-2
+- Pull in cryptsetup-luks and fix some unpackaged files
+
+* 二 8月 30 2005 David Zeuthen <davidz@redhat.com> - 0.5.4-1
+- Update to upstream release 0.5.4 and drop patches already upstream
+
+* 四 8月 11 2005 David Zeuthen <davidz@redhat.com> - 0.5.3-4
+- Add patch to make libhal-storage report the right fs usage (#165707)
+
+* 二 8月 09 2005 Jeremy Katz <katzj@redhat.com> - 0.5.3-3
+- make kernel version requirement a conflicts instead
+
+* 二 7月 12 2005 David Zeuthen <davidz@redhat.com> 0.5.3-2
+- Fix a minor packaging bug
+
+* 二 7月 12 2005 David Zeuthen <davidz@redhat.com> 0.5.3-1
+- Update to upstream release 0.5.3
+- Drop patches as they are upstream
+
+* 一 5月 23 2005 David Zeuthen <davidz@redhat.com> 0.5.2-2
+- Fix doublefree when locking (#158474)
+- Never use the 'sync' mount option (#157674)
+- Update the fstab-sync man page (#158483)
+
+* 四 5月 12 2005 David Zeuthen <davidz@redhat.com> 0.5.2-1
+- Update to upstream release 0.5.2
+
+* 三 4月 27 2005 David Zeuthen <davidz@redhat.com> 0.5.1-1
+- Update to upstream release 0.5.1
+
+* 二 4月 19 2005 Florian La Roche <laroche@redhat.com>
+- exclude usb reqs for mainframe (#154616)
+
+* 一 4月 04 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050404b-2
+- Rebuild
+
+* 一 4月 04 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050404b-1
+- Use new upstream tarball rather than patching configure
+
+* 一 4月 04 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050404-3
+- Add libusb checks to configure.in
+
+* 一 4月 04 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050404-2
+- Add BuildRequires and Requires for libusb
+
+* 一 4月 04 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050404-1
+- New snapshot from upstream CVS
+
+* 二 3月 22 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050322b-1
+- Another new snapshot from upstream CVS
+
+* 二 3月 22 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050322-1
+- New snapshot from upstream CVS
+
+* 五 3月 18 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050318-1
+- Snapshot from upstream CVS; should fix selinux labeling problems
+  for /etc/fstab entries
+
+* 四 3月 10 2005 David Zeuthen <davidz@redhat.com> 0.5.0.cvs20050310-1
+- Snapshot from CVS; should fix ACPI issues reported on f-d-l
+
+* 二 3月 08 2005 David Zeuthen <davidz@redhat.com> 0.5.0-3
+- Rebuild
+
+* 一 3月 07 2005 David Zeuthen <davidz@redhat.com> 0.5.0-2
+- Update to upstream release 0.5.0
+
+* 四 1月 27 2005 David Zeuthen <davidz@redhat.com> 0.4.7-2
+- Add patch that should close #146316
+
+* 一 1月 24 2005 David Zeuthen <davidz@redhat.com> 0.4.7-1
+- New upstream release.
+- Should close #145921, #145750, #145293, #145256
+
+* 一 1月 24 2005 John (J5) Palmieri <johnp@redhat.com> 0.4.6-3
+- Update required dbus version to 0.23
+
+* 四 1月 20 2005 David Zeuthen <davidz@redhat.com> 0.4.6-2
+- Fix parameters to configure
+
+* 四 1月 20 2005 David Zeuthen <davidz@redhat.com> 0.4.6-1
+- New upstream release
+- Should close #145099, #144600, #140150, #145223, #137672
+
+* 三 1月 12 2005 David Zeuthen <davidz@redhat.com> 0.4.5-1
+- New upstream release.
+- Should close #142834, #141771, #142183
+
+* 日 12月 12 2004 David Zeuthen <davidz@redhat.com> 0.4.2.cvs20041210-1
+- Snapshot from stable branch of upstream CVS
+
+* 二 10月 26 2004 David Zeuthen <davidz@redhat.com> 0.4.0-8
+- Forgot to add some diffs in hal-0.4.0-pcmcia-net-support.patch
+
+* 二 10月 26 2004 David Zeuthen <davidz@redhat.com> 0.4.0-7
+- Change default policy such that non-hotpluggable fixed disks are not
+  added to the /etc/fstab file because a) ATARAID detection in hal is
+  incomplete (e.g. RAID members from ATARAID controllers might be added
+  to /etc/fstab); and b) default install wont corrupt multiboot 
+  systems on fixed drives (#137072)
+
+* 二 10月 26 2004 David Zeuthen <davidz@redhat.com> 0.4.0-6
+- Fix hotplug timeout handling (#136626)
+- Detect ATARAID devices and do not add /etc/fstab entry for them
+- Probe for ext3 before ntfs (#136966)
+- Use fstype 'auto' for optical drives instead of 'iso9660,udf'
+- Properly detect wireless ethernet devices  (#136591)
+- Support 16-bit PCMCIA networking devices (by Dan Williams) (#136658)
+
+* 二 10月 19 2004 David Zeuthen <davidz@redhat.com> 0.4.0-5
+- Make hal work with PCMCIA IDE hotpluggable devices (#133943)
+- Fixup URL listed from rpm -qi (#136396)
+- Add Portuguese translations for hal
+- Fix addition of Russian and Hungarian translations
+
+* 一 10月 18 2004 David Zeuthen <davidz@redhat.com> 0.4.0-4
+- Make hald cope with missing hotplug events from buggy drivers (#135202)
+- Fix the order of mount options in fstab-sync (#136191)
+- Allow x86 legacy floppy drives in default policy (#133777)
+- Fix fstab-sync crashing without any options and not run from hald (#136214)
+- man page for fstab-sync references non-existing files (#136026)
+- Add Russian translations for hal (#135853)
+- Add Hungarian translations for hal
+
+* 五 10月 15 2004 David Zeuthen <davidz@redhat.com> 0.4.0-3
+- Fix bad use of O_NONBLOCK as the 2.6.8-1.624 kernel exposes this (#135886)
+- Never use the UUID as mount point candidate in the default policy 
+  as it is unfriendly (#135907)
+- Fix a trivial bug in fstab-sync so the syslog messages actually expose
+  the device name instead of just the word foo
+
+* 四 10月 14 2004 David Zeuthen <davidz@redhat.com> 0.4.0-2
+- Fix issue with fstab-sync not cleaning /etc/fstab on startup
+
+* 四 10月 14 2004 David Zeuthen <davidz@redhat.com> 0.4.0-1
+- Update to upstream stable version 0.4.0
+- Remove patch for libhal shutdown since that is now upstream
+- fstab-sync: man page, adds comment in /etc/fstab pointing to man page
+
+* 五 10月 01 2004 David Zeuthen <davidz@redhat.com> 0.2.98.cvs20040929-3
+- Fix a bug so libhal actually invoke callback functions when needed
+
+* 五 10月 01 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.98.cvs20040929-2
+- Use "user" mount flag for now until "pamconsole" flag gets into mount
+
+* 三 9月 29 2004 David Zeuthen <davidz@redhat.com> 0.2.98.cvs20040929-1
+- Update to upstream CVS version
+- Enable libselinux again
+
+* 一 9月 27 2004 David Zeuthen <davidz@redhat.com> 0.2.98.cvs20040927-1
+- Update to upstream CVS version
+
+* 五 9月 24 2004 David Zeuthen <davidz@redhat.com> 0.2.98.cvs20040923-1
+- Update to upstream CVS release
+- Include libhal-storage library
+- Should close bug #132876
+
+* 一 9月 20 2004 David Zeuthen <davidz@redhat.com> 0.2.98-4
+- Rebuilt
+
+* 一 9月 20 2004 David Zeuthen <davidz@redhat.com> 0.2.98-3
+- Rebuilt
+
+* 一 9月 20 2004 David Zeuthen <davidz@redhat.com> 0.2.98-2
+- Temporarily disable explicit requirement for libselinux
+
+* 一 9月 20 2004 David Zeuthen <davidz@redhat.com> 0.2.98-1
+- Update to upstream release 0.2.98. 
+- Use --with-pid-file so we don't depend on /etc/redhat-release
+
+* 三 9月 01 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040901-1
+- Update to upstream CVS HEAD
+
+* 二 8月 31 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040831-3
+- Add UID for haldaemon user
+
+* 二 8月 31 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040831-2
+- Rebuilt with a newer snapshot.
+
+* 五 8月 27 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040827-3
+- Rebuilt
+
+* 五 8月 27 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040827-2
+- Rebuilt
+- Closes RH Bug #130971
+
+* 五 8月 27 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040827-1
+- Update to upstream CVS HEAD. 
+- Should close RH Bug #130588
+
+* 三 8月 25 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040823-3
+- Rebuilt
+
+* 三 8月 25 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040823-2
+- Apply a patch so hald doesn't hang on startup.
+
+* 一 8月 23 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040823-1
+- Update to upstream CVS HEAD
+- Remove symlinking of fstab-sync from specfile since this is now being
+  done in the package
+
+* 一 8月 23 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- change the %define names to not use "-"
+
+* 四 8月 19 2004 David Zeuthen <davidz@redhat.com> 0.2.97.cvs20040819-1
+- Update to upstream CVS HEAD
+- Remove suid patch as it is fixed upstream
+- Fix some dependency issues (RH Bug #130202)
+
+* 三 8月 18 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.97-2
+- Add stopgap patch to remove suid from mount flags (RH Bug #130290)
+
+* 一 8月 16 2004 David Zeuthen <davidz@redhat.com> 0.2.97-1
+- update to upstream release 0.2.97
+- use kudzu option in fstab-sync since updfstab is now disabled
+
+* 四 8月 12 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.96-2
+- fixed Requires lines to use % instead of ${}
+- made dbus related requires lines use the = condition instead of =<
+  because the dbus API is still in flux
+
+* 四 8月 12 2004 David Zeuthen <davidz@redhat.com> 0.2.96
+- Update to upstream release 0.2.96
+- Symlink fstab-sync into /etc/hal/device.d on install
+
+* 五 8月 06 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.95.cvs20040802-2
+- Base hal package no longer requires python
+
+* 一 8月 02 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.95.cvs20040802-1
+- Update to CVS head
+- Remove Dan's patches as they were commited to CVS
+
+* 五 7月 30 2004 Dan Williams <dcbw@redhat.com> 0.2.93.cvs.20040712-2
+- Fix netlink sockets pointer arithmetic bug
+
+* 一 7月 12 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.93.cvs.20040712-1
+- Update to new CVS version as of 7-12-2004
+
+* 五 6月 25 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.92.cvs.20040611-2
+- take out fstab-update.sh from install
+- add to rawhide
+
+* 五 6月 11 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.92.cvs.20040611-1 
+- update to CVS head as of 6-11-2004 which contains dcbw's 
+  network link status fix
+
+* 三 6月 09 2004 Ray Strode <rstrode@redhat.com> 0.2.91.cvs20040527-2
+- added dependency on udev
+
+* 三 5月 12 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.91.cvs20040527-1
+- update to CVS head as of 5-27-2004 which contains fixes for PCMCIA
+  and wireless network devices.
+
+* 三 5月 12 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.90.cvs20040511-3
+- added hal-0.2.90.cvs20040511.callbackscripts.patch which installs 
+  the file system mounting script in /etc/hal/device.d
+
+* 三 5月 12 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.90.cvs20040511-2
+- added the %{_sysconfigdir}/hal directory tree to %files
+
+* 二 5月 11 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.90.cvs20040511-1
+- update to CVS head as of 5-11-2004
+
+* 三 5月 05 2004 Christopher Blizzard <blizzard@redhat.com> 0.2.90-2
+- Install hal.dev from /etc/dev.d/default/
+
+* 一 4月 19 2004 John (J5) Palmieri <johnp@redhat.com> 0.2.90-1
+- upstream update
+
+* 一 4月 19 2004 John (J5) Palmieri <johnp@redhat.com> 0.2-1 
+- initial checkin to package repository
+- added dependency to the dbus-python package
+- added %{_libexecdir}/hal.dev to teh %files section
+

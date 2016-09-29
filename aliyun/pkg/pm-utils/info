@@ -1,0 +1,13 @@
+Name        : pm-utils                     Relocations: (not relocatable)
+Version     : 1.2.5                             Vendor: Alibaba
+Release     : 9.4.alios6                    Build Date: 2014年07月27日 星期日 18时25分15秒
+Install Date: 2015年03月25日 星期三 11时01分30秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Base       Source RPM: pm-utils-1.2.5-9.4.alios6.src.rpm
+Size        : 260295                           License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 18时05分06秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://pm-utils.freedesktop.org
+Summary     : Power management utilities and scripts for Fedora
+Description :
+The pm-utils package contains utilities and scripts useful for tasks related
+to power management.

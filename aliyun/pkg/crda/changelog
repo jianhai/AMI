@@ -1,0 +1,98 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.1_2010.11.22-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.1.1_2010.11.22-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.1.1_2010.11.22-1.1
+- rebuild for alios6
+
+* 二 11月 23 2010 John W. Linville <linville@redhat.com> 1.1.0_2010.11.22-1
+- Update wireless-regdb to version 2010.11.22
+
+* 四 2月 25 2010 John W. Linville <linville@redhat.com> 1.1.1_2009.11.25-3
+- Correct license tag from BSD to ISC
+- Comment purpose of regulatory-rules-setregdomain.patch
+- Add copyright and license statement to setregdomain
+- Add comment for why /lib is hardcoded in files section
+- Reformat Dec 21 2009 changelog entry so rpmlint stops complaining
+
+* 二 1月 26 2010 John W. Linville <linville@redhat.com> 1.1.1_2009.11.25-2
+- Change RPM_OPT_FLAGS to optflags
+- Leave man page compression to rpmbuild
+- Correct date in previous changelog entry
+
+* 二 1月 26 2010 John W. Linville <linville@redhat.com> 1.1.1_2009.11.25-1
+- Update for crda version 1.1.1
+
+* 一 12月 21 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.11.25-5
+- Remove unnecessary explicit Requries for libgcrypt and libnl -- oops!
+
+* 一 12月 21 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.11.25-4
+- Add libgcrypt and libnl to Requires
+
+* 一 12月 21 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.11.25-3
+- Add man page for setregdomain (from Andrew Hecox <ahecox@redhat.com>)
+- Change $RPM_BUILD_ROOT to buildroot
+
+* 五 12月 18 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.11.25-2
+- Specify path to iw in setregdomain
+
+* 三 12月 02 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.11.25-1
+- Update wireless-regdb to version 2009.11.25
+
+* 三 11月 11 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.11.10-1
+- Update wireless-regdb to version 2009.11.10
+
+* 四 10月 01 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.09.08-3
+- Move regdb to /lib/crda to facilitate /usr mounted over wireless network
+
+* 三 9月 09 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.09.08-2
+- Use kernel-headers instead of kernel-devel
+
+* 三 9月 09 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.09.08-1
+- Update wireless-regdb to version 2009.09.08 
+- Start resetting release number with version updates
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.1.0_2009.04.17-12
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 5月 13 2009 John W. Linville <linville@redhat.com> 1.1.0_2009.04.17-11
+- Update crda version to version 1.1.0
+- Update wireless-regdb to version 2009.04.17
+
+* 五 4月 17 2009 John W. Linville <linville@redhat.com> 1.0.1_2009.04.16-10
+- Update wireless-regdb version to pick-up recent updates and fixes (#496392)
+
+* 二 3月 31 2009 John W. Linville <linville@redhat.com> 1.0.1_2009.03.09-9
+- Add Requires line for iw package (#492762)
+- Update setregdomain script to correctly check if COUNTRY is set
+
+* 四 3月 19 2009 John W. Linville <linville@redhat.com> 1.0.1_2009.03.09-8
+- Add setregdomain script to set regulatory domain based on timezone
+- Expand 85-regulatory.rules to invoke setregdomain script on device add
+
+* 二 3月 10 2009 John W. Linville <linville@redhat.com> 1.0.1_2009.03.09-7
+- Update wireless-regdb version to pick-up recent updates and fixes (#489560)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.1_2009.01.30-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 一 2月 16 2009 John W. Linville <linville@redhat.com> 1.0.1_2009.01.30-5
+- Recognize regulatory.bin files signed with the upstream key (#484982)
+
+* 二 2月 03 2009 John W. Linville <linville@redhat.com> 1.0.1_2009.01.30-4
+- Change version to reflect new wireless-regdb upstream release practices
+- Update wireless-regdb version to pick-up recent updates and fixes (#483816)
+
+* 二 1月 27 2009 John W. Linville <linville@redhat.com> 1.0.1_2009_01_15-3
+- Update for CRDA verion 1.0.1
+- Account for lack of "v" in upstream release tarball naming
+- Add patch to let wireless-regdb install w/o being root
+
+* 四 1月 22 2009 John W. Linville <linville@redhat.com> v0.9.5_2009_01_15-2
+- Revamp based on package review comments
+
+* 二 1月 20 2009 John W. Linville <linville@redhat.com> v0.9.5_2009_01_15-1
+- Initial build
+

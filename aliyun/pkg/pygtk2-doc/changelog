@@ -1,0 +1,428 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.16.0-3.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.16.0-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.16.0-3.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.16.0-3.1
+- rebuild for alios6
+
+* 五 1月 08 2010 Matthew Barnes <mbarnes@redhat.com> - 2.16.0-3.el6
+- Remove patch for RH bug #379051 (fixed upstream, differently).
+
+* 六 1月 02 2010 Matthew Barnes <mbarnes@redhat.com> - 2.16.0-2.fc12
+- Fix the major version number in the Source URI.
+
+* 日 8月 23 2009 Matthew Barnes <mbarnes@redhat.com> - 2.16.0-1.fc12
+- Update to 2.16.0
+- Remove patch for RH bug #511082 (fixed upstream).
+
+* 二 8月 18 2009 Adam Jackson <ajax@redhat.com> 2.15.2-4
+- Drop the explicit Requires: numpy as per new packaging guidelines.  If
+  your app calls gtk.gdk.get_pixels_array() you need to pull numpy in
+  yourself.
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.15.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 7月 13 2009 Matthew Barnes <mbarnes@redhat.com> - 2.15.2-2.fc12
+- Add patch for RH bug #511082 (missing gtk-2.16-types.defs).
+
+* 日 6月 21 2009 Matthew Barnes <mbarnes@redhat.com> - 2.15.2-1.fc12
+- Update to 2.15.2
+
+* 二 6月 02 2009 Matthew Barnes <mbarnes@redhat.com> - 2.15.1-2.fc12
+- Require numpy instead of python-numeric (RH bug #503691).
+
+* 一 5月 25 2009 Matthew Barnes <mbarnes@redhat.com> - 2.15.1-1.fc12
+- Update to 2.15.1
+
+* 六 5月 02 2009 Matthew Barnes <mbarnes@redhat.com> - 2.15.0-1.fc12
+- Update to 2.15.0
+- Bump pygobject2_version to 2.16.1.
+
+* 五 3月 06 2009 Matthew Barnes <mbarnes@redhat.com> - 2.14.1-1.fc11
+- Update to 2.14.1
+- Bump gtk2_version to 2.9.0 for gtkunixprint requirement.
+
+* 二 2月 24 2009 Matthias Clasen <mclasen@redhat.com> - 2.14.0-2
+- Make -doc noarch
+
+* 六 1月 31 2009 Matthew Barnes <mbarnes@redhat.com> - 2.14.0-1.fc11
+- Update to 2.14.0
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.13.0-3
+- Rebuild for Python 2.6
+
+* 二 8月 26 2008 Matthew Barnes <mbarnes@redhat.com> - 2.13.0-2.fc10
+- Restore pycairo and pygobject2 requirements, with a note to myself
+  to stop screwing around with them (RH bug #460105).
+
+* 一 8月 25 2008 Matthew Barnes <mbarnes@redhat.com> - 2.13.0-1.fc10
+- Update to 2.13.0
+- Update version requirements.
+
+* 一 3月 17 2008 Matthew Barnes <mbarnes@redhat.com> - 2.12.1-6.fc9
+- Add patch for RH bug #379051 (keyboard events in cell renderer).
+
+* 日 2月 17 2008 Matthew Barnes <mbarnes@redhat.com> - 2.12.1-5.fc9
+- Rebuild with GCC 4.3
+
+* 三 2月 06 2008 Matthew Barnes <mbarnes@redhat.com> - 2.12.1-4.fc9
+- Use a full URL for the source tag (RH bug #226333).
+
+* 四 1月 24 2008 Matthew Barnes <mbarnes@redhat.com> - 2.12.1-3.fc9
+- Documentation files should not be executable (RH bug #430093).
+
+* 一 1月 21 2008 Matthew Barnes <mbarnes@redhat.com> - 2.12.1-2.fc9
+- Update package description to match suggestions from Content Services.
+
+* 四 1月 03 2008 Matthew Barnes <mbarnes@redhat.com> - 2.12.1-1.fc9
+- Update to 2.12.1
+- Remove patch for RH bug #217430 (fixed upstream).
+- Remove patch for GNOME bug #479012 (fixed upstream).
+
+* 五 10月 26 2007 Matthew Barnes <mbarnes@redhat.com> - 2.12.0-3.fc8
+- Add subpackage pygtk2-doc to avoid multilib conflicts.
+
+* 五 9月 21 2007 Jeremy Katz <katzj@redhat.com> - 2.12.0-2.fc8
+- fix crash using TreeView.convert_widget_to_bin_window_coords
+
+* 日 9月 16 2007 Matthew Barnes <mbarnes@redhat.com> - 2.12.0-1.fc8
+- Update to 2.12.0
+
+* 一 8月 27 2007 Matthew Barnes <mbarnes@redhat.com> - 2.11.0-1.fc8
+- Update to 2.11.0
+
+* 三 8月 08 2007 Matthias Clasen <mclasen@redhat.com> - 2.10.6-2
+- Update the license field
+
+* 二 7月 10 2007 Matthew Barnes <mbarnes@redhat.com> - 2.10.6-1.fc8
+- Update to 2.10.6
+
+* 一 7月 09 2007 Matthew Barnes <mbarnes@redhat.com> - 2.10.5-1.fc8
+- Update to 2.10.5
+
+* 二 4月 17 2007 Matthew Barnes <mbarnes@redhat.com> - 2.10.4-2.fc7
+- Make pygtk-demo executable (RH bug #236716).
+
+* 一 2月 05 2007 Matthew Barnes <mbarnes@redhat.com> - 2.10.4-1.fc7
+- Update to 2.10.4
+
+* 一 2月 05 2007 Matthew Barnes <mbarnes@redhat.com> - 2.10.3-8.fc7
+- Rename spec file to pygtk2.spec (RH bug #226333).
+
+* 六 12月 30 2006 Matthew Barnes <mbarnes@redhat.com> - 2.10.3-7.fc7
+- Add Requires pkgconfig to devel subpackage.
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 2.10.3-6
+- rebuild for python 2.5
+
+* 一 11月 27 2006 Matthew Barnes <mbarnes@redhat.com> - 2.10.3-5.fc7
+- Add patch for RH bug #217430 (missing gtk-extrafuncs.defs).
+
+* 四 10月 26 2006 Matthew Barnes <mbarnes@redhat.com> - 2.10.3-4.fc7
+- Require pygtk2-codegen = %{version}-%{release} in devel.
+
+* 四 10月 26 2006 Matthew Barnes <mbarnes@redhat.com> - 2.10.3-3.fc7
+- Add subpackage pygtk2-codegen (bug #212287).
+
+* 二 10月 24 2006 Matthew Barnes <mbarnes@redhat.com> - 2.10.3-2.fc7
+- Oops, try using python_sitearch instead of python_sitelib.
+
+* 日 10月 15 2006 Matthew Barnes <mbarnes@redhat.com> - 2.10.3-1.fc7
+- Update to 2.10.3
+- Spec file cleanups.
+- Define a python_sitelib macro for files under site_packages.
+
+* 一 10月 02 2006 Jeremy Katz <katzj@redhat.com> - 2.10.1-4
+- go back to raising an exception when importing gtk fails (#208608)
+
+* 二 9月 05 2006 Ray Strode <rstrode@redhat.com> - 2.10.1-3.fc6
+- drop crazy reload hack patch, since it's been fixed by jdahlin
+  upstream in a better way.
+
+* 二 9月 05 2006 Ray Strode <rstrode@redhat.com> - 2.10.1-2.fc6
+- drop some old patches
+
+* 二 9月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.10.1-1.fc6
+- Update to 2.10.1
+
+* 一 8月 21 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.6-2.fc6
+- Include docs
+
+* 日 8月 13 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.6-1.fc6
+- Update to 2.9.6
+
+* 五 7月 28 2006 Alexander Larsson <alexl@redhat.com> - 2.9.3-3
+- Make sure reloading the gtk module works
+- Fixes system-config-display (#199629)
+
+* 三 7月 19 2006 Chris Lumens <clumens@redhat.com> 2.9.3-2
+- Revert to previous behavior of raising an error if $DISPLAY cannot be
+  opened.
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.3-1
+- Update to 2.9.3
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.9.2-1.1
+- rebuild
+
+* 四 6月 22 2006 Jeremy Katz <katzj@redhat.com> - 2.9.2-1
+- update to 2.9.2
+- fix for gtk+ 2.9.4 API changes
+
+* 四 6月 15 2006 Ray Strode <rstrode@redhat.com> - 2.9.1-3
+- Use full include path for defs parser
+
+* 三 6月 14 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.1-2
+- Fix missing BuildRequries
+
+* 三 6月 14 2006 Matthias Clasen <mclasen@redhat.com> - 2.9.1-1
+- Update to 2.9.1
+
+* 五 5月 26 2006 Jeremy Katz <katzj@redhat.com> - 2.9.0-3
+- BR should be pygobject2-devel, need to actually require pygobject2 at runtime
+
+* 四 5月 25 2006 John (J5) Palmieri <johnp@redhat.com> - 2.9.0-2
+- Add BR for pygobject2
+- Take out files now packaged in pygobject2 from the files list
+
+* 三 5月 10 2006 Matthias Clasem <mclasen@redhat.com> - 2.9.0-1
+- Update to 2.9.0
+
+* 四 4月 20 2006 John (J5) Palmieri <johnp@redhat.com> - 2.8.6-1
+- Update to upstream 2.8.6
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.8.4-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 日 1月 15 2006 Christopher Aillon <caillon@redhat.com> - 2.8.4-1
+- Bump to upstream 2.8.4
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 10月 26 2005 John (J5) Palmieri <johnp@redhat.com> - 2.8.2-2
+- Add the pycairo dependency since pycairo is now built in rawhide
+
+* 一 10月 24 2005 Christopher Aillon <caillon@redhat.com> - 2.8.2-1
+- Bump to upstream 2.8.2
+
+* 四 9月 08 2005 John (J5) Palmieri <johnp@redhat.com> - 2.8.0-1
+- Bump to upstream 2.8.0
+
+* 二 8月 23 2005 John (J5) Palmieri <johnp@redhat.com> - 2.7.3-3
+- Add a BuildRequires on python-numeric so that Numeric
+  python support is added
+- Add a Requires on python-numeric as well
+
+* 四 8月 18 2005 John (J5) Palmieri <johnp@redhat.com> - 2.7.3-2
+- Bump and rebuild for cairo ABI changes
+
+* 三 8月 10 2005 <jrb@redhat.com> - 2.7.3-1
+- Update to 2.7.3
+
+* 三 8月 10 2005 <jrb@redhat.com> - 2.7.2-1
+- Update to 2.7.2
+
+* 三 7月 27 2005 Mark McLoughlin <markmc@redhat.com> 2.7.1-1
+- Update to 2.7.1
+
+* 一 7月 18 2005 John (J5) Palmieri <johnp@redhat.com> - 2.7.0-1
+- Update to upstream 2.7.0
+
+* 三 7月 06 2005 John (J5) Palmieri <johnp@redhat.com> - 2.6.2-1
+- update to upstream 2.6.2
+- remove gcc4 patch as it is in updated tarball
+
+* 一 3月 07 2005 Jeremy Katz <katzj@redhat.com> - 2.6.0-2
+- fix build with gcc4
+- add pygtk-demo
+
+* 一 3月 07 2005 Jeremy Katz <katzj@redhat.com> - 2.6.0-1
+- 2.6.0
+
+* 四 2月 10 2005 Mark McLoughlin <markmc@redhat.com> - 2.5.3-3
+- Avoid assertion errors in signal handling patch
+
+* 三 2月 09 2005 Mark McLoughlin <markmc@redhat.com> - 2.5.3-2
+- Backport fix for gnome #154779 - python signal handlers weren't
+  getting executed while gobject.MainLoop was running
+
+* 二 1月 25 2005 Jeremy Katz <katzj@redhat.com> - 2.5.3-1
+- 2.5.3
+
+* 四 1月 20 2005 <jrb@redhat.com> - 2.5.1-1
+- New version
+
+* 五 11月 26 2004 Florian La Roche <laroche@redhat.com>
+- add a %clean target
+
+* 日 11月 07 2004 Jeremy Katz <katzj@redhat.com> - 2.4.1-1
+- update to 2.4.1
+
+* 一 10月 04 2004 GNOME <jrb@redhat.com> - 2.4.0-1
+- new version
+
+* 二 8月 10 2004 Jonathan Blandford <jrb@redhat.com> 2.3.96-2
+- cleaner lib64 patch
+
+* 二 8月 10 2004 Jonathan Blandford <jrb@redhat.com> 2.3.96-1
+- move pythondir into /usr/lib64/
+
+* 一 8月 09 2004 Jonathan Blandford <jrb@redhat.com> 2.3.96-1
+- new version
+
+* 二 8月 03 2004 Jeremy Katz <katzj@redhat.com> - 2.3.95-1
+- update to 2.3.95
+
+* 四 6月 17 2004 Jeremy Katz <katzj@redhat.com> - 2.3.92-1
+- update to 2.3.92
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 3月 11 2004 Jeremy Katz <katzj@redhat.com> - 2.2.0-1
+- 2.2.0
+
+* 三 3月 10 2004 Jeremy Katz <katzj@redhat.com> 2.2.0-0.rc1
+- 2.2.0 RC1
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 17 2004 Jeremy Katz <katzj@redhat.com> - 2.0.0-5
+- GtkTextSearchFlags is flags, not enum (#114910)
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 12 2004 Jeremy Katz <katzj@redhat.com> - 2.0.0-3
+- own %{_libdir}/python?.?/site-packages/gtk-2.0/gtk dir (#113048)
+
+* 四 11月 06 2003 Jeremy Katz <katzj@redhat.com> 2.0.0-2
+- rebuild for python 2.3
+
+* 四 9月 04 2003 Jeremy Katz <katzj@redhat.com> 2.0.0-1
+- 2.0.0
+
+* 四 8月 14 2003 Elliot Lee <sopwith@redhat.com> 1.99.17-1
+- Update to latest version
+- Module filenames changed from foomodule.so to foo.so
+
+* 四 8月 07 2003 Elliot Lee <sopwith@redhat.com> 1.99.16-10
+- Fix libtool
+
+* 五 7月 18 2003 Jeremy Katz <katzj@redhat.com> 1.99.16-8
+- part of the fixnew patch wasn't applied upstream, apply it (#99400)
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 27 2003 Jonathan Blandford <jrb@redhat.com> 1.99.16-5
+- Update compat patch to include gtk_text_buffer_set_text
+
+* 二 5月 27 2003 Matt Wilson <msw@redhat.com> 1.99.16-4
+- don't require the deprecated length parameter
+
+* 五 5月 23 2003 Matt Wilson <msw@redhat.com> 1.99.16-3
+- add compatibility for deprecated length field in GtkTextBuffer
+  insert methods (#91519)
+
+* 四 5月 22 2003 Matt Wilson <msw@redhat.com> 1.99.16-2
+- apply atom_intern patch again (#91349)
+
+* 二 5月 20 2003 Matt Wilson <msw@redhat.com> 1.99.16-1
+- added a compatibility function for gtk.gdk.gc_new() so we won't have
+  to fix all our code quite yet
+
+* 一 5月 19 2003 Matt Wilson <msw@redhat.com> 1.99.16-1
+- enable threads (#83539, #87872)
+
+* 五 4月 11 2003 Jonathan Blandford <jrb@redhat.com> 1.99.16-1
+- new version
+
+* 四 3月 13 2003 Jeremy Katz <katzj@redhat.com> 1.99.14-7
+- and again
+
+* 四 3月 13 2003 Jeremy Katz <katzj@redhat.com> 1.99.14-6
+- rebuild in new environment
+
+* 三 3月 05 2003 Thomas Woerner <twoerner@redhat.com> 1.99.14-5
+- fixed new functions for ListStore, TreeStrore and ProgressBar
+
+* 四 2月 06 2003 Mihai Ibanescu <misa@redhat.com> 1.99.14-4
+- rebuild to use the UCS4-enabled python
+
+* 二 1月 28 2003 Jeremy Katz <katzj@redhat.com> 1.99.14-3
+- rerun auto* to use new python.m4 and work properly with multilib python
+- libdir-ize
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 五 12月 27 2002 Jeremy Katz <katzj@redhat.com> 1.99.14-1
+- bump version to 1.99.14
+- add patch to up the ref on gtkInvisible instantiation (#80283)
+
+* 四 12月 12 2002 Jonathan Blandford <jrb@redhat.com>
+- bump version to 1.99.13
+- backport gdk.Pixbuf.save
+
+* 四 10月 31 2002 Matt Wilson <msw@redhat.com>
+- rebuild for multilib
+- use %configure
+
+* 五 8月 30 2002 Matt Wilson <msw@redhat.com>
+- fix pixbuf leaks (#72137)
+- five more pixbuf leaks plugged
+
+* 三 8月 28 2002 Jonathan Blandford <jrb@redhat.com>
+- remover Packager tag
+
+* 二 8月 27 2002 Jonathan Blandford <jrb@redhat.com>
+- add binding for gdk_atom_intern
+
+* 一 7月 29 2002 Matt Wilson <msw@redhat.com>
+- 0.99.12
+
+* 三 7月 17 2002 Matt Wilson <msw@redhat.com>
+- new version from CVS
+
+* 四 6月 27 2002 Tim Waugh <twaugh@redhat.com>
+- Fix bug #65770.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 6月 17 2002 Matt Wilson <msw@redhat.com>
+- new version from CVS
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 5月 22 2002 Jeremy Katz <katzj@redhat.com>
+- 1.99.10
+
+* 三 2月 27 2002 Matt Wilson <msw@redhat.com>
+- 1.99.8
+
+* 一 1月 28 2002 Matt Wilson <msw@redhat.com>
+- added atkmodule.so to file list
+
+* 四 10月 18 2001 Matt Wilson <msw@redhat.com>
+- fix devel filelist to match new header location
+
+* 一 10月 15 2001 Matt Wilson <msw@redhat.com>
+- get the headers from their new version-specific location
+
+* 四 10月 11 2001 Matt Wilson <msw@redhat.com>
+- fixed typo in devel filelist
+- added macro that tests to see if we have libglade2, make the
+  filelist a condition of that
+- changed name to 'pygtk2' to avoid name conflict with pygtk
+

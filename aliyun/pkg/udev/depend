@@ -1,0 +1,40 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/chkconfig  
+/sbin/pidof  
+/sbin/service  
+/usr/bin/getent  
+/usr/bin/stat  
+/usr/sbin/groupadd  
+MAKEDEV >= 0:3.11
+config(udev) = 147-2.40.4.alios6
+fileutils  
+hwdata  
+libacl.so.1()(64bit)  
+libacl.so.1(ACL_1.0)(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.6)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libc.so.6(GLIBC_2.8)(64bit)  
+libc.so.6(GLIBC_2.9)(64bit)  
+libglib-2.0.so.0()(64bit)  
+libselinux >= 0:1.17.9-2
+libselinux.so.1()(64bit)  
+libusb-0.1.so.4()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+sed  
+util-linux-ng >= 2.15.1
+rpmlib(PayloadIsXz) <= 5.2-1

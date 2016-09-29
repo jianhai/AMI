@@ -1,0 +1,13 @@
+Name        : kernel-devel                 Relocations: (not relocatable)
+Version     : 2.6.32                            Vendor: Alibaba
+Release     : 220.23.2.al.ali1.1.alios6     Build Date: 2015年01月04日 星期日 15时18分40秒
+Install Date: 2015年03月25日 星期三 11时00分24秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Kernel     Source RPM: kernel-2.6.32-220.23.2.al.ali1.1.alios6.src.rpm
+Size        : 23948277                         License: GPLv2
+Signature   : RSA/8, 2015年01月06日 星期二 13时33分00秒, Key ID 320d98a196b4528d
+Packager    : gaoyang.zyh
+URL         : http://www.kernel.org/
+Summary     : Development package for building kernel modules to match the kernel
+Description :
+This package provides kernel headers and makefiles sufficient to build modules
+against the kernel package.

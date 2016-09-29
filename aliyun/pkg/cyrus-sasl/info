@@ -1,0 +1,14 @@
+Name        : cyrus-sasl                   Relocations: (not relocatable)
+Version     : 2.1.23                            Vendor: Alibaba
+Release     : 13.3.alios6                   Build Date: 2014年07月26日 星期六 02时36分58秒
+Install Date: 2015年03月25日 星期三 11时01分13秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: cyrus-sasl-2.1.23-13.3.alios6.src.rpm
+Size        : 132742                           License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 16时20分38秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://asg.web.cmu.edu/sasl/sasl-library.html
+Summary     : The Cyrus SASL library
+Description :
+The cyrus-sasl package contains the Cyrus implementation of SASL.
+SASL is the Simple Authentication and Security Layer, a method for
+adding authentication support to connection-based protocols.

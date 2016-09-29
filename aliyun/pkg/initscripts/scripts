@@ -1,0 +1,17 @@
+preinstall scriptlet (using /bin/sh):
+/usr/sbin/groupadd -g 22 -r -f utmp
+postinstall scriptlet (using /bin/sh):
+touch /var/log/wtmp /var/run/utmp /var/log/btmp
+chown root:utmp /var/log/wtmp /var/run/utmp /var/log/btmp
+chmod 664 /var/log/wtmp /var/run/utmp
+chmod 600 /var/log/btmp
+
+/sbin/chkconfig --add netfs
+/sbin/chkconfig --add network
+/sbin/chkconfig --add netconsole
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+  /sbin/chkconfig --del netfs
+  /sbin/chkconfig --del network
+  /sbin/chkconfig --del netconsole
+fi

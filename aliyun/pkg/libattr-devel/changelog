@@ -1,0 +1,180 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.4.44-7.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.4.44-7.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.4.44-7.1
+- rebuild for alios6
+
+* 一 8月 08 2011 Kamil Dudka <kdudka@redhat.com> 2.4.44-7
+- build with partial RELRO support as a security enhancement (#727307)
+
+* 一 6月 27 2011 Kamil Dudka <kdudka@redhat.com> 2.4.44-6
+- do not follow symlinks to directories with -h (#665049)
+
+* 一 6月 27 2011 Kamil Dudka <kdudka@redhat.com> 2.4.44-5
+- encode NULs properly with getfattr --encoding=text (#651119)
+- return non-zero exit code on failure of getfattr (#665050)
+- document supported encodings of values (#674870)
+- update project URL in package specification (#702639)
+
+* 四 6月 03 2010 Kamil Dudka <kdudka@redhat.com> 2.4.44-4
+- fix memory leak and possible double free (#599562)
+
+* 二 5月 25 2010 Kamil Dudka <kdudka@redhat.com> 2.4.44-3
+- let attr depend on the same version of libattr (#595689)
+
+* 三 3月 24 2010 Kamil Dudka <kdudka@redhat.com> 2.4.44-2
+- run the test-suite if possible
+
+* 四 1月 07 2010 Kamil Dudka <kdudka@redhat.com> 2.4.44-1
+- update to the latest bugfix release
+- cleanup in BuildRequires
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.4.43-4.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4.43-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4.43-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 2月 18 2009 Zdenek Prikryl <zprikryl@redhat.com> 2.4.43-2
+- Fixed memory leaks (#485473)
+
+* 三 7月 16 2008 Zdenek Prikryl <zprikryl@redhat.com> 2.4.43-1
+- New version 2.4.43
+
+* 一 7月 14 2008 Tom "spot" Callaway <tcallawa@redhat.com> 2.4.41-2
+- fix license tags
+
+* 三 2月 13 2008 Zdenek Prikryl <zprikryl@redhat.com> 2.4.41-1
+- New version 2.4.41
+- Removed useless attr-2.0.8-docperms.patch
+
+* 三 10月 31 2007 Zdenek Prikryl <zprikryl@redhat.com> 2.4.39-1
+- New version 2.4.39
+- Resolves #284121
+
+* 二 10月 30 2007 Zdenek Prikryl <zprikryl@redhat.com> 2.4.38-2
+- Removed explicit Requires(post + postun)
+- Resolves #225290
+
+* 二 7月 31 2007 Zdenek Prikryl <zprikryl@redhat.com> 2.4.38-1
+- New version 2.4.38
+- Resolves #245415
+
+* 五 2月 23 2007 Karsten Hopp <karsten@redhat.com> 2.4.32-2
+- add disttag
+- remove trailing dot from summary
+- fix buildroot
+- -devel package requires same libattr version
+- change prereq to Requires(post)
+- escape macro in changelog
+- replace absolute link with relative link (libattr.so)
+- use %doc macro
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.4.32-1.1
+- rebuild
+
+* 三 7月 05 2006 Thomas Woerner <twoerne@redhat.com> 2.4.32-1
+- new version 2.4.32
+- fixes segmentation fault in attr, which affects #189106
+
+* 三 6月 07 2006 Jeremy Katz <katzj@redhat.com> - 2.4.28-2
+- rebuild for -devel deps
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.4.28-1.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.4.28-1.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 2月 03 2006 Thomas Woerner <twoerner@redhat.com> 2.4.28-1
+- new version 2.4.28
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 12月 06 2005 Thomas Woerner <twoerner@redhat.com> 2.4.24-2
+- spec file cleanup
+- mark po files as lang specific
+
+* 日 11月 06 2005 Florian La Roche <laroche@redhat.com>
+- 2.4.24
+
+* 三 9月 28 2005 Than Ngo <than@redhat.com> 2.4.23-1
+- update to 2.4.23
+
+* 三 9月 28 2005 Than Ngo <than@redhat.com> 2.4.16-6
+- get rid of *.la files
+- remove duplicate doc files
+
+* 三 2月 09 2005 Stephen C. Tweedie <sct@redhat.com> 2.4.16-4
+- Rebuild
+
+* 五 9月 10 2004 Stephen C. Tweedie <sct@redhat.com> 2.4.16-3
+- Build requires libtool >= 1.5
+
+* 四 8月 19 2004 Phil Knirsch <pknirsch@redhat.com> 2.4.16-2
+- Make libattr.so.* executable.
+
+* 四 8月 19 2004 Phil Knirsch <pknirsch@redhat.com> 2.4.16-1
+- Update to latest upstream version.
+
+* 日 8月 08 2004 Alan Cox <alan@redhat.com> 2.4.1-6
+- Fix bug #125304 (Steve Grubb: build requires gettext)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 3月 31 2004 Stephen C. Tweedie <sct@redhat.com> 2.4.1-4
+- Add missing %defattr
+
+* 二 3月 30 2004 Stephen C. Tweedie <sct@redhat.com> 2.4.1-3
+- Add /usr/include/attr to files manifest
+- Fix location of doc files, add main doc dir to files manifest
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 8月 05 2003 Elliot Lee <sopwith@redhat.com> 2.4.1-2
+- Fix libtool
+
+* 二 6月 03 2003 Stephen C. Tweedie <sct@redhat.com> 2.4.1-1
+- update to attr-2.4.1
+
+* 二 1月 28 2003 Michael K. Johnson <johnsonm@redhat.com> 2.2.0-1
+- update/rebuild
+
+* 六 1月 04 2003 Jeff Johnson <jbj@redhat.com> 2.0.8-6
+- set execute bits on library so that requires are generated.
+
+* 四 11月 21 2002 Elliot Lee <sopwith@redhat.com> 2.0.8-5
+- Redo multilib patch to work everywhere
+
+* 三 9月 11 2002 Than Ngo <than@redhat.com> 2.0.8-4
+- Added fix to install libs in correct directory on 64bit machine
+
+* 四 8月 08 2002 Michael K. Johnson <johnsonm@redhat.com> 2.0.8-3
+- Made the package only own the one directory that is unique to it:
+  /usr/include/attr
+
+* 三 6月 26 2002 Michael K. Johnson <johnsonm@redhat.com> 2.0.8-2
+- get perl out of base with attr-2.0.8-docperms.patch
+
+* 一 6月 24 2002 Michael K. Johnson <johnsonm@redhat.com> 2.0.8-1
+- Initial Red Hat package
+  Made as few changes as possible relative to upstream packaging to
+  make it easier to maintain long-term.  This means that some of
+  the techniques used here are definitely not standard Red Hat
+  techniques.  If you are looking for an example package to fit
+  into Red Hat Linux transparently, this would not be the one to
+  pick.
+- attr-devel -> libattr-devel
+

@@ -1,0 +1,169 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.11-5.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.11-5.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.11-5.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.11-5.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.11-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.11-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 日 11月 23 2008 Matthias Clasen <mclasen@redhat.com> - 1.11-3
+- Fix an index generation problem
+
+* 五 11月 21 2008 Matthias Clasen <mclasen@redhat.com> - 1.11-2
+- Update to 1.11
+
+* 五 7月 25 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.10-2
+- fix license tag
+
+* 四 4月 24 2008 Matthias Clasen <mclasen@redhat.com> - 1.10-1
+- Update to 1.10
+
+* 二 1月 08 2008 Matthias Clasen <mclasen@redhat.com> - 1.9-4
+- Try again
+
+* 一 1月 07 2008 Matthias Clasen <mclasen@redhat.com> - 1.9-3
+- Improve the fix
+
+* 二 12月 18 2007 Matthias Clasen <mclasen@redhat.com> - 1.9-2
+- Fix a problem in gtk-doc.make
+
+* 日 11月 18 2007 Matthias Clasen <mclasen@redhat.com> - 1.9-1
+- Update to 1.9
+
+* 二 8月 07 2007 Matthias Clasen <mclasen@redhat.com> - 1.8-3
+- Update the license field
+
+* 四 3月 29 2007 Matthias Clasen <mclasen@redhat.com> - 1.8-2
+- Drop a no longer needed patch
+
+* 三 2月 21 2007 Matthias Clasen <mclasen@redhat.com> - 1.8-1
+- Update to 1.8
+- Fix some directory ownership issues
+
+* 五 2月 02 2007 Matthias Clasen <mclasen@redhat.com> - 1.7-3
+- Fix the omf file (#223684)
+
+* 三 12月 20 2006 Matthias Clasen <mclasen@redhat.com> - 1.7-2
+- Own the /usr/share/gtk-doc/html directory (#220230)
+
+* 三 8月 02 2006 Matthias Clasen <mclasen@redhat.com> - 1.7-1.fc6
+- Update to 1.7
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.6-3.1
+- rebuild
+
+* 一 5月 22 2006 Matthias Clasen <mclasen@redhat.com> 1.6-3
+- Make it build in mock
+
+* 一 4月 10 2006 Matthias Clasen <mclasen@redhat.com> 1.6-2
+- Update to 1.6
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 7月 06 2005 Matthias Clasen <mclasen@redhat.com> 1.4-1
+- update to 1.4
+
+* 四 5月 05 2005 Matthias Clasen <mclasen@redhat.com> 1.3-1
+- accept ':' in ids
+
+* 三 1月 26 2005 Matthias Clasen <mclasen@redhat.com> 1.3-1
+- update to 1.3
+
+* 二 9月 21 2004 Matthias Clasen <mclasen@redhat.com> 1.2-2
+- rebuild
+
+* 五 3月 12 2004 Alex Larsson <alexl@redhat.com> 1.2-1
+- update to 1.2
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 8月 28 2003 Owen Taylor <otaylor@redhat.com> 1.1-3.0
+- Move gtk-doc.pc file to %{_datadir}/pkgconfig (#98595)
+- Require: /usr/bin/cmp (#88763, Thomas Vander Stichele)
+- Added libxslt docbook-style-xsl to Require: and BuildPrereq
+  (#99143, Ken MacFarlane)
+
+* 二 7月 08 2003 Owen Taylor <otaylor@redhat.com> 1.1-2.0
+- Bump for rebuild
+
+* 四 6月 12 2003 Owen Taylor <otaylor@redhat.com> 1.1-1
+- Version 1.1
+
+* 三 4月 30 2003 Elliot Lee <sopwith@redhat.com> 0.10-6
+- Patch to s/head -1/head -n 1/ for ppc64 etc.
+
+* 三 2月 12 2003 Elliot Lee <sopwith@redhat.com> 0.10-5
+- BuildRequires: libxslt
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 1月 13 2003 Owen Taylor <otaylor@redhat.com> 0.10-3
+- Clean up some spec file mess
+
+* 一 1月 13 2003 Tim Powers <timp@redhat.com> 0.10-2
+- fiter out the broken perl dep
+
+* 日 1月 12 2003 Havoc Pennington <hp@redhat.com>
+- 0.10
+
+* 三 12月 11 2002 Tim Powers <timp@redhat.com> 0.9-6
+- rebuild
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 30 2002 Chip Turner <cturner@redhat.com>
+- add dependency filter for bogus perl dependencies
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 4月 25 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 四 4月 04 2002 Jeremy Katz <katzj@redhat.com>
+- update to 0.9
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- new cvs snap 0.7.90
+
+* 一 9月 17 2001 Matt Wilson <msw@redhat.com>
+- version 0.7
+
+* 四 5月 17 2001 Havoc Pennington <hp@redhat.com>
+- upgrade to a CVS snapshot
+- remove patches applied upstream
+
+* 二 1月 16 2001 Tim Waugh <twaugh@redhat.com>
+- Replace docbook, sgml-common, and stylesheets requirements with
+  docbook-utils requirement.
+- Use public identifier in custom stylesheets.
+
+* 四 12月 14 2000 Bill Nottingham <notting@redhat.com>
+- rebuild because of broken fileutils
+
+* 一 11月 13 2000 Owen Taylor <otaylor@redhat.com>
+- Version 0.4b1 (CVS snapshot)
+
+* 五 4月 23 1999 Owen Taylor <otaylor@redhat.com>
+- added Requires
+
+* 五 4月 23 1999 Owen Taylor <otaylor@redhat.com>
+- Initial RPM, version 0.2
+

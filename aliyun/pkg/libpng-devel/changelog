@@ -1,0 +1,343 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:1.2.46-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2:1.2.46-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2:1.2.46-1.1
+- rebuild for alios6
+
+* 四 7月 14 2011 Tom Lane <tgl@redhat.com> 2:1.2.46-1
+- Update to libpng 1.2.46, includes fixes for CVE-2011-2501, CVE-2011-2690,
+  CVE-2011-2691, CVE-2011-2692
+Resolves: #721305
+
+* 二 6月 29 2010 Tom Lane <tgl@redhat.com> 2:1.2.44-1
+- Update to libpng 1.2.44, includes fixes for CVE-2010-1205 and CVE-2010-2249
+Resolves: #609160
+
+* 一 3月 15 2010 Tom Lane <tgl@redhat.com> 2:1.2.43-1
+- Update to libpng 1.2.43, includes fix for CVE-2010-0205
+Resolves: #573763
+
+* 三 1月 20 2010 Tom Lane <tgl@redhat.com> 2:1.2.42-1
+- Update to libpng 1.2.42
+
+* 四 8月 20 2009 Tom Lane <tgl@redhat.com> 2:1.2.39-1
+- Update to libpng 1.2.39
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:1.2.37-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 6月 13 2009 Tom Lane <tgl@redhat.com> 2:1.2.37-1
+- Update to libpng 1.2.37, to fix CVE-2009-2042
+Related: #504782
+
+* 三 2月 25 2009 Tom Lane <tgl@redhat.com> 2:1.2.35-1
+- Update to libpng 1.2.35, to fix CVE-2009-0040
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2:1.2.34-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 09 2009 Tom Lane <tgl@redhat.com> 2:1.2.34-1
+- Update to libpng 1.2.34
+
+* 四 12月 11 2008 Caolán McNamara <caolanm@redhat.com> 2:1.2.33-2
+- rebuild to get provides pkgconfig(libpng)
+
+* 日 11月 02 2008 Tom Lane <tgl@redhat.com> 2:1.2.33-1
+- Update to libpng 1.2.33
+
+* 二 9月 09 2008 Tom Lane <tgl@redhat.com> 2:1.2.31-2
+- Apply upstream patch for zTXT buffer overrun (CVE-2008-3964)
+Related: #461599
+
+* 六 8月 23 2008 Tom Lane <tgl@redhat.com> 2:1.2.31-1
+- Update to libpng 1.2.31
+
+* 六 5月 31 2008 Tom Lane <tgl@redhat.com> 2:1.2.29-1
+- Update to libpng 1.2.29 (fixes low-priority security issue CVE-2008-1382)
+Related: #441839
+
+* 二 2月 12 2008 Tom Lane <tgl@redhat.com> 2:1.2.24-1
+- Update to libpng 1.2.24
+
+* 四 10月 18 2007 Tom Lane <tgl@redhat.com> 2:1.2.22-1
+- Update to libpng 1.2.22, primarily to fix CVE-2007-5269
+Related: #324771
+
+* 三 8月 22 2007 Tom Lane <tgl@redhat.com> 2:1.2.16-3
+- Update License tag
+- Rebuild to fix Fedora toolchain issues
+
+* 三 5月 23 2007 Tom Lane <tgl@redhat.com> 2:1.2.16-2
+- Add patch to fix CVE-2007-2445
+Related: #239542
+
+* 一 2月 12 2007 Tom Lane <tgl@redhat.com> 2:1.2.16-1
+- Update to libpng 1.2.16
+Resolves: #211705, #216706, #227334
+- Separate libpng.a into a -static subpackage
+- Other minor packaging fixes per Fedora merge review
+Resolves: #226038
+
+* 一 10月 02 2006 Jesse Keating <jkeating@redhat.com> - 2:1.2.10-7
+- Require pkgconfig in the -devel subpackage as it gets called by
+  /usr/bin/libpng-config
+
+* 四 7月 27 2006 Matthias Clasen <mclasen@redhat.com> - 2:1.2.10-6
+- Disable asm on arches other than i386  (#196580)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2:1.2.10-5.1
+- rebuild
+
+* 四 5月 25 2006 Matthias Clasen  <mclasen@redhat.com> - 2:1.2.10-5
+- Fix some paths in the -config script
+
+* 二 5月 23 2006 Matthias Clasen  <mclasen@redhat.com> - 2:1.2.10-4
+- fix multilib conflicts
+
+* 一 5月 22 2006 Matthias Clasen <mclasen@redhat.com> - 2:1.2.10-3
+- Add a comment about the need to keep static libraries
+
+* 一 5月 22 2006 Matthias Clasen <mclasen@redhat.com> - 2:1.2.10-2
+- Re-add static libraries
+
+* 四 5月 04 2006 Matthias Clasen  <mclasen@redhat.com>  - 2:1.2.10-1
+- Update to 1.2.10
+- Drop static libraries
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2:1.2.8-2.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2:1.2.8-2.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 3月 02 2005 Matthias Clasen <mclasen@redhat.com> - 2:1.2.8-2
+- Rebuild with gcc4
+
+* 一 12月 06 2004 Matthias Clasen <mclasen@redhat.com> - 2:1.2.8-1
+- Update to 1.2.8
+
+* 三 9月 15 2004 Matthias Clasen <mclasen@redhat.com> - 2:1.2.7-1
+- Update to 1.2.7
+
+* 二 8月 17 2004 Matthias Clasen <mclasen@redhat.com> - 2:1.2.6-1
+- Update to 1.2.6
+- Combine patches
+
+* 三 8月 04 2004 Matthias Clasen <mclasen@redhat.com> 2:1.2.5-9
+- Build for FC3
+
+* 五 7月 30 2004 Matthias Clasen <mclasen@redhat.com> 
+- Include LICENSE.
+
+* 五 7月 23 2004 Matthias Clasen <mclasen@redhat.com> 2:1.2.5-8
+- Build for FC2
+
+* 五 7月 23 2004 Matthias Clasen <mclasen@redhat.com> 2:1.2.5-7
+- Replace the patches for individual security problems with the
+  cumulative patch issued by the png developers. 
+- Build for FC1
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 6月 14 2004 Matthias Clasen <mclasen@redhat.com> - 2:1.2.5-5
+- Rebuild for FC2
+
+* 一 6月 14 2004 Matthias Clasen <mclasen@redhat.com> - 2:1.2.5-4
+- Rebuild for FC1
+
+* 一 6月 14 2004 Matthias Clasen <mclasen@redhat.com> - 2:1.2.5-3
+- Reinstate and improve the transfix patch which got lost sometime ago, 
+  but is still needed for CAN-2002-1363 (#125934)
+
+* 一 5月 24 2004 Than Ngo <than@redhat.com> 2:1.2.5-2
+- add patch to link libm automatically
+- get rid of rpath
+
+* 三 5月 19 2004 Matthias Clasen <mclasen@redhat.com> 2:1.2.5-1
+- 1.2.5
+
+* 一 5月 03 2004 Matthias Clasen <mclasen@redhat.com> 2:1.2.2-22
+- Redo the out-of-bounds fix in a slightly better way.
+
+* 三 4月 21 2004 Matthias Clasen <mclasen@redhat.com>
+- Bump release number to disambiguate n-v-rs.
+
+* 一 4月 19 2004 Matthias Clasen <mclasen@redhat.com> 
+- fix a possible out-of-bounds read in the error message 
+  handler. #121229
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 27 2004 Mark McLoughlin <markmc@redhat.com> 2:1.2.2-19
+- rebuild with changed bits/setjmp.h on ppc
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 03 2003 Jeff Johnson <jbj@redhat.com>
+- add explicit epoch's where needed.
+
+* 一 2月 24 2003 Jonathan Blandford <jrb@redhat.com> 2:1.2.2-15
+- change pkg-config to use libdir instead of hardcoding /usr/lib
+
+* 一 2月 24 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 2月 20 2003 Jonathan Blandford <jrb@redhat.com> 2:1.2.2-12
+- add Provides: libpng.so.3, #67007
+
+* 五 1月 24 2003 Jonathan Blandford <jrb@redhat.com>
+- change requires to include the Epoch
+
+* 四 1月 23 2003 Karsten Hopp <karsten@redhat.de> 2:1.2.2-11
+- Bump & rebuild
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 1月 15 2003 Elliot Lee <sopwith@redhat.com> 2:1.2.2-9
+- Bump & rebuild
+
+* 四 12月 12 2002 Tim Powers <timp@redhat.com> 2:1.2.2-7
+- merge changes in from -6hammer
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 5月 07 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.2-4
+- Don't own {_libdir}/pkgconfig
+- Don't strip library, that's up to rpm
+
+* 二 5月 07 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.2-3
+- Forgot png.h
+
+* 一 5月 06 2002 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.2-2
+- Fix compatibility with everyone else.
+
+* 四 5月 02 2002 Havoc Pennington <hp@redhat.com>
+- 1.2.2 plus makefile patches tarball
+- update file list to contain versioned libpng only
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 12月 17 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.1-1
+- 1.2.1
+
+* 三 9月 19 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.2.0-1
+- 1.2.0
+
+* 一 7月 16 2001 Trond Eivind Glomsrd <teg@redhat.com>
+- s/Copyright/License/
+- fix weird versioning system (epoch was set to "2" in the main
+  package, serial to "1" in the devel package. Huh?)
+
+* 三 6月 20 2001 Than Ngo <than@redhat.com> 1.0.12-1
+- update to 1.0.12
+- add missing libpng symlink
+
+* 四 5月 03 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.0.11-2
+- libpng-devel requires zlib-devel (since png.h includes zlib.h)
+  (#38883)
+
+* 三 5月 02 2001 Bernhard Rosenkraenzer <bero@redhat.com> 1.0.11-1
+- 1.0.11
+
+* 日 4月 15 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.0.10
+
+* 二 2月 06 2001 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.0.9, fixes Mozilla problems
+
+* 二 12月 12 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Rebuild to get rid of 0777 dirs
+
+* 三 11月 15 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Remove the workaround for Bug #20018 (from Oct 30).
+  Qt 2.2.2 fixes the problem the workaround addressed.
+
+* 一 10月 30 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- Work around a problem causing konqueror to segfault in image preview
+  mode (Bug #20018)
+- Copy SuSE 7.0's patch to handle bad chunks
+
+* 日 9月 03 2000 Florian La Roche <Florian.LaRoche@redhat.de>
+- only include the man5 man-pages once in the main rpm
+
+* 五 7月 28 2000 Preston Brown <pbrown@redhat.com>
+- upgrade to 1.0.8 - fixes small memory leak, other bugs
+
+* 四 7月 13 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 19 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- patchlevel c
+- FHSify
+
+* 二 3月 21 2000 Nalin Dahyabhai <nalin@redhat.com>
+- update to 1.0.6
+
+* 一 3月 13 2000 Nalin Dahyabhai <nalin@redhat.com>
+- change serial to Epoch to get dependencies working correctly
+
+* 五 2月 11 2000 Nalin Dahyabhai <nalin@redhat.com>
+- move buildroot and add URL
+
+* 六 2月 05 2000 Bernhard Rosenkraenzer <bero@redhat.com>
+- strip library
+- rebuild to compress man pages
+
+* 日 11月 21 1999 Bernhard Rosenkraenzer <bero@redhat.com>
+- 1.0.5
+- some tweaks to spec file to make updating easier
+- handle RPM_OPT_FLAGS
+
+* 一 9月 20 1999 Matt Wilson <msw@redhat.com>
+- changed requires in libpng-devel to include serial
+- corrected typo
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 2)
+
+* 日 2月 07 1999 Michael Johnson <johnsonm@redhat.com>
+- rev to 1.0.3
+
+* 四 12月 17 1998 Cristian Gafton <gafton@redhat.com>
+- build for 6.0
+
+* 三 9月 23 1998 Cristian Gafton <gafton@redhat.com>
+- we are Serial: 1 now because we are reverting the 1.0.2 version from 5.2
+  beta to this prior one
+- install man pages; set defattr defaults
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 4月 30 1998 Cristian Gafton <gafton@redhat.com>
+- devel subpackage moved to Development/Libraries
+
+* 三 4月 08 1998 Cristian Gafton <gafton@redhat.com>
+- upgraded to 1.0.1
+- added buildroot
+
+* 二 10月 14 1997 Donnie Barnes <djb@redhat.com>
+- updated to new version
+- spec file cleanups
+
+* 四 7月 10 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+

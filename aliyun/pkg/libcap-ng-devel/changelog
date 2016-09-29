@@ -1,0 +1,55 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.4-3.3.1
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.6.4-3.2.1
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.6.4-3.1.1
+- rebuild for alios6
+
+* 五 11月 05 2010 Steve Grubb <sgrubb@redhat.com> 0.6.4-3.el6.1
+resolves: #650131 - filecap segfaults
+
+* 四 6月 17 2010 Steve Grubb <sgrubb@redhat.com> 0.6.4-3
+resolves: #595673 - Crash in kernel by running 'filecap /dev/watchdog'
+
+* 一 5月 24 2010 Steve Grubb <sgrubb@redhat.com> 0.6.4-2
+resolves: #593635 - Capabilities can't be set on just a thread
+- Fix requires for the utils subpackage
+
+* 三 4月 28 2010 Steve Grubb <sgrubb@redhat.com> 0.6.2-5
+resolves: #580708 - filecap shows full capabilities if file has any
+
+* 二 2月 16 2010 Steve Grubb <sgrubb@redhat.com> 0.6.2-4
+- Use global macro and require pkgconfig for devel subpackage
+
+* 五 10月 09 2009 Steve Grubb <sgrubb@redhat.com> 0.6.2-3
+- Apply patch to retain setpcap only if clearing bounding set
+
+* 六 10月 03 2009 Steve Grubb <sgrubb@redhat.com> 0.6.2-2
+- Apply patch correcting pscap and netcap acct detection
+
+* 一 9月 28 2009 Steve Grubb <sgrubb@redhat.com> 0.6.2-1
+- New upstream release
+
+* 日 7月 26 2009 Steve Grubb <sgrubb@redhat.com> 0.6.1-1
+- New upstream release
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 6月 29 2009 Steve Grubb <sgrubb@redhat.com> 0.6-1
+- New upstream release
+
+* 日 6月 21 2009 Steve Grubb <sgrubb@redhat.com> 0.5.1-1
+- New upstream release
+
+* 五 6月 19 2009 Steve Grubb <sgrubb@redhat.com> 0.5-1
+- New upstream release
+
+* 五 6月 12 2009 Steve Grubb <sgrubb@redhat.com> 0.4.2-1
+- New upstream release
+
+* 五 6月 12 2009 Steve Grubb <sgrubb@redhat.com> 0.4.1-1
+- Initial build.
+

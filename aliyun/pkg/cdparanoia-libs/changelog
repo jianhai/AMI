@@ -1,0 +1,205 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 10.2-5.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 10.2-5.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 10.2-5.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 10.2-5.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 10.2-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 10.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 10 2009 Adam Jackson <ajax@redhat.com>
+- Merge review cleanups (not finished, #225638)
+
+* 二 2月 10 2009 Adam Jackson <ajax@redhat.com> 10.2-3
+- cdparanoia-10.2-endian.patch: Backport a crash fix for host/drive
+  endianness mismatch. (#466659)
+
+* 二 9月 30 2008 Kevin Kofler <Kevin@tigcc.ticalc.org> 10.2-2
+- fix cdda_interface.h C++ incompatibility (patch from upstream) (#463009)
+
+* 四 9月 11 2008 Adam Jackson <ajax@redhat.com> 10.2-1
+- cdparanoia 10.2
+
+* 三 8月 13 2008 Adam Jackson <ajax@redhat.com> 10.1-1
+- Update to 10.1, just changes the license back.
+
+* 二 7月 15 2008 Tom "spot" Callaway <tcallawa@redhat.com> 10.0-3
+- fix license tag
+- fix headers, setspeed patch to apply with fuzz=0
+
+* 四 6月 19 2008 Adam Jackson <ajax@redhat.com> 10.0-2
+- cdparanoia 10.
+
+* 四 3月 20 2008 Adam Jackson <ajax@redhat.com> alpha9.8-30
+- Add -Werror-implicit-function-declarations.
+- cdparanoia-III-alpha9.8-headers.patch: Fix the resulting errors.
+
+* 二 3月 04 2008 Adam Jackson <ajax@redhat.com> alpha9.8-29
+- cdparanoia-III-alpha9.8.scsi-setspeed.patch: Allow setting the speed of
+  SCSI CD drives. (#431178)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - alpha9.8-28.2
+- Autorebuild for GCC 4.3
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - alpha9.8-27.2
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - alpha9.8-27.1
+- bump again for double-long bug on ppc(64)
+
+* 三 2月 08 2006 Monty Montgomery <cmontgom@redhat.com> - alpha9.8-27
+- rebuilt
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - alpha9.8-26.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 六 10月 15 2005 Florian La Roche <laroche@redhat.com>
+- make sure shared libs are linked against respective other libs
+
+* 三 3月 16 2005 Peter Jones <pjones@redhat.com> alpha9.8-25
+- gcc4 rebuild and CFLAGS change
+
+* 三 2月 09 2005 Peter Jones <pjones@redhat.com> alpha9.8-24.2
+- Rebuild for new toolchain
+
+* 三 10月 06 2004 Peter Jones <pjones@redhat.com> alpha9.8-24
+- workaround for sgio read size issues in newer kernels.
+
+* 五 10月 01 2004 Peter Jones <pjones@redhat.com> alpha9.8-23
+- "This time, with a meaningful changelog" release.  Just like -22.
+- new SG_IO code in rawhide.  This means ripping will no longer use the 
+  "cooked ioctl" mode that it has since we moved to 2.6, instead utilizing
+  the real scsi-based command set to talk to most drives.  This should
+  result in better error correction handling, and usage of much more
+  commonly used kernel features.
+- environment variable "CDDA_TRANSPORT" added.  If you set this to "cooked",
+  cdparanoia will try to use the "cooked ioctl" mode instead of SCSI/SG_IO
+  based modes first, and then fall back to SG_IO.
+- It'd be good if this got some testing.  A prior version of the SG_IO code
+  was known to fail on some USB drives.  This version should mitigate that
+  quite a bit, but I lack the hardware to test it for sure.
+
+* 三 7月 07 2004 Peter Jones <pjones@redhat.com> alpha9.8-21sgio1
+- a new set of sgio patches
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 2月 17 2004 Peter Jones <pjones@redhat.com> alpha9.8-20
+- take ownership of /usr/include/cdda
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 20 2003 Peter Jones <pjones@redhat.com> alpha9.8-17
+- typo fix (g_fd -> fd)
+- add errno output
+
+* 二 5月 06 2003 Peter Jones <pjones@redhat.com> alpha9.8-16
+- fix warnings on switches
+- use O_EXCL
+
+* 二 2月 04 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- add symlinks to shared libs
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 12月 25 2002 Tim Powers <timp@redhat.com> alpha9.8-13
+- fix %install references in the changelog so that it will rebuild properly
+
+* 三 12月 11 2002 Tim Powers <timp@redhat.com> alpha9.8-12
+- rebuild on all arches
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 4月 03 2002 Peter Jones <pjones@redhat.com> alpha9.8-8
+- don't strip, let rpm do that
+
+* 一 2月 25 2002 Tim Powers <timp@redhat.com> alpha9.8-7
+- fix broken Obsoletes of cdparanoia-devel
+
+* 四 12月 06 2001 Peter Jones <pjones@redhat.com> alpha9.8-6
+- move includes to /usr/include/cdda/
+- add utils.h to %install
+- clean up %install some.
+
+* 日 11月 04 2001 Peter Jones <pjones@redhat.com> alpha9.8-5
+- make a -libs package which contains the .so files
+- make the cdparanoia dependancy towards that, not -devel
+
+* 四 8月 02 2001 Peter Jones <pjones@redhat.com>
+- bump the release not to conflict with on in the RH build tree :/
+- reverse devel dependency
+
+* 三 8月 01 2001 Peter Jones <pjones@redhat.com>
+- fix %post and %postun to only run ldconfig for devel packages
+
+* 三 7月 18 2001 Crutcher Dunnavant <crutcher@redhat.com>
+- devel now depends on package
+
+* 三 3月 28 2001 Peter Jones <pjones@redhat.com>
+- 9.8 release.
+
+* 二 2月 27 2001 Karsten Hopp <karsten@redhat.de>
+- fix spelling error in description
+
+* 四 12月 07 2000 Crutcher Dunnavant <crutcher@redhat.com>
+- rebuild for new tree
+
+* 五 7月 21 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- use %{_tmppath}
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 06 2000 Preston Brown <pbrown@redhat.com>
+- revert name change
+- use new rpm macro paths
+
+* 三 4月 19 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- Switched spec file from the one used in Red Hat Linux 6.2, which
+  also changes the name
+- gzip man page
+
+* 四 12月 23 1999 Peter Jones <pjones@redhat.com>
+- update package to provide cdparanoia-alpha9.7-2.*.rpm and 
+  cdparanoia-devel-alpha9.7-2.*.rpm.  Also, URLs point at xiph.org
+  like they should.
+
+* 三 12月 22 1999 Peter Jones <pjones@redhat.com>
+- updated package for alpha9.7, based on input from:
+  Monty <xiphmont@xiph.org> 
+  David Philippi <david@torangan.saar.de>
+
+* 一 4月 12 1999 Michael Maher <mike@redhat.com>
+- updated pacakge
+
+* 二 10月 06 1998 Michael Maher <mike@redhat.com>
+- updated package
+
+* 一 6月 29 1998 Michael Maher <mike@redhat.com>
+- built package
+

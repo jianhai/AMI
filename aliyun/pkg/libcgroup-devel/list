@@ -1,0 +1,12 @@
+/usr/include/libcgroup.h
+/usr/include/libcgroup/config.h
+/usr/include/libcgroup/error.h
+/usr/include/libcgroup/groups.h
+/usr/include/libcgroup/init.h
+/usr/include/libcgroup/iterators.h
+/usr/include/libcgroup/tasks.h
+/usr/lib64/libcgroup.so
+/usr/lib64/pkgconfig/libcgroup.pc
+/usr/share/doc/libcgroup-devel-0.37
+/usr/share/doc/libcgroup-devel-0.37/COPYING
+/usr/share/doc/libcgroup-devel-0.37/INSTALL

@@ -1,0 +1,17 @@
+Name        : xcb-util                     Relocations: (not relocatable)
+Version     : 0.3.6                             Vendor: Alibaba
+Release     : 1.4.alios6                    Build Date: 2014年07月27日 星期日 20时07分29秒
+Install Date: 2015年03月25日 星期三 11时00分00秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: xcb-util-0.3.6-1.4.alios6.src.rpm
+Size        : 110093                           License: MIT
+Signature   : RSA/8, 2014年07月31日 星期四 19时02分58秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://xcb.freedesktop.org
+Summary     : Convenience libraries sitting on top of libxcb
+Description :
+The xcb-util module provides a number of libraries which sit on top of
+libxcb, the core X protocol library, and some of the extension
+libraries. These experimental libraries provide convenience functions
+and interfaces which make the raw X protocol more usable. Some of the
+libraries also provide client-side code which is not strictly part of
+the X protocol but which have traditionally been provided by Xlib.

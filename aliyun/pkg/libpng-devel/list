@@ -1,0 +1,13 @@
+/usr/bin/libpng-config
+/usr/bin/libpng12-config
+/usr/include/libpng12
+/usr/include/libpng12/png.h
+/usr/include/libpng12/pngconf.h
+/usr/include/png.h
+/usr/include/pngconf.h
+/usr/lib64/libpng.so
+/usr/lib64/libpng12.so
+/usr/lib64/pkgconfig/libpng.pc
+/usr/lib64/pkgconfig/libpng12.pc
+/usr/share/man/man3/libpng.3.gz
+/usr/share/man/man3/libpngpf.3.gz

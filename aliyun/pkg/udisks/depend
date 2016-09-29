@@ -1,0 +1,41 @@
+/bin/bash  
+dbus >= 1.2
+dosfstools  
+e2fsprogs  
+libatasmart >= 0.12
+libatasmart.so.4()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libdbus-1.so.3()(64bit)  
+libdbus-glib-1.so.2()(64bit)  
+libdevmapper.so.1.02()(64bit)  
+libdevmapper.so.1.02(Base)(64bit)  
+libgio-2.0.so.0()(64bit)  
+libglib-2.0.so.0()(64bit)  
+libgmodule-2.0.so.0()(64bit)  
+libgobject-2.0.so.0()(64bit)  
+libgthread-2.0.so.0()(64bit)  
+libgudev-1.0.so.0()(64bit)  
+libparted-2.1.so.0()(64bit)  
+libpolkit-backend-1.so.0()(64bit)  
+libpolkit-gobject-1.so.0()(64bit)  
+libpthread.so.0()(64bit)  
+libpthread.so.0(GLIBC_2.2.5)(64bit)  
+librt.so.1()(64bit)  
+libsgutils2.so.2()(64bit)  
+libudev.so.0()(64bit)  
+mdadm >= 2.6.7
+mtools  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rtld(GNU_HASH)  
+smp_utils >= 0.94
+udev >= 145
+util-linux-ng  
+rpmlib(PayloadIsXz) <= 5.2-1

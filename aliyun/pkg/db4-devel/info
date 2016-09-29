@@ -1,0 +1,16 @@
+Name        : db4-devel                    Relocations: (not relocatable)
+Version     : 4.7.25                            Vendor: Alibaba
+Release     : 16.4.alios6                   Build Date: 2014年07月26日 星期六 03时05分58秒
+Install Date: 2015年03月25日 星期三 11时02分31秒      Build Host: x86-001.build.alibaba
+Group       : Development/Libraries         Source RPM: db4-4.7.25-16.4.alios6.src.rpm
+Size        : 25205065                         License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 16时21分01秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.oracle.com/database/berkeley-db/
+Summary     : C development files for the Berkeley DB (version 4) library
+Description :
+The Berkeley Database (Berkeley DB) is a programmatic toolkit that
+provides embedded database support for both traditional and
+client/server applications. This package contains the header files,
+libraries, and documentation for building programs which use the
+Berkeley DB.

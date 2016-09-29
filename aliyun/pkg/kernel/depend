@@ -1,0 +1,16 @@
+rpmlib(VersionedDependencies) <= 3.0.3-1
+fileutils  
+module-init-tools  
+initscripts >= 8.11.1-1
+kernel-firmware >= 2.6.32-220.23.2.al.ali1.1.alios6
+grubby >= 7.0.4-1
+dracut-kernel >= 002-18.git413bcf78
+/sbin/new-kernel-pkg  
+/sbin/new-kernel-pkg  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(PayloadIsXz) <= 5.2-1

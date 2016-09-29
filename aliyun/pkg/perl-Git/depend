@@ -1,0 +1,15 @@
+git = 1.7.1-2.4.alios6.1
+perl(:MODULE_COMPAT_5.10.1)  
+perl(Carp)  
+perl(Cwd)  
+perl(Error)  
+perl(Error)  
+perl(Exporter)  
+perl(Fcntl)  
+perl(IPC::Open2)  
+perl(strict)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,11 @@
+/usr/bin/pkg-config  
+libical = 0.43-5.1.4.alios6
+libical.so.0()(64bit)  
+libicalss.so.0()(64bit)  
+libicalvcal.so.0()(64bit)  
+pkgconfig  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,17 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+config(libXcursor) = 1.1.10-2.3.alios6
+libX11.so.6()(64bit)  
+libXcursor.so.1()(64bit)  
+libXfixes.so.3()(64bit)  
+libXrender.so.1()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

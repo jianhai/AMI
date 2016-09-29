@@ -1,0 +1,18 @@
+Name        : libnih                       Relocations: (not relocatable)
+Version     : 1.0.1                             Vendor: Alibaba
+Release     : 7.3.alios6                    Build Date: 2014年07月26日 星期六 12时39分48秒
+Install Date: 2015年03月25日 星期三 11时00分30秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: libnih-1.0.1-7.3.alios6.src.rpm
+Size        : 486830                           License: GPLv2
+Signature   : RSA/8, 2014年07月31日 星期四 17时16分09秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : https://launchpad.net/libnih
+Summary     : Lightweight application development library
+Description :
+libnih is a small library for C application development containing functions
+that, despite its name, are not implemented elsewhere in the standard library
+set.
+
+libnih is roughly equivalent to other C libraries such as glib, except that its
+focus is on a small size and intended for applications that sit very low in the
+software stack, especially outside of /usr.

@@ -1,0 +1,15 @@
+Name        : rt73usb-firmware             Relocations: (not relocatable)
+Version     : 1.8                               Vendor: Alibaba
+Release     : 7.4.alios6                    Build Date: 2014年07月28日 星期一 03时45分30秒
+Install Date: 2015年03月25日 星期三 11时02分53秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Kernel     Source RPM: rt73usb-firmware-1.8-7.4.alios6.src.rpm
+Size        : 4151                             License: Redistributable, no modification permitted
+Signature   : RSA/8, 2014年07月31日 星期四 18时41分36秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.ralinktech.com
+Summary     : Firmware for Ralink® RT2571W/RT2671 A/B/G network adaptors
+Description :
+This package contains the firmware required by the rt73usb driver for Linux.
+Usage of the firmware is subject to the terms and conditions contained
+inside the provided LICENSE.ralink-firmware.txt file.
+Please read it carefully.

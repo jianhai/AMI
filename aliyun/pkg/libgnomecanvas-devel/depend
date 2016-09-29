@@ -1,0 +1,18 @@
+/usr/bin/pkg-config  
+gtk-doc  
+gtk2-devel >= 2.1.2
+libart_lgpl-devel >= 2.3.8
+libglade2-devel >= 2.6.3-2
+libgnomecanvas = 2.26.0-4.3.alios6
+libgnomecanvas-2.so.0()(64bit)  
+pkgconfig  
+pkgconfig(gail)  
+pkgconfig(gtk+-2.0)  
+pkgconfig(libart-2.0)  
+pkgconfig(pango)  
+pkgconfig(pangoft2)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+rpmlib(PayloadIsXz) <= 5.2-1

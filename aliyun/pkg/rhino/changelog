@@ -1,0 +1,129 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0:1.7-0.7.r2.2.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0:1.7-0.7.r2.2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0:1.7-0.7.r2.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0:1.7-0.7.r2.2.1
+- rebuild for alios6
+
+* 一 1月 25 2010 Deepak Bhole <dbhole@redhat.com> - 0:1.7-0.7.r2.2
+- Updated license field
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0:1.7-0.7.r2.1
+- Rebuilt for RHEL 6
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.7-0.7.r2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 日 5月 31 2009 Toshio Kuratomi <toshio@fedoraproject.org> - 0:1.7-0.6.r2
+- Update to rhino1_7R2
+- Add patch from Steven Elliott to fix exception in the interpreter shell.
+
+* 一 4月 20 2009 Lillian Angel <langel@redhat.com> - 0:1.7-0.4.r2pre.1.1
+- Added jpackage-utils requirement.
+- Resolves: rhbz#496435
+
+* 四 3月 26 2009 Lillian Angel <langel@redhat.com> - 0:1.7-0.3.r2pre.1.1
+- Updated rhino-build.patch
+- License for treetable has been fixed. Re-included this code, and removed patch.
+- Resolves: rhbz#457336
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.7-0.2.r2pre.1.1
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 13 2009 Lillian Angel <langel@redhat.com> - 0:1.7-0.1.r2pre.1.1
+- Upgraded to 1.7r2pre.
+- Resolves: rhbz#485135
+
+* 四 7月 10 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 0:1.6-0.1.r5.1.3
+- drop repotag
+- fix license tag
+
+* 四 3月 15 2007 Matt Wringe <mwringe@redhat.com> 0:1.6-0.1.r5.1jpp.2
+- Remove script from build as the debugging tool is disabled due to it 
+  containing proprietary code from Sun.
+
+* 三 3月 07 2007 Deepak Bhole <dbhole@redhat.com> 0:1.6-0.1.r5.1jpp.1
+- Upgrade to 1.6r5
+- Change release per Fedora guidelines
+- Disable dependency on xmlbeans (optional component, not in Fedora yet)
+- Disable building of debugger tool, as it needs confidential code from Sun
+- Remove post/postuns for javadoc and add the two dirs as %doc
+
+* 三 6月 14 2006 Ralph Apel <r.apel@r-apel.de> 0:1.6-0.r2.2jpp
+- Add bea-stax-api in order to build xmlimpl classes
+
+* 三 5月 31 2006 Fernando Nasser <fnasser@redhat.com> 0:1.6-0.r2.1jpp
+- Upgrade to RC2
+
+* 一 4月 24 2006 Fernando Nasser <fnasser@redhat.com> 0:1.6-0.r1.2jpp
+- First JPP 1.7 build
+
+* 四 12月 02 2004 David Walluck <david@jpackage.org> 0:1.6-0.r1.1jpp
+- 1_6R1
+- add demo subpackage containing example code
+- add jpp release info to implementation version
+- add script to launch js shell
+- build E4X implementation (Requires: xmlbeans)
+- remove `Class-Path' from manifest
+
+* 二 8月 24 2004 Fernando Nasser <fnasser@redhat.com> - 0:1.5-1.R5.1jpp
+- Update to 1.5R5.
+- Rebuild with Ant 1.6.2
+
+* 六 7月 19 2003 Ville Skyttä <ville.skytta at iki.fi> - 0:1.5-1.R4.1.1jpp
+- Update to 1.5R4.1.
+- Non-versioned javadoc dir symlink.
+
+* 五 4月 11 2003 David Walluck <davdi@anti-microsoft.org> 0:1.5-0.R4.2jpp
+- remove build patches in favor of perl
+- add epoch
+
+* 日 3月 30 2003 Ville Skyttä <ville.skytta at iki.fi> - 1.5-0.r4.1jpp
+- Update to 1.5R4.
+- Rebuild for JPackage 1.5.
+
+* 三 5月 08 2002 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5-0.R3.1jpp
+- 1.5R3
+- versioned dir for javadoc
+
+* 日 3月 10 2002 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5-0.R2.9jpp
+- versioned compatibility symlink
+
+* 一 1月 21 2002 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5-0.R2.8jpp
+- section macro
+- new release scheme
+
+* 四 1月 17 2002 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5R2-7jpp
+- spec cleanup
+- changelog corrections
+
+* 五 1月 11 2002 2002 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5R2-6jpp
+- backward compatibility js.jar symlink
+- used original swing exemples archive
+- fixed javadoc empty package-list file
+- no dependencies for manual and javadoc packages
+
+* 六 12月 01 2001 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5R2-5jpp
+- javadoc in javadoc package
+- fixed offline build
+
+* 三 11月 21 2001 Christian Zoffoli <czoffoli@littlepenguin.org> 1.5R2-4jpp
+- changed extension --> jpp
+
+* 六 10月 06 2001 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5R2-3jpp
+- first unified release
+- s/jPackage/JPackage
+- corrected license to MPL
+
+* 六 9月 15 2001 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5R2-2mdk
+- spec cleanup
+- standardized cvs references
+
+* 五 8月 31 2001 Guillaume Rousse <guillomovitch@users.sourceforge.net> 1.5R2-1mdk
+- first Mandrake release
+

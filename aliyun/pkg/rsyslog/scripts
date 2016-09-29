@@ -1,0 +1,16 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add rsyslog
+for n in /var/log/{messages,secure,maillog,spooler}
+do
+	[ -f $n ] && continue
+	umask 066 && touch $n
+done
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+	service rsyslog stop >/dev/null 2>&1 ||:
+	/sbin/chkconfig --del rsyslog
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+	service rsyslog condrestart > /dev/null 2>&1 ||:
+fi

@@ -1,0 +1,12 @@
+/etc/portreserve
+/etc/rc.d/init.d/portreserve
+/sbin/portrelease
+/sbin/portreserve
+/usr/share/doc/portreserve-0.0.4
+/usr/share/doc/portreserve-0.0.4/COPYING
+/usr/share/doc/portreserve-0.0.4/ChangeLog
+/usr/share/doc/portreserve-0.0.4/NEWS
+/usr/share/doc/portreserve-0.0.4/README
+/usr/share/man/man1/portrelease.1.gz
+/usr/share/man/man1/portreserve.1.gz
+/var/run/portreserve

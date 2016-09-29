@@ -1,0 +1,16 @@
+Name        : kernel-headers               Relocations: (not relocatable)
+Version     : 2.6.32                            Vendor: Alibaba
+Release     : 220.23.2.al.ali1.1.alios6     Build Date: 2015年01月04日 星期日 15时18分40秒
+Install Date: 2015年03月25日 星期三 10时59分12秒      Build Host: x86-004.build.alibaba
+Group       : Development/System            Source RPM: kernel-2.6.32-220.23.2.al.ali1.1.alios6.src.rpm
+Size        : 2479065                          License: GPLv2
+Signature   : RSA/8, 2015年01月06日 星期二 13时33分03秒, Key ID 320d98a196b4528d
+Packager    : gaoyang.zyh
+URL         : http://www.kernel.org/
+Summary     : Header files for the Linux kernel for use by glibc
+Description :
+Kernel-headers includes the C header files that specify the interface
+between the Linux kernel and userspace libraries and programs.  The
+header files define structures and constants that are needed for
+building most standard programs and are also needed for rebuilding the
+glibc package.

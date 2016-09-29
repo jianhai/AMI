@@ -1,0 +1,48 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.75.2-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.75.2-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.75.2-4.1
+- rebuild for alios6
+
+* 二 2月 23 2010 Ondrej Vasik <ovasik@redhat.com> 1.75.2-4
+- fix the licenses, use better URL
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.75.2-3.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.75.2-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 22 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.2-2
+- upstream changed tarballs after release
+
+* 二 7月 21 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.2-1
+- new upstream release 1.75.2
+
+* 四 5月 28 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.1-1
+- new upstream release 1.75.1
+
+* 一 5月 11 2009 Ondrej Vasik <ovasik@redhat.com> 1.75.0-1
+- new upstream release 1.75.0
+
+* 三 3月 11 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.3-1
+- new upstream release 1.74.3
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.74.2-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 2月 20 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.2-1
+- new upstream release 1.74.2
+
+* 三 2月 18 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.1-1
+- new upstream release 1.74.1
+
+* 五 2月 13 2009 Ondrej Vasik <ovasik@redhat.com> 1.74.0-2
+- Ship VERSION file (#485297) , ship RELEASE-NOTES
+
+* 一 11月 10 2008 Ondrej Vasik <ovasik@redhat.com> 1.74.0-1
+- Initial Fedora release
+

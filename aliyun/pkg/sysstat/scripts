@@ -1,0 +1,9 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add sysstat
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ]; then
+  # Remove sa logs if removing sysstat completely
+  rm -f /var/log/sa/*
+  # Remove service
+  /sbin/chkconfig --del sysstat
+fi

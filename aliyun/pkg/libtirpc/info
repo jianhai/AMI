@@ -1,0 +1,21 @@
+Name        : libtirpc                     Relocations: (not relocatable)
+Version     : 0.2.1                             Vendor: Alibaba
+Release     : 5.3.alios6                    Build Date: 2014年07月26日 星期六 13时28分28秒
+Install Date: 2015年03月25日 星期三 10时59分40秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: libtirpc-0.2.1-5.3.alios6.src.rpm
+Size        : 172487                           License: SISSL and BSD
+Signature   : RSA/8, 2014年07月31日 星期四 17时19分58秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://nfsv4.bullopensource.org/
+Summary     : Transport Independent RPC Library
+Description :
+This package contains SunLib's implementation of transport-independent
+RPC (TI-RPC) documentation.  This library forms a piece of the base of
+Open Network Computing (ONC), and is derived directly from the
+Solaris 2.3 source.
+
+TI-RPC is an enhanced version of TS-RPC that requires the UNIX System V
+Transport Layer Interface (TLI) or an equivalent X/Open Transport Interface
+(XTI).  TI-RPC is on-the-wire compatible with the TS-RPC, which is supported
+by almost 70 vendors on all major operating systems.  TS-RPC source code
+(RPCSRC 4.0) remains available from several internet sites.

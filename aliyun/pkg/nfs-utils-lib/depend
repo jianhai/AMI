@@ -1,0 +1,26 @@
+/sbin/ldconfig  
+/sbin/ldconfig  
+/sbin/ldconfig  
+/sbin/ldconfig  
+config(nfs-utils-lib) = 1.1.5-4.4.alios6
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libdl.so.2()(64bit)  
+libdl.so.2(GLIBC_2.2.5)(64bit)  
+libgssglue  
+libgssglue.so.1()(64bit)  
+libgssglue.so.1(libgssapi_CITI_2)(64bit)  
+libldap-2.4.so.2()(64bit)  
+libnfsidmap.so.0()(64bit)  
+librpcsecgss.so.3()(64bit)  
+nfs-utils >= 1.2.1-11
+openldap  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

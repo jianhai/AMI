@@ -1,0 +1,11 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add ipmi
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+   service ipmi stop >/dev/null 2>&1
+   /sbin/chkconfig --del ipmi
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+    service ipmi condrestart >/dev/null 2>&1 || :
+fi

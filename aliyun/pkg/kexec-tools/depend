@@ -1,0 +1,34 @@
+/bin/bash  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/bin/sh  
+bc  
+busybox >= 1.2.0
+chkconfig  
+config(kexec-tools) = 2.0.0-209.4.alios6
+coreutils  
+dracut  
+kpartx  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libc.so.6(GLIBC_2.7)(64bit)  
+libdw.so.1()(64bit)  
+libdw.so.1(ELFUTILS_0.122)(64bit)  
+libdw.so.1(ELFUTILS_0.143)(64bit)  
+libelf.so.1()(64bit)  
+libelf.so.1(ELFUTILS_1.0)(64bit)  
+libz.so.1()(64bit)  
+mdadm  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+sed  
+zlib  
+rpmlib(PayloadIsXz) <= 5.2-1

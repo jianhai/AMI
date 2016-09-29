@@ -1,0 +1,88 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.20-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.20-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.20-5.1
+- rebuild for alios6
+
+* 一 7月 18 2011 Michal Hlavinka <mhlavink@redhat.com> - 1.0.20-5
+- fixes integer overflow by processing certain PAF audio files (#722842)
+
+* 一 6月 27 2011 Michal Hlavinka <mhlavink@redhat.com> - 1.0.20-4
+- enable libvorbis support (#664323)
+
+* 一 2月 01 2010 Stepan Kasal <skasal@redhat.com> - 1.0.20-3
+- Fix the Source0: URL
+- Fix the licence tag
+
+* 四 8月 27 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.0.20-2.2
+- Do not build against Jack on RHEL
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.20-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 六 6月 06 2009 Lennart Poettering <lpoetter@redhat.com> - 1.0.20-1
+- Updated to 1.0.20
+
+* 二 3月 03 2009 Robert Scheck <robert@fedoraproject.org> - 1.0.17-8
+- Rebuilt against libtool 2.2
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.17-7
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 10月 25 2008 Andreas Thienemann <andreas@bawue.net> - 1.0.17-6
+- Removed spurious #endif in the libsndfile.h wrapper. Thx to Edward
+  Sheldrake for finding it. Fixes #468508.
+- Fix build for autoconf-2.63
+
+* 四 10月 23 2008 Andreas Thienemann <andreas@bawue.net> - 1.0.17-5
+- Fixed multilib conflict. #342401
+- Made flac support actually work correctly.
+
+* 四 8月 07 2008 Tom "spot" Callaway <tcallawa@redhat.com> - 1.0.17-4
+- fix license tag
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.0.17-3
+- Autorebuild for GCC 4.3
+
+* 四 9月 20 2007 Andreas Thienemann <andreas@bawue.net> - 1.0.17-2
+- Adding FLAC support to libsndfile courtesy of gentoo, #237575
+- Fixing CVE-2007-4974. Thanks to the gentoo people for the patch, #296221
+
+* 五 9月 08 2006 Andreas Thienemann <andreas@bawue.net> - 1.0.17-1
+- Updated to 1.0.17
+
+* 日 4月 30 2006 Andreas Thienemann <andreas@bawue.net> - 1.0.16-1
+- Updated to 1.0.16
+
+* 四 3月 30 2006 Andreas Thienemann <andreas@bawue.net> - 1.0.15-1
+- Updated to 1.0.15
+
+* 四 3月 16 2006 Dams <anvil[AT]livna.org> - 1.0.14-1.fc5
+- Updated to 1.0.14
+- Dropped patch0
+
+* 四 5月 12 2005 Michael Schwendt <mschwendt[AT]users.sf.net> - 1.0.11-3
+- rebuilt
+
+* 六 3月 05 2005 Michael Schwendt <mschwendt[AT]users.sf.net> - 1.0.11-2
+- Fix format string bug (#149863).
+- Drop explicit Epoch 0.
+
+* 六 12月 04 2004 Ville Skyttä <ville.skytta at iki.fi> - 0:1.0.11-0.fdr.1
+- Update to 1.0.11.
+
+* 三 10月 13 2004 Ville Skyttä <ville.skytta at iki.fi> - 0:1.0.10-0.fdr.1
+- Update to 1.0.10, update URLs, include ALSA support.
+- Disable dependency tracking to speed up the build.
+- Add missing ldconfig invocations.
+- Make -devel require pkgconfig.
+- Include developer docs in -devel.
+- Provide -octave in main package, own more related dirs.
+- Bring specfile up to date with current spec templates.
+
+* 六 4月 12 2003 Dams <anvil[AT]livna.org>
+- Initial build.
+

@@ -1,0 +1,58 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+
+umask 0022
+# Deriving /etc/pango/$host location
+#
+# autoconf changes linux to linux-gnu
+case "x86_64-koji-linux-gnu" in
+  *linux) host="x86_64-koji-linux-gnu-gnu"
+  ;;
+  *) host="x86_64-koji-linux-gnu"
+  ;;
+esac
+
+# autoconf uses powerpc not ppc
+host=`echo $host | sed "s/^ppc/powerpc/"`
+# autoconf uses ibm-linux not redhat-linux (s390x)
+host=`echo $host | sed "s/^s390\(x\)*-redhat/s390\1-ibm/"`
+
+case "$host" in
+  alpha*|ia64*|powerpc64*|s390x*|sparc64*|x86_64*)
+   /usr/bin/pango-querymodules-64 > /etc/pango/$host/pango.modules
+   ;;
+  *)
+   /usr/bin/pango-querymodules-32 > /etc/pango/$host/pango.modules
+   ;;
+esac
+postuninstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+
+if test $1 -gt 0; then
+
+umask 0022
+# Deriving /etc/pango/$host location
+#
+# autoconf changes linux to linux-gnu
+case "x86_64-koji-linux-gnu" in
+  *linux) host="x86_64-koji-linux-gnu-gnu"
+  ;;
+  *) host="x86_64-koji-linux-gnu"
+  ;;
+esac
+
+# autoconf uses powerpc not ppc
+host=`echo $host | sed "s/^ppc/powerpc/"`
+# autoconf uses ibm-linux not redhat-linux (s390x)
+host=`echo $host | sed "s/^s390\(x\)*-redhat/s390\1-ibm/"`
+
+case "$host" in
+  alpha*|ia64*|powerpc64*|s390x*|sparc64*|x86_64*)
+   /usr/bin/pango-querymodules-64 > /etc/pango/$host/pango.modules || :
+   ;;
+  *)
+   /usr/bin/pango-querymodules-32 > /etc/pango/$host/pango.modules || :
+   ;;
+esac
+
+fi

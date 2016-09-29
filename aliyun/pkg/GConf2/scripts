@@ -1,0 +1,9 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+
+if [ $1 -gt 1 ]; then
+    if ! fgrep -q gconf.xml.system /etc/gconf/2/path; then
+        sed -i -e 's@xml:readwrite:$(HOME)/.gconf@&\n\n# Location for system-wide settings.\nxml:readonly:/etc/gconf/gconf.xml.system@' /etc/gconf/2/path
+    fi
+fi
+postuninstall program: /sbin/ldconfig

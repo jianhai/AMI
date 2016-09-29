@@ -1,0 +1,9 @@
+/etc/anacrontab
+/etc/cron.hourly/0anacron
+/usr/sbin/anacron
+/usr/share/man/man5/anacrontab.5.gz
+/usr/share/man/man8/anacron.8.gz
+/var/spool/anacron
+/var/spool/anacron/cron.daily
+/var/spool/anacron/cron.monthly
+/var/spool/anacron/cron.weekly

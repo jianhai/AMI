@@ -1,0 +1,19 @@
+Name        : lsscsi                       Relocations: (not relocatable)
+Version     : 0.23                              Vendor: Alibaba
+Release     : 2.3.alios6                    Build Date: 2014年07月26日 星期六 15时31分45秒
+Install Date: 2015年03月25日 星期三 11时02分48秒      Build Host: x86-003.build.alibaba
+Group       : Applications/System           Source RPM: lsscsi-0.23-2.3.alios6.src.rpm
+Size        : 77234                            License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 17时23分19秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sg.danny.cz/scsi/lsscsi.html
+Summary     : List SCSI devices (or hosts) and associated information
+Description :
+Uses information provided by the sysfs pseudo file system in Linux kernel
+2.6 series to list SCSI devices or all SCSI hosts. Includes a "classic"
+option to mimic the output of "cat /proc/scsi/scsi" that has been widely
+used prior to the lk 2.6 series.
+
+Author:
+--------
+    Doug Gilbert <dgilbert(at)interlog(dot)com>

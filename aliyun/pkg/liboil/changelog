@@ -1,0 +1,173 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3.16-4.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.3.16-4.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.3.16-4.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.3.16-4.1
+- Rebuilt for RHEL 6
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.16-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 10 2009 Bastien Nocera <bnocera@redhat.com> 0.3.16-3
+- Fix ordering of the files members
+
+* 三 6月 10 2009 Bastien Nocera <bnocera@redhat.com> 0.3.16-2
+- Update with comments from merge review (#226036)
+
+* 四 3月 26 2009 - Behdad Esfahbod <besfahbo@redhat.com> - 0.3.16-1
+- Update to 0.3.16
+- Remove upstreamed patches
+- Resolves #489861
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.3.14-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 12月 11 2008 Caolán McNamara <caolanm@redhat.com> - 0.3.14-2
+- rebuild to get provides pkgconfig(liboil-0.3)
+
+* 一 4月 07 2008 Colin Walters <walters@redhat.com> - 0.3.14-1
+- New upstream version
+- Drop upstreamed liboil-0.3.13-better-altivec-detect.patch
+- Drop upstreamed clobber-ecx.patch
+
+* 三 3月 12 2008 - Bastien Nocera <bnocera@redhat.com> - 0.3.13-6
+- Disable PPC64 optimisations as rgb2bgr_ppc() crashes on 64-bit
+
+* 二 3月 11 2008 - Bastien Nocera <bnocera@redhat.com> - 0.3.13-5
+- Detect Altivec using /proc instead of causing a SIGILL fault
+
+* 一 3月 10 2008 - Bastien Nocera <bnocera@redhat.com> - 0.3.13-4
+- Try disabling Altivec for now
+
+* 二 2月 26 2008 Matthias Clasen  <mclasen@redhat.com> - 0.3.13-3
+- Use the upstream fix instead
+
+* 一 2月 25 2008 Matthias Clasen  <mclasen@redhat.com> - 0.3.13-2
+- Work around a segfault by compiling the offending file with -O0 for now
+
+* 五 2月 22 2008 Matthias Clasen  <mclasen@redhat.com> - 0.3.13-1
+- Update to 0.3.13
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.3.12-12
+- Autorebuild for GCC 4.3
+
+* 五 9月 07 2007 - Bastien Nocera <bnocera@redhat.com> - 0.3.12-11
+- Revert the previous commit, it's still broken, see:
+  http://koji.fedoraproject.org/koji/taskinfo?taskID=151172
+
+* 四 8月 30 2007 - David Woodhouse <dwmw2@infradead.org> - 0.3.12-10
+- Re-enable explicit Altivec but don't let the compiler use it automatically
+- Start applying the ppc64-configure patch again
+
+* 四 8月 23 2007 - Bastien Nocera <bnocera@redhat.com> - 0.3.12-9
+- Disable Altivec so we don't crash on non-Altivec PPCs, see
+  https://bugzilla.redhat.com/bugzilla/process_bug.cgi#c16
+
+* 四 8月 16 2007 - Bastien Nocera <bnocera@redhat.com> - 0.3.12-8
+- And another go at fixing #252179
+
+* 三 8月 15 2007 - Bastien Nocera <bnocera@redhat.com> - 0.3.12-7
+- Add upstream patch to not crash on PPC machines without Altivec
+  (hopefully this time the right one) (#252179)
+
+* 二 8月 14 2007 - Bastien Nocera <bnocera@redhat.com> - 0.3.12-6
+- Revert previous change it's not the fix
+
+* 二 8月 14 2007 - Bastien Nocera <bnocera@redhat.com> - 0.3.12-5
+- Add upstream patch to not crash on PPC machines without Altivec
+  (#252179)
+
+* 日 8月 05 2007 Matthias Saou <http://freshrpms.net/> 0.3.12-4
+- Update License field.
+- Remove standard gcc-c++ build requirement.
+- Spec file cleanup, only consistency changes.
+- Remove standard rpath from oil-bugreport.
+
+* 一 6月 04 2007 - Bastien Nocera <bnocera@redhat.com> - 0.3.12-3
+- Add patch from David Woodhouse <dwmw2@redhat.com> to allow building
+  on ppc64 systems (#242418)
+
+* 一 6月 04 2007 Christopher Aillon <caillon@redhat.com> - 0.3.12-2
+- ExcludeArch: ppc64 for now as it fails to build (#242418)
+
+* 一 6月 04 2007 Christopher Aillon <caillon@redhat.com> - 0.3.12-1
+- Update to 0.3.12
+
+* 二 11月 21 2006 Behdad Esfahbod <besfahbo@redhat.com> - 0.3.10-1
+- Update to 0.3.10
+
+* 一 10月 23 2006 Matthias Clasen <mclasen@redhat.com> - 0.3.9-1
+- Update to 0.3.9
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.3.8-2.1
+- rebuild
+
+* 一 3月 27 2006 Ray Strode <rstrode@redhat.com> 0.3.8-2
+- Update to 0.3.8 (bug 186930)
+
+* 二 3月 21 2006 Matthias Saou <http://freshrpms.net/> 0.3.7.1-1
+- Update to today's CVS code which should fix the PPC build issue.
+- Include new oil-bugreport tool in the devel package.
+
+* 一 3月 06 2006 Matthias Saou <http://freshrpms.net/> 0.3.7-3
+- FC5 rebuild (well, try at least since PPC fixes are required).
+
+* 四 2月 09 2006 Matthias Saou <http://freshrpms.net/> 0.3.7-2
+- Rebuild for new gcc/glibc.
+
+* 五 2月 03 2006 Matthias Saou <http://freshrpms.net/> 0.3.7-1
+- Update to 0.3.7.
+
+* 三 12月 14 2005 Matthias Saou <http://freshrpms.net/> 0.3.6-1
+- Update to 0.3.6.
+
+* 一 11月 14 2005 Matthias Saou <http://freshrpms.net/> 0.3.5-3
+- Sync spec files across branches.
+- Parallel make seems to have worked for 0.3.5 on devel, but just in case...
+
+* 六 11月 12 2005 Thomas Vander Stichele <thomas at apestaart dot org> 0.3.5-2
+- Trigger rebuild.
+
+* 六 11月 12 2005 Thomas Vander Stichele <thomas at apestaart dot org> 0.3.5-1
+- Update to 0.3.5.
+
+* 三 10月 12 2005 Matthias Saou <http://freshrpms.net/> 0.3.3-3
+- Add patch to disable unrecognized "-fasm-blocks" gcc option on PPC.
+
+* 二 10月 04 2005 Matthias Saou <http://freshrpms.net/> 0.3.3-2
+- Update to 0.3.3.
+- Update liboil-0.3.3-gccoptfixes.patch.
+
+* 四 6月 16 2005 Thomas Vander Stichele <thomas at apestaart dot org> 0.3.2-2
+- Disable parallel make
+
+* 三 5月 25 2005 Matthias Saou <http://freshrpms.net/> 0.3.2-1
+- Update to 0.3.2.
+- Change ldconfig calls to be the program.
+- Include new gtk-doc files in the devel package.
+- add dist macro.
+
+* 二 5月 24 2005 Tom "spot" Callaway <tcallawa@redhat.com> - 0.3.0-4
+- fix compilation error in FC-4 (bz #158641)
+- use buildtime exported CFLAGS instead of making up its own
+
+* 日 5月 22 2005 Jeremy Katz <katzj@redhat.com> - 0.3.0-3
+- rebuild on all arches
+
+* 四 4月 07 2005 Michael Schwendt <mschwendt[AT]users.sf.net>
+- rebuilt
+
+* 五 1月 28 2005 Matthias Saou <http://freshrpms.net/> 0.3.0-1
+- Update to 0.3.0.
+
+* 三 11月 24 2004 Matthias Saou <http://freshrpms.net/> 0.2.2-1
+- Update to 0.2.2.
+
+* 四 11月 04 2004 Matthias Saou <http://freshrpms.net/> 0.2.0-1
+- Initial RPM release.
+

@@ -1,0 +1,10 @@
+/sbin/rngd
+/usr/bin/rngtest
+/usr/share/doc/rng-tools-2
+/usr/share/doc/rng-tools-2/AUTHORS
+/usr/share/doc/rng-tools-2/COPYING
+/usr/share/doc/rng-tools-2/ChangeLog
+/usr/share/doc/rng-tools-2/NEWS
+/usr/share/doc/rng-tools-2/README
+/usr/share/man/man1/rngtest.1.gz
+/usr/share/man/man8/rngd.8.gz

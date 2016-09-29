@@ -1,0 +1,383 @@
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:3.17-16.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:3.17-16.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:3.17-16.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:3.17-16.1
+- rebuild for alios6
+
+* 一 3月 21 2011 Petr Pisar <ppisar@redhat.com> - 1:3.17-16
+- Fix repquota to get latest quota info header (bug #688161)
+
+* 五 3月 11 2011 Petr Pisar <ppisar@redhat.com> - 1:3.17-15
+- Fix ddquot buffer leak (bug #684017)
+
+* 三 2月 09 2011 Petr Pisar <ppisar@redhat.com> - 1:3.17-14
+- Fix vfsv0 format detection (bug #609795)
+- Initialize vfsold block and inode value boundries for new quota file
+  (bug #668709)
+
+* 五 2月 04 2011 Petr Pisar <ppisar@redhat.com> - 1:3.17-13
+- Correct spec file comment (bug #634137)
+- Add quotasync tool (bug #658586)
+- Implement quotacheck for GFS2 (bug #658586)
+
+* 五 2月 04 2011 Petr Pisar <ppisar@redhat.com> - 1:3.17-12
+- Do not own common directories under /etc (bug #634137)
+- Store quota_nld PID into PID file (bug #634137)
+- Do not allow non-root to control quota_nld service (bug #634137)
+
+* 五 1月 14 2011 Petr Pisar <ppisar@redhat.com> - 1:3.17-11
+- Add support for 64-bit vfsv1 quota format (bugs #609795, #669598)
+- Use /proc/mounts for mountpoint scanning (#623656)
+- Add quota_nld deamon init script (bug #634137)
+- Comment example quotatab to silent warnquota (bug #663027)
+- Add GFS2 query support via RPC (bug #547748)
+- Document --always-resolve option (bug #662997)
+- Use rq_bsize to convert quotas transferred by RPC (bug #667755)
+- Make RPC block factor dynamic (bug #667755)
+- Check whether set limits fit into the range supported by quota format
+  (bug #668709)
+- Check set limits fit into the range supported by RPC transport (bug #668710)
+
+* 二 5月 25 2010 Petr Pisar <ppisar@redhat.com> 1:3.17-10
+- Do not pass NULL to quotactl(2) (#589478)
+
+* 一 2月 22 2010 Daniel Novotny <dnovotny@redhat.com> 1:3.17-9
+- fix #566718 -  quota: incorrect use of tcp_wrappers
+
+* 三 9月 30 2009 Ondrej Vasik <ovasik@redhat.com> 1:3.17-8
+- add buildrequires for quota_nld, enable-netlink to build
+  quota_nld (#526047)
+
+* 五 9月 18 2009 Ondrej Vasik <ovasik@redhat.com> 1:3.17-7
+- Fix headers and structs in quotactl manpage(#524138)
+
+* 五 8月 28 2009 Ondrej Vasik <ovasik@redhat.com> 1:3.17-6
+- symlink manpage for rpc.rquotad
+
+* 日 7月 26 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:3.17-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 3月 13 2009 Ondrej Vasik <ovasik@redhat.com> 1:3.17-4
+- clarify statements about LDAP in warnquota conf
+  (related to #490106)
+- fix parsing issue in warnquota.c(#490125)
+- enable rpcsetquota by default(#159292, #469753)
+
+* 五 3月 13 2009 Ondrej Vasik <ovasik@redhat.com> 1:3.17-3
+- add missing buildrequires needed to compile with
+  enable-ldapmail=try option with LDAP(#490106)
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:3.17-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 1月 13 2009 Ondrej Vasik <ovasik@redhat.com> 1:3.17-1
+- new upstream release, remove already applied patches
+
+* 一 12月 08 2008 Ondrej Vasik <ovasik@redhat.com> 1:3.16-8
+- fix documentation inconsistency (now rpc(3) instead of
+  rpc(3N) in rquotad manpage) (#474836)
+
+* 五 11月 14 2008 Ondrej Vasik <ovasik@redhat.com> 1:3.16-7
+- fix quotaoff --help output (was same as quotaon output)
+
+* 四 10月 30 2008 Ondrej Vasik <ovasik@redhat.com> 1:3.16-6
+- fix implementation of ext4 support
+  (by Mingming Cao, #469127)
+
+* 三 9月 10 2008 Ondrej Vasik <ovasik@redhat.com> 1:3.16-5
+- fix rpmlint warnings - absolute symlink and not using epoch
+  in version in changelog (#226353)
+- rquota headers and manpage now in devel subpackage
+
+* 三 8月 27 2008 Ondrej Vasik <ovasik@redhat.com> 3.16-4
+- fix bug in warnquota which could result in bogus hostname
+  and domainname (upstream)
+- remove IMMUTABLE flag from quota file in quotacheck(upstream)
+
+* 二 8月 05 2008 Ondrej Vasik <ovasik@redhat.com> 3.16-3
+- Add support for -h option (do not show invalid option
+  error) at edquota,setquota and quota (#457898)
+
+* 五 6月 20 2008 Ondrej Vasik <ovasik@redhat.com> 3.16-2
+- upstream fix of some typos, string formats + 4TB+ fix
+  for repquota
+- some additional stripping removal
+- change default mode of binaries from 555 to 755
+  (strip error messages in build log)
+
+* 三 4月 23 2008 Ondrej Vasik <ovasik@redhat.com> 3.16-1
+- own directory of rpcsvc headers(#442143)
+- new upstream release
+
+* 三 3月 12 2008 Ondrej Vasik <ovasik@redhat.com> 3.15-6
+- added enable-ldapmail=try option(wonder how #133207
+  got closed by FC-4 without it or warnquota.conf change)
+- dropped with-ext2direct=no option - this option is 
+  invalid and original bug was fixed in 3.07
+
+* 四 3月 06 2008 Ondrej Vasik <ovasik@redhat.com> 3.15-5
+- added symbolic link for quotaoff man page(#436110)
+- don't ship xqmstats.8 man page as we don't ship those
+  binaries(#436100)
+
+* 四 2月 21 2008 Ondrej Vasik <ovasik@redhat.com> 3.15-4
+- added pointers to quota_nld and warnquota to some 
+  manpages(upstream, #83975)
+
+* 二 2月 12 2008 Ondrej Vasik <ovasik@redhat.com> 3.15-3
+- allow to build with rpcsetquota enabled(disabled by
+  default, #159292)
+- rebuild for gcc43
+
+* 四 1月 24 2008 Steve Dickson <SteveD@RedHat.com> 3.15-2
+- More review comments:
+    - BuiltPreReq to BuiltReq
+    - Removed '.' From Summary
+    - Added 'GPLv2+' to License Tag
+	- Condensed the _sysconfdir entries in to one line
+
+* 四 1月 24 2008 Steve Dickson <SteveD@RedHat.com> 3.15-1
+- Upgraded to version 3.15 
+- Updated spec file per Merge Review (bz 226353)
+
+* 四 2月 15 2007 Steve Dickson <SteveD@RedHat.com> 3.14-1
+- Upgraded to version 3.14 (bz# 213641)
+
+* 一 12月 04 2006 Thomas Woerner <twoerner@redhat.com> 1:3.13-1.3
+- tcp_wrappers has a new devel and libs sub package, therefore changing build
+  requirement for tcp_wrappers to tcp_wrappers-devel
+
+* 三 11月 01 2006 Steve Dickson <SteveD@RedHat.com> 1:3.13-1.2.3.2
+- Added range checking on -p flag (bz 205145)
+- Error message prints garbage characters (bz 201226)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1:3.13-1.2.3.1
+- rebuild
+
+* 五 6月 30 2006 Steve Dickson <steved@redhat.com> - 1:3.13-1.2.3
+- fix 192826 - quota config files should not be overwritten
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1:3.13-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1:3.13-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 10月 31 2005 Steve Dickson <steved@redhat.com> 3.13-1
+- Upgraded to version 3.13 (bz# 171245)
+
+* 四 8月 18 2005 Florian La Roche <laroche@redhat.com>
+- change the "Requires: kernel" into a "Conflicts:"
+
+* 日 9月 26 2004 Rik van Riel <riel@redhat.com> 3.12-5
+- add URL (bz# 131862)
+
+* 五 9月 24 2004 Steve Dickson <SteveD@RedHat.com>
+- Fixed typos in warnquota.conf patch 
+  (bz# 82250 and bz# 83974)
+
+* 一 9月 13 2004 Steve Dickson <SteveD@RedHat.com>
+- upgraded to 3.12
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 1月 27 2004 Florian La Roche <Florian.LaRoche@redhat.de>
+- add -pie support
+- update to 3.10
+
+* 六 8月 16 2003 Steve Dickson <SteveD@RedHat.com>
+- upgraded to 3.0.9
+- added quota-3.09-root_sbindir.patch
+
+* 日 8月 10 2003 Elliot Lee <sopwith@redhat.com> 3.06-11
+- Rebuild
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 27 2003 Steve Dickson <SteveD@RedHat.com>
+- rebuilt for 7.3 errata
+
+* 二 2月 25 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 日 2月 23 2003 Tim Powers <timp@redhat.com>
+- add buildprereq on tcp_wrappers
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 一 11月 18 2002 Tim Powers <timp@redhat.com>
+- rebuild on all arches
+
+* 五 9月 06 2002 Philip Copeland <bryce@redhat.com> 3.06-5
+- added --with-ext2direct=no to fix #73244
+  without this users with UID's > 65535 will not
+  be able to exist on a quota enabled FS
+
+* 三 8月 07 2002 Philip Copeland <bryce@redhat.com> 3.06-4
+- Man page change. #60108
+
+* 二 8月 06 2002 Philip Copeland <bryce@redhat.com> 3.06-3
+- Bah, I'd dropped epoch from the spec file but seems
+  we need this if you want to upgrade as the epoch
+  number has precedence over the version/release
+  numbers.
+
+* 三 7月 17 2002 Philip Copeland <bryce@redhat.com> 3.06-2
+- Lets stop the makefile from stripping the
+  binaries as thats rpms job (apparently)
+
+* 一 7月 01 2002 Philip Copeland <bryce@redhat.com> 3.06-1
+- Ditched the 3.01-pre9 src base for 3.06
+  Rebuilt without any patchs
+
+============================================================
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 2月 25 2002 Elliot Lee <sopwith@redhat.com>
+- IfArch the badkernelinclude patch for ppc-only.
+- Update to 3.03
+
+* 三 12月 12 2001 Guy Streeter <streeter@redhat.com>
+- Make #include of kernel header file work on non-x86
+
+* 三 9月 05 2001 Preston Brown <pbrown@redhat.com>
+- require new initscripts
+
+* 四 8月 30 2001 Preston Brown <pbrown@redhat.com>
+- fixed bug #52075 (problem with ext2 labels)
+- backup data files off by default in quotacheck, optional backup flag added
+- fix bug where giving a bad directory or device would cause 
+  quotaon/quotacheck to simulate "-a" behaviour
+- if a device name (i.e /dev/hda1) is passed, look up the corresponding mount
+  point
+
+* 三 8月 29 2001 Preston Brown <pbrown@redhat.com>
+- return an error code in more cases in convertquota
+
+* 二 8月 28 2001 Preston Brown <pbrown@redhat.com>
+- 3.01pre9
+
+* 五 7月 20 2001 Preston Brown <pbrown@redhat.com>
+- more cleanups on 3.01pre8
+
+* 一 7月 02 2001 Preston Brown <pbrown@redhat.com>
+- 3.01 version, everything has changed again. :(
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 五 3月 30 2001 Preston Brown <pbrown@redhat.com>
+- use rpc.rquotad from here again (#33738)
+
+* 四 3月 15 2001 Preston Brown <pbrown@redhat.com>
+- enable ALT_FORMAT for edquota
+
+* 二 3月 13 2001 Preston Brown <pbrown@redhat.com>
+- I broke passing devices on the cmd line.  Fixed.
+
+* 五 3月 09 2001 Preston Brown <pbrown@redhat.com>
+- quota 3.00 is required by recent kernel 2.4 changes
+- no warnquota included this time, not yet ported
+- quite a bit of work on quotacheck to make is backwards compatible
+- we will likely go back to "quota 2.00" as these projects merge...
+
+* 五 2月 09 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- use "rm -f" instead of only "rm"
+
+* 三 2月 07 2001 Preston Brown <pbrown@redhat.com>
+- fix quotacheck man page for -a option (#26380)
+
+* 四 2月 01 2001 Preston Brown <pbrown@redhat.com>
+- 2.00 final, rolls in pretty much all our patches. :)
+- fix reporting of in use dquot entries from quotastats
+- change repquota man page to fix documentation of -v (#10330)
+- include warnquota.conf
+
+* 一 11月 20 2000 Bill Nottingham <notting@redhat.com>
+- fix ia64 build
+
+* 一 8月 21 2000 Jeff Johnson <jbj@redhat.com>
+- add LABEL=foo support (#16390).
+
+* 四 7月 27 2000 Jeff Johnson <jbj@redhat.com>
+- remote NFS quotas with different blocksize converted incorrectly (#11932).
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 四 6月 15 2000 Jeff Johnson <jbj@redhat.com>
+- FHS packaging.
+
+* 三 5月 10 2000 Jeff Johnson <jbj@redhat.com>
+- apply patch5 (H.J. Lu)
+
+* 三 2月 02 2000 Cristian Gafton <gafton@redhat.com>
+- fix description
+- man pages are compressed
+
+* 二 1月 18 2000 Preston Brown <pbrown@redhat.com>
+- quota 2.00 series
+- removed unnecessary patches
+
+* 四 8月 05 1999 Jeff Johnson <jbj@redhat.com>
+- fix man page FUD (#4369).
+
+* 四 5月 13 1999 Peter Hanecak <hanecak@megaloman.sk>
+- changes to allow non-root users to build too (Makefile patch, %attr)
+
+* 二 4月 13 1999 Jeff Johnson <jbj@redhat.com>
+- fix for sparc64 quotas (#2147)
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 5)
+
+* 一 12月 28 1998 Cristian Gafton <gafton@redhat.com>
+- don't install rpc.rquotad - we will use the one from the knfsd package
+  instead
+
+* 四 12月 17 1998 Jeff Johnson <jbj@redhat.com>
+- merge ultrapenguin 1.1.9 changes.
+
+* 四 5月 07 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 四 4月 30 1998 Cristian Gafton <gafton@redhat.com>
+- removed patch for mntent
+
+* 五 3月 27 1998 Jakub Jelinek <jj@ultra.linux.cz>
+- updated to quota 1.66
+
+* 二 1月 13 1998 Erik Troan <ewt@redhat.com>
+- builds rquotad
+- installs rpc.rquotad.8 symlink
+
+* 一 10月 20 1997 Erik Troan <ewt@redhat.com>
+- removed /usr/include/rpcsvc/* from filelist
+- uses a buildroot and %attr
+
+* 四 6月 19 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
+* 二 3月 25 1997 Erik Troan <ewt@redhat.com>
+- Moved /usr/sbin/quota to /usr/bin/quota
+

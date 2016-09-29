@@ -1,0 +1,6 @@
+postinstall scriptlet (using /bin/sh):
+[ -f /var/lib/plymouth/boot-duration ] || cp -f /usr/share/plymouth/default-boot-duration /var/lib/plymouth/boot-duration
+postuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ]; then
+    rm -f /boot/initrd-plymouth.img
+fi

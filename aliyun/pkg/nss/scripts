@@ -1,0 +1,28 @@
+postinstall scriptlet (using /bin/sh):
+# If we upgrade, and the shared filename is a regular file, then we must
+# remove it, before we can install the alternatives symbolic link.
+if [ $1 -gt 1 ] ; then
+  # when upgrading or downgrading
+  if ! test -L /usr/lib64/libnssckbi.so; then
+    rm -f /usr/lib64/libnssckbi.so
+  fi
+fi
+# Install the symbolic link
+# FYI: Certain other packages use alternatives --set to enforce that the first
+# installed package is preferred. We don't do that. Highest priority wins.
+/usr/sbin/update-alternatives --install /usr/lib64/libnssckbi.so \
+  libnssckbi.so.x86_64 /usr/lib64/nss/libnssckbi.so 10
+/sbin/ldconfig
+postuninstall scriptlet (using /bin/sh):
+if [ $1 -eq 0 ] ; then
+  # package removal
+  /usr/sbin/update-alternatives --remove libnssckbi.so.x86_64 /usr/lib64/nss/libnssckbi.so
+else
+  # upgrade or downgrade
+  # If the new installed package uses a regular file (not a symblic link),
+  # then cleanup the alternatives link.
+  if ! test -L /usr/lib64/libnssckbi.so; then
+    /usr/sbin/update-alternatives --remove libnssckbi.so.x86_64 /usr/lib64/nss/libnssckbi.so
+  fi
+fi
+/sbin/ldconfig

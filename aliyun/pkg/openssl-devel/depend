@@ -1,0 +1,12 @@
+/usr/bin/pkg-config  
+krb5-devel  
+libcrypto.so.10()(64bit)  
+libssl.so.10()(64bit)  
+openssl = 1.0.1e-30.alios6.5
+pkgconfig  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+zlib-devel  
+rpmlib(PayloadIsXz) <= 5.2-1

@@ -1,0 +1,15 @@
+/usr/bin/flac
+/usr/bin/metaflac
+/usr/lib64/libFLAC++.so.6
+/usr/lib64/libFLAC++.so.6.2.0
+/usr/lib64/libFLAC.so.8
+/usr/lib64/libFLAC.so.8.2.0
+/usr/share/doc/flac-1.2.1
+/usr/share/doc/flac-1.2.1/AUTHORS
+/usr/share/doc/flac-1.2.1/COPYING.FDL
+/usr/share/doc/flac-1.2.1/COPYING.GPL
+/usr/share/doc/flac-1.2.1/COPYING.LGPL
+/usr/share/doc/flac-1.2.1/COPYING.Xiph
+/usr/share/doc/flac-1.2.1/README
+/usr/share/man/man1/flac.1.gz
+/usr/share/man/man1/metaflac.1.gz

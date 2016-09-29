@@ -1,0 +1,14 @@
+/bin/sh  
+/bin/sh  
+/usr/bin/perl  
+docbook-dtds  
+openjade  
+perl(File::Basename)  
+perl(Getopt::Std)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+sgml-common  
+sgml-common  
+sgml-common  
+rpmlib(PayloadIsXz) <= 5.2-1

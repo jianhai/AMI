@@ -1,0 +1,15 @@
+Name        : sgml-common                  Relocations: (not relocatable)
+Version     : 0.6.3                             Vendor: Alibaba
+Release     : 32.4.alios6                   Build Date: 2014年07月28日 星期一 04时35分00秒
+Install Date: 2015年03月25日 星期三 10时59分50秒      Build Host: x86-003.build.alibaba
+Group       : Applications/Text             Source RPM: sgml-common-0.6.3-32.4.alios6.src.rpm
+Size        : 135735                           License: GPL+
+Signature   : RSA/8, 2014年07月31日 星期四 18时45分15秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.w3.org/2003/entities/
+Summary     : Common SGML catalog and DTD files
+Description :
+The sgml-common package contains a collection of entities and DTDs
+that are useful for processing SGML, but that don't need to be
+included in multiple packages.  Sgml-common also includes an
+up-to-date Open Catalog file.

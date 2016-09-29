@@ -1,0 +1,123 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.7.0-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.7.0-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.7.0-1.1
+- rebuild for alios6
+
+* 四 12月 03 2009 Jan Zeleny <jzeleny@redhat.com> - 0.7.0-1
+- rebased to 0.7.0
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.9-5
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.6.9-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 12月 23 2008 Zdenek Prikryl <zprikryl@redhat.com> - 0.6.9-3
+- Fixed wrong total disk counts (#476935)
+
+* 四 12月 04 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.6.9-2
+- Rebuild for Python 2.6
+
+* 四 12月 04 2008 Zdenek Prikryl <zprikryl@redhat.com> - 0.6.9-1
+- Updated to 0.6.9
+- Fixed dbus module patch again
+
+* 一 12月 01 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 0.6.8-2
+- Rebuild for Python 2.6
+
+* 二 9月 16 2008 Zdenek Prikryl <zprikryl@redhat.com> - 0.6.8-1
+- Updated to 0.6.8
+- Fixed dbus module patch
+
+* 五 4月 25 2008 Radek Brich <rbrich@redhat.com> - 0.6.7-3
+- fix dbus module (new dbus-python interface since FC4)
+
+* 四 3月 27 2008 Radek Brich <rbrich@redhat.com> - 0.6.7-2
+- fixes for interrupt stats:
+  * traceback when called with unknown name of interrupt (bz#439143)
+  * allow '-I total' option (bz#439146)
+
+* 三 3月 19 2008 Radek Brich <rbrich@redhat.com> - 0.6.7-1
+- Release 0.6.7
+- Drop upstream patches
+
+* 五 1月 18 2008 Radek Brich <rbrich@redhat.com> - 0.6.6-3
+- Fix --nocolor and --raw (upstream patches)
+- Fix errors in man page
+
+* 二 9月 04 2007 Radek Brich <rbrich@redhat.com> - 0.6.6-2
+- Updated license tag.
+- Spec clean up.
+
+* 二 5月 01 2007 Scott Baker <scott@perturb.org> - 0.6.6-1
+- Bumped to latest release
+
+* 三 4月 18 2007 Scott Baker <scott@perturb.org> - 0.6.5-1
+- Bumped to latest release
+
+* 二 12月 12 2006 Scott Baker <scott@perturb.org> - 0.6.4-1
+- Bumped to 0.6.4
+
+* 五 8月 11 2006 Scott Baker <scott@perturb.org> - 0.6.3-5
+- Removed the execute permission from the examples directory
+- Fixed the changelog to remove the replaceable %clean
+
+* 二 7月 25 2006 Scott Baker <scott@perturb.org> - 0.6.3-4
+- Removed some commeted lines in the .spec file that weren't needed
+- Changed the permissions on the examples/* scripts
+- Converted the HTML documentation to unix line endings
+- Removed the erroneous commenting of the %clean section of the .spec
+
+* 五 7月 21 2006 Scott Baker <scott@perturb.org> - 0.6.3-3
+- Packaged for Fedora Extras.
+
+* 一 6月 26 2006 Dag Wieers <dag@wieers.com> - 0.6.3-1 - 4303+/dries
+- Updated to release 0.6.3.
+
+* 四 3月 09 2006 Dag Wieers <dag@wieers.com> - 0.6.2-1
+- Updated to release 0.6.2.
+
+* 一 9月 05 2005 Dag Wieers <dag@wieers.com> - 0.6.1-1
+- Updated to release 0.6.1.
+
+* 日 5月 29 2005 Dag Wieers <dag@wieers.com> - 0.6.0-1
+- Updated to release 0.6.0.
+
+* 五 4月 08 2005 Dag Wieers <dag@wieers.com> - 0.5.10-1
+- Updated to release 0.5.10.
+
+* 一 3月 28 2005 Dag Wieers <dag@wieers.com> - 0.5.9-1
+- Updated to release 0.5.9.
+
+* 二 3月 15 2005 Dag Wieers <dag@wieers.com> - 0.5.8-1
+- Updated to release 0.5.8.
+
+* 五 12月 31 2004 Dag Wieers <dag@wieers.com> - 0.5.7-1
+- Updated to release 0.5.7.
+
+* 一 12月 20 2004 Dag Wieers <dag@wieers.com> - 0.5.6-1
+- Updated to release 0.5.6.
+
+* 四 12月 02 2004 Dag Wieers <dag@wieers.com> - 0.5.5-1
+- Updated to release 0.5.5.
+
+* 四 11月 25 2004 Dag Wieers <dag@wieers.com> - 0.5.4-1
+- Updated to release 0.5.4.
+- Use dstat15 if distribution uses python 1.5.
+
+* 日 11月 21 2004 Dag Wieers <dag@wieers.com> - 0.5.3-1
+- Updated to release 0.5.3.
+
+* 六 11月 13 2004 Dag Wieers <dag@wieers.com> - 0.5.2-1
+- Updated to release 0.5.2.
+
+* 四 11月 11 2004 Dag Wieers <dag@wieers.com> - 0.5.1-1
+- Updated to release 0.5.1.
+
+* 二 10月 26 2004 Dag Wieers <dag@wieers.com> - 0.4-1
+- Initial package. (using DAR)
+

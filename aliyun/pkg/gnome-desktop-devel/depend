@@ -1,0 +1,19 @@
+/usr/bin/pkg-config  
+glib2-devel >= 2.15.4
+gnome-desktop = 2.28.2-8.4.alios6
+gnome-doc-utils >= 0.3.2
+gtk-doc >= 1.9
+gtk2-devel >= 2.11.3
+libgnome-desktop-2.so.11()(64bit)  
+libgnomecanvas-devel >= 2.0.0
+libgnomeui-devel >= 2.2.0
+libxml2-devel >= 2.4.20
+pkgconfig  
+pkgconfig(gtk+-2.0)  
+pkgconfig(libstartup-notification-1.0)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+startup-notification-devel >= 0.5
+rpmlib(PayloadIsXz) <= 5.2-1

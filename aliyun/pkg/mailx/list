@@ -1,0 +1,13 @@
+/bin/mail
+/bin/mailx
+/etc/mail.rc
+/usr/bin/Mail
+/usr/bin/nail
+/usr/share/doc/mailx-12.4
+/usr/share/doc/mailx-12.4/AUTHORS
+/usr/share/doc/mailx-12.4/COPYING
+/usr/share/doc/mailx-12.4/README
+/usr/share/man/man1/Mail.1.gz
+/usr/share/man/man1/mail.1.gz
+/usr/share/man/man1/mailx.1.gz
+/usr/share/man/man1/nail.1.gz

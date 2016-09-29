@@ -1,0 +1,22 @@
+Name        : nc                           Relocations: (not relocatable)
+Version     : 1.84                              Vendor: Alibaba
+Release     : 22.3.alios6                   Build Date: 2014年07月26日 星期六 20时33分39秒
+Install Date: 2015年03月25日 星期三 11时00分25秒      Build Host: x86-004.build.alibaba
+Group       : Applications/Internet         Source RPM: nc-1.84-22.3.alios6.src.rpm
+Size        : 111583                           License: BSD
+Signature   : RSA/8, 2014年07月31日 星期四 17时35分01秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.openbsd.org/cgi-bin/cvsweb/src/usr.bin/nc/
+Summary     : Reads and writes data across network connections using TCP or UDP
+Description :
+The nc package contains Netcat (the program is actually nc), a simple
+utility for reading and writing data across network connections, using
+the TCP or UDP protocols. Netcat is intended to be a reliable back-end
+tool which can be used directly or easily driven by other programs and
+scripts.  Netcat is also a feature-rich network debugging and
+exploration tool, since it can create many different connections and
+has many built-in capabilities.
+
+You may want to install the netcat package if you are administering a
+network and you'd like to use its debugging and network exploration
+capabilities.

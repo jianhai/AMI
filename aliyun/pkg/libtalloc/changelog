@@ -1,0 +1,36 @@
+* 一 7月 28 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.0.7-2.2
+- rebuild
+
+* 四 7月 17 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.0.7-2.1
+- rebuild for alios6-update
+
+* 一 10月 08 2012 Jakub Hrozek <jhrozek@redhat.com> - 2.0.7-2
+- Obsolete older pytalloc{,-devel} releases to clear the upgrade path
+  towards non-multilib pytalloc
+- Resolves: rhbz#862062
+
+* 四 8月 02 2012 Jakub Hrozek <jhrozek@redhat.com> - 2.0.7-1
+- New upstream version, resolves rhbz #766335
+- Build python bindings to satisfy Samba4 BuildRequires
+
+* 二 12月 15 2009 Simo Sorce <ssorce@redhat.com> - 2.0.1-1.1
+- New version from upstream
+- Also stop building the compat lib, it is not necessary anymore
+
+* 二 9月 08 2009 Simo Sorce <ssorce@redhat.com> - 2.0.0-0
+- New version from upstream.
+- Build also sover 1 compat library to ease packages migration
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 6月 17 2009 Simo Sorce <ssorce@redhat.com> - 1.3.1-1
+- Original tarballs had a screw-up, rebuild with new fixed tarballs from
+  upstream.
+
+* 二 6月 16 2009 Simo Sorce <ssorce@redhat.com> - 1.3.1-0
+- New Upstream release.
+
+* 三 5月 06 2009 Simo Sorce <ssorce@redhat.com> - 1.3.0-0
+- First public independent release from upstream
+

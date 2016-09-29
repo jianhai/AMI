@@ -1,0 +1,14 @@
+Name        : pkgconfig                    Relocations: (not relocatable)
+Version     : 0.23                              Vendor: Alibaba
+Release     : 9.1.4.alios6                  Build Date: 2014年07月27日 星期日 18时17分38秒
+Install Date: 2015年03月25日 星期三 10时59分26秒      Build Host: x86-003.build.alibaba
+Group       : Development/Tools             Source RPM: pkgconfig-0.23-9.1.4.alios6.src.rpm
+Size        : 140091                           License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 18时04分23秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://pkgconfig.freedesktop.org
+Summary     : A tool for determining compilation options
+Description :
+The pkgconfig tool determines compilation options. For each required
+library, it reads the configuration file and outputs the necessary
+compiler and linker flags.

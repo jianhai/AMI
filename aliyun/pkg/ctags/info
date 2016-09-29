@@ -1,0 +1,26 @@
+Name        : ctags                        Relocations: (not relocatable)
+Version     : 5.8                               Vendor: Alibaba
+Release     : 2.3.alios6                    Build Date: 2014年07月26日 星期六 02时23分08秒
+Install Date: 2015年03月25日 星期三 11时02分49秒      Build Host: x86-004.build.alibaba
+Group       : Development/Tools             Source RPM: ctags-5.8-2.3.alios6.src.rpm
+Size        : 347124                           License: GPLv2+ or Public Domain
+Signature   : RSA/8, 2014年07月31日 星期四 16时19分51秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://ctags.sourceforge.net/
+Summary     : A C programming language indexing and/or cross-reference tool
+Description :
+Ctags generates an index (or tag) file of C language objects found in
+C source and header files.  The index makes it easy for text editors or
+other utilities to locate the indexed items.  Ctags can also generate a
+cross reference file which lists information about the various objects
+found in a set of C language files in human readable form.  Exuberant
+Ctags improves on ctags because it can find all types of C language tags,
+including macro definitions, enumerated values (values inside enum{...}),
+function and method definitions, enum/struct/union tags, external
+function prototypes, typedef names and variable declarations.  Exuberant
+Ctags is far less likely to be fooled by code containing #if preprocessor
+conditional constructs than ctags.  Exuberant ctags supports output of
+Emacs style TAGS files and can be used to print out a list of selected
+objects found in source files.
+
+Install ctags if you are going to use your system for C programming.

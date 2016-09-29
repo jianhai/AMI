@@ -1,0 +1,17 @@
+Name        : xmlrpc-c-client              Relocations: (not relocatable)
+Version     : 1.16.24                           Vendor: Alibaba
+Release     : 1200.1840.4.alios6.4          Build Date: 2014年07月27日 星期日 20时26分49秒
+Install Date: 2015年03月25日 星期三 11时00分07秒      Build Host: x86-003.build.alibaba
+Group       : System Environment/Libraries   Source RPM: xmlrpc-c-1.16.24-1200.1840.4.alios6.4.src.rpm
+Size        : 44336                            License: BSD and MIT
+Signature   : RSA/8, 2014年07月31日 星期四 19时04分12秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://xmlrpc-c.sourceforge.net/
+Summary     : C client libraries for xmlrpc-c
+Description :
+XML-RPC is a quick-and-easy way to make procedure calls over the
+Internet. It converts the procedure call into XML document, sends it
+to a remote server using HTTP, and gets back the response as XML.
+
+This library provides a modular implementation of XML-RPC for C
+clients.

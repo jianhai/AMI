@@ -1,0 +1,357 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.2.0-1.4
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 6.2.0-1.3
+- rebuild
+
+* 五 7月 11 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 6.2.0-1.1
+- rebuild for alios6
+
+* 三 4月 02 2014 Ruohan Chen <ruohan.chen@alibaba-inc.com> 6.2.0-1
+- Initial build for AliOS
+
+* 四 5月 26 2011 Ralph Angenendt <ralph@centos.org> 60.0.14-10
+- Fix KDE issues, fix firstboot issues, add wallpaper with logo
+
+* 五 12月 03 2010 Marcus Moeller <mmoeller@fedoraproject.org> 60.0.14-8
+- Updated ksplash preview image
+
+* 五 12月 03 2010 Marcus Moeller <mmoeller@fedoraproject.org> 60.0.14-8
+- Updated ksplash image 
+- removed old file
+
+* 一 11月 22 2010 Marcus Moeller <mmoeller@fedoraproject.org> 60.0.14-7
+- Added firstboot workstation logo
+- Updated Plymouth logo
+
+* 五 11月 19 2010 Marcus Moeller <mmoeller@fedoraproject.org> 60.0.14-6
+- Updated COPYING file
+
+* 五 11月 19 2010 Marcus Moeller <mmoeller@fedoraproject.org> 60.0.14-5
+- Addes screenshots for KDM and KSplash
+
+* 五 11月 19 2010 Marcus Moeller <mmoeller@fedoraproject.org> 60.0.14-4
+- Renamed KDM themes to CentOS
+
+* 五 11月 19 2010 Marcus Moeller <mmoeller@fedoraproject.org> 60.0.14-3
+- Updated Plymouth logo
+
+* 五 11月 19 2010 Marcus Moeller <mmoeller@fedoraproject.org> 60.0.14-2
+- Initial build for CentOS
+
+* 三 8月 25 2010 Ray Strode <rstrode@redhat.com> 60.0.14-1
+- Update description and COPYING file
+  Resolves: #627374
+
+* 五 7月 30 2010 Ray Strode <rstrode@redhat.com> 60.0.13-1
+- Add header image
+  Related: #558608
+
+* 五 7月 16 2010 Ray Strode <rstrode@redhat.com> 60.0.12-1
+- Drop glow theme
+  Resolves: #615251
+
+* 二 6月 15 2010 Matthias Clasen <mclasen@redhat.com> 60.0.11-2
+- Silence gtk-update-icon-cache in %post and %postun
+Resolves: #589983
+
+* 五 5月 21 2010 Ray Strode <rstrode@redhat.com> 60.0.11-1
+- Update anaconda artwork based on feedback
+  Resolves: #594825
+
+* 二 5月 11 2010 Than Ngo <than@redhat.com> - 60.0.10-1
+- update ksplash theme to match the latest splash
+
+* 四 5月 06 2010 Ray Strode <rstrode@redhat.com> 60.0.9-1
+- Add back grub.splash
+  Resolves: 589703
+- Add extra frame to plymouth splash
+  Related: #558608
+
+* 三 5月 05 2010 Ray Strode <rstrode@redhat.com> 60.0.8-1
+- Add large logo for compiz easter egg
+  Resolves: #582411
+- Drop Bluecurve
+  Related: #559765
+- Install logo icons in System theme
+  Related: #566370
+
+* 二 5月 04 2010 Ray Strode <rstrode@redhat.com> 60.0.7-1
+- Rename firstboot theme to RHEL
+  Resolves: #566173
+- Add new plymouth artwork
+  Related: #558608
+- Update backgrounds
+- Update anaconda
+- Drop gnome-splash
+- Drop empty screensaver dir
+  Resolves: #576912
+- Drop grub splash at request of artists
+
+* 四 4月 22 2010 Than Ngo <than@redhat.com> - 60.0.6-1
+- fix many cosmetic issues in kdm/ksplash theme
+
+* 一 4月 12 2010 Ray Strode <rstrode@redhat.com> 60.0.5-3
+Resolves: #576912
+- Readd default.xml
+
+* 五 4月 09 2010 Ray Strode <rstrode@redhat.com> 60.0.5-2
+- Make the upgrade path from alpha a little smoother
+  Resolves: #580475
+
+* 三 4月 07 2010 Ray Strode <rstrode@redhat.com> 60.0.5-1
+Resolves: #576912
+- Update wallpapers
+
+* 二 2月 23 2010 Ray Strode <rstrode@redhat.com> 60.0.4-3
+Resolves: #559695
+- Drop xpm symlinking logic
+- hide anaconda image dir behind macro
+
+* 三 2月 17 2010 Ray Strode <rstrode@redhat.com> 60.0.4-1
+Resolves: #565886
+- One more update to the KDE artwork
+- Revert firstboot theme rename until later since compat link
+  is causing problems.
+
+* 三 2月 17 2010 Ray Strode <rstrode@redhat.com> 60.0.3-1
+Resolves: #565886
+- Put backgrounds here since they're "trade dress"
+- Rename firstboot theme from leonidas to RHEL (with compat link)
+
+* 三 2月 17 2010 Jaroslav Reznik <jreznik@redhat.com> 60.0.2-1
+- KDE theme merged into redhat-logos package
+- updated license (year in copyright)
+
+* 五 2月 05 2010 Ray Strode <rstrode@redhat.com> 60.0.1-3
+Resolves: #559695
+- spec file cleanups
+
+* 一 1月 25 2010 Than Ngo <than@redhat.com> - 60.0.1-2
+- drop useless leonidas in KDE
+
+* 五 1月 22 2010 Ray Strode <rstrode@redhat.com> 60.0.1-1
+Resolves: #556906
+- Add updated artwork for Beta
+
+* 四 1月 21 2010 Matthias Clasen <mclasen@redhat.com> 60.0.0-2
+- Remove a non-UTF-8 char from the spec
+
+* 三 1月 20 2010 Ray Strode <rstrode@redhat.com> 60.0.0-1
+Resolves: #556906
+- Add bits from glow plymouth theme
+
+* 三 1月 20 2010 Ray Strode <rstrode@redhat.com> - 11.90.4-1
+Resolves: #556906
+- Update artwork for Beta
+
+* 二 12月 08 2009 Dennis Gregorovic <dgregor@redhat.com> - 11.90.3-1.1
+- Rebuilt for RHEL 6
+
+* 一 6月 01 2009 Ray Strode <rstrode@redhat.com> - 11.90.3-1
+- remove some of the aliasing from the charge theme
+
+* 五 5月 29 2009 Ray Strode <rstrode@redhat.com> - 11.90.2-1
+- Drop backgrounds again because they don't actually contain logos
+
+* 五 5月 29 2009 Ray Strode <rstrode@redhat.com> - 11.90.1-1
+- Install new backgrounds
+
+* 五 5月 29 2009 Ray Strode <rstrode@redhat.com> - 11.90.0-2
+- Rebuild using tarball dist from cvs
+
+* 四 5月 28 2009 Ray Strode <rstrode@redhat.com> - 11.90.0-1
+- Update artwork for RHEL 6 alpha
+
+* 四 1月 04 2007 Jeremy Katz <katzj@redhat.com> - 4.9.16-1
+- Fix syslinux splash conversion, Resolves: #209201
+
+* 五 12月 01 2006 Matthias Clasen <mclasen@redhat.com> - 4.9.15-1
+- Readd rhgb/main-logo.png, Resolves: #214868
+
+* 二 11月 28 2006 David Zeuthen <davidz@redhat.com> - 4.9.14-1
+- Don't include LILO splash. Resolves: #216748
+- New syslinux-splash from Diana Fong. Resolves: #217493
+
+* 二 11月 21 2006 David Zeuthen <davidz@redhat.com> - 4.9.13-1
+- Make firstboot/splash-small.png completely transparent
+- Fix up date for last commit
+- Resolves: #216501
+
+* 一 11月 20 2006 David Zeuthen <davidz@redhat.com> - 4.9.12-1
+- New shadowman gdm logo from Diana Fong (#216370)
+
+* 三 11月 15 2006 David Zeuthen <davidz@redhat.com> - 4.9.10-1
+- New shadowman logos from Diana Fong (#215614)
+
+* 五 11月 10 2006 Than Ngo <than@redhat.com> - 4.9.9-1
+- add missing KDE splash (#212130)
+
+* 三 10月 25 2006 David Zeuthen <davidz@redhat.com> - 4.9.8-1
+- Add new shadowman logos (#211837)
+
+* 一 10月 23 2006 Matthias Clasen <mclasen@redhat.com> - 4.9.7-1 
+- Include the xml file in the tarball
+
+* 一 10月 23 2006 Matthias Clasen <mclasen@redhat.com> - 4.9.6-1
+- Add names for the default background (#211556)
+
+* 二 10月 17 2006 Matthias Clasen <mclasen@redhat.com> - 4.9.5-1
+- Update the url pointing to the trademark policy (#187124)
+
+* 四 10月 05 2006 Matthias Clasen <mclasen@redhat.com> - 4.9.4-1
+- Fix some colormap issues in the syslinux-splash (#209201)
+
+* 三 9月 20 2006 Ray Strode <rstrode@redhat.com> - 4.9.2-1
+- ship new artwork from Diana Fong for login screen
+
+* 二 9月 19 2006 John (J5) Palmieri <johnp@redhat.com> - 1.2.8-1
+- Fix packager to dist the xml background file
+
+* 二 9月 19 2006 John (J5) Palmieri <johnp@redhat.com> - 1.2.7-1
+- Add background xml file for the new backgrounds
+- Add po directory for translating the background xml
+
+* 二 9月 19 2006 John (J5) Palmieri <johnp@redhat.com> - 1.2.6-1
+- Add new RHEL graphics
+
+* 五 8月 25 2006 John (J5) Palmieri <johnp@redhat.com> - 1.2.5-1
+- Modify the anaconda/splash.png file to say Beta instead of Alpha
+
+* 二 8月 01 2006 John (J5) Palmieri <johnp@redhat.com> - 1.2.4-1
+- Add firstboot-left to the firstboot images
+
+* 五 7月 28 2006 John (J5) Palmieri <johnp@redhat.com> - 1.2.3-1
+- Add attributions to the background graphics metadata
+- Add a 4:3 asspect ratio version of the default background graphic
+
+* 四 7月 27 2006 John (J5) Palmieri <johnp@redhat.com> - 1.2.2-1
+- Add default backgrounds
+
+* 三 7月 12 2006 Matthias Clasen <mclasen@redhat.com> - 1.2.1-1
+- Add system lock dialog
+
+* 四 6月 15 2006 Jeremy Katz <katzj@redhat.com> - 1.2.0-1
+- alpha graphics
+
+* 三 8月 03 2005 David Zeuthen <davidz@redhat.com> - 1.1.26-1
+- Add russian localisation for rnotes (#160738)
+
+* 四 12月 02 2004 Jeremy Katz <katzj@redhat.com> - 1.1.25-1
+- add rnotes
+
+* 五 11月 19 2004 Alexander Larsson <alexl@redhat.com> - 1.1.24-1
+- Add rhgb logo (#139788)
+
+* 一 11月 01 2004 Alexander Larsson <alexl@redhat.com> - 1.1.22-1
+- Move rh logo from redhat-artwork here (#137593)
+
+* 五 10月 29 2004 Alexander Larsson <alexl@redhat.com> - 1.1.21-1
+- Fix alignment of gnome splash screen (#137360)
+
+* 五 10月 01 2004 Alexander Larsson <alexl@redhat.com> - 1.1.20-1
+- New gnome splash
+
+* 二 8月 24 2004 Jeremy Katz <katzj@redhat.com> - 1.1.19-1
+- update firstboot splash
+
+* 六 6月 05 2004 Jeremy Katz <katzj@redhat.com> - 1.1.18-1
+- provides: system-logos
+
+* 四 6月 03 2004 Jeremy Katz <katzj@redhat.com> - 1.1.17-1
+- add anaconda bits
+
+* 二 3月 23 2004 Alexander Larsson <alexl@redhat.com> 1.1.16-1
+- fix the logos in the gdm theme
+
+* 五 7月 18 2003 Havoc Pennington <hp@redhat.com> 1.1.15-1
+- build new stuff from garrett
+
+* 三 2月 26 2003 Havoc Pennington <hp@redhat.com> 1.1.14-1
+- build new stuff in cvs
+
+* 一 2月 24 2003 Jeremy Katz <katzj@redhat.com> 1.1.12-1
+- updated again
+- actually update the grub splash
+
+* 五 2月 21 2003 Jeremy Katz <katzj@redhat.com> 1.1.11-1
+- updated splash screens from Garrett
+
+* 二 2月 18 2003 Havoc Pennington <hp@redhat.com> 1.1.10-1
+- move in a logo from gdm theme #84543
+
+* 一 2月 03 2003 Havoc Pennington <hp@redhat.com> 1.1.9-1
+- rebuild
+
+* 三 1月 15 2003 Brent Fox <bfox@redhat.com> 1.1.8-1
+- rebuild for completeness
+
+* 一 12月 16 2002 Havoc Pennington <hp@redhat.com>
+- rebuild
+
+* 四 9月 05 2002 Havoc Pennington <hp@redhat.com>
+- add firstboot images to makefile/specfile
+- add /usr/share/pixmaps stuff
+- add splash screen images
+- add COPYING
+
+* 四 9月 05 2002 Jeremy Katz <katzj@redhat.com>
+- add boot loader images
+
+* 四 9月 05 2002 Havoc Pennington <hp@redhat.com>
+- move package to CVS
+
+* 二 6月 25 2002 Owen Taylor <otaylor@redhat.com>
+- Add a shadowman-only derived from redhat-transparent.png
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 31 2001 Owen Taylor <otaylor@redhat.com>
+- Fix alpha channel in redhat-transparent.png
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 一 6月 19 2000 Owen Taylor <otaylor@redhat.com>
+- Add %defattr
+
+* 一 6月 19 2000 Owen Taylor <otaylor@redhat.com>
+- Add version of logo for embossing on the desktop
+
+* 二 5月 16 2000 Preston Brown <pbrown@redhat.com>
+- add black and white version of our logo (for screensaver).
+
+* 一 2月 07 2000 Preston Brown <pbrown@redhat.com>
+- rebuild for new description.
+
+* 六 9月 25 1999 Bill Nottingham <notting@redhat.com>
+- different.
+
+* 一 9月 13 1999 Preston Brown <pbrown@redhat.com>
+- added transparent mini and 32x32 round icons
+
+* 六 4月 10 1999 Michael Fulbright <drmike@redhat.com>
+- added rhad logos
+
+* 四 4月 08 1999 Bill Nottingham <notting@redhat.com>
+- added smaller redhat logo for use on web page
+
+* 三 4月 07 1999 Preston Brown <pbrown@redhat.com>
+- added transparent large redhat logo
+
+* 二 4月 06 1999 Bill Nottingham <notting@redhat.com>
+- added mini-* links to make AnotherLevel happy
+
+* 一 4月 05 1999 Preston Brown <pbrown@redhat.com>
+- added copyright
+
+* 二 3月 30 1999 Michael Fulbright <drmike@redhat.com>
+- added 48 pixel rounded logo image for gmc use
+
+* 一 3月 29 1999 Preston Brown <pbrown@redhat.com>
+- package created
+

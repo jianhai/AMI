@@ -1,0 +1,412 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.14.17-3.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.14.17-3.1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.14.17-3.1.1
+- rebuild for alios6
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 2.14.17-3.1
+- Rebuilt for RHEL 6
+
+* 一 7月 27 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.14.17-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.14.17-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 日 3月 15 2009 Matthias Clasen <mclasen@redhat.com> - 2.14.17-1
+- 2.14.17
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.14.16-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 三 12月 10 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.16-2
+- Merge review trivia
+
+* 日 9月 21 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.16-1
+- Update to 2.14.16
+
+* 四 9月 18 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.15-1
+- Update to 2.14.15
+
+* 五 8月 22 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.14-1
+- Update to 2.14.14
+
+* 三 6月 04 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.13-1
+- Update to 2.14.13
+
+* 六 3月 15 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.12-3
+- Fix some packaging trivia
+
+* 五 2月 08 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.12-2
+- Rebuild for gcc 4.3
+
+* 二 1月 29 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.12-1
+- Update to 2.14.12
+
+* 二 1月 29 2008 Matthias Clasen <mclasen@redhat.com> - 2.14.11-1
+- Update to 2.14.11
+
+* 二 10月 16 2007 Dennis Gilmore <dennis@ausil.us> - 2.14.10-2
+- add sparc64 to the list  of 64 bit archs
+
+* 一 10月 15 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.10-1
+- Update to 2.14.10 (bug fixes)
+
+* 一 9月 17 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.9-1
+- Update to 2.14.9
+
+* 三 8月 29 2007 Fedora Release Engineering <rel-eng at fedoraproject dot org> - 2.14.7-6
+- Rebuild for selinux ppc32 issue.
+
+* 三 8月 08 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.7-5
+- Update the license field
+
+* 六 7月 07 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.7-4
+- Fix directory ownership issues
+
+* 一 4月 16 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.7-3
+- Add alpha to 64bit arches (#236544)
+
+* 日 3月 25 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.7-2
+- Fix a directory ownership issue (#233755)
+
+* 二 2月 27 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.7-1
+- Update to 2.14.7
+
+* 一 2月 12 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.6-1
+- Update to 2.14.6
+
+* 一 1月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.5-2
+- Re-add a static library that is needed by libbonobo
+
+* 一 1月 22 2007 Matthias Clasen <mclasen@redhat.com> - 2.14.5-1
+- Update to 2.14.5
+
+* 二 12月 19 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.4-1
+- Update to 2.14.4
+
+* 五 12月 08 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.3-4
+- Handle ref leaks in the a11y stack more gracefully (#214795)
+
+* 日 9月 10 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.3-3
+- Make non-local IPv4 work again  (#205950)
+
+* 二 9月 05 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.3-2.fc6
+- Fix remaining multilib issues (#205228)
+
+* 一 9月 04 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.3-1.fc6
+- Update to 2.14.3
+
+* 三 8月 02 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.2-1.fc6
+- Update to 2.14.2
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.14.0-3.1
+- rebuild
+
+* 四 6月 08 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.0-3
+- Add missing BuildRequires
+
+* 三 5月 24 2006 Matthias Clasen <mclasen@redhat.com> - 2.14.0-2
+- Don't rebuild api docs
+- Fix multilib conflicts
+
+* 二 3月 14 2006 Ray Strode <rstrode@redhat.com> - 2.14.1-1
+- Update to 2.14.1
+
+* 一 2月 13 2006 Jesse Keating <jkeating@redhat.com> - 2.13.3-1.2
+- rebump for build order issues during double-long bump
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.13.3-1.1
+- bump again for double-long bug on ppc(64)
+
+* 一 2月 06 2006 Matthias Clasen <mclasen@redhat.com> 2.13.3-1
+- Update to 2.13.3
+
+* 一 12月 19 2005 Matthias Clasen <mclasen@redhat.com> 2.13.2-2
+- Fix multilib issues
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 三 11月 30 2005 Matthias Clasen <mclasen@redhat.com> 2.13.2-1
+- Update to 2.13.2
+- Drop upstreamed patch
+
+* 二 10月 25 2005 Alexander Larsson <alexl@redhat.com> 2.12.4-3
+- Build with --enable-purify to avoid valgrind warnings
+
+* 三 10月 05 2005 Matthias Clasen <mclasen@redhat.com> 2.12.4-2
+- Use gmodule-no-export in the .pc file
+
+* 三 9月 07 2005 Matthias Clasen <mclasen@redhat.com> 2.12.4-1
+- Update to 2.12.4
+
+* 五 8月 05 2005 Matthias Clasen <mclasen@redhat.com> 2.12.2-1
+- Update to 2.12.2
+
+* 二 5月 10 2005 Mark McLoughlin <markmc@redhat.com> 2.12.1-3
+- Add patch to set the size of the IO thread stack to 256k in
+  order to mitigate the apparent 10M jump in GNOME processes
+  memory usage (#157297)
+
+* 三 3月 02 2005 Mark McLoughlin <markmc@redhat.com> 2.12.1-2
+- Rebuild with gcc4
+
+* 三 2月 09 2005 Matthias Clasen <mclasen@redhat.com> 2.12.1-1
+- Update to 2.12.1
+
+* 三 9月 29 2004 Mark McLoughlin <markmc@redhat.com> 2.12.0-3
+- Remove the linc obsoletes - we don't technically obsolete it
+
+* 二 9月 28 2004 Mark McLoughlin <markmc@redhat.com> 2.12.0-2
+- Add Obseletes: linc
+
+* 二 9月 21 2004 Mark McLoughlin <markmc@redhat.com> 2.12.0-1
+- Update to 2.12.0
+
+* 一 8月 30 2004 Mark McLoughlin <markmc@redhat.com> 2.11.2-1
+- Update to 2.11.2
+- Remove gcc on pcc workaround patch
+
+* 一 8月 09 2004 Mark McLoughlin <markmc@redhat.com> 2.11.1-2
+- Add temporary workaround patch for bug #129329
+
+* 二 8月 03 2004 Mark McLoughlin <markmc@redhat.com> 2.11.1-1
+- Update to 2.11.1
+
+* 二 7月 27 2004 Mark McLoughlin <markmc@redhat.com> 2.10.0-5
+- Rebuilt
+
+* 二 7月 27 2004 Mark McLoughlin <markmc@redhat.com> 2.10.0-4
+- Backport alignment fix for 64 bit from 0.10.3 - fixes Nautilus crashing
+  on startup (#126181). Thanks to Lamont R. Peterson <lamont@gurulabs.com>
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 3月 11 2004 Alex Larsson <alexl@redhat.com> 2.10.0-2
+- enable gtk-doc
+
+* 三 3月 10 2004 Mark McLoughlin <markmc@redhat.com> 2.10.0-1
+- Update to 2.10.0
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 2月 23 2004 Alexander Larsson <alexl@redhat.com> 2.9.8-1
+- update to 2.9.8
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 1月 16 2004 Alexander Larsson <alexl@redhat.com> 2.9.6-1
+- update to 2.9.6
+
+* 三 10月 22 2003 Jeremy Katz <katzj@redhat.com> 2.8.2-1
+- 2.8.2
+
+* 一 10月 06 2003 Jeremy Katz <katzj@redhat.com> 2.8.1.90-1
+- update to CVS snap off of gnome-2-4 branch
+
+* 五 10月 03 2003 Alexander Larsson <alexl@redhat.com> 2.8.1-1
+- 2.8.1
+- BuildRequire a newer gtk-doc
+
+* 三 9月 03 2003 Alexander Larsson <alexl@redhat.com> 2.8.0-1
+- 2.8.0
+
+* 一 8月 11 2003 Alexander Larsson <alexl@redhat.com> 2.7.5-5
+- Remove obsoletes linc line
+
+* 一 8月 11 2003 Alexander Larsson <alexl@redhat.com> 2.7.5-4
+- Add gtk-doc to devel
+
+* 四 8月 07 2003 Jonathan Blandford <jrb@redhat.com>
+- rebuild for 2.4
+
+* 五 7月 11 2003 Havoc Pennington <hp@redhat.com>
+- automated rebuild
+
+* 一 7月 07 2003 Havoc Pennington <hp@redhat.com> 2.6.2-1
+- 2.6.2
+
+* 五 6月 27 2003 Havoc Pennington <hp@redhat.com> 2.6.0-5
+- add lame _exit(0) hack to work around problem on ia64 temporarily
+
+* 四 6月 26 2003 Havoc Pennington <hp@redhat.com> 2.6.0-4
+- rebuild
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 6月 03 2003 Jeff Johnson <jbj@redhat.com>
+- add explicit epoch's where needed.
+
+* 一 2月 10 2003 Bill Nottingham <notting@redhat.com> 2.6.0-2
+- own /usr/share/idl/orbit-2.0 (#74020)
+
+* 二 2月 04 2003 Havoc Pennington <hp@redhat.com> 2.6.0-1
+- 2.6.0
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 日 1月 12 2003 Havoc Pennington <hp@redhat.com>
+- 2.5.1
+
+* 五 11月 08 2002 Havoc Pennington <hp@redhat.com>
+- 2.5.0
+
+* 二 8月 06 2002 Havoc Pennington <hp@redhat.com>
+- 2.4.1
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 6月 06 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 二 6月 04 2002 Havoc Pennington <hp@redhat.com>
+- 2.4.0
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 五 5月 17 2002 Havoc Pennington <hp@redhat.com>
+- rebuild in different environment
+
+* 五 5月 17 2002 Havoc Pennington <hp@redhat.com>
+- 2.3.109
+
+* 四 5月 02 2002 Havoc Pennington <hp@redhat.com>
+- 2.3.108
+
+* 四 4月 04 2002 Jeremy Katz <katzj@redhat.com>
+- 2.3.107
+
+* 四 2月 14 2002 Havoc Pennington <hp@redhat.com>
+- 2.3.105
+
+* 三 1月 30 2002 Owen Taylor <otaylor@redhat.com>
+- Version 2.3.103
+- Rebuild for dependencies
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- build system somehow built against libglib-1.3.so.11
+  even though pkg-config found 1.3.12? wtf?
+  trying again
+
+* 三 1月 02 2002 Havoc Pennington <hp@redhat.com>
+- 2.3.100.90 snap
+
+* 一 11月 26 2001 Havoc Pennington <hp@redhat.com>
+- 2.3.99
+
+* 日 11月 25 2001 Havoc Pennington <hp@redhat.com>
+- new snap 2.3.97.90, rebuild for glib 1.3.11
+
+* 五 10月 26 2001 Havoc Pennington <hp@redhat.com>
+- new snap, glib 1.3.10 rebuild
+
+* 二 10月 09 2001 Havoc Pennington <hp@redhat.com>
+- check rebuild against new linc with headers moved
+- remove epoch, that was a screwup
+
+* 四 10月 04 2001 Havoc Pennington <hp@redhat.com>
+- cvs snap
+- require specific glib2
+
+* 四 9月 27 2001 Havoc Pennington <hp@redhat.com>
+- 2.3.95 tarball
+- depend on new standalone libIDL, remove all libIDL stuff from file list
+
+* 五 9月 21 2001 Havoc Pennington <hp@redhat.com>
+- require specific linc version, unrequire specific glib version since
+  we get that via linc
+
+* 一 9月 17 2001 Havoc Pennington <hp@redhat.com>
+- newer orbit2 from CVS
+
+* 四 9月 13 2001 Havoc Pennington <hp@redhat.com>
+- conflict with old orbit with headers not moved
+
+* 三 9月 12 2001 Havoc Pennington <hp@redhat.com>
+- renaming more things
+- remove smp flags, doesn't work atm
+- fix .pc file, trying to get bonobo-activation to build
+
+* 二 9月 11 2001 Havoc Pennington <hp@redhat.com>
+- kill all file conflicts with ORBit1
+
+* 一 9月 10 2001 Havoc Pennington <hp@redhat.com>
+- convert to ORBit2 spec file (from ORBit original)
+
+* 二 7月 24 2001 Alexander Larsson <alexl@redhat.com>
+- Added glib-devel BuildRequires
+
+* 四 6月 21 2001 Elliot Lee <sopwith@redhat.com> 0.5.8-2
+- Use _smp_mflags if possible.
+
+* 一 5月 14 2001 Jonathan Blandford <jrb@redhat.com>
+- bumped version
+
+* 四 3月 01 2001 Owen Taylor <otaylor@redhat.com>
+- Rebuild for GTK+-1.2.9
+
+* 二 1月 30 2001 Elliot Lee <sopwith@redhat.com>
+- 0.5.7 for real
+
+* 四 1月 18 2001 Elliot Lee <sopwith@redhat.com>
+- 0.5.7
+
+* 二 12月 19 2000 Elliot Lee <sopwith@redhat.com>
+- 0.5.6
+
+* 四 11月 30 2000 Elliot Lee <sopwith@redhat.com>
+- 0.5.5
+
+* 五 8月 11 2000 Jonathan Blandford <jrb@redhat.com>
+- Up Epoch and release
+
+* 二 7月 25 2000 Elliot Lee <sopwith@redhat.com>
+- 0.5.3
+
+* 三 7月 19 2000 Jonathan Blandford <jrb@redhat.com>
+- fixed to work with new cpp.
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 7月 11 2000 Jonathan Blandford <jrb@redhat.com>
+- Upgraded to 0.5.2 - a bug fix release.
+
+* 二 6月 27 2000 Havoc Pennington <hp@redhat.com>
+- Trying to build the package for Preston and the build
+  system wants a new changelog entry
+
+* 六 6月 24 2000 Preston Brown <pbrown@redhat.com>
+- defattr the devel pkg
+- FHS paths
+
+* 五 5月 19 2000 Jonathan Blandford <jrb@redhat.com>
+- Upgraded to 0.5.1
+
+* 四 2月 03 2000 Elliot Lee <sopwith@redhat.com> 0.5.0-3
+- Strip shared libraries
+
+* 一 8月 30 1999 Elliot Lee <sopwith@redhat.com> 0.4.94-1
+- Spec file fixes from RHL 6.0.
+
+* 三 6月 02 1999 Jose Mercado <jmercado@mit.edu>
+- Fixed configure.in so spec.in could be used.
+
+* 一 11月 23 1998 Pablo Saratxaga <srtxg@chanae.alphanet.ch>
+- improved %files section, and added use of %{prefix} and install-info
+  (well,... no. The info file has not dir info inside, commented out)
+

@@ -1,0 +1,4 @@
+postinstall scriptlet (using /bin/sh):
+if [ -s /etc/alsa/asound.state -a ! -s /etc/asound.state ] ; then
+  mv /etc/alsa/asound.state /etc/asound.state
+fi

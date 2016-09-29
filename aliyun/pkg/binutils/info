@@ -1,0 +1,22 @@
+Name        : binutils                     Relocations: (not relocatable)
+Version     : 2.20.51.0.2                       Vendor: Alibaba
+Release     : 5.28.4.alios6                 Build Date: 2014年07月26日 星期六 01时23分58秒
+Install Date: 2015年03月25日 星期三 10时59分32秒      Build Host: x86-004.build.alibaba
+Group       : Development/Tools             Source RPM: binutils-2.20.51.0.2-5.28.4.alios6.src.rpm
+Size        : 9813601                          License: GPLv3+
+Signature   : RSA/8, 2014年07月31日 星期四 16时13分20秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sources.redhat.com/binutils
+Summary     : A GNU collection of binary utilities
+Description :
+Binutils is a collection of binary utilities, including ar (for
+creating, modifying and extracting from archives), as (a family of GNU
+assemblers), gprof (for displaying call graph profile data), ld (the
+GNU linker), nm (for listing symbols from object files), objcopy (for
+copying and translating object files), objdump (for displaying
+information from object files), ranlib (for generating an index for
+the contents of an archive), readelf (for displaying detailed
+information about binary files), size (for listing the section sizes
+of an object or archive file), strings (for listing printable strings
+from files), strip (for discarding symbols), and addr2line (for
+converting addresses to file and line).

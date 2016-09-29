@@ -1,0 +1,52 @@
+* 四 8月 21 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.11-1.1.5
+- fix alios
+
+* 日 7月 27 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.11-1.1.4
+- rebuild
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.11-1.1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.11-1.1.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.11-1.1.1
+- rebuild for alios6
+
+* 五 6月 24 2011 Richard W.M. Jones <rjones@redhat.com> - 1.11-1.1
+- Rebase to virt-what 1.11.
+  resolves: rhbz#672211
+- Add patch "IA64 Xen HVM should print 'xen-hvm' not 'xen-domU'" from upstream.
+
+* 一 1月 31 2011 Richard W.M. Jones <rjones@redhat.com> - 1.3-4.4
+- Various improvements to the wording in the manual page.
+  resolves: rhbz#672285
+- Confirm support for Microsoft HyperV and add a regression test.
+  resolves: rhbz#670272
+
+* 一 1月 24 2011 Richard W.M. Jones <rjones@redhat.com> - 1.3-4.3
+- Don't depend on util-linux-ng on RHEL 5.
+
+* 一 1月 24 2011 Richard W.M. Jones <rjones@redhat.com> - 1.3-4.2
+- Add support for Microsoft HyperV (RHBZ#670272).
+- Add support for Hitachi Virtage (RHBZ#670530).
+- Add support for EC2 (Xen) instances (RHBZ#671126).  This includes
+  backporting the test framework and enabling tests.
+- Add support for IBM Systemz z/VM, LPAR (RHBZ#671132).
+
+* 一 1月 17 2011 Richard W.M. Jones <rjones@redhat.com> - 1.3-4.1
+- Add support for IBM PowerVM Lx86 Linux/x86 emulator (RHBZ#668857).
+- Move configure into build (not prep).
+
+* 二 12月 14 2010 Richard W.M. Jones <rjones@redhat.com> - 1.3-4
+- Rebuild on all architectures.
+
+* 四 10月 28 2010 Richard W.M. Jones <rjones@redhat.com> - 1.3-3
+- Initial import into Fedora.
+
+* 二 10月 19 2010 Richard W.M. Jones <rjones@redhat.com> - 1.3-2
+- Make changes suggested by reviewer (RHBZ#644259).
+
+* 二 10月 19 2010 Richard W.M. Jones <rjones@redhat.com> - 1.3-1
+- Initial release.
+

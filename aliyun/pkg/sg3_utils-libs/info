@@ -1,0 +1,12 @@
+Name        : sg3_utils-libs               Relocations: (not relocatable)
+Version     : 1.28                              Vendor: Alibaba
+Release     : 4.4.alios6                    Build Date: 2014年07月28日 星期一 04时30分36秒
+Install Date: 2015年03月25日 星期三 11时00分40秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: sg3_utils-1.28-4.4.alios6.src.rpm
+Size        : 156912                           License: GPLv2+ and BSD
+Signature   : RSA/8, 2014年07月31日 星期四 18时45分11秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://sg.danny.cz/sg/sg3_utils.html
+Summary     : Shared library for sg3_utils
+Description :
+This package contains the shared library for sg3_utils.

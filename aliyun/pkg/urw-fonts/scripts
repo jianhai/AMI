@@ -1,0 +1,13 @@
+postinstall scriptlet (using /bin/sh):
+{
+   umask 133
+   mkfontscale /usr/share/fonts/default/Type1 || :
+   `which mkfontdir` /usr/share/fonts/default/Type1 || :
+   fc-cache /usr/share/fonts
+} &> /dev/null || :
+postuninstall scriptlet (using /bin/sh):
+{
+   if [ "$1" = "0" ]; then
+      fc-cache /usr/share/fonts
+   fi
+} &> /dev/null || :

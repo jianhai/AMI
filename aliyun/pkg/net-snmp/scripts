@@ -1,0 +1,18 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/chkconfig --add snmpd 
+/sbin/chkconfig --add snmptrapd
+
+# move local state files from /var/net-snmp to new location when updating the package
+/bin/mv /var/net-snmp/* /var/lib/net-snmp/ &>/dev/null || :
+preuninstall scriptlet (using /bin/sh):
+if [ $1 = 0 ]; then
+    service snmpd stop >/dev/null 2>&1
+    /sbin/chkconfig --del snmpd
+    service snmptrapd stop >/dev/null 2>&1
+    /sbin/chkconfig --del snmptrapd
+fi
+postuninstall scriptlet (using /bin/sh):
+if [ "$1" -ge "1" ]; then
+    service snmpd condrestart >/dev/null 2>&1 || :
+    service snmptrapd condrestart >/dev/null 2>&1 || :
+fi

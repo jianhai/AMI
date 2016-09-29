@@ -1,0 +1,220 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.14.15-5.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.14.15-5.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.14.15-5.1
+- rebuild for alios6
+
+* 一 6月 14 2010 Caolán McNamara <caolanm@redhat.com> 1.14.15-5
+- Resolves: rhbz#603465 include COPYING.LIB
+
+* 一 9月 07 2009 Caolán McNamara <caolanm@redhat.com> 1.14.15-4
+- Resolves: rhbz#521513 try gdk-pixbuf before ImageMagick convert
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.14.15-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 五 7月 10 2009 Caolán McNamara <caolanm@redhat.com> 1.14.15-2
+- clean some rpmlint warnings
+
+* 一 6月 22 2009 Caolán McNamara <caolanm@redhat.com> 1.14.15-1
+- latest version
+
+* 二 5月 26 2009 Caolán McNamara <caolanm@redhat.com> 1.14.14-1
+- latest version
+
+* 四 5月 07 2009 Caolán McNamara <caolanm@redhat.com> 1.14.13-1
+- latest version
+
+* 三 4月 29 2009 Caolán McNamara <caolanm@redhat.com> 1.14.12-1
+- latest version, drop integrated libgsf-1.14.11.gcc39015.patch
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.14.11-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 30 2009 Caolán McNamara <caolanm@redhat.com> 1.14.11-2
+- fix g_enum_register_static use
+
+* 三 1月 07 2009 Caolán McNamara <caolanm@redhat.com> 1.14.11-1
+- latest version
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 1.14.10-2
+- Rebuild for Python 2.6
+
+* 一 10月 20 2008 Caolán McNamara <caolanm@redhat.com> 1.14.10-1
+- latest version
+
+* 二 9月 23 2008 Matthias Clasen  <mclasen@redhat.com> - 1.14.9-2
+- Drop the ImageMagick dependency again, since it causes size problems on 
+  the live cd
+
+* 三 9月 03 2008 Caolán McNamara <caolanm@redhat.com> 1.14.9-1
+- latest version with gio support
+
+* 五 8月 08 2008 Caolán McNamara <caolanm@redhat.com> 1.14.8-2
+- Resolves: rhbz#458353 gsf-office-thumbnailer doesn't work without ImageMagick's convert.
+  Move that into the gnome subpackage
+
+* 四 3月 06 2008 Caolan McNamara <caolanm@redhat.com> 1.14.8-1
+- latest version
+
+* 一 2月 18 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.14.7-3
+- Autorebuild for GCC 4.3
+
+* 五 12月 21 2007 Caolan McNamara <caolanm@redhat.com> 1.14.7-2
+- Resolves: rhbz#426436 fix up python x86_64 import gsf
+
+* 五 9月 14 2007 Matthias Clasen <mclasen@redhat.com> 1.14.7-1
+- Update to 1.14.7
+
+* 三 9月 05 2007 Caolan McNamara <caolanm@redhat.com> 1.14.6-1
+- next version
+
+* 三 8月 29 2007 Caolan McNamara <caolanm@redhat.com> 1.14.5-3
+- rebuild
+
+* 四 8月 02 2007 Caolan McNamara <caolanm@redhat.com> 1.14.5-2
+- clarify license: LGPL v2.1 in source headers, no "later"
+
+* 四 7月 12 2007 Caolan McNamara <caolanm@redhat.com> 1.14.5-1
+- next version
+
+* 一 6月 18 2007 Caolan McNamara <caolanm@redhat.com> 1.14.4-1
+- next version
+
+* 日 3月 25 2007 Caolan McNamara <caolanm@redhat.com> 1.14.3-4
+- Resolves rhbz#233862 unowned directory fix from Michael Schwendt
+
+* 五 2月 09 2007 Caolan McNamara <caolanm@redhat.com> 1.14.3-3
+- some spec cleanups
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 1.14.3-2
+- rebuild for python 2.5
+
+* 四 11月 09 2006 Caolan McNamara <caolanm@redhat.com> 1.14.3-1
+- bump to 1.14.3
+
+* 三 11月 01 2006 Dan Williams <dcbw@redhat.com> - 1.14.2-2
+- Split to remove gnome-vfs2 dependency on core sub-packages
+
+* 一 10月 09 2006 Caolan McNamara <caolanm@redhat.com> - 1.14.2-1
+- bump to 1.14.2
+
+* 五 7月 14 2006 Bill Nottingham <notting@redhat.com> - 1.14.1-6
+- gnome-vfs2-devel no longer requires libbonobo-devel; add it as a buildreq
+
+* 四 7月 13 2006 Jesse Keating <jkeating@redhat.com> - 1.14.1-5
+- rebuild
+- add missing br gettext
+
+* 一 5月 29 2006 Caolan McNamara <caolanm@redhat.com> 1.14.1-4
+- rh#193417# Add BuildRequires perl-XML-Parser
+
+* 二 5月 23 2006 Caolan McNamara <caolanm@redhat.com> 1.14.1-3
+- rh#192707# disable rebuilding of gtk-doc so as to allow multi-arch devel
+
+* 三 5月 10 2006 Matthias Clasen <mclasen@redhat.com> 1.14.1-2
+- Update to 1.14.1
+
+* 一 3月 20 2006 Caolan McNamara <caolanm@redhat.com> 1.14.0-1
+- next version
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.13.3-2.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.13.3-2.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 12月 05 2005 Caolan McNamara <caolanm@redhat.com> 1.13.3-2
+- rh#172062# Obsolete extras libgsf113
+
+* 五 12月 02 2005 Matthias Clasen <mclasen@redhat.com> 1.13.3-1
+- Update to 1.13.3
+
+* 二 9月 20 2005 Caolan McNamara <caolanm@redhat.com> 1.12.3-1
+- bump to next version
+- add manpage for gsf-office-thumbnailer
+
+* 五 8月 26 2005 Caolan McNamara <caolanm@redhat.com> 1.12.2-1
+- bump to latest version
+
+* 三 6月 15 2005 Caolan McNamara <caolanm@redhat.com> 1.12.1-1
+- bump to latest version
+
+* 三 3月 02 2005 Caolan McNamara <caolanm@redhat.com> 1.12.0-1
+- bump to latest version
+- clean spec
+
+* 三 3月 02 2005 Caolan McNamara <caolanm@redhat.com> 1.11.1-2
+- rebuild with gcc4
+
+* 四 12月 16 2004 Caolan McNamara <caolanm@redhat.com> 1.11.1-1
+- upgrade to 1.11.1
+
+* 二 8月 31 2004 Caolan McNamara <caolanm@redhat.com> 1.10.1-1
+- upgrade to 1.10.1
+
+* 三 8月 18 2004 Caolan McNamara <caolanm@redhat.com> 1.10.0-1
+- upgrade to 1.10.0
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 5月 06 2004 Dams <anvil[AT]livna.org> 1.9.0-2
+- -devel now requires libgsf=version-release
+- Added smp_mflags
+- Fixed double included .so files
+
+* 三 5月 05 2004 Caolan McNamara <caolanm@redhat.com> 1.9.0-1
+* upgrade to 1.9.0 to get crash fixes
+
+* 日 4月 11 2004 Warren Togami <wtogami@redhat.com> 1.8.2-3
+- BR libtool libxml2-devel gnome-vfs2-devel bzip2-devel
+- -devel req glib2-devel libxml2-devel gnome-vfs2-devel
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 一 1月 12 2004 Jonathan Blandford <jrb@redhat.com> 1.8.2-1
+- make $includedir/libgsf-1 owned by -devel
+
+* 五 9月 19 2003 Havoc Pennington <hp@redhat.com> 1.8.2-1
+- 1.8.2
+
+* 三 8月 13 2003 Jonathan Blandford <jrb@redhat.com>
+- rebuild
+
+* 三 8月 06 2003 Elliot Lee <sopwith@redhat.com> 1.8.1-5
+- Fix libtool
+
+* 六 7月 12 2003 Jeremy Katz <katzj@redhat.com> 1.8.1-4
+- use system libtool so that lib64 library deps are correct
+
+* 四 7月 10 2003 Jeremy Katz <katzj@redhat.com> 1.8.1-3
+- forcibly disable gtk-doc (openjade is broken on s390)
+
+* 一 7月 07 2003 Jeremy Katz <katzj@redhat.com> 1.8.1-2
+- ldconfig in %post/%postun
+
+* 日 7月 06 2003 Jeremy Katz <katzj@redhat.com> 1.8.1-1
+- use standard macros
+- build for Red Hat Linux
+
+* 二 5月 13 2003 Rui M. Seabra <rms@407.org>
+- fix spec to reflect current stat of the build
+
+* 二 6月 18 2002 Rui M. Seabra <rms@407.org>
+- set permission correctly
+- fix common mistake of Copyright flag into License flag.
+
+* 四 5月 23 2002 Jody Goldberg <jody@gnome.org>
+- Initial version
+

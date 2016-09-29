@@ -1,0 +1,16 @@
+Name        : gnome-desktop                Relocations: (not relocatable)
+Version     : 2.28.2                            Vendor: Alibaba
+Release     : 8.4.alios6                    Build Date: 2014年08月08日 星期五 10时22分44秒
+Install Date: 2015年03月25日 星期三 11时01分35秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: gnome-desktop-2.28.2-8.4.alios6.src.rpm
+Size        : 3162587                          License: GPLv2+ and LGPLv2+
+Signature   : RSA/8, 2014年08月08日 星期五 11时19分16秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnome.org
+Summary     : Shared code among gnome-panel, gnome-session, nautilus, etc
+Description :
+
+The gnome-desktop package contains an internal library
+(libgnomedesktop) used to implement some portions of the GNOME
+desktop, and also some data files and other shared components of the
+GNOME user environment.

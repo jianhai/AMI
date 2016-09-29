@@ -1,0 +1,23 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:39.31.5.1-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1:39.31.5.1-1.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1:39.31.5.1-1.1
+- rebuild for alios6
+
+* 三 4月 06 2011 John W. Linville <linville@tuxdriver.com> - 39.31.5.1-1
+- Update for upstream version 39.31.5.1
+- Add logic to preserve version 128.50.3.1 for use by older kernels
+- Add Epoch tag to account for Intel's bizarre release numbering
+
+* 三 2月 09 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 128.50.3.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* 二 11月 10 2009 John W. Linville <linville@tuxdriver.com> - 128.50.3.1-2
+- Add Requires for udev
+
+* 三 9月 16 2009 John W. Linville <linville@tuxdriver.com> - 128.50.3.1-1
+- Initial import
+

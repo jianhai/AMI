@@ -1,0 +1,207 @@
+* 五 8月 22 2014 xianpeng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1.12-23.4
+- fix alios
+
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1.12-23.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.1.12-23.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.1.12-23.1
+- rebuild for alios6
+
+* 四 2月 25 2010 Jindrich Novy <jnovy@redhat.com>  0.1.12-23
+- add LICENSE to docs
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.1.12-22.1
+- Rebuilt for RHEL 6
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1.12-22
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.1.12-21
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 10月 21 2008 Jindrich Novy <jnovy@redhat.com> 0.1.12-20
+- remove ExcludeArch: s390 s390x, libusb works fine there (#467768)
+
+* 二 10月 14 2008 Jindrich Novy <jnovy@redhat.com> 0.1.12-19
+- don't apply the concurrency timeout handling patch, it breaks
+  pilot-link (#456811)
+
+* 一 10月 06 2008 Jindrich Novy <jnovy@redhat.com> 0.1.12-18
+- fix multiarch conflict in libusb-devel (#465209)
+
+* 六 8月 02 2008 Jindrich Novy <jnovy@redhat.com> 0.1.12-17
+- apply patch from Graeme Gill to fix concurrency timeout
+  handling (#456811)
+
+* 五 4月 18 2008 Jindrich Novy <jnovy@redhat.com> 0.1.12-16
+- rebuild to fix broken ppc build
+
+* 二 2月 26 2008 Jindrich Novy <jnovy@redhat.com> 0.1.12-15
+- don't apply wakeups patch until it's fixed, it causes problems
+  with Eye-One Pro (#434950)
+
+* 一 2月 25 2008 Jindrich Novy <jnovy@redhat.com> 0.1.12-14
+- manual rebuild because of gcc-4.3 (#434189)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 0.1.12-13
+- Autorebuild for GCC 4.3
+
+* 二 12月 04 2007 Jindrich Novy <jnovy@redhat.com> 0.1.12-12
+- remove unnecessary 1ms wakeups while USB transfers are in progress,
+  thanks to Scott Lamb (#408131)
+
+* 二 11月 06 2007 Jindrich Novy <jnovy@redhat.com> 0.1.12-11
+- fix multilib conflict in manual.ps (#342461)
+- drop useless BR: gawk
+
+* 四 8月 23 2007 Jindrich Novy <jnovy@redhat.com> 0.1.12-10
+- optimize usb_find_devices() and use openat() instead of open()
+ (#273901), thanks to Ulrich Drepper
+- BR gawk
+
+* 四 8月 23 2007 Jindrich Novy <jnovy@redhat.com> 0.1.12-9
+- update License
+- rebuild for BuildID
+
+* 三 8月 01 2007 Jindrich Novy <jnovy@redhat.com> 0.1.12-8
+- don't use uninitialized buffers on stack (#250274)
+
+* 四 2月 08 2007 Jindrich Novy <jnovy@redhat.com> 0.1.12-7
+- merge review spec fixes (#226053)
+- create -static subpackage to ship static libs separately
+- don't use auto* stuff, drop automake, libtool deps
+- BuildRequire openjade, fix Requires
+
+* 二 12月 12 2006 Jindrich Novy <jnovy@redhat.com> 0.1.12-6
+- fix BuildRoot, add dist tag, rpmlint warnfixes
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 0.1.12-5.1
+- rebuild
+
+* 四 6月 08 2006 Jesse Keating <jkeating@redhat.com> 0.1.12-5
+- Add missing BR automake, libtool.
+- Add missing Requires in -devel on pkgconfig
+
+* 四 6月 01 2006 Jindrich Novy <jnovy@redhat.com> 0.1.12-4
+- remove .la files from libusb-devel (#172643)
+
+* 二 5月 30 2006 Jindrich Novy <jnovy@redhat.com> 0.1.12-3
+- use pkg-config calls in libusb-config instead of hardcoded
+  defaults to avoid multiarch conflicts (#192714)
+
+* 五 5月 05 2006 Jindrich Novy <jnovy@redhat.com> 0.1.12-2
+- add docbook-utils-pdf BuildRequires (#191744)
+
+* 一 3月 06 2006 Jindrich Novy <jnovy@redhat.com> 0.1.12-1
+- update to 0.1.12
+- drop .format, .searchorder patches, applied upstream
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 0.1.11-2.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 0.1.11-2.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 1月 27 2006 Jindrich Novy <jnovy@redhat.com> 0.1.11-2
+- change device search order, /dev/bus/usb is tried first,
+  then /proc/bus/usb, and never try /sys/bus/usb (#178994)
+
+* 五 1月 20 2006 Jindrich Novy <jnovy@redhat.com> 0.1.11-1
+- 0.1.11
+- require pkgconfig, package libusb.pc
+- fix printf format in linux.c so that libusb can be built with -Werror (default)
+
+* 一 12月 19 2005 Tim Waugh <twaugh@redhat.com> 0.1.10a-3
+- Rebuild.
+
+* 五 12月 16 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt for new gcj
+
+* 一 11月 21 2005 Tim Waugh <twaugh@redhat.com> 0.1.10a-2
+- Build does not require xorg-x11-devel.  Fixes rebuild problem (no more
+  xorg-x11-devel package).
+
+* 三 3月 09 2005 Tim Waugh <twaugh@redhat.com> 0.1.10a-1
+- 0.1.10a.
+
+* 三 3月 02 2005 Tim Waugh <twaugh@redhat.com> 0.1.10-2
+- Rebuild for new GCC.
+
+* 五 2月 11 2005 Tim Waugh <twaugh@redhat.com> 0.1.10-1
+- 0.1.10.
+
+* 二 2月 01 2005 Tim Waugh <twaugh@redhat.com> 0.1.9-1
+- Build requires xorg-x11-devel.
+- 0.1.9.
+
+* 六 1月 08 2005 Florian La Roche <laroche@redhat.com>
+- rebuilt to get rid of legacy selinux filecontexts
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 25 2004 Tim Waugh <twaugh@redhat.com> 0.1.8-3
+- Run aclocal/autoconf to make shared libraries work again.
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 11 2004 Tim Waugh <twaugh@redhat.com> 0.1.8-1
+- 0.1.8.
+
+* 二 6月 17 2003 Tim Waugh <twaugh@redhat.com> 0.1.7-3
+- Fixed spec file.
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 3月 19 2003 Tim Waugh <twaugh@redhat.com>
+- Use the CFLAGS from the environment.
+
+* 三 3月 19 2003 Tim Waugh <twaugh@redhat.com> 0.1.7-1
+- 0.1.7.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 11月 20 2002 Florian La Roche <Florian.LaRoche@redhat.de>
+- exclude mainframe
+
+* 二 6月 25 2002 Tim Waugh <twaugh@redhat.com> 0.1.6-1
+- 0.1.6.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 0.1.5-6
+- automated rebuild
+
+* 五 6月 21 2002 Tim Waugh <twaugh@redhat.com> 0.1.5-5
+- Rebuild to fix broken deps.
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com> 0.1.5-4
+- automated rebuild
+
+* 四 4月 11 2002 Tim Waugh <twaugh@redhat.com> 0.1.5-3
+- Rebuild (fixes bug #63196).
+
+* 四 2月 21 2002 Tim Waugh <twaugh@redhat.com> 0.1.5-2
+- Rebuild in new environment.
+
+* 四 2月 07 2002 Tim Waugh <twaugh@redhat.com> 0.1.5-1
+- 0.1.5.
+
+* 五 1月 25 2002 Tim Waugh <twaugh@redhat.com> 0.1.4-2
+- Rebuild in new environment.
+- Work around tarball brokenness (doc directory was not automade).
+
+* 一 10月 29 2001 Tim Waugh <twaugh@redhat.com> 0.1.4-1
+- Adapted for Red Hat Linux.
+- 0.1.4.
+
+* 四 3月 01 2001 Frederic Crozat <fcrozat@mandrakesoft.com> 0.1.3b-1mdk
+- Initial Mandrake release
+

@@ -1,0 +1,14 @@
+Name        : gnutls                       Relocations: (not relocatable)
+Version     : 2.8.5                             Vendor: Alibaba
+Release     : 14.2.alios6                   Build Date: 2014年07月28日 星期一 21时16分45秒
+Install Date: 2015年03月25日 星期三 11时09分23秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Libraries   Source RPM: gnutls-2.8.5-14.2.alios6.src.rpm
+Size        : 1027458                          License: GPLv3+ and LGPLv2+
+Signature   : RSA/8, 2014年08月01日 星期五 14时54分46秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.gnutls.org/
+Summary     : A TLS protocol implementation
+Description :
+GnuTLS is a project that aims to develop a library which provides a secure
+layer, over a reliable transport layer. Currently the GnuTLS library implements
+the proposed standards by the IETF's TLS working group.

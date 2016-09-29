@@ -1,0 +1,13 @@
+Name        : plymouth-scripts             Relocations: (not relocatable)
+Version     : 0.8.3                             Vendor: Alibaba
+Release     : 24.4.alios6                   Build Date: 2014年07月27日 星期日 18时25分56秒
+Install Date: 2015年03月25日 星期三 10时59分55秒      Build Host: x86-004.build.alibaba
+Group       : Applications/System           Source RPM: plymouth-0.8.3-24.4.alios6.src.rpm
+Size        : 11006                            License: GPLv2+
+Signature   : RSA/8, 2014年07月31日 星期四 18时05分00秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://freedesktop.org/software/plymouth/releases
+Summary     : Plymouth related scripts
+Description :
+This package contains scripts that help integrate Plymouth with
+the system.

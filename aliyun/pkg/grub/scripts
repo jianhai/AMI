@@ -1,0 +1,10 @@
+postinstall scriptlet (using /bin/sh):
+if [ "$1" = 1 ]; then
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/grub.info.gz || :
+  /sbin/install-info --info-dir=/usr/share/info /usr/share/info/multiboot.info.gz || :
+fi
+preuninstall scriptlet (using /bin/sh):
+if [ "$1" = 0 ] ;then
+  /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/grub.info.gz || :
+  /sbin/install-info --delete --info-dir=/usr/share/info /usr/share/info/multiboot.info.gz || :
+fi

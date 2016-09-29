@@ -1,0 +1,16 @@
+Name        : pam_passwdqc                 Relocations: (not relocatable)
+Version     : 1.0.5                             Vendor: Alibaba
+Release     : 6.3.alios6                    Build Date: 2014年07月26日 星期六 23时08分00秒
+Install Date: 2015年03月25日 星期三 11时02分42秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Base       Source RPM: pam_passwdqc-1.0.5-6.3.alios6.src.rpm
+Size        : 64029                            License: BSD and Copyright only
+Signature   : RSA/8, 2014年07月31日 星期四 17时52分04秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : http://www.openwall.com/passwdqc/
+Summary     : Pluggable password quality-control module
+Description :
+pam_passwdqc is a simple password strength checking module for
+PAM-aware password changing programs, such as passwd(1).  In addition
+to checking regular passwords, it offers support for passphrases and
+can provide randomly generated passwords.  All features are optional
+and can be (re-)configured without rebuilding.

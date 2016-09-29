@@ -1,0 +1,4 @@
+postinstall scriptlet (using <lua>):
+for i, name in ipairs({"passwd", "shadow", "group", "gshadow"}) do
+     os.remove("/etc/"..name..".rpmnew")
+end

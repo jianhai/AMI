@@ -1,0 +1,12 @@
+/usr/bin/certtool
+/usr/bin/gnutls-cli
+/usr/bin/gnutls-cli-debug
+/usr/bin/gnutls-serv
+/usr/bin/psktool
+/usr/share/doc/gnutls-utils-2.8.5
+/usr/share/doc/gnutls-utils-2.8.5/certtool.cfg
+/usr/share/man/man1/certtool.1.gz
+/usr/share/man/man1/gnutls-cli-debug.1.gz
+/usr/share/man/man1/gnutls-cli.1.gz
+/usr/share/man/man1/gnutls-serv.1.gz
+/usr/share/man/man1/psktool.1.gz

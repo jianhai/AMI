@@ -1,0 +1,315 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.9-3.3.1
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.3.9-3.2.1
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.3.9-3.1.1
+- rebuild for alios6
+
+* 四 12月 02 2010 Joe Orton <jorton@redhat.com> - 1.3.9-3.1
+- add security fix for CVE-2010-1623 (#659253)
+
+* 五 12月 18 2009 Joe Orton <jorton@redhat.com> - 1.3.9-3
+- drop freetds support
+
+* 五 8月 21 2009 Tomas Mraz <tmraz@redhat.com> - 1.3.9-2
+- rebuilt with new openssl
+
+* 四 8月 06 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.9-1
+- bump up to 1.3.9
+- CVE-2009-2412
+- allocator alignment fixes
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.8-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 7月 15 2009 Bojan Smojver <bojan@rexursive.com> 1.3.8-2
+- adjust apr-util-1.3.7-nodbmdso.patch
+
+* 三 7月 15 2009 Bojan Smojver <bojan@rexursive.com> 1.3.8-1
+- bump up to 1.3.8
+
+* 三 7月 15 2009 Bojan Smojver <bojan@rexursive.com> 1.3.7-5
+- BR: +libuuid-devel, -e2fsprogs-devel
+
+* 二 6月 09 2009 Joe Orton <jorton@redhat.com> 1.3.7-4
+- disable DBM-drivers-as-DSO support
+- backport r783046 from upstream
+
+* 一 6月 08 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.7-3
+- make export of LD_LIBRARY_PATH simpler
+
+* 一 6月 08 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.7-2
+- revert tests
+
+* 一 6月 08 2009 Bojan Smojver <bojan@rexursive.com> - 1.3.7-1
+- bump up to 1.3.7
+- CVE-2009-0023
+- "billion laughs" fix of apr_xml_* interface
+
+* 一 2月 23 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.3.4-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 五 1月 23 2009 Joe Orton <jorton@redhat.com> 1.3.4-2
+- rebuild for new MySQL
+
+* 六 8月 16 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.4-1
+- bump up to 1.3.4
+- drop PostgreSQL patch, fixed upstream
+
+* 三 7月 16 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.2-8
+- beat the fuzz, rework apr-util-1.2.7-pkgconf.patch
+
+* 三 7月 16 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.2-7
+- ship find_apu.m4, fix bug #455189
+
+* 四 7月 10 2008 Tom "spot" Callaway <tcallawa@redhat.com> 1.3.2-6
+- rebuild for new db4-4.7
+
+* 二 7月 08 2008 Joe Orton <jorton@redhat.com> 1.3.2-5
+- restore requires for openldap-devel from -devel
+
+* 三 7月 02 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.2-4
+- properly fix PostgreSQL detection
+
+* 三 7月 02 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.2-3
+- revert build dependencies, change from -2 didn't help
+- add apr-util-1.3.2-pgsql.patch (remove pgsql_LIBS during detection)
+
+* 三 7月 02 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.2-2
+- try adding postgresql-server to build dependencies to pull some libs in
+
+* 四 6月 19 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.2-1
+- bump up to 1.3.2
+
+* 日 6月 01 2008 Bojan Smojver <bojan@rexursive.com> - 1.3.0-1
+- bump up to 1.3.0
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.2.12-5
+- Autorebuild for GCC 4.3
+
+* 二 12月 04 2007 Joe Orton <jorton@redhat.com> 1.2.12-4
+- rebuild for OpenLDAP soname bump
+
+* 一 12月 03 2007 Bojan Smojver <bojan@rexursive.com> - 1.2.12-3
+- remove all instances of MySQL flags being added to APRUTIL_LDFLAGS
+
+* 二 11月 27 2007 Bojan Smojver <bojan@rexursive.com> - 1.2.12-1
+- bump up to 1.2.12
+- drop MySQL DBD driver, shipped upstream
+- adjust various patches to apply
+- rework tests in %check (1.2.x got tests from trunk)
+
+* 一 9月 24 2007 Jesse Keating <jkeating@redhat.com> - 1.2.10-2
+- Rebuild for upgrade path (add dist since that's now on F-7 branch)
+
+* 日 9月 09 2007 Bojan Smojver <bojan@rexursive.com> 1.2.10-1
+- bump up to 1.2.10
+- pick up newly checked in MySQL DBD driver directly from ASF
+- remove dbdopen patch (fixed upstream)
+- remove xmlns patch (fixed upstream)
+- remove autoexpat patch (fixed upstream)
+
+* 日 9月 02 2007 Joe Orton <jorton@redhat.com> 1.2.8-12
+- rebuild for fixed APR 32-bit ABI
+- remove sqlite driver from main package (#274521)
+
+* 三 8月 22 2007 Joe Orton <jorton@redhat.com> 1.2.8-11
+- rebuild for expat soname bump
+
+* 二 8月 21 2007 Joe Orton <jorton@redhat.com> 1.2.8-10
+- fix License
+
+* 三 8月 08 2007 Joe Orton <jorton@redhat.com> 1.2.8-9
+- add rewrite of expat autoconf code (upstream r493791)
+- fix build for new glibc open()-as-macro
+- split out sqlite subpackage
+
+* 二 7月 03 2007 Joe Orton <jorton@redhat.com> 1.2.8-8
+- add fix for attribute namespace handling in apr_xml (PR 41908)
+
+* 四 4月 05 2007 Joe Orton <jorton@redhat.com> 1.2.8-7
+- remove old Conflicts, doxygen BR (#225254)
+
+* 五 3月 23 2007 Joe Orton <jorton@redhat.com> 1.2.8-6
+- add DBD DSO lifetime fix (r521327)
+
+* 四 3月 22 2007 Joe Orton <jorton@redhat.com> 1.2.8-5
+- drop doxygen documentation (which caused multilib conflicts)
+
+* 三 2月 28 2007 Joe Orton <jorton@redhat.com> 1.2.8-4
+- add mysql driver in -mysql subpackage (Bojan Smojver, #222237)
+
+* 二 2月 27 2007 Joe Orton <jorton@redhat.com> 1.2.8-3
+- build DBD drivers as DSOs (w/Bojan Smojver, #192922)
+- split out pgsql driver into -pgsql subpackage
+
+* 二 12月 05 2006 Joe Orton <jorton@redhat.com> 1.2.8-2
+- update to 1.2.8, pick up new libpq soname
+
+* 五 12月 01 2006 Joe Orton <jorton@redhat.com> 1.2.7-5
+- really rebuild for db45
+
+* 六 11月 11 2006 Joe Orton <jorton@redhat.com> 1.2.7-4
+- add support for BDB 4.5 from upstream, rebuild
+
+* 三 7月 19 2006 Joe Orton <jorton@redhat.com> 1.2.7-3
+- fix buildconf with autoconf 2.60
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.2.7-2.1
+- rebuild
+
+* 二 5月 02 2006 Joe Orton <jorton@redhat.com> 1.2.7-2
+- update to 1.2.7
+- use pkg-config in apu-1-config to make it libdir-agnostic
+
+* 四 4月 06 2006 Joe Orton <jorton@redhat.com> 1.2.6-2
+- update to 1.2.6
+- define LDAP_DEPRECATED in apr_ldap.h (r391985, #188073)
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-4.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.2.2-4.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 一 1月 30 2006 Joe Orton <jorton@redhat.com> 1.2.2-4
+- rebuild to drop reference to libexpat.la
+
+* 三 1月 18 2006 Joe Orton <jorton@redhat.com> 1.2.2-3
+- disable sqlite2 support
+- BuildRequire e2fsprogs-devel
+- enable malloc paranoia in %check
+
+* 二 1月 03 2006 Jesse Keating <jkeating@redhat.com> 1.2.2-2.2
+- rebuilt again
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 二 12月 06 2005 Joe Orton <jorton@redhat.com> 1.2.2-2
+- trim exports from .la file/--libs output (#174924)
+
+* 五 11月 25 2005 Joe Orton <jorton@redhat.com> 1.2.2-1
+- update to 1.2.2
+
+* 四 10月 20 2005 Joe Orton <jorton@redhat.com> 0.9.7-3
+- fix epoch again
+
+* 四 10月 20 2005 Joe Orton <jorton@redhat.com> 0.9.7-2
+- update to 0.9.7
+- drop static libs (#170051)
+
+* 二 7月 26 2005 Joe Orton <jorton@redhat.com> 0.9.6-3
+- add FILE bucket fix for truncated files (#159191)
+- add epoch to dependencies
+
+* 五 3月 04 2005 Joe Orton <jorton@redhat.com> 0.9.6-2
+- rebuild
+
+* 三 2月 09 2005 Joe Orton <jorton@redhat.com> 0.9.6-1
+- update to 0.9.6
+
+* 三 1月 19 2005 Joe Orton <jorton@redhat.com> 0.9.5-3
+- restore db-4.3 detection lost in 0.9.5 upgrade
+
+* 三 1月 19 2005 Joe Orton <jorton@redhat.com> 0.9.5-2
+- rebuild
+
+* 一 11月 22 2004 Joe Orton <jorton@redhat.com> 0.9.5-1
+- update to 0.9.5
+
+* 四 11月 11 2004 Jeff Johnson <jbj@jbj.org> 0.9.4-19
+- actually explicitly check for and detect db-4.3.
+
+* 四 11月 11 2004 Jeff Johnson <jbj@jbj.org> 0.9.4-18
+- rebuild against db-4.3.21.
+
+* 五 9月 17 2004 Joe Orton <jorton@redhat.com> 0.9.4-17
+- add security fix for CAN-2004-0786
+
+* 六 6月 19 2004 Joe Orton <jorton@redhat.com> 0.9.4-16
+- have -devel require matching release of apr-util
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 四 4月 01 2004 Joe Orton <jorton@redhat.com> 0.9.4-14
+- fix use of SHA1 passwords (#119651)
+
+* 二 3月 30 2004 Joe Orton <jorton@redhat.com> 0.9.4-13
+- remove fundamentally broken check_sbcs() from xlate code
+
+* 五 3月 19 2004 Joe Orton <jorton@redhat.com> 0.9.4-12
+- tweak xlate fix
+
+* 五 3月 19 2004 Joe Orton <jorton@redhat.com> 0.9.4-11
+- rebuild with xlate fixes and tests enabled
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com> 0.9.4-10.1
+- rebuilt
+
+* 二 3月 02 2004 Joe Orton <jorton@redhat.com> 0.9.4-10
+- rename sdbm_* symbols to apu__sdbm_*
+
+* 一 2月 16 2004 Joe Orton <jorton@redhat.com> 0.9.4-9
+- fix sdbm apr_dbm_exists() on s390x/ppc64
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com> 0.9.4-8
+- rebuilt
+
+* 四 2月 05 2004 Joe Orton <jorton@redhat.com> 0.9.4-7
+- fix warnings from use of apr_optional*.h with gcc 3.4
+
+* 四 1月 29 2004 Joe Orton <jorton@redhat.com> 0.9.4-6
+- drop gdbm support
+
+* 四 1月 08 2004 Joe Orton <jorton@redhat.com> 0.9.4-5
+- fix DB library detection
+
+* 六 12月 13 2003 Jeff Johnson <jbj@jbj.org> 0.9.4-4
+- rebuild against db-4.2.52.
+
+* 一 10月 13 2003 Jeff Johnson <jbj@jbj.org> 0.9.4-3
+- rebuild against db-4.2.42.
+
+* 一 10月 06 2003 Joe Orton <jorton@redhat.com> 0.9.4-2
+- fix 'apu-config --apu-la-file' output
+
+* 一 10月 06 2003 Joe Orton <jorton@redhat.com> 0.9.4-1
+- update to 0.9.4.
+
+* 二 7月 22 2003 Nalin Dahyabhai <nalin@redhat.com> 0.9.3-10
+- rebuild
+
+* 一 7月 07 2003 Joe Orton <jorton@redhat.com> 0.9.3-9
+- rebuild
+- don't run testuuid test because of #98677
+
+* 四 7月 03 2003 Joe Orton <jorton@redhat.com> 0.9.3-8
+- rebuild
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 5月 20 2003 Joe Orton <jorton@redhat.com> 0.9.3-6
+- fix to detect crypt_r correctly (CAN-2003-0195)
+
+* 四 5月 15 2003 Joe Orton <jorton@redhat.com> 0.9.3-5
+- fix to try linking against -ldb first (#90917)
+- depend on openldap, gdbm, db4, expat appropriately.
+
+* 二 5月 13 2003 Joe Orton <jorton@redhat.com> 0.9.3-4
+- rebuild
+
+* 三 5月 07 2003 Joe Orton <jorton@redhat.com> 0.9.3-3
+- make devel package conflict with old subversion-devel
+- run the less crufty parts of the test suite
+
+* 二 4月 29 2003 Joe Orton <jorton@redhat.com> 0.9.3-2
+- run ldconfig in post/postun
+
+* 一 4月 28 2003 Joe Orton <jorton@redhat.com> 0.9.3-1
+- initial build
+

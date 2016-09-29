@@ -1,0 +1,8 @@
+config(yum-plugin-security) = 1.1.30-10.4.alios6
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PartialHardlinkSets) <= 4.0.4-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rpmlib(VersionedDependencies) <= 3.0.3-1
+yum >= 3.2.18
+rpmlib(PayloadIsXz) <= 5.2-1

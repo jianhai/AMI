@@ -1,0 +1,30 @@
+/bin/sh  
+/bin/sh  
+/bin/sh  
+/sbin/ldconfig  
+gettext = 0.17-16.3.alios6
+gettext-libs = 0.17-16.3.alios6
+info  
+info  
+libasprintf.so.0()(64bit)  
+libc.so.6()(64bit)  
+libc.so.6(GLIBC_2.2.5)(64bit)  
+libc.so.6(GLIBC_2.3)(64bit)  
+libc.so.6(GLIBC_2.3.4)(64bit)  
+libc.so.6(GLIBC_2.4)(64bit)  
+libdl.so.2()(64bit)  
+libgcc_s.so.1()(64bit)  
+libgcc_s.so.1(GCC_3.0)(64bit)  
+libgcj_bc.so.1()(64bit)  
+libgettextlib-0.17.so()(64bit)  
+libgettextpo.so.0()(64bit)  
+libgettextsrc-0.17.so()(64bit)  
+libm.so.6()(64bit)  
+libpthread.so.0()(64bit)  
+librt.so.1()(64bit)  
+libz.so.1()(64bit)  
+rpmlib(CompressedFileNames) <= 3.0.4-1
+rpmlib(FileDigests) <= 4.6.0-1
+rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+rtld(GNU_HASH)  
+rpmlib(PayloadIsXz) <= 5.2-1

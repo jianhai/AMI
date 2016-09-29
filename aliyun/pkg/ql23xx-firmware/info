@@ -1,0 +1,12 @@
+Name        : ql23xx-firmware              Relocations: (not relocatable)
+Version     : 3.03.27                           Vendor: Alibaba
+Release     : 3.1.4.alios6                  Build Date: 2014年07月28日 星期一 03时17分32秒
+Install Date: 2015年03月25日 星期三 11时02分53秒      Build Host: x86-004.build.alibaba
+Group       : System Environment/Kernel     Source RPM: ql23xx-firmware-3.03.27-3.1.4.alios6.src.rpm
+Size        : 262821                           License: Redistributable, no modification permitted
+Signature   : RSA/8, 2014年07月31日 星期四 18时38分05秒, Key ID 320d98a196b4528d
+Packager    : Alibaba
+URL         : ftp://ftp.qlogic.com/outgoing/linux/firmware/
+Summary     : Firmware for qlogic 23xx devices
+Description :
+Firmware for qlogic 2300 and 2322 devices.

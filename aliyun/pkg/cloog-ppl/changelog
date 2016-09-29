@@ -1,0 +1,71 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.15.7-1.2.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 0.15.7-1.2.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 0.15.7-1.2.1
+- rebuild for alios6
+
+* 一 3月 01 2010 Dodji Seketeli <dodji@redhat.com> - 0.15.7-1.2
+- Add README and LICENSE files to package
+- Escape '%' in the changelog
+- Related: #543948
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 0.15.7-1.1
+- Rebuilt for RHEL 6
+
+* 六 8月 15 2009 Dodji Seketeli <dodji@redhat.com> - 0.15.7-1
+- Update to new upstream version (0.15.7)
+- Do not build from git snapshot anymore. Rather, got the tarball from
+  ftp://gcc.gnu.org/pub/gcc/infrastructure/cloog-ppl-0.15.7.tar.gz
+- The upstream tarball is named cloog-ppl, not cloog. Adjusted thusly.
+- Use system libtool to disable standard rpath
+- Do not try to touch the info file if it's not present. Closes #515929.
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.15-0.10.gitb9d79
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 二 7月 07 2009 Dodji Seketeli <dodji@redhat.com> - 0.15-0.9.gitb9d79
+- Update to new upstream git snapshot.
+- Update some comments in the spec file.
+
+* 四 4月 09 2009 Dodji Seketeli <dodji@redhat.com> - 0.15-0.8.git1334c
+- Update to new upstream git snapshot
+- Drop the cloog.info patch as now upstreamed
+- No need to add an argument to the --with-ppl
+  configure switch anymore as new upstream fixed this
+
+* 三 4月 08 2009 Dodji Seketeli <dodji@redhat.org> - 0.15-0.7.gitad322
+- Add BuildRequire texinfo needed to regenerate the cloog.info doc
+
+* 三 4月 08 2009 Dodji Seketeli <dodji@redhat.org> - 0.15-0.6.gitad322
+- Remove the cloog.info that is in the tarball
+  That forces the regeneration of a new cloog.info with
+  suitable INFO_DIR_SECTION, so that install-info doesn't cry
+  at install time.
+- Slightly changed the patch to make install-info actually
+  install the cloog information in the info directory file.
+- Run install-info --delete in %preun, not in %postun,
+  otherwise the info file is long gone with we try to
+  run install-info --delete on it.
+
+* 一 4月 06 2009 Dodji Seketeli <dodji@redhat.org> - 0.15-0.5.gitad322
+- Added patch to fix #492794
+- Need to add an argument to the --with-ppl switch now.
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0.15-0.4.gitad322
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 2月 10 2009 Dodji Seketeli <dodji@redhat.org> 0.15-0.3.gitad322
+- Updated to upstream git hash foo
+- Generate cloog-ppl and cloog-ppl-devel packages instead of cloog and
+  cloog-devel.
+
+* 一 12月 01 2008 Dodji Seketeli <dodji@redhat.com> 0.15-0.2.git57a0bc
+- Updated to upstream git hash 57a0bcd97c08f44a983385ca0389eb624e66e3c7
+- Remove the -fomit-frame-pointer compile flag
+
+* 三 9月 24 2008 Dodji Seketeli <dodji@redhat.com> 0.15-0.1.git95753
+- Initial version from git hash 95753d83797fa9a389c0c07f7cf545e90d7867d7
+

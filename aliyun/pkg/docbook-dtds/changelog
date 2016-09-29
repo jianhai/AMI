@@ -1,0 +1,264 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0-51.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0-51.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0-51.1
+- rebuild for alios6
+
+* 二 5月 18 2010 Ondrej Vasik <ovasik@redhat.com> - 1.0-51
+- post and postun scriptlet requires sed (#593078)
+
+* 四 12月 17 2009 Ondrej Vasik <ovasik@redhat.com> - 1.0-50
+- comment patches
+- License: Copyright only
+
+* 二 10月 27 2009 Ondrej Vasik <ovasik@redhat.com> - 1.0-49
+- do not obsolete self
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0-48
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 5月 11 2009 Ondrej Vasik <ovasik@redhat.com> - 1.0-47
+- add requires(post) for /bin/chmod (#498680)
+
+* 三 4月 08 2009 Stepan Kasal <skasal@redhat.com> - 1.0-46
+- remove perl dependency (#462997)
+- make %install and the scriptlets more compact
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0-45
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 19 2009 Ondrej Vasik <ovasik@redhat.com> - 1.0.44
+- fix ISO entities for 4.5 SGML, use XML at the end of
+  public identificators of XML 4.1.2 ISO entities
+
+* 四 2月 19 2009 Ondrej Vasik <ovasik@redhat.com> - 1.0-43
+- register sgml catalogs before xml catalogs in openjade
+  (#486257)
+
+* 四 2月 05 2009 Ondrej Vasik <ovasik@redhat.com> - 1.0-42
+- Use SYSTEM rewrite for web URL's in sgml catalogs to
+  prevent reading from the network(#478680)
+
+* 五 9月 26 2008 Ondrej Vasik <ovasik@redhat.com> - 1.0-41
+- Removed openjade requirement - registration reworked to
+  triggers(#234345)
+
+* 三 9月 24 2008 Ondrej Vasik <ovasik@redhat.com> - 1.0-40
+- Fix wrong filenames for xml-dtd-4.4 and xml-dtd-4.5
+  iso entities(#461206)
+- /ent/iso-cyr1.ent now correctly registered in xml catalog
+  (there was /ent/iso-cyrl.ent typo)
+- fixed broken unregistration of xml-dtds from catalog
+  (missing CAT_DIR variable)
+
+* 五 8月 29 2008 Ondrej Vasik <ovasik@redhat.com> - 1.0-39
+- rebuild with F9 spec file to fix some heavy-weight black
+  magic causing failures of sgml documents
+
+* 五 7月 11 2008 Ondrej Vasik <ovasik@redhat.com> - 1.0-38
+- fixed typo in post scriptlet(causing mishandling of DocBook
+  4.4 and 4.5 DTDs,#453513)
+
+* 三 7月 09 2008 Ondrej Vasik <ovasik@redhat.com> - 1.0-37
+- use full paths in xmlcatalog registration
+
+* 二 5月 13 2008 Ondrej Vasik <ovasik@redhat.com> - 1.0-36
+- changed License(#445008)
+
+* 一 11月 26 2007 Ondrej Vasik <ovasik@redhat.com> - 1.0-35
+- fixed bug causing typo in spec file(#397651)
+
+* 二 10月 23 2007 Ondrej Vasik <ovasik@redhat.com> - 1.0-34
+- corrected most of rpmlint issues
+- (PreReq, tab/spaces , wrong permissions on some files,
+-  wrong file end encoding of txt files, non config files
+-  in /etc, some requires issues, versioned provides and
+-  obsoletes, fixed license tag)
+
+* 五 10月 19 2007 Ondrej Vasik <ovasik@redhat.com> - 1.0-33
+- fixed wrong attributes for docs(#326581)
+
+* 一 10月 01 2007 Ondrej Vasik <ovasik@redhat.com> - 1.0-32
+- DocBook 4.5 SGML and XML.(#312941)
+- added dist tag
+
+* 三 6月 20 2007 Ondrej Vasik <ovasik@redhat.com> - 1.0-31
+- .cat files touched and ghosted to be owned by package
+- (bug #193475)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 1.0-30.1
+- rebuild
+
+* 二 12月 13 2005 Tim Waugh <twaugh@redhat.com> 1.0-30
+- Fix ISO entities in 4.3/4.4 SGML.
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 五 10月 21 2005 Tim Waugh <twaugh@redhat.com> 1.0-29
+- Scriptlet fix (bug #171229).
+
+* 四 10月 13 2005 Tim Waugh <twaugh@redhat.com> 1.0-28
+- Fixed last fix (bug #159382).
+
+* 四 6月 02 2005 Tim Waugh <twaugh@redhat.com> 1.0-27
+- Increase NAMELEN (bug #36058, bug #159382).
+
+* 二 2月 01 2005 Tim Waugh <twaugh@redhat.com> 1.0-26
+- DocBook 4.4 SGML and XML.
+
+* 一 9月 13 2004 Tim Waugh <twaugh@redhat.com> 1.0-25
+- DocBook 4.3 SGML and XML (bug #131861).
+
+* 一 2月 23 2004 Tim Waugh <twaugh@redhat.com> 1.0-24
+- Use ':' instead of '.' as separator for chown.
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 8月 06 2003 Tim Waugh <twaugh@redhat.com> 1.0-22.1
+- Rebuilt.
+
+* 三 8月 06 2003 Tim Waugh <twaugh@redhat.com> 1.0-22
+- More work-arounds for buggy xmlcatalog.
+
+* 二 7月 15 2003 Tim Waugh <twaugh@redhat.com> 1.0-21.1
+- Rebuilt.
+
+* 二 7月 15 2003 Tim Waugh <twaugh@redhat.com> 1.0-21
+- Fix &euro; in SGML tools.
+
+* 三 5月 28 2003 Tim Waugh <twaugh@redhat.com> 1.0-20
+- Fix summary and description (bug #73005).
+
+* 五 3月 28 2003 Tim Waugh <twaugh@redhat.com> 1.0-19
+- Use --parents in %doc.
+- Fix %postun scriptlet.
+
+* 五 3月 14 2003 Tim Waugh <twaugh@redhat.com> 1.0-18
+- Use Requires:, not Conflicts:, for openjade.
+- Require openjade 1.3.2.
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com> 1.0-17
+- rebuilt
+
+* 五 12月 20 2002 Tim Waugh <twaugh@redhat.com> 1.0-16
+- Fix typos in scriplets (bug #80109).
+
+* 三 11月 20 2002 Tim Powers <timp@redhat.com> 1.0-15
+- rebuild in current collinst
+
+* 二 7月 30 2002 Tim Waugh <twaugh@redhat.com> 1.0-14
+- Fix typo in XML catalog (Eric Raymond).
+
+* 二 7月 23 2002 Tim Waugh <twaugh@redhat.com> 1.0-13
+- Provide docbook-dtd42-sgml and docbook-dtd42-xml.
+
+* 四 7月 18 2002 Tim Waugh <twaugh@redhat.com> 1.0-12
+- Fix up SGML super catalog if necessary.
+
+* 三 7月 17 2002 Tim Waugh <twaugh@redhat.com> 1.0-11
+- Add DocBook V4.2.
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com> 1.0-10
+- automated rebuild
+
+* 四 5月 23 2002 Tim Powers <timp@redhat.com> 1.0-9
+- automated rebuild
+
+* 四 3月 14 2002 Tim Waugh <twaugh@redhat.com> 1.0-8
+- Allow for shared /usr/share (bug #61147).
+
+* 二 3月 12 2002 Tim Waugh <twaugh@redhat.com> 1.0-7
+- Make sure that the config files are readable.
+
+* 五 3月 08 2002 Tim Waugh <twaugh@redhat.com> 1.0-6
+- Make %post scriptlet quiet (bug #60820).
+
+* 四 2月 21 2002 Tim Waugh <twaugh@redhat.com> 1.0-5
+- Make sure to clean up old catalog files.
+
+* 四 2月 21 2002 Tim Waugh <twaugh@redhat.com> 1.0-3
+- Rebuild in new environment.
+
+* 一 1月 28 2002 Tim Waugh <twaugh@redhat.com> 1.0-2
+- Prepare for openjade 1.3.1.
+
+* 四 1月 17 2002 Tim Waugh <twaugh@redhat.com> 1.0-1
+- Merged all the DTD packages into one (bug #58448).
+- Use /usr/share/sgml exclusively.
+- Prevent catalog files from disappearing on upgrade (bug #58463).
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 一 11月 05 2001 Tim Waugh <twaugh@redhat.com> 1.0-8
+- Hmm, still need to depend on sgml-common for /etc/sgml.
+
+* 一 11月 05 2001 Tim Waugh <twaugh@redhat.com> 1.0-7
+- Use xmlcatalog (libxml2) instead of install-catalog (sgml-common) in
+  scriptlets.
+- Conflict with install-catalog if it can't handle quotes in catalogs.
+- Use release number in centralized catalog name, so that the scriptlets
+  work properly.
+
+* 三 10月 10 2001 Tim Waugh <twaugh@redhat.com> 1.0-6
+- Change some Requires: to PreReq:s (bug #54507).
+
+* 一 10月 08 2001 Tim Waugh <twaugh@redhat.com> 1.0-5
+- Use release number in the installed directory name, so that the
+  package scripts work.
+
+* 六 10月 06 2001 Tim Waugh <twaugh@redhat.com> 1.0-4
+- Restore the /etc/sgml/catalog manipulation again.
+- Oops, fix DTD path.
+
+* 六 10月 06 2001 Tim Waugh <twaugh@redhat.com> 1.0-2
+- Require xml-common.  Use xmlcatalog.
+- Move files to /usr/share/xml.
+
+* 二 6月 12 2001 Tim Waugh <twaugh@redhat.com> 1.0-1
+- Build for Red Hat Linux.
+
+* 六 6月 09 2001 Chris Runge <crunge@pobox.com>
+- Provides: docbook-dtd-xml (not docbook-dtd-sgml)
+- undo catalog patch and dbcentx patch (this resulted in an effectively
+  broken DTD when the document was processed with XSL stylesheets); added a
+  symbolic link to retain docbook.cat -> catalog; added ent
+- added ChangeLog to doc
+
+* 五 6月 08 2001 Chris Runge <crunge@pobox.com>
+- created a 4.1.2 version
+- update required a change to OTHERCAT in postun
+- update required a change to the Makefile patch (no dbgenent.ent any more,
+  apparently)
+
+* 三 1月 24 2001 Tim Waugh <twaugh@redhat.com>
+- Scripts require fileutils.
+- Make scripts quieter.
+
+* 一 1月 15 2001 Tim Waugh <twaugh@redhat.com>
+- Don't play so many macro games.
+- Don't use 'rpm' in post scripts.
+- Be sure to own xml-dtd-4.1 directory.
+
+* 日 1月 14 2001 Tim Waugh <twaugh@redhat.com>
+- Change requirement on /usr/bin/install-catalog to sgml-common.
+
+* 二 1月 09 2001 Tim Waugh <twaugh@redhat.com>
+- Change group.
+- Use %{_tmppath}.
+- Correct typo.
+- rm before install
+- openjade not jade.
+- Build requires unzip.
+- Require install-catalog for post and postun.
+- Change Copyright: to License:.
+- Remove Packager: line.
+
+* 二 1月 09 2001 Tim Waugh <twaugh@redhat.com>
+- Based on Eric Bischoff's new-trials packages.
+

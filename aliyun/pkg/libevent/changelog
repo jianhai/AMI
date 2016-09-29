@@ -1,0 +1,76 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.13-1.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.4.13-1.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.4.13-1.1
+- rebuild for alios6
+
+* 二 12月 15 2009 Steve Dickson <steved@redhat.com> 1.4.13-1
+- Updated to latest stable upstream version: 1.4.13
+
+* 一 11月 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 1.4.12-1.1
+- Rebuilt for RHEL 6
+
+* 二 8月 18 2009 Steve Dickson <steved@redhat.com> 1.4.12-1
+- Updated to latest stable upstream version: 1.4.12
+- API documentation is now installed (bz 487977)
+- libevent-devel multilib conflict (bz 477685)
+- epoll backend allocates too much memory (bz 517918)
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.10-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 4月 20 2009 Steve Dickson <steved@redhat.com> 1.4.10-1
+- Updated to latest stable upstream version: 1.4.10
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.4.5-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 二 7月 01 2008 Steve Dickson <steved@redhat.com> 1.4.5-1
+- Updated to latest stable upstream version 1.4.5-stable
+
+* 一 6月 02 2008 Steve Dickson <steved@redhat.com> 1.4.4-1
+- Updated to latest stable upstream version 1.4.4-stable
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 1.3e-2
+- Autorebuild for GCC 4.3
+
+* 二 1月 22 2008 Steve Dickson <steved@redhat.com> 1.3e-1
+- Updated to latest stable upstream version 1.3e
+
+* 五 3月 09 2007 Steve Dickson <steved@redhat.com> 1.3b-1
+- Updated to latest upstream version 1.3b
+- Incorporated Merge Review comments (bz 226002)
+- Increased the polling timeout (bz 204990)
+
+* 二 2月 20 2007 Steve Dickson <steved@redhat.com> 1.2a-1
+- Updated to latest upstream version 1.2a
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> 
+- rebuild
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 1.1a-3.2
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 1.1a-3.1
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 二 1月 24 2006 Warren Togami <wtogami@redhat.com> - 1.1a-3
+- rebuild (#177697)
+
+* 一 7月 04 2005 Ralf Ertzinger <ralf@skytale.net> - 1.1a-2
+- Removed unnecessary -r from rm
+
+* 五 6月 17 2005 Ralf Ertzinger <ralf@skytale.net> - 1.1a-1
+- Upstream update
+
+* 三 6月 08 2005 Ralf Ertzinger <ralf@skytale.net> - 1.1-2
+- Added some docs
+- Moved "make verify" into %check
+
+* 一 6月 06 2005 Ralf Ertzinger <ralf@skytale.net> - 1.1-1
+- Initial build for Fedora Extras, based on the package
+  by Dag Wieers
+

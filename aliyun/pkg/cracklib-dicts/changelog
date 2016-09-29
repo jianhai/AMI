@@ -1,0 +1,287 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.8.16-4.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 2.8.16-4.2
+- rebuild
+
+* 三 5月 28 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.8.16-4.1
+- rebuild for alios6
+
+* 二 2月 01 2011 Nalin Dahyabhai <nalin@redhat.com> - 2.8.16-4
+- build those updated translations
+- limit which man pages we pull in
+
+* 四 1月 27 2011 Nalin Dahyabhai <nalin@redhat.com> - 2.8.16-3
+- pull in man pages from Debian (#583932)
+- update zh_CN translation (#627449)
+
+* 四 5月 20 2010 Nalin Dahyabhai <nalin@redhat.com> - 2.8.16-2
+- pull in changes to the Hindi translation (#589188)
+
+* 二 4月 20 2010 Nalin Dahyabhai <nalin@redhat.com> - 2.8.16-1
+- update to 2.8.16
+
+* 五 1月 22 2010 Nalin Dahyabhai <nalin@redhat.com> - 2.8.15-3
+- add passwords derived from rockyou breach data to the dictionaries (Matthew
+  Miller, #557592)
+
+* 四 1月 21 2010 Nalin Dahyabhai <nalin@redhat.com> - 2.8.15-2
+- update license: tag
+- include license file
+
+* 二 12月 01 2009 Nalin Dahyabhai <nalin@redhat.com> - 2.8.15-1
+- update to 2.8.15
+- update cracklib-words to the current version (2008-05-07)
+- fixup URLs for various dictionary sources that we use
+- fix freeing-an-uninitialized-pointer in the python module (SF#2907102)
+- add a disttag
+
+* 五 7月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.8.13-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 一 5月 18 2009 Nalin Dahyabhai <nalin@redhat.com> - 2.8.13-5
+- add explicit dependency on gzip for the sake of cracklib-format (Daniel
+  Mach, #501278)
+
+* 二 2月 24 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.8.13-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 四 2月 19 2009 Nalin Dahyabhai <nalin@redhat.com> - 2.8.13-3
+- drop trailing "." from the package description for the dicts
+  subpackage (#225659)
+
+* 六 11月 29 2008 Ignacio Vazquez-Abrams <ivazqueznet+rpm@gmail.com> - 2.8.13-2
+- Rebuild for Python 2.6
+
+* 二 10月 28 2008 Nalin Dahyabhai <nalin@redhat.com> - 2.8.13-1
+- update to 2.8.13, which overhauls the python bindings and revises
+  FascistCheck()'s behavior:
+  2.8.12 success: returns None, fail: returns error text, other: exceptions
+  2.8.13 success: returns candidate, fail: throws ValueError, other: exceptions
+
+* 二 10月 28 2008 Nalin Dahyabhai <nalin@redhat.com> - 2.8.12-3
+- fix errors rebuilding with libtool that's newer than the one upstream
+  has (#467364)
+
+* 二 2月 19 2008 Fedora Release Engineering <rel-eng@fedoraproject.org> - 2.8.12-2
+- Autorebuild for GCC 4.3
+
+* 五 1月 25 2008 Nalin Dahyabhai <nalin@redhat.com> - 2.8.12-1
+- update to 2.8.12, which was relicensed to GPLv2
+- package the now-bundled cracklib-small dictionary in cracklib-dicts
+
+* 二 8月 21 2007 Nalin Dahyabhai <nalin@redhat.com> - 2.8.10-3
+- rebuild
+
+* 一 7月 23 2007 Nalin Dahyabhai <nalin@redhat.com>
+- add a %check script to catch things like #249210
+
+* 一 7月 23 2007 Nalin Dahyabhai <nalin@redhat.com> - 2.8.10-2
+- work around non-executable util/cracklib-format giving us empty/garbage
+  dictionaries (#249210)
+
+* 四 7月 19 2007 Nalin Dahyabhai <nalin@redhat.com> - 2.8.10-1
+- update to 2.8.10
+
+* 三 6月 20 2007 Nalin Dahyabhai <nalin@redhat.com> - 2.8.9-11
+- improve reports of out-of-memory exceptions so that they don't include a
+  bogus filename
+- improve reports of file-missing exceptions from the python module so that
+  they give the right filename (#225858)
+
+* 一 3月 12 2007 Nalin Dahyabhai <nalin@redhat.com> - 2.8.9-10
+- explicitly include required headers from <packer.h> (#228698)
+- attempt to provide doc strings in the python module
+
+* 一 2月 12 2007 Nalin Dahyabhai <nalin@redhat.com> - 2.8.9-9
+- drop final "." from summaries (Jef Spaleta, #225659)
+- drop static library from -devel subpackage (Jef Spaleta, #225659)
+- note that the most recently-added wordlist came from bugzilla (#225659)
+- remove explicit dependency on gzip, as it's implicit (Jef Spaleta, #225659)
+- convert %triggerpostun to not use a shell as an interpreter (#225659)
+
+* 三 1月 31 2007 Nalin Dahyabhai <nalin@redhat.com> - 2.8.9-8
+- add word list from attachment #126053 (#185314)
+
+* 四 1月 25 2007 Nalin Dahyabhai <nalin@redhat.com> - 2.8.9-7
+- fix check for the existence of dictionaries when the caller specifies a
+  location (#224347, upstream #1644628)
+
+* 四 12月 07 2006 Jeremy Katz <katzj@redhat.com> - 2.8.9-6
+- rebuild against python 2.5
+
+* 日 10月 29 2006 Nalin Dahyabhai <nalin@redhat.com> - 2.8.9-5
+- split out cracklib-python (#203327)
+
+* 日 10月 29 2006 Nalin Dahyabhai <nalin@redhat.com> - 2.8.9-4
+- split out cracklib-devel (#203569)
+
+* 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.8.9-3.1
+- rebuild
+
+* 一 6月 12 2006 Jesse Keating <jkeating@redhat.com> - 2.8.9-3
+- Add missing br, automake, libtool (#194738)
+
+* 二 4月 25 2006 Nalin Dahyabhai <nalin@redhat.com> - 2.8.9-2
+- update to 2.8.9
+- only create compat symlinks for the dictionaries if we aren't installing
+  them into the old locations
+
+* 五 2月 10 2006 Jesse Keating <jkeating@redhat.com> - 2.8.6-1.2.1
+- bump again for double-long bug on ppc(64)
+
+* 二 2月 07 2006 Jesse Keating <jkeating@redhat.com> - 2.8.6-1.2
+- rebuilt for new gcc4.1 snapshot and glibc changes
+
+* 五 12月 09 2005 Jesse Keating <jkeating@redhat.com>
+- rebuilt
+
+* 一 11月 07 2005 Nalin Dahyabhai <nalin@redhat.com> 2.8.6-1
+- update to 2.8.6
+- remove .la file (#172632)
+
+* 三 9月 28 2005 Nalin Dahyabhai <nalin@redhat.com> 2.8.5-2
+- update to 2.8.5
+
+* 二 9月 27 2005 Nalin Dahyabhai <nalin@redhat.com> 2.8.4-1
+- update to 2.8.4
+- build python module
+
+* 五 5月 13 2005 Nalin Dahyabhai <nalin@redhat.com> 2.8.3-1
+- update to 2.8.3
+
+* 四 3月 17 2005 Nalin Dahyabhai <nalin@redhat.com> 2.8.2-1
+- update to 2.8.2
+
+* 三 3月 16 2005 Nalin Dahyabhai <nalin@redhat.com> 2.8.1-1
+- update to 2.8.1
+  - moves dictionary to new default location under %{_datadir} -- the
+    dictionary format is the same across all architectures
+  - renames "packer" to "cracklib-packer"
+- conflict with cracklib-dicts < 2.8, where the on-disk format was not
+  compatible on 64-bit arches due to now-fixed cleanliness bugs
+- move binaries for manipulating and checking words against dictionaries
+  from -dicts into the main package
+
+* 一 1月 03 2005 Nalin Dahyabhai <nalin@redhat.com> 2.7-30
+- rebuild
+
+* 一 1月 03 2005 Nalin Dahyabhai <nalin@redhat.com> 2.7-29
+- correctly build on 64-bit systems (part of #143417)
+- patch so that 32- and 64-bit libcrack can read dictionaries which were
+  incorrectly generated on 64-bit systems of the same endianness (more #143417)
+- include a sample cracklib magic file
+- stop using /usr/dict/* when building the dictionary
+- list words as a build requirement, which it is, instead of a run-time
+  requirement
+- provide a virtual arch-specific dep in cracklib-dicts, require it in
+  cracklib (part of #143417)
+
+* 二 6月 15 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 二 3月 02 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 五 2月 13 2004 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 2月 04 2004 Nalin Dahyabhai <nalin@redhat.com> 2.7-26
+- update URL (previous page moved) (#114894)
+
+* 五 1月 30 2004 Nalin Dahyabhai <nalin@redhat.com> 2.7-25
+- fix ldconfig invocation in trigger for older versions which included the
+  soname symlink (#114620)
+
+* 一 12月 01 2003 Nalin Dahyabhai <nalin@redhat.com> 2.7-24
+- include packer.h for reading dictionaries directly, since we already include
+  packer in the -dicts subpackage (#68339)
+- don't include the soname symlink in the package, let ldconfig do its job
+
+* 三 6月 18 2003 Nalin Dahyabhai <nalin@redhat.com> 2.7-23
+- rebuild
+
+* 一 6月 16 2003 Nalin Dahyabhai <nalin@redhat.com> 2.7-22
+- rebuild
+
+* 三 6月 04 2003 Elliot Lee <sopwith@redhat.com>
+- rebuilt
+
+* 三 4月 30 2003 Nalin Dahyabhai <nalin@redhat.com>
+- update URL
+
+* 二 2月 04 2003 Florian La Roche <Florian.LaRoche@redhat.de>
+- add symlink to shared libs
+
+* 三 1月 22 2003 Tim Powers <timp@redhat.com>
+- rebuilt
+
+* 三 9月 25 2002 Nalin Dahyabhai <nalin@redhat.com> 2.7-19
+- fix for builds on multilib systems (set DICTPATH properly)
+
+* 五 6月 21 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 日 5月 26 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 四 5月 09 2002 Nalin Dahyabhai <nalin@redhat.com> 2.7-16
+- rebuild in new environment
+
+* 五 2月 22 2002 Nalin Dahyabhai <nalin@redhat.com> 2.7-15
+- rebuild
+
+* 三 1月 09 2002 Tim Powers <timp@redhat.com>
+- automated rebuild
+
+* 二 10月 02 2001 Nalin Dahyabhai <nalin@redhat.com> 2.7-13
+- use getpwuid_r instead of getpwuid
+
+* 五 8月 03 2001 Nalin Dahyabhai <nalin@redhat.com> 2.7-12
+- remove cruft that ldconfig already knows how to manage
+- don't explicitly strip anything -- the brp setup decides that
+- tweak the header so that it can be used in C++ (#46685)
+- buildprereq the words package
+
+* 二 6月 26 2001 Florian La Roche <Florian.LaRoche@redhat.de>
+- add link from library major version number
+
+* 日 6月 24 2001 Elliot Lee <sopwith@redhat.com>
+- Bump release + rebuild.
+
+* 三 7月 12 2000 Prospector <bugzilla@redhat.com>
+- automatic rebuild
+
+* 二 6月 27 2000 Nalin Dahyabhai <nalin@redhat.com>
+- FHS fixes
+- fix undeclared function warnings from the new compiler
+- fix URL
+
+* 五 4月 07 2000 Trond Eivind Glomsrød <teg@redhat.com>
+- switched to use /usr/share/dict/words
+
+* 二 4月 06 1999 Preston Brown <pbrown@redhat.com>
+- strip binaries
+
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+- auto rebuild in the new build environment (release 4)
+
+* 三 1月 06 1999 Cristian Gafton <gafton@redhat.com>
+- build for glibc 2.1
+
+* 六 5月 09 1998 Prospector System <bugs@redhat.com>
+- translations modified for de, fr, tr
+
+* 二 3月 10 1998 Cristian Gafton <gafton@redhat.com>
+- updated to 2.7
+- build shared libraries
+
+* 一 11月 03 1997 Donnie Barnes <djb@redhat.com>
+- added -fPIC
+
+* 一 10月 13 1997 Donnie Barnes <djb@redhat.com>
+- basic spec file cleanups
+
+* 一 6月 02 1997 Erik Troan <ewt@redhat.com>
+- built against glibc
+
