@@ -1,0 +1,9 @@
+kernel-uek-2.6.32-400.37.9.el6uek.x86_64.rpm
+
+kernel-uek-4.1.12-61.1.9.el7uek.x86_64.rpm
+kernel-uek-3.8.13-98.el7uek.x86_64.rpm
+
+
+other:
+http://public-yum.oracle.com/repo/OracleLinux/OL6/latest/x86_64
+http://public-yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64
