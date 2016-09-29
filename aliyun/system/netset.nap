@@ -1,0 +1,33 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 0.0.0.0:22                  0.0.0.0:*                   LISTEN      1073/sshd           
+tcp        0  14118 115.29.32.55:22             122.96.104.20:22856         ESTABLISHED 12062/sshd          
+tcp        0     40 115.29.32.55:22             122.96.104.20:22853         ESTABLISHED 1220/sshd           
+tcp        0      0 115.29.32.55:25170          140.205.140.205:80          ESTABLISHED 1001/AliYunDun      
+tcp        0      0 115.29.32.55:22             122.96.104.20:22852         ESTABLISHED 1149/sshd           
+tcp       38      0 115.29.32.55:23882          192.30.253.112:443          CLOSE_WAIT  1195/git-remote-htt 
+udp        0      0 115.29.32.55:123            0.0.0.0:*                               1081/ntpd           
+udp        0      0 10.161.76.179:123           0.0.0.0:*                               1081/ntpd           
+udp        0      0 127.0.0.1:123               0.0.0.0:*                               1081/ntpd           
+udp        0      0 0.0.0.0:123                 0.0.0.0:*                               1081/ntpd           
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node PID/Program name    Path
+unix  2      [ ACC ]     STREAM     LISTENING     6017   1/init              @/com/ubuntu/upstart
+unix  2      [ ]         DGRAM                    6185   331/udevd           @/org/kernel/udev/udevd
+unix  7      [ ]         DGRAM                    7567   887/rsyslogd        /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     7619   905/nscd            /var/run/nscd/socket
+unix  2      [ ACC ]     STREAM     LISTENING     8134   1015/AliHids        /tmp/qtsingleapp-aegisG-46d2
+unix  2      [ ACC ]     STREAM     LISTENING     7976   1001/AliYunDun      /tmp/Aegis-<Guid(5A2C30A2-A87D-490A-9281-6765EDAD7CBA)>
+unix  2      [ ]         DGRAM                    31550  12062/sshd          
+unix  2      [ ]         DGRAM                    9129   1220/sshd           
+unix  2      [ ]         DGRAM                    8767   1149/sshd           
+unix  2      [ ]         DGRAM                    8455   1091/crond          
+unix  2      [ ]         DGRAM                    8288   1081/ntpd           
+unix  3      [ ]         STREAM     CONNECTED     8162   1001/AliYunDun      /tmp/Aegis-<Guid(5A2C30A2-A87D-490A-9281-6765EDAD7CBA)>
+unix  3      [ ]         STREAM     CONNECTED     8161   1015/AliHids        
+unix  3      [ ]         STREAM     CONNECTED     7975   1001/AliYunDun      
+unix  3      [ ]         STREAM     CONNECTED     7974   1001/AliYunDun      
+unix  3      [ ]         STREAM     CONNECTED     7973   1001/AliYunDun      
+unix  3      [ ]         STREAM     CONNECTED     7972   1001/AliYunDun      
+unix  3      [ ]         DGRAM                    6199   331/udevd           
+unix  3      [ ]         DGRAM                    6198   331/udevd           
