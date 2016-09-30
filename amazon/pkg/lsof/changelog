@@ -1,3 +1,12 @@
+* 三 7月 22 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/lsof-4.82-5.el6
+
+* 四 11月 27 2014 Peter Schiffer <pschiffe@redhat.com> 4.82-5
+- resolves: #772991
+  fixed NFS output
+- resolves: #668099
+  added support for SCTP connections
+
 * 四 6月 21 2012 Cristian Gafton <gafton@amazon.com>
 - import source package RHEL6/lsof-4.82-4.el6
 

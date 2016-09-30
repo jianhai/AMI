@@ -1,3 +1,6 @@
+* 四 9月 22 2016 Munehisa Kamata <kamatam@amazon.com>
+- update to 1.1.0
+
 * 五 10月 23 2015 Jason Green <jasg@amazon.com>
 - create and use pid file in init script
 - fix condrestart in init script

@@ -1,3 +1,27 @@
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/libffi-3.0.13-16.el7
+
+* 二 9月 02 2014 Dan Horák <dhorak@redhat.com> - 3.0.13-16
+- Drop ppc64le from the multilib list
+- Use additional BR: only in ppc64le build
+- Resolves: RHBZ1116945
+
+* 二 8月 26 2014 Andrew Haley <aph@redhat.com> - 3.0.13-15
+- Add requires for libtool and texinfo
+- Resolves: RHBZ1116945
+
+* 二 8月 26 2014 Andrew Haley <aph@redhat.com> - 3.0.13-14
+- Add requires for automake
+- Resolves: RHBZ1116945
+
+* 二 8月 26 2014 Andrew Haley <aph@redhat.com> - 3.0.13-13
+- Add requires for autoconf
+- Resolves: RHBZ1116945
+
+* 二 8月 26 2014 Andrew Haley <aph@redhat.com> - 3.0.13-12
+- Merge from private-rhel-7.0-ppc64le branch
+- Resolves: RHBZ1116945
+
 * 五 8月 01 2014 Ben Cressey <bcressey@amazon.com>
 - update license to include GPLv2+
 

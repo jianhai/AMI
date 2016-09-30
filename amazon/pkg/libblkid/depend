@@ -12,7 +12,7 @@ libc.so.6(GLIBC_2.3.4)(64bit)
 libc.so.6(GLIBC_2.4)(64bit)
 libc.so.6(GLIBC_2.7)(64bit)
 libc.so.6(GLIBC_2.8)(64bit)
-libuuid = 2.23.2-22.26.amzn1
+libuuid = 2.23.2-26.27.amzn1
 libuuid.so.1()(64bit)
 libuuid.so.1(UUID_1.0)(64bit)
 rpmlib(CompressedFileNames) <= 3.0.4-1

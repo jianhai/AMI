@@ -11,12 +11,14 @@
 bash >= 2.0
 chkconfig
 chkconfig
-config(sendmail) = 8.14.4-8.12.amzn1
+config(sendmail) = 8.14.4-9.14.amzn1
 coreutils
 coreutils
 initscripts
 libc.so.6()(64bit)
 libc.so.6(GLIBC_2.11)(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.15)(64bit)
 libc.so.6(GLIBC_2.2.5)(64bit)
 libc.so.6(GLIBC_2.3)(64bit)
 libc.so.6(GLIBC_2.3.4)(64bit)

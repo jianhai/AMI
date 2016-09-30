@@ -1,3 +1,9 @@
+* 一 3月 16 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/ncurses-5.7-4.20090207.el6
+
+* 四 2月 19 2015 Miroslav Lichvar <mlichvar@redhat.com> 5.7-4.20090207
+- fix pkg-config files to include tinfo in static linking (#1025744)
+
 * 三 3月 13 2013 Andrew Jorgensen <ajorgens@amazon.com>
 - Revert "Fix the libcurses.so symlink"
 

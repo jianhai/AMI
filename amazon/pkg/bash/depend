@@ -1,5 +1,5 @@
 /bin/sh
-config(bash) = 4.2.46-19.35.amzn1
+config(bash) = 4.2.46-20.36.amzn1
 libc.so.6()(64bit)
 libc.so.6(GLIBC_2.11)(64bit)
 libc.so.6(GLIBC_2.14)(64bit)

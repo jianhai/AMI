@@ -1,6 +1,18 @@
 * 二 6月 16 2015 Matt Nierzwicki <nierzwic@amazon.com>
 - Add patch to atd.c to prevent logging invalid jobs
 
+* 二 3月 03 2015 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL6/at-3.1.10-48.el6
+
+* 一 2月 16 2015 Tomáš Mráz <tmraz@redhat.com> - 3.1.10-48
+- mention -d and -M in the man page (#1192037)
+
+* 四 12月 11 2014 Tomáš Mráz <tmraz@redhat.com> - 3.1.10-47
+- do not use perr() in running atd (#994201)
+- correct Requires/BuildRequires (#712079)
+- mention all options in the usage() (#784814)
+- do not leave zero-byte sized files when filesystem is full (#1166882)
+
 * 三 10月 15 2014 Cristian Gafton <gafton@amazon.com>
 - import source package RHEL6/at-3.1.10-44.el6_6.2
 - import source package RHEL6/at-3.1.10-44.el6_4.1
@@ -8,7 +20,7 @@
 * 二 10月 07 2014 Cristian Gafton <gafton@amazon.com>
 - import source package RHEL6/at-3.1.10-44.el6_5.2
 
-* 一 10月 06 2014 Tomáš Mráz <tmraz@redhat.com> - 3.1.10-44.2
+* 四 10月 02 2014 Tomáš Mráz <tmraz@redhat.com> - 3.1.10-45
 - filter environment variables not acceptable in bash input (#1147043)
 
 * 三 9月 10 2014 Rodrigo Novo <rodarvus@amazon.com>

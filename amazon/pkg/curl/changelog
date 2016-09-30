@@ -1,8 +1,53 @@
-* 五 8月 12 2016 Ian Weller <iweller@amazon.com>
-- Backport patches for CVE-2016-5419, CVE-2016-5420, CVE-2016-5421
+* 六 9月 17 2016 Ian Weller <iweller@amazon.com>
+- import source package F24/curl-7.47.1-8.fc24
+
+* 三 9月 14 2016 Kamil Dudka <kdudka@redhat.com> 7.47.1-8
+- reject negative string lengths in curl_easy_[un]escape() (CVE-2016-7167)
+
+* 二 9月 06 2016 Ian Weller <iweller@amazon.com>
+- import source package F24/curl-7.47.1-7.fc24
+
+* 五 8月 26 2016 Kamil Dudka <kdudka@redhat.com> 7.47.1-7
+- work around race condition in PK11_FindSlotByName()
+- fix incorrect use of a previously loaded certificate from file
+  (related to CVE-2016-5420)
+
+* 一 8月 08 2016 Praveen K Paladugu <praween@amazon.com>
+- import source package F24/curl-7.47.1-6.fc24
+
+* 三 8月 03 2016 Kamil Dudka <kdudka@redhat.com> 7.47.1-6
+- fix re-using connections with wrong client cert (CVE-2016-5420)
+- fix TLS session resumption client cert bypass (CVE-2016-5419)
+- fix use of connection struct after free (CVE-2016-5421)
+
+* 三 8月 03 2016 Praveen K Paladugu <praween@amazon.com>
+- import source package F24/curl-7.47.1-5.fc24
+- import source package F24/curl-7.47.1-4.fc24
+- import source package F23/curl-7.43.0-7.fc23
+- import source package F23/curl-7.43.0-6.fc23
+- import source package F23/curl-7.43.0-5.fc23
+- import source package F23/curl-7.43.0-4.fc23
 
 * 一 6月 13 2016 Praveen K Paladugu <praween@amazon.com>
 - Fix for a memory leak reported at https://github.com/curl/curl/issues/147
+
+* 五 6月 03 2016 Kamil Dudka <kdudka@redhat.com> 7.47.1-5
+- fix SIGSEGV of the curl tool while parsing URL with too many globs (#1340757)
+
+* 三 3月 02 2016 Kamil Dudka <kdudka@redhat.com> 7.47.1-4
+- do not refuse cookies for localhost (#1308791)
+
+* 三 2月 17 2016 Kamil Dudka <kdudka@redhat.com> 7.47.1-3
+- make SCP and SFTP test-cases work with up2date OpenSSH
+
+* 三 2月 10 2016 Kamil Dudka <kdudka@redhat.com> 7.47.1-2
+- enable support for Public Suffix List (#1305701)
+
+* 一 2月 08 2016 Kamil Dudka <kdudka@redhat.com> 7.47.1-1
+- new upstream release
+
+* 三 2月 03 2016 Fedora Release Engineering <releng@fedoraproject.org> - 7.47.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
 
 * 三 2月 03 2016 Sean Kelly <seankell@amazon.com>
 - import source package F22/curl-7.40.0-8.fc22
@@ -10,39 +55,68 @@
 - import source package F22/curl-7.40.0-6.fc22
 - import source package F22/curl-7.40.0-5.fc22
 
-* 三 1月 27 2016 Kamil Dudka <kdudka@redhat.com> 7.40.0-8
-- match credentials when re-using a proxy connection (CVE-2016-0755)
+* 三 1月 27 2016 Kamil Dudka <kdudka@redhat.com> 7.47.0-1
+- new upstream release (fixes CVE-2016-0755)
 
-* 五 9月 18 2015 Kamil Dudka <kdudka@redhat.com> 7.40.0-7
+* 五 12月 04 2015 Kamil Dudka <kdudka@redhat.com> 7.46.0-2
+- own /usr/share/zsh/site-functions instead of requiring zsh (#1288529)
+
+* 三 12月 02 2015 Kamil Dudka <kdudka@redhat.com> 7.46.0-1
+- disable silent builds (suggested by Paul Howarth)
+- use default port numbers when running the upstream test-suite
+- install zsh completion script
+- new upstream release
+
+* 三 10月 07 2015 Paul Howarth <paul@city-fan.org> 7.45.0-1
+- new upstream release
+- drop %defattr, redundant since rpm 4.4
+
+* 五 9月 18 2015 Kamil Dudka <kdudka@redhat.com> 7.44.0-2
 - prevent NSS from incorrectly re-using a session (#1104597)
 
-* 一 8月 24 2015 Kamil Dudka <kdudka@redhat.com> 7.40.0-6
-- make IMAP work with the GSSAPI authentication (#1256276)
-- explicitly disable HTTP/2 support in Fedora 22 curl
+* 三 8月 12 2015 Kamil Dudka <kdudka@redhat.com> 7.44.0-1
+- new upstream release
 
-* 三 6月 17 2015 Kamil Dudka <kdudka@redhat.com> 7.40.0-5
-- implement public key pinning for NSS backend (#1195771)
+* 四 7月 30 2015 Kamil Dudka <kdudka@redhat.com> 7.43.0-3
+- prevent dnf from crashing when using both FTP and HTTP (#1248389)
 
-* 三 6月 17 2015 Kamil Dudka <kdudka@redhat.com> 7.40.0-4
-- fix lingering HTTP credentials in connection re-use (CVE-2015-3236)
-- prevent SMB from sending off unrelated memory contents (CVE-2015-3237)
-- curl-config --libs now works on x86_64 without libcurl-devel.x86_64 (#1228363)
-- do not run flaky test-cases in %check
+* 四 7月 16 2015 Kamil Dudka <kdudka@redhat.com> 7.43.0-2
+- build support for the HTTP/2 protocol
 
 * 三 6月 17 2015 Ben Cressey <bcressey@amazon.com>
 - add patches for CVE-2015-3236 and CVE-2015-3237
 
-* 三 4月 22 2015 Kamil Dudka <kdudka@redhat.com> 7.40.0-3
-- require credentials to match for NTLM re-use (CVE-2015-3143)
-- fix invalid write with a zero-length host name in URL (CVE-2015-3144)
-- fix invalid write in cookie path sanitization code (CVE-2015-3145)
-- close Negotiate connections when done (CVE-2015-3148)
+* 三 6月 17 2015 Kamil Dudka <kdudka@redhat.com> 7.43.0-1
+- new upstream release (fixes CVE-2015-3236 and CVE-2015-3237)
+
+* 三 6月 17 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 7.42.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
+
+* 五 6月 05 2015 Kamil Dudka <kdudka@redhat.com> 7.42.1-2
+- curl-config --libs now works on x86_64 without libcurl-devel.x86_64 (#1228363)
+
+* 三 4月 29 2015 Kamil Dudka <kdudka@redhat.com> 7.42.1-1
+- new upstream release (fixes CVE-2015-3153)
 
 * 三 4月 22 2015 Rodrigo Novo <rodarvus@amazon.de>
 - import source package F22/curl-7.40.0-3.fc22
 
-* 一 2月 23 2015 Kamil Dudka <kdudka@redhat.com> 7.40.0-2
+* 三 4月 22 2015 Kamil Dudka <kdudka@redhat.com> 7.42.0-1
+- new upstream release (fixes CVE-2015-3143, CVE-2015-3144, CVE-2015-3145,
+  and CVE-2015-3148)
+- implement public key pinning for NSS backend (#1195771)
+- do not run flaky test-cases in %check
+
+* 三 2月 25 2015 Kamil Dudka <kdudka@redhat.com> 7.41.0-1
+- new upstream release
+- include extern-scan.pl to make test1135 succeed (upstream commit 1514b718)
+
+* 一 2月 23 2015 Kamil Dudka <kdudka@redhat.com> 7.40.0-3
 - fix a spurious connect failure on dual-stacked hosts (#1187531)
+
+* 六 2月 21 2015 Till Maas <opensource@till.name> - 7.40.0-2
+- Rebuilt for Fedora 23 Change
+  https://fedoraproject.org/wiki/Changes/Harden_all_packages_with_position-independent_code
 
 * 一 2月 09 2015 Rodrigo Novo <rodarvus@amazon.de>
 - import source package F22/curl-7.40.0-1.fc22

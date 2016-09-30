@@ -1,3 +1,6 @@
+* 一 9月 26 2016 Ian Weller <iweller@amazon.com>
+- Fix CVE-2016-2776
+
 * 二 9月 13 2016 Jason Green <jasg@amazon.com>
 - Fix CVE-2016-2775
 

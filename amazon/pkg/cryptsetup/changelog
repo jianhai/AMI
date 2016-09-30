@@ -1,3 +1,12 @@
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/cryptsetup-1.6.7-1.el7
+
+* 四 6月 18 2015 Ondrej Kozina <okozina@redhat.com> - 1.6.7-1
+- Update to cryptsetup 1.6.7.
+- patch: avoid use of kernel crypto API socket which is known
+  to be broken in RHEL7.0 kernel (7.1+ is fine).
+- Resolves: #1206170
+
 * 二 4月 07 2015 Jamie Anderson <jamieand@amazon.com>
 - Require device-mapper-libs that supports deferred removal
 

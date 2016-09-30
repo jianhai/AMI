@@ -1,4 +1,4 @@
-cryptsetup-libs(x86-64) = 1.6.6-3.21.amzn1
+cryptsetup-libs(x86-64) = 1.6.7-1.22.amzn1
 device-mapper-libs(x86-64) >= 1.02.90
 fipscheck-lib(x86-64) >= 1.3.0
 libc.so.6()(64bit)
@@ -12,7 +12,6 @@ libc.so.6(GLIBC_2.7)(64bit)
 libc.so.6(GLIBC_2.8)(64bit)
 libcryptsetup.so.4()(64bit)
 libcryptsetup.so.4(CRYPTSETUP_1.0)(64bit)
-libfipscheck.so.1()(64bit)
 libpopt.so.0()(64bit)
 libpopt.so.0(LIBPOPT_0)(64bit)
 libpwquality >= 1.2.0

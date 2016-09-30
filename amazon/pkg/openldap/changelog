@@ -1,9 +1,33 @@
+* 二 5月 10 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/openldap-2.4.40-12.el6
+
+* 一 3月 21 2016 Matúš Honěk <mhonek@redhat.com> - 2.4.40-12
+- fix regression: Including AESGCM ciphers in DEFAULT cipher string breaks SSF (#1300701)
+
+* 二 3月 08 2016 Matúš Honěk <mhonek@redhat.com> - 2.4.40-11
+- fix: OpenLDAP doesn't use sane (or default) cipher order (#1300701)
+  + Add support for TLSv1.2, and SHA256 and SHA384 ciphers
+  + Use what NSS considers default for DEFAULT cipher string.
+  + Drop unnecessary hardcoded cipher suites' default flags
+  + Update with TLSv1.2 ciphers
+- revert: check_password minPoints parameter useless (#1255063)
+
+* 三 1月 20 2016 Matúš Honěk <mhonek@redhat.com> - 2.4.40-10
+- fix: update description in slapd.conf for NSS database related options (#1131094)
+- fix: check_password minPoints parameter useless (#1255063)
+
+* 三 1月 20 2016 Matúš Honěk <mhonek@redhat.com> - 2.4.40-9
+- fix: Bad log levels in check_password module (#1255046)
+- [rfe] add informational message about database backup when openldap is updated (#1261651)
+- fix: id_query option is not available after rebasing openldap to 2.4.39 (#1288545)
+- fix: We can't search expected entries from LDAP server (#1212283)
+
+* 二 1月 19 2016 Matúš Honěk <mhonek@redhat.com> - 2.4.40-8
+- fix: slapd crash in do_search (#1257543)
+- Fix: Cannot build the package after libtool rebase (#1296129)
+
 * 二 11月 10 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package RHEL6/openldap-2.4.40-7.el6_7
-
-* 二 9月 29 2015 Matúš Honěk <mhonek@redhat.com> - 2.4.40-7
-- fix: regression: deadlock during SSL_ForceHandshake when getting connection to replica (#1267501)
-  + apply (and modify a little) the patch from commit 1eeaeeb7
 
 * 二 9月 29 2015 Ian Weller <iweller@amazon.com>
 - Ensure multiarch requires are architecture-dependent
@@ -11,8 +35,12 @@
 * 二 9月 29 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package RHEL6/openldap-2.4.40-6.el6_7
 
+* 二 9月 29 2015 Matúš Honěk <mhonek@redhat.com> - 2.4.40-7
+- fix: regression: deadlock during SSL_ForceHandshake when getting connection to replica (#1263477)
+  + apply (and modify a little) the patch from commit 1eeaeeb7
+
 * 四 9月 17 2015 Matúš Honěk <mhonek@redhat.com> - 2.4.40-6
-- CVE-2015-6908 openldap: ber_get_next denial of service vulnerability (#1263171)
+- CVE-2015-6908 openldap: ber_get_next denial of service vulnerability (#1263172)
 
 * 一 8月 24 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package RHEL6/openldap-2.4.40-5.el6

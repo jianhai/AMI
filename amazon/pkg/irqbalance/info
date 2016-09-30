@@ -1,16 +1,16 @@
 Name        : irqbalance
 Epoch       : 2
-Version     : 1.0.8
-Release     : 1.23.amzn1
+Version     : 1.1.0
+Release     : 1.24.amzn1
 Architecture: x86_64
-Install Date: 2016年06月21日 星期二 20时10分28秒
+Install Date: 2016年09月30日 星期五 04时34分29秒
 Group       : System Environment/Base
-Size        : 70253
+Size        : 74477
 License     : GPLv2
-Signature   : RSA/SHA256, 2016年04月27日 星期三 21时05分45秒, Key ID bcb4a85b21c0f39f
-Source RPM  : irqbalance-1.0.8-1.23.amzn1.src.rpm
-Build Date  : 2016年04月27日 星期三 21时03分45秒
-Build Host  : build-64012.build
+Signature   : RSA/SHA256, 2016年09月23日 星期五 02时21分02秒, Key ID bcb4a85b21c0f39f
+Source RPM  : irqbalance-1.1.0-1.24.amzn1.src.rpm
+Build Date  : 2016年09月23日 星期五 01时09分53秒
+Build Host  : build-60008.build
 Relocations : (not relocatable)
 Packager    : Amazon.com, Inc. <http://aws.amazon.com>
 Vendor      : Amazon.com

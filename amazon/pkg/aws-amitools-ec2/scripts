@@ -8,7 +8,7 @@ fi
 # Install/Upgrade - Create symlink from versioned 
 # directory to product name directory if it doesn't exist
 if [ ! -e  /opt/aws/amitools/ec2 ]; then
-    ln -s  ./ec2-1.5.7  /opt/aws/amitools/ec2
+    ln -s  ./ec2-1.5.9  /opt/aws/amitools/ec2
 fi
 
 # Create aws bin directory if it doesn't exist:
@@ -34,7 +34,7 @@ preuninstall scriptlet (using /bin/sh):
 # Uninstall: 
 if [ "$1" = "0" ]; then
     #Clean up the symlinks if it points to this version
-    if [ "x$(readlink /opt/aws/amitools/ec2)" == "x./ec2-1.5.7" ]; then
+    if [ "x$(readlink /opt/aws/amitools/ec2)" == "x./ec2-1.5.9" ]; then
         for command in /opt/aws/bin/ec2*; do
             if [ "x$(readlink $command)" == "x../amitools/ec2/bin/$(basename $command)" ]; then
                 /bin/rm -f $command

@@ -1,5 +1,14 @@
+* 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
+- import source package RHEL7/tcp_wrappers-7.6-77.el7
+
 * 五 4月 04 2014 Ben Cressey <bcressey@amazon.com>
 - conditionalize usrmerge of libraries
+
+* 五 1月 24 2014 Daniel Mach <dmach@redhat.com> - 7.6-77
+- Mass rebuild 2014-01-24
+
+* 五 12月 27 2013 Daniel Mach <dmach@redhat.com> - 7.6-76
+- Mass rebuild 2013-12-27
 
 * 五 12月 13 2013 Cristian Gafton <gafton@amazon.com>
 - import source package RHEL7/tcp_wrappers-7.6-75.el7

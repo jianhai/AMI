@@ -1,15 +1,15 @@
 Name        : python27-setuptools
 Version     : 12.2
-Release     : 1.30.amzn1
+Release     : 1.32.amzn1
 Architecture: noarch
-Install Date: 2016年06月21日 星期二 20时10分17秒
+Install Date: 2016年09月30日 星期五 04时34分25秒
 Group       : Applications/System
 Size        : 1944149
 License     : Python or ZPLv2.0
-Signature   : RSA/SHA256, 2015年04月01日 星期三 20时56分56秒, Key ID bcb4a85b21c0f39f
-Source RPM  : python-setuptools-12.2-1.30.amzn1.src.rpm
-Build Date  : 2015年03月31日 星期二 10时41分57秒
-Build Host  : build-60006.build
+Signature   : RSA/SHA256, 2016年08月10日 星期三 22时37分22秒, Key ID bcb4a85b21c0f39f
+Source RPM  : python-setuptools-12.2-1.32.amzn1.src.rpm
+Build Date  : 2016年08月10日 星期三 21时44分35秒
+Build Host  : build-64012.build
 Relocations : (not relocatable)
 Packager    : Amazon.com, Inc. <http://aws.amazon.com>
 Vendor      : Amazon.com

@@ -1,8 +1,24 @@
 * 四 1月 14 2016 Tom Kirchner <tjk@amazon.com>
 - Add upstream patch for CVE-2015-1345
 
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/grep-2.20-2.el7
+
 * 五 9月 25 2015 Andrew Jorgensen <ajorgens@amazon.com>
 - Conflict with older initscripts which are broken by newer grep
+
+* 三 4月 29 2015 Jaroslav Škarvada <jskarvad@redhat.com> - 2.20-2
+- Fixed invalid UTF-8 byte sequence error in PCRE mode
+  (by pcre-backported-fixes patch)
+  Resolves: rhbz#1217080
+- Fixed buffer overrun for grep -F
+  Resolves: CVE-2015-1345
+- Fixed \w and \W behaviour in multibyte locales
+  Resolves: rhbz#1159012
+- Documented --fixed-regexp option
+  Resolves: rhbz#1103259
+- Updated pcre buildrequires to require pcre-devel >= 7.8-7
+  Related: rhbz#1217080
 
 * 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package EL7/grep-2.20-1.el7

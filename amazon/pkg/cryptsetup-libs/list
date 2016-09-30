@@ -1,8 +1,8 @@
 /lib64/libcryptsetup.so.4
-/lib64/libcryptsetup.so.4.6.0
-/usr/share/licenses/cryptsetup-libs-1.6.6
-/usr/share/licenses/cryptsetup-libs-1.6.6/COPYING
-/usr/share/licenses/cryptsetup-libs-1.6.6/COPYING.LGPL
+/lib64/libcryptsetup.so.4.7.0
+/usr/share/licenses/cryptsetup-libs-1.6.7
+/usr/share/licenses/cryptsetup-libs-1.6.7/COPYING
+/usr/share/licenses/cryptsetup-libs-1.6.7/COPYING.LGPL
 /usr/share/locale/cs/LC_MESSAGES/cryptsetup.mo
 /usr/share/locale/de/LC_MESSAGES/cryptsetup.mo
 /usr/share/locale/es/LC_MESSAGES/cryptsetup.mo

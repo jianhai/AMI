@@ -1,16 +1,16 @@
 Name        : bind-utils
 Epoch       : 32
 Version     : 9.8.2
-Release     : 0.37.rc1.47.amzn1
+Release     : 0.37.rc1.48.amzn1
 Architecture: x86_64
-Install Date: 2016年09月27日 星期二 01时25分47秒
+Install Date: 2016年09月30日 星期五 04时34分28秒
 Group       : Applications/System
 Size        : 415815
 License     : ISC
-Signature   : RSA/SHA256, 2016年09月16日 星期五 00时16分40秒, Key ID bcb4a85b21c0f39f
-Source RPM  : bind-9.8.2-0.37.rc1.47.amzn1.src.rpm
-Build Date  : 2016年09月15日 星期四 22时08分55秒
-Build Host  : build-64011.build
+Signature   : RSA/SHA256, 2016年09月27日 星期二 22时25分01秒, Key ID bcb4a85b21c0f39f
+Source RPM  : bind-9.8.2-0.37.rc1.48.amzn1.src.rpm
+Build Date  : 2016年09月26日 星期一 20时48分59秒
+Build Host  : build-60009.build
 Relocations : (not relocatable)
 Packager    : Amazon.com, Inc. <http://aws.amazon.com>
 Vendor      : Amazon.com

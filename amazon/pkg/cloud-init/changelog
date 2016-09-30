@@ -1,3 +1,6 @@
+* 四 8月 18 2016 Ian Weller <iweller@amazon.com>
+- Remove call to "yum makecache" in distros.rhel
+
 * 四 1月 14 2016 Sean Kelly <seankell@amazon.com>
 - Produce canonical semaphore names with cloud-init-per
 

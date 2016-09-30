@@ -1,3 +1,12 @@
+* 六 8月 27 2016 Jamie Anderson <jamieand@amazon.com>
+- Setup secondary private IP asynchronously
+
+* 四 8月 25 2016 Tom Kirchner <tjk@amazon.com>
+- Retry metadata retrieval more often when attaching an ENI
+
+* 三 8月 24 2016 Andrew Jorgensen <ajorgens@amazon.com>
+- Add syslog logging
+
 * 一 4月 11 2016 Matt Nierzwicki <nierzwic@amazon.com>
 - Add udev rule to skip cd/dvd capability probing
 

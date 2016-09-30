@@ -1,7 +1,7 @@
 /bin/bash
 /bin/sh
-config(glibc-common) = 2.17-106.167.amzn1
-glibc(x86-64) = 2.17-106.167.amzn1
+config(glibc-common) = 2.17-106.168.amzn1
+glibc(x86-64) = 2.17-106.168.amzn1
 libc.so.6()(64bit)
 libc.so.6(GLIBC_2.10)(64bit)
 libc.so.6(GLIBC_2.14)(64bit)

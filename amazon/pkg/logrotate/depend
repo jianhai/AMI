@@ -1,9 +1,10 @@
 /bin/sh
-config(logrotate) = 3.7.8-17.13.amzn1
+config(logrotate) = 3.7.8-26.14.amzn1
 coreutils >= 5.92
 libacl.so.1()(64bit)
 libacl.so.1(ACL_1.0)(64bit)
 libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
 libc.so.6(GLIBC_2.2.5)(64bit)
 libc.so.6(GLIBC_2.3)(64bit)
 libc.so.6(GLIBC_2.3.4)(64bit)

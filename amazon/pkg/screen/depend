@@ -4,8 +4,10 @@
 /sbin/install-info
 /sbin/install-info
 /usr/sbin/groupadd
-config(screen) = 4.0.3-16.5.amzn1
+config(screen) = 4.0.3-19.6.amzn1
 libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
+libc.so.6(GLIBC_2.15)(64bit)
 libc.so.6(GLIBC_2.2.5)(64bit)
 libc.so.6(GLIBC_2.3.4)(64bit)
 libc.so.6(GLIBC_2.4)(64bit)

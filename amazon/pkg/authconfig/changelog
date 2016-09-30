@@ -1,3 +1,17 @@
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/authconfig-6.2.8-10.el7
+
+* 五 7月 03 2015 Tomáš Mráz <tmraz@redhat.com> - 6.2.8-10
+- fix title of IPA domain join window (#1166119)
+- add --unattended to IPA uninstall command (#1166131)
+- do not mistake comment for krb5 realm name (#1184639)
+- do not traceback with incorrect locales (#1187020)
+- correct the package needed for winbind (#1190226)
+- install empty /etc/sysconfig/authconfig file (#1194698)
+- let SSSD prompt non-local users for passwords (#1204864)
+- add includedir /var/lib/sss/pubconf/krb5.include.d/ to krb5.conf (#1207552)
+- pass the password provided by --winbindjoin to net join (#1225089)
+
 * 二 3月 31 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package RHEL6/authconfig-6.1.12-23.el6
 

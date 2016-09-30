@@ -1,3 +1,14 @@
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/shared-mime-info-1.1-9.el7
+
+* 五 7月 17 2015 Matthias Clasen <mclasen@redhat.com> 1.1-9
+- Add support for raw disk images
+  Related: #1211198
+
+* 二 6月 30 2015 Ray Strode <rstrode@redhat.com> 1.1-8
+- Update default file assocations to match rebased names
+  Resolves: #1235413
+
 * 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
 - import source package RHEL7/shared-mime-info-1.1-7.el7
 

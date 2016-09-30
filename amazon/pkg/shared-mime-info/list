@@ -316,6 +316,8 @@
 /usr/share/mime/application/x-quicktime-media-link.xml
 /usr/share/mime/application/x-qw.xml
 /usr/share/mime/application/x-rar.xml
+/usr/share/mime/application/x-raw-disk-image-xz-compressed.xml
+/usr/share/mime/application/x-raw-disk-image.xml
 /usr/share/mime/application/x-rpm.xml
 /usr/share/mime/application/x-ruby.xml
 /usr/share/mime/application/x-sami.xml

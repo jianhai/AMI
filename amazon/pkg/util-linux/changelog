@@ -1,3 +1,21 @@
+* 三 8月 03 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/util-linux-2.23.2-26.el7_2.3
+
+* 四 6月 30 2016 Karel Zak <kzak@redhat.com> 2.23.2-26.el7_2.3
+- fix #1350777 - fdisk 'f' subcommand updates partition ranges wrongly
+
+* 三 4月 06 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/util-linux-2.23.2-26.el7_2.2
+
+* 三 3月 16 2016 Karel Zak <kzak@redhat.com> 2.23.2-26.el7_2.2
+- fix #1317953 - lslogins crash when executed with buggy username
+
+* 四 1月 28 2016 Karel Zak <kzak@redhat.com> 2.23.2-26.el7_2.1
+- fix #1302332 - [libblkid] Failed to get offset of the xfs_external_log signature
+
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/util-linux-2.23.2-26.el7
+
 * 四 9月 10 2015 Jason Green <jasg@amazon.com>
 - added requires for pam.d/postlogin and pam.d/password-auth
 
@@ -7,11 +25,30 @@
 * 三 8月 26 2015 Heath Petty <hpetty@amazon.com>
 - Require a newer libuser
 
+* 五 8月 21 2015 Karel Zak <kzak@redhat.com> 2.23.2-26
+- fix #1182831 - blkid incorrectly detects boot sec + MBR as FAT
+
+* 三 8月 12 2015 Karel Zak <kzak@redhat.com> 2.23.2-25
+- fix #1251250 - blkid outputs nothing for some partitions (e.g. sun label)
+
 * 四 8月 06 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package EL7/util-linux-2.23.2-22.el7_1.1
 
-* 五 7月 03 2015 Karel Zak <kzak@redhat.com> 2.23.2-22.el7_1.1
-- fix #1238678 - os-prober attempts to mount thin pool devices
+* 四 7月 02 2015 Karel Zak <kzak@redhat.com> 2.23.2-24
+- fix #1199619 - os-prober attempts to mount thin pool devices
+
+* 二 6月 23 2015 Karel Zak <kzak@redhat.com> 2.23.2-23
+- fix #1225235 - blockdev --report fails on loop and pmem devices
+- fix #1225053 - [RFE] backport fstrim -a and unit file
+- fix #1131523 - mount does not appear to be correctly documented for default mount options
+- fix #1147526 - Incorrect message printed when su is killed
+- fix #1165702 - make login(1) insensitive to SIGXFSZ and huge lastlog
+- fix #1184558 - logger silently changes facility from kern to user
+- fix #1198243 - blkid does not recognize xfs external log device
+- fix #1208081 - lsblk does not list dm-multipath and partitioned devices
+- fix #1209594 - RHEL7: unshare: add --propagation, use MS_PRIVATE by default
+- fix #1229436 - Remove patch that disables User Namespaces
+- fix #1116100 - Add -Z SELInux option to nsenter
 
 * 二 5月 19 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package EL7/util-linux-2.23.2-22.el7_1

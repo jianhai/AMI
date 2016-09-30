@@ -1,13 +1,33 @@
+* 三 8月 03 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/glibc-2.17-106.el7_2.8
+
+* 四 6月 16 2016 Carlos O'Donell <carlos@redhat.com> - 2.17-106.8
+- Fix Linux kernel UAPI header synchronization for IPv6 (#1331283).
+
+* 五 5月 20 2016 Martin Sebor <msebor@redhat.com> - 2.17-106.7
+- Make minor compatibility adjustments in headers (#1331283).
+
+* 五 5月 13 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/glibc-2.17-106.el7_2.6
+
+* 一 4月 04 2016 Carlos O'Donell <carlos@redhat.com> - 2.17-106.6
+- Fix NULL pointer dereference in stub resolver with unconnectable name
+  server addresses (#1323839).
+
+* 一 4月 04 2016 Carlos O'Donell <carlos@redhat.com> - 2.17-106.5
+- Fix memory leak in ftell for wide-oriented streams (#1323781).
+- Avoid race condition in _int_free involving fastbins (#1313308).
+
 * 三 2月 17 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package EL7/glibc-2.17-106.el7_2.4
-
-* 五 2月 05 2016 Florian Weimer <fweimer@redhat.com> - 2.17-106.4
-- Revert problematic libresolv change, not needed for the
-  CVE-2015-7547 fix (#1296030).
 
 * 五 2月 05 2016 Jason Green <jasg@amazon.com>
 - Fix recvfrom function not always using the buffer size of a newly created buffer.
 - Fix memory leak in _nss_dns_gethostbyname4_r with big DNS answer
+
+* 五 2月 05 2016 Florian Weimer <fweimer@redhat.com> - 2.17-106.4
+- Revert problematic libresolv change, not needed for the
+  CVE-2015-7547 fix (#1296030).
 
 * 五 1月 15 2016 Carlos O'Donell <carlos@redhat.com> - 2.17-106.3
 - Fix CVE-2015-7547: getaddrinfo() stack-based buffer overflow (#1296030).

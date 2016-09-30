@@ -9,8 +9,8 @@
 /usr/sbin/groupadd
 /usr/sbin/useradd
 chkconfig
-config(dbus) = 1:1.6.12-8.27.amzn1
-dbus-libs(x86-64) = 1:1.6.12-8.27.amzn1
+config(dbus) = 1:1.6.12-14.28.amzn1
+dbus-libs(x86-64) = 1:1.6.12-14.28.amzn1
 expat >= 2.1.0
 libaudit.so.1()(64bit)
 libc.so.6()(64bit)

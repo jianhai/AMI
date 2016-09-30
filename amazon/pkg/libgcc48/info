@@ -1,15 +1,15 @@
 Name        : libgcc48
 Version     : 4.8.3
-Release     : 9.109.amzn1
+Release     : 9.111.amzn1
 Architecture: x86_64
-Install Date: 2016年06月21日 星期二 20时09分55秒
+Install Date: 2016年09月30日 星期五 04时34分21秒
 Group       : System Environment/Libraries
 Size        : 179864
 License     : GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
-Signature   : RSA/SHA256, 2015年08月07日 星期五 00时06分00秒, Key ID bcb4a85b21c0f39f
-Source RPM  : gcc48-4.8.3-9.109.amzn1.src.rpm
-Build Date  : 2015年08月06日 星期四 16时54分16秒
-Build Host  : build-64012.build
+Signature   : RSA/SHA256, 2016年09月22日 星期四 19时53分01秒, Key ID bcb4a85b21c0f39f
+Source RPM  : gcc48-4.8.3-9.111.amzn1.src.rpm
+Build Date  : 2016年09月21日 星期三 20时16分07秒
+Build Host  : build-60009.build
 Relocations : (not relocatable)
 Packager    : Amazon.com, Inc. <http://aws.amazon.com>
 Vendor      : Amazon.com

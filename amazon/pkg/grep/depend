@@ -3,7 +3,7 @@
 /bin/sh
 /sbin/install-info
 /sbin/install-info
-config(grep) = 2.20-1.16.amzn1
+config(grep) = 2.20-2.17.amzn1
 libc.so.6()(64bit)
 libc.so.6(GLIBC_2.14)(64bit)
 libc.so.6(GLIBC_2.2.5)(64bit)

@@ -1,5 +1,35 @@
+* 四 12月 17 2015 Andrew Jorgensen <ajorgens@amazon.com>
+- Don't use pkg-config to find the bash-completions path
+
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/yum-utils-1.1.31-34.el7
+
+* 一 10月 12 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-34
+- ovl plugin: run at init_hook stage.
+- Resolves: bug#1269395
+
 * 三 9月 23 2015 Heath Petty <hpetty@amazon.com>
 - Add libxml2-python as a requirement for yum-utils for the repo-rss utility
+
+* 五 9月 04 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-33
+- ovl plugin: remove fs check and add manpage.
+- Related: bug#1213602
+
+* 二 8月 04 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-32
+- ovl plugin: change copy-up strategy, execute when root fs is mounted OverlayFS, add logging.
+- Related: bug#1213602
+
+* 四 7月 02 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-31
+- yum-builddep: respect --tolerant to ignore missing dependencies.
+- Resolves: bug#817046
+
+* 二 5月 26 2015 Valentina Mukhamedzhanova <vmukhame@redhat.com> - 1.1.31-30
+- yum-config-manager: update config file specified using -c option.
+- Resolves: bug#1075708
+- yum-config-manager: require \* syntax to disable all repos.
+- Resolves: bug#1151154
+- Add plugin for overlayfs issue workaround.
+- Resolves: bug#1213602
 
 * 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package EL7/yum-utils-1.1.31-29.el7

@@ -5,9 +5,10 @@
 chkconfig
 chkconfig
 chkconfig
-config(irqbalance) = 2:1.0.8-1.23.amzn1
+config(irqbalance) = 2:1.1.0-1.24.amzn1
 kernel >= 2.6.32-279
 libc.so.6()(64bit)
+libc.so.6(GLIBC_2.14)(64bit)
 libc.so.6(GLIBC_2.2.5)(64bit)
 libc.so.6(GLIBC_2.3)(64bit)
 libc.so.6(GLIBC_2.3.4)(64bit)

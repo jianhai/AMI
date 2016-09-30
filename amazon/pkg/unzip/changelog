@@ -1,9 +1,22 @@
+* 二 12月 15 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/unzip-6.0-4.el6
+
+* 三 11月 25 2015 Petr Stodulka <pstodulk@redhat.com> - 6.0-4
+- Added patch for build option "-Werror=format-security"
+- Fix print of non-ascii filenames
+  Resolves: rhbz#1284896
+
+* 五 10月 30 2015 Petr Stodulka <pstodulk@redhat.com> - 6.0-3
+- Fix problem with symlink errors in archive with many files
+- add support of non-latin and non-unicode encodings for filenames
+  Resolves: rhbz#740012 rhbz#885540
+
 * 三 3月 18 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package RHEL6/unzip-6.0-2.el6_6
 
 * 三 2月 25 2015 Petr Stodulka <pstodulk@redhat.com> - 6.0-2
 - Fix CVE-2014-9636 CVE-2014-8139 CVE-2014-8140 CVE-2014-8141
-  Resolves: #1196132 #1196120 #1196124 #1196128
+  Resolves: #1196133 #1196121 #1196125 #1196129
 
 * 六 1月 11 2014 Lee Trager <ltrager@amazon.com>
 - Add patch which allow symbolic links to be properly extracted
@@ -19,19 +32,19 @@
 - Generate debuginfos (rhbz#540220, unzip-6.0-nostrip.patch)
 - New upstream version
 - Compiled using `make generic_gcc` (includes asm)
-- Removed unzip542-rpmoptflags.patch, because RPM_OPT_FLAGS 
+- Removed unzip542-rpmoptflags.patch, because RPM_OPT_FLAGS
   are provided using command line
-- Removed unzip-5.51-link-segv.patch, because the link file 
+- Removed unzip-5.51-link-segv.patch, because the link file
   is not reopened in the current version
-- Removed unzip-5.51-link-segv2.patch, the bug was already fixed 
+- Removed unzip-5.51-link-segv2.patch, the bug was already fixed
   in open_outfile in 5.52
-- Removed unzip-5.52-toctou.patch (CAN-2005-2475), the vulnerability 
+- Removed unzip-5.52-toctou.patch (CAN-2005-2475), the vulnerability
   is fixed in the current version
-- Removed unzip-5.52-near-4GB.patch, unzip-5.52-near-4GB2.patch, 
-  unzip-5.52-4GB3.patch, and unzip-5.52-4GB_types.patch, because 
+- Removed unzip-5.52-near-4GB.patch, unzip-5.52-near-4GB2.patch,
+  unzip-5.52-4GB3.patch, and unzip-5.52-4GB_types.patch, because
   the current version supports large files
 - Removed unzip-5.52-long-filename.patch, the current version
-  fixes the vulnerability by checking the length of command line 
+  fixes the vulnerability by checking the length of command line
   arguments in unzip.c
 - Removed unzip-5.52-makefile.patch, because we no longer create
   the link manually
@@ -78,7 +91,7 @@
 - incorporate the next peckage review comment
 
 * 二 2月 06 2007 Ivana Varekova <varekova@redhat.com> - 5.52-3
-- Resolves: 226516 
+- Resolves: 226516
   Incorporate the package review
 
 * 三 7月 12 2006 Jesse Keating <jkeating@redhat.com> - 5.52-2.2.1
@@ -256,7 +269,7 @@ include quote and/or control characters.
 * 一 5月 21 2001 Trond Eivind Glomsrød <teg@redhat.com>
 - 5.42
 - Don't strip binaries explicitly
-- build without assembly, it doesn't seem to increase performance 
+- build without assembly, it doesn't seem to increase performance
 - make it respect RPM_OPT_FLAGS, define _GNU_SOURCE
 - use %{_tmppath}
 - "License:" replaces "Copyright:"
@@ -279,7 +292,7 @@ include quote and/or control characters.
 * 五 7月 30 1999 Bill Nottingham <notting@redhat.com>
 - update to 5.40
 
-* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com> 
+* 日 3月 21 1999 Cristian Gafton <gafton@redhat.com>
 - auto rebuild in the new build environment (release 5)
 
 * 四 12月 17 1998 Michael Maher <mike@redhat.com>

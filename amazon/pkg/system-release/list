@@ -19,5 +19,5 @@
 /etc/yum/vars/awsdomain
 /etc/yum/vars/awsregion
 /usr/share/doc/system-release
-/usr/share/doc/system-release-2016.03
-/usr/share/doc/system-release-2016.03/GPL
+/usr/share/doc/system-release-2016.09
+/usr/share/doc/system-release-2016.09/GPL

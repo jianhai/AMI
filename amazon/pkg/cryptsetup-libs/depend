@@ -15,7 +15,6 @@ libc.so.6(GLIBC_2.8)(64bit)
 libdevmapper.so.1.02()(64bit)
 libdevmapper.so.1.02(Base)(64bit)
 libdl.so.2()(64bit)
-libfipscheck.so.1()(64bit)
 libgcrypt >= 1.5.3-3
 libgcrypt.so.11()(64bit)
 libgcrypt.so.11(GCRYPT_1.2)(64bit)

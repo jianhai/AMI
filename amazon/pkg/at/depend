@@ -2,7 +2,14 @@
 /bin/sh
 /bin/sh
 /bin/sh
-config(at) = 3.1.10-44.13.amzn1
+chkconfig
+chkconfig
+config(at) = 3.1.10-48.15.amzn1
+coreutils
+coreutils
+initscripts
+initscripts
+initscripts
 libc.so.6()(64bit)
 libc.so.6(GLIBC_2.14)(64bit)
 libc.so.6(GLIBC_2.2.5)(64bit)

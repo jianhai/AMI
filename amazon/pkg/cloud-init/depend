@@ -8,7 +8,7 @@
 /usr/bin/rename
 chkconfig
 chkconfig
-config(cloud-init) = 0.7.6-2.11.amzn1
+config(cloud-init) = 0.7.6-2.12.amzn1
 e2fsprogs
 initscripts
 iproute

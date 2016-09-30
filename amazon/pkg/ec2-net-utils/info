@@ -1,15 +1,15 @@
 Name        : ec2-net-utils
-Version     : 0.4
-Release     : 1.25.amzn1
+Version     : 0.5
+Release     : 1.28.amzn1
 Architecture: noarch
-Install Date: 2016年06月21日 星期二 20时10分29秒
+Install Date: 2016年09月30日 星期五 04时34分29秒
 Group       : System Tools
-Size        : 14204
+Size        : 15394
 License     : Apache License 2.0
-Signature   : RSA/SHA256, 2016年04月20日 星期三 22时27分27秒, Key ID bcb4a85b21c0f39f
-Source RPM  : ec2-utils-0.4-1.25.amzn1.src.rpm
-Build Date  : 2016年04月11日 星期一 17时18分59秒
-Build Host  : build-60009.build
+Signature   : RSA/SHA256, 2016年08月29日 星期一 19时35分24秒, Key ID bcb4a85b21c0f39f
+Source RPM  : ec2-utils-0.5-1.28.amzn1.src.rpm
+Build Date  : 2016年08月27日 星期六 00时15分42秒
+Build Host  : build-64013.build
 Relocations : (not relocatable)
 Packager    : Amazon.com, Inc. <http://aws.amazon.com>
 Vendor      : Amazon.com

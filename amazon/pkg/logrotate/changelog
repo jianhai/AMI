@@ -1,3 +1,45 @@
+* 二 12月 15 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/logrotate-3.7.8-26.el6_7
+
+* 二 11月 10 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/logrotate-3.7.8-25.el6_7
+
+* 一 11月 09 2015 Jan Kaluza <jkaluza@redhat.com> 3.7.8-26
+- fix #1277144 - support olddir on different device with copy or copytruncate
+
+* 四 10月 15 2015 Jan Kaluza <jkaluza@redhat.com> 3.7.8-25
+- fix #1228632 - fix also tests to reflect mail subject change
+
+* 三 9月 30 2015 Jan Kaluza <jkaluza@redhat.com> 3.7.8-24
+- fix #1228632 - make filename in subject consistent when used with compress
+
+* 三 7月 22 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/logrotate-3.7.8-23.el6
+
+* 一 3月 09 2015 Jan Kaluza <jkaluza@redhat.com> 3.7.8-23
+- revert fix #1177970
+
+* 二 3月 03 2015 Jan Kaluza <jkaluza@redhat.com> 3.7.8-22
+- fix #1177970 - fix the potential leaks in previous patch
+
+* 四 2月 26 2015 Jan Kaluza <jkaluza@redhat.com> 3.7.8-21
+- fix #1177970 - do not fail if log is removed during rotation
+
+* 二 2月 03 2015 Jan Kaluza <jkaluza@redhat.com> 3.7.8-20
+- fix #1117189 - sort logs only when dateformat is set
+
+* 四 1月 29 2015 Jan Kaluza <jkaluza@redhat.com> 3.7.8-19
+- fix #1047899 - add support for "maxsize" directive
+- fix #1125769 - add support for "createolddir" directive
+
+* 一 12月 15 2014 Jan Kaluza <jkaluza@redhat.com> 3.7.8-18
+- fix #722209 - do not redirect output of logrotate to /dev/null, mark
+  logrotate.conf as config
+- fix #1117189 - sort logs according to dateformat when removing the old one
+- fix #625034 - update logrotate.status atomically
+- fix #984965 - fix possible overflow in "create" directive parsing
+- fix #1012485 - use permissions 0700 for cron.daily script
+
 * 四 9月 04 2014 hpetty <hpetty@amazon.com>
 - Add patch to skip opening non-existant old log files when using the debug option
 

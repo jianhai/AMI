@@ -11,4 +11,4 @@ libnsl.so.1(GLIBC_2.2.5)(64bit)
 rpmlib(CompressedFileNames) <= 3.0.4-1
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
 rtld(GNU_HASH)
-tcp_wrappers-libs = 7.6-75.11.amzn1
+tcp_wrappers-libs = 7.6-77.12.amzn1

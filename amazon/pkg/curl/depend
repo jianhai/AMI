@@ -6,7 +6,7 @@ libc.so.6(GLIBC_2.3)(64bit)
 libc.so.6(GLIBC_2.3.4)(64bit)
 libc.so.6(GLIBC_2.4)(64bit)
 libc.so.6(GLIBC_2.7)(64bit)
-libcurl(x86-64) = 7.40.0-8.59.amzn1
+libcurl(x86-64) = 7.47.1-8.65.amzn1
 libcurl.so.4()(64bit)
 libdl.so.2()(64bit)
 libnspr4.so()(64bit)

@@ -1,8 +1,8 @@
 /bin/bash
 /bin/sh
-config(cronie-anacron) = 1.4.4-12.6.amzn1
+config(cronie-anacron) = 1.4.4-15.8.amzn1
 coreutils
-cronie = 1.4.4-12.6.amzn1
+cronie = 1.4.4-15.8.amzn1
 crontabs
 libaudit.so.1()(64bit)
 libc.so.6()(64bit)

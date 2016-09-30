@@ -1,3 +1,22 @@
+* 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/perl-5.16.3-286.el7
+
+* 四 7月 02 2015 Petr Pisar <ppisar@redhat.com> - 4:5.16.3-286
+- Remove CPU-speed-sensitive test in Benchmark test (bug #1238567)
+- Rebuild with corrected binutils to fix systemtap support (bug #1238472)
+
+* 五 3月 13 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/perl-5.16.3-285.el7
+
+* 一 12月 01 2014 Petr Pisar <ppisar@redhat.com> - 4:5.16.3-285
+- Use stronger algorithm needed for FIPS in t/op/taint.t (bug #1084796)
+
+* 五 8月 08 2014 Petr Pisar <ppisar@redhat.com> - 4:5.16.3-284
+- Use a macro to cover all 64-bit PowerPC architectures (bug #1061792)
+- Declare dependencies for cpan tool (bug #1122368)
+- Use stronger algorithm needed for FIPS in t/op/crypt.t (bug #1084796)
+- Make *DBM_File desctructors thread-safe (bug #1107542)
+
 * 三 5月 07 2014 Cristian Gafton <gafton@amazon.com>
 - import source package RHEL7/perl-5.16.3-283.el7
 

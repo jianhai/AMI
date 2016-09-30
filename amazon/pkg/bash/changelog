@@ -1,3 +1,10 @@
+* 三 8月 03 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package EL7/bash-4.2.46-20.el7_2
+
+* 二 7月 12 2016 Siteshwar Vashisht <svashisht@redhat.com> - 4.2.46-20
+- Fix a crash when lastpipe mode is enabled
+  Resolves: #1355771
+
 * 五 11月 20 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
 - import source package EL7/bash-4.2.46-19.el7
 

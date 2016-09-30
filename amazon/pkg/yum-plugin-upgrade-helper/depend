@@ -1,4 +1,4 @@
-config(yum-plugin-upgrade-helper) = 1.1.31-29.26.amzn1
+config(yum-plugin-upgrade-helper) = 1.1.31-34.28.amzn1
 rpmlib(CompressedFileNames) <= 3.0.4-1
 rpmlib(PartialHardlinkSets) <= 4.0.4-1
 rpmlib(PayloadFilesHavePrefix) <= 4.0-1

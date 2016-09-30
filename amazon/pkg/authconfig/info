@@ -1,15 +1,15 @@
 Name        : authconfig
 Version     : 6.2.8
-Release     : 9.27.amzn1
+Release     : 10.28.amzn1
 Architecture: x86_64
-Install Date: 2016年06月21日 星期二 20时10分28秒
+Install Date: 2016年09月30日 星期五 04时34分30秒
 Group       : System Environment/Base
-Size        : 2210940
+Size        : 2213298
 License     : GPLv2+
-Signature   : RSA/SHA256, 2015年09月08日 星期二 23时08分21秒, Key ID bcb4a85b21c0f39f
-Source RPM  : authconfig-6.2.8-9.27.amzn1.src.rpm
-Build Date  : 2015年09月03日 星期四 23时05分28秒
-Build Host  : build-64011.build
+Signature   : RSA/SHA256, 2016年08月19日 星期五 01时33分25秒, Key ID bcb4a85b21c0f39f
+Source RPM  : authconfig-6.2.8-10.28.amzn1.src.rpm
+Build Date  : 2016年08月19日 星期五 00时29分40秒
+Build Host  : build-60006.build
 Relocations : (not relocatable)
 Packager    : Amazon.com, Inc. <http://aws.amazon.com>
 Vendor      : Amazon.com

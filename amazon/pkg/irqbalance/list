@@ -1,7 +1,7 @@
 /etc/rc.d/init.d/irqbalance
 /etc/sysconfig/irqbalance
 /usr/sbin/irqbalance
-/usr/share/doc/irqbalance-1.0.8
-/usr/share/doc/irqbalance-1.0.8/AUTHORS
-/usr/share/doc/irqbalance-1.0.8/COPYING
+/usr/share/doc/irqbalance-1.1.0
+/usr/share/doc/irqbalance-1.1.0/AUTHORS
+/usr/share/doc/irqbalance-1.1.0/COPYING
 /usr/share/man/man1/irqbalance.1.gz

@@ -1,8 +1,8 @@
 /sbin/ldconfig
 /usr/sbin/glibc_post_upgrade.x86_64
 basesystem
-config(glibc) = 2.17-106.167.amzn1
-glibc-common = 2.17-106.167.amzn1
+config(glibc) = 2.17-106.168.amzn1
+glibc-common = 2.17-106.168.amzn1
 ld-linux-x86-64.so.2()(64bit)
 ld-linux-x86-64.so.2(GLIBC_2.2.5)(64bit)
 ld-linux-x86-64.so.2(GLIBC_2.3)(64bit)

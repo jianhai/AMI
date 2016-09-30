@@ -1,18 +1,56 @@
+* 六 8月 27 2016 Ian Weller <iweller@amazon.com>
+- Backport several time related improvements from upstream
+
+* 二 5月 10 2016 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/dhcp-4.1.1-51.P1.el6
+
 * 四 4月 14 2016 Matt Nierzwicki <nierzwic@amazon.com>
 - Add eth0 initilization fast path via ARPing bypass
+
+* 一 1月 11 2016 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-51.P1
+- send unicast request/release via correct interface (#1297445)
 
 * 五 1月 08 2016 Jason Green <jasg@amazon.com>
 - Add patch for UDP length field check fix
 
+* 四 12月 03 2015 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-50.P1
+- Lease table overflow crash. (#1133917)
+- Add ignore-client-uids option. (#1196768)
+- dhclient-script: it's OK if the arping reply comes from our system. (#1204095)
+- VLAN ID is only bottom 12-bits of TCI. (#1259552)
+- dhclient: Make sure link-local address is ready in stateless mode. (#1263466)
+- dhclient-script: make_resolv_conf(): Keep old nameservers
+  if server sends domain-name/search, but no nameservers. (#1269595)
+
+* 三 7月 22 2015 Amazon Linux AMI <amazon-linux-ami@amazon.com>
+- import source package RHEL6/dhcp-4.1.1-49.P1.el6
+
+* 一 5月 04 2015 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-49.P1
+- Fix dhcrelay init script too. (#1187967)
+
 * 四 3月 12 2015 Jamie Anderson <jamieand@amazon.com>
 - Correct invalid changelog dates
+
+* 三 2月 25 2015 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-48.P1
+- Actually take IB MAC address into account when creating seed (#1185075)
+
+* 二 2月 24 2015 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-47.P1
+- Improve seeding the random number generator in dhclient (#1185075)
+
+* 五 2月 20 2015 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-46.P1
+- Fix dhcrelay6 init script (#1187967)
 
 * 二 1月 27 2015 Cristian Gafton <gafton@amazon.com>
 - import source package RHEL6/dhcp-4.1.1-43.P1.el6_6.1
 
-* 三 1月 21 2015 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-43.P1.1
+* 三 12月 17 2014 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-45.P1
+- dhcrelay -6 was not working due to patch for #1001742 (#1151054)
+
+* 三 12月 17 2014 Jiri Popelka <jpopelka@redhat.com> - 12:4.1.1-44.P1
+- option 97 - pxe-client-id (#1058674)
+- dhclient-script: PREINIT6: make sure link-local address is available (#1130804)
 - dhcpd generates spurious responses when seeing requests
-  from vlans on plain interface (#1184333)
+  from vlans on plain interface (#1150587)
 
 * 二 10月 14 2014 Cristian Gafton <gafton@amazon.com>
 - import source package RHEL6/dhcp-4.1.1-43.P1.el6
