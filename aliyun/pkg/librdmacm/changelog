@@ -1,0 +1,45 @@
+* 六 7月 26 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.14.1-3.3
+- rebuild
+
+* 四 7月 24 2014 xianepng.lxp <xianpeng.lxp@alibaba-inc.com> - 1.0.14.1-3.2
+- rebuild
+
+* 四 5月 29 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 1.0.14.1-3.1
+- rebuild for alios6
+
+* 一 8月 01 2011 Doug Ledford <dledford@redhat.com> - 1.0.14.1-3
+- Oops, change how we set -fno-strict-aliasing to get FORTIFY_SOURCE back
+- Related: bz725016
+
+* 一 8月 01 2011 Doug Ledford <dledford@redhat.com> - 1.0.14.1-2
+- Add -fno-strict-aliasing to CFLAGS due to rpmdiff failure
+- Related: bz725016
+
+* 五 7月 22 2011 Doug Ledford <dledford@redhat.com> - 1.0.14.1-1
+- Update to latest upstream version
+- Fix segfault in rping usage
+- Related: bz725016, bz696019
+
+* 一 1月 11 2010 Doug Ledford <dledford@redhat.com> - 1.0.10-2
+- ExcludeArch s390(x) as the hardware doesn't exist there
+
+* 四 12月 03 2009 Doug Ledford <dledford@redhat.com> - 1.0.10-1
+- Update to latest upstream release
+- Change Requires on -devel package (bz533937)
+
+* 六 7月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.7-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild
+
+* 三 2月 25 2009 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0.7-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild
+
+* 六 3月 29 2008 Roland Dreier <rolandd@cisco.com> - 1.0.7-1
+- New upstream release
+
+* 五 2月 22 2008 Roland Dreier <rdreier@cisco.com> - 1.0.6-2
+- Spec file cleanups from Fedora review: add BuildRequires for
+  libibverbs, and move the static library to -static.
+
+* 五 2月 15 2008 Roland Dreier <rdreier@cisco.com> - 1.0.6-1
+- Initial Fedora spec file
+

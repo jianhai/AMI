@@ -1,5 +1,5 @@
-* 二 8月 05 2014 xianpeng.lxp<xianpeng.lxp@alibaba-inc.com> - 2.0.13-1.1
-- rebuild for alios6-extras
+* 六 12月 12 2015 Eric Sandeen <sandeen@redhat.com> 2.0.13-2
+- Enable RDMA via buildreq & build flags
 
 * 三 1月 09 2013 Peter Robinson <pbrobinson@fedoraproject.org> 2.0.13-1
 - New upstream 2.0.13 release
